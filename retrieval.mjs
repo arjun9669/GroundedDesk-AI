@@ -155,7 +155,12 @@ function requestedEvidenceFocus(question) {
   const match=String(question).toLowerCase().match(/\b(passwords?|passphrases?|credentials?|birth\s+date|date\s+of\s+birth|salar(?:y|ies)|prices?|budgets?|phone\s+numbers?|email\s+addresses?)\b/);
   if (!match) return null;
   const word=match[1];
-  if (/password|passphrase|credential/.test(word)) return /\b(password|passphrase|credential|secret)\b/i;
+  if (/password|passphrase|credential/.test(word)) {
+    // Operational questions about credential rotation are not requests to
+    // disclose the credential itself.
+    if (/^(?:how|when|why)\b|\b(?:policy|rotation|rotated|frequency|handling|management)\b/i.test(query)) return null;
+    return /\b(password|passphrase|credential|secret)\b/i;
+  }
   if (/birth/.test(word)) return /\b(birth|born|dob)\b/i;
   if (/salar/.test(word)) return /\b(salary|salaries|compensation|pay)\b/i;
   if (/price/.test(word)) return /\b(price|cost|aed|usd|rate)\b/i;
@@ -209,7 +214,19 @@ function evidenceSentenceScore(question,sentence) {
 // Empty means no lexical support; the caller must not manufacture an answer.
 export function bestSourceSentence(question, fullText) {
   const source=String(fullText || "").replace(/\r\n?/g,"\n").replace(/[ \t]+/g," ").trim();
-  const sentences=[...source.matchAll(/[^.!?]+(?:[.!?](?=\s|$)|$)/g)].map(m=>m[0].trim()).filter(Boolean);
+  const rawSentences=[...source.matchAll(/[^.!?]+(?:[.!?](?=\s|$)|$)/g)]
+    .map(m=>m[0].trim()).filter(Boolean);
+  const sentences=[];
+  for (const line of rawSentences) {
+    if (line.length<=420) { sentences.push(line); continue; }
+    // Long PDF boilerplate can be fused to the first actual numbered clause.
+    // Strip the leading noise at a printed section boundary, never invent text.
+    const headings=[...line.matchAll(/\b[A-Z]{1,4}-\d{2,3}\s+[A-Z][A-Za-z-]+/g)];
+    for (let i=0;i<headings.length;i++) {
+      const slice=line.slice(headings[i].index,headings[i+1]?.index ?? line.length).trim();
+      if (slice.length<=420) sentences.push(slice);
+    }
+  }
   let winner="", score=-Infinity;
   for (const line of sentences) {
     if (line.length>420) continue;
@@ -218,6 +235,33 @@ export function bestSourceSentence(question, fullText) {
   }
   // Require at least one material question term and non-header evidence.
   if (!(score>=1)) return "";
+  // Only when the question explicitly contains a second requested part, a
+  // nearby *operative* sentence may supply another required actor/condition.
+  // Never join non-adjacent sentences or paraphrase the source.
+  const isCompound=/\b(?:and|or)\s+(?:who|what|which|when|where|how)\b/i.test(question);
+  if (isCompound && winner) {
+    const index=source.indexOf(winner);
+    const before=source.slice(Math.max(0,index-300),index);
+    const after=source.slice(index+winner.length,index+winner.length+300);
+    const adjacent=[
+      [...before.matchAll(/[^.!?]+[.!?](?=\s|$)/g)].map(m=>m[0].trim()).filter(Boolean).at(-1),
+      after.match(/^\s*([^.!?]+[.!?](?=\s|$))/)?.[1]?.trim()
+    ];
+    const originalTerms=new Set(tokenize(winner).map(quoteForm));
+    const questionTerms=new Set(tokenize(question).map(quoteForm));
+    for (const neighbor of adjacent) {
+      if (!neighbor || !/\b(?:must|requires?|written|owner|every AI release|sign off)\b/i.test(neighbor)) continue;
+      const extra=tokenize(neighbor).map(quoteForm)
+        .filter(term=>questionTerms.has(term)&&!originalTerms.has(term));
+      if (!extra.length) continue;
+      const start=source.indexOf(neighbor,Math.max(0,index-300));
+      if (start<0) continue;
+      const from=Math.min(start,index),to=Math.max(start+neighbor.length,index+winner.length);
+      if (to-from<=420 && /^\s*$/.test(source.slice(
+        Math.min(index+winner.length,start+neighbor.length),
+        Math.max(index,start)))) return source.slice(from,to);
+    }
+  }
   return winner;
 }
 
@@ -409,7 +453,12 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
       const supported = bestSourceSentence(question, candidate.sourceText);
       if (supported && candidate.sourceText.includes(supported)) {
         quote = supported;
-        excerpt = supported;
+        // Keep enough original document context for the independent evidence
+        // guard and reviewer, including neighboring untrusted *data* text.
+        // The answer still displays only the selected literal quote.
+        const at=candidate.sourceText.indexOf(supported);
+        excerpt=candidate.sourceText.slice(Math.max(0,at-220),
+          Math.min(candidate.sourceText.length,at+supported.length+280)).trim();
       }
     }
     return {
