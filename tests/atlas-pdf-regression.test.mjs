@@ -128,9 +128,43 @@ test("Cache-busted entry and module imports advertise the current retrieval buil
   const html=readFileSync(resolve(root,"index.html"),"utf8");
   const app=readFileSync(resolve(root,"app.mjs"),"utf8");
   const retrieval=readFileSync(resolve(root,"retrieval.mjs"),"utf8");
-  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r7"/);
+  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r8"/);
   assert.match(html,/id="retrieval-build"/);
-  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261010-r7"/);
+  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261010-r8"/);
   assert.match(app,/Loaded retrieval build:/);
-  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-10-r7"/);
+  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-10-r8"/);
+});
+
+test("user-reported Atlas CEO salary query refuses instead of citing organization names in PDF headers",()=>{
+  // Actual failure: all PDFs repeat the company name on their cover pages,
+  // but none contains a CEO, salary or financial compensation evidence.
+  const atlas=[
+    {id:"g",name:"01_Atlas_AI_Governance_Policy.pdf",
+      text:"GROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 Page 1 PRACTICE DOCUMENT / AGP-01 AI Governance and Release Policy Atlas Research Group. Every AI release has a Model Owner, a Product Sponsor and a named Security Officer."},
+    {id:"i",name:"02_Atlas_Incident_Response_Runbook.pdf",
+      text:"GROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 Page 1 PRACTICE DOCUMENT / IRR-02 Document AI Incident Response Runbook Atlas Research Group. The Incident Commander responds to priority incidents."},
+    {id:"v",name:"03_Atlas_Vendor_AI_Assessment.pdf",
+      text:"GROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 Page 1 PRACTICE DOCUMENT / VRA-03 External AI Vendor Assessment Guide Atlas Research Group. A Vendor Review is mandatory before outside document processing."},
+  ];
+  const index=buildIndex(atlas);
+  const question="What is the annual salary of the CEO of Atlas Research Group?";
+  const result=answerQuestion(question,index);
+  assert.equal(result.answered,false);
+  assert.deepEqual(result.sources,[]);
+  assert.match(result.answer,/can't find this/i);
+  assert.equal(verifyEvidenceResult(result,atlas).ok,true);
+  assert.match(createEvidenceReport(question,result),/NO|can't find this/i);
+  assert.equal(answerQuestion("Who is the CEO of Atlas Research Group?",index).answered,false);
+  assert.equal(answerQuestion("What is the operating budget of Atlas Research Group?",index).answered,false);
+});
+
+test("attribute refusal remains a general lexical condition, not a blacklist of CEO/salary words",()=>{
+  const withFact=[{id:"hr",name:"staff-records.txt",
+    text:"Atlas Research Group executive disclosure: The CEO's annual salary is AED 510,000. Annual operating budget is AED 2 million."}];
+  const index=buildIndex(withFact);
+  const result=answerQuestion("What is the annual salary of the CEO of Atlas Research Group?",index);
+  assert.equal(result.answered,true);
+  assert.match(result.sources[0].quote,/annual salary/i);
+  assert.equal(verifyEvidenceResult(result,withFact).ok,true);
+  assert.equal(answerQuestion("What is the operating budget of Atlas Research Group?",index).answered,true);
 });
