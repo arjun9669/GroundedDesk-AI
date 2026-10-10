@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r10";
+export const RETRIEVAL_BUILD = "2026-10-10-r11";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -34,14 +34,15 @@ export function buildIndex(documents) {
     if (!document || typeof document.text !== "string" || document.text.length > 180000) {
       throw new Error("Invalid document or document exceeds 180,000 characters");
     }
-    for (const part of chunkText(document.text)) {
+    const sourceText = String(document.text).replace(/\r\n?/g, "\n").replace(/[ \t]+/g, " ").trim();
+    for (const part of chunkText(sourceText)) {
       const words = tokenize(part.content);
       if (!words.length) continue;
       const tf = new Map();
       for (const word of words) tf.set(word, (tf.get(word) || 0) + 1);
       chunks.push({ id: `${document.id}:${part.start}`, documentId: document.id,
         filename: document.name, content: part.content, start: part.start,
-        tokens: words, tf });
+        sourceText, tokens: words, tf });
     }
   }
   const df = new Map();
