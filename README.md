@@ -75,7 +75,7 @@ A **separate actual Windows Chrome test on r16** of the original Atlas 15 questi
 
 In r17, Hybrid can recover a **complete exact source sentence** from a retrieved document when a strong lexical match exists, instead of relying on a potentially truncated MiniLM-ranked chunk. Weak extra citations in non-comparison questions are pruned conservatively; explicit multi-document workflows remain separate. Semantic-only paraphrases fall back to existing chunk extraction. All relevance measures remain heuristics, **not entailment verification**.
 
-**Validation:** Automated regression tests use deterministic mock-vectors. **Full real MiniLM Chrome r17 Atlas 15 re-evaluation remains required** and has no declared score until browser results are recorded.
+**Actual Windows Chrome r17 retest (2026-10-11):** The [tester-submitted original Atlas 15 report](./docs/ATLAS15_R17_CHROME_HYBRID_RETEST.md) records **15 PASS / 0 PARTIAL / 0 FAIL** under the unchanged answer-completeness rubric: **11/11 Hybrid Q&A** and **4/4 separate lexical Comparison**. All three refusals cite zero sources; **18/18 quotations** are reported source-literal. **D02 still contains two irrelevant secondary citations**, so this is not clean citation precision or an independent real-world accuracy estimate. The prior r16 **12 PASS / 1 PARTIAL / 2 FAIL** record remains unchanged. Automated regression tests use deterministic mock vectors; the new result is separately labeled as a reported real-Chrome MiniLM run.
 
 ### Evaluate the actual retrieval
 
