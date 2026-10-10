@@ -228,7 +228,7 @@ function completeEvidenceContext(candidate) {
   if (anchor > 0) {
     const scanStart = Math.max(0, anchor - 320);
     const before = full.slice(scanStart, anchor);
-    const boundaries = [...before.matchAll(/[.!?](?:\\s+)|\\n+/g)];
+    const boundaries = [...before.matchAll(/[.!?](?:\s+)|\n+/g)];
     if (boundaries.length) {
       const last = boundaries[boundaries.length - 1];
       from = scanStart + last.index + last[0].length;
@@ -238,7 +238,7 @@ function completeEvidenceContext(candidate) {
   }
   if (chunkEnd < full.length) {
     const after = full.slice(chunkEnd, Math.min(full.length, chunkEnd + 260));
-    const next = after.match(/[.!?](?:\\s|$)|\\n/);
+    const next = after.match(/[.!?](?:\s|$)|\n/);
     if (next) to = chunkEnd + next.index + 1;
   }
   return full.slice(from, to).trim();
