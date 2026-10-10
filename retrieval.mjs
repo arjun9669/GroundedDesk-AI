@@ -159,7 +159,7 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   // solely because they share generic terms such as "review" or "AI".
   // A score gap is a *ranking heuristic*, never a factuality/confidence test.
   // Leave hybrid RRF and explicit cross-document requests unchanged.
-  const multiDocumentIntent = /\\b(?:compare|contrast|differences?|similarities|across|between|both|multiple|several|each|versus)\\b/i.test(question)
+  const multiDocumentIntent = /\b(?:compare|contrast|differences?|similarities|across|between|both|multiple|several|each|versus)\b/i.test(question)
     || explicitlyNamedDocuments(question, candidates).size > 1;
   const usesHybridScores = candidates.some(c => c.lexicalScore !== undefined || c.semanticScore !== undefined);
   const leadingScore = eligible[0]?.score;
