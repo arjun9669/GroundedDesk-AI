@@ -1,5 +1,13 @@
 # Changelog
 
+## 5.0.1 — Evaluation measurement quality
+
+- Replaced misleading rounded one-shot `0.000 ms` cards with adaptive, warmed, repeated keyword timings in microseconds.
+- Distinguished median/p95 of ten sampled question batch means from individual-request tail latency; included clock-resolution failures instead of fabricated measurements.
+- Marked one-shot clock readings as unreliable diagnostic values in downloadable JSON.
+- Added benchmark regression tests and an explicit protocol for later manual testing on permitted real PDFs.
+
+
 ## 5.0.0 — Portfolio quality milestone
 
 - Added the **on-device keyword evaluation dashboard** with independently computed 28-case per-query results, top-1 source match, unsupported refusals, citation provenance, and real local timings.

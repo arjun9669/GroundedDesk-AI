@@ -90,7 +90,7 @@
             <div>
               <p class="micro-label">5.0 · ENGINEERING QUALITY GATE</p>
               <h3 id="quality-title">Evaluate the evidence, not just the demo.</h3>
-              <p>Run a real, on-device keyword retrieval evaluation against 28 labeled questions and the three bundled fictional documents. Inspect per-case verdicts, source integrity, refusals, and measured latency. This does not measure Qwen accuracy.</p>
+              <p>Run a real, on-device keyword retrieval evaluation against 28 labeled questions and the three bundled fictional documents. Inspect per-case verdicts, source integrity, refusals, and warmed-up repeated keyword timings. Tiny single-query timings may round to zero, so the benchmark measures batches instead. This does not measure Qwen or MiniLM accuracy.</p>
             </div>
             <div class="quality-actions">
               <button id="run-quality" type="button">Run local evaluation</button>
@@ -106,6 +106,7 @@
                 <th scope="col">Case</th><th scope="col">Expected</th><th scope="col">Retrieved</th><th scope="col">Result</th>
               </tr></thead><tbody id="quality-rows"></tbody></table></div>
             </details>
+            <p class="quality-caveat"><strong>Timing methodology:</strong> After accuracy checks, the browser warms up each of 10 representative keyword queries, then times repeated batches for at least 40 ms per question. Median and p95 are across batch-average per-query times, <strong>not individual-request tail latency</strong>. Times exclude document parsing, model loading, network and UI rendering.</p>
             <p class="quality-caveat">Scores are from a small, hand-labeled toy dataset. 100% here would not imply production accuracy, hallucination prevention, semantic-model performance, or security assurance.</p>
           </div>
         </section>

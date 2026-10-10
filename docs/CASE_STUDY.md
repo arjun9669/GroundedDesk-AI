@@ -50,7 +50,7 @@ The default path runs without model weights or subscriptions. The optional MiniL
 
 ## What the evaluation measures
 
-The `eval/queries.json` fixture contains **18 supported** and **10 intentionally unrelated** questions manually written for the **three included fictional documents**. On the website, the user explicitly chooses **Run local evaluation**. The application performs *real BM25-style* searches on the current original sample document set, times each query with the device clock, and reports:
+The `eval/queries.json` fixture contains **18 supported** and **10 intentionally unrelated** questions manually written for the **three included fictional documents**. On the website, the user explicitly chooses **Run local evaluation**. The application performs *real BM25-style* searches on the current original sample document set, records source quality for every query, then repeats ten representative questions in warm batches to obtain more meaningful device-clock timings, and reports:
 
 | Metric | Calculation | What it does NOT establish |
 | --- | --- | --- |
@@ -59,7 +59,9 @@ The `eval/queries.json` fixture contains **18 supported** and **10 intentionally
 | Out-of-domain refusal rate | Refusals ÷ 10 unsupported | Exhaustive robustness against irrelevant queries |
 | False accepts | Unsupported items for which search returned evidence | Malicious prompt safety |
 | Citation provenance | Whether excerpt and quote match the document ID/name/text and citation numbering | Whether a passage actually supports a claim |
-| Median and p95 latency | Wall-clock time of the 28 keyword-search calls on the device | Network, download, WASM or WebGPU model speed |
+| Median and p95 repeated keyword timing | After five warm-ups, ten selected questions are timed in 40+ ms batches; median/p95 are across per-question batch-average times (microseconds) | Individual-request p95, model loading/inference, network, PDF parsing, real-world responsiveness |
+
+Very short one-shot browser timings may quantize to zero. The dashboard no longer displays rounded one-shot zeros as speed claims, and the JSON marks one-shot timing as an unreliable diagnostic. The repeated benchmark explicitly returns *Timer too coarse* if it cannot obtain measurable batch durations. See [evaluation methodology and real-document test protocol](./EVALUATION_PROTOCOL.md).
 
 The keyword evaluation is reproducible using `node eval/run.mjs --json` and `node eval/run.mjs --strict`. The CLI and browser use the same integrity verifier; the browser has its own concise per-case verdict display. CI executes `node --test tests/*.test.mjs` with no npm install or paid API.
 
