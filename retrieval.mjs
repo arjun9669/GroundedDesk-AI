@@ -81,13 +81,13 @@ function sentenceRelevance(sentence, terms) {
   return matched.length - verbosity - (header ? 2.5 : 0);
 }
 
-function bestSentence(content, terms, requestedFocus = null) {
+function bestSentence(content, terms, requestedFocus = null, numericFocus = false) {
   const sentences = content.split(/(?<=[.!?])\s+|\n+/).map(s => s.trim()).filter(Boolean);
   let best = content, bestScore = -Infinity;
   for (const sentence of sentences) {
     const focusPresent = requestedFocus && tokenize(sentence).some(
       word => quoteForm(word) === quoteForm(requestedFocus));
-    const score = sentenceRelevance(sentence, terms) + (focusPresent ? 4 : 0);
+    const score = sentenceRelevance(sentence, terms) + (focusPresent ? 4 : 0) + (numericFocus && /[0-9]/.test(sentence) ? 2.5 : 0);
     if (score > bestScore) { best = sentence; bestScore = score; }
   }
   // A quote must remain an EXACT substring of the source. For unusually long
@@ -220,7 +220,7 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   const sources = picked.map((candidate, i) => ({
     citation: i + 1, id: candidate.id, documentId: candidate.documentId,
     filename: candidate.filename, excerpt: candidate.content,
-    quote: bestSentence(candidate.content, unique, usesHybridScores ? null : requestedAttribute(question)),
+    quote: bestSentence(candidate.content, unique, usesHybridScores ? null : requestedAttribute(question), /\b(?:scores?|ranges?|thresholds?|percentages?|amounts?|prices?|rates?)\b/i.test(question)),
     score: Math.round(candidate.score * 10000) / 10000,
     lexicalScore: candidate.lexicalScore ?? null,
     semanticScore: candidate.semanticScore ?? null,
