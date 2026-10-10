@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r11";
+export const RETRIEVAL_BUILD = "2026-10-10-r12";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -306,18 +306,37 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
     matchedTerms: unique.filter(term => candidate.tf.has(term)),
     };
   });
+  // BM25 ranks entire chunks, while the answer cites individual sentences.
+  // A secondary chunk can rank highly due to nearby text even though its
+  // displayed quotation barely covers the question. Filter only those weak
+  // secondary quotations in ordinary keyword QA; never apply to explicit
+  // cross-document comparisons or hybrid-fusion scores.
+  let citedSources = sources;
+  if (!multiDocumentIntent && !usesHybridScores && sources.length > 1) {
+    const required = new Set(unique.map(quoteForm));
+    const coverage = quote => {
+      const words = new Set(tokenize(quote).map(quoteForm));
+      return [...required].filter(term => words.has(term)).length;
+    };
+    const leadCoverage = coverage(sources[0].quote);
+    if (leadCoverage >= 4) {
+      citedSources = sources.filter((source, i) =>
+        i === 0 || coverage(source.quote) >= leadCoverage * 0.7);
+      citedSources = citedSources.map((source, i) => ({ ...source, citation: i + 1 }));
+    }
+  }
   // Reject false acceptance when a query asks for an attribute (e.g. salary)
   // but the cited passages only repeat the entity name or PDF cover metadata.
   // Keep semantic/hybrid retrieval out of this keyword-specific heuristic.
-  if (!usesHybridScores && missingRequestedAttribute(question, sources)) {
+  if (!usesHybridScores && missingRequestedAttribute(question, citedSources)) {
     return { answered:false, answer:"I can't find this in the provided documents.",
       sources:[], mode, retrievalBuild: RETRIEVAL_BUILD,
       note:"Question-specific attribute was absent from the cited evidence." };
   }
   return {
     answered: true,
-    answer: sources.map(s => `[${s.citation}] ${s.quote}`).join("\n\n"),
-    sources, mode, retrievalBuild: RETRIEVAL_BUILD,
+    answer: citedSources.map(s => `[${s.citation}] ${s.quote}`).join("\n\n"),
+    sources: citedSources, mode, retrievalBuild: RETRIEVAL_BUILD,
     note: "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
   };
 }
