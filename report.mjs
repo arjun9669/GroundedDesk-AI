@@ -1,4 +1,4 @@
-import { validateDraft } from "./generation.mjs";
+import { validateDraft } from "./generation.mjs?v=20261010-r7";
 
 /**
  * Portable evidence reports for the browser-only document Q&A demo.
@@ -41,6 +41,10 @@ export function createEvidenceReport(question, result) {
     "## Question",
     "",
     blockquote(question),
+    "",
+    "**Retrieval mode:** " + inline(result.mode || "Not recorded"),
+    "",
+    "**Retrieval build:** `" + (String(result.retrievalBuild || "unknown").replace(/[^A-Za-z0-9._-]/g, "").slice(0, 80) || "unknown") + "`",
     "",
     "## Answer",
     "",

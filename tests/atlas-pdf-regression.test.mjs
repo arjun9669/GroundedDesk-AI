@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { buildIndex, answerQuestion, answerFromCandidates } from "../retrieval.mjs";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "../retrieval.mjs";
 import { verifyEvidenceResult } from "../quality.mjs";
 import { createEvidenceReport } from "../report.mjs";
 
@@ -27,6 +30,9 @@ test("real Atlas user-question regression: answer is an approval clause, not PDF
   assert.equal(verifyEvidenceResult(result,documents).ok,true);
   const markdown=createEvidenceReport(question,result);
   assert.match(markdown,/High-risk releases require written approval/);
+  assert.match(markdown,/\*\*Retrieval mode:\*\*/);
+  assert.match(markdown,/\*\*Retrieval build:\*\*/);
+  assert.ok(markdown.includes(RETRIEVAL_BUILD));
   assert.doesNotMatch(markdown,/### \[2\] 02_/);
 });
 
@@ -115,4 +121,16 @@ test("low ranking keyword candidates are pruned but genuine close-score document
   assert.equal(compare.sources.length,3,"multi-document intent must not discard weaker sources");
   const mockHybrid=answerFromCandidates(query,ranking.map(x=>({...x,lexicalScore:x.score})),3,"Mock hybrid fusion");
   assert.equal(mockHybrid.sources.length,3,"hybrid fusion scores are not comparable to BM25 thresholds");
+});
+
+test("Cache-busted entry and module imports advertise the current retrieval build",()=>{
+  const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
+  const html=readFileSync(resolve(root,"index.html"),"utf8");
+  const app=readFileSync(resolve(root,"app.mjs"),"utf8");
+  const retrieval=readFileSync(resolve(root,"retrieval.mjs"),"utf8");
+  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r7"/);
+  assert.match(html,/id="retrieval-build"/);
+  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261010-r7"/);
+  assert.match(app,/Loaded retrieval build:/);
+  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-10-r7"/);
 });
