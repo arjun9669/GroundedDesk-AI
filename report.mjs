@@ -1,4 +1,4 @@
-import { validateDraft } from "./generation.mjs?v=20261010-r7";
+import { validateDraft } from "./generation.mjs?v=20261010-r8";
 
 /**
  * Portable evidence reports for the browser-only document Q&A demo.
