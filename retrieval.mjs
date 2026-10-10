@@ -232,8 +232,11 @@ function completeEvidenceContext(candidate) {
     if (boundaries.length) {
       const last = boundaries[boundaries.length - 1];
       from = scanStart + last.index + last[0].length;
-    } else if (scanStart === 0) {
-      from = 0;
+    } else {
+      // PDF headings identify clause starts even in long unpunctuated spans.
+      const sections = [...before.matchAll(/\\b[A-Z]{1,4}-[0-9]{2}\\b/g)];
+      if (sections.length) from = scanStart + sections[sections.length - 1].index;
+      else if (scanStart === 0) from = 0;
     }
   }
   if (chunkEnd < full.length) {
