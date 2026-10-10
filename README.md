@@ -61,15 +61,21 @@ The default Keyword engine now favors whole source sentences from retrieved docu
 
 The [Atlas 15-question original-PDF-text retest](./docs/ATLAS_15_QUESTION_5_3_RETEST.md) found **15/15 evidence-supported or appropriately refused** under the test-set's strict rubric, compared with the [previous 9 PASS / 4 PARTIAL / 2 FAIL](./docs/ATLAS_15_QUESTION_BASELINE.md) baseline. **This is an in-sample synthetic regression result, not independent real-world accuracy, production readiness, or a mobile PDF upload test.** The feature code was iteratively tuned using these failure cases; new unseen documents require separately labeled evaluation.
 
+### 5.3.1 — Hybrid unsupported-attribute refusal patch
+
+The Windows Chrome manual test identified a **Hybrid-mode false acceptance** when a missing database password was answered with three unrelated Atlas PDF cover citations. The r15 **15/15** Atlas baseline tested **Keyword and document comparison only**, not Hybrid. In r16, the conservative specific-attribute evidence guard also applies to Hybrid RRF results. This is not a full semantic entailment verifier.
+
+See the [observed failure and patch validation plan](./docs/HYBRID_REFUSAL_5_3_1.md). Automated regression tests use mock vectors and cannot establish actual MiniLM model performance. Repeat the same real-browser question in **Hybrid** with the original three Atlas PDFs and verify an explicit refusal and zero citations before recording manual acceptance. Keep the known failure in the historical record.
+
 ### Evaluate the actual retrieval
 
 Open the **5.0 Engineering Quality Gate** and press **Run local evaluation**. It executes 28 labeled keyword queries on the original three fictional sample documents and shows top-1 source match, out-of-domain refusal rate, provenance errors, **warmed-up repeated keyword timing in microseconds**, and per-case verdicts with a JSON download. The microbenchmark times 10 representative questions in batches lasting at least 40 ms, avoids misleading 0.000 ms one-shot displays, and reports median/p95 across batch-average timings—not individual-request tail latency. If you add or remove files, reload to restore the original sample corpus before evaluating. **These scores do not test MiniLM/Qwen accuracy or real-world hallucination rates.** See the [evaluation methodology and manual real-document test protocol](./docs/EVALUATION_PROTOCOL.md) for exact measurements and limitations.
 
 ### Browser cache and evidence-report build version
 
-GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quick successive deployments. The updated Keyword retrieval engine identifies itself as build `2026-10-10-r15`, and the 5.3 browser entrypoint plus its direct retrieval-related imports use fingerprint `20261010-r15`. Source/CSS URLs are fingerprinted so updated HTML loads matching app modules. Each evidence report now states its **Retrieval build** and **Retrieval mode**. The footer also displays the loaded build.
+GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quick successive deployments. The updated Keyword retrieval engine identifies itself as build `2026-10-10-r16`, and the 5.3 browser entrypoint plus its direct retrieval-related imports use fingerprint `20261010-r16`. Source/CSS URLs are fingerprinted so updated HTML loads matching app modules. Each evidence report now states its **Retrieval build** and **Retrieval mode**. The footer also displays the loaded build.
 
-To verify an Atlas PDF regression fix, reopen [the live demo with a unique page query](https://arjun9669.github.io/GroundedDesk-AI/?build=20261010-r15), clear the original TXT samples, upload the PDFs again, select **Keyword** mode, and regenerate the report. A report missing the build field may have been copied from an earlier cached tab. Score and source matching are still heuristic; one cited exact quote does not establish that an entire answer is complete.
+To verify an Atlas PDF regression fix, reopen [the live demo with a unique page query](https://arjun9669.github.io/GroundedDesk-AI/?build=20261010-r16), clear the original TXT samples, upload the PDFs again, select **Keyword** mode, and regenerate the report. A report missing the build field may have been copied from an earlier cached tab. Score and source matching are still heuristic; one cited exact quote does not establish that an entire answer is complete.
 
 ## Tests and evaluation
 
@@ -77,7 +83,7 @@ Manual QA: [GroundedDesk AI 5.1 Phase 1 Atlas single-PDF validation record](./do
 
 5.2 manual QA: [Atlas single-PDF candidate-control validation](./docs/VALIDATION_5_2_ATLAS.md) — 8 sections inspected, 17 literal quotes manually compared, **not** a 15-question benchmark or release-compliance certification.
 
-**Atlas 15-question original-PDF-text evaluation:** [5.3 retest 15/15 in-sample](./docs/ATLAS_15_QUESTION_5_3_RETEST.md), compared with [the 9 PASS / 4 PARTIAL / 2 FAIL baseline](./docs/ATLAS_15_QUESTION_BASELINE.md) — the measured *offline* Keyword/Comparison evaluation on three fictional Atlas source PDFs. This is a development regression baseline, not verified real-world accuracy or mobile-PDF ingestion testing. The most important known defect is a false acceptance for the deliberately unsupported database-password question.
+**Atlas 15-question original-PDF-text evaluation:** [5.3 retest 15/15 in-sample](./docs/ATLAS_15_QUESTION_5_3_RETEST.md), compared with [the 9 PASS / 4 PARTIAL / 2 FAIL baseline](./docs/ATLAS_15_QUESTION_BASELINE.md) — the measured *offline* Keyword/Comparison evaluation on three fictional Atlas source PDFs. This is a development regression baseline, not verified real-world accuracy or mobile-PDF ingestion testing. The baseline Keyword false acceptance was corrected in r15; an additional **Hybrid-mode false acceptance** was subsequently observed on Windows Chrome and is tracked in [the r16 fix record](./docs/HYBRID_REFUSAL_5_3_1.md).
 
 Install **Node.js 22+** for checks (no npm dependencies needed for the local retrieval test suite):
 
