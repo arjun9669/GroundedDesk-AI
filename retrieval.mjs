@@ -81,14 +81,14 @@ function sentenceRelevance(sentence, terms) {
   return matched.length - verbosity - (header ? 2.5 : 0);
 }
 
-function bestSentence(content, terms, requestedFocus = null, numericFocus = false) {
+function bestSentence(content, terms, requestedFocus = null, numericFocus = false, compound = false) {
   const sentences = content.split(/(?<=[.!?])\s+|\n+/).map(s => s.trim()).filter(Boolean);
-  let best = content, bestScore = -Infinity;
-  for (const sentence of sentences) {
+  let best = content, bestScore = -Infinity, bestIndex = -1;
+  for (const [i, sentence] of sentences.entries()) {
     const focusPresent = requestedFocus && tokenize(sentence).some(
       word => quoteForm(word) === quoteForm(requestedFocus));
     const score = sentenceRelevance(sentence, terms) + (focusPresent ? 4 : 0) + (numericFocus && /[0-9]/.test(sentence) ? 2.5 : 0);
-    if (score > bestScore) { best = sentence; bestScore = score; }
+    if (score > bestScore) { best = sentence; bestScore = score; bestIndex = i; }
   }
   // A quote must remain an EXACT substring of the source. For unusually long
   // unpunctuated PDF passages, center a literal window near the search terms.
@@ -220,7 +220,7 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   const sources = picked.map((candidate, i) => ({
     citation: i + 1, id: candidate.id, documentId: candidate.documentId,
     filename: candidate.filename, excerpt: candidate.content,
-    quote: bestSentence(candidate.content, unique, usesHybridScores ? null : requestedAttribute(question), /\b(?:scores?|ranges?|thresholds?|percentages?|amounts?|prices?|rates?)\b/i.test(question)),
+    quote: bestSentence(candidate.content, unique, usesHybridScores ? null : requestedAttribute(question), /\b(?:scores?|ranges?|thresholds?|percentages?|amounts?|prices?|rates?)\b/i.test(question), /\b(?:and|or)\s+(?:who|what|which|when|where|how)\b/i.test(question)),
     score: Math.round(candidate.score * 10000) / 10000,
     lexicalScore: candidate.lexicalScore ?? null,
     semanticScore: candidate.semanticScore ?? null,
