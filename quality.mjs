@@ -2,7 +2,7 @@
  * GroundedDesk AI 5.0 — reusable, zero-dependency evaluation and provenance
  * guardrails. Deliberately checks exact source integrity, NOT semantic truth.
  */
-import { buildIndex, answerQuestion } from "./retrieval.mjs?v=20261010-r17";
+import { buildIndex, answerQuestion } from "./retrieval.mjs?v=20261010-r18";
 
 const normalizedText = text => String(text).replace(/\r\n?/g, "\n").replace(/[ \t]+/g, " ").trim();
 const validName = name => typeof name === "string" && name.length > 0;
