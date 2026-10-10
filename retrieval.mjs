@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r17";
+export const RETRIEVAL_BUILD = "2026-10-10-r18";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -516,7 +516,13 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   if (!multiDocumentIntent && citedSources.length>1 &&
       picked.every(candidate => typeof candidate.sourceText==="string")) {
     const lead=evidenceSentenceScore(question,citedSources[0].quote);
-    if (Number.isFinite(lead) && lead>=4) {
+    // r17 D02: the accurate evidence-package answer scores 3.6, just
+    // below the previous citation-pruning cutoff, despite matching three
+    // question terms. Only relax the cutoff for strongly anchored Hybrid.
+    const hybridAnchored=usesHybridScores && lead>=3 &&
+      [...new Set(tokenize(question).filter(w=>!GENERIC_EVIDENCE_TERMS.has(w)))]
+        .filter(term=>hasForm(new Set(tokenize(citedSources[0].quote).map(quoteForm)),term)).length>=2;
+    if (Number.isFinite(lead) && (lead>=4 || hybridAnchored)) {
       const materialTerms=[...new Set(tokenize(question).filter(w=>!GENERIC_EVIDENCE_TERMS.has(w)))];
       const coverage=quote=>{
         const words=new Set(tokenize(quote).map(quoteForm));

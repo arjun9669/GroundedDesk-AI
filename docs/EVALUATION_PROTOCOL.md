@@ -101,3 +101,10 @@ The [reported real-browser Atlas 15 retest](ATLAS15_R17_CHROME_HYBRID_RETEST.md)
 **Exception: D02 had two irrelevant supplemental citations** from Runbook and Vendor, despite its correct five-item answer from Governance. Consequently **15/15 complete answers does not mean 15/15 clean citation precision**; only **14/15 cases** had all quoted evidence relevant. The original `GroundedDesk-r17-Atlas15-report.md` was supplied; referenced raw JSON and screenshots were not part of this documentation update, so do not claim independent validation from them.
 
 The historic [r16 Chrome baseline](ATLAS15_R16_CHROME_HYBRID_BASELINE.md) remains **12 PASS / 1 PARTIAL / 2 FAIL**. The prior [r15 offline Keyword/Comparison 15/15](ATLAS_15_QUESTION_5_3_RETEST.md) is a different workflow. All are **in-sample regression evaluations**, not estimates of held-out MiniLM accuracy. Next: unseen non-sensitive documents and D02 source-precision checks.
+
+
+## J. 5.3.3 r18 citation-precision acceptance
+
+The [r17 Chrome Atlas 15 retest](ATLAS15_R17_CHROME_HYBRID_RETEST.md) correctly answered all 15 questions under the unchanged answer-completeness rubric, but D02 showed **two irrelevant extra citations**: only **14/15 cases had all cited quotations relevant**. The r18 [targeted fix](HYBRID_D02_R18_PLAN.md) lowers the moderate-strength pruning gate for **Hybrid only**, conditioned on lexical coverage of at least two material question terms. It does not change the underlying MiniLM embeddings, rerank threshold, or Keyword pruning cutoff.
+
+Regression tests using deterministic mock embedding vectors are **code-level safeguards**, not the new Chrome result. Browser acceptance must verify build r18, the three original PDFs, actual on-device MiniLM, zero D02 Runbook/Vendor citations, preserved D03/D06/D08 supporting evidence, N13–N15 refusals with zero citations and the four **separate lexical Comparison** outputs. Record all surprises rather than assuming 15/15 on r18.

@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.3.3 — Hybrid citation precision guard (r18)
+
+- Follow-up to the [r17 Chrome Atlas 15 report](docs/ATLAS15_R17_CHROME_HYBRID_RETEST.md): D02 answered the evidence-package question correctly but displayed two irrelevant secondary citations.
+- Allow Hybrid secondary-source pruning at a moderately strong leading quote score when it matches at least two material terms; existing Keyword and explicit comparison controls remain intact.
+- New deterministic mock-vector regressions target D02 and protect meaningful cross-document and purely semantic results. **Not a measured real MiniLM benchmark.**
+- Update browser fingerprints to `2026-10-10-r18`. **Real Chrome retest still required**, including unrelated refusals and supported questions.
+- Preserve historical results; no paid API, server or private PDF content added.
+
+
 ### 5.3.2 — Windows Chrome r17 manual acceptance (2026-10-11)
 
 - User-supplied real MiniLM Chrome retest of the original Atlas 15 questions reported **15 PASS / 0 PARTIAL / 0 FAIL** under the established completeness rubric: **11/11 Hybrid Q&A and 4/4 separate lexical Comparison**. All three unsupported questions refused with zero citations; **18/18 quotes** were reported literal matches.
