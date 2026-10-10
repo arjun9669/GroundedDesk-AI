@@ -5,6 +5,7 @@ import { createEvidenceReport } from "./report.mjs";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs";
 import { buildResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs";
 import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -838,8 +839,10 @@ function displayQuality(report) {
     ["Unsupported query refusals", pct(report.out_of_domain_refusal_rate)],
     ["Citation provenance errors", String(report.citation_provenance_errors)],
     ["False supported answers", String(report.false_accept_count)],
-    ["Median retrieval latency", report.p50_latency_ms.toFixed(3) + " ms"],
-    ["95th percentile latency", report.p95_latency_ms.toFixed(3) + " ms"],
+    ["Median keyword batch average", report.repeated_benchmark?.median_batch_mean_us == null
+      ? "Timer too coarse" : report.repeated_benchmark.median_batch_mean_us.toFixed(3) + " µs"],
+    ["P95 keyword batch average", report.repeated_benchmark?.p95_batch_mean_us == null
+      ? "Timer too coarse" : report.repeated_benchmark.p95_batch_mean_us.toFixed(3) + " µs"],
   ];
   for (const [label,value] of metrics) {
     const box = make("div","quality-metric");
@@ -857,9 +860,10 @@ function displayQuality(report) {
   }
   $("quality-output").hidden = false;
   $("export-quality").disabled = false;
+  const timing = report.repeated_benchmark;
   $("quality-status").textContent =
-    `Measured ${report.test_count} actual keyword queries against ${report.corpus_documents} original sample documents in this browser. ` +
-    "These are illustrative labeled tests, not independent accuracy or Qwen performance.";
+    `Measured ${report.test_count} labeled keyword queries and repeatedly timed ${timing.sample_questions} selected questions on this device. ` +
+    "Timing is the mean per query within warmed-up batches, with median/p95 across sampled questions—not individual request tail latency or Qwen inference.";
 }
 
 $("run-quality").addEventListener("click", async () => {
@@ -874,7 +878,21 @@ $("run-quality").addEventListener("click", async () => {
     if (!response.ok) throw new Error("Evaluation fixture could not be loaded.");
     const fixture = await response.json();
     if (!qualitySamplesReady()) throw new Error("Documents changed during fixture loading.");
+    const indexAtStart = indexVersion;
     const report = evaluateKeywordFixture(fixture, documents);
+    $("quality-status").textContent = "Accuracy and refusal checks complete. Warming up timed keyword batches (about 10 sampled questions)…";
+    // Let the status render before a short, intentional synchronous benchmark.
+    await new Promise(resolve => setTimeout(resolve, 0));
+    if (indexVersion !== indexAtStart || !qualitySamplesReady()) {
+      throw new Error("Documents changed during evaluation; results discarded.");
+    }
+    const repeated = benchmarkKeywordQuestions(selectBenchmarkQuestions(fixture.cases), documents);
+    if (indexVersion !== indexAtStart || !qualitySamplesReady()) {
+      throw new Error("Documents changed during timing; results discarded.");
+    }
+    report.repeated_benchmark = repeated;
+    report.timing_interpretation =
+      "Do not use single-query rounded millisecond timers for performance claims. Repeated microbenchmark reports batch mean in microseconds, with median/p95 across selected question means.";
     latestQualityReport = report;
     displayQuality(report);
     notify("Keyword evaluation complete. Inspect per-case results and evidence checks.");
