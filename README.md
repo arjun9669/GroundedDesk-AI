@@ -39,7 +39,7 @@ In **Research workspace**, try research across all sample documents or compare t
 
 ### Evaluate the actual retrieval
 
-Open the **5.0 Engineering Quality Gate** and press **Run local evaluation**. It executes 28 labeled keyword queries on the original three fictional sample documents and shows top-1 source match, out-of-domain refusal rate, provenance errors, and actual browser latency, with per-case verdicts and a JSON download. If you add or remove files, reload to restore the original sample corpus before evaluating. **These scores do not test MiniLM/Qwen accuracy or real-world hallucination rates.**
+Open the **5.0 Engineering Quality Gate** and press **Run local evaluation**. It executes 28 labeled keyword queries on the original three fictional sample documents and shows top-1 source match, out-of-domain refusal rate, provenance errors, **warmed-up repeated keyword timing in microseconds**, and per-case verdicts with a JSON download. The microbenchmark times 10 representative questions in batches lasting at least 40 ms, avoids misleading 0.000 ms one-shot displays, and reports median/p95 across batch-average timings—not individual-request tail latency. If you add or remove files, reload to restore the original sample corpus before evaluating. **These scores do not test MiniLM/Qwen accuracy or real-world hallucination rates.** See the [evaluation methodology and manual real-document test protocol](./docs/EVALUATION_PROTOCOL.md) for exact measurements and limitations.
 
 ## Tests and evaluation
 
@@ -49,6 +49,7 @@ Install **Node.js 22+** for checks (no npm dependencies needed for the local ret
 node --test tests/*.test.mjs
 node --check app.mjs
 node --check quality.mjs
+node --check benchmark.mjs
 node --check retrieval.mjs
 node --check semantic.mjs
 node --check hybrid.mjs
