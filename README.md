@@ -63,7 +63,9 @@ The [Atlas 15-question original-PDF-text retest](./docs/ATLAS_15_QUESTION_5_3_RE
 
 ### 5.3.1 — Hybrid unsupported-attribute refusal patch
 
-The Windows Chrome manual test identified a **Hybrid-mode false acceptance** when a missing database password was answered with three unrelated Atlas PDF cover citations. The r15 **15/15** Atlas baseline tested **Keyword and document comparison only**, not Hybrid. In r16, the conservative specific-attribute evidence guard also applies to Hybrid RRF results. This is not a full semantic entailment verifier.
+The Windows Chrome manual test identified a **Hybrid-mode false acceptance** when a missing database password was answered with three unrelated Atlas PDF cover citations.
+
+**Manual retest result (2026-10-10): PASS for the original password-refusal case.** On build `2026-10-10-r16`, Windows Chrome Hybrid MiniLM + BM25 returned an explicit refusal with **zero cited sources**. The [validation record](./docs/HYBRID_REFUSAL_5_3_1.md) preserves both the r15 failure and r16 success. This does **not** establish reliable refusal behavior across other Hybrid questions. The r15 **15/15** Atlas baseline tested **Keyword and document comparison only**, not Hybrid. In r16, the conservative specific-attribute evidence guard also applies to Hybrid RRF results. This is not a full semantic entailment verifier.
 
 See the [observed failure and patch validation plan](./docs/HYBRID_REFUSAL_5_3_1.md). Automated regression tests use mock vectors and cannot establish actual MiniLM model performance. Repeat the same real-browser question in **Hybrid** with the original three Atlas PDFs and verify an explicit refusal and zero citations before recording manual acceptance. Keep the known failure in the historical record.
 
