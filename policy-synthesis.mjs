@@ -60,6 +60,7 @@ export function buildPolicyChecklist(question, document) {
     "No recognizable numbered policy clauses were detected.");
   const scanned=sections.slice(0,MAX_SECTIONS);
   const candidates=[];
+  let perSectionOverflow=0;
   let flagged=0;
   let matchedSections=0;
   for (const section of scanned) {
@@ -67,7 +68,6 @@ export function buildPolicyChecklist(question, document) {
     if (hasInstructionRisk(section.passage)) { flagged++; continue; }
     let fromSection=0;
     for (const raw of splitSentences(section.passage)) {
-      if (fromSection===PER_SECTION) break;
       const sentence=raw.trim();
       // Exclude meta-text and false positive claims of documented capability.
       if (/\b(?:fictional\s+release\s+requirements|not\s+observed\s+project\s+results|not\s+a\s+complete\s+policy)\b/i.test(sentence)) continue;
@@ -78,6 +78,7 @@ export function buildPolicyChecklist(question, document) {
         phase:rule?.phase||"unclassified", warning:false};
       if (!full.includes(item.excerpt) || !item.excerpt.includes(item.quote))
         throw new Error("Policy checklist source verification failed.");
+      if (fromSection>=PER_SECTION) { perSectionOverflow++; continue; }
       candidates.push(item);
       fromSection++;
     }
@@ -88,7 +89,7 @@ export function buildPolicyChecklist(question, document) {
     sources:chosen,answered:chosen.length>0,sectionCount:sections.length,
     sectionsInspected:scanned.length,sectionsWithCandidates:matchedSections,
     omittedSections:Math.max(0,sections.length-scanned.length),
-    omittedCandidates:Math.max(0,candidates.length-chosen.length),
+    omittedCandidates:perSectionOverflow+Math.max(0,candidates.length-chosen.length),
     flaggedSections:flagged,maxItems:MAX_ITEMS,
     mode:"Rule-based literal source extraction; no LLM",
     reason:chosen.length?"":"No rule-shaped release controls found in scanned sections." };
