@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-10 — Atlas 15-question baseline documentation
+
+- Ran the repository's Keyword and Comparison functions on text extracted from the three user-provided Atlas PDFs against the separate answer key.
+- Recorded **9 PASS / 4 PARTIAL / 2 FAIL**, with an explicit failure for the nonexistent database-password question and incomplete evidence selection for several direct/comparison cases.
+- Preserved source SHA-256 hashes, exact question IDs, case-level findings, and strict quote-level scoring; this is an offline synthetic regression result, **not** real-world model accuracy or full mobile/browser verification.
+
+
 ## 5.2.0 prototype — candidate release-control inventory (pending manual PDF acceptance)
 
 - Added a separate numbered-policy release-readiness form and Markdown export for candidate controls grouped by rule-based categories.

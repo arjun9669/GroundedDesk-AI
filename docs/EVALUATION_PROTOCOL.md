@@ -65,3 +65,9 @@ Avoid private company documents, account details, employer secrets, and anything
 6. Log misses, false positives, misclassification, incomplete sentences, and source mismatches. Do not conclude that passing smoke tests establishes all release requirements.
 
 The separate **Atlas 15-question answer key** contains direct, cross-document and deliberate-refusal cases. The 5.2 candidate extractor is **not** a replacement for cross-document or general QA evaluation. Do not report a 15-question score until each case has been executed with the intended appropriate workflow and scored against its answer key. 
+
+## E. Atlas 15-question PDF-derived regression baseline (2026-10-10)
+
+The separately supplied fictional Atlas PDF corpus and human-created answer key were run through the repository's deterministic Keyword Q&A and two-document Comparison functions using text extracted from the original PDFs, without shipping them in the repository. **Results: 9 PASS / 4 PARTIAL / 2 FAIL** under a stricter *displayed-quote* scoring rule. See the [15-case report, provenance and failure details](ATLAS_15_QUESTION_BASELINE.md). A retrieved document excerpt containing the right answer is only partial if the visible selected answer quotes the wrong sentence. Comparison evidence must visibly support each side; literal source match alone is insufficient.
+
+This is an **offline engine run**, not a Safari upload test, not a test of 5.2 release-control extraction on 15 questions, not a measurement of MiniLM/Qwen, and not an independently held-out real-world benchmark. Preserve the known failed and partial cases in all future re-runs; never silently discard or reclassify them.
