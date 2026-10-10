@@ -96,6 +96,14 @@ test("5.2 bounds output and discloses section and item caps",()=>{
   assert.match(formatPolicyChecklistMarkdown(out),/16 numbered sections were not scanned/);
   assert.match(formatPolicyChecklistMarkdown(out),/candidate sentences were omitted/);
 });
+test("5.2 counts candidates lost to the per-section cap",()=>{
+  const dense={id:"dense",name:"dense.txt",text:"G-01 Release approvals "+Array.from({length:8},(_,i)=>
+    "Control "+i+" requires written approval.").join(" ")};
+  const out=buildPolicyChecklist("What approvals are needed before release?",dense);
+  assert.equal(out.sources.length,5);
+  assert.equal(out.omittedCandidates,3);
+  assert.match(formatPolicyChecklistMarkdown(out),/3 candidate sentences were omitted/);
+});
 test("5.2 keeps instruction-shaped data out of actionable quotes",()=>{
   const out=buildPolicyChecklist(question,atlas);
   const md=formatPolicyChecklistMarkdown(out);
