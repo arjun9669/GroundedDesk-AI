@@ -1,5 +1,12 @@
 # Changelog
 
+### 5.3.3 — Real Chrome r18 Atlas 15 acceptance (2026-10-11)
+
+- The user-submitted Chrome retest with actual local MiniLM on the original three Atlas PDFs reported **15/15 complete, correctly supported cases**, with **15/15 cases containing only relevant citations**. The **D02 irrelevant extras were eliminated**; 16/16 displayed quotations matched their original PDF text, and all three deliberate refusals had zero citations.
+- Of 15 cases, **11** ran via real Hybrid Q&A and **4** via separate lexical Comparison; this is a **known in-sample corpus**, not held-out MiniLM accuracy or production readiness.
+- Preserved [full r18 validation](docs/ATLAS15_R18_CHROME_HYBRID_ACCEPTANCE.md), with r17/r16 baselines unchanged, a stale D06 clipboard capture corrected by rerun, and the **independent Meridian 24 marked NOT RUN**. This is a documentation-only change.
+
+
 ## 5.3.3 — Hybrid citation precision guard (r18)
 
 - Follow-up to the [r17 Chrome Atlas 15 report](docs/ATLAS15_R17_CHROME_HYBRID_RETEST.md): D02 answered the evidence-package question correctly but displayed two irrelevant secondary citations.

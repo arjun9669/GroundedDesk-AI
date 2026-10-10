@@ -40,4 +40,4 @@ Using the same original three fictional Atlas PDFs, real Chrome/on-device MiniLM
 4. Report **answer completeness** and **all-citation relevance** separately. Preserve historic r16/r17 scores unchanged, and record regressions, partials, or unexpected citations if they occur.
 5. Follow with **new non-sensitive, independently labeled PDFs**: original Atlas cases were already used to tune development, so they cannot establish generalizable MiniLM answer accuracy.
 
-**Status:** Pending real Chrome MiniLM r18 validation. Passing CI only closes automated checks, not this acceptance gate.
+**Status (2026-10-11): Original Atlas Chrome MiniLM acceptance PASS.** The [actual r18 browser test](ATLAS15_R18_CHROME_HYBRID_ACCEPTANCE.md) reports 15/15 complete and source-relevant cases, including a single correct D02 Governance citation; all 16 displayed quotations matched their original PDF text. The frozen **independent Meridian 24 remains NOT RUN**. This is not an independent production accuracy estimate.
