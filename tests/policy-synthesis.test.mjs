@@ -136,9 +136,9 @@ test("5.2 browser controls, separate export and cache-busting wiring exist",()=>
     assert.match(html,new RegExp('id="'+id+'"'));
     assert.match(app,new RegExp(id));
   }
-  assert.match(html,/app\.mjs\?v=20261010-r17/);
-  assert.match(app,/policy-synthesis\.mjs\?v=20261010-r17/);
-  assert.match(app,/research\.mjs\?v=20261010-r17/);
+  assert.match(html,/app\.mjs\?v=20261010-r18/);
+  assert.match(app,/policy-synthesis\.mjs\?v=20261010-r18/);
+  assert.match(app,/research\.mjs\?v=20261010-r18/);
   assert.match(research,/export function numberedPolicySections/);
   assert.match(source,/source verification failed/);
   assert.match(app,/formatPolicyChecklistMarkdown\(currentResearch\)/);
