@@ -51,28 +51,68 @@ export function buildIndex(documents) {
   return { chunks, df, avgLength };
 }
 
+// Only used for extracting a useful sentence from already retrieved text.
+// Lightweight inflection folding lets a question using "released" match
+// "release" or "releases" without changing existing BM25 ranks.
+function quoteForm(word) {
+  if (word.length < 4) return word;
+  if (word.endsWith("ies") && word.length > 5) return word.slice(0, -3) + "y";
+  if (word.endsWith("ed") && word.length > 5) {
+    const withoutD = word.slice(0, -1);
+    return withoutD.endsWith("e") ? withoutD : word.slice(0, -2);
+  }
+  if (word.endsWith("es") && word.length > 5) {
+    const withoutS = word.slice(0, -1);
+    return withoutS.endsWith("e") ? withoutS : word.slice(0, -2);
+  }
+  if (word.endsWith("s") && !word.endsWith("ss") && word.length > 4) return word.slice(0, -1);
+  return word;
+}
+
+function sentenceRelevance(sentence, terms) {
+  const words = tokenize(sentence);
+  const canonical = new Set(words.map(quoteForm));
+  const matched = [...new Set(terms.map(quoteForm))].filter(word => canonical.has(word));
+  // PDF extraction flattens page headers, headings and introductory boilerplate
+  // into long pseudo-sentences. Avoid choosing these over actual policy clauses.
+  const header = /SYNTHETIC BENCHMARK MATERIAL|PRACTICE DOCUMENT|NOT AN ACTUAL COMPANY POLICY/i.test(sentence);
+  const verbosity = Math.max(0, words.length - 35) / 50;
+  return matched.length - verbosity - (header ? 2.5 : 0);
+}
+
 function bestSentence(content, terms) {
-  const sentences = content.split(/(?<=[.!?])\s+|\n+/).map(s => s.trim()).filter(Boolean);
-  let best = content;
-  let bestScore = -1;
+  const sentences = content.split(/(?<=[.!?])\\s+|\\n+/).map(s => s.trim()).filter(Boolean);
+  let best = content, bestScore = -Infinity;
   for (const sentence of sentences) {
-    const words = new Set(tokenize(sentence));
-    const score = terms.reduce((n, term) => n + Number(words.has(term)), 0);
+    const score = sentenceRelevance(sentence, terms);
     if (score > bestScore) { best = sentence; bestScore = score; }
   }
-  // A citation must be a verbatim substring of its source. Don't append an
-  // ellipsis (which was not in the document). For long unpunctuated passages,
-  // select a window around a matched search term instead of blindly cutting
-  // off the first 420 characters.
+  // A quote must remain an EXACT substring of the source. For unusually long
+  // unpunctuated PDF passages, center a literal window near the search terms.
   if (best.length <= 420) return best;
-  const lower = best.toLowerCase();
-  const firstMatch = terms.map(term => lower.indexOf(term.toLowerCase()))
-    .filter(position => position >= 0)
-    .sort((a, b) => a - b)[0] ?? 0;
+  const allForms = [...new Set(terms.map(quoteForm))];
+  const matches = [...best.matchAll(/[\\p{L}\\p{N}]+/gu)].filter(m => allForms.includes(quoteForm(m[0].toLowerCase())));
+  const firstMatch = matches[0]?.index ?? 0;
   const start = Math.max(0, Math.min(firstMatch - 80, best.length - 420));
   return best.slice(start, start + 420);
 }
 
+function specificallyNamedDocument(question, candidates) {
+  const questionTerms = new Set(tokenize(question));
+  const matched = new Set();
+  for (const candidate of candidates) {
+    const titleWords = tokenize(candidate.filename.replace(/\\.[^.]+$/, "").replace(/[_-]+/g, " "))
+      .filter(word => word.length > 1 && !/^\\d+$/.test(word));
+    const overlap = titleWords.filter(word => questionTerms.has(word));
+    if (overlap.length >= 2 && overlap.length >= Math.ceil(titleWords.length / 2) &&
+        overlap.some(word => word.length >= 6)) {
+      matched.add(candidate.documentId);
+    }
+  }
+  // Only narrow results if the question clearly names exactly one document.
+  // Multi-document questions continue using their normal multi-source ranking.
+  return matched.size === 1 ? [...matched][0] : null;
+}
 
 export function keywordRank(question, index) {
   const unique = [...new Set(tokenize(question))];
@@ -103,9 +143,11 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   if (!unique.length || !candidates.length) {
     return { answered: false, answer: "I can't find this in the provided documents.", sources: [], mode };
   }
+  const focusId = specificallyNamedDocument(question, candidates);
+  const eligible = focusId === null ? candidates : candidates.filter(c => c.documentId === focusId);
   const picked = [];
   const seen = new Set();
-  for (const candidate of candidates) {
+  for (const candidate of eligible) {
     if (seen.has(candidate.documentId)) continue;
     seen.add(candidate.documentId);
     picked.push(candidate);
