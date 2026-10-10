@@ -1,11 +1,11 @@
-import { buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs";
-import { hybridRank } from "./hybrid.mjs";
-import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs";
-import { createEvidenceReport } from "./report.mjs";
-import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs";
-import { buildResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261010-r7";
+import { hybridRank } from "./hybrid.mjs?v=20261010-r7";
+import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r7";
+import { createEvidenceReport } from "./report.mjs?v=20261010-r7";
+import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r7";
+import { buildResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261010-r7";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261010-r7";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261010-r7";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -928,6 +928,8 @@ $("export-quality").addEventListener("click", () => {
 });
 
 async function init() {
+  const build = $("retrieval-build");
+  if (build) build.textContent = "Loaded retrieval build: " + RETRIEVAL_BUILD;
   for (const [path, name] of sampleFiles) {
     try {
       const response = await fetch(path);
