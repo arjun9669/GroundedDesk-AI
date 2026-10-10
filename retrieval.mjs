@@ -1,4 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
+export const RETRIEVAL_BUILD = "2026-10-10-r7";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -151,7 +152,7 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   if (!Array.isArray(candidates)) throw new TypeError("Invalid ranked candidates");
   const unique = [...new Set(tokenize(question))];
   if (!unique.length || !candidates.length) {
-    return { answered: false, answer: "I can't find this in the provided documents.", sources: [], mode };
+    return { answered: false, answer: "I can't find this in the provided documents.", sources: [], mode, retrievalBuild: RETRIEVAL_BUILD };
   }
   const focusId = specificallyNamedDocument(question, candidates);
   const eligible = focusId === null ? candidates : candidates.filter(c => c.documentId === focusId);
@@ -176,7 +177,7 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
     picked.push(candidate);
     if (picked.length >= maxSources) break;
   }
-  if (!picked.length) return { answered: false, answer: "I can't find this in the provided documents.", sources: [], mode };
+  if (!picked.length) return { answered: false, answer: "I can't find this in the provided documents.", sources: [], mode, retrievalBuild: RETRIEVAL_BUILD };
   const sources = picked.map((candidate, i) => ({
     citation: i + 1, id: candidate.id, documentId: candidate.documentId,
     filename: candidate.filename, excerpt: candidate.content,
@@ -189,7 +190,7 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   return {
     answered: true,
     answer: sources.map(s => `[${s.citation}] ${s.quote}`).join("\n\n"),
-    sources, mode,
+    sources, mode, retrievalBuild: RETRIEVAL_BUILD,
     note: "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
   };
 }
