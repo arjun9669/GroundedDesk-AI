@@ -375,6 +375,7 @@ function renderResult(question, result) {
   } else {
     view.append(make("p", "result-footnote", "Try a different question or add a document containing relevant information. No answer was invented."));
   }
+  return result; // return the *guarded* result for recent history and status.
 }
 
 async function ask(question) {
@@ -421,15 +422,19 @@ async function ask(question) {
       }
     }
     if (startedAt !== indexVersion) result = answerQuestion(value, indexed);
-    renderResult(value, result);
+    result = renderResult(value, result);
     addTurn(value, result);
-    notify(result.answered ? "Evidence retrieved locally." : "No matching evidence in this session.");
+    if (result.mode === "Evidence integrity guard") {
+      notify("Answer withheld because a source citation could not be verified.", true);
+    } else {
+      notify(result.answered ? "Evidence retrieved locally." : "No matching evidence in this session.");
+    }
   } catch (error) {
     // Fail safe: preserve answer availability and don't mislabel lexical as semantic.
     $("retrieval-mode").value = "keyword";
     const fallback = answerQuestion(value, indexed);
-    renderResult(value, fallback);
-    addTurn(value, fallback);
+    const guardedFallback = renderResult(value, fallback);
+    addTurn(value, guardedFallback);
     setSemanticStatus("Hybrid retrieval could not complete; returned to working keyword search.", true);
     notify("Semantic query failed, so keyword fallback was used. " + (error instanceof Error ? error.message : ""), true);
   } finally {

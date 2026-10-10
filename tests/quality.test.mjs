@@ -94,6 +94,9 @@ test("5.0 HTML and module wiring exist for browser evaluation and independent de
     assert.match(app,new RegExp(id));
   }
   assert.match(app,/verifyEvidenceResult\(result, documents\)/);
+  assert.match(app,/return result; \/\/ return the \*guarded\* result/);
+  assert.match(app,/result = renderResult\(value, result\)/);
+  assert.match(app,/addTurn\(value, guardedFallback\)/);
   assert.match(app,/evaluateKeywordFixture\(fixture, documents\)/);
   assert.match(html,/github\.com\/arjun9669\/GroundedDesk-AI/);
 });
