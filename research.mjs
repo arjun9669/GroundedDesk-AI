@@ -84,6 +84,106 @@ export function buildResearchResult(question, documents, index = buildIndex(docu
   };
 }
 
+
+/**
+ * GroundedDesk AI 5.1 Phase 1 — bounded, deterministic policy-section scan.
+ * Runs separately from the default keyword answer path. Every returned quote
+ * is a literal substring of the selected, whitespace-normalized document.
+ * Section matching is lexical, never a claim that all obligations are covered.
+ */
+const POLICY_SECTION_LIMIT = 8;
+const POLICY_QUOTE_LIMIT = 560;
+const GENERIC_POLICY_TERMS = new Set([
+  "ai", "policy", "policies", "governance", "system", "systems", "according",
+  "document", "documents", "about", "explain", "summarize", "summary",
+  "list", "all", "every", "which", "what", "requirement", "requirements"
+]);
+const normalizedSource = value => String(value).replace(/\r\n?/g,"\n").replace(/[ \t]+/g," ").trim();
+
+function policyTerm(word) {
+  if (word.endsWith("ies") && word.length > 5) return word.slice(0,-3)+"y";
+  if (word.endsWith("ed") && word.length > 5) {
+    const noD=word.slice(0,-1);
+    return noD.endsWith("e") ? noD : word.slice(0,-2);
+  }
+  if (word.endsWith("es") && word.length > 5) {
+    const noS=word.slice(0,-1);
+    return noS.endsWith("e") ? noS : word.slice(0,-2);
+  }
+  if (word.endsWith("s") && word.length > 4 && !word.endsWith("ss")) return word.slice(0,-1);
+  return word;
+}
+
+function policySections(text) {
+  // Match printed clause markers such as G-01, G-02 and R-07. Document-cover
+  // identifiers (e.g. AGP-01) are excluded by selecting the dominant prefix.
+  const markers = [...text.matchAll(/\b([A-Z]{1,4})-(\d{2,3})\s+([A-Z][A-Za-z-]+)/g)];
+  if (!markers.length) return [];
+  const counts = new Map();
+  for (const m of markers) counts.set(m[1],(counts.get(m[1])||0)+1);
+  const prefix = [...counts].sort((a,b)=>b[1]-a[1]||a[0].length-b[0].length)[0][0];
+  const selected = markers.filter(m=>m[1]===prefix);
+  return selected.map((m,i)=>{
+    const next=selected[i+1]?.index ?? text.length;
+    return { sectionId:m[1]+"-"+m[2], position:m.index,
+      passage:text.slice(m.index,next).trim() };
+  }).filter(section=>section.passage.length>section.sectionId.length+5);
+}
+
+function boundedPolicyQuote(passage) {
+  const ends = [...passage.matchAll(/[.!?](?=\s|$)/g)];
+  const preferred = ends.length>=3 ? ends[2].index+1 :
+    ends.length ? ends[ends.length-1].index+1 : passage.length;
+  const hardEnd = Math.min(preferred,POLICY_QUOTE_LIMIT);
+  let quote=passage.slice(0,hardEnd).trimEnd();
+  if (hardEnd<passage.length && hardEnd===POLICY_QUOTE_LIMIT) {
+    const cut=quote.lastIndexOf(" ");
+    if (cut>POLICY_QUOTE_LIMIT/2) quote=quote.slice(0,cut);
+  }
+  return { quote, truncated:quote.length<passage.length };
+}
+
+export function buildPolicyResearchResult(question, document) {
+  const plan = planResearch(question);
+  if (!document || typeof document.id!=="string" || !document.id ||
+      typeof document.name!=="string" || !document.name ||
+      typeof document.text!=="string" || document.text.length>180000) {
+    throw new Error("Choose a valid loaded policy document.");
+  }
+  const full=normalizedSource(document.text);
+  const sections=policySections(full);
+  const terms=new Set(tokenize(plan.query).filter(w=>!GENERIC_POLICY_TERMS.has(w)).map(policyTerm));
+  const ranked=sections.map(section=>{
+    const found=new Set(tokenize(section.passage).map(policyTerm));
+    return { ...section, matches:[...terms].filter(term=>found.has(term)).length };
+  });
+  // At least one meaningful question term must occur in the actual section.
+  // Empty/irrelevant questions never trigger a whole-document evidence dump.
+  const relevant=ranked.filter(section=>section.matches>0);
+  // Pick higher-overlap sections first, then restore document order in reports.
+  const selected=relevant.sort((a,b)=>b.matches-a.matches||a.position-b.position)
+    .slice(0,POLICY_SECTION_LIMIT).sort((a,b)=>a.position-b.position);
+  const sources=selected.map((section,i)=>{
+    const picked=boundedPolicyQuote(section.passage);
+    return { citation:i+1,documentId:document.id,filename:document.name,
+      sectionId:section.sectionId,excerpt:section.passage,quote:picked.quote,
+      truncated:picked.truncated,warning:hasInstructionRisk(section.passage) };
+  });
+  for (const source of sources) {
+    if (!full.includes(source.excerpt) || !source.excerpt.includes(source.quote))
+      throw new Error("Policy section provenance verification failed.");
+  }
+  return {
+    kind:"policy-research",question:plan.query,documentId:document.id,
+    filename:document.name,mode:"Deterministic multi-section policy research (no LLM)",
+    sources,answered:sources.length>0,sectionCount:sections.length,
+    matchingSectionCount:relevant.length,omittedMatchingSections:Math.max(0,relevant.length-sources.length),
+    flaggedSources:sources.filter(source=>source.warning).length,
+    limit:POLICY_SECTION_LIMIT,
+    note:"A bounded lexical scan of numbered sections, not a complete policy audit or proof of requirements."
+  };
+}
+
 /** Pairs exact source quotations. These are not inferred agreements or contradictions. */
 export function compareDocuments(documentA, documentB, question = "") {
   if (!documentA || !documentB || documentA.id === documentB.id) {
