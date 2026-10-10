@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#0b1726"/>
   <meta name="description" content="GroundedDesk AI 5.0 — free browser-side document intelligence, local AI options, multi-document evidence research and measurable source evaluation."/>
   <title>GroundedDesk AI 5.0 | Evidence-First Document Research</title>
-  <link rel="stylesheet" href="./styles.css?v=20261010-r12"/>
-  <script defer type="module" src="./app.mjs?v=20261010-r12"></script>
+  <link rel="stylesheet" href="./styles.css?v=20261010-r13"/>
+  <script defer type="module" src="./app.mjs?v=20261010-r13"></script>
 </head>
 <body>
   <div class="app-shell">
@@ -167,6 +167,15 @@
               <textarea id="research-query" rows="2" maxlength="600" placeholder="Example: How do our documents describe controls and monitoring?" required></textarea>
               <button type="submit" id="run-research">Gather cited evidence</button>
               <p>Workflow: retrieve matching passages → check document coverage → report gaps and suspicious instructions. It is not autonomous web browsing.</p>
+            </form>
+            <form id="policy-research-form" class="research-panel">
+              <h3>5.1 · Multi-section policy research</h3>
+              <label for="policy-document">Policy document to inspect</label>
+              <select id="policy-document" required aria-label="Document for policy section research"></select>
+              <label for="policy-query">What requirements or controls should we look for?</label>
+              <textarea id="policy-query" rows="2" maxlength="600" placeholder="Example: What does the AI Governance Policy require before an AI system can be released?" required></textarea>
+              <button type="submit" id="run-policy-research">Gather evidence across sections</button>
+              <p>Scans numbered sections such as G-01 and G-02, extracts up to eight source-verbatim passages, and reports coverage gaps. This is not a complete policy audit or an AI-generated summary. Regular Keyword mode is unchanged.</p>
             </form>
             <form id="compare-form" class="research-panel">
               <h3>Side-by-side document comparison</h3>
