@@ -191,7 +191,8 @@ function evidenceSentenceScore(question,sentence) {
   if (/\b(?:high.risk|high risk)\b/i.test(question) && /\bhigh\b.{0,20}\brisk\b/i.test(sentence)) score+=2;
   if (/\bquarterly\b/i.test(question) && /\bquarterly\b/i.test(sentence)) score+=3;
   if (/\bgovernance review\b/i.test(question) && /\bgovernance review\b/i.test(sentence)) score+=2;
-  if (/\b(?:factual|correctness|entailment)\b/i.test(question) && /\b(?:does not prove|doesn.t establish|structural check|structural only)\b/i.test(sentence)) score+=4;
+  if (/\b(?:factual|correctness|entailment)\b/i.test(question) && /\b(?:does not prove|doesn.t establish|structural check|structural only)\b/i.test(sentence)) score+=7;
+  if (/\b(?:numbers?|numbering)\b/i.test(question) && /\b(?:source-number|citation number|citation id)\b/i.test(sentence)) score+=2;
   if (/\b(?:versus|vs\.?|compared?\s+to|does\s+not\s+prove)\b/i.test(question) &&
     /\b(?:does not|cannot|not enough|insufficient|doesn't)\b/i.test(sentence)) score+=1;
   // Clauses that set a concrete duty are more useful than references to other
@@ -230,7 +231,7 @@ function requestedAttribute(question) {
   if (!match) return null;
   const focus = tokenize(match[1]).filter(word => ![
     "total", "exact", "overall", "current", "estimated", "average", "latest",
-    "provenance", "factual", "correctness", "evaluation",
+    "provenance", "factual", "correctness", "evaluation", "target",
     "number", "amount", "value"
   ].includes(word)).at(-1);
   return focus || null;
@@ -239,7 +240,14 @@ function requestedAttribute(question) {
 function missingRequestedAttribute(question, sources) {
   const focus = requestedAttribute(question);
   if (!focus) return false;
-  if (focus instanceof RegExp) return !sources.some(source => focus.test(source.quote));
+  if (focus instanceof RegExp) {
+    const requested=String(question).toLowerCase();
+    if (/\b(?:password|passphrase)\b/.test(requested)) {
+      // Merely mentioning a password policy is not disclosing a password value.
+      return !sources.some(source => /\b(?:password|passphrase)\s*(?::|=|is\s+|equals\s+|set\s+to\s+)[\w!@#$%^&*.-]{3,}/i.test(source.quote));
+    }
+    return !sources.some(source => focus.test(source.quote));
+  }
   const canonical = quoteForm(focus);
   return !sources.some(source =>
     tokenize(source.quote).some(word => quoteForm(word) === canonical));
@@ -429,6 +437,17 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
       citedSources = sources.filter((source, i) =>
         i === 0 || coverage(source.quote) >= leadCoverage * 0.7);
       citedSources = citedSources.map((source, i) => ({ ...source, citation: i + 1 }));
+    }
+  }
+  // Relevance of secondary citations is evaluated on displayed text.
+  // Exclude weak, irrelevant quotes without changing hybrid or comparison.
+  if (!multiDocumentIntent && !usesHybridScores && citedSources.length>1 &&
+      picked.every(candidate => typeof candidate.sourceText==="string")) {
+    const lead=evidenceSentenceScore(question,citedSources[0].quote);
+    if (Number.isFinite(lead) && lead>0) {
+      citedSources=citedSources.filter((item,i)=>i===0 ||
+        evidenceSentenceScore(question,item.quote)>=lead*0.7)
+        .map((item,i)=>({...item,citation:i+1}));
     }
   }
   // Reject false acceptance when a query asks for an attribute (e.g. salary)
