@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.0.2 — Atlas PDF relevance regression
+
+- Fixed a user-reported failure where PDF header boilerplate was quoted instead of the relevant AI governance release-approval clause.
+- Scored candidate sentences with lightweight inflection matching (for example, "released" and "releases") and downweighted long synthetic PDF headers.
+- When a question clearly names one specific document, limited ordinary Q&A citations to that document instead of presenting unrelated vendor/incident excerpts.
+- Added a regression test reproducing the reported Atlas policy question, preserving literal source provenance, and checking that multi-document questions and unrelated-query refusals still work.
+- This improves extractive *relevance*, not verified claim-level entailment or generative answer truth.
+
+
 ## 5.0.1 — Evaluation measurement quality
 
 - Replaced misleading rounded one-shot `0.000 ms` cards with adaptive, warmed, repeated keyword timings in microseconds.
