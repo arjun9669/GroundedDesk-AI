@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r9";
+export const RETRIEVAL_BUILD = "2026-10-10-r10";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
