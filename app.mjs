@@ -3,7 +3,7 @@ import { hybridRank } from "./hybrid.mjs?v=20261010-r12";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r12";
 import { createEvidenceReport } from "./report.mjs?v=20261010-r12";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r12";
-import { buildResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261010-r12";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261010-r12";
 import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261010-r12";
 import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261010-r12";
 
@@ -685,7 +685,7 @@ function clearResearch() {
 }
 
 function updateResearchControls() {
-  for (const selectId of ["compare-left", "compare-right"]) {
+  for (const selectId of ["compare-left", "compare-right", "policy-document"]) {
     const select = $(selectId);
     if (!select) continue;
     const previous = select.value;
@@ -703,6 +703,7 @@ function updateResearchControls() {
   }
   $("run-comparison").disabled = documents.length < 2;
   $("run-research").disabled = documents.length < 1;
+  $("run-policy-research").disabled = documents.length < 1;
 }
 
 function researchEl(tag, cls, text = "") {
@@ -718,7 +719,8 @@ function presentResearch(result) {
   panel.hidden = false;
   body.replaceChildren();
   $("research-result-title").textContent = result.kind === "research"
-    ? "Cross-document evidence and research steps" : "Side-by-side excerpts";
+    ? "Cross-document evidence and research steps" : result.kind === "policy-research"
+      ? "5.1 · Section-by-section policy evidence" : "Side-by-side excerpts";
 
   if (result.kind === "research") {
     body.append(researchEl("p", "research-summary",
@@ -727,6 +729,9 @@ function presentResearch(result) {
     const steps = researchEl("ol", "research-steps");
     for (const step of result.plan.steps) steps.append(researchEl("li", "", step.title + " — " + step.detail));
     body.append(steps);
+  } else if (result.kind === "policy-research") {
+    body.append(researchEl("p", "research-summary",
+      `${result.sources.length} sections quoted from ${result.matchingSectionCount} keyword-matching sections (${result.sectionCount} numbered sections detected). Bounded evidence scan, not an exhaustive policy summary.`));
   } else {
     body.append(researchEl("p", "research-summary",
       "Shared vocabulary: " + (result.sharedTerms.join(", ") || "No shared long keywords.") +
@@ -736,10 +741,13 @@ function presentResearch(result) {
   const evidenceGrid = researchEl("div", "research-evidence-grid");
   for (const source of result.sources) {
     const card = researchEl("article", "research-evidence");
-    card.append(researchEl("h4", "", "[" + source.citation + "] " + source.filename));
+    card.append(researchEl("h4", "", "[" + source.citation + "] " +
+      (source.sectionId ? source.sectionId + " · " : "") + source.filename));
     const excerpt = result.kind === "comparison" ? source.excerpt : source.quote;
     card.append(researchEl("p", "research-evidence-text",
       excerpt || "No matching passage found for this topic using keyword retrieval."));
+    if (source.truncated) card.append(researchEl("p", "research-gaps",
+      "Excerpt only. Review this section for additional conditions."));
     if (source.warning) card.append(researchEl("p", "research-risk",
       "Potential instruction-like content detected. Treated as untrusted source text, never an instruction."));
     evidenceGrid.append(card);
@@ -748,6 +756,11 @@ function presentResearch(result) {
     body.append(researchEl("p", "research-empty", "No matching evidence found in the loaded documents."));
   } else {
     body.append(evidenceGrid);
+  }
+  if (result.kind === "policy-research") {
+    body.append(researchEl("p", "research-gaps", result.omittedMatchingSections
+      ? `${result.omittedMatchingSections} matching sections omitted by the section limit. This report can miss other relevant policy controls.`
+      : "The scan may miss sections without overlapping terms. Review the complete policy before relying on it."));
   }
   if (result.kind === "research" && result.uncovered.length) {
     body.append(researchEl("p", "research-gaps",
@@ -770,6 +783,20 @@ $("research-form").addEventListener("submit", event => {
     notify(result.answered ? "Source-grounded multi-document report prepared." : "No evidence matched this research question.");
   } catch (error) {
     notify(error instanceof Error ? error.message : "Research failed.", true);
+  }
+});
+
+$("policy-research-form").addEventListener("submit", event => {
+  event.preventDefault();
+  try {
+    const selected = documents.find(doc => doc.id === $("policy-document").value);
+    if (!selected) throw new Error("Select a loaded policy document.");
+    const result = buildPolicyResearchResult($("policy-query").value, selected);
+    presentResearch(result);
+    notify(result.answered ? "Section-by-section policy evidence prepared." :
+      "No matching numbered policy sections found; consider a narrower question or a text-search query.");
+  } catch (error) {
+    notify(error instanceof Error ? error.message : "Policy research failed.", true);
   }
 });
 
