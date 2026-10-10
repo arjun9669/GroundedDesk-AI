@@ -158,7 +158,7 @@ function requestedEvidenceFocus(question) {
   if (/password|passphrase|credential/.test(word)) {
     // Operational questions about credential rotation are not requests to
     // disclose the credential itself.
-    if (/^(?:how|when|why)\b|\b(?:policy|rotation|rotated|frequency|handling|management)\b/i.test(query)) return null;
+    if (/^(?:how|when|why)\b|\b(?:policy|rotation|rotated|frequency|handling|management)\b/i.test(question)) return null;
     return /\b(password|passphrase|credential|secret)\b/i;
   }
   if (/birth/.test(word)) return /\b(birth|born|dob)\b/i;
