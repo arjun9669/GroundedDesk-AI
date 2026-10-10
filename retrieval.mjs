@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r16";
+export const RETRIEVAL_BUILD = "2026-10-10-r17";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -447,11 +447,16 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
         }
       }
     }
-    // Prefer complete source sentences over a keyword-heavy fragment of one
-    // BM25 chunk; never substitute an invented or non-source quotation.
-    if (!usesHybridScores && typeof candidate.sourceText === "string") {
+    // Search complete source sentences after MiniLM/BM25 has selected a
+    // candidate document. An embedding score ranks passages; it does not
+    // guarantee that the selected 760-char chunk contains the whole answer.
+    // For Hybrid, require strong question-to-sentence lexical alignment
+    // before overriding a semantic-only paraphrase with source-wide text.
+    if (typeof candidate.sourceText === "string") {
       const supported = bestSourceSentence(question, candidate.sourceText);
-      if (supported && candidate.sourceText.includes(supported)) {
+      const sourceEvidenceScore = supported ? evidenceSentenceScore(question, supported) : -Infinity;
+      if (supported && candidate.sourceText.includes(supported) &&
+          (!usesHybridScores || sourceEvidenceScore >= 4)) {
         quote = supported;
         // Keep enough original document context for the independent evidence
         // guard and reviewer, including neighboring untrusted *data* text.
@@ -490,15 +495,25 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
       citedSources = citedSources.map((source, i) => ({ ...source, citation: i + 1 }));
     }
   }
-  // Relevance of secondary citations is evaluated on displayed text.
-  // Exclude weak, irrelevant quotes without changing hybrid or comparison.
-  if (!multiDocumentIntent && !usesHybridScores && citedSources.length>1 &&
+  // Keep only sufficiently relevant secondary quotes when the leading answer
+  // has strong lexical evidence. Hybrid RRF ranks *chunks*, not answer claims;
+  // a real quote from another PDF may still be irrelevant to the question.
+  // Never apply this cross-source pruning to explicit comparisons or to
+  // semantic-only answers with no strong lexical sentence-level evidence.
+  if (!multiDocumentIntent && citedSources.length>1 &&
       picked.every(candidate => typeof candidate.sourceText==="string")) {
     const lead=evidenceSentenceScore(question,citedSources[0].quote);
-    if (Number.isFinite(lead) && lead>0) {
-      citedSources=citedSources.filter((item,i)=>i===0 ||
-        evidenceSentenceScore(question,item.quote)>=lead*0.7)
-        .map((item,i)=>({...item,citation:i+1}));
+    if (Number.isFinite(lead) && lead>=4) {
+      const materialTerms=[...new Set(tokenize(question).filter(w=>!GENERIC_EVIDENCE_TERMS.has(w)))];
+      const coverage=quote=>{
+        const words=new Set(tokenize(quote).map(quoteForm));
+        return materialTerms.filter(term=>hasForm(words,term)).length;
+      };
+      const leadCoverage=coverage(citedSources[0].quote);
+      citedSources=citedSources.filter((item,i)=>i===0 || (
+        evidenceSentenceScore(question,item.quote)>=lead*0.8 &&
+        (leadCoverage<2 || coverage(item.quote)>=leadCoverage*0.8)
+      )).map((item,i)=>({...item,citation:i+1}));
     }
   }
   // An RRF/semantic score is a ranking signal, NOT evidence that a quoted
