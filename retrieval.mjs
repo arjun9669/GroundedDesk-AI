@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r7";
+export const RETRIEVAL_BUILD = "2026-10-10-r8";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -98,6 +98,24 @@ function bestSentence(content, terms) {
   return best.slice(start, start + 420);
 }
 
+// If a keyword question asks for a specific attribute of an entity, a
+// matching organization name alone must not count as answering that attribute.
+// This is a conservative lexical guard, not a semantic or factuality judge.
+function missingRequestedAttribute(question, sources) {
+  const query = String(question);
+  const pattern = /^\\s*(?:what|which|who)\\s+(?:is|are|was|were)\\s+(?:(?:the|an?|their)\\s+)?(.+?)\\s+(?:of|for)\\s+/i;
+  const match = query.match(pattern);
+  if (!match) return false;
+  const focus = tokenize(match[1]).filter(word => ![
+    "total", "exact", "overall", "current", "estimated", "average", "latest",
+    "number", "amount", "value"
+  ].includes(word)).at(-1);
+  if (!focus) return false;
+  const canonical = quoteForm(focus);
+  return !sources.some(source =>
+    tokenize(source.quote).some(word => quoteForm(word) === canonical));
+}
+
 function explicitlyNamedDocuments(question, candidates) {
   const questionTerms = new Set(tokenize(question));
   const matched = new Set();
@@ -187,6 +205,14 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
     semanticScore: candidate.semanticScore ?? null,
     matchedTerms: unique.filter(term => candidate.tf.has(term)),
   }));
+  // Reject false acceptance when a query asks for an attribute (e.g. salary)
+  // but the cited passages only repeat the entity name or PDF cover metadata.
+  // Keep semantic/hybrid retrieval out of this keyword-specific heuristic.
+  if (!usesHybridScores && missingRequestedAttribute(question, sources)) {
+    return { answered:false, answer:"I can't find this in the provided documents.",
+      sources:[], mode, retrievalBuild: RETRIEVAL_BUILD,
+      note:"Question-specific attribute was absent from the cited evidence." };
+  }
   return {
     answered: true,
     answer: sources.map(s => `[${s.citation}] ${s.quote}`).join("\n\n"),
