@@ -181,6 +181,8 @@ function evidenceSentenceScore(question,sentence) {
   if (/scores?|scoring|ranges?|bands?/i.test(question) && /\b\d+\s+(?:through|to)\s+\d+\b/.test(sentence)) score+=4;
   if (/\bhigh\b/i.test(question) && /\bhigh\b/i.test(sentence) && /\b\d+\s+(?:through|to)\s+\d+\b/.test(sentence)) score+=4;
   if (/citations?|provenance/i.test(question) && /\bcitations?\b/i.test(sentence)) score+=3;
+  if (/\b(?:citation|citations|provenance)\b/i.test(question) && /\b(?:target|percentage|percent|rate)\b/i.test(question) &&
+    /\bcitations?\b/i.test(sentence) && /\b\d+\s*(?:percent|%)\b/i.test(sentence)) score+=5;
   if (/factual|correctness|entailment/i.test(question) && /\b(?:factual|factually|entailment|supported|support)\b/i.test(sentence)) score+=2;
   if (/\bretention|\bretain|\bretained|\bperiods?\b/i.test(question)
     && /\b(?:retained|retention|deletion|deleted|days|months|years)\b/i.test(sentence)) score+=3;
