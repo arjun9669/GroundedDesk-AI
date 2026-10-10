@@ -274,15 +274,18 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
     if (picked.length >= maxSources) break;
   }
   if (!picked.length) return { answered: false, answer: "I can't find this in the provided documents.", sources: [], mode, retrievalBuild: RETRIEVAL_BUILD };
-  const sources = picked.map((candidate, i) => ({
+  const sources = picked.map((candidate, i) => {
+    const excerpt = completeEvidenceContext(candidate);
+    return {
     citation: i + 1, id: candidate.id, documentId: candidate.documentId,
-    filename: candidate.filename, excerpt: candidate.content,
-    quote: bestSentence(candidate.content, unique, usesHybridScores ? null : requestedAttribute(question), /\b(?:scores?|ranges?|thresholds?|percentages?|amounts?|prices?|rates?)\b/i.test(question), /\b(?:and|or)\s+(?:who|what|which|when|where|how)\b/i.test(question)),
+    filename: candidate.filename, excerpt,
+    quote: bestSentence(excerpt, unique, usesHybridScores ? null : requestedAttribute(question), /\b(?:scores?|ranges?|thresholds?|percentages?|amounts?|prices?|rates?)\b/i.test(question), /\b(?:and|or)\s+(?:who|what|which|when|where|how)\b/i.test(question)),
     score: Math.round(candidate.score * 10000) / 10000,
     lexicalScore: candidate.lexicalScore ?? null,
     semanticScore: candidate.semanticScore ?? null,
     matchedTerms: unique.filter(term => candidate.tf.has(term)),
-  }));
+    };
+  });
   // Reject false acceptance when a query asks for an attribute (e.g. salary)
   // but the cited passages only repeat the entity name or PDF cover metadata.
   // Keep semantic/hybrid retrieval out of this keyword-specific heuristic.
