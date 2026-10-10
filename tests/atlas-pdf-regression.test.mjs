@@ -128,11 +128,11 @@ test("Cache-busted entry and module imports advertise the current retrieval buil
   const html=readFileSync(resolve(root,"index.html"),"utf8");
   const app=readFileSync(resolve(root,"app.mjs"),"utf8");
   const retrieval=readFileSync(resolve(root,"retrieval.mjs"),"utf8");
-  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r8"/);
+  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r9"/);
   assert.match(html,/id="retrieval-build"/);
-  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261010-r8"/);
+  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261010-r9"/);
   assert.match(app,/Loaded retrieval build:/);
-  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-10-r8"/);
+  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-10-r9"/);
 });
 
 test("user-reported Atlas CEO salary query refuses instead of citing organization names in PDF headers",()=>{
@@ -167,4 +167,38 @@ test("attribute refusal remains a general lexical condition, not a blacklist of 
   assert.match(result.sources[0].quote,/annual salary/i);
   assert.equal(verifyEvidenceResult(result,withFact).ok,true);
   assert.equal(answerQuestion("What is the operating budget of Atlas Research Group?",index).answered,true);
+});
+
+test("vendor disclosure question retrieves V-02 list, not V-01 trigger or PDF cover",()=>{
+  const vendor=[
+    "GROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 Page 1 PRACTICE DOCUMENT / VRA-03 External AI Vendor Assessment Guide Atlas Research Group | v1.1 | Simulated supplier evaluation",
+    "SYNTHETIC TEST CONTENT - NOT AN ACTUAL COMPANY POLICY OR AN OFFICIAL GOVERNMENT PUBLICATION.",
+    "This fictional procurement guide covers external providers of language models, hosted vector storage, and document parsing.",
+    "It distinguishes obligations of a supplier from those of the internal Incident Response Team.",
+    "V-01 Review trigger A Vendor Review is mandatory before allowing an external supplier to receive document text, query prompts containing customer records, or generated answer logs.",
+    "Local-only processing that sends no document content to a supplier may receive an abbreviated review, subject to Security Officer approval.",
+    "V-02 Required vendor disclosures Every vendor questionnaire must describe the data-flow diagram, hosting region, subprocessors, retention schedule, model-training use of customer data, incident contact, access logs, and deletion procedures.",
+    "A marketing statement that an AI service is private is insufficient evidence.",
+    "V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High."
+  ].join(" ");
+  const docs=[
+    {id:"v",name:"03_Atlas_Vendor_AI_Assessment.pdf",text:vendor},
+    {id:"g",name:"01_Atlas_AI_Governance_Policy.pdf",text:"G-01 Release authority Every AI release has a Model Owner, Product Sponsor and Security Officer. High-risk releases require written approval from the AI Release Council and Security Officer before deployment."},
+    {id:"i",name:"02_Atlas_Incident_Response_Runbook.pdf",text:"R-07 Closing an incident Two reviewers, the Incident Commander and the Security Officer, sign off on P1 closure."}
+  ];
+  const question="What information must an external AI vendor disclose in the Vendor AI Assessment?";
+  const result=answerQuestion(question,buildIndex(docs));
+  assert.equal(result.answered,true);
+  assert.equal(result.sources[0].filename,"03_Atlas_Vendor_AI_Assessment.pdf");
+  assert.match(result.sources[0].quote,/data-flow diagram, hosting region, subprocessors, retention schedule/i);
+  assert.match(result.sources[0].quote,/deletion procedures/i);
+  assert.doesNotMatch(result.sources[0].quote,/V-01 Review trigger/i);
+  assert.equal(verifyEvidenceResult(result,docs).ok,true);
+  assert.match(createEvidenceReport(question,result),/hosting region/);
+});
+
+test("disclosure vocabulary alternatives do not invent evidence in unrelated documents",()=>{
+  const docs=[{id:"a",name:"entity.txt",text:"Atlas Research Group holds a quarterly vendor review."}];
+  const result=answerQuestion("What information must an external supplier disclose?",buildIndex(docs));
+  assert.equal(result.answered,false);
 });

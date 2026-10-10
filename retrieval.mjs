@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r8";
+export const RETRIEVAL_BUILD = "2026-10-10-r9";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -143,6 +143,15 @@ function specificallyNamedDocument(question, candidates) {
   return named.size === 1 ? [...named][0] : null;
 }
 
+// Query-side lexical alternatives for common disclosure phrasing.
+ // A user's "disclose" can appear as "disclosures" or "describe" in a PDF;
+ // never edit source text or treat these synonyms as proof of an answer.
+const QUERY_ALIASES = {
+  disclose:["disclosure","disclosures","describe","describes"],
+  disclosure:["disclose","disclosures","describe"],
+  disclosures:["disclose","disclosure","describe"],
+};
+
 export function keywordRank(question, index) {
   const unique = [...new Set(tokenize(question))];
   if (!unique.length || !index.chunks.length) return [];
@@ -153,12 +162,17 @@ export function keywordRank(question, index) {
   for (const chunk of index.chunks) {
     let score = 0, matched = 0;
     for (const term of unique) {
-      const count = chunk.tf.get(term) ?? 0;
-      if (!count) continue;
+      const alternatives = [term, ...(QUERY_ALIASES[term] || [])];
+      const actualTerm = alternatives.find(word => chunk.tf.has(word));
+      if (!actualTerm) continue;
+      const count = chunk.tf.get(actualTerm);
       matched++;
-      const freq = index.df.get(term) ?? 0;
+      const freq = index.df.get(actualTerm) ?? 0;
       const idf = Math.log(1 + (n - freq + 0.5) / (freq + 0.5));
-      score += idf * (count * 2.2) / (count + 1.2 * (0.25 + 0.75 * chunk.tokens.length / index.avgLength));
+      const bm25 = idf * (count * 2.2) / (count + 1.2 * (0.25 + 0.75 * chunk.tokens.length / index.avgLength));
+      // Emphasize the requested disclosure action, not boilerplate title
+      // words (vendor, AI, assessment) repeated across cover pages.
+      score += bm25 * (term === "disclose" || term === "disclosures" || term === "disclosure" ? 2.5 : 1);
     }
     const fraction = matched / unique.length;
     // Explicit two-document requests can have many title words in the query,
