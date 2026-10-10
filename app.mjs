@@ -1,11 +1,11 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261010-r8";
-import { hybridRank } from "./hybrid.mjs?v=20261010-r8";
-import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r8";
-import { createEvidenceReport } from "./report.mjs?v=20261010-r8";
-import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r8";
-import { buildResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261010-r8";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261010-r8";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261010-r8";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261010-r9";
+import { hybridRank } from "./hybrid.mjs?v=20261010-r9";
+import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r9";
+import { createEvidenceReport } from "./report.mjs?v=20261010-r9";
+import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r9";
+import { buildResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261010-r9";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261010-r9";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261010-r9";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
