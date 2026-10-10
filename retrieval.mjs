@@ -179,6 +179,7 @@ function evidenceSentenceScore(question,sentence) {
   if (!matched) return -Infinity;
   const cleanQuestion=question.toLowerCase();
   if (/scores?|scoring|ranges?|bands?/i.test(question) && /\b\d+\s+(?:through|to)\s+\d+\b/.test(sentence)) score+=4;
+  if (/\bhigh\b/i.test(question) && /\bhigh\b/i.test(sentence) && /\b\d+\s+(?:through|to)\s+\d+\b/.test(sentence)) score+=4;
   if (/citations?|provenance/i.test(question) && /\bcitations?\b/i.test(sentence)) score+=3;
   if (/factual|correctness|entailment/i.test(question) && /\b(?:factual|factually|entailment|supported|support)\b/i.test(sentence)) score+=2;
   if (/\bretention|\bretain|\bretained|\bperiods?\b/i.test(question)
@@ -188,6 +189,9 @@ function evidenceSentenceScore(question,sentence) {
   if (/\b(?:accept|approvals?|authorize|sign.off)\b/i.test(question) &&
     /\b(?:written approval|written acceptance|approv\w*|acceptance)\b/i.test(sentence)) score+=2;
   if (/\b(?:high.risk|high risk)\b/i.test(question) && /\bhigh\b.{0,20}\brisk\b/i.test(sentence)) score+=2;
+  if (/\bquarterly\b/i.test(question) && /\bquarterly\b/i.test(sentence)) score+=3;
+  if (/\bgovernance review\b/i.test(question) && /\bgovernance review\b/i.test(sentence)) score+=2;
+  if (/\b(?:factual|correctness|entailment)\b/i.test(question) && /\b(?:does not prove|doesn.t establish|structural check|structural only)\b/i.test(sentence)) score+=4;
   if (/\b(?:versus|vs\.?|compared?\s+to|does\s+not\s+prove)\b/i.test(question) &&
     /\b(?:does not|cannot|not enough|insufficient|doesn't)\b/i.test(sentence)) score+=1;
   // Clauses that set a concrete duty are more useful than references to other
@@ -195,7 +199,7 @@ function evidenceSentenceScore(question,sentence) {
   if (/\b(?:must|requires?|shall|within|retained|deleted)\b/i.test(sentence)) score+=0.6;
   if (/\b(?:PRACTICE DOCUMENT|SYNTHETIC BENCHMARK MATERIAL|NOT AN ACTUAL COMPANY POLICY)\b/i.test(sentence)) score-=8;
   if (sentence.length>360) score-=(sentence.length-360)/55;
-  if (/\b(?:This is the .{0,60}deadline|in the Incident Response Runbook)\b/i.test(sentence)) score-=0.8;
+  if (/\b(?:This is the .{0,60}deadline|in the Incident Response Runbook)\b/i.test(sentence)) score-=3;
   return score;
 }
 // Returns a literal sentence in the original whitespace-normalized text.
@@ -226,6 +230,7 @@ function requestedAttribute(question) {
   if (!match) return null;
   const focus = tokenize(match[1]).filter(word => ![
     "total", "exact", "overall", "current", "estimated", "average", "latest",
+    "provenance", "factual", "correctness", "evaluation",
     "number", "amount", "value"
   ].includes(word)).at(-1);
   return focus || null;
