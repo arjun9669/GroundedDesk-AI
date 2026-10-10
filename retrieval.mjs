@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r9";
+export const RETRIEVAL_BUILD = "2026-10-10-r10";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -81,14 +81,39 @@ function sentenceRelevance(sentence, terms) {
   return matched.length - verbosity - (header ? 2.5 : 0);
 }
 
-function bestSentence(content, terms, requestedFocus = null) {
+function bestSentence(content, terms, requestedFocus = null, numericFocus = false, compound = false) {
   const sentences = content.split(/(?<=[.!?])\s+|\n+/).map(s => s.trim()).filter(Boolean);
-  let best = content, bestScore = -Infinity;
-  for (const sentence of sentences) {
+  let best = content, bestScore = -Infinity, bestIndex = -1;
+  for (const [i, sentence] of sentences.entries()) {
     const focusPresent = requestedFocus && tokenize(sentence).some(
       word => quoteForm(word) === quoteForm(requestedFocus));
-    const score = sentenceRelevance(sentence, terms) + (focusPresent ? 4 : 0);
-    if (score > bestScore) { best = sentence; bestScore = score; }
+    // For risk bands and similar numeric categories, a labeled interval is
+    // more relevant than an overall scoring scale.
+    const category = terms.find(term => ["high", "medium", "low", "critical", "moderate"].includes(term));
+    const categoryPresent = category && tokenize(sentence).some(word => quoteForm(word) === category);
+    const score = sentenceRelevance(sentence, terms) + (focusPresent ? 4 : 0)
+      + (numericFocus && /[0-9]/.test(sentence) ? 2.5 + (categoryPresent ? 1.5 : 0) : 0);
+    if (score > bestScore) { best = sentence; bestScore = score; bestIndex = i; }
+  }
+  // For an explicitly two-part question, add at most one adjacent sentence
+  // when it covers missing terms from the question. Preserve source wording.
+  if (compound && bestIndex >= 0) {
+    const covered = new Set(tokenize(best).map(quoteForm));
+    const missing = new Set(terms.map(quoteForm).filter(term => !covered.has(term)));
+    let improvement = 0;
+    for (const near of [bestIndex - 1, bestIndex + 1]) {
+      if (!sentences[near]) continue;
+      const gained = [...new Set(tokenize(sentences[near]).map(quoteForm))]
+        .filter(term => missing.has(term)).length;
+      if (!gained || gained <= improvement) continue;
+      const startText = sentences[Math.min(near, bestIndex)];
+      const finishText = sentences[Math.max(near, bestIndex)];
+      const from = content.indexOf(startText);
+      const to = content.indexOf(finishText, from) + finishText.length;
+      if (from < 0 || to <= from || to - from > 420) continue;
+      best = content.slice(from, to);
+      improvement = gained;
+    }
   }
   // A quote must remain an EXACT substring of the source. For unusually long
   // unpunctuated PDF passages, center a literal window near the search terms.
@@ -220,7 +245,7 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   const sources = picked.map((candidate, i) => ({
     citation: i + 1, id: candidate.id, documentId: candidate.documentId,
     filename: candidate.filename, excerpt: candidate.content,
-    quote: bestSentence(candidate.content, unique, usesHybridScores ? null : requestedAttribute(question)),
+    quote: bestSentence(candidate.content, unique, usesHybridScores ? null : requestedAttribute(question), /\b(?:scores?|ranges?|thresholds?|percentages?|amounts?|prices?|rates?)\b/i.test(question), /\b(?:and|or)\s+(?:who|what|which|when|where|how)\b/i.test(question)),
     score: Math.round(candidate.score * 10000) / 10000,
     lexicalScore: candidate.lexicalScore ?? null,
     semanticScore: candidate.semanticScore ?? null,
