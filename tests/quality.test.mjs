@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 import { buildIndex, answerQuestion } from "../retrieval.mjs";
 import { verifyEvidenceResult, evaluateKeywordFixture } from "../quality.mjs";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "../benchmark.mjs";
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const docs=[
@@ -53,8 +54,9 @@ test("5.0 browser evaluation engine measures actual labeled keyword results on s
   assert.equal(summary.citation_provenance_errors,0);
   assert.equal(summary.top1_source_accuracy_on_supported,1);
   assert.equal(summary.out_of_domain_refusal_rate,1);
-  assert.equal(summary.p50_latency_ms,1);
-  assert.equal(summary.p95_latency_ms,1);
+  assert.equal(summary.one_shot_clock_diagnostic.median_ms,1);
+  assert.equal(summary.one_shot_clock_diagnostic.p95_ms,1);
+  assert.equal(summary.one_shot_clock_diagnostic.trustworthy_for_fast_queries,false);
   assert.equal(summary.cases.length,28);
   assert.ok(summary.cases.every(c=>typeof c.passed==="boolean" && typeof c.top_source!=="undefined"));
 });
@@ -109,4 +111,63 @@ test("Security regression: untrusted document instructions are preserved as data
   assert.match(r.sources[0].excerpt,/Ignore previous instructions/);
   // This checks deterministic textual treatment, not resistance of a generative LLM.
   assert.equal(r.generated,undefined);
+});
+
+test("Repeated benchmark selects distinct supported source groups plus refusals",()=>{
+  const queries=selectBenchmarkQuestions(fixture.cases);
+  assert.equal(queries.length,10);
+  assert.equal(new Set(queries).size,queries.length);
+  assert.ok(queries.some(q=>q.includes("PostgreSQL")));
+  assert.ok(queries.some(q=>q.includes("AI")));
+  assert.ok(queries.some(q=>q.includes("Jupiter")));
+});
+
+test("Repeated benchmark measures batch means with a controlled clock (not fabricated real measurements)",()=>{
+  const questions=selectBenchmarkQuestions(fixture.cases).slice(0,3);
+  let tick=0;
+  const result=benchmarkKeywordQuestions(questions,docs,{
+    now:()=> {tick += 50; return tick;},minBatchMs:40,maxIterations:16,
+  });
+  assert.equal(result.status,"measured");
+  assert.equal(result.sample_questions,3);
+  assert.equal(result.measured_questions,3);
+  assert.equal(result.median_batch_mean_us,50000);
+  assert.equal(result.p95_batch_mean_us,50000);
+  assert.equal(result.samples.length,3);
+  assert.equal(result.samples[0].iterations,1);
+  assert.match(result.interpretation,/not individual-request tail latency/i);
+});
+
+test("Coarse or frozen clock returns explicit unavailable timing, never zero milliseconds",()=>{
+  const qs=["Where is document metadata?"];
+  const result=benchmarkKeywordQuestions(qs,docs,{
+    now:()=>123,minBatchMs:40,maxIterations:8,
+  });
+  assert.equal(result.status,"insufficient_timer_resolution");
+  assert.equal(result.measured_questions,0);
+  assert.equal(result.median_batch_mean_us,null);
+  assert.equal(result.p95_batch_mean_us,null);
+  assert.ok(result.samples[0].iterations===8);
+  assert.equal(result.samples[0].mean_per_query_us,null);
+});
+
+test("Benchmark rejects invalid inputs, impossible clocks and excessive iteration settings",()=>{
+  assert.throws(()=>benchmarkKeywordQuestions([],docs),/Invalid keyword benchmark/);
+  assert.throws(()=>benchmarkKeywordQuestions(["x"],[],{}),/Invalid keyword benchmark/);
+  assert.throws(()=>benchmarkKeywordQuestions(["x"],docs,{minBatchMs:0}),/Invalid benchmark timing/);
+  assert.throws(()=>benchmarkKeywordQuestions(["x"],docs,{maxIterations:131073}),/Invalid benchmark timing/);
+  let reverse=100;
+  assert.throws(()=>benchmarkKeywordQuestions(["Governance"],docs,{
+    now:()=>--reverse,minBatchMs:1,maxIterations:2,
+  }),/invalid duration/);
+});
+
+test("Repeated-keyword benchmark has dedicated UI, avoids showcasing rounded 0 ms",()=>{
+  const html=readFileSync(resolve(root,"index.html"),"utf8");
+  const app=readFileSync(resolve(root,"app.mjs"),"utf8");
+  assert.match(app,/benchmarkKeywordQuestions\(selectBenchmarkQuestions\(fixture.cases\), documents\)/);
+  assert.match(app,/median_batch_mean_us/);
+  assert.match(app,/p95_batch_mean_us/);
+  assert.doesNotMatch(app,/\["Median retrieval latency", report\.p50_latency_ms/);
+  assert.match(html,/warmed-up repeated keyword timings/);
 });
