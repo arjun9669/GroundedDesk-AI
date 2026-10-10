@@ -1,9 +1,12 @@
 name: Deploy standalone GitHub Pages
 
+# Publish only after the main-branch GroundedDesk test workflow succeeds.
+# The deployment checks out the exact commit that passed CI.
 on:
-  push:
+  workflow_run:
+    workflows: ["GroundedDesk CI"]
+    types: [completed]
     branches: [main]
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,12 +19,15 @@ concurrency:
 
 jobs:
   deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == github.repository }}
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
