@@ -482,6 +482,19 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   // secondary quotations in ordinary keyword QA; never apply to explicit
   // cross-document comparisons or hybrid-fusion scores.
   let citedSources = sources;
+  // Hybrid RRF orders retrieved *chunks*. If multiple selected documents
+  // contain exact, strongly matching answer sentences, promote the most
+  // directly relevant *displayed quote*. Never override semantic ranking on
+  // pure paraphrases or explicit comparisons; ties keep the RRF order.
+  if (usesHybridScores && !multiDocumentIntent && sources.length>1) {
+    const scored = sources.map((source,i)=>({
+      source, i, relevance:evidenceSentenceScore(question,source.quote)
+    }));
+    if (scored.some(item=>item.relevance>=4)) {
+      scored.sort((a,b)=>b.relevance-a.relevance || a.i-b.i);
+      citedSources=scored.map((item,i)=>({...item.source,citation:i+1}));
+    }
+  }
   if (!multiDocumentIntent && !usesHybridScores && sources.length > 1) {
     const required = new Set(unique.map(quoteForm));
     const coverage = quote => {
