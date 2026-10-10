@@ -57,6 +57,8 @@ To verify an Atlas PDF regression fix, reopen [the live demo with a unique page 
 
 ## Tests and evaluation
 
+Manual QA: [GroundedDesk AI 5.1 Phase 1 Atlas single-PDF validation record](./docs/VALIDATION_5_1_PHASE1.md) — one source-inspected 2026-10-10 smoke test, **not** an exhaustive policy-audit or cross-browser benchmark.
+
 Install **Node.js 22+** for checks (no npm dependencies needed for the local retrieval test suite):
 
 ```bash
