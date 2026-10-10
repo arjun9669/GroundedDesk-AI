@@ -1,5 +1,13 @@
 # Changelog
 
+## 5.2.0 prototype — candidate release-control inventory (pending manual PDF acceptance)
+
+- Added a separate numbered-policy release-readiness form and Markdown export for candidate controls grouped by rule-based categories.
+- Extracts and verifies literal source sentences across bounded numbered clauses, exposes skipped/withheld evidence, and keeps suspicious instruction-like sections out of checklist items.
+- Explicitly refuses out-of-scope queries or unnumbered documents; does not claim LLM reasoning, full requirement recall, or regulatory compliance.
+- Added deterministic regressions and CI syntax checks; previous Keyword Q&A, 5.1 reports, and old build identification stay independent.
+- Manual iPhone Atlas PDF replay and unscored 15-question multi-document benchmark are separate follow-ups.
+
 ## 5.0.2 — Atlas PDF relevance regression
 
 - Fixed a user-reported failure where PDF header boilerplate was quoted instead of the relevant AI governance release-approval clause.
