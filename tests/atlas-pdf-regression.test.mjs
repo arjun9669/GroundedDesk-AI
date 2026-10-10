@@ -128,11 +128,11 @@ test("Cache-busted entry and module imports advertise the current retrieval buil
   const html=readFileSync(resolve(root,"index.html"),"utf8");
   const app=readFileSync(resolve(root,"app.mjs"),"utf8");
   const retrieval=readFileSync(resolve(root,"retrieval.mjs"),"utf8");
-  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r11"/);
+  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r12"/);
   assert.match(html,/id="retrieval-build"/);
-  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261010-r11"/);
+  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261010-r12"/);
   assert.match(app,/Loaded retrieval build:/);
-  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-10-r11"/);
+  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-10-r12"/);
 });
 
 test("user-reported Atlas CEO salary query refuses instead of citing organization names in PDF headers",()=>{
@@ -243,4 +243,41 @@ test("boundary repair requires an original document pointer: no invented precedi
   assert.equal(result.answered,true);
   assert.equal(result.sources[0].quote,"ity Officer, sign off on P1 closure.");
   assert.equal(result.sources[0].excerpt,candidate.content);
+});
+
+test("single Governance release question excludes unrelated Vendor quote despite close BM25 chunk score",()=>{
+  const question="Which roles are assigned to every AI release, and who must approve a high-risk AI release?";
+  const gov="G-01 Release authority Every AI release has a Model Owner, a Product Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.";
+  const vendor="V-02 Required vendor disclosures Every vendor questionnaire must describe the data-flow diagram, hosting region, subprocessors, retention schedule, model-training use of customer data, incident contact, access logs, and deletion procedures. A marketing statement that an AI service is private is insufficient evidence.";
+  const docs=[
+    {id:"g",name:"01_Atlas_AI_Governance_Policy.pdf",text:gov},
+    {id:"v",name:"03_Atlas_Vendor_AI_Assessment.pdf",text:vendor}
+  ];
+  const candidates=[
+    {id:"g:0",documentId:"g",filename:docs[0].name,content:gov,start:0,sourceText:gov,score:7.2522,tf:new Map()},
+    {id:"v:0",documentId:"v",filename:docs[1].name,content:vendor,start:0,sourceText:vendor,score:6.0614,tf:new Map()}
+  ];
+  const response=answerFromCandidates(question,candidates,3);
+  assert.equal(response.answered,true);
+  assert.equal(response.sources.length,1);
+  assert.equal(response.sources[0].filename,docs[0].name);
+  assert.match(response.sources[0].quote,/Model Owner, a Product Sponsor, and a named Security Officer/);
+  assert.match(response.sources[0].quote,/AI Release Council and the Security Officer/);
+  assert.equal(verifyEvidenceResult(response,docs).ok,true);
+  assert.doesNotMatch(createEvidenceReport(question,response),/Vendor\\_AI\\_Assessment/);
+});
+
+test("quote coverage preserves a second distinct document when its quotation matches the query",()=>{
+  const question="Which documents cover release approval and risk requirements?";
+  const docs=[
+    {id:"a",name:"approval.txt",text:"Release approval and risk requirements include written authorization from the Security Officer."},
+    {id:"b",name:"rules.txt",text:"Release approval and risk requirements include a safety record."}
+  ];
+  const candidates=docs.map((doc,i)=>({
+    id:doc.id+":0",documentId:doc.id,filename:doc.name,content:doc.text,start:0,sourceText:doc.text,
+    score:7-i,tf:new Map()
+  }));
+  const response=answerFromCandidates(question,candidates);
+  assert.deepEqual(response.sources.map(source=>source.filename),["approval.txt","rules.txt"]);
+  assert.equal(verifyEvidenceResult(response,docs).ok,true);
 });
