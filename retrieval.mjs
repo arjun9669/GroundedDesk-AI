@@ -155,9 +155,22 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   }
   const focusId = specificallyNamedDocument(question, candidates);
   const eligible = focusId === null ? candidates : candidates.filter(c => c.documentId === focusId);
+  // Default single-topic keyword QA should not append weakly related documents
+  // solely because they share generic terms such as "review" or "AI".
+  // A score gap is a *ranking heuristic*, never a factuality/confidence test.
+  // Leave hybrid RRF and explicit cross-document requests unchanged.
+  const multiDocumentIntent = /\\b(?:compare|contrast|differences?|similarities|across|between|both|multiple|several|each|versus)\\b/i.test(question)
+    || explicitlyNamedDocuments(question, candidates).size > 1;
+  const usesHybridScores = candidates.some(c => c.lexicalScore !== undefined || c.semanticScore !== undefined);
+  const leadingScore = eligible[0]?.score;
+  const pruneWeakKeywordSources = focusId === null && !multiDocumentIntent &&
+    !usesHybridScores && typeof leadingScore === "number" && Number.isFinite(leadingScore) && leadingScore > 0;
+  const shortlist = pruneWeakKeywordSources
+    ? eligible.filter(c => Number.isFinite(c.score) && c.score >= leadingScore * 0.35)
+    : eligible;
   const picked = [];
   const seen = new Set();
-  for (const candidate of eligible) {
+  for (const candidate of shortlist) {
     if (seen.has(candidate.documentId)) continue;
     seen.add(candidate.documentId);
     picked.push(candidate);
