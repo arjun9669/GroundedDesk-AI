@@ -91,7 +91,8 @@ export function evaluateKeywordFixture(fixture, documents, now = () => performan
     return { id:testCase.id, question:testCase.question,
       expected_source:testCase.expected_source, top_source:response.sources[0]?.filename ?? null,
       answered:response.answered, passed:integrity.ok && (relevant ? correctSource : !response.answered),
-      provenance_ok:integrity.ok, latency_ms:Number(duration.toFixed(3)) };
+      provenance_ok:integrity.ok,
+      one_shot_clock_ms:duration < 0.001 ? null : Number(duration.toFixed(3)) };
   });
   durations.sort((a,b) => a-b);
   return {
@@ -102,7 +103,12 @@ export function evaluateKeywordFixture(fixture, documents, now = () => performan
     supported_question_answer_rate:rate(answered,supported),
     out_of_domain_refusal_rate:rate(refusals,unsupported),
     false_accept_count:falseAccepts, citation_provenance_errors:provenanceErrors,
-    p50_latency_ms:percentile(durations,0.5), p95_latency_ms:percentile(durations,0.95),
+    one_shot_clock_diagnostic: {
+      median_ms: percentile(durations,0.5) || null,
+      p95_ms: percentile(durations,0.95) || null,
+      trustworthy_for_fast_queries: false,
+      note: "A single query can appear as 0ms due to browser timer quantization; use repeated_benchmark instead.",
+    },
     cases,
   };
 }
