@@ -128,11 +128,11 @@ test("Cache-busted entry and module imports advertise the current retrieval buil
   const html=readFileSync(resolve(root,"index.html"),"utf8");
   const app=readFileSync(resolve(root,"app.mjs"),"utf8");
   const retrieval=readFileSync(resolve(root,"retrieval.mjs"),"utf8");
-  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r10"/);
+  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r11"/);
   assert.match(html,/id="retrieval-build"/);
-  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261010-r10"/);
+  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261010-r11"/);
   assert.match(app,/Loaded retrieval build:/);
-  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-10-r10"/);
+  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-10-r11"/);
 });
 
 test("user-reported Atlas CEO salary query refuses instead of citing organization names in PDF headers",()=>{
@@ -201,4 +201,46 @@ test("disclosure vocabulary alternatives do not invent evidence in unrelated doc
   const docs=[{id:"a",name:"entity.txt",text:"Atlas Research Group holds a quarterly vendor review."}];
   const result=answerQuestion("What information must an external supplier disclose?",buildIndex(docs));
   assert.equal(result.answered,false);
+});
+
+test("cross-document Atlas quotation recovers complete P1 signer names from a midword chunk",()=>{
+  const runbook=[
+    "Administrative note. ", "x ".repeat(280),
+    "R-07 Closing an incident Two reviewers, the Incident Commander and the Security Officer, sign off on P1 closure. ",
+    "A temporary fix is not enough; the closure record must identify root cause, durable corrective action, and a verification test. ",
+    "The next governance review tracks recurring patterns. ",
+    "R-08 Drill and escalation check Each quarter the Incident Response Team rehearses a scenario in which a retrieval assistant displays a fabricated source quotation.",
+    " Final review details and further testing requirements continue.".repeat(14)
+  ].join("");
+  const docs=[
+    {id:"i",name:"02_Atlas_Incident_Response_Runbook.pdf",text:runbook},
+    {id:"g",name:"01_Atlas_AI_Governance_Policy.pdf",text:
+      "G-01 Release authority High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment."}
+  ];
+  const index=buildIndex(docs);
+  const truncated=index.chunks.find(chunk=>chunk.documentId==="i" && chunk.content.startsWith("ity Officer, sign off on P1 closure."));
+  assert.ok(truncated,"fixture must reproduce actual observed mid-word indexed chunk");
+  const governance=index.chunks.find(chunk=>chunk.documentId==="g");
+  const question="Compare the AI Governance Policy and Incident Response Runbook: who approves a high-risk AI release, and who signs off on P1 incident closure?";
+  const result=answerFromCandidates(question,[{...truncated,score:8.9130},{...governance,score:8.4254}],3);
+  assert.equal(result.answered,true);
+  assert.equal(result.sources.length,2);
+  assert.equal(result.sources[0].id,truncated.id,"index/ranking identity must remain unchanged");
+  assert.match(result.sources[0].quote,/Two reviewers, the Incident Commander and the Security Officer, sign off on P1 closure/);
+  assert.match(result.sources[1].quote,/AI Release Council and the Security Officer/);
+  assert.equal(result.sources[0].score,8.9130);
+  assert.equal(verifyEvidenceResult(result,docs).ok,true);
+  const report=createEvidenceReport(question,result);
+  assert.match(report,/Incident Commander and the Security Officer/);
+  assert.doesNotMatch(result.sources[0].quote,/^ity Officer/);
+});
+
+test("boundary repair requires an original document pointer: no invented preceding text",()=>{
+  const candidate={id:"i:100",documentId:"i",filename:"runbook.txt",
+    content:"ity Officer, sign off on P1 closure.",start:100,score:7,
+    tf:new Map([["officer",1],["sign",1],["closure",1]])};
+  const result=answerFromCandidates("Who signs off on P1 incident closure?",[candidate]);
+  assert.equal(result.answered,true);
+  assert.equal(result.sources[0].quote,"ity Officer, sign off on P1 closure.");
+  assert.equal(result.sources[0].excerpt,candidate.content);
 });

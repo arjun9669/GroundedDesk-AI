@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r10";
+export const RETRIEVAL_BUILD = "2026-10-10-r11";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -34,14 +34,15 @@ export function buildIndex(documents) {
     if (!document || typeof document.text !== "string" || document.text.length > 180000) {
       throw new Error("Invalid document or document exceeds 180,000 characters");
     }
-    for (const part of chunkText(document.text)) {
+    const sourceText = String(document.text).replace(/\r\n?/g, "\n").replace(/[ \t]+/g, " ").trim();
+    for (const part of chunkText(sourceText)) {
       const words = tokenize(part.content);
       if (!words.length) continue;
       const tf = new Map();
       for (const word of words) tf.set(word, (tf.get(word) || 0) + 1);
       chunks.push({ id: `${document.id}:${part.start}`, documentId: document.id,
         filename: document.name, content: part.content, start: part.start,
-        tokens: words, tf });
+        sourceText, tokens: words, tf });
     }
   }
   const df = new Map();
@@ -212,6 +213,40 @@ export function keywordRank(question, index) {
   return candidates.sort((a,b) => b.score - a.score || b.matched - a.matched || a.filename.localeCompare(b.filename));
 }
 
+// Recover surrounding complete source sentences after BM25 has selected a
+// fixed-size chunk. The original chunk may begin inside a word or sentence.
+// Keep ranking unchanged, and never create text not present in the document.
+function completeEvidenceContext(candidate) {
+  const excerpt = candidate.content;
+  const full = candidate.sourceText;
+  if (typeof full !== "string" || typeof excerpt !== "string" ||
+      !Number.isInteger(candidate.start) || !excerpt) return excerpt;
+  const anchor = full.indexOf(excerpt, Math.max(0, candidate.start - 4));
+  if (anchor < 0) return excerpt;
+  const chunkEnd = anchor + excerpt.length;
+  let from = anchor, to = chunkEnd;
+  if (anchor > 0) {
+    const scanStart = Math.max(0, anchor - 320);
+    const before = full.slice(scanStart, anchor);
+    const boundaries = [...before.matchAll(/[.!?](?:\s+)|\n+/g)];
+    if (boundaries.length) {
+      const last = boundaries[boundaries.length - 1];
+      from = scanStart + last.index + last[0].length;
+    } else {
+      // PDF headings identify clause starts even in long unpunctuated spans.
+      const sections = [...before.matchAll(/\b[A-Z]{1,4}-[0-9]{2}\b/g)];
+      if (sections.length) from = scanStart + sections[sections.length - 1].index;
+      else if (scanStart === 0) from = 0;
+    }
+  }
+  if (chunkEnd < full.length) {
+    const after = full.slice(chunkEnd, Math.min(full.length, chunkEnd + 260));
+    const next = after.match(/[.!?](?:\s|$)|\n/);
+    if (next) to = chunkEnd + next.index + 1;
+  }
+  return full.slice(from, to).trim();
+}
+
 export function answerFromCandidates(question, candidates, maxSources = 3, mode = "Deterministic extractive retrieval (BM25-style, no LLM)") {
   if (!Array.isArray(candidates)) throw new TypeError("Invalid ranked candidates");
   const unique = [...new Set(tokenize(question))];
@@ -242,15 +277,35 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
     if (picked.length >= maxSources) break;
   }
   if (!picked.length) return { answered: false, answer: "I can't find this in the provided documents.", sources: [], mode, retrievalBuild: RETRIEVAL_BUILD };
-  const sources = picked.map((candidate, i) => ({
+  const sources = picked.map((candidate, i) => {
+    const numeric = /\b(?:scores?|ranges?|thresholds?|percentages?|amounts?|prices?|rates?)\b/i.test(question);
+    const compound = /\b(?:and|or)\s+(?:who|what|which|when|where|how)\b/i.test(question);
+    const focus = usesHybridScores ? null : requestedAttribute(question);
+    let excerpt = candidate.content;
+    let quote = bestSentence(excerpt, unique, focus, numeric, compound);
+    const full = candidate.sourceText;
+    if (typeof full === "string" && Number.isInteger(candidate.start) && excerpt.startsWith(quote)) {
+      const anchor = full.indexOf(excerpt, Math.max(0, candidate.start - 4));
+      const brokenStart = anchor > 0 && /[\p{L}\p{N}]/u.test(full[anchor - 1]) &&
+        /[\p{L}\p{N}]/u.test(full[anchor]);
+      if (brokenStart) {
+        const expanded = completeEvidenceContext(candidate);
+        if (expanded !== excerpt) {
+          excerpt = expanded;
+          quote = bestSentence(excerpt, unique, focus, numeric, compound);
+        }
+      }
+    }
+    return {
     citation: i + 1, id: candidate.id, documentId: candidate.documentId,
-    filename: candidate.filename, excerpt: candidate.content,
-    quote: bestSentence(candidate.content, unique, usesHybridScores ? null : requestedAttribute(question), /\b(?:scores?|ranges?|thresholds?|percentages?|amounts?|prices?|rates?)\b/i.test(question), /\b(?:and|or)\s+(?:who|what|which|when|where|how)\b/i.test(question)),
+    filename: candidate.filename, excerpt,
+    quote,
     score: Math.round(candidate.score * 10000) / 10000,
     lexicalScore: candidate.lexicalScore ?? null,
     semanticScore: candidate.semanticScore ?? null,
     matchedTerms: unique.filter(term => candidate.tf.has(term)),
-  }));
+    };
+  });
   // Reject false acceptance when a query asks for an attribute (e.g. salary)
   // but the cited passages only repeat the entity name or PDF cover metadata.
   // Keep semantic/hybrid retrieval out of this keyword-specific heuristic.
