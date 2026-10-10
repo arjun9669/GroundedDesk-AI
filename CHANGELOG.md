@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.3 — evidence precision and refusal reliability
+
+- Select complete literal source sentences, recover adjacent compound evidence, and retain verifiable excerpt context.
+- Improve independent two-document comparison retrieval; constrain irrelevant secondary citations and specific unsupported attribute questions.
+- Add 15 Atlas-scenario tests plus unrelated credential-policy regressions, preserving previous Keyword, 5.1 and 5.2 interfaces.
+- Re-run actual original-PDF-derived text through the source implementation: **15/15 in-sample supported/refused outcomes** versus previous **9 PASS / 4 PARTIAL / 2 FAIL** under the strict quote-level rubric; this is **not** independent real-world accuracy or a Safari PDF-upload benchmark.
+- Use 5.3 browser and module cache fingerprint `20261010-r15` and retrieval build `2026-10-10-r15`. See [evaluation record](docs/ATLAS_15_QUESTION_5_3_RETEST.md).
+
+
 ## 2026-10-10 — Atlas 15-question baseline documentation
 
 - Ran the repository's Keyword and Comparison functions on text extracted from the three user-provided Atlas PDFs against the separate answer key.
