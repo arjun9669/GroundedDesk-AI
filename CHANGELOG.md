@@ -1,5 +1,13 @@
 # Changelog
 
+## 5.3.1 — Hybrid unsupported-answer refusal patch
+
+- A genuine Windows Chrome Hybrid report on r15 falsely cited three irrelevant Atlas PDF headers to answer a nonexistent database-password question. **The prior 15/15 benchmark excluded Hybrid retrieval.**
+- Apply conservative attribute-evidence refusal to Hybrid RRF responses (password, DOB, salary/price and other explicit attributes) while preserving semantic-only queries without such explicit attributes.
+- Add mock-vector Hybrid regression tests, version modules as `2026-10-10-r16`, and preserve the manual failure record for device retesting.
+- Actual MiniLM browser acceptance remains pending until the tester reruns the question; no real-world accuracy or semantic guarantee is claimed.
+
+
 ## 5.3 — evidence precision and refusal reliability
 
 - Select complete literal source sentences, recover adjacent compound evidence, and retain verifiable excerpt context.

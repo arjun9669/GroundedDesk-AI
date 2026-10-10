@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r15";
+export const RETRIEVAL_BUILD = "2026-10-10-r16";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -501,10 +501,14 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
         .map((item,i)=>({...item,citation:i+1}));
     }
   }
-  // Reject false acceptance when a query asks for an attribute (e.g. salary)
-  // but the cited passages only repeat the entity name or PDF cover metadata.
-  // Keep semantic/hybrid retrieval out of this keyword-specific heuristic.
-  if (!usesHybridScores && missingRequestedAttribute(question, citedSources)) {
+  // An RRF/semantic score is a ranking signal, NOT evidence that a quoted
+  // passage contains a requested fact. Apply the same concrete-attribute
+  // guard in hybrid mode so PDF title overlap cannot "answer" an absent DOB,
+  // credential, salary, or price. Other keyword-only relevance heuristics
+  // remain disabled for semantic-only paraphrases.
+  const explicitValueFocus = requestedEvidenceFocus(question);
+  if ((!usesHybridScores || explicitValueFocus) &&
+      missingRequestedAttribute(question, citedSources)) {
     return { answered:false, answer:"I can't find this in the provided documents.",
       sources:[], mode, retrievalBuild: RETRIEVAL_BUILD,
       note:"Question-specific attribute was absent from the cited evidence." };
