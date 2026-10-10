@@ -103,7 +103,7 @@ function bestSentence(content, terms) {
 // This is a conservative lexical guard, not a semantic or factuality judge.
 function missingRequestedAttribute(question, sources) {
   const query = String(question);
-  const pattern = /^\\s*(?:what|which|who)\\s+(?:is|are|was|were)\\s+(?:(?:the|an?|their)\\s+)?(.+?)\\s+(?:of|for)\\s+/i;
+  const pattern = /^\s*(?:what|which|who)\s+(?:is|are|was|were)\s+(?:(?:the|an?|their)\s+)?(.+?)\s+(?:of|for)\s+/i;
   const match = query.match(pattern);
   if (!match) return false;
   const focus = tokenize(match[1]).filter(word => ![
