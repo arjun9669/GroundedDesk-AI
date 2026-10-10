@@ -97,7 +97,7 @@ function bestSentence(content, terms) {
   return best.slice(start, start + 420);
 }
 
-function specificallyNamedDocument(question, candidates) {
+function explicitlyNamedDocuments(question, candidates) {
   const questionTerms = new Set(tokenize(question));
   const matched = new Set();
   for (const candidate of candidates) {
@@ -109,15 +109,20 @@ function specificallyNamedDocument(question, candidates) {
       matched.add(candidate.documentId);
     }
   }
-  // Only narrow results if the question clearly names exactly one document.
-  // Multi-document questions continue using their normal multi-source ranking.
-  return matched.size === 1 ? [...matched][0] : null;
+  return matched;
+}
+function specificallyNamedDocument(question, candidates) {
+  const named = explicitlyNamedDocuments(question, candidates);
+  // Preserve multi-document intent when two or more titles are named.
+  return named.size === 1 ? [...named][0] : null;
 }
 
 export function keywordRank(question, index) {
   const unique = [...new Set(tokenize(question))];
   if (!unique.length || !index.chunks.length) return [];
   const n = index.chunks.length;
+  const named = explicitlyNamedDocuments(question, index.chunks);
+  const multiDocumentTitles = named.size > 1;
   const candidates = [];
   for (const chunk of index.chunks) {
     let score = 0, matched = 0;
@@ -130,7 +135,12 @@ export function keywordRank(question, index) {
       score += idf * (count * 2.2) / (count + 1.2 * (0.25 + 0.75 * chunk.tokens.length / index.avgLength));
     }
     const fraction = matched / unique.length;
-    if (score > 0 && fraction >= (unique.length <= 2 ? 0.5 : 0.34)) {
+    // Explicit two-document requests can have many title words in the query,
+    // diluting each document's term fraction. Allow a slightly lower fraction
+    // ONLY for the named documents, not for unrelated sources or general QA.
+    const threshold = multiDocumentTitles && named.has(chunk.documentId)
+      ? 0.30 : (unique.length <= 2 ? 0.5 : 0.34);
+    if (score > 0 && fraction >= threshold) {
       candidates.push({ ...chunk, score, matched, fraction });
     }
   }
