@@ -278,11 +278,28 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   }
   if (!picked.length) return { answered: false, answer: "I can't find this in the provided documents.", sources: [], mode, retrievalBuild: RETRIEVAL_BUILD };
   const sources = picked.map((candidate, i) => {
-    const excerpt = completeEvidenceContext(candidate);
+    const numeric = /\b(?:scores?|ranges?|thresholds?|percentages?|amounts?|prices?|rates?)\b/i.test(question);
+    const compound = /\b(?:and|or)\s+(?:who|what|which|when|where|how)\b/i.test(question);
+    const focus = usesHybridScores ? null : requestedAttribute(question);
+    let excerpt = candidate.content;
+    let quote = bestSentence(excerpt, unique, focus, numeric, compound);
+    const full = candidate.sourceText;
+    if (typeof full === "string" && Number.isInteger(candidate.start) && excerpt.startsWith(quote)) {
+      const anchor = full.indexOf(excerpt, Math.max(0, candidate.start - 4));
+      const brokenStart = anchor > 0 && /[\p{L}\p{N}]/u.test(full[anchor - 1]) &&
+        /[\p{L}\p{N}]/u.test(full[anchor]);
+      if (brokenStart) {
+        const expanded = completeEvidenceContext(candidate);
+        if (expanded !== excerpt) {
+          excerpt = expanded;
+          quote = bestSentence(excerpt, unique, focus, numeric, compound);
+        }
+      }
+    }
     return {
     citation: i + 1, id: candidate.id, documentId: candidate.documentId,
     filename: candidate.filename, excerpt,
-    quote: bestSentence(excerpt, unique, usesHybridScores ? null : requestedAttribute(question), /\b(?:scores?|ranges?|thresholds?|percentages?|amounts?|prices?|rates?)\b/i.test(question), /\b(?:and|or)\s+(?:who|what|which|when|where|how)\b/i.test(question)),
+    quote,
     score: Math.round(candidate.score * 10000) / 10000,
     lexicalScore: candidate.lexicalScore ?? null,
     semanticScore: candidate.semanticScore ?? null,
