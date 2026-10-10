@@ -81,7 +81,7 @@ function sentenceRelevance(sentence, terms) {
 }
 
 function bestSentence(content, terms) {
-  const sentences = content.split(/(?<=[.!?])\\s+|\\n+/).map(s => s.trim()).filter(Boolean);
+  const sentences = content.split(/(?<=[.!?])\s+|\n+/).map(s => s.trim()).filter(Boolean);
   let best = content, bestScore = -Infinity;
   for (const sentence of sentences) {
     const score = sentenceRelevance(sentence, terms);
@@ -91,7 +91,7 @@ function bestSentence(content, terms) {
   // unpunctuated PDF passages, center a literal window near the search terms.
   if (best.length <= 420) return best;
   const allForms = [...new Set(terms.map(quoteForm))];
-  const matches = [...best.matchAll(/[\\p{L}\\p{N}]+/gu)].filter(m => allForms.includes(quoteForm(m[0].toLowerCase())));
+  const matches = [...best.matchAll(/[\p{L}\p{N}]+/gu)].filter(m => allForms.includes(quoteForm(m[0].toLowerCase())));
   const firstMatch = matches[0]?.index ?? 0;
   const start = Math.max(0, Math.min(firstMatch - 80, best.length - 420));
   return best.slice(start, start + 420);
@@ -101,8 +101,8 @@ function specificallyNamedDocument(question, candidates) {
   const questionTerms = new Set(tokenize(question));
   const matched = new Set();
   for (const candidate of candidates) {
-    const titleWords = tokenize(candidate.filename.replace(/\\.[^.]+$/, "").replace(/[_-]+/g, " "))
-      .filter(word => word.length > 1 && !/^\\d+$/.test(word));
+    const titleWords = tokenize(candidate.filename.replace(/\.[^.]+$/, "").replace(/[_-]+/g, " "))
+      .filter(word => word.length > 1 && !/^\d+$/.test(word));
     const overlap = titleWords.filter(word => questionTerms.has(word));
     if (overlap.length >= 2 && overlap.length >= Math.ceil(titleWords.length / 2) &&
         overlap.some(word => word.length >= 6)) {
