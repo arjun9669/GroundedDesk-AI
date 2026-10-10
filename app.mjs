@@ -1,11 +1,11 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261010-r12";
-import { hybridRank } from "./hybrid.mjs?v=20261010-r12";
-import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r12";
-import { createEvidenceReport } from "./report.mjs?v=20261010-r12";
-import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r12";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261010-r12";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261010-r12";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261010-r12";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261010-r13";
+import { hybridRank } from "./hybrid.mjs?v=20261010-r13";
+import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
+import { createEvidenceReport } from "./report.mjs?v=20261010-r13";
+import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261010-r13";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261010-r13";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261010-r13";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
