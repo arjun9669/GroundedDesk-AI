@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { buildIndex, answerQuestion } from "../retrieval.mjs";
+import { buildIndex, answerQuestion, answerFromCandidates } from "../retrieval.mjs";
 import { verifyEvidenceResult } from "../quality.mjs";
 import { createEvidenceReport } from "../report.mjs";
 
@@ -65,4 +65,54 @@ test("long quotation remains an exact substring after the sentence scoring chang
   assert.ok(result.sources[0].quote.length<=420);
   assert.ok(result.sources[0].excerpt.includes(result.sources[0].quote));
   assert.equal(verifyEvidenceResult(result,docs).ok,true);
+});
+
+test("actual user question returns only the clearly relevant Model Owner evidence, not incidental vendor and incident matches",()=>{
+  // Flattened excerpts resemble what PDF.js showed in the user's copied report.
+  const library=[
+    {id:"gov",name:"01_Atlas_AI_Governance_Policy.pdf",text:
+      "G-01 Release authority Every AI release has a Model Owner, a Product Sponsor, and a named Security Officer. " +
+      "High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. " +
+      "G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, " +
+      "a test results log, a data-flow diagram, and a rollback plan. " +
+      "The Security Officer checks access controls and sensitive information."},
+    {id:"vendor",name:"03_Atlas_Vendor_AI_Assessment.pdf",text:
+      "Local-only processing that sends no document content to a supplier may receive an abbreviated review, " +
+      "subject to Security Officer approval. V-02 Required vendor disclosures Every vendor questionnaire must " +
+      "describe the data-flow diagram, hosting region, subprocessors and retention schedule."},
+    {id:"incident",name:"02_Atlas_Incident_Response_Runbook.pdf",text:
+      "R-06 Vendor escalation If a hosted model supplier or document-processing vendor might be involved, " +
+      "the Incident Commander alerts the Vendor Review Lead. Internal P1 containment remains due within 30 minutes. " +
+      "The runbook describes an incident review and release coordination."},
+  ];
+  const question="What documents must the Model Owner prepare before an AI release review?";
+  const result=answerQuestion(question,buildIndex(library));
+  assert.equal(result.answered,true);
+  assert.equal(result.sources.length,1,"only the strong supporting policy should be cited");
+  assert.equal(result.sources[0].filename,"01_Atlas_AI_Governance_Policy.pdf");
+  assert.match(result.sources[0].quote,/model card, a risk register, a test results log, a data-flow diagram, and a rollback plan/);
+  assert.equal(verifyEvidenceResult(result,library).ok,true);
+  const markdown=createEvidenceReport(question,result);
+  assert.doesNotMatch(markdown,/### \\[2\\]/);
+  assert.doesNotMatch(markdown,/Vendor\\_AI\\_Assessment|Incident\\_Response\\_Runbook/);
+});
+
+test("low ranking keyword candidates are pruned but genuine close-score documents survive",()=>{
+  const query="Which document covers release review requirements?";
+  const fixture=[
+    {id:"top:1",documentId:"top",filename:"top.txt",content:"Release review requirements include verified approvals.",
+      tf:new Map([["release",1],["review",1],["requirements",1]]),score:8},
+    {id:"other:1",documentId:"other",filename:"other.txt",content:"Quarterly policy review for vendor onboarding.",
+      tf:new Map([["review",1]]),score:1.7},
+    {id:"also:1",documentId:"also",filename:"also.txt",content:"Release review requirements include a rollback plan.",
+      tf:new Map([["release",1],["review",1],["requirements",1]]),score:4},
+  ];
+  // Lexical candidates passed into extraction are pre-ranked.
+  const ranking=[fixture[0],fixture[2],fixture[1]];
+  const single=answerFromCandidates(query,ranking,3);
+  assert.deepEqual(single.sources.map(x=>x.filename),["top.txt","also.txt"]);
+  const compare=answerFromCandidates("Compare release review requirements across both teams",ranking,3);
+  assert.equal(compare.sources.length,3,"multi-document intent must not discard weaker sources");
+  const mockHybrid=answerFromCandidates(query,ranking.map(x=>({...x,lexicalScore:x.score})),3,"Mock hybrid fusion");
+  assert.equal(mockHybrid.sources.length,3,"hybrid fusion scores are not comparable to BM25 thresholds");
 });
