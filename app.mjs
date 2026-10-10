@@ -751,7 +751,7 @@ function presentResearch(result) {
     card.append(researchEl("h4", "", "[" + source.citation + "] " +
       (source.sectionId ? source.sectionId + " · " : "") + source.filename));
     if (result.kind === "policy-checklist") card.append(researchEl("p", "research-summary",
-      source.label + " · " + (source.phase === "gate" ? "Potential release gate" : source.phase === "conditional" ? "Conditional/incident" : source.phase === "ongoing" ? "Related/ongoing" : "Needs classification"));
+      source.label + " · " + (source.phase === "gate" ? "Potential release gate" : source.phase === "conditional" ? "Conditional/incident" : source.phase === "ongoing" ? "Related/ongoing" : "Needs classification")));
     const excerpt = result.kind === "comparison" ? source.excerpt : source.quote;
     card.append(researchEl("p", "research-evidence-text",
       excerpt || "No matching passage found for this topic using keyword retrieval."));
