@@ -8,7 +8,7 @@
  * Median/p95 refer to per-question batch-AVERAGE latencies, not request-tail
  * p95, and do not include model downloads, PDF parsing, or UI rendering.
  */
-import { buildIndex, answerQuestion } from "./retrieval.mjs";
+import { buildIndex, answerQuestion } from "./retrieval.mjs?v=20261010-r7";
 
 const median = (sorted, fraction) => sorted[Math.max(0, Math.ceil(fraction * sorted.length) - 1)];
 const round = value => Number(value.toFixed(3));
