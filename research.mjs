@@ -4,7 +4,7 @@
  * Its "agent" is a deterministic retrieve -> cross-check -> report workflow,
  * not an autonomous AI agent or a fact-entailment verifier.
  */
-import { buildIndex, keywordRank, answerFromCandidates, tokenize } from "./retrieval.mjs?v=20261010-r11";
+import { buildIndex, keywordRank, answerFromCandidates, tokenize } from "./retrieval.mjs?v=20261010-r12";
 
 const MAX_QUERY = 600;
 const FLAG_PATTERNS = [
