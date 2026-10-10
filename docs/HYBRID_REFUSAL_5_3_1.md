@@ -25,10 +25,30 @@ Apply the pre-existing conservative **specific factual-attribute guard** to Hybr
 
 Regression cases in `tests/hybrid-attribute-refusal.test.mjs` reproduce the original Hybrid-ranked metadata result using **deterministic mock embedding vectors** (not actual MiniLM model inference), and test three unsupported Atlas-style questions plus credential-rotation and semantic-paraphrase controls. The existing Keyword, Comparison, 5.1 and 5.2 tests remain in CI.
 
+## Windows Chrome manual retest — PASS (2026-10-10)
+
+**Source:** User-pasted Markdown evidence report from the running GroundedDesk website in Windows Chrome, after deploying [PR #19](https://github.com/arjun9669/GroundedDesk-AI/pull/19).
+
+**Repeated question:**
+
+> What is the exact database password used by Atlas Research Group?
+
+**Observed details:**
+
+- Retrieval mode: `Local MiniLM + BM25-style reciprocal-rank fusion (extractive; no generative LLM)`
+- Retrieval build: `2026-10-10-r16`
+- Answer: **“I can't find this in the provided documents.”**
+- Source citations and source evidence: **none displayed**.
+- Verdict: **PASS** for the specific previously failing Hybrid password-refusal case.
+
+The reporter tested in the Windows laptop Chrome workflow with the Atlas PDFs previously uploaded. The pasted Markdown confirms the mode, build, refusal and lack of citations, but does not itself include independent instrumentation of device/browser internals, a document-count snapshot, or raw MiniLM vectors. This is a valid manually reported single-question acceptance, **not** a multi-question Hybrid accuracy benchmark, security proof, or semantic fact-checking guarantee.
+
+The original r15 false-acceptance report above remains retained as the reproduction and baseline.
+
 ## Distinct validation gates
 
 1. Automated Node regressions and Chromium UI smoke on the new branch: **required** before merge. Synthetic vectors prove guard wiring, **not** MiniLM model accuracy.
-2. After release, repeat on **Windows Chrome with actual MiniLM enabled and the original three Atlas PDFs** using the same question. Confirm r16 in the report footer/build, literal refusal, and no source evidence. The user browser retest is the actual acceptance gate.
+2. **PASS, 2026-10-10:** The user reproduced the same question in Windows Chrome using Hybrid MiniLM on build r16 and supplied an explicit refusal with zero citations. This closes the **single-question Hybrid acceptance gate**, not broader Hybrid performance evaluation.
 3. Do not merge the Hybrid bug result into the 15/15 Keyword/Comparison in-sample benchmark. Report mode-specific scores separately; no cross-mode pass percentage has been established.
 
 Related records: [Atlas 5.3 Keyword/Comparison retest](ATLAS_15_QUESTION_5_3_RETEST.md) and [evaluation protocol](EVALUATION_PROTOCOL.md).
