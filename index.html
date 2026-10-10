@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#0b1726"/>
   <meta name="description" content="GroundedDesk AI 5.0 — free browser-side document intelligence, local AI options, multi-document evidence research and measurable source evaluation."/>
   <title>GroundedDesk AI 5.0 | Evidence-First Document Research</title>
-  <link rel="stylesheet" href="./styles.css?v=20261010-r13"/>
-  <script defer type="module" src="./app.mjs?v=20261010-r13"></script>
+  <link rel="stylesheet" href="./styles.css?v=20261010-r14"/>
+  <script defer type="module" src="./app.mjs?v=20261010-r14"></script>
 </head>
 <body>
   <div class="app-shell">
@@ -176,6 +176,15 @@
               <textarea id="policy-query" rows="2" maxlength="600" placeholder="Example: What does the AI Governance Policy require before an AI system can be released?" required></textarea>
               <button type="submit" id="run-policy-research">Gather evidence across sections</button>
               <p>Scans numbered sections such as G-01 and G-02, extracts up to eight source-verbatim passages, and reports coverage gaps. This is not a complete policy audit or an AI-generated summary. Regular Keyword mode is unchanged.</p>
+            </form>
+            <form id="policy-checklist-form" class="research-panel">
+              <h3>5.2 · Candidate release-control inventory</h3>
+              <label for="checklist-document">Numbered policy document to inspect</label>
+              <select id="checklist-document" required aria-label="Document for release-control inventory"></select>
+              <label for="checklist-query">Which release-readiness requirements should we review?</label>
+              <textarea id="checklist-query" rows="2" maxlength="600" placeholder="Example: What does the AI Governance Policy require before an AI system can be released?" required></textarea>
+              <button type="submit" id="run-policy-checklist">Build source-linked checklist</button>
+              <p>Uses rule-matched source sentences from numbered clauses, including conditional and ongoing controls. Results are candidates, not verified requirements or a complete compliance audit. No LLM or paid API.</p>
             </form>
             <form id="compare-form" class="research-panel">
               <h3>Side-by-side document comparison</h3>

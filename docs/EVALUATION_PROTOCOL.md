@@ -53,3 +53,15 @@ A simple manually verified record is:
 **Current status:** No manual real-document benchmark figures are claimed in this repository. Until you or a reviewer performs this procedure, present the 28-case keyword fixture only as an **internal regression test**.
 
 Avoid private company documents, account details, employer secrets, and anything you cannot disclose safely in a public portfolio.
+
+
+## D. 5.2 deterministic release-control candidate checks
+
+1. Run the 5.2 **Build source-linked checklist** on `01_Atlas_AI_Governance_Policy.pdf` using the documented release question; keep the raw exported Markdown and the browser build fingerprint.
+2. Verify that each quoted sentence occurs in its cited numbered section of the original PDF after whitespace normalization. Record a separate outcome for each sentence; **matching text is not evidence of correct classification**.
+3. Compare detected/omitted policy sections with all numbered sections. Verify that G-03 privacy restrictions and G-06 rollback/escalation appear as candidates, G-08 instruction-shaped text is withheld, and G-01/G-02/G-04/G-05/G-07 still have supported passages.
+4. Test questions outside release/readiness scope, documents without numbered sections, documents with more than 64 sections or 24 candidate excerpts, and conditional controls with exceptions.
+5. Compare the ordinary Keyword answer and 5.1 evidence outputs before/after enabling 5.2; they must not change. Test exports and visibility on mobile Safari separately, as static UI tests do not execute PDF.js upload or browser clipboard operations.
+6. Log misses, false positives, misclassification, incomplete sentences, and source mismatches. Do not conclude that passing smoke tests establishes all release requirements.
+
+The separate **Atlas 15-question answer key** contains direct, cross-document and deliberate-refusal cases. The 5.2 candidate extractor is **not** a replacement for cross-document or general QA evaluation. Do not report a 15-question score until each case has been executed with the intended appropriate workflow and scored against its answer key. 

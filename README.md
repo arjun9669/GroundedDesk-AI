@@ -16,6 +16,7 @@
 | 4.0 | Multi-document keyword research, comparison, source-coverage gaps, basic instruction-shaped-text warnings and export | Local deterministic research workflow |
 | **5.0** | **Measured on-device keyword evaluation dashboard, strict citation integrity gating, stale-result prevention, detailed case study and regression tests** | **Local JavaScript and GitHub Actions** |
 | **5.1 Phase 1** | **Dedicated multi-section policy evidence scanning, numbered-clause grouping, bounded quotations, coverage limitations and Markdown export** | **Separate local deterministic Research workspace; Keyword mode unchanged** |
+| **5.2 prototype** | **Candidate release-control inventory: rule-tagged, literal source sentences grouped by gate, conditional, related governance and unclassified categories** | **Optional numbered-policy Research workflow; not semantic synthesis or compliance verification** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
 
@@ -45,13 +46,21 @@ In the **Research workspace**, choose **5.1 · Multi-section policy research**, 
 This is a bounded extractive evidence scan, **not** an AI-written complete policy summary, compliance audit, or guarantee that every applicable obligation was found. It currently requires recognizable numbered clause markers; unnumbered policies need a different workflow. Uploaded material remains in browser memory. The normal **Keyword** Q&A mode and its retrieval/citation heuristics are unchanged; choose the separate 5.1 workflow for broader, multi-section questions.
 
 
+### 5.2 — Candidate release-control inventory (prototype)
+
+In **Research workspace**, select **5.2 · Candidate release-control inventory**, upload/select a numbered policy, and ask: **“What does the AI Governance Policy require before an AI system can be released?”**. Press **Build source-linked checklist** and copy the Research results report. The implementation scans up to **64 numbered sections**, extracts up to **24 literal rule-shaped sentences** (no more than five per section), applies transparent regular-expression categories, and identifies skipped sections, output caps, and instruction-shaped content excluded from checklist generation.
+
+This **does not** verify whether a control has been satisfied, infer exception conditions, assess legal compliance, or guarantee complete requirement recall. The categories are heuristics rather than semantic analysis; some advisory/operational controls can be included and some obligations can be missed. The form only supports **release/deployment/launch/readiness** prompts, not arbitrary policy question answering. Documents without recognizable numbered clauses have no supported result. Keep the full original document alongside every exported report. No paid API, server, vector DB, or LLM is involved.
+
+**QA status:** Source-code checks, deterministic tests and curated fixtures run in GitHub CI. **The actual Atlas PDF upload and export on iPhone is a separate manual acceptance check.** The Atlas 15-question benchmark has **not** been scored against 5.2 and should not be presented as a pass rate. See [evaluation protocol](./docs/EVALUATION_PROTOCOL.md).
+
 ### Evaluate the actual retrieval
 
 Open the **5.0 Engineering Quality Gate** and press **Run local evaluation**. It executes 28 labeled keyword queries on the original three fictional sample documents and shows top-1 source match, out-of-domain refusal rate, provenance errors, **warmed-up repeated keyword timing in microseconds**, and per-case verdicts with a JSON download. The microbenchmark times 10 representative questions in batches lasting at least 40 ms, avoids misleading 0.000 ms one-shot displays, and reports median/p95 across batch-average timings—not individual-request tail latency. If you add or remove files, reload to restore the original sample corpus before evaluating. **These scores do not test MiniLM/Qwen accuracy or real-world hallucination rates.** See the [evaluation methodology and manual real-document test protocol](./docs/EVALUATION_PROTOCOL.md) for exact measurements and limitations.
 
 ### Browser cache and evidence-report build version
 
-GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quick successive deployments. Source/CSS URLs are fingerprinted through retrieval build `2026-10-10-r13` so updated HTML loads matching app modules. Each evidence report now states its **Retrieval build** and **Retrieval mode**. The footer also displays the loaded build.
+GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quick successive deployments. The unchanged Keyword retrieval engine remains at build `2026-10-10-r13`, while the 5.2 browser app entrypoint and UI use cache fingerprint `20261010-r14`; other unchanged modules retain their existing cache tags. Source/CSS URLs are fingerprinted so updated HTML loads matching app modules. Each evidence report now states its **Retrieval build** and **Retrieval mode**. The footer also displays the loaded build.
 
 To verify an Atlas PDF regression fix, reopen [the live demo with a unique page query](https://arjun9669.github.io/GroundedDesk-AI/?build=20261010-r13), clear the original TXT samples, upload the PDFs again, select **Keyword** mode, and regenerate the report. A report missing the build field may have been copied from an earlier cached tab. Score and source matching are still heuristic; one cited exact quote does not establish that an entire answer is complete.
 
@@ -71,6 +80,7 @@ node --check semantic.mjs
 node --check hybrid.mjs
 node --check generation.mjs
 node --check research.mjs
+node --check policy-synthesis.mjs
 node --check report.mjs
 node eval/run.mjs --strict
 node eval/run.mjs --json > evaluation.json

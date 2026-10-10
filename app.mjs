@@ -3,7 +3,8 @@ import { hybridRank } from "./hybrid.mjs?v=20261010-r13";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
 import { createEvidenceReport } from "./report.mjs?v=20261010-r13";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261010-r13";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261010-r14";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261010-r14";
 import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261010-r13";
 import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261010-r13";
 
@@ -685,7 +686,7 @@ function clearResearch() {
 }
 
 function updateResearchControls() {
-  for (const selectId of ["compare-left", "compare-right", "policy-document"]) {
+  for (const selectId of ["compare-left", "compare-right", "policy-document", "checklist-document"]) {
     const select = $(selectId);
     if (!select) continue;
     const previous = select.value;
@@ -704,6 +705,7 @@ function updateResearchControls() {
   $("run-comparison").disabled = documents.length < 2;
   $("run-research").disabled = documents.length < 1;
   $("run-policy-research").disabled = documents.length < 1;
+  $("run-policy-checklist").disabled = documents.length < 1;
 }
 
 function researchEl(tag, cls, text = "") {
@@ -720,7 +722,8 @@ function presentResearch(result) {
   body.replaceChildren();
   $("research-result-title").textContent = result.kind === "research"
     ? "Cross-document evidence and research steps" : result.kind === "policy-research"
-      ? "5.1 · Section-by-section policy evidence" : "Side-by-side excerpts";
+      ? "5.1 · Section-by-section policy evidence" : result.kind === "policy-checklist"
+        ? "5.2 · Candidate release-control inventory" : "Side-by-side excerpts";
 
   if (result.kind === "research") {
     body.append(researchEl("p", "research-summary",
@@ -732,6 +735,10 @@ function presentResearch(result) {
   } else if (result.kind === "policy-research") {
     body.append(researchEl("p", "research-summary",
       `${result.sources.length} sections quoted from ${result.matchingSectionCount} keyword-matching sections (${result.sectionCount} numbered sections detected). Bounded evidence scan, not an exhaustive policy summary.`));
+  } else if (result.kind === "policy-checklist") {
+    body.append(researchEl("p", "research-summary",
+      `${result.sources.length} literal candidate controls from ${result.sectionsWithCandidates} matching of ${result.sectionsInspected} inspected policy sections. Rule-based categories only; no verified compliance or complete coverage.`));
+    if (result.reason) body.append(researchEl("p", "research-gaps", result.reason));
   } else {
     body.append(researchEl("p", "research-summary",
       "Shared vocabulary: " + (result.sharedTerms.join(", ") || "No shared long keywords.") +
@@ -743,6 +750,8 @@ function presentResearch(result) {
     const card = researchEl("article", "research-evidence");
     card.append(researchEl("h4", "", "[" + source.citation + "] " +
       (source.sectionId ? source.sectionId + " · " : "") + source.filename));
+    if (result.kind === "policy-checklist") card.append(researchEl("p", "research-summary",
+      source.label + " · " + (source.phase === "gate" ? "Potential release gate" : source.phase === "conditional" ? "Conditional/incident" : source.phase === "ongoing" ? "Related/ongoing" : "Needs classification")));
     const excerpt = result.kind === "comparison" ? source.excerpt : source.quote;
     card.append(researchEl("p", "research-evidence-text",
       excerpt || "No matching passage found for this topic using keyword retrieval."));
@@ -756,6 +765,10 @@ function presentResearch(result) {
     body.append(researchEl("p", "research-empty", "No matching evidence found in the loaded documents."));
   } else {
     body.append(evidenceGrid);
+  }
+  if (result.kind === "policy-checklist") {
+    body.append(researchEl("p", "research-gaps",
+      `${result.omittedSections} sections outside scan cap; ${result.omittedCandidates} quoted candidates beyond output/per-section caps; ${result.flaggedSections} instruction-shaped sections excluded. This is not a complete policy audit. Verify full sections and exceptions.`));
   }
   if (result.kind === "policy-research") {
     body.append(researchEl("p", "research-gaps", result.omittedMatchingSections
@@ -771,7 +784,8 @@ function presentResearch(result) {
 
 function getResearchMarkdown() {
   if (!currentResearch) throw new Error("Run research or comparison before exporting.");
-  return formatResearchMarkdown(currentResearch);
+  return currentResearch.kind === "policy-checklist"
+    ? formatPolicyChecklistMarkdown(currentResearch) : formatResearchMarkdown(currentResearch);
 }
 
 $("research-form").addEventListener("submit", event => {
@@ -797,6 +811,20 @@ $("policy-research-form").addEventListener("submit", event => {
       "No matching numbered policy sections found; consider a narrower question or a text-search query.");
   } catch (error) {
     notify(error instanceof Error ? error.message : "Policy research failed.", true);
+  }
+});
+
+$("policy-checklist-form").addEventListener("submit", event => {
+  event.preventDefault();
+  try {
+    const selected = documents.find(doc => doc.id === $("checklist-document").value);
+    if (!selected) throw new Error("Select a loaded policy document.");
+    const result = buildPolicyChecklist($("checklist-query").value, selected);
+    presentResearch(result);
+    notify(result.answered ? "5.2 candidate release controls extracted. Review every cited section." :
+      "No supported release-readiness controls identified. Check scope and document numbering.");
+  } catch (error) {
+    notify(error instanceof Error ? error.message : "Release-control inventory failed.", true);
   }
 });
 
