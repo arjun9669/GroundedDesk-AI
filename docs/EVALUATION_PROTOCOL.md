@@ -71,3 +71,10 @@ The separate **Atlas 15-question answer key** contains direct, cross-document an
 The separately supplied fictional Atlas PDF corpus and human-created answer key were run through the repository's deterministic Keyword Q&A and two-document Comparison functions using text extracted from the original PDFs, without shipping them in the repository. **Results: 9 PASS / 4 PARTIAL / 2 FAIL** under a stricter *displayed-quote* scoring rule. See the [15-case report, provenance and failure details](ATLAS_15_QUESTION_BASELINE.md). A retrieved document excerpt containing the right answer is only partial if the visible selected answer quotes the wrong sentence. Comparison evidence must visibly support each side; literal source match alone is insufficient.
 
 This is an **offline engine run**, not a Safari upload test, not a test of 5.2 release-control extraction on 15 questions, not a measurement of MiniLM/Qwen, and not an independently held-out real-world benchmark. Preserve the known failed and partial cases in all future re-runs; never silently discard or reclassify them.
+
+
+## F. 5.3 Atlas baseline-to-retest comparison
+
+See [the original-PDF-text 5.3 re-evaluation](ATLAS_15_QUESTION_5_3_RETEST.md): **15/15** supported/appropriately refused on the original known synthetic Atlas corpus versus [the prior baseline](ATLAS_15_QUESTION_BASELINE.md) of **9 PASS / 4 PARTIAL / 2 FAIL**. Preserve the original record unchanged. This is an **in-sample code-level regression**, after feature tuning against known failures: it is not independent accuracy, a 5.2 checklist test, PDF.js browser parsing, or mobile Safari validation.
+
+Follow-up: obtain unlabeled non-sensitive third-party documents, define expected facts and refusals *before* testing, then record exact displayed quotations, false accepts, partials and failures for each engine mode separately. Replaying the same synthetic 15 questions again does not establish generalization.
