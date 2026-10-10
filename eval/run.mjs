@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 import { resolve, dirname } from "node:path";
 import { performance } from "node:perf_hooks";
 import { buildIndex, answerQuestion } from "../retrieval.mjs";
+import { verifyEvidenceResult } from "../quality.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const fixture = JSON.parse(readFileSync(resolve(root, "eval/queries.json"), "utf8"));
@@ -39,12 +40,9 @@ const cases = fixture.cases.map(item => {
   const answer = answerQuestion(item.question, index);
   const latencyMs = performance.now() - t0;
   times.push(latencyMs);
-  for (const source of answer.sources) {
-    const doc = samples.find(d => d.name === source.filename);
-    if (!doc || !doc.text.includes(source.quote) || !doc.text.includes(source.excerpt)) {
-      invalidCitations++;
-    }
-  }
+  // 5.0 uses the same full provenance checker in CLI, browser, and reports.
+  // This validates identity, numbering, distinct sources, and original excerpts.
+  if (!verifyEvidenceResult(answer, samples).ok) invalidCitations++;
   const relevant = item.expected_source !== null;
   if (relevant) {
     if (answer.answered) supportedAnswered++;

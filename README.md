@@ -2,9 +2,9 @@
 
 **Free, browser-first document intelligence portfolio project.** Upload text, Markdown or text-based PDF documents, inspect source-backed answers, optionally enable local semantic embeddings and a local small language model, and create multi-document research reports.
 
-**[Try the currently hosted demo](https://arjun9669.github.io/arjun9669/)** · [Original development history and pull requests](https://github.com/arjun9669/arjun9669/pulls) · [Project author](https://github.com/arjun9669)
+**[Live GroundedDesk AI 5.0](https://arjun9669.github.io/GroundedDesk-AI/)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
 
-> The live GitHub Pages URL currently belongs to the author's **profile repository**. This standalone repository snapshot does not automatically control that deployment. To host directly from the standalone repository, enable the bundled Pages workflow through GitHub Settings → Pages → GitHub Actions. No paid plan or API is necessary.
+> This is the **dedicated source repository and live static site**, deployed through free GitHub Pages. The app runs its own [GitHub Actions CI](./.github/workflows/ci.yml) and [Pages workflow](./.github/workflows/pages.yml). The original profile-hosted demo remains available separately. Model and PDF dependencies require public downloads when enabled; no paid inference account is needed.
 
 ## Features
 
@@ -14,6 +14,7 @@
 | 2.0 | Optional MiniLM q8 semantic embeddings, cosine similarity and reciprocal-rank hybrid retrieval | Local WASM via Transformers.js |
 | 3.0 | Optional small Qwen2.5 0.5B WebGPU generative drafts with structurally verified source IDs, fallback extracts and session conversation | Local WebGPU; device support required |
 | 4.0 | Multi-document keyword research, comparison, source-coverage gaps, basic instruction-shaped-text warnings and export | Local deterministic research workflow |
+| **5.0** | **Measured on-device keyword evaluation dashboard, strict citation integrity gating, stale-result prevention, detailed case study and regression tests** | **Local JavaScript and GitHub Actions** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
 
@@ -36,6 +37,10 @@ Visit **http://localhost:8765**. Sample documents are included; uploaded files s
 
 In **Research workspace**, try research across all sample documents or compare the **AI Governance Playbook** against **Cloud Architecture Guide**.
 
+### Evaluate the actual retrieval
+
+Open the **5.0 Engineering Quality Gate** and press **Run local evaluation**. It executes 28 labeled keyword queries on the original three fictional sample documents and shows top-1 source match, out-of-domain refusal rate, provenance errors, and actual browser latency, with per-case verdicts and a JSON download. If you add or remove files, reload to restore the original sample corpus before evaluating. **These scores do not test MiniLM/Qwen accuracy or real-world hallucination rates.**
+
 ## Tests and evaluation
 
 Install **Node.js 22+** for checks (no npm dependencies needed for the local retrieval test suite):
@@ -43,6 +48,7 @@ Install **Node.js 22+** for checks (no npm dependencies needed for the local ret
 ```bash
 node --test tests/*.test.mjs
 node --check app.mjs
+node --check quality.mjs
 node --check retrieval.mjs
 node --check semantic.mjs
 node --check hybrid.mjs
@@ -53,9 +59,9 @@ node eval/run.mjs --strict
 node eval/run.mjs --json > evaluation.json
 ```
 
-The included [GitHub Actions CI](./.github/workflows/ci.yml) runs the same checks and archives the toy-corpus report. In the original development repo, **39 tests passed** during the v4 release ([verified Actions run](https://github.com/arjun9669/arjun9669/actions/runs/38015809050)). That run exercised deterministic retrieval, math with **mock embeddings**, prompt/citation structure with **mock model outputs**, research provenance and small sample documents. It did **not** run real downloaded MiniLM or Qwen weights or establish real-world answer accuracy. The browser UI contains optional device-specific model evaluations.
+The included [GitHub Actions CI](./.github/workflows/ci.yml) runs the same checks, including 5.0 provenance and dashboard integration tests, and archives the toy-corpus report. During the v4 release, **39 tests passed** in the dedicated repository ([verified Actions run](https://github.com/arjun9669/GroundedDesk-AI/actions/runs/38019249606)). The 5.0 branch adds additional tests and CI will re-run the full suite before merging. That run exercised deterministic retrieval, math with **mock embeddings**, prompt/citation structure with **mock model outputs**, research provenance and small sample documents. It did **not** run real downloaded MiniLM or Qwen weights or establish real-world answer accuracy. The browser UI contains optional device-specific model evaluations.
 
-The small bundled evaluation corpus uses fictional sample documents and hand-written questions; do not present its high retrieval scores as independent production benchmarks.
+The small bundled evaluation corpus uses **18 supported and 10 unrelated queries** against fictional examples, not a held-out real-world benchmark. The 5.0 dashboard and CLI verify source identities, citations, and excerpts but do not assess semantic entailment. Do not present curated scores as model accuracy, prompt-injection immunity, or production reliability.
 
 ## Technical flow
 
@@ -83,6 +89,6 @@ Model availability, downloaded weights, memory limits, browser WebGPU/WASM suppo
 
 ## Source and deployment
 
-This standalone-ready snapshot was prepared from [the verified GroundedDesk code inside the profile repository](https://github.com/arjun9669/arjun9669/tree/main/projects/groundeddesk-ai). The old profile-hosted Pages demo remains live until intentionally migrated. The `.github/workflows/pages.yml` file is included so a dedicated repository can have its **own free Pages deployment** when Pages is configured to use GitHub Actions.
+This standalone-ready snapshot was prepared from [the verified GroundedDesk code inside the profile repository](https://github.com/arjun9669/arjun9669/tree/main/projects/groundeddesk-ai). The dedicated repository is the active source for **https://arjun9669.github.io/GroundedDesk-AI/**. The `.github/workflows/pages.yml` workflow publishes every successful `main` push after Pages is configured to use GitHub Actions. The earlier profile-hosted Pages demo remains available but is not automatically updated by this repository.
 
 No specific software license has been granted in this snapshot. Add an appropriate license only after the repository owner chooses one.
