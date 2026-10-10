@@ -81,11 +81,13 @@ function sentenceRelevance(sentence, terms) {
   return matched.length - verbosity - (header ? 2.5 : 0);
 }
 
-function bestSentence(content, terms) {
+function bestSentence(content, terms, requestedFocus = null) {
   const sentences = content.split(/(?<=[.!?])\s+|\n+/).map(s => s.trim()).filter(Boolean);
   let best = content, bestScore = -Infinity;
   for (const sentence of sentences) {
-    const score = sentenceRelevance(sentence, terms);
+    const focusPresent = requestedFocus && tokenize(sentence).some(
+      word => quoteForm(word) === quoteForm(requestedFocus));
+    const score = sentenceRelevance(sentence, terms) + (focusPresent ? 4 : 0);
     if (score > bestScore) { best = sentence; bestScore = score; }
   }
   // A quote must remain an EXACT substring of the source. For unusually long
@@ -101,15 +103,20 @@ function bestSentence(content, terms) {
 // If a keyword question asks for a specific attribute of an entity, a
 // matching organization name alone must not count as answering that attribute.
 // This is a conservative lexical guard, not a semantic or factuality judge.
-function missingRequestedAttribute(question, sources) {
+function requestedAttribute(question) {
   const query = String(question);
   const pattern = /^\s*(?:what|which|who)\s+(?:is|are|was|were)\s+(?:(?:the|an?|their)\s+)?(.+?)\s+(?:of|for)\s+/i;
   const match = query.match(pattern);
-  if (!match) return false;
+  if (!match) return null;
   const focus = tokenize(match[1]).filter(word => ![
     "total", "exact", "overall", "current", "estimated", "average", "latest",
     "number", "amount", "value"
   ].includes(word)).at(-1);
+  return focus || null;
+}
+
+function missingRequestedAttribute(question, sources) {
+  const focus = requestedAttribute(question);
   if (!focus) return false;
   const canonical = quoteForm(focus);
   return !sources.some(source =>
@@ -199,7 +206,7 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
   const sources = picked.map((candidate, i) => ({
     citation: i + 1, id: candidate.id, documentId: candidate.documentId,
     filename: candidate.filename, excerpt: candidate.content,
-    quote: bestSentence(candidate.content, unique),
+    quote: bestSentence(candidate.content, unique, usesHybridScores ? null : requestedAttribute(question)),
     score: Math.round(candidate.score * 10000) / 10000,
     lexicalScore: candidate.lexicalScore ?? null,
     semanticScore: candidate.semanticScore ?? null,
