@@ -4,6 +4,7 @@ import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from
 import { createEvidenceReport } from "./report.mjs";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs";
 import { buildResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -25,6 +26,7 @@ let generationLoading = false;
 let generationTestBusy = false;
 let recentTurns = [];
 let currentResearch = null;
+let latestQualityReport = null;
 
 function setGenerationStatus(message, isError = false) {
   const status = $("generation-status");
@@ -109,6 +111,8 @@ function rebuildIndex() {
   indexed = buildIndex(documents);
   indexVersion++;
   resetConversation();
+  if (document.getElementById("answer-result")) clearResult();
+  if (document.getElementById("quality-output")) clearQuality();
   if (document.getElementById("research-results")) {
     clearResearch();
     updateResearchControls();
@@ -243,6 +247,12 @@ function highlightDocument(id) {
 }
 
 function renderResult(question, result) {
+  // Never display a fabricated or stale excerpt as verified evidence.
+  const provenance = verifyEvidenceResult(result, documents);
+  if (!provenance.ok) {
+    result = { answered:false, sources:[], mode:"Evidence integrity guard", answer:"Source verification failed. This answer was withheld; please re-run the search." };
+    notify("Evidence verification failed: " + provenance.reason, true);
+  }
   currentAnswer = result;
   visibleQuestion = question;
   $("initial-state").hidden = true;
@@ -792,6 +802,103 @@ $("research-download").addEventListener("click", () => {
     notify("Markdown research report prepared for local download.");
   } catch (error) {
     notify(error instanceof Error ? error.message : "Could not download research report.", true);
+  } finally {
+    if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+});
+
+function clearQuality() {
+  latestQualityReport = null;
+  if ($("quality-output")) $("quality-output").hidden = true;
+  if ($("quality-metrics")) $("quality-metrics").replaceChildren();
+  if ($("quality-rows")) $("quality-rows").replaceChildren();
+  if ($("export-quality")) $("export-quality").disabled = true;
+  if ($("quality-status")) $("quality-status").textContent =
+    "Document library changed; previous results cleared. Restore the three original samples to evaluate again.";
+}
+
+function qualitySamplesReady() {
+  return documents.length === sampleFiles.length &&
+    sampleFiles.every(([, name]) => documents.some(doc => doc.sample && doc.name === name));
+}
+
+function displayQuality(report) {
+  const cards = $("quality-metrics");
+  const rows = $("quality-rows");
+  cards.replaceChildren();
+  rows.replaceChildren();
+  const pct = n => n == null ? "n/a" : (n * 100).toFixed(1) + "%";
+  const metrics = [
+    ["Top-1 source match", pct(report.top1_source_accuracy_on_supported)],
+    ["Unsupported query refusals", pct(report.out_of_domain_refusal_rate)],
+    ["Citation provenance errors", String(report.citation_provenance_errors)],
+    ["False supported answers", String(report.false_accept_count)],
+    ["Median retrieval latency", report.p50_latency_ms.toFixed(3) + " ms"],
+    ["95th percentile latency", report.p95_latency_ms.toFixed(3) + " ms"],
+  ];
+  for (const [label,value] of metrics) {
+    const box = make("div","quality-metric");
+    box.append(make("strong","",value), make("span","",label));
+    cards.append(box);
+  }
+  for (const item of report.cases) {
+    const tr = document.createElement("tr");
+    for (const value of [
+      item.id, item.expected_source || "Unsupported / refuse",
+      item.top_source || "No source", item.passed ? "Pass" : "Check",
+    ]) tr.append(make("td","",value));
+    if (!item.passed) tr.className = "quality-case-failure";
+    rows.append(tr);
+  }
+  $("quality-output").hidden = false;
+  $("export-quality").disabled = false;
+  $("quality-status").textContent =
+    `Measured ${report.test_count} actual keyword queries against ${report.corpus_documents} original sample documents in this browser. ` +
+    "These are illustrative labeled tests, not independent accuracy or Qwen performance.";
+}
+
+$("run-quality").addEventListener("click", async () => {
+  $("run-quality").disabled = true;
+  clearQuality();
+  try {
+    if (!qualitySamplesReady()) {
+      throw new Error("This evaluation is only valid on the original three untouched samples. Reload this page to restore them.");
+    }
+    $("quality-status").textContent = "Evaluating deterministic keyword retrieval locally…";
+    const response = await fetch("./eval/queries.json");
+    if (!response.ok) throw new Error("Evaluation fixture could not be loaded.");
+    const fixture = await response.json();
+    if (!qualitySamplesReady()) throw new Error("Documents changed during fixture loading.");
+    const report = evaluateKeywordFixture(fixture, documents);
+    latestQualityReport = report;
+    displayQuality(report);
+    notify("Keyword evaluation complete. Inspect per-case results and evidence checks.");
+  } catch (error) {
+    $("quality-status").textContent = error instanceof Error ? error.message : "Evaluation unavailable.";
+    notify("Evaluation could not complete.", true);
+  } finally {
+    $("run-quality").disabled = false;
+  }
+});
+
+$("export-quality").addEventListener("click", () => {
+  if (!latestQualityReport) return;
+  let url;
+  try {
+    const json = JSON.stringify({
+      ...latestQualityReport,
+      note:"Device-local, labeled fictional corpus only. NOT an LLM or deployment quality benchmark.",
+    }, null, 2);
+    url = URL.createObjectURL(new Blob([json], { type:"application/json;charset=utf-8" }));
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "groundeddesk-v5-keyword-evaluation.json";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    notify("Measured evaluation JSON prepared for download.");
+  } catch {
+    notify("Could not prepare evaluation JSON.", true);
   } finally {
     if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
