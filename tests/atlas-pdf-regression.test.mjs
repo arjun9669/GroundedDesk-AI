@@ -128,7 +128,7 @@ test("Cache-busted entry and module imports advertise the current retrieval buil
   const html=readFileSync(resolve(root,"index.html"),"utf8");
   const app=readFileSync(resolve(root,"app.mjs"),"utf8");
   const retrieval=readFileSync(resolve(root,"retrieval.mjs"),"utf8");
-  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r13"/);
+  assert.match(html,/src="\.\/app\.mjs\?v=20261010-r14"/);
   assert.match(html,/id="retrieval-build"/);
   assert.match(app,/from "\.\/retrieval\.mjs\?v=20261010-r13"/);
   assert.match(app,/Loaded retrieval build:/);
