@@ -90,6 +90,26 @@ function bestSentence(content, terms, requestedFocus = null, numericFocus = fals
     const score = sentenceRelevance(sentence, terms) + (focusPresent ? 4 : 0) + (numericFocus && /[0-9]/.test(sentence) ? 2.5 : 0);
     if (score > bestScore) { best = sentence; bestScore = score; bestIndex = i; }
   }
+  // For an explicitly two-part question, add at most one adjacent sentence
+  // when it covers missing terms from the question. Preserve source wording.
+  if (compound && bestIndex >= 0) {
+    const covered = new Set(tokenize(best).map(quoteForm));
+    const missing = new Set(terms.map(quoteForm).filter(term => !covered.has(term)));
+    let improvement = 0;
+    for (const near of [bestIndex - 1, bestIndex + 1]) {
+      if (!sentences[near]) continue;
+      const gained = [...new Set(tokenize(sentences[near]).map(quoteForm))]
+        .filter(term => missing.has(term)).length;
+      if (!gained || gained <= improvement) continue;
+      const startText = sentences[Math.min(near, bestIndex)];
+      const finishText = sentences[Math.max(near, bestIndex)];
+      const from = content.indexOf(startText);
+      const to = content.indexOf(finishText, from) + finishText.length;
+      if (from < 0 || to <= from || to - from > 420) continue;
+      best = content.slice(from, to);
+      improvement = gained;
+    }
+  }
   // A quote must remain an EXACT substring of the source. For unusually long
   // unpunctuated PDF passages, center a literal window near the search terms.
   if (best.length <= 420) return best;
