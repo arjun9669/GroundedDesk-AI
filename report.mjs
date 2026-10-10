@@ -44,7 +44,7 @@ export function createEvidenceReport(question, result) {
     "",
     "**Retrieval mode:** " + inline(result.mode || "Not recorded"),
     "",
-    "**Retrieval build:** " + inline(result.retrievalBuild || "Unknown (older report or unavailable module)"),
+    "**Retrieval build:** `" + (String(result.retrievalBuild || "unknown").replace(/[^A-Za-z0-9._-]/g, "").slice(0, 80) || "unknown") + "`",
     "",
     "## Answer",
     "",
