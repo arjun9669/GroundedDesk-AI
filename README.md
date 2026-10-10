@@ -67,7 +67,15 @@ The Windows Chrome manual test identified a **Hybrid-mode false acceptance** whe
 
 **Manual retest result (2026-10-10): PASS for the original password-refusal case.** On build `2026-10-10-r16`, Windows Chrome Hybrid MiniLM + BM25 returned an explicit refusal with **zero cited sources**. The [validation record](./docs/HYBRID_REFUSAL_5_3_1.md) preserves both the r15 failure and r16 success. This does **not** establish reliable refusal behavior across other Hybrid questions. The r15 **15/15** Atlas baseline tested **Keyword and document comparison only**, not Hybrid. In r16, the conservative specific-attribute evidence guard also applies to Hybrid RRF results. This is not a full semantic entailment verifier.
 
-See the [observed failure and patch validation plan](./docs/HYBRID_REFUSAL_5_3_1.md). Automated regression tests use mock vectors and cannot establish actual MiniLM model performance. Repeat the same real-browser question in **Hybrid** with the original three Atlas PDFs and verify an explicit refusal and zero citations before recording manual acceptance. Keep the known failure in the historical record.
+See the [observed failure and successful Chrome retest](./docs/HYBRID_REFUSAL_5_3_1.md). Automated regression tests still use mock vectors and cannot establish actual MiniLM accuracy.
+
+### 5.3.2 — Hybrid complete-source evidence correction (r17)
+
+A **separate actual Windows Chrome test on r16** of the original Atlas 15 questions found **12 PASS / 1 PARTIAL / 2 FAIL** across Hybrid Q&A (8/11 full passes) and lexical Comparison (4/4 passes). The observed Hybrid defects were **D03** (missed 95% provenance target), **D06** (lost legal-hold exception after `unless`) and **D08** (incorrect high-risk vendor approval). Other answers carried irrelevant but source-literal quotes. See the [preserved r16 test baseline](./docs/ATLAS15_R16_CHROME_HYBRID_BASELINE.md). This real-browser baseline supersedes any inference that the earlier **offline Keyword 15/15** score also applied to Hybrid.
+
+In r17, Hybrid can recover a **complete exact source sentence** from a retrieved document when a strong lexical match exists, instead of relying on a potentially truncated MiniLM-ranked chunk. Weak extra citations in non-comparison questions are pruned conservatively; explicit multi-document workflows remain separate. Semantic-only paraphrases fall back to existing chunk extraction. All relevance measures remain heuristics, **not entailment verification**.
+
+**Validation:** Automated regression tests use deterministic mock-vectors. **Full real MiniLM Chrome r17 Atlas 15 re-evaluation remains required** and has no declared score until browser results are recorded.
 
 ### Evaluate the actual retrieval
 
@@ -75,9 +83,9 @@ Open the **5.0 Engineering Quality Gate** and press **Run local evaluation**. It
 
 ### Browser cache and evidence-report build version
 
-GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quick successive deployments. The updated Keyword retrieval engine identifies itself as build `2026-10-10-r16`, and the 5.3 browser entrypoint plus its direct retrieval-related imports use fingerprint `20261010-r16`. Source/CSS URLs are fingerprinted so updated HTML loads matching app modules. Each evidence report now states its **Retrieval build** and **Retrieval mode**. The footer also displays the loaded build.
+GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quick successive deployments. The updated Keyword retrieval engine identifies itself as build `2026-10-10-r17`, and the 5.3 browser entrypoint plus its direct retrieval-related imports use fingerprint `20261010-r17`. Source/CSS URLs are fingerprinted so updated HTML loads matching app modules. Each evidence report now states its **Retrieval build** and **Retrieval mode**. The footer also displays the loaded build.
 
-To verify an Atlas PDF regression fix, reopen [the live demo with a unique page query](https://arjun9669.github.io/GroundedDesk-AI/?build=20261010-r16), clear the original TXT samples, upload the PDFs again, select **Keyword** mode, and regenerate the report. A report missing the build field may have been copied from an earlier cached tab. Score and source matching are still heuristic; one cited exact quote does not establish that an entire answer is complete.
+To verify an Atlas PDF regression fix, reopen [the live demo with a unique page query](https://arjun9669.github.io/GroundedDesk-AI/?build=20261010-r17), clear the original TXT samples, upload the PDFs again, select **Keyword** mode, and regenerate the report. A report missing the build field may have been copied from an earlier cached tab. Score and source matching are still heuristic; one cited exact quote does not establish that an entire answer is complete.
 
 ## Tests and evaluation
 

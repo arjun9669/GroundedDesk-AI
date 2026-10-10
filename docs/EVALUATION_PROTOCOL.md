@@ -85,3 +85,10 @@ Follow-up: obtain unlabeled non-sensitive third-party documents, define expected
 [The actual Windows Chrome Hybrid false-acceptance report](HYBRID_REFUSAL_5_3_1.md) on build r15 answered an absent database-password question with unrelated Atlas cover citations. The prior **15/15 result was Keyword/Comparison only and must not be described as a Hybrid pass**. The r16 patch applies an explicit-attribute refusal guard to Hybrid results; mock-vector unit tests verify the logic without proving the actual MiniLM model's accuracy.
 
 Re-run the original three Atlas PDFs, with the local MiniLM actually enabled in Chrome, using the same prompt. Record the visible build and Hybrid mode, exact refusal text, and absence of citations. If any header citation reappears, record a FAIL and keep the new manual gate open.
+
+
+## H. r16 actual Windows Chrome Atlas 15 mixed-workflow benchmark
+
+The [tester-supplied Chrome evidence summary](ATLAS15_R16_CHROME_HYBRID_BASELINE.md) measured **12 PASS / 1 PARTIAL / 2 FAIL** with build r16: actual MiniLM Hybrid Q&A 8/11 full passes (5/8 supported direct questions, 3/3 refusals), and separate deterministic Comparison 4/4. This is **not** MiniLM 12/15 accuracy. Citation provenance checks were 23/23 literal source matches, but incorrect source selection (D03, D08) and an incomplete legal-hold exception (D06) still failed. Preserve this negative baseline. The browser extension's inability to re-upload files means no claim of fresh-upload reproducibility.
+
+r17 aims to correct these three case shapes; logic-level tests use **mock Hybrid vectors**, not actual MiniLM. Re-run the unchanged 15 cases in Chrome after the deployment and report scores **by workflow**, without replacing r16 or the original r15 offline Keyword baseline.
