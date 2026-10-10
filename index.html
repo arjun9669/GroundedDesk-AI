@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="color-scheme" content="light"/>
   <meta name="theme-color" content="#0b1726"/>
-  <meta name="description" content="GroundedDesk AI — private browser-side document intelligence and citation-aware evidence search."/>
-  <title>GroundedDesk AI 4.0 | Local Document Research</title>
+  <meta name="description" content="GroundedDesk AI 5.0 — free browser-side document intelligence, local AI options, multi-document evidence research and measurable source evaluation."/>
+  <title>GroundedDesk AI 5.0 | Evidence-First Document Research</title>
   <link rel="stylesheet" href="./styles.css"/>
   <script defer type="module" src="./app.mjs"></script>
 </head>
@@ -19,8 +19,8 @@
       </div>
       <nav class="header-links" aria-label="Primary navigation">
         <a href="#workbench">Workbench</a>
-        <a href="#about">Architecture</a>
-        <a href="https://github.com/arjun9669" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="#quality-title">Evaluate</a><a href="#about">Architecture</a>
+        <a href="https://github.com/arjun9669/GroundedDesk-AI" target="_blank" rel="noopener noreferrer">Source ↗</a>
       </nav>
       <div class="private-pill"><span class="private-dot"></span> Browser-private session</div>
     </header>
@@ -84,6 +84,30 @@
             <button type="button" id="clear-conversation">Clear session conversation</button>
           </div>
           <pre id="generation-evaluation" class="generation-evaluation" hidden aria-live="polite"></pre>
+        </section>
+        <section class="quality-workbench" aria-labelledby="quality-title">
+          <div class="quality-head">
+            <div>
+              <p class="micro-label">5.0 · ENGINEERING QUALITY GATE</p>
+              <h3 id="quality-title">Evaluate the evidence, not just the demo.</h3>
+              <p>Run a real, on-device keyword retrieval evaluation against 28 labeled questions and the three bundled fictional documents. Inspect per-case verdicts, source integrity, refusals, and measured latency. This does not measure Qwen accuracy.</p>
+            </div>
+            <div class="quality-actions">
+              <button id="run-quality" type="button">Run local evaluation</button>
+              <button id="export-quality" type="button" disabled>Download results JSON</button>
+            </div>
+          </div>
+          <p id="quality-status" class="quality-status" role="status" aria-live="polite">Ready. Evaluations use only the unchanged example documents and no cloud inference.</p>
+          <div id="quality-output" hidden>
+            <div class="quality-metrics" id="quality-metrics" aria-label="Measured evaluation metrics"></div>
+            <details class="quality-details">
+              <summary>Inspect every test case and verdict</summary>
+              <div class="quality-table-wrap"><table class="quality-table"><thead><tr>
+                <th scope="col">Case</th><th scope="col">Expected</th><th scope="col">Retrieved</th><th scope="col">Result</th>
+              </tr></thead><tbody id="quality-rows"></tbody></table></div>
+            </details>
+            <p class="quality-caveat">Scores are from a small, hand-labeled toy dataset. 100% here would not imply production accuracy, hallucination prevention, semantic-model performance, or security assurance.</p>
+          </div>
         </section>
         <div class="panel-grid">
           <aside class="panel library" aria-labelledby="library-title">
