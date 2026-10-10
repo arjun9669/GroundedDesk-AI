@@ -2,7 +2,7 @@ name: GroundedDesk CI
 
 on:
   push:
-    branches: [main, groundeddesk-standalone]
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -25,6 +25,7 @@ jobs:
           node --check semantic.mjs
           node --check generation.mjs
           node --check research.mjs
+          node --check quality.mjs
           node --check report.mjs
           node --check eval/run.mjs
       - name: Unit tests
