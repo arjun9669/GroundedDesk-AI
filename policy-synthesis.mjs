@@ -27,7 +27,7 @@ const RULES = [
 ];
 // Rule patterns deliberately narrow: non-matching requirements are a false-negative risk.
 const FALLBACK = /\b(must|shall|required|requires|prohibited|may\s+only)\b/i;
-const normalize = value => String(value).replace(/\r\n?/g,"\n").replace(/[ \t]+/g," ").trim();
+const normalize = value => String(value).replace(/\r\n?/g,"\n").replace(/\s+/g," ").trim();
 const isValidDocument = d => Boolean(d && typeof d.id==="string" && d.id &&
   typeof d.name==="string" && d.name && typeof d.text==="string" && d.text.length<=180000);
 const labelEscape = s => String(s).replace(/\\/g,"\\\\").replace(/[\x60*_{}\[\]()#+.!>|-]/g,"\\$&")
