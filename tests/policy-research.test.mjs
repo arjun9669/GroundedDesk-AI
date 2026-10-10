@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
 import {buildPolicyResearchResult, formatResearchMarkdown} from "../research.mjs";
 import {buildIndex, answerQuestion, RETRIEVAL_BUILD} from "../retrieval.mjs";
 
@@ -97,4 +98,15 @@ test("5.1 validates selected document and scope while leaving Keyword mode uncha
   const after=answerQuestion(question,index);
   assert.deepEqual(after,before,"5.1 must not mutate shared BM25 chunks or answer behavior");
   assert.equal(RETRIEVAL_BUILD,"2026-10-10-r13");
+});
+
+test("Pages deployment is gated on successful main CI and deploys only the tested SHA",()=>{
+  const yaml=readFileSync(new URL("../.github/workflows/pages.yml",import.meta.url),"utf8");
+  assert.match(yaml,/workflow_run:/);
+  assert.match(yaml,/workflows: \["GroundedDesk CI"\]/);
+  assert.match(yaml,/branches: \[main\]/);
+  assert.match(yaml,/workflow_run\.conclusion == 'success'/);
+  assert.match(yaml,/workflow_run\.head_repository\.full_name == github\.repository/);
+  assert.match(yaml,/ref: \$\{\{ github\.event\.workflow_run\.head_sha \}\}/);
+  assert.doesNotMatch(yaml,/^\s+push:/m);
 });
