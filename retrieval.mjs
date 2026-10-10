@@ -87,7 +87,12 @@ function bestSentence(content, terms, requestedFocus = null, numericFocus = fals
   for (const [i, sentence] of sentences.entries()) {
     const focusPresent = requestedFocus && tokenize(sentence).some(
       word => quoteForm(word) === quoteForm(requestedFocus));
-    const score = sentenceRelevance(sentence, terms) + (focusPresent ? 4 : 0) + (numericFocus && /[0-9]/.test(sentence) ? 2.5 : 0);
+    // For risk bands and similar numeric categories, a labeled interval is
+    // more relevant than an overall scoring scale.
+    const category = terms.find(term => ["high", "medium", "low", "critical", "moderate"].includes(term));
+    const categoryPresent = category && tokenize(sentence).some(word => quoteForm(word) === category);
+    const score = sentenceRelevance(sentence, terms) + (focusPresent ? 4 : 0)
+      + (numericFocus && /[0-9]/.test(sentence) ? 2.5 + (categoryPresent ? 1.5 : 0) : 0);
     if (score > bestScore) { best = sentence; bestScore = score; bestIndex = i; }
   }
   // For an explicitly two-part question, add at most one adjacent sentence
