@@ -78,3 +78,10 @@ This is an **offline engine run**, not a Safari upload test, not a test of 5.2 r
 See [the original-PDF-text 5.3 re-evaluation](ATLAS_15_QUESTION_5_3_RETEST.md): **15/15** supported/appropriately refused on the original known synthetic Atlas corpus versus [the prior baseline](ATLAS_15_QUESTION_BASELINE.md) of **9 PASS / 4 PARTIAL / 2 FAIL**. Preserve the original record unchanged. This is an **in-sample code-level regression**, after feature tuning against known failures: it is not independent accuracy, a 5.2 checklist test, PDF.js browser parsing, or mobile Safari validation.
 
 Follow-up: obtain unlabeled non-sensitive third-party documents, define expected facts and refusals *before* testing, then record exact displayed quotations, false accepts, partials and failures for each engine mode separately. Replaying the same synthetic 15 questions again does not establish generalization.
+
+
+## G. 5.3.1 Hybrid manual failure and separate acceptance gate
+
+[The actual Windows Chrome Hybrid false-acceptance report](HYBRID_REFUSAL_5_3_1.md) on build r15 answered an absent database-password question with unrelated Atlas cover citations. The prior **15/15 result was Keyword/Comparison only and must not be described as a Hybrid pass**. The r16 patch applies an explicit-attribute refusal guard to Hybrid results; mock-vector unit tests verify the logic without proving the actual MiniLM model's accuracy.
+
+Re-run the original three Atlas PDFs, with the local MiniLM actually enabled in Chrome, using the same prompt. Record the visible build and Hybrid mode, exact refusal text, and absence of citations. If any header citation reappears, record a FAIL and keep the new manual gate open.
