@@ -130,6 +130,11 @@ function policySections(text) {
   }).filter(section=>section.passage.length>section.sectionId.length+5);
 }
 
+// Shared read-only parser for the opt-in 5.2 checklist; 5.1 scoring is unchanged.
+export function numberedPolicySections(text) {
+  return policySections(normalizedSource(text));
+}
+
 function boundedPolicyQuote(passage) {
   const ends = [...passage.matchAll(/[.!?](?=\s|$)/g)];
   const preferred = ends.length>=3 ? ends[2].index+1 :
