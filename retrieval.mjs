@@ -213,6 +213,37 @@ export function keywordRank(question, index) {
   return candidates.sort((a,b) => b.score - a.score || b.matched - a.matched || a.filename.localeCompare(b.filename));
 }
 
+// Recover surrounding complete source sentences after BM25 has selected a
+// fixed-size chunk. The original chunk may begin inside a word or sentence.
+// Keep ranking unchanged, and never create text not present in the document.
+function completeEvidenceContext(candidate) {
+  const excerpt = candidate.content;
+  const full = candidate.sourceText;
+  if (typeof full !== "string" || typeof excerpt !== "string" ||
+      !Number.isInteger(candidate.start) || !excerpt) return excerpt;
+  const anchor = full.indexOf(excerpt, Math.max(0, candidate.start - 4));
+  if (anchor < 0) return excerpt;
+  const chunkEnd = anchor + excerpt.length;
+  let from = anchor, to = chunkEnd;
+  if (anchor > 0) {
+    const scanStart = Math.max(0, anchor - 320);
+    const before = full.slice(scanStart, anchor);
+    const boundaries = [...before.matchAll(/[.!?](?:\\s+)|\\n+/g)];
+    if (boundaries.length) {
+      const last = boundaries[boundaries.length - 1];
+      from = scanStart + last.index + last[0].length;
+    } else if (scanStart === 0) {
+      from = 0;
+    }
+  }
+  if (chunkEnd < full.length) {
+    const after = full.slice(chunkEnd, Math.min(full.length, chunkEnd + 260));
+    const next = after.match(/[.!?](?:\\s|$)|\\n/);
+    if (next) to = chunkEnd + next.index + 1;
+  }
+  return full.slice(from, to).trim();
+}
+
 export function answerFromCandidates(question, candidates, maxSources = 3, mode = "Deterministic extractive retrieval (BM25-style, no LLM)") {
   if (!Array.isArray(candidates)) throw new TypeError("Invalid ranked candidates");
   const unique = [...new Set(tokenize(question))];
