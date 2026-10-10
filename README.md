@@ -52,7 +52,7 @@ In **Research workspace**, select **5.2 · Candidate release-control inventory**
 
 This **does not** verify whether a control has been satisfied, infer exception conditions, assess legal compliance, or guarantee complete requirement recall. The categories are heuristics rather than semantic analysis; some advisory/operational controls can be included and some obligations can be missed. The form only supports **release/deployment/launch/readiness** prompts, not arbitrary policy question answering. Documents without recognizable numbered clauses have no supported result. Keep the full original document alongside every exported report. No paid API, server, vector DB, or LLM is involved.
 
-**QA status:** Source-code checks, deterministic tests and curated fixtures run in GitHub CI. **The actual Atlas PDF upload and export on iPhone is a separate manual acceptance check.** The Atlas 15-question benchmark has **not** been scored against 5.2 and should not be presented as a pass rate. See [evaluation protocol](./docs/EVALUATION_PROTOCOL.md).
+**QA status:** Source-code, unit and Chromium UI checks passed in GitHub CI. The tester's original Atlas PDF 5.2 export has been [manually reviewed and recorded](./docs/VALIDATION_5_2_ATLAS.md) as **one single-PDF smoke-test pass**, not a complete or independently instrumented browser test. The Atlas 15-question benchmark has **not** been scored against 5.2 and should not be presented as a pass rate. See [evaluation protocol](./docs/EVALUATION_PROTOCOL.md).
 
 ### Evaluate the actual retrieval
 
@@ -67,6 +67,8 @@ To verify an Atlas PDF regression fix, reopen [the live demo with a unique page 
 ## Tests and evaluation
 
 Manual QA: [GroundedDesk AI 5.1 Phase 1 Atlas single-PDF validation record](./docs/VALIDATION_5_1_PHASE1.md) — one source-inspected 2026-10-10 smoke test, **not** an exhaustive policy-audit or cross-browser benchmark.
+
+5.2 manual QA: [Atlas single-PDF candidate-control validation](./docs/VALIDATION_5_2_ATLAS.md) — 8 sections inspected, 17 literal quotes manually compared, **not** a 15-question benchmark or release-compliance certification.
 
 Install **Node.js 22+** for checks (no npm dependencies needed for the local retrieval test suite):
 
