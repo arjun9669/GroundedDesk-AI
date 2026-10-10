@@ -229,8 +229,42 @@ const cleanLine = value => String(value ?? "").replace(/\r\n?/g,"\n").replace(/[
 const quote = text => cleanLine(text).split("\n").map(line => "> " + line).join("\n");
 const safeTitle = text => cleanLine(text).replace(/[\\\x60*_{}\[\]()#+.!>|-]/g,"\\$&");
 
+function formatPolicyResearchMarkdown(result) {
+  const lines = [
+    "# GroundedDesk AI 5.1 — multi-section policy evidence",
+    "",
+    "**Method:** Local deterministic scan of numbered policy sections (no LLM).",
+    "**Question:** " + safeTitle(result.question),
+    "**Document:** " + safeTitle(result.filename),
+    "**Scope:** " + result.sources.length + " quoted sections from " +
+      result.matchingSectionCount + " lexically matched of " + result.sectionCount +
+      " detected sections (maximum " + result.limit + ").",
+    "",
+    "## Section-by-section evidence", ""
+  ];
+  if (!result.answered) {
+    lines.push("No matching numbered policy sections found. This is not proof that the policy lacks the requested information.", "");
+  }
+  for (const source of result.sources) {
+    lines.push("### [" + source.citation + "] " + safeTitle(source.sectionId) +
+      " — " + safeTitle(source.filename), "", quote(source.quote), "");
+    if (source.truncated) lines.push("*Excerpt only; review the full section for additional conditions.*", "");
+    if (source.warning) lines.push("**Review flag:** Instruction-shaped source content detected; treated as untrusted text.", "");
+  }
+  lines.push("## Coverage and limitations", "",
+    result.omittedMatchingSections
+      ? result.omittedMatchingSections + " additional keyword-matching sections omitted by the evidence cap."
+      : "No additional keyword-matching numbered sections were omitted by the evidence cap.",
+    "Other sections can contain relevant facts that keyword overlap missed. This is not an exhaustive policy summary or compliance determination.",
+    "",
+    "---", "",
+    "*All quotations are exact substrings of the loaded document after whitespace normalization. Read the complete source before making decisions.*", "");
+  return lines.join("\n");
+}
+
 export function formatResearchMarkdown(result) {
-  if (!result || !["research","comparison"].includes(result.kind)) throw new TypeError("Invalid report");
+  if (!result || !["research","comparison","policy-research"].includes(result.kind)) throw new TypeError("Invalid report");
+  if (result.kind === "policy-research") return formatPolicyResearchMarkdown(result);
   const lines = ["# GroundedDesk AI 4.0 — evidence report", "",
     "**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.", ""];
   if (result.question) lines.push("**Question/topic:** " + safeTitle(result.question), "");
