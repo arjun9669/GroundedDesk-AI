@@ -4,7 +4,7 @@
  * Its "agent" is a deterministic retrieve -> cross-check -> report workflow,
  * not an autonomous AI agent or a fact-entailment verifier.
  */
-import { buildIndex, keywordRank, answerFromCandidates, tokenize, bestSourceSentence } from "./retrieval.mjs?v=20261011-r21";
+import { buildIndex, keywordRank, answerFromCandidates, tokenize, bestSourceSentence } from "./retrieval.mjs?v=20261011-r22";
 
 const MAX_QUERY = 600;
 const FLAG_PATTERNS = [
@@ -207,7 +207,7 @@ export function compareDocuments(documentA, documentB, question = "") {
       // complete source sentences within EACH document instead of applying
       // general-Q&A chunk eligibility to a long comparison question.
       // A nonempty result is a literal quotation, not a proven comparison.
-      excerpt = bestSourceSentence(topic, doc.text);
+      excerpt = bestSourceSentence(topic, doc.text, {comparison:true});
     } else {
       // Overview mode picks literal opening text. Never invent an interpretation.
       const plain = doc.text.trim();
