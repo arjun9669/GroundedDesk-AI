@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-10-r18";
+export const RETRIEVAL_BUILD = "2026-10-11-r19";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -152,6 +152,22 @@ function hasForm(sentenceForms,word) {
 function requestedEvidenceFocus(question) {
   // Specific requested values must occur in the actual displayed answer,
   // not merely in an unrelated title, neighboring excerpt or document name.
+  // Requesting a numeric identifier or a measured setting is different from
+  // asking how to handle accounts or tools. Require a labeled *value* in the
+  // answer quote, not merely the words "account" or "torque".
+  const q=String(question);
+  const asksValue=/^\s*(?:what|which|give|provide|state|show)\b/i.test(q) ||
+    /\b(?:exact|specified|required)\b/i.test(q);
+  if (asksValue && /\b(?:bank\s+account(?:\s+(?:number|no\.?))?|account\s+(?:number|no\.?)|iban)\b/i.test(q)) {
+    // Accept a bank-account label followed nearby by an actual multi-digit
+    // account/IBAN value. A document title or section ID is insufficient.
+    return /\b(?:bank\s+account(?:\s+(?:number|no\.?))?|account\s+(?:number|no\.?)|iban|acct\s*(?:number|no\.?|#))\b[^.!?\n]{0,70}?(?:\b[A-Z]{2}\d{2}[A-Z0-9 ]{10,30}\b|\b\d[\d -]{5,}\d\b)/i;
+  }
+  if (asksValue && /\btorque\b/i.test(q) &&
+      /\b(?:required|specified|value|setting|newton|n\s*[.·-]?\s*m)\b/i.test(q)) {
+    // A torque marker in a tool list is not a numerical tightening value.
+    return /\b\d+(?:[.,]\d+)?\s*(?:n\s*[.·-]?\s*m|newton[-\s]?met(?:re|er)s?)\b/i;
+  }
   const match=String(question).toLowerCase().match(/\b(passwords?|passphrases?|credentials?|birth\s+date|date\s+of\s+birth|salar(?:y|ies)|prices?|budgets?|phone\s+numbers?|email\s+addresses?)\b/);
   if (!match) return null;
   const word=match[1];
