@@ -133,3 +133,11 @@ test("r23 keeps preceding r20 approval and dispatch applicability behavior",()=>
 test("r23 build explicitly identifies changed browser code",()=>{
   assert.equal(RETRIEVAL_BUILD,"2026-10-11-r23");
 });
+
+test("r23 refuses a differently named person's labeled phone number",()=>{
+  const docs=[{id:"people",name:"team.txt",text:[
+    "The Chief Registrar approves records for the archive.",
+    "The Visitor Steward's mobile number is +971 55 234 9876."
+  ].join(" ")}];
+  refuse(ask("What is the mobile number of the Chief Registrar?",docs));
+});
