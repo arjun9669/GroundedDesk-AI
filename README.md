@@ -93,15 +93,23 @@ r19 makes a **narrow safeguard** for explicit requests for a bank account identi
 
 This does **not** fix the other six known Meridian cases (I07, I09, I10, I15, I18, I20), and is not general semantic validation. **Real Chrome r19 regression (2026-10-11):** The [actual MiniLM retest](./docs/MERIDIAN24_R19_CHROME_REGRESSION.md) scored **18 PASS / 4 PARTIAL / 2 FAIL (75%)** against the unchanged frozen Meridian 24, improving from r18's preserved **16/24 first-look**. Both I23/I24 now correctly refuse with **zero citations**, and all 16 previous passes were preserved. This is **in-sample regression**, not new held-out accuracy; I07 and I10 still fail, while I09/I15/I18/I20 remain partial. Mock-vector tests and [r19 plan](./docs/MERIDIAN_R19_UNSUPPORTED_VALUES.md) remain separate supporting checks.
 
+### 5.4 — operative approval and dispatch evidence selection (r20)
+
+The frozen Meridian24 r19 real Chrome regression remained **18/24 PASS** with two direct incorrect answers: **I07** selected the lower approval band for a request above its upper threshold; **I10** quoted the dispatch cutoff instead of the explicit next-operating-day rule for an order released later than the cutoff.
+
+r20 adds narrow source-literal clause selection for purchasing approval **numeric inequalities** and a **post-cutoff dispatch departure** backed by an explicit next-day sentence in the retrieved source. These checks use the original document text and never synthesize missing actors or dates; other semantic-only Hybrid paths retain their fallback. Generalized mock-vector tests cover different thresholds, exact boundaries and cutoff times. The four partial cases I09/I15/I18/I20 remain open.
+
+**Actual r20 MiniLM Chrome result pending.** The unchanged r18 first unseen **16/24** and r19 in-sample regression **18/24** are preserved. [r20 scope and acceptance plan](./docs/MERIDIAN_R20_OPERATIVE_CONDITIONS.md).
+
 ### Evaluate the actual retrieval
 
 Open the **5.0 Engineering Quality Gate** and press **Run local evaluation**. It executes 28 labeled keyword queries on the original three fictional sample documents and shows top-1 source match, out-of-domain refusal rate, provenance errors, **warmed-up repeated keyword timing in microseconds**, and per-case verdicts with a JSON download. The microbenchmark times 10 representative questions in batches lasting at least 40 ms, avoids misleading 0.000 ms one-shot displays, and reports median/p95 across batch-average timings—not individual-request tail latency. If you add or remove files, reload to restore the original sample corpus before evaluating. **These scores do not test MiniLM/Qwen accuracy or real-world hallucination rates.** See the [evaluation methodology and manual real-document test protocol](./docs/EVALUATION_PROTOCOL.md) for exact measurements and limitations.
 
 ### Browser cache and evidence-report build version
 
-GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quick successive deployments. The updated Keyword retrieval engine identifies itself as build `2026-10-11-r19`, and the 5.3 browser entrypoint plus its direct retrieval-related imports use fingerprint `20261011-r19`. Source/CSS URLs are fingerprinted so updated HTML loads matching app modules. Each evidence report now states its **Retrieval build** and **Retrieval mode**. The footer also displays the loaded build.
+GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quick successive deployments. The updated Keyword retrieval engine identifies itself as build `2026-10-11-r20`, and the 5.3 browser entrypoint plus its direct retrieval-related imports use fingerprint `20261011-r20`. Source/CSS URLs are fingerprinted so updated HTML loads matching app modules. Each evidence report now states its **Retrieval build** and **Retrieval mode**. The footer also displays the loaded build.
 
-To verify an Atlas PDF regression fix, reopen [the live demo with a unique page query](https://arjun9669.github.io/GroundedDesk-AI/?build=20261011-r19), clear the original TXT samples, upload the PDFs again, select **Keyword** mode, and regenerate the report. A report missing the build field may have been copied from an earlier cached tab. Score and source matching are still heuristic; one cited exact quote does not establish that an entire answer is complete.
+To verify an Atlas PDF regression fix, reopen [the live demo with a unique page query](https://arjun9669.github.io/GroundedDesk-AI/?build=20261011-r20), clear the original TXT samples, upload the PDFs again, select **Keyword** mode, and regenerate the report. A report missing the build field may have been copied from an earlier cached tab. Score and source matching are still heuristic; one cited exact quote does not establish that an entire answer is complete.
 
 ## Tests and evaluation
 

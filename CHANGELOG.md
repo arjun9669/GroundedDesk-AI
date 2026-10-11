@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.4 / r20 — operative numeric band and dispatch clauses
+
+- Target the two remaining incorrect Meridian r19 Hybrid answers without changing the historical **18/24 r19 in-sample regression** or **16/24 r18 first-unseen baseline**.
+- When a question explicitly requests purchase/spend approval at a numerical boundary, prefer the original **applicable approval-band clause**, not a neighboring range that happens to mention the same number.
+- When an outbound order's stated release time is later than a documented cutoff, prefer an **explicit, original next-operating-day departure sentence** rather than merely the cutoff. Never fabricate next-day behavior when not stated.
+- Regression cases include different thresholds, times, exact boundaries and non-applicable questions with **mock Hybrid vectors**, not real MiniLM inference.
+- Bump browser import fingerprints to `2026-10-11-r20`. **Real Chrome acceptance and the four incomplete Meridian cases remain pending.**
+
+
 ### 5.4 / r19 — Real MiniLM Meridian24 Chrome regression (2026-10-11)
 
 - The user-submitted real Chrome MiniLM retest of the original frozen Meridian 24 recorded **18 PASS / 4 PARTIAL / 2 FAIL**, compared with the preserved original r18 **16 PASS / 4 PARTIAL / 4 FAIL**.
