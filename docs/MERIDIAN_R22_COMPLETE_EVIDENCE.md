@@ -1,6 +1,6 @@
 # GroundedDesk AI 5.4 / r22 — complete interval and Comparison evidence
 
-**Status:** Candidate code merged only after automated checks; actual r22 Chrome MiniLM score **not yet measured**.
+**Status:** Code deployed; [actual r22 Chrome MiniLM regression](MERIDIAN24_R22_CHROME_REGRESSION.md) completed 11 October 2026. The reported result is **23 PASS / 1 PARTIAL / 0 FAIL** on the unchanged, already-exposed Meridian24 set. This is an **in-sample regression**, not new held-out accuracy.
 
 ## Prior observed benchmark
 
@@ -43,4 +43,4 @@ Hybrid RRF uses **mock deterministic vectors** in Node tests; this is **not real
 6. Record precise displayed answers and source quotations, report PASS/PARTIAL/FAIL and failures without altering code or retesting rewritten questions. Any result is **in-sample regression**, not another first-unseen benchmark.
 7. Independently freeze a **new, substantially different non-sensitive test corpus** *before* first scoring to estimate generalization. Do not claim production-ready accuracy based on Meridian alone.
 
-**Target 24/24 is aspirational only. Actual r22 MiniLM Chrome results are pending.**
+**Actual Chrome result: 23/24 PASS, one PARTIAL (I15), zero FAIL.** I18 and I20 are fixed in the displayed quotes; I15 still omits the unchanged inspection interval. All historical first-look and regression scores are preserved. The next higher-value gate is a fresh independently frozen unseen benchmark, rather than claiming 24/24 or unrestricted accuracy.
