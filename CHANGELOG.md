@@ -1,5 +1,14 @@
 # Changelog
 
+### 5.4 / r22 — Bounded Hybrid interval and lexical Comparison completeness (2026-10-11)
+
+- Target r21's three remaining Meridian24 PARTIAL cases **I15, I18, I20** with original-source-only, section-bounded evidence extraction.
+- For interval-change Hybrid Q&A, inspect up to two consecutive **related** sentences each side of the primary evidence, with 620-character max quote; never leap across unrelated text.
+- In the separately lexical Comparison workflow, prefer enumerated **packet contents** over retention clauses when explicitly asked about contents, without changing packet-retention questions. Include an immediately neighboring literal **retention exception** when the topic asks for exceptions.
+- Add generalized synthetic tests for alternative values, order, section boundaries, unrelated neighbors and negative counterexamples, plus existing CI/Chromium regression gates.
+- Browser retrieval build/fingerprints set to `2026-10-11-r22`. **Real Chrome MiniLM r22 acceptance is pending**; target 24/24 is not measured. Preserve original first-unseen r18 **16/24** and later in-sample r19 **18/24**, r20 **20/24**, r21 **21/24** scores.
+
+
 ### 5.4 / r21 — Actual MiniLM Chrome Meridian24 regression (2026-10-11)
 
 - User-supplied real Chrome report on build `2026-10-11-r21` shows **21 PASS / 3 PARTIAL / 0 FAIL (87.5% strict)** with the unchanged frozen Meridian sources, 20 actual MiniLM Hybrid Q&A and four separate lexical Comparison questions.
