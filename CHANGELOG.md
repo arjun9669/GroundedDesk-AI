@@ -1,5 +1,13 @@
 # Changelog
 
+### 5.4 / r19 — Real MiniLM Meridian24 Chrome regression (2026-10-11)
+
+- The user-submitted real Chrome MiniLM retest of the original frozen Meridian 24 recorded **18 PASS / 4 PARTIAL / 2 FAIL**, compared with the preserved original r18 **16 PASS / 4 PARTIAL / 4 FAIL**.
+- The targeted I23 and I24 absent-value cases now correctly refuse with **zero citations**. All 16 prior passes remained PASS. Supported Hybrid false refusals were 0/16; unsupported false acceptances fell to 0/4.
+- **24/24 quoted source passages authentic; 22/24 relevant.** Outstanding: wrong approval band I07 and missing next-day answer I10; partial I09/I15/I18/I20.
+- Preserve [r19 actual Chrome regression](docs/MERIDIAN24_R19_CHROME_REGRESSION.md) and [r18 first unseen baseline](docs/MERIDIAN24_R18_FIRST_HELDOUT_BASELINE.md) separately. r19 is **post-tuning in-sample regression, not a new held-out estimate**. Documentation-only update.
+
+
 ## 5.4 — r19 unsupported-value evidence guard (2026-10-11)
 
 - Narrowly address the first [Meridian 24 unseen-benchmark failures](docs/MERIDIAN24_R18_FIRST_HELDOUT_BASELINE.md) **I23** and **I24**: a requested bank account number must have a labeled numeric account/IBAN value in the answer quotation; a requested torque setting must have an explicit numeric setting with units. Document headings, approval numbers, torque-marker tool names and retrieval scores are not proof of those values.

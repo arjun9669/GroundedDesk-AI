@@ -91,7 +91,7 @@ The first **frozen previously unseen Meridian 24** browser test on r18 scored **
 
 r19 makes a **narrow safeguard** for explicit requests for a bank account identifier or a numeric engineering torque setting. A heading containing the organization's name and a list mentioning a torque marker are no longer accepted as evidence of those missing values. Positive examples with literal account identifiers or torque numbers and units remain answerable. The check examines the **displayed quotation**, not just search ranking or its expanded excerpt.
 
-This does **not** fix the other six known Meridian cases (I07, I09, I10, I15, I18, I20), and is not general semantic validation. Tests use **mock embeddings**, so actual Chrome MiniLM behavior remains a separate acceptance gate. [r19 validation plan](./docs/MERIDIAN_R19_UNSUPPORTED_VALUES.md). After any r19 retest, Meridian results must be labeled **in-sample regression**, not a new first-look result.
+This does **not** fix the other six known Meridian cases (I07, I09, I10, I15, I18, I20), and is not general semantic validation. **Real Chrome r19 regression (2026-10-11):** The [actual MiniLM retest](./docs/MERIDIAN24_R19_CHROME_REGRESSION.md) scored **18 PASS / 4 PARTIAL / 2 FAIL (75%)** against the unchanged frozen Meridian 24, improving from r18's preserved **16/24 first-look**. Both I23/I24 now correctly refuse with **zero citations**, and all 16 previous passes were preserved. This is **in-sample regression**, not new held-out accuracy; I07 and I10 still fail, while I09/I15/I18/I20 remain partial. Mock-vector tests and [r19 plan](./docs/MERIDIAN_R19_UNSUPPORTED_VALUES.md) remain separate supporting checks.
 
 ### Evaluate the actual retrieval
 
