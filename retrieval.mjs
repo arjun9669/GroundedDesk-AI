@@ -793,11 +793,19 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
         sourceEvidenceScore>=4
         ? completeAdjacentQualification(question, candidate.sourceText, primary)
         : primary;
-      const supported=base && !operative && sourceEvidenceScore>=4
+      // A low-overlap procedural question may have a genuinely retrieved
+      // first step (e.g. "what happens immediately after a leak?") even
+      // though it lacks four repeated query terms. Permit scoped expansion
+      // only when that exact anchor occurs in the RANKED CHUNK, never by
+      // searching a weakly related document for a convenient new answer.
+      const localProcedureAnchor=!operative && primary &&
+        /\b(?:safeguards?|steps?|procedures?|immediately after)\b/i.test(question) &&
+        sourceEvidenceScore>=2.5 && candidate.content.includes(primary);
+      const supported=base && !operative && (sourceEvidenceScore>=4 || localProcedureAnchor)
         ? scopedMultiFactQuote(question, candidate.sourceText, base)
         : base;
       if (supported && candidate.sourceText.includes(supported) &&
-          (!usesHybridScores || sourceEvidenceScore >= 4)) {
+          (!usesHybridScores || sourceEvidenceScore >= 4 || localProcedureAnchor)) {
         quote = supported;
         // Keep enough original document context for the independent evidence
         // guard and reviewer, including neighboring untrusted *data* text.
