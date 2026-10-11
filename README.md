@@ -99,7 +99,7 @@ The frozen Meridian24 r19 real Chrome regression remained **18/24 PASS** with tw
 
 r20 adds narrow source-literal clause selection for purchasing approval **numeric inequalities** and a **post-cutoff dispatch departure** backed by an explicit next-day sentence in the retrieved source. These checks use the original document text and never synthesize missing actors or dates; other semantic-only Hybrid paths retain their fallback. Generalized mock-vector tests cover different thresholds, exact boundaries and cutoff times. The four partial cases I09/I15/I18/I20 remain open.
 
-**Actual r20 MiniLM Chrome result pending.** The unchanged r18 first unseen **16/24** and r19 in-sample regression **18/24** are preserved. [r20 scope and acceptance plan](./docs/MERIDIAN_R20_OPERATIVE_CONDITIONS.md).
+**Actual r20 Chrome acceptance (2026-10-11):** The [user-supplied real MiniLM Meridian 24 regression report](./docs/MERIDIAN24_R20_CHROME_REGRESSION.md) shows **20 PASS / 4 PARTIAL / 0 FAIL (83.3% strict)**, with I07 and I10 corrected and all 18 earlier r19 passes preserved. All four unsupported questions refused with zero citations; **24/24 quotations were authentic and 23/24 relevant**. Four incomplete cases I09/I15/I18/I20 remain. This is **in-sample regression**, not new held-out accuracy. The original r18 first unseen **16/24** and r19 regression **18/24** are preserved. [r20 scope and acceptance plan](./docs/MERIDIAN_R20_OPERATIVE_CONDITIONS.md).
 
 ### Evaluate the actual retrieval
 

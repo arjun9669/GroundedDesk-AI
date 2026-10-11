@@ -1,5 +1,13 @@
 # Changelog
 
+### 5.4 / r20 — Actual Chrome Meridian 24 regression (2026-10-11)
+
+- The user-submitted real Chrome test of build `2026-10-11-r20` with the three unchanged frozen Meridian sources and actual MiniLM reported **20 PASS / 4 PARTIAL / 0 FAIL**, versus r19's **18 / 4 / 2**.
+- **I07 and I10 now PASS:** correct above-4000 written dual approval and next-operating-day dispatch. **All 18 r19 PASS cases remain PASS**. Four deliberately unsupported questions still refuse with zero citations.
+- **24/24 quotes were source-literal**; **23/24 were relevant**. Open partials: I09 acknowledgement vs delivery guarantee, I15 standard vs dusty lubrication plus inspection, I18 equipment-investigation retention exception, I20 wrong Purchasing packet citation.
+- Recorded [r20 actual Chrome regression](docs/MERIDIAN24_R20_CHROME_REGRESSION.md), preserving [r19](docs/MERIDIAN24_R19_CHROME_REGRESSION.md) and original [r18 first-look](docs/MERIDIAN24_R18_FIRST_HELDOUT_BASELINE.md). This is a **post-tuning in-sample regression**, not new independent held-out accuracy. Documentation-only.
+
+
 ## 5.4 / r20 — operative numeric band and dispatch clauses
 
 - Target the two remaining incorrect Meridian r19 Hybrid answers without changing the historical **18/24 r19 in-sample regression** or **16/24 r18 first-unseen baseline**.
