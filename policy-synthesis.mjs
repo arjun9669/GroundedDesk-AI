@@ -3,7 +3,7 @@
  * This is a deterministic candidate extractor, NOT semantic entailment,
  * legal advice, compliance certification, or an autonomous LLM.
  */
-import { planResearch, hasInstructionRisk, numberedPolicySections } from "./research.mjs?v=20261010-r18";
+import { planResearch, hasInstructionRisk, numberedPolicySections } from "./research.mjs?v=20261011-r19";
 
 const MAX_SECTIONS = 64;
 const MAX_ITEMS = 24;
