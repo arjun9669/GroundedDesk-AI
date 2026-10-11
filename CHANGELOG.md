@@ -1,5 +1,13 @@
 # Changelog
 
+### r18 — First held-out Meridian 24 Chrome evaluation (2026-10-11)
+
+- **Negative independent result:** 16 PASS, 4 PARTIAL, 4 FAIL across 24 pre-frozen questions on three previously unseen fictional Meridian documents (**66.7% strict**). Twenty Hybrid Q&A and four separate lexical Comparison cases; real local MiniLM loaded, Qwen off.
+- **False acceptance:** 2/4 deliberately unsupported questions (exact bank account number and numeric torque) received irrelevant citations instead of an explicit zero-citation refusal; no numeric values were fabricated. **All 26 quotations were authentic**, but just 22 were relevant.
+- Other defects: incorrect purchasing approval band, missing next-operating-day answer, incomplete qualifications/exception clauses and misselected Comparison purchasing packet evidence.
+- Preserved [original frozen negative baseline](docs/MERIDIAN24_R18_FIRST_HELDOUT_BASELINE.md) unchanged alongside [Atlas's in-sample 15/15](docs/ATLAS15_R18_CHROME_HYBRID_ACCEPTANCE.md). Documentation-only. **Not production-ready and no remediation claim.**
+
+
 ### 5.3.3 — Real Chrome r18 Atlas 15 acceptance (2026-10-11)
 
 - The user-submitted Chrome retest with actual local MiniLM on the original three Atlas PDFs reported **15/15 complete, correctly supported cases**, with **15/15 cases containing only relevant citations**. The **D02 irrelevant extras were eliminated**; 16/16 displayed quotations matched their original PDF text, and all three deliberate refusals had zero citations.
