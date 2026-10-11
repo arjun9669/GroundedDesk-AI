@@ -553,6 +553,14 @@ function missingRequestedAttribute(question, sources) {
   if (!focus) return false;
   if (focus instanceof RegExp) {
     const requested=String(question).toLowerCase();
+    // A different person's printed phone number does not answer the
+    // named person's contact-value request.
+    const person=/\b(?:mobile|cell(?:ular)?|phone|telephone|contact)\s*(?:phone\s*)?(?:numbers?|no\.?)\s+(?:of|for)\s+(?:the\s+)?([a-z][a-z '\-]{2,60})\s*\??$/i.exec(String(question));
+    if (person) {
+      const holder=person[1].trim().toLowerCase();
+      return !sources.some(source=>focus.test(source.quote) &&
+        source.quote.toLowerCase().includes(holder));
+    }
     if (/\b(?:password|passphrase)\b/.test(requested)) {
       // Merely mentioning a password policy is not disclosing a password value.
       return !sources.some(source => /\b(?:password|passphrase)\s*(?::|=|is\s+|equals\s+|set\s+to\s+)[\w!@#$%^&*.-]{3,}/i.test(source.quote));
