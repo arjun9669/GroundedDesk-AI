@@ -1,5 +1,14 @@
 # Changelog
 
+### 5.4 / r22 — Chrome Meridian24 in-sample acceptance (2026-10-11)
+
+- User-supplied real Chrome report of retrieval build `2026-10-11-r22` on the three unchanged frozen Meridian TXT sources reports **23 PASS / 1 PARTIAL / 0 FAIL (95.8% strict)**. It ran **20 real MiniLM Hybrid Q&A cases and four separate lexical Comparisons**, with Qwen disabled.
+- **I18 and I20 now PASS**: Comparison includes both retention hold exceptions and correctly selects Purchasing packet contents instead of an irrelevant retention rule. **I15 stays PARTIAL** despite quoting both lubrication intervals because the unchanged inspection interval remains absent from the displayed answer.
+- All 21 r21 PASS cases preserved; 4/4 unsupported zero-citation refusals, 0/16 false refusals, 24/24 literal source quotations, and 24/24 directly relevant quotations.
+- [Full r22 Chrome record](docs/MERIDIAN24_R22_CHROME_REGRESSION.md). Historical [r18 first unseen](docs/MERIDIAN24_R18_FIRST_HELDOUT_BASELINE.md), [r19](docs/MERIDIAN24_R19_CHROME_REGRESSION.md), [r20](docs/MERIDIAN24_R20_CHROME_REGRESSION.md), [r21](docs/MERIDIAN24_R21_CHROME_REGRESSION.md) scores remain unchanged.
+- **Post-tuning in-sample regression only, NOT new held-out generalization.** Documentation-only update; prioritize new independently frozen documents over continued tuning to Meridian.
+
+
 ### 5.4 / r22 — Bounded Hybrid interval and lexical Comparison completeness (2026-10-11)
 
 - Target r21's three remaining Meridian24 PARTIAL cases **I15, I18, I20** with original-source-only, section-bounded evidence extraction.
