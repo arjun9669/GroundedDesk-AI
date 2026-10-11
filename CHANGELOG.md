@@ -1,5 +1,13 @@
 # Changelog
 
+### 5.4 / r21 — Bounded Hybrid qualifier context (2026-10-11)
+
+- Candidate-stage Hybrid extraction can include **immediately adjacent same-section sentences** only for explicit supplier acknowledgement disclaimers or standard/changed/unchanged interval context. The quotation stays a **contiguous literal substring** of the source (at most 620 characters).
+- Intended to address Meridian **I09** (acknowledgement is not delivery guarantee) and **I15** (normal vs dusty lubrication; unchanged inspection interval). **Comparison I18/I20 remain open**.
+- Generalized mock-vector tests cover positive cases, different figures/subjects, scope boundaries, unrelated sentences, unsupported refusal, r20 approval regression and Keyword isolation.
+- Browser module fingerprints advanced to `2026-10-11-r21`. **Actual real-MiniLM Chrome retest is pending.** Historical first-look r18 **16/24**, in-sample r19 **18/24** and r20 **20/24** remain unchanged. This is not a general entailment verifier.
+
+
 ### 5.4 / r20 — Actual Chrome Meridian 24 regression (2026-10-11)
 
 - The user-submitted real Chrome test of build `2026-10-11-r20` with the three unchanged frozen Meridian sources and actual MiniLM reported **20 PASS / 4 PARTIAL / 0 FAIL**, versus r19's **18 / 4 / 2**.
