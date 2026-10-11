@@ -800,7 +800,7 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
       // searching a weakly related document for a convenient new answer.
       const localProcedureAnchor=!operative && primary &&
         /\b(?:safeguards?|steps?|procedures?|immediately after)\b/i.test(question) &&
-        sourceEvidenceScore>=2.5 && candidate.content.includes(primary);
+        sourceEvidenceScore>=2 && candidate.content.includes(primary);
       const supported=base && !operative && (sourceEvidenceScore>=4 || localProcedureAnchor)
         ? scopedMultiFactQuote(question, candidate.sourceText, base)
         : base;
