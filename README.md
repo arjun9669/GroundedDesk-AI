@@ -127,6 +127,12 @@ GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quic
 
 To verify an Atlas PDF regression fix, reopen [the live demo with a unique page query](https://arjun9669.github.io/GroundedDesk-AI/?build=20261011-r22), clear the original TXT samples, upload the PDFs again, select **Keyword** mode, and regenerate the report. A report missing the build field may have been copied from an earlier cached tab. Score and source matching are still heuristic; one cited exact quote does not establish that an entire answer is complete.
 
+### Independent unseen benchmark frozen after r22
+
+**Lantern32 (`LANTERN32_R22_FIRSTLOOK_V1`) is frozen but has NOT been run.** A separate user-held archive includes four entirely fictional museum-domain policies, **26 real-MiniLM Hybrid questions** and **six lexical Comparison questions**, with a fixed answer key, rubric and SHA-256 manifest. To protect the first-look measurement, the source files and answer key **are not in the application repository or CI tests**, and the r22 retrieval code must remain unchanged until the first Chrome scorecard is recorded.
+
+[Lantern32 pre-test freeze attestation and immutable grading protocol](./docs/LANTERN32_R22_FIRSTLOOK_FREEZE.md). A benchmark score must not be reported until all 32 original cases have been run in actual Chrome with local MiniLM ready, Qwen off, and the original sealed rubric. The known Meridian I15 partial remains open; the original Meridian r18 first unseen was 16/24 while r22's 23/24 was post-tuning in-sample regression.
+
 ## Tests and evaluation
 
 Manual QA: [GroundedDesk AI 5.1 Phase 1 Atlas single-PDF validation record](./docs/VALIDATION_5_1_PHASE1.md) — one source-inspected 2026-10-10 smoke test, **not** an exhaustive policy-audit or cross-browser benchmark.
