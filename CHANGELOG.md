@@ -1,5 +1,14 @@
 # Changelog
 
+### r22 — Lantern32 first-look browser evaluation (2026-10-11)
+
+- The independently pre-frozen Lantern32 32-case fictional museum-policy pack was scored for the **first time** on unchanged browser build `2026-10-11-r22` with actual local MiniLM and Qwen off.
+- **16 PASS / 12 PARTIAL / 4 FAIL (50% strict)**: 26 Hybrid Q&A cases **11/11/4** and six separate lexical Comparison cases **5/1/0**.
+- Four FAIL cases: **H06 wrong refund band**, **H18 heading-only response**, **H21 incorrect earlier/later cancellation branch**, **H24 absent personal mobile number incorrectly accepted with unrelated source citation**.
+- Only **3/4** unsupported questions refused without citations; **35/35** displayed quotations were source-literal but only **31/35** directly relevant. Eleven supported Hybrid cases were PARTIAL due mainly to missing adjacent conditions.
+- [Permanent Lantern32 first-look results](docs/LANTERN32_R22_FIRSTLOOK_RESULTS.md); the [pre-test freeze](docs/LANTERN32_R22_FIRSTLOOK_FREEZE.md) remains immutable. Original Meridian first-look r18 **16/24** and Meridian r22 **23/24 post-tuning** are separate benchmarks.
+- Documentation-only, no app code changes. Future Lantern32 tests are **in-sample regression** rather than fresh held-out accuracy.
+
 ### 5.4 / r22 — Chrome Meridian24 in-sample acceptance (2026-10-11)
 
 - User-supplied real Chrome report of retrieval build `2026-10-11-r22` on the three unchanged frozen Meridian TXT sources reports **23 PASS / 1 PARTIAL / 0 FAIL (95.8% strict)**. It ran **20 real MiniLM Hybrid Q&A cases and four separate lexical Comparisons**, with Qwen disabled.
