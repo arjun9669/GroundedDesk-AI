@@ -2,7 +2,7 @@
  * Pure retrieval fusion. No network, no fake embeddings: callers must supply
  * actual model-generated vectors. Stable sorting permits reproducible tests.
  */
-import { keywordRank } from "./retrieval.mjs?v=20261011-r21";
+import { keywordRank } from "./retrieval.mjs?v=20261011-r22";
 
 export const SEMANTIC_THRESHOLD = 0.36;
 
