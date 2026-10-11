@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-11-r22";
+export const RETRIEVAL_BUILD = "2026-10-11-r23";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -158,6 +158,11 @@ function requestedEvidenceFocus(question) {
   const q=String(question);
   const asksValue=/^\s*(?:what|which|give|provide|state|show)\b/i.test(q) ||
     /\b(?:exact|specified|required)\b/i.test(q);
+  // An individual's mobile/cell number is a concrete attribute. A policy
+  // quote merely mentioning the person is not a disclosed contact value.
+  if (asksValue && /\b(?:mobile|cell(?:ular)?|phone|telephone|contact)\s*(?:phone\s*)?(?:numbers?|no\.?)\b/i.test(q)) {
+    return /\b(?:mobile|cell(?:ular)?|phone|telephone|contact)\s*(?:phone\s*)?(?:numbers?|no\.?)?\s*(?:(?:is|equals|:|=)\s*)?(?:\+\d[\d .()-]{7,}\d|\(?\d{3}\)?[ .-]?\d{3}[ .-]?\d{4})\b/i;
+  }
   if (asksValue && /\b(?:bank\s+account(?:\s+(?:number|no\.?))?|account\s+(?:number|no\.?)|iban)\b/i.test(q)) {
     // Accept a bank-account label followed nearby by an actual multi-digit
     // account/IBAN value. A document title or section ID is insufficient.
@@ -274,6 +279,69 @@ function operativeConditionQuote(question, fullText) {
               : minN===n && upperN===null && lowerN===null;
         if (applies) return sentence;
       }
+    }
+  }
+
+  // Apply printed relative-time cancellation/refund bands literally.
+  // Selecting a true neighboring band still gives an incorrect answer.
+  const notice=q.match(/\b(\d+(?:[.,]\d+)?)\s*(hours?|days?)\s+before\b/i);
+  if(notice && /\b(?:cancel\w*|refund\w*|tickets?|reservations?|bookings?)\b/i.test(q)) {
+    const amount=Number(notice[1].replace(",",".")),unit=/^day/i.test(notice[2])?"day":"hour";
+    for(const sentence of sentences) {
+      if(!/\b(?:cancel\w*|refund\w*|tickets?|reservations?|bookings?)\b/i.test(sentence) ||
+         !/\b(?:before|prior to|ahead of)\b/i.test(sentence)) continue;
+      const lo=sentence.match(/\b(at least|more than|over|greater than)\s+(\d+(?:[.,]\d+)?)\s+(hours?|days?)\b/i) ||
+        sentence.match(/\b(\d+(?:[.,]\d+)?)\s+(hours?|days?)\s+(or more)\b/i);
+      const hi=sentence.match(/\b(less than|under|fewer than|below|at most|up to)\s+(\d+(?:[.,]\d+)?)\s+(hours?|days?)\b/i) ||
+        sentence.match(/\b(\d+(?:[.,]\d+)?)\s+(hours?|days?)\s+(or less)\b/i);
+      if(!lo&&!hi)continue;
+      const min=lo?Number((/^\d/.test(lo[1])?lo[1]:lo[2]).replace(",",".")):null;
+      const max=hi?Number((/^\d/.test(hi[1])?hi[1]:hi[2]).replace(",",".")):null;
+      const unitLo=lo?(/^\d/.test(lo[1])?lo[2]:lo[3]):null;
+      const unitHi=hi?(/^\d/.test(hi[1])?hi[2]:hi[3]):null;
+      if((unitLo && !unitLo.toLowerCase().startsWith(unit)) ||
+         (unitHi && !unitHi.toLowerCase().startsWith(unit)))continue;
+      const exclusiveLo=lo&&/\b(?:more than|over|greater than)\b/i.test(lo[1]);
+      const exclusiveHi=hi&&/\b(?:less than|under|fewer than|below)\b/i.test(hi[1]);
+      if((min===null||(exclusiveLo?amount>min:amount>=min)) &&
+         (max===null||(exclusiveHi?amount<max:amount<=max)))return sentence;
+    }
+  }
+
+  // Time-of-day before/after conditions: require direction and threshold.
+  const clock=q.match(/\b(before|after)\s+([01]?\d|2[0-3]):([0-5]\d)\b/i);
+  if(clock) {
+    const direction=clock[1].toLowerCase(),minutes=Number(clock[2])*60+Number(clock[3]);
+    const qForms=new Set(tokenize(q).map(quoteForm));
+    const matches=sentences.filter(sentence=>{
+      const m=sentence.match(/\b(before|after)\s+([01]?\d|2[0-3]):([0-5]\d)\b/i);
+      if(!m||m[1].toLowerCase()!==direction ||
+         Number(m[2])*60+Number(m[3])!==minutes)return false;
+      const forms=new Set(tokenize(sentence).map(quoteForm));
+      return [...qForms].filter(t=>forms.has(t)&&!GENERIC_EVIDENCE_TERMS.has(t)&&!/^\d+$/.test(t)).length>=2;
+    });
+    if(matches.length===1)return matches[0];
+  }
+
+  // Consecutive source sentences may jointly state a failed attempt's retry
+  // and the further-failure escalation. Neither is fabricated or paraphrased.
+  if(/\b(?:retry|retried|retries|reattempt\w*)\b/i.test(q) &&
+     /\b(?:fail\w*|unsuccessful)\b/i.test(q)) {
+    const hits=[...source.matchAll(/[^.!?]+(?:[.!?](?=\s|$)|$)/g)]
+      .map(m=>({value:m[0].trim(),start:m.index}));
+    const marks=[...source.matchAll(/\b[A-Z]{1,4}-\d{2,3}\b/g)];
+    const sectionAt=pos=>{
+      let id="";for(const mark of marks){if(mark.index>pos)break;id=mark[0];}return id;
+    };
+    for(let i=0;i<hits.length-1;i++){
+      const first=hits[i],next=hits[i+1];
+      if(!/\b(?:fail\w*|unsuccessful)\b/i.test(first.value) ||
+         !/\b(?:retried|retry|retries|reattempt\w*)\b/i.test(first.value) ||
+         !/\b\d{1,2}:\d{2}\b|\bwithin\s+\d+\s+(?:minutes?|hours?)\b/i.test(first.value) ||
+         !/\b(?:if|when|should)\b.{0,45}\b(?:retry|retried|retries|reattempt\w*)\b.{0,30}\b(?:fail\w*|unsuccessful)\b/i.test(next.value) ||
+         sectionAt(first.start)!==sectionAt(next.start))continue;
+      const quote=source.slice(first.start,next.start+next.value.length).trim();
+      if(quote.length<=620)return quote;
     }
   }
 
@@ -485,6 +553,14 @@ function missingRequestedAttribute(question, sources) {
   if (!focus) return false;
   if (focus instanceof RegExp) {
     const requested=String(question).toLowerCase();
+    // A different person's printed phone number does not answer the
+    // named person's contact-value request.
+    const person=/\b(?:mobile|cell(?:ular)?|phone|telephone|contact)\s*(?:phone\s*)?(?:numbers?|no\.?)\s+(?:of|for)\s+(?:the\s+)?([a-z][a-z '\-]{2,60})\s*\??$/i.exec(String(question));
+    if (person) {
+      const holder=person[1].trim().toLowerCase();
+      return !sources.some(source=>focus.test(source.quote) &&
+        source.quote.toLowerCase().includes(holder));
+    }
     if (/\b(?:password|passphrase)\b/.test(requested)) {
       // Merely mentioning a password policy is not disclosing a password value.
       return !sources.some(source => /\b(?:password|passphrase)\s*(?::|=|is\s+|equals\s+|set\s+to\s+)[\w!@#$%^&*.-]{3,}/i.test(source.quote));
@@ -739,6 +815,25 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
         (leadCoverage<2 || coverage(item.quote)>=leadCoverage*0.8)
       )).map((item,i)=>({...item,citation:i+1}));
     }
+  }
+  // A source heading alone is authentic text, but not operative evidence.
+  if(citedSources.length && citedSources.every(item=>
+      /^\s*[A-Z]{1,4}-\d{2,3}\s+[A-Z][^.!?\n]{1,100}\s*$/u.test(item.quote))) {
+    return {answered:false,answer:"I can't find this in the provided documents.",
+      sources:[],mode,retrievalBuild:RETRIEVAL_BUILD,
+      note:"Only a section heading, not an answer clause, matched."};
+  }
+  // For a question explicitly specifying a time bracket, decline to cite
+  // a neighboring opposite branch when no matching operative clause exists.
+  const timedNotice=/\b\d+(?:[.,]\d+)?\s*(?:hours?|days?)\s+before\b/i.test(question) &&
+    /\b(?:cancel\w*|refund\w*|tickets?|reservations?|bookings?)\b/i.test(question);
+  const timedClock=/\b(?:before|after)\s+(?:[01]?\d|2[0-3]):[0-5]\d\b/i.test(question);
+  if((timedNotice||timedClock) && picked.every(c=>typeof c.sourceText==="string") &&
+     picked.some(c=>/\b(?:before|after|less than|at least|or more|or less)\b/i.test(c.sourceText)) &&
+     !picked.some(c=>operativeConditionQuote(question,c.sourceText))) {
+    return {answered:false,answer:"I can't find this in the provided documents.",
+      sources:[],mode,retrievalBuild:RETRIEVAL_BUILD,
+      note:"No directly matching temporal policy branch was found."};
   }
   // An RRF/semantic score is a ranking signal, NOT evidence that a quoted
   // passage contains a requested fact. Apply the same concrete-attribute

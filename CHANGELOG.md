@@ -1,5 +1,15 @@
 # Changelog
 
+### r23 — Temporal condition and contact-evidence safeguards (2026-10-11)
+
+- Candidate fixes after the independent Lantern32 r22 first-look **16 PASS / 12 PARTIAL / 4 FAIL**; frozen score is immutable. **No real Chrome r23 benchmark result yet.**
+- Relative-time cancellation conditions now choose source-literal applicable hours/days-before ranges, honoring strict/inclusive bounds. Clock-time conditions require correct `before`/`after` cutoff direction and topical evidence; absent matches decline instead of citing an opposing rule.
+- Named personal mobile/phone-number questions require printed contact-number digits, with the named holder in the same quotation when specified, rather than an unrelated numeric approval.
+- Failed-operation retry and repeat-failure escalation can be combined as two consecutive source-literal sentences in the same section; heading-only output becomes refusal rather than a spurious answer.
+- Synthetic mock-Hybrid and Keyword controls cover different numeric values, cutoff times, contact examples, exact boundaries, heading-only negatives, and older approval/dispatch behavior. Browser cache imports advanced to `2026-10-11-r23`.
+- Eleven known Hybrid incomplete-answer cases and one lexical Comparison partial remain open; **no new r23 accuracy claim**. [Scope and real-Chrome acceptance](docs/LANTERN_R23_SAFETY_GATES.md).
+
+
 ### r22 — Lantern32 first-look browser evaluation (2026-10-11)
 
 - The independently pre-frozen Lantern32 32-case fictional museum-policy pack was scored for the **first time** on unchanged browser build `2026-10-11-r22` with actual local MiniLM and Qwen off.
