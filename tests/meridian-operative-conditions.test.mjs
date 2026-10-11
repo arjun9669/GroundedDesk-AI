@@ -36,7 +36,7 @@ for(const mode of ["Hybrid","Keyword"]){
     assert.equal(verifyEvidenceResult(out,rules).ok,true);
   });
   test("5.4 r20 "+mode+" preserves an EXACT lower threshold approval rule",()=>{
-    const out=query("Who approves a purchase costing exactly 800 credits?",rules,hybrid);
+    const out=query("What approval is required for purchases costing exactly 800 credits?",rules,hybrid);
     assert.equal(out.answered,true);
     assert.match(out.sources[0].quote,/up to and including 800 credits require Team Coordinator/i);
     assert.doesNotMatch(out.sources[0].quote,/Budget Manager/);
