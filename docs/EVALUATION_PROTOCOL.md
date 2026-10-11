@@ -135,3 +135,12 @@ The first frozen [Meridian24 r18](MERIDIAN24_R18_FIRST_HELDOUT_BASELINE.md) unse
 Regression cases in `tests/meridian-absent-values.test.mjs` simulate Hybrid RRF with **mock numeric vectors**, alongside Keyword controls and supported-value/non-value guidance. These do **not** measure real MiniLM results. For acceptance, rerun the originally frozen **20 Hybrid / four separate Comparison** questions in Chrome on build r19 with Qwen disabled and the unchanged three original Meridian source documents. Record I23/I24 refusals, check all previously successful answers including Atlas N13–N15 remain correct, and list remaining failed/partial cases. No fixes for I07, I09, I10, I15, I18, I20 are asserted.
 
 **Reporting:** Preserve the r18 *first unseen* baseline intact. All Meridian r19/r20 reruns are *in-sample regression* and must never be presented as new held-out accuracy. A genuinely unseen generalization score requires fresh documents, questions and grading requirements frozen in advance.
+
+
+## N. Actual r19 Chrome Meridian 24 in-sample regression (2026-10-11)
+
+The [user-submitted real-browser r19 retest](MERIDIAN24_R19_CHROME_REGRESSION.md) of the **unchanged, previously frozen Meridian 24** reports **18 PASS, 4 PARTIAL, 2 FAIL**, compared with **16/4/4** in the original [r18 first unseen baseline](MERIDIAN24_R18_FIRST_HELDOUT_BASELINE.md). This is an **in-sample regression**, not a second first-look held-out test. The tester verified three source hashes and the fixed answer-key hash, actual on-device MiniLM Hybrid (9 indexed passages), Qwen off, all 20 main Hybrid Q&A and four separate lexical Comparisons. No source/question/code/scoring modifications or rephrasing occurred during the run.
+
+**I23 and I24 now refuse with zero citations; all 16 previous passes remained PASS.** Unsupported refusals rose from 2/4 to 4/4; supported Hybrid false refusals stayed 0/16. All 24 source quotations were literal matches, including 16/16 Hybrid quote/excerpt matches, but only 22/24 quotes were relevant. **I07 wrong approval band and I10 missing next-day departure still FAIL; I09/I15/I18/I20 still PARTIAL.** The raw JSON and screenshots listed in the provided Markdown were not independently supplied or inspected during this doc update.
+
+Future tests of Meridian remain **regression**, while a new generalization estimate needs a separately frozen unseen corpus and an unmodified grading rubric. Do not infer production readiness or comprehensive factual entailment from 18/24 passes.
