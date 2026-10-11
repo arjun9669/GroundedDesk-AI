@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-11-r21";
+export const RETRIEVAL_BUILD = "2026-10-11-r22";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -344,23 +344,28 @@ function completeAdjacentQualification(question, sourceText, primary) {
     const baseline=/\b(?:standard|normal|usual|regular|default|baseline)\b/i.test(s) &&
       /\b(?:interval|lubricat\w*|hours?|days?|frequen\w*|cadence)\b/i.test(s) &&
       /\b\d+(?:[.,]\d+)?\b/.test(s);
-    const unchanged=/\b(?:unchanged|remains? the same|not affect\w*|not chang\w*)\b/i.test(s) &&
-      /\b(?:inspect\w*|maintenan\w*|interval|schedule|frequen\w*)\b/i.test(s);
-    return baseline || unchanged;
+    const changed=/\b(?:reduc\w*|increas\w*|shorten\w*|extend\w*|halv\w*|doub\w*)\b/i.test(s) &&
+      /\b(?:interval|lubricat\w*|clean\w*|hours?|days?|frequen\w*|cadence)\b/i.test(s) &&
+      /\b\d+(?:[.,]\d+)?\b/.test(s);
+    const unchanged=/\b(?:unchanged|remains? the same|not affect\w*|not chang\w*|not alter\w*|unaffected|continue\w* unchanged|stays? the same)\b/i.test(s) &&
+      /\b(?:inspect\w*|maintenan\w*|interval|schedule|frequen\w*|cadence)\b/i.test(s);
+    return baseline || changed || unchanged;
   };
 
   let left=at,right=at;
-  if (related(entries[at-1])) left=at-1;
-  if (related(entries[at+1])) right=at+1;
-  // One primary quote plus at most two adjacent qualifiers; never cross a
-  // separate rule or include unrelated intermediary sentences.
+  // The best lexical sentence can be the *first* baseline sentence, followed
+  // by a changed interval and then an unchanged inspection qualification.
+  // Walk through at most two consecutive relevant neighbors on either side.
+  // Never hop over an irrelevant sentence or into another numbered section.
+  for (let n=0;n<2 && related(entries[left-1]);n++) left--;
+  for (let n=0;n<2 && related(entries[right+1]);n++) right++;
   const expanded=source.slice(entries[left].start,entries[right].end);
   return expanded.length<=620 && source.includes(expanded) ? expanded : primary;
 }
 
 // Returns a literal sentence in the original whitespace-normalized text.
 // Empty means no lexical support; the caller must not manufacture an answer.
-export function bestSourceSentence(question, fullText) {
+export function bestSourceSentence(question, fullText, options = {}) {
   const source=String(fullText || "").replace(/\r\n?/g,"\n").replace(/[ \t]+/g," ").trim();
   const rawSentences=[...source.matchAll(/[^.!?]+(?:[.!?](?=\s|$)|$)/g)]
     .map(m=>m[0].trim()).filter(Boolean);
@@ -378,7 +383,21 @@ export function bestSourceSentence(question, fullText) {
   let winner="", score=-Infinity;
   for (const line of sentences) {
     if (line.length>420) continue;
-    const candidate=evidenceSentenceScore(question,line);
+    let candidate=evidenceSentenceScore(question,line);
+    // Comparison asks each document for a packet's *contents*, not for how
+    // long its records are kept. Keep this intent-specific adjustment out
+    // of Hybrid and ordinary Keyword QA, and do not penalize questions that
+    // explicitly request retention or archiving.
+    const contentsIntent=options.comparison &&
+      /\b(?:packet|package|shipment|order)\b/i.test(question) &&
+      /\b(?:contents?|contain\w*|items?|documents?|inside|includ\w*)\b/i.test(question) &&
+      !/\b(?:retain\w*|retention|archiv\w*|stor\w*)\b/i.test(question);
+    if (contentsIntent) {
+      if (/\b(?:prepar\w*|includ\w*|contain\w*|compris\w*|consist\w*|assembl\w*|list\w*)\b/i.test(line) &&
+          /\b(?:orders?|shipments?|packets?|documents?|schedules?|lists?)\b/i.test(line) &&
+          (line.match(/,/g)||[]).length>=2) candidate+=7;
+      if (/\b(?:retained?|retention|archive\w*|deleted?|months? after|years? after)\b/i.test(line)) candidate-=8;
+    }
     if (candidate>score) {score=candidate;winner=line;}
   }
   // Require at least one material question term and non-header evidence.
@@ -408,6 +427,36 @@ export function bestSourceSentence(question, fullText) {
       if (to-from<=420 && /^\s*$/.test(source.slice(
         Math.min(index+winner.length,start+neighbor.length),
         Math.max(index,start)))) return source.slice(from,to);
+    }
+  }
+  if (winner && options.comparison &&
+      /\b(?:retain\w*|retention)\b/i.test(question) &&
+      /\b(?:except\w*|unless|including exceptions?)\b/i.test(question)) {
+    // A retention duration and its hold-until-closure exception are often
+    // adjacent sentences. Preserve BOTH as a contiguous original quotation,
+    // but never cross a numbered source-section boundary.
+    const hits=[...source.matchAll(/[^.!?]+(?:[.!?](?=\s|$)|$)/g)].map(m=>{
+      const line=m[0].trim(),start=source.indexOf(line,m.index);
+      return {line,start,end:start+line.length};
+    }).filter(m=>m.line);
+    const at=hits.findIndex(m=>m.line===winner);
+    if(at>=0) {
+      const markers=[...source.matchAll(/\b[A-Z]{1,4}-\d{2,3}\b/g)];
+      const sectionAt=pos=>{
+        let id="";
+        for(const m of markers){if(m.index>pos)break;id=m[0];}
+        return id;
+      };
+      const main=hits[at],sameSection=sectionAt(main.start);
+      const exception=neighbor=>neighbor && sectionAt(neighbor.start)===sameSection &&
+        /\b(?:unless|until|unresolved|pending|hold|investigat\w*|claims?|disput\w*|closure)\b/i.test(neighbor.line) &&
+        /\b(?:retain\w*|kept|keep|held|hold|closed|resolved|settled|investigat\w*|claims?|cards?|receipts?|records?)\b/i.test(neighbor.line);
+      for(const n of [hits[at+1],hits[at-1]]) {
+        if(!exception(n))continue;
+        const from=Math.min(main.start,n.start),to=Math.max(main.end,n.end);
+        const candidate=source.slice(from,to);
+        if(candidate.length<=620 && source.includes(candidate))return candidate;
+      }
     }
   }
   return winner;
