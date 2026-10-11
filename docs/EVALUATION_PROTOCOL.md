@@ -144,3 +144,10 @@ The [user-submitted real-browser r19 retest](MERIDIAN24_R19_CHROME_REGRESSION.md
 **I23 and I24 now refuse with zero citations; all 16 previous passes remained PASS.** Unsupported refusals rose from 2/4 to 4/4; supported Hybrid false refusals stayed 0/16. All 24 source quotations were literal matches, including 16/16 Hybrid quote/excerpt matches, but only 22/24 quotes were relevant. **I07 wrong approval band and I10 missing next-day departure still FAIL; I09/I15/I18/I20 still PARTIAL.** The raw JSON and screenshots listed in the provided Markdown were not independently supplied or inspected during this doc update.
 
 Future tests of Meridian remain **regression**, while a new generalization estimate needs a separately frozen unseen corpus and an unmodified grading rubric. Do not infer production readiness or comprehensive factual entailment from 18/24 passes.
+
+
+## O. 5.4 r20 conditional operative evidence selection — pending browser acceptance
+
+The frozen [r19 Meridian24 real Chrome regression](MERIDIAN24_R19_CHROME_REGRESSION.md) measured **18 PASS / 4 PARTIAL / 2 FAIL**. I07 incorrectly chose a lower purchasing approval band despite the above-4000 threshold; I10 gave a 14:20 cutoff instead of the **next operating day** for a 15:00 order release. The [r20 candidate](MERIDIAN_R20_OPERATIVE_CONDITIONS.md) searches literal sentences within a retrieved document for applicable numeric approval inequalities and post-cutoff dispatch statements. It does **not** perform verified general arithmetic inference or entailment.
+
+Automated tests exercise mock-vector RRF, Keyword, boundary and time variations, and protect older Atlas/quality behavior. Only an **actual Chrome on-device MiniLM test** using the original frozen documents, unchanged 24 questions and Qwen disabled can assign an r20 score. Rerun all 20 Hybrid Q&A plus four separate lexical Comparison cases and check all 18 original r19 passes. I09/I15/I18/I20 are still open. Preserve the historical first-look r18 16/24 and post-tuning r19 18/24 separately. A new unseen benchmark is required to measure true generalization.
