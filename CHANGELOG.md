@@ -1,5 +1,13 @@
 # Changelog
 
+## 5.4 — r19 unsupported-value evidence guard (2026-10-11)
+
+- Narrowly address the first [Meridian 24 unseen-benchmark failures](docs/MERIDIAN24_R18_FIRST_HELDOUT_BASELINE.md) **I23** and **I24**: a requested bank account number must have a labeled numeric account/IBAN value in the answer quotation; a requested torque setting must have an explicit numeric setting with units. Document headings, approval numbers, torque-marker tool names and retrieval scores are not proof of those values.
+- Preserve legitimate supported numeric answers and routine account/torque handling guidance, with new deterministic **mock-vector** Hybrid and Keyword regressions.
+- Fingerprint the browser retrieval scripts as build `2026-10-11-r19`.
+- **Limits:** This is not an entailment checker. The other six Meridian defects remain open, and no actual MiniLM Chrome r19 score is claimed. Preserve the first unseen r18 16/24 score; r19 retest is regression.
+
+
 ### r18 — First held-out Meridian 24 Chrome evaluation (2026-10-11)
 
 - **Negative independent result:** 16 PASS, 4 PARTIAL, 4 FAIL across 24 pre-frozen questions on three previously unseen fictional Meridian documents (**66.7% strict**). Twenty Hybrid Q&A and four separate lexical Comparison cases; real local MiniLM loaded, Qwen off.
