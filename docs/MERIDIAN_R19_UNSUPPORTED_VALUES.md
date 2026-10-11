@@ -26,3 +26,8 @@ This is **conservative syntactic support checking, not general semantic entailme
 - Independently freeze another fresh test corpus before the next claim about generalizability.
 
 Do **not** modify the frozen r18 report or original answer key. Do **not** claim the r19 browser acceptance was completed until the real Chrome result exists.
+
+
+## Observed Chrome acceptance (2026-10-11)
+
+The [actual r19 Chrome regression report](MERIDIAN24_R19_CHROME_REGRESSION.md) confirms that I23 and I24 both returned explicit zero-citation refusals under real MiniLM Hybrid, using the unchanged frozen Meridian source documents and Qwen disabled. The overall unchanged-question regression scored **18 PASS / 4 PARTIAL / 2 FAIL**, up from first-look r18 **16/4/4**, with **no regression among 16 previously passing cases**. **I07, I10 remain failures; I09, I15, I18, I20 remain partials.** All 24 quotations were source-literal but only 22 were relevant. This is an **in-sample regression** after fixes, not a held-out accuracy gain.
