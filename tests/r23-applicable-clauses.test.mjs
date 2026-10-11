@@ -130,8 +130,8 @@ test("r23 keeps preceding r20 approval and dispatch applicability behavior",()=>
   assert.equal(next.answered,true);
   assert.match(next.sources[0].quote,/next operating day/);
 });
-test("r23 build explicitly identifies changed browser code",()=>{
-  assert.equal(RETRIEVAL_BUILD,"2026-10-11-r23");
+test("current build explicitly identifies changed browser code",()=>{
+  assert.equal(RETRIEVAL_BUILD,"2026-10-11-r24");
 });
 
 test("r23 refuses a differently named person's labeled phone number",()=>{
