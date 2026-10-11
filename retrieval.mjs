@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-11-r20";
+export const RETRIEVAL_BUILD = "2026-10-11-r21";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -299,6 +299,65 @@ function operativeConditionQuote(question, fullText) {
   return "";
 }
 
+// 5.4 r21: Bounded context for extractive questions about acknowledgements
+// and *changes* to a documented interval. A quoted primary obligation can
+// omit a neighboring "not a guarantee" qualification, or the old/unchanged
+// interval. Include only immediately adjacent, scoped sentences with
+// recognizable operative relationships; never stitch distant statements.
+function completeAdjacentQualification(question, sourceText, primary) {
+  const q=String(question || "");
+  const kind=/\backnowledg\w*\b/i.test(q) && /\backnowledg\w*\b/i.test(primary)
+    ? "acknowledgement"
+    : /\b(?:chang\w*|reduc\w*|increas\w*|differ\w*|adjust\w*)\b/i.test(q) &&
+      /\b(?:interval|lubricat\w*|frequen\w*|cadence|schedule)\b/i.test(q) &&
+      /\b(?:interval|lubricat\w*|operating hours?)\b/i.test(primary)
+      ? "interval-change" : null;
+  if (!kind || !primary || primary.length>420) return primary;
+  const source=String(sourceText || "");
+  const entries=[...source.matchAll(/[^.!?]+(?:[.!?](?=\s|$)|$)/g)]
+    .map(m=>{
+      const trimmed=m[0].trim();
+      const start=source.indexOf(trimmed,m.index);
+      return {text:trimmed,start,end:start+trimmed.length};
+    }).filter(s=>s.text && s.text.length<=420);
+  const at=entries.findIndex(entry=>entry.text===primary);
+  if (at<0) return primary; // avoid ambiguous or fused PDF sentence recovery
+
+  // A number in a printed section ID identifies the *section*, not an
+  // answer value. Do not absorb any neighboring sentence across sections.
+  const markers=[...source.matchAll(/\b[A-Z]{1,4}-\d{2,3}\b/g)];
+  const sectionAt=pos=>{
+    let section="";
+    for(const m of markers) {if(m.index>pos) break;section=m[0];}
+    return section;
+  };
+  const section=sectionAt(entries[at].start);
+  const related=neighbor=>{
+    if (!neighbor || sectionAt(neighbor.start)!==section) return false;
+    const s=neighbor.text;
+    if (kind==="acknowledgement") {
+      // An acknowledgement or receipt is not necessarily a delivery promise.
+      return /\b(?:not|no|never|cannot|doesn't|isn't|does not|is not)\b/i.test(s) &&
+        /\b(?:deliver\w*|guarantee\w*|promis\w*|fulfill\w*|arriv\w*|complet\w*)\b/i.test(s) &&
+        /\b(?:acknowledg\w*|receipt|order|confirm\w*|this|it)\b/i.test(s);
+    }
+    const baseline=/\b(?:standard|normal|usual|regular|default|baseline)\b/i.test(s) &&
+      /\b(?:interval|lubricat\w*|hours?|days?|frequen\w*|cadence)\b/i.test(s) &&
+      /\b\d+(?:[.,]\d+)?\b/.test(s);
+    const unchanged=/\b(?:unchanged|remains? the same|not affect\w*|not chang\w*)\b/i.test(s) &&
+      /\b(?:inspect\w*|maintenan\w*|interval|schedule|frequen\w*)\b/i.test(s);
+    return baseline || unchanged;
+  };
+
+  let left=at,right=at;
+  if (related(entries[at-1])) left=at-1;
+  if (related(entries[at+1])) right=at+1;
+  // One primary quote plus at most two adjacent qualifiers; never cross a
+  // separate rule or include unrelated intermediary sentences.
+  const expanded=source.slice(entries[left].start,entries[right].end);
+  return expanded.length<=620 && source.includes(expanded) ? expanded : primary;
+}
+
 // Returns a literal sentence in the original whitespace-normalized text.
 // Empty means no lexical support; the caller must not manufacture an answer.
 export function bestSourceSentence(question, fullText) {
@@ -543,11 +602,15 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
     // before overriding a semantic-only paraphrase with source-wide text.
     if (typeof candidate.sourceText === "string") {
       const operative=operativeConditionQuote(question, candidate.sourceText);
-      const supported=operative || bestSourceSentence(question, candidate.sourceText);
-      // A clause explicitly matching the numeric boundary or post-cutoff
-      // outcome is independently anchored to the question. Hybrid source-wide
-      // recovery is allowed even when the paraphrase lacks four keyword points.
-      const sourceEvidenceScore = operative ? 4 : supported ? evidenceSentenceScore(question, supported) : -Infinity;
+      const primary=operative || bestSourceSentence(question, candidate.sourceText);
+      // Evaluate the core quote before adding neighboring qualifications.
+      // Additional sentences must not artificially clear the Hybrid lexical
+      // recovery threshold, and cannot replace r20's operative boundary rule.
+      const sourceEvidenceScore=operative ? 4 : primary ? evidenceSentenceScore(question, primary) : -Infinity;
+      const supported=primary && !operative && usesHybridScores && !multiDocumentIntent &&
+        sourceEvidenceScore>=4
+        ? completeAdjacentQualification(question, candidate.sourceText, primary)
+        : primary;
       if (supported && candidate.sourceText.includes(supported) &&
           (!usesHybridScores || sourceEvidenceScore >= 4)) {
         quote = supported;

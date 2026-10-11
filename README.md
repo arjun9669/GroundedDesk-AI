@@ -101,15 +101,23 @@ r20 adds narrow source-literal clause selection for purchasing approval **numeri
 
 **Actual r20 Chrome acceptance (2026-10-11):** The [user-supplied real MiniLM Meridian 24 regression report](./docs/MERIDIAN24_R20_CHROME_REGRESSION.md) shows **20 PASS / 4 PARTIAL / 0 FAIL (83.3% strict)**, with I07 and I10 corrected and all 18 earlier r19 passes preserved. All four unsupported questions refused with zero citations; **24/24 quotations were authentic and 23/24 relevant**. Four incomplete cases I09/I15/I18/I20 remain. This is **in-sample regression**, not new held-out accuracy. The original r18 first unseen **16/24** and r19 regression **18/24** are preserved. [r20 scope and acceptance plan](./docs/MERIDIAN_R20_OPERATIVE_CONDITIONS.md).
 
+### 5.4 — Bounded Hybrid qualification context (r21)
+
+The latest real Chrome Meridian24 r20 regression scored **20 PASS / 4 PARTIAL / 0 FAIL** with genuine MiniLM Hybrid Q&A plus separate lexical Comparison. Two Hybrid partials are **I09** (supplier acknowledgement did not include the adjacent *not a delivery guarantee* qualifier) and **I15** (dusty-bay lubrication 30 hours without the standard 60-hour or unchanged inspection context).
+
+r21 can append at most one immediately adjacent sentence on each side of a strong Hybrid quote, **only** for relevant acknowledgement disclaimers or changed-interval baseline/unchanged conditions, inside the same source section and within a 620-character exact contiguous quotation. r20's numeric approvals and post-cutoff selection remain protected. The code does not change lexical Comparison, so **I18/I20 remain open**.
+
+**Actual r21 MiniLM Chrome result pending.** Automated regressions use **mock vectors**, not the real model. A full unchanged 24-question browser retest is required before updating the r20 **20/24** regression. [r21 engineering and validation scope](./docs/MERIDIAN_R21_HYBRID_ADJACENT_CONTEXT.md).
+
 ### Evaluate the actual retrieval
 
 Open the **5.0 Engineering Quality Gate** and press **Run local evaluation**. It executes 28 labeled keyword queries on the original three fictional sample documents and shows top-1 source match, out-of-domain refusal rate, provenance errors, **warmed-up repeated keyword timing in microseconds**, and per-case verdicts with a JSON download. The microbenchmark times 10 representative questions in batches lasting at least 40 ms, avoids misleading 0.000 ms one-shot displays, and reports median/p95 across batch-average timings—not individual-request tail latency. If you add or remove files, reload to restore the original sample corpus before evaluating. **These scores do not test MiniLM/Qwen accuracy or real-world hallucination rates.** See the [evaluation methodology and manual real-document test protocol](./docs/EVALUATION_PROTOCOL.md) for exact measurements and limitations.
 
 ### Browser cache and evidence-report build version
 
-GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quick successive deployments. The updated Keyword retrieval engine identifies itself as build `2026-10-11-r20`, and the 5.3 browser entrypoint plus its direct retrieval-related imports use fingerprint `20261011-r20`. Source/CSS URLs are fingerprinted so updated HTML loads matching app modules. Each evidence report now states its **Retrieval build** and **Retrieval mode**. The footer also displays the loaded build.
+GitHub Pages and iPhone in-app browsers may cache JavaScript modules across quick successive deployments. The updated Keyword retrieval engine identifies itself as build `2026-10-11-r21`, and the 5.3 browser entrypoint plus its direct retrieval-related imports use fingerprint `20261011-r21`. Source/CSS URLs are fingerprinted so updated HTML loads matching app modules. Each evidence report now states its **Retrieval build** and **Retrieval mode**. The footer also displays the loaded build.
 
-To verify an Atlas PDF regression fix, reopen [the live demo with a unique page query](https://arjun9669.github.io/GroundedDesk-AI/?build=20261011-r20), clear the original TXT samples, upload the PDFs again, select **Keyword** mode, and regenerate the report. A report missing the build field may have been copied from an earlier cached tab. Score and source matching are still heuristic; one cited exact quote does not establish that an entire answer is complete.
+To verify an Atlas PDF regression fix, reopen [the live demo with a unique page query](https://arjun9669.github.io/GroundedDesk-AI/?build=20261011-r21), clear the original TXT samples, upload the PDFs again, select **Keyword** mode, and regenerate the report. A report missing the build field may have been copied from an earlier cached tab. Score and source matching are still heuristic; one cited exact quote does not establish that an entire answer is complete.
 
 ## Tests and evaluation
 

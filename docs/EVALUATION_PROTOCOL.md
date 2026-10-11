@@ -160,3 +160,12 @@ The [r20 submitted Chrome report](MERIDIAN24_R20_CHROME_REGRESSION.md) records *
 I07 and I10 now display correct original-source quotes for the above-4000 written Finance Lead and Operations Director approval and a 15:00 release leaving the next operating day. All 18 previously passing cases remain PASS; all four unsupported refusals still have zero citations; zero false refusals among 16 supported Hybrid cases. **24/24 quotes match original sources**, and **16/16 Hybrid quotes match their retrieved excerpts**, but only **23/24 quotes are relevant**. I09, I15, I18, I20 remain PARTIAL; I20's Purchasing quotation concerns retention instead of order packet contents. The raw JSON/screenshots named in the Markdown were not separately supplied or verified during the GitHub documentation update.
 
 Any future Meridian retest is a regression; independently frozen unseen documents and questions are required to measure generalization. Do not present 83.3% as production accuracy or 0 FAIL as answer completeness on every question.
+
+
+## Q. 5.4 r21 bounded Hybrid qualifier context — pending Chrome result
+
+After the actual [Meridian24 r20 Chrome regression](MERIDIAN24_R20_CHROME_REGRESSION.md) measured **20 PASS / 4 PARTIAL / 0 FAIL**, the [r21 candidate](MERIDIAN_R21_HYBRID_ADJACENT_CONTEXT.md) targets **I09** missing supplier acknowledgement's non-delivery-guarantee qualification and **I15** missing normal/changed/unchanged lubrication and inspection intervals. The bounded extractor may quote immediately neighboring operative sentences from the **same numbered section** but never synthesize an answer; quotes must remain literal and contiguous, with a 620-character cap. The two lexical Comparison partials I18/I20 are **not fixed** by this patch.
+
+Node regressions exercise deterministic mocked MiniLM ranking vectors, not actual on-device model inference. A valid r21 score requires reloading the three original frozen Meridian TXT documents in Chrome, verifying original SHA-256 hashes, enabling actual local MiniLM with Qwen off, and running the identical **20 Hybrid Q&A / four lexical Comparison** questions without changing rubric or inputs. Score completeness, citation provenance, citation relevance, false acceptance/refusal, and regressions against the 20 r20 passing cases.
+
+Preserve r18's **16/24 first-unseen** result and r19/r20's in-sample 18/24 and 20/24 results unchanged. r21's Meridian test is also **in-sample regression**, not a new independent estimate; a fresh frozen unseen corpus is still required to assess generalization.
