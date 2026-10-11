@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-11-r19";
+export const RETRIEVAL_BUILD = "2026-10-11-r20";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -226,6 +226,79 @@ function evidenceSentenceScore(question,sentence) {
   if (/\b(?:This is the .{0,60}deadline|in the Incident Response Runbook)\b/i.test(sentence)) score-=3;
   return score;
 }
+// 5.4 r20: When the question contains a concrete numeric approval boundary or
+// clock time, ordinary term overlap can rank the *neighboring* rule higher.
+// Select only a directly applicable, verbatim operative source sentence.
+// Do not infer a missing outcome from an unrelated cutoff or invent values.
+function operativeConditionQuote(question, fullText) {
+  const q=String(question || "");
+  const source=String(fullText || "").replace(/\r\n?/g,"\n").replace(/[ \t]+/g," ").trim();
+  const sentences=[...source.matchAll(/[^.!?]+(?:[.!?](?=\s|$)|$)/g)]
+    .map(m=>m[0].trim()).filter(line=>line.length>0 && line.length<=420);
+
+  // Numeric approval bands: distinguish "above 4000" from "above 800
+  // and up to 4000". Do not treat merely mentioning a threshold as
+  // evidence that its approval rule applies to that threshold.
+  const band=q.match(/\b(above|over|more than|greater than|exceeding|at least|up to|below|under|less than|exactly)\s+(\d[\d,]*)\b/i);
+  if (band && /\b(?:purchas\w*|spend\w*|orders?|expenses?|payments?)\b/i.test(q) &&
+      /\b(?:approv\w*|authoriz\w*|sign.off|sign\s+off)\b/i.test(q)) {
+    const n=Number(band[2].replace(/,/g,""));
+    const lowerStyle=/^(?:above|over|more than|greater than|exceeding)$/i.test(band[1]);
+    const upperStyle=/^(?:up to|below|under|less than)$/i.test(band[1]);
+    const exactStyle=/^exactly$/i.test(band[1]);
+    if (Number.isFinite(n)) {
+      for(const sentence of sentences) {
+        if (!/\b(?:purchas\w*|spend\w*|orders?|expenses?|payments?)\b/i.test(sentence) ||
+            !/\b(?:approv\w*|authoriz\w*|sign.off|sign\s+off)\b/i.test(sentence)) continue;
+        const lower=sentence.match(/\b(?:above|over|more than|greater than|exceeding)\s+(\d[\d,]*)\b/i);
+        const min=sentence.match(/\b(?:at least|minimum of)\s+(\d[\d,]*)\b/i);
+        const upper=sentence.match(/\b(?:up to(?: and including)?|through|at most|not exceeding)\s+(\d[\d,]*)\b/i);
+        const less=sentence.match(/\b(?:below|under|less than)\s+(\d[\d,]*)\b/i);
+        const exact=sentence.match(/\b(?:exactly|equal to)\s+(\d[\d,]*)\b/i);
+        const lowerN=lower?Number(lower[1].replace(/,/g,"")):null;
+        const minN=min?Number(min[1].replace(/,/g,"")):null;
+        const upperN=upper?Number(upper[1].replace(/,/g,"")):null;
+        const lessN=less?Number(less[1].replace(/,/g,"")):null;
+        const exactN=exact?Number(exact[1].replace(/,/g,"")):null;
+        const applies=lowerStyle
+          ? (lowerN===n && upperN===null && lessN===null) ||
+            (minN!==null && minN>n && minN<=n+1 && upperN===null)
+          : upperStyle
+            ? (upperN===n || lessN===n) && lowerN===null && minN===null
+            : exactStyle
+              ? (exactN===n || ((lowerN===null || n>lowerN) &&
+                  (minN===null || n>=minN) &&
+                  (upperN===null || n<=upperN) &&
+                  (lessN===null || n<lessN) &&
+                  (lowerN!==null || minN!==null || upperN!==null || lessN!==null)))
+              : minN===n && upperN===null && lowerN===null;
+        if (applies) return sentence;
+      }
+    }
+  }
+
+  // Dispatch timing: a source may state the cutoff and the *subsequent*
+  // departure outcome in adjacent sentences. Quote the explicit outcome
+  // only when the time in the question is later than the stated cutoff.
+  if (/\b(?:released?|submitted?|placed?)\b/i.test(q) &&
+      /\b(?:outbound|orders?|shipments?|dispatch|depot)\b/i.test(q)) {
+    const time=q.match(/\b(?:at|by)\s+([01]?\d|2[0-3]):([0-5]\d)\b/i);
+    if (time) {
+      const asked=Number(time[1])*60+Number(time[2]);
+      const cutoff=sentences.find(line=>/\b(?:cutoff|same.day dispatch|same.day shipment)\b/i.test(line) &&
+        /\b([01]?\d|2[0-3]):([0-5]\d)\b/.test(line));
+      const cutoffTime=cutoff?.match(/\b([01]?\d|2[0-3]):([0-5]\d)\b/);
+      if (cutoffTime && asked>Number(cutoffTime[1])*60+Number(cutoffTime[2])) {
+        const next=sentences.find(line=>
+          /\b(?:next|following)\s+(?:operating|business|working)\s+day\b/i.test(line) &&
+          /\b(?:orders?|shipments?|dispatch|released?|depart|leave|leaves|cutoff)\b/i.test(line));
+        if (next) return next;
+      }
+    }
+  }
+  return "";
+}
+
 // Returns a literal sentence in the original whitespace-normalized text.
 // Empty means no lexical support; the caller must not manufacture an answer.
 export function bestSourceSentence(question, fullText) {
@@ -469,8 +542,12 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
     // For Hybrid, require strong question-to-sentence lexical alignment
     // before overriding a semantic-only paraphrase with source-wide text.
     if (typeof candidate.sourceText === "string") {
-      const supported = bestSourceSentence(question, candidate.sourceText);
-      const sourceEvidenceScore = supported ? evidenceSentenceScore(question, supported) : -Infinity;
+      const operative=operativeConditionQuote(question, candidate.sourceText);
+      const supported=operative || bestSourceSentence(question, candidate.sourceText);
+      // A clause explicitly matching the numeric boundary or post-cutoff
+      // outcome is independently anchored to the question. Hybrid source-wide
+      // recovery is allowed even when the paraphrase lacks four keyword points.
+      const sourceEvidenceScore = operative ? 4 : supported ? evidenceSentenceScore(question, supported) : -Infinity;
       if (supported && candidate.sourceText.includes(supported) &&
           (!usesHybridScores || sourceEvidenceScore >= 4)) {
         quote = supported;
