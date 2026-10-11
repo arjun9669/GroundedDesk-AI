@@ -1,5 +1,14 @@
 # Changelog
 
+### 5.4 / r21 — Actual MiniLM Chrome Meridian24 regression (2026-10-11)
+
+- User-supplied real Chrome report on build `2026-10-11-r21` shows **21 PASS / 3 PARTIAL / 0 FAIL (87.5% strict)** with the unchanged frozen Meridian sources, 20 actual MiniLM Hybrid Q&A and four separate lexical Comparison questions.
+- **I09 now PASS:** displayed quotation includes both supplier acknowledgement within six business hours and that acknowledgement does not guarantee delivery. **I15 improved but remains PARTIAL:** normal 60h and dusty 30h are shown; unchanged inspection interval is omitted from the displayed answer.
+- **I18 and I20 Comparison remain PARTIAL**, including one Purchasing retention quote irrelevant to the packet-contents question. All previous r20 20 PASS cases remain PASS.
+- **24/24 quotations source-literal, 23/24 directly relevant**; zero unsupported false acceptances, 4/4 correct zero-citation refusals.
+- Added [r21 real Chrome acceptance record](docs/MERIDIAN24_R21_CHROME_REGRESSION.md), preserving r18 original first unseen 16/24 and r19/r20 regression 18/24 and 20/24. **In-sample, post-tuning regression only.** Documentation-only; no app code modifications.
+
+
 ### 5.4 / r21 — Bounded Hybrid qualifier context (2026-10-11)
 
 - Candidate-stage Hybrid extraction can include **immediately adjacent same-section sentences** only for explicit supplier acknowledgement disclaimers or standard/changed/unchanged interval context. The quotation stays a **contiguous literal substring** of the source (at most 620 characters).

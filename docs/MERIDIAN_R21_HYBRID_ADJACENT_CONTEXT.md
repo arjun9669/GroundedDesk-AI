@@ -34,3 +34,10 @@ This is **bounded extractive context recovery, not semantic entailment verificat
 - Preserve the historical **r18 first unseen 16/24**, **r19 in-sample 18/24**, and **r20 in-sample 20/24** as separate records. Any r21 Meridian retest is also an **in-sample regression**. Freeze an entirely new unseen benchmark before claiming improved generalization.
 
 **No r21 pass count, new accuracy estimate or production-readiness claim is authorized by CI alone.**
+
+
+## Actual Chrome acceptance (2026-10-11)
+
+The [tester-supplied r21 real MiniLM Chrome regression](MERIDIAN24_R21_CHROME_REGRESSION.md) recorded **21 PASS / 3 PARTIAL / 0 FAIL (87.5%)** under the unchanged frozen Meridian24 rubric, preserving all 20 previous r20 passes. **I09 is fully corrected** with six-business-hour acknowledgement and an explicit *not a delivery guarantee* qualification in the answer. **I15 improved, but remains PARTIAL:** the displayed answer contains standard 60 hours and dusty-bay 30 hours, but still misses the source's unchanged inspection interval (visible only in the expanded excerpt). **I18/I20 lexical Comparison remain partial.** All 24 quotes were literal, 23/24 directly relevant, and all four unsupported queries refused without citations.
+
+The r21 goal of 22/24 was **not reached**; do not re-grade I15 or invent an r21 22/24 result. This is an **in-sample regression on an already-tuned corpus**, not a new held-out generalization estimate. Historical r18/r19/r20 scorecards remain unchanged.

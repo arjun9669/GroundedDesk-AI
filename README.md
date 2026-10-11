@@ -107,7 +107,7 @@ The latest real Chrome Meridian24 r20 regression scored **20 PASS / 4 PARTIAL / 
 
 r21 can append at most one immediately adjacent sentence on each side of a strong Hybrid quote, **only** for relevant acknowledgement disclaimers or changed-interval baseline/unchanged conditions, inside the same source section and within a 620-character exact contiguous quotation. r20's numeric approvals and post-cutoff selection remain protected. The code does not change lexical Comparison, so **I18/I20 remain open**.
 
-**Actual r21 MiniLM Chrome result pending.** Automated regressions use **mock vectors**, not the real model. A full unchanged 24-question browser retest is required before updating the r20 **20/24** regression. [r21 engineering and validation scope](./docs/MERIDIAN_R21_HYBRID_ADJACENT_CONTEXT.md).
+**Actual Chrome r21 regression (2026-10-11):** The [user-supplied real MiniLM r21 Meridian24 retest](./docs/MERIDIAN24_R21_CHROME_REGRESSION.md) scored **21 PASS / 3 PARTIAL / 0 FAIL (87.5% strict)** against the *same* frozen test set. I09 now includes the six-business-hour deadline and the explicit **not a delivery guarantee** qualification. I15 improved to include both normal 60h and dusty-bay 30h but **still omits unchanged inspection frequency**; I18 and I20 lexical Comparison remain partial. All 20 prior r20 passing cases remain PASS. 24/24 quotes were source-literal, 23/24 relevant, and all four unsupported refusals had zero citations. **In-sample regression, not newly held-out accuracy.** [r21 engineering scope](./docs/MERIDIAN_R21_HYBRID_ADJACENT_CONTEXT.md).
 
 ### Evaluate the actual retrieval
 
