@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-12-r29";
+export const RETRIEVAL_BUILD = "2026-10-12-r30";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -159,6 +159,15 @@ function requestedEvidenceFocus(question) {
   const q=String(question);
   const asksValue=/^\s*(?:what|which|give|provide|state|show)\b/i.test(q) ||
     /\b(?:exact|specified|required)\b/i.test(q);
+  const pinRequest = /\bpin\s+(?:code|number)\b|\bpersonal\s+identification\s+number\b|\b(?:door|access|entry)\s+code\b/i.test(q) ||
+    /\bPIN\b/.test(q) || (/\bpin\b/i.test(q) && /\b(?:door|keypad|access|entry|lock|login)\b/i.test(q));
+  const pinProcedure = /^(?:\s*)(?:how|when|why)\b|\b(?:rotation|rotat\w*|length|digits|format|handling|management)\b/i.test(q) ||
+    /\b(?:PIN|pin\s+code|access\s+code)\s+(?:policy|requirements)\b/i.test(q);
+  if (asksValue && pinRequest && !pinProcedure) {
+    // A title, a PIN policy, or nearby opening hours cannot disclose a PIN.
+    // Require a labeled numeric value in the cited quotation itself.
+    return /\b(?:pin(?:\s+(?:code|number))?|personal\s+identification\s+number|(?:door|access|entry)\s+code)\s*(?:(?:is|equals|:|=|set\s+to)\s*)?["']?\d{4,12}\b/i;
+  }
   // An individual's mobile/cell number is a concrete attribute. A policy
   // quote merely mentioning the person is not a disclosed contact value.
   if (asksValue && /\b(?:mobile|cell(?:ular)?|phone|telephone|contact)\s*(?:phone\s*)?(?:numbers?|no\.?)\b/i.test(q)) {

@@ -4,9 +4,9 @@
  * Its "agent" is a deterministic retrieve -> cross-check -> report workflow,
  * not an autonomous AI agent or a fact-entailment verifier.
  */
-import { buildIndex, keywordRank, answerFromCandidates, tokenize, bestSourceSentence } from "./retrieval.mjs?v=20261012-r29";
-import { assertWorkflowExport, locationLabel } from "./provenance.mjs?v=20261012-r29";
-import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r29";
+import { buildIndex, keywordRank, answerFromCandidates, tokenize, bestSourceSentence } from "./retrieval.mjs?v=20261012-r30";
+import { assertWorkflowExport, locationLabel } from "./provenance.mjs?v=20261012-r30";
+import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r30";
 
 const MAX_QUERY = 600;
 const FLAG_PATTERNS = [
