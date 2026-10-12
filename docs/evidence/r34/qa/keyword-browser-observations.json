@@ -1,0 +1,29 @@
+{
+  "kind": "synthetic feature smoke; not an accuracy benchmark",
+  "model": "not exercised",
+  "checks": [
+    "Non-overlapping interactive desktop dock; unchanged evidence export; modal mobile resize and desktop restoration; focus restored; new answers/tool/corpus changes close stale previews",
+    "Actual PDF.js upload/extraction, page 2 provenance, copy/export, original page rendering, next/previous bounds, Escape and close/reopen cleanup",
+    "Unsupported question has no source cards or page citations",
+    "TXT quotation spans lines 1–2, no invented page link, document replacement invalidates Hybrid vectors"
+  ],
+  "browser": "154.0.8037.98",
+  "build": "Loaded retrieval build: 2026-10-12-r34",
+  "keywordAnswer": "YOUR QUESTION\nHow often must Harbor crane operators inspect lifting hooks?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\nSOURCE EVIDENCE\n[1]\nharbor-workshop.pdf\n\nPDF page 2 (physical page numbers)\n\nHarbor workshop operates the sheltered pier. Harbor crane operators must inspect lifting hooks every eight shifts. Harbor workshop visitor hours end at sunset.\n\nOpen cited PDF page ↗Locate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+  "keywordReport": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> How often must Harbor crane operators inspect lifting hooks?\r\n\r\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r34`\r\n\r\n## Answer\r\n\r\n\r\n> [1] Harbor crane operators must inspect lifting hooks every eight shifts.\r\n\r\n## Source evidence\r\n\r\n### [1] harbor\\-workshop\\.pdf\r\n\r\n**File:** harbor\\-workshop\\.pdf\r\n\r\n**Source location:** PDF page 2 \\(physical page numbers\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 2.1782\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Harbor crane operators must inspect lifting hooks every eight shifts.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> Harbor workshop operates the sheltered pier.\r\n> \r\n> Harbor crane operators must inspect lifting hooks every eight shifts.\r\n> \r\n> Harbor workshop visitor hours end at sunset.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n",
+  "pinControls": [
+    {
+      "mode": "keyword",
+      "question": "What is the exact PIN code for the fictional workshop door?",
+      "displayed": "YOUR QUESTION\nWhat is the exact PIN code for the fictional workshop door?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop door PIN code is 0482.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin-controls.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482. The fictional workshop PIN code must be rotated every seven days.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "outcome": "PASS"
+    },
+    {
+      "mode": "keyword",
+      "question": "When must the fictional workshop PIN code be rotated?",
+      "displayed": "YOUR QUESTION\nWhen must the fictional workshop PIN code be rotated?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop PIN code must be rotated every seven days.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin-controls.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482. The fictional workshop PIN code must be rotated every seven days.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "outcome": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

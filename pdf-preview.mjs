@@ -1,6 +1,6 @@
 // Original files stay in memory. Render only the selected page; never upload it.
-import { loadPDFLibrary, pdfErrorMessage } from "./pdf-ingest.mjs?v=20261012-r32";
-import { quotationRegions, highlightMessage } from "./pdf-highlight.mjs?v=20261012-r32";
+import { loadPDFLibrary, pdfErrorMessage } from "./pdf-ingest.mjs?v=20261012-r34";
+import { quotationRegions, highlightMessage } from "./pdf-highlight.mjs?v=20261012-r34";
 let active = null;
 
 export function closePDFPreview() {
@@ -11,9 +11,13 @@ export function closePDFPreview() {
   old.pdf?.destroy().catch(() => {});
   if (old.dialog.open) old.dialog.close();
   old.dialog.remove();
+  document.body.classList.remove("source-preview-open");
+  old.cleanup?.();
+  if (old.returnFocus?.isConnected) old.returnFocus.focus({ preventScroll: true });
 }
 
 export async function openPDFPreview(file, filename, initialPage, quote = "") {
+  const returnFocus = document.activeElement;
   closePDFPreview();
   const dialog = document.createElement("dialog");
   dialog.className = "pdf-preview";
@@ -45,16 +49,56 @@ export async function openPDFPreview(file, filename, initialPage, quote = "") {
   overlay.setAttribute("aria-hidden", "true");
   const stage = document.createElement("div"); stage.className = "pdf-page-stage"; stage.append(canvas, overlay);
   const scroll = document.createElement("div"); scroll.className = "pdf-page-scroll"; scroll.append(stage);
-  const state = { dialog, page: initialPage, pdf: null, render: null, busy: false };
+  const state = { dialog, page: initialPage, pdf: null, render: null, busy: false, returnFocus };
   active = state;
   const previous = button("Previous page", () => renderPage(state.page - 1));
   const next = button("Next page", () => renderPage(state.page + 1));
-  button("Close PDF", closePDFPreview);
+  const close = button("Close PDF", closePDFPreview);
   previous.disabled = next.disabled = true;
-  dialog.append(title, controls, status, note, quotation, scroll);
+  const heading = document.createElement("header");
+  heading.className = "pdf-preview-heading";
+  const label = document.createElement("p");
+  label.className = "micro-label";
+  label.textContent = "ORIGINAL SOURCE";
+  heading.append(label, title);
+  const excerpt = document.createElement("details");
+  excerpt.className = "pdf-preview-excerpt";
+  excerpt.open = true;
+  excerpt.hidden = !quote;
+  const summary = document.createElement("summary");
+  summary.textContent = "Quoted evidence";
+  excerpt.append(summary, quotation);
+  dialog.append(heading, controls, status, note, excerpt, scroll);
   document.body.append(dialog);
-  dialog.addEventListener("close", () => { if (active === state) closePDFPreview(); });
-  dialog.showModal();
+  // Desktop leaves the answer interactive alongside the source. Smaller windows
+  // use the native modal dialog's focus containment and Escape behavior.
+  const compact = matchMedia("(max-width: 1199px)");
+  const position = () => {
+    if (active !== state) return;
+    if (dialog.open) dialog.close();
+    document.body.classList.toggle("source-preview-open", !compact.matches);
+    if (compact.matches) dialog.showModal(); else dialog.show();
+    close.focus({ preventScroll: true });
+  };
+  const onKeyDown = event => {
+    if (event.key === "Tab" && active === state && compact.matches) {
+      const stops = [...dialog.querySelectorAll("button:not(:disabled), summary")].filter(el => el.getClientRects().length);
+      const first = stops[0], last = stops.at(-1);
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
+    if (event.key === "Escape" && active === state && !compact.matches) {
+      event.preventDefault(); closePDFPreview();
+    }
+  };
+  compact.addEventListener("change", position);
+  document.addEventListener("keydown", onKeyDown);
+  state.cleanup = () => {
+    compact.removeEventListener("change", position);
+    document.removeEventListener("keydown", onKeyDown);
+  };
+  dialog.addEventListener("close", () => { if (active === state && !dialog.open) closePDFPreview(); });
+  position();
 
   async function renderPage(number) {
     if (active !== state || state.busy || !state.pdf || number < 1 || number > state.pdf.numPages) return;

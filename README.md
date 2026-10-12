@@ -2,13 +2,13 @@
 
 **Free, browser-first document intelligence portfolio project.** Upload text, Markdown or text-based PDF documents, inspect source-backed answers, optionally enable local semantic embeddings and a local small language model, and create multi-document research reports.
 
-**[Live GroundedDesk AI 5.6](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r33)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
+**[Live GroundedDesk AI 5.6](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r34)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
 
 > This is the **dedicated source repository and live static site**, deployed through free GitHub Pages. The app runs its own [GitHub Actions CI](./.github/workflows/ci.yml) and [Pages workflow](./.github/workflows/pages.yml). The original profile-hosted demo remains available separately. Model and PDF dependencies require public downloads when enabled; no paid inference account is needed.
 
 ## Current release and measured evidence
 
-Current retrieval build: **2026-10-12-r33** (5.6, polished research desk; retrieval behavior unchanged). The dedicated repository is the active development source; the profile-hosted copy is historical.
+Current retrieval build: **2026-10-12-r34** (5.6, side-by-side PDF review; retrieval behavior unchanged). The dedicated repository is the active development source; the profile-hosted copy is historical.
 
 [Browser benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md) preserves first-look results separately from in-sample regressions. Aster32 and Lantern32 each reached 32/32 strict passes in the measured r25 regression; this is not independent accuracy. The Aster H01 infrastructure retry qualification remains recorded.
 
@@ -25,7 +25,7 @@ Current retrieval build: **2026-10-12-r33** (5.6, polished research desk; retrie
 | **5.2 prototype** | **Candidate release-control inventory: rule-tagged, literal source sentences grouped by gate, conditional, related governance and unclassified categories** | **Optional numbered-policy Research workflow; not semantic synthesis or compliance verification** |
 | **5.3** | **Precise source-sentence evidence selection, stronger missing-fact refusals and two-document comparison quote recovery** | **Deterministic Keyword/Comparison refinement, no LLM or paid API** |
 | **5.4 / r25** | **More complete source-literal answers, conditional evidence selection and unsupported-value safeguards** | **Actual MiniLM in-sample regressions recorded separately from independent first looks** |
-| **5.6 / r33** | **Ask / Compare / Research tabs, document sidebar, progressive settings, responsive controls and preserved evidence** | **Local HTML/CSS/JavaScript; existing retrieval and workflows** |
+| **5.6 / r34** | **Ask / Compare / Research tabs, document sidebar, progressive settings, responsive controls and preserved evidence** | **Local HTML/CSS/JavaScript; existing retrieval and workflows** |
 | **5.5 / r30** | **Verified physical PDF page citations, original-page preview and normalized TXT/Markdown line references in Q&A, Comparison, Research and policy workflows** | **Local PDF.js preview, source-integrity guards and portable Markdown exports** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
@@ -45,7 +45,7 @@ Retrieval scores are available under **Search details**, with their confidence l
 
 ![Redesigned desktop workspace](./docs/evidence/r33/workspace/01-desktop-start.png)
 
-**Validation:** 253 unit tests and six actual Chromium feature scripts pass. Installed Chrome checks include keyboard navigation, uploads, exports, preserved tab state, associated results, the bundled developer check, document removal, mobile-width collapse/restoration and PDF workflows. Actual local MiniLM controls pass with Qwen off. The unchanged **Cobalt16 in-sample UI regression is 16 PASS / 0 PARTIAL / 0 FAIL**; all source records and copied reports match r30 apart from the build. The original r29 first-look remains **15 PASS / 0 PARTIAL / 1 FAIL**. No new independent accuracy result is claimed. [Scope and evidence](./docs/WORKSPACE_UI_5_6.md).
+**r34 validation:** 253 unit tests and six actual Chromium feature scripts pass, including a non-overlapping desktop PDF dock, live answer/report interaction, mobile modal focus, resizing and stale-preview cleanup. The Cobalt16 score below is the preserved r33 regression; no new benchmark run is claimed. Installed Chrome checks include keyboard navigation, uploads, exports, preserved tab state, associated results, the bundled developer check, document removal, mobile-width collapse/restoration and PDF workflows. Actual local MiniLM controls pass with Qwen off. The unchanged **Cobalt16 in-sample UI regression is 16 PASS / 0 PARTIAL / 0 FAIL**; all source records and copied reports match r30 apart from the build. The original r29 first-look remains **15 PASS / 0 PARTIAL / 1 FAIL**. No new independent accuracy result is claimed. [Scope and evidence](./docs/WORKSPACE_UI_5_6.md).
 
 No paid design service, web font, backend, account or API was added. Physical-phone validation, character-level PDF highlights, OCR and complex layout work remain pending.
 
@@ -286,3 +286,11 @@ Model availability, downloaded weights, memory limits, browser WebGPU/WASM suppo
 This standalone-ready snapshot was prepared from [the verified GroundedDesk code inside the profile repository](https://github.com/arjun9669/arjun9669/tree/main/projects/groundeddesk-ai). The dedicated repository is the active source for **https://arjun9669.github.io/GroundedDesk-AI/**. The `.github/workflows/pages.yml` workflow publishes every successful `main` push after Pages is configured to use GitHub Actions. The earlier profile-hosted Pages demo remains available but is not automatically updated by this repository.
 
 No specific software license has been granted in this snapshot. Add an appropriate license only after the repository owner chooses one.
+
+### Side-by-side PDF review (r34)
+
+Click **Open cited PDF page** beneath an answer or workflow excerpt. On windows at least 1200 pixels wide, the original PDF opens beside the answer. Both remain interactive, so you can copy the evidence report while checking the page. The exact quotation can be collapsed to give the page more space. Smaller windows use a focused PDF dialog; resizing switches between layouts without losing the page or highlight. **Close PDF** or Escape restores focus. Changing the answer, tool or document corpus closes stale previews.
+
+![Answer beside its original PDF page](docs/evidence/r34/qa/02-docked-review.png)
+
+[Scope and measured evidence](docs/SIDE_BY_SIDE_PDF_5_6.md). PDF highlights remain approximate text-run bounds; OCR, partial-run character highlighting and layout reconstruction are not included.
