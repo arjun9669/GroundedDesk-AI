@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#0b1726"/>
   <meta name="description" content="GroundedDesk AI 5.5 — free browser-side document intelligence, local AI options, multi-document evidence research and measurable source evaluation."/>
   <title>GroundedDesk AI 5.5 | Evidence-First Document Research</title>
-  <link rel="stylesheet" href="./styles.css?v=20261012-r27"/>
-  <script defer type="module" src="./app.mjs?v=20261012-r27"></script>
+  <link rel="stylesheet" href="./styles.css?v=20261012-r28"/>
+  <script defer type="module" src="./app.mjs?v=20261012-r28"></script>
 </head>
 <body>
   <div class="app-shell">
@@ -119,6 +119,7 @@
               <span class="browse-label">Choose files ↗</span>
             </label>
             <input type="file" id="file-input" accept=".txt,.md,.markdown,.pdf,text/plain,text/markdown,application/pdf" multiple hidden />
+            <p id="upload-status" class="library-note" role="status"></p>
             <label class="search-label" for="document-filter">SEARCH SOURCES</label>
             <div class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="document-filter" placeholder="Find a document..." autocomplete="off"/></div>
             <ul class="document-list" id="document-list" aria-live="polite"></ul>

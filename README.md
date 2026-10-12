@@ -2,13 +2,13 @@
 
 **Free, browser-first document intelligence portfolio project.** Upload text, Markdown or text-based PDF documents, inspect source-backed answers, optionally enable local semantic embeddings and a local small language model, and create multi-document research reports.
 
-**[Live GroundedDesk AI 5.5](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r27)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
+**[Live GroundedDesk AI 5.5](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r28)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
 
 > This is the **dedicated source repository and live static site**, deployed through free GitHub Pages. The app runs its own [GitHub Actions CI](./.github/workflows/ci.yml) and [Pages workflow](./.github/workflows/pages.yml). The original profile-hosted demo remains available separately. Model and PDF dependencies require public downloads when enabled; no paid inference account is needed.
 
 ## Current release and measured evidence
 
-Current retrieval build: **2026-10-12-r27** (5.5, page navigation across Q&A and lexical research workflows). The dedicated repository is the active development source; the profile-hosted copy is historical.
+Current retrieval build: **2026-10-12-r28** (5.5, page navigation across Q&A and lexical research workflows). The dedicated repository is the active development source; the profile-hosted copy is historical.
 
 [Browser benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md) preserves first-look results separately from in-sample regressions. Aster32 and Lantern32 each reached 32/32 strict passes in the measured r25 regression; this is not independent accuracy. The Aster H01 infrastructure retry qualification remains recorded.
 
@@ -25,7 +25,7 @@ Current retrieval build: **2026-10-12-r27** (5.5, page navigation across Q&A and
 | **5.2 prototype** | **Candidate release-control inventory: rule-tagged, literal source sentences grouped by gate, conditional, related governance and unclassified categories** | **Optional numbered-policy Research workflow; not semantic synthesis or compliance verification** |
 | **5.3** | **Precise source-sentence evidence selection, stronger missing-fact refusals and two-document comparison quote recovery** | **Deterministic Keyword/Comparison refinement, no LLM or paid API** |
 | **5.4 / r25** | **More complete source-literal answers, conditional evidence selection and unsupported-value safeguards** | **Actual MiniLM in-sample regressions recorded separately from independent first looks** |
-| **5.5 / r27** | **Verified physical PDF page citations, original-page preview and normalized TXT/Markdown line references in Q&A, Comparison, Research and policy workflows** | **Local PDF.js preview, source-integrity guards and portable Markdown exports** |
+| **5.5 / r28** | **Verified physical PDF page citations, original-page preview and normalized TXT/Markdown line references in Q&A, Comparison, Research and policy workflows** | **Local PDF.js preview, source-integrity guards and portable Markdown exports** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
 
@@ -37,7 +37,7 @@ Repeated context is labeled **ambiguous**, missing page metadata is **unavailabl
 
 **Workflow distinction:** Hybrid MiniLM applies to main Q&A. Comparison, Research and policy inventories remain separate lexical workflows. Page provenance checks do not establish semantic relevance, answer completeness, agreement between documents or compliance.
 
-**Validation:** 232 unit tests and the strict offline toy evaluation pass. Installed Chrome tests cover actual PDF.js extraction/preview and each lexical workflow; the Q&A smoke additionally runs actual local MiniLM with Qwen off. See [r27 scope and evidence](./docs/RESEARCH_PAGE_CITATIONS_5_5.md) and the [original r26 slice](./docs/PAGE_PROVENANCE_5_5.md). These feature/regression checks do not constitute a fresh independent accuracy benchmark. Historical Aster/Lantern scores have not been rerun or changed.
+**Validation:** 240 unit tests and the strict offline toy evaluation pass. Installed Chrome tests cover actual PDF.js extraction/preview and each lexical workflow; the Q&A smoke additionally runs actual local MiniLM with Qwen off. See [r27 scope and evidence](./docs/RESEARCH_PAGE_CITATIONS_5_5.md) and the [original r26 slice](./docs/PAGE_PROVENANCE_5_5.md). These feature/regression checks do not constitute a fresh independent accuracy benchmark. Historical Aster/Lantern scores have not been rerun or changed.
 
 Page highlighting, OCR, layout/table reconstruction, broader document/browser coverage and fresh held-out evaluation remain pending. The 5.5 document-processing roadmap is still in progress.
 
@@ -52,6 +52,16 @@ Page highlighting, OCR, layout/table reconstruction, broader document/browser co
 Example from the synthetic PDF used in Chrome validation:
 
 ![Comparison opens the original supplier PDF at physical page 2](./docs/evidence/r27/research/02-comparison-original-page.png)
+
+### PDF reliability and upload recovery (r28)
+
+Use **View PDF** in the library to inspect any loaded PDF, even when a question has no matching answer. Upload problems now appear beside the upload control and name the affected file. Locked PDFs need an unlocked local copy; damaged PDFs need a fresh export; image-only or empty PDFs need searchable text. OCR is not included.
+
+Mixed PDFs disclose physical pages with no searchable text. Widely separated text rows can trigger a column/table caution, which also appears in evidence reports. This is a heuristic warning: extraction order is unchanged, columns are not reconstructed and table-cell associations are not guaranteed. A missing warning does not prove correct reading order.
+
+Eight fixed synthetic Chrome cases cover mixed pages, repeated text, cross-page evidence, columns, a table, image-only content, damaged bytes and a genuinely encrypted PDF. Their input hashes and expected behavior were saved before testing. These are feature reliability checks, not independent factual accuracy. See [r28 scope and evidence](./docs/PDF_RELIABILITY_5_5.md).
+
+Limits: 5 MB per file, 75 PDF pages, 180,000 extracted characters and 15 documents per session. Optional MiniLM supports at most 72 indexed chunks; large files may exceed browser/device capacity. Original files and extracted text stay in the current tab's memory.
 
 ### Free project boundaries and next steps
 

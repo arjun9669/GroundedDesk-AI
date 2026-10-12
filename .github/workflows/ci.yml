@@ -31,6 +31,7 @@ jobs:
           node --check report.mjs
           node --check provenance.mjs
           node --check pdf-preview.mjs
+          node --check pdf-ingest.mjs
           node --check eval/run.mjs
       - name: Unit tests
         run: node --test tests/*.test.mjs
@@ -65,3 +66,4 @@ jobs:
           node tests/browser-policy-smoke.mjs
           node tests/browser-pdf-smoke.mjs
           node tests/browser-research-pages-smoke.mjs
+          node tests/browser-pdf-reliability.mjs

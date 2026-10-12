@@ -1,5 +1,12 @@
 # Changelog
 
+### 5.5 / r28 — PDF reliability notices and actionable intake errors (2026-10-12)
+
+- Added named-file guidance for damaged, locked and non-searchable PDFs, with upload status beside the file picker. Every loaded PDF can be opened directly from the library.
+- Retained blank-page boundaries and disclosed missing text coverage in library/evidence/export. Widely separated rows trigger a transparent column/table caution; extraction order is unchanged and layout/table meaning is not reconstructed.
+- Parsing tasks are cleaned up on success/failure and page/text caps are checked before indexing. Added eight parser unit tests and eight real-PDF Chrome reliability scenarios with pre-test hashes/criteria. 240 unit tests and existing actual MiniLM Q&A/browser regressions pass.
+- README documents recovery, limitations and resource caps. Historical frozen benchmark scores, rankings and quote/refusal heuristics are preserved. [Scope and evidence](docs/PDF_RELIABILITY_5_5.md). No paid services added.
+
 ### 5.5 / r27 — Research and Comparison page navigation (2026-10-12)
 
 - Comparison, multi-document Research, policy-section research and candidate inventories now show verified physical PDF page locations, original-page previews and library navigation. Copied/downloaded reports identify the current retrieval build and quotation location.

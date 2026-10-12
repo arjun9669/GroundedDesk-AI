@@ -3,8 +3,9 @@
  * This is a deterministic candidate extractor, NOT semantic entailment,
  * legal advice, compliance certification, or an autonomous LLM.
  */
-import { planResearch, hasInstructionRisk, numberedPolicySections } from "./research.mjs?v=20261012-r27";
-import { assertWorkflowExport, locationLabel } from "./provenance.mjs?v=20261012-r27";
+import { planResearch, hasInstructionRisk, numberedPolicySections } from "./research.mjs?v=20261012-r28";
+import { assertWorkflowExport, locationLabel } from "./provenance.mjs?v=20261012-r28";
+import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r28";
 
 const MAX_SECTIONS = 64;
 const MAX_ITEMS = 24;
@@ -119,6 +120,7 @@ export function formatPolicyChecklistMarkdown(result, documents) {
         "","> "+escapeQuote(source.quote),"",
         "*Source: "+labelEscape(source.filename)+" · "+labelEscape(source.sectionId)+". Rule-based category, not verified legal interpretation.*","");
       if (source.location) lines.push("**Quotation location:** "+labelEscape(locationLabel(source.location)),"");
+      for (const warning of pdfWarnings(documents?.find(doc => doc.id === source.documentId)?.pdfDiagnostics, source.location?.pages)) lines.push("**PDF extraction notice:** "+labelEscape(warning),"");
     }
   }
   lines.push("## Coverage and verification limits","",

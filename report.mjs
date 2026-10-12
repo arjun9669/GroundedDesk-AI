@@ -1,5 +1,6 @@
 import { validateDraft } from "./generation.mjs?v=20261010-r13";
-import { locateEvidence, locationLabel } from "./provenance.mjs?v=20261012-r27";
+import { locateEvidence, locationLabel } from "./provenance.mjs?v=20261012-r28";
+import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r28";
 
 /**
  * Portable evidence reports for the browser-only document Q&A demo.
@@ -68,6 +69,7 @@ export function createEvidenceReport(question, result, documents = []) {
     }
     sections.push("## Source evidence", "");
     for (const source of sources) {
+      const warnings = pdfWarnings(documents.find(doc => doc.id === source.documentId)?.pdfDiagnostics, source.location?.pages);
       if (source.location) {
         const doc = documents.find(doc => doc.id === source.documentId);
         if (JSON.stringify(locateEvidence(doc, source)) !== JSON.stringify(source.location)) {
@@ -92,6 +94,7 @@ export function createEvidenceReport(question, result, documents = []) {
         blockquote(source.excerpt),
         "",
       );
+      for (const warning of warnings) sections.push("**PDF extraction notice:** " + inline(warning), "");
     }
   }
 
