@@ -16,7 +16,7 @@ try {
   const errors=[];page.on("pageerror",e=>errors.push(e.message));
   await page.goto(process.env.TEST_URL||"http://127.0.0.1:8765/",{waitUntil:"domcontentloaded"});
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="3");
-  observed.build=await page.locator("#retrieval-build").innerText();assert.match(observed.build,/2026-10-13-r39/);
+  observed.build=await page.locator("#retrieval-build").innerText();assert.match(observed.build,/2026-10-13-r40/);
   assert.equal(await page.locator("#model-settings").getAttribute("open"),null);
   assert.equal(await page.locator("#workspace-ask").isVisible(),true);
   assert.equal(await page.locator("#workspace-compare").isVisible(),false);
@@ -108,6 +108,14 @@ try {
   await page.locator("#query-input").fill("How often do dock lighting inspections occur?");await page.keyboard.press('Control+Enter');
   await page.waitForFunction(()=>!document.querySelector("#ask-button").disabled);
   const answer=await page.locator(".answer-box").innerText();assert.ok(answer.includes(quote));
+  assert.equal(await page.locator('.answer-title').innerText(),'Quoted answer');
+  await page.locator('.inline-citation').click();
+  assert.equal(await page.locator('.source-card').evaluate(el=>el===document.activeElement),true);
+  assert.equal(await page.locator('.source-excerpt').innerText(),quote);
+  await page.emulateMedia({reducedMotion:'reduce'});
+  assert.equal(await page.locator('.source-card').evaluate(el=>getComputedStyle(el).transitionDuration),'0s');
+  await page.emulateMedia({reducedMotion:'no-preference'});
+  observed.checks.push('Quoted answer heading, unchanged source excerpt, citation jump focuses its source card; hover transitions disabled under reduced-motion preference');
   assert.equal(await page.locator('#history-count').innerText(),'1','Ctrl+Enter submits exactly once');
   await page.evaluate(()=>{const input=document.querySelector('#query-input');for(const options of [{isComposing:true},{repeat:true}])input.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',ctrlKey:true,bubbles:true,cancelable:true,...options}));});
   assert.equal(await page.locator('#history-count').innerText(),'1','Explicit IME/repeat event controls must not resubmit');
@@ -119,7 +127,7 @@ try {
   assert.match(await page.locator(".source-metadata").innerText(),/not a confidence score/);
   await page.locator(".source-metadata > summary").click();
   await page.getByRole("button",{name:"Copy answer and evidence report"}).click();
-  const report=await page.evaluate(()=>navigator.clipboard.readText());assert.ok(report.includes(quote));assert.match(report,/2026-10-13-r39/);
+  const report=await page.evaluate(()=>navigator.clipboard.readText());assert.ok(report.includes(quote));assert.match(report,/2026-10-13-r40/);
   assert.match(await page.locator('#answer-report-status').innerText(),/^Copied/);
   const pendingDownload=page.waitForEvent('download');
   await page.getByRole('button',{name:'Download local Markdown evidence report'}).click();
@@ -137,6 +145,8 @@ try {
   await page.waitForFunction(()=>!document.querySelector('#ask-button').disabled);
   assert.equal(await page.locator('.history-question').first().innerText(),unsupported);
   assert.equal(await page.locator('.history-status').first().innerText(),"No supporting evidence");
+  assert.equal(await page.locator('.answer-title').innerText(),'No supporting answer');
+  assert.equal(await page.locator('.answer-box.is-refusal').count(),1);
   assert.equal(await page.locator('.history-files').first().innerText(),"Searched: dock-notes.txt");
   assert.equal(await page.locator('#answer-report-status').isVisible(),false,"A new answer clears earlier export feedback");
   await page.locator('#history-filter').fill('  DOCK-NOTES.TXT  ');

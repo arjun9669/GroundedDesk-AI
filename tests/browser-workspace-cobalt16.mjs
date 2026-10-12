@@ -28,7 +28,7 @@ try {
   page.on("request",req=>{if(/onnx|wasm|all-MiniLM/.test(req.url())){const u=new URL(req.url());requests.add(u.origin+u.pathname);}});
   await page.goto(process.env.TEST_URL||"http://127.0.0.1:8765/",{waitUntil:"domcontentloaded"});
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="3");
-  result.build=await page.locator("#retrieval-build").innerText(); assert.match(result.build,/2026-10-13-r39/);
+  result.build=await page.locator("#retrieval-build").innerText(); assert.match(result.build,/2026-10-13-r40/);
   await page.locator("#clear-docs").click();
   await page.locator("#file-input").setInputFiles(manifest.files.filter(f=>f.path.startsWith("source_docs/")).map(f=>path.join(pack,f.path)));
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="3");

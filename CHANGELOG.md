@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6 / r40 — Clearer answers and source cards (2026-10-13)
+
+- Editorial question headings, distinct Quoted answer / Local AI draft / No supporting answer labels, softer answer panels and readable citation spacing. Warm refusal styling preserves zero citations.
+- Clearer filename/page/line labels, source excerpts and separated search details; consistent Research/Comparison card spacing. Hover effects respect reduced motion. Exact quotation and export data unchanged.
+- 253 unit tests, strict offline toy checks and seven installed Chrome scripts pass, including actual local MiniLM. Feature reports match r39 apart from build. Historical benchmarks unchanged; no independent accuracy claim. [Scope/evidence](docs/ANSWER_PRESENTATION_5_6.md).
+
 ### 5.6 / r39 — Discoverable keyboard shortcuts (2026-10-13)
 
 - Added / to open Ask and focus the question composer outside typing controls/dialogs. Made existing Ctrl/Cmd + Enter discoverable; submits through the form and ignores composition, repeats, modified combinations and disabled submission. Plain Enter remains a newline.
