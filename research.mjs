@@ -4,7 +4,8 @@
  * Its "agent" is a deterministic retrieve -> cross-check -> report workflow,
  * not an autonomous AI agent or a fact-entailment verifier.
  */
-import { buildIndex, keywordRank, answerFromCandidates, tokenize, bestSourceSentence } from "./retrieval.mjs?v=20261012-r26";
+import { buildIndex, keywordRank, answerFromCandidates, tokenize, bestSourceSentence } from "./retrieval.mjs?v=20261012-r27";
+import { assertWorkflowExport, locationLabel } from "./provenance.mjs?v=20261012-r27";
 
 const MAX_QUERY = 600;
 const FLAG_PATTERNS = [
@@ -246,12 +247,14 @@ function formatPolicyResearchMarkdown(result) {
     "",
     "## Section-by-section evidence", ""
   ];
+  if (result.retrievalBuild) lines.push("**Retrieval build:** `" + String(result.retrievalBuild).replace(/[^A-Za-z0-9._-]/g, "").slice(0, 80) + "`", "");
   if (!result.answered) {
     lines.push("No matching numbered policy sections found. This is not proof that the policy lacks the requested information.", "");
   }
   for (const source of result.sources) {
     lines.push("### [" + source.citation + "] " + safeTitle(source.sectionId) +
       " — " + safeTitle(source.filename), "", quote(source.quote), "");
+    if (source.location) lines.push("**Quotation location:** " + safeTitle(locationLabel(source.location)), "");
     if (source.truncated) lines.push("*Excerpt only; review the full section for additional conditions.*", "");
     if (source.warning) lines.push("**Review flag:** Instruction-shaped source content detected; treated as untrusted text.", "");
   }
@@ -266,11 +269,13 @@ function formatPolicyResearchMarkdown(result) {
   return lines.join("\n");
 }
 
-export function formatResearchMarkdown(result) {
+export function formatResearchMarkdown(result, documents) {
   if (!result || !["research","comparison","policy-research"].includes(result.kind)) throw new TypeError("Invalid report");
+  assertWorkflowExport(result, documents);
   if (result.kind === "policy-research") return formatPolicyResearchMarkdown(result);
   const lines = ["# GroundedDesk AI 4.0 — evidence report", "",
     "**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.", ""];
+  if (result.retrievalBuild) lines.push("**Retrieval build:** `" + String(result.retrievalBuild).replace(/[^A-Za-z0-9._-]/g, "").slice(0, 80) + "`", "");
   if (result.question) lines.push("**Question/topic:** " + safeTitle(result.question), "");
   if (result.kind === "research") {
     lines.push("## Research workflow", "");
@@ -282,6 +287,7 @@ export function formatResearchMarkdown(result) {
         quote(source.quote), "",
         source.warning ? "**Review flag:** Possible instruction-shaped content was detected; treated as untrusted document data." : "",
         "");
+      if (source.location) lines.push("**Quotation location:** " + safeTitle(locationLabel(source.location)), "");
     }
     lines.push("## Coverage and gaps", "",
       result.matchedDocuments + " of " + result.availableDocuments + " loaded documents had keyword-matching evidence.", "");
@@ -292,6 +298,7 @@ export function formatResearchMarkdown(result) {
       lines.push("### [" + source.citation + "] " + safeTitle(source.filename), "",
         source.supported ? quote(source.excerpt) : "No matching passage was found using lexical retrieval for this topic.", "",
         source.warning ? "**Review flag:** Possible instruction-shaped content detected; treated as data." : "", "");
+      if (source.location) lines.push("**Quotation location:** " + safeTitle(locationLabel(source.location)), "");
     }
     lines.push("## Shared vocabulary (not agreement)", "",
       result.sharedTerms.length ? result.sharedTerms.map(safeTitle).join(", ") : "No shared long terms in the selected documents.", "");

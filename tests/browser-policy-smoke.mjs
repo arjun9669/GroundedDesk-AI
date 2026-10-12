@@ -23,7 +23,7 @@ try {
   const page=await context.newPage();
   const pageErrors=[];
   page.on("pageerror",err=>pageErrors.push(err.message));
-  await page.goto("http://127.0.0.1:8765/",{waitUntil:"domcontentloaded"});
+  await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/",{waitUntil:"domcontentloaded"});
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="3");
   await page.locator("#clear-docs").click();
   await page.locator("#file-input").setInputFiles({name:"atlas-release-smoke.txt",mimeType:"text/plain",buffer:Buffer.from(fixture)});

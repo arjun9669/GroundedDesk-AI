@@ -5,25 +5,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { chromium } from "playwright";
 
-function pdfFixture(lines) {
-  const objects = ["<< /Type /Catalog /Pages 2 0 R >>", "", "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>"];
-  const pages = [];
-  for (const line of lines) {
-    const page = objects.length + 1, stream = page + 1;
-    pages.push(`${page} 0 R`);
-    objects.push(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents ${stream} 0 R >>`);
-    const data = `BT /F1 12 Tf 50 700 Td (${line.replace(/[\\()]/g, "\\$&")}) Tj ET\n`;
-    objects.push(`<< /Length ${Buffer.byteLength(data)} >>\nstream\n${data}endstream`);
-  }
-  objects[1] = `<< /Type /Pages /Kids [${pages.join(" ")}] /Count ${pages.length} >>`;
-  let pdf = "%PDF-1.4\n", offsets = [0];
-  objects.forEach((object, index) => { offsets.push(Buffer.byteLength(pdf)); pdf += `${index + 1} 0 obj\n${object}\nendobj\n`; });
-  const xref = Buffer.byteLength(pdf);
-  pdf += `xref\n0 ${objects.length + 1}\n0000000000 65535 f \n`;
-  pdf += offsets.slice(1).map(offset => String(offset).padStart(10, "0") + " 00000 n \n").join("");
-  pdf += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF\n`;
-  return Buffer.from(pdf);
-}
+import { pdfFixture } from "./fixtures/pdf-fixture.mjs";
 
 const evidenceDir = process.env.EVIDENCE_DIR;
 if (evidenceDir) await fs.mkdir(evidenceDir, { recursive: true });
@@ -52,7 +34,7 @@ try {
   await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
   observations.build = await page.locator("#retrieval-build").innerText();
-  assert.match(observations.build, /2026-10-12-r26/);
+  assert.match(observations.build, /2026-10-12-r27/);
   await page.locator("#clear-docs").click();
   const quote = "Harbor crane operators must inspect lifting hooks every eight shifts.";
   const fixture = pdfFixture(["Harbor workshop operates the sheltered pier.", quote, "Harbor workshop visitor hours end at sunset."]);
@@ -70,13 +52,13 @@ try {
   assert.match(answer, /PDF page 2 \(physical page numbers\)/);
   await page.getByRole("button", { name: "Copy answer and evidence report" }).click();
   const report = await page.evaluate(() => navigator.clipboard.readText());
-  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-12-r26/);
+  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-12-r27/);
   const downloadPending = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download local Markdown evidence report" }).click();
   const download = await downloadPending;
   const downloadedReport = await fs.readFile(await download.path(), "utf8");
   assert.match(downloadedReport, /PDF page 2/);
-  assert.match(downloadedReport, /2026-10-12-r26/);
+  assert.match(downloadedReport, /2026-10-12-r27/);
   if (evidenceDir) await download.saveAs(path.join(evidenceDir, "keyword-evidence-export.md"));
   observations.keywordAnswer = answer;
   observations.keywordReport = report;

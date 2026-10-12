@@ -3,7 +3,8 @@
  * This is a deterministic candidate extractor, NOT semantic entailment,
  * legal advice, compliance certification, or an autonomous LLM.
  */
-import { planResearch, hasInstructionRisk, numberedPolicySections } from "./research.mjs?v=20261012-r26";
+import { planResearch, hasInstructionRisk, numberedPolicySections } from "./research.mjs?v=20261012-r27";
+import { assertWorkflowExport, locationLabel } from "./provenance.mjs?v=20261012-r27";
 
 const MAX_SECTIONS = 64;
 const MAX_ITEMS = 24;
@@ -95,8 +96,9 @@ export function buildPolicyChecklist(question, document) {
     reason:chosen.length?"":"No rule-shaped release controls found in scanned sections." };
 }
 
-export function formatPolicyChecklistMarkdown(result) {
+export function formatPolicyChecklistMarkdown(result, documents) {
   if (!result || result.kind!=="policy-checklist" || !Array.isArray(result.sources)) throw new TypeError("Invalid policy checklist");
+  assertWorkflowExport(result, documents);
   const lines=["# GroundedDesk AI 5.2 — candidate release-control inventory","",
     "**Method:** Deterministic rule-matched source sentences (no LLM or semantic entailment).",
     "**Question:** "+labelEscape(result.question),
@@ -105,6 +107,7 @@ export function formatPolicyChecklistMarkdown(result) {
     "**Coverage:** "+result.sectionsInspected+"/"+result.sectionCount+" numbered sections inspected; "+
       result.sectionsWithCandidates+" with matching rule-shaped passages; "+result.sources.length+
       " quotes displayed (limit "+result.maxItems+").","",""];
+  if (result.retrievalBuild) lines.push("**Retrieval build:** `"+String(result.retrievalBuild).replace(/[^A-Za-z0-9._-]/g, "").slice(0, 80)+"`","");
   if (!result.answered) lines.push(result.reason||"No matching controls found.","");
   for (const [phase,title] of [["gate","Potential release-gate controls"],["conditional","Conditional / incident-response controls"],
     ["ongoing","Ongoing or related reviews"],["unclassified","Unclassified rule-shaped passages"]]) {
@@ -115,6 +118,7 @@ export function formatPolicyChecklistMarkdown(result) {
       lines.push("### ["+source.citation+"] "+labelEscape(source.sectionId)+" — "+labelEscape(source.label),
         "","> "+escapeQuote(source.quote),"",
         "*Source: "+labelEscape(source.filename)+" · "+labelEscape(source.sectionId)+". Rule-based category, not verified legal interpretation.*","");
+      if (source.location) lines.push("**Quotation location:** "+labelEscape(locationLabel(source.location)),"");
     }
   }
   lines.push("## Coverage and verification limits","",

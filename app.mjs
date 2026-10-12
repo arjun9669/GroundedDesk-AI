@@ -1,14 +1,14 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r26";
-import { hybridRank } from "./hybrid.mjs?v=20261012-r26";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r27";
+import { hybridRank } from "./hybrid.mjs?v=20261012-r27";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261012-r26";
+import { createEvidenceReport } from "./report.mjs?v=20261012-r27";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r26";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r26";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r26";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r26";
-import { attachLocations, locationLabel } from "./provenance.mjs?v=20261012-r26";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r26";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r27";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r27";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r27";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r27";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r27";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r27";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -731,6 +731,10 @@ function researchEl(tag, cls, text = "") {
 }
 
 function presentResearch(result) {
+  clearResearch();
+  result = attachWorkflowLocations({ ...result, retrievalBuild: RETRIEVAL_BUILD }, documents);
+  const integrity = verifyWorkflowEvidence(result, documents);
+  if (!integrity.ok) throw new Error("Research evidence withheld: " + integrity.reason);
   currentResearch = result;
   const panel = $("research-results"), body = $("research-result-body");
   panel.hidden = false;
@@ -770,6 +774,23 @@ function presentResearch(result) {
     const excerpt = result.kind === "comparison" ? source.excerpt : source.quote;
     card.append(researchEl("p", "research-evidence-text",
       excerpt || "No matching passage found for this topic using keyword retrieval."));
+    if (excerpt) {
+      card.append(researchEl("p", "source-location", locationLabel(source.location)));
+      if (source.location?.status === "verified" && source.location.kind === "pdf") {
+        const open = researchEl("button", "open-pdf-page", "Open cited PDF page ↗");
+        open.type = "button";
+        open.setAttribute("aria-label", `Open ${source.filename}, PDF page ${source.location.pages[0]}`);
+        open.addEventListener("click", () => {
+          const original = documents.find(doc => doc.id === source.documentId);
+          if (original?.originalFile) openPDFPreview(original.originalFile, original.name, source.location.pages[0]);
+        });
+        card.append(open);
+      }
+      const locate = researchEl("button", "", "Locate in library ↗");
+      locate.type = "button";
+      locate.addEventListener("click", () => highlightDocument(source.documentId));
+      card.append(locate);
+    }
     if (source.truncated) card.append(researchEl("p", "research-gaps",
       "Excerpt only. Review this section for additional conditions."));
     if (source.warning) card.append(researchEl("p", "research-risk",
@@ -800,7 +821,7 @@ function presentResearch(result) {
 function getResearchMarkdown() {
   if (!currentResearch) throw new Error("Run research or comparison before exporting.");
   return currentResearch.kind === "policy-checklist"
-    ? formatPolicyChecklistMarkdown(currentResearch) : formatResearchMarkdown(currentResearch);
+    ? formatPolicyChecklistMarkdown(currentResearch, documents) : formatResearchMarkdown(currentResearch, documents);
 }
 
 $("research-form").addEventListener("submit", event => {

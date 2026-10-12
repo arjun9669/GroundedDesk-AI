@@ -1,5 +1,12 @@
 # Changelog
 
+### 5.5 / r27 — Research and Comparison page navigation (2026-10-12)
+
+- Comparison, multi-document Research, policy-section research and candidate inventories now show verified physical PDF page locations, original-page previews and library navigation. Copied/downloaded reports identify the current retrieval build and quotation location.
+- Research citations and locations are verified before display and again on export. Missing comparisons get no location link; repeated passages remain ambiguous. Policy inventory whitespace projection maps unchanged cross-page quotes to original page offsets.
+- README now documents current features, navigation steps, lexical versus Hybrid behavior, free architecture, validation boundaries and remaining roadmap. Ranking, quotation/refusal heuristics and all frozen benchmark results are unchanged.
+- 232 unit tests, strict offline toy evaluation, synthetic installed-Chrome Research/Comparison PDF checks and actual local MiniLM Q&A smoke pass. These are feature/regression checks, not new independent accuracy. [Scope and evidence](docs/RESEARCH_PAGE_CITATIONS_5_5.md).
+
 ### 5.5 / r26 — PDF page provenance and local preview (2026-10-12)
 
 - Main Keyword/Hybrid Q&A now preserves physical PDF page metadata, displays verified quotation locations and opens the original cited page locally. TXT/MD show normalized line ranges. Ambiguous repeated passages do not receive guessed page numbers.

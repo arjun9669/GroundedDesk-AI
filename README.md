@@ -2,13 +2,13 @@
 
 **Free, browser-first document intelligence portfolio project.** Upload text, Markdown or text-based PDF documents, inspect source-backed answers, optionally enable local semantic embeddings and a local small language model, and create multi-document research reports.
 
-**[Live GroundedDesk AI 5.5](https://arjun9669.github.io/GroundedDesk-AI/)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
+**[Live GroundedDesk AI 5.5](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r27)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
 
 > This is the **dedicated source repository and live static site**, deployed through free GitHub Pages. The app runs its own [GitHub Actions CI](./.github/workflows/ci.yml) and [Pages workflow](./.github/workflows/pages.yml). The original profile-hosted demo remains available separately. Model and PDF dependencies require public downloads when enabled; no paid inference account is needed.
 
 ## Current release and measured evidence
 
-Current retrieval build: **2026-10-12-r26** (5.5, first source-navigation slice). The dedicated repository is the active development source; the profile-hosted copy is historical.
+Current retrieval build: **2026-10-12-r27** (5.5, page navigation across Q&A and lexical research workflows). The dedicated repository is the active development source; the profile-hosted copy is historical.
 
 [Browser benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md) preserves first-look results separately from in-sample regressions. Aster32 and Lantern32 each reached 32/32 strict passes in the measured r25 regression; this is not independent accuracy. The Aster H01 infrastructure retry qualification remains recorded.
 
@@ -24,14 +24,40 @@ Current retrieval build: **2026-10-12-r26** (5.5, first source-navigation slice)
 | **5.1 Phase 1** | **Dedicated multi-section policy evidence scanning, numbered-clause grouping, bounded quotations, coverage limitations and Markdown export** | **Separate local deterministic Research workspace; Keyword mode unchanged** |
 | **5.2 prototype** | **Candidate release-control inventory: rule-tagged, literal source sentences grouped by gate, conditional, related governance and unclassified categories** | **Optional numbered-policy Research workflow; not semantic synthesis or compliance verification** |
 | **5.3** | **Precise source-sentence evidence selection, stronger missing-fact refusals and two-document comparison quote recovery** | **Deterministic Keyword/Comparison refinement, no LLM or paid API** |
+| **5.4 / r25** | **More complete source-literal answers, conditional evidence selection and unsupported-value safeguards** | **Actual MiniLM in-sample regressions recorded separately from independent first looks** |
+| **5.5 / r27** | **Verified physical PDF page citations, original-page preview and normalized TXT/Markdown line references in Q&A, Comparison, Research and policy workflows** | **Local PDF.js preview, source-integrity guards and portable Markdown exports** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
 
 ## 5.5 — PDF page citations and local preview
 
-Ordinary Keyword and real MiniLM Hybrid Q&A now retain physical PDF page numbers for uniquely located displayed quotations. Open the cited page from a source card, use next/previous controls, and export the page reference in the evidence report. TXT/Markdown show normalized text line numbers. Repeated context is labeled ambiguous rather than assigned a guessed location.
+Keyword and MiniLM Hybrid Q&A, separate two-document Comparison, multi-document Research, 5.1 policy sections and 5.2 candidate inventories now show physical PDF page numbers for uniquely located displayed quotations. Open the cited page from an evidence card, use next/previous controls, and include the page reference when copying or downloading the evidence report. TXT/Markdown show normalized text line ranges.
 
-This is the first 5.5 slice. Page highlighting, OCR, layout/table reconstruction and Research/Comparison page links are still pending. The citation location verifies extracted source text; it does not establish semantic relevance or complete answers. See [scope and validation](./docs/PAGE_PROVENANCE_5_5.md). Historical Aster/Lantern scores have not been rerun or changed.
+Repeated context is labeled **ambiguous**, missing page metadata is **unavailable**, and a missing Comparison match receives no quotation location or page link. Inventory whitespace normalization maps back to original extraction offsets, including quotes spanning pages. The original file remains in this tab's memory; document changes clear research results and close previews.
+
+**Workflow distinction:** Hybrid MiniLM applies to main Q&A. Comparison, Research and policy inventories remain separate lexical workflows. Page provenance checks do not establish semantic relevance, answer completeness, agreement between documents or compliance.
+
+**Validation:** 232 unit tests and the strict offline toy evaluation pass. Installed Chrome tests cover actual PDF.js extraction/preview and each lexical workflow; the Q&A smoke additionally runs actual local MiniLM with Qwen off. See [r27 scope and evidence](./docs/RESEARCH_PAGE_CITATIONS_5_5.md) and the [original r26 slice](./docs/PAGE_PROVENANCE_5_5.md). These feature/regression checks do not constitute a fresh independent accuracy benchmark. Historical Aster/Lantern scores have not been rerun or changed.
+
+Page highlighting, OCR, layout/table reconstruction, broader document/browser coverage and fresh held-out evaluation remain pending. The 5.5 document-processing roadmap is still in progress.
+
+### Try the source-navigation workflow
+
+1. Clear the three bundled examples and upload your own text-based PDF files.
+2. Ask a question in main Q&A. Keyword works immediately; enable MiniLM if you want local Hybrid retrieval. Qwen is optional and can remain off.
+3. Inspect each quotation's filename and physical page number. Select **Open cited PDF page** to check the original file.
+4. For two files, select them explicitly in **Side-by-side document comparison** and enter a topic. For broader scans, use the Research or policy forms.
+5. Copy or download the Markdown evidence report. Review the full source and any omitted-section warnings before relying on it.
+
+Example from the synthetic PDF used in Chrome validation:
+
+![Comparison opens the original supplier PDF at physical page 2](./docs/evidence/r27/research/02-comparison-original-page.png)
+
+### Free project boundaries and next steps
+
+The current implementation uses free static hosting, browser memory and optional public model downloads. It has no mandatory paid API, subscription, account system or database.
+
+Next priorities are broader PDF layout tests and reliable passage highlighting, followed by measured Hybrid retrieval improvements and stronger factual-support checks. Each change should retain prior benchmark records; independent accuracy claims require a new pre-frozen, previously unseen evaluation. OCR and extra local models should remain optional because download size and device memory matter.
 
 ## Quick start
 
