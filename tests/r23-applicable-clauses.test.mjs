@@ -131,7 +131,7 @@ test("r23 keeps preceding r20 approval and dispatch applicability behavior",()=>
   assert.match(next.sources[0].quote,/next operating day/);
 });
 test("current build explicitly identifies changed browser code",()=>{
-  assert.equal(RETRIEVAL_BUILD,"2026-10-12-r36");
+  assert.equal(RETRIEVAL_BUILD,"2026-10-13-r37");
 });
 
 test("r23 refuses a differently named person's labeled phone number",()=>{

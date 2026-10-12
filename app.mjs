@@ -1,16 +1,16 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r36";
-import { hybridRank } from "./hybrid.mjs?v=20261012-r36";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r37";
+import { hybridRank } from "./hybrid.mjs?v=20261013-r37";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261012-r36";
+import { createEvidenceReport } from "./report.mjs?v=20261013-r37";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r36";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r36";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r36";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r36";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r36";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r36";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r36";
-import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261012-r36";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r37";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r37";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r37";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r37";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r37";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r37";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r37";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r37";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -31,6 +31,7 @@ let localGenerator = null;
 let generationLoading = false;
 let generationTestBusy = false;
 let recentTurns = [];
+let selectedTurn = null;
 let currentResearch = null;
 let latestQualityReport = null;
 let uploadBusy = false;
@@ -59,26 +60,51 @@ function updateGenerationControls() {
 
 function resetConversation() {
   recentTurns = [];
-  const list = $("history-list");
-  if (list) list.replaceChildren();
-  if ($("history-count")) $("history-count").textContent = "0";
+  selectedTurn = null;
+  renderHistory();
 }
 
 function addTurn(question, result) {
-  recentTurns.push({ question, result });
+  const turn = { question, result, files: documents.map(doc => doc.name) };
+  recentTurns.push(turn);
+  selectedTurn = turn;
   if (recentTurns.length > 8) recentTurns.shift();
+  renderHistory();
+}
+
+function renderHistory() {
   const list = $("history-list");
   list.replaceChildren();
   for (const turn of [...recentTurns].reverse()) {
     const li = document.createElement("li");
     const button = document.createElement("button");
     button.type = "button";
-    button.textContent = turn.question + (turn.result.generated ? " · local AI" : " · extracts");
-    button.addEventListener("click", () => renderResult(turn.question, turn.result));
+    button.className = "history-entry";
+    if (turn === selectedTurn) button.setAttribute("aria-current", "true");
+    const meta = make("span", "history-meta");
+    meta.append(make("span", "history-status", turn.result.answered ? "Evidence found" : "No supporting evidence"));
+    const mode = turn.result.mode === "Evidence integrity guard" ? "Verification failed"
+      : turn.result.mode?.includes("MiniLM") ? "Local AI search" : "Fast search";
+    meta.append(make("span", "history-mode", turn.result.generated ? `${mode} · AI draft` : mode));
+    if (turn === selectedTurn) meta.append(make("span", "history-current", "Open now"));
+    button.append(meta, make("span", "history-question", turn.question));
+    const filenames = [...new Set((turn.result.sources || []).map(source => source.filename))];
+    button.append(make("span", "history-files", filenames.length
+      ? `Sources: ${filenames.join(" · ")}`
+      : `Searched: ${turn.files.join(" · ")}`));
+    button.addEventListener("click", () => {
+      renderResult(turn.question, turn.result);
+      selectedTurn = turn;
+      renderHistory();
+      const heading = $("answer-result").querySelector(".question-text");
+      heading.setAttribute("tabindex", "-1");
+      heading.focus();
+    });
     li.append(button);
     list.append(li);
   }
   $("history-count").textContent = String(recentTurns.length);
+  $("history-empty").hidden = recentTurns.length > 0;
 }
 
 function semanticReady() {

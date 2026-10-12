@@ -16,7 +16,7 @@ try {
   const errors=[];page.on("pageerror",e=>errors.push(e.message));
   await page.goto(process.env.TEST_URL||"http://127.0.0.1:8765/",{waitUntil:"domcontentloaded"});
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="3");
-  observed.build=await page.locator("#retrieval-build").innerText();assert.match(observed.build,/2026-10-12-r36/);
+  observed.build=await page.locator("#retrieval-build").innerText();assert.match(observed.build,/2026-10-13-r37/);
   assert.equal(await page.locator("#model-settings").getAttribute("open"),null);
   assert.equal(await page.locator("#workspace-ask").isVisible(),true);
   assert.equal(await page.locator("#workspace-compare").isVisible(),false);
@@ -97,10 +97,47 @@ try {
   assert.match(await page.locator(".source-metadata").innerText(),/not a confidence score/);
   await page.locator(".source-metadata > summary").click();
   await page.getByRole("button",{name:"Copy answer and evidence report"}).click();
-  const report=await page.evaluate(()=>navigator.clipboard.readText());assert.ok(report.includes(quote));assert.match(report,/2026-10-12-r36/);
+  const report=await page.evaluate(()=>navigator.clipboard.readText());assert.ok(report.includes(quote));assert.match(report,/2026-10-13-r37/);
   if(dir) {await fs.writeFile(path.join(dir,"qa-report.md"),report);await page.screenshot({path:path.join(dir,"02-desktop-answer.png"),fullPage:true});}
-  await page.locator("#tab-compare").click();await page.locator("#tab-ask").click();assert.equal(await page.locator(".answer-box").innerText(),answer);
+  await page.locator('#chat-history > summary').click();
+  const firstQuestion="How often do dock lighting inspections occur?";
+  assert.equal(await page.locator('.history-question').innerText(),firstQuestion);
+  assert.equal(await page.locator('.history-files').innerText(),"Sources: dock-notes.txt");
+  assert.equal(await page.locator('.history-entry[aria-current="true"]').count(),1);
+  const unsupported="What is the exact secret bank account number used to pay for these dock lighting inspections, including the account holder's private access code?";
+  await page.locator('#query-input').fill(unsupported);await page.locator('#ask-button').click();
+  await page.waitForFunction(()=>!document.querySelector('#ask-button').disabled);
+  assert.equal(await page.locator('.history-question').first().innerText(),unsupported);
+  assert.equal(await page.locator('.history-status').first().innerText(),"No supporting evidence");
+  assert.equal(await page.locator('.history-files').first().innerText(),"Searched: dock-notes.txt");
+  await page.locator('#query-input').fill('Keep this unfinished question');
+  await page.locator('.history-entry').nth(1).click();
+  assert.equal(await page.locator('.answer-box').innerText(),answer);
+  assert.equal(await page.locator('#query-input').inputValue(),'Keep this unfinished question');
+  assert.equal(await page.locator('.question-text').evaluate(el=>el===document.activeElement),true);
+  await page.getByRole('button',{name:'Copy answer and evidence report'}).click();
+  assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),report,"Reopening history must preserve the exact evidence export");
+  await page.setViewportSize({width:390,height:844});
+  await page.locator('.history-entry').first().focus();await page.keyboard.press('Enter');
+  assert.equal(await page.locator('.source-card').count(),0,"Reopened refusal must have zero source cards");
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+  if(dir)await page.screenshot({path:path.join(dir,'07-mobile-question-history.png'),fullPage:true});
+  await page.setViewportSize({width:1440,height:1000});
+  for(let i=0;i<7;i++) {
+    await page.locator('#query-input').fill(`${firstQuestion} Please check the source (${i+1}).`);
+    await page.locator('#ask-button').click();await page.waitForFunction(()=>!document.querySelector('#ask-button').disabled);
+  }
+  assert.equal(await page.locator('.history-entry').count(),8);
+  assert.equal(await page.locator('.history-question').last().innerText(),unsupported,"Only the oldest ninth question is removed");
+  assert.equal(await page.locator('.history-entry[aria-current="true"]').count(),1);
+  if(dir)await page.screenshot({path:path.join(dir,'08-desktop-question-history.png'),fullPage:true});
+  observed.checks.push("Full question/source/status history; keyboard reopen and answer focus; untouched draft; exact export preservation; zero-citation refusal; mobile wrapping; newest-first eight-entry limit");
+  await page.locator('.history-entry').first().click();
+  const recentAnswer=await page.locator('.answer-box').innerText();
+  await page.locator("#tab-compare").click();await page.locator("#tab-ask").click();assert.equal(await page.locator(".answer-box").innerText(),recentAnswer);
   await upload("garden-notes.txt","Garden lighting inspections occur every twelve days.");await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="2");
+  assert.equal(await page.locator('.history-entry').count(),0,"Corpus mutation clears all history");
+  assert.equal(await page.locator('#history-empty').isVisible(),true);
   await revealControl(page,"#compare-left");await page.locator("#compare-left").selectOption({label:"dock-notes.txt"});
   await page.locator("#compare-right").selectOption({label:"garden-notes.txt"});await page.locator("#compare-topic").fill("lighting inspections");await page.locator("#run-comparison").click();
   await page.locator("#research-results").waitFor({state:"visible"});assert.equal(await page.locator("#research-results").evaluate(el=>el.closest('[data-workspace]').dataset.workspace),"compare");

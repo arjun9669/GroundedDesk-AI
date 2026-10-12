@@ -1,0 +1,30 @@
+{
+  "kind": "document library feature regression; not accuracy benchmark",
+  "checks": [
+    "Mixed upload reports each success and damaged-file error independently; full long filename wraps and Markdown type is visible",
+    "Failed empty, damaged PDF, unsupported and oversized replacements retain the original document and exact displayed answer",
+    "Same-name replacement changes searchable content in place; document count stable, old answer/history cleared and same file can be picked again",
+    "Clearing during real asynchronous PDF loading prevents a late document from restoring the cleared library",
+    "Actual PDF page counts drive progress; page metadata and explicit preview/replace/remove actions render without mobile overflow",
+    "Replacement at the 15-document cap succeeds without adding a sixteenth file",
+    "Clearing/uploading during delayed startup prevents bundled examples from returning into a user-selected corpus"
+  ],
+  "browser": "154.0.8037.98",
+  "build": "Loaded retrieval build: 2026-10-13-r37",
+  "mixedUpload": "North-Harbor-Workshop-Operating-Notes-October-2026.md\nAdded — ready to search.\nunreadable.pdf\nThis PDF is damaged or is not a valid PDF. Export a fresh PDF or use a TXT/Markdown version.\ngarden.txt\nAdded — ready to search.",
+  "progress": [
+    {
+      "value": 1,
+      "max": 2
+    },
+    {
+      "value": 2,
+      "max": 2
+    },
+    {
+      "value": 2,
+      "max": 2
+    }
+  ],
+  "status": "PASS"
+}
