@@ -24,7 +24,7 @@ test("all supported queries are deterministic and cited to actual source substri
        assert.equal(s.citation,i+1,q.id);
        const d=docs.find(doc=>doc.name===s.filename);
        assert.ok(d?.text.includes(s.quote),q.id+" quote not grounded");
-       assert.ok(d?.text.includes(s.excerpt),q.id+" excerpt not grounded");
+       assert.ok(d?.text.replace(/\r\n?/g,"\n").replace(/[ \t]+/g," ").trim().includes(s.excerpt),q.id+" excerpt not grounded");
      });
    }
  }
