@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-11-r23";
+export const RETRIEVAL_BUILD = "2026-10-11-r24";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -431,6 +431,63 @@ function completeAdjacentQualification(question, sourceText, primary) {
   return expanded.length<=620 && source.includes(expanded) ? expanded : primary;
 }
 
+// r24: Recover multiple source-literal clauses when a question asks for a
+// procedure, multiple facets, or a condition AND its exception. A ranked
+// passage is an anchor, not proof that a single sentence is a complete answer.
+// Restrict expansion to adjacent sentences in the SAME numbered section; do
+// not jump over unrelated clauses. This is extractive, not an entailment test.
+function scopedMultiFactQuote(question, fullText, primary, options = {}) {
+  const q=String(question || "");
+  const twoFacets=/\band\s+(?:who|what|which|when|where|how|does|do|must|whether)\b/i.test(q);
+  const procedures=/\b(?:safeguards?|steps?|procedure|procedures|immediately after)\b/i.test(q);
+  const specialConsent=/\b(?:consent|photograph|publish)\b/i.test(q) &&
+    /\b(?:under|younger than)\s+\d+\b/i.test(q);
+  const comparisonFacets=Boolean(options.comparison) &&
+    /\bincluding\s+[^?.;,]{1,90}\s+and\s+[^?.;,]{1,90}/i.test(q);
+  if (!primary || (!twoFacets && !procedures && !specialConsent && !comparisonFacets)) return primary;
+  // Avoid turning unrelated retention comparisons into full-section dumps:
+  // their narrowly scoped exception handling is performed separately.
+  if (options.comparison && !comparisonFacets) return primary;
+  const source=String(fullText || "").replace(/\r\n?/g,"\n").replace(/[ \t]+/g," ").trim();
+  const at=source.indexOf(primary);
+  if(at<0 || primary.length>620) return primary;
+  const entries=[...source.matchAll(/[^.!?]+(?:[.!?](?=\s|$)|$)/g)].map(m=>{
+    const value=m[0].trim(),start=source.indexOf(value,m.index);
+    return {value,start,end:start+value.length};
+  }).filter(e=>e.value && e.value.length<=420);
+  const index=entries.findIndex(e=>e.start<=at && e.end>=at+primary.length);
+  if(index<0) return primary;
+  const markers=[...source.matchAll(/\b[A-Z]{1,4}-\d{2,3}\b/g)];
+  // Unnumbered sources can expand only if the complete source consists of a
+  // short two/three-sentence passage, to avoid crossing unknown topic bounds.
+  if(!markers.length && (entries.length>3 || source.length>620)) return primary;
+  const sectionAt=position=>{
+    let id="";
+    for(const m of markers){if(m.index>position)break;id=m[0];}
+    return id;
+  };
+  const section=sectionAt(entries[index].start);
+  const context=new Set([...tokenize(q),...tokenize(primary)]
+    .map(quoteForm).filter(w=>w.length>=4 && !GENERIC_EVIDENCE_TERMS.has(w)));
+  const processIntent=procedures || specialConsent;
+  const related=e=>{
+    if(!e || sectionAt(e.start)!==section)return false;
+    const words=tokenize(e.value).map(quoteForm);
+    if(words.some(word=>context.has(word)))return true;
+    // A requested procedure can continue with a new actor or safeguard
+    // without repeating the earlier subject (e.g. before cleaning begins).
+    return processIntent && /\b(?:must|may|only|never|not|cannot|before|after|if|when|until|signs?|checks?|decides?|records?|logs?|starts?|contacts?|insufficient|overwritten|withheld)\b/i.test(e.value);
+  };
+  let left=index,right=index;
+  for(let k=0;k<2 && related(entries[left-1]);k++)left--;
+  for(let k=0;k<2 && related(entries[right+1]);k++)right++;
+  if(left===right)return primary;
+  const expanded=source.slice(entries[left].start,entries[right].end);
+  // Provenance and citation limits are non-negotiable; never truncate an
+  // expanded quote in the middle of a sentence.
+  return expanded.length<=620 && source.includes(expanded) ? expanded : primary;
+}
+
 // Returns a literal sentence in the original whitespace-normalized text.
 // Empty means no lexical support; the caller must not manufacture an answer.
 export function bestSourceSentence(question, fullText, options = {}) {
@@ -527,7 +584,7 @@ export function bestSourceSentence(question, fullText, options = {}) {
       }
     }
   }
-  return winner;
+  return scopedMultiFactQuote(question,source,winner,options);
 }
 
 // If a keyword question asks for a specific attribute of an entity, a
@@ -732,12 +789,23 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
       // Additional sentences must not artificially clear the Hybrid lexical
       // recovery threshold, and cannot replace r20's operative boundary rule.
       const sourceEvidenceScore=operative ? 4 : primary ? evidenceSentenceScore(question, primary) : -Infinity;
-      const supported=primary && !operative && usesHybridScores && !multiDocumentIntent &&
+      const base=primary && !operative && usesHybridScores && !multiDocumentIntent &&
         sourceEvidenceScore>=4
         ? completeAdjacentQualification(question, candidate.sourceText, primary)
         : primary;
+      // A low-overlap procedural question may have a genuinely retrieved
+      // first step (e.g. "what happens immediately after a leak?") even
+      // though it lacks four repeated query terms. Permit scoped expansion
+      // only when that exact anchor occurs in the RANKED CHUNK, never by
+      // searching a weakly related document for a convenient new answer.
+      const localProcedureAnchor=!operative && primary &&
+        /\b(?:safeguards?|steps?|procedures?|immediately after)\b/i.test(question) &&
+        sourceEvidenceScore>=2 && candidate.content.includes(primary);
+      const supported=base && !operative && (sourceEvidenceScore>=4 || localProcedureAnchor)
+        ? scopedMultiFactQuote(question, candidate.sourceText, base)
+        : base;
       if (supported && candidate.sourceText.includes(supported) &&
-          (!usesHybridScores || sourceEvidenceScore >= 4)) {
+          (!usesHybridScores || sourceEvidenceScore >= 4 || localProcedureAnchor)) {
         quote = supported;
         // Keep enough original document context for the independent evidence
         // guard and reviewer, including neighboring untrusted *data* text.
