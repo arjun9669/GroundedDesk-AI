@@ -114,6 +114,7 @@ try {
   await page.locator(".open-pdf-page").click();
   await page.locator("#tab-compare").click();
   assert.equal(await page.locator(".pdf-preview").count(), 0, "Changing tools closes the source preview");
+  assert.equal(await page.locator("#tab-compare").evaluate(el => el === document.activeElement), true);
   await page.locator("#tab-ask").click();
   await page.locator(".open-pdf-page").click();
   await page.locator("#clear-docs").click();

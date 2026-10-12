@@ -3,7 +3,7 @@ import { loadPDFLibrary, pdfErrorMessage } from "./pdf-ingest.mjs?v=20261012-r34
 import { quotationRegions, highlightMessage } from "./pdf-highlight.mjs?v=20261012-r34";
 let active = null;
 
-export function closePDFPreview() {
+export function closePDFPreview({ restoreFocus = true } = {}) {
   if (!active) return;
   const old = active;
   active = null;
@@ -13,12 +13,12 @@ export function closePDFPreview() {
   old.dialog.remove();
   document.body.classList.remove("source-preview-open");
   old.cleanup?.();
-  if (old.returnFocus?.isConnected) old.returnFocus.focus({ preventScroll: true });
+  if (restoreFocus && old.returnFocus?.isConnected) old.returnFocus.focus({ preventScroll: true });
 }
 
 export async function openPDFPreview(file, filename, initialPage, quote = "") {
   const returnFocus = document.activeElement;
-  closePDFPreview();
+  closePDFPreview({ restoreFocus: false });
   const dialog = document.createElement("dialog");
   dialog.className = "pdf-preview";
   const title = document.createElement("h3");

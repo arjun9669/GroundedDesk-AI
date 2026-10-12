@@ -3,7 +3,7 @@ import { closePDFPreview } from "./pdf-preview.mjs?v=20261012-r34";
 export function showWorkspace(name, { result = false } = {}) {
   const tab = document.querySelector(`[data-view="${name}"]`);
   if (!tab) return;
-  if (tab.getAttribute("aria-selected") !== "true") closePDFPreview();
+  if (tab.getAttribute("aria-selected") !== "true") closePDFPreview({ restoreFocus: false });
   for (const button of document.querySelectorAll('[role="tab"][data-view]')) {
     const selected = button === tab;
     button.setAttribute("aria-selected", String(selected));

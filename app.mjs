@@ -114,7 +114,7 @@ function notify(message, isError = false) {
 }
 
 function rebuildIndex() {
-  closePDFPreview();
+  closePDFPreview({ restoreFocus: false });
   indexed = buildIndex(documents);
   indexVersion++;
   resetConversation();
@@ -244,7 +244,7 @@ function highlightDocument(id) {
 }
 
 function renderResult(question, result) {
-  closePDFPreview();
+  closePDFPreview({ restoreFocus: false });
   result = attachLocations(result, documents);
   // Never display a fabricated or stale excerpt as verified evidence.
   const provenance = verifyEvidenceResult(result, documents);
@@ -731,7 +731,7 @@ function researchEl(tag, cls, text = "") {
 }
 
 function presentResearch(result) {
-  closePDFPreview();
+  closePDFPreview({ restoreFocus: false });
   clearResearch();
   result = attachWorkflowLocations({ ...result, retrievalBuild: RETRIEVAL_BUILD }, documents);
   const integrity = verifyWorkflowEvidence(result, documents);
