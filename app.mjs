@@ -1,12 +1,14 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r25";
-import { hybridRank } from "./hybrid.mjs?v=20261012-r25";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r26";
+import { hybridRank } from "./hybrid.mjs?v=20261012-r26";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261010-r13";
+import { createEvidenceReport } from "./report.mjs?v=20261012-r26";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r25";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r25";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r25";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r25";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r26";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r26";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r26";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r26";
+import { attachLocations, locationLabel } from "./provenance.mjs?v=20261012-r26";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r26";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -110,6 +112,7 @@ function notify(message, isError = false) {
 }
 
 function rebuildIndex() {
+  closePDFPreview();
   indexed = buildIndex(documents);
   indexVersion++;
   resetConversation();
@@ -180,13 +183,13 @@ function clearResult() {
   $("answer-result").replaceChildren();
 }
 
-function addDocument({ name, text, type = "txt", sample = false }) {
+function addDocument({ name, text, type = "txt", sample = false, pdfPageTexts, originalFile }) {
   if (documents.length >= MAX_DOCUMENTS) throw new Error("Maximum of 15 documents per session.");
   const clean = String(text).trim();
   if (!clean) throw new Error(`${name} has no extractable text.`);
   if (clean.length > MAX_CHARS) throw new Error(`${name} exceeds the 180,000-character limit.`);
   const id = typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : `file-${Date.now()}-${documents.length}`;
-  documents.push({ id, name, text: clean, sample, type });
+  documents.push({ id, name, text: clean, sample, type, pdfPageTexts, originalFile });
   rebuildIndex();
 }
 
@@ -201,18 +204,20 @@ async function extractPDF(file) {
   }
   const buffer = await file.arrayBuffer();
   const pdf = await pdfjs.getDocument({ data: buffer }).promise;
-  if (pdf.numPages > 75) throw new Error("PDFs are limited to 75 pages.");
-  const pages = [];
-  let total = 0;
-  for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
-    const page = await pdf.getPage(pageNumber);
-    const content = await page.getTextContent();
-    const text = content.items.map(part => typeof part.str === "string" ? part.str : "").join(" ");
-    total += text.length;
-    if (total > MAX_CHARS) throw new Error("Extracted PDF text exceeds 180,000 characters.");
-    pages.push(text);
-  }
-  return pages.join("\n\n");
+  try {
+    if (pdf.numPages > 75) throw new Error("PDFs are limited to 75 pages.");
+    const pages = [];
+    let total = 0;
+    for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+      const page = await pdf.getPage(pageNumber);
+      const content = await page.getTextContent();
+      const text = content.items.map(part => typeof part.str === "string" ? part.str : "").join(" ");
+      total += text.length;
+      if (total > MAX_CHARS) throw new Error("Extracted PDF text exceeds 180,000 characters.");
+      pages.push(text);
+    }
+    return { text: pages.join("\n\n"), pdfPageTexts: pages };
+  } finally { await pdf.destroy(); }
 }
 
 async function loadFiles(files) {
@@ -227,8 +232,8 @@ async function loadFiles(files) {
     }
     if (file.size > MAX_BYTES) { errors.push(`${file.name}: exceeds 5 MB`); continue; }
     try {
-      const text = ext === "pdf" ? await extractPDF(file) : await file.text();
-      addDocument({ name: file.name, text, type: ext === "pdf" ? "pdf" : "txt" });
+      const extracted = ext === "pdf" ? await extractPDF(file) : { text: await file.text() };
+      addDocument({ name: file.name, ...extracted, type: ext === "pdf" ? "pdf" : "txt", originalFile: ext === "pdf" ? file : undefined });
       added++;
     } catch (error) { errors.push(error instanceof Error ? error.message : "Could not read file."); }
   }
@@ -249,6 +254,7 @@ function highlightDocument(id) {
 }
 
 function renderResult(question, result) {
+  result = attachLocations(result, documents);
   // Never display a fabricated or stale excerpt as verified evidence.
   const provenance = verifyEvidenceResult(result, documents);
   if (!provenance.ok) {
@@ -275,7 +281,7 @@ function renderResult(question, result) {
   copy.setAttribute("aria-label", "Copy answer and evidence report");
   copy.addEventListener("click", async () => {
     try {
-      await navigator.clipboard.writeText(createEvidenceReport(question, result));
+      await navigator.clipboard.writeText(createEvidenceReport(question, result, documents));
       notify("Evidence report copied to clipboard.");
     } catch (error) {
       notify(error instanceof Error && error.message.startsWith("Evidence check")
@@ -289,7 +295,7 @@ function renderResult(question, result) {
   download.addEventListener("click", () => {
     let blobUrl;
     try {
-      const report = createEvidenceReport(question, result);
+      const report = createEvidenceReport(question, result, documents);
       const blob = new Blob([report], { type: "text/markdown;charset=utf-8" });
       blobUrl = URL.createObjectURL(blob);
       const anchor = document.createElement("a");
@@ -363,7 +369,16 @@ function renderResult(question, result) {
       const header = make("div", "source-top");
       header.append(make("span", "source-number", `[${source.citation}]`),
         make("strong", "", source.filename), make("small", "", `Rank ${source.score.toFixed(2)}`));
-      card.append(header, make("p", "", source.excerpt));
+      card.append(header, make("p", "source-location", locationLabel(source.location)), make("p", "", source.excerpt));
+      if (source.location.status === "verified" && source.location.kind === "pdf") {
+        const open = make("button", "open-pdf-page", "Open cited PDF page ↗");
+        open.type = "button";
+        open.addEventListener("click", () => {
+          const original = documents.find(doc => doc.id === source.documentId);
+          if (original?.originalFile) openPDFPreview(original.originalFile, original.name, source.location.pages[0]);
+        });
+        card.append(open);
+      }
       const jump = make("button", "", "Locate in library ↗");
       jump.type = "button";
       jump.addEventListener("click", () => highlightDocument(source.documentId));

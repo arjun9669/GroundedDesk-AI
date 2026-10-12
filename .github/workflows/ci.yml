@@ -29,6 +29,8 @@ jobs:
           node --check quality.mjs
           node --check benchmark.mjs
           node --check report.mjs
+          node --check provenance.mjs
+          node --check pdf-preview.mjs
           node --check eval/run.mjs
       - name: Unit tests
         run: node --test tests/*.test.mjs
@@ -43,7 +45,7 @@ jobs:
           retention-days: 14
 
   browser-smoke:
-    name: Browser UI smoke (synthetic text only)
+    name: Browser UI smoke (synthetic text and PDF)
     needs: validate
     runs-on: ubuntu-latest
     steps:
@@ -53,7 +55,7 @@ jobs:
           node-version: '22'
       - name: Install isolated browser-test tools
         run: |
-          npm install --no-save --no-package-lock playwright@1.56.1
+          npm install --no-save --no-package-lock playwright@1.56.1 pdfjs-dist@4.10.38
           npx playwright install --with-deps chromium
       - name: Exercise 5.2 and 5.1 in real Chromium
         run: |
@@ -61,3 +63,4 @@ jobs:
           server_pid=$!
           trap 'kill "$server_pid"' EXIT
           node tests/browser-policy-smoke.mjs
+          node tests/browser-pdf-smoke.mjs

@@ -2,13 +2,13 @@
 
 **Free, browser-first document intelligence portfolio project.** Upload text, Markdown or text-based PDF documents, inspect source-backed answers, optionally enable local semantic embeddings and a local small language model, and create multi-document research reports.
 
-**[Live GroundedDesk AI 5.4](https://arjun9669.github.io/GroundedDesk-AI/)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
+**[Live GroundedDesk AI 5.5](https://arjun9669.github.io/GroundedDesk-AI/)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
 
 > This is the **dedicated source repository and live static site**, deployed through free GitHub Pages. The app runs its own [GitHub Actions CI](./.github/workflows/ci.yml) and [Pages workflow](./.github/workflows/pages.yml). The original profile-hosted demo remains available separately. Model and PDF dependencies require public downloads when enabled; no paid inference account is needed.
 
 ## Current release and measured evidence
 
-Current retrieval build: **2026-10-12-r25** (5.4). The dedicated repository is the active development source; the profile-hosted copy is historical.
+Current retrieval build: **2026-10-12-r26** (5.5, first source-navigation slice). The dedicated repository is the active development source; the profile-hosted copy is historical.
 
 [Browser benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md) preserves first-look results separately from in-sample regressions. Aster32 and Lantern32 each reached 32/32 strict passes in the measured r25 regression; this is not independent accuracy. The Aster H01 infrastructure retry qualification remains recorded.
 
@@ -26,6 +26,12 @@ Current retrieval build: **2026-10-12-r25** (5.4). The dedicated repository is t
 | **5.3** | **Precise source-sentence evidence selection, stronger missing-fact refusals and two-document comparison quote recovery** | **Deterministic Keyword/Comparison refinement, no LLM or paid API** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
+
+## 5.5 — PDF page citations and local preview
+
+Ordinary Keyword and real MiniLM Hybrid Q&A now retain physical PDF page numbers for uniquely located displayed quotations. Open the cited page from a source card, use next/previous controls, and export the page reference in the evidence report. TXT/Markdown show normalized text line numbers. Repeated context is labeled ambiguous rather than assigned a guessed location.
+
+This is the first 5.5 slice. Page highlighting, OCR, layout/table reconstruction and Research/Comparison page links are still pending. The citation location verifies extracted source text; it does not establish semantic relevance or complete answers. See [scope and validation](./docs/PAGE_PROVENANCE_5_5.md). Historical Aster/Lantern scores have not been rerun or changed.
 
 ## Quick start
 

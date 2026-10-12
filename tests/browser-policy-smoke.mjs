@@ -18,7 +18,7 @@ const fixture=[
 const prompt="What does the AI Governance Policy require before an AI system can be released?";
 let browser;
 try {
-  browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+  browser=await chromium.launch({headless:true,args:["--no-sandbox"],...(process.env.BROWSER_CHANNEL ? {channel:process.env.BROWSER_CHANNEL} : {})});
   const context=await browser.newContext({permissions:["clipboard-read","clipboard-write"]});
   const page=await context.newPage();
   const pageErrors=[];
