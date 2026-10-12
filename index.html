@@ -7,8 +7,8 @@
 <meta name="theme-color" content="#f4f1ea"/>
 <meta name="description" content="GroundedDesk — a free, local document workspace. Add files, ask questions, and check answers against the original evidence."/>
 <title>GroundedDesk AI 5.6 | Your document workspace</title>
-<link rel="stylesheet" href="./styles.css?v=20261012-r36"/>
-<script defer type="module" src="./app.mjs?v=20261012-r36"></script>
+<link rel="stylesheet" href="./styles.css?v=20261013-r37"/>
+<script defer type="module" src="./app.mjs?v=20261013-r37"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-workspace">Skip to workspace</a>
@@ -86,7 +86,9 @@
               <div class="query-footer"><span>Answers come from your documents. Check the sources.</span><button type="submit" id="ask-button">Find an answer <span aria-hidden="true">↗</span></button></div>
             </form>
             <details id="chat-history" class="chat-history">
-              <summary>Recent questions in this tab <span id="history-count">0</span></summary>
+              <summary>Recent questions <span id="history-count">0</span></summary>
+              <p class="history-note">Your last eight questions, newest first. Kept in this tab only; cleared when files change.</p>
+              <p id="history-empty" class="history-empty">Your questions will appear here. Open one to revisit its answer and sources.</p>
               <ul id="history-list" aria-label="Recent questions"></ul>
             </details>
             <div class="answer-space" id="answer-space" aria-live="polite">

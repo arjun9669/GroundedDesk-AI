@@ -89,7 +89,16 @@ summary span { color: #5e756c; font-weight: 400; margin-left: 10px; font-size: 1
 .chat-history summary { padding: 7px 0; font-size: 11px; font-weight: 400; color: #5e756c; }
 .chat-history summary span { margin-left: 6px; }
 .chat-history ul { list-style: none; margin: 0; padding: 6px 0; display: flex; flex-direction: column; gap: 4px; }
-.chat-history button { font-size: 12px; text-align: left; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chat-history button { font-size: 12px; text-align: left; width: 100%; white-space: normal; }
+.history-note, .history-empty { font-size: 12px; line-height: 1.6; color: #707960; margin: 6px 0 10px; }
+.history-entry { display: flex; flex-direction: column; gap: 7px; padding: 13px 15px; border-radius: 12px; background: #fffdf8; border: 1px solid #ddd8cd; overflow-wrap: anywhere; }
+.history-entry[aria-current="true"] { border-color: #557143; background: #f0f3e8; box-shadow: inset 3px 0 #557143; }
+.history-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 10px; color: #707960; }
+.history-status { color: #355344; font-weight: 600; }
+.history-current { margin-left: auto; color: #355344; font-weight: 600; }
+.history-question { font-size: 14px; line-height: 1.5; color: #253f33; }
+.history-files { font-size: 11px; line-height: 1.5; color: #707960; }
+.chat-history summary #history-count { display: inline; border-radius: 20px; padding: 2px 7px; background: #ecefe2; }
 .answer-space { padding: 26px; flex: 1; }
 .initial-state { max-width: 470px; margin: auto; padding: 12px 0 18px; text-align: center; }
 .initial-icon { display: grid; place-items: center; width: 49px; height: 49px; margin: 0 auto 17px; border-radius: 14px; font-size: 29px; color: #4b8975; background: #edf5ee; }

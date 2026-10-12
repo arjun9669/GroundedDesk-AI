@@ -1,5 +1,5 @@
 // Presentation only. Do not change documents, retrieval, answers or report data.
-import { closePDFPreview } from "./pdf-preview.mjs?v=20261012-r36";
+import { closePDFPreview } from "./pdf-preview.mjs?v=20261013-r37";
 export function showWorkspace(name, { result = false } = {}) {
   const tab = document.querySelector(`[data-view="${name}"]`);
   if (!tab) return;

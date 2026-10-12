@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6 / r37 — Readable question history (2026-10-13)
+
+- Full questions, evidence/refusal status, source filenames, original search method and an Open now marker replace truncated history labels. Last eight questions remain newest first; empty guidance and session-only retention are explicit.
+- Keyboard reopening focuses the answer, preserves an unfinished composer draft and keeps exact answers, citations and exports. File changes clear history to prevent stale evidence. No retrieval algorithm, frozen benchmark or persistent question storage changed.
+- 253 unit tests, strict offline toy evaluation and seven installed Chrome feature scripts pass. Actual local MiniLM history/PDF/export checks pass with Qwen off. No new independent accuracy result is claimed. [Scope and evidence](docs/QUESTION_HISTORY_5_6.md).
+
 ### 5.6 / r36 — An optional first-use guide (2026-10-12)
 
 - Added a four-step Quick guide for adding files, choosing Ask/Compare/Research, search options and checking/exporting evidence. A dismissible invitation sits in the empty answer area; header access always remains. No automatic dialog, model download or query submission.
