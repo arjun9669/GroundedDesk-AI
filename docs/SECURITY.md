@@ -23,3 +23,7 @@ PDF.js parses text-based PDFs only; users should avoid untrusted PDFs when sourc
 ## Reporting
 
 Open an issue in [this repository](https://github.com/arjun9669/GroundedDesk-AI/issues) without attaching confidential document text, tokens or private account data. For personal documents and production integration, perform an independent review first.
+
+## Quick guide preference
+
+The optional first-use guide stores only `groundeddesk-guide-dismissed-v1` with the value `1` in this site’s browser localStorage when dismissed or closed. Documents, quotations and questions are not stored with this preference. The guide remains usable if storage is blocked. Model/dependency caches are separate from this preference; existing document-memory boundaries remain unchanged.

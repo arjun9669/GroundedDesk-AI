@@ -1,0 +1,58 @@
+{
+  "classification": "Synthetic feature reliability regression, not independent factual accuracy",
+  "cases": [
+    {
+      "id": "mixed-pages",
+      "file": "mixed-pages.pdf",
+      "question": "When do depot lights shut down?",
+      "expected": "Quote sunset on physical page 3; page 2 missing-text notice in UI/export"
+    },
+    {
+      "id": "repeated",
+      "file": "repeated-permit.pdf",
+      "question": "Who approves depot permits?",
+      "expected": "Ambiguous location, no PDF page link"
+    },
+    {
+      "id": "cross-page",
+      "file": "cross-page.pdf",
+      "question": "What approval is needed before depot release?",
+      "expected": "Lexical inventory quotation spans physical pages 1 and 2"
+    },
+    {
+      "id": "columns",
+      "file": "two-columns.pdf",
+      "expected": "Layout caution and original-page preview; column meaning/order NOT reconstructed"
+    },
+    {
+      "id": "table",
+      "file": "table.pdf",
+      "expected": "Layout caution; row/cell associations NOT guaranteed"
+    },
+    {
+      "id": "image-only",
+      "file": "image-only.pdf",
+      "expected": "No document indexed; scanned/empty OCR guidance"
+    },
+    {
+      "id": "damaged",
+      "file": "damaged.pdf",
+      "expected": "No document indexed; named-file damaged-PDF guidance"
+    },
+    {
+      "id": "locked",
+      "file": "locked-depot.pdf",
+      "expected": "No document indexed; unlock-copy guidance; no password entry"
+    }
+  ],
+  "hashes": {
+    "mixed-pages.pdf": "2d8d7b479ffde87a20256b5132c4210654503b5d07ca6ed6514c806d1a05d00c",
+    "repeated-permit.pdf": "56c4a84849df17d88728a33401e749f315f9117c034bcca3cbf1a0ed7e14a49e",
+    "cross-page.pdf": "ccd448178861884d063b03672566ea2e3e884b9d2c7c92f4cc3f400178587a47",
+    "two-columns.pdf": "c26ee0a905acd34f82002e54e440c46ba4925fb2e6948d67e5f5d838d6599707",
+    "table.pdf": "c5ba293f31c64748ed777ea832a047609f7eeb28a59524cc0bfab84b89f1f8b9",
+    "image-only.pdf": "d3c0ada3de7ef7b0ec6c9358418f05a1f68fb44384cef3a2c282d10d7856fee0",
+    "damaged.pdf": "ebbea70808a55f866a1238b4abb3b6d8ed7380b799221b10a199bec98201b7e0",
+    "locked-depot.pdf": "1c46ad61fb0c463e69195efbdbb9e4317fe48b7ec8e68465bb753b7519c16ce4"
+  }
+}
