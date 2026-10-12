@@ -1,3 +1,4 @@
+import { revealControl } from "./fixtures/workspace-ui.mjs";
 // Real PDF.js extraction and rendering. Synthetic fixture, not a benchmark.
 // TEST_MINILM=1 additionally downloads/runs the actual model; never mocks vectors.
 import assert from "node:assert/strict";
@@ -34,7 +35,7 @@ try {
   await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
   observations.build = await page.locator("#retrieval-build").innerText();
-  assert.match(observations.build, /2026-10-12-r30/);
+  assert.match(observations.build, /2026-10-12-r31/);
   await page.locator("#clear-docs").click();
   const quote = "Harbor crane operators must inspect lifting hooks every eight shifts.";
   const fixture = pdfFixture(["Harbor workshop operates the sheltered pier.", quote, "Harbor workshop visitor hours end at sunset."]);
@@ -52,13 +53,13 @@ try {
   assert.match(answer, /PDF page 2 \(physical page numbers\)/);
   await page.getByRole("button", { name: "Copy answer and evidence report" }).click();
   const report = await page.evaluate(() => navigator.clipboard.readText());
-  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-12-r30/);
+  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-12-r31/);
   const downloadPending = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download local Markdown evidence report" }).click();
   const download = await downloadPending;
   const downloadedReport = await fs.readFile(await download.path(), "utf8");
   assert.match(downloadedReport, /PDF page 2/);
-  assert.match(downloadedReport, /2026-10-12-r30/);
+  assert.match(downloadedReport, /2026-10-12-r31/);
   if (evidenceDir) await download.saveAs(path.join(evidenceDir, "keyword-evidence-export.md"));
   observations.keywordAnswer = answer;
   observations.keywordReport = report;
@@ -89,9 +90,12 @@ try {
   observations.checks.push("Actual PDF.js upload/extraction, page 2 provenance, copy/export, original page rendering, next/previous bounds, Escape and close/reopen cleanup");
 
   if (process.env.TEST_MINILM === "1") {
+    await revealControl(page, "#enable-semantic");
     await page.locator("#enable-semantic").click();
     await page.waitForFunction(() => !document.querySelector('#retrieval-mode option[value="hybrid"]').disabled, null, { timeout: 240000 });
+    await revealControl(page, "#retrieval-mode");
     await page.locator("#retrieval-mode").selectOption("hybrid");
+    assert.equal(await page.locator("#search-mode-badge").innerText(), "Local AI search");
     assert.equal(await page.locator("#answer-mode").inputValue(), "extractive");
     await ask("How often must Harbor crane operators inspect lifting hooks?");
     answer = await page.locator("#answer-result").innerText();
@@ -124,6 +128,7 @@ try {
   assert.match(await page.locator("#answer-result").innerText(), /Text lines 1–2/);
   assert.equal(await page.locator(".open-pdf-page").count(), 0);
   observations.checks.push("TXT quotation spans lines 1–2, no invented page link, document replacement invalidates Hybrid vectors");
+  assert.equal(await page.locator("#search-mode-badge").innerText(), "Fast search");
   // Separate fictional positive controls: a PIN guard must not blanket-refuse
   // a directly disclosed value or an operational rotation question.
   await page.locator("#clear-docs").click();
@@ -133,9 +138,11 @@ try {
   observations.pinControls = [];
   for (const mode of process.env.TEST_MINILM === "1" ? ["keyword", "hybrid"] : ["keyword"]) {
     if (mode === "hybrid") {
+      await revealControl(page, "#enable-semantic");
       await page.locator("#enable-semantic").click();
       await page.waitForFunction(() => !document.querySelector('#retrieval-mode option[value="hybrid"]').disabled, null, { timeout: 240000 });
     }
+    await revealControl(page, "#retrieval-mode");
     await page.locator("#retrieval-mode").selectOption(mode);
     for (const [question, expected] of [["What is the exact PIN code for the fictional workshop door?", "0482"], ["When must the fictional workshop PIN code be rotated?", "seven days"]]) {
       await ask(question);

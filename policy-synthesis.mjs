@@ -3,9 +3,9 @@
  * This is a deterministic candidate extractor, NOT semantic entailment,
  * legal advice, compliance certification, or an autonomous LLM.
  */
-import { planResearch, hasInstructionRisk, numberedPolicySections } from "./research.mjs?v=20261012-r30";
-import { assertWorkflowExport, locationLabel } from "./provenance.mjs?v=20261012-r30";
-import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r30";
+import { planResearch, hasInstructionRisk, numberedPolicySections } from "./research.mjs?v=20261012-r31";
+import { assertWorkflowExport, locationLabel } from "./provenance.mjs?v=20261012-r31";
+import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r31";
 
 const MAX_SECTIONS = 64;
 const MAX_ITEMS = 24;

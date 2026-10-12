@@ -1,75 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="color-scheme" content="light"/>
-  <meta name="theme-color" content="#0b1726"/>
-  <meta name="description" content="GroundedDesk AI 5.5 — free browser-side document intelligence, local AI options, multi-document evidence research and measurable source evaluation."/>
-  <title>GroundedDesk AI 5.5 | Evidence-First Document Research</title>
-  <link rel="stylesheet" href="./styles.css?v=20261012-r30"/>
-  <script defer type="module" src="./app.mjs?v=20261012-r30"></script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="color-scheme" content="light"/>
+<meta name="theme-color" content="#f5f7f8"/>
+<meta name="description" content="GroundedDesk — a free, local document workspace. Add files, ask questions, and check answers against the original evidence."/>
+<title>GroundedDesk AI 5.6 | Your document workspace</title>
+<link rel="stylesheet" href="./styles.css?v=20261012-r31"/>
+<script defer type="module" src="./app.mjs?v=20261012-r31"></script>
 </head>
 <body>
-  <div class="app-shell">
-    <header class="site-header">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true">G<span>●</span></div>
-        <div><strong>GroundedDesk</strong><span class="brand-sub">DOCUMENT INTELLIGENCE</span></div>
-      </div>
-      <nav class="header-links" aria-label="Primary navigation">
-        <a href="#workbench">Workbench</a>
-        <a href="#quality-title">Evaluate</a><a href="#about">Architecture</a>
-        <a href="https://github.com/arjun9669/GroundedDesk-AI" target="_blank" rel="noopener noreferrer">Source ↗</a>
-      </nav>
-      <div class="private-pill"><span class="private-dot"></span> Browser-private session</div>
-    </header>
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="eyebrow"><span class="eyebrow-line"></span> APPLIED AI ENGINEERING DEMO <span class="eyebrow-line"></span></div>
-        <div class="hero-inner">
-          <div>
-            <h1 id="hero-title">Ask your documents.<br/><em>Trust the evidence.</em></h1>
-            <p>Source-grounded answers without hallucinated citations. Upload documents, search natural-language questions, and trace every extracted sentence back to its origin.</p>
-            <div class="hero-chips">
-              <span>⊞ Local retrieval</span><span>↗ Source citations</span><span>◈ No API key</span>
-            </div>
-          </div>
-          <div class="metric-grid" aria-label="Demonstration characteristics">
-            <div><span class="metric-symbol">01</span><strong>Local</strong><small>Data stays in this tab</small></div>
-            <div><span class="metric-symbol">02</span><strong>Cited</strong><small>Verbatim source evidence</small></div>
-            <div><span class="metric-symbol">03</span><strong>Honest</strong><small>Refuses unsupported queries</small></div>
-            <div><span class="metric-symbol">04</span><strong>Open</strong><small>Inspectable retrieval logic</small></div>
-          </div>
-        </div>
-      </section>
-      <section id="workbench" class="workbench" aria-label="Document workbench">
-        <div class="section-heading">
-          <div><span class="section-index">01 / WORKSPACE</span><h2>Your evidence workspace</h2></div>
-          <div class="live-label"><span class="pulse-dot"></span> Extractive answering · no LLM required</div>
-        </div>
-        <section class="retrieval-settings" aria-labelledby="retrieval-settings-heading">
+<a class="skip-link" href="#main-workspace">Skip to workspace</a>
+<div class="app-shell">
+<header class="site-header">
+<a class="brand" href="#workbench" aria-label="GroundedDesk home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h9l4 4v13H7z"/><path d="M16 3v5h4M3 7v14h12M10 12h7M10 16h5"/></svg></span><span><strong>GroundedDesk</strong><small>Your document workspace</small></span></a>
+<nav class="header-links" aria-label="Primary navigation"><a href="#about">How it works</a><a href="https://github.com/arjun9669/GroundedDesk-AI" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+<span class="private-pill"><span class="private-dot"></span>Files stay in this tab</span>
+</header>
+<main id="workbench" class="workbench">
+<div class="workspace-intro"><div><p class="micro-label">A LITTLE CLARITY, FROM YOUR DOCUMENTS</p><h1 id="hero-title">From question to evidence.</h1><p>Add your files. Find an answer. See where it came from.</p></div><ol class="workspace-steps" aria-label="Getting started"><li><span>1</span>Add documents</li><li><span>2</span>Ask a question</li><li><span>3</span>Check the source</li></ol></div>
+<div class="workspace-grid">
+<aside class="panel library" aria-labelledby="library-title">
+            <div class="panel-title"><div><p class="micro-label">YOUR DOCUMENTS</p><h3 id="library-title">Documents <span id="doc-count" class="count-badge">0</span></h3></div><div class="library-actions"><button type="button" id="toggle-documents" class="text-button" aria-controls="library-content" aria-expanded="true">Hide files</button><button type="button" class="text-button" id="clear-docs">Clear all</button></div></div><div id="library-content">
+            <label class="dropzone" for="file-input" id="dropzone" tabindex="0">
+              <span class="upload-icon" aria-hidden="true">↥</span><strong>Add your documents</strong>
+              <small>PDF, TXT, MD · 5 MB max per file</small>
+              <span class="browse-label">Browse files</span>
+            </label>
+            <input type="file" id="file-input" accept=".txt,.md,.markdown,.pdf,text/plain,text/markdown,application/pdf" multiple hidden />
+            <p id="upload-status" class="library-note" role="status"></p>
+            <label class="search-label" for="document-filter">Find a document</label>
+            <div class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="document-filter" placeholder="Find a document..." autocomplete="off"/></div>
+            <ul class="document-list" id="document-list" aria-live="polite"></ul>
+            <p class="library-note">Try the examples, or add your own files. Documents are cleared when this tab closes or reloads.</p></div>
+          </aside>
+<div id="main-workspace" class="main-workspace" tabindex="-1">
+<div class="workspace-toolbar"><div class="workspace-tabs" role="tablist" aria-label="Document tools"><button id="tab-ask" type="button" role="tab" data-view="ask" aria-controls="workspace-ask" aria-selected="true">Ask</button><button id="tab-compare" type="button" role="tab" data-view="compare" aria-controls="workspace-compare" aria-selected="false" tabindex="-1">Compare</button><button id="tab-research" type="button" role="tab" data-view="research" aria-controls="workspace-research" aria-selected="false" tabindex="-1">Research</button></div><span id="search-mode-badge" class="mode-badge">Fast search</span></div>
+<details id="model-settings" class="settings-disclosure"><summary>Search &amp; answer settings <span>Optional local AI</span></summary><div class="settings-body"><section class="retrieval-settings" aria-labelledby="retrieval-settings-heading">
           <div class="retrieval-info">
-            <p class="micro-label">OPTIONAL · LOCAL SEMANTIC ENGINE</p>
-            <h3 id="retrieval-settings-heading">GroundedDesk AI 2.0 · hybrid retrieval</h3>
-            <p>Keyword search runs immediately. Enable free on-device MiniLM embeddings for meaning-aware passage ranking, combined with keyword matches. No API key or server inference; the first use downloads a public model and may be slow on phones.</p>
+            <p class="micro-label">SEARCH</p>
+            <h3 id="retrieval-settings-heading">Find related wording</h3>
+            <p>Fast search is ready immediately. Local AI search uses MiniLM to help find related wording. Its first use downloads a free model; it may take longer on phones. Document text stays in this tab.</p>
             <p id="semantic-status" role="status" aria-live="polite">Keyword mode active. Your document contents stay in browser memory.</p>
           </div>
           <div class="retrieval-controls">
             <label for="retrieval-mode">Search mode</label>
             <select id="retrieval-mode" aria-label="Retrieval method">
-              <option value="keyword">Keyword (BM25-style)</option>
-              <option value="hybrid" disabled>Hybrid (keyword + local MiniLM)</option>
+              <option value="keyword">Fast search · keywords</option>
+              <option value="hybrid" disabled>Local AI search · Hybrid</option>
             </select>
-            <button type="button" id="enable-semantic">Enable free semantic model</button>
+            <button type="button" id="enable-semantic">Enable local AI search</button>
             <button type="button" id="evaluate-modes" disabled>Compare modes on sample questions</button>
           </div>
           <pre class="evaluation-output" id="evaluation-output" hidden aria-live="polite"></pre>
-        </section>
-        <section class="generation-settings" aria-labelledby="local-llm-heading">
+        </section><details id="draft-settings" class="tool-disclosure"><summary>Experimental answer drafts</summary><section class="generation-settings" aria-labelledby="local-llm-heading">
           <div>
-            <p class="micro-label">EXPERIMENTAL · GENERATION ON YOUR DEVICE</p>
-            <h3 id="local-llm-heading">GroundedDesk AI 3.0 · local generative answers</h3>
+            <p class="micro-label">OPTIONAL · EXPERIMENTAL</p>
+            <h3 id="local-llm-heading">Draft answers with Qwen</h3>
             <p>Optional Qwen2.5 0.5B WebGPU model turns retrieved evidence into short cited sentences. No API keys, cloud inference or subscriptions. The initial model download is large (approximately 800 MB), and some mobile browsers cannot run it. Existing extractive mode stays available.</p>
             <p id="generation-status" role="status" aria-live="polite">Extractive answers active. Local generator is off.</p>
           </div>
@@ -79,17 +67,90 @@
               <option value="extractive">Extractive · exact document quotes</option>
               <option value="generative" disabled>Local AI · cited draft (experimental)</option>
             </select>
-            <button type="button" id="enable-generation">Load free local Qwen model (WebGPU)</button>
+            <button type="button" id="enable-generation">Download local draft model</button>
             <button type="button" id="evaluate-generation" disabled>Check local AI drafts on 3 sample questions</button>
             <button type="button" id="clear-conversation">Clear session conversation</button>
           </div>
           <pre id="generation-evaluation" class="generation-evaluation" hidden aria-live="polite"></pre>
-        </section>
-        <section class="quality-workbench" aria-labelledby="quality-title">
+        </section></details></div></details>
+<section id="workspace-ask" data-workspace="ask" role="tabpanel" aria-labelledby="tab-ask" tabindex="0" class="panel chat" aria-labelledby="chat-title">
+            <div class="panel-title chat-heading">
+              <div><p class="micro-label">ASK & VERIFY</p><h3 id="chat-title">Ask a question</h3></div>
+              <span class="ready-badge">Answers with source evidence</span>
+            </div>
+            <details id="chat-history" class="chat-history">
+              <summary>Recent questions in this tab <span id="history-count">0</span></summary>
+              <ul id="history-list" aria-label="Recent questions"></ul>
+            </details>
+            <div class="answer-space" id="answer-space" aria-live="polite">
+              <div class="initial-state" id="initial-state">
+                <div class="initial-icon" aria-hidden="true">⌁</div>
+                <h4>What would you like to know?</h4>
+                <p>Ask about your documents. Read the answer, then open a citation to check the original source.</p>
+                <div id="sample-questions"><span class="suggestions-label">TRY A QUESTION</span>
+                <div class="suggestions">
+                  <button class="suggestion" data-question="How should an AI use case be evaluated before launch?">How should we evaluate AI before launch? ↗</button>
+                  <button class="suggestion" data-question="Where should document metadata be stored?">Where is document metadata stored? ↗</button>
+                  <button class="suggestion" data-question="How can an office reduce wasted electricity?">How can an office reduce energy use? ↗</button>
+                </div></div>
+              </div>
+              <div class="answer-result" id="answer-result" hidden></div>
+            </div>
+            <form id="query-form" class="query-form">
+              <label for="query-input" class="sr-only">Question about your documents</label>
+              <textarea id="query-input" rows="2" maxlength="600" placeholder="Ask anything about your documents..."></textarea>
+              <div class="query-footer"><span>Answers come from your documents. Check the sources.</span><button type="submit" id="ask-button">Find an answer <span aria-hidden="true">↗</span></button></div>
+            </form>
+          </section>
+<section id="workspace-compare" data-workspace="compare" role="tabpanel" aria-labelledby="tab-compare" tabindex="0" class="workspace-tool-panel" hidden><div class="tool-intro"><p class="micro-label">SIDE BY SIDE</p><h2>Find the differences. Keep the evidence.</h2><p>Choose two documents and a topic. Compare their quoted passages side by side.</p><small>Comparison uses keyword search; local AI search applies to Ask.</small></div><form id="compare-form" class="research-panel">
+              <h3>Compare two documents</h3>
+              <label for="compare-left">First document</label>
+              <select id="compare-left" required aria-label="First document to compare"></select>
+              <label for="compare-right">Second document</label>
+              <select id="compare-right" required aria-label="Second document to compare"></select>
+              <label for="compare-topic">What would you like to compare?</label>
+              <input id="compare-topic" maxlength="600" placeholder="Example: access control or monitoring" />
+              <button type="submit" id="run-comparison">Compare source excerpts</button>
+            </form></section>
+<section id="workspace-research" data-workspace="research" role="tabpanel" aria-labelledby="tab-research" tabindex="0" class="workspace-tool-panel" hidden><div class="tool-intro"><p class="micro-label">LOOK ACROSS YOUR FILES</p><h2>A wider view, with sources.</h2><p>Gather passages across documents, or open the policy tools for a structured review.</p><small>These tools use keyword search. Reports need your review.</small></div><form id="research-form" class="research-panel">
+              <h3>Search across documents</h3>
+              <label for="research-query">Question across the document library</label>
+              <textarea id="research-query" rows="2" maxlength="600" placeholder="Example: How do our documents describe controls and monitoring?" required></textarea>
+              <button type="submit" id="run-research">Gather evidence</button>
+              <p>Workflow: retrieve matching passages → check document coverage → report gaps and suspicious instructions. It is not autonomous web browsing.</p>
+            </form><details id="policy-tools" class="tool-disclosure"><summary>Policy review tools <span>Sections &amp; checklists</span></summary><div class="research-panels"><form id="policy-research-form" class="research-panel">
+              <h3>Review policy sections</h3>
+              <label for="policy-document">Policy document to inspect</label>
+              <select id="policy-document" required aria-label="Document for policy section research"></select>
+              <label for="policy-query">What requirements or controls should we look for?</label>
+              <textarea id="policy-query" rows="2" maxlength="600" placeholder="Example: What does the AI Governance Policy require before an AI system can be released?" required></textarea>
+              <button type="submit" id="run-policy-research">Gather evidence across sections</button>
+              <p>Scans numbered sections such as G-01 and G-02, extracts up to eight source-verbatim passages, and reports coverage gaps. This is not a complete policy audit or an AI-generated summary. Regular Keyword mode is unchanged.</p>
+            </form><form id="policy-checklist-form" class="research-panel">
+              <h3>Build a policy checklist</h3>
+              <label for="checklist-document">Numbered policy document to inspect</label>
+              <select id="checklist-document" required aria-label="Document for release-control inventory"></select>
+              <label for="checklist-query">Which release-readiness requirements should we review?</label>
+              <textarea id="checklist-query" rows="2" maxlength="600" placeholder="Example: What does the AI Governance Policy require before an AI system can be released?" required></textarea>
+              <button type="submit" id="run-policy-checklist">Build source-linked checklist</button>
+              <p>Uses rule-matched source sentences from numbered clauses, including conditional and ongoing controls. Results are candidates, not verified requirements or a complete compliance audit. No LLM or paid API.</p>
+            </form></div></details><div class="research-results" id="research-results" hidden aria-live="polite">
+            <div class="research-results-heading">
+              <h3 id="research-result-title">Research results</h3>
+              <div class="report-actions">
+                <button type="button" id="research-copy">Copy Markdown report</button>
+                <button type="button" id="research-download">Save report</button>
+              </div>
+            </div>
+            <div id="research-result-body"></div>
+            <p class="research-disclaimer">Lexical search may miss paraphrases. Missing evidence is not proof that a fact is absent. Always review source content before relying on it.</p>
+          </div></section>
+<div id="alert" class="status-alert" role="status" aria-live="polite"></div>
+<details id="developer-tools" class="tool-disclosure developer-tools"><summary>Developer checks <span>Bundled examples only</span></summary><section class="quality-workbench" aria-labelledby="quality-title">
           <div class="quality-head">
             <div>
-              <p class="micro-label">5.0 · ENGINEERING QUALITY GATE</p>
-              <h3 id="quality-title">Evaluate the evidence, not just the demo.</h3>
+              <p class="micro-label">DEVELOPER TOOLS</p>
+              <h3 id="quality-title">Check the bundled examples</h3>
               <p>Run a real, on-device keyword retrieval evaluation against 28 labeled questions and the three bundled fictional documents. Inspect per-case verdicts, source integrity, refusals, and warmed-up repeated keyword timings. Tiny single-query timings may round to zero, so the benchmark measures batches instead. This does not measure Qwen or MiniLM accuracy.</p>
             </div>
             <div class="quality-actions">
@@ -109,111 +170,11 @@
             <p class="quality-caveat"><strong>Timing methodology:</strong> After accuracy checks, the browser warms up each of 10 representative keyword queries, then times repeated batches for at least 40 ms per question. Median and p95 are across batch-average per-query times, <strong>not individual-request tail latency</strong>. Times exclude document parsing, model loading, network and UI rendering.</p>
             <p class="quality-caveat">Scores are from a small, hand-labeled toy dataset. 100% here would not imply production accuracy, hallucination prevention, semantic-model performance, or security assurance.</p>
           </div>
-        </section>
-        <div class="panel-grid">
-          <aside class="panel library" aria-labelledby="library-title">
-            <div class="panel-title"><div><p class="micro-label">DOCUMENT LIBRARY</p><h3 id="library-title">Sources <span id="doc-count" class="count-badge">0</span></h3></div><button type="button" class="text-button" id="clear-docs">Clear all</button></div>
-            <label class="dropzone" for="file-input" id="dropzone" tabindex="0">
-              <span class="upload-icon" aria-hidden="true">↥</span><strong>Drop files here or browse</strong>
-              <small>PDF, TXT, MD · 5 MB max per file</small>
-              <span class="browse-label">Choose files ↗</span>
-            </label>
-            <input type="file" id="file-input" accept=".txt,.md,.markdown,.pdf,text/plain,text/markdown,application/pdf" multiple hidden />
-            <p id="upload-status" class="library-note" role="status"></p>
-            <label class="search-label" for="document-filter">SEARCH SOURCES</label>
-            <div class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="document-filter" placeholder="Find a document..." autocomplete="off"/></div>
-            <ul class="document-list" id="document-list" aria-live="polite"></ul>
-            <p class="library-note">Sample documents are educational examples. Uploaded text is held in memory and removed when you close or reload this tab.</p>
-          </aside>
-          <section class="panel chat" aria-labelledby="chat-title">
-            <div class="panel-title chat-heading">
-              <div><p class="micro-label">EVIDENCE WORKBENCH</p><h3 id="chat-title">Ask a question</h3></div>
-              <span class="ready-badge">● Ready to search</span>
-            </div>
-            <details id="chat-history" class="chat-history">
-              <summary>Recent questions in this tab <span id="history-count">0</span></summary>
-              <ul id="history-list" aria-label="Recent questions"></ul>
-            </details>
-            <div class="answer-space" id="answer-space" aria-live="polite">
-              <div class="initial-state" id="initial-state">
-                <div class="initial-icon" aria-hidden="true">⌁</div>
-                <h4>Questions deserve evidence.</h4>
-                <p>Search the loaded documents. Every answer includes a traceable source excerpt; if there’s no matching evidence, we’ll tell you.</p>
-                <span class="suggestions-label">TRY AN EXAMPLE</span>
-                <div class="suggestions">
-                  <button class="suggestion" data-question="How should an AI use case be evaluated before launch?">How should we evaluate AI before launch? ↗</button>
-                  <button class="suggestion" data-question="Where should document metadata be stored?">Where is document metadata stored? ↗</button>
-                  <button class="suggestion" data-question="How can an office reduce wasted electricity?">How can an office reduce energy use? ↗</button>
-                </div>
-              </div>
-              <div class="answer-result" id="answer-result" hidden></div>
-            </div>
-            <form id="query-form" class="query-form">
-              <label for="query-input" class="sr-only">Question about your documents</label>
-              <textarea id="query-input" rows="2" maxlength="600" placeholder="Ask anything about your documents..."></textarea>
-              <div class="query-footer"><span>Retrieval only · evidence before answers</span><button type="submit" id="ask-button">Search evidence <span aria-hidden="true">↗</span></button></div>
-            </form>
-          </section>
-        </div>
-        <section class="research-workspace" aria-labelledby="research-title">
-          <div class="section-heading research-heading">
-            <div><span class="section-index">GROUNDedDESK 4.0 / RESEARCH WORKFLOW</span><h2 id="research-title">Compare documents. Build an evidence report.</h2></div>
-            <span class="live-label">Browser-only · scripted research · no paid services</span>
-          </div>
-          <p class="research-explainer">Run transparent keyword-based, multi-step source gathering. Compare two loaded documents or collect evidence across several documents. Open cited PDF pages to check quotations in the original files. Excerpts are literal, not AI-written summaries. Suspicious instruction-like passages are flagged as untrusted data.</p>
-          <div class="research-panels">
-            <form id="research-form" class="research-panel">
-              <h3>Multi-document research</h3>
-              <label for="research-query">Question across the document library</label>
-              <textarea id="research-query" rows="2" maxlength="600" placeholder="Example: How do our documents describe controls and monitoring?" required></textarea>
-              <button type="submit" id="run-research">Gather cited evidence</button>
-              <p>Workflow: retrieve matching passages → check document coverage → report gaps and suspicious instructions. It is not autonomous web browsing.</p>
-            </form>
-            <form id="policy-research-form" class="research-panel">
-              <h3>5.1 · Multi-section policy research</h3>
-              <label for="policy-document">Policy document to inspect</label>
-              <select id="policy-document" required aria-label="Document for policy section research"></select>
-              <label for="policy-query">What requirements or controls should we look for?</label>
-              <textarea id="policy-query" rows="2" maxlength="600" placeholder="Example: What does the AI Governance Policy require before an AI system can be released?" required></textarea>
-              <button type="submit" id="run-policy-research">Gather evidence across sections</button>
-              <p>Scans numbered sections such as G-01 and G-02, extracts up to eight source-verbatim passages, and reports coverage gaps. This is not a complete policy audit or an AI-generated summary. Regular Keyword mode is unchanged.</p>
-            </form>
-            <form id="policy-checklist-form" class="research-panel">
-              <h3>5.2 · Candidate release-control inventory</h3>
-              <label for="checklist-document">Numbered policy document to inspect</label>
-              <select id="checklist-document" required aria-label="Document for release-control inventory"></select>
-              <label for="checklist-query">Which release-readiness requirements should we review?</label>
-              <textarea id="checklist-query" rows="2" maxlength="600" placeholder="Example: What does the AI Governance Policy require before an AI system can be released?" required></textarea>
-              <button type="submit" id="run-policy-checklist">Build source-linked checklist</button>
-              <p>Uses rule-matched source sentences from numbered clauses, including conditional and ongoing controls. Results are candidates, not verified requirements or a complete compliance audit. No LLM or paid API.</p>
-            </form>
-            <form id="compare-form" class="research-panel">
-              <h3>Side-by-side document comparison</h3>
-              <label for="compare-left">Document A</label>
-              <select id="compare-left" required aria-label="First document to compare"></select>
-              <label for="compare-right">Document B</label>
-              <select id="compare-right" required aria-label="Second document to compare"></select>
-              <label for="compare-topic">Optional comparison topic</label>
-              <input id="compare-topic" maxlength="600" placeholder="Example: access control or monitoring" />
-              <button type="submit" id="run-comparison">Compare source excerpts</button>
-            </form>
-          </div>
-          <div class="research-results" id="research-results" hidden aria-live="polite">
-            <div class="research-results-heading">
-              <h3 id="research-result-title">Research results</h3>
-              <div class="report-actions">
-                <button type="button" id="research-copy">Copy Markdown report</button>
-                <button type="button" id="research-download">Download .md</button>
-              </div>
-            </div>
-            <div id="research-result-body"></div>
-            <p class="research-disclaimer">Lexical search may miss paraphrases. Missing evidence is not proof that a fact is absent. Always review source content before relying on it.</p>
-          </div>
-        </section>
-        <div id="alert" class="status-alert" role="status" aria-live="polite"></div>
-      </section>
-      <section id="about" class="architecture" aria-labelledby="architecture-heading">
-        <div class="section-heading"><div><span class="section-index">02 / UNDER THE HOOD</span><h2 id="architecture-heading">Designed for transparency</h2></div></div>
+        </section></details>
+</div>
+</div>
+<details class="help-disclosure" id="help-details"><summary>How your files and answers are handled</summary><section id="about" class="architecture" aria-labelledby="architecture-heading">
+        <div class="section-heading"><div><span class="section-index">02 / UNDER THE HOOD</span><h2 id="architecture-heading">How GroundedDesk works</h2></div></div>
         <div class="architecture-grid">
           <div class="architecture-main">
             <p class="micro-label">RETRIEVAL PIPELINE</p>
@@ -222,9 +183,9 @@
           </div>
           <div class="architecture-aside"><p class="micro-label">ENGINEERING NOTES</p><ul><li><strong>Private by default</strong> — no shared document storage</li><li><strong>Inspectable</strong> — ranking source and tests in repository</li><li><strong>Honest limitations</strong> — keyword matching is not semantic reasoning</li><li><strong>PDF dependency</strong> — PDF.js library loaded from a third-party CDN</li><li><strong>Optional semantics</strong> — MiniLM model downloaded publicly and inferred on-device</li><li><strong>Experimental generation</strong> — Qwen 0.5B on WebGPU requires additional memory/download; its citations are structurally checked, not fact-verified</li></ul></div>
         </div>
-      </section>
-      <footer><div class="brand footer-brand"><div class="brand-mark">G<span>●</span></div><strong>GroundedDesk AI</strong></div><p>An open, educational document intelligence demonstration. Not production LLM/RAG software.</p><p id="retrieval-build" class="build-version" aria-live="polite">Retrieval build: loading…</p><a href="https://github.com/arjun9669" target="_blank" rel="noopener noreferrer">Built for the Arjun Kumar AI Engineering portfolio ↗</a></footer>
-    </main>
-  </div>
+      </section></details>
+</main>
+<footer><div class="brand footer-brand"><div class="brand-mark">G<span>●</span></div><strong>GroundedDesk AI</strong></div><p>Free document research · review the evidence before relying on an answer.</p><p id="retrieval-build" class="build-version" aria-live="polite">Retrieval build: loading…</p><a href="https://github.com/arjun9669" target="_blank" rel="noopener noreferrer">Made by Arjun Kumar ↗</a></footer>
+</div>
 </body>
 </html>

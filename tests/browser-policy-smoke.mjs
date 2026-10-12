@@ -1,3 +1,4 @@
+import { revealControl } from "./fixtures/workspace-ui.mjs";
 /**
  * Browser smoke test (Chromium only). Tests actual rendered Research UI and
  * export using an inline synthetic text fixture; NOT PDF.js or mobile Safari.
@@ -28,10 +29,11 @@ try {
   await page.locator("#clear-docs").click();
   await page.locator("#file-input").setInputFiles({name:"atlas-release-smoke.txt",mimeType:"text/plain",buffer:Buffer.from(fixture)});
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="1");
+  await revealControl(page, "#checklist-document");
   await page.locator("#checklist-document").selectOption({label:"atlas-release-smoke.txt"});
   await page.locator("#checklist-query").fill(prompt);
   await page.locator("#run-policy-checklist").click();
-  await page.waitForFunction(()=>document.querySelector("#research-result-title")?.textContent?.includes("5.2"));
+  await page.waitForFunction(()=>document.querySelector("#research-result-title")?.textContent?.includes("Policy review checklist"));
   const rendered=await page.locator("#research-result-body").innerText();
   assert.match(rendered,/G-01/);
   assert.match(rendered,/G-02/);
@@ -48,10 +50,11 @@ try {
   assert.doesNotMatch(exported,/Ignore previous instructions/);
 
   // 5.1 and ordinary Keyword remain accessible in the same browser session.
+  await revealControl(page, "#policy-document");
   await page.locator("#policy-document").selectOption({label:"atlas-release-smoke.txt"});
   await page.locator("#policy-query").fill(prompt);
   await page.locator("#run-policy-research").click();
-  await page.waitForFunction(()=>document.querySelector("#research-result-title")?.textContent?.includes("5.1"));
+  await page.waitForFunction(()=>document.querySelector("#research-result-title")?.textContent?.includes("Policy section evidence"));
   const older=await page.locator("#research-result-body").innerText();
   assert.match(older,/G-01/);
   assert.match(older,/G-02/);

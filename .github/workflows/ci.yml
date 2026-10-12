@@ -33,6 +33,7 @@ jobs:
           node --check pdf-preview.mjs
           node --check pdf-ingest.mjs
           node --check pdf-highlight.mjs
+          node --check workspace-ui.mjs
           node --check eval/run.mjs
       - name: Unit tests
         run: node --test tests/*.test.mjs
@@ -69,3 +70,4 @@ jobs:
           node tests/browser-research-pages-smoke.mjs
           node tests/browser-pdf-reliability.mjs
           node tests/browser-pdf-highlight.mjs
+          node tests/browser-workspace-ui.mjs

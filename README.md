@@ -2,13 +2,13 @@
 
 **Free, browser-first document intelligence portfolio project.** Upload text, Markdown or text-based PDF documents, inspect source-backed answers, optionally enable local semantic embeddings and a local small language model, and create multi-document research reports.
 
-**[Live GroundedDesk AI 5.5](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r30)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
+**[Live GroundedDesk AI 5.6](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r31)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
 
 > This is the **dedicated source repository and live static site**, deployed through free GitHub Pages. The app runs its own [GitHub Actions CI](./.github/workflows/ci.yml) and [Pages workflow](./.github/workflows/pages.yml). The original profile-hosted demo remains available separately. Model and PDF dependencies require public downloads when enabled; no paid inference account is needed.
 
 ## Current release and measured evidence
 
-Current retrieval build: **2026-10-12-r30** (5.5, page navigation across Q&A and lexical research workflows). The dedicated repository is the active development source; the profile-hosted copy is historical.
+Current retrieval build: **2026-10-12-r31** (5.6, redesigned document workspace; retrieval behavior unchanged). The dedicated repository is the active development source; the profile-hosted copy is historical.
 
 [Browser benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md) preserves first-look results separately from in-sample regressions. Aster32 and Lantern32 each reached 32/32 strict passes in the measured r25 regression; this is not independent accuracy. The Aster H01 infrastructure retry qualification remains recorded.
 
@@ -25,9 +25,29 @@ Current retrieval build: **2026-10-12-r30** (5.5, page navigation across Q&A and
 | **5.2 prototype** | **Candidate release-control inventory: rule-tagged, literal source sentences grouped by gate, conditional, related governance and unclassified categories** | **Optional numbered-policy Research workflow; not semantic synthesis or compliance verification** |
 | **5.3** | **Precise source-sentence evidence selection, stronger missing-fact refusals and two-document comparison quote recovery** | **Deterministic Keyword/Comparison refinement, no LLM or paid API** |
 | **5.4 / r25** | **More complete source-literal answers, conditional evidence selection and unsupported-value safeguards** | **Actual MiniLM in-sample regressions recorded separately from independent first looks** |
+| **5.6 / r31** | **Ask / Compare / Research tabs, document sidebar, progressive settings, responsive controls and preserved evidence** | **Local HTML/CSS/JavaScript; existing retrieval and workflows** |
 | **5.5 / r30** | **Verified physical PDF page citations, original-page preview and normalized TXT/Markdown line references in Q&A, Comparison, Research and policy workflows** | **Local PDF.js preview, source-integrity guards and portable Markdown exports** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
+
+## 5.6 — A simpler document workspace
+
+The interface now starts with your documents and a focused **Ask / Compare / Research** workspace. The large marketing hero and stacked model/version explanations have been replaced by a document sidebar, a short getting-started guide, clearer controls and more readable evidence cards.
+
+- **Add documents:** Browse or drop PDF, TXT or Markdown files into the sidebar. Use the file filter, remove a file, or open its original PDF. Full filenames are available on hover; small files show readable character counts.
+- **Ask:** Enter a question, read the quoted answer and inspect its sources. Copy or **Save report** to keep the evidence. Changing tabs preserves your answer and form input. Example questions disappear when the sample documents are replaced.
+- **Compare:** Choose two documents and a topic. Their source quotations appear side by side. Comparison remains a separate lexical workflow.
+- **Research:** Gather passages across files. Open **Policy review tools** for **Review policy sections** or **Build a policy checklist**. Reports stay associated with their tool tab.
+- **Search & answer settings:** Fast keyword search works immediately. Enable the free local MiniLM model for **Local AI search** in Ask. Experimental Qwen draft controls are under a separate disclosure and stay off by default.
+- **Smaller screens:** The layout stacks without horizontal overflow. Use **Hide files / Show files** to make room for an answer. File controls restore when returning to desktop width.
+
+Retrieval scores are available under **Search details**, with their confidence limitation. Developer evaluation and data-handling explanations are available below the workspace instead of leading the user flow. Keyboard tabs support arrows, Home and End. This is not a claim of a complete accessibility audit.
+
+![Redesigned desktop workspace](./docs/evidence/r31/workspace/01-desktop-start.png)
+
+**Validation:** 253 unit tests and six actual Chromium feature scripts pass. Installed Chrome checks include keyboard navigation, uploads, exports, preserved tab state, associated results, the bundled developer check, document removal, mobile-width collapse/restoration and PDF workflows. Actual local MiniLM controls pass with Qwen off. The unchanged **Cobalt16 in-sample UI regression is 16 PASS / 0 PARTIAL / 0 FAIL**; all source records and copied reports match r30 apart from the build. The original r29 first-look remains **15 PASS / 0 PARTIAL / 1 FAIL**. No new independent accuracy result is claimed. [Scope and evidence](./docs/WORKSPACE_UI_5_6.md).
+
+No paid design service, web font, backend, account or API was added. Physical-phone validation, character-level PDF highlights, OCR and complex layout work remain pending.
 
 ## 5.5 — PDF page citations and local preview
 
@@ -44,9 +64,9 @@ Character-level highlighting inside partial PDF text runs, OCR, layout/table rec
 ### Try the source-navigation workflow
 
 1. Clear the three bundled examples and upload your own text-based PDF files.
-2. Ask a question in main Q&A. Keyword works immediately; enable MiniLM if you want local Hybrid retrieval. Qwen is optional and can remain off.
+2. Ask a question in main Q&A. Keyword works immediately; open **Search & answer settings** and enable MiniLM if you want local Hybrid retrieval. Qwen is optional and can remain off.
 3. Inspect each quotation's filename and physical page number. Select **Open cited PDF page** to check the original file and its matched quotation regions, where supported.
-4. For two files, select them explicitly in **Side-by-side document comparison** and enter a topic. For broader scans, use the Research or policy forms.
+4. For two files, open **Compare**, select them explicitly and enter a topic. For broader scans, open **Research** or its **Policy review tools**.
 5. Copy or download the Markdown evidence report. Review the full source and any omitted-section warnings before relying on it.
 
 Example from the synthetic PDF used in Chrome validation:
@@ -104,18 +124,18 @@ Visit **http://localhost:8765**. Sample documents are included; uploaded files s
 - How can an office reduce electricity use?
 - What is the capital of Mars? *(should refuse when no source covers it)*
 
-In **Research workspace**, try research across all sample documents or compare the **AI Governance Playbook** against **Cloud Architecture Guide**.
+In **Research**, gather evidence across the samples. In **Compare**, select **AI Governance Playbook** and **Cloud Architecture Guide**.
 
 ### 5.1 Phase 1 — multi-section policy research
 
-In the **Research workspace**, choose **5.1 · Multi-section policy research**, select a loaded policy PDF, and ask a broad question such as **“What does the AI Governance Policy require before an AI system can be released?”**. The new workflow scans printed numbered section identifiers (for example G-01 and G-02), chooses up to eight keyword-matching sections, and displays **literal per-section source passages**, section IDs, risk flags, the detected/matching section counts, and any omitted results. Copy or download the resulting Markdown report.
+In **Research → Policy review tools**, choose **Review policy sections**, select a loaded policy PDF, and ask a broad question such as **“What does the AI Governance Policy require before an AI system can be released?”**. The new workflow scans printed numbered section identifiers (for example G-01 and G-02), chooses up to eight keyword-matching sections, and displays **literal per-section source passages**, section IDs, risk flags, the detected/matching section counts, and any omitted results. Copy or download the resulting Markdown report.
 
 This is a bounded extractive evidence scan, **not** an AI-written complete policy summary, compliance audit, or guarantee that every applicable obligation was found. It currently requires recognizable numbered clause markers; unnumbered policies need a different workflow. Uploaded material remains in browser memory. The normal **Keyword** Q&A mode and its retrieval/citation heuristics are unchanged; choose the separate 5.1 workflow for broader, multi-section questions.
 
 
 ### 5.2 — Candidate release-control inventory (prototype)
 
-In **Research workspace**, select **5.2 · Candidate release-control inventory**, upload/select a numbered policy, and ask: **“What does the AI Governance Policy require before an AI system can be released?”**. Press **Build source-linked checklist** and copy the Research results report. The implementation scans up to **64 numbered sections**, extracts up to **24 literal rule-shaped sentences** (no more than five per section), applies transparent regular-expression categories, and identifies skipped sections, output caps, and instruction-shaped content excluded from checklist generation.
+In **Research → Policy review tools**, select **Build a policy checklist**, upload/select a numbered policy, and ask: **“What does the AI Governance Policy require before an AI system can be released?”**. Press **Build source-linked checklist** and copy the Research results report. The implementation scans up to **64 numbered sections**, extracts up to **24 literal rule-shaped sentences** (no more than five per section), applies transparent regular-expression categories, and identifies skipped sections, output caps, and instruction-shaped content excluded from checklist generation.
 
 This **does not** verify whether a control has been satisfied, infer exception conditions, assess legal compliance, or guarantee complete requirement recall. The categories are heuristics rather than semantic analysis; some advisory/operational controls can be included and some obligations can be missed. The form only supports **release/deployment/launch/readiness** prompts, not arbitrary policy question answering. Documents without recognizable numbered clauses have no supported result. Keep the full original document alongside every exported report. No paid API, server, vector DB, or LLM is involved.
 
