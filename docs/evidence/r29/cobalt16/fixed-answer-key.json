@@ -1,0 +1,208 @@
+[
+  {
+    "id": "H01",
+    "workflow": "hybrid",
+    "question": "How many visitors can attend one planetarium session?",
+    "required_facts": [
+      "48"
+    ],
+    "expected_files": [
+      "01_Cobalt_Planetarium.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "H02",
+    "workflow": "hybrid",
+    "question": "When does the projection technician start the alignment check, and when must it be repeated?",
+    "required_facts": [
+      "25 minutes",
+      "projector replacement"
+    ],
+    "expected_files": [
+      "01_Cobalt_Planetarium.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "H03",
+    "workflow": "hybrid",
+    "question": "How long are session attendance registers retained, including the exception?",
+    "required_facts": [
+      "two years",
+      "safeguarding review"
+    ],
+    "expected_files": [
+      "01_Cobalt_Planetarium.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "H04",
+    "workflow": "hybrid",
+    "question": "Who must sign off a replacement projector before public use, and in what form?",
+    "required_facts": [
+      "written",
+      "Projection Technician",
+      "Programme Coordinator"
+    ],
+    "expected_files": [
+      "01_Cobalt_Planetarium.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "H05",
+    "workflow": "hybrid",
+    "question": "What happens to framed prints arriving with visible condensation?",
+    "required_facts": [
+      "Collection Curator",
+      "dry"
+    ],
+    "expected_files": [
+      "02_Cobalt_Gallery.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "H06",
+    "workflow": "hybrid",
+    "question": "How long do seed envelopes dry, and what happens if they remain damp?",
+    "required_facts": [
+      "18 hours",
+      "isolated",
+      "Seed Librarian",
+      "dry inspection"
+    ],
+    "expected_files": [
+      "03_Cobalt_Seed_Library.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "H07",
+    "workflow": "hybrid",
+    "question": "What is the seed packet limit per visitor, including the donor exception?",
+    "required_facts": [
+      "three",
+      "one packet",
+      "donor restriction"
+    ],
+    "expected_files": [
+      "03_Cobalt_Seed_Library.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "H08",
+    "workflow": "hybrid",
+    "question": "Whose written acceptance is needed before donated seed batches can be distributed?",
+    "required_facts": [
+      "written",
+      "Seed Librarian",
+      "Conservation Coordinator"
+    ],
+    "expected_files": [
+      "03_Cobalt_Seed_Library.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "H09",
+    "workflow": "hybrid",
+    "question": "What is the exact PIN code for the Cobalt planetarium door?",
+    "required_facts": [],
+    "expected_files": [],
+    "unsupported": true
+  },
+  {
+    "id": "H10",
+    "workflow": "hybrid",
+    "question": "What is the current price of gold?",
+    "required_facts": [],
+    "expected_files": [],
+    "unsupported": true
+  },
+  {
+    "id": "H11",
+    "workflow": "hybrid",
+    "question": "What is the Cobalt Gallery director's date of birth?",
+    "required_facts": [],
+    "expected_files": [],
+    "unsupported": true
+  },
+  {
+    "id": "H12",
+    "workflow": "hybrid",
+    "question": "What is the exact projector lamp wattage?",
+    "required_facts": [],
+    "expected_files": [],
+    "unsupported": true
+  },
+  {
+    "id": "C13",
+    "workflow": "comparison",
+    "question": "Compare the visitor capacities of planetarium and guided gallery sessions.",
+    "required_facts": [
+      "48",
+      "32"
+    ],
+    "expected_files": [
+      "01_Cobalt_Planetarium.txt",
+      "02_Cobalt_Gallery.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "C14",
+    "workflow": "comparison",
+    "question": "Compare planetarium attendance-register retention with seed accession-register retention, including exceptions.",
+    "required_facts": [
+      "two years",
+      "safeguarding review",
+      "five years",
+      "conservation hold"
+    ],
+    "expected_files": [
+      "01_Cobalt_Planetarium.txt",
+      "03_Cobalt_Seed_Library.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "C15",
+    "workflow": "comparison",
+    "question": "Compare the written approvals for accepting gallery loans and donated seed batches.",
+    "required_facts": [
+      "written",
+      "Collection Curator",
+      "Registrar",
+      "Seed Librarian",
+      "Conservation Coordinator"
+    ],
+    "expected_files": [
+      "02_Cobalt_Gallery.txt",
+      "03_Cobalt_Seed_Library.txt"
+    ],
+    "unsupported": false
+  },
+  {
+    "id": "C16",
+    "workflow": "comparison",
+    "question": "Compare the initial holding times and dampness exceptions for framed prints and seed envelopes.",
+    "required_facts": [
+      "36 hours",
+      "Collection Curator",
+      "dry",
+      "18 hours",
+      "isolated",
+      "Seed Librarian",
+      "dry inspection"
+    ],
+    "expected_files": [
+      "02_Cobalt_Gallery.txt",
+      "03_Cobalt_Seed_Library.txt"
+    ],
+    "unsupported": false
+  }
+]

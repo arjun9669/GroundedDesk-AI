@@ -1,6 +1,6 @@
 import { validateDraft } from "./generation.mjs?v=20261010-r13";
-import { locateEvidence, locationLabel } from "./provenance.mjs?v=20261012-r28";
-import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r28";
+import { locateEvidence, locationLabel } from "./provenance.mjs?v=20261012-r29";
+import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r29";
 
 /**
  * Portable evidence reports for the browser-only document Q&A demo.

@@ -1,15 +1,15 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r28";
-import { hybridRank } from "./hybrid.mjs?v=20261012-r28";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r29";
+import { hybridRank } from "./hybrid.mjs?v=20261012-r29";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261012-r28";
+import { createEvidenceReport } from "./report.mjs?v=20261012-r29";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r28";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r28";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r28";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r28";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r28";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r28";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r28";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r29";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r29";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r29";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r29";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r29";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r29";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r29";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -361,7 +361,7 @@ function renderResult(question, result) {
         open.type = "button";
         open.addEventListener("click", () => {
           const original = documents.find(doc => doc.id === source.documentId);
-          if (original?.originalFile) openPDFPreview(original.originalFile, original.name, source.location.pages[0]);
+          if (original?.originalFile) openPDFPreview(original.originalFile, original.name, source.location.pages[0], source.quote);
         });
         card.append(open);
       }
@@ -771,7 +771,7 @@ function presentResearch(result) {
         open.setAttribute("aria-label", `Open ${source.filename}, PDF page ${source.location.pages[0]}`);
         open.addEventListener("click", () => {
           const original = documents.find(doc => doc.id === source.documentId);
-          if (original?.originalFile) openPDFPreview(original.originalFile, original.name, source.location.pages[0]);
+          if (original?.originalFile) openPDFPreview(original.originalFile, original.name, source.location.pages[0], excerpt);
         });
         card.append(open);
       }

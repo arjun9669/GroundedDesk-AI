@@ -24,7 +24,7 @@ try {
   await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
   observations.build = await page.locator("#retrieval-build").innerText();
-  assert.match(observations.build, /2026-10-12-r28/);
+  assert.match(observations.build, /2026-10-12-r29/);
   await page.locator("#clear-docs").click();
   const fixture = (name, pages) => ({ name, mimeType: "application/pdf", buffer: pdfFixture(pages) });
   const workshop = fixture("workshop-release.pdf", [
@@ -42,7 +42,7 @@ try {
   async function capture(id) {
     await page.locator("#research-copy").click();
     const report = await page.evaluate(() => navigator.clipboard.readText());
-    assert.match(report, /2026-10-12-r28/);
+    assert.match(report, /2026-10-12-r29/);
     const result = { id, displayed: await page.locator("#research-result-body").innerText(), report };
     observations.cases.push(result);
     if (evidenceDir) {
@@ -68,6 +68,12 @@ try {
   await cards.nth(1).getByRole("button", { name: "Open supplier-release.pdf, PDF page 2", exact: true }).click();
   await page.waitForFunction(() => document.querySelector(".pdf-preview [role=status]")?.textContent.includes("PDF page 2 of 3"));
   assert.equal(await page.locator(".pdf-preview h3").innerText(), supplier.name);
+  // This excerpt omits the section heading inside the same PDF text run.
+  // Preserve the exact excerpt and require fallback rather than marking the heading.
+  assert.equal(await page.locator(".pdf-highlight-status").getAttribute("data-match-status"), "partial-run");
+  assert.equal(await page.locator(".pdf-highlight-overlay rect").count(), 0);
+  assert.equal(await page.locator(".pdf-preview-quote").textContent(), await cards.nth(1).locator(".research-evidence-text").innerText());
+  observations.comparisonPreview = { quote: await page.locator(".pdf-preview-quote").textContent(), message: await page.locator(".pdf-highlight-status").innerText(), regions: 0, status: "partial-run" };
   if (evidenceDir) await page.screenshot({ path: path.join(evidenceDir, "02-comparison-original-page.png") });
   await page.getByRole("button", { name: "Close PDF", exact: true }).click();
   const pending = page.waitForEvent("download");

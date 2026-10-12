@@ -34,7 +34,7 @@ try {
   await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
   observations.build = await page.locator("#retrieval-build").innerText();
-  assert.match(observations.build, /2026-10-12-r28/);
+  assert.match(observations.build, /2026-10-12-r29/);
   await page.locator("#clear-docs").click();
   const quote = "Harbor crane operators must inspect lifting hooks every eight shifts.";
   const fixture = pdfFixture(["Harbor workshop operates the sheltered pier.", quote, "Harbor workshop visitor hours end at sunset."]);
@@ -52,13 +52,13 @@ try {
   assert.match(answer, /PDF page 2 \(physical page numbers\)/);
   await page.getByRole("button", { name: "Copy answer and evidence report" }).click();
   const report = await page.evaluate(() => navigator.clipboard.readText());
-  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-12-r28/);
+  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-12-r29/);
   const downloadPending = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download local Markdown evidence report" }).click();
   const download = await downloadPending;
   const downloadedReport = await fs.readFile(await download.path(), "utf8");
   assert.match(downloadedReport, /PDF page 2/);
-  assert.match(downloadedReport, /2026-10-12-r28/);
+  assert.match(downloadedReport, /2026-10-12-r29/);
   if (evidenceDir) await download.saveAs(path.join(evidenceDir, "keyword-evidence-export.md"));
   observations.keywordAnswer = answer;
   observations.keywordReport = report;
@@ -66,12 +66,17 @@ try {
   await page.locator(".open-pdf-page").click();
   await page.waitForFunction(() => document.querySelector(".pdf-preview [role=status]")?.textContent.includes("PDF page 2 of 3"));
   assert.ok(await page.locator(".pdf-preview canvas").evaluate(canvas => canvas.width > 0 && canvas.height > 0));
+  assert.equal(await page.locator(".pdf-highlight-status").getAttribute("data-match-status"), "matched");
+  assert.equal(await page.locator(".pdf-highlight-overlay rect").count(), 1);
+  assert.equal(await page.locator(".pdf-preview-quote").textContent(), quote);
   await snapshot(page, "02-original-page-preview");
   await page.getByRole("button", { name: "Next page", exact: true }).click();
   await page.waitForFunction(() => document.querySelector(".pdf-preview [role=status]")?.textContent.includes("PDF page 3 of 3"));
+  assert.equal(await page.locator(".pdf-highlight-overlay rect").count(), 0);
   assert.equal(await page.getByRole("button", { name: "Next page", exact: true }).isDisabled(), true);
   await page.getByRole("button", { name: "Previous page", exact: true }).click();
   await page.waitForFunction(() => document.querySelector(".pdf-preview [role=status]")?.textContent.includes("PDF page 2 of 3"));
+  assert.equal(await page.locator(".pdf-highlight-overlay rect").count(), 1);
   await page.keyboard.press("Escape");
   await page.locator(".pdf-preview").waitFor({ state: "detached" });
   assert.equal(await page.locator(".pdf-preview").count(), 0);
@@ -98,6 +103,13 @@ try {
     observations.hybridAnswer = answer; observations.hybridReport = hybridReport;
     observations.modelRequests = [...modelRequests];
     await snapshot(page, "03-actual-minilm-hybrid-pdf");
+    await page.locator(".open-pdf-page").click();
+    await page.waitForFunction(() => document.querySelector(".pdf-highlight-status")?.dataset.matchStatus === "matched");
+    assert.equal(await page.locator(".pdf-highlight-overlay rect").count(), 1);
+    observations.hybridPreview = { quote: await page.locator(".pdf-preview-quote").textContent(), message: await page.locator(".pdf-highlight-status").innerText(), regions: 1 };
+    assert.equal(observations.hybridPreview.quote, quote);
+    await snapshot(page, "04-actual-minilm-highlight");
+    await page.getByRole("button", { name: "Close PDF", exact: true }).click();
   }
   await ask("What is the exact password for the Harbor crane database?");
   assert.equal(await page.locator(".source-card").count(), 0);
