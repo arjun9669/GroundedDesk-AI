@@ -1,0 +1,81 @@
+{
+  "classification": "Synthetic feature reliability regression, not independent factual accuracy",
+  "cases": [
+    {
+      "id": "mixed-pages",
+      "file": "mixed-pages.pdf",
+      "question": "When do depot lights shut down?",
+      "expected": "Quote sunset on physical page 3; page 2 missing-text notice in UI/export",
+      "alert": "1 file(s) added.",
+      "library": "PDF\nmixed-pages.pdf\n75 characters · Your file\nPDF coverage: pages 2 have no searchable text. They may be blank or scanned; review the original. OCR is not included.\nView PDF\n×",
+      "displayed": "YOUR QUESTION\nWhen do depot lights shut down?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Depot lights shut down at sunset.\n\nSOURCE EVIDENCE\n[1]\nmixed-pages.pdf\n\nPDF page 3 (physical page numbers)\n\nDepot hooks require inspection weekly. Depot lights shut down at sunset.\n\nPDF coverage: pages 2 have no searchable text. They may be blank or scanned; review the original. OCR is not included.\n\nOpen cited PDF page ↗Locate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> When do depot lights shut down?\r\n\r\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r33`\r\n\r\n## Answer\r\n\r\n\r\n> [1] Depot lights shut down at sunset.\r\n\r\n## Source evidence\r\n\r\n### [1] mixed\\-pages\\.pdf\r\n\r\n**File:** mixed\\-pages\\.pdf\r\n\r\n**Source location:** PDF page 3 \\(physical page numbers\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.2586\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Depot lights shut down at sunset.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> Depot hooks require inspection weekly.\r\n> \r\n> \r\n> \r\n> Depot lights shut down at sunset.\r\n\r\n**PDF extraction notice:** PDF coverage: pages 2 have no searchable text\\. They may be blank or scanned; review the original\\. OCR is not included\\.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n",
+      "status": "PASS"
+    },
+    {
+      "id": "repeated",
+      "file": "repeated-permit.pdf",
+      "question": "Who approves depot permits?",
+      "expected": "Ambiguous location, no PDF page link",
+      "alert": "1 file(s) added.",
+      "library": "PDF\nrepeated-permit.pdf\n104 characters · Your file\nView PDF\n×",
+      "displayed": "YOUR QUESTION\nWho approves depot permits?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Depot permits require approval from the Shift Lead.\n\nSOURCE EVIDENCE\n[1]\nrepeated-permit.pdf\n\nLocation ambiguous: Quotation and context occur more than once.\n\nDepot permits require approval from the Shift Lead. Depot permits require approval from the Shift Lead.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "status": "PASS"
+    },
+    {
+      "id": "cross-page",
+      "file": "cross-page.pdf",
+      "question": "What approval is needed before depot release?",
+      "expected": "Lexical inventory quotation spans physical pages 1 and 2",
+      "alert": "1 file(s) added.",
+      "library": "PDF\ncross-page.pdf\n131 characters · Your file\nView PDF\n×",
+      "displayed": "2 literal candidate controls from 2 matching of 2 inspected policy sections. Rule-based categories only; no verified compliance or complete coverage.\n\n[1] G-01 · cross-page.pdf\n\nRelease ownership and approval · Potential release gate\n\nG-01 Release authority Depot release requires approval from the Shift Lead.\n\nPDF pages 1, 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n[2] G-02 · cross-page.pdf\n\nRequired review evidence · Potential release gate\n\nG-02 Evidence Before release assemble a rollback plan.\n\nPDF page 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n\n0 sections outside scan cap; 0 quoted candidates beyond output/per-section caps; 0 instruction-shaped sections excluded. This is not a complete policy audit. Verify full sections and exceptions.",
+      "status": "PASS"
+    },
+    {
+      "id": "columns",
+      "file": "two-columns.pdf",
+      "expected": "Layout caution and original-page preview; column meaning/order NOT reconstructed",
+      "alert": "1 file(s) added.",
+      "library": "PDF\ntwo-columns.pdf\n51 characters · Your file\nPDF layout caution: pages 1 contain widely separated text rows. Column order or table associations may be ambiguous. Check the original; layout is not reconstructed.\nView PDF\n×",
+      "layoutInterpretation": "Not supported; extraction follows content-stream order. Original PDF inspection is required.",
+      "status": "PASS"
+    },
+    {
+      "id": "table",
+      "file": "table.pdf",
+      "expected": "Layout caution; row/cell associations NOT guaranteed",
+      "alert": "1 file(s) added.",
+      "library": "PDF\ntable.pdf\n49 characters · Your file\nPDF layout caution: pages 1 contain widely separated text rows. Column order or table associations may be ambiguous. Check the original; layout is not reconstructed.\nView PDF\n×",
+      "layoutInterpretation": "Not supported; extraction follows content-stream order. Original PDF inspection is required.",
+      "status": "PASS"
+    },
+    {
+      "id": "image-only",
+      "file": "image-only.pdf",
+      "expected": "No document indexed; scanned/empty OCR guidance",
+      "alert": "0 file(s) added. Issues: image-only.pdf: No searchable text was found in this PDF. It may be scanned or empty. Use OCR on your device or upload a TXT/Markdown version. OCR is not included here.",
+      "library": "No documents loaded yet. Choose files or restore the sample documents by reloading.",
+      "status": "PASS"
+    },
+    {
+      "id": "damaged",
+      "file": "damaged.pdf",
+      "expected": "No document indexed; named-file damaged-PDF guidance",
+      "alert": "0 file(s) added. Issues: damaged.pdf: This PDF is damaged or is not a valid PDF. Export a fresh PDF or use a TXT/Markdown version.",
+      "library": "No documents loaded yet. Choose files or restore the sample documents by reloading.",
+      "status": "PASS"
+    },
+    {
+      "id": "locked",
+      "file": "locked-depot.pdf",
+      "expected": "No document indexed; unlock-copy guidance; no password entry",
+      "alert": "0 file(s) added. Issues: locked-depot.pdf: This PDF is password-protected. Unlock a copy on your device, then upload it. No password is requested or stored here.",
+      "library": "No documents loaded yet. Choose files or restore the sample documents by reloading.",
+      "status": "PASS"
+    }
+  ],
+  "browser": "154.0.8037.98",
+  "build": "Loaded retrieval build: 2026-10-12-r33",
+  "status": "PASS"
+}

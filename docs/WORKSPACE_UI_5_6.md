@@ -1,6 +1,6 @@
-# GroundedDesk 5.6 / r32 — Workspace redesign
+# GroundedDesk 5.6 / r33 — Workspace redesign
 
-Retrieval build `2026-10-12-r32`. This is a presentation and interaction release; retrieval/ranking, source extraction, refusal rules and document-processing limits are unchanged. The app remains free and local, with its existing public model/library downloads.
+Retrieval build `2026-10-12-r33`. This is a presentation and interaction release; retrieval/ranking, source extraction, refusal rules and document-processing limits are unchanged. The app remains free and local, with its existing public model/library downloads.
 
 ## What changed
 
@@ -10,7 +10,7 @@ The question composer sits above the answer, and a 1440×688 browser check verif
 
 The new presentation module only manages navigation, visibility, focus and mode labels. It never edits documents or result data. Existing evidence guards still run before display/export. PDF navigation/highlight matching retains its previous conservative fallback; this release does not add partial-line highlighting.
 
-![Question box visible in a short laptop window](evidence/r32/workspace/04-short-laptop-start.png)
+![Question box visible in a short laptop window](evidence/r33/workspace/01-desktop-start.png)
 
 ## Actual validation
 
@@ -21,7 +21,7 @@ The new presentation module only manages navigation, visibility, focus and mode 
 - The Q&A smoke uses actual `Xenova/all-MiniLM-L6-v2` local WASM, Hybrid selected, Qwen off. Supported fictional PIN values and operational rotation questions still answer in Keyword and actual Hybrid. The mode badge reflects Hybrid activation and return to Keyword after document replacement.
 - One intake test initially tried to type into the inactive Ask panel after a policy case; its navigation was updated to operate the actual tabs. A resize check was updated to await the browser's responsive event. Inputs and expected behaviors were unchanged. These were feature-harness updates, not benchmark-rubric changes.
 
-[Workspace observations](evidence/r32/workspace/workspace-observations.json) · [Actual MiniLM Q&A and mode controls](evidence/r32/qa/browser-observations.json) · [Research/Comparison](evidence/r32/research/research-browser-observations.json) · [Intake](evidence/r32/reliability/reliability-observations.json) · [Highlights](evidence/r32/highlight/highlight-observations.json) · [Unit log](evidence/r32/unit-tests.txt) · [Offline toy log](evidence/r32/offline-evaluation.txt)
+[Workspace observations](evidence/r33/workspace/workspace-observations.json) · [Actual MiniLM Q&A and mode controls](evidence/r33/qa/browser-observations.json) · [Research/Comparison](evidence/r33/research/research-browser-observations.json) · [Intake](evidence/r33/reliability/reliability-observations.json) · [Highlights](evidence/r33/highlight/highlight-observations.json) · [Unit log](evidence/r33/unit-tests.txt) · [Offline toy log](evidence/r33/offline-evaluation.txt)
 
 ## Unchanged Cobalt16 regression
 
@@ -31,10 +31,14 @@ The original five source/key/rubric hashes were verified, then all sixteen uncha
 
 The r29 first-look remains **15 PASS / 0 PARTIAL / 1 FAIL**; r30 remains **16 PASS / 0 PARTIAL / 0 FAIL**. All earlier Atlas, Meridian, Lantern and Aster scores and evidence are untouched. No full real-model retest of those older sets is claimed.
 
-[Every exact answer and quotation](evidence/r32/cobalt16/REGRESSION_REPORT.md) · [JSON scorecard](evidence/r32/cobalt16/scorecard.json) · [Raw browser capture and model requests](evidence/r32/cobalt16/browser-observations.json) · [Original first-look and frozen inputs](evidence/r29/cobalt16/FIRST_LOOK_REPORT.md)
+[Every exact answer and quotation](evidence/r33/cobalt16/REGRESSION_REPORT.md) · [JSON scorecard](evidence/r33/cobalt16/scorecard.json) · [Raw browser capture and model requests](evidence/r33/cobalt16/browser-observations.json) · [Original first-look and frozen inputs](evidence/r29/cobalt16/FIRST_LOOK_REPORT.md)
 
 Full per-case screenshots and exports are retained in the local release evidence bundle. Selected UI screenshots and machine-readable captures are committed here to avoid duplicating every historical fixture and screenshot in Git.
 
 ## Pending
 
 Physical-phone/browser coverage, character-level PDF matching inside partial text runs, OCR and layout/table reconstruction remain pending. No paid design service, font download, backend, API account or authentication was introduced.
+
+## r33 visual refinement
+
+The dark forest-green library anchors a warm paper workspace. Editorial headings, original SVG illustration, refined upload cards, selected-tab contrast and source cards add personality without external fonts or assets. Composer still fits at 1440×688. The PDF highlighting harness now waits for the loaded footer before its unchanged build assertion; one initial attempt caught the loading placeholder. The subsequent full run passed. Answers, sources and exports match r32 apart from runtime build.
