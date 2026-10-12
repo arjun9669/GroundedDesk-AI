@@ -16,7 +16,7 @@ try {
   const errors=[];page.on("pageerror",e=>errors.push(e.message));
   await page.goto(process.env.TEST_URL||"http://127.0.0.1:8765/",{waitUntil:"domcontentloaded"});
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="3");
-  observed.build=await page.locator("#retrieval-build").innerText();assert.match(observed.build,/2026-10-12-r32/);
+  observed.build=await page.locator("#retrieval-build").innerText();assert.match(observed.build,/2026-10-12-r33/);
   assert.equal(await page.locator("#model-settings").getAttribute("open"),null);
   assert.equal(await page.locator("#workspace-ask").isVisible(),true);
   assert.equal(await page.locator("#workspace-compare").isVisible(),false);
@@ -55,7 +55,7 @@ try {
   assert.match(await page.locator(".source-metadata").innerText(),/not a confidence score/);
   await page.locator(".source-metadata > summary").click();
   await page.getByRole("button",{name:"Copy answer and evidence report"}).click();
-  const report=await page.evaluate(()=>navigator.clipboard.readText());assert.ok(report.includes(quote));assert.match(report,/2026-10-12-r32/);
+  const report=await page.evaluate(()=>navigator.clipboard.readText());assert.ok(report.includes(quote));assert.match(report,/2026-10-12-r33/);
   if(dir) {await fs.writeFile(path.join(dir,"qa-report.md"),report);await page.screenshot({path:path.join(dir,"02-desktop-answer.png"),fullPage:true});}
   await page.locator("#tab-compare").click();await page.locator("#tab-ask").click();assert.equal(await page.locator(".answer-box").innerText(),answer);
   await upload("garden-notes.txt","Garden lighting inspections occur every twelve days.");await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="2");

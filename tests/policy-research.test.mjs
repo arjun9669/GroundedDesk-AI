@@ -97,7 +97,7 @@ test("5.1 validates selected document and scope while leaving Keyword mode uncha
   assert.ok(report.answered);
   const after=answerQuestion(question,index);
   assert.deepEqual(after,before,"5.1 must not mutate shared BM25 chunks or answer behavior");
-  assert.equal(RETRIEVAL_BUILD,"2026-10-12-r32");
+  assert.equal(RETRIEVAL_BUILD,"2026-10-12-r33");
 });
 
 test("Pages deployment is gated on successful main CI and deploys only the tested SHA",()=>{

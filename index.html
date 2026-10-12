@@ -4,11 +4,11 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="color-scheme" content="light"/>
-<meta name="theme-color" content="#f5f7f8"/>
+<meta name="theme-color" content="#f4f1ea"/>
 <meta name="description" content="GroundedDesk — a free, local document workspace. Add files, ask questions, and check answers against the original evidence."/>
 <title>GroundedDesk AI 5.6 | Your document workspace</title>
-<link rel="stylesheet" href="./styles.css?v=20261012-r32"/>
-<script defer type="module" src="./app.mjs?v=20261012-r32"></script>
+<link rel="stylesheet" href="./styles.css?v=20261012-r33"/>
+<script defer type="module" src="./app.mjs?v=20261012-r33"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-workspace">Skip to workspace</a>
@@ -19,10 +19,10 @@
 <span class="private-pill"><span class="private-dot"></span>Files stay in this tab</span>
 </header>
 <main id="workbench" class="workbench">
-<div class="workspace-intro"><div><p class="micro-label">A LITTLE CLARITY, FROM YOUR DOCUMENTS</p><h1 id="hero-title">From question to evidence.</h1><p>Add your files. Find an answer. See where it came from.</p></div><ol class="workspace-steps" aria-label="Getting started"><li><span>1</span>Add documents</li><li><span>2</span>Ask a question</li><li><span>3</span>Check the source</li></ol></div>
+<div class="workspace-intro"><div><p class="micro-label">YOUR PERSONAL RESEARCH DESK</p><h1 id="hero-title">Good questions.<br/><span class="hero-accent">Grounded answers.</span></h1><p>Turn your documents into a clearer picture. Every answer comes with evidence to inspect.</p></div><ol class="workspace-steps" aria-label="Getting started"><li><span>01</span>Add files</li><li><span>02</span>Ask anything</li><li><span>03</span>Follow the evidence</li></ol></div>
 <div class="workspace-grid">
 <aside class="panel library" aria-labelledby="library-title">
-            <div class="panel-title"><div><p class="micro-label">YOUR DOCUMENTS</p><h3 id="library-title">Documents <span id="doc-count" class="count-badge">0</span></h3></div><div class="library-actions"><button type="button" id="toggle-documents" class="text-button" aria-controls="library-content" aria-expanded="true">Hide files</button><button type="button" class="text-button" id="clear-docs">Clear all</button></div></div><div id="library-content">
+            <div class="panel-title"><div><p class="micro-label">SOURCE LIBRARY</p><h3 id="library-title">Documents <span id="doc-count" class="count-badge">0</span></h3></div><div class="library-actions"><button type="button" id="toggle-documents" class="text-button" aria-controls="library-content" aria-expanded="true">Hide files</button><button type="button" class="text-button" id="clear-docs">Clear all</button></div></div><div id="library-content">
             <label class="dropzone" for="file-input" id="dropzone" tabindex="0">
               <span class="upload-icon" aria-hidden="true">↥</span><strong>Add your documents</strong>
               <small>PDF, TXT, MD · 5 MB max per file</small>
@@ -75,8 +75,8 @@
         </section></details></div></details>
 <section id="workspace-ask" data-workspace="ask" role="tabpanel" aria-labelledby="tab-ask" tabindex="0" class="panel chat" aria-labelledby="chat-title">
             <div class="panel-title chat-heading">
-              <div><p class="micro-label">ASK & VERIFY</p><h3 id="chat-title">Ask a question</h3></div>
-              <span class="ready-badge">Answers with source evidence</span>
+              <div><p class="micro-label">QUESTION → EVIDENCE</p><h3 id="chat-title">Ask a question</h3></div>
+              <span class="ready-badge">Exact quotes. Traceable sources.</span>
             </div>
             <form id="query-form" class="query-form">
               <label for="query-input" class="sr-only">Question about your documents</label>
@@ -89,9 +89,9 @@
             </details>
             <div class="answer-space" id="answer-space" aria-live="polite">
               <div class="initial-state" id="initial-state">
-                <div class="initial-icon" aria-hidden="true">⌁</div>
-                <h4>Your answer starts here.</h4>
-                <p>Ask a question above, or try an example below. Open a citation to check the original source.</p>
+                <div class="initial-icon" aria-hidden="true"><svg viewBox="0 0 180 105" fill="none"><rect x="22" y="18" width="60" height="74" rx="8" fill="#ece7dc" stroke="#c8c0af" transform="rotate(-12 22 18)"/><rect x="64" y="8" width="65" height="82" rx="8" fill="#fffdf8" stroke="#bdb7a9"/><path d="M77 26h38M77 36h30M77 46h38M77 56h23" stroke="#bcb8ab" stroke-width="3" stroke-linecap="round"/><circle cx="127" cy="66" r="22" fill="#e6eadb" stroke="#557143" stroke-width="2"/><path d="m119 66 6 6 11-13" stroke="#557143" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="m148 23 2-7 2 7 7 2-7 2-2 7-2-7-7-2z" fill="#b87a39"/></svg></div>
+                <h4>A little curiosity goes a long way.</h4>
+                <p>Your next insight is in your files. Ask above, then follow the numbered citations back to the source.</p>
                 <div id="sample-questions"><span class="suggestions-label">TRY A QUESTION</span>
                 <div class="suggestions">
                   <button class="suggestion" data-question="How should an AI use case be evaluated before launch?">How should we evaluate AI before launch? ↗</button>

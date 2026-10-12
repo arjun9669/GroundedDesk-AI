@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6 / r33 — A more distinctive research desk (2026-10-12)
+
+- Added a dark source library, warm paper palette, editorial headings, original inline SVG illustration, refined upload cards, clearer active tabs and stronger answer/source presentation. Composer remains visible at 1440×688; mobile controls and keyboard navigation retained. No paid assets or services.
+- 253 unit tests, offline toy checks and six Chrome feature scripts pass. Actual MiniLM Cobalt16 in-sample regression remains 16 PASS / 0 PARTIAL / 0 FAIL; answers, sources and reports match r32 apart from build. Historical results unchanged.
+- Highlight test now awaits the loaded footer before asserting its build, resolving an initialization race. README, screenshots and [validation evidence](docs/WORKSPACE_UI_5_6.md) updated.
+
 ### 5.6 / r32 — Keep the question box within reach (2026-10-12)
 
 - Moved the question composer above answers so short laptop windows can start a query without scrolling. DOM and visual order agree for keyboard users. Added a 1440×688 viewport check and clearer empty-state wording.

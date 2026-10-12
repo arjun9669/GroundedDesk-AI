@@ -1,0 +1,51 @@
+[
+  {
+    "id": "unique",
+    "quote": "Depot drivers inspect seals every morning.",
+    "expected": "matched",
+    "regions": 1,
+    "sha256": "8c2890e86c60f08499ca73ce26b7985accb49ea2c8be4fb4ae5f0644cc19ef8b"
+  },
+  {
+    "id": "wrapped",
+    "quote": "Depot drivers inspect seals every morning.",
+    "expected": "matched",
+    "regions": 2,
+    "sha256": "6fbe81070578921b05e5a0816436fdbd18dfc774c28ad155417ffe361e2baa06"
+  },
+  {
+    "id": "repeated",
+    "quote": "Inspect seals.",
+    "expected": "ambiguous",
+    "regions": 0,
+    "sha256": "2a8118c3cbfee3256af535e9065a1ae3485e5af3e4b494cb508fc45ebfc537f4"
+  },
+  {
+    "id": "partial-run",
+    "quote": "Inspect seals.",
+    "expected": "partial-run",
+    "regions": 0,
+    "sha256": "b713330328161636ba2eb1ccf8886db779c51c109e7eb0caa024f37a6bc68c0c"
+  },
+  {
+    "id": "cross-page",
+    "quote": "Inspect seals. Record damage.",
+    "expected": "not-found",
+    "regions": 0,
+    "sha256": "e0ae3a029b25fd76530c7ebcb9a5b35fe1640c4cb3af1b454b1d9a5f3f254541"
+  },
+  {
+    "id": "missing",
+    "quote": "No matching statement.",
+    "expected": "not-found",
+    "regions": 0,
+    "sha256": "b40ad20b5f9db469a8e6d6d55bd2ba0abf333dd9420d4c090a0714ef10a26565"
+  },
+  {
+    "id": "ordinary-view",
+    "quote": "",
+    "expected": "none",
+    "regions": 0,
+    "sha256": "b40ad20b5f9db469a8e6d6d55bd2ba0abf333dd9420d4c090a0714ef10a26565"
+  }
+]
