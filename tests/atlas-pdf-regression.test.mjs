@@ -128,11 +128,11 @@ test("Cache-busted entry and module imports advertise the current retrieval buil
   const html=readFileSync(resolve(root,"index.html"),"utf8");
   const app=readFileSync(resolve(root,"app.mjs"),"utf8");
   const retrieval=readFileSync(resolve(root,"retrieval.mjs"),"utf8");
-  assert.match(html,/src="\.\/app\.mjs\?v=20261012-r31"/);
+  assert.match(html,/src="\.\/app\.mjs\?v=20261012-r32"/);
   assert.match(html,/id="retrieval-build"/);
-  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261012-r31"/);
+  assert.match(app,/from "\.\/retrieval\.mjs\?v=20261012-r32"/);
   assert.match(app,/Loaded retrieval build:/);
-  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-12-r31"/);
+  assert.match(retrieval,/const RETRIEVAL_BUILD = "2026-10-12-r32"/);
 });
 
 test("user-reported Atlas CEO salary query refuses instead of citing organization names in PDF headers",()=>{

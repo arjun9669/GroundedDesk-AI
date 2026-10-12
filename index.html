@@ -7,8 +7,8 @@
 <meta name="theme-color" content="#f5f7f8"/>
 <meta name="description" content="GroundedDesk — a free, local document workspace. Add files, ask questions, and check answers against the original evidence."/>
 <title>GroundedDesk AI 5.6 | Your document workspace</title>
-<link rel="stylesheet" href="./styles.css?v=20261012-r31"/>
-<script defer type="module" src="./app.mjs?v=20261012-r31"></script>
+<link rel="stylesheet" href="./styles.css?v=20261012-r32"/>
+<script defer type="module" src="./app.mjs?v=20261012-r32"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-workspace">Skip to workspace</a>
@@ -78,6 +78,11 @@
               <div><p class="micro-label">ASK & VERIFY</p><h3 id="chat-title">Ask a question</h3></div>
               <span class="ready-badge">Answers with source evidence</span>
             </div>
+            <form id="query-form" class="query-form">
+              <label for="query-input" class="sr-only">Question about your documents</label>
+              <textarea id="query-input" rows="2" maxlength="600" placeholder="Ask anything about your documents..."></textarea>
+              <div class="query-footer"><span>Answers come from your documents. Check the sources.</span><button type="submit" id="ask-button">Find an answer <span aria-hidden="true">↗</span></button></div>
+            </form>
             <details id="chat-history" class="chat-history">
               <summary>Recent questions in this tab <span id="history-count">0</span></summary>
               <ul id="history-list" aria-label="Recent questions"></ul>
@@ -85,8 +90,8 @@
             <div class="answer-space" id="answer-space" aria-live="polite">
               <div class="initial-state" id="initial-state">
                 <div class="initial-icon" aria-hidden="true">⌁</div>
-                <h4>What would you like to know?</h4>
-                <p>Ask about your documents. Read the answer, then open a citation to check the original source.</p>
+                <h4>Your answer starts here.</h4>
+                <p>Ask a question above, or try an example below. Open a citation to check the original source.</p>
                 <div id="sample-questions"><span class="suggestions-label">TRY A QUESTION</span>
                 <div class="suggestions">
                   <button class="suggestion" data-question="How should an AI use case be evaluated before launch?">How should we evaluate AI before launch? ↗</button>
@@ -96,11 +101,7 @@
               </div>
               <div class="answer-result" id="answer-result" hidden></div>
             </div>
-            <form id="query-form" class="query-form">
-              <label for="query-input" class="sr-only">Question about your documents</label>
-              <textarea id="query-input" rows="2" maxlength="600" placeholder="Ask anything about your documents..."></textarea>
-              <div class="query-footer"><span>Answers come from your documents. Check the sources.</span><button type="submit" id="ask-button">Find an answer <span aria-hidden="true">↗</span></button></div>
-            </form>
+            
           </section>
 <section id="workspace-compare" data-workspace="compare" role="tabpanel" aria-labelledby="tab-compare" tabindex="0" class="workspace-tool-panel" hidden><div class="tool-intro"><p class="micro-label">SIDE BY SIDE</p><h2>Find the differences. Keep the evidence.</h2><p>Choose two documents and a topic. Compare their quoted passages side by side.</p><small>Comparison uses keyword search; local AI search applies to Ask.</small></div><form id="compare-form" class="research-panel">
               <h3>Compare two documents</h3>
