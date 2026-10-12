@@ -1,5 +1,5 @@
 // Presentation only. Do not change documents, retrieval, answers or report data.
-import { closePDFPreview } from "./pdf-preview.mjs?v=20261012-r35";
+import { closePDFPreview } from "./pdf-preview.mjs?v=20261012-r36";
 export function showWorkspace(name, { result = false } = {}) {
   const tab = document.querySelector(`[data-view="${name}"]`);
   if (!tab) return;
@@ -46,4 +46,65 @@ export function initWorkspaceUI() {
   new MutationObserver(sync).observe(document.querySelector("#semantic-status"), { childList: true, subtree: true });
   document.querySelector('a[href="#about"]').addEventListener("click", () => { document.querySelector("#help-details").open = true; });
   sync();
+  initQuickGuide();
+}
+
+function initQuickGuide() {
+  const key = "groundeddesk-guide-dismissed-v1";
+  const invite = document.querySelector("#guide-invitation");
+  const dialog = document.querySelector("#quick-guide");
+  let step = 0;
+  let returnFocus = null;
+  const remember = () => { invite.hidden = true; try { localStorage.setItem(key, "1"); } catch { /* The guide still works when storage is unavailable. */ } };
+  try { invite.hidden = localStorage.getItem(key) === "1"; } catch { /* Show the invitation without requiring storage. */ }
+  const render = () => {
+    for (const panel of dialog.querySelectorAll("[data-guide-step]")) panel.hidden = Number(panel.dataset.guideStep) !== step;
+    document.querySelector("#guide-progress").textContent = `Step ${step + 1} of 4`;
+    document.querySelector("#guide-back").disabled = step === 0;
+    document.querySelector("#guide-next").textContent = step === 3 ? "Start exploring" : "Next";
+  };
+  const open = () => {
+    returnFocus = document.activeElement;
+    closePDFPreview({ restoreFocus: false });
+    step = 0; render(); dialog.showModal();
+    document.querySelector("#guide-title").focus();
+  };
+  const close = target => { returnFocus = target || returnFocus; dialog.close(); };
+  document.querySelector("#open-guide").addEventListener("click", open);
+  document.querySelector("#start-guide").addEventListener("click", open);
+  document.querySelector("#dismiss-guide").addEventListener("click", () => { remember(); document.querySelector("#open-guide").focus({ preventScroll: true }); });
+  document.querySelector("#close-guide").addEventListener("click", () => close());
+  document.querySelector("#guide-next").addEventListener("click", () => {
+    if (step === 3) { close(document.querySelector("#open-guide")); return; }
+    step++; render(); document.querySelector("#guide-title").focus();
+  });
+  document.querySelector("#guide-back").addEventListener("click", () => { step = Math.max(0, step - 1); render(); document.querySelector("#guide-title").focus(); });
+  dialog.addEventListener("close", () => {
+    remember();
+    const target = returnFocus?.isConnected && returnFocus.getClientRects().length ? returnFocus : document.querySelector("#open-guide");
+    target.focus({ preventScroll: true });
+  });
+  dialog.addEventListener("keydown", event => {
+    if (event.key !== "Tab") return;
+    const stops = [...dialog.querySelectorAll("button:not(:disabled)")].filter(el => el.getClientRects().length);
+    const first = stops[0], last = stops.at(-1);
+    if (event.shiftKey && (document.activeElement === first || document.activeElement.id === "guide-title")) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  });
+  for (const button of dialog.querySelectorAll("[data-guide-action]")) button.addEventListener("click", () => {
+    const action = button.dataset.guideAction;
+    let target;
+    if (action === "files") {
+      if (document.querySelector("#library-content").hidden) document.querySelector("#toggle-documents").click();
+      target = document.querySelector("#dropzone");
+    } else if (action === "settings") {
+      document.querySelector("#model-settings").open = true;
+      target = document.querySelector("#retrieval-mode");
+    } else {
+      showWorkspace(action);
+      target = document.querySelector(`#tab-${action}`);
+    }
+    close(target);
+    target.scrollIntoView({ block: "center", behavior: "instant" });
+  });
 }

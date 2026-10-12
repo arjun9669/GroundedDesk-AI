@@ -381,3 +381,31 @@ footer .brand strong { color: #627255; }
 .upload-progress { width: 100%; height: 7px; margin-top: 8px; accent-color: #b4cc83; }
 .dropzone[aria-disabled=true] { opacity: .7; cursor: wait; }
 @media(max-width:480px) { .document-actions button, .library .document-actions .text-button { min-height: 44px; font-size: 11px; } }
+
+.header-links { align-items: center; }
+#open-guide { color: #45613b; background: #edf1df; border-color: #d7dfc5; font-size: 11px; min-height: 34px; padding: 7px 11px; }
+.guide-invitation { border: 1px solid #dfe4cd; background: #f2f5e6; padding: 12px 16px; border-radius: 10px; margin: 16px auto 20px; max-width: 410px; font-size: 12px; color: #4a603d; }
+.guide-invitation>div { display: flex; justify-content: center; gap: 8px; margin-top: 10px; }
+.guide-invitation button { font-size: 11px; min-height: 34px; padding: 7px 12px; }
+#start-guide { color: white; background: #2d4932; border-color: #2d4932; }
+#dismiss-guide { background: transparent; border-color: transparent; }
+.quick-guide { width: min(660px,94vw); max-height: 90dvh; overflow: auto; border: 1px solid #cfd6bd; border-radius: 20px; padding: 25px; color: #3c4e32; background: #fcfbf5; box-shadow: 0 20px 70px #19332630; }
+.quick-guide::backdrop { background: #1d342bb3; }
+.guide-heading { display: flex; align-items: start; gap: 18px; justify-content: space-between; }
+.guide-heading h2 { font-family: Georgia,serif; font-size: 28px; font-weight: 400; line-height: 1.25; }
+.guide-heading button { white-space: nowrap; font-size: 11px; }
+.guide-progress { font-size: 11px; letter-spacing: .8px; color: #5d7246; border-bottom: 1px solid #dce2ce; padding-bottom: 14px; }
+.guide-number { display: inline-block; color: #7a8e5d; font: 30px Georgia,serif; margin: 7px 0 12px; }
+#guide-pages h3 { font-size: 22px; color: #354c2e; margin-bottom: 15px; }
+#guide-pages p { font-size: 13px; line-height: 1.85; color: #5b6852; }
+#guide-pages button { color: #395c2e; background: #edf2df; border-color: #cfddbc; }
+.guide-tools { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; }
+.guide-tools>div { padding: 13px; border: 1px solid #dbe3c9; border-radius: 11px; background: #f5f7eb; }
+.guide-tools p { font-size: 12px !important; margin-bottom: 0; }
+.guide-search-note { border-left: 3px solid #879f64; background: #f0f4e5; padding: 16px; border-radius: 0 10px 10px 0; margin-bottom: 16px; }
+.guide-search-note strong { font-size: 13px; }
+.guide-search-note p:last-child { margin-bottom: 0; }
+.guide-footer { display: flex; justify-content: space-between; padding: 20px 0 0; margin-top: 20px; border-top: 1px solid #dce2ce; }
+#guide-next { color: white; background: #2d4932; border-color: #2d4932; min-width: 95px; }
+.guide-preference { color: #737961; font-size: 10px; line-height: 1.7; margin-bottom: 0; }
+@media(max-width:480px) { .header-links a[href="#about"] { display: none; } #open-guide { min-height: 44px; } .quick-guide { padding: 18px; border-radius: 14px; } .guide-heading { gap: 9px; } .guide-heading h2 { font-size: 24px; } .guide-heading button { padding: 8px; font-size: 10px; } .guide-tools { grid-template-columns: minmax(0,1fr); } .guide-tools>div { padding: 10px 13px; } #guide-pages h3 { font-size: 20px; } #guide-pages p { font-size: 12px; } .quick-guide button, .guide-invitation button { min-height: 44px; } }

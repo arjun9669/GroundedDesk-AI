@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6 / r36 — An optional first-use guide (2026-10-12)
+
+- Added a four-step Quick guide for adding files, choosing Ask/Compare/Research, search options and checking/exporting evidence. A dismissible invitation sits in the empty answer area; header access always remains. No automatic dialog, model download or query submission.
+- Native modal, keyboard containment, Escape/focus restoration, responsive layout and explicit shortcuts to files, tools or settings. Only one local dismissed-guide preference is stored; storage failure is handled. Existing answers and form state remain intact.
+- 253 unit tests, offline toy evaluation and seven installed Chrome feature scripts pass, including actual MiniLM PDF replacement controls. Historical benchmark scores remain unchanged. README and [scope/evidence](docs/QUICK_GUIDE_5_6.md) updated.
+
 ### 5.6 / r35 — Clearer uploads and safe file replacement (2026-10-12)
 
 - Full filenames, Markdown type labels, PDF page counts and explicit View PDF / Replace file / Remove actions. Per-file waiting, reading, actual PDF page progress, ready and error states; no simulated percentages.
