@@ -69,7 +69,13 @@ function initQuickGuide() {
     step = 0; render(); dialog.showModal();
     document.querySelector("#guide-title").focus();
   };
-  const close = target => { returnFocus = target || returnFocus; dialog.close(); };
+  const close = destination => {
+    returnFocus = destination || returnFocus;
+    dialog.close();
+    remember();
+    const target = returnFocus?.isConnected && returnFocus.getClientRects().length ? returnFocus : document.querySelector("#open-guide");
+    target.focus({ preventScroll: true });
+  };
   document.querySelector("#open-guide").addEventListener("click", open);
   document.querySelector("#start-guide").addEventListener("click", open);
   document.querySelector("#dismiss-guide").addEventListener("click", () => { remember(); document.querySelector("#open-guide").focus({ preventScroll: true }); });
@@ -79,11 +85,7 @@ function initQuickGuide() {
     step++; render(); document.querySelector("#guide-title").focus();
   });
   document.querySelector("#guide-back").addEventListener("click", () => { step = Math.max(0, step - 1); render(); document.querySelector("#guide-title").focus(); });
-  dialog.addEventListener("close", () => {
-    remember();
-    const target = returnFocus?.isConnected && returnFocus.getClientRects().length ? returnFocus : document.querySelector("#open-guide");
-    target.focus({ preventScroll: true });
-  });
+  dialog.addEventListener("cancel", event => { event.preventDefault(); close(); });
   dialog.addEventListener("keydown", event => {
     if (event.key !== "Tab") return;
     const stops = [...dialog.querySelectorAll("button:not(:disabled)")].filter(el => el.getClientRects().length);

@@ -18,3 +18,5 @@ An initial guide test asserted dismissal before the native dialog close event co
 [Guide/workspace observations](evidence/r36/workspace/workspace-observations.json) · [Actual MiniLM controls](evidence/r36/qa/browser-observations.json) · [Document lifecycle](evidence/r36/library/library-observations.json) · [Unit results](evidence/r36/unit-tests.txt)
 
 ![Tool guide](evidence/r36/workspace/05-guide-tools.png)
+
+The first main CI browser run caught delayed guide-close focus restoration stealing focus from the subsequent tab action, so Pages deployment was skipped. Guide closure now saves the preference and restores focus synchronously; native Escape follows the same path. This product race was corrected before publication.
