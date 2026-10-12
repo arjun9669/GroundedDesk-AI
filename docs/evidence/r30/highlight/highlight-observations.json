@@ -1,0 +1,86 @@
+{
+  "kind": "synthetic PDF highlight feature regression; not independent accuracy",
+  "cases": [
+    {
+      "id": "unique",
+      "quote": "Depot drivers inspect seals every morning.",
+      "status": "matched",
+      "regions": 1,
+      "message": "Quotation matched on this page. Yellow regions mark approximate text-run bounds; verify the original text.",
+      "outcome": "PASS"
+    },
+    {
+      "id": "wrapped",
+      "quote": "Depot drivers inspect seals every morning.",
+      "status": "matched",
+      "regions": 2,
+      "message": "Quotation matched on this page. Yellow regions mark approximate text-run bounds; verify the original text.",
+      "outcome": "PASS"
+    },
+    {
+      "id": "repeated",
+      "quote": "Inspect seals.",
+      "status": "ambiguous",
+      "regions": 0,
+      "message": "Quotation appears more than once on this page. No highlight is shown; review the source quotation manually.",
+      "outcome": "PASS"
+    },
+    {
+      "id": "partial-run",
+      "quote": "Inspect seals.",
+      "status": "partial-run",
+      "regions": 0,
+      "message": "Quotation could not be highlighted reliably on this page. No highlight is shown; review the source quotation manually. It may span pages, occupy part of a text run or use an unsupported layout.",
+      "outcome": "PASS"
+    },
+    {
+      "id": "cross-page",
+      "quote": "Inspect seals. Record damage.",
+      "status": "not-found",
+      "regions": 0,
+      "message": "Quotation could not be highlighted reliably on this page. No highlight is shown; review the source quotation manually. It may span pages, occupy part of a text run or use an unsupported layout.",
+      "outcome": "PASS"
+    },
+    {
+      "id": "missing",
+      "quote": "No matching statement.",
+      "status": "not-found",
+      "regions": 0,
+      "message": "Quotation could not be highlighted reliably on this page. No highlight is shown; review the source quotation manually. It may span pages, occupy part of a text run or use an unsupported layout.",
+      "outcome": "PASS"
+    },
+    {
+      "id": "ordinary-view",
+      "quote": "",
+      "status": "none",
+      "regions": 0,
+      "message": "Original page view. Open a cited page from source evidence to locate its quotation.",
+      "outcome": "PASS"
+    }
+  ],
+  "browser": "154.0.8037.98",
+  "build": "Loaded retrieval build: 2026-10-12-r30",
+  "mobileUpload": {
+    "outcome": "PASS",
+    "filename": "mobile-depot.pdf",
+    "answer": "YOUR QUESTION\nWhen do Depot drivers inspect seals?\n1 CITED SOURCE(S)\nCopy report\nDownload .md\n\n[1] Depot drivers inspect seals every morning.\n\nSOURCE EVIDENCE\n[1]\nmobile-depot.pdf\nRank 1.15\n\nPDF page 1 (physical page numbers)\n\nDepot drivers inspect seals every morning.\n\nOpen cited PDF page ↗Locate in library ↗\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "scope": "upload, Keyword Q&A and cited highlight at 390x844 in desktop Chrome emulation"
+  },
+  "mobile": {
+    "viewport": "390x844",
+    "stage": {
+      "x": 32.796875,
+      "y": 372.6875,
+      "width": 324.40625,
+      "height": 419.8125
+    },
+    "overlay": {
+      "x": 32.796875,
+      "y": 372.6875,
+      "width": 324.40625,
+      "height": 419.8125
+    },
+    "outcome": "PASS",
+    "scope": "responsive original page and highlight alignment; desktop Chrome emulation, not a physical phone"
+  }
+}

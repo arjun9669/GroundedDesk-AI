@@ -2,13 +2,13 @@
 
 **Free, browser-first document intelligence portfolio project.** Upload text, Markdown or text-based PDF documents, inspect source-backed answers, optionally enable local semantic embeddings and a local small language model, and create multi-document research reports.
 
-**[Live GroundedDesk AI 5.5](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r29)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
+**[Live GroundedDesk AI 5.5](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r30)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
 
 > This is the **dedicated source repository and live static site**, deployed through free GitHub Pages. The app runs its own [GitHub Actions CI](./.github/workflows/ci.yml) and [Pages workflow](./.github/workflows/pages.yml). The original profile-hosted demo remains available separately. Model and PDF dependencies require public downloads when enabled; no paid inference account is needed.
 
 ## Current release and measured evidence
 
-Current retrieval build: **2026-10-12-r29** (5.5, page navigation across Q&A and lexical research workflows). The dedicated repository is the active development source; the profile-hosted copy is historical.
+Current retrieval build: **2026-10-12-r30** (5.5, page navigation across Q&A and lexical research workflows). The dedicated repository is the active development source; the profile-hosted copy is historical.
 
 [Browser benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md) preserves first-look results separately from in-sample regressions. Aster32 and Lantern32 each reached 32/32 strict passes in the measured r25 regression; this is not independent accuracy. The Aster H01 infrastructure retry qualification remains recorded.
 
@@ -25,7 +25,7 @@ Current retrieval build: **2026-10-12-r29** (5.5, page navigation across Q&A and
 | **5.2 prototype** | **Candidate release-control inventory: rule-tagged, literal source sentences grouped by gate, conditional, related governance and unclassified categories** | **Optional numbered-policy Research workflow; not semantic synthesis or compliance verification** |
 | **5.3** | **Precise source-sentence evidence selection, stronger missing-fact refusals and two-document comparison quote recovery** | **Deterministic Keyword/Comparison refinement, no LLM or paid API** |
 | **5.4 / r25** | **More complete source-literal answers, conditional evidence selection and unsupported-value safeguards** | **Actual MiniLM in-sample regressions recorded separately from independent first looks** |
-| **5.5 / r29** | **Verified physical PDF page citations, original-page preview and normalized TXT/Markdown line references in Q&A, Comparison, Research and policy workflows** | **Local PDF.js preview, source-integrity guards and portable Markdown exports** |
+| **5.5 / r30** | **Verified physical PDF page citations, original-page preview and normalized TXT/Markdown line references in Q&A, Comparison, Research and policy workflows** | **Local PDF.js preview, source-integrity guards and portable Markdown exports** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
 
@@ -37,7 +37,7 @@ Repeated context is labeled **ambiguous**, missing page metadata is **unavailabl
 
 **Workflow distinction:** Hybrid MiniLM applies to main Q&A. Comparison, Research and policy inventories remain separate lexical workflows. Page provenance checks do not establish semantic relevance, answer completeness, agreement between documents or compliance.
 
-**Validation:** 247 unit tests and the strict offline toy evaluation pass. Installed Chrome tests cover actual PDF.js extraction/preview and each lexical workflow; the Q&A smoke additionally runs actual local MiniLM with Qwen off. See [r27 scope and evidence](./docs/RESEARCH_PAGE_CITATIONS_5_5.md) and the [original r26 slice](./docs/PAGE_PROVENANCE_5_5.md). These feature/regression checks do not constitute a fresh independent accuracy benchmark. Historical Aster/Lantern scores have not been rerun or changed.
+**Validation:** 253 unit tests and the strict offline toy evaluation pass. Installed Chrome tests cover actual PDF.js extraction/preview and each lexical workflow; the Q&A smoke additionally runs actual local MiniLM with Qwen off. See [r27 scope and evidence](./docs/RESEARCH_PAGE_CITATIONS_5_5.md) and the [original r26 slice](./docs/PAGE_PROVENANCE_5_5.md). These feature/regression checks do not constitute a fresh independent accuracy benchmark. Historical Aster/Lantern scores have not been rerun or changed.
 
 Character-level highlighting inside partial PDF text runs, OCR, layout/table reconstruction and broader document/browser coverage remain pending. The 5.5 document-processing roadmap is still in progress.
 
@@ -72,6 +72,14 @@ Repeated matches, partial text runs, cross-page quotations, unsupported geometry
 Seven synthetic highlight scenarios, mobile-width upload/Q&A/preview alignment, the existing eight PDF reliability cases, lexical workflow checks and actual local MiniLM Q&A passed in installed Chrome. Mobile checks use desktop Chrome emulation, not a physical phone. [Scope and browser evidence](./docs/PDF_HIGHLIGHTS_5_5.md).
 
 A separate new **Cobalt16** test was frozen before answers and executed once with real MiniLM: **15 PASS / 0 PARTIAL / 1 FAIL**. The unknown door-PIN question was incorrectly accepted with a document-title citation; no PIN was invented. Three other unsupported questions refused with zero citations. This small self-authored first-look set is not external validation or representative accuracy. Its failure is preserved; no tuning followed this run. [Full first-look report and fixed inputs](./docs/evidence/r29/cobalt16/FIRST_LOOK_REPORT.md).
+
+### Unsupported PIN value requests (r30)
+
+A request for a PIN/door/access-code value now requires an explicitly labeled 4–12 digit value in the cited quotation. A matching document title, a policy mention or unrelated opening hours cannot satisfy it. Operational rotation questions remain available; this is a lexical evidence guard, not a universal credential or factuality verifier.
+
+The unchanged **Cobalt16 in-sample regression** scored **16 PASS / 0 PARTIAL / 0 FAIL** with actual local MiniLM and Qwen off. H09 now refuses with zero citations; the other fifteen displayed answers are unchanged. Four unsupported questions refused, with zero false acceptances or false refusals in this set. All 16 citations had valid provenance and relevance. The **r29 first-look remains 15 PASS / 0 PARTIAL / 1 FAIL** and is preserved above. This regression is not new independent accuracy. [Exact answers and scorecard](./docs/evidence/r30/cobalt16/REGRESSION_REPORT.md).
+
+253 unit tests and the five existing real-Chromium feature scripts passed. Separate installed-Chrome checks confirm that supported fictional PIN values and rotation questions still answer in both Keyword and actual MiniLM Hybrid. [Scope and evidence](./docs/PIN_REFUSAL_5_5.md). Historical Atlas, Meridian, Lantern and Aster scores are unchanged.
 
 ### Free project boundaries and next steps
 

@@ -34,7 +34,7 @@ try {
   await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
   observations.build = await page.locator("#retrieval-build").innerText();
-  assert.match(observations.build, /2026-10-12-r29/);
+  assert.match(observations.build, /2026-10-12-r30/);
   await page.locator("#clear-docs").click();
   const quote = "Harbor crane operators must inspect lifting hooks every eight shifts.";
   const fixture = pdfFixture(["Harbor workshop operates the sheltered pier.", quote, "Harbor workshop visitor hours end at sunset."]);
@@ -52,13 +52,13 @@ try {
   assert.match(answer, /PDF page 2 \(physical page numbers\)/);
   await page.getByRole("button", { name: "Copy answer and evidence report" }).click();
   const report = await page.evaluate(() => navigator.clipboard.readText());
-  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-12-r29/);
+  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-12-r30/);
   const downloadPending = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download local Markdown evidence report" }).click();
   const download = await downloadPending;
   const downloadedReport = await fs.readFile(await download.path(), "utf8");
   assert.match(downloadedReport, /PDF page 2/);
-  assert.match(downloadedReport, /2026-10-12-r29/);
+  assert.match(downloadedReport, /2026-10-12-r30/);
   if (evidenceDir) await download.saveAs(path.join(evidenceDir, "keyword-evidence-export.md"));
   observations.keywordAnswer = answer;
   observations.keywordReport = report;
@@ -124,6 +124,27 @@ try {
   assert.match(await page.locator("#answer-result").innerText(), /Text lines 1–2/);
   assert.equal(await page.locator(".open-pdf-page").count(), 0);
   observations.checks.push("TXT quotation spans lines 1–2, no invented page link, document replacement invalidates Hybrid vectors");
+  // Separate fictional positive controls: a PIN guard must not blanket-refuse
+  // a directly disclosed value or an operational rotation question.
+  await page.locator("#clear-docs").click();
+  const pinText = "The fictional workshop door PIN code is 0482. The fictional workshop PIN code must be rotated every seven days.";
+  await page.locator("#file-input").setInputFiles({ name: "fictional-pin-controls.txt", mimeType: "text/plain", buffer: Buffer.from(pinText) });
+  await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "1");
+  observations.pinControls = [];
+  for (const mode of process.env.TEST_MINILM === "1" ? ["keyword", "hybrid"] : ["keyword"]) {
+    if (mode === "hybrid") {
+      await page.locator("#enable-semantic").click();
+      await page.waitForFunction(() => !document.querySelector('#retrieval-mode option[value="hybrid"]').disabled, null, { timeout: 240000 });
+    }
+    await page.locator("#retrieval-mode").selectOption(mode);
+    for (const [question, expected] of [["What is the exact PIN code for the fictional workshop door?", "0482"], ["When must the fictional workshop PIN code be rotated?", "seven days"]]) {
+      await ask(question);
+      const displayed = await page.locator("#answer-result").innerText();
+      assert.ok(displayed.includes(expected));
+      assert.equal(await page.locator(".source-card").count(), 1);
+      observations.pinControls.push({ mode, question, displayed, outcome: "PASS" });
+    }
+  }
   assert.deepEqual(errors, []);
   observations.status = "PASS";
   console.log(JSON.stringify(observations, null, 2));

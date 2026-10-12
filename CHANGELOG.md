@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.5 / r30 — Refuse unsupported PIN value requests (2026-10-12)
+
+- Concrete PIN/door/access-code requests require a labeled numeric value in the quoted evidence, so a document title or PIN policy cannot answer an unknown PIN. Supported fictional PIN values and procedural rotation questions remain answerable. This lexical guard does not prove entity matching or general factual correctness.
+- Six guard unit tests added: 253 total pass. Actual MiniLM Cobalt16 in-sample regression: 16 PASS / 0 PARTIAL / 0 FAIL; H09 now refuses with zero citations. Other fifteen displayed answers are unchanged, with four zero-citation refusals and 16/16 valid/relevant citations.
+- Preserved the r29 first-look at 15 PASS / 0 PARTIAL / 1 FAIL and all earlier benchmark scores. Browser positive controls pass in Keyword and actual MiniLM Hybrid, Qwen off; existing PDF feature workflows pass. README and [regression evidence](docs/PIN_REFUSAL_5_5.md) updated. No paid service added.
+
 ### 5.5 / r29 — Conservative PDF quotation highlighting (2026-10-12)
 
 - Cited previews display the quotation and approximate matched text-run regions on original PDF pages; page navigation clears old highlights. Exact normalized unique matching only. Partial runs, repeated text, cross-page passages and unsupported geometry use an explicit unmarked fallback.
