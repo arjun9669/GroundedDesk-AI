@@ -358,3 +358,26 @@ footer .brand strong { color: #627255; }
 @media(max-width:1100px) { .workspace-grid { grid-template-columns: 265px minmax(0,1fr); gap: 18px; } }
 @media(max-width:800px) { .site-header { padding: 15px 20px; } .workbench { padding: 22px 20px 10px; } h1 { font-size: 38px; } .workspace-grid { grid-template-columns: minmax(0,1fr); } .library { padding: 17px; } .dropzone { padding: 15px; } .library .text-button { font-size: 11px; } footer { padding: 20px; } }
 @media(max-width:480px) { .site-header { padding: 14px 16px; } .brand strong { font-size: 20px; } .brand-mark { width: 36px; height: 36px; } .workbench { padding: 20px 14px 10px; } h1 { font-size: 36px; } .workspace-intro p:last-child { font-size: 12px; } .workspace-tabs button { padding: 8px 16px; font-size: 12px; } .mode-badge { padding: 6px 8px; font-size: 9px; } .mode-badge::before { display: none; } .chat-heading, .answer-space, .workspace-tool-panel { padding: 18px; } .query-form { padding: 14px 18px 18px; } #ask-button { width: 100%; } .initial-state h4 { font-size: 23px; } .initial-icon { width: 125px; height: 75px; } .initial-icon svg { width: 125px; height: 75px; } }
+
+/* File actions remain readable with long names and in the docked layout. */
+.document-card, .source-preview-open .document-card { display: grid; grid-template-columns: 32px minmax(0,1fr); gap: 10px; padding: 13px 11px; align-items: start; }
+.doc-details strong { white-space: normal; overflow-wrap: anywhere; overflow: visible; text-overflow: clip; line-height: 1.55; font-size: 12px; }
+.doc-details small { display: block; line-height: 1.7; margin-top: 4px; }
+.document-actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; padding-top: 4px; border-top: 1px solid #51684a; }
+.document-actions button, .library .document-actions .text-button { color: #e1e8cf; border: 1px solid #5a7052; border-radius: 6px; background: #2b4331; padding: 7px 9px; font-size: 10px; min-height: 34px; font-weight: 500; }
+.document-actions .remove-doc { color: #e8c9b8; }
+.document-actions button:hover:not(:disabled) { background: #435d3c; border-color: #93a97c; }
+.source-preview-open .document-card .doc-details { grid-column: 2; grid-row: 1; }
+.source-preview-open .document-card .document-actions { grid-column: 1 / -1; grid-row: 2; }
+.source-preview-open .document-actions .text-button { padding: 7px 9px; }
+.upload-activity { margin-top: 16px; border: 1px solid #526849; border-radius: 10px; background: #213729; }
+.upload-activity summary { color: #dde7cd; font-size: 11px; padding: 11px; }
+#upload-list { list-style: none; margin: 0; padding: 0 11px 12px; max-height: 220px; overflow: auto; }
+.upload-item { padding: 10px 0; border-top: 1px solid #445a3d; font-size: 11px; overflow-wrap: anywhere; }
+.upload-item strong { display: block; font-weight: 500; line-height: 1.6; color: #f2f3e6; }
+.upload-item-status { display: block; font-size: 10px; line-height: 1.7; color: #ccdabd; margin-top: 4px; }
+.upload-item[data-state=ready] .upload-item-status { color: #d6edb1; }
+.upload-item[data-state=error] .upload-item-status { color: #ffd5bb; }
+.upload-progress { width: 100%; height: 7px; margin-top: 8px; accent-color: #b4cc83; }
+.dropzone[aria-disabled=true] { opacity: .7; cursor: wait; }
+@media(max-width:480px) { .document-actions button, .library .document-actions .text-button { min-height: 44px; font-size: 11px; } }

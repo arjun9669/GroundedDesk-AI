@@ -1,16 +1,16 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r34";
-import { hybridRank } from "./hybrid.mjs?v=20261012-r34";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r35";
+import { hybridRank } from "./hybrid.mjs?v=20261012-r35";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261012-r34";
+import { createEvidenceReport } from "./report.mjs?v=20261012-r35";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r34";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r34";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r34";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r34";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r34";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r34";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r34";
-import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261012-r34";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r35";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r35";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r35";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r35";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r35";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r35";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r35";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261012-r35";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -33,6 +33,9 @@ let generationTestBusy = false;
 let recentTurns = [];
 let currentResearch = null;
 let latestQualityReport = null;
+let uploadBusy = false;
+let uploadEpoch = 0;
+let replacementId = null;
 
 function setGenerationStatus(message, isError = false) {
   const status = $("generation-status");
@@ -160,13 +163,24 @@ function renderDocuments() {
   for (const doc of matches) {
     const item = make("li", "document-card");
     item.dataset.documentId = doc.id;
-    const fileIcon = make("span", "doc-icon", doc.type === "pdf" ? "PDF" : "TXT");
+    const fileIcon = make("span", "doc-icon", doc.type === "pdf" ? "PDF" : /\.(md|markdown)$/i.test(doc.name) ? "MD" : "TXT");
     const details = make("div", "doc-details");
     const filename = make("strong", "", doc.name);
     filename.title = doc.name;
-    details.append(filename, make("small", "", `${doc.text.length.toLocaleString()} characters · ${doc.sample ? "Example" : "Your file"}`));
+    const pages = doc.pdfDiagnostics?.pageCount;
+    details.append(filename, make("small", "", `${pages ? `${pages} page${pages === 1 ? "" : "s"} · ` : ""}${doc.text.length.toLocaleString()} characters · ${doc.sample ? "Example" : "Your file"}`));
     for (const warning of pdfWarnings(doc.pdfDiagnostics)) details.append(make("small", "pdf-notice", warning));
-    const remove = make("button", "remove-doc", "×");
+    const actions = make("div", "document-actions");
+    const replace = make("button", "text-button replace-doc", "Replace file");
+    replace.type = "button";
+    replace.disabled = uploadBusy;
+    replace.setAttribute("aria-label", `Replace ${doc.name}`);
+    replace.addEventListener("click", () => {
+      replacementId = doc.id;
+      notify(`Choose a replacement for ${doc.name}. The existing file is kept until the new file is ready.`);
+      $("replace-file-input").click();
+    });
+    const remove = make("button", "remove-doc", "Remove");
     remove.type = "button";
     remove.title = `Remove ${doc.name}`;
     remove.setAttribute("aria-label", `Remove ${doc.name}`);
@@ -178,14 +192,15 @@ function renderDocuments() {
       clearResult();
       notify(`Removed ${doc.name}.`);
     });
-    item.append(fileIcon, details, remove);
+    item.append(fileIcon, details, actions);
     if (doc.type === "pdf" && doc.originalFile) {
       const preview = make("button", "text-button", "View PDF");
       preview.type = "button";
       preview.setAttribute("aria-label", `View original PDF ${doc.name}`);
       preview.addEventListener("click", () => openPDFPreview(doc.originalFile, doc.name, 1));
-      item.insertBefore(preview, remove);
+      actions.append(preview);
     }
+    actions.append(replace, remove);
     list.append(item);
   }
 }
@@ -197,35 +212,90 @@ function clearResult() {
   $("answer-result").replaceChildren();
 }
 
-function addDocument({ name, text, type = "txt", sample = false, pdfPageTexts, pdfDiagnostics, originalFile }) {
-  if (documents.length >= MAX_DOCUMENTS) throw new Error("Maximum of 15 documents per session.");
+function addDocument({ name, text, type = "txt", sample = false, pdfPageTexts, pdfDiagnostics, originalFile }, replaceId = null) {
+  const position = replaceId ? documents.findIndex(doc => doc.id === replaceId) : -1;
+  if (replaceId && position < 0) throw new Error("The original document was removed. Add this file again if you still need it.");
+  if (!replaceId && documents.length >= MAX_DOCUMENTS) throw new Error("Maximum of 15 documents per session.");
   const clean = String(text).trim();
   if (!clean) throw new Error(`${name} has no extractable text.`);
   if (clean.length > MAX_CHARS) throw new Error(`${name} exceeds the 180,000-character limit.`);
   const id = typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : `file-${Date.now()}-${documents.length}`;
-  documents.push({ id, name, text: clean, sample, type, pdfPageTexts, pdfDiagnostics, originalFile });
+  const document = { id, name, text: clean, sample, type, pdfPageTexts, pdfDiagnostics, originalFile };
+  if (replaceId) documents.splice(position, 1, document);
+  else documents.push(document);
   rebuildIndex();
+  return id;
 }
 
-async function loadFiles(files) {
+async function loadFiles(files, replaceId = null) {
+  if (uploadBusy) { notify("Please wait for the current files to finish.", true); return; }
   const accepted = Array.from(files);
+  if (!accepted.length) return;
+  uploadBusy = true;
+  const epoch = ++uploadEpoch;
+  $("file-input").disabled = true;
+  $("dropzone").setAttribute("aria-disabled", "true");
+  $("upload-activity").hidden = false;
+  $("upload-activity").open = true;
+  $("upload-list").replaceChildren();
+  renderDocuments();
+  const jobs = accepted.map(file => {
+    const row = make("li", "upload-item");
+    const status = make("span", "upload-item-status", "Waiting…");
+    const progress = make("progress", "upload-progress");
+    progress.setAttribute("aria-label", `Reading ${file.name}`);
+    progress.hidden = true;
+    row.append(make("strong", "", file.name), status, progress);
+    row.dataset.state = "queued";
+    $("upload-list").append(row);
+    return { file, row, status, progress };
+  });
   let added = 0;
+  let replacementFocusId = replaceId;
   const errors = [];
-  for (const file of accepted) {
+  for (const { file, row, status, progress } of jobs) {
+    if (epoch !== uploadEpoch) { row.dataset.state = "cancelled"; status.textContent = "Cancelled — library cleared."; continue; }
+    row.dataset.state = "reading";
+    status.textContent = "Checking file…";
+    const fail = message => {
+      errors.push(`${file.name}: ${message}`);
+      row.dataset.state = "error";
+      status.textContent = message + (replaceId ? documents.some(doc => doc.id === replaceId) ? " Existing file kept." : " Replacement not applied." : "");
+      progress.hidden = true;
+    };
     const ext = file.name.split(".").pop().toLowerCase();
     if (!["txt", "md", "markdown", "pdf"].includes(ext)) {
-      errors.push(`${file.name}: unsupported file type`);
+      fail("Unsupported file type. Choose PDF, TXT or Markdown.");
       continue;
     }
-    if (file.size > MAX_BYTES) { errors.push(`${file.name}: exceeds 5 MB`); continue; }
+    if (file.size > MAX_BYTES) { fail("File exceeds 5 MB."); continue; }
     try {
-      const extracted = ext === "pdf" ? await readPDFFile(file) : { text: await file.text() };
-      addDocument({ name: file.name, ...extracted, type: ext === "pdf" ? "pdf" : "txt", originalFile: ext === "pdf" ? file : undefined });
+      status.textContent = ext === "pdf" ? "Opening PDF…" : "Reading text…";
+      progress.hidden = false;
+      const extracted = ext === "pdf" ? await readPDFFile(file, { onProgress: (page, total) => {
+        if (epoch !== uploadEpoch) return;
+        progress.max = total; progress.value = page;
+        status.textContent = `Reading PDF page ${page} of ${total}…`;
+      } }) : { text: await file.text() };
+      if (epoch !== uploadEpoch) { row.dataset.state = "cancelled"; status.textContent = "Cancelled — library cleared."; progress.hidden = true; continue; }
+      const id = addDocument({ name: file.name, ...extracted, type: ext === "pdf" ? "pdf" : "txt", originalFile: ext === "pdf" ? file : undefined }, replaceId);
+      if (replaceId) replacementFocusId = id;
       added++;
-    } catch (error) { errors.push(`${file.name}: ${error instanceof Error ? error.message : "Could not read file."}`); }
+      row.dataset.state = "ready";
+      status.textContent = replaceId ? "Replaced — ready to search." : "Added — ready to search.";
+      progress.hidden = true;
+    } catch (error) { fail(error instanceof Error ? error.message : "Could not read file."); }
+  }
+  uploadBusy = false;
+  $("file-input").disabled = false;
+  $("dropzone").removeAttribute("aria-disabled");
+  renderDocuments();
+  if (replaceId && epoch === uploadEpoch) {
+    const card = [...$("document-list").children].find(item => item.dataset.documentId === replacementFocusId);
+    (card?.querySelector(".replace-doc") || $("document-filter")).focus({ preventScroll: true });
   }
   if (added) clearResult();
-  const message = `${added} file(s) added.${errors.length ? " Issues: " + errors.join("; ") : ""}`;
+  const message = epoch !== uploadEpoch ? "Upload cancelled. Cleared files were not restored." : `${added} file(s) ${replaceId ? "replaced" : "added"}.${errors.length ? " Issues: " + errors.join("; ") : ""}`;
   $("upload-status").textContent = message;
   $("upload-status").classList.toggle("pdf-notice", errors.length > 0);
   notify(message, errors.length > 0);
@@ -663,6 +733,17 @@ document.querySelectorAll(".suggestion").forEach(button => button.addEventListen
 }));
 $("document-filter").addEventListener("input", renderDocuments);
 $("clear-docs").addEventListener("click", () => {
+  uploadEpoch++;
+  if (uploadBusy) {
+    for (const item of $("upload-list").querySelectorAll('[data-state="queued"], [data-state="reading"]')) {
+      item.dataset.state = "cancelled";
+      item.querySelector(".upload-item-status").textContent = "Cancelled — library cleared.";
+      item.querySelector("progress").hidden = true;
+    }
+  } else {
+    $("upload-activity").hidden = true;
+    $("upload-list").replaceChildren();
+  }
   $("upload-status").textContent = "";
   $("upload-status").classList.remove("pdf-notice");
   documents.splice(0);
@@ -674,6 +755,13 @@ $("file-input").addEventListener("change", async event => {
   await loadFiles(event.target.files);
   event.target.value = "";
 });
+$("replace-file-input").addEventListener("change", async event => {
+  const target = replacementId;
+  replacementId = null;
+  if (target) await loadFiles(event.target.files, target);
+  event.target.value = "";
+});
+$("replace-file-input").addEventListener("cancel", () => { replacementId = null; notify("Replacement cancelled. Existing file kept."); });
 const zone = $("dropzone");
 zone.addEventListener("keydown", event => {
   if (event.key === "Enter" || event.key === " ") {
@@ -1022,6 +1110,7 @@ $("export-quality").addEventListener("click", () => {
 });
 
 async function init() {
+  const sampleEpoch = uploadEpoch;
   const build = $("retrieval-build");
   if (build) build.textContent = "Loaded retrieval build: " + RETRIEVAL_BUILD;
   for (const [path, name] of sampleFiles) {
@@ -1029,11 +1118,16 @@ async function init() {
       const response = await fetch(path);
       if (!response.ok) throw new Error("missing sample");
       const text = await response.text();
+      if (sampleEpoch !== uploadEpoch) break;
       addDocument({ name, text, sample: true });
-    } catch { notify("Some samples could not load. You can still upload your own files.", true); }
+    } catch {
+      if (sampleEpoch !== uploadEpoch) break;
+      notify("Some samples could not load. You can still upload your own files.", true);
+    }
   }
   updateGenerationControls();
   if (!isWebGPUAvailable()) setGenerationStatus("WebGPU unavailable here. Extractive and semantic retrieval remain usable.", true);
+  if (sampleEpoch !== uploadEpoch) return;
   if (documents.length) notify(`${documents.length} sample documents ready. Ask a question or upload your own text.`);
   else notify("No examples loaded. Please upload a TXT, Markdown or PDF document.", true);
 }

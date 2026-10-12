@@ -42,7 +42,7 @@ export function pdfWarnings(diagnostics, selectedPages) {
   return warnings;
 }
 
-export async function readPDFFile(file, { loadLibrary = loadPDFLibrary, maxPages = 75, maxChars = 180000 } = {}) {
+export async function readPDFFile(file, { loadLibrary = loadPDFLibrary, maxPages = 75, maxChars = 180000, onProgress } = {}) {
   const library = await loadLibrary();
   let task;
   try {
@@ -61,6 +61,7 @@ export async function readPDFFile(file, { loadLibrary = loadPDFLibrary, maxPages
       if (hasSeparatedRows(content.items)) separatedRowsPages.push(number);
       pages.push(text);
       page.cleanup?.();
+      onProgress?.(number, pdf.numPages);
     }
     if (!pages.some(page => page.trim())) throw new Error("No searchable text was found in this PDF. It may be scanned or empty. Use OCR on your device or upload a TXT/Markdown version. OCR is not included here.");
     return { text: pages.join("\n\n"), pdfPageTexts: pages,
