@@ -1,5 +1,12 @@
 # Changelog
 
+### 5.5 / r29 — Conservative PDF quotation highlighting (2026-10-12)
+
+- Cited previews display the quotation and approximate matched text-run regions on original PDF pages; page navigation clears old highlights. Exact normalized unique matching only. Partial runs, repeated text, cross-page passages and unsupported geometry use an explicit unmarked fallback.
+- 247 unit tests, seven actual PDF.js highlight scenarios, mobile-width upload/viewer checks, existing PDF reliability/lexical workflows and an actual local MiniLM Q&A smoke passed. Mobile checks are desktop Chrome emulation. [Scope and evidence](docs/PDF_HIGHLIGHTS_5_5.md).
+- New self-authored frozen Cobalt16 first-look: 15 PASS / 0 PARTIAL / 1 FAIL. The unknown door-PIN question received a document title with a citation instead of refusing. The original failure is preserved, with no post-test application tuning. [Full report](docs/evidence/r29/cobalt16/FIRST_LOOK_REPORT.md). Historical benchmark scores are unchanged; this is not external or representative accuracy.
+- README updated. No paid service, OCR, character-level partial-run highlighting or layout reconstruction introduced.
+
 ### 5.5 / r28 — PDF reliability notices and actionable intake errors (2026-10-12)
 
 - Added named-file guidance for damaged, locked and non-searchable PDFs, with upload status beside the file picker. Every loaded PDF can be opened directly from the library.
