@@ -1,5 +1,5 @@
 /** GroundedDesk's deterministic extractive retrieval engine. No network calls. */
-export const RETRIEVAL_BUILD = "2026-10-11-r24";
+export const RETRIEVAL_BUILD = "2026-10-12-r25";
 const STOP = new Set(("a an and are as at be been but by can could do does for from had has have how i if in into is it its of on or our that the their there these this to was were what when where which who why will with would you your").split(" "));
 
 export function tokenize(value) {
@@ -138,6 +138,7 @@ const EVIDENCE_ALIASES = {
   notification:["notify","notice"], containment:["contain"], review:["reviews"],
   scores:["score","scoring"], score:["scores"], requirements:["required","require"],
   exercise:["exercises","drill"], evidence:["evidentiary"], deadlines:["deadline"],
+  ordinary:["general","regular"], general:["ordinary","regular"], regular:["general","ordinary"],
 };
 const GENERIC_EVIDENCE_TERMS = new Set([
   "atlas","group","research","document","documents","compare","comparison",
@@ -203,6 +204,16 @@ function evidenceSentenceScore(question,sentence) {
     }
   }
   if (!matched) return -Infinity;
+  // Give positive subject terms priority over explicitly excluded alternatives.
+  const contrast=String(question).match(/^(.*?)(?:\s*,)?\s+\b(?:rather than|instead of|as opposed to)\b\s+(.*)$/i);
+  if (contrast) {
+    const desired=[...new Set(tokenize(contrast[1]).map(quoteForm))];
+    const excluded=[...new Set(tokenize(contrast[2]).map(quoteForm))];
+    const distinct=desired.filter(term=>!excluded.includes(term) && !GENERIC_EVIDENCE_TERMS.has(term));
+    const positive=distinct.filter(term=>hasForm(forms,term)).length;
+    const unwanted=excluded.filter(term=>hasForm(forms,term)).length;
+    score+=Math.min(3.6,positive*1.2)-Math.min(9,unwanted*3);
+  }
   const cleanQuestion=question.toLowerCase();
   if (/scores?|scoring|ranges?|bands?/i.test(question) && /\b\d+\s+(?:through|to)\s+\d+\b/.test(sentence)) score+=4;
   if (/\bhigh\b/i.test(question) && /\bhigh\b/i.test(sentence) && /\b\d+\s+(?:through|to)\s+\d+\b/.test(sentence)) score+=4;
@@ -439,15 +450,17 @@ function completeAdjacentQualification(question, sourceText, primary) {
 function scopedMultiFactQuote(question, fullText, primary, options = {}) {
   const q=String(question || "");
   const twoFacets=/\band\s+(?:who|what|which|when|where|how|does|do|must|whether)\b/i.test(q);
-  const procedures=/\b(?:safeguards?|steps?|procedure|procedures|immediately after)\b/i.test(q);
+  const procedures=/\b(?:safeguards?|steps?|procedure|procedures|immediately after|actions? follow|before (?:cleaning|sterilization|release))\b/i.test(q);
   const specialConsent=/\b(?:consent|photograph|publish)\b/i.test(q) &&
     /\b(?:under|younger than)\s+\d+\b/i.test(q);
-  const comparisonFacets=Boolean(options.comparison) &&
-    /\bincluding\s+[^?.;,]{1,90}\s+and\s+[^?.;,]{1,90}/i.test(q);
-  if (!primary || (!twoFacets && !procedures && !specialConsent && !comparisonFacets)) return primary;
-  // Avoid turning unrelated retention comparisons into full-section dumps:
-  // their narrowly scoped exception handling is performed separately.
-  if (options.comparison && !comparisonFacets) return primary;
+  // Multiple requested clauses include exclusions and exceptions as well as
+  // explicit "and who" constructions; generic intent only, no test tokens.
+  const asksQualifications=/\b(?:including|exceptions?|under which conditions|state whether|whether .*?changes?|excluded?|prohibited|restrictions?|and both|and under|and any)\b/i.test(q) ||
+    /^\s*(?:compare|contrast)\b/i.test(q) ||
+    /\b(?:list|describe)\b[^?]{0,160}\band\b/i.test(q);
+  const comparisonFacets=Boolean(options.comparison) && asksQualifications;
+  if (!primary || (!twoFacets && !procedures && !specialConsent && !asksQualifications && !comparisonFacets)) return primary;
+  if (options.comparison && !comparisonFacets && !twoFacets) return primary;
   const source=String(fullText || "").replace(/\r\n?/g,"\n").replace(/[ \t]+/g," ").trim();
   const at=source.indexOf(primary);
   if(at<0 || primary.length>620) return primary;
@@ -470,10 +483,16 @@ function scopedMultiFactQuote(question, fullText, primary, options = {}) {
   const context=new Set([...tokenize(q),...tokenize(primary)]
     .map(quoteForm).filter(w=>w.length>=4 && !GENERIC_EVIDENCE_TERMS.has(w)));
   const processIntent=procedures || specialConsent;
+  const exceptionIntent=asksQualifications && /\b(?:exceptions?|hold|legal|inquiry|investigation|until|early release|excluded?|prohibited|restrictions?)\b/i.test(q);
+  const anchorForms=new Set(tokenize(primary).map(quoteForm));
   const related=e=>{
     if(!e || sectionAt(e.start)!==section)return false;
     const words=tokenize(e.value).map(quoteForm);
     if(words.some(word=>context.has(word)))return true;
+    // Allow an adjacent condition using a short referent ("these cards")
+    // only with subject continuity and an explicit conditional marker.
+    const sharedSubject=words.some(word=>anchorForms.has(word) && word.length>=4 && !GENERIC_EVIDENCE_TERMS.has(word));
+    if(exceptionIntent && sharedSubject && /\b(?:unless|until|unresolved|except|hold|held|closed|release|expires?|not|cannot|must)\b/i.test(e.value))return true;
     // A requested procedure can continue with a new actor or safeguard
     // without repeating the earlier subject (e.g. before cleaning begins).
     return processIntent && /\b(?:must|may|only|never|not|cannot|before|after|if|when|until|signs?|checks?|decides?|records?|logs?|starts?|contacts?|insufficient|overwritten|withheld)\b/i.test(e.value);
@@ -801,11 +820,17 @@ export function answerFromCandidates(question, candidates, maxSources = 3, mode 
       const localProcedureAnchor=!operative && primary &&
         /\b(?:safeguards?|steps?|procedures?|immediately after)\b/i.test(question) &&
         sourceEvidenceScore>=2 && candidate.content.includes(primary);
-      const supported=base && !operative && (sourceEvidenceScore>=4 || localProcedureAnchor)
+      // A multi-facet query may have two directly matching terms in the
+      // retrieved anchor while later qualifiers use different vocabulary.
+      // Require the anchor itself in the actually ranked chunk.
+      const localFacetAnchor=!operative && primary &&
+        /\b(?:including|exceptions?|under which conditions|state whether|excluded?|prohibited|and both|and under)\b/i.test(question) &&
+        sourceEvidenceScore>=2 && candidate.content.includes(primary);
+      const supported=base && !operative && (sourceEvidenceScore>=4 || localProcedureAnchor || localFacetAnchor)
         ? scopedMultiFactQuote(question, candidate.sourceText, base)
         : base;
       if (supported && candidate.sourceText.includes(supported) &&
-          (!usesHybridScores || sourceEvidenceScore >= 4 || localProcedureAnchor)) {
+          (!usesHybridScores || sourceEvidenceScore >= 4 || localProcedureAnchor || localFacetAnchor)) {
         quote = supported;
         // Keep enough original document context for the independent evidence
         // guard and reviewer, including neighboring untrusted *data* text.
