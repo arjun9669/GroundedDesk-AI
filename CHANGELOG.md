@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6 / r35 — Clearer uploads and safe file replacement (2026-10-12)
+
+- Full filenames, Markdown type labels, PDF page counts and explicit View PDF / Replace file / Remove actions. Per-file waiting, reading, actual PDF page progress, ready and error states; no simulated percentages.
+- Replacement commits only after validation, retains old files/answers on failure, supports the 15-file cap, restores library focus and invalidates stale answers/history/workflows/preview/Hybrid vectors on success. Clearing during upload prevents late corpus restoration.
+- 253 unit tests, offline toy checks and seven installed Chrome feature scripts pass. Actual local MiniLM replacement/reindex and revised physical-page quotation/highlight controls pass with Qwen off. No new independent or full benchmark score claimed. README and [evidence](docs/DOCUMENT_LIBRARY_5_6.md) updated.
+
 ### 5.6 / r34 — Review the original PDF beside its answer (2026-10-12)
 
 - Wide windows now dock the original PDF beside the interactive answer; smaller windows use a native modal. Keep the physical page number, exact quote and conservative highlighting visible, collapse the quote, navigate pages and copy evidence without closing the desktop viewer.

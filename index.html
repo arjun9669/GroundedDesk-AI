@@ -7,8 +7,8 @@
 <meta name="theme-color" content="#f4f1ea"/>
 <meta name="description" content="GroundedDesk — a free, local document workspace. Add files, ask questions, and check answers against the original evidence."/>
 <title>GroundedDesk AI 5.6 | Your document workspace</title>
-<link rel="stylesheet" href="./styles.css?v=20261012-r34"/>
-<script defer type="module" src="./app.mjs?v=20261012-r34"></script>
+<link rel="stylesheet" href="./styles.css?v=20261012-r35"/>
+<script defer type="module" src="./app.mjs?v=20261012-r35"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-workspace">Skip to workspace</a>
@@ -29,6 +29,8 @@
               <span class="browse-label">Browse files</span>
             </label>
             <input type="file" id="file-input" accept=".txt,.md,.markdown,.pdf,text/plain,text/markdown,application/pdf" multiple hidden />
+            <input type="file" id="replace-file-input" accept=".txt,.md,.markdown,.pdf,text/plain,text/markdown,application/pdf" hidden />
+            <details id="upload-activity" class="upload-activity" hidden><summary>Recent uploads</summary><ol id="upload-list" aria-live="polite" aria-label="Per-file upload status"></ol></details>
             <p id="upload-status" class="library-note" role="status"></p>
             <label class="search-label" for="document-filter">Find a document</label>
             <div class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="document-filter" placeholder="Find a document..." autocomplete="off"/></div>

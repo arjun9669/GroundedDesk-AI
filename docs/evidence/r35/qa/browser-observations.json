@@ -1,0 +1,65 @@
+{
+  "kind": "synthetic feature smoke; not an accuracy benchmark",
+  "model": "Actual Xenova/all-MiniLM-L6-v2, local WASM; Qwen disabled",
+  "checks": [
+    "Non-overlapping interactive desktop dock; unchanged evidence export; modal mobile resize and desktop restoration; focus restored; new answers/tool/corpus changes close stale previews",
+    "Actual PDF.js upload/extraction, page 2 provenance, copy/export, original page rendering, next/previous bounds, Escape and close/reopen cleanup",
+    "Unsupported question has no source cards or page citations",
+    "TXT quotation spans lines 1–2, no invented page link, document replacement invalidates Hybrid vectors"
+  ],
+  "browser": "154.0.8037.98",
+  "build": "Loaded retrieval build: 2026-10-12-r35",
+  "keywordAnswer": "YOUR QUESTION\nHow often must Harbor crane operators inspect lifting hooks?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\nSOURCE EVIDENCE\n[1]\nharbor-workshop.pdf\n\nPDF page 2 (physical page numbers)\n\nHarbor workshop operates the sheltered pier. Harbor crane operators must inspect lifting hooks every eight shifts. Harbor workshop visitor hours end at sunset.\n\nOpen cited PDF page ↗Locate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+  "keywordReport": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> How often must Harbor crane operators inspect lifting hooks?\r\n\r\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r35`\r\n\r\n## Answer\r\n\r\n\r\n> [1] Harbor crane operators must inspect lifting hooks every eight shifts.\r\n\r\n## Source evidence\r\n\r\n### [1] harbor\\-workshop\\.pdf\r\n\r\n**File:** harbor\\-workshop\\.pdf\r\n\r\n**Source location:** PDF page 2 \\(physical page numbers\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 2.1782\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Harbor crane operators must inspect lifting hooks every eight shifts.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> Harbor workshop operates the sheltered pier.\r\n> \r\n> Harbor crane operators must inspect lifting hooks every eight shifts.\r\n> \r\n> Harbor workshop visitor hours end at sunset.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n",
+  "hybridAnswer": "YOUR QUESTION\nHow often must Harbor crane operators inspect lifting hooks?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\nSOURCE EVIDENCE\n[1]\nharbor-workshop.pdf\n\nPDF page 2 (physical page numbers)\n\nHarbor workshop operates the sheltered pier. Harbor crane operators must inspect lifting hooks every eight shifts. Harbor workshop visitor hours end at sunset.\n\nOpen cited PDF page ↗Locate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+  "hybridReport": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> How often must Harbor crane operators inspect lifting hooks?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r35`\r\n\r\n## Answer\r\n\r\n\r\n> [1] Harbor crane operators must inspect lifting hooks every eight shifts.\r\n\r\n## Source evidence\r\n\r\n### [1] harbor\\-workshop\\.pdf\r\n\r\n**File:** harbor\\-workshop\\.pdf\r\n\r\n**Source location:** PDF page 2 \\(physical page numbers\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 0.0476\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Harbor crane operators must inspect lifting hooks every eight shifts.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> Harbor workshop operates the sheltered pier.\r\n> \r\n> Harbor crane operators must inspect lifting hooks every eight shifts.\r\n> \r\n> Harbor workshop visitor hours end at sunset.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n",
+  "modelRequests": [
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer.json",
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json",
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/config.json",
+    "https://huggingface.co/api/resolve-cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer_config.json",
+    "https://huggingface.co/api/resolve-cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/config.json",
+    "https://huggingface.co/api/resolve-cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer.json",
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/onnx/model_quantized.onnx",
+    "https://us.aws.cdn.hf.co/xet-bridge-us/645192b75fb40b9f50b71914/c96f5f1e2aee643bd8191bb520a3e175db7b05821579a02a70acdf31e655d194",
+    "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.0/dist/ort-wasm-simd-threaded.jsep.wasm"
+  ],
+  "hybridPreview": {
+    "quote": "Harbor crane operators must inspect lifting hooks every eight shifts.",
+    "message": "Quotation matched on this page. Yellow regions mark approximate text-run bounds; verify the original text.",
+    "regions": 1
+  },
+  "replacement": {
+    "outcome": "PASS",
+    "quote": "Harbor crane operators must inspect lifting hooks every eleven shifts.",
+    "mode": "Actual MiniLM rebuilt after same-name PDF replacement",
+    "staleState": "Old answer/history/preview cleared; Hybrid disabled until reindex"
+  },
+  "pinControls": [
+    {
+      "mode": "keyword",
+      "question": "What is the exact PIN code for the fictional workshop door?",
+      "displayed": "YOUR QUESTION\nWhat is the exact PIN code for the fictional workshop door?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop door PIN code is 0482.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin-controls.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482. The fictional workshop PIN code must be rotated every seven days.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "outcome": "PASS"
+    },
+    {
+      "mode": "keyword",
+      "question": "When must the fictional workshop PIN code be rotated?",
+      "displayed": "YOUR QUESTION\nWhen must the fictional workshop PIN code be rotated?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop PIN code must be rotated every seven days.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin-controls.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482. The fictional workshop PIN code must be rotated every seven days.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "outcome": "PASS"
+    },
+    {
+      "mode": "hybrid",
+      "question": "What is the exact PIN code for the fictional workshop door?",
+      "displayed": "YOUR QUESTION\nWhat is the exact PIN code for the fictional workshop door?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop door PIN code is 0482.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin-controls.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482. The fictional workshop PIN code must be rotated every seven days.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "outcome": "PASS"
+    },
+    {
+      "mode": "hybrid",
+      "question": "When must the fictional workshop PIN code be rotated?",
+      "displayed": "YOUR QUESTION\nWhen must the fictional workshop PIN code be rotated?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop PIN code must be rotated every seven days.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin-controls.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482. The fictional workshop PIN code must be rotated every seven days.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "outcome": "PASS"
+    }
+  ],
+  "status": "PASS"
+}
