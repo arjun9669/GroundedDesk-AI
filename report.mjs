@@ -1,4 +1,5 @@
 import { validateDraft } from "./generation.mjs?v=20261010-r13";
+import { locateEvidence, locationLabel } from "./provenance.mjs?v=20261012-r26";
 
 /**
  * Portable evidence reports for the browser-only document Q&A demo.
@@ -24,7 +25,7 @@ function inline(value) {
  * A self-contained Markdown evidence report. Refuses to create one if any
  * displayed quotation is not an actual substring of the cited excerpt.
  */
-export function createEvidenceReport(question, result) {
+export function createEvidenceReport(question, result, documents = []) {
   if (!result || typeof result !== "object" || !Array.isArray(result.sources)) {
     throw new TypeError("Invalid retrieval result");
   }
@@ -67,10 +68,18 @@ export function createEvidenceReport(question, result) {
     }
     sections.push("## Source evidence", "");
     for (const source of sources) {
+      if (source.location) {
+        const doc = documents.find(doc => doc.id === source.documentId);
+        if (JSON.stringify(locateEvidence(doc, source)) !== JSON.stringify(source.location)) {
+          throw new Error("Source location could not be verified against loaded documents");
+        }
+      }
       sections.push(
         "### [" + source.citation + "] " + inline(source.filename),
         "",
         "**File:** " + inline(source.filename),
+        "",
+        "**Source location:** " + inline(locationLabel(source.location)),
         "",
         "**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** " + (Number.isFinite(source.score) ? source.score.toFixed(4) : "not recorded"),
         "",

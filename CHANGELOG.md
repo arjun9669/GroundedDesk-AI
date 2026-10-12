@@ -1,5 +1,12 @@
 # Changelog
 
+### 5.5 / r26 — PDF page provenance and local preview (2026-10-12)
+
+- Main Keyword/Hybrid Q&A now preserves physical PDF page metadata, displays verified quotation locations and opens the original cited page locally. TXT/MD show normalized line ranges. Ambiguous repeated passages do not receive guessed page numbers.
+- Evidence guards and Markdown exports recompute locations from loaded source text. Retrieval ranking, quotation heuristics and refusal logic are unchanged; historical benchmark scores remain preserved.
+- Added provenance unit tests and an actual PDF.js browser smoke to CI. Local installed-Chrome testing also exercises real MiniLM/WASM with Qwen off. This is a synthetic feature smoke, not new independent accuracy.
+- First 5.5 slice only: Research/Comparison navigation, text highlighting, OCR and table/layout parsing remain pending. [Scope and validation](docs/PAGE_PROVENANCE_5_5.md).
+
 ### r23 — Temporal condition and contact-evidence safeguards (2026-10-11)
 
 - Candidate fixes after the independent Lantern32 r22 first-look **16 PASS / 12 PARTIAL / 4 FAIL**; frozen score is immutable. **No real Chrome r23 benchmark result yet.**

@@ -2,7 +2,8 @@
  * GroundedDesk AI 5.0 — reusable, zero-dependency evaluation and provenance
  * guardrails. Deliberately checks exact source integrity, NOT semantic truth.
  */
-import { buildIndex, answerQuestion } from "./retrieval.mjs?v=20261012-r25";
+import { buildIndex, answerQuestion } from "./retrieval.mjs?v=20261012-r26";
+import { locateEvidence } from "./provenance.mjs?v=20261012-r26";
 
 const normalizedText = text => String(text).replace(/\r\n?/g, "\n").replace(/[ \t]+/g, " ").trim();
 const validName = name => typeof name === "string" && name.length > 0;
@@ -36,6 +37,9 @@ export function verifyEvidenceResult(result, documents) {
     }
     if (!normalizedText(original.text).includes(source.excerpt)) {
       return { ok:false, reason:"Retrieved excerpt cannot be verified in source document" };
+    }
+    if (source.location && JSON.stringify(locateEvidence(original, source)) !== JSON.stringify(source.location)) {
+      return { ok:false, reason:"Source location does not match loaded document" };
     }
   }
   return { ok:true, reason:"All cited excerpts and quotations matched loaded documents" };
