@@ -7,8 +7,8 @@
 <meta name="theme-color" content="#f4f1ea"/>
 <meta name="description" content="GroundedDesk — a free, local document workspace. Add files, ask questions, and check answers against the original evidence."/>
 <title>GroundedDesk AI 5.6 | Your document workspace</title>
-<link rel="stylesheet" href="./styles.css?v=20261013-r37"/>
-<script defer type="module" src="./app.mjs?v=20261013-r37"></script>
+<link rel="stylesheet" href="./styles.css?v=20261013-r38"/>
+<script defer type="module" src="./app.mjs?v=20261013-r38"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-workspace">Skip to workspace</a>
@@ -88,6 +88,8 @@
             <details id="chat-history" class="chat-history">
               <summary>Recent questions <span id="history-count">0</span></summary>
               <p class="history-note">Your last eight questions, newest first. Kept in this tab only; cleared when files change.</p>
+              <div id="history-search" class="history-search" hidden><label for="history-filter">Find a recent question</label><div><input type="search" id="history-filter" placeholder="Search questions or source files" maxlength="600"/><button type="button" id="history-clear-filter">Clear search</button></div></div>
+              <p id="history-search-status" class="history-note" role="status" hidden></p>
               <p id="history-empty" class="history-empty">Your questions will appear here. Open one to revisit its answer and sources.</p>
               <ul id="history-list" aria-label="Recent questions"></ul>
             </details>
@@ -104,6 +106,7 @@
                   <button class="suggestion" data-question="How can an office reduce wasted electricity?">How can an office reduce energy use? ↗</button>
                 </div></div>
               </div>
+              <p id="answer-report-status" class="report-feedback" role="status" hidden></p>
               <div class="answer-result" id="answer-result" hidden></div>
             </div>
 
@@ -148,6 +151,7 @@
                 <button type="button" id="research-download">Save report</button>
               </div>
             </div>
+            <p id="research-report-status" class="report-feedback" role="status" hidden></p>
             <div id="research-result-body"></div>
             <p class="research-disclaimer">Lexical search may miss paraphrases. Missing evidence is not proof that a fact is absent. Always review source content before relying on it.</p>
           </div></section>

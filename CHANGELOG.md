@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6 / r38 — Find past questions and clearer report feedback (2026-10-13)
+
+- Search recent questions and source filenames with case/whitespace normalization, clear-search focus and no-match guidance. Display filtering preserves stored history; changing files resets it.
+- Local copy progress/success/error and named download-request feedback in Ask, Research and Comparison. Export content stays unchanged; pending copies cannot label a newer answer. No paid service or stored questions.
+- 253 unit tests, strict offline toy evaluation and seven installed Chrome scripts pass, including actual MiniLM. Clipboard-denial control and genuine downloads verified. Initial Windows clipboard/newline test mismatch preserved; comparison corrected for OS line-ending conversion only. Historical benchmark scores unchanged. [Scope/evidence](docs/HISTORY_SEARCH_5_6.md).
+
 ### 5.6 / r37 — Readable question history (2026-10-13)
 
 - Full questions, evidence/refusal status, source filenames, original search method and an Open now marker replace truncated history labels. Last eight questions remain newest first; empty guidance and session-only retention are explicit.

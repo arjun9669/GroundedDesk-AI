@@ -1,16 +1,16 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r37";
-import { hybridRank } from "./hybrid.mjs?v=20261013-r37";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r38";
+import { hybridRank } from "./hybrid.mjs?v=20261013-r38";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261013-r37";
+import { createEvidenceReport } from "./report.mjs?v=20261013-r38";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r37";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r37";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r37";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r37";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r37";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r37";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r37";
-import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r37";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r38";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r38";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r38";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r38";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r38";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r38";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r38";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r38";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -61,6 +61,7 @@ function updateGenerationControls() {
 function resetConversation() {
   recentTurns = [];
   selectedTurn = null;
+  $("history-filter").value = "";
   renderHistory();
 }
 
@@ -75,7 +76,12 @@ function addTurn(question, result) {
 function renderHistory() {
   const list = $("history-list");
   list.replaceChildren();
-  for (const turn of [...recentTurns].reverse()) {
+  const filter = $("history-filter").value.trim().toLocaleLowerCase();
+  const matching = [...recentTurns].reverse().filter(turn =>
+    !filter || [turn.question, ...(turn.result.sources?.length
+      ? turn.result.sources.map(source => source.filename) : turn.files)]
+      .some(text => text.toLocaleLowerCase().includes(filter)));
+  for (const turn of matching) {
     const li = document.createElement("li");
     const button = document.createElement("button");
     button.type = "button";
@@ -105,6 +111,26 @@ function renderHistory() {
   }
   $("history-count").textContent = String(recentTurns.length);
   $("history-empty").hidden = recentTurns.length > 0;
+  $("history-search").hidden = recentTurns.length === 0;
+  $("history-clear-filter").disabled = !$("history-filter").value;
+  const status = $("history-search-status");
+  status.hidden = !filter || recentTurns.length === 0;
+  status.textContent = matching.length ? `Showing ${matching.length} of ${recentTurns.length} recent questions.`
+    : "No recent questions match. Try another word or clear the search.";
+}
+
+$("history-filter").addEventListener("input", renderHistory);
+$("history-clear-filter").addEventListener("click", () => {
+  $("history-filter").value = "";
+  renderHistory();
+  $("history-filter").focus();
+});
+
+function reportFeedback(id, message = "", isError = false) {
+  const status = $(id);
+  status.textContent = message;
+  status.hidden = !message;
+  status.classList.toggle("is-error", isError);
 }
 
 function semanticReady() {
@@ -232,6 +258,7 @@ function renderDocuments() {
 }
 
 function clearResult() {
+  reportFeedback("answer-report-status");
   currentAnswer = null;
   $("initial-state").hidden = false;
   $("answer-result").hidden = true;
@@ -340,6 +367,7 @@ function highlightDocument(id) {
 }
 
 function renderResult(question, result) {
+  reportFeedback("answer-report-status");
   closePDFPreview({ restoreFocus: false });
   result = attachLocations(result, documents);
   // Never display a fabricated or stale excerpt as verified evidence.
@@ -368,12 +396,16 @@ function renderResult(question, result) {
   copy.type = "button";
   copy.setAttribute("aria-label", "Copy answer and evidence report");
   copy.addEventListener("click", async () => {
+    copy.disabled = true;
+    reportFeedback("answer-report-status", "Copying the answer and source evidence…");
     try {
       await navigator.clipboard.writeText(createEvidenceReport(question, result, documents));
-      notify("Evidence report copied to clipboard.");
+      if (currentAnswer === result) reportFeedback("answer-report-status", "Copied — the answer and source evidence are on your clipboard.");
     } catch (error) {
-      notify(error instanceof Error && error.message.startsWith("Evidence check")
-        ? error.message : "Clipboard access was blocked or the report could not be verified.", true);
+      if (currentAnswer === result) reportFeedback("answer-report-status", error instanceof Error && error.message.startsWith("Evidence check")
+        ? error.message : "Could not copy. Check clipboard permission, or use Save report.", true);
+    } finally {
+      copy.disabled = false;
     }
   });
 
@@ -392,9 +424,9 @@ function renderResult(question, result) {
       document.body.append(anchor);
       anchor.click();
       anchor.remove();
-      notify("Markdown evidence report prepared for local download.");
+      reportFeedback("answer-report-status", "Download requested: groundeddesk-evidence.md. Check your browser’s downloads.");
     } catch (error) {
-      notify(error instanceof Error ? error.message : "Evidence report unavailable.", true);
+      reportFeedback("answer-report-status", error instanceof Error ? error.message : "Could not prepare the report. Try again.", true);
     } finally {
       if (blobUrl) setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
     }
@@ -806,6 +838,7 @@ zone.addEventListener("drop", async event => {
 });
 
 function clearResearch() {
+  reportFeedback("research-report-status");
   currentResearch = null;
   const panel = $("research-results");
   if (panel) {
@@ -845,6 +878,7 @@ function researchEl(tag, cls, text = "") {
 }
 
 function presentResearch(result) {
+  reportFeedback("research-report-status");
   closePDFPreview({ restoreFocus: false });
   clearResearch();
   result = attachWorkflowLocations({ ...result, retrievalBuild: RETRIEVAL_BUILD }, documents);
@@ -995,11 +1029,17 @@ $("compare-form").addEventListener("submit", event => {
 });
 
 $("research-copy").addEventListener("click", async () => {
+  const report = currentResearch;
+  const button = $("research-copy");
+  button.disabled = true;
+  reportFeedback("research-report-status", "Copying the report and source evidence…");
   try {
     await navigator.clipboard.writeText(getResearchMarkdown());
-    notify("Research report copied locally.");
+    if (currentResearch === report) reportFeedback("research-report-status", "Copied — the report and source evidence are on your clipboard.");
   } catch {
-    notify("Could not copy the report. Check clipboard permission.", true);
+    if (currentResearch === report) reportFeedback("research-report-status", "Could not copy. Check clipboard permission, or use Save report.", true);
+  } finally {
+    button.disabled = false;
   }
 });
 
@@ -1013,9 +1053,9 @@ $("research-download").addEventListener("click", () => {
     document.body.append(link);
     link.click();
     link.remove();
-    notify("Markdown research report prepared for local download.");
+    reportFeedback("research-report-status", "Download requested: groundeddesk-research-report.md. Check your browser’s downloads.");
   } catch (error) {
-    notify(error instanceof Error ? error.message : "Could not download research report.", true);
+    reportFeedback("research-report-status", error instanceof Error ? error.message : "Could not prepare the report. Try again.", true);
   } finally {
     if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
