@@ -34,7 +34,7 @@ try {
   await page.goto(process.env.TEST_URL||"http://127.0.0.1:8765/",{waitUntil:"domcontentloaded"});
   await page.waitForFunction(()=>document.querySelector("#retrieval-build")?.textContent.includes("Loaded retrieval build:"));
   observations.build=await page.locator("#retrieval-build").innerText();
-  assert.match(observations.build,/2026-10-13-r37/);
+  assert.match(observations.build,/2026-10-13-r38/);
   await page.setViewportSize({width:390,height:844});
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="3");
   await page.locator("#clear-docs").click();
@@ -55,7 +55,7 @@ try {
   for(const c of cases) {
     // Exercise the viewer's public entry point with actual PDF.js, not mocked text positions.
     await page.evaluate(async ({base64,quote,id})=>{
-      const {openPDFPreview}=await import("./pdf-preview.mjs?v=20261013-r37");
+      const {openPDFPreview}=await import("./pdf-preview.mjs?v=20261013-r38");
       const bytes=Uint8Array.from(atob(base64),ch=>ch.charCodeAt(0));
       await openPDFPreview(new File([bytes],id+".pdf",{type:"application/pdf"}),id+".pdf",1,quote);
     },{base64:c.pdf.toString("base64"),quote:c.quote,id:c.id});

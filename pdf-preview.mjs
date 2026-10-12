@@ -1,6 +1,6 @@
 // Original files stay in memory. Render only the selected page; never upload it.
-import { loadPDFLibrary, pdfErrorMessage } from "./pdf-ingest.mjs?v=20261013-r37";
-import { quotationRegions, highlightMessage } from "./pdf-highlight.mjs?v=20261013-r37";
+import { loadPDFLibrary, pdfErrorMessage } from "./pdf-ingest.mjs?v=20261013-r38";
+import { quotationRegions, highlightMessage } from "./pdf-highlight.mjs?v=20261013-r38";
 let active = null;
 
 export function closePDFPreview({ restoreFocus = true } = {}) {
