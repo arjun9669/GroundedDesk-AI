@@ -458,9 +458,14 @@ function scopedMultiFactQuote(question, fullText, primary, options = {}) {
   const asksQualifications=/\b(?:including|exceptions?|under which conditions|state whether|whether .*?changes?|excluded?|prohibited|restrictions?|and both|and under|and any)\b/i.test(q) ||
     /^\s*(?:compare|contrast)\b/i.test(q) ||
     /\b(?:list|describe)\b[^?]{0,160}\band\b/i.test(q);
-  const comparisonFacets=Boolean(options.comparison) && asksQualifications;
+  // A request to "compare packet contents" is not an invitation to quote
+  // adjacent storage/retention terms just because the packet noun overlaps.
+  // In Comparison mode require an explicit multi-clause / exception request.
+  const comparisonFacets=Boolean(options.comparison) &&
+    (/\b(?:including|exceptions?|excluding|prohibited|restrictions?|conditions?|unless|whether|changes?)\b/i.test(q) ||
+     /\band\s+(?:who|what|which|when|where|how|under|whether)\b/i.test(q));
   if (!primary || (!twoFacets && !procedures && !specialConsent && !asksQualifications && !comparisonFacets)) return primary;
-  if (options.comparison && !comparisonFacets && !twoFacets) return primary;
+  if (options.comparison && !comparisonFacets) return primary;
   const source=String(fullText || "").replace(/\r\n?/g,"\n").replace(/[ \t]+/g," ").trim();
   const at=source.indexOf(primary);
   if(at<0 || primary.length>620) return primary;
