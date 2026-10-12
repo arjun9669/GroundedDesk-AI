@@ -1,15 +1,16 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r30";
-import { hybridRank } from "./hybrid.mjs?v=20261012-r30";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r31";
+import { hybridRank } from "./hybrid.mjs?v=20261012-r31";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261012-r30";
+import { createEvidenceReport } from "./report.mjs?v=20261012-r31";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r30";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r30";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r30";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r30";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r30";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r30";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r30";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r31";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r31";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r31";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r31";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r31";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r31";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r31";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261012-r31";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -144,6 +145,8 @@ function make(tag, className, content = "") {
 }
 
 function renderDocuments() {
+  const examples = document.getElementById("sample-questions");
+  if (examples) examples.hidden = !documents.some(doc => doc.sample);
   const list = $("document-list");
   const filter = $("document-filter").value.trim().toLowerCase();
   list.replaceChildren();
@@ -159,7 +162,9 @@ function renderDocuments() {
     item.dataset.documentId = doc.id;
     const fileIcon = make("span", "doc-icon", doc.type === "pdf" ? "PDF" : "TXT");
     const details = make("div", "doc-details");
-    details.append(make("strong", "", doc.name), make("small", "", `${(doc.text.length / 1000).toFixed(1)}k characters · ${doc.sample ? "sample" : "session"}`));
+    const filename = make("strong", "", doc.name);
+    filename.title = doc.name;
+    details.append(filename, make("small", "", `${doc.text.length.toLocaleString()} characters · ${doc.sample ? "Example" : "Your file"}`));
     for (const warning of pdfWarnings(doc.pdfDiagnostics)) details.append(make("small", "pdf-notice", warning));
     const remove = make("button", "remove-doc", "×");
     remove.type = "button";
@@ -248,6 +253,7 @@ function renderResult(question, result) {
   }
   currentAnswer = result;
   visibleQuestion = question;
+  showWorkspace("ask");
   $("initial-state").hidden = true;
   const view = $("answer-result");
   view.hidden = false;
@@ -274,7 +280,7 @@ function renderResult(question, result) {
     }
   });
 
-  const download = make("button", "copy-button", "Download .md");
+  const download = make("button", "copy-button", "Save report");
   download.type = "button";
   download.setAttribute("aria-label", "Download local Markdown evidence report");
   download.addEventListener("click", () => {
@@ -353,7 +359,7 @@ function renderResult(question, result) {
       card.id = `source-${source.citation}`;
       const header = make("div", "source-top");
       header.append(make("span", "source-number", `[${source.citation}]`),
-        make("strong", "", source.filename), make("small", "", `Rank ${source.score.toFixed(2)}`));
+        make("strong", "", source.filename));
       card.append(header, make("p", "source-location", locationLabel(source.location)), make("p", "", source.excerpt));
       for (const warning of pdfWarnings(documents.find(doc => doc.id === source.documentId)?.pdfDiagnostics, source.location?.pages)) card.append(make("p", "pdf-notice", warning));
       if (source.location.status === "verified" && source.location.kind === "pdf") {
@@ -369,6 +375,9 @@ function renderResult(question, result) {
       jump.type = "button";
       jump.addEventListener("click", () => highlightDocument(source.documentId));
       card.append(jump);
+      const metadata = make("details", "source-metadata");
+      metadata.append(make("summary", "", "Search details"), make("small", "", `Relevance rank: ${source.score.toFixed(2)}. This is a ranking signal, not a confidence score.`));
+      card.append(metadata);
       view.append(card);
     }
     view.append(make("p", "result-footnote",
@@ -388,6 +397,7 @@ async function ask(question) {
   if (searchBusy || evalBusy || generationTestBusy) { notify("Wait for the current retrieval to finish.", true); return; }
   searchBusy = true;
   $("ask-button").disabled = true;
+  $("ask-button").textContent = "Finding evidence…";
   const startedAt = indexVersion;
   try {
     let result;
@@ -443,6 +453,7 @@ async function ask(question) {
   } finally {
     searchBusy = false;
     $("ask-button").disabled = false;
+    $("ask-button").textContent = "Find an answer";
     updateSemanticControls();
     updateGenerationControls();
   }
@@ -724,13 +735,14 @@ function presentResearch(result) {
   const integrity = verifyWorkflowEvidence(result, documents);
   if (!integrity.ok) throw new Error("Research evidence withheld: " + integrity.reason);
   currentResearch = result;
+  showWorkspace(result.kind === "comparison" ? "compare" : "research", { result: true });
   const panel = $("research-results"), body = $("research-result-body");
   panel.hidden = false;
   body.replaceChildren();
   $("research-result-title").textContent = result.kind === "research"
-    ? "Cross-document evidence and research steps" : result.kind === "policy-research"
-      ? "5.1 · Section-by-section policy evidence" : result.kind === "policy-checklist"
-        ? "5.2 · Candidate release-control inventory" : "Side-by-side excerpts";
+    ? "Evidence across your documents" : result.kind === "policy-research"
+      ? "Policy section evidence" : result.kind === "policy-checklist"
+        ? "Policy review checklist" : "Side-by-side excerpts";
 
   if (result.kind === "research") {
     body.append(researchEl("p", "research-summary",
@@ -1023,4 +1035,5 @@ async function init() {
   if (documents.length) notify(`${documents.length} sample documents ready. Ask a question or upload your own text.`);
   else notify("No examples loaded. Please upload a TXT, Markdown or PDF document.", true);
 }
+initWorkspaceUI();
 init();

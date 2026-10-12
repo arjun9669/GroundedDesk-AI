@@ -1,3 +1,4 @@
+import { revealControl } from "./fixtures/workspace-ui.mjs";
 // Synthetic feature coverage of lexical workflows, not a factual-accuracy benchmark.
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
@@ -24,7 +25,7 @@ try {
   await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
   observations.build = await page.locator("#retrieval-build").innerText();
-  assert.match(observations.build, /2026-10-12-r30/);
+  assert.match(observations.build, /2026-10-12-r31/);
   await page.locator("#clear-docs").click();
   const fixture = (name, pages) => ({ name, mimeType: "application/pdf", buffer: pdfFixture(pages) });
   const workshop = fixture("workshop-release.pdf", [
@@ -42,7 +43,7 @@ try {
   async function capture(id) {
     await page.locator("#research-copy").click();
     const report = await page.evaluate(() => navigator.clipboard.readText());
-    assert.match(report, /2026-10-12-r30/);
+    assert.match(report, /2026-10-12-r31/);
     const result = { id, displayed: await page.locator("#research-result-body").innerText(), report };
     observations.cases.push(result);
     if (evidenceDir) {
@@ -52,6 +53,7 @@ try {
     return result;
   }
   async function compare(left, topic) {
+    await revealControl(page, "#compare-left");
     await page.locator("#compare-left").selectOption({ label: left });
     await page.locator("#compare-right").selectOption({ label: supplier.name });
     await page.locator("#compare-topic").fill(topic);
@@ -83,12 +85,14 @@ try {
   assert.match(downloaded, /PDF page 1/); assert.match(downloaded, /PDF page 2/);
   if (evidenceDir) await download.saveAs(path.join(evidenceDir, "comparison-download.md"));
 
+  await revealControl(page, "#research-query");
   await page.locator("#research-query").fill("Who approves release?");
   await page.locator("#run-research").click();
   const research = await capture("03-research");
   assert.match(research.report, /Quotation location/);
   assert.equal(await page.locator("#research-result-body .open-pdf-page").count(), 2);
 
+  await revealControl(page, "#policy-document");
   await page.locator("#policy-document").selectOption({ label: workshop.name });
   await page.locator("#policy-query").fill("What is needed before workshop release?");
   await page.locator("#run-policy-research").click();
@@ -96,6 +100,7 @@ try {
   assert.match(sections.report, /PDF page 1/); assert.match(sections.report, /PDF page 2/);
   assert.ok(await page.locator("#research-result-body .open-pdf-page").count() >= 2);
 
+  await revealControl(page, "#checklist-document");
   await page.locator("#checklist-document").selectOption({ label: workshop.name });
   await page.locator("#checklist-query").fill("What is needed before workshop release?");
   await page.locator("#run-policy-checklist").click();
@@ -108,6 +113,7 @@ try {
   await page.locator("#file-input").setInputFiles(cross);
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
   assert.equal(await page.locator("#research-results").isVisible(), false);
+  await revealControl(page, "#checklist-document");
   await page.locator("#checklist-document").selectOption({ label: cross.name });
   await page.locator("#checklist-query").fill("What approval is needed before release?");
   await page.locator("#run-policy-checklist").click();

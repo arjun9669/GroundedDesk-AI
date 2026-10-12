@@ -1,3 +1,4 @@
+import { revealControl } from "./fixtures/workspace-ui.mjs";
 // Fixed synthetic reliability scenarios. This is not independent answer accuracy.
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
@@ -50,7 +51,7 @@ try {
   page = await context.newPage(); page.on("pageerror", error => errors.push(error.message));
   await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
-  observed.build = await page.locator("#retrieval-build").innerText(); assert.match(observed.build, /2026-10-12-r30/);
+  observed.build = await page.locator("#retrieval-build").innerText(); assert.match(observed.build, /2026-10-12-r31/);
   for (const test of cases) {
     await page.locator("#clear-docs").click();
     await page.locator("#file-input").setInputFiles({ name: test.file, mimeType: "application/pdf", buffer: fixtures[test.file] });
@@ -64,11 +65,13 @@ try {
     } else {
       assert.equal(await page.locator("#doc-count").innerText(), "1");
       if (test.id === "cross-page") {
+        await revealControl(page, "#checklist-query");
         await page.locator("#checklist-query").fill(test.question);
         await page.locator("#run-policy-checklist").click();
         record.displayed = await page.locator("#research-result-body").innerText();
         assert.match(record.displayed, /PDF pages 1, 2/);
       } else if (test.question) {
+        await revealControl(page, "#query-input");
         await page.locator("#query-input").fill(test.question); await page.locator("#ask-button").click();
         record.displayed = await page.locator("#answer-result").innerText();
         if (test.id === "mixed-pages") {

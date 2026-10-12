@@ -1,5 +1,12 @@
 # Changelog
 
+### 5.6 / r31 — A clearer document workspace (2026-10-12)
+
+- Replaced the marketing hero and stacked technical panels with a document sidebar and Ask / Compare / Research tabs. Model settings, experimental drafts, policy tools and developer checks use progressive disclosures. Clearer labels, progress feedback, Save report, optional search details and full filename tooltips reduce clutter.
+- Added keyboard tab navigation, preserved form/answer state, correctly associated report panels and mobile file collapse with desktop restoration. Sample questions hide when examples are replaced. No paid fonts or assets added.
+- 253 unit tests and six Chromium feature scripts pass, including actual MiniLM positive controls, PDF/lexical workflows and mobile-width checks. Unchanged Cobalt16 actual MiniLM in-sample UI regression: 16 PASS / 0 PARTIAL / 0 FAIL; all source records and evidence exports match r30 aside from build. Original first-look and historical scores preserved. [Scope/evidence](docs/WORKSPACE_UI_5_6.md).
+- README and navigation instructions updated. Physical phones, character-level partial-run highlights, OCR and layout reconstruction remain pending.
+
 ### 5.5 / r30 — Refuse unsupported PIN value requests (2026-10-12)
 
 - Concrete PIN/door/access-code requests require a labeled numeric value in the quoted evidence, so a document title or PIN policy cannot answer an unknown PIN. Supported fictional PIN values and procedural rotation questions remain answerable. This lexical guard does not prove entity matching or general factual correctness.
