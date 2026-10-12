@@ -1,0 +1,258 @@
+{
+  "classification": "Cobalt16 in-sample UI regression against unchanged r29 frozen inputs; not independent accuracy",
+  "hash_verification": "PASS",
+  "cases": [
+    {
+      "id": "H01",
+      "workflow": "hybrid",
+      "question": "How many visitors can attend one planetarium session?",
+      "displayed": "YOUR QUESTION\nHow many visitors can attend one planetarium session?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Each planetarium session admits at most 48 visitors.\n\nSOURCE EVIDENCE\n[1]\n01_Cobalt_Planetarium.txt\n\nText line 2 (normalized extraction)\n\nCobalt Community Centre — Fictional Planetarium Guide P-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff. P-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement. P-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention. P-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "answer_only": "[1] Each planetarium session admits at most 48 visitors.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quotation": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "location": "Text line 2 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> How many visitors can attend one planetarium session?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n\r\n> [1] Each planetarium session admits at most 48 visitors.\r\n\r\n## Source evidence\r\n\r\n### [1] 01\\_Cobalt\\_Planetarium\\.txt\r\n\r\n**File:** 01\\_Cobalt\\_Planetarium\\.txt\r\n\r\n**Source location:** Text line 2 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 0.0476\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Each planetarium session admits at most 48 visitors.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> Cobalt Community Centre — Fictional Planetarium Guide\r\n> P-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\r\n> P-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\r\n> P-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\r\n> P-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H02",
+      "workflow": "hybrid",
+      "question": "When does the projection technician start the alignment check, and when must it be repeated?",
+      "displayed": "YOUR QUESTION\nWhen does the projection technician start the alignment check, and when must it be repeated?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\n\nSOURCE EVIDENCE\n[1]\n01_Cobalt_Planetarium.txt\n\nText line 3 (normalized extraction)\n\nCobalt Community Centre — Fictional Planetarium Guide P-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff. P-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement. P-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention. P-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "answer_only": "[1] The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quotation": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "location": "Text line 3 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> When does the projection technician start the alignment check, and when must it be repeated?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n\r\n> [1] The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\r\n\r\n## Source evidence\r\n\r\n### [1] 01\\_Cobalt\\_Planetarium\\.txt\r\n\r\n**File:** 01\\_Cobalt\\_Planetarium\\.txt\r\n\r\n**Source location:** Text line 3 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 0.0476\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> Cobalt Community Centre — Fictional Planetarium Guide\r\n> P-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\r\n> P-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\r\n> P-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\r\n> P-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H03",
+      "workflow": "hybrid",
+      "question": "How long are session attendance registers retained, including the exception?",
+      "displayed": "YOUR QUESTION\nHow long are session attendance registers retained, including the exception?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\n\nSOURCE EVIDENCE\n[1]\n01_Cobalt_Planetarium.txt\n\nText line 4 (normalized extraction)\n\nts at most 48 visitors. The number counts seated visitors, not staff. P-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement. P-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention. P-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "answer_only": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quotation": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "location": "Text line 4 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> How long are session attendance registers retained, including the exception?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n\r\n> [1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\r\n\r\n## Source evidence\r\n\r\n### [1] 01\\_Cobalt\\_Planetarium\\.txt\r\n\r\n**File:** 01\\_Cobalt\\_Planetarium\\.txt\r\n\r\n**Source location:** Text line 4 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 0.0214\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> ts at most 48 visitors. The number counts seated visitors, not staff.\r\n> P-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\r\n> P-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\r\n> P-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H04",
+      "workflow": "hybrid",
+      "question": "Who must sign off a replacement projector before public use, and in what form?",
+      "displayed": "YOUR QUESTION\nWho must sign off a replacement projector before public use, and in what form?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\n\nSOURCE EVIDENCE\n[1]\n01_Cobalt_Planetarium.txt\n\nText line 5 (normalized extraction)\n\ncheck 25 minutes before doors open. The check is repeated after any projector replacement. P-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention. P-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "answer_only": "[1] A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quotation": "check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "location": "Text line 5 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> Who must sign off a replacement projector before public use, and in what form?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n\r\n> [1] A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\r\n\r\n## Source evidence\r\n\r\n### [1] 01\\_Cobalt\\_Planetarium\\.txt\r\n\r\n**File:** 01\\_Cobalt\\_Planetarium\\.txt\r\n\r\n**Source location:** Text line 5 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 0.0476\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> check 25 minutes before doors open. The check is repeated after any projector replacement.\r\n> P-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\r\n> P-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H05",
+      "workflow": "hybrid",
+      "question": "What happens to framed prints arriving with visible condensation?",
+      "displayed": "YOUR QUESTION\nWhat happens to framed prints arriving with visible condensation?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\n\nSOURCE EVIDENCE\n[1]\n02_Cobalt_Gallery.txt\n\nText line 4 (normalized extraction)\n\nvisitors, not guides. G-02. Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period. G-03. Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry. G-04. A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "answer_only": "[1] Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quotation": "visitors, not guides.\nG-02. Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.\nG-03. Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\nG-04. A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.",
+          "location": "Text line 4 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> What happens to framed prints arriving with visible condensation?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n\r\n> [1] Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\r\n\r\n## Source evidence\r\n\r\n### [1] 02\\_Cobalt\\_Gallery\\.txt\r\n\r\n**File:** 02\\_Cobalt\\_Gallery\\.txt\r\n\r\n**Source location:** Text line 4 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 0.0214\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> visitors, not guides.\r\n> G-02. Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.\r\n> G-03. Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\r\n> G-04. A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H06",
+      "workflow": "hybrid",
+      "question": "How long do seed envelopes dry, and what happens if they remain damp?",
+      "displayed": "YOUR QUESTION\nHow long do seed envelopes dry, and what happens if they remain damp?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\n\nSOURCE EVIDENCE\n[1]\n03_Cobalt_Seed_Library.txt\n\nText line 2 (normalized extraction)\n\nCobalt Community Centre — Fictional Seed Library Guide S-01. Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection. S-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention. S-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet. S-04. A donated seed ba\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "answer_only": "[1] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quotation": "Cobalt Community Centre — Fictional Seed Library Guide\nS-01. Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed ba",
+          "location": "Text line 2 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> How long do seed envelopes dry, and what happens if they remain damp?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n\r\n> [1] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\r\n\r\n## Source evidence\r\n\r\n### [1] 03\\_Cobalt\\_Seed\\_Library\\.txt\r\n\r\n**File:** 03\\_Cobalt\\_Seed\\_Library\\.txt\r\n\r\n**Source location:** Text line 2 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 0.0476\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> Cobalt Community Centre — Fictional Seed Library Guide\r\n> S-01. Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\r\n> S-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\r\n> S-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\r\n> S-04. A donated seed ba\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H07",
+      "workflow": "hybrid",
+      "question": "What is the seed packet limit per visitor, including the donor exception?",
+      "displayed": "YOUR QUESTION\nWhat is the seed packet limit per visitor, including the donor exception?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\n\nSOURCE EVIDENCE\n[1]\n03_Cobalt_Seed_Library.txt\n\nText line 4 (normalized extraction)\n\nEnvelopes that remain damp are isolated until the Seed Librarian records a dry inspection. S-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention. S-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet. S-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "answer_only": "[1] Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quotation": "Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+          "location": "Text line 4 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> What is the seed packet limit per visitor, including the donor exception?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n\r\n> [1] Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\r\n\r\n## Source evidence\r\n\r\n### [1] 03\\_Cobalt\\_Seed\\_Library\\.txt\r\n\r\n**File:** 03\\_Cobalt\\_Seed\\_Library\\.txt\r\n\r\n**Source location:** Text line 4 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 0.0476\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\r\n> S-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\r\n> S-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\r\n> S-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H08",
+      "workflow": "hybrid",
+      "question": "Whose written acceptance is needed before donated seed batches can be distributed?",
+      "displayed": "YOUR QUESTION\nWhose written acceptance is needed before donated seed batches can be distributed?\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.\n\nSOURCE EVIDENCE\n[1]\n03_Cobalt_Seed_Library.txt\n\nText line 5 (normalized extraction)\n\nd for five years, unless an active conservation hold requires longer retention. S-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet. S-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "answer_only": "[1] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quotation": "d for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+          "location": "Text line 5 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> Whose written acceptance is needed before donated seed batches can be distributed?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n\r\n> [1] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.\r\n\r\n## Source evidence\r\n\r\n### [1] 03\\_Cobalt\\_Seed\\_Library\\.txt\r\n\r\n**File:** 03\\_Cobalt\\_Seed\\_Library\\.txt\r\n\r\n**Source location:** Text line 5 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 0.0476\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> d for five years, unless an active conservation hold requires longer retention.\r\n> S-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\r\n> S-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H09",
+      "workflow": "hybrid",
+      "question": "What is the exact PIN code for the Cobalt planetarium door?",
+      "displayed": "YOUR QUESTION\nWhat is the exact PIN code for the Cobalt planetarium door?\nNO SUPPORTING EVIDENCE\nCopy report\nSave report\nI can't find this in the provided documents.\n\nTry a different question or add a document containing relevant information. No answer was invented.",
+      "answer_only": "I can't find this in the provided documents.",
+      "sources": [],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> What is the exact PIN code for the Cobalt planetarium door?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n> I can't find this in the provided documents.\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H10",
+      "workflow": "hybrid",
+      "question": "What is the current price of gold?",
+      "displayed": "YOUR QUESTION\nWhat is the current price of gold?\nNO SUPPORTING EVIDENCE\nCopy report\nSave report\nI can't find this in the provided documents.\n\nTry a different question or add a document containing relevant information. No answer was invented.",
+      "answer_only": "I can't find this in the provided documents.",
+      "sources": [],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> What is the current price of gold?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n> I can't find this in the provided documents.\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H11",
+      "workflow": "hybrid",
+      "question": "What is the Cobalt Gallery director's date of birth?",
+      "displayed": "YOUR QUESTION\nWhat is the Cobalt Gallery director's date of birth?\nNO SUPPORTING EVIDENCE\nCopy report\nSave report\nI can't find this in the provided documents.\n\nTry a different question or add a document containing relevant information. No answer was invented.",
+      "answer_only": "I can't find this in the provided documents.",
+      "sources": [],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> What is the Cobalt Gallery director's date of birth?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n> I can't find this in the provided documents.\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "H12",
+      "workflow": "hybrid",
+      "question": "What is the exact projector lamp wattage?",
+      "displayed": "YOUR QUESTION\nWhat is the exact projector lamp wattage?\nNO SUPPORTING EVIDENCE\nCopy report\nSave report\nI can't find this in the provided documents.\n\nTry a different question or add a document containing relevant information. No answer was invented.",
+      "answer_only": "I can't find this in the provided documents.",
+      "sources": [],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> What is the exact projector lamp wattage?\r\n\r\n**Retrieval mode:** Local MiniLM \\+ BM25\\-style reciprocal\\-rank fusion \\(extractive; no generative LLM\\)\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n## Answer\r\n\r\n> I can't find this in the provided documents.\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "C13",
+      "workflow": "comparison",
+      "question": "Compare the visitor capacities of planetarium and guided gallery sessions.",
+      "displayed": "Shared vocabulary: admits, centre, cobalt, community, counts, each, fictional, guide, longer, most, must, number. Shared terms do not establish factual agreement.\n\n[1] 01_Cobalt_Planetarium.txt\n\nEach planetarium session admits at most 48 visitors.\n\nText line 2 (normalized extraction)\n\nLocate in library ↗\n[2] 02_Cobalt_Gallery.txt\n\nEach guided gallery session admits at most 32 visitors.\n\nText line 2 (normalized extraction)\n\nLocate in library ↗",
+      "answer_only": "Shared vocabulary: admits, centre, cobalt, community, counts, each, fictional, guide, longer, most, must, number. Shared terms do not establish factual agreement.\n\n[1] 01_Cobalt_Planetarium.txt\n\nEach planetarium session admits at most 48 visitors.\n\nText line 2 (normalized extraction)\n\nLocate in library ↗\n[2] 02_Cobalt_Gallery.txt\n\nEach guided gallery session admits at most 32 visitors.\n\nText line 2 (normalized extraction)\n\nLocate in library ↗",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quotation": "Each planetarium session admits at most 48 visitors.",
+          "location": "Text line 2 (normalized extraction)"
+        },
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quotation": "Each guided gallery session admits at most 32 visitors.",
+          "location": "Text line 2 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk AI 4.0 — evidence report\r\n\r\n**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n**Question/topic:** Compare the visitor capacities of planetarium and guided gallery sessions\\.\r\n\r\n## Side-by-side excerpts\r\n\r\n### [1] 01\\_Cobalt\\_Planetarium\\.txt\r\n\r\n> Each planetarium session admits at most 48 visitors.\r\n\r\n\r\n\r\n**Quotation location:** Text line 2 \\(normalized extraction\\)\r\n\r\n### [2] 02\\_Cobalt\\_Gallery\\.txt\r\n\r\n> Each guided gallery session admits at most 32 visitors.\r\n\r\n\r\n\r\n**Quotation location:** Text line 2 \\(normalized extraction\\)\r\n\r\n## Shared vocabulary (not agreement)\r\n\r\nadmits, centre, cobalt, community, counts, each, fictional, guide, longer, most, must, number\r\n\r\n---\r\n\r\n*For research assistance only. Keyword matches can miss paraphrases; absence of a match does not prove absence of a fact. Do not redistribute private document text without permission.*\r\n"
+    },
+    {
+      "id": "C14",
+      "workflow": "comparison",
+      "question": "Compare planetarium attendance-register retention with seed accession-register retention, including exceptions.",
+      "displayed": "Shared vocabulary: active, before, centre, cobalt, community, coordinator, each, fictional, guide, longer, must, receive. Shared terms do not establish factual agreement.\n\n[1] 01_Cobalt_Planetarium.txt\n\nSession attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\n\nText line 4 (normalized extraction)\n\nLocate in library ↗\n[2] 03_Cobalt_Seed_Library.txt\n\nSeed accession registers are retained for five years, unless an active conservation hold requires longer retention.\n\nText line 3 (normalized extraction)\n\nLocate in library ↗",
+      "answer_only": "Shared vocabulary: active, before, centre, cobalt, community, coordinator, each, fictional, guide, longer, must, receive. Shared terms do not establish factual agreement.\n\n[1] 01_Cobalt_Planetarium.txt\n\nSession attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\n\nText line 4 (normalized extraction)\n\nLocate in library ↗\n[2] 03_Cobalt_Seed_Library.txt\n\nSeed accession registers are retained for five years, unless an active conservation hold requires longer retention.\n\nText line 3 (normalized extraction)\n\nLocate in library ↗",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quotation": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "location": "Text line 4 (normalized extraction)"
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quotation": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+          "location": "Text line 3 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk AI 4.0 — evidence report\r\n\r\n**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n**Question/topic:** Compare planetarium attendance\\-register retention with seed accession\\-register retention, including exceptions\\.\r\n\r\n## Side-by-side excerpts\r\n\r\n### [1] 01\\_Cobalt\\_Planetarium\\.txt\r\n\r\n> Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\r\n\r\n\r\n\r\n**Quotation location:** Text line 4 \\(normalized extraction\\)\r\n\r\n### [2] 03\\_Cobalt\\_Seed\\_Library\\.txt\r\n\r\n> Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\r\n\r\n\r\n\r\n**Quotation location:** Text line 3 \\(normalized extraction\\)\r\n\r\n## Shared vocabulary (not agreement)\r\n\r\nactive, before, centre, cobalt, community, coordinator, each, fictional, guide, longer, must, receive\r\n\r\n---\r\n\r\n*For research assistance only. Keyword matches can miss paraphrases; absence of a match does not prove absence of a fact. Do not redistribute private document text without permission.*\r\n"
+    },
+    {
+      "id": "C15",
+      "workflow": "comparison",
+      "question": "Compare the written approvals for accepting gallery loans and donated seed batches.",
+      "displayed": "Shared vocabulary: centre, cobalt, community, each, fictional, guide, hours, longer, must, registers, remain, retained. Shared terms do not establish factual agreement.\n\n[1] 02_Cobalt_Gallery.txt\n\nA gallery loan may be accepted only with written approval from the Collection Curator and Registrar.\n\nText line 5 (normalized extraction)\n\nLocate in library ↗\n[2] 03_Cobalt_Seed_Library.txt\n\nA donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.\n\nText line 5 (normalized extraction)\n\nLocate in library ↗",
+      "answer_only": "Shared vocabulary: centre, cobalt, community, each, fictional, guide, hours, longer, must, registers, remain, retained. Shared terms do not establish factual agreement.\n\n[1] 02_Cobalt_Gallery.txt\n\nA gallery loan may be accepted only with written approval from the Collection Curator and Registrar.\n\nText line 5 (normalized extraction)\n\nLocate in library ↗\n[2] 03_Cobalt_Seed_Library.txt\n\nA donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.\n\nText line 5 (normalized extraction)\n\nLocate in library ↗",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quotation": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.",
+          "location": "Text line 5 (normalized extraction)"
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quotation": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+          "location": "Text line 5 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk AI 4.0 — evidence report\r\n\r\n**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n**Question/topic:** Compare the written approvals for accepting gallery loans and donated seed batches\\.\r\n\r\n## Side-by-side excerpts\r\n\r\n### [1] 02\\_Cobalt\\_Gallery\\.txt\r\n\r\n> A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.\r\n\r\n\r\n\r\n**Quotation location:** Text line 5 \\(normalized extraction\\)\r\n\r\n### [2] 03\\_Cobalt\\_Seed\\_Library\\.txt\r\n\r\n> A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.\r\n\r\n\r\n\r\n**Quotation location:** Text line 5 \\(normalized extraction\\)\r\n\r\n## Shared vocabulary (not agreement)\r\n\r\ncentre, cobalt, community, each, fictional, guide, hours, longer, must, registers, remain, retained\r\n\r\n---\r\n\r\n*For research assistance only. Keyword matches can miss paraphrases; absence of a match does not prove absence of a fact. Do not redistribute private document text without permission.*\r\n"
+    },
+    {
+      "id": "C16",
+      "workflow": "comparison",
+      "question": "Compare the initial holding times and dampness exceptions for framed prints and seed envelopes.",
+      "displayed": "Shared vocabulary: centre, cobalt, community, each, fictional, guide, hours, longer, must, registers, remain, retained. Shared terms do not establish factual agreement.\n\n[1] 02_Cobalt_Gallery.txt\n\nNewly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\n\nText line 4 (normalized extraction)\n\nLocate in library ↗\n[2] 03_Cobalt_Seed_Library.txt\n\nSeed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\n\nText line 2 (normalized extraction)\n\nLocate in library ↗",
+      "answer_only": "Shared vocabulary: centre, cobalt, community, each, fictional, guide, hours, longer, must, registers, remain, retained. Shared terms do not establish factual agreement.\n\n[1] 02_Cobalt_Gallery.txt\n\nNewly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\n\nText line 4 (normalized extraction)\n\nLocate in library ↗\n[2] 03_Cobalt_Seed_Library.txt\n\nSeed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\n\nText line 2 (normalized extraction)\n\nLocate in library ↗",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quotation": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+          "location": "Text line 4 (normalized extraction)"
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quotation": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+          "location": "Text line 2 (normalized extraction)"
+        }
+      ],
+      "report": "# GroundedDesk AI 4.0 — evidence report\r\n\r\n**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.\r\n\r\n**Retrieval build:** `2026-10-12-r32`\r\n\r\n**Question/topic:** Compare the initial holding times and dampness exceptions for framed prints and seed envelopes\\.\r\n\r\n## Side-by-side excerpts\r\n\r\n### [1] 02\\_Cobalt\\_Gallery\\.txt\r\n\r\n> Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\r\n\r\n\r\n\r\n**Quotation location:** Text line 4 \\(normalized extraction\\)\r\n\r\n### [2] 03\\_Cobalt\\_Seed\\_Library\\.txt\r\n\r\n> Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\r\n\r\n\r\n\r\n**Quotation location:** Text line 2 \\(normalized extraction\\)\r\n\r\n## Shared vocabulary (not agreement)\r\n\r\ncentre, cobalt, community, each, fictional, guide, hours, longer, must, registers, remain, retained\r\n\r\n---\r\n\r\n*For research assistance only. Keyword matches can miss paraphrases; absence of a match does not prove absence of a fact. Do not redistribute private document text without permission.*\r\n"
+    }
+  ],
+  "modelRequests": [
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer.json",
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json",
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/config.json",
+    "https://huggingface.co/api/resolve-cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer.json",
+    "https://huggingface.co/api/resolve-cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer_config.json",
+    "https://huggingface.co/api/resolve-cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/config.json",
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/onnx/model_quantized.onnx",
+    "https://us.aws.cdn.hf.co/xet-bridge-us/645192b75fb40b9f50b71914/c96f5f1e2aee643bd8191bb520a3e175db7b05821579a02a70acdf31e655d194",
+    "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.0/dist/ort-wasm-simd-threaded.jsep.wasm"
+  ],
+  "browser": "154.0.8037.98",
+  "build": "Loaded retrieval build: 2026-10-12-r32",
+  "library": "TXT\n01_Cobalt_Planetarium.txt\n565 characters · Your file\n×\nTXT\n02_Cobalt_Gallery.txt\n566 characters · Your file\n×\nTXT\n03_Cobalt_Seed_Library.txt\n597 characters · Your file\n×",
+  "model": "Actual Xenova/all-MiniLM-L6-v2, local WASM; Qwen disabled",
+  "capture_status": "COMPLETE"
+}

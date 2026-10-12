@@ -1,5 +1,10 @@
 # Changelog
 
+### 5.6 / r32 — Keep the question box within reach (2026-10-12)
+
+- Moved the question composer above answers so short laptop windows can start a query without scrolling. DOM and visual order agree for keyboard users. Added a 1440×688 viewport check and clearer empty-state wording.
+- 253 unit tests and six Chromium feature scripts pass again, including actual MiniLM controls. The unchanged Cobalt16 in-sample regression remains 16 PASS / 0 PARTIAL / 0 FAIL; source records and reports match r30 apart from build. All historical results and r31 evidence are preserved. README/current screenshots updated.
+
 ### 5.6 / r31 — A clearer document workspace (2026-10-12)
 
 - Replaced the marketing hero and stacked technical panels with a document sidebar and Ask / Compare / Research tabs. Model settings, experimental drafts, policy tools and developer checks use progressive disclosures. Clearer labels, progress feedback, Save report, optional search details and full filename tooltips reduce clutter.

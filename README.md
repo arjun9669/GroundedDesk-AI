@@ -2,13 +2,13 @@
 
 **Free, browser-first document intelligence portfolio project.** Upload text, Markdown or text-based PDF documents, inspect source-backed answers, optionally enable local semantic embeddings and a local small language model, and create multi-document research reports.
 
-**[Live GroundedDesk AI 5.6](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r31)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
+**[Live GroundedDesk AI 5.6](https://arjun9669.github.io/GroundedDesk-AI/?build=20261012-r32)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
 
 > This is the **dedicated source repository and live static site**, deployed through free GitHub Pages. The app runs its own [GitHub Actions CI](./.github/workflows/ci.yml) and [Pages workflow](./.github/workflows/pages.yml). The original profile-hosted demo remains available separately. Model and PDF dependencies require public downloads when enabled; no paid inference account is needed.
 
 ## Current release and measured evidence
 
-Current retrieval build: **2026-10-12-r31** (5.6, redesigned document workspace; retrieval behavior unchanged). The dedicated repository is the active development source; the profile-hosted copy is historical.
+Current retrieval build: **2026-10-12-r32** (5.6, redesigned document workspace; retrieval behavior unchanged). The dedicated repository is the active development source; the profile-hosted copy is historical.
 
 [Browser benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md) preserves first-look results separately from in-sample regressions. Aster32 and Lantern32 each reached 32/32 strict passes in the measured r25 regression; this is not independent accuracy. The Aster H01 infrastructure retry qualification remains recorded.
 
@@ -25,7 +25,7 @@ Current retrieval build: **2026-10-12-r31** (5.6, redesigned document workspace;
 | **5.2 prototype** | **Candidate release-control inventory: rule-tagged, literal source sentences grouped by gate, conditional, related governance and unclassified categories** | **Optional numbered-policy Research workflow; not semantic synthesis or compliance verification** |
 | **5.3** | **Precise source-sentence evidence selection, stronger missing-fact refusals and two-document comparison quote recovery** | **Deterministic Keyword/Comparison refinement, no LLM or paid API** |
 | **5.4 / r25** | **More complete source-literal answers, conditional evidence selection and unsupported-value safeguards** | **Actual MiniLM in-sample regressions recorded separately from independent first looks** |
-| **5.6 / r31** | **Ask / Compare / Research tabs, document sidebar, progressive settings, responsive controls and preserved evidence** | **Local HTML/CSS/JavaScript; existing retrieval and workflows** |
+| **5.6 / r32** | **Ask / Compare / Research tabs, document sidebar, progressive settings, responsive controls and preserved evidence** | **Local HTML/CSS/JavaScript; existing retrieval and workflows** |
 | **5.5 / r30** | **Verified physical PDF page citations, original-page preview and normalized TXT/Markdown line references in Q&A, Comparison, Research and policy workflows** | **Local PDF.js preview, source-integrity guards and portable Markdown exports** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
@@ -35,7 +35,7 @@ No paid model inference, authentication, cloud database or backend is part of th
 The interface now starts with your documents and a focused **Ask / Compare / Research** workspace. The large marketing hero and stacked model/version explanations have been replaced by a document sidebar, a short getting-started guide, clearer controls and more readable evidence cards.
 
 - **Add documents:** Browse or drop PDF, TXT or Markdown files into the sidebar. Use the file filter, remove a file, or open its original PDF. Full filenames are available on hover; small files show readable character counts.
-- **Ask:** Enter a question, read the quoted answer and inspect its sources. Copy or **Save report** to keep the evidence. Changing tabs preserves your answer and form input. Example questions disappear when the sample documents are replaced.
+- **Ask:** The question box sits above answers and stays visible in short laptop windows. Enter a question, read the quoted answer and inspect its sources. Copy or **Save report** to keep the evidence. Changing tabs preserves your answer and form input. Example questions disappear when the sample documents are replaced.
 - **Compare:** Choose two documents and a topic. Their source quotations appear side by side. Comparison remains a separate lexical workflow.
 - **Research:** Gather passages across files. Open **Policy review tools** for **Review policy sections** or **Build a policy checklist**. Reports stay associated with their tool tab.
 - **Search & answer settings:** Fast keyword search works immediately. Enable the free local MiniLM model for **Local AI search** in Ask. Experimental Qwen draft controls are under a separate disclosure and stay off by default.
@@ -43,7 +43,7 @@ The interface now starts with your documents and a focused **Ask / Compare / Res
 
 Retrieval scores are available under **Search details**, with their confidence limitation. Developer evaluation and data-handling explanations are available below the workspace instead of leading the user flow. Keyboard tabs support arrows, Home and End. This is not a claim of a complete accessibility audit.
 
-![Redesigned desktop workspace](./docs/evidence/r31/workspace/01-desktop-start.png)
+![Redesigned desktop workspace](./docs/evidence/r32/workspace/04-short-laptop-start.png)
 
 **Validation:** 253 unit tests and six actual Chromium feature scripts pass. Installed Chrome checks include keyboard navigation, uploads, exports, preserved tab state, associated results, the bundled developer check, document removal, mobile-width collapse/restoration and PDF workflows. Actual local MiniLM controls pass with Qwen off. The unchanged **Cobalt16 in-sample UI regression is 16 PASS / 0 PARTIAL / 0 FAIL**; all source records and copied reports match r30 apart from the build. The original r29 first-look remains **15 PASS / 0 PARTIAL / 1 FAIL**. No new independent accuracy result is claimed. [Scope and evidence](./docs/WORKSPACE_UI_5_6.md).
 
