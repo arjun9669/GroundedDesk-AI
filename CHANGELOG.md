@@ -204,3 +204,9 @@
 ## 1.0.0 — Extractive evidence
 
 - Added session document ingestion, keyword retrieval, exact citations, unsupported-question refusal, and Markdown evidence exports.
+
+## 2026-10-12 — r25 browser evidence and maintenance
+
+- Published measured dual Chrome regression history, with first-look baselines and capture limitations preserved.
+- Aligned page title/description and README with 5.4/r25.
+- Made the excerpt provenance test normalize CRLF consistently with the retrieval engine; no ranking change.

@@ -17,3 +17,7 @@ Earlier Lantern32 independent first-look remains **16/32 PASS**; r23 and r24 Lan
 New `tests/r25-generalized-evidence.test.mjs` exercises unrelated synthetic documents and question templates, not the frozen benchmark's documents or literals. The existing suite and browser smoke test must pass on GitHub Actions. **Real Chrome + MiniLM r25 Aster32 regression is pending** and must be performed after code freeze with the original Aster ZIP unchanged. Run Lantern32 as an in-sample safety regression too.
 
 Do not merge the draft PR without reviewing: Node CI, browser smoke, source quotation provenance, unsupported zero-citation refusals, and the real MiniLM/Comparison evaluations. Even a 32/32 Aster in-sample regression would not establish independent accuracy; a new, previously unseen benchmark is required.
+
+## Completed browser validation
+
+The measured r25 actual-MiniLM dual regression is now recorded in [browser benchmark history](./BROWSER_BENCHMARK_HISTORY.md), including the Aster H01 infrastructure retry and preserved independent first-look scores. Earlier pending statements above describe the pre-test release gate.
