@@ -7,8 +7,8 @@
 <meta name="theme-color" content="#f4f1ea"/>
 <meta name="description" content="GroundedDesk — a free, local document workspace. Add files, ask questions, and check answers against the original evidence."/>
 <title>GroundedDesk AI 5.6 | Your document workspace</title>
-<link rel="stylesheet" href="./styles.css?v=20261013-r38"/>
-<script defer type="module" src="./app.mjs?v=20261013-r38"></script>
+<link rel="stylesheet" href="./styles.css?v=20261013-r39"/>
+<script defer type="module" src="./app.mjs?v=20261013-r39"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-workspace">Skip to workspace</a>
@@ -82,8 +82,8 @@
             </div>
             <form id="query-form" class="query-form">
               <label for="query-input" class="sr-only">Question about your documents</label>
-              <textarea id="query-input" rows="2" maxlength="600" placeholder="Ask anything about your documents..."></textarea>
-              <div class="query-footer"><span>Answers come from your documents. Check the sources.</span><button type="submit" id="ask-button">Find an answer <span aria-hidden="true">↗</span></button></div>
+              <textarea id="query-input" rows="2" maxlength="600" placeholder="Ask anything about your documents..." aria-describedby="question-shortcuts" aria-keyshortcuts="Control+Enter Meta+Enter"></textarea>
+              <div class="query-footer"><span>Answers come from your documents. Check the sources.<span id="question-shortcuts" class="shortcut-hint"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Enter</kbd> to ask · <kbd>/</kbd> to focus</span></span><button type="submit" id="ask-button">Find an answer <span aria-hidden="true">↗</span></button></div>
             </form>
             <details id="chat-history" class="chat-history">
               <summary>Recent questions <span id="history-count">0</span></summary>

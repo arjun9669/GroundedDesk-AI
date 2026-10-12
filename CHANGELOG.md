@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6 / r39 — Discoverable keyboard shortcuts (2026-10-13)
+
+- Added / to open Ask and focus the question composer outside typing controls/dialogs. Made existing Ctrl/Cmd + Enter discoverable; submits through the form and ignores composition, repeats, modified combinations and disabled submission. Plain Enter remains a newline.
+- Small accessible shortcut hint fits the short-laptop composer. No retrieval, stored-history, benchmark or paid-dependency changes.
+- 253 unit tests, offline toy checks and seven installed Chrome scripts pass, including actual MiniLM. Initial Workspace/PDF readiness timeouts preserved; unchanged full reruns pass. [Scope/evidence](docs/KEYBOARD_SHORTCUTS_5_6.md).
+
 ### 5.6 / r38 — Find past questions and clearer report feedback (2026-10-13)
 
 - Search recent questions and source filenames with case/whitespace normalization, clear-search focus and no-match guidance. Display filtering preserves stored history; changing files resets it.

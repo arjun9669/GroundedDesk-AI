@@ -1,5 +1,5 @@
 // Presentation only. Do not change documents, retrieval, answers or report data.
-import { closePDFPreview } from "./pdf-preview.mjs?v=20261013-r38";
+import { closePDFPreview } from "./pdf-preview.mjs?v=20261013-r39";
 export function showWorkspace(name, { result = false } = {}) {
   const tab = document.querySelector(`[data-view="${name}"]`);
   if (!tab) return;
@@ -46,6 +46,18 @@ export function initWorkspaceUI() {
   new MutationObserver(sync).observe(document.querySelector("#semantic-status"), { childList: true, subtree: true });
   document.querySelector('a[href="#about"]').addEventListener("click", () => { document.querySelector("#help-details").open = true; });
   sync();
+  document.addEventListener("keydown", event => {
+    if (event.key !== "/" || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey
+        || event.isComposing || event.repeat || event.defaultPrevented
+        || document.querySelector("dialog[open]")) return;
+    const editing = event.composedPath().some(node => node instanceof Element &&
+      (node.matches('input, textarea, select, [role="textbox"], [role="searchbox"], [role="combobox"]')
+        || node.isContentEditable));
+    if (editing) return;
+    event.preventDefault();
+    showWorkspace("ask");
+    document.querySelector("#query-input").focus();
+  });
   initQuickGuide();
 }
 

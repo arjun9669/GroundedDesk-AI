@@ -1,16 +1,16 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r38";
-import { hybridRank } from "./hybrid.mjs?v=20261013-r38";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r39";
+import { hybridRank } from "./hybrid.mjs?v=20261013-r39";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261013-r38";
+import { createEvidenceReport } from "./report.mjs?v=20261013-r39";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r38";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r38";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r38";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r38";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r38";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r38";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r38";
-import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r38";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r39";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r39";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r39";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r39";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r39";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r39";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r39";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r39";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -780,9 +780,11 @@ $("query-form").addEventListener("submit", event => {
   ask($("query-input").value);
 });
 $("query-input").addEventListener("keydown", event => {
-  if (event.key === "Enter" && (event.ctrlKey || event.metaKey)) {
+  if (event.key === "Enter" && (event.ctrlKey || event.metaKey) && !event.altKey && !event.shiftKey
+      && !event.isComposing && !event.repeat && !event.defaultPrevented
+      && !document.querySelector("dialog[open]")) {
     event.preventDefault();
-    ask($("query-input").value);
+    if (!$("ask-button").disabled) $("query-form").requestSubmit($("ask-button"));
   }
 });
 document.querySelectorAll(".suggestion").forEach(button => button.addEventListener("click", () => {
