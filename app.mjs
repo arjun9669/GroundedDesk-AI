@@ -1,14 +1,15 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r27";
-import { hybridRank } from "./hybrid.mjs?v=20261012-r27";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r28";
+import { hybridRank } from "./hybrid.mjs?v=20261012-r28";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261012-r27";
+import { createEvidenceReport } from "./report.mjs?v=20261012-r28";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r27";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r27";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r27";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r27";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r27";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r27";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r28";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r28";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r28";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r28";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r28";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r28";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r28";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -159,6 +160,7 @@ function renderDocuments() {
     const fileIcon = make("span", "doc-icon", doc.type === "pdf" ? "PDF" : "TXT");
     const details = make("div", "doc-details");
     details.append(make("strong", "", doc.name), make("small", "", `${(doc.text.length / 1000).toFixed(1)}k characters · ${doc.sample ? "sample" : "session"}`));
+    for (const warning of pdfWarnings(doc.pdfDiagnostics)) details.append(make("small", "pdf-notice", warning));
     const remove = make("button", "remove-doc", "×");
     remove.type = "button";
     remove.title = `Remove ${doc.name}`;
@@ -172,6 +174,13 @@ function renderDocuments() {
       notify(`Removed ${doc.name}.`);
     });
     item.append(fileIcon, details, remove);
+    if (doc.type === "pdf" && doc.originalFile) {
+      const preview = make("button", "text-button", "View PDF");
+      preview.type = "button";
+      preview.setAttribute("aria-label", `View original PDF ${doc.name}`);
+      preview.addEventListener("click", () => openPDFPreview(doc.originalFile, doc.name, 1));
+      item.insertBefore(preview, remove);
+    }
     list.append(item);
   }
 }
@@ -183,41 +192,14 @@ function clearResult() {
   $("answer-result").replaceChildren();
 }
 
-function addDocument({ name, text, type = "txt", sample = false, pdfPageTexts, originalFile }) {
+function addDocument({ name, text, type = "txt", sample = false, pdfPageTexts, pdfDiagnostics, originalFile }) {
   if (documents.length >= MAX_DOCUMENTS) throw new Error("Maximum of 15 documents per session.");
   const clean = String(text).trim();
   if (!clean) throw new Error(`${name} has no extractable text.`);
   if (clean.length > MAX_CHARS) throw new Error(`${name} exceeds the 180,000-character limit.`);
   const id = typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : `file-${Date.now()}-${documents.length}`;
-  documents.push({ id, name, text: clean, sample, type, pdfPageTexts, originalFile });
+  documents.push({ id, name, text: clean, sample, type, pdfPageTexts, pdfDiagnostics, originalFile });
   rebuildIndex();
-}
-
-async function extractPDF(file) {
-  let pdfjs;
-  try {
-    // PDF.js is loaded only for PDFs; text retrieval remains fully offline.
-    pdfjs = await import("https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.mjs");
-    pdfjs.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.mjs";
-  } catch {
-    throw new Error("PDF.js could not load. Check connectivity, or use .txt/.md files instead.");
-  }
-  const buffer = await file.arrayBuffer();
-  const pdf = await pdfjs.getDocument({ data: buffer }).promise;
-  try {
-    if (pdf.numPages > 75) throw new Error("PDFs are limited to 75 pages.");
-    const pages = [];
-    let total = 0;
-    for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
-      const page = await pdf.getPage(pageNumber);
-      const content = await page.getTextContent();
-      const text = content.items.map(part => typeof part.str === "string" ? part.str : "").join(" ");
-      total += text.length;
-      if (total > MAX_CHARS) throw new Error("Extracted PDF text exceeds 180,000 characters.");
-      pages.push(text);
-    }
-    return { text: pages.join("\n\n"), pdfPageTexts: pages };
-  } finally { await pdf.destroy(); }
 }
 
 async function loadFiles(files) {
@@ -232,13 +214,16 @@ async function loadFiles(files) {
     }
     if (file.size > MAX_BYTES) { errors.push(`${file.name}: exceeds 5 MB`); continue; }
     try {
-      const extracted = ext === "pdf" ? await extractPDF(file) : { text: await file.text() };
+      const extracted = ext === "pdf" ? await readPDFFile(file) : { text: await file.text() };
       addDocument({ name: file.name, ...extracted, type: ext === "pdf" ? "pdf" : "txt", originalFile: ext === "pdf" ? file : undefined });
       added++;
-    } catch (error) { errors.push(error instanceof Error ? error.message : "Could not read file."); }
+    } catch (error) { errors.push(`${file.name}: ${error instanceof Error ? error.message : "Could not read file."}`); }
   }
   if (added) clearResult();
-  notify(`${added} file(s) added.${errors.length ? " Issues: " + errors.join("; ") : ""}`, errors.length > 0);
+  const message = `${added} file(s) added.${errors.length ? " Issues: " + errors.join("; ") : ""}`;
+  $("upload-status").textContent = message;
+  $("upload-status").classList.toggle("pdf-notice", errors.length > 0);
+  notify(message, errors.length > 0);
 }
 
 function highlightDocument(id) {
@@ -370,6 +355,7 @@ function renderResult(question, result) {
       header.append(make("span", "source-number", `[${source.citation}]`),
         make("strong", "", source.filename), make("small", "", `Rank ${source.score.toFixed(2)}`));
       card.append(header, make("p", "source-location", locationLabel(source.location)), make("p", "", source.excerpt));
+      for (const warning of pdfWarnings(documents.find(doc => doc.id === source.documentId)?.pdfDiagnostics, source.location?.pages)) card.append(make("p", "pdf-notice", warning));
       if (source.location.status === "verified" && source.location.kind === "pdf") {
         const open = make("button", "open-pdf-page", "Open cited PDF page ↗");
         open.type = "button";
@@ -665,6 +651,8 @@ document.querySelectorAll(".suggestion").forEach(button => button.addEventListen
 }));
 $("document-filter").addEventListener("input", renderDocuments);
 $("clear-docs").addEventListener("click", () => {
+  $("upload-status").textContent = "";
+  $("upload-status").classList.remove("pdf-notice");
   documents.splice(0);
   rebuildIndex();
   clearResult();
@@ -774,6 +762,7 @@ function presentResearch(result) {
     const excerpt = result.kind === "comparison" ? source.excerpt : source.quote;
     card.append(researchEl("p", "research-evidence-text",
       excerpt || "No matching passage found for this topic using keyword retrieval."));
+    for (const warning of pdfWarnings(documents.find(doc => doc.id === source.documentId)?.pdfDiagnostics, source.location?.pages)) card.append(researchEl("p", "pdf-notice", warning));
     if (excerpt) {
       card.append(researchEl("p", "source-location", locationLabel(source.location)));
       if (source.location?.status === "verified" && source.location.kind === "pdf") {

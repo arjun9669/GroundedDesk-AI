@@ -1,4 +1,5 @@
 // Original files stay in memory. Render only the selected page; never upload it.
+import { loadPDFLibrary, pdfErrorMessage } from "./pdf-ingest.mjs?v=20261012-r28";
 let active = null;
 
 export function closePDFPreview() {
@@ -73,8 +74,7 @@ export async function openPDFPreview(file, filename, initialPage) {
   }
 
   try {
-    const pdfjs = await import("https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.mjs");
-    pdfjs.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.mjs";
+    const pdfjs = await loadPDFLibrary();
     if (active !== state) return;
     const data = await file.arrayBuffer();
     if (active !== state) return;
@@ -83,6 +83,6 @@ export async function openPDFPreview(file, filename, initialPage) {
     state.pdf = pdf;
     await renderPage(initialPage);
   } catch (error) {
-    if (active === state) status.textContent = "PDF preview unavailable: " + error.message;
+    if (active === state) status.textContent = "PDF preview unavailable: " + pdfErrorMessage(error);
   }
 }

@@ -4,8 +4,9 @@
  * Its "agent" is a deterministic retrieve -> cross-check -> report workflow,
  * not an autonomous AI agent or a fact-entailment verifier.
  */
-import { buildIndex, keywordRank, answerFromCandidates, tokenize, bestSourceSentence } from "./retrieval.mjs?v=20261012-r27";
-import { assertWorkflowExport, locationLabel } from "./provenance.mjs?v=20261012-r27";
+import { buildIndex, keywordRank, answerFromCandidates, tokenize, bestSourceSentence } from "./retrieval.mjs?v=20261012-r28";
+import { assertWorkflowExport, locationLabel } from "./provenance.mjs?v=20261012-r28";
+import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r28";
 
 const MAX_QUERY = 600;
 const FLAG_PATTERNS = [
@@ -234,7 +235,7 @@ const cleanLine = value => String(value ?? "").replace(/\r\n?/g,"\n").replace(/[
 const quote = text => cleanLine(text).split("\n").map(line => "> " + line).join("\n");
 const safeTitle = text => cleanLine(text).replace(/[\\\x60*_{}\[\]()#+.!>|-]/g,"\\$&");
 
-function formatPolicyResearchMarkdown(result) {
+function formatPolicyResearchMarkdown(result, documents) {
   const lines = [
     "# GroundedDesk AI 5.1 — multi-section policy evidence",
     "",
@@ -255,6 +256,7 @@ function formatPolicyResearchMarkdown(result) {
     lines.push("### [" + source.citation + "] " + safeTitle(source.sectionId) +
       " — " + safeTitle(source.filename), "", quote(source.quote), "");
     if (source.location) lines.push("**Quotation location:** " + safeTitle(locationLabel(source.location)), "");
+    for (const warning of pdfWarnings(documents?.find(doc => doc.id === source.documentId)?.pdfDiagnostics, source.location?.pages)) lines.push("**PDF extraction notice:** " + safeTitle(warning), "");
     if (source.truncated) lines.push("*Excerpt only; review the full section for additional conditions.*", "");
     if (source.warning) lines.push("**Review flag:** Instruction-shaped source content detected; treated as untrusted text.", "");
   }
@@ -272,7 +274,7 @@ function formatPolicyResearchMarkdown(result) {
 export function formatResearchMarkdown(result, documents) {
   if (!result || !["research","comparison","policy-research"].includes(result.kind)) throw new TypeError("Invalid report");
   assertWorkflowExport(result, documents);
-  if (result.kind === "policy-research") return formatPolicyResearchMarkdown(result);
+  if (result.kind === "policy-research") return formatPolicyResearchMarkdown(result, documents);
   const lines = ["# GroundedDesk AI 4.0 — evidence report", "",
     "**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.", ""];
   if (result.retrievalBuild) lines.push("**Retrieval build:** `" + String(result.retrievalBuild).replace(/[^A-Za-z0-9._-]/g, "").slice(0, 80) + "`", "");
@@ -288,6 +290,7 @@ export function formatResearchMarkdown(result, documents) {
         source.warning ? "**Review flag:** Possible instruction-shaped content was detected; treated as untrusted document data." : "",
         "");
       if (source.location) lines.push("**Quotation location:** " + safeTitle(locationLabel(source.location)), "");
+      for (const warning of pdfWarnings(documents?.find(doc => doc.id === source.documentId)?.pdfDiagnostics, source.location?.pages)) lines.push("**PDF extraction notice:** " + safeTitle(warning), "");
     }
     lines.push("## Coverage and gaps", "",
       result.matchedDocuments + " of " + result.availableDocuments + " loaded documents had keyword-matching evidence.", "");
@@ -299,6 +302,7 @@ export function formatResearchMarkdown(result, documents) {
         source.supported ? quote(source.excerpt) : "No matching passage was found using lexical retrieval for this topic.", "",
         source.warning ? "**Review flag:** Possible instruction-shaped content detected; treated as data." : "", "");
       if (source.location) lines.push("**Quotation location:** " + safeTitle(locationLabel(source.location)), "");
+      for (const warning of pdfWarnings(documents?.find(doc => doc.id === source.documentId)?.pdfDiagnostics, source.location?.pages)) lines.push("**PDF extraction notice:** " + safeTitle(warning), "");
     }
     lines.push("## Shared vocabulary (not agreement)", "",
       result.sharedTerms.length ? result.sharedTerms.map(safeTitle).join(", ") : "No shared long terms in the selected documents.", "");
