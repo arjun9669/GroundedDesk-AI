@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6 / r34 — Review the original PDF beside its answer (2026-10-12)
+
+- Wide windows now dock the original PDF beside the interactive answer; smaller windows use a native modal. Keep the physical page number, exact quote and conservative highlighting visible, collapse the quote, navigate pages and copy evidence without closing the desktop viewer.
+- Preserve page/highlight on responsive transitions, keep mobile keyboard focus in the dialog, restore focus on close and release PDF resources/listeners. New answers, tool changes and document mutations close stale previews. Narrow library cards keep PDF actions readable.
+- 253 unit tests, strict offline toy evaluation and six Chrome feature scripts pass. Actual local MiniLM Hybrid PDF citation/highlight and positive/refusal controls pass with Qwen off. No new independent or Cobalt16 score is claimed; all historical evidence remains unchanged. [Scope/evidence](docs/SIDE_BY_SIDE_PDF_5_6.md).
+
 ### 5.6 / r33 — A more distinctive research desk (2026-10-12)
 
 - Added a dark source library, warm paper palette, editorial headings, original inline SVG illustration, refined upload cards, clearer active tabs and stronger answer/source presentation. Composer remains visible at 1440×688; mobile controls and keyboard navigation retained. No paid assets or services.

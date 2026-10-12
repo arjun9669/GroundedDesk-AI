@@ -128,5 +128,5 @@ test("r24 unsupported personal number refuses without citations",()=>{
   assert.equal(out.sources.length,0);
 });
 test("r24 build identifier tracks the extraction revision",()=>{
-  assert.equal(RETRIEVAL_BUILD,"2026-10-12-r33");
+  assert.equal(RETRIEVAL_BUILD,"2026-10-12-r34");
 });

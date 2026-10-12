@@ -1,16 +1,16 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r33";
-import { hybridRank } from "./hybrid.mjs?v=20261012-r33";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261012-r34";
+import { hybridRank } from "./hybrid.mjs?v=20261012-r34";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261012-r33";
+import { createEvidenceReport } from "./report.mjs?v=20261012-r34";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r33";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r33";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r33";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r33";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r33";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r33";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r33";
-import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261012-r33";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261012-r34";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261012-r34";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261012-r34";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261012-r34";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261012-r34";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261012-r34";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r34";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261012-r34";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -114,7 +114,7 @@ function notify(message, isError = false) {
 }
 
 function rebuildIndex() {
-  closePDFPreview();
+  closePDFPreview({ restoreFocus: false });
   indexed = buildIndex(documents);
   indexVersion++;
   resetConversation();
@@ -244,6 +244,7 @@ function highlightDocument(id) {
 }
 
 function renderResult(question, result) {
+  closePDFPreview({ restoreFocus: false });
   result = attachLocations(result, documents);
   // Never display a fabricated or stale excerpt as verified evidence.
   const provenance = verifyEvidenceResult(result, documents);
@@ -730,6 +731,7 @@ function researchEl(tag, cls, text = "") {
 }
 
 function presentResearch(result) {
+  closePDFPreview({ restoreFocus: false });
   clearResearch();
   result = attachWorkflowLocations({ ...result, retrievalBuild: RETRIEVAL_BUILD }, documents);
   const integrity = verifyWorkflowEvidence(result, documents);

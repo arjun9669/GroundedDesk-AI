@@ -35,7 +35,7 @@ try {
   await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
   observations.build = await page.locator("#retrieval-build").innerText();
-  assert.match(observations.build, /2026-10-12-r33/);
+  assert.match(observations.build, /2026-10-12-r34/);
   await page.locator("#clear-docs").click();
   const quote = "Harbor crane operators must inspect lifting hooks every eight shifts.";
   const fixture = pdfFixture(["Harbor workshop operates the sheltered pier.", quote, "Harbor workshop visitor hours end at sunset."]);
@@ -53,13 +53,13 @@ try {
   assert.match(answer, /PDF page 2 \(physical page numbers\)/);
   await page.getByRole("button", { name: "Copy answer and evidence report" }).click();
   const report = await page.evaluate(() => navigator.clipboard.readText());
-  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-12-r33/);
+  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-12-r34/);
   const downloadPending = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download local Markdown evidence report" }).click();
   const download = await downloadPending;
   const downloadedReport = await fs.readFile(await download.path(), "utf8");
   assert.match(downloadedReport, /PDF page 2/);
-  assert.match(downloadedReport, /2026-10-12-r33/);
+  assert.match(downloadedReport, /2026-10-12-r34/);
   if (evidenceDir) await download.saveAs(path.join(evidenceDir, "keyword-evidence-export.md"));
   observations.keywordAnswer = answer;
   observations.keywordReport = report;
@@ -70,7 +70,27 @@ try {
   assert.equal(await page.locator(".pdf-highlight-status").getAttribute("data-match-status"), "matched");
   assert.equal(await page.locator(".pdf-highlight-overlay rect").count(), 1);
   assert.equal(await page.locator(".pdf-preview-quote").textContent(), quote);
+  assert.equal(await page.locator(".pdf-preview").evaluate(el => el.matches(":modal")), false);
+  const answerBounds = await page.locator("#workspace-ask").boundingBox();
+  const sourceBounds = await page.locator(".pdf-preview").boundingBox();
+  assert.ok(answerBounds.x + answerBounds.width <= sourceBounds.x + 1, "Answer and PDF must not overlap");
+  assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), "Dock must not create horizontal overflow");
+  // The answer remains interactive while reviewing the original page.
+  await page.getByRole("button", { name: "Copy answer and evidence report" }).click();
+  assert.equal(await page.evaluate(() => navigator.clipboard.readText()), report);
+  if (evidenceDir) await page.screenshot({ path: path.join(evidenceDir, "02-docked-review.png"), fullPage: false });
   await snapshot(page, "02-original-page-preview");
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.waitForFunction(() => document.querySelector(".pdf-preview")?.matches(":modal"));
+  assert.equal(await page.locator(".pdf-preview-quote").textContent(), quote);
+  await snapshot(page, "02b-mobile-original-page");
+  for (let i = 0; i < 5; i++) {
+    await page.keyboard.press("Tab");
+    assert.ok(await page.evaluate(() => document.querySelector(".pdf-preview").contains(document.activeElement)), "Mobile modal must contain keyboard focus");
+  }
+  await page.setViewportSize({ width: 1400, height: 1000 });
+  await page.waitForFunction(() => !document.querySelector(".pdf-preview")?.matches(":modal") && document.body.classList.contains("source-preview-open"));
+  assert.equal(await page.locator(".pdf-highlight-overlay rect").count(), 1);
   await page.getByRole("button", { name: "Next page", exact: true }).click();
   await page.waitForFunction(() => document.querySelector(".pdf-preview [role=status]")?.textContent.includes("PDF page 3 of 3"));
   assert.equal(await page.locator(".pdf-highlight-overlay rect").count(), 0);
@@ -81,9 +101,28 @@ try {
   await page.keyboard.press("Escape");
   await page.locator(".pdf-preview").waitFor({ state: "detached" });
   assert.equal(await page.locator(".pdf-preview").count(), 0);
+  assert.equal(await page.locator(".open-pdf-page").evaluate(el => el === document.activeElement), true);
+  assert.equal(await page.evaluate(() => document.body.classList.contains("source-preview-open")), false);
   // Close while loading, then reopen: stale async work must not recreate a dialog.
   await page.locator(".open-pdf-page").click();
   await page.getByRole("button", { name: "Close PDF", exact: true }).click();
+  await page.locator(".open-pdf-page").click();
+  await ask("What is the exact password for the Harbor crane database?");
+  assert.equal(await page.locator(".pdf-preview").count(), 0, "New answers close stale source previews");
+  assert.equal(await page.locator(".source-card").count(), 0);
+  await ask("How often must Harbor crane operators inspect lifting hooks?");
+  await page.locator(".open-pdf-page").click();
+  await page.locator("#tab-compare").click();
+  assert.equal(await page.locator(".pdf-preview").count(), 0, "Changing tools closes the source preview");
+  assert.equal(await page.locator("#tab-compare").evaluate(el => el === document.activeElement), true);
+  await page.locator("#tab-ask").click();
+  await page.locator(".open-pdf-page").click();
+  await page.locator("#clear-docs").click();
+  assert.equal(await page.locator(".pdf-preview").count(), 0, "Changing the corpus closes the source preview");
+  await page.locator("#file-input").setInputFiles({ name: "harbor-workshop.pdf", mimeType: "application/pdf", buffer: fixture });
+  await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "1");
+  observations.checks.push("Non-overlapping interactive desktop dock; unchanged evidence export; modal mobile resize and desktop restoration; focus restored; new answers/tool/corpus changes close stale previews");
+  await ask("How often must Harbor crane operators inspect lifting hooks?");
   await page.locator(".open-pdf-page").click();
   await page.waitForFunction(() => document.querySelector(".pdf-preview [role=status]")?.textContent.includes("PDF page 2 of 3"));
   await page.getByRole("button", { name: "Close PDF", exact: true }).click();
