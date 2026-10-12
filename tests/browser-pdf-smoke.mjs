@@ -35,7 +35,7 @@ try {
   await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
   observations.build = await page.locator("#retrieval-build").innerText();
-  assert.match(observations.build, /2026-10-13-r39/);
+  assert.match(observations.build, /2026-10-13-r40/);
   await page.locator("#clear-docs").click();
   const quote = "Harbor crane operators must inspect lifting hooks every eight shifts.";
   const fixture = pdfFixture(["Harbor workshop operates the sheltered pier.", quote, "Harbor workshop visitor hours end at sunset."]);
@@ -53,13 +53,13 @@ try {
   assert.match(answer, /PDF page 2 \(physical page numbers\)/);
   await page.getByRole("button", { name: "Copy answer and evidence report" }).click();
   const report = await page.evaluate(() => navigator.clipboard.readText());
-  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-13-r39/);
+  assert.match(report, /PDF page 2/); assert.match(report, /2026-10-13-r40/);
   const downloadPending = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download local Markdown evidence report" }).click();
   const download = await downloadPending;
   const downloadedReport = await fs.readFile(await download.path(), "utf8");
   assert.match(downloadedReport, /PDF page 2/);
-  assert.match(downloadedReport, /2026-10-13-r39/);
+  assert.match(downloadedReport, /2026-10-13-r40/);
   if (evidenceDir) await download.saveAs(path.join(evidenceDir, "keyword-evidence-export.md"));
   observations.keywordAnswer = answer;
   observations.keywordReport = report;

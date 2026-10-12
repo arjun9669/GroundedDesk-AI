@@ -1,16 +1,16 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r39";
-import { hybridRank } from "./hybrid.mjs?v=20261013-r39";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r40";
+import { hybridRank } from "./hybrid.mjs?v=20261013-r40";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261013-r39";
+import { createEvidenceReport } from "./report.mjs?v=20261013-r40";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r39";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r39";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r39";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r39";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r39";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r39";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r39";
-import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r39";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r40";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r40";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r40";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r40";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r40";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r40";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r40";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r40";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -433,7 +433,7 @@ function renderResult(question, result) {
   });
   actions.append(copy, download);
   heading.append(actions);
-  const answerBox = make("div", "answer-box");
+  const answerBox = make("div", result.answered ? "answer-box" : "answer-box is-refusal");
   if (result.generated) {
     answerBox.append(make("p", "generation-disclaimer",
       "EXPERIMENTAL · On-device generated draft. Source IDs checked; factual accuracy NOT guaranteed."));
@@ -479,7 +479,8 @@ function renderResult(question, result) {
   } else {
     answerBox.textContent = result.answer;
   }
-  view.append(heading, answerBox);
+  view.append(make("h5", "answer-title", result.generated ? "Local AI draft"
+    : result.answered ? "Quoted answer" : "No supporting answer"), heading, answerBox);
 
   if (result.answered) {
     view.append(make("h5", "evidence-heading", "SOURCE EVIDENCE"));
@@ -489,7 +490,7 @@ function renderResult(question, result) {
       const header = make("div", "source-top");
       header.append(make("span", "source-number", `[${source.citation}]`),
         make("strong", "", source.filename));
-      card.append(header, make("p", "source-location", locationLabel(source.location)), make("p", "", source.excerpt));
+      card.append(header, make("p", "source-location", locationLabel(source.location)), make("p", "source-excerpt", source.excerpt));
       for (const warning of pdfWarnings(documents.find(doc => doc.id === source.documentId)?.pdfDiagnostics, source.location?.pages)) card.append(make("p", "pdf-notice", warning));
       if (source.location.status === "verified" && source.location.kind === "pdf") {
         const open = make("button", "open-pdf-page", "Open cited PDF page ↗");
