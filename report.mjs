@@ -1,5 +1,5 @@
 import { validateDraft } from "./generation.mjs?v=20261010-r13";
-import { locateEvidence, locationLabel } from "./provenance.mjs?v=20261012-r26";
+import { locateEvidence, locationLabel } from "./provenance.mjs?v=20261012-r27";
 
 /**
  * Portable evidence reports for the browser-only document Q&A demo.

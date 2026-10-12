@@ -57,10 +57,11 @@ jobs:
         run: |
           npm install --no-save --no-package-lock playwright@1.56.1 pdfjs-dist@4.10.38
           npx playwright install --with-deps chromium
-      - name: Exercise 5.2 and 5.1 in real Chromium
+      - name: Exercise Q&A, Research and Comparison in real Chromium
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 &
           server_pid=$!
           trap 'kill "$server_pid"' EXIT
           node tests/browser-policy-smoke.mjs
           node tests/browser-pdf-smoke.mjs
+          node tests/browser-research-pages-smoke.mjs
