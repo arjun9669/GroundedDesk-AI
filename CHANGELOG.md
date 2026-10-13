@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-13 — Bounded answer-coverage experiment (no runtime release)
+
+- Froze a development-only protocol, then tested literal paragraph coverage with actual local MiniLM in installed Chrome.
+- Preserved 23/1/4 fixed-window and 27/1/0 section-window results, all first baselines and the outstanding inspection-interval partial.
+- Verified unchanged Cobalt16 controls, qualified the pre-question model-state timeout and separate recovery, and retained all exact outputs.
+- Added scope/condition/refusal/hash guards. Production r44 and independent-accuracy claims remain unchanged.
+
 ## 2026-10-13 — Retrieval development evaluation (no runtime release)
 
 - Froze a self-authored 28-question development corpus and section-aware experiment protocol before observing answers.

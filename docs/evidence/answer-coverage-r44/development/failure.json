@@ -1,0 +1,93 @@
+{
+  "classification": "Known development regression; browser-module outputs, not production UI accuracy or independent evaluation",
+  "frozen": {
+    "frozen_utc": "2026-10-13T16:28:23.549041+00:00",
+    "baseline_commit": "93627b85724d2123cf528c9ce6f48b58e84286dc",
+    "classification": "self-authored development evaluation, not independent accuracy",
+    "files": [
+      {
+        "path": "fixed-cases.json",
+        "sha256": "4a098c471edb16c38119fb2b622330a1ed2993dbd55b1f0dd8d690f07315351f"
+      },
+      {
+        "path": "PROTOCOL.md",
+        "sha256": "6026f1e2f823eab709dd1916d308732fadc0cc1d45fb92a9ebfc721fd2d40173"
+      },
+      {
+        "path": "source_docs/01_Orchard_Depot_Current.md",
+        "sha256": "153f90273983948a83f71875e3ee9c522f1bc0cb64b8de0c8b0e0f1db80e924f"
+      },
+      {
+        "path": "source_docs/02_Orchard_Depot_Archived.md",
+        "sha256": "610842b7c5cd2a603393ad187f341e0c55a98acd190114441cb433051f40d708"
+      },
+      {
+        "path": "source_docs/03_Hilltop_Equipment.md",
+        "sha256": "51ccba7e8ff96839f0487f0136144f13511f67b345d54facc825c9304f0e3d99"
+      },
+      {
+        "path": "source_docs/04_Lakeside_Purchasing.md",
+        "sha256": "bcecba2338d023cd4923c665219d28d5c448c6f5b7661a6fcebdc6e284f384d3"
+      }
+    ]
+  },
+  "coverageFrozen": {
+    "frozen_utc": "2026-10-13T17:01:18.834773+00:00",
+    "base_commit": "28a39b9992eb5deda69eb5c076539efe484b3a1f",
+    "inputs_manifest": "../retrieval-quality/freeze-manifest.json",
+    "inputs_manifest_sha256": "1a0e0faa77debb2a9e95ee9c9e95aebcccee03b1c6dcad465b4443c1604aa736",
+    "files": [
+      {
+        "path": "PROTOCOL.md",
+        "sha256": "a733928bd72cb0afb6da3b22ec5f8f42cc27b14506f7f8111be46520e30a1b58"
+      }
+    ]
+  },
+  "cobaltFrozen": {
+    "frozen_at": "2026-10-12T15:03:26.508462+00:00",
+    "classification": "self-authored, previously untested first-look; not external or representative accuracy",
+    "target_build": "2026-10-12-r29",
+    "files": [
+      {
+        "path": "source_docs/01_Cobalt_Planetarium.txt",
+        "sha256": "21c7f3a2bff9c58bfa2fd92df204120dcb7eec930cf2884ab28616bcbd0685d6",
+        "bytes": 569
+      },
+      {
+        "path": "source_docs/02_Cobalt_Gallery.txt",
+        "sha256": "f6cfdd69802bf1c50a8292d9c6d19974be4143b1e995b66e796c3c1812ed778f",
+        "bytes": 570
+      },
+      {
+        "path": "source_docs/03_Cobalt_Seed_Library.txt",
+        "sha256": "ca25bc1308bccd4a5e2471ab5afc9361812030d6036a6a7dc33c7aca4bfd88dc",
+        "bytes": 601
+      },
+      {
+        "path": "fixed-answer-key.json",
+        "sha256": "632caa3614a0b2166feef802e3f4930e925e23c018e5b2c9b306fcc5199b7af7",
+        "bytes": 5226
+      },
+      {
+        "path": "FROZEN_RUBRIC.md",
+        "sha256": "c69d9377e596b476611de86f05d04ccf6bff92a3e2c4c1348ed48ae8c4d41bb1",
+        "bytes": 1654
+      }
+    ]
+  },
+  "browser": "154.0.8037.98",
+  "build": "Loaded retrieval build: 2026-10-13-r44",
+  "model": "Actual local Xenova/all-MiniLM-L6-v2 q8 WASM, Qwen disabled",
+  "model_requests": [
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer.json",
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json",
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/config.json",
+    "https://huggingface.co/api/resolve-cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer_config.json",
+    "https://huggingface.co/api/resolve-cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/config.json",
+    "https://huggingface.co/api/resolve-cache/models/Xenova/all-MiniLM-L6-v2/751bff37182d3f1213fa05d7196b954e230abad9/tokenizer.json",
+    "https://huggingface.co/Xenova/all-MiniLM-L6-v2/resolve/main/onnx/model_quantized.onnx",
+    "https://us.aws.cdn.hf.co/xet-bridge-us/645192b75fb40b9f50b71914/c96f5f1e2aee643bd8191bb520a3e175db7b05821579a02a70acdf31e655d194",
+    "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.0/dist/ort-wasm-simd-threaded.jsep.wasm"
+  ],
+  "error": "page.waitForFunction: Timeout 30000ms exceeded.\n    at C:\\Users\\arjun\\Documents\\Codex\\2026-10-11\\test-groundeddesk-ai-r16-in-chrome\\work\\r25-checkout\\tests\\browser-answer-coverage.mjs:99:14"
+}

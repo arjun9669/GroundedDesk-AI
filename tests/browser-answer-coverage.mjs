@@ -96,7 +96,13 @@ try{
   // Separate unchanged original Cobalt source files; never ingest its key.
   await page.locator('#clear-docs').click();
   await page.locator('#file-input').setInputFiles(cobaltFrozen.files.filter(f=>f.path.startsWith('source_docs/')).map(f=>path.join(cobaltPack,f.path)));
-  await page.waitForFunction(()=>document.querySelector('#doc-count').textContent==='3'&&!document.querySelector('#file-input').disabled&&!document.querySelector('#retrieval-mode option[value="hybrid"]').disabled);
+  await page.waitForFunction(()=>document.querySelector('#doc-count').textContent==='3'&&!document.querySelector('#file-input').disabled);
+  if(await page.locator('#retrieval-mode option[value="hybrid"]').isDisabled()){
+    await revealControl(page,'#enable-semantic');
+    await page.locator('#enable-semantic').click();
+    await page.waitForFunction(()=>!document.querySelector('#retrieval-mode option[value="hybrid"]').disabled,null,{timeout:240000});
+  }
+  await page.locator('#retrieval-mode').selectOption('hybrid');
   const cobalt=await page.evaluate(async({docs,key})=>{
     const lab=window.coverageLab;
     const {compareDocuments}=await import('/research.mjs');

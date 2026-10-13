@@ -14,6 +14,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Retrieval development study:** a frozen, self-authored 28-question actual-MiniLM comparison scored 16 PASS / 7 PARTIAL / 5 FAIL with production fixed chunks and 19 / 7 / 2 with isolated section-aware chunks. Exact evidence recall@3 improved from 31/34 to 33/34, with no passing-case regressions. This is not independent accuracy; production retrieval remains unchanged. [Method, remaining failures and evidence](./docs/RETRIEVAL_QUALITY_R44_DEVELOPMENT.md).
 
+**Answer-coverage experiment:** an isolated bounded-quotation prototype raised the same known development suite to 23/28 strict passes with fixed chunks, and 27/28 with experimental section chunks. All original passing cases and uncited refusals were preserved; one inspection-interval partial remains. Cobalt16 real-model/lexical controls remain 16/16, with an explicitly documented infrastructure retry. Production stays r44; this is not independent accuracy. [Exact results and limitations](./docs/ANSWER_COVERAGE_R44_DEVELOPMENT.md).
+
 ## Features
 
 | Milestone | Capability | Execution |
