@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-13 — r42
+
+- Added Choose files, Rephrase question and Add a file actions below unanswered questions.
+- Preserved unfinished drafts, original refusals, zero citations, reports and retrieval behavior.
+- Added desktop/mobile Chrome checks for recovery focus and state preservation.
+
 ### 5.6 / r41 — Choose files for Ask (2026-10-13)
 
 - All files default or multi-file selection, with searched filenames in answers/reports and original-scope history. Selected lexical statistics and real MiniLM vectors align by stable chunk IDs. Full-library retrieval unchanged.

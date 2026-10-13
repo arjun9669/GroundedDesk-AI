@@ -1,0 +1,22 @@
+{
+  "kind": "workspace presentation/interaction regression; not accuracy benchmark",
+  "checks": [
+    "Question composer is fully visible without scrolling in a 1440x688 laptop viewport",
+    "Guide is opt-in; four-step navigation, keyboard containment, Escape/focus restoration, dismissed preference across reload, reopen, tool/settings actions and completion; no model automatically enabled",
+    "Default Ask view; settings collapsed; keyboard arrows/Home/End change focus and active panel",
+    "Bundled 28-case developer evaluation remains accessible; separate from model accuracy",
+    "Quoted answer heading, unchanged source excerpt, citation jump focuses its source card; hover transitions disabled under reduced-motion preference",
+    "Shortcut hint, slash from Compare/Research opens Ask and focuses composer; slash in text/filter and plain Enter type normally; modified slash and guide modal do not steal focus; Ctrl+Enter submits once; explicit composition/repeat events ignored",
+    "Refusal recovery preserves exact refusal/export, zero citations, draft, file selection, mode and history; empty composer restores original question; mobile Add a file reveals library; actions focus targets without querying",
+    "History question/filename search, trimmed case-insensitive matching, no-match guidance, unchanged total/history and clear-search focus; clipboard success and actual downloaded report equals clipboard content apart from Windows newline conversion",
+    "Full question/source/status history; keyboard reopen and answer focus; untouched draft; exact export preservation; zero-citation refusal; mobile wrapping; newest-first eight-entry limit",
+    "Upload, exact quoted answer, copy export, preserved Ask state, correct report panel, Compare/Research and policy tool disclosure",
+    "390px viewport without horizontal overflow; mobile files toggle and desktop restoration; unsupported PIN refusal; document filter/remove invalidates reports",
+    "Guide remains usable when browser storage access is blocked; only preference storage is simulated in this UI test",
+    "Explicit clipboard-denial simulation shows honest local error, retry remains enabled, Save report still downloads actual evidence, mobile feedback wraps"
+  ],
+  "browser": "154.0.8037.98",
+  "build": "Loaded retrieval build: 2026-10-13-r42",
+  "comparison": "Shared vocabulary: days, every, inspections, lighting, occur. Shared terms do not establish factual agreement.\n\n[1] dock-notes.txt\n\nDock lighting inspections occur every nine days.\n\nText line 1 (normalized extraction)\n\nLocate in library ↗\n[2] garden-notes.txt\n\nGarden lighting inspections occur every twelve days.\n\nText line 1 (normalized extraction)\n\nLocate in library ↗",
+  "status": "PASS"
+}
