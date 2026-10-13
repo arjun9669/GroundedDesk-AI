@@ -18,6 +18,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Broader coverage validation:** the v2 prototype reaches 28/28 on the known section-based development set, while all original Atlas/Meridian/Lantern/Aster/Cobalt PASS controls remain intact (Meridian I15 still partial). A frozen externally authored public SQuAD sample scored 13 PASS / 1 PARTIAL / 10 FAIL and failed the release gate. Production stays r44. [Results, provenance and limitations](./docs/COVERAGE_V2_R44_VALIDATION.md).
 
+**Sentence-selection experiment:** v3 reaches 28/28 on the known development suite and 20/24 on the exposed public regression, but introduces five historical PASS regressions. A fresh mixed public sample scores 20/24 supported passes with fixed chunks, 19/24 with section chunks; all four constructed compound answers remain partial. The release gate fails and production stays r44. [Preserved results and evidence](./docs/COVERAGE_V3_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |
