@@ -21,7 +21,7 @@ try {
   async function action(id,pattern){await revealControl(page,'#'+id);await page.locator('#'+id).click();await page.waitForFunction(p=>new RegExp(p).test(document.querySelector('#workspace-save-status').textContent),pattern);}
   async function readRecord(){return page.evaluate(async()=>{const db=await new Promise((resolve,reject)=>{const r=indexedDB.open('groundeddesk-workspace-v1',1);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});try{return await new Promise((resolve,reject)=>{const r=db.transaction('snapshots').objectStore('snapshots').get('current');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});}finally{db.close();}});}
   async function ask(){await page.locator('#query-input').fill('How often must Harbor crane operators inspect lifting hooks?');await page.locator('#ask-button').click();await page.waitForFunction(()=>!document.querySelector('#ask-button').disabled&&!document.querySelector('#answer-result').hidden);}
-  await start();assert.equal(await page.locator('#local-workspace > summary').evaluate(el=>getComputedStyle(el).color),'rgb(238, 242, 229)');observed.build=await page.locator('#retrieval-build').innerText();assert.match(observed.build,/2026-10-13-r43/);
+  await start();assert.equal(await page.locator('#local-workspace > summary').evaluate(el=>getComputedStyle(el).color),'rgb(238, 242, 229)');observed.build=await page.locator('#retrieval-build').innerText();assert.match(observed.build,/2026-10-13-r44/);
   await page.waitForFunction(()=>document.querySelector('#saved-workspace-summary').textContent.includes('No saved workspace'));
   assert.equal(await readRecord(),undefined,'No snapshot without explicit Save');
   await page.locator('#clear-docs').click();

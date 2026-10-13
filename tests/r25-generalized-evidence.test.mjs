@@ -83,5 +83,5 @@ test("r25 keeps zero-citation refusal for absent personal phone number",()=>{
   assert.equal(result.sources.length,0);
 });
 test("r25 identifies updated retrieval build",()=>{
-  assert.equal(RETRIEVAL_BUILD,"2026-10-13-r43");
+  assert.equal(RETRIEVAL_BUILD,"2026-10-13-r44");
 });

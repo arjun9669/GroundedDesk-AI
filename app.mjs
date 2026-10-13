@@ -1,18 +1,19 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r43";
-import { hybridRank } from "./hybrid.mjs?v=20261013-r43";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r44";
+import { hybridRank } from "./hybrid.mjs?v=20261013-r44";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261013-r43";
+import { createEvidenceReport } from "./report.mjs?v=20261013-r44";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r43";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r43";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r43";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r43";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r43";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r43";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r43";
-import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r43";
-import { createSearchScope, assertSearchScope } from "./search-scope.mjs?v=20261013-r43";
-import { createWorkspaceSnapshot, readSavedWorkspace, writeSavedWorkspace, clearSavedWorkspace } from "./workspace-store.mjs?v=20261013-r43";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r44";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r44";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r44";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r44";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r44";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r44";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r44";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r44";
+import { createSearchScope, assertSearchScope } from "./search-scope.mjs?v=20261013-r44";
+import { createWorkspaceSnapshot, readSavedWorkspace, writeSavedWorkspace, clearSavedWorkspace } from "./workspace-store.mjs?v=20261013-r44";
+import { documentReadiness } from "./document-readiness.mjs?v=20261013-r44";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -323,7 +324,12 @@ function renderDocuments() {
     filename.title = doc.name;
     const pages = doc.pdfDiagnostics?.pageCount;
     details.append(filename, make("small", "", `${pages ? `${pages} page${pages === 1 ? "" : "s"} · ` : ""}${doc.text.length.toLocaleString()} characters · ${doc.sample ? "Example" : "Your file"}`));
-    for (const warning of pdfWarnings(doc.pdfDiagnostics)) details.append(make("small", "pdf-notice", warning));
+    const readiness = documentReadiness(doc);
+    const readinessView = make("section", `document-readiness is-${readiness.state}`);
+    readinessView.setAttribute("aria-label", `Readiness for ${doc.name}`);
+    readinessView.append(make("span", "readiness-badge", readiness.label), make("p", "readiness-detail", readiness.detail));
+    for (const warning of readiness.warnings) readinessView.append(make("p", "readiness-warning", warning));
+    if (readiness.guidance) readinessView.append(make("p", "readiness-guidance", readiness.guidance));
     const actions = make("div", "document-actions");
     const replace = make("button", "text-button replace-doc", "Replace file");
     replace.type = "button";
@@ -346,7 +352,7 @@ function renderDocuments() {
       clearResult();
       notify(`Removed ${doc.name}.`);
     });
-    item.append(fileIcon, details, actions);
+    item.append(fileIcon, details, readinessView, actions);
     if (doc.type === "pdf" && doc.originalFile) {
       const preview = make("button", "text-button", "View PDF");
       preview.type = "button";
@@ -417,6 +423,17 @@ async function loadFiles(files, replaceId = null) {
       row.dataset.state = "error";
       status.textContent = message + (replaceId ? documents.some(doc => doc.id === replaceId) ? " Existing file kept." : " Replacement not applied." : "");
       progress.hidden = true;
+      const retry = make("button", "upload-retry", replaceId ? "Choose a replacement" : "Choose another file");
+      retry.type = "button"; retry.disabled = true;
+      retry.setAttribute("aria-label", `${replaceId ? "Retry replacement" : "Choose another file"} for ${file.name}`);
+      retry.addEventListener("click", () => {
+        if (uploadBusy) return;
+        if (replaceId) {
+          if (!documents.some(doc => doc.id === replaceId)) { notify("The original file was removed. Use Browse files to add a new file.", true); return; }
+          replacementId = replaceId; $("replace-file-input").click();
+        } else $("file-input").click();
+      });
+      row.append(retry);
     };
     const ext = file.name.split(".").pop().toLowerCase();
     if (!["txt", "md", "markdown", "pdf"].includes(ext)) {
@@ -442,6 +459,7 @@ async function loadFiles(files, replaceId = null) {
     } catch (error) { fail(error instanceof Error ? error.message : "Could not read file."); }
   }
   uploadBusy = false;
+  for (const retry of $("upload-list").querySelectorAll(".upload-retry")) retry.disabled = false;
   $("file-input").disabled = false;
   $("dropzone").removeAttribute("aria-disabled");
   renderDocuments();

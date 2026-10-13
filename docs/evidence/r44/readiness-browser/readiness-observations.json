@@ -1,0 +1,25 @@
+{
+  "kind": "Document-readiness feature regression; no mock vectors or accuracy claim",
+  "checks": [
+    "Real PDF.js: TXT/MD usable text, full/partial page counts, layout caution, image-only/damaged/encrypted errors and recovery controls; no fabricated scanned-page diagnosis or password entry",
+    "Snapshot restore re-extracts PDFs and reproduces readiness; partial-PDF answer keeps physical page 3 and original coverage warning in evidence export",
+    "Failed replacement preserves old readiness/answer; actual picker retry replaces only the intended file and clears stale results; empty-text retry adds chosen readable TXT",
+    "Readiness, cautions and file actions wrap at 390px without horizontal overflow"
+  ],
+  "hashes": {
+    "notes.txt": "88e503245649e247fb645e7d3668adf966408dad7cfec52e82fe39251d37a60a",
+    "instructions.md": "fe44bc0c2fe25da6eb3adbede540b7d318fe47922a6fdc89642cc653886f3df9",
+    "full.pdf": "a568785c291ebcf7208697498fe530e32f65615039f0bdd824ede43f193f15fc",
+    "partial.pdf": "2d8d7b479ffde87a20256b5132c4210654503b5d07ca6ed6514c806d1a05d00c",
+    "layout.pdf": "c26ee0a905acd34f82002e54e440c46ba4925fb2e6948d67e5f5d838d6599707",
+    "image-only.pdf": "d3c0ada3de7ef7b0ec6c9358418f05a1f68fb44384cef3a2c282d10d7856fee0",
+    "damaged.pdf": "4a9030686f137268daf58dad0830570aaf358a87fe5ad047b789b51730d2fd61",
+    "locked-depot.pdf": "1c46ad61fb0c463e69195efbdbb9e4317fe48b7ec8e68465bb753b7519c16ce4"
+  },
+  "browser": "154.0.8037.98",
+  "build": "Loaded retrieval build: 2026-10-13-r44",
+  "library": "TXT\nnotes.txt\n38 characters · Your file\nText available\n\nLoaded text is ready to search.\n\nReplace file\nRemove\nMD\ninstructions.md\n41 characters · Your file\nText available\n\nLoaded text is ready to search.\n\nReplace file\nRemove\nPDF\nfull.pdf\n2 pages · 73 characters · Your file\nText available\n\n2 of 2 PDF pages contain searchable text.\n\nText extraction does not verify reading order or factual accuracy.\n\nView PDF\nReplace file\nRemove\nPDF\npartial.pdf\n3 pages · 75 characters · Your file\nPartial text coverage\n\n2 of 3 PDF pages contain searchable text.\n\nPDF coverage: pages 2 have no searchable text. They may be blank or scanned; review the original. OCR is not included.\n\nReview the original PDF. If text is missing, use OCR on your device or replace it with a searchable PDF or text version.\n\nView PDF\nReplace file\nRemove\nPDF\nlayout.pdf\n1 page · 51 characters · Your file\nReview layout\n\n1 of 1 PDF pages contain searchable text.\n\nPDF layout caution: pages 1 contain widely separated text rows. Column order or table associations may be ambiguous. Check the original; layout is not reconstructed.\n\nCheck the original PDF before relying on columns or table rows.\n\nView PDF\nReplace file\nRemove",
+  "uploads": "notes.txt\nAdded — ready to search.\ninstructions.md\nAdded — ready to search.\nfull.pdf\nAdded — ready to search.\npartial.pdf\nAdded — ready to search.\nlayout.pdf\nAdded — ready to search.\nimage-only.pdf\nNo searchable text was found in this PDF. It may be scanned or empty. Use OCR on your device or upload a TXT/Markdown version. OCR is not included here.\nChoose another file\ndamaged.pdf\nThis PDF is damaged or is not a valid PDF. Export a fresh PDF or use a TXT/Markdown version.\nChoose another file\nlocked-depot.pdf\nThis PDF is password-protected. Unlock a copy on your device, then upload it. No password is requested or stored here.\nChoose another file",
+  "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> When do depot lights shut down?\r\n\r\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\r\n\r\n**Retrieval build:** `2026-10-13-r44`\r\n\r\n**Searched files:** partial\\.pdf\r\n\r\n## Answer\r\n\r\n\r\n> [1] Depot lights shut down at sunset.\r\n\r\n## Source evidence\r\n\r\n### [1] partial\\.pdf\r\n\r\n**File:** partial\\.pdf\r\n\r\n**Source location:** PDF page 3 \\(physical page numbers\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.2586\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Depot lights shut down at sunset.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> Depot hooks require inspection weekly.\r\n> \r\n> \r\n> \r\n> Depot lights shut down at sunset.\r\n\r\n**PDF extraction notice:** PDF coverage: pages 2 have no searchable text\\. They may be blank or scanned; review the original\\. OCR is not included\\.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n",
+  "status": "PASS"
+}
