@@ -458,3 +458,12 @@ footer .brand strong { color: #627255; }
 #guide-next { color: white; background: #2d4932; border-color: #2d4932; min-width: 95px; }
 .guide-preference { color: #737961; font-size: 10px; line-height: 1.7; margin-bottom: 0; }
 @media(max-width:480px) { .header-links a[href="#about"] { display: none; } #open-guide { min-height: 44px; } .quick-guide { padding: 18px; border-radius: 14px; } .guide-heading { gap: 9px; } .guide-heading h2 { font-size: 24px; } .guide-heading button { padding: 8px; font-size: 10px; } .guide-tools { grid-template-columns: minmax(0,1fr); } .guide-tools>div { padding: 10px 13px; } #guide-pages h3 { font-size: 20px; } #guide-pages p { font-size: 12px; } .quick-guide button, .guide-invitation button { min-height: 44px; } }
+
+.local-workspace { margin-top: 16px; border-top: 1px solid #587061; padding-top: 14px; }
+.local-workspace summary { cursor: pointer; font-weight: 600; font-size: 14px; color: #eef2e5; padding: 10px 0; }
+.local-workspace-body p, #saved-workspace-files { font-weight: 400; font-size: 12px; line-height: 1.65; overflow-wrap: anywhere; }
+.workspace-save-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+.workspace-save-actions button { min-height: 44px; padding: 9px 12px; border: 1px solid #91a589; border-radius: 9px; background: #eef2e5; color: #254534; font: inherit; font-size: 12px; cursor: pointer; }
+.workspace-save-actions button:disabled { opacity: .5; cursor: default; }
+#workspace-save-status { padding: 10px; border-radius: 8px; background: #365b46; color: #f0f4e9; }
+#workspace-save-status.is-error { background: #6b4135; }

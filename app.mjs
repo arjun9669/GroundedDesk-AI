@@ -1,17 +1,18 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r42";
-import { hybridRank } from "./hybrid.mjs?v=20261013-r42";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r43";
+import { hybridRank } from "./hybrid.mjs?v=20261013-r43";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261013-r42";
+import { createEvidenceReport } from "./report.mjs?v=20261013-r43";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r42";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r42";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r42";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r42";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r42";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r42";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r42";
-import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r42";
-import { createSearchScope, assertSearchScope } from "./search-scope.mjs?v=20261013-r42";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r43";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r43";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r43";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r43";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r43";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r43";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r43";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r43";
+import { createSearchScope, assertSearchScope } from "./search-scope.mjs?v=20261013-r43";
+import { createWorkspaceSnapshot, readSavedWorkspace, writeSavedWorkspace, clearSavedWorkspace } from "./workspace-store.mjs?v=20261013-r43";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -40,6 +41,78 @@ let latestQualityReport = null;
 let uploadBusy = false;
 let uploadEpoch = 0;
 let replacementId = null;
+let workspaceBusy = false;
+let samplesLoading = true;
+let savedWorkspace = null;
+let workspaceReadVersion = 0;
+
+function updateWorkspaceControls() {
+  $("save-workspace").disabled = workspaceBusy || samplesLoading || !documents.length;
+  $("restore-workspace").disabled = workspaceBusy || samplesLoading || !savedWorkspace;
+  $("clear-saved-workspace").disabled = workspaceBusy;
+}
+
+function showSavedWorkspace() {
+  const list = $("saved-workspace-files"); list.replaceChildren();
+  if (savedWorkspace) for (const file of savedWorkspace.files) list.append(make("li", "", file.name));
+  list.hidden = !savedWorkspace;
+  $("saved-workspace-summary").textContent = savedWorkspace
+    ? `${savedWorkspace.files.length} file(s) saved on ${new Date(savedWorkspace.savedAt).toLocaleString()}. Ask selection: ${savedWorkspace.selectedIds === null ? "All files" : `${savedWorkspace.selectedIds.length} selected files`}.`
+    : "No saved workspace in this browser.";
+  updateWorkspaceControls();
+}
+
+async function workspaceAction(action) {
+  if (workspaceBusy || samplesLoading || uploadBusy || modelBusy || searchBusy || evalBusy || generationLoading || generationTestBusy) {
+    reportFeedback("workspace-save-status", "Wait for the current work to finish, then try again.", true); return;
+  }
+  workspaceBusy = true; updateWorkspaceControls();
+  workspaceReadVersion++;
+  reportFeedback("workspace-save-status", action === "restore" ? "Reading saved files and rebuilding the search index…" : "Updating local workspace storage…");
+  try {
+    if (action === "save") {
+      const snapshot = createWorkspaceSnapshot(documents, selectedAskFiles);
+      const version = indexVersion, selection = scopeVersion;
+      await writeSavedWorkspace(snapshot); savedWorkspace = snapshot; showSavedWorkspace();
+      reportFeedback("workspace-save-status", `Workspace snapshot saved on this device.${version !== indexVersion || selection !== scopeVersion ? " Current files or selection changed during saving; save again to include those changes." : " Save again after changes."}`);
+    } else if (action === "clear") {
+      await clearSavedWorkspace(); savedWorkspace = null; showSavedWorkspace();
+      reportFeedback("workspace-save-status", "Saved workspace cleared. Files open in this tab were kept.");
+    } else {
+      const version = indexVersion, epoch = uploadEpoch, selection = scopeVersion;
+      const snapshot = await readSavedWorkspace();
+      if (!snapshot) throw new Error("No saved workspace was found. Current files were kept.");
+      const restored = [];
+      for (const file of snapshot.files) {
+        const doc = file.type === "pdf" ? { ...file, ...await readPDFFile(file.originalFile) } : { ...file };
+        doc.text = doc.text.trim();
+        if (!doc.text || doc.text.length > MAX_CHARS) throw new Error("A saved file has no usable text or exceeds the text limit. Current files were kept.");
+        restored.push(doc);
+      }
+      if (version !== indexVersion || epoch !== uploadEpoch || selection !== scopeVersion || uploadBusy
+          || modelBusy || searchBusy || evalBusy || generationLoading || generationTestBusy)
+        throw new Error("Files or selection changed during restore. Current files were kept; try restoring again.");
+      uploadEpoch++; scopeVersion++;
+      selectedAskFiles = snapshot.selectedIds === null ? null : new Set(snapshot.selectedIds);
+      documents.splice(0, documents.length, ...restored);
+      // Restore deliberately starts without cached model instances or prior outputs.
+      semanticExtractor = null; localGenerator = null;
+      $("query-input").value = ""; $("document-filter").value = "";
+      $("upload-activity").hidden = true; $("upload-list").replaceChildren(); $("upload-status").textContent = "";
+      rebuildIndex(); savedWorkspace = snapshot; showSavedWorkspace();
+      setGenerationStatus("Extractive answers active. Load the optional local Qwen model only if you want a draft.");
+      reportFeedback("workspace-save-status", "Workspace restored. Search index rebuilt; optional AI models are off. Questions and answers were not restored.");
+    }
+  } catch (error) { reportFeedback("workspace-save-status", error instanceof Error ? error.message : "Local workspace storage failed. Current files were kept.", true); }
+  finally { workspaceBusy = false; updateWorkspaceControls(); }
+}
+for (const action of ["save", "restore", "clear"]) $(action === "clear" ? "clear-saved-workspace" : `${action}-workspace`).addEventListener("click", () => workspaceAction(action));
+
+async function checkSavedWorkspace() {
+  const version = workspaceReadVersion;
+  try { const saved = await readSavedWorkspace(); if (version === workspaceReadVersion) { savedWorkspace = saved; showSavedWorkspace(); } }
+  catch (error) { if (version === workspaceReadVersion) reportFeedback("workspace-save-status", error instanceof Error ? error.message : "Local storage is unavailable.", true); }
+}
 
 function setGenerationStatus(message, isError = false) {
   const status = $("generation-status");
@@ -217,6 +290,7 @@ function rebuildIndex() {
   updateGenerationControls();
   $("doc-count").textContent = String(documents.length);
   renderDocuments();
+  updateWorkspaceControls();
 }
 
 function make(tag, className, content = "") {
@@ -1239,6 +1313,7 @@ $("export-quality").addEventListener("click", () => {
 });
 
 async function init() {
+  checkSavedWorkspace();
   const sampleEpoch = uploadEpoch;
   const build = $("retrieval-build");
   if (build) build.textContent = "Loaded retrieval build: " + RETRIEVAL_BUILD;
@@ -1255,6 +1330,7 @@ async function init() {
     }
   }
   updateGenerationControls();
+  samplesLoading = false; updateWorkspaceControls();
   if (!isWebGPUAvailable()) setGenerationStatus("WebGPU unavailable here. Extractive and semantic retrieval remain usable.", true);
   if (sampleEpoch !== uploadEpoch) return;
   if (documents.length) notify(`${documents.length} sample documents ready. Ask a question or upload your own text.`);

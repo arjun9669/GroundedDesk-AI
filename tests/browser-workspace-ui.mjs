@@ -16,7 +16,7 @@ try {
   const errors=[];page.on("pageerror",e=>errors.push(e.message));
   await page.goto(process.env.TEST_URL||"http://127.0.0.1:8765/",{waitUntil:"domcontentloaded"});
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="3");
-  observed.build=await page.locator("#retrieval-build").innerText();assert.match(observed.build,/2026-10-13-r42/);
+  observed.build=await page.locator("#retrieval-build").innerText();assert.match(observed.build,/2026-10-13-r43/);
   assert.equal(await page.locator("#model-settings").getAttribute("open"),null);
   assert.equal(await page.locator("#workspace-ask").isVisible(),true);
   assert.equal(await page.locator("#workspace-compare").isVisible(),false);
@@ -127,7 +127,7 @@ try {
   assert.match(await page.locator(".source-metadata").innerText(),/not a confidence score/);
   await page.locator(".source-metadata > summary").click();
   await page.getByRole("button",{name:"Copy answer and evidence report"}).click();
-  const report=await page.evaluate(()=>navigator.clipboard.readText());assert.ok(report.includes(quote));assert.match(report,/2026-10-13-r42/);
+  const report=await page.evaluate(()=>navigator.clipboard.readText());assert.ok(report.includes(quote));assert.match(report,/2026-10-13-r43/);
   assert.match(await page.locator('#answer-report-status').innerText(),/^Copied/);
   const pendingDownload=page.waitForEvent('download');
   await page.getByRole('button',{name:'Download local Markdown evidence report'}).click();
