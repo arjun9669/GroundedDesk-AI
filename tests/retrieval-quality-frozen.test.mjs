@@ -11,3 +11,14 @@ test('frozen development fixtures match their original byte hashes after checkou
     assert.equal(createHash('sha256').update(bytes).digest('hex'),item.sha256,item.path);
   }
 });
+
+test('answer coverage protocol and linked input manifest retain their frozen bytes',async()=>{
+  const pack=new URL('../eval/answer-completeness/',import.meta.url);
+  const manifest=JSON.parse(await fs.readFile(new URL('freeze-manifest.json',pack),'utf8'));
+  for(const item of manifest.files){
+    const bytes=await fs.readFile(new URL(item.path,pack));
+    assert.equal(createHash('sha256').update(bytes).digest('hex'),item.sha256,item.path);
+  }
+  const linked=await fs.readFile(new URL(manifest.inputs_manifest,pack));
+  assert.equal(createHash('sha256').update(linked).digest('hex'),manifest.inputs_manifest_sha256);
+});
