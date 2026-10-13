@@ -53,6 +53,7 @@ function updateWorkspaceControls() {
 }
 
 function showSavedWorkspace() {
+  $("local-workspace").querySelector("summary").textContent = savedWorkspace ? "Keep this workspace · Saved copy available" : "Keep this workspace";
   const list = $("saved-workspace-files"); list.replaceChildren();
   if (savedWorkspace) for (const file of savedWorkspace.files) list.append(make("li", "", file.name));
   list.hidden = !savedWorkspace;
