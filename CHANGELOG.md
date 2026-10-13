@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-13 — Coverage v2 wider validation (no runtime release)
+
+- Fixed generic noun/verb facet matching in the isolated candidate; preserved 24/0/4 fixed and 28/0/0 section development results.
+- Ran all 119 original Atlas, Meridian, Lantern, Aster and Cobalt controls in real Chrome/MiniLM, keeping lexical Comparison separate; no prior PASS regression, Meridian I15 still PARTIAL.
+- Froze and evaluated a public externally authored SQuAD24 adaptation; 13/1/10 failed the release-consideration threshold. All failures and the runner-only continuation qualification remain recorded.
+- Updated README, saved source-literal evidence/scorecards and retained r44 production unchanged. No independent sealed benchmark claim.
+
 ## 2026-10-13 — Bounded answer-coverage experiment (no runtime release)
 
 - Froze a development-only protocol, then tested literal paragraph coverage with actual local MiniLM in installed Chrome.

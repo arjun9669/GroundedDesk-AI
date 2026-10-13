@@ -62,7 +62,7 @@ try{
     await fs.writeFile(path.join(dir,'source-extraction.json'),JSON.stringify(docs,null,2),{flag:'wx'});
     const capture={name:pack.name,classification:pack.name==='ExternalSQuAD24'?'Externally authored public confirmation; not sealed independent or official SQuAD accuracy':'Known in-sample real-model regression',build,browser:browser.version(),model:'Actual local Xenova/all-MiniLM-L6-v2 q8 WASM; Qwen disabled',integrity:pack.integrity,files:pack.files.map(({name,sha256})=>({name,sha256})),passages:docs.passages,cases:[]};
     for(const c of pack.cases){
-      activeCase=c.id;const hybrid=c.workflow.toLowerCase()==='hybrid';
+      activeCase=c.id;const hybrid=(c.workflow||'hybrid').toLowerCase()==='hybrid';
       let ui;
       if(hybrid){
         await revealControl(page,'#query-input');
@@ -88,7 +88,7 @@ try{
       await page.screenshot({path:path.join(dir,c.id+'-ui.png'),fullPage:true});
       const computed=await page.evaluate(async c=>{
         const lab=window.v2Lab;
-        if(c.workflow.toLowerCase()==='hybrid'){
+        if((c.workflow||'hybrid').toLowerCase()==='hybrid'){
           const query=await lab.semantic.embedText(lab.extractor,c.question);
           const ranks=lab.hybridRank(c.question,lab.fixed,query,lab.fixedVectors);
           const sectionRanks=lab.hybridRank(c.question,lab.section,query,lab.sectionVectors);
