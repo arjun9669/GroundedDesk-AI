@@ -43,3 +43,7 @@ The extended test helper initially tried to uncheck a file it had already remove
 Desktop and 390px mobile layouts were reviewed; the collapsed selector keeps the composer inside 1440x688. Mobile is desktop Chrome emulation, not a physical phone. Actual Xenova/all-MiniLM-L6-v2 runs via local WASM with Qwen off. File/model tests use installed headless Chrome; connected-profile upload previously had an extension permission blocker, and live UI verification is recorded separately after deployment.
 
 No paid service, persistent question/file storage or account was added. manifest.json records SHA-256 hashes of evidence.
+
+## Final visual correction
+
+Connected-Chrome review found the shared 44px text-input minimum height also applied to scope checkboxes, placing their glyphs below their filename labels. Scoped checkbox minimum height/padding now keep 16px controls aligned. CSS cache identifier is r41-ui2; retrieval build remains r41. The complete scope script passes in installed Chrome with a measured checkbox-height regression assertion and real Fast search controls. Actual MiniLM/Cobalt results above remain applicable because this correction only changes CSS/cache and the layout assertion. Additional layout records have their own layout-manifest.json; original evidence remains intact.
