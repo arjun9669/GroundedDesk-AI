@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-13 — r43
+
+- Added explicit local workspace snapshots with Save, Restore and Clear controls and visible saved filenames.
+- Stores loaded text, original PDFs and Ask selection; excludes conversations, answers and model settings. Restore re-extracts PDFs and rebuilds the index with optional models off.
+- Added schema validation and real IndexedDB/browser checks, including blocked storage, aborted writes, corrupt snapshots, PDF provenance and actual MiniLM retrieval after restore.
+- Updated README and security boundaries for opt-in persistence.
+
 ## 2026-10-13 — r42
 
 - Added Choose files, Rephrase question and Add a file actions below unanswered questions.

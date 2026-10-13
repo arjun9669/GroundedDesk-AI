@@ -2,13 +2,13 @@
 
 **Free, browser-first document intelligence portfolio project.** Upload text, Markdown or text-based PDF documents, inspect source-backed answers, optionally enable local semantic embeddings and a local small language model, and create multi-document research reports.
 
-**[Live GroundedDesk AI 5.6](https://arjun9669.github.io/GroundedDesk-AI/?build=20261013-r42)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
+**[Live GroundedDesk AI 5.6](https://arjun9669.github.io/GroundedDesk-AI/?build=20261013-r43)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
 
 > This is the **dedicated source repository and live static site**, deployed through free GitHub Pages. The app runs its own [GitHub Actions CI](./.github/workflows/ci.yml) and [Pages workflow](./.github/workflows/pages.yml). The original profile-hosted demo remains available separately. Model and PDF dependencies require public downloads when enabled; no paid inference account is needed.
 
 ## Current release and measured evidence
 
-Current retrieval build: **2026-10-13-r42** (5.6, helpful refusal recovery; retrieval unchanged). The dedicated repository is the active development source; the profile-hosted copy is historical.
+Current retrieval build: **2026-10-13-r43** (5.6, opt-in local workspace snapshots; retrieval unchanged). The dedicated repository is the active development source; the profile-hosted copy is historical.
 
 [Browser benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md) preserves first-look results separately from in-sample regressions. Aster32 and Lantern32 each reached 32/32 strict passes in the measured r25 regression; this is not independent accuracy. The Aster H01 infrastructure retry qualification remains recorded.
 
@@ -25,7 +25,7 @@ Current retrieval build: **2026-10-13-r42** (5.6, helpful refusal recovery; retr
 | **5.2 prototype** | **Candidate release-control inventory: rule-tagged, literal source sentences grouped by gate, conditional, related governance and unclassified categories** | **Optional numbered-policy Research workflow; not semantic synthesis or compliance verification** |
 | **5.3** | **Precise source-sentence evidence selection, stronger missing-fact refusals and two-document comparison quote recovery** | **Deterministic Keyword/Comparison refinement, no LLM or paid API** |
 | **5.4 / r25** | **More complete source-literal answers, conditional evidence selection and unsupported-value safeguards** | **Actual MiniLM in-sample regressions recorded separately from independent first looks** |
-| **5.6 / r42** | **Ask / Compare / Research tabs, document sidebar, progressive settings, responsive controls and preserved evidence** | **Local HTML/CSS/JavaScript; existing retrieval and workflows** |
+| **5.6 / r43** | **Ask / Compare / Research tabs, document sidebar, progressive settings, responsive controls and preserved evidence** | **Local HTML/CSS/JavaScript; existing retrieval and workflows** |
 | **5.5 / r30** | **Verified physical PDF page citations, original-page preview and normalized TXT/Markdown line references in Q&A, Comparison, Research and policy workflows** | **Local PDF.js preview, source-integrity guards and portable Markdown exports** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
@@ -33,6 +33,8 @@ No paid model inference, authentication, cloud database or backend is part of th
 ## 5.6 — A simpler document workspace
 
 **Choose your sources:** Ask can search All files or one/several selected files. Every answer/report names the files searched. History keeps the original scope; empty or removed selections cannot silently search more files. MiniLM reuses the selected files’ cached embeddings. Compare/Research choose files separately. Validated with actual MiniLM and the unchanged Cobalt16 All files regression (16/16, in-sample). [Scope and evidence](./docs/ASK_FILE_SELECTION_5_6.md).
+
+**Keep your workspace:** open **Keep this workspace** in the source library and choose **Save on this device**. The explicit snapshot stores loaded TXT/Markdown text, original PDFs and the Ask file selection in this browser’s IndexedDB. Save again after changes. **Restore saved workspace** replaces open files, re-extracts PDFs and rebuilds the index; optional AI models start off. Questions, answers and drafts are not saved. **Clear saved workspace** removes the saved copy and keeps open files. Browser data clearing may erase the snapshot; the app does not encrypt it. [Details and validation](./docs/LOCAL_WORKSPACE_5_6.md).
 
 **When a question has no supporting answer:** choose files, rephrase your question, or add a file using the recovery actions. Your unfinished draft is preserved; an empty composer restores the original question for editing. Actions focus the relevant control without running another search or downloading a model. Refusals stay explicit with zero citations, and evidence reports stay unchanged. [Validation](./docs/REFUSAL_RECOVERY_5_6.md).
 
@@ -93,7 +95,7 @@ Mixed PDFs disclose physical pages with no searchable text. Widely separated tex
 
 Eight fixed synthetic Chrome cases cover mixed pages, repeated text, cross-page evidence, columns, a table, image-only content, damaged bytes and a genuinely encrypted PDF. Their input hashes and expected behavior were saved before testing. These are feature reliability checks, not independent factual accuracy. See [r28 scope and evidence](./docs/PDF_RELIABILITY_5_5.md).
 
-Limits: 5 MB per file, 75 PDF pages, 180,000 extracted characters and 15 documents per session. Optional MiniLM supports at most 72 indexed chunks; large files may exceed browser/device capacity. Original files and extracted text stay in the current tab's memory.
+Limits: 5 MB per file, 75 PDF pages, 180,000 extracted characters and 15 documents per session. Optional MiniLM supports at most 72 indexed chunks; large files may exceed browser/device capacity. Files and extracted text stay in the current tab’s memory unless you explicitly save a local workspace snapshot. Saved snapshots remain in this browser’s IndexedDB until cleared; no app encryption is provided.
 
 ### Quotation highlighting and fallback (r29)
 
@@ -127,7 +129,7 @@ The app is a static ES-module website. From the repository root:
 python -m http.server 8765
 ```
 
-Visit **http://localhost:8765**. Sample documents are included; uploaded files stay in the current browser session's memory. Supported file types: `.txt`, `.md`, `.markdown`, and text-based `.pdf` (PDF.js from a pinned public CDN). Scanned PDFs without selectable text require separate OCR, which is not included. The app limits file and extracted-text size; mobile browsers may struggle with the large optional model.
+Visit **http://localhost:8765**. Sample documents are included; uploaded files stay in the current browser session’s memory unless you explicitly save a local workspace snapshot. Supported file types: `.txt`, `.md`, `.markdown`, and text-based `.pdf` (PDF.js from a pinned public CDN). Scanned PDFs without selectable text require separate OCR, which is not included. The app limits file and extracted-text size; mobile browsers may struggle with the large optional model.
 
 ### Demo questions
 
@@ -319,7 +321,7 @@ Full filenames wrap in each card, with PDF/TXT/Markdown type labels and PDF page
 
 ### Quick guide (r36)
 
-Open **Quick guide** in the header or **Show me how** in the empty answer area. Four short steps explain adding files, choosing Ask/Compare/Research, fast versus optional local AI search, and verifying/exporting citations. It never opens automatically or downloads a model. Close, Escape, Dismiss or completion hides the invitation; Quick guide always reopens it. Only a dismissed-guide preference is stored locally, never documents or questions. The guide works when browser storage is unavailable.
+Open **Quick guide** in the header or **Show me how** in the empty answer area. Four short steps explain adding files, choosing Ask/Compare/Research, fast versus optional local AI search, and verifying/exporting citations. It never opens automatically or downloads a model. Close, Escape, Dismiss or completion hides the invitation; Quick guide always reopens it. The guide stores only its dismissed preference. Separately, Keep this workspace can explicitly save documents and file selection; questions are not saved. The guide works when browser storage is unavailable.
 
 ![Choose the right tool](docs/evidence/r36/workspace/05-guide-tools.png)
 

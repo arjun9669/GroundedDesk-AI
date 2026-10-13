@@ -9,6 +9,7 @@ Uploaded documents are untrusted text. The interface renders their filenames, ex
 ## Data flow
 
 - **Browser session:** files are read into in-memory JavaScript objects. Adding/removing files updates the index and clears answers/evaluation displays so stale citations are not shown.
+- **Opt-in workspace snapshot:** only pressing Save on this device writes loaded TXT/Markdown text, original PDF blobs, file identifiers/names and Ask selection to this origin’s IndexedDB (`groundeddesk-workspace-v1`, one snapshot). It does not store questions, answers, drafts, embeddings or enabled model settings. Snapshots are manual, shared by tabs of the same browser profile and origin, and may be erased by browser data clearing or eviction. They are not encrypted by this app. Restore replaces live files only after validation and PDF re-extraction succeed, clears old results, and rebuilds the index with optional models off. Clear saved workspace deletes the snapshot but keeps current in-memory files and separate model caches. Avoid saving sensitive documents on shared devices. Storage failure leaves the live session usable.
 - **Optional dependencies:** the PDF.js library and Transformers.js/model weights are requested from public CDNs/model hosting. Such downloads reveal routine connection metadata to providers. Do not describe this initial download as offline.
 - **Optional local inference:** MiniLM and Qwen inference is designed to run on device with supported WASM/WebGPU; no paid remote inference API is called by the app.
 - **Exports:** copying/downloading reports writes possibly sensitive text to the system clipboard or device disk. Review before sharing.
@@ -26,4 +27,4 @@ Open an issue in [this repository](https://github.com/arjun9669/GroundedDesk-AI/
 
 ## Quick guide preference
 
-The optional first-use guide stores only `groundeddesk-guide-dismissed-v1` with the value `1` in this site’s browser localStorage when dismissed or closed. Documents, quotations and questions are not stored with this preference. The guide remains usable if storage is blocked. Model/dependency caches are separate from this preference; existing document-memory boundaries remain unchanged.
+The optional first-use guide stores only `groundeddesk-guide-dismissed-v1` with the value `1` in this site’s browser localStorage when dismissed or closed. Documents, quotations and questions are not stored with this preference. The guide remains usable if storage is blocked. Model/dependency caches are separate from this preference; the separate opt-in workspace snapshot described above can persist documents. No documents or questions are saved by the guide itself.

@@ -12,7 +12,7 @@ try {
   const context=await browser.newContext({viewport:{width:1440,height:1000},permissions:['clipboard-read','clipboard-write']});
   page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(process.env.TEST_URL||'http://127.0.0.1:8765/');await page.waitForFunction(()=>document.querySelector('#doc-count')?.textContent==='3');
-  assert.match(await page.locator('#retrieval-build').innerText(),/2026-10-13-r42/);
+  assert.match(await page.locator('#retrieval-build').innerText(),/2026-10-13-r43/);
   await page.locator('#clear-docs').click();
   await page.locator('#file-input').setInputFiles([
     {name:'harbor.txt',mimeType:'text/plain',buffer:Buffer.from('Harbor crane operators must inspect lifting hooks every eight shifts.')},

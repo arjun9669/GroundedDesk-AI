@@ -34,6 +34,7 @@ jobs:
           node --check pdf-ingest.mjs
           node --check pdf-highlight.mjs
           node --check workspace-ui.mjs
+          node --check workspace-store.mjs
           node --check search-scope.mjs
           node --check eval/run.mjs
       - name: Unit tests
@@ -74,3 +75,4 @@ jobs:
           node tests/browser-workspace-ui.mjs
           node tests/browser-document-library.mjs
           node tests/browser-ask-scope.mjs
+          node tests/browser-local-workspace.mjs

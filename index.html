@@ -7,8 +7,8 @@
 <meta name="theme-color" content="#f4f1ea"/>
 <meta name="description" content="GroundedDesk — a free, local document workspace. Add files, ask questions, and check answers against the original evidence."/>
 <title>GroundedDesk AI 5.6 | Your document workspace</title>
-<link rel="stylesheet" href="./styles.css?v=20261013-r42"/>
-<script defer type="module" src="./app.mjs?v=20261013-r42"></script>
+<link rel="stylesheet" href="./styles.css?v=20261013-r43"/>
+<script defer type="module" src="./app.mjs?v=20261013-r43"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-workspace">Skip to workspace</a>
@@ -16,7 +16,7 @@
 <header class="site-header">
 <a class="brand" href="#workbench" aria-label="GroundedDesk home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h9l4 4v13H7z"/><path d="M16 3v5h4M3 7v14h12M10 12h7M10 16h5"/></svg></span><span><strong>GroundedDesk</strong><small>Your document workspace</small></span></a>
 <nav class="header-links" aria-label="Primary navigation"><button type="button" id="open-guide" aria-haspopup="dialog">Quick guide</button><a href="#about">How it works</a><a href="https://github.com/arjun9669/GroundedDesk-AI" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
-<span class="private-pill"><span class="private-dot"></span>Files stay in this tab</span>
+<span class="private-pill"><span class="private-dot"></span>Files stay on your device</span>
 </header>
 <main id="workbench" class="workbench">
 <div class="workspace-intro"><div><p class="micro-label">YOUR PERSONAL RESEARCH DESK</p><h1 id="hero-title">Good questions.<br/><span class="hero-accent">Grounded answers.</span></h1><p>Turn your documents into a clearer picture. Every answer comes with evidence to inspect.</p></div><ol class="workspace-steps" aria-label="Getting started"><li><span>01</span>Add files</li><li><span>02</span>Ask anything</li><li><span>03</span>Follow the evidence</li></ol></div>
@@ -35,7 +35,7 @@
             <label class="search-label" for="document-filter">Find a document</label>
             <div class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="document-filter" placeholder="Find a document..." autocomplete="off"/></div>
             <ul class="document-list" id="document-list" aria-live="polite"></ul>
-            <p class="library-note">Try the examples, or add your own files. Documents are cleared when this tab closes or reloads.</p></div>
+            <p class="library-note">Try the examples, or add your own files. Unsaved files are cleared when this tab closes or reloads.</p><details id="local-workspace" class="local-workspace"><summary>Keep this workspace</summary><div class="local-workspace-body"><p>Save a snapshot in this browser: loaded text, original PDFs and your Ask file selection. Questions, answers and AI settings are not saved.</p><p>Restore replaces the files open in this tab. Saving is manual; save again after changes. Browser data clearing can erase it. Storage is not encrypted by this app; avoid saving sensitive files on shared devices.</p><div class="workspace-save-actions"><button type="button" id="save-workspace" disabled>Save on this device</button><button type="button" id="restore-workspace" disabled>Restore saved workspace</button><button type="button" id="clear-saved-workspace">Clear saved workspace</button></div><p id="saved-workspace-summary">Checking for a saved workspace…</p><ul id="saved-workspace-files" hidden></ul><p id="workspace-save-status" role="status" hidden></p></div></details></div>
           </aside>
 <div id="main-workspace" class="main-workspace" tabindex="-1">
 <div class="workspace-toolbar"><div class="workspace-tabs" role="tablist" aria-label="Document tools"><button id="tab-ask" type="button" role="tab" data-view="ask" aria-controls="workspace-ask" aria-selected="true">Ask</button><button id="tab-compare" type="button" role="tab" data-view="compare" aria-controls="workspace-compare" aria-selected="false" tabindex="-1">Compare</button><button id="tab-research" type="button" role="tab" data-view="research" aria-controls="workspace-research" aria-selected="false" tabindex="-1">Research</button></div><span id="search-mode-badge" class="mode-badge">Fast search</span></div>
@@ -202,13 +202,13 @@
   <header class="guide-heading"><div><p class="micro-label">A LITTLE HELP TO GET STARTED</p><h2 id="guide-title" tabindex="-1">Your first grounded answer</h2></div><button type="button" id="close-guide">Close guide</button></header>
   <p id="guide-progress" class="guide-progress" aria-live="polite">Step 1 of 4</p>
   <div id="guide-pages">
-    <section data-guide-step="0"><span class="guide-number" aria-hidden="true">01</span><h3>Start with your documents.</h3><p>Add PDF, TXT or Markdown files in the source library, or try the fictional examples already loaded. Each file can be up to 5 MB. PDFs need searchable text; scanned pages need OCR outside this app.</p><p>Your files stay in this tab and are cleared when it closes or reloads.</p><button type="button" data-guide-action="files">Go to my files ↗</button></section>
+    <section data-guide-step="0"><span class="guide-number" aria-hidden="true">01</span><h3>Start with your documents.</h3><p>Add PDF, TXT or Markdown files in the source library, or try the fictional examples already loaded. Each file can be up to 5 MB. PDFs need searchable text; scanned pages need OCR outside this app.</p><p>Files are cleared when this tab closes or reloads unless you explicitly save a snapshot using Keep this workspace. Saved files stay in this browser until you clear the snapshot or browser data.</p><button type="button" data-guide-action="files">Go to my files ↗</button></section>
     <section data-guide-step="1" hidden><span class="guide-number" aria-hidden="true">02</span><h3>Choose the right tool.</h3><div class="guide-tools"><div><button type="button" data-guide-action="ask">Ask ↗</button><p>Ask a question and read quoted answers with numbered citations.</p></div><div><button type="button" data-guide-action="compare">Compare ↗</button><p>Choose two files and a topic to inspect their excerpts side by side.</p></div><div><button type="button" data-guide-action="research">Research ↗</button><p>Gather passages across files, or review numbered policy sections and checklists.</p></div></div><p>Compare and Research use keyword search. Their excerpts still need your review.</p></section>
     <section data-guide-step="2" hidden><span class="guide-number" aria-hidden="true">03</span><h3>Ask clearly. Start simple.</h3><p>Try a specific question, such as “Who must approve a release?” Use names and terms from your files when you can.</p><div class="guide-search-note"><strong>Fast search is ready immediately.</strong><p>Optional Local AI search downloads a free model to help find related wording in Ask. It runs on your device and needs rebuilding after you change files. It does not make every answer correct.</p><p>Experimental answer drafts are separate and start off.</p></div><button type="button" data-guide-action="settings">Show search settings ↗</button></section>
     <section data-guide-step="3" hidden><span class="guide-number" aria-hidden="true">04</span><h3>Follow the evidence.</h3><p>Read the quotation, filename and page or line reference. Click a numbered citation to find its evidence card. For PDFs, <strong>Open cited PDF page</strong> shows the original page; highlights are approximate.</p><p>An answer without enough evidence may be refused. A relevant-looking citation is not proof that the answer is complete or correct.</p><p>Use <strong>Copy report</strong> or <strong>Save report</strong> to keep the answer and its sources.</p><button type="button" data-guide-action="ask">Go to Ask ↗</button></section>
   </div>
   <footer class="guide-footer"><button type="button" id="guide-back" disabled>Back</button><button type="button" id="guide-next">Next</button></footer>
-  <p class="guide-preference">Only your dismissed-guide preference is saved in this browser. No files or questions are saved with it.</p>
+  <p class="guide-preference">The guide remembers only that you closed it. Save files separately with Keep this workspace; questions are not saved.</p>
 </dialog>
 </body>
 </html>
