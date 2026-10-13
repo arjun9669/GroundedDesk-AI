@@ -99,7 +99,7 @@ try{
         const result=lab.compareDocuments(lab.docs.find(d=>d.name===names[0]),lab.docs.find(d=>d.name===names[1]),c.question);
         const adapted={...result,sources:result.sources.map(s=>({...s,quote:s.excerpt})),answer:result.sources.map(s=>`[${s.citation}] ${s.excerpt}`).join('\n\n')};
         return {baseline:adapted,fixed:adapted,section:adapted,method:'Separate unchanged lexical Comparison, not MiniLM'};
-      },c);
+      },{id:c.id,question:c.question,workflow:c.workflow||'hybrid',expected_files:c.expected_documents||c.expected_files||c.source_files});
       const comparable=sources=>sources.map(s=>({filename:s.filename,quote:normalize(s.quote),...(hybrid?{excerpt:normalize(s.excerpt)}:{})}));
       assert.deepEqual(comparable(computed.baseline.sources),comparable(ui.sources),'Instrumented production must reproduce actual UI source output '+pack.name+'/'+c.id);
       const record={id:c.id,question:c.question,workflow:hybrid?'hybrid':'comparison',ui,...computed};
