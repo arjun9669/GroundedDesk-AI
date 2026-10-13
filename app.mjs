@@ -1,17 +1,17 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r41";
-import { hybridRank } from "./hybrid.mjs?v=20261013-r41";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r42";
+import { hybridRank } from "./hybrid.mjs?v=20261013-r42";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261013-r41";
+import { createEvidenceReport } from "./report.mjs?v=20261013-r42";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r41";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r41";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r41";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r41";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r41";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r41";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r41";
-import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r41";
-import { createSearchScope, assertSearchScope } from "./search-scope.mjs?v=20261013-r41";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r42";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r42";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r42";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r42";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r42";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r42";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r42";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r42";
+import { createSearchScope, assertSearchScope } from "./search-scope.mjs?v=20261013-r42";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -545,6 +545,24 @@ function renderResult(question, result) {
         : "Scores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases."));
   } else {
     view.append(make("p", "result-footnote", "Try a different question or add a document containing relevant information. No answer was invented."));
+    const recovery = make("section", "answer-recovery");
+    recovery.setAttribute("aria-label", "Ways to continue");
+    recovery.append(make("h6", "", "Find a better starting point"));
+    recovery.append(make("p", "", "Check the files being searched, make your question more specific, or add a file with the missing information."));
+    const options = make("div", "recovery-actions");
+    const focusTarget = target => { target.scrollIntoView({ block: "center", behavior: "instant" }); target.focus({ preventScroll: true }); };
+    for (const [label, action] of [
+      ["Choose files", () => { $("ask-file-scope").open = true; focusTarget($("ask-file-scope").querySelector("summary")); }],
+      ["Rephrase question", () => { if (!$("query-input").value.trim()) $("query-input").value = question; focusTarget($("query-input")); }],
+      ["Add a file", () => { if ($("library-content").hidden) $("toggle-documents").click(); focusTarget($("dropzone")); }],
+    ]) {
+      const button = make("button", "copy-button", label);
+      button.type = "button";
+      button.addEventListener("click", action);
+      options.append(button);
+    }
+    recovery.append(options);
+    view.append(recovery);
   }
   return result; // return the *guarded* result for recent history and status.
 }

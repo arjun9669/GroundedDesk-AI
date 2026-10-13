@@ -1,4 +1,4 @@
-import { buildIndex } from "./retrieval.mjs?v=20261013-r41";
+import { buildIndex } from "./retrieval.mjs?v=20261013-r42";
 
 // Recompute lexical statistics for the selected corpus, and align real cached
 // embeddings by stable chunk ID. Selection never changes the full model index.

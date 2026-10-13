@@ -2,13 +2,13 @@
 
 **Free, browser-first document intelligence portfolio project.** Upload text, Markdown or text-based PDF documents, inspect source-backed answers, optionally enable local semantic embeddings and a local small language model, and create multi-document research reports.
 
-**[Live GroundedDesk AI 5.6](https://arjun9669.github.io/GroundedDesk-AI/?build=20261013-r41)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
+**[Live GroundedDesk AI 5.6](https://arjun9669.github.io/GroundedDesk-AI/?build=20261013-r42)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy boundaries](./docs/SECURITY.md) · [Change history](./CHANGELOG.md) · [Author](https://github.com/arjun9669)
 
 > This is the **dedicated source repository and live static site**, deployed through free GitHub Pages. The app runs its own [GitHub Actions CI](./.github/workflows/ci.yml) and [Pages workflow](./.github/workflows/pages.yml). The original profile-hosted demo remains available separately. Model and PDF dependencies require public downloads when enabled; no paid inference account is needed.
 
 ## Current release and measured evidence
 
-Current retrieval build: **2026-10-13-r41** (5.6, Ask file selection; full-library retrieval unchanged). The dedicated repository is the active development source; the profile-hosted copy is historical.
+Current retrieval build: **2026-10-13-r42** (5.6, helpful refusal recovery; retrieval unchanged). The dedicated repository is the active development source; the profile-hosted copy is historical.
 
 [Browser benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md) preserves first-look results separately from in-sample regressions. Aster32 and Lantern32 each reached 32/32 strict passes in the measured r25 regression; this is not independent accuracy. The Aster H01 infrastructure retry qualification remains recorded.
 
@@ -25,7 +25,7 @@ Current retrieval build: **2026-10-13-r41** (5.6, Ask file selection; full-libra
 | **5.2 prototype** | **Candidate release-control inventory: rule-tagged, literal source sentences grouped by gate, conditional, related governance and unclassified categories** | **Optional numbered-policy Research workflow; not semantic synthesis or compliance verification** |
 | **5.3** | **Precise source-sentence evidence selection, stronger missing-fact refusals and two-document comparison quote recovery** | **Deterministic Keyword/Comparison refinement, no LLM or paid API** |
 | **5.4 / r25** | **More complete source-literal answers, conditional evidence selection and unsupported-value safeguards** | **Actual MiniLM in-sample regressions recorded separately from independent first looks** |
-| **5.6 / r41** | **Ask / Compare / Research tabs, document sidebar, progressive settings, responsive controls and preserved evidence** | **Local HTML/CSS/JavaScript; existing retrieval and workflows** |
+| **5.6 / r42** | **Ask / Compare / Research tabs, document sidebar, progressive settings, responsive controls and preserved evidence** | **Local HTML/CSS/JavaScript; existing retrieval and workflows** |
 | **5.5 / r30** | **Verified physical PDF page citations, original-page preview and normalized TXT/Markdown line references in Q&A, Comparison, Research and policy workflows** | **Local PDF.js preview, source-integrity guards and portable Markdown exports** |
 
 No paid model inference, authentication, cloud database or backend is part of this educational reference implementation. Public model/CDN files must be downloaded when enabling semantic, local generation or PDF parsing; those downloads are not entirely offline. The app does not intentionally upload user document contents to a backend.
@@ -33,6 +33,8 @@ No paid model inference, authentication, cloud database or backend is part of th
 ## 5.6 — A simpler document workspace
 
 **Choose your sources:** Ask can search All files or one/several selected files. Every answer/report names the files searched. History keeps the original scope; empty or removed selections cannot silently search more files. MiniLM reuses the selected files’ cached embeddings. Compare/Research choose files separately. Validated with actual MiniLM and the unchanged Cobalt16 All files regression (16/16, in-sample). [Scope and evidence](./docs/ASK_FILE_SELECTION_5_6.md).
+
+**When a question has no supporting answer:** choose files, rephrase your question, or add a file using the recovery actions. Your unfinished draft is preserved; an empty composer restores the original question for editing. Actions focus the relevant control without running another search or downloading a model. Refusals stay explicit with zero citations, and evidence reports stay unchanged. [Validation](./docs/REFUSAL_RECOVERY_5_6.md).
 
 **Readable answers:** distinct question/output headings, softer quotation panels, clearer filenames and page/line labels, more readable source excerpts and optional search details separated from evidence. Refusals remain explicit and uncited. Subtle card hover effects respect reduced-motion preferences. Reports and quoted content stay intact. [Validation and evidence](./docs/ANSWER_PRESENTATION_5_6.md).
 
