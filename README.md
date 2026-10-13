@@ -20,6 +20,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Sentence-selection experiment:** v3 reaches 28/28 on the known development suite and 20/24 on the exposed public regression, but introduces five historical PASS regressions. A fresh mixed public sample scores 20/24 supported passes with fixed chunks, 19/24 with section chunks; all four constructed compound answers remain partial. The release gate fails and production stays r44. [Preserved results and evidence](./docs/COVERAGE_V3_R44_VALIDATION.md).
 
+**Anchor-preservation experiment:** v4 repairs all five original v3 regressions, reaches 119/119 original controls and 28/28 development passes, and completes all four exposed compound controls. Three public cases lose prior passes, so the staged development gate fails; no fresh sample is consumed and production stays r44. [Exact regression results and qualifications](./docs/COVERAGE_V4_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |
