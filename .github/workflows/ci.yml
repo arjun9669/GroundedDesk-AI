@@ -38,6 +38,10 @@ jobs:
           node --check workspace-store.mjs
           node --check search-scope.mjs
           node --check eval/run.mjs
+          node --check eval/retrieval-quality/section-index.mjs
+          node --check eval/retrieval-quality/grade.mjs
+          node --check eval/retrieval-quality/score.mjs
+          node --check tests/browser-retrieval-quality.mjs
       - name: Unit tests
         run: node --test tests/*.test.mjs
       - name: Offline labeled corpus evaluation

@@ -12,6 +12,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 [Browser benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md) preserves first-look results separately from in-sample regressions. Aster32 and Lantern32 each reached 32/32 strict passes in the measured r25 regression; this is not independent accuracy. The Aster H01 infrastructure retry qualification remains recorded.
 
+**Retrieval development study:** a frozen, self-authored 28-question actual-MiniLM comparison scored 16 PASS / 7 PARTIAL / 5 FAIL with production fixed chunks and 19 / 7 / 2 with isolated section-aware chunks. Exact evidence recall@3 improved from 31/34 to 33/34, with no passing-case regressions. This is not independent accuracy; production retrieval remains unchanged. [Method, remaining failures and evidence](./docs/RETRIEVAL_QUALITY_R44_DEVELOPMENT.md).
+
 ## Features
 
 | Milestone | Capability | Execution |
