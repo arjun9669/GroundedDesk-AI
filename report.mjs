@@ -1,6 +1,7 @@
 import { validateDraft } from "./generation.mjs?v=20261010-r13";
 import { locateEvidence, locationLabel } from "./provenance.mjs?v=20261012-r32";
 import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r32";
+import { assertSearchScope } from "./search-scope.mjs?v=20261013-r41";
 
 /**
  * Portable evidence reports for the browser-only document Q&A demo.
@@ -31,6 +32,7 @@ export function createEvidenceReport(question, result, documents = []) {
     throw new TypeError("Invalid retrieval result");
   }
   const sources = result.sources;
+  assertSearchScope(result, documents);
   if (result.answered && !sources.length) throw new Error("Answered result has no cited sources");
   if (result.generated) {
     const validation = validateDraft(result.answer, sources);
@@ -48,6 +50,7 @@ export function createEvidenceReport(question, result, documents = []) {
     "",
     "**Retrieval build:** `" + (String(result.retrievalBuild || "unknown").replace(/[^A-Za-z0-9._-]/g, "").slice(0, 80) || "unknown") + "`",
     "",
+    ...(result.searchedFiles ? ["**Searched files:** " + result.searchedFiles.map(file => inline(file.name)).join(" · "), ""] : []),
     "## Answer",
     "",
     result.answered ? "" : blockquote(result.answer || "No supporting evidence found."),

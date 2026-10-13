@@ -1,0 +1,55 @@
+{
+  "kind": "Ask file selection feature regression, not independent accuracy",
+  "cases": [
+    {
+      "id": "river-only",
+      "mode": "keyword",
+      "question": "How often must crane operators inspect lifting hooks?",
+      "displayed": "YOUR QUESTION\nHow often must crane operators inspect lifting hooks?\n\nSearched selected files: river.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] River crane operators must inspect lifting hooks every eleven shifts.\n\nSOURCE EVIDENCE\n[1]\nriver.txt\n\nText line 1 (normalized extraction)\n\nRiver crane operators must inspect lifting hooks every eleven shifts.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "sources": [
+        "river.txt"
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> How often must crane operators inspect lifting hooks?\r\n\r\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\r\n\r\n**Retrieval build:** `2026-10-13-r41`\r\n\r\n**Searched files:** river\\.txt\r\n\r\n## Answer\r\n\r\n\r\n> [1] River crane operators must inspect lifting hooks every eleven shifts.\r\n\r\n## Source evidence\r\n\r\n### [1] river\\.txt\r\n\r\n**File:** river\\.txt\r\n\r\n**Source location:** Text line 1 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.7261\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> River crane operators must inspect lifting hooks every eleven shifts.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> River crane operators must inspect lifting hooks every eleven shifts.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "harbor-only",
+      "mode": "keyword",
+      "question": "How often must crane operators inspect lifting hooks?",
+      "displayed": "YOUR QUESTION\nHow often must crane operators inspect lifting hooks?\n\nSearched selected files: harbor.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\nSOURCE EVIDENCE\n[1]\nharbor.txt\n\nText line 1 (normalized extraction)\n\nHarbor crane operators must inspect lifting hooks every eight shifts.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "sources": [
+        "harbor.txt"
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> How often must crane operators inspect lifting hooks?\r\n\r\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\r\n\r\n**Retrieval build:** `2026-10-13-r41`\r\n\r\n**Searched files:** harbor\\.txt\r\n\r\n## Answer\r\n\r\n\r\n> [1] Harbor crane operators must inspect lifting hooks every eight shifts.\r\n\r\n## Source evidence\r\n\r\n### [1] harbor\\.txt\r\n\r\n**File:** harbor\\.txt\r\n\r\n**Source location:** Text line 1 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.7261\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> Harbor crane operators must inspect lifting hooks every eight shifts.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> Harbor crane operators must inspect lifting hooks every eight shifts.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "excluded-fact-refusal",
+      "mode": "keyword",
+      "question": "What is the exact PIN code for the fictional workshop door?",
+      "displayed": "YOUR QUESTION\nWhat is the exact PIN code for the fictional workshop door?\n\nSearched selected files: harbor.txt\n\nNo supporting answer\nNO SUPPORTING EVIDENCE\nCopy report\nSave report\nI can't find this in the provided documents.\n\nTry a different question or add a document containing relevant information. No answer was invented.",
+      "sources": [],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> What is the exact PIN code for the fictional workshop door?\r\n\r\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\r\n\r\n**Retrieval build:** `2026-10-13-r41`\r\n\r\n**Searched files:** harbor\\.txt\r\n\r\n## Answer\r\n\r\n> I can't find this in the provided documents.\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "included-fact",
+      "mode": "keyword",
+      "question": "What is the exact PIN code for the fictional workshop door?",
+      "displayed": "YOUR QUESTION\nWhat is the exact PIN code for the fictional workshop door?\n\nSearched selected files: fictional-pin.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop door PIN code is 0482.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+      "sources": [
+        "fictional-pin.txt"
+      ],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> What is the exact PIN code for the fictional workshop door?\r\n\r\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\r\n\r\n**Retrieval build:** `2026-10-13-r41`\r\n\r\n**Searched files:** fictional\\-pin\\.txt\r\n\r\n## Answer\r\n\r\n\r\n> [1] The fictional workshop door PIN code is 0482.\r\n\r\n## Source evidence\r\n\r\n### [1] fictional\\-pin\\.txt\r\n\r\n**File:** fictional\\-pin\\.txt\r\n\r\n**Source location:** Text line 1 \\(normalized extraction\\)\r\n\r\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.4384\r\n\r\n**Quoted sentence / passage:**\r\n\r\n> The fictional workshop door PIN code is 0482.\r\n\r\n**Retrieved excerpt:**\r\n\r\n> The fictional workshop door PIN code is 0482.\r\n\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    },
+    {
+      "id": "two-selected",
+      "mode": "keyword",
+      "question": "Compare Harbor and River crane hook inspection intervals.",
+      "displayed": "YOUR QUESTION\nCompare Harbor and River crane hook inspection intervals.\n\nSearched selected files: harbor.txt · river.txt\n\nNo supporting answer\nNO SUPPORTING EVIDENCE\nCopy report\nSave report\nI can't find this in the provided documents.\n\nTry a different question or add a document containing relevant information. No answer was invented.",
+      "sources": [],
+      "report": "# GroundedDesk — evidence report\r\n\r\n## Question\r\n\r\n> Compare Harbor and River crane hook inspection intervals.\r\n\r\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\r\n\r\n**Retrieval build:** `2026-10-13-r41`\r\n\r\n**Searched files:** harbor\\.txt · river\\.txt\r\n\r\n## Answer\r\n\r\n> I can't find this in the provided documents.\r\n---\r\n\r\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\r\n"
+    }
+  ],
+  "model": "not exercised",
+  "browser": "154.0.8037.98",
+  "status": "FAIL",
+  "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(r.sources.length>0)\n\n    at file:///C:/Users/arjun/Documents/Codex/2026-10-11/test-groundeddesk-ai-r16-in-chrome/work/r25-checkout/tests/browser-ask-scope.mjs:43:146"
+}
