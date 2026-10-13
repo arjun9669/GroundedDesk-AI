@@ -21,6 +21,8 @@ try {
   ]);await page.waitForFunction(()=>document.querySelector('#doc-count')?.textContent==='3');
   const select=async names=>{
     if(!await page.locator('#ask-file-scope').getAttribute('open'))await page.locator('#ask-scope-summary').click();
+    const height=await page.locator('#ask-scope-options input').first().evaluate(el=>el.getBoundingClientRect().height);
+    assert.equal(height,16,'Checkboxes must not inherit the 44px text-field minimum height');
     await page.locator('#ask-scope-options').getByLabel('All files',{exact:true}).uncheck();
     for(const name of names)await page.locator('#ask-scope-options').getByLabel(name,{exact:true}).check();
     // Clear any prior explicit selection that is not in this request.
