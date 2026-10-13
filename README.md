@@ -16,6 +16,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Answer-coverage experiment:** an isolated bounded-quotation prototype raised the same known development suite to 23/28 strict passes with fixed chunks, and 27/28 with experimental section chunks. All original passing cases and uncited refusals were preserved; one inspection-interval partial remains. Cobalt16 real-model/lexical controls remain 16/16, with an explicitly documented infrastructure retry. Production stays r44; this is not independent accuracy. [Exact results and limitations](./docs/ANSWER_COVERAGE_R44_DEVELOPMENT.md).
 
+**Broader coverage validation:** the v2 prototype reaches 28/28 on the known section-based development set, while all original Atlas/Meridian/Lantern/Aster/Cobalt PASS controls remain intact (Meridian I15 still partial). A frozen externally authored public SQuAD sample scored 13 PASS / 1 PARTIAL / 10 FAIL and failed the release gate. Production stays r44. [Results, provenance and limitations](./docs/COVERAGE_V2_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |
