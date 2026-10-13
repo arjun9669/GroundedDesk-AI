@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-13 — Anchor-preservation v4 experiment (no runtime release)
+
+- Froze generic conditional-anchor protection, abbreviation-safe literal spans and scoped compound-facet citations before real Chrome/MiniLM testing.
+- Original119 and RQ28 all PASS; Meridian I15 and all four exposed compound controls are complete.
+- Preserved three unique public PASS regressions and failed staged gate; no additional fresh sample consumed. Production stays r44.
+- Documented pre-question server recovery and raw candidate byte preservation without changing historical inputs or results.
+
+
 ## 2026-10-13 — Sentence-selection v3 experiment (no runtime release)
 
 - Froze candidate and fresh mixed public inputs before actual Chrome/MiniLM capture of all 203 cases.
