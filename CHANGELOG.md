@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-13 — Retrieval development evaluation (no runtime release)
+
+- Froze a self-authored 28-question development corpus and section-aware experiment protocol before observing answers.
+- Captured real Chrome / actual MiniLM baseline and isolated candidate outputs, with exact quotations, rankings, hashes and conservative scoring.
+- Recorded 16/7/5 baseline versus 19/7/2 candidate, with no PASS regressions; production r44 retrieval and historical benchmarks remain unchanged.
+- Added experiment and scoring guard tests and preserved browser evidence. This is not independent accuracy or production adoption.
+
 ## 2026-10-13 — r44
 
 - Added per-file text readiness, searchable/total PDF page counts and partial/layout cautions, recomputed after workspace restore.

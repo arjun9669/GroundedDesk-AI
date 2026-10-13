@@ -1,0 +1,1608 @@
+{
+  "classification": "Self-authored frozen development baseline, not independent accuracy",
+  "build": "2026-10-13-r44",
+  "browser": "154.0.8037.98",
+  "summary": {
+    "baseline": {
+      "PASS": 16,
+      "PARTIAL": 7,
+      "FAIL": 5,
+      "false_acceptances": 0,
+      "false_refusals": 0,
+      "citations": 24,
+      "provenance_valid": 24,
+      "relevant": 19
+    },
+    "candidate": {
+      "PASS": 19,
+      "PARTIAL": 7,
+      "FAIL": 2,
+      "false_acceptances": 0,
+      "false_refusals": 0,
+      "citations": 24,
+      "provenance_valid": 24,
+      "relevant": 22
+    }
+  },
+  "retrieval": {
+    "baseline": {
+      "required_sentences": 34,
+      "supported_questions": 24,
+      "top1_relevant": 18,
+      "recall_counts": {
+        "1": 26,
+        "3": 31,
+        "5": 32
+      },
+      "recall": {
+        "1": 0.7647058823529411,
+        "3": 0.9117647058823529,
+        "5": 0.9411764705882353
+      }
+    },
+    "candidate": {
+      "required_sentences": 34,
+      "supported_questions": 24,
+      "top1_relevant": 19,
+      "recall_counts": {
+        "1": 27,
+        "3": 33,
+        "5": 34
+      },
+      "recall": {
+        "1": 0.7941176470588235,
+        "3": 0.9705882352941176,
+        "5": 1
+      }
+    }
+  },
+  "promotion_checks": {
+    "higher_recall3": true,
+    "top1_not_lower": true,
+    "pass_not_lower": true,
+    "no_pass_regressions": true,
+    "no_new_false_acceptances": true,
+    "provenance_intact": true,
+    "within_passage_cap": true
+  },
+  "promotion_gate": "PASS",
+  "production_change": "NONE",
+  "regressions": [],
+  "passages": {
+    "baseline": 22,
+    "candidate": 34
+  },
+  "timing": {
+    "enable_ms": 52664,
+    "fixed_reindex_ms": 3499.7999999988824,
+    "section_index_ms": 3024.300000000745,
+    "fixed_query_p50_ms": 25.40000000037253,
+    "fixed_query_p95_ms": 36.09999999962747,
+    "section_rank_extract_p50_ms": 1.599999999627471,
+    "heap_used_bytes": 12934282,
+    "caveat": "One pass, fixed-first order, warm/cache effects; section timings reuse actual query vectors and omit embedding. JS heap is not whole-device peak memory. No speed-superiority claim."
+  },
+  "baseline": [
+    {
+      "id": "RQ01",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Release window Orders released before 14:20 leave the Orchard depot on the same operating day.",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "# Orchard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written in",
+          "quote": "## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day."
+        }
+      ]
+    },
+    {
+      "id": "RQ02",
+      "outcome": "FAIL",
+      "matched_evidence": [
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        false
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] # Orchard Depot — Current Dispatch Guide",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "# Orchard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.\nOperational note: This section concerns urgent release. Read",
+          "quote": "# Orchard Depot — Current Dispatch Guide"
+        }
+      ]
+    },
+    {
+      "id": "RQ03",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Urgent release Urgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "nstruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.\nOperational note: This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. This section concerns urgent release. Read the written instruction in its original context. Keep the original file available",
+          "quote": "## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator."
+        }
+      ]
+    },
+    {
+      "id": "RQ04",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] Orchard cold crates must remain between 3 and 7 degrees Celsius.",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "e Dispatch Lead and Safety Coordinator.\nOperational note: This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. \n\n## Cold crates\nOrchard cold crates must remain between 3 and 7 degrees Celsius. A temperature excursion requires quarantine until the Quality Lead authorizes release.\nOperational note: This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for review. This section concerns cold crates. Read the written instruction in its original context. Keep the original",
+          "quote": "Orchard cold crates must remain between 3 and 7 degrees Celsius."
+        }
+      ]
+    },
+    {
+      "id": "RQ05",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Cold crates Orchard cold crates must remain between 3 and 7 degrees Celsius. A temperature excursion requires quarantine until the Quality Lead authorizes release.",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "nstruction in its original context. Keep the original file available for review. This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. \n\n## Cold crates\nOrchard cold crates must remain between 3 and 7 degrees Celsius. A temperature excursion requires quarantine until the Quality Lead authorizes release.\nOperational note: This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for review. This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for r",
+          "quote": "## Cold crates\nOrchard cold crates must remain between 3 and 7 degrees Celsius. A temperature excursion requires quarantine until the Quality Lead authorizes release."
+        }
+      ]
+    },
+    {
+      "id": "RQ06",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Route closure When the bridge route is closed, Orchard drivers use the eastern bypass.",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "n instruction in its original context. Keep the original file available for review. This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for review. \n\n## Route closure\nWhen the bridge route is closed, Orchard drivers use the eastern bypass. The Logistics Lead approves the revised route before departure.\nOperational note: This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. This section concerns route closure. Read the written instruc",
+          "quote": "## Route closure\nWhen the bridge route is closed, Orchard drivers use the eastern bypass."
+        }
+      ]
+    },
+    {
+      "id": "RQ07",
+      "outcome": "FAIL",
+      "matched_evidence": [
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        false
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] # Orchard Depot — Current Dispatch Guide",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "# Orchard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.\nOperational note: This section concerns urgent release. Read",
+          "quote": "# Orchard Depot — Current Dispatch Guide"
+        }
+      ]
+    },
+    {
+      "id": "RQ08",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Evidence retention Orchard dispatch records are retained for 120 days.",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "struction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Evidence retention\nOrchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.\nOperational note: This section concerns evidence retention. Read the written instruction in its original context. Keep the original file available for review. This section concerns evidence retention. R",
+          "quote": "## Evidence retention\nOrchard dispatch records are retained for 120 days."
+        }
+      ]
+    },
+    {
+      "id": "RQ09",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true,
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Acknowledgement Orchard delivery partners acknowledge a dispatch notice within four business hours. Acknowledgement is not a delivery guarantee.",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "uction in its original context. Keep the original file available for review. This section concerns evidence retention. Read the written instruction in its original context. Keep the original file available for review. \n\n## Acknowledgement\nOrchard delivery partners acknowledge a dispatch notice within four business hours. Acknowledgement is not a delivery guarantee.\nOperational note: This section concerns acknowledgement. Read the written instruction in its original context. Keep the original file available for review. This section concerns acknowledgement. Read the written instruction in its original context. Keep the original file availab",
+          "quote": "## Acknowledgement\nOrchard delivery partners acknowledge a dispatch notice within four business hours. Acknowledgement is not a delivery guarantee."
+        }
+      ]
+    },
+    {
+      "id": "RQ10",
+      "outcome": "FAIL",
+      "matched_evidence": [
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        false
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] # Orchard Depot — Current Dispatch Guide",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "# Orchard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.\nOperational note: This section concerns urgent release. Read",
+          "quote": "# Orchard Depot — Current Dispatch Guide"
+        }
+      ]
+    },
+    {
+      "id": "RQ11",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Release window Under the archived Orchard guide, orders released before 13:00 left the depot on the same operating day.",
+      "sources": [
+        {
+          "filename": "02_Orchard_Depot_Archived.md",
+          "excerpt": "# Orchard Depot — Archived Dispatch Guide (superseded)\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nUnder the archived Orchard guide, orders released before 13:00 left the depot on the same operating day. Later orders left on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its origi",
+          "quote": "## Release window\nUnder the archived Orchard guide, orders released before 13:00 left the depot on the same operating day."
+        }
+      ]
+    },
+    {
+      "id": "RQ12",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Urgent release Under the archived Orchard guide, urgent dispatch required approval from the Depot Manager.",
+      "sources": [
+        {
+          "filename": "02_Orchard_Depot_Archived.md",
+          "excerpt": "nstruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUnder the archived Orchard guide, urgent dispatch required approval from the Depot Manager.\nOperational note: This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. This section concerns urgent release. Read the written instruction in its original context. Keep the original file available",
+          "quote": "## Urgent release\nUnder the archived Orchard guide, urgent dispatch required approval from the Depot Manager."
+        }
+      ]
+    },
+    {
+      "id": "RQ13",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Lubrication Hilltop conveyor bearings are lubricated every 70 operating hours.",
+      "sources": [
+        {
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "# Hilltop Workshop — Equipment Care Notes\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Lubrication\nHilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns",
+          "quote": "## Lubrication\nHilltop conveyor bearings are lubricated every 70 operating hours."
+        }
+      ]
+    },
+    {
+      "id": "RQ14",
+      "outcome": "FAIL",
+      "matched_evidence": [
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        false
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Calibration Hilltop pressure sensors are calibrated every 28 days.",
+      "sources": [
+        {
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "n instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. \n\n## Calibration\nHilltop pressure sensors are calibrated every 28 days. Following a sensor replacement, calibration is required before restarting the machine.\nOperational note: This section concerns calibration. Read the written instruction in its original context. Keep the original file available for review. This section concerns calibration. Read",
+          "quote": "## Calibration\nHilltop pressure sensors are calibrated every 28 days."
+        }
+      ]
+    },
+    {
+      "id": "RQ15",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Lockout Before clearing a Hilltop conveyor jam, the technician must isolate electrical power and attach a lockout tag.",
+      "sources": [
+        {
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "n instruction in its original context. Keep the original file available for review. This section concerns calibration. Read the written instruction in its original context. Keep the original file available for review. \n\n## Lockout\nBefore clearing a Hilltop conveyor jam, the technician must isolate electrical power and attach a lockout tag.\nOperational note: This section concerns lockout. Read the written instruction in its original context. Keep the original file available for review. This section concerns lockout. Read the written instruction in its original context. Keep the original file available for review.",
+          "quote": "## Lockout\nBefore clearing a Hilltop conveyor jam, the technician must isolate electrical power and attach a lockout tag."
+        }
+      ]
+    },
+    {
+      "id": "RQ16",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Spare parts Hilltop replacement belts must be checked by the Maintenance Lead before installation.",
+      "sources": [
+        {
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "itten instruction in its original context. Keep the original file available for review. This section concerns lockout. Read the written instruction in its original context. Keep the original file available for review. \n\n## Spare parts\nHilltop replacement belts must be checked by the Maintenance Lead before installation.\nOperational note: This section concerns spare parts. Read the written instruction in its original context. Keep the original file available for review. This section concerns spare parts. Read the written instruction in its original context. Keep the original file available for r",
+          "quote": "## Spare parts\nHilltop replacement belts must be checked by the Maintenance Lead before installation."
+        }
+      ]
+    },
+    {
+      "id": "RQ17",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Records Hilltop service records are retained for 18 months.",
+      "sources": [
+        {
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "n instruction in its original context. Keep the original file available for review. This section concerns spare parts. Read the written instruction in its original context. Keep the original file available for review. \n\n## Records\nHilltop service records are retained for 18 months. Records involved in an unresolved warranty dispute are kept until the dispute closes.\nOperational note: This section concerns records. Read the written instruction in its original context. Keep the original file available for review. This section concerns records. Read the writt",
+          "quote": "## Records\nHilltop service records are retained for 18 months."
+        }
+      ]
+    },
+    {
+      "id": "RQ18",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Leak response A Hilltop coolant leak requires the technician to stop the pump and notify the Maintenance Lead immediately.",
+      "sources": [
+        {
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "nstruction in its original context. Keep the original file available for review. This section concerns restart packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Leak response\nA Hilltop coolant leak requires the technician to stop the pump and notify the Maintenance Lead immediately.\nOperational note: This section concerns leak response. Read the written instruction in its original context. Keep the original file available for review. This section concerns leak response. Read the written instruction in its original context. Keep the original file available f",
+          "quote": "## Leak response\nA Hilltop coolant leak requires the technician to stop the pump and notify the Maintenance Lead immediately."
+        }
+      ]
+    },
+    {
+      "id": "RQ19",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Purchase approval Lakeside purchases above 5200 credits require written approval from the Finance Lead and Studio Director.",
+      "sources": [
+        {
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "# Lakeside Studio — Purchasing Procedure\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Purchase approval\nLakeside purchases above 5200 credits require written approval from the Finance Lead and Studio Director.\nOperational note: This section concerns purchase approval. Read the written instruction in its original context. Keep the original file available for review. This section concerns purchase approval. Read the written instruction in its original context. Keep the original file ava",
+          "quote": "## Purchase approval\nLakeside purchases above 5200 credits require written approval from the Finance Lead and Studio Director."
+        }
+      ]
+    },
+    {
+      "id": "RQ20",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true,
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Quotations Lakeside orders of at least 1800 credits require two supplier quotations. An emergency purchase may use one quotation with written approval from the Studio Director.",
+      "sources": [
+        {
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "ruction in its original context. Keep the original file available for review. This section concerns purchase approval. Read the written instruction in its original context. Keep the original file available for review. \n\n## Quotations\nLakeside orders of at least 1800 credits require two supplier quotations. An emergency purchase may use one quotation with written approval from the Studio Director.\nOperational note: This section concerns quotations. Read the written instruction in its original context. Keep the original file available for review. This section concerns quotations. Read the written instruction in its original context. Keep the original file available for rev",
+          "quote": "## Quotations\nLakeside orders of at least 1800 credits require two supplier quotations. An emergency purchase may use one quotation with written approval from the Studio Director."
+        }
+      ]
+    },
+    {
+      "id": "RQ21",
+      "outcome": "FAIL",
+      "matched_evidence": [
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        false
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] # Lakeside Studio — Purchasing Procedure",
+      "sources": [
+        {
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "# Lakeside Studio — Purchasing Procedure\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Purchase approval\nLakeside purchases above 5200 credits require written approval from the Finance Lead and Studio Director.\nOperational note: This section concerns purchase approval. Read the written instruction in its original context. Keep the original file available for review. This section concerns purchase approval. Read the written instruction in its original context. Keep the original file available for review. \n\n## Quotations\nLakeside orders of at least 1800 credits require two supplier quotations. An emergency purchase may use one quotation with written approval from the Studio Director.\nOperational note: This",
+          "quote": "# Lakeside Studio — Purchasing Procedure"
+        }
+      ]
+    },
+    {
+      "id": "RQ22",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Supplier records Lakeside supplier assessment copies are deleted within 45 days after contract end.",
+      "sources": [
+        {
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "tten instruction in its original context. Keep the original file available for review. This section concerns invoices. Read the written instruction in its original context. Keep the original file available for review. \n\n## Supplier records\nLakeside supplier assessment copies are deleted within 45 days after contract end. Copies subject to a legal hold remain until the hold is lifted.\nOperational note: This section concerns supplier records. Read the written instruction in its original context. Keep the original file available for review. This section concerns supplier records. Read the written i",
+          "quote": "## Supplier records\nLakeside supplier assessment copies are deleted within 45 days after contract end."
+        }
+      ]
+    },
+    {
+      "id": "RQ23",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "ection concerns cold crates. Read the written instruction in its original context. Keep the original file available for review. \n\n## Route closure\nWhen the bridge route is closed, Orchard drivers use the eastern bypass. The Logistics Lead approves the revised route before departure.\nOperational note: This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. \n\n## Dispatch packet\nEvery Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the",
+          "quote": "Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form."
+        }
+      ]
+    },
+    {
+      "id": "RQ24",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        false,
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Evidence retention Orchard dispatch records are retained for 120 days.",
+      "sources": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "struction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Evidence retention\nOrchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.\nOperational note: This section concerns evidence retention. Read the written instruction in its original context. Keep the original file available for review. This section concerns evidence retention. R",
+          "quote": "## Evidence retention\nOrchard dispatch records are retained for 120 days."
+        }
+      ]
+    },
+    {
+      "id": "RQ25",
+      "outcome": "PASS",
+      "matched_evidence": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": []
+    },
+    {
+      "id": "RQ26",
+      "outcome": "PASS",
+      "matched_evidence": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": []
+    },
+    {
+      "id": "RQ27",
+      "outcome": "PASS",
+      "matched_evidence": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": []
+    },
+    {
+      "id": "RQ28",
+      "outcome": "PASS",
+      "matched_evidence": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": []
+    }
+  ],
+  "candidate": [
+    {
+      "id": "RQ01",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:126",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "# Orchard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written in",
+          "quote": "## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day.",
+          "score": 0.0464,
+          "lexicalScore": 8.866613292027186,
+          "semanticScore": 0.6419240359967894,
+          "matchedTerms": [
+            "orchard",
+            "same",
+            "day",
+            "release"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ02",
+      "outcome": "FAIL",
+      "matched_evidence": [
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        false
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] Orders released before 14:20 leave the Orchard depot on the same operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:126",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review.",
+          "quote": "Orders released before 14:20 leave the Orchard depot on the same operating day.",
+          "score": 0.025,
+          "lexicalScore": null,
+          "semanticScore": 0.7347711978676885,
+          "matchedTerms": [
+            "orchard",
+            "released"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ03",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:0",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "nstruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.\nOperational note: This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. This section concerns urgent release. Read the written instruction in its original context. Keep the original file available",
+          "quote": "## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.",
+          "score": 0.0394,
+          "lexicalScore": 10.033736709606494,
+          "semanticScore": 0.46689900100053194,
+          "matchedTerms": [
+            "orchard",
+            "dispatch",
+            "current",
+            "guide"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ04",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] Orchard cold crates must remain between 3 and 7 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:994",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "## Cold crates\nOrchard cold crates must remain between 3 and 7 degrees Celsius. A temperature excursion requires quarantine until the Quality Lead authorizes release.\nOperational note: This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for review. This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for review.",
+          "quote": "Orchard cold crates must remain between 3 and 7 degrees Celsius.",
+          "score": 0.0455,
+          "lexicalScore": 12.185314408765803,
+          "semanticScore": 0.7993173319965106,
+          "matchedTerms": [
+            "temperature",
+            "orchard",
+            "cold",
+            "crates"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ05",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Cold crates\nOrchard cold crates must remain between 3 and 7 degrees Celsius. A temperature excursion requires quarantine until the Quality Lead authorizes release.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:994",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "nstruction in its original context. Keep the original file available for review. This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. \n\n## Cold crates\nOrchard cold crates must remain between 3 and 7 degrees Celsius. A temperature excursion requires quarantine until the Quality Lead authorizes release.\nOperational note: This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for review. This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for r",
+          "quote": "## Cold crates\nOrchard cold crates must remain between 3 and 7 degrees Celsius. A temperature excursion requires quarantine until the Quality Lead authorizes release.",
+          "score": 0.0476,
+          "lexicalScore": 12.317733889305703,
+          "semanticScore": 0.6872040854255144,
+          "matchedTerms": [
+            "temperature",
+            "excursion",
+            "orchard",
+            "cold",
+            "release"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ06",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Route closure\nWhen the bridge route is closed, Orchard drivers use the eastern bypass.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:1449",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "n instruction in its original context. Keep the original file available for review. This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for review. \n\n## Route closure\nWhen the bridge route is closed, Orchard drivers use the eastern bypass. The Logistics Lead approves the revised route before departure.\nOperational note: This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. This section concerns route closure. Read the written instruc",
+          "quote": "## Route closure\nWhen the bridge route is closed, Orchard drivers use the eastern bypass.",
+          "score": 0.0476,
+          "lexicalScore": 18.93867410986557,
+          "semanticScore": 0.7891430016872762,
+          "matchedTerms": [
+            "bridge",
+            "route",
+            "closed",
+            "orchard",
+            "drivers",
+            "use",
+            "approves"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ07",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:1895",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "## Dispatch packet\nEvery Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "quote": "Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+          "score": 0.0458,
+          "lexicalScore": 6.31004024065135,
+          "semanticScore": 0.6342921658061194,
+          "matchedTerms": [
+            "orchard",
+            "dispatch",
+            "packet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ08",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Evidence retention\nOrchard dispatch records are retained for 120 days.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:2308",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "struction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Evidence retention\nOrchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.\nOperational note: This section concerns evidence retention. Read the written instruction in its original context. Keep the original file available for review. This section concerns evidence retention. R",
+          "quote": "## Evidence retention\nOrchard dispatch records are retained for 120 days.",
+          "score": 0.0476,
+          "lexicalScore": 13.368625094094039,
+          "semanticScore": 0.8021986903216799,
+          "matchedTerms": [
+            "orchard",
+            "dispatch",
+            "records",
+            "retained",
+            "unresolved",
+            "claim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ09",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true,
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Acknowledgement\nOrchard delivery partners acknowledge a dispatch notice within four business hours. Acknowledgement is not a delivery guarantee.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:2761",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "uction in its original context. Keep the original file available for review. This section concerns evidence retention. Read the written instruction in its original context. Keep the original file available for review. \n\n## Acknowledgement\nOrchard delivery partners acknowledge a dispatch notice within four business hours. Acknowledgement is not a delivery guarantee.\nOperational note: This section concerns acknowledgement. Read the written instruction in its original context. Keep the original file available for review. This section concerns acknowledgement. Read the written instruction in its original context. Keep the original file availab",
+          "quote": "## Acknowledgement\nOrchard delivery partners acknowledge a dispatch notice within four business hours. Acknowledgement is not a delivery guarantee.",
+          "score": 0.0476,
+          "lexicalScore": 14.74251673837241,
+          "semanticScore": 0.7968877773710608,
+          "matchedTerms": [
+            "orchard",
+            "delivery",
+            "partners",
+            "acknowledge",
+            "dispatch",
+            "guarantee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ10",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] Orchard visitors enter after 10:10.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:3205",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "## Visitor access\nOrchard visitors enter after 10:10. Orchard staff complete their morning checks by 08:40.\nOperational note: This section concerns visitor access. Read the written instruction in its original context. Keep the original file available for review. This section concerns visitor access. Read the written instruction in its original context. Keep the original file available for review.",
+          "quote": "Orchard visitors enter after 10:10.",
+          "score": 0.0466,
+          "lexicalScore": 6.518137495765906,
+          "semanticScore": 0.612728673443421,
+          "matchedTerms": [
+            "orchard",
+            "visitors",
+            "enter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ11",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Release window\nUnder the archived Orchard guide, orders released before 13:00 left the depot on the same operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ab7ce3b1-d7dd-4576-b526-fb5e95292e72:140",
+          "documentId": "ab7ce3b1-d7dd-4576-b526-fb5e95292e72",
+          "filename": "02_Orchard_Depot_Archived.md",
+          "excerpt": "# Orchard Depot — Archived Dispatch Guide (superseded)\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nUnder the archived Orchard guide, orders released before 13:00 left the depot on the same operating day. Later orders left on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its origi",
+          "quote": "## Release window\nUnder the archived Orchard guide, orders released before 13:00 left the depot on the same operating day.",
+          "score": 0.0466,
+          "lexicalScore": 8.42074708695625,
+          "semanticScore": 0.7381512140639365,
+          "matchedTerms": [
+            "release",
+            "under",
+            "archived",
+            "orchard",
+            "guide"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ12",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Urgent release\nUnder the archived Orchard guide, urgent dispatch required approval from the Depot Manager.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ab7ce3b1-d7dd-4576-b526-fb5e95292e72:602",
+          "documentId": "ab7ce3b1-d7dd-4576-b526-fb5e95292e72",
+          "filename": "02_Orchard_Depot_Archived.md",
+          "excerpt": "nstruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUnder the archived Orchard guide, urgent dispatch required approval from the Depot Manager.\nOperational note: This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. This section concerns urgent release. Read the written instruction in its original context. Keep the original file available",
+          "quote": "## Urgent release\nUnder the archived Orchard guide, urgent dispatch required approval from the Depot Manager.",
+          "score": 0.0476,
+          "lexicalScore": 12.2367017711111,
+          "semanticScore": 0.7563595473336654,
+          "matchedTerms": [
+            "urgent",
+            "dispatch",
+            "under",
+            "archived",
+            "orchard",
+            "guide"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ13",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Lubrication\nHilltop conveyor bearings are lubricated every 70 operating hours.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a2603f51-ed3e-4e77-af37-37067970116e:127",
+          "documentId": "a2603f51-ed3e-4e77-af37-37067970116e",
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "# Hilltop Workshop — Equipment Care Notes\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Lubrication\nHilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns",
+          "quote": "## Lubrication\nHilltop conveyor bearings are lubricated every 70 operating hours.",
+          "score": 0.0476,
+          "lexicalScore": 14.710193212518105,
+          "semanticScore": 0.8351633173395626,
+          "matchedTerms": [
+            "hilltop",
+            "conveyor",
+            "bearings",
+            "lubricated",
+            "dusty",
+            "bay"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ14",
+      "outcome": "FAIL",
+      "matched_evidence": [
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        false
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Calibration\nHilltop pressure sensors are calibrated every 28 days.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a2603f51-ed3e-4e77-af37-37067970116e:602",
+          "documentId": "a2603f51-ed3e-4e77-af37-37067970116e",
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "n instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. \n\n## Calibration\nHilltop pressure sensors are calibrated every 28 days. Following a sensor replacement, calibration is required before restarting the machine.\nOperational note: This section concerns calibration. Read the written instruction in its original context. Keep the original file available for review. This section concerns calibration. Read",
+          "quote": "## Calibration\nHilltop pressure sensors are calibrated every 28 days.",
+          "score": 0.0476,
+          "lexicalScore": 14.252768156309113,
+          "semanticScore": 0.8538055901408289,
+          "matchedTerms": [
+            "hilltop",
+            "pressure",
+            "sensor",
+            "calibration",
+            "required"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ15",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Lockout\nBefore clearing a Hilltop conveyor jam, the technician must isolate electrical power and attach a lockout tag.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a2603f51-ed3e-4e77-af37-37067970116e:1047",
+          "documentId": "a2603f51-ed3e-4e77-af37-37067970116e",
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "n instruction in its original context. Keep the original file available for review. This section concerns calibration. Read the written instruction in its original context. Keep the original file available for review. \n\n## Lockout\nBefore clearing a Hilltop conveyor jam, the technician must isolate electrical power and attach a lockout tag.\nOperational note: This section concerns lockout. Read the written instruction in its original context. Keep the original file available for review. This section concerns lockout. Read the written instruction in its original context. Keep the original file available for review.",
+          "quote": "## Lockout\nBefore clearing a Hilltop conveyor jam, the technician must isolate electrical power and attach a lockout tag.",
+          "score": 0.0476,
+          "lexicalScore": 15.976336172095854,
+          "semanticScore": 0.5756779443578613,
+          "matchedTerms": [
+            "must",
+            "technician",
+            "before",
+            "clearing",
+            "jam",
+            "hilltop",
+            "conveyor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ16",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Spare parts\nHilltop replacement belts must be checked by the Maintenance Lead before installation.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a2603f51-ed3e-4e77-af37-37067970116e:1449",
+          "documentId": "a2603f51-ed3e-4e77-af37-37067970116e",
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "itten instruction in its original context. Keep the original file available for review. This section concerns lockout. Read the written instruction in its original context. Keep the original file available for review. \n\n## Spare parts\nHilltop replacement belts must be checked by the Maintenance Lead before installation.\nOperational note: This section concerns spare parts. Read the written instruction in its original context. Keep the original file available for review. This section concerns spare parts. Read the written instruction in its original context. Keep the original file available for r",
+          "quote": "## Spare parts\nHilltop replacement belts must be checked by the Maintenance Lead before installation.",
+          "score": 0.0476,
+          "lexicalScore": 11.685337548915179,
+          "semanticScore": 0.6781439970545091,
+          "matchedTerms": [
+            "hilltop",
+            "replacement",
+            "belts",
+            "before",
+            "installation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ17",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Records\nHilltop service records are retained for 18 months.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a2603f51-ed3e-4e77-af37-37067970116e:1839",
+          "documentId": "a2603f51-ed3e-4e77-af37-37067970116e",
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "n instruction in its original context. Keep the original file available for review. This section concerns spare parts. Read the written instruction in its original context. Keep the original file available for review. \n\n## Records\nHilltop service records are retained for 18 months. Records involved in an unresolved warranty dispute are kept until the dispute closes.\nOperational note: This section concerns records. Read the written instruction in its original context. Keep the original file available for review. This section concerns records. Read the writt",
+          "quote": "## Records\nHilltop service records are retained for 18 months.",
+          "score": 0.0476,
+          "lexicalScore": 11.53706444416639,
+          "semanticScore": 0.7993829555609248,
+          "matchedTerms": [
+            "hilltop",
+            "service",
+            "warranty",
+            "dispute"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ18",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Leak response\nA Hilltop coolant leak requires the technician to stop the pump and notify the Maintenance Lead immediately.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a2603f51-ed3e-4e77-af37-37067970116e:2682",
+          "documentId": "a2603f51-ed3e-4e77-af37-37067970116e",
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "nstruction in its original context. Keep the original file available for review. This section concerns restart packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Leak response\nA Hilltop coolant leak requires the technician to stop the pump and notify the Maintenance Lead immediately.\nOperational note: This section concerns leak response. Read the written instruction in its original context. Keep the original file available for review. This section concerns leak response. Read the written instruction in its original context. Keep the original file available f",
+          "quote": "## Leak response\nA Hilltop coolant leak requires the technician to stop the pump and notify the Maintenance Lead immediately.",
+          "score": 0.0476,
+          "lexicalScore": 9.595978106529515,
+          "semanticScore": 0.7095399452356405,
+          "matchedTerms": [
+            "hilltop",
+            "coolant",
+            "leak"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ19",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Purchase approval\nLakeside purchases above 5200 credits require written approval from the Finance Lead and Studio Director.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "522f8cf2-db47-418d-9d85-0e9524155d59:126",
+          "documentId": "522f8cf2-db47-418d-9d85-0e9524155d59",
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "# Lakeside Studio — Purchasing Procedure\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Purchase approval\nLakeside purchases above 5200 credits require written approval from the Finance Lead and Studio Director.\nOperational note: This section concerns purchase approval. Read the written instruction in its original context. Keep the original file available for review. This section concerns purchase approval. Read the written instruction in its original context. Keep the original file ava",
+          "quote": "## Purchase approval\nLakeside purchases above 5200 credits require written approval from the Finance Lead and Studio Director.",
+          "score": 0.0476,
+          "lexicalScore": 13.229985273101214,
+          "semanticScore": 0.7938766686366955,
+          "matchedTerms": [
+            "written",
+            "lakeside",
+            "purchase",
+            "above",
+            "5200",
+            "credits"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ20",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true,
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Quotations\nLakeside orders of at least 1800 credits require two supplier quotations. An emergency purchase may use one quotation with written approval from the Studio Director.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "522f8cf2-db47-418d-9d85-0e9524155d59:553",
+          "documentId": "522f8cf2-db47-418d-9d85-0e9524155d59",
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "ruction in its original context. Keep the original file available for review. This section concerns purchase approval. Read the written instruction in its original context. Keep the original file available for review. \n\n## Quotations\nLakeside orders of at least 1800 credits require two supplier quotations. An emergency purchase may use one quotation with written approval from the Studio Director.\nOperational note: This section concerns quotations. Read the written instruction in its original context. Keep the original file available for review. This section concerns quotations. Read the written instruction in its original context. Keep the original file available for rev",
+          "quote": "## Quotations\nLakeside orders of at least 1800 credits require two supplier quotations. An emergency purchase may use one quotation with written approval from the Studio Director.",
+          "score": 0.0476,
+          "lexicalScore": 17.56136093081229,
+          "semanticScore": 0.8127812879042925,
+          "matchedTerms": [
+            "quotations",
+            "lakeside",
+            "least",
+            "1800",
+            "credits",
+            "emergency"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ21",
+      "outcome": "PASS",
+      "matched_evidence": [
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "522f8cf2-db47-418d-9d85-0e9524155d59:1019",
+          "documentId": "522f8cf2-db47-418d-9d85-0e9524155d59",
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "## Receiving packet\nEvery Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "quote": "Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.",
+          "score": 0.0476,
+          "lexicalScore": 9.963788262782852,
+          "semanticScore": 0.6030444892838919,
+          "matchedTerms": [
+            "lakeside",
+            "receiving",
+            "packet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ22",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Supplier records\nLakeside supplier assessment copies are deleted within 45 days after contract end.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "522f8cf2-db47-418d-9d85-0e9524155d59:1794",
+          "documentId": "522f8cf2-db47-418d-9d85-0e9524155d59",
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "tten instruction in its original context. Keep the original file available for review. This section concerns invoices. Read the written instruction in its original context. Keep the original file available for review. \n\n## Supplier records\nLakeside supplier assessment copies are deleted within 45 days after contract end. Copies subject to a legal hold remain until the hold is lifted.\nOperational note: This section concerns supplier records. Read the written instruction in its original context. Keep the original file available for review. This section concerns supplier records. Read the written i",
+          "quote": "## Supplier records\nLakeside supplier assessment copies are deleted within 45 days after contract end.",
+          "score": 0.0476,
+          "lexicalScore": 24.55101289179527,
+          "semanticScore": 0.8875769104100908,
+          "matchedTerms": [
+            "after",
+            "contract",
+            "end",
+            "lakeside",
+            "supplier",
+            "assessment",
+            "copies",
+            "deleted",
+            "legal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ23",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        true,
+        false
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:1895",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "## Dispatch packet\nEvery Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "quote": "Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+          "score": 0.0449,
+          "lexicalScore": 6.31004024065135,
+          "semanticScore": 0.5893857033779352,
+          "matchedTerms": [
+            "orchard",
+            "dispatch",
+            "packet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ24",
+      "outcome": "PARTIAL",
+      "matched_evidence": [
+        false,
+        true
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "[1] ## Evidence retention\nOrchard dispatch records are retained for 120 days.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b99436de-c9a3-4294-b292-df8b54b98351:2308",
+          "documentId": "b99436de-c9a3-4294-b292-df8b54b98351",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "struction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Evidence retention\nOrchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.\nOperational note: This section concerns evidence retention. Read the written instruction in its original context. Keep the original file available for review. This section concerns evidence retention. R",
+          "quote": "## Evidence retention\nOrchard dispatch records are retained for 120 days.",
+          "score": 0.0435,
+          "lexicalScore": 5.923932145475315,
+          "semanticScore": 0.6512948309465986,
+          "matchedTerms": [
+            "retention",
+            "orchard",
+            "dispatch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RQ25",
+      "outcome": "PASS",
+      "matched_evidence": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": []
+    },
+    {
+      "id": "RQ26",
+      "outcome": "PASS",
+      "matched_evidence": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": []
+    },
+    {
+      "id": "RQ27",
+      "outcome": "PASS",
+      "matched_evidence": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": []
+    },
+    {
+      "id": "RQ28",
+      "outcome": "PASS",
+      "matched_evidence": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": []
+    }
+  ]
+}
