@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-13 — Sentence-selection v3 experiment (no runtime release)
+
+- Froze candidate and fresh mixed public inputs before actual Chrome/MiniLM capture of all 203 cases.
+- Recorded 28/28 development and 20/24 exposed regression passes, but five original PASS regressions and incomplete compound answers.
+- Fresh supported questions score 20/24 fixed and 19/24 section; all four constructed unsupported controls refuse without citations.
+- Preserved every output and failed gate; production remains r44, with no new independent-accuracy claim.
+
+
 ## 2026-10-13 — Coverage v2 wider validation (no runtime release)
 
 - Fixed generic noun/verb facet matching in the isolated candidate; preserved 24/0/4 fixed and 28/0/0 section development results.
