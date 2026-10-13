@@ -11,7 +11,7 @@ for(const entry of manifest.files) assert.equal(createHash("sha256").update(awai
 const key=JSON.parse(await fs.readFile(path.join(pack,"fixed-answer-key.json"),"utf8"));
 assert.equal(key.length,16);
 // Refuse accidental reruns over an already preserved first-look result.
-const evidence=path.resolve(process.env.EVIDENCE_DIR || "../../outputs/5.6-r43-cobalt16-regression");
+const evidence=path.resolve(process.env.EVIDENCE_DIR || "../../outputs/5.6-r44-cobalt16-regression");
 assert.notEqual(evidence,pack,"Never overwrite the original first-look directory");
 await fs.mkdir(evidence,{recursive:true});
 const output=path.join(evidence,"browser-observations.json");
@@ -28,7 +28,7 @@ try {
   page.on("request",req=>{if(/onnx|wasm|all-MiniLM/.test(req.url())){const u=new URL(req.url());requests.add(u.origin+u.pathname);}});
   await page.goto(process.env.TEST_URL||"http://127.0.0.1:8765/",{waitUntil:"domcontentloaded"});
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="3");
-  result.build=await page.locator("#retrieval-build").innerText(); assert.match(result.build,/2026-10-13-r43/);
+  result.build=await page.locator("#retrieval-build").innerText(); assert.match(result.build,/2026-10-13-r44/);
   await page.locator("#clear-docs").click();
   await page.locator("#file-input").setInputFiles(manifest.files.filter(f=>f.path.startsWith("source_docs/")).map(f=>path.join(pack,f.path)));
   await page.waitForFunction(()=>document.querySelector("#doc-count")?.textContent==="3");

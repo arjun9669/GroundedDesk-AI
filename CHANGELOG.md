@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-13 — r44
+
+- Added per-file text readiness, searchable/total PDF page counts and partial/layout cautions, recomputed after workspace restore.
+- Added explicit file-picker recovery for failed uploads/replacements; original files and answers survive failed replacement.
+- Improved sidebar upload-error contrast. Retrieval, PDF extraction and report quotations remain unchanged.
+- Added readiness unit/browser checks; ten Chromium scripts now run in CI.
+
 ## 2026-10-13 — r43
 
 - Added explicit local workspace snapshots with Save, Restore and Clear controls and visible saved filenames.

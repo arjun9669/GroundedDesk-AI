@@ -467,3 +467,14 @@ footer .brand strong { color: #627255; }
 .workspace-save-actions button:disabled { opacity: .5; cursor: default; }
 #workspace-save-status { padding: 10px; border-radius: 8px; background: #365b46; color: #f0f4e9; }
 #workspace-save-status.is-error { background: #6b4135; }
+.document-readiness { grid-column: 1 / -1; padding: 9px 10px; border-radius: 8px; border: 1px solid #526849; background: #263e30; }
+.readiness-badge { display: inline-block; color: #e5efc8; font-size: 10px; font-weight: 600; }
+.document-readiness p { font-size: 10px; line-height: 1.65; margin: 5px 0 0; color: #d1ddc3; overflow-wrap: anywhere; }
+.document-readiness.is-limited, .document-readiness.is-unknown, .document-readiness.is-unavailable { border-color: #a68c61; background: #3a4431; }
+.document-readiness.is-limited .readiness-badge, .document-readiness.is-unknown .readiness-badge, .document-readiness.is-unavailable .readiness-badge { color: #ffe0ab; }
+.document-readiness .readiness-warning { color: #ffe0ab; }
+.document-readiness .readiness-guidance { color: #edf0db; }
+.upload-retry { margin-top: 9px; background: #eef2e5; color: #254534; border-color: #91a589; font-size: 11px; min-height: 44px; padding: 8px 10px; }
+.source-preview-open .document-readiness { grid-row: 2; }
+.source-preview-open .document-card .document-actions { grid-row: 3; }
+#upload-status.pdf-notice { background: #3a4431; color: #ffe0ab; border-color: #a68c61; }

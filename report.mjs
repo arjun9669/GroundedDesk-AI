@@ -1,7 +1,7 @@
 import { validateDraft } from "./generation.mjs?v=20261010-r13";
 import { locateEvidence, locationLabel } from "./provenance.mjs?v=20261012-r32";
 import { pdfWarnings } from "./pdf-ingest.mjs?v=20261012-r32";
-import { assertSearchScope } from "./search-scope.mjs?v=20261013-r43";
+import { assertSearchScope } from "./search-scope.mjs?v=20261013-r44";
 
 /**
  * Portable evidence reports for the browser-only document Q&A demo.
