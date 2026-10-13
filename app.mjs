@@ -1,16 +1,17 @@
-import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r40";
-import { hybridRank } from "./hybrid.mjs?v=20261013-r40";
+import { RETRIEVAL_BUILD, buildIndex, answerQuestion, answerFromCandidates } from "./retrieval.mjs?v=20261013-r41";
+import { hybridRank } from "./hybrid.mjs?v=20261013-r41";
 import { loadBrowserEmbedder, embedText, embedChunks, MAX_SEMANTIC_CHUNKS } from "./semantic.mjs?v=20261010-r13";
-import { createEvidenceReport } from "./report.mjs?v=20261013-r40";
+import { createEvidenceReport } from "./report.mjs?v=20261013-r41";
 import { loadLocalGenerator, generateCitedAnswer, isWebGPUAvailable } from "./generation.mjs?v=20261010-r13";
-import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r40";
-import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r40";
-import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r40";
-import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r40";
-import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r40";
-import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r40";
-import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r40";
-import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r40";
+import { buildResearchResult, buildPolicyResearchResult, compareDocuments, formatResearchMarkdown } from "./research.mjs?v=20261013-r41";
+import { buildPolicyChecklist, formatPolicyChecklistMarkdown } from "./policy-synthesis.mjs?v=20261013-r41";
+import { evaluateKeywordFixture, verifyEvidenceResult } from "./quality.mjs?v=20261013-r41";
+import { selectBenchmarkQuestions, benchmarkKeywordQuestions } from "./benchmark.mjs?v=20261013-r41";
+import { attachLocations, attachWorkflowLocations, verifyWorkflowEvidence, locationLabel } from "./provenance.mjs?v=20261013-r41";
+import { closePDFPreview, openPDFPreview } from "./pdf-preview.mjs?v=20261013-r41";
+import { readPDFFile, pdfWarnings } from "./pdf-ingest.mjs?v=20261013-r41";
+import { initWorkspaceUI, showWorkspace } from "./workspace-ui.mjs?v=20261013-r41";
+import { createSearchScope, assertSearchScope } from "./search-scope.mjs?v=20261013-r41";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_CHARS = 180000;
@@ -32,6 +33,8 @@ let generationLoading = false;
 let generationTestBusy = false;
 let recentTurns = [];
 let selectedTurn = null;
+let selectedAskFiles = null;
+let scopeVersion = 0;
 let currentResearch = null;
 let latestQualityReport = null;
 let uploadBusy = false;
@@ -66,7 +69,7 @@ function resetConversation() {
 }
 
 function addTurn(question, result) {
-  const turn = { question, result, files: documents.map(doc => doc.name) };
+  const turn = { question, result, files: (result.searchedFiles || documents).map(doc => doc.name) };
   recentTurns.push(turn);
   selectedTurn = turn;
   if (recentTurns.length > 8) recentTurns.shift();
@@ -133,6 +136,29 @@ function reportFeedback(id, message = "", isError = false) {
   status.classList.toggle("is-error", isError);
 }
 
+function renderAskScope() {
+  if (selectedAskFiles !== null) selectedAskFiles = new Set([...selectedAskFiles].filter(id => documents.some(doc => doc.id === id)));
+  const options = $("ask-scope-options");
+  options.replaceChildren();
+  const add = (name, checked, change, id) => {
+    const label = make("label", "");
+    const input = make("input", "");
+    input.type = "checkbox"; input.checked = checked; input.dataset.scopeId = id;
+    input.addEventListener("change", () => {
+      change(input.checked); scopeVersion++; closePDFPreview({ restoreFocus: false }); clearResult(); selectedTurn = null; renderHistory(); renderAskScope();
+      [...options.querySelectorAll("input")].find(item => item.dataset.scopeId === id)?.focus();
+    });
+    label.append(input, make("span", "", name)); options.append(label);
+  };
+  add("All files", selectedAskFiles === null, checked => { selectedAskFiles = checked ? null : new Set(); }, "all");
+  for (const doc of documents) add(doc.name, selectedAskFiles === null || selectedAskFiles.has(doc.id), checked => {
+    if (selectedAskFiles === null) selectedAskFiles = new Set(documents.map(file => file.id));
+    if (checked) selectedAskFiles.add(doc.id); else selectedAskFiles.delete(doc.id);
+  }, doc.id);
+  $("ask-scope-summary").textContent = selectedAskFiles === null ? "Search in: All files"
+    : selectedAskFiles.size ? `Search in: ${selectedAskFiles.size} selected file${selectedAskFiles.size === 1 ? "" : "s"}` : "Search in: Choose at least one file";
+}
+
 function semanticReady() {
   return Boolean(semanticVectors && semanticExtractor && semanticVersion === indexVersion
     && semanticVectors.length === indexed.chunks.length);
@@ -172,6 +198,7 @@ function rebuildIndex() {
   closePDFPreview({ restoreFocus: false });
   indexed = buildIndex(documents);
   indexVersion++;
+  renderAskScope();
   resetConversation();
   if (document.getElementById("answer-result")) clearResult();
   if (document.getElementById("quality-output")) clearQuality();
@@ -372,6 +399,7 @@ function renderResult(question, result) {
   result = attachLocations(result, documents);
   // Never display a fabricated or stale excerpt as verified evidence.
   const provenance = verifyEvidenceResult(result, documents);
+  try { assertSearchScope(result, documents); } catch (error) { provenance.ok = false; provenance.reason = error.message; }
   if (!provenance.ok) {
     result = { answered:false, sources:[], mode:"Evidence integrity guard", answer:"Source verification failed. This answer was withheld; please re-run the search." };
     notify("Evidence verification failed: " + provenance.reason, true);
@@ -385,6 +413,7 @@ function renderResult(question, result) {
   view.replaceChildren();
   view.append(make("span", "question-label", "YOUR QUESTION"));
   view.append(make("h4", "question-text", question));
+  if (result.searchedFiles) view.append(make("p", "answer-scope", `Searched ${result.searchScope === "All files" ? "all files" : "selected files"}: ${result.searchedFiles.map(file => file.name).join(" · ")}`));
 
   const heading = make("div", "result-heading");
   heading.append(make("span", "", result.answered
@@ -525,6 +554,14 @@ async function ask(question) {
   if (!value) { notify("Enter a question about the documents.", true); return; }
   if (!documents.length) { notify("Add a document before asking a question.", true); return; }
   if (searchBusy || evalBusy || generationTestBusy) { notify("Wait for the current retrieval to finish.", true); return; }
+  const scope = createSearchScope(documents, indexed, selectedAskFiles, semanticReady() ? semanticVectors : null);
+  if (!scope.files.length) { notify("Choose at least one file to search.", true); $("ask-file-scope").open = true; return; }
+  const startedScope = scopeVersion;
+  const changed = () => indexVersion !== startedAt || scopeVersion !== startedScope;
+  const cancelChanged = () => {
+    if (semanticReady()) setSemanticStatus("Hybrid mode ready. Search selection changed; ask again.");
+    notify("Files or search selection changed. Ask again with the current selection.");
+  };
   searchBusy = true;
   $("ask-button").disabled = true;
   $("ask-button").textContent = "Finding evidence…";
@@ -534,24 +571,27 @@ async function ask(question) {
     if ($("retrieval-mode").value === "hybrid" && semanticReady()) {
       setSemanticStatus("Computing this question's embedding locally…");
       const vector = await embedText(semanticExtractor, value);
-      if (indexVersion !== startedAt || !semanticReady()) {
-        result = answerQuestion(value, indexed);
-        setSemanticStatus("Documents changed during inference; safely used fresh keyword search.");
+      if (changed()) {
+        cancelChanged();
+        return;
+      } else if (!semanticReady()) {
+        result = answerQuestion(value, scope.index);
+        setSemanticStatus("Semantic index unavailable; used keyword search within the selected files.");
       } else {
-        const ranking = hybridRank(value, indexed, vector, semanticVectors);
+        const ranking = hybridRank(value, scope.index, vector, scope.vectors);
         result = answerFromCandidates(value, ranking, 3, "Local MiniLM + BM25-style reciprocal-rank fusion (extractive; no generative LLM)");
         setSemanticStatus("Hybrid mode ready: semantic model remains in this browser session.");
       }
     } else {
-      result = answerQuestion(value, indexed);
+      result = answerQuestion(value, scope.index);
     }
     if (result.answered && $("answer-mode").value === "generative" && localGenerator &&
         startedAt === indexVersion) {
       try {
         setGenerationStatus("Generating a short cited draft on this device's GPU…");
         const validation = await generateCitedAnswer(localGenerator, value, result.sources);
-        if (startedAt !== indexVersion) {
-          result = answerQuestion(value, indexed);
+        if (changed()) {
+          result = answerQuestion(value, scope.index);
           setGenerationStatus("Documents changed during inference; model draft discarded.");
         } else if (validation.ok) {
           result = { ...result, answer: validation.text, generated: true };
@@ -564,7 +604,8 @@ async function ask(question) {
           (error instanceof Error ? error.message : ""), true);
       }
     }
-    if (startedAt !== indexVersion) result = answerQuestion(value, indexed);
+    if (changed()) { cancelChanged(); return; }
+    result = { ...result, searchedFiles: scope.files, searchScope: scope.kind };
     result = renderResult(value, result);
     addTurn(value, result);
     if (result.mode === "Evidence integrity guard") {
@@ -573,9 +614,10 @@ async function ask(question) {
       notify(result.answered ? "Evidence retrieved locally." : "No matching evidence in this session.");
     }
   } catch (error) {
+    if (changed()) { cancelChanged(); return; }
     // Fail safe: preserve answer availability and don't mislabel lexical as semantic.
     $("retrieval-mode").value = "keyword";
-    const fallback = answerQuestion(value, indexed);
+    const fallback = { ...answerQuestion(value, scope.index), searchedFiles: scope.files, searchScope: scope.kind };
     const guardedFallback = renderResult(value, fallback);
     addTurn(value, guardedFallback);
     setSemanticStatus("Hybrid retrieval could not complete; returned to working keyword search.", true);

@@ -25,7 +25,7 @@ try {
   await page.goto(process.env.TEST_URL || "http://127.0.0.1:8765/", { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.querySelector("#doc-count")?.textContent === "3");
   observations.build = await page.locator("#retrieval-build").innerText();
-  assert.match(observations.build, /2026-10-13-r40/);
+  assert.match(observations.build, /2026-10-13-r41/);
   await page.locator("#clear-docs").click();
   const fixture = (name, pages) => ({ name, mimeType: "application/pdf", buffer: pdfFixture(pages) });
   const workshop = fixture("workshop-release.pdf", [
@@ -43,7 +43,7 @@ try {
   async function capture(id) {
     await page.locator("#research-copy").click();
     const report = await page.evaluate(() => navigator.clipboard.readText());
-    assert.match(report, /2026-10-13-r40/);
+    assert.match(report, /2026-10-13-r41/);
     const result = { id, displayed: await page.locator("#research-result-body").innerText(), report };
     observations.cases.push(result);
     if (evidenceDir) {

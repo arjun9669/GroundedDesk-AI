@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6 / r41 — Choose files for Ask (2026-10-13)
+
+- All files default or multi-file selection, with searched filenames in answers/reports and original-scope history. Selected lexical statistics and real MiniLM vectors align by stable chunk IDs. Full-library retrieval unchanged.
+- Empty, removed and replaced selections never broaden; pending results are discarded after a selection/corpus change. Scope guards reject out-of-selection citations; old answer/PDF preview clears. Separate Comparison/Research unchanged.
+- 259 unit tests, offline toy checks and eight Chrome feature scripts pass; actual MiniLM selection/refusal/race controls and frozen Cobalt16 in-sample 16/16 pass. Harness failures preserved; historical first-look scores unchanged. [Scope/evidence](docs/ASK_FILE_SELECTION_5_6.md).
+
 ### 5.6 / r40 — Clearer answers and source cards (2026-10-13)
 
 - Editorial question headings, distinct Quoted answer / Local AI draft / No supporting answer labels, softer answer panels and readable citation spacing. Warm refusal styling preserves zero citations.
