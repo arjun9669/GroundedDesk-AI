@@ -1,0 +1,17 @@
+# Retrieval Quality 28 — fixed development evaluation
+
+Self-authored development corpus; NOT independent/held-out accuracy. Author knows questions and evidence. Frozen before any outputs. Original benchmark packs and results remain untouched.
+
+28 unchanged Hybrid questions: 24 supported (direct/paraphrase/conditions/compounds/version distractors, including two multi-document Hybrid controls) and four unsupported. This is a retrieval experiment; it does not benchmark the separate lexical Comparison workflow.
+
+Baseline: exact production r44 fixed 760-character/100-overlap chunkText, current tokenization/BM25, real Xenova/all-MiniLM-L6-v2 q8 WASM, RRF threshold .36, weights .45/.55, k20, answerFromCandidates maxSources3. Main app Q&A captures all baseline answers once, before experiment execution. No Qwen. Store ranked top5 spans separately; never credit context-only facts in displayed-answer scores.
+
+Predeclared candidate: split normalized text at Markdown ## headings, retain heading plus section; within long sections use the unchanged 760/100 windows. No section crosses a heading. Same lexical statistics formula/tokenizer, RRF parameters, answer selection, original full sourceText and source offsets. No query expansion or reranker. Both variants must be <=72 passages. No baseline/candidate adjustments after seeing results.
+
+Retrieval metrics: micro recall@1/3/5 = required exact evidence sentences fully contained in correctly named ranked passages / all required sentences on supported cases; top1-relevance = supported questions whose top passage contains any required exact evidence sentence /24. Report passage counts and original offsets. These are exact annotated-span controls, not semantic grading.
+
+Answer rubric: normalize CRLF and whitespace only. PASS: every expected sentence appears in displayed answer quotations, all citation filenames are expected, and quote/excerpt/source provenance is valid. PARTIAL: some expected sentences appear but not all, or all appear with extra irrelevant citations. FAIL: none appear, a supported question refuses, or provenance fails. Unsupported PASS only explicit refusal with zero citations; any acceptance/citations FAIL. Relevance requires a displayed quote to contain a full expected sentence in its expected file (conservative exact-evidence rubric). Count false acceptances/refusals separately. This rubric can penalize semantically adequate shortened quotes; raw outputs must remain available for review. No hidden context credit.
+
+Timing: capture browser model-enable elapsed time (download/cache/load plus baseline indexing; not pure cold download); record candidate indexing and per-query embed/rank/extraction durations, p50/p95 across one pass, no noisy precise speed promises. Browser JS heap readings only if available; not whole-device peak memory. Fixed then candidate order has a warm-cache/order confound; do not claim speed superiority.
+
+Promotion gate for this small development experiment: strictly higher recall@3, no lower top1-relevance, no reduced strict answer PASS, no new unsupported acceptance/provenance errors or PASS-to-non-PASS regression; <=72 passages. Even passing cannot establish independent generalization. No production chunking switch in this task; retain r44 and require broader/auditor-controlled validation before adoption. Failure means do not promote; preserve all failures and first baseline unchanged.
