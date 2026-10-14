@@ -38,6 +38,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Constrained actor experiment:** v12 repairs fixed F16/F20/C04 and scores 32/0/0 on the exposed V9 set in both variants. Original 119/RQ28 and unsupported refusals remain correct. The frozen gate still FAILS: older fixed C02 gains an irrelevant paragraph quotation and regresses to PARTIAL. Structural lexical actor recovery is not entailment verification; these are exposed regressions, not independent accuracy. No runtime adoption; r44 stays live. [Exact results and evidence](./docs/COVERAGE_V12_R44_VALIDATION.md).
 
+**Repair-gating experiment:** v13 restores C02 and passes the frozen 267-case regression gate without losing a historical PASS. The subsequently frozen Actor40 public/adversarial test scores **28 PASS / 2 PARTIAL / 10 FAIL** in both candidate variants: 22/24 supported questions pass, but only 2/4 compounds pass and all eight unsupported actor/object/site questions are falsely accepted. Source-literal quotations do not prove that an answer addresses the requested object or site. Confirmation FAILS; first results are preserved, no runtime adoption, and r44 stays live. [Full results and browser evidence](./docs/COVERAGE_V13_R44_VALIDATION.md).
+
 **Benchmark capture reliability:** future runs preserve exact inputs, require fresh result nodes, and save partial answers/quotes/checkpoints/screenshots before failure closure. Validated in Chrome with Keyword and actual MiniLM; historical V9 F06 stays ungraded. Read-only diagnosis separates paragraph, ranking and coverage failures. Production stays r44. [Recovery tests and diagnosis](./docs/RUNNER_EVIDENCE_RECOVERY_R44.md).
 
 ## Features
