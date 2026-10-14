@@ -1,0 +1,1419 @@
+﻿2026-10-14T13:21:30.2433527Z Current runner version: '2.337.0'
+2026-10-14T13:21:30.2469349Z ##[group]Runner Image Provisioner
+2026-10-14T13:21:30.2470765Z Hosted Compute Agent
+2026-10-14T13:21:30.2472459Z Version: 20261002.596
+2026-10-14T13:21:30.2473624Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-14T13:21:30.2474943Z Build Date: 2026-10-02T22:28:27Z
+2026-10-14T13:21:30.2476102Z Worker ID: {8db99c75-721f-4614-b538-7b5b8b4ca09d}
+2026-10-14T13:21:30.2477378Z Region: centralus
+2026-10-14T13:21:30.2478542Z Cloud: Azure
+2026-10-14T13:21:30.2479888Z ##[endgroup]
+2026-10-14T13:21:30.2482457Z ##[group]Operating System
+2026-10-14T13:21:30.2483542Z Ubuntu
+2026-10-14T13:21:30.2484424Z 24.04.5
+2026-10-14T13:21:30.2485342Z LTS
+2026-10-14T13:21:30.2486232Z ##[endgroup]
+2026-10-14T13:21:30.2487191Z ##[group]Runner Image
+2026-10-14T13:21:30.2488330Z Image: ubuntu-24.04
+2026-10-14T13:21:30.2489637Z Version: 20261004.327.1
+2026-10-14T13:21:30.2491694Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-14T13:21:30.2494626Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-14T13:21:30.2496567Z ##[endgroup]
+2026-10-14T13:21:30.2498930Z ##[group]GITHUB_TOKEN Permissions
+2026-10-14T13:21:30.2502507Z Contents: read
+2026-10-14T13:21:30.2503626Z Metadata: read
+2026-10-14T13:21:30.2504652Z ##[endgroup]
+2026-10-14T13:21:30.2507861Z Secret source: Actions
+2026-10-14T13:21:30.2509940Z Cache mode: write
+2026-10-14T13:21:30.2511994Z Prepare workflow directory
+2026-10-14T13:21:30.2865206Z Prepare all required actions
+2026-10-14T13:21:30.2913418Z Getting action download info
+2026-10-14T13:21:30.5623687Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-14T13:21:30.6464768Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-10-14T13:21:30.7308343Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-14T13:21:30.9447523Z Complete job name: Browser UI smoke (synthetic text and PDF)
+2026-10-14T13:21:31.0308071Z ##[group]Run actions/checkout@v4
+2026-10-14T13:21:31.0309445Z with:
+2026-10-14T13:21:31.0309938Z   repository: arjun9669/GroundedDesk-AI
+2026-10-14T13:21:31.0313769Z   token: ***
+2026-10-14T13:21:31.0314214Z   ssh-strict: true
+2026-10-14T13:21:31.0314649Z   ssh-user: git
+2026-10-14T13:21:31.0315101Z   persist-credentials: true
+2026-10-14T13:21:31.0315589Z   clean: true
+2026-10-14T13:21:31.0316032Z   sparse-checkout-cone-mode: true
+2026-10-14T13:21:31.0316558Z   fetch-depth: 1
+2026-10-14T13:21:31.0316984Z   fetch-tags: false
+2026-10-14T13:21:31.0317425Z   show-progress: true
+2026-10-14T13:21:31.0317868Z   lfs: false
+2026-10-14T13:21:31.0318274Z   submodules: false
+2026-10-14T13:21:31.0318889Z   set-safe-directory: true
+2026-10-14T13:21:31.0319404Z   allow-unsafe-pr-checkout: false
+2026-10-14T13:21:31.0320230Z ##[endgroup]
+2026-10-14T13:21:31.1350051Z Syncing repository: arjun9669/GroundedDesk-AI
+2026-10-14T13:21:31.1352859Z ##[group]Getting Git version info
+2026-10-14T13:21:31.1354314Z Working directory is '/home/runner/work/GroundedDesk-AI/GroundedDesk-AI'
+2026-10-14T13:21:31.1355848Z [command]/usr/bin/git version
+2026-10-14T13:21:31.1419620Z git version 2.55.0
+2026-10-14T13:21:31.1443571Z ##[endgroup]
+2026-10-14T13:21:31.1459931Z Temporarily overriding HOME='/home/runner/work/_temp/9f6e89d9-b4a0-4d32-8016-e387942d506a' before making global git config changes
+2026-10-14T13:21:31.1462331Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-14T13:21:31.1466112Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/GroundedDesk-AI/GroundedDesk-AI
+2026-10-14T13:21:31.1526364Z Deleting the contents of '/home/runner/work/GroundedDesk-AI/GroundedDesk-AI'
+2026-10-14T13:21:31.1531007Z ##[group]Initializing the repository
+2026-10-14T13:21:31.1536743Z [command]/usr/bin/git init /home/runner/work/GroundedDesk-AI/GroundedDesk-AI
+2026-10-14T13:21:31.1643022Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-14T13:21:31.1644672Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-14T13:21:31.1646122Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-14T13:21:31.1647304Z hint: call:
+2026-10-14T13:21:31.1648473Z hint:
+2026-10-14T13:21:31.1649987Z hint: 	git config --global init.defaultBranch <name>
+2026-10-14T13:21:31.1651096Z hint:
+2026-10-14T13:21:31.1652102Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-14T13:21:31.1653638Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-14T13:21:31.1655932Z hint:
+2026-10-14T13:21:31.1656670Z hint: 	git branch -m <name>
+2026-10-14T13:21:31.1657427Z hint:
+2026-10-14T13:21:31.1658452Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-14T13:21:31.1660701Z Initialized empty Git repository in /home/runner/work/GroundedDesk-AI/GroundedDesk-AI/.git/
+2026-10-14T13:21:31.1666593Z [command]/usr/bin/git remote add origin https://github.com/arjun9669/GroundedDesk-AI
+2026-10-14T13:21:31.1715184Z ##[endgroup]
+2026-10-14T13:21:31.1716478Z ##[group]Disabling automatic garbage collection
+2026-10-14T13:21:31.1719914Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-14T13:21:31.1758572Z ##[endgroup]
+2026-10-14T13:21:31.1760268Z ##[group]Setting up auth
+2026-10-14T13:21:31.1766272Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-14T13:21:31.1803136Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-14T13:21:31.2170433Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-14T13:21:31.2216096Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-14T13:21:31.2480527Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-14T13:21:31.2517029Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-14T13:21:31.2754352Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-14T13:21:31.2802351Z ##[endgroup]
+2026-10-14T13:21:31.2803336Z ##[group]Fetching the repository
+2026-10-14T13:21:31.2817519Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4dad35919434dddb45cbd12db4a74c7009e1dd99:refs/remotes/pull/72/merge
+2026-10-14T13:21:35.6445110Z From https://github.com/arjun9669/GroundedDesk-AI
+2026-10-14T13:21:35.6447135Z  * [new ref]         4dad35919434dddb45cbd12db4a74c7009e1dd99 -> pull/72/merge
+2026-10-14T13:21:35.6451214Z ##[endgroup]
+2026-10-14T13:21:35.6452707Z ##[group]Determining the checkout info
+2026-10-14T13:21:35.6454457Z ##[endgroup]
+2026-10-14T13:21:35.6464503Z [command]/usr/bin/git sparse-checkout disable
+2026-10-14T13:21:35.6557815Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-14T13:21:35.6594280Z ##[group]Checking out the ref
+2026-10-14T13:21:35.6599753Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/72/merge
+2026-10-14T13:21:36.6690665Z Updating files:  62% (2167/3445)
+2026-10-14T13:21:36.6842603Z Updating files:  63% (2171/3445)
+2026-10-14T13:21:36.6987825Z Updating files:  64% (2205/3445)
+2026-10-14T13:21:36.7074869Z Updating files:  65% (2240/3445)
+2026-10-14T13:21:36.7190844Z Updating files:  66% (2274/3445)
+2026-10-14T13:21:36.7320800Z Updating files:  67% (2309/3445)
+2026-10-14T13:21:36.7455804Z Updating files:  68% (2343/3445)
+2026-10-14T13:21:36.7656334Z Updating files:  69% (2378/3445)
+2026-10-14T13:21:36.7870360Z Updating files:  70% (2412/3445)
+2026-10-14T13:21:36.8155591Z Updating files:  71% (2446/3445)
+2026-10-14T13:21:36.8295901Z Updating files:  72% (2481/3445)
+2026-10-14T13:21:36.8500073Z Updating files:  73% (2515/3445)
+2026-10-14T13:21:36.8810914Z Updating files:  74% (2550/3445)
+2026-10-14T13:21:36.8921539Z Updating files:  75% (2584/3445)
+2026-10-14T13:21:36.9000809Z Updating files:  76% (2619/3445)
+2026-10-14T13:21:36.9240418Z Updating files:  77% (2653/3445)
+2026-10-14T13:21:36.9458328Z Updating files:  78% (2688/3445)
+2026-10-14T13:21:36.9570909Z Updating files:  79% (2722/3445)
+2026-10-14T13:21:36.9762876Z Updating files:  80% (2756/3445)
+2026-10-14T13:21:36.9970017Z Updating files:  81% (2791/3445)
+2026-10-14T13:21:37.0082957Z Updating files:  82% (2825/3445)
+2026-10-14T13:21:37.0137986Z Updating files:  83% (2860/3445)
+2026-10-14T13:21:37.0172521Z Updating files:  84% (2894/3445)
+2026-10-14T13:21:37.0242085Z Updating files:  85% (2929/3445)
+2026-10-14T13:21:37.0303857Z Updating files:  86% (2963/3445)
+2026-10-14T13:21:37.0387188Z Updating files:  87% (2998/3445)
+2026-10-14T13:21:37.0462386Z Updating files:  88% (3032/3445)
+2026-10-14T13:21:37.0506557Z Updating files:  89% (3067/3445)
+2026-10-14T13:21:37.0556174Z Updating files:  90% (3101/3445)
+2026-10-14T13:21:37.0856588Z Updating files:  91% (3135/3445)
+2026-10-14T13:21:37.0937355Z Updating files:  92% (3170/3445)
+2026-10-14T13:21:37.0979936Z Updating files:  93% (3204/3445)
+2026-10-14T13:21:37.1001008Z Updating files:  94% (3239/3445)
+2026-10-14T13:21:37.1018818Z Updating files:  95% (3273/3445)
+2026-10-14T13:21:37.1038231Z Updating files:  96% (3308/3445)
+2026-10-14T13:21:37.1063115Z Updating files:  97% (3342/3445)
+2026-10-14T13:21:37.1081184Z Updating files:  98% (3377/3445)
+2026-10-14T13:21:37.1172442Z Updating files:  99% (3411/3445)
+2026-10-14T13:21:37.1173109Z Updating files: 100% (3445/3445)
+2026-10-14T13:21:37.1173497Z Updating files: 100% (3445/3445), done.
+2026-10-14T13:21:37.1174077Z Note: switching to 'refs/remotes/pull/72/merge'.
+2026-10-14T13:21:37.1174614Z 
+2026-10-14T13:21:37.1175362Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-14T13:21:37.1176341Z changes and commit them, and you can discard any commits you make in this
+2026-10-14T13:21:37.1177209Z state without impacting any branches by switching back to a branch.
+2026-10-14T13:21:37.1177752Z 
+2026-10-14T13:21:37.1178074Z If you want to create a new branch to retain commits you create, you may
+2026-10-14T13:21:37.1179180Z do so (now or later) by using -c with the switch command. Example:
+2026-10-14T13:21:37.1179642Z 
+2026-10-14T13:21:37.1179825Z   git switch -c <new-branch-name>
+2026-10-14T13:21:37.1180170Z 
+2026-10-14T13:21:37.1180367Z Or undo this operation with:
+2026-10-14T13:21:37.1180643Z 
+2026-10-14T13:21:37.1180741Z   git switch -
+2026-10-14T13:21:37.1180875Z 
+2026-10-14T13:21:37.1181147Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-14T13:21:37.1181471Z 
+2026-10-14T13:21:37.1181860Z HEAD is now at 4dad359 Merge cdfc05c6bd4646cbfbe13c0eedf5fa0f1cf06b0b into 7d1b1cdf27a85c0c87d45a71d33b4b4a09eb8a8f
+2026-10-14T13:21:37.1223760Z ##[endgroup]
+2026-10-14T13:21:37.1277448Z [command]/usr/bin/git log -1 --format=%H
+2026-10-14T13:21:37.1308097Z 4dad35919434dddb45cbd12db4a74c7009e1dd99
+2026-10-14T13:21:37.1603832Z ##[group]Run actions/setup-node@v4
+2026-10-14T13:21:37.1604159Z with:
+2026-10-14T13:21:37.1604366Z   node-version: 22
+2026-10-14T13:21:37.1604602Z   always-auth: false
+2026-10-14T13:21:37.1604833Z   check-latest: false
+2026-10-14T13:21:37.1607222Z   token: ***
+2026-10-14T13:21:37.1607435Z ##[endgroup]
+2026-10-14T13:21:37.3081827Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+2026-10-14T13:21:37.3086253Z (node:2326) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-14T13:21:37.3087041Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-14T13:21:37.3090272Z ##[group]Environment details
+2026-10-14T13:21:37.7994978Z node: v22.23.3
+2026-10-14T13:21:37.7995420Z npm: 10.9.9
+2026-10-14T13:21:37.7995768Z yarn: 1.22.22
+2026-10-14T13:21:37.7996934Z ##[endgroup]
+2026-10-14T13:21:37.8155139Z ##[group]Run npm install --no-save --no-package-lock playwright@1.56.1 pdfjs-dist@4.10.38
+2026-10-14T13:21:37.8155820Z [36;1mnpm install --no-save --no-package-lock playwright@1.56.1 pdfjs-dist@4.10.38[0m
+2026-10-14T13:21:37.8156319Z [36;1mnpx playwright install --with-deps chromium[0m
+2026-10-14T13:21:37.8421395Z shell: /usr/bin/bash -e {0}
+2026-10-14T13:21:37.8421721Z ##[endgroup]
+2026-10-14T13:21:40.8979905Z 
+2026-10-14T13:21:40.8986375Z added 5 packages in 3s
+2026-10-14T13:21:40.8986641Z 
+2026-10-14T13:21:40.8986858Z 2 packages are looking for funding
+2026-10-14T13:21:40.8987246Z   run `npm fund` for details
+2026-10-14T13:21:41.7447047Z Installing dependencies...
+2026-10-14T13:21:41.7512599Z Switching to root user to install dependencies...
+2026-10-14T13:21:41.8260443Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-14T13:21:41.8557205Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-10-14T13:21:41.8577237Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-10-14T13:21:41.8641845Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-10-14T13:21:41.8669759Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-10-14T13:21:41.9939268Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1397 kB]
+2026-10-14T13:21:42.1959462Z Get:14 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-10-14T13:21:42.2791222Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [308 kB]
+2026-10-14T13:21:42.2792910Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1702 kB]
+2026-10-14T13:21:42.2794522Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [342 kB]
+2026-10-14T13:21:42.4116651Z Get:24 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [518 kB]
+2026-10-14T13:21:42.4412215Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1805 kB]
+2026-10-14T13:21:42.4490680Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [411 kB]
+2026-10-14T13:21:42.4511323Z Get:25 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [12.4 kB]
+2026-10-14T13:21:42.4861919Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [50.7 kB]
+2026-10-14T13:21:42.4874915Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [14.0 kB]
+2026-10-14T13:21:42.4886205Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [748 B]
+2026-10-14T13:21:42.5008183Z Get:26 https://packages.microsoft.com/ubuntu/24.04/prod noble/main all Packages [640 B]
+2026-10-14T13:21:42.5366156Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1145 kB]
+2026-10-14T13:21:42.5372161Z Get:27 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [576 kB]
+2026-10-14T13:21:42.5971640Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [231 kB]
+2026-10-14T13:21:42.6295087Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1221 kB]
+2026-10-14T13:21:42.6573858Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [246 kB]
+2026-10-14T13:21:42.6761442Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1713 kB]
+2026-10-14T13:21:42.7426370Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [392 kB]
+2026-10-14T13:21:42.7613001Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [45.4 kB]
+2026-10-14T13:21:42.7870793Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [12.1 kB]
+2026-10-14T13:21:45.7488349Z Fetched 12.5 MB in 1s (8619 kB/s)
+2026-10-14T13:21:46.6375678Z Reading package lists...
+2026-10-14T13:21:46.6616897Z Reading package lists...
+2026-10-14T13:21:46.8724379Z Building dependency tree...
+2026-10-14T13:21:46.8731817Z Reading state information...
+2026-10-14T13:21:47.0192862Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+2026-10-14T13:21:47.0193872Z libasound2t64 set to manually installed.
+2026-10-14T13:21:47.0194827Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-14T13:21:47.0195813Z libatk-bridge2.0-0t64 set to manually installed.
+2026-10-14T13:21:47.0196882Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-14T13:21:47.0197897Z libatk1.0-0t64 set to manually installed.
+2026-10-14T13:21:47.0199099Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+2026-10-14T13:21:47.0199878Z libatspi2.0-0t64 set to manually installed.
+2026-10-14T13:21:47.0200612Z libcairo2 is already the newest version (1.18.0-3build1).
+2026-10-14T13:21:47.0201338Z libcairo2 set to manually installed.
+2026-10-14T13:21:47.0201901Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+2026-10-14T13:21:47.0202317Z libcups2t64 set to manually installed.
+2026-10-14T13:21:47.0202742Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2026-10-14T13:21:47.0203149Z libdbus-1-3 set to manually installed.
+2026-10-14T13:21:47.0203581Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+2026-10-14T13:21:47.0203990Z libdrm2 set to manually installed.
+2026-10-14T13:21:47.0204394Z libgbm1 is already the newest version (25.2.8-0ubuntu0.24.04.4).
+2026-10-14T13:21:47.0204791Z libgbm1 set to manually installed.
+2026-10-14T13:21:47.0205207Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.9).
+2026-10-14T13:21:47.0205925Z libglib2.0-0t64 set to manually installed.
+2026-10-14T13:21:47.0206721Z libnspr4 is already the newest version (2:4.35-1.1build1).
+2026-10-14T13:21:47.0207475Z libnspr4 set to manually installed.
+2026-10-14T13:21:47.0208198Z libnss3 is already the newest version (2:3.98-1ubuntu0.2).
+2026-10-14T13:21:47.0209189Z libnss3 set to manually installed.
+2026-10-14T13:21:47.0209998Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2026-10-14T13:21:47.0210841Z libpango-1.0-0 set to manually installed.
+2026-10-14T13:21:47.0211558Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2026-10-14T13:21:47.0212243Z libxcb1 set to manually installed.
+2026-10-14T13:21:47.0213012Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2026-10-14T13:21:47.0213769Z libxcomposite1 set to manually installed.
+2026-10-14T13:21:47.0214560Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2026-10-14T13:21:47.0215273Z libxdamage1 set to manually installed.
+2026-10-14T13:21:47.0215984Z libxext6 is already the newest version (2:1.3.4-1build2).
+2026-10-14T13:21:47.0216668Z libxext6 set to manually installed.
+2026-10-14T13:21:47.0217408Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2026-10-14T13:21:47.0218111Z libxfixes3 set to manually installed.
+2026-10-14T13:21:47.0219168Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+2026-10-14T13:21:47.0219915Z libxkbcommon0 set to manually installed.
+2026-10-14T13:21:47.0220673Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2026-10-14T13:21:47.0221395Z libxrandr2 set to manually installed.
+2026-10-14T13:21:47.0222118Z xvfb is already the newest version (2:21.1.12-1ubuntu1.8).
+2026-10-14T13:21:47.0223158Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-10-14T13:21:47.0224207Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-10-14T13:21:47.0224996Z libfontconfig1 set to manually installed.
+2026-10-14T13:21:47.0225779Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-10-14T13:21:47.0226557Z fonts-liberation set to manually installed.
+2026-10-14T13:21:47.0227335Z The following additional packages will be installed:
+2026-10-14T13:21:47.0228601Z   libx11-data libx11-xcb1 xfonts-encodings xfonts-utils
+2026-10-14T13:21:47.0229551Z Recommended packages:
+2026-10-14T13:21:47.0230339Z   fonts-ipafont-mincho fonts-tlwg-loma
+2026-10-14T13:21:47.0426536Z The following NEW packages will be installed:
+2026-10-14T13:21:47.0427987Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-10-14T13:21:47.0435250Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+2026-10-14T13:21:47.0435909Z   xfonts-utils
+2026-10-14T13:21:47.0440264Z The following packages will be upgraded:
+2026-10-14T13:21:47.0444684Z   libfreetype6 libx11-6 libx11-data libx11-xcb1
+2026-10-14T13:21:47.0607288Z 4 upgraded, 9 newly installed, 0 to remove and 42 not upgraded.
+2026-10-14T13:21:47.0607873Z Need to get 22.3 MB of archives.
+2026-10-14T13:21:47.0608318Z After this operation, 79.6 MB of additional disk space will be used.
+2026-10-14T13:21:47.1096904Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-14T13:21:47.1097977Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+2026-10-14T13:21:47.2204778Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 libx11-6 amd64 2:1.8.7-1ubuntu0.1 [653 kB]
+2026-10-14T13:21:47.2541245Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 libx11-xcb1 amd64 2:1.8.7-1ubuntu0.1 [7796 B]
+2026-10-14T13:21:47.2820751Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 libx11-data all 2:1.8.7-1ubuntu0.1 [116 kB]
+2026-10-14T13:21:47.3106885Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+2026-10-14T13:21:47.4029150Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+2026-10-14T13:21:47.4386128Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+2026-10-14T13:21:47.5065274Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+2026-10-14T13:21:47.6191172Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libfreetype6 amd64 2.13.2+dfsg-1ubuntu0.2 [403 kB]
+2026-10-14T13:21:47.6969010Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+2026-10-14T13:21:47.9471642Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+2026-10-14T13:21:47.9818050Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+2026-10-14T13:21:48.0156871Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+2026-10-14T13:21:48.2683352Z Fetched 22.3 MB in 1s (23.0 MB/s)
+2026-10-14T13:21:48.2904517Z Selecting previously unselected package fonts-ipafont-gothic.
+2026-10-14T13:21:48.3170422Z (Reading database ... 
+2026-10-14T13:21:48.3171093Z (Reading database ... 5%
+2026-10-14T13:21:48.3171432Z (Reading database ... 10%
+2026-10-14T13:21:48.3171729Z (Reading database ... 15%
+2026-10-14T13:21:48.3171981Z (Reading database ... 20%
+2026-10-14T13:21:48.3172232Z (Reading database ... 25%
+2026-10-14T13:21:48.3172481Z (Reading database ... 30%
+2026-10-14T13:21:48.3172722Z (Reading database ... 35%
+2026-10-14T13:21:48.3172978Z (Reading database ... 40%
+2026-10-14T13:21:48.3173357Z (Reading database ... 45%
+2026-10-14T13:21:48.3173791Z (Reading database ... 50%
+2026-10-14T13:21:48.3210917Z (Reading database ... 55%
+2026-10-14T13:21:48.3925660Z (Reading database ... 60%
+2026-10-14T13:21:48.6391896Z (Reading database ... 65%
+2026-10-14T13:21:48.7896033Z (Reading database ... 70%
+2026-10-14T13:21:48.9888432Z (Reading database ... 75%
+2026-10-14T13:21:49.0928995Z (Reading database ... 80%
+2026-10-14T13:21:49.2458865Z (Reading database ... 85%
+2026-10-14T13:21:49.3898099Z (Reading database ... 90%
+2026-10-14T13:21:49.5370200Z (Reading database ... 95%
+2026-10-14T13:21:49.5370571Z (Reading database ... 100%
+2026-10-14T13:21:49.5371347Z (Reading database ... 203191 files and directories currently installed.)
+2026-10-14T13:21:49.5413155Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+2026-10-14T13:21:49.5504523Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-10-14T13:21:49.7877466Z Preparing to unpack .../01-libx11-6_2%3a1.8.7-1ubuntu0.1_amd64.deb ...
+2026-10-14T13:21:49.7907852Z Unpacking libx11-6:amd64 (2:1.8.7-1ubuntu0.1) over (2:1.8.7-1build1) ...
+2026-10-14T13:21:49.8313978Z Preparing to unpack .../02-libx11-xcb1_2%3a1.8.7-1ubuntu0.1_amd64.deb ...
+2026-10-14T13:21:49.8334338Z Unpacking libx11-xcb1:amd64 (2:1.8.7-1ubuntu0.1) over (2:1.8.7-1build1) ...
+2026-10-14T13:21:49.8708881Z Preparing to unpack .../03-libx11-data_2%3a1.8.7-1ubuntu0.1_all.deb ...
+2026-10-14T13:21:49.8750991Z Unpacking libx11-data (2:1.8.7-1ubuntu0.1) over (2:1.8.7-1build1) ...
+2026-10-14T13:21:49.9753210Z Selecting previously unselected package fonts-freefont-ttf.
+2026-10-14T13:21:49.9882821Z Preparing to unpack .../04-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+2026-10-14T13:21:49.9890622Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-10-14T13:21:50.0662966Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2026-10-14T13:21:50.0788405Z Preparing to unpack .../05-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+2026-10-14T13:21:50.0795368Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-10-14T13:21:50.0992309Z Selecting previously unselected package fonts-unifont.
+2026-10-14T13:21:50.1119453Z Preparing to unpack .../06-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+2026-10-14T13:21:50.1125632Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+2026-10-14T13:21:50.2242107Z Selecting previously unselected package fonts-wqy-zenhei.
+2026-10-14T13:21:50.2371183Z Preparing to unpack .../07-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+2026-10-14T13:21:50.2469880Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+2026-10-14T13:21:50.7330707Z Preparing to unpack .../08-libfreetype6_2.13.2+dfsg-1ubuntu0.2_amd64.deb ...
+2026-10-14T13:21:50.7351474Z Unpacking libfreetype6:amd64 (2.13.2+dfsg-1ubuntu0.2) over (2.13.2+dfsg-1ubuntu0.1) ...
+2026-10-14T13:21:50.7583043Z Selecting previously unselected package xfonts-encodings.
+2026-10-14T13:21:50.7710025Z Preparing to unpack .../09-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+2026-10-14T13:21:50.7716898Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-10-14T13:21:50.7981652Z Selecting previously unselected package xfonts-utils.
+2026-10-14T13:21:50.8107680Z Preparing to unpack .../10-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+2026-10-14T13:21:50.8114265Z Unpacking xfonts-utils (1:7.7+6build3) ...
+2026-10-14T13:21:50.8441222Z Selecting previously unselected package xfonts-cyrillic.
+2026-10-14T13:21:50.8565769Z Preparing to unpack .../11-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+2026-10-14T13:21:50.8573240Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-10-14T13:21:50.8897225Z Selecting previously unselected package xfonts-scalable.
+2026-10-14T13:21:50.9023011Z Preparing to unpack .../12-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+2026-10-14T13:21:50.9029632Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+2026-10-14T13:21:50.9458369Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+2026-10-14T13:21:50.9571563Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+2026-10-14T13:21:50.9588852Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2026-10-14T13:21:50.9606401Z Setting up libfreetype6:amd64 (2.13.2+dfsg-1ubuntu0.2) ...
+2026-10-14T13:21:50.9622976Z Setting up libx11-data (2:1.8.7-1ubuntu0.1) ...
+2026-10-14T13:21:50.9641137Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2026-10-14T13:21:50.9658463Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+2026-10-14T13:21:50.9721701Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2026-10-14T13:21:50.9735720Z Setting up libx11-6:amd64 (2:1.8.7-1ubuntu0.1) ...
+2026-10-14T13:21:50.9753222Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+2026-10-14T13:21:50.9769398Z Setting up libx11-xcb1:amd64 (2:1.8.7-1ubuntu0.1) ...
+2026-10-14T13:21:50.9786072Z Setting up xfonts-utils (1:7.7+6build3) ...
+2026-10-14T13:21:50.9828233Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+2026-10-14T13:21:51.0102284Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+2026-10-14T13:21:51.0366245Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+2026-10-14T13:21:51.0666796Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-10-14T13:21:51.0687602Z Not building database; man-db/auto-update is not 'true'.
+2026-10-14T13:21:51.0698288Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2026-10-14T13:21:51.7547353Z 
+2026-10-14T13:21:51.7548067Z Running kernel seems to be up-to-date.
+2026-10-14T13:21:51.7548428Z 
+2026-10-14T13:21:51.7625701Z Restarting services...
+2026-10-14T13:21:51.7626092Z  systemctl restart php8.3-fpm.service
+2026-10-14T13:21:51.8807698Z 
+2026-10-14T13:21:51.8809056Z No containers need to be restarted.
+2026-10-14T13:21:51.8809446Z 
+2026-10-14T13:21:51.8809927Z No user sessions are running outdated binaries.
+2026-10-14T13:21:51.8810455Z 
+2026-10-14T13:21:51.8811157Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-14T13:21:52.8639600Z Downloading Chromium 141.0.7390.37 (playwright build v1194) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-linux.zip
+2026-10-14T13:21:53.0204839Z |                                                                                |   0% of 173.9 MiB
+2026-10-14T13:21:53.2056188Z |■■■■■■■■                                                                        |  10% of 173.9 MiB
+2026-10-14T13:21:53.2960148Z |■■■■■■■■■■■■■■■■                                                                |  20% of 173.9 MiB
+2026-10-14T13:21:53.3806858Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 173.9 MiB
+2026-10-14T13:21:53.4507948Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 173.9 MiB
+2026-10-14T13:21:53.5108916Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 173.9 MiB
+2026-10-14T13:21:53.5634985Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 173.9 MiB
+2026-10-14T13:21:53.6174216Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 173.9 MiB
+2026-10-14T13:21:53.6679310Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 173.9 MiB
+2026-10-14T13:21:53.7241802Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 173.9 MiB
+2026-10-14T13:21:53.7819869Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 173.9 MiB
+2026-10-14T13:21:57.3697963Z Chromium 141.0.7390.37 (playwright build v1194) downloaded to /home/runner/.cache/ms-playwright/chromium-1194
+2026-10-14T13:21:57.3701656Z Downloading FFMPEG playwright build v1011 from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+2026-10-14T13:21:57.5276999Z |                                                                                |   0% of 2.3 MiB
+2026-10-14T13:21:57.5604217Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+2026-10-14T13:21:57.5726678Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+2026-10-14T13:21:57.5835473Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+2026-10-14T13:21:57.5931244Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+2026-10-14T13:21:57.5962288Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+2026-10-14T13:21:57.6040856Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+2026-10-14T13:21:57.6064010Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+2026-10-14T13:21:57.6084199Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+2026-10-14T13:21:57.6161202Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+2026-10-14T13:21:57.6177053Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+2026-10-14T13:21:57.6756819Z FFMPEG playwright build v1011 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+2026-10-14T13:21:57.6760290Z Downloading Chromium Headless Shell 141.0.7390.37 (playwright build v1194) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-headless-shell-linux.zip
+2026-10-14T13:21:57.8249964Z |                                                                                |   0% of 104.3 MiB
+2026-10-14T13:21:57.9924327Z |■■■■■■■■                                                                        |  10% of 104.3 MiB
+2026-10-14T13:21:58.0487111Z |■■■■■■■■■■■■■■■■                                                                |  20% of 104.3 MiB
+2026-10-14T13:21:58.1052958Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 104.3 MiB
+2026-10-14T13:21:58.1575072Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 104.3 MiB
+2026-10-14T13:21:58.2051603Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 104.3 MiB
+2026-10-14T13:21:58.2462746Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 104.3 MiB
+2026-10-14T13:21:58.2823519Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 104.3 MiB
+2026-10-14T13:21:58.3240517Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 104.3 MiB
+2026-10-14T13:21:58.3664138Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 104.3 MiB
+2026-10-14T13:21:58.4041416Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 104.3 MiB
+2026-10-14T13:22:00.3222479Z Chromium Headless Shell 141.0.7390.37 (playwright build v1194) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1194
+2026-10-14T13:22:00.4096576Z ##[group]Run python3 -m http.server 8765 --bind 127.0.0.1 &
+2026-10-14T13:22:00.4097064Z [36;1mpython3 -m http.server 8765 --bind 127.0.0.1 &[0m
+2026-10-14T13:22:00.4097389Z [36;1mserver_pid=$![0m
+2026-10-14T13:22:00.4097634Z [36;1mtrap 'kill "$server_pid"' EXIT[0m
+2026-10-14T13:22:00.4097938Z [36;1mnode tests/browser-policy-smoke.mjs[0m
+2026-10-14T13:22:00.4098246Z [36;1mnode tests/browser-pdf-smoke.mjs[0m
+2026-10-14T13:22:00.4098578Z [36;1mnode tests/browser-research-pages-smoke.mjs[0m
+2026-10-14T13:22:00.4099287Z [36;1mnode tests/browser-pdf-reliability.mjs[0m
+2026-10-14T13:22:00.4099624Z [36;1mnode tests/browser-pdf-highlight.mjs[0m
+2026-10-14T13:22:00.4099946Z [36;1mnode tests/browser-workspace-ui.mjs[0m
+2026-10-14T13:22:00.4100282Z [36;1mnode tests/browser-document-library.mjs[0m
+2026-10-14T13:22:00.4100604Z [36;1mnode tests/browser-ask-scope.mjs[0m
+2026-10-14T13:22:00.4100915Z [36;1mnode tests/browser-local-workspace.mjs[0m
+2026-10-14T13:22:00.4101289Z [36;1mnode tests/browser-document-readiness.mjs[0m
+2026-10-14T13:22:00.4101624Z [36;1mnode tests/browser-runner-evidence.mjs[0m
+2026-10-14T13:22:00.4167401Z shell: /usr/bin/bash -e {0}
+2026-10-14T13:22:00.4167657Z ##[endgroup]
+2026-10-14T13:22:00.9476460Z 127.0.0.1 - - [14/Oct/2026 13:22:00] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:00.9565925Z 127.0.0.1 - - [14/Oct/2026 13:22:00] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:00.9572491Z 127.0.0.1 - - [14/Oct/2026 13:22:00] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0140786Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0191021Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0212846Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0233840Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0237713Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0239867Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0326577Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0349960Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0376825Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0383278Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0384706Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0386595Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0437026Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0480692Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0482147Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0578050Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0591696Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0600420Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0601846Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0603469Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0604966Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:01.0765021Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:01.0931674Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:01.1130297Z 127.0.0.1 - - [14/Oct/2026 13:22:01] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:02.3708171Z 5.2 browser smoke PASS: UI, distinct evidence, copy/export, 5.1 isolation.
+2026-10-14T13:22:02.8066281Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:02.8197377Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.8208286Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.8921129Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.8939924Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.8967708Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.8982865Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:02.8997877Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:02.8999843Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9089978Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9107615Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9139781Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9141356Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9172106Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9200784Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9225723Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9239417Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9271468Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9301341Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9329809Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9331185Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9360131Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9416965Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9470109Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:02.9561612Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:02.9832286Z 127.0.0.1 - - [14/Oct/2026 13:22:02] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:03.0090228Z 127.0.0.1 - - [14/Oct/2026 13:22:03] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:06.0034158Z {
+2026-10-14T13:22:06.0035409Z   "kind": "synthetic feature smoke; not an accuracy benchmark",
+2026-10-14T13:22:06.0036036Z   "model": "not exercised",
+2026-10-14T13:22:06.0036304Z   "checks": [
+2026-10-14T13:22:06.0036942Z     "Ask file selection invalidates the previous answer and closes its PDF preview; restoring All files preserves the exact PDF answer",
+2026-10-14T13:22:06.0038509Z     "Non-overlapping interactive desktop dock; unchanged evidence export; modal mobile resize and desktop restoration; focus restored; new answers/tool/corpus changes close stale previews",
+2026-10-14T13:22:06.0040379Z     "Actual PDF.js upload/extraction, page 2 provenance, copy/export, original page rendering, next/previous bounds, Escape and close/reopen cleanup",
+2026-10-14T13:22:06.0041214Z     "Unsupported question has no source cards or page citations",
+2026-10-14T13:22:06.0042190Z     "TXT quotation spans lines 1–2, no invented page link, document replacement invalidates Hybrid vectors"
+2026-10-14T13:22:06.0042720Z   ],
+2026-10-14T13:22:06.0042949Z   "browser": "141.0.7390.37",
+2026-10-14T13:22:06.0043276Z   "build": "Loaded retrieval build: 2026-10-13-r44",
+2026-10-14T13:22:06.0046933Z   "keywordAnswer": "YOUR QUESTION\nHow often must Harbor crane operators inspect lifting hooks?\n\nSearched all files: harbor-workshop.pdf\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\nSOURCE EVIDENCE\n[1]\nharbor-workshop.pdf\n\nPDF page 2 (physical page numbers)\n\nHarbor workshop operates the sheltered pier. Harbor crane operators must inspect lifting hooks every eight shifts. Harbor workshop visitor hours end at sunset.\n\nOpen cited PDF page ↗Locate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:06.0055063Z   "keywordReport": "# GroundedDesk — evidence report\n\n## Question\n\n> How often must Harbor crane operators inspect lifting hooks?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** harbor\\-workshop\\.pdf\n\n## Answer\n\n\n> [1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\n## Source evidence\n\n### [1] harbor\\-workshop\\.pdf\n\n**File:** harbor\\-workshop\\.pdf\n\n**Source location:** PDF page 2 \\(physical page numbers\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 2.1782\n\n**Quoted sentence / passage:**\n\n> Harbor crane operators must inspect lifting hooks every eight shifts.\n\n**Retrieved excerpt:**\n\n> Harbor workshop operates the sheltered pier.\n> \n> Harbor crane operators must inspect lifting hooks every eight shifts.\n> \n> Harbor workshop visitor hours end at sunset.\n\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n",
+2026-10-14T13:22:06.0086961Z   "pinControls": [
+2026-10-14T13:22:06.0087350Z     {
+2026-10-14T13:22:06.0087744Z       "mode": "keyword",
+2026-10-14T13:22:06.0088497Z       "question": "What is the exact PIN code for the fictional workshop door?",
+2026-10-14T13:22:06.0094929Z       "displayed": "YOUR QUESTION\nWhat is the exact PIN code for the fictional workshop door?\n\nSearched all files: fictional-pin-controls.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop door PIN code is 0482.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin-controls.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482. The fictional workshop PIN code must be rotated every seven days.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:06.0110841Z       "outcome": "PASS"
+2026-10-14T13:22:06.0111284Z     },
+2026-10-14T13:22:06.0111642Z     {
+2026-10-14T13:22:06.0112023Z       "mode": "keyword",
+2026-10-14T13:22:06.0112767Z       "question": "When must the fictional workshop PIN code be rotated?",
+2026-10-14T13:22:06.0119950Z       "displayed": "YOUR QUESTION\nWhen must the fictional workshop PIN code be rotated?\n\nSearched all files: fictional-pin-controls.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop PIN code must be rotated every seven days.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin-controls.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482. The fictional workshop PIN code must be rotated every seven days.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:06.0124680Z       "outcome": "PASS"
+2026-10-14T13:22:06.0125109Z     }
+2026-10-14T13:22:06.0125452Z   ],
+2026-10-14T13:22:06.0125810Z   "status": "PASS"
+2026-10-14T13:22:06.0126195Z }
+2026-10-14T13:22:06.4390590Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:06.4530003Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4530862Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4679427Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4701580Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4703273Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4704470Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4768042Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4777965Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4791079Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4819654Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4821468Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4828281Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4870080Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4893356Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4894869Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4908009Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4909752Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.4924435Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.5417770Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:06.5436994Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:06.5438898Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:06.5440618Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:06.5502622Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:06.5777520Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:06.6126365Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:06.6260380Z 127.0.0.1 - - [14/Oct/2026 13:22:06] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:11.4788305Z {
+2026-10-14T13:22:11.4819927Z   "kind": "Synthetic lexical Research/Comparison page-navigation smoke",
+2026-10-14T13:22:11.4846570Z   "model": "These workflows use lexical retrieval; no MiniLM or Qwen",
+2026-10-14T13:22:11.4847342Z   "cases": [
+2026-10-14T13:22:11.4863180Z     {
+2026-10-14T13:22:11.4863629Z       "id": "01-comparison",
+2026-10-14T13:22:11.4868101Z       "displayed": "Shared vocabulary: approval, assemble, before, evidence, lead, needs, plan, release, rollback. Shared terms do not establish factual agreement.\n\n[1] workshop-release.pdf\n\nWorkshop release needs approval from the Safety Lead.\n\nPDF page 1 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n[2] supplier-release.pdf\n\nSupplier release needs approval from the Procurement Lead.\n\nPDF page 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗",
+2026-10-14T13:22:11.4878219Z       "report": "# GroundedDesk AI 4.0 — evidence report\n\n**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Question/topic:** Compare workshop and supplier release approval\\.\n\n## Side-by-side excerpts\n\n### [1] workshop\\-release\\.pdf\n\n> Workshop release needs approval from the Safety Lead.\n\n\n\n**Quotation location:** PDF page 1 \\(physical page numbers\\)\n\n### [2] supplier\\-release\\.pdf\n\n> Supplier release needs approval from the Procurement Lead.\n\n\n\n**Quotation location:** PDF page 2 \\(physical page numbers\\)\n\n## Shared vocabulary (not agreement)\n\napproval, assemble, before, evidence, lead, needs, plan, release, rollback\n\n---\n\n*For research assistance only. Keyword matches can miss paraphrases; absence of a match does not prove absence of a fact. Do not redistribute private document text without permission.*\n"
+2026-10-14T13:22:11.4883655Z     },
+2026-10-14T13:22:11.4884012Z     {
+2026-10-14T13:22:11.4884377Z       "id": "03-research",
+2026-10-14T13:22:11.4929690Z       "displayed": "2/2 documents returned matching evidence. This is keyword retrieval, not a factual conclusion.\n\nRetrieve — Rank matching passages from the loaded documents\nCross-check — Inspect distinct documents and highlight source coverage\nReport — Quote verified excerpts, flag suspicious instructions, and identify evidence gaps\n[1] workshop-release.pdf\n\nRelease documents must omit private identifiers.\n\nPDF page 3 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n[2] supplier-release.pdf\n\nS-01 Release.\n\nPDF page 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗",
+2026-10-14T13:22:11.4942606Z       "report": "# GroundedDesk AI 4.0 — evidence report\n\n**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Question/topic:** Who approves release?\n\n## Research workflow\n\n- Retrieve: Rank matching passages from the loaded documents\n- Cross-check: Inspect distinct documents and highlight source coverage\n- Report: Quote verified excerpts, flag suspicious instructions, and identify evidence gaps\n\n## Cross-document evidence\n\n### [1] workshop\\-release\\.pdf\n\n> Release documents must omit private identifiers.\n\n\n\n**Quotation location:** PDF page 3 \\(physical page numbers\\)\n\n### [2] supplier\\-release\\.pdf\n\n> S-01 Release.\n\n\n\n**Quotation location:** PDF page 2 \\(physical page numbers\\)\n\n## Coverage and gaps\n\n2 of 2 loaded documents had keyword-matching evidence.\n\n---\n\n*For research assistance only. Keyword matches can miss paraphrases; absence of a match does not prove absence of a fact. Do not redistribute private document text without permission.*\n"
+2026-10-14T13:22:11.4951765Z     },
+2026-10-14T13:22:11.4952184Z     {
+2026-10-14T13:22:11.4952629Z       "id": "04-policy-sections",
+2026-10-14T13:22:11.4959745Z       "displayed": "3 sections quoted from 3 keyword-matching sections (3 numbered sections detected). Bounded evidence scan, not an exhaustive policy summary.\n\n[1] G-01 · workshop-release.pdf\n\nG-01 Release. Workshop release needs approval from the Safety Lead.\n\nPDF page 1 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n[2] G-02 · workshop-release.pdf\n\nG-02 Evidence. Before release, assemble a risk register and rollback plan.\n\nPDF page 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n[3] G-03 · workshop-release.pdf\n\nG-03 Privacy. Release documents must omit private identifiers.\n\nPDF page 3 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n\nThe scan may miss sections without overlapping terms. Review the complete policy before relying on it.",
+2026-10-14T13:22:11.4974377Z       "report": "# GroundedDesk AI 5.1 — multi-section policy evidence\n\n**Method:** Local deterministic scan of numbered policy sections (no LLM).\n**Question:** What is needed before workshop release?\n**Document:** workshop\\-release\\.pdf\n**Scope:** 3 quoted sections from 3 lexically matched of 3 detected sections (maximum 8).\n\n## Section-by-section evidence\n\n**Retrieval build:** `2026-10-13-r44`\n\n### [1] G\\-01 — workshop\\-release\\.pdf\n\n> G-01 Release. Workshop release needs approval from the Safety Lead.\n\n**Quotation location:** PDF page 1 \\(physical page numbers\\)\n\n### [2] G\\-02 — workshop\\-release\\.pdf\n\n> G-02 Evidence. Before release, assemble a risk register and rollback plan.\n\n**Quotation location:** PDF page 2 \\(physical page numbers\\)\n\n### [3] G\\-03 — workshop\\-release\\.pdf\n\n> G-03 Privacy. Release documents must omit private identifiers.\n\n**Quotation location:** PDF page 3 \\(physical page numbers\\)\n\n## Coverage and limitations\n\nNo additional keyword-matching numbered sections were omitted by the evidence cap.\nOther sections can contain relevant facts that keyword overlap missed. This is not an exhaustive policy summary or compliance determination.\n\n---\n\n*All quotations are exact substrings of the loaded document after whitespace normalization. Read the complete source before making decisions.*\n"
+2026-10-14T13:22:11.4983203Z     },
+2026-10-14T13:22:11.4983552Z     {
+2026-10-14T13:22:11.4983984Z       "id": "05-policy-inventory",
+2026-10-14T13:22:11.4993462Z       "displayed": "3 literal candidate controls from 3 matching of 3 inspected policy sections. Rule-based categories only; no verified compliance or complete coverage.\n\n[1] G-01 · workshop-release.pdf\n\nRelease ownership and approval · Potential release gate\n\nWorkshop release needs approval from the Safety Lead.\n\nPDF page 1 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n[2] G-02 · workshop-release.pdf\n\nRequired review evidence · Potential release gate\n\nBefore release, assemble a risk register and rollback plan.\n\nPDF page 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n[3] G-03 · workshop-release.pdf\n\nOther rule-shaped passage · Needs classification\n\nRelease documents must omit private identifiers.\n\nPDF page 3 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n\n0 sections outside scan cap; 0 quoted candidates beyond output/per-section caps; 0 instruction-shaped sections excluded. This is not a complete policy audit. Verify full sections and exceptions.",
+2026-10-14T13:22:11.5026152Z       "report": "# GroundedDesk AI 5.2 — candidate release-control inventory\n\n**Method:** Deterministic rule-matched source sentences (no LLM or semantic entailment).\n**Question:** What is needed before workshop release?\n**Document:** workshop\\-release\\.pdf\n**Status:** Candidate controls found; human verification required.\n**Coverage:** 3/3 numbered sections inspected; 3 with matching rule-shaped passages; 3 quotes displayed (limit 24).\n\n\n**Retrieval build:** `2026-10-13-r44`\n\n## Potential release-gate controls\n\n### [1] G\\-01 — Release ownership and approval\n\n> Workshop release needs approval from the Safety Lead.\n\n*Source: workshop\\-release\\.pdf · G\\-01. Rule-based category, not verified legal interpretation.*\n\n**Quotation location:** PDF page 1 \\(physical page numbers\\)\n\n### [2] G\\-02 — Required review evidence\n\n> Before release, assemble a risk register and rollback plan.\n\n*Source: workshop\\-release\\.pdf · G\\-02. Rule-based category, not verified legal interpretation.*\n\n**Quotation location:** PDF page 2 \\(physical page numbers\\)\n\n## Unclassified rule-shaped passages\n\n### [3] G\\-03 — Other rule\\-shaped passage\n\n> Release documents must omit private identifiers.\n\n*Source: workshop\\-release\\.pdf · G\\-03. Rule-based category, not verified legal interpretation.*\n\n**Quotation location:** PDF page 3 \\(physical page numbers\\)\n\n## Coverage and verification limits\n\n0 numbered sections were not scanned due to the 64-section scan limit.\n0 candidate sentences were omitted by the 24-item output cap or per-section cap.\n0 inspected sections were withheld from checklist generation due to recognizable instruction-shaped text.\nRegex rules can miss genuine obligations, misclassify conditions or quote exceptions without context. Items can include advisory or post-release controls, and some important controls may be absent.\nRead each complete section and the whole original document before interpreting obligations. This is NOT a complete release checklist, compliance decision, or verification that anything has been completed.\n\n---\n\n*All displayed evidence is a literal substring of the normalized source section. No document instructions were executed.*\n"
+2026-10-14T13:22:11.5041335Z     },
+2026-10-14T13:22:11.5041535Z     {
+2026-10-14T13:22:11.5041857Z       "id": "06-cross-page-inventory",
+2026-10-14T13:22:11.5046034Z       "displayed": "2 literal candidate controls from 2 matching of 2 inspected policy sections. Rule-based categories only; no verified compliance or complete coverage.\n\n[1] G-01 · cross-page-release.pdf\n\nRelease ownership and approval · Potential release gate\n\nG-01 Release authority Workshop release requires approval from the Safety Lead.\n\nPDF pages 1, 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n[2] G-02 · cross-page-release.pdf\n\nRequired review evidence · Potential release gate\n\nG-02 Evidence Before release assemble a risk register.\n\nPDF page 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n\n0 sections outside scan cap; 0 quoted candidates beyond output/per-section caps; 0 instruction-shaped sections excluded. This is not a complete policy audit. Verify full sections and exceptions.",
+2026-10-14T13:22:11.5058951Z       "report": "# GroundedDesk AI 5.2 — candidate release-control inventory\n\n**Method:** Deterministic rule-matched source sentences (no LLM or semantic entailment).\n**Question:** What approval is needed before release?\n**Document:** cross\\-page\\-release\\.pdf\n**Status:** Candidate controls found; human verification required.\n**Coverage:** 2/2 numbered sections inspected; 2 with matching rule-shaped passages; 2 quotes displayed (limit 24).\n\n\n**Retrieval build:** `2026-10-13-r44`\n\n## Potential release-gate controls\n\n### [1] G\\-01 — Release ownership and approval\n\n> G-01 Release authority Workshop release requires approval from the Safety Lead.\n\n*Source: cross\\-page\\-release\\.pdf · G\\-01. Rule-based category, not verified legal interpretation.*\n\n**Quotation location:** PDF pages 1, 2 \\(physical page numbers\\)\n\n### [2] G\\-02 — Required review evidence\n\n> G-02 Evidence Before release assemble a risk register.\n\n*Source: cross\\-page\\-release\\.pdf · G\\-02. Rule-based category, not verified legal interpretation.*\n\n**Quotation location:** PDF page 2 \\(physical page numbers\\)\n\n## Coverage and verification limits\n\n0 numbered sections were not scanned due to the 64-section scan limit.\n0 candidate sentences were omitted by the 24-item output cap or per-section cap.\n0 inspected sections were withheld from checklist generation due to recognizable instruction-shaped text.\nRegex rules can miss genuine obligations, misclassify conditions or quote exceptions without context. Items can include advisory or post-release controls, and some important controls may be absent.\nRead each complete section and the whole original document before interpreting obligations. This is NOT a complete release checklist, compliance decision, or verification that anything has been completed.\n\n---\n\n*All displayed evidence is a literal substring of the normalized source section. No document instructions were executed.*\n"
+2026-10-14T13:22:11.5066247Z     },
+2026-10-14T13:22:11.5066432Z     {
+2026-10-14T13:22:11.5066663Z       "id": "07-missing-comparison",
+2026-10-14T13:22:11.5068310Z       "displayed": "Shared vocabulary: approval, assemble, before, evidence, lead, needs, plan, release, rollback. Shared terms do not establish factual agreement.\n\n[1] workshop-release.pdf\n\nNo matching passage found for this topic using keyword retrieval.\n\n[2] supplier-release.pdf\n\nNo matching passage found for this topic using keyword retrieval.",
+2026-10-14T13:22:11.5074291Z       "report": "# GroundedDesk AI 4.0 — evidence report\n\n**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Question/topic:** quasar zoology\n\n## Side-by-side excerpts\n\n### [1] workshop\\-release\\.pdf\n\nNo matching passage was found using lexical retrieval for this topic.\n\n\n\n### [2] supplier\\-release\\.pdf\n\nNo matching passage was found using lexical retrieval for this topic.\n\n\n\n## Shared vocabulary (not agreement)\n\napproval, assemble, before, evidence, lead, needs, plan, release, rollback\n\n---\n\n*For research assistance only. Keyword matches can miss paraphrases; absence of a match does not prove absence of a fact. Do not redistribute private document text without permission.*\n"
+2026-10-14T13:22:11.5077224Z     },
+2026-10-14T13:22:11.5077404Z     {
+2026-10-14T13:22:11.5077638Z       "id": "08-ambiguous-comparison",
+2026-10-14T13:22:11.5080286Z       "displayed": "Shared vocabulary: approval, lead, release. Shared terms do not establish factual agreement.\n\n[1] repeated-release.pdf\n\nRelease approval belongs to the Safety Lead.\n\nLocation ambiguous: Quotation and context occur more than once.\n\nLocate in library ↗\n[2] supplier-release.pdf\n\nSupplier release needs approval from the Procurement Lead.\n\nPDF page 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗",
+2026-10-14T13:22:11.5085928Z       "report": "# GroundedDesk AI 4.0 — evidence report\n\n**Method:** Local deterministic retrieval and source quotation. Not factual verification or autonomous web research.\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Question/topic:** release approval\n\n## Side-by-side excerpts\n\n### [1] repeated\\-release\\.pdf\n\n> Release approval belongs to the Safety Lead.\n\n\n\n**Quotation location:** Location ambiguous: Quotation and context occur more than once\\.\n\n### [2] supplier\\-release\\.pdf\n\n> Supplier release needs approval from the Procurement Lead.\n\n\n\n**Quotation location:** PDF page 2 \\(physical page numbers\\)\n\n## Shared vocabulary (not agreement)\n\napproval, lead, release\n\n---\n\n*For research assistance only. Keyword matches can miss paraphrases; absence of a match does not prove absence of a fact. Do not redistribute private document text without permission.*\n"
+2026-10-14T13:22:11.5089582Z     }
+2026-10-14T13:22:11.5089873Z   ],
+2026-10-14T13:22:11.5090327Z   "browser": "141.0.7390.37",
+2026-10-14T13:22:11.5090848Z   "build": "Loaded retrieval build: 2026-10-13-r44",
+2026-10-14T13:22:11.5091494Z   "comparisonPreview": {
+2026-10-14T13:22:11.5092148Z     "quote": "Supplier release needs approval from the Procurement Lead.",
+2026-10-14T13:22:11.5094349Z     "message": "Quotation could not be highlighted reliably on this page. No highlight is shown; review the source quotation manually. It may span pages, occupy part of a text run or use an unsupported layout.",
+2026-10-14T13:22:11.5095899Z     "regions": 0,
+2026-10-14T13:22:11.5096270Z     "status": "partial-run"
+2026-10-14T13:22:11.5096666Z   },
+2026-10-14T13:22:11.5096991Z   "status": "PASS"
+2026-10-14T13:22:11.5097332Z }
+2026-10-14T13:22:11.9630440Z 127.0.0.1 - - [14/Oct/2026 13:22:11] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:11.9766211Z 127.0.0.1 - - [14/Oct/2026 13:22:11] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:11.9767882Z 127.0.0.1 - - [14/Oct/2026 13:22:11] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:11.9961406Z 127.0.0.1 - - [14/Oct/2026 13:22:11] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0020281Z 127.0.0.1 - - [14/Oct/2026 13:22:11] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0054849Z 127.0.0.1 - - [14/Oct/2026 13:22:11] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0088068Z 127.0.0.1 - - [14/Oct/2026 13:22:11] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0094351Z 127.0.0.1 - - [14/Oct/2026 13:22:11] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0100985Z 127.0.0.1 - - [14/Oct/2026 13:22:11] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0102347Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0123452Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0206832Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0239941Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0242655Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0244079Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0246199Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0254261Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0264824Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0289623Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0878489Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:12.0958956Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:12.1050160Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:12.1071876Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:12.1100688Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:12.1370277Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:12.1680212Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:12.1892380Z 127.0.0.1 - - [14/Oct/2026 13:22:12] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:14.9164636Z {
+2026-10-14T13:22:14.9165539Z   "classification": "Synthetic feature reliability regression, not independent factual accuracy",
+2026-10-14T13:22:14.9166377Z   "cases": [
+2026-10-14T13:22:14.9166698Z     {
+2026-10-14T13:22:14.9167036Z       "id": "mixed-pages",
+2026-10-14T13:22:14.9167498Z       "file": "mixed-pages.pdf",
+2026-10-14T13:22:14.9168059Z       "question": "When do depot lights shut down?",
+2026-10-14T13:22:14.9169159Z       "expected": "Quote sunset on physical page 3; page 2 missing-text notice in UI/export",
+2026-10-14T13:22:14.9170470Z       "alert": "1 file(s) added.",
+2026-10-14T13:22:14.9174560Z       "library": "PDF\nmixed-pages.pdf\n3 pages · 75 characters · Your file\nPartial text coverage\n\n2 of 3 PDF pages contain searchable text.\n\nPDF coverage: pages 2 have no searchable text. They may be blank or scanned; review the original. OCR is not included.\n\nReview the original PDF. If text is missing, use OCR on your device or replace it with a searchable PDF or text version.\n\nView PDF\nReplace file\nRemove",
+2026-10-14T13:22:14.9188896Z       "displayed": "YOUR QUESTION\nWhen do depot lights shut down?\n\nSearched all files: mixed-pages.pdf\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Depot lights shut down at sunset.\n\nSOURCE EVIDENCE\n[1]\nmixed-pages.pdf\n\nPDF page 3 (physical page numbers)\n\nDepot hooks require inspection weekly. Depot lights shut down at sunset.\n\nPDF coverage: pages 2 have no searchable text. They may be blank or scanned; review the original. OCR is not included.\n\nOpen cited PDF page ↗Locate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:14.9204740Z       "report": "# GroundedDesk — evidence report\n\n## Question\n\n> When do depot lights shut down?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** mixed\\-pages\\.pdf\n\n## Answer\n\n\n> [1] Depot lights shut down at sunset.\n\n## Source evidence\n\n### [1] mixed\\-pages\\.pdf\n\n**File:** mixed\\-pages\\.pdf\n\n**Source location:** PDF page 3 \\(physical page numbers\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.2586\n\n**Quoted sentence / passage:**\n\n> Depot lights shut down at sunset.\n\n**Retrieved excerpt:**\n\n> Depot hooks require inspection weekly.\n> \n> \n> \n> Depot lights shut down at sunset.\n\n**PDF extraction notice:** PDF coverage: pages 2 have no searchable text\\. They may be blank or scanned; review the original\\. OCR is not included\\.\n\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n",
+2026-10-14T13:22:14.9231101Z       "status": "PASS"
+2026-10-14T13:22:14.9231478Z     },
+2026-10-14T13:22:14.9231781Z     {
+2026-10-14T13:22:14.9232098Z       "id": "repeated",
+2026-10-14T13:22:14.9232551Z       "file": "repeated-permit.pdf",
+2026-10-14T13:22:14.9233145Z       "question": "Who approves depot permits?",
+2026-10-14T13:22:14.9233801Z       "expected": "Ambiguous location, no PDF page link",
+2026-10-14T13:22:14.9234394Z       "alert": "1 file(s) added.",
+2026-10-14T13:22:14.9236654Z       "library": "PDF\nrepeated-permit.pdf\n2 pages · 104 characters · Your file\nText available\n\n2 of 2 PDF pages contain searchable text.\n\nText extraction does not verify reading order or factual accuracy.\n\nView PDF\nReplace file\nRemove",
+2026-10-14T13:22:14.9243649Z       "displayed": "YOUR QUESTION\nWho approves depot permits?\n\nSearched all files: repeated-permit.pdf\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Depot permits require approval from the Shift Lead.\n\nSOURCE EVIDENCE\n[1]\nrepeated-permit.pdf\n\nLocation ambiguous: Quotation and context occur more than once.\n\nDepot permits require approval from the Shift Lead. Depot permits require approval from the Shift Lead.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:14.9247708Z       "status": "PASS"
+2026-10-14T13:22:14.9248065Z     },
+2026-10-14T13:22:14.9254105Z     {
+2026-10-14T13:22:14.9263818Z       "id": "cross-page",
+2026-10-14T13:22:14.9264304Z       "file": "cross-page.pdf",
+2026-10-14T13:22:14.9264948Z       "question": "What approval is needed before depot release?",
+2026-10-14T13:22:14.9265819Z       "expected": "Lexical inventory quotation spans physical pages 1 and 2",
+2026-10-14T13:22:14.9266529Z       "alert": "1 file(s) added.",
+2026-10-14T13:22:14.9269178Z       "library": "PDF\ncross-page.pdf\n2 pages · 131 characters · Your file\nText available\n\n2 of 2 PDF pages contain searchable text.\n\nText extraction does not verify reading order or factual accuracy.\n\nView PDF\nReplace file\nRemove",
+2026-10-14T13:22:14.9277632Z       "displayed": "2 literal candidate controls from 2 matching of 2 inspected policy sections. Rule-based categories only; no verified compliance or complete coverage.\n\n[1] G-01 · cross-page.pdf\n\nRelease ownership and approval · Potential release gate\n\nG-01 Release authority Depot release requires approval from the Shift Lead.\n\nPDF pages 1, 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n[2] G-02 · cross-page.pdf\n\nRequired review evidence · Potential release gate\n\nG-02 Evidence Before release assemble a rollback plan.\n\nPDF page 2 (physical page numbers)\n\nOpen cited PDF page ↗Locate in library ↗\n\n0 sections outside scan cap; 0 quoted candidates beyond output/per-section caps; 0 instruction-shaped sections excluded. This is not a complete policy audit. Verify full sections and exceptions.",
+2026-10-14T13:22:14.9283374Z       "status": "PASS"
+2026-10-14T13:22:14.9283742Z     },
+2026-10-14T13:22:14.9284051Z     {
+2026-10-14T13:22:14.9284366Z       "id": "columns",
+2026-10-14T13:22:14.9284803Z       "file": "two-columns.pdf",
+2026-10-14T13:22:14.9285694Z       "expected": "Layout caution and original-page preview; column meaning/order NOT reconstructed",
+2026-10-14T13:22:14.9286549Z       "alert": "1 file(s) added.",
+2026-10-14T13:22:14.9290304Z       "library": "PDF\ntwo-columns.pdf\n1 page · 51 characters · Your file\nReview layout\n\n1 of 1 PDF pages contain searchable text.\n\nPDF layout caution: pages 1 contain widely separated text rows. Column order or table associations may be ambiguous. Check the original; layout is not reconstructed.\n\nCheck the original PDF before relying on columns or table rows.\n\nView PDF\nReplace file\nRemove",
+2026-10-14T13:22:14.9293736Z       "layoutInterpretation": "Not supported; extraction follows content-stream order. Original PDF inspection is required.",
+2026-10-14T13:22:14.9294857Z       "status": "PASS"
+2026-10-14T13:22:14.9295218Z     },
+2026-10-14T13:22:14.9295518Z     {
+2026-10-14T13:22:14.9295819Z       "id": "table",
+2026-10-14T13:22:14.9296186Z       "file": "table.pdf",
+2026-10-14T13:22:14.9296828Z       "expected": "Layout caution; row/cell associations NOT guaranteed",
+2026-10-14T13:22:14.9297502Z       "alert": "1 file(s) added.",
+2026-10-14T13:22:14.9301381Z       "library": "PDF\ntable.pdf\n1 page · 49 characters · Your file\nReview layout\n\n1 of 1 PDF pages contain searchable text.\n\nPDF layout caution: pages 1 contain widely separated text rows. Column order or table associations may be ambiguous. Check the original; layout is not reconstructed.\n\nCheck the original PDF before relying on columns or table rows.\n\nView PDF\nReplace file\nRemove",
+2026-10-14T13:22:14.9304713Z       "layoutInterpretation": "Not supported; extraction follows content-stream order. Original PDF inspection is required.",
+2026-10-14T13:22:14.9305773Z       "status": "PASS"
+2026-10-14T13:22:14.9306209Z     },
+2026-10-14T13:22:14.9306558Z     {
+2026-10-14T13:22:14.9306938Z       "id": "image-only",
+2026-10-14T13:22:14.9307454Z       "file": "image-only.pdf",
+2026-10-14T13:22:14.9308219Z       "expected": "No document indexed; scanned/empty OCR guidance",
+2026-10-14T13:22:14.9310681Z       "alert": "0 file(s) added. Issues: image-only.pdf: No searchable text was found in this PDF. It may be scanned or empty. Use OCR on your device or upload a TXT/Markdown version. OCR is not included here.",
+2026-10-14T13:22:14.9312939Z       "library": "No documents loaded yet. Choose files or restore the sample documents by reloading.",
+2026-10-14T13:22:14.9313875Z       "status": "PASS"
+2026-10-14T13:22:14.9314336Z     },
+2026-10-14T13:22:14.9314684Z     {
+2026-10-14T13:22:14.9315052Z       "id": "damaged",
+2026-10-14T13:22:14.9315509Z       "file": "damaged.pdf",
+2026-10-14T13:22:14.9316473Z       "expected": "No document indexed; named-file damaged-PDF guidance",
+2026-10-14T13:22:14.9318024Z       "alert": "0 file(s) added. Issues: damaged.pdf: This PDF is damaged or is not a valid PDF. Export a fresh PDF or use a TXT/Markdown version.",
+2026-10-14T13:22:14.9319971Z       "library": "No documents loaded yet. Choose files or restore the sample documents by reloading.",
+2026-10-14T13:22:14.9321002Z       "status": "PASS"
+2026-10-14T13:22:14.9321488Z     },
+2026-10-14T13:22:14.9321841Z     {
+2026-10-14T13:22:14.9322205Z       "id": "locked",
+2026-10-14T13:22:14.9322716Z       "file": "locked-depot.pdf",
+2026-10-14T13:22:14.9323589Z       "expected": "No document indexed; unlock-copy guidance; no password entry",
+2026-10-14T13:22:14.9325614Z       "alert": "0 file(s) added. Issues: locked-depot.pdf: This PDF is password-protected. Unlock a copy on your device, then upload it. No password is requested or stored here.",
+2026-10-14T13:22:14.9327410Z       "library": "No documents loaded yet. Choose files or restore the sample documents by reloading.",
+2026-10-14T13:22:14.9328203Z       "status": "PASS"
+2026-10-14T13:22:14.9329096Z     }
+2026-10-14T13:22:14.9329561Z   ],
+2026-10-14T13:22:14.9329946Z   "browser": "141.0.7390.37",
+2026-10-14T13:22:14.9330509Z   "build": "Loaded retrieval build: 2026-10-13-r44",
+2026-10-14T13:22:14.9333572Z   "status": "PASS"
+2026-10-14T13:22:14.9334192Z }
+2026-10-14T13:22:15.3945468Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:15.4097500Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4125296Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4267284Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4280233Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4281750Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4395130Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4408309Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4411616Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4414550Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4415937Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4425069Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4499794Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4501541Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4509087Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4510437Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4525282Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4530614Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.4620386Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.5200304Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:15.5253125Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:15.5279755Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:15.5329809Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:15.5359959Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:15.5468072Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:15.5840304Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:15.6125466Z 127.0.0.1 - - [14/Oct/2026 13:22:15] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:18.2324147Z {
+2026-10-14T13:22:18.2324826Z   "kind": "synthetic PDF highlight feature regression; not independent accuracy",
+2026-10-14T13:22:18.2325315Z   "cases": [
+2026-10-14T13:22:18.2325518Z     {
+2026-10-14T13:22:18.2325711Z       "id": "unique",
+2026-10-14T13:22:18.2326042Z       "quote": "Depot drivers inspect seals every morning.",
+2026-10-14T13:22:18.2326391Z       "status": "matched",
+2026-10-14T13:22:18.2326625Z       "regions": 1,
+2026-10-14T13:22:18.2327196Z       "message": "Quotation matched on this page. Yellow regions mark approximate text-run bounds; verify the original text.",
+2026-10-14T13:22:18.2327739Z       "outcome": "PASS"
+2026-10-14T13:22:18.2327951Z     },
+2026-10-14T13:22:18.2328137Z     {
+2026-10-14T13:22:18.2328322Z       "id": "wrapped",
+2026-10-14T13:22:18.2328812Z       "quote": "Depot drivers inspect seals every morning.",
+2026-10-14T13:22:18.2329161Z       "status": "matched",
+2026-10-14T13:22:18.2329388Z       "regions": 2,
+2026-10-14T13:22:18.2329947Z       "message": "Quotation matched on this page. Yellow regions mark approximate text-run bounds; verify the original text.",
+2026-10-14T13:22:18.2330499Z       "outcome": "PASS"
+2026-10-14T13:22:18.2330712Z     },
+2026-10-14T13:22:18.2330888Z     {
+2026-10-14T13:22:18.2331078Z       "id": "repeated",
+2026-10-14T13:22:18.2331327Z       "quote": "Inspect seals.",
+2026-10-14T13:22:18.2331577Z       "status": "ambiguous",
+2026-10-14T13:22:18.2331812Z       "regions": 0,
+2026-10-14T13:22:18.2332605Z       "message": "Quotation appears more than once on this page. No highlight is shown; review the source quotation manually.",
+2026-10-14T13:22:18.2333330Z       "outcome": "PASS"
+2026-10-14T13:22:18.2333751Z     },
+2026-10-14T13:22:18.2334034Z     {
+2026-10-14T13:22:18.2334236Z       "id": "partial-run",
+2026-10-14T13:22:18.2334505Z       "quote": "Inspect seals.",
+2026-10-14T13:22:18.2334778Z       "status": "partial-run",
+2026-10-14T13:22:18.2335013Z       "regions": 0,
+2026-10-14T13:22:18.2336194Z       "message": "Quotation could not be highlighted reliably on this page. No highlight is shown; review the source quotation manually. It may span pages, occupy part of a text run or use an unsupported layout.",
+2026-10-14T13:22:18.2337538Z       "outcome": "PASS"
+2026-10-14T13:22:18.2337777Z     },
+2026-10-14T13:22:18.2338139Z     {
+2026-10-14T13:22:18.2338490Z       "id": "cross-page",
+2026-10-14T13:22:18.2339260Z       "quote": "Inspect seals. Record damage.",
+2026-10-14T13:22:18.2339873Z       "status": "not-found",
+2026-10-14T13:22:18.2340311Z       "regions": 0,
+2026-10-14T13:22:18.2341827Z       "message": "Quotation could not be highlighted reliably on this page. No highlight is shown; review the source quotation manually. It may span pages, occupy part of a text run or use an unsupported layout.",
+2026-10-14T13:22:18.2343261Z       "outcome": "PASS"
+2026-10-14T13:22:18.2343614Z     },
+2026-10-14T13:22:18.2343912Z     {
+2026-10-14T13:22:18.2344244Z       "id": "missing",
+2026-10-14T13:22:18.2344709Z       "quote": "No matching statement.",
+2026-10-14T13:22:18.2345216Z       "status": "not-found",
+2026-10-14T13:22:18.2345650Z       "regions": 0,
+2026-10-14T13:22:18.2347751Z       "message": "Quotation could not be highlighted reliably on this page. No highlight is shown; review the source quotation manually. It may span pages, occupy part of a text run or use an unsupported layout.",
+2026-10-14T13:22:18.2349989Z       "outcome": "PASS"
+2026-10-14T13:22:18.2350408Z     },
+2026-10-14T13:22:18.2350726Z     {
+2026-10-14T13:22:18.2351070Z       "id": "ordinary-view",
+2026-10-14T13:22:18.2351507Z       "quote": "",
+2026-10-14T13:22:18.2352145Z       "status": "none",
+2026-10-14T13:22:18.2352614Z       "regions": 0,
+2026-10-14T13:22:18.2353477Z       "message": "Original page view. Open a cited page from source evidence to locate its quotation.",
+2026-10-14T13:22:18.2354339Z       "outcome": "PASS"
+2026-10-14T13:22:18.2354736Z     }
+2026-10-14T13:22:18.2355048Z   ],
+2026-10-14T13:22:18.2355392Z   "browser": "141.0.7390.37",
+2026-10-14T13:22:18.2355969Z   "build": "Loaded retrieval build: 2026-10-13-r44",
+2026-10-14T13:22:18.2356550Z   "mobileUpload": {
+2026-10-14T13:22:18.2356954Z     "outcome": "PASS",
+2026-10-14T13:22:18.2357430Z     "filename": "mobile-depot.pdf",
+2026-10-14T13:22:18.2362759Z     "answer": "YOUR QUESTION\nWhen do Depot drivers inspect seals?\n\nSearched all files: mobile-depot.pdf\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Depot drivers inspect seals every morning.\n\nSOURCE EVIDENCE\n[1]\nmobile-depot.pdf\n\nPDF page 1 (physical page numbers)\n\nDepot drivers inspect seals every morning.\n\nOpen cited PDF page ↗Locate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:18.2366769Z     "scope": "upload, Keyword Q&A and cited highlight at 390x844 in desktop Chrome emulation"
+2026-10-14T13:22:18.2367497Z   },
+2026-10-14T13:22:18.2367779Z   "mobile": {
+2026-10-14T13:22:18.2369470Z     "viewport": "390x844",
+2026-10-14T13:22:18.2369842Z     "stage": {
+2026-10-14T13:22:18.2370166Z       "x": 32,
+2026-10-14T13:22:18.2370481Z       "y": 347.65625,
+2026-10-14T13:22:18.2370802Z       "width": 304,
+2026-10-14T13:22:18.2371117Z       "height": 393.40625
+2026-10-14T13:22:18.2371450Z     },
+2026-10-14T13:22:18.2371737Z     "overlay": {
+2026-10-14T13:22:18.2372049Z       "x": 32,
+2026-10-14T13:22:18.2372347Z       "y": 347.65625,
+2026-10-14T13:22:18.2372662Z       "width": 304,
+2026-10-14T13:22:18.2372981Z       "height": 393.40625
+2026-10-14T13:22:18.2373317Z     },
+2026-10-14T13:22:18.2373602Z     "outcome": "PASS",
+2026-10-14T13:22:18.2374434Z     "scope": "responsive original page and highlight alignment; desktop Chrome emulation, not a physical phone"
+2026-10-14T13:22:18.2375199Z   }
+2026-10-14T13:22:18.2375468Z }
+2026-10-14T13:22:18.6707868Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:18.6834698Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.6835901Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7390794Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7465986Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7501388Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7503024Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7504774Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7507617Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7510564Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7632670Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7670795Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7719490Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7738015Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7783743Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7793842Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7795436Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7796597Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7797707Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7799015Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7800104Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7801101Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7802104Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7803149Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:18.7921470Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:18.8131229Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:18.8378017Z 127.0.0.1 - - [14/Oct/2026 13:22:18] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:19.2429534Z 127.0.0.1 - - [14/Oct/2026 13:22:19] "GET / HTTP/1.1" 304 -
+2026-10-14T13:22:19.8816414Z 127.0.0.1 - - [14/Oct/2026 13:22:19] "GET /eval/queries.json HTTP/1.1" 200 -
+2026-10-14T13:22:24.5538903Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:24.5628903Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5654464Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5762671Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5777312Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5783843Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5787813Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5797635Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5798258Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5849280Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5859984Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5867228Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5876845Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5881504Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5887930Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5901649Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5921669Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5937266Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.5939658Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.6251818Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:24.6256411Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:24.6260840Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.6262370Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:24.6264533Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:24.6410872Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:24.6775191Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:24.6893092Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:24.8165922Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:24.8286344Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8298203Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8613760Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8615090Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8622913Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8624395Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8723721Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8746213Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8763284Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8764694Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8766024Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8767362Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8769090Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8779420Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8786285Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8807493Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8814233Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8852351Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8867423Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8869873Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8871196Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8881095Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8907482Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:24.8994292Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:24.9157467Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:24.9314653Z 127.0.0.1 - - [14/Oct/2026 13:22:24] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:25.1167563Z {
+2026-10-14T13:22:25.1168365Z   "kind": "workspace presentation/interaction regression; not accuracy benchmark",
+2026-10-14T13:22:25.1169092Z   "checks": [
+2026-10-14T13:22:25.1169525Z     "Question composer is fully visible without scrolling in a 1440x688 laptop viewport",
+2026-10-14T13:22:25.1170872Z     "Guide is opt-in; four-step navigation, keyboard containment, Escape/focus restoration, dismissed preference across reload, reopen, tool/settings actions and completion; no model automatically enabled",
+2026-10-14T13:22:25.1171955Z     "Default Ask view; settings collapsed; keyboard arrows/Home/End change focus and active panel",
+2026-10-14T13:22:25.1172660Z     "Bundled 28-case developer evaluation remains accessible; separate from model accuracy",
+2026-10-14T13:22:25.1173730Z     "Quoted answer heading, unchanged source excerpt, citation jump focuses its source card; hover transitions disabled under reduced-motion preference",
+2026-10-14T13:22:25.1175890Z     "Shortcut hint, slash from Compare/Research opens Ask and focuses composer; slash in text/filter and plain Enter type normally; modified slash and guide modal do not steal focus; Ctrl+Enter submits once; explicit composition/repeat events ignored",
+2026-10-14T13:22:25.1179066Z     "Refusal recovery preserves exact refusal/export, zero citations, draft, file selection, mode and history; empty composer restores original question; mobile Add a file reveals library; actions focus targets without querying",
+2026-10-14T13:22:25.1182490Z     "History question/filename search, trimmed case-insensitive matching, no-match guidance, unchanged total/history and clear-search focus; clipboard success and actual downloaded report equals clipboard content apart from Windows newline conversion",
+2026-10-14T13:22:25.1185497Z     "Full question/source/status history; keyboard reopen and answer focus; untouched draft; exact export preservation; zero-citation refusal; mobile wrapping; newest-first eight-entry limit",
+2026-10-14T13:22:25.1187680Z     "Upload, exact quoted answer, copy export, preserved Ask state, correct report panel, Compare/Research and policy tool disclosure",
+2026-10-14T13:22:25.1190365Z     "390px viewport without horizontal overflow; mobile files toggle and desktop restoration; unsupported PIN refusal; document filter/remove invalidates reports",
+2026-10-14T13:22:25.1191813Z     "Guide remains usable when browser storage access is blocked; only preference storage is simulated in this UI test",
+2026-10-14T13:22:25.1193542Z     "Explicit clipboard-denial simulation shows honest local error, retry remains enabled, Save report still downloads actual evidence, mobile feedback wraps"
+2026-10-14T13:22:25.1194727Z   ],
+2026-10-14T13:22:25.1195041Z   "browser": "141.0.7390.37",
+2026-10-14T13:22:25.1195543Z   "build": "Loaded retrieval build: 2026-10-13-r44",
+2026-10-14T13:22:25.1199622Z   "comparison": "Shared vocabulary: days, every, inspections, lighting, occur. Shared terms do not establish factual agreement.\n\n[1] dock-notes.txt\n\nDock lighting inspections occur every nine days.\n\nText line 1 (normalized extraction)\n\nLocate in library ↗\n[2] garden-notes.txt\n\nGarden lighting inspections occur every twelve days.\n\nText line 1 (normalized extraction)\n\nLocate in library ↗",
+2026-10-14T13:22:25.1202243Z   "status": "PASS"
+2026-10-14T13:22:25.1202590Z }
+2026-10-14T13:22:25.5716532Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:25.5837128Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.5844682Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.5997441Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6039961Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6046397Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6058409Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6085342Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6095666Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6119477Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6130166Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6149962Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6151326Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6152657Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6180789Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6185588Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6201041Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6210755Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6239465Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6737058Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6781785Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6783179Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6784436Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:25.6785612Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:25.7016368Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:25.7356526Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:25.7666224Z 127.0.0.1 - - [14/Oct/2026 13:22:25] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:27.2343144Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:27.2466499Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.2473242Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.2947154Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.2957506Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3048377Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3050353Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3052469Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3053913Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3055398Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3056832Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3096220Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3137865Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3162537Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3175928Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3177495Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3179323Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3180672Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3253382Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3262882Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3287668Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3323077Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3331103Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3348579Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:27.3472988Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:27.3651027Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:27.3791796Z 127.0.0.1 - - [14/Oct/2026 13:22:27] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:28.0007187Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:28.0112513Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0134335Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0533132Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0542248Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0545017Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0547761Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0550694Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0552137Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0629216Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0655003Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0656306Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0657526Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0659047Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0660170Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0786395Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0810582Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0820070Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0821618Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0844613Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0856691Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0859237Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0861072Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.0863008Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:28.2780204Z {
+2026-10-14T13:22:28.2781998Z   "kind": "document library feature regression; not accuracy benchmark",
+2026-10-14T13:22:28.2783636Z   "checks": [
+2026-10-14T13:22:28.2883131Z     "Mixed upload reports each success and damaged-file error independently; full long filename wraps and Markdown type is visible",
+2026-10-14T13:22:28.2884967Z     "Failed empty, damaged PDF, unsupported and oversized replacements retain the original document and exact displayed answer",
+2026-10-14T13:22:28.2886670Z     "Same-name replacement changes searchable content in place; document count stable, old answer/history cleared and same file can be picked again",
+2026-10-14T13:22:28.2888542Z     "Clearing during real asynchronous PDF loading prevents a late document from restoring the cleared library",
+2026-10-14T13:22:28.2890834Z     "Actual PDF page counts drive progress; page metadata and explicit preview/replace/remove actions render without mobile overflow",
+2026-10-14T13:22:28.2892068Z     "Replacement at the 15-document cap succeeds without adding a sixteenth file",
+2026-10-14T13:22:28.2895920Z     "Clearing/uploading during delayed startup prevents bundled examples from returning into a user-selected corpus"
+2026-10-14T13:22:28.2896815Z   ],
+2026-10-14T13:22:28.2897136Z   "browser": "141.0.7390.37",
+2026-10-14T13:22:28.2897646Z   "build": "Loaded retrieval build: 2026-10-13-r44",
+2026-10-14T13:22:28.2900589Z   "mixedUpload": "North-Harbor-Workshop-Operating-Notes-October-2026.md\nAdded — ready to search.\nunreadable.pdf\nThis PDF is damaged or is not a valid PDF. Export a fresh PDF or use a TXT/Markdown version.\nChoose another file\ngarden.txt\nAdded — ready to search.",
+2026-10-14T13:22:28.2902711Z   "progress": [
+2026-10-14T13:22:28.2903116Z     {
+2026-10-14T13:22:28.2903545Z       "value": 1,
+2026-10-14T13:22:28.2903902Z       "max": 2
+2026-10-14T13:22:28.2904587Z     },
+2026-10-14T13:22:28.2904992Z     {
+2026-10-14T13:22:28.2905438Z       "value": 2,
+2026-10-14T13:22:28.2905836Z       "max": 2
+2026-10-14T13:22:28.2906256Z     },
+2026-10-14T13:22:28.2906638Z     {
+2026-10-14T13:22:28.2907051Z       "value": 2,
+2026-10-14T13:22:28.2907620Z       "max": 2
+2026-10-14T13:22:28.2907966Z     }
+2026-10-14T13:22:28.2908318Z   ],
+2026-10-14T13:22:28.2915152Z   "status": "PASS"
+2026-10-14T13:22:28.2915644Z }
+2026-10-14T13:22:28.7307044Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:28.7391576Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7397738Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7519540Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7539795Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7541349Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7566328Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7580039Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7581341Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7603787Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7629960Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7638395Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7648139Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7655006Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7656341Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7657636Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7662353Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7710359Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.7732296Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.8224584Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:28.8260534Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:28.8263126Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:28.8265292Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:28.8267237Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:28.8426582Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:28.8927177Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:28.9026466Z 127.0.0.1 - - [14/Oct/2026 13:22:28] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:31.2639436Z {
+2026-10-14T13:22:31.2640237Z   "kind": "Ask file selection feature regression, not independent accuracy",
+2026-10-14T13:22:31.2640672Z   "cases": [
+2026-10-14T13:22:31.2640881Z     {
+2026-10-14T13:22:31.2641095Z       "id": "river-only",
+2026-10-14T13:22:31.2641376Z       "mode": "keyword",
+2026-10-14T13:22:31.2641768Z       "question": "How often must crane operators inspect lifting hooks?",
+2026-10-14T13:22:31.2645073Z       "displayed": "YOUR QUESTION\nHow often must crane operators inspect lifting hooks?\n\nSearched selected files: river.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] River crane operators must inspect lifting hooks every eleven shifts.\n\nSOURCE EVIDENCE\n[1]\nriver.txt\n\nText line 1 (normalized extraction)\n\nRiver crane operators must inspect lifting hooks every eleven shifts.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:31.2648148Z       "sources": [
+2026-10-14T13:22:31.2648382Z         "river.txt"
+2026-10-14T13:22:31.2648831Z       ],
+2026-10-14T13:22:31.2656149Z       "report": "# GroundedDesk — evidence report\n\n## Question\n\n> How often must crane operators inspect lifting hooks?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** river\\.txt\n\n## Answer\n\n\n> [1] River crane operators must inspect lifting hooks every eleven shifts.\n\n## Source evidence\n\n### [1] river\\.txt\n\n**File:** river\\.txt\n\n**Source location:** Text line 1 \\(normalized extraction\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.7261\n\n**Quoted sentence / passage:**\n\n> River crane operators must inspect lifting hooks every eleven shifts.\n\n**Retrieved excerpt:**\n\n> River crane operators must inspect lifting hooks every eleven shifts.\n\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n"
+2026-10-14T13:22:31.2669973Z     },
+2026-10-14T13:22:31.2670304Z     {
+2026-10-14T13:22:31.2670664Z       "id": "harbor-only",
+2026-10-14T13:22:31.2671100Z       "mode": "keyword",
+2026-10-14T13:22:31.2671628Z       "question": "How often must crane operators inspect lifting hooks?",
+2026-10-14T13:22:31.2675432Z       "displayed": "YOUR QUESTION\nHow often must crane operators inspect lifting hooks?\n\nSearched selected files: harbor.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\nSOURCE EVIDENCE\n[1]\nharbor.txt\n\nText line 1 (normalized extraction)\n\nHarbor crane operators must inspect lifting hooks every eight shifts.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:31.2679801Z       "sources": [
+2026-10-14T13:22:31.2680210Z         "harbor.txt"
+2026-10-14T13:22:31.2680682Z       ],
+2026-10-14T13:22:31.2690242Z       "report": "# GroundedDesk — evidence report\n\n## Question\n\n> How often must crane operators inspect lifting hooks?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** harbor\\.txt\n\n## Answer\n\n\n> [1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\n## Source evidence\n\n### [1] harbor\\.txt\n\n**File:** harbor\\.txt\n\n**Source location:** Text line 1 \\(normalized extraction\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.7261\n\n**Quoted sentence / passage:**\n\n> Harbor crane operators must inspect lifting hooks every eight shifts.\n\n**Retrieved excerpt:**\n\n> Harbor crane operators must inspect lifting hooks every eight shifts.\n\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n"
+2026-10-14T13:22:31.2705044Z     },
+2026-10-14T13:22:31.2705421Z     {
+2026-10-14T13:22:31.2705766Z       "id": "excluded-fact-refusal",
+2026-10-14T13:22:31.2706059Z       "mode": "keyword",
+2026-10-14T13:22:31.2706484Z       "question": "What is the exact PIN code for the fictional workshop door?",
+2026-10-14T13:22:31.2709303Z       "displayed": "YOUR QUESTION\nWhat is the exact PIN code for the fictional workshop door?\n\nSearched selected files: harbor.txt\n\nNo supporting answer\nNO SUPPORTING EVIDENCE\nCopy report\nSave report\nI can't find this in the provided documents.\n\nTry a different question or add a document containing relevant information. No answer was invented.\n\nFind a better starting point\n\nCheck the files being searched, make your question more specific, or add a file with the missing information.\n\nChoose files\nRephrase question\nAdd a file",
+2026-10-14T13:22:31.2713514Z       "sources": [],
+2026-10-14T13:22:31.2719448Z       "report": "# GroundedDesk — evidence report\n\n## Question\n\n> What is the exact PIN code for the fictional workshop door?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** harbor\\.txt\n\n## Answer\n\n> I can't find this in the provided documents.\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n"
+2026-10-14T13:22:31.2723547Z     },
+2026-10-14T13:22:31.2723893Z     {
+2026-10-14T13:22:31.2724288Z       "id": "included-fact",
+2026-10-14T13:22:31.2724801Z       "mode": "keyword",
+2026-10-14T13:22:31.2725876Z       "question": "What is the exact PIN code for the fictional workshop door?",
+2026-10-14T13:22:31.2731731Z       "displayed": "YOUR QUESTION\nWhat is the exact PIN code for the fictional workshop door?\n\nSearched selected files: fictional-pin.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop door PIN code is 0482.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:31.2734241Z       "sources": [
+2026-10-14T13:22:31.2734490Z         "fictional-pin.txt"
+2026-10-14T13:22:31.2734746Z       ],
+2026-10-14T13:22:31.2739796Z       "report": "# GroundedDesk — evidence report\n\n## Question\n\n> What is the exact PIN code for the fictional workshop door?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** fictional\\-pin\\.txt\n\n## Answer\n\n\n> [1] The fictional workshop door PIN code is 0482.\n\n## Source evidence\n\n### [1] fictional\\-pin\\.txt\n\n**File:** fictional\\-pin\\.txt\n\n**Source location:** Text line 1 \\(normalized extraction\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.4384\n\n**Quoted sentence / passage:**\n\n> The fictional workshop door PIN code is 0482.\n\n**Retrieved excerpt:**\n\n> The fictional workshop door PIN code is 0482.\n\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n"
+2026-10-14T13:22:31.2743511Z     },
+2026-10-14T13:22:31.2743703Z     {
+2026-10-14T13:22:31.2743916Z       "id": "two-selected",
+2026-10-14T13:22:31.2744165Z       "mode": "keyword",
+2026-10-14T13:22:31.2744546Z       "question": "How often must crane operators inspect lifting hooks?",
+2026-10-14T13:22:31.2748855Z       "displayed": "YOUR QUESTION\nHow often must crane operators inspect lifting hooks?\n\nSearched selected files: harbor.txt · river.txt\n\nQuoted answer\n2 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\n[2] River crane operators must inspect lifting hooks every eleven shifts.\n\nSOURCE EVIDENCE\n[1]\nharbor.txt\n\nText line 1 (normalized extraction)\n\nHarbor crane operators must inspect lifting hooks every eight shifts.\n\nLocate in library ↗\nSearch details\n[2]\nriver.txt\n\nText line 1 (normalized extraction)\n\nRiver crane operators must inspect lifting hooks every eleven shifts.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:31.2752083Z       "sources": [
+2026-10-14T13:22:31.2752307Z         "harbor.txt",
+2026-10-14T13:22:31.2752528Z         "river.txt"
+2026-10-14T13:22:31.2752739Z       ],
+2026-10-14T13:22:31.2761869Z       "report": "# GroundedDesk — evidence report\n\n## Question\n\n> How often must crane operators inspect lifting hooks?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** harbor\\.txt · river\\.txt\n\n## Answer\n\n\n> [1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\n> [2] River crane operators must inspect lifting hooks every eleven shifts.\n\n## Source evidence\n\n### [1] harbor\\.txt\n\n**File:** harbor\\.txt\n\n**Source location:** Text line 1 \\(normalized extraction\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.0939\n\n**Quoted sentence / passage:**\n\n> Harbor crane operators must inspect lifting hooks every eight shifts.\n\n**Retrieved excerpt:**\n\n> Harbor crane operators must inspect lifting hooks every eight shifts.\n\n### [2] river\\.txt\n\n**File:** river\\.txt\n\n**Source location:** Text line 1 \\(normalized extraction\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.0939\n\n**Quoted sentence / passage:**\n\n> River crane operators must inspect lifting hooks every eleven shifts.\n\n**Retrieved excerpt:**\n\n> River crane operators must inspect lifting hooks every eleven shifts.\n\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n"
+2026-10-14T13:22:31.2768269Z     },
+2026-10-14T13:22:31.2768569Z     {
+2026-10-14T13:22:31.2769401Z       "id": "all-files-restored",
+2026-10-14T13:22:31.2770005Z       "mode": "keyword",
+2026-10-14T13:22:31.2770567Z       "question": "What is the exact PIN code for the fictional workshop door?",
+2026-10-14T13:22:31.2776564Z       "displayed": "YOUR QUESTION\nWhat is the exact PIN code for the fictional workshop door?\n\nSearched all files: harbor.txt · river.txt · fictional-pin.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The fictional workshop door PIN code is 0482.\n\nSOURCE EVIDENCE\n[1]\nfictional-pin.txt\n\nText line 1 (normalized extraction)\n\nThe fictional workshop door PIN code is 0482.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+2026-10-14T13:22:31.2781204Z       "sources": [
+2026-10-14T13:22:31.2781616Z         "fictional-pin.txt"
+2026-10-14T13:22:31.2782057Z       ],
+2026-10-14T13:22:31.2791437Z       "report": "# GroundedDesk — evidence report\n\n## Question\n\n> What is the exact PIN code for the fictional workshop door?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** harbor\\.txt · river\\.txt · fictional\\-pin\\.txt\n\n## Answer\n\n\n> [1] The fictional workshop door PIN code is 0482.\n\n## Source evidence\n\n### [1] fictional\\-pin\\.txt\n\n**File:** fictional\\-pin\\.txt\n\n**Source location:** Text line 1 \\(normalized extraction\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 5.6103\n\n**Quoted sentence / passage:**\n\n> The fictional workshop door PIN code is 0482.\n\n**Retrieved excerpt:**\n\n> The fictional workshop door PIN code is 0482.\n\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n"
+2026-10-14T13:22:31.2798157Z     }
+2026-10-14T13:22:31.2798447Z   ],
+2026-10-14T13:22:31.2798965Z   "model": "not exercised",
+2026-10-14T13:22:31.2799385Z   "browser": "141.0.7390.37",
+2026-10-14T13:22:31.2799776Z   "status": "PASS"
+2026-10-14T13:22:31.2800533Z }
+2026-10-14T13:22:31.6957707Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:31.7082045Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7097720Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7232991Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7277030Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7283756Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7297126Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7309655Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7339588Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7360452Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7425870Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7440843Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7442173Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7443378Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7444561Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7445780Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7522174Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7532631Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.7534150Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.8159573Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:31.8210793Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:31.8248976Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:31.8263391Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:31.8265234Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:31.8402328Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:31.8686401Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:31.8903460Z 127.0.0.1 - - [14/Oct/2026 13:22:31] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:32.5621397Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:32.5725286Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5729153Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5820030Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5844096Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5845679Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5846824Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5848003Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5849357Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5907502Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5924895Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5934559Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5940895Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5958991Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5962533Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.5985421Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.6003897Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.6012074Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.6035711Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:32.6037326Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:32.6039029Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:32.6048072Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.6287558Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:32.6304003Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:32.6370918Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:32.6435856Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:32.6512197Z 127.0.0.1 - - [14/Oct/2026 13:22:32] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:33.6355842Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:33.6439313Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6440828Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6753314Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6782003Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6792110Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6799487Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6802453Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6821549Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6826513Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6851966Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6886248Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6894620Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6897205Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6906373Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6912435Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6918190Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6970313Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6980249Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6981507Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6982678Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6987865Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:33.6989769Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:33.7042419Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:33.7110044Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:33.7166447Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:33.7219142Z 127.0.0.1 - - [14/Oct/2026 13:22:33] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:34.5356359Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:34.5441356Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5445425Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5791448Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5792901Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5799264Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5800343Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5809382Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5814599Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5864508Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5881451Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5918532Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5921458Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5941240Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5949689Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5951579Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5956863Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5961493Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5963106Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.5964638Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:34.6014962Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:34.6016792Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:34.6022066Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:34.6050163Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.6157829Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:34.6216854Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:34.6249743Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:34.8089958Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:34.8169380Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8186528Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8268015Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8284628Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8292755Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8296305Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8302536Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8344012Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8362772Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8376118Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8385650Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8388071Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8389427Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8390297Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8441230Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8449019Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8450555Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8457038Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8743041Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8750043Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8753949Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8756558Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8772643Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:34.8873842Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:34.9084521Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:34.9233947Z 127.0.0.1 - - [14/Oct/2026 13:22:34] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:35.0910329Z {
+2026-10-14T13:22:35.0917347Z   "kind": "Local snapshot feature regression; fictional fixtures, not accuracy benchmark",
+2026-10-14T13:22:35.0918299Z   "checks": [
+2026-10-14T13:22:35.0920669Z     "Explicit snapshot only; exact original PDF bytes and Markdown/TXT text; saved filenames/selection visible; reload does not auto-restore; restored quotation and physical PDF page/preview valid; no conversation/draft/output/model activation restored",
+2026-10-14T13:22:35.0925737Z     "Malformed original PDF simulation is rejected during re-extraction; restore is atomic and current files/answer remain intact; explicit save can replace a damaged snapshot",
+2026-10-14T13:22:35.0927865Z     "Explicit abort simulation: failed real write transaction leaves prior saved snapshot and live files intact",
+2026-10-14T13:22:35.0930637Z     "Unsaved removal does not overwrite snapshot; explicit empty Ask selection survives save/restore without full-library fallback; clear removes saved record and preserves open files; 390px layout has no overflow",
+2026-10-14T13:22:35.0933517Z     "Explicit malformed-record and blocked-storage simulations: no partial restore, clear still available for malformed snapshot, session Q&A works without persistence"
+2026-10-14T13:22:35.0935418Z   ],
+2026-10-14T13:22:35.0936676Z   "model": "not exercised",
+2026-10-14T13:22:35.0937591Z   "browser": "141.0.7390.37",
+2026-10-14T13:22:35.0938608Z   "build": "Loaded retrieval build: 2026-10-13-r44",
+2026-10-14T13:22:35.0950430Z   "beforeReport": "# GroundedDesk — evidence report\n\n## Question\n\n> How often must Harbor crane operators inspect lifting hooks?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** harbor\\.pdf · notes\\.md\n\n## Answer\n\n\n> [1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\n## Source evidence\n\n### [1] harbor\\.pdf\n\n**File:** harbor\\.pdf\n\n**Source location:** PDF page 2 \\(physical page numbers\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 4.5312\n\n**Quoted sentence / passage:**\n\n> Harbor crane operators must inspect lifting hooks every eight shifts.\n\n**Retrieved excerpt:**\n\n> Harbor workshop visitor hours end at sunset.\n> \n> Harbor crane operators must inspect lifting hooks every eight shifts.\n\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n",
+2026-10-14T13:22:35.0968258Z   "afterReport": "# GroundedDesk — evidence report\n\n## Question\n\n> How often must Harbor crane operators inspect lifting hooks?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** harbor\\.pdf · notes\\.md\n\n## Answer\n\n\n> [1] Harbor crane operators must inspect lifting hooks every eight shifts.\n\n## Source evidence\n\n### [1] harbor\\.pdf\n\n**File:** harbor\\.pdf\n\n**Source location:** PDF page 2 \\(physical page numbers\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 4.5312\n\n**Quoted sentence / passage:**\n\n> Harbor crane operators must inspect lifting hooks every eight shifts.\n\n**Retrieved excerpt:**\n\n> Harbor workshop visitor hours end at sunset.\n> \n> Harbor crane operators must inspect lifting hooks every eight shifts.\n\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n",
+2026-10-14T13:22:35.0977361Z   "status": "PASS"
+2026-10-14T13:22:35.0978142Z }
+2026-10-14T13:22:35.5261925Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:35.5380552Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5382530Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5513731Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5532881Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5547678Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5565979Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5635426Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5637118Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5648542Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5662774Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5671603Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5719666Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5752462Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5760489Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5762147Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5787016Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5802763Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.5804875Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.6327655Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:35.6329462Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:35.6356815Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:35.6394651Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:35.6402339Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:35.6583094Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:35.7041844Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:35.7166648Z 127.0.0.1 - - [14/Oct/2026 13:22:35] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:37.0818517Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:37.1369352Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1384041Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1675492Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1695223Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1775574Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1794131Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1796202Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1800063Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1811651Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1819197Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1839654Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1859731Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1862118Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1863459Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1927965Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1939152Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1940639Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1942286Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1943929Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1945866Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:37.1981654Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:37.2005588Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:37.2006842Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:37.2069521Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:37.2159313Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:37.2210420Z 127.0.0.1 - - [14/Oct/2026 13:22:37] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:38.4707149Z {
+2026-10-14T13:22:38.4708322Z   "kind": "Document-readiness feature regression; no mock vectors or accuracy claim",
+2026-10-14T13:22:38.4709990Z   "checks": [
+2026-10-14T13:22:38.4711692Z     "Real PDF.js: TXT/MD usable text, full/partial page counts, layout caution, image-only/damaged/encrypted errors and recovery controls; no fabricated scanned-page diagnosis or password entry",
+2026-10-14T13:22:38.4713111Z     "Snapshot restore re-extracts PDFs and reproduces readiness; partial-PDF answer keeps physical page 3 and original coverage warning in evidence export",
+2026-10-14T13:22:38.4714979Z     "Failed replacement preserves old readiness/answer; actual picker retry replaces only the intended file and clears stale results; empty-text retry adds chosen readable TXT",
+2026-10-14T13:22:38.4716226Z     "Readiness, cautions and file actions wrap at 390px without horizontal overflow"
+2026-10-14T13:22:38.4717814Z   ],
+2026-10-14T13:22:38.4719931Z   "hashes": {
+2026-10-14T13:22:38.4721128Z     "notes.txt": "88e503245649e247fb645e7d3668adf966408dad7cfec52e82fe39251d37a60a",
+2026-10-14T13:22:38.4722341Z     "instructions.md": "fe44bc0c2fe25da6eb3adbede540b7d318fe47922a6fdc89642cc653886f3df9",
+2026-10-14T13:22:38.4723605Z     "full.pdf": "a568785c291ebcf7208697498fe530e32f65615039f0bdd824ede43f193f15fc",
+2026-10-14T13:22:38.4724859Z     "partial.pdf": "2d8d7b479ffde87a20256b5132c4210654503b5d07ca6ed6514c806d1a05d00c",
+2026-10-14T13:22:38.4726115Z     "layout.pdf": "c26ee0a905acd34f82002e54e440c46ba4925fb2e6948d67e5f5d838d6599707",
+2026-10-14T13:22:38.4727439Z     "image-only.pdf": "d3c0ada3de7ef7b0ec6c9358418f05a1f68fb44384cef3a2c282d10d7856fee0",
+2026-10-14T13:22:38.4729037Z     "damaged.pdf": "4a9030686f137268daf58dad0830570aaf358a87fe5ad047b789b51730d2fd61",
+2026-10-14T13:22:38.4730455Z     "locked-depot.pdf": "1c46ad61fb0c463e69195efbdbb9e4317fe48b7ec8e68465bb753b7519c16ce4"
+2026-10-14T13:22:38.4732490Z   },
+2026-10-14T13:22:38.4733043Z   "browser": "141.0.7390.37",
+2026-10-14T13:22:38.4735601Z   "build": "Loaded retrieval build: 2026-10-13-r44",
+2026-10-14T13:22:38.4745629Z   "library": "TXT\nnotes.txt\n38 characters · Your file\nText available\n\nLoaded text is ready to search.\n\nReplace file\nRemove\nMD\ninstructions.md\n41 characters · Your file\nText available\n\nLoaded text is ready to search.\n\nReplace file\nRemove\nPDF\nfull.pdf\n2 pages · 73 characters · Your file\nText available\n\n2 of 2 PDF pages contain searchable text.\n\nText extraction does not verify reading order or factual accuracy.\n\nView PDF\nReplace file\nRemove\nPDF\npartial.pdf\n3 pages · 75 characters · Your file\nPartial text coverage\n\n2 of 3 PDF pages contain searchable text.\n\nPDF coverage: pages 2 have no searchable text. They may be blank or scanned; review the original. OCR is not included.\n\nReview the original PDF. If text is missing, use OCR on your device or replace it with a searchable PDF or text version.\n\nView PDF\nReplace file\nRemove\nPDF\nlayout.pdf\n1 page · 51 characters · Your file\nReview layout\n\n1 of 1 PDF pages contain searchable text.\n\nPDF layout caution: pages 1 contain widely separated text rows. Column order or table associations may be ambiguous. Check the original; layout is not reconstructed.\n\nCheck the original PDF before relying on columns or table rows.\n\nView PDF\nReplace file\nRemove",
+2026-10-14T13:22:38.4764588Z   "uploads": "notes.txt\nAdded — ready to search.\ninstructions.md\nAdded — ready to search.\nfull.pdf\nAdded — ready to search.\npartial.pdf\nAdded — ready to search.\nlayout.pdf\nAdded — ready to search.\nimage-only.pdf\nNo searchable text was found in this PDF. It may be scanned or empty. Use OCR on your device or upload a TXT/Markdown version. OCR is not included here.\nChoose another file\ndamaged.pdf\nThis PDF is damaged or is not a valid PDF. Export a fresh PDF or use a TXT/Markdown version.\nChoose another file\nlocked-depot.pdf\nThis PDF is password-protected. Unlock a copy on your device, then upload it. No password is requested or stored here.\nChoose another file",
+2026-10-14T13:22:38.4779839Z   "report": "# GroundedDesk — evidence report\n\n## Question\n\n> When do depot lights shut down?\n\n**Retrieval mode:** Deterministic extractive retrieval \\(BM25\\-style, no LLM\\)\n\n**Retrieval build:** `2026-10-13-r44`\n\n**Searched files:** partial\\.pdf\n\n## Answer\n\n\n> [1] Depot lights shut down at sunset.\n\n## Source evidence\n\n### [1] partial\\.pdf\n\n**File:** partial\\.pdf\n\n**Source location:** PDF page 3 \\(physical page numbers\\)\n\n**Retrieval rank score (BM25-style for keyword, RRF for hybrid):** 1.2586\n\n**Quoted sentence / passage:**\n\n> Depot lights shut down at sunset.\n\n**Retrieved excerpt:**\n\n> Depot hooks require inspection weekly.\n> \n> \n> \n> Depot lights shut down at sunset.\n\n**PDF extraction notice:** PDF coverage: pages 2 have no searchable text\\. They may be blank or scanned; review the original\\. OCR is not included\\.\n\n---\n\n*Locally generated browser report: source passages are verbatim extracts. When an optional Qwen-generated draft appears, only citation ID syntax is verified; factual support is NOT guaranteed. Review all claims against excerpts. Ranking scores are uncalibrated. Do not distribute confidential uploaded documents.*\n",
+2026-10-14T13:22:38.4787602Z   "status": "PASS"
+2026-10-14T13:22:38.4787967Z }
+2026-10-14T13:22:38.9083898Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET / HTTP/1.1" 200 -
+2026-10-14T13:22:38.9179846Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /styles.css?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9181962Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /app.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9780222Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /retrieval.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9830967Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /hybrid.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9835124Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /research.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9839429Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /report.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9860620Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /policy-synthesis.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9863152Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /generation.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9877467Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /semantic.mjs?v=20261010-r13 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9970343Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /quality.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9972205Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /pdf-preview.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9973599Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /benchmark.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9974841Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /provenance.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:38.9998061Z 127.0.0.1 - - [14/Oct/2026 13:22:38] "GET /pdf-ingest.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:39.0018516Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /workspace-ui.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:39.0051119Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /search-scope.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:39.0082530Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /retrieval.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:39.0130522Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /document-readiness.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:39.0149939Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /workspace-store.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:39.0151827Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /provenance.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:39.0153250Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /research.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:39.0154830Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /pdf-highlight.mjs?v=20261013-r44 HTTP/1.1" 200 -
+2026-10-14T13:22:39.0156331Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /pdf-ingest.mjs?v=20261012-r32 HTTP/1.1" 200 -
+2026-10-14T13:22:39.0293190Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /samples/ai-governance.txt HTTP/1.1" 200 -
+2026-10-14T13:22:39.0540386Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /samples/cloud-architecture.txt HTTP/1.1" 200 -
+2026-10-14T13:22:39.0766827Z 127.0.0.1 - - [14/Oct/2026 13:22:39] "GET /samples/sustainability.txt HTTP/1.1" 200 -
+2026-10-14T13:22:39.4157678Z Error: Browser input differs beyond textarea newline normalization
+2026-10-14T13:22:39.4159651Z     at prepareQuestion (file:///home/runner/work/GroundedDesk-AI/GroundedDesk-AI/tests/fixtures/runner-evidence.mjs:26:58)
+2026-10-14T13:22:39.4161637Z     at async file:///home/runner/work/GroundedDesk-AI/GroundedDesk-AI/tests/browser-runner-evidence.mjs:29:52
+2026-10-14T13:22:39.4615012Z ##[error]Process completed with exit code 1.
+2026-10-14T13:22:39.4700844Z ##[group]Run actions/upload-artifact@v4
+2026-10-14T13:22:39.4701145Z with:
+2026-10-14T13:22:39.4701354Z   name: runner-evidence-recovery
+2026-10-14T13:22:39.4701629Z   path: ../../outputs/runner-evidence-ci
+2026-10-14T13:22:39.4701900Z   retention-days: 14
+2026-10-14T13:22:39.4702129Z   if-no-files-found: warn
+2026-10-14T13:22:39.4702358Z   compression-level: 6
+2026-10-14T13:22:39.4702584Z   overwrite: false
+2026-10-14T13:22:39.4702801Z   include-hidden-files: false
+2026-10-14T13:22:39.4703039Z ##[endgroup]
+2026-10-14T13:22:39.6453408Z (node:4629) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-14T13:22:39.6454575Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-14T13:22:39.6472062Z ##[error]Invalid pattern '../../outputs/runner-evidence-ci'. Relative pathing '.' and '..' is not allowed.
+2026-10-14T13:22:39.6743813Z Post job cleanup.
+2026-10-14T13:22:39.7633113Z [command]/usr/bin/git version
+2026-10-14T13:22:39.7679016Z git version 2.55.0
+2026-10-14T13:22:39.7722325Z Temporarily overriding HOME='/home/runner/work/_temp/02b7b0ce-6a91-4a43-81cf-45fb0713edb6' before making global git config changes
+2026-10-14T13:22:39.7723805Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-14T13:22:39.7727822Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/GroundedDesk-AI/GroundedDesk-AI
+2026-10-14T13:22:39.7768957Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-14T13:22:39.7805096Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-14T13:22:39.8060746Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-14T13:22:39.8102393Z http.https://github.com/.extraheader
+2026-10-14T13:22:39.8115091Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-14T13:22:39.8151819Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-14T13:22:39.8419325Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-14T13:22:39.8457662Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-14T13:22:39.8857470Z Cleaning up orphan processes
+2026-10-14T13:22:39.9229337Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+
