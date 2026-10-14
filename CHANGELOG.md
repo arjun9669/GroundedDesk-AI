@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-14 — Constrained actor v12 experiment (no runtime release)
+
+- Froze and captured 267 unchanged exposed cases in real Chrome with actual local MiniLM. All 345 unit tests pass.
+- Fixed F16/F20/C04 are repaired; V9Exposed32 reaches 32/0/0 in both variants. Original 119/RQ28 remain all PASS, with zero-citation unsupported refusals preserved.
+- Frozen gate FAIL: an older fixed compound C02 adds a wrong-paragraph quotation and regresses to PARTIAL. Historical scores and this failure remain unchanged; no new unseen sample or runtime adoption. Production stays r44.
+
 ## 2026-10-14 — Body evidence v11 experiment (no runtime release)
 
 - Froze and captured 267 unchanged exposed cases in Chrome with actual local MiniLM, including labelled candidate screenshots. All 342 unit tests pass.
