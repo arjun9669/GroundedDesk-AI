@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {gradeCase,normalize} from '../retrieval-quality/grade.mjs';
-const base=path.resolve('../../outputs'),root=path.join(base,'coverage-v8-validation-first-run');
+const base=path.resolve('../../outputs'),root=path.join(base,'coverage-v8-validation-second-run');
 const config=JSON.parse(await fs.readFile(path.join(base,'coverage-v8-inputs/run-config.json')));
 assert.equal(JSON.parse(await fs.readFile(path.join(root,'run-status.json'))).status,'COMPLETE');
 const reviewed=JSON.parse(await fs.readFile(path.join(base,'coverage-v8-inputs/manual-adjudication.json')));

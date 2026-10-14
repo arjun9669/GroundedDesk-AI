@@ -7,7 +7,7 @@ const literal=r=>JSON.stringify(r.sources.map(s=>({filename:s.filename,quote:nor
 const rows=[];
 for(const pack of config.packs.slice(0,5)){
   const prior=JSON.parse(await fs.readFile(path.join(base,'coverage-v7-final',pack.name+'-scorecard.json')));
-  const capture=JSON.parse(await fs.readFile(path.join(base,'coverage-v8-validation-first-run',pack.name,'capture.json')));
+  const capture=JSON.parse(await fs.readFile(path.join(base,'coverage-v8-validation-second-run',pack.name,'capture.json')));
   for(const [i,row] of capture.cases.entries())for(const variant of ['baseline','fixed','section']){
     const old=prior[variant][i];
     if(literal(row[variant])===literal(old))continue;

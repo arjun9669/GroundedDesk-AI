@@ -52,8 +52,8 @@ try{
       const semantic=await import('/semantic.mjs?v=20261010-r13');
       const {hybridRank,cosineSimilarity}=await import('/hybrid.mjs');
       const {buildSectionIndex}=await import('/eval/retrieval-quality/section-index.mjs');
-      const {answerWithCoverage}=await import('/eval/answer-completeness-v7/coverage.mjs');
-      const {answerWithCoverage:previousCoverage}=await import('/eval/answer-completeness-v6/coverage.mjs');
+      const {answerWithCoverage,literalSentences}=await import('/eval/answer-completeness-v8/coverage.mjs');
+      const {answerWithCoverage:previousCoverage}=await import('/eval/answer-completeness-v7/coverage.mjs');
       const {compareDocuments}=await import('/research.mjs');
       const extractor=await semantic.loadBrowserEmbedder(),fixed=retrieval.buildIndex(docs);
       const fixedVectors=await semantic.embedChunks(extractor,fixed.chunks);
