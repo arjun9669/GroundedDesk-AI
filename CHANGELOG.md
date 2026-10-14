@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-14 — Relationship eligibility v9 experiment (no runtime release)
+
+- Froze generic actor/list/between/description eligibility, captured235 unchanged Chrome/MiniLM regressions; development gate PASS, no prior PASS lost.
+- Exposed v7 public32 reaches30/0/2; then froze/captured a new prospective public32:24/1/6 plus1 ungraded, gate BLOCKED: F06 first-attempt output unavailable.
+- Preserved literal outputs, vectors, precision limitations, F09/F10 failures and all prior first scores. Production remains r44.
+
 ## 2026-10-14 — Semantic sentence v8 experiment (no runtime release)
 
 - Froze actual MiniLM sentence/facet ranking with generic slot heuristics before235 unchanged exposed regressions.

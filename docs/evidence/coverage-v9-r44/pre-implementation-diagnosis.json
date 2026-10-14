@@ -1,0 +1,271 @@
+[
+  {
+    "id": "F04",
+    "question": "What two Doctors does the War Doctor exist between?",
+    "outcome": "FAIL",
+    "quote": "[1] Notably, in 2013, John Hurt guest-starred as a hitherto unknown incarnation of the Doctor known as the War Doctor in the run-up to the show's 50th anniversary special \"The Day of the Doctor\".",
+    "required_groups": [
+      [
+        "McGann and Eccleston's Doctors",
+        "McGann and Eccleston",
+        "McGann and Eccleston's"
+      ]
+    ],
+    "matched_groups": [
+      false
+    ],
+    "prior_diagnostics": [
+      {
+        "document": "01_Doctor_Who.md",
+        "quote": "Notably, in 2013, John Hurt guest-starred as a hitherto unknown incarnation of the Doctor known as the War Doctor in the run-up to the show's 50th anniversary special \"The Day of the Doctor\".",
+        "slots": {
+          "kind": "between",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1001,
+          "cosine": 0.4631311708712865,
+          "slot_supported": true,
+          "lexical_matches": 2
+        }
+      }
+    ],
+    "retrieved_gold_groups": [
+      true
+    ]
+  },
+  {
+    "id": "F07",
+    "question": "How did Luther express the destruction?",
+    "outcome": "FAIL",
+    "quote": "[1] Luther sympathised with some of the peasants' grievances, as he showed in his response to the Twelve Articles in May 1525, but he reminded the aggrieved to obey the temporal authorities.",
+    "required_groups": [
+      [
+        "the devil's work",
+        "devil's work",
+        "devil's work,"
+      ]
+    ],
+    "matched_groups": [
+      false
+    ],
+    "prior_diagnostics": [
+      {
+        "document": "02_Martin_Luther.md",
+        "quote": "Luther sympathised with some of the peasants' grievances, as he showed in his response to the Twelve Articles in May 1525, but he reminded the aggrieved to obey the temporal authorities.",
+        "slots": {
+          "kind": "description",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 30,
+          "cosine": 0.5709350223129039,
+          "slot_supported": true,
+          "lexical_matches": 1
+        }
+      }
+    ],
+    "retrieved_gold_groups": [
+      true
+    ]
+  },
+  {
+    "id": "F09",
+    "question": "Who did Luther call on to stop the revolt?",
+    "outcome": "FAIL",
+    "quote": "[1] Citing Deuteronomy 13, wherein Moses commands the killing of idolaters and the burning of their cities and property as an offering to God, Luther called for a \"scharfe Barmherzigkeit\" (\"sharp mercy\") against the Jews \"to see whether we might save at least a few from the glowing flames.\"",
+    "required_groups": [
+      [
+        "the nobles",
+        "nobles",
+        "nobles"
+      ]
+    ],
+    "matched_groups": [
+      false
+    ],
+    "prior_diagnostics": [
+      {
+        "document": "02_Martin_Luther.md",
+        "quote": "Citing Deuteronomy 13, wherein Moses commands the killing of idolaters and the burning of their cities and property as an offering to God, Luther called for a \"scharfe Barmherzigkeit\" (\"sharp mercy\") against the Jews \"to see whether we might save at least a few from the glowing flames.\"",
+        "slots": {
+          "kind": "actor",
+          "predicate": "call",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1040,
+          "cosine": 0.5214995374861439,
+          "slot_supported": true,
+          "lexical_matches": 2
+        }
+      }
+    ],
+    "retrieved_gold_groups": [
+      true
+    ]
+  },
+  {
+    "id": "F10",
+    "question": "When was the large work published?",
+    "outcome": "FAIL",
+    "quote": "I can't find this in the provided documents.",
+    "required_groups": [
+      [
+        "1543",
+        "1543",
+        "1543"
+      ]
+    ],
+    "matched_groups": [
+      false
+    ],
+    "prior_diagnostics": {
+      "refusal_preserved": true
+    },
+    "retrieved_gold_groups": [
+      false
+    ]
+  },
+  {
+    "id": "F17",
+    "question": "What are two basic primary resources used to guage complexity?",
+    "outcome": "FAIL",
+    "quote": "[1] Other complexity measures are also used, such as the amount of communication (used in communication complexity), the number of gates in a circuit (used in circuit complexity) and the number of processors (used in parallel computing).",
+    "required_groups": [
+      [
+        "time and storage",
+        "time and storage",
+        "time and storage"
+      ]
+    ],
+    "matched_groups": [
+      false
+    ],
+    "prior_diagnostics": [
+      {
+        "document": "03_Computational_complexity_theory.md",
+        "quote": "Other complexity measures are also used, such as the amount of communication (used in communication complexity), the number of gates in a circuit (used in circuit complexity) and the number of processors (used in parallel computing).",
+        "slots": {
+          "kind": "list",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Bounded actual MiniLM sentence/slot gain",
+        "selected": {
+          "start": 924,
+          "cosine": 0.5330431398335399,
+          "slot_supported": true,
+          "lexical_matches": 2
+        }
+      }
+    ],
+    "retrieved_gold_groups": [
+      true
+    ]
+  },
+  {
+    "id": "F19",
+    "question": "Who assisted Wesley with ordaining Whatcoat and Vasey as presbyters?",
+    "outcome": "FAIL",
+    "quote": "[1] As a result of the American Revolution, John Wesley was compelled in 1784 to break with standard practice and ordain two of his lay preachers as presbyters, Thomas Vasey and Richard Whatcoat.",
+    "required_groups": [
+      [
+        "Dr. Thomas Coke",
+        "Dr. Thomas Coke",
+        "Dr. Thomas Coke"
+      ]
+    ],
+    "matched_groups": [
+      false
+    ],
+    "prior_diagnostics": [
+      {
+        "document": "04_United_Methodist_Church.md",
+        "quote": "As a result of the American Revolution, John Wesley was compelled in 1784 to break with standard practice and ordain two of his lay preachers as presbyters, Thomas Vasey and Richard Whatcoat.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "assist",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 165,
+          "cosine": 0.7436429418312118,
+          "slot_supported": false,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "retrieved_gold_groups": [
+      true
+    ]
+  },
+  {
+    "id": "C02",
+    "question": "How did Luther express the destruction? Also, Who did Luther remind the peasants to obey?",
+    "outcome": "PARTIAL",
+    "quote": "[1] Luther sympathised with some of the peasants' grievances, as he showed in his response to the Twelve Articles in May 1525, but he reminded the aggrieved to obey the temporal authorities.",
+    "required_groups": [
+      [
+        "the devil's work",
+        "devil's work",
+        "devil's work,"
+      ],
+      [
+        "temporal authorities",
+        "temporal authorities",
+        "temporal authorities"
+      ]
+    ],
+    "matched_groups": [
+      false,
+      true
+    ],
+    "prior_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Martin_Luther.md",
+        "quote": "Luther sympathised with some of the peasants' grievances, as he showed in his response to the Twelve Articles in May 1525, but he reminded the aggrieved to obey the temporal authorities.",
+        "slots": {
+          "kind": "description",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 30,
+          "cosine": 0.5709350223129039,
+          "slot_supported": true,
+          "lexical_matches": 1
+        }
+      },
+      {
+        "part": 1,
+        "document": "02_Martin_Luther.md",
+        "quote": "Luther sympathised with some of the peasants' grievances, as he showed in his response to the Twelve Articles in May 1525, but he reminded the aggrieved to obey the temporal authorities.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "remind",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 30,
+          "cosine": 0.7518125329374957,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "retrieved_gold_groups": [
+      true,
+      true
+    ]
+  }
+]

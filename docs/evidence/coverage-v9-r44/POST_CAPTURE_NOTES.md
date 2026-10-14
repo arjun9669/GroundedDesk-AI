@@ -1,0 +1,11 @@
+# Post-capture precision and infrastructure notes
+
+The first fresh attempt captured F01–F05, then attempted F06 once. Its unchanged original question ends with a space; the app trims the question, while the runner waited for exact raw equality. The browser closed after timeout without preserving F06's answer. F06 is BLOCKED/ungraded, not a factual FAIL, false refusal or invented answer. The continuation corrected only readiness matching and ran F07–F24/C01–C04/U01–U04 once. No first-attempt question was replayed. All first artifacts and the error remain intact.
+
+Fresh scores describe 31 captured cases: 24 PASS / 1 PARTIAL / 6 FAIL, plus one ungraded. Section has 18 supported passes among 23 captured supported questions; even a PASS for missing F06 could yield only 19/24, below the frozen 21/24 requirement. Compounds score 2 PASS / 1 PARTIAL / 1 FAIL. Four unsupported cases refuse uncited. No release adoption is justified; the full confirmation is incomplete.
+
+New prospective F18 is a different case from the historical exposed Steam-engine F18. New F18's production UI quotes Jonathan Stewart correctly (PASS); both paired v8 and v9 section candidates instead quote an unrelated historical fumble statistic (FAIL). The scorecard's `fresh_paired_pass_regressions` field compares production **or** paired candidate passes, so its F18 entry is a production-to-candidate loss, not an incremental v8-to-v9 loss. V8 and v9 aggregate fresh scores are identical. Preserve this failure and every original quotation.
+
+Known exposed repairs are measured in-sample. F07 retains a subject/context citation without the directly requested descriptive span. F17 retains an unrequested adjacent complexity-measures list. C01 retains an unrequested actor-award detail. The unchanged public rubric permits original-paragraph quotations containing all required spans to PASS; these explicit quotation-precision limitations remain separately recorded. Paragraph containment must not be presented as semantic relevance or entailment.
+
+Candidate code, source documents, original question strings, answer keys and grading thresholds remain unchanged after capture. The infrastructure-only partial scorer adds an ungraded state; it does not change PASS/PARTIAL/FAIL rules for observed cases. Final release/status evidence is separate from the immutable full archive.

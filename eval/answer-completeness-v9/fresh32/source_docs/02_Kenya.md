@@ -1,0 +1,7 @@
+# Kenya
+
+## Context 1
+The largest share of Kenya's electricity supply comes from hydroelectric stations at dams along the upper Tana River, as well as the Turkwel Gorge Dam in the west. A petroleum-fired plant on the coast, geothermal facilities at Olkaria (near Nairobi), and electricity imported from Uganda make up the rest of the supply. Kenya's installed capacity stood at 1,142 megawatts between 2001 and 2003. The state-owned Kenya Electricity Generating Company (KenGen), established in 1997 under the name of Kenya Power Company, handles the generation of electricity, while Kenya Power handles the electricity transmission and distribution system in the country. Shortfalls of electricity occur periodically, when drought reduces water flow. To become energy sufficient, Kenya aims to build a nuclear power plant by 2017.
+
+## Context 2
+The current 8–4–4 system was launched in January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.
