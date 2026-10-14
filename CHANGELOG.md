@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-14 — Question-form v6 experiment (no runtime release)
+
+- Froze generic actor-predicate/duration signals; captured203 known cases in Chrome155 with actual MiniLM and paired v5 on identical vectors.
+- Restored F10; all original119, development28 and compound4 passes preserved.
+- F12 remains FAIL because a closing-quotation/modal sentence is filtered before duration scoring; failed staged gate preserved without tuning.
+- No fresh sample consumed; production stays r44. Saved exact outputs, diagnosis and private/local versus licensed/public evidence separately.
+
+
 ## 2026-10-14 — Selective-anchor v5 experiment (no runtime release)
 
 - Froze selective source-literal replacement before 203 actual Chrome/MiniLM in-sample regression captures.

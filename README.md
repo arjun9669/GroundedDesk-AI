@@ -24,6 +24,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Selective-anchor experiment:** v5 keeps original119, development28 and all four exposed compound controls passing, and restores two public cases. F12 still fails and F10 loses its prior pass, so the staged gate fails; no fresh sample is consumed and production stays r44. [Exact results and explicit prior narrative correction](./docs/COVERAGE_V5_R44_VALIDATION.md).
 
+**Question-form experiment:** v6 restores F10 in a controlled same-Chrome/same-vector v5 comparison and preserves original119, development28 and compound4 passes. F12 remains blocked by sentence eligibility, so the staged gate fails; no fresh sample is consumed and production stays r44. [Paired evidence and exact diagnosis](./docs/COVERAGE_V6_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |
