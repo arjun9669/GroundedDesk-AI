@@ -22,6 +22,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Anchor-preservation experiment:** v4 repairs all five original v3 regressions, reaches 119/119 original controls and 28/28 development passes, and completes all four exposed compound controls. Three public cases lose prior passes, so the staged development gate fails; no fresh sample is consumed and production stays r44. [Exact regression results and qualifications](./docs/COVERAGE_V4_R44_VALIDATION.md).
 
+**Selective-anchor experiment:** v5 keeps original119, development28 and all four exposed compound controls passing, and restores two public cases. F12 still fails and F10 loses its prior pass, so the staged gate fails; no fresh sample is consumed and production stays r44. [Exact results and explicit prior narrative correction](./docs/COVERAGE_V5_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |

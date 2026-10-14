@@ -72,3 +72,8 @@ Byte-preservation qualification: the first candidate commit normalized its Git b
 The unit suite and an additional frozen-byte/isolation check pass; CI also checks syntax and browser feature smokes. These are separate from actual-MiniLM accuracy evidence. No paid service, backend or runtime release was added.
 
 The next separately frozen attempt should distinguish recovery of a truncated correct anchor from preservation of an already complete but irrelevant sentence. Keep the verified conditional/compound repairs while permitting evidence-backed replacement of wrong anchors. This is a recommendation, not a post-capture modification.
+
+
+## Narrative correction — 14 October 2026
+
+The earlier prose claiming that fixed F18 passes is incorrect. The immutable original per-case scorecards show **F18 FAIL in both fixed and section variants**. V3’s fixed/section difference is F08; v4’s difference is F04. Original aggregate scores, source documents, keys, raw captures and evidence ZIPs remain unchanged. [Verified per-case correction](evidence/coverage-v5-r44/F18-narrative-correction.json).

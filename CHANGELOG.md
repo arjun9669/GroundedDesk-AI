@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-14 — Selective-anchor v5 experiment (no runtime release)
+
+- Froze selective source-literal replacement before 203 actual Chrome/MiniLM in-sample regression captures.
+- Preserved original119, RQ28 and compound4 passes; restored E02 and section F04, but preserved F12 failure and new F10 regression.
+- Failed the staged gate; no additional fresh sample consumed, production stays r44.
+- Added explicit v3/v4 F18 narrative corrections; original scorecards, aggregate scores and captures remain unchanged.
+
+
 ## 2026-10-13 — Anchor-preservation v4 experiment (no runtime release)
 
 - Froze generic conditional-anchor protection, abbreviation-safe literal spans and scoped compound-facet citations before real Chrome/MiniLM testing.
