@@ -79,3 +79,8 @@ Unit and frozen-integrity checks pass; these checks are not actual-MiniLM accura
 ## Next experiment suggested by the preserved failures
 
 A separately frozen successor should preserve the operative conditional anchor before refining quotations, split sentences without treating abbreviations as boundaries, and collect explicitly requested facets within the same source paragraph. Exception coverage must handle an implicit change question without requiring the word “exception.” These are recommendations for a new attempt; this candidate was not repaired after capture.
+
+
+## Narrative correction — 14 October 2026
+
+The earlier prose claiming that fixed F18 passes is incorrect. The immutable original per-case scorecards show **F18 FAIL in both fixed and section variants**. V3’s fixed/section difference is F08; v4’s difference is F04. Original aggregate scores, source documents, keys, raw captures and evidence ZIPs remain unchanged. [Verified per-case correction](evidence/coverage-v5-r44/F18-narrative-correction.json).
