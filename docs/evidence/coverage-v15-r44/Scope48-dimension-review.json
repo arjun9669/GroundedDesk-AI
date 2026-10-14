@@ -1,0 +1,531 @@
+{
+  "classification": "Dimension review only; frozen overall scores and thresholds unchanged",
+  "candidate_review": {
+    "classification": "Read-only independent dimension review, not a rescore or changed rubric",
+    "original_frozen_scores_preserved": true,
+    "paired_v14_v15_answer_quotation_parity": {
+      "fixed": true,
+      "section": true
+    },
+    "supported_role_facts_per_variant": {
+      "fixed": "8/8 present",
+      "section": "8/8 present"
+    },
+    "frozen_supported_role_pass_per_variant": {
+      "fixed": "4/8",
+      "section": "4/8"
+    },
+    "heading_boundary_fail_cases": [
+      "P02",
+      "P04",
+      "P06",
+      "P08"
+    ],
+    "supported_false_refusals": {
+      "fixed": [
+        "F06"
+      ],
+      "section": [
+        "F06",
+        "F23"
+      ]
+    },
+    "f23_comparison": "Production/fixed answers France; section refuses in both paired v14 and v15. This loses the same-session production PASS, not a new v15-v14 regression.",
+    "refusal_notes": "F06 corpus explicitly states annual budget greater than $2 million, but the selected-evidence attribute guard refuses before coverage. F23 section preserves an upstream refusal. No expanded-context credit is applied.",
+    "role_reviews": [
+      {
+        "variant": "fixed",
+        "id": "P01",
+        "question": "Who approves standard cargo schedules at the fictional Orvella Depot?",
+        "frozen_overall_outcome": "PASS",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          true
+        ],
+        "heading_prefix_in_quote": false,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "01_University_of_Chicago.md",
+            "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+            "excerpt": "e of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "fixed",
+        "id": "P02",
+        "question": "Who has authority to approve standard cargo schedules at Orvella Depot?",
+        "frozen_overall_outcome": "FAIL",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          false
+        ],
+        "heading_prefix_in_quote": true,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] ## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "01_University_of_Chicago.md",
+            "quote": "## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+            "excerpt": "a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "fixed",
+        "id": "P03",
+        "question": "Who approves standard shelf indexes at the fictional Tiravel Library?",
+        "frozen_overall_outcome": "PASS",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          true
+        ],
+        "heading_prefix_in_quote": false,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "02_Islamism.md",
+            "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+            "excerpt": "n Sudan, once in power. The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "fixed",
+        "id": "P04",
+        "question": "Who has authority to approve standard shelf indexes at Tiravel Library?",
+        "frozen_overall_outcome": "FAIL",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          false
+        ],
+        "heading_prefix_in_quote": true,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] ## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "02_Islamism.md",
+            "quote": "## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+            "excerpt": "the long-running war in southern Sudan, once in power. The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "fixed",
+        "id": "P05",
+        "question": "Who approves standard vessel rosters at the fictional Calorin Pier?",
+        "frozen_overall_outcome": "PASS",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          true
+        ],
+        "heading_prefix_in_quote": false,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "03_European_Union_law.md",
+            "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+            "excerpt": "ights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "fixed",
+        "id": "P06",
+        "question": "Who has authority to approve standard vessel rosters at Calorin Pier?",
+        "frozen_overall_outcome": "FAIL",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          false
+        ],
+        "heading_prefix_in_quote": true,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] ## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "03_European_Union_law.md",
+            "quote": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+            "excerpt": "n draws a list of fundamental rights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "fixed",
+        "id": "P07",
+        "question": "Who approves standard display cards at the fictional Fenora Gallery?",
+        "frozen_overall_outcome": "PASS",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          true
+        ],
+        "heading_prefix_in_quote": false,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "04_Normans.md",
+            "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+            "excerpt": "f West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "fixed",
+        "id": "P08",
+        "question": "Who has authority to approve standard display cards at Fenora Gallery?",
+        "frozen_overall_outcome": "FAIL",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          false
+        ],
+        "heading_prefix_in_quote": true,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] ## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "04_Normans.md",
+            "quote": "## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+            "excerpt": "he Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "section",
+        "id": "P01",
+        "question": "Who approves standard cargo schedules at the fictional Orvella Depot?",
+        "frozen_overall_outcome": "PASS",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          true
+        ],
+        "heading_prefix_in_quote": false,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "01_University_of_Chicago.md",
+            "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+            "excerpt": "e of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "section",
+        "id": "P02",
+        "question": "Who has authority to approve standard cargo schedules at Orvella Depot?",
+        "frozen_overall_outcome": "FAIL",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          false
+        ],
+        "heading_prefix_in_quote": true,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] ## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "01_University_of_Chicago.md",
+            "quote": "## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+            "excerpt": "a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "section",
+        "id": "P03",
+        "question": "Who approves standard shelf indexes at the fictional Tiravel Library?",
+        "frozen_overall_outcome": "PASS",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          true
+        ],
+        "heading_prefix_in_quote": false,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "02_Islamism.md",
+            "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+            "excerpt": "n Sudan, once in power. The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "section",
+        "id": "P04",
+        "question": "Who has authority to approve standard shelf indexes at Tiravel Library?",
+        "frozen_overall_outcome": "FAIL",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          false
+        ],
+        "heading_prefix_in_quote": true,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] ## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "02_Islamism.md",
+            "quote": "## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+            "excerpt": "the long-running war in southern Sudan, once in power. The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "section",
+        "id": "P05",
+        "question": "Who approves standard vessel rosters at the fictional Calorin Pier?",
+        "frozen_overall_outcome": "PASS",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          true
+        ],
+        "heading_prefix_in_quote": false,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "03_European_Union_law.md",
+            "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+            "excerpt": "ights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "section",
+        "id": "P06",
+        "question": "Who has authority to approve standard vessel rosters at Calorin Pier?",
+        "frozen_overall_outcome": "FAIL",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          false
+        ],
+        "heading_prefix_in_quote": true,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] ## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "03_European_Union_law.md",
+            "quote": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+            "excerpt": "n draws a list of fundamental rights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "section",
+        "id": "P07",
+        "question": "Who approves standard display cards at the fictional Fenora Gallery?",
+        "frozen_overall_outcome": "PASS",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          true
+        ],
+        "heading_prefix_in_quote": false,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "04_Normans.md",
+            "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+            "excerpt": "f West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus."
+          }
+        ]
+      },
+      {
+        "variant": "section",
+        "id": "P08",
+        "question": "Who has authority to approve standard display cards at Fenora Gallery?",
+        "frozen_overall_outcome": "FAIL",
+        "fictional_role_action_object_site_fact_present": true,
+        "literal_role_groups_present_ignoring_heading_boundary": [
+          true
+        ],
+        "source_provenance": [
+          true
+        ],
+        "frozen_paragraph_boundary_match": [
+          false
+        ],
+        "heading_prefix_in_quote": true,
+        "assessment": "Correct scoped fictional role is displayed. Frozen strict outcome remains FAIL if the quotation also includes the Markdown heading outside the key gold_context; this is a boundary/proxy failure, not a wrong role answer.",
+        "answer": "[1] ## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "sources": [
+          {
+            "filename": "04_Normans.md",
+            "quote": "## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+            "excerpt": "he Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus."
+          }
+        ]
+      }
+    ]
+  },
+  "baseline_supported_role_review": [
+    {
+      "id": "P01",
+      "frozen_outcome": "FAIL",
+      "literal_role_groups_present": [
+        true
+      ],
+      "expected_document_selected": true,
+      "heading_prefix": true
+    },
+    {
+      "id": "P02",
+      "frozen_outcome": "FAIL",
+      "literal_role_groups_present": [
+        true
+      ],
+      "expected_document_selected": true,
+      "heading_prefix": true
+    },
+    {
+      "id": "P03",
+      "frozen_outcome": "FAIL",
+      "literal_role_groups_present": [
+        true
+      ],
+      "expected_document_selected": true,
+      "heading_prefix": true
+    },
+    {
+      "id": "P04",
+      "frozen_outcome": "FAIL",
+      "literal_role_groups_present": [
+        true
+      ],
+      "expected_document_selected": true,
+      "heading_prefix": true
+    },
+    {
+      "id": "P05",
+      "frozen_outcome": "FAIL",
+      "literal_role_groups_present": [
+        true
+      ],
+      "expected_document_selected": true,
+      "heading_prefix": true
+    },
+    {
+      "id": "P06",
+      "frozen_outcome": "FAIL",
+      "literal_role_groups_present": [
+        true
+      ],
+      "expected_document_selected": true,
+      "heading_prefix": true
+    },
+    {
+      "id": "P07",
+      "frozen_outcome": "FAIL",
+      "literal_role_groups_present": [
+        true
+      ],
+      "expected_document_selected": true,
+      "heading_prefix": true
+    },
+    {
+      "id": "P08",
+      "frozen_outcome": "FAIL",
+      "literal_role_groups_present": [
+        true
+      ],
+      "expected_document_selected": true,
+      "heading_prefix": true
+    }
+  ],
+  "baseline_role_facts_present": 8,
+  "baseline_frozen_role_PASS": 0,
+  "interpretation": "Do not equate strict role-control citation-boundary FAIL with a wrong role fact. Report completeness separately and retain original strict outcomes."
+}

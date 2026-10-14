@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-15 — Site-qualified routing v15 and Scope48 first result (no runtime release)
+
+- Restricted strict object/site binding to located source frames, restoring narrative F20/C04 without losing any historical PASS. All307 exposed regressions captured with verified v15 imports, actual new MiniLM queries/source vectors and Qwen disabled; regression gate PASS. All362 unit tests and strict offline checks pass.
+- Added pre-question candidate/paired SHA-256 verification and an exported identity check that rejects actual legacy modules. Preserved the original v14 blocked capture and its separately qualified replay unchanged.
+- Executed the original frozen Scope48 plan only after the regression gate passed. First scores: fixed43/0/5, section42/0/6. All12 unsupported controls refuse; four correct role answers violate the frozen heading-boundary rule, while budget/country questions falsely refuse. Factual role presence is reviewed separately without changing strict scores.
+- Confirmation FAIL; no post-answer tuning, retries, further sample or runtime adoption. Historical first scores remain immutable, and production stays r44.
+
 ## 2026-10-14 — Scope-binding v14 experiment (no runtime release)
 
 - Implemented isolated explicit action/object/site constraints and origin/rationale repairs. All 355 unit tests and strict offline checks pass; frozen inputs, keys and scoring thresholds remain unchanged.

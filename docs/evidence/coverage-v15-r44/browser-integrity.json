@@ -1,0 +1,138 @@
+{
+  "classification": "Engineering capture checks, not independent accuracy",
+  "all_questions_exact": true,
+  "qwen_disabled": true,
+  "fresh_ui_hybrid_results": true,
+  "runs": [
+    {
+      "run": "coverage-v15-first-run",
+      "cases_once": 307,
+      "module_verified_before_question": true,
+      "proof": {
+        "candidate": {
+          "path": "/eval/answer-completeness-v15/coverage.mjs",
+          "sha256": "ad6e6490ab03ab0b596f9903b1f5d2ce1f2fb2846d10c8560743fada626dda5f",
+          "id": "coverage-v15-site-scoped-frames"
+        },
+        "paired": {
+          "path": "/eval/answer-completeness-v14/coverage.mjs",
+          "sha256": "eacc40b03f0005b9f6ba36e1d73a1ef74bf0afabcff954a93d9debdf9b7a67d8"
+        },
+        "helper": {
+          "path": "/tests/fixtures/module-identity.mjs",
+          "sha256": "1271b1bfd118d965b193fffa25514712c6492a4e9701cb6eddc8d7c26679448b"
+        },
+        "before_questions": true
+      },
+      "no_saved_query_replay": true
+    },
+    {
+      "run": "coverage-v15-fresh-first-run",
+      "cases_once": 48,
+      "module_verified_before_question": true,
+      "proof": {
+        "candidate": {
+          "path": "/eval/answer-completeness-v15/coverage.mjs",
+          "sha256": "ad6e6490ab03ab0b596f9903b1f5d2ce1f2fb2846d10c8560743fada626dda5f",
+          "id": "coverage-v15-site-scoped-frames"
+        },
+        "paired": {
+          "path": "/eval/answer-completeness-v14/coverage.mjs",
+          "sha256": "eacc40b03f0005b9f6ba36e1d73a1ef74bf0afabcff954a93d9debdf9b7a67d8"
+        },
+        "helper": {
+          "path": "/tests/fixtures/module-identity.mjs",
+          "sha256": "1271b1bfd118d965b193fffa25514712c6492a4e9701cb6eddc8d7c26679448b"
+        },
+        "before_questions": true
+      },
+      "no_saved_query_replay": true
+    }
+  ],
+  "packs": [
+    {
+      "pack": "Lantern32",
+      "cases": 32,
+      "hybrid": 26,
+      "comparison": 6,
+      "actual_sentence_vectors": 96
+    },
+    {
+      "pack": "Aster32",
+      "cases": 32,
+      "hybrid": 26,
+      "comparison": 6,
+      "actual_sentence_vectors": 102
+    },
+    {
+      "pack": "Meridian24",
+      "cases": 24,
+      "hybrid": 20,
+      "comparison": 4,
+      "actual_sentence_vectors": 48
+    },
+    {
+      "pack": "Cobalt16",
+      "cases": 16,
+      "hybrid": 12,
+      "comparison": 4,
+      "actual_sentence_vectors": 29
+    },
+    {
+      "pack": "Atlas15",
+      "cases": 15,
+      "hybrid": 11,
+      "comparison": 4,
+      "actual_sentence_vectors": 77
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "cases": 28,
+      "hybrid": 28,
+      "comparison": 0,
+      "actual_sentence_vectors": 232
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "cases": 24,
+      "hybrid": 24,
+      "comparison": 0,
+      "actual_sentence_vectors": 50
+    },
+    {
+      "pack": "FreshMixed32",
+      "cases": 32,
+      "hybrid": 32,
+      "comparison": 0,
+      "actual_sentence_vectors": 44
+    },
+    {
+      "pack": "FreshConfirmation32",
+      "cases": 32,
+      "hybrid": 32,
+      "comparison": 0,
+      "actual_sentence_vectors": 36
+    },
+    {
+      "pack": "V9Exposed32",
+      "cases": 32,
+      "hybrid": 32,
+      "comparison": 0,
+      "actual_sentence_vectors": 44
+    },
+    {
+      "pack": "Actor40",
+      "cases": 40,
+      "hybrid": 40,
+      "comparison": 0,
+      "actual_sentence_vectors": 54
+    },
+    {
+      "pack": "Scope48",
+      "cases": 48,
+      "hybrid": 48,
+      "comparison": 0,
+      "actual_sentence_vectors": 49
+    }
+  ]
+}

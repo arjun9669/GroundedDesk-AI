@@ -116,6 +116,12 @@ jobs:
           node --check tests/browser-coverage-v14-replay.mjs
           node --check eval/answer-completeness-v14/score-replay.mjs
           node --check eval/answer-completeness-v14/review-replay.mjs
+          node --check eval/answer-completeness-v15/coverage.mjs
+          node --check eval/answer-completeness-v15/score.mjs
+          node --check eval/answer-completeness-v15/score-fresh.mjs
+          node --check eval/answer-completeness-v15/review.mjs
+          node --check tests/browser-coverage-v15.mjs
+          node --check tests/fixtures/module-identity.mjs
       - name: Unit tests
         run: node --test tests/*.test.mjs
       - name: Offline labeled corpus evaluation
