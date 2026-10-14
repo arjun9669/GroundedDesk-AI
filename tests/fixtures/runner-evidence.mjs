@@ -20,12 +20,13 @@ export async function openEvidenceLedger(directory){
 export async function prepareQuestion(page,question){
  const original=String(question),token='groundeddesk_capture_'+randomUUID();
  if(!displayQuestion(original))throw new Error('Question is empty after display normalization; no submission');
- await page.locator('#query-input').fill(original);
+ const canonicalInput=original.replace(/\r\n?/g,'\n');
+ await page.locator('#query-input').fill(canonicalInput);
  const browserInput=await page.locator('#query-input').inputValue();
  // Textareas normalize CR/LF; do not collapse internal spaces or rewrite the original key.
- if(browserInput!==original.replace(/\r\n?/g,'\n'))throw new Error('Browser input differs beyond textarea newline normalization');
+ if(browserInput!==canonicalInput)throw new Error('Browser input differs beyond textarea newline normalization');
  await page.evaluate(token=>{window[token]={previousQuestion:document.querySelector('.question-text')};},token);
- return {token,original_question:original,browser_input:browserInput,expected_display:displayQuestion(browserInput)};
+ return {token,original_question:original,browser_input:browserInput,browser_newlines_canonicalized:canonicalInput!==original,expected_display:displayQuestion(browserInput)};
 }
 export async function waitForAnswer(page,receipt,{timeout=120000}={}){
  await page.waitForFunction(({token,expected})=>{

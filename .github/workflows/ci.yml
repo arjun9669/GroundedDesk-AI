@@ -131,11 +131,11 @@ jobs:
           node tests/browser-ask-scope.mjs
           node tests/browser-local-workspace.mjs
           node tests/browser-document-readiness.mjs
-          node tests/browser-runner-evidence.mjs
+          EVIDENCE_DIR="$RUNNER_TEMP/runner-evidence-recovery" node tests/browser-runner-evidence.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: runner-evidence-recovery
-          path: ../../outputs/runner-evidence-ci
+          path: ${{ runner.temp }}/runner-evidence-recovery
           retention-days: 14
           if-no-files-found: warn
