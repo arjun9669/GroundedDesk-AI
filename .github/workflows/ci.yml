@@ -87,6 +87,10 @@ jobs:
           node --check tests/browser-coverage-v9-fresh.mjs
           node --check eval/answer-completeness-v9/score-fresh-partial.mjs
           node --check tests/browser-coverage-v9-fresh-continuation.mjs
+          node --check tests/fixtures/runner-evidence.mjs
+          node --check tests/browser-coverage-capture.mjs
+          node --check tests/browser-runner-evidence.mjs
+          node --check eval/runner-hardening/diagnose-v9.mjs
       - name: Unit tests
         run: node --test tests/*.test.mjs
       - name: Offline labeled corpus evaluation
@@ -127,3 +131,11 @@ jobs:
           node tests/browser-ask-scope.mjs
           node tests/browser-local-workspace.mjs
           node tests/browser-document-readiness.mjs
+          node tests/browser-runner-evidence.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: runner-evidence-recovery
+          path: ../../outputs/runner-evidence-ci
+          retention-days: 14
+          if-no-files-found: warn

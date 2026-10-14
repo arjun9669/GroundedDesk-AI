@@ -1,0 +1,134 @@
+{
+  "classification": "Capture reliability engineering validation plus read-only diagnosis; not new answer accuracy",
+  "unit_tests": 335,
+  "keyword": {
+    "classification": "Capture-reliability engineering fixture; no independent answer-accuracy claim",
+    "real_minilm": false,
+    "checks": [
+      {
+        "id": "whitespace",
+        "outcome": "PASS",
+        "original_question_preserved": true,
+        "new_result_node": true
+      },
+      {
+        "id": "identical-repeat",
+        "outcome": "PASS",
+        "original_question_preserved": true,
+        "new_result_node": true
+      },
+      {
+        "id": "failure-output-preserved",
+        "outcome": "PASS",
+        "original_answer_saved": true,
+        "screenshot_saved": true
+      },
+      {
+        "id": "stale-result-rejected",
+        "outcome": "PASS"
+      }
+    ],
+    "browser": "155.0.8059.40",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "mode": "keyword",
+    "status": "PASS"
+  },
+  "actual_minilm": {
+    "classification": "Capture-reliability engineering fixture; no independent answer-accuracy claim",
+    "real_minilm": true,
+    "checks": [
+      {
+        "id": "whitespace",
+        "outcome": "PASS",
+        "original_question_preserved": true,
+        "new_result_node": true
+      },
+      {
+        "id": "identical-repeat",
+        "outcome": "PASS",
+        "original_question_preserved": true,
+        "new_result_node": true
+      },
+      {
+        "id": "failure-output-preserved",
+        "outcome": "PASS",
+        "original_answer_saved": true,
+        "screenshot_saved": true
+      },
+      {
+        "id": "stale-result-rejected",
+        "outcome": "PASS"
+      }
+    ],
+    "browser": "155.0.8059.40",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "mode": "hybrid",
+    "status": "PASS"
+  },
+  "hardened_driver_positive": {
+    "status": "COMPLETE",
+    "completed": [
+      {
+        "name": "RunnerEngineering",
+        "cases": 2
+      }
+    ],
+    "browser": "155.0.8059.40",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "production_change": "NONE"
+  },
+  "hardened_driver_expected_failure": {
+    "status": "PASS: expected invalid-input failure preserves evidence",
+    "captured_cases": [
+      "CAP01"
+    ],
+    "blocked_case": "CAP02",
+    "fresh_snapshot": false,
+    "original_error_preserved": true
+  },
+  "v9_frozen_checks": [
+    {
+      "path": "eval/answer-completeness-v9/PROTOCOL.md",
+      "sha256": "cc59cf1414153fc24321d78430930ff5ad015341cad65f7000e8a0f240c36d84",
+      "verified": true
+    },
+    {
+      "path": "eval/answer-completeness-v9/coverage.mjs",
+      "sha256": "98911771a58ef25429bc090be54a3e2739cc7079c55780e8ae57f9ef6027d6ec",
+      "verified": true
+    },
+    {
+      "path": "eval/answer-completeness-v9/fresh32/source_docs/01_Amazon_rainforest.md",
+      "sha256": "f317a6714a94512135adb93e189d7d8b7b9117c10fbbb55a2f72ee934c12159d",
+      "verified": true
+    },
+    {
+      "path": "eval/answer-completeness-v9/fresh32/source_docs/02_Kenya.md",
+      "sha256": "74d6b2845b50e21e2a74b9873a66bfd157779df7e2d540429a2d5c8623da3c04",
+      "verified": true
+    },
+    {
+      "path": "eval/answer-completeness-v9/fresh32/source_docs/03_Super_Bowl_50.md",
+      "sha256": "6b82bdc986ffaecbb5f6f0ca5e51531e7a6273301b43cf13a43a712bc041cb24",
+      "verified": true
+    },
+    {
+      "path": "eval/answer-completeness-v9/fresh32/source_docs/04_Civil_disobedience.md",
+      "sha256": "21649d1c959091cb7afe1927d92e394f687de384f2a5b87d7363ddf6ef0d81a2",
+      "verified": true
+    },
+    {
+      "path": "eval/answer-completeness-v9/fresh32/fixed-answer-key.json",
+      "sha256": "55e04bf6bd882cae23d2fcb6316317f29bb4981469574cb7e1747c40b4e24650",
+      "verified": true
+    },
+    {
+      "path": "eval/answer-completeness-v9/fresh32/ATTRIBUTION.md",
+      "sha256": "e8445197a6fc02a63973e74af81de27672c0a732e23248ec3c54fb17c887534e",
+      "verified": true
+    }
+  ],
+  "production_build": "2026-10-13-r44",
+  "production_change": "NONE",
+  "historical_results": "Unchanged, including V9 F06 BLOCKED/ungraded"
+}

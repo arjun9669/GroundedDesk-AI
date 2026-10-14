@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-14 — Browser evidence recovery (no runtime release)
+
+- Added an explicit-config future capture driver with whitespace-aware fresh-result checks, exclusive evidence writes and failure snapshots/partial records before closure.
+- Validated Keyword and actual MiniLM engineering fixtures, including deliberate timeout, stale result and partial-run failure recovery; 335 unit tests pass.
+- Diagnosed preserved V9 failures without reruns or altered grades. V9 F06 remains ungraded; production stays r44.
+
 ## 2026-10-14 — Relationship eligibility v9 experiment (no runtime release)
 
 - Froze generic actor/list/between/description eligibility, captured235 unchanged Chrome/MiniLM regressions; development gate PASS, no prior PASS lost.
