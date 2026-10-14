@@ -26,6 +26,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Question-form experiment:** v6 restores F10 in a controlled same-Chrome/same-vector v5 comparison and preserves original119, development28 and compound4 passes. F12 remains blocked by sentence eligibility, so the staged gate fails; no fresh sample is consumed and production stays r44. [Paired evidence and exact diagnosis](./docs/COVERAGE_V6_R44_VALIDATION.md).
 
+**Sentence-ending experiment:** v7 repairs F12 and passes the 203-case known development gate with no prior PASS loss. A subsequently frozen public32 confirmation scores22 PASS /2 PARTIAL /8 FAIL (16/24 externally authored supported passes), with one false refusal. The fresh release gate fails; production remains r44. This is not sealed independent accuracy. [Exact results, paired v6 comparison and evidence](./docs/COVERAGE_V7_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |

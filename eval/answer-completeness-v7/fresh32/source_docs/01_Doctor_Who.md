@@ -1,0 +1,7 @@
+# Doctor Who
+
+## Context 1
+It has won the Short Form of the Hugo Award for Best Dramatic Presentation, the oldest science fiction/fantasy award for films and series, six times (every year since 2006, except for 2009, 2013 and 2014). The winning episodes were "The Empty Child"/"The Doctor Dances" (2006), "The Girl in the Fireplace" (2007), "Blink" (2008), "The Waters of Mars" (2010), "The Pandorica Opens"/"The Big Bang" (2011), and "The Doctor's Wife" (2012). Doctor Who star Matt Smith won Best Actor in the 2012 National Television awards alongside Karen Gillan who won Best Actress. Doctor Who has been nominated for over 200 awards and has won over a hundred of them.
+
+## Context 2
+In addition to those actors who have headlined the series, others have portrayed versions of the Doctor in guest roles. Notably, in 2013, John Hurt guest-starred as a hitherto unknown incarnation of the Doctor known as the War Doctor in the run-up to the show's 50th anniversary special "The Day of the Doctor". He is shown in mini-episode "The Night of the Doctor" to have been retroactively inserted into the show's fictional chronology between McGann and Eccleston's Doctors, although his introduction was written so as not to disturb the established numerical naming of the Doctors. Another example is from the 1986 serial The Trial of a Time Lord, where Michael Jayston portrayed the Valeyard, who is described as an amalgamation of the darker sides of the Doctor's nature, somewhere between his twelfth and final incarnation.
