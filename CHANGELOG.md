@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-14 — Repair-gating v13 and prospective Actor40 (no runtime release)
+
+- Preserved complete compound answers unless an actor/numeric repair succeeds. All 267 exposed Chrome/MiniLM regressions captured once; frozen gate PASS, no historical PASS losses. All 347 unit tests and strict offline checks pass.
+- Froze Actor40 before its first answers: 24 external supported questions, four compounds and 12 unsupported controls. Both candidate variants score 28/2/10; eight actor/object/site false acceptances and two incomplete compounds fail confirmation. All candidate quotations are source-literal, demonstrating that provenance alone does not establish support.
+- Preserved original outputs, keys, hashes, first scores and browser evidence. No tuning, retry, further sample or runtime adoption; production remains r44. Actor40 is prospective public/adversarial evaluation, not sealed independent accuracy.
+
 ## 2026-10-14 — Constrained actor v12 experiment (no runtime release)
 
 - Froze and captured 267 unchanged exposed cases in real Chrome with actual local MiniLM. All 345 unit tests pass.
