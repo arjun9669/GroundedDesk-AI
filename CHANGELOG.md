@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-14 — Sentence-ending v7 experiment (no runtime release)
+
+- Froze closing-punctuation eligibility before 203 real Chrome/MiniLM regressions; repaired F12 and passed the development gate without prior PASS loss.
+- Then froze and captured a prospective public32 sample once:22 PASS /2 PARTIAL /8 FAIL, one false refusal, no false acceptances; fresh gate FAIL.
+- Preserved paired v6 results, exact quotations, raw evidence and all prior first-look history. Production remains r44; no independent sealed accuracy claim.
+
 ## 2026-10-14 — Question-form v6 experiment (no runtime release)
 
 - Froze generic actor-predicate/duration signals; captured203 known cases in Chrome155 with actual MiniLM and paired v5 on identical vectors.
