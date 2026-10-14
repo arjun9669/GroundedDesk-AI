@@ -1,0 +1,436 @@
+{
+  "classification": "Read-only analysis of exposed V9 first-attempt evidence; no new benchmark",
+  "records": [
+    {
+      "id": "F06",
+      "question": "How many invertebrate species are known in Brazil alone? ",
+      "outcome": "BLOCKED",
+      "diagnosis": "No first-attempt output available; no factual assessment",
+      "limitation": "Original UI query attempted once; readiness check failed on trailing-space trim. Output unavailable; not rerun or graded."
+    },
+    {
+      "id": "F18",
+      "question": "Who scored the Panthers first touchdown? ",
+      "outcome": "FAIL",
+      "diagnosis": "Candidate quotation lies outside expected original paragraph",
+      "gold_group_first_top5_rank": [
+        2
+      ],
+      "all_groups_in_top3": true,
+      "all_groups_in_top5": true,
+      "required_groups": [
+        [
+          "Jonathan Stewart",
+          "Jonathan Stewart",
+          "Stewart"
+        ]
+      ],
+      "matched_groups": [
+        false
+      ],
+      "expected_file": "03_Super_Bowl_50.md",
+      "candidate_answer": "[1] This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.",
+      "sources": [
+        {
+          "filename": "03_Super_Bowl_50.md",
+          "quote": "This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.",
+          "excerpt": ", on 3rd-and-10 from the 15-yard line, linebacker Von Miller knocked the ball out of Newton's hands while sacking him, and Malik Jackson recovered it in the end zone for a Broncos touchdown, giving the team a 10–0 lead. This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.\n\n## Context 2\nAfter a punt from both teams, Carolina got on track with a 9-play, 73-yard scoring drive. Newton completed 4 of 4 passes for 51 yards and rushed twice for 25 yards, while Jonathan Stewart finished the drive with a 1-yard touchdown run, cutting the score to 10–7 wit"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "gold_paragraph_location": [
+        false
+      ],
+      "direct_gold_span_support": [
+        false
+      ],
+      "production_outcome": "PASS",
+      "production_answer": "[1] Newton completed 4 of 4 passes for 51 yards and rushed twice for 25 yards, while Jonathan Stewart finished the drive with a 1-yard touchdown run, cutting the score to 10–7 with 11:28 left in the second quarter.",
+      "paired_v8_outcome": "FAIL",
+      "production_pass_lost": true,
+      "paired_v8_pass_lost": false,
+      "candidate_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Super_Bowl_50.md",
+          "quote": "This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "scor",
+            "years": []
+          },
+          "reason": "Keep prior: no bounded eligible relation"
+        }
+      ],
+      "interpretation_limit": "Gold-string rank presence is a diagnostic proxy, not a causal counterfactual or semantic entailment test"
+    },
+    {
+      "id": "F19",
+      "question": "What should be the main goal of not using punishment in a just system?",
+      "outcome": "FAIL",
+      "diagnosis": "Evidence exists in recorded top-three passages; displayed quotation omits required facts",
+      "gold_group_first_top5_rank": [
+        1
+      ],
+      "all_groups_in_top3": true,
+      "all_groups_in_top5": true,
+      "required_groups": [
+        [
+          "would do more harm than good",
+          "whether it would do more harm than good",
+          "it focuses attention on the threat of punishment and not the moral reasons to follow this law",
+          "whether it would do more harm than good",
+          "whether it would do more harm than good."
+        ]
+      ],
+      "matched_groups": [
+        false
+      ],
+      "expected_file": "04_Civil_disobedience.md",
+      "candidate_answer": "[1] Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+      "sources": [
+        {
+          "filename": "04_Civil_disobedience.md",
+          "quote": "Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+          "excerpt": "# Civil disobedience\n\n## Context 1\nAlong with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment. Brownlee argues, \"Bringing in deterrence at the level of justification detracts from the law’s engagement in a moral dialogue with the offender as a rational person because it focuses attention on the threat of punishment and not the moral reasons to follow this law.\" Leonard Hu"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "gold_paragraph_location": [
+        true
+      ],
+      "direct_gold_span_support": [
+        false
+      ],
+      "production_outcome": "FAIL",
+      "production_answer": "[1] Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+      "paired_v8_outcome": "FAIL",
+      "production_pass_lost": false,
+      "paired_v8_pass_lost": false,
+      "candidate_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Civil_disobedience.md",
+          "quote": "Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "interpretation_limit": "Gold-string rank presence is a diagnostic proxy, not a causal counterfactual or semantic entailment test"
+    },
+    {
+      "id": "F20",
+      "question": "Who decides the fate of protesters most of the time?",
+      "outcome": "FAIL",
+      "diagnosis": "Missing one or more gold groups in recorded top-five passages; ranking/coverage limit",
+      "gold_group_first_top5_rank": [
+        null
+      ],
+      "all_groups_in_top3": false,
+      "all_groups_in_top5": false,
+      "required_groups": [
+        [
+          "the state",
+          "judges",
+          "the state (including the judges)",
+          "the judges",
+          "judges"
+        ]
+      ],
+      "matched_groups": [
+        false
+      ],
+      "expected_file": "04_Civil_disobedience.md",
+      "candidate_answer": "[1] Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good.",
+      "sources": [
+        {
+          "filename": "04_Civil_disobedience.md",
+          "quote": "Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good.",
+          "excerpt": "evel of justification detracts from the law’s engagement in a moral dialogue with the offender as a rational person because it focuses attention on the threat of punishment and not the moral reasons to follow this law.\" Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good. This means that the objector has no right not to be punished. It is a matter for the state (including the judges) to decide on utilitarian grounds whether to do so or not.\"\n\n## Context 2\nSteven Barkan writes that if defendants plead not guilty, \"they must decide whether their pr"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "gold_paragraph_location": [
+        true
+      ],
+      "direct_gold_span_support": [
+        false
+      ],
+      "production_outcome": "FAIL",
+      "production_answer": "I can't find this in the provided documents.",
+      "paired_v8_outcome": "FAIL",
+      "production_pass_lost": false,
+      "paired_v8_pass_lost": false,
+      "candidate_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Civil_disobedience.md",
+          "quote": "Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "decid",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "interpretation_limit": "Gold-string rank presence is a diagnostic proxy, not a causal counterfactual or semantic entailment test"
+    },
+    {
+      "id": "F21",
+      "question": "What should the punishment rely on instead in a just society?",
+      "outcome": "FAIL",
+      "diagnosis": "Evidence exists in recorded top-three passages; displayed quotation omits required facts",
+      "gold_group_first_top5_rank": [
+        1
+      ],
+      "all_groups_in_top3": true,
+      "all_groups_in_top5": true,
+      "required_groups": [
+        [
+          "moral reasons to follow this law",
+          "whether it would do more harm than good",
+          "whether it would do more harm than good",
+          "whether it would do more harm than good",
+          "whether it would do more harm than good"
+        ]
+      ],
+      "matched_groups": [
+        false
+      ],
+      "expected_file": "04_Civil_disobedience.md",
+      "candidate_answer": "[1] Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+      "sources": [
+        {
+          "filename": "04_Civil_disobedience.md",
+          "quote": "Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+          "excerpt": "# Civil disobedience\n\n## Context 1\nAlong with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment. Brownlee argues, \"Bringing in deterrence at the level of justification detracts from the law’s engagement in a moral dialogue with the offender as a rational person because it focuses attention on the threat of punishment and not the moral reasons to follow this law.\" Leonard Hu"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "gold_paragraph_location": [
+        true
+      ],
+      "direct_gold_span_support": [
+        false
+      ],
+      "production_outcome": "FAIL",
+      "production_answer": "[1] Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+      "paired_v8_outcome": "FAIL",
+      "production_pass_lost": false,
+      "paired_v8_pass_lost": false,
+      "candidate_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Civil_disobedience.md",
+          "quote": "Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "interpretation_limit": "Gold-string rank presence is a diagnostic proxy, not a causal counterfactual or semantic entailment test"
+    },
+    {
+      "id": "F22",
+      "question": "What would someone who is civilly disobedient do in court?",
+      "outcome": "FAIL",
+      "diagnosis": "Heading selected as answer; factual body missing",
+      "gold_group_first_top5_rank": [
+        null
+      ],
+      "all_groups_in_top3": false,
+      "all_groups_in_top5": false,
+      "required_groups": [
+        [
+          "inform the jury and the public of the political circumstances",
+          "plead not guilty",
+          "plead not guilty",
+          "inform the jury and the public",
+          "plead not guilty"
+        ]
+      ],
+      "matched_groups": [
+        false
+      ],
+      "expected_file": "04_Civil_disobedience.md",
+      "candidate_answer": "[1] # Civil disobedience",
+      "sources": [
+        {
+          "filename": "04_Civil_disobedience.md",
+          "quote": "# Civil disobedience",
+          "excerpt": "# Civil disobedience\n\n## Context 1\nAlong with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment. Brownlee argues, \"Bringing in deterrence at the level of justification detracts from the law’s engagement in a moral"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "gold_paragraph_location": [
+        false
+      ],
+      "direct_gold_span_support": [
+        false
+      ],
+      "production_outcome": "FAIL",
+      "production_answer": "[1] # Civil disobedience",
+      "paired_v8_outcome": "FAIL",
+      "production_pass_lost": false,
+      "paired_v8_pass_lost": false,
+      "candidate_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Civil_disobedience.md",
+          "quote": "# Civil disobedience",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "interpretation_limit": "Gold-string rank presence is a diagnostic proxy, not a causal counterfactual or semantic entailment test"
+    },
+    {
+      "id": "C01",
+      "question": "What type of bat that lives in the Amazon rainforest can spread rabies? Also, Which animal that lives in the Amazon river may produce a deadly shock?",
+      "outcome": "FAIL",
+      "diagnosis": "Candidate quotation lies outside expected original paragraph",
+      "gold_group_first_top5_rank": [
+        1,
+        1
+      ],
+      "all_groups_in_top3": true,
+      "all_groups_in_top5": true,
+      "required_groups": [
+        [
+          "Vampire bats",
+          "Vampire",
+          "Vampire"
+        ],
+        [
+          "electric eels",
+          "electric eels",
+          "electric eels"
+        ]
+      ],
+      "matched_groups": [
+        false,
+        false
+      ],
+      "expected_file": "01_Amazon_rainforest.md",
+      "candidate_answer": "[1] One in five of all the bird species in the world live in the rainforests of the Amazon, and one in five of the fish species live in Amazonian rivers and streams.",
+      "sources": [
+        {
+          "filename": "01_Amazon_rainforest.md",
+          "quote": "One in five of all the bird species in the world live in the rainforests of the Amazon, and one in five of the fish species live in Amazonian rivers and streams.",
+          "excerpt": "thousands of plants, and some 2,000 birds and mammals. To date, at least 40,000 plant species, 2,200 fishes, 1,294 birds, 427 mammals, 428 amphibians, and 378 reptiles have been scientifically classified in the region. One in five of all the bird species in the world live in the rainforests of the Amazon, and one in five of the fish species live in Amazonian rivers and streams. Scientists have described between 96,660 and 128,843 invertebrate species in Brazil alone."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "gold_paragraph_location": [
+        false
+      ],
+      "direct_gold_span_support": [
+        false
+      ],
+      "production_outcome": "FAIL",
+      "production_answer": "[1] One in five of all the bird species in the world live in the rainforests of the Amazon, and one in five of the fish species live in Amazonian rivers and streams.",
+      "paired_v8_outcome": "FAIL",
+      "production_pass_lost": false,
+      "paired_v8_pass_lost": false,
+      "candidate_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Amazon_rainforest.md",
+          "quote": "One in five of all the bird species in the world live in the rainforests of the Amazon, and one in five of the fish species live in Amazonian rivers and streams.",
+          "reason": "Keep prior: unhandled or protected"
+        },
+        {
+          "part": 1,
+          "document": "01_Amazon_rainforest.md",
+          "quote": "One in five of all the bird species in the world live in the rainforests of the Amazon, and one in five of the fish species live in Amazonian rivers and streams.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "interpretation_limit": "Gold-string rank presence is a diagnostic proxy, not a causal counterfactual or semantic entailment test"
+    },
+    {
+      "id": "C04",
+      "question": "What should be the main goal of not using punishment in a just system? Also, Who decides the fate of protesters most of the time?",
+      "outcome": "PARTIAL",
+      "diagnosis": "Evidence exists in recorded top-three passages; displayed quotation omits required facts",
+      "gold_group_first_top5_rank": [
+        1,
+        1
+      ],
+      "all_groups_in_top3": true,
+      "all_groups_in_top5": true,
+      "required_groups": [
+        [
+          "would do more harm than good",
+          "whether it would do more harm than good",
+          "it focuses attention on the threat of punishment and not the moral reasons to follow this law",
+          "whether it would do more harm than good",
+          "whether it would do more harm than good."
+        ],
+        [
+          "the state",
+          "judges",
+          "the state (including the judges)",
+          "the judges",
+          "judges"
+        ]
+      ],
+      "matched_groups": [
+        true,
+        false
+      ],
+      "expected_file": "04_Civil_disobedience.md",
+      "candidate_answer": "[1] Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment. Brownlee argues, \"Bringing in deterrence at the level of justification detracts from the law’s engagement in a moral dialogue with the offender as a rational person because it focuses attention on the threat of punishment and not the moral reasons to follow this law.\" Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good.",
+      "sources": [
+        {
+          "filename": "04_Civil_disobedience.md",
+          "quote": "Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment. Brownlee argues, \"Bringing in deterrence at the level of justification detracts from the law’s engagement in a moral dialogue with the offender as a rational person because it focuses attention on the threat of punishment and not the moral reasons to follow this law.\" Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good.",
+          "excerpt": "# Civil disobedience\n\n## Context 1\nAlong with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment. Brownlee argues, \"Bringing in deterrence at the level of justification detracts from the law’s engagement in a moral dialogue with the offender as a rational person because it focuses attention on the threat of punishment and not the moral reasons to follow this law.\" Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good. This means that the objector has no right not to be punished. It is a matter for the state (including the judges) to decide on utilitarian grounds whether to do so or not.\"\n\n## Context 2\nSteven Barkan writes that if defendants plead not guilty, \"they must decide whether their pr"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "gold_paragraph_location": [
+        true
+      ],
+      "direct_gold_span_support": [
+        true
+      ],
+      "production_outcome": "FAIL",
+      "production_answer": "[1] Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+      "paired_v8_outcome": "PARTIAL",
+      "production_pass_lost": false,
+      "paired_v8_pass_lost": false,
+      "candidate_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Civil_disobedience.md",
+          "quote": "Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment. Brownlee argues, \"Bringing in deterrence at the level of justification detracts from the law’s engagement in a moral dialogue with the offender as a rational person because it focuses attention on the threat of punishment and not the moral reasons to follow this law.\" Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good.",
+          "reason": "Keep prior: unhandled or protected"
+        },
+        {
+          "part": 1,
+          "document": "04_Civil_disobedience.md",
+          "quote": "Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment. Brownlee argues, \"Bringing in deterrence at the level of justification detracts from the law’s engagement in a moral dialogue with the offender as a rational person because it focuses attention on the threat of punishment and not the moral reasons to follow this law.\" Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "decid",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "interpretation_limit": "Gold-string rank presence is a diagnostic proxy, not a causal counterfactual or semantic entailment test"
+    }
+  ]
+}
