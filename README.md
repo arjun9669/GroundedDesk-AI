@@ -32,6 +32,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Relationship eligibility experiment:** v9 preserves original119/RQ28 passes and repairs all exposed compounds. The prior v7 public32 regression reaches30/0/2. A subsequently frozen prospective public32 scores24/1/6 plus1 ungraded (section); release-consideration gate BLOCKED: F06 first-attempt output unavailable. Context/extra-quotation precision limitations remain recorded. Production stays r44; no sealed independent-accuracy claim. [Full results and evidence](./docs/COVERAGE_V9_R44_VALIDATION.md).
 
+**Paragraph/facet experiment:** v10 captures267 exposed regressions with actual MiniLM in Chrome. Original119/RQ28 remain allPASS; the exposed V9 set scores28/1/3, preserving its first24/1/6 plus1ungraded. GateFAIL: an older compound regresses, a production PASS remains lost, and a supported question now falsely refuses. Longer quotations also reduce precision in some cases. No new unseen sample or runtime adoption; r44 stays live. [Exact results and evidence](./docs/COVERAGE_V10_R44_VALIDATION.md).
+
 **Benchmark capture reliability:** future runs preserve exact inputs, require fresh result nodes, and save partial answers/quotes/checkpoints/screenshots before failure closure. Validated in Chrome with Keyword and actual MiniLM; historical V9 F06 stays ungraded. Read-only diagnosis separates paragraph, ranking and coverage failures. Production stays r44. [Recovery tests and diagnosis](./docs/RUNNER_EVIDENCE_RECOVERY_R44.md).
 
 ## Features

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-14 — Paragraph/facet v10 experiment (no runtime release)
+
+- Froze and captured267 unchanged exposed regressions in installed Chrome with actual local MiniLM; all338 unit tests pass.
+- Original119/RQ28 remain allPASS; exposed V9 set reaches28/1/3, with its first24/1/6 plus1ungraded preserved. V10 F06 is a qualified regression observation.
+- GateFAIL: prior-PASS loss, compound evidence/title-citation defects and a new false refusal. Preserved full answers, real vectors, provenance and quotation-scope cautions; no new unseen sample consumed. Production stays r44.
+
 ## 2026-10-14 — Browser evidence recovery (no runtime release)
 
 - Added an explicit-config future capture driver with whitespace-aware fresh-result checks, exclusive evidence writes and failure snapshots/partial records before closure.
