@@ -28,6 +28,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Sentence-ending experiment:** v7 repairs F12 and passes the 203-case known development gate with no prior PASS loss. A subsequently frozen public32 confirmation scores22 PASS /2 PARTIAL /8 FAIL (16/24 externally authored supported passes), with one false refusal. The fresh release gate fails; production remains r44. This is not sealed independent accuracy. [Exact results, paired v6 comparison and evidence](./docs/COVERAGE_V7_R44_VALIDATION.md).
 
+**Semantic sentence experiment:** v8 adds actual MiniLM sentence/facet ranking and generic question-slot signals. The exposed v7 public32 regression improves22/2/8 to25/1/6, with no prior PASS lost; one compound remains partial and the frozen development gate fails. No new sample is consumed, production stays r44. [Exact diagnosis and evidence](./docs/COVERAGE_V8_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |

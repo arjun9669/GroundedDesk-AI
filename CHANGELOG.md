@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-14 — Semantic sentence v8 experiment (no runtime release)
+
+- Froze actual MiniLM sentence/facet ranking with generic slot heuristics before235 unchanged exposed regressions.
+- Exposed v7 public32 improves22/2/8 to25/1/6; original119 and RQ28 remain PASS, no prior PASS loss.
+- Remaining compound omission fails the development gate; no new sample consumed. Production stays r44.
+- Preserved pre-question runner failure and exclusive second capture, exact answers, vectors and original scores.
+
 ## 2026-10-14 — Sentence-ending v7 experiment (no runtime release)
 
 - Froze closing-punctuation eligibility before 203 real Chrome/MiniLM regressions; repaired F12 and passed the development gate without prior PASS loss.
