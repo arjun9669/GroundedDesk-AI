@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-14 — Scope-binding v14 experiment (no runtime release)
+
+- Implemented isolated explicit action/object/site constraints and origin/rationale repairs. All 355 unit tests and strict offline checks pass; frozen inputs, keys and scoring thresholds remain unchanged.
+- Preserved a blocked first capture: the original driver imported v13 rather than v14. A separately frozen actual-Chrome replay verifies the v14 module, regenerates source embeddings with real MiniLM and reuses saved actual query vectors and UI evidence without question resubmission.
+- Qualified exposed Actor40 regression reaches 40/0/0, retaining its original first 28/2/10. Replay checks FAIL: valid V9 F20/C04 answers now falsely refuse in both variants. No further tuning, fresh Scope48 sample or runtime adoption; production stays r44.
+
 ## 2026-10-14 — Repair-gating v13 and prospective Actor40 (no runtime release)
 
 - Preserved complete compound answers unless an actor/numeric repair succeeds. All 267 exposed Chrome/MiniLM regressions captured once; frozen gate PASS, no historical PASS losses. All 347 unit tests and strict offline checks pass.
