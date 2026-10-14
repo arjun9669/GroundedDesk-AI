@@ -139,6 +139,14 @@ try{
       assert.deepEqual(comparable(computed.baseline.sources),comparable(ui.sources),'Instrumented production must reproduce actual UI source output '+pack.name+'/'+c.id);
       const record={id:c.id,question:c.question,workflow:hybrid?'hybrid':'comparison',ui,...computed};
       await fs.writeFile(path.join(dir,c.id+'-candidate.json'),JSON.stringify(record,null,2),{flag:'wx'});capture.cases.push(record);phase='candidate_saved';
+      await page.evaluate(record=>{
+        const panel=document.createElement('article');panel.id='v11-candidate-evidence';
+        Object.assign(panel.style,{position:'absolute',top:'0',left:'0',width:'1380px',padding:'30px',background:'#fff',color:'#111',font:'18px sans-serif',whiteSpace:'pre-wrap',zIndex:99999});
+        panel.textContent='ISOLATED V11 BROWSER-MODULE OUTPUT — production remains r44\n'+(record.workflow==='hybrid'?'Actual local MiniLM Hybrid / Qwen off':'Separate unchanged lexical Comparison')+'\n\n'+record.question+'\n\nFIXED V11\n'+record.fixed.answer+'\n'+record.fixed.sources.map(s=>s.filename).join('\n')+'\n\nSECTION V11\n'+record.section.answer+'\n'+record.section.sources.map(s=>s.filename).join('\n');
+        document.body.append(panel);
+      },record);
+      await fs.writeFile(path.join(dir,c.id+'-candidate-lab.png'),await page.locator('#v11-candidate-evidence').screenshot(),{flag:'wx'});
+      await page.evaluate(()=>document.querySelector('#v11-candidate-evidence').remove());
       await ledger.event('case_captured',{pack:pack.name,id:c.id});
       await ledger.checkpoint({status:'RUNNING',activePack,activeCase,phase,completed,completed_cases:capture.cases.map(c=>c.id)});
       if(pack.name==='RetrievalQuality28'&&c.id==='RQ13'){
