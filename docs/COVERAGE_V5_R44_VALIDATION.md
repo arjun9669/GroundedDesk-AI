@@ -1,6 +1,6 @@
 # Coverage v5: selective replacement helps, regression gate still fails
 
-Production remains **2026-10-13-r44**. V5 is an isolated experimental module; application/runtime retrieval code is unchanged. Actual installed Chrome **154.0.8037.98**, actual local **Xenova/all-MiniLM-L6-v2 q8 WASM**, Hybrid enabled, Qwen disabled. The completed run captured **179 Hybrid Q&A cases and 24 separate lexical Comparison cases**, once each, with no infrastructure retry, model-loading failure, mock vectors or Keyword fallback.
+Production remains **2026-10-13-r44**. V5 is an isolated experimental module; application/runtime retrieval code is unchanged. Actual installed Chrome **155.0.8059.40**, actual local **Xenova/all-MiniLM-L6-v2 q8 WASM**, Hybrid enabled, Qwen disabled. The completed run captured **179 Hybrid Q&A cases and 24 separate lexical Comparison cases**, once each, with no infrastructure retry, model-loading failure, mock vectors or Keyword fallback.
 
 **Every case is an in-sample regression.** No new public sample was generated or consumed because the frozen Stage1 development gate failed. Previous first-look results, documents, questions and scoring rules remain unchanged.
 
@@ -65,3 +65,8 @@ All 68 source/key hash checks passed; source hashes were reverified after captur
 All **301 unit tests**, strict offline toy evaluation and CI browser feature smokes pass. Those checks are separate from actual-MiniLM accuracy evidence. Production modules remain byte-identical in Git to the prior release. No paid services or runtime release were added.
 
 Future work should preserve the requested entity when evaluating replacement quotes and check whether the answer supplies the requested attribute type, such as a duration. That needs a separately frozen experiment and cannot be credited to this run.
+
+
+## Browser-version qualification
+
+V5 was observed on Chrome **155.0.8059.40**, while v4 used **154.0.8037.98**. The candidate and production baseline were paired within the same v5 browser/model session, but cross-run v4/v5 comparisons are not a controlled browser-version ablation. Do not attribute all cross-run differences solely to algorithm changes. Actual raw captures always recorded the correct version; an initially drafted v5 summary reused the old version and was corrected before merge. Scores, questions, quotations and raw evidence are unchanged.
