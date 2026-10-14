@@ -30,6 +30,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Semantic sentence experiment:** v8 adds actual MiniLM sentence/facet ranking and generic question-slot signals. The exposed v7 public32 regression improves22/2/8 to25/1/6, with no prior PASS lost; one compound remains partial and the frozen development gate fails. No new sample is consumed, production stays r44. [Exact diagnosis and evidence](./docs/COVERAGE_V8_R44_VALIDATION.md).
 
+**Relationship eligibility experiment:** v9 preserves original119/RQ28 passes and repairs all exposed compounds. The prior v7 public32 regression reaches30/0/2. A subsequently frozen prospective public32 scores24/1/6 plus1 ungraded (section); release-consideration gate BLOCKED: F06 first-attempt output unavailable. Context/extra-quotation precision limitations remain recorded. Production stays r44; no sealed independent-accuracy claim. [Full results and evidence](./docs/COVERAGE_V9_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |
