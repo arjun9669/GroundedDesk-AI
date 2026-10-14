@@ -108,7 +108,7 @@ try{
           const sentenceEvidence=lab.sentenceIndex.map((e,i)=>({...e,similarity:lab.cosineSimilarity(query,lab.sentenceVectors[i]),facetSimilarities:facetVectors.map(q=>lab.cosineSimilarity(q,lab.sentenceVectors[i]))}));
           const enriched=rs=>rs.map(r=>({...r,sentenceEvidence:sentenceEvidence.filter(e=>e.documentId===r.documentId)}));
           return {baseline:lab.retrieval.answerFromCandidates(c.question,ranks),fixed:lab.answerWithCoverage(c.question,enriched(ranks)),section:lab.answerWithCoverage(c.question,enriched(sectionRanks)),sentence_evidence:sentenceEvidence,facet_query_vectors:facetVectors,
-            pairedPrevious:{fixed:lab.previousCoverage(c.question,ranks),section:lab.previousCoverage(c.question,sectionRanks)},query_vector:query,top5:{fixed:ranks.slice(0,5).map(p=>({filename:p.filename,start:p.start,content:p.content})),section:sectionRanks.slice(0,5).map(p=>({filename:p.filename,start:p.start,content:p.content}))}};
+            pairedPrevious:{fixed:lab.previousCoverage(c.question,enriched(ranks)),section:lab.previousCoverage(c.question,enriched(sectionRanks))},query_vector:query,top5:{fixed:ranks.slice(0,5).map(p=>({filename:p.filename,start:p.start,content:p.content})),section:sectionRanks.slice(0,5).map(p=>({filename:p.filename,start:p.start,content:p.content}))}};
         }
         const names=c.expected_documents||c.expected_files||c.source_files;
         const result=lab.compareDocuments(lab.docs.find(d=>d.name===names[0]),lab.docs.find(d=>d.name===names[1]),c.question);
