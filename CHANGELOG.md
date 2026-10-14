@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-14 — Body evidence v11 experiment (no runtime release)
+
+- Froze and captured 267 unchanged exposed cases in Chrome with actual local MiniLM, including labelled candidate screenshots. All 342 unit tests pass.
+- Original 119/RQ28 remain all PASS, with no prior PASS losses. Exposed V9 set: section 32/0/0, fixed 29/1/2. Historical first scores remain unchanged; these are in-sample regressions.
+- Heading-only and duplicate/contained citations are removed. Frozen gate FAIL because fixed C04 still omits its second fact; fixed F16 and F20 remain failures. No new unseen sample or runtime adoption; r44 stays live.
+
 ## 2026-10-14 — Paragraph/facet v10 experiment (no runtime release)
 
 - Froze and captured267 unchanged exposed regressions in installed Chrome with actual local MiniLM; all338 unit tests pass.

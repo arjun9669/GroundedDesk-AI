@@ -34,6 +34,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Paragraph/facet experiment:** v10 captures267 exposed regressions with actual MiniLM in Chrome. Original119/RQ28 remain allPASS; the exposed V9 set scores28/1/3, preserving its first24/1/6 plus1ungraded. GateFAIL: an older compound regresses, a production PASS remains lost, and a supported question now falsely refuses. Longer quotations also reduce precision in some cases. No new unseen sample or runtime adoption; r44 stays live. [Exact results and evidence](./docs/COVERAGE_V10_R44_VALIDATION.md).
 
+**Body evidence experiment:** v11 captures all 267 exposed cases with real Chrome/MiniLM. Original 119/RQ28 remain all PASS and no prior PASS is lost. The exposed V9 set reaches 32/0/0 with section indexing and 29/1/2 with fixed indexing; heading-only and duplicate citations are removed. The frozen gate still FAILS: fixed C04 omits a requested fact. These are in-sample regressions; historical scores remain unchanged, no new unseen sample is consumed, and production stays r44. [Per-case results and browser evidence](./docs/COVERAGE_V11_R44_VALIDATION.md).
+
 **Benchmark capture reliability:** future runs preserve exact inputs, require fresh result nodes, and save partial answers/quotes/checkpoints/screenshots before failure closure. Validated in Chrome with Keyword and actual MiniLM; historical V9 F06 stays ungraded. Read-only diagnosis separates paragraph, ranking and coverage failures. Production stays r44. [Recovery tests and diagnosis](./docs/RUNNER_EVIDENCE_RECOVERY_R44.md).
 
 ## Features
