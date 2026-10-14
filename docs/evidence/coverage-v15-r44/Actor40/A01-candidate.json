@@ -1,0 +1,1303 @@
+{
+  "candidate_identity": "coverage-v15-site-scoped-frames",
+  "id": "A01",
+  "question": "Who approves orbital mooring permits at the fictional Velora Annex?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who approves orbital mooring permits at the fictional Velora Annex?",
+    "expected_display": "Who approves orbital mooring permits at the fictional Velora Annex?",
+    "rendered_question": "Who approves orbital mooring permits at the fictional Velora Annex?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+    "sources": [
+      {
+        "filename": "01_Harvard_University.md",
+        "excerpt": "re, possible shuttles open to the public, and park space which will also be publicly accessible.\n\n## Fictional approval appendix\nAt the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.",
+        "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho approves orbital mooring permits at the fictional Velora Annex?\n\nSearched all files: 01_Harvard_University.md · 02_Prime_number.md · 03_Sky__United_Kingdom_.md · 04_Chloroplast.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.\n\nSOURCE EVIDENCE\n[1]\n01_Harvard_University.md\n\nText line 10 (normalized extraction)\n\nre, possible shuttles open to the public, and park space which will also be publicly accessible. ## Fictional approval appendix At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "e9d294f6-2db0-480d-b42a-9982af477b6a:1960",
+        "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+        "filename": "01_Harvard_University.md",
+        "excerpt": "re, possible shuttles open to the public, and park space which will also be publicly accessible.\n\n## Fictional approval appendix\nAt the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.",
+        "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+        "score": 0.0476,
+        "lexicalScore": 8.519382757896647,
+        "semanticScore": 0.5812384766732073,
+        "matchedTerms": [
+          "fictional",
+          "velora",
+          "annex"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v15 scope binding",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Harvard_University.md",
+        "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 2089,
+          "cosine": 0.49679134527537805,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Harvard_University.md",
+        "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Harvard_University.md",
+        "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "orbital",
+          "moor",
+          "permit"
+        ],
+        "site": [
+          "velora",
+          "annex"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v15 scope binding",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Harvard_University.md",
+        "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 2089,
+          "cosine": 0.49679134527537805,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Harvard_University.md",
+        "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Harvard_University.md",
+        "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "orbital",
+          "moor",
+          "permit"
+        ],
+        "site": [
+          "velora",
+          "annex"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Harvard_University.md",
+      "start": 2089,
+      "content": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+      "semanticScore": 0.49679134527537805,
+      "lexicalScore": 10.179697879723228
+    },
+    {
+      "filename": "01_Harvard_University.md",
+      "start": 2185,
+      "content": "This approval authority applies only to routine ledger filings at Velora Annex.",
+      "semanticScore": 0.4403394342909133,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "Harvard's athletic rivalry with Yale is intense in every sport in which they meet, coming to a climax each fall in the annual football meeting, which dates back to 1875 and is usually called simply \"The Game\".",
+      "start": 35,
+      "end": 244,
+      "similarity": -0.0627635257377034,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "While Harvard's football team is no longer one of the country's best as it often was a century ago during football's early days (it won the Rose Bowl in 1920), both it and Yale have influenced the way the game is played.",
+      "start": 245,
+      "end": 465,
+      "similarity": -0.056898275719908666,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "In 1903, Harvard Stadium introduced a new era into football with the first-ever permanent reinforced concrete stadium of its kind in the country.",
+      "start": 466,
+      "end": 611,
+      "similarity": -0.007236011399103724,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "The stadium's structure actually played a role in the evolution of the college game.",
+      "start": 612,
+      "end": 696,
+      "similarity": 0.05204765674847171,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "Seeking to reduce the alarming number of deaths and serious injuries in the sport, Walter Camp (former captain of the Yale football team), suggested widening the field to open up the game.",
+      "start": 697,
+      "end": 885,
+      "similarity": 0.07616344844877826,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "But the stadium was too narrow to accommodate a wider playing surface.",
+      "start": 886,
+      "end": 956,
+      "similarity": 0.103766264418009,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "So, other steps had to be taken.",
+      "start": 957,
+      "end": 989,
+      "similarity": 0.10849538400729994,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "Camp would instead support revolutionary new rules for the 1906 season.",
+      "start": 990,
+      "end": 1061,
+      "similarity": 0.18609320178263103,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "These included legalizing the forward pass, perhaps the most significant rule change in the sport's history.",
+      "start": 1062,
+      "end": 1170,
+      "similarity": 0.15919693090079767,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "Harvard has purchased tracts of land in Allston, a walk across the Charles River from Cambridge, with the intent of major expansion southward.",
+      "start": 1185,
+      "end": 1327,
+      "similarity": 0.17601500649474786,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "The university now owns approximately fifty percent more land in Allston than in Cambridge.",
+      "start": 1328,
+      "end": 1419,
+      "similarity": 0.181843221681855,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "Proposals to connect the Cambridge campus with the new Allston campus include new and enlarged bridges, a shuttle service and/or a tram.",
+      "start": 1420,
+      "end": 1556,
+      "similarity": 0.15810215705278546,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "Plans also call for sinking part of Storrow Drive (at Harvard's expense) for replacement with park land and pedestrian access to the Charles River, as well as the construction of bike paths, and buildings throughout the Allston campus.",
+      "start": 1557,
+      "end": 1792,
+      "similarity": 0.2242626619692054,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "The institution asserts that such expansion will benefit not only the school, but surrounding community, pointing to such features as the enhanced transit infrastructure, possible shuttles open to the public, and park space which will also be publicly accessible.",
+      "start": 1793,
+      "end": 2056,
+      "similarity": 0.2651747075754152,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+      "start": 2089,
+      "end": 2184,
+      "similarity": 0.49679134527537805,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "This approval authority applies only to routine ledger filings at Velora Annex.",
+      "start": 2185,
+      "end": 2264,
+      "similarity": 0.4403394342909133,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2265,
+      "end": 2321,
+      "similarity": 0.17517799758210933,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "The evolutionary strategy used by cicadas of the genus Magicicada make use of prime numbers.",
+      "start": 29,
+      "end": 121,
+      "similarity": -0.04201649259299479,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "These insects spend most of their lives as grubs underground.",
+      "start": 122,
+      "end": 183,
+      "similarity": 0.013687319249441103,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "They only pupate and then emerge from their burrows after 7, 13 or 17 years, at which point they fly about, breed, and then die after a few weeks at most.",
+      "start": 184,
+      "end": 338,
+      "similarity": 0.0584050032044701,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "The logic for this is believed to be that the prime number intervals between emergences make it very difficult for predators to evolve that could specialize as predators on Magicicadas.",
+      "start": 339,
+      "end": 524,
+      "similarity": -0.01892863391800351,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "If Magicicadas appeared at a non-prime number intervals, say every 12 years, then predators appearing every 2, 3, 4, 6, or 12 years would be sure to meet them.",
+      "start": 525,
+      "end": 684,
+      "similarity": -0.002469332213769799,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "Over a 200-year period, average predator populations during hypothetical outbreaks of 14- and 15-year cicadas would be up to 2% higher than during outbreaks of 13- and 17-year cicadas.",
+      "start": 685,
+      "end": 869,
+      "similarity": -0.03091570671201177,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "Though small, this advantage appears to have been enough to drive natural selection in favour of a prime-numbered life-cycle for these insects.",
+      "start": 870,
+      "end": 1013,
+      "similarity": 0.07507950966040271,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "Prime numbers have influenced many artists and writers.",
+      "start": 1028,
+      "end": 1083,
+      "similarity": -0.018293977287074506,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "The French composer Olivier Messiaen used prime numbers to create ametrical music through \"natural phenomena\".",
+      "start": 1084,
+      "end": 1194,
+      "similarity": -0.00131083677763593,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "In works such as La Nativité du Seigneur (1935) and Quatre études de rythme (1949–50), he simultaneously employs motifs with lengths given by different prime numbers to create unpredictable rhythms: the primes 41, 43, 47 and 53 appear in the third étude, \"Neumes rythmiques\".",
+      "start": 1195,
+      "end": 1470,
+      "similarity": 0.03730998472467034,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\".",
+      "start": 1471,
+      "end": 1598,
+      "similarity": -0.004008154046033047,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+      "start": 1631,
+      "end": 1724,
+      "similarity": 0.2367924962572868,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "This approval authority applies only to routine kit labels at Nerith Hall.",
+      "start": 1725,
+      "end": 1799,
+      "similarity": 0.27122127937574286,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4919dc06-92a0-4a80-9022-25620b860f3e",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1800,
+      "end": 1856,
+      "similarity": 0.17517799758210933,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+      "start": 37,
+      "end": 187,
+      "similarity": -0.027959112490382892,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services.",
+      "start": 188,
+      "end": 316,
+      "similarity": 0.006943276957955263,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now called Sky Active, BSkyB competed with the ONdigital (later ITV Digital) terrestrial offering and cable services.",
+      "start": 317,
+      "end": 577,
+      "similarity": 0.03814018789717218,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "Within 30 days, over 100,000 digiboxes had been sold, which help bolstered BSkyB's decision to give away free digiboxes and minidishes from May 1999.",
+      "start": 578,
+      "end": 727,
+      "similarity": 0.05383584507487818,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "BSkyB has no veto over the presence of channels on their EPG, with open access being an enforced part of their operating licence from Ofcom.",
+      "start": 742,
+      "end": 882,
+      "similarity": 0.1328307205504685,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "Any channel which can get carriage on a suitable beam of a satellite at 28° East is entitled to access to BSkyB's EPG for a fee, ranging from £15–100,000.",
+      "start": 883,
+      "end": 1037,
+      "similarity": 0.09654280948680773,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "Third-party channels which opt for encryption receive discounts ranging from reduced price to free EPG entries, free carriage on a BSkyB leased transponder, or actual payment for being carried.",
+      "start": 1038,
+      "end": 1231,
+      "similarity": 0.0642437284327022,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.",
+      "start": 1232,
+      "end": 1363,
+      "similarity": -0.029363061281923137,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+      "start": 1396,
+      "end": 1493,
+      "similarity": 0.25202521874825967,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "This approval authority applies only to routine berth charts at Solune Station.",
+      "start": 1494,
+      "end": 1573,
+      "similarity": 0.32494149782166476,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e060ecf9-2925-4bfa-9bb6-718ddc51d12e",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1574,
+      "end": 1630,
+      "similarity": 0.17517799758210933,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "Chloroplasts' main role is to conduct photosynthesis, where the photosynthetic pigment chlorophyll captures the energy from sunlight and converts it and stores it in the energy-storage molecules ATP and NADPH while freeing oxygen from water.",
+      "start": 28,
+      "end": 269,
+      "similarity": 0.015255788048733857,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "They then use the ATP and NADPH to make organic molecules from carbon dioxide in a process known as the Calvin cycle.",
+      "start": 270,
+      "end": 387,
+      "similarity": -0.06187572747709791,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "Chloroplasts carry out a number of other functions, including fatty acid synthesis, much amino acid synthesis, and the immune response in plants.",
+      "start": 388,
+      "end": 533,
+      "similarity": -0.009487580500006018,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "The number of chloroplasts per cell varies from 1 in algae up to 100 in plants like Arabidopsis and wheat.",
+      "start": 534,
+      "end": 640,
+      "similarity": 0.027425531135077588,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "There are two types of thylakoids—granal thylakoids, which are arranged in grana, and stromal thylakoids, which are in contact with the stroma.",
+      "start": 655,
+      "end": 798,
+      "similarity": -0.04368895632955595,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "Granal thylakoids are pancake-shaped circular disks about 300–600 nanometers in diameter.",
+      "start": 799,
+      "end": 888,
+      "similarity": -0.07357947527383793,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "Stromal thylakoids are helicoid sheets that spiral around grana.",
+      "start": 889,
+      "end": 953,
+      "similarity": 0.02333697002875573,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "The flat tops and bottoms of granal thylakoids contain only the relatively flat photosystem II protein complex.",
+      "start": 954,
+      "end": 1065,
+      "similarity": -0.059346817460815236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "This allows them to stack tightly, forming grana with many layers of tightly appressed membrane, called granal membrane, increasing stability and surface area for light capture.",
+      "start": 1066,
+      "end": 1243,
+      "similarity": 0.0499150693844761,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+      "start": 1276,
+      "end": 1367,
+      "similarity": 0.25003118759407983,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "This approval authority applies only to routine exhibit tags at Tavora House.",
+      "start": 1368,
+      "end": 1445,
+      "similarity": 0.26342583223002725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "127a8369-c222-4157-8211-b8b4142e95cf",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1446,
+      "end": 1502,
+      "similarity": 0.17517799758210933,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v14 scope binding",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Harvard_University.md",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 2089,
+            "cosine": 0.49679134527537805,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Harvard_University.md",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Harvard_University.md",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "orbital",
+            "moor",
+            "permit"
+          ],
+          "site": [
+            "velora",
+            "annex"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v14 scope binding",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Harvard_University.md",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 2089,
+            "cosine": 0.49679134527537805,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Harvard_University.md",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Harvard_University.md",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "orbital",
+            "moor",
+            "permit"
+          ],
+          "site": [
+            "velora",
+            "annex"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e9d294f6-2db0-480d-b42a-9982af477b6a:1960",
+          "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+          "filename": "01_Harvard_University.md",
+          "excerpt": ", but surrounding community, pointing to such features as the enhanced transit infrastructure, possible shuttles open to the public, and park space which will also be publicly accessible.\n\n## Fictional approval appendix\nAt the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+          "score": 0.0476,
+          "lexicalScore": 8.519382757896647,
+          "semanticScore": 0.5812384766732073,
+          "matchedTerms": [
+            "fictional",
+            "velora",
+            "annex"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Harvard_University.md",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 2089,
+            "cosine": 0.49679134527537805,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Harvard_University.md",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e9d294f6-2db0-480d-b42a-9982af477b6a:2058",
+          "documentId": "e9d294f6-2db0-480d-b42a-9982af477b6a",
+          "filename": "01_Harvard_University.md",
+          "excerpt": ", but surrounding community, pointing to such features as the enhanced transit infrastructure, possible shuttles open to the public, and park space which will also be publicly accessible.\n\n## Fictional approval appendix\nAt the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+          "score": 0.0476,
+          "lexicalScore": 10.251514039719172,
+          "semanticScore": 0.5336473772171206,
+          "matchedTerms": [
+            "fictional",
+            "velora",
+            "annex"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Harvard_University.md",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 2089,
+            "cosine": 0.49679134527537805,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Harvard_University.md",
+          "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.024195596575737,
+    0.06794394552707672,
+    -0.0029981902334839106,
+    -0.03960011899471283,
+    -0.01285550557076931,
+    -0.051073528826236725,
+    -0.03232519328594208,
+    -0.036495815962553024,
+    -0.03931690752506256,
+    0.03054628148674965,
+    -0.010728239081799984,
+    -0.0278313048183918,
+    -0.06543854624032974,
+    0.06000504270195961,
+    -0.027499089017510414,
+    0.05224668234586716,
+    0.02580653876066208,
+    -0.020188162103295326,
+    -0.005148048512637615,
+    0.016286414116621017,
+    0.046645741909742355,
+    0.025594033300876617,
+    0.03351512551307678,
+    0.055166445672512054,
+    -0.024697648361325264,
+    -0.007689687889069319,
+    -0.039371293038129807,
+    0.10456548631191254,
+    0.011150139383971691,
+    0.000030026249078218825,
+    -0.03733881562948227,
+    0.050683941692113876,
+    -0.017477402463555336,
+    -0.050922416150569916,
+    0.07044141739606857,
+    0.07368332147598267,
+    0.006655180361121893,
+    -0.066832534968853,
+    0.025660835206508636,
+    -0.06510963290929794,
+    0.032691698521375656,
+    -0.04224829375743866,
+    0.03889133036136627,
+    0.05724937841296196,
+    -0.0676940381526947,
+    -0.028001220896840096,
+    0.09101035445928574,
+    -0.007766351569443941,
+    0.025794709101319313,
+    0.054192204028367996,
+    0.08605687320232391,
+    -0.035139571875333786,
+    -0.01097488310188055,
+    -0.10426842421293259,
+    -0.04487418755888939,
+    -0.008615058846771717,
+    0.010785072110593319,
+    -0.018885856494307518,
+    0.06422882527112961,
+    -0.008223148062825203,
+    0.047743190079927444,
+    -0.026382215321063995,
+    -0.045467276126146317,
+    0.01869163289666176,
+    -0.018466467037796974,
+    -0.04554787278175354,
+    -0.0825003907084465,
+    -0.014249133877456188,
+    -0.006942247971892357,
+    -0.0789288878440857,
+    0.04833543673157692,
+    -0.02376095950603485,
+    -0.002576277358457446,
+    -0.08026742935180664,
+    -0.025230327621102333,
+    0.00736013101413846,
+    0.023401958867907524,
+    0.07095468789339066,
+    0.017680222168564796,
+    -0.08667649328708649,
+    -0.02184239588677883,
+    -0.026129955425858498,
+    0.0035753557458519936,
+    0.055612269788980484,
+    0.02446107752621174,
+    -0.007498085964471102,
+    -0.004706587176769972,
+    -0.028109591454267502,
+    0.10055739432573318,
+    0.03799399733543396,
+    0.04828612878918648,
+    -0.06485573202371597,
+    -0.00413281936198473,
+    0.0001630739716347307,
+    0.009819205850362778,
+    0.005155324004590511,
+    -0.07123325765132904,
+    -0.019828541204333305,
+    -0.06507275998592377,
+    0.041638925671577454,
+    0.014665893279016018,
+    -0.06246456131339073,
+    -0.020475871860980988,
+    -0.02368575893342495,
+    -0.04444508254528046,
+    0.009794944897294044,
+    0.04495788365602493,
+    -0.01110935490578413,
+    -0.057160209864377975,
+    -0.04839043691754341,
+    -0.03437808156013489,
+    0.020834296941757202,
+    0.09279556572437286,
+    0.024658411741256714,
+    -0.06607852131128311,
+    0.0896378830075264,
+    0.00788629800081253,
+    -0.07489361613988876,
+    0.035513460636138916,
+    -0.08555732667446136,
+    -0.033004093915224075,
+    0.0005407023709267378,
+    0.08879099041223526,
+    0.046993888914585114,
+    0.0834120586514473,
+    -0.03922412171959877,
+    -0.08721625804901123,
+    -2.3001937540356208e-33,
+    -0.0007535057957284153,
+    0.017668507993221283,
+    -0.041316770017147064,
+    0.09934737533330917,
+    0.03406419977545738,
+    -0.0029880558140575886,
+    -0.03883175551891327,
+    0.011428995057940483,
+    -0.06669220328330994,
+    0.011539287865161896,
+    -0.00010724199819378555,
+    -0.02245156094431877,
+    0.005686952266842127,
+    -0.07067247480154037,
+    0.0837642252445221,
+    -0.036973729729652405,
+    0.07125300168991089,
+    -0.00032491321326233447,
+    0.004650061950087547,
+    -0.06667798012495041,
+    -0.010687309317290783,
+    0.02723485417664051,
+    0.022541919723153114,
+    -0.05512276664376259,
+    -0.07136950641870499,
+    0.03557152673602104,
+    0.011327049694955349,
+    -0.013505441136658192,
+    0.02653382532298565,
+    0.10656214505434036,
+    0.03085256740450859,
+    -0.032201554626226425,
+    0.004622000735253096,
+    -0.03849373012781143,
+    0.03941718116402626,
+    0.07931718230247498,
+    -0.07345787435770035,
+    -0.03531334921717644,
+    -0.06230953708291054,
+    0.052645303308963776,
+    -0.023655207827687263,
+    -0.00931207649409771,
+    -0.08603496849536896,
+    0.05592672526836395,
+    0.05180291831493378,
+    -0.04095365107059479,
+    0.033882398158311844,
+    0.03189816698431969,
+    0.12632745504379272,
+    0.07496603578329086,
+    0.043710749596357346,
+    0.0021601843181997538,
+    -0.1690489500761032,
+    -0.044741250574588776,
+    0.0013896242016926408,
+    -0.05051892250776291,
+    -0.025289762765169144,
+    0.0405019111931324,
+    -0.04909452423453331,
+    -0.01272484939545393,
+    -0.0024595740251243114,
+    0.06429649144411087,
+    -0.061749253422021866,
+    0.029701633378863335,
+    0.07419348508119583,
+    0.004406763240695,
+    0.015048730187118053,
+    -0.019032329320907593,
+    -0.025563789531588554,
+    -0.13181018829345703,
+    -0.013939745724201202,
+    0.035824377089738846,
+    0.00001813239578041248,
+    0.08228400349617004,
+    -0.07786600291728973,
+    -0.028645804151892662,
+    0.04886263981461525,
+    0.06806468963623047,
+    0.04639250785112381,
+    0.03858032450079918,
+    -0.01734745316207409,
+    0.04767993837594986,
+    0.06165890768170357,
+    -0.01179648656398058,
+    -0.02108634077012539,
+    -0.06928515434265137,
+    0.028433021157979965,
+    0.04500998184084892,
+    0.03498034179210663,
+    -0.032057102769613266,
+    0.04023299738764763,
+    -0.024705491960048676,
+    -0.009332033805549145,
+    -0.028942320495843887,
+    -0.047307390719652176,
+    1.3533269933055218e-33,
+    -0.08741848170757294,
+    -0.015635747462511063,
+    -0.030006716027855873,
+    -0.030008116737008095,
+    -0.031095409765839577,
+    -0.02820776030421257,
+    -0.055253248661756516,
+    -0.0461595244705677,
+    0.019582582637667656,
+    -0.05046100914478302,
+    -0.13928069174289703,
+    0.027475545182824135,
+    0.08544038981199265,
+    -0.014757211320102215,
+    0.04878880828619003,
+    -0.06641645729541779,
+    0.002796264598146081,
+    -0.05776931717991829,
+    0.060182955116033554,
+    -0.03168879449367523,
+    0.019611960276961327,
+    -0.02074696123600006,
+    0.0587335079908371,
+    0.04464101046323776,
+    -0.01421578973531723,
+    0.05320287123322487,
+    -0.04327840358018875,
+    0.005584904458373785,
+    -0.0927513837814331,
+    0.01965729519724846,
+    0.011862654238939285,
+    0.027544165030121803,
+    -0.09739966690540314,
+    0.055253129452466965,
+    -0.06248517334461212,
+    0.0038432262372225523,
+    -0.019795488566160202,
+    0.07862517982721329,
+    -0.01878250017762184,
+    0.014038140885531902,
+    0.05539649724960327,
+    -0.04192223399877548,
+    0.03979721665382385,
+    0.06488341093063354,
+    -0.13310426473617554,
+    -0.043318022042512894,
+    0.04946292191743851,
+    -0.023031899705529213,
+    0.013321182690560818,
+    -0.06058986857533455,
+    -0.015487916767597198,
+    0.02036936581134796,
+    0.047549620270729065,
+    -0.07567484676837921,
+    0.09984736889600754,
+    0.041456982493400574,
+    0.013817008584737778,
+    0.02447085827589035,
+    0.06005590036511421,
+    -0.0028440675232559443,
+    0.11231165379285812,
+    0.04214407131075859,
+    -0.04159082472324371,
+    0.03117203339934349,
+    -0.039195649325847626,
+    0.03178025037050247,
+    -0.024266084656119347,
+    0.025644736364483833,
+    -0.011899711564183235,
+    0.03492280840873718,
+    0.038182541728019714,
+    -0.045394301414489746,
+    -0.1927279233932495,
+    0.009887090884149075,
+    -0.0028856408316642046,
+    0.03965393826365471,
+    0.08747366070747375,
+    -0.007977582514286041,
+    -0.04814092069864273,
+    -0.0004425077058840543,
+    -0.06430450826883316,
+    -0.023242946714162827,
+    -0.014156926423311234,
+    0.04699811339378357,
+    0.13081322610378265,
+    -0.07013590633869171,
+    -0.02332209423184395,
+    -0.09192299842834473,
+    0.05451607704162598,
+    0.009797249920666218,
+    0.0016332787927240133,
+    0.030442295596003532,
+    -0.037727709859609604,
+    0.03640289604663849,
+    0.07449549436569214,
+    -1.8398282009002287e-8,
+    0.04476937651634216,
+    0.015172628685832024,
+    -0.04749089106917381,
+    0.062033511698246,
+    -0.041494399309158325,
+    -0.028733478859066963,
+    -0.014835120178759098,
+    0.023198237642645836,
+    -0.07700544595718384,
+    0.034090399742126465,
+    0.08608599752187729,
+    0.0165477953851223,
+    0.006887405179440975,
+    -0.07522512227296829,
+    -0.0020008841529488564,
+    0.027819665148854256,
+    0.07425791025161743,
+    -0.014076868072152138,
+    -0.09588178992271423,
+    -0.009779463522136211,
+    0.004881132859736681,
+    0.0017105656443163753,
+    -0.0011171988444402814,
+    -0.08101579546928406,
+    -0.03260640427470207,
+    0.0010929411510005593,
+    -0.03326104208827019,
+    0.0018973805708810687,
+    0.08190101385116577,
+    0.06137111410498619,
+    0.09455077350139618,
+    -0.01453136745840311,
+    -0.066338911652565,
+    0.04986637458205223,
+    -0.02039957232773304,
+    -0.01988251693546772,
+    -0.08012835681438446,
+    -0.016419170424342155,
+    -0.002864474430680275,
+    0.0013967108679935336,
+    -0.013193242251873016,
+    0.13573750853538513,
+    0.0636034905910492,
+    0.081814706325531,
+    0.046994537115097046,
+    0.08761867135763168,
+    -0.024010077118873596,
+    -0.07159727811813354,
+    0.011659658513963223,
+    -0.014539418742060661,
+    0.002353319199755788,
+    0.00006625751120736822,
+    0.06901153177022934,
+    0.11992376297712326,
+    0.03726225346326828,
+    0.06288307160139084,
+    0.016103820875287056,
+    0.04837417975068092,
+    -0.011073034256696701,
+    0.02823634259402752,
+    -0.05855332314968109,
+    0.016899364069104195,
+    -0.04681188240647316,
+    -0.002915001008659601
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Harvard_University.md",
+        "start": 1960,
+        "content": "re, possible shuttles open to the public, and park space which will also be publicly accessible.\n\n## Fictional approval appendix\nAt the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "start": 1319,
+        "content": "or carriage issues such as picture quality.\n\n## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Harvard_University.md",
+        "start": 2058,
+        "content": "## Fictional approval appendix\nAt the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "start": 1365,
+        "content": "## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus."
+      }
+    ]
+  }
+}
