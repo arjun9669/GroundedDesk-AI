@@ -1,0 +1,1209 @@
+{
+  "classification": "Assistant read-only review of both changed displayed outputs against frozen source/key; all Precision48 evidence checked for exact v19 parity and retains its previous per-case relevance review. Other unchanged cases retain prior adjudication plus current checks. No score/input changes or external-world factual certification.",
+  "changed_outputs": 2,
+  "changed_cases": 1,
+  "original119_quote_changes": 0,
+  "precision48_current": {
+    "fixed": "48/0/0",
+    "section": "48/0/0",
+    "citation_relevance_each": {
+      "DIRECT": 37,
+      "BOUNDARY_CONTAMINATED": 0,
+      "OFF_TOPIC": 0
+    },
+    "exact_displayed_answer_and_quote_parity_with_v19": true
+  },
+  "precision48_immutable_first": {
+    "fixed": "40/0/8",
+    "section": "40/0/8"
+  },
+  "v19_gate_immutable": "FAIL",
+  "unsupported_zero_citation_refusals": {
+    "fixed": 83,
+    "section": 83
+  },
+  "false_acceptances": {
+    "fixed": 0,
+    "section": 0
+  },
+  "supported_false_refusals": {
+    "fixed": [
+      {
+        "pack": "FreshConfirmation32",
+        "id": "F10"
+      }
+    ],
+    "section": [
+      {
+        "pack": "FreshConfirmation32",
+        "id": "F10"
+      }
+    ]
+  },
+  "historical_pass_regressions": [],
+  "changed_case_reviews": [
+    {
+      "pack": "V9Exposed32",
+      "id": "F17",
+      "variant": "fixed",
+      "question": "How many yards did Jordan Norwood return a punt to set the Super Bowl record?",
+      "prior_answer": "[1] Newton completed 4 of 4 passes for 51 yards and rushed twice for 25 yards, while Jonathan Stewart finished the drive with a 1-yard touchdown run, cutting the score to 10–7 with 11:28 left in the second quarter.",
+      "answer": "[1] Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1305049e-7b4e-48f1-a3c1-96b93094f0d0:659",
+          "documentId": "1305049e-7b4e-48f1-a3c1-96b93094f0d0",
+          "filename": "03_Super_Bowl_50.md",
+          "excerpt": "ter. Later on, Broncos receiver Jordan Norwood received Brad Nortman's short 28-yard punt surrounded by Panthers players, but none of them attempted to make a tackle, apparently thinking Norwood had called a fair catch. Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line. Despite Denver's excellent field position, they could not get the ball into the end zone, so McManus kicked a 33-yard field goal that increased their lead to 13–7.",
+          "quote": "Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line.",
+          "score": 0.0476,
+          "lexicalScore": 14.936436746200544,
+          "semanticScore": 0.7280813378275705,
+          "matchedTerms": [
+            "yards",
+            "jordan",
+            "norwood",
+            "return",
+            "punt",
+            "super",
+            "bowl",
+            "record"
+          ],
+          "start": 1233,
+          "end": 1411
+        }
+      ],
+      "diagnostics": null,
+      "frozen_outcome": "PASS",
+      "citation_provenance": [
+        true
+      ],
+      "paragraph_proxy": [
+        true
+      ],
+      "direct_gold_span": [
+        true
+      ],
+      "independent_relevance": "DIRECT",
+      "note": "Displayed literal Norwood61-yard Super Bowl record return replaces unrelated Newton51-yard passing/25-yard rushing quotation. New quotation exactly matches the historical v18 quotation. The hyphen recognizer preserves already answered v18 evidence; no new count-clause selection is necessary for this case. Last-name subject and record-return action are visible. This is exposed regression repair, not independent accuracy."
+    },
+    {
+      "pack": "V9Exposed32",
+      "id": "F17",
+      "variant": "section",
+      "question": "How many yards did Jordan Norwood return a punt to set the Super Bowl record?",
+      "prior_answer": "[1] Newton completed 4 of 4 passes for 51 yards and rushed twice for 25 yards, while Jonathan Stewart finished the drive with a 1-yard touchdown run, cutting the score to 10–7 with 11:28 left in the second quarter.",
+      "answer": "[1] Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1305049e-7b4e-48f1-a3c1-96b93094f0d0:704",
+          "documentId": "1305049e-7b4e-48f1-a3c1-96b93094f0d0",
+          "filename": "03_Super_Bowl_50.md",
+          "excerpt": "ter. Later on, Broncos receiver Jordan Norwood received Brad Nortman's short 28-yard punt surrounded by Panthers players, but none of them attempted to make a tackle, apparently thinking Norwood had called a fair catch. Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line. Despite Denver's excellent field position, they could not get the ball into the end zone, so McManus kicked a 33-yard field goal that increased their lead to 13–7.",
+          "quote": "Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line.",
+          "score": 0.0476,
+          "lexicalScore": 14.820625640478907,
+          "semanticScore": 0.7041671194107044,
+          "matchedTerms": [
+            "yards",
+            "jordan",
+            "norwood",
+            "return",
+            "punt",
+            "super",
+            "bowl",
+            "record"
+          ],
+          "start": 1233,
+          "end": 1411
+        }
+      ],
+      "diagnostics": null,
+      "frozen_outcome": "PASS",
+      "citation_provenance": [
+        true
+      ],
+      "paragraph_proxy": [
+        true
+      ],
+      "direct_gold_span": [
+        true
+      ],
+      "independent_relevance": "DIRECT",
+      "note": "Displayed literal Norwood61-yard Super Bowl record return replaces unrelated Newton51-yard passing/25-yard rushing quotation. New quotation exactly matches the historical v18 quotation. The hyphen recognizer preserves already answered v18 evidence; no new count-clause selection is necessary for this case. Last-name subject and record-return action are visible. This is exposed regression repair, not independent accuracy."
+    }
+  ],
+  "precision48_cases_retained_review": [
+    {
+      "variant": "fixed",
+      "id": "F01",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed UNFCCC full treaty name and main international climate-treaty description support the frozen answer."
+    },
+    {
+      "variant": "fixed",
+      "id": "F02",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed objective explicitly gives greenhouse-gas concentrations in the atmosphere, preserving the source quotation."
+    },
+    {
+      "variant": "fixed",
+      "id": "F03",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed opening clause explicitly places IPCC under United Nations auspices."
+    },
+    {
+      "variant": "fixed",
+      "id": "F04",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "The exact clause now displays Ten of these 14 reconstructions. Frozen alternatives mix 14 and Ten and remain unchanged. The subset/total relation is retained, but the short quote lacks the earlier Medieval Warm Period anchor; the frozen PASS is an answer-span/paragraph result, not proof that the annotation resolves every ambiguity."
+    },
+    {
+      "variant": "fixed",
+      "id": "F05",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Quote says Ten of these 14 reconstructions covered 1,000 years or longer. Ten is the answer; original alternative 14 annotation is preserved, not endorsed as the count for this question."
+    },
+    {
+      "variant": "fixed",
+      "id": "F06",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Quote distinguishes AR4 published in 2007 from the 2001 Third Assessment Report; the requested report year is displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F07",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed attributed-economic-argument passage gives extending easier credit to lower/middle earners. This is a source-content evaluation, not financial advice or a causal-world-fact certification."
+    },
+    {
+      "variant": "fixed",
+      "id": "F08",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed second sentence refers back to easier credit/monetary stimulation, supporting the frozen annotation."
+    },
+    {
+      "variant": "fixed",
+      "id": "F09",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed attributed Rajan quotation explicitly identifies systematic economic inequalities; source attribution is retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "F10",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed estimate attributes variation to differences in inequality; no independent claim that the estimate is scientifically established."
+    },
+    {
+      "variant": "fixed",
+      "id": "F11",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed source states over fifty studies and larger income differences; it reports the passage rather than independently validating literature."
+    },
+    {
+      "variant": "fixed",
+      "id": "F12",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed passage concerns near-identical definitions of homicides, not identical homicide rates. Original short question/key wording retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "F13",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed opening clause explicitly gives Parliamentary time; later schedule detail is broad context from frozen historic passage."
+    },
+    {
+      "variant": "fixed",
+      "id": "F14",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed clause gives issues under their jurisdiction. Original gold also includes the broad First Minister alternative, but actual quote contains the requested topic."
+    },
+    {
+      "variant": "fixed",
+      "id": "F15",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Four general questions is now a single literal body block ending in the original colon. The unrelated next heading/Presiding Officer paragraph is removed. The source itself ends this clause with a colon; no missing list is invented."
+    },
+    {
+      "variant": "fixed",
+      "id": "F16",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed language clause includes Scots and Gaelic plus agreement of Presiding Officer exception. No claim about current parliamentary rules."
+    },
+    {
+      "variant": "fixed",
+      "id": "F17",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed sentence names ministers or party leaders and speaking-time context."
+    },
+    {
+      "variant": "fixed",
+      "id": "F18",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed sentence gives different viewpoints and political parties, retaining both."
+    },
+    {
+      "variant": "fixed",
+      "id": "F19",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed final clause links post-WWI dissolution/new states to ending Turkish colonial ambitions, matching frozen alternatives."
+    },
+    {
+      "variant": "fixed",
+      "id": "F20",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal emergence of the new state of Turkey now displayed; correct original paragraph and filename. Broad alliance/dissolution context remains."
+    },
+    {
+      "variant": "fixed",
+      "id": "F21",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Explicit allied with Germany clause now displayed in its full original sentence. The source clause places the alliance in the early20th century and dissolution after WWI; it does not independently establish a precise date beyond source wording."
+    },
+    {
+      "variant": "fixed",
+      "id": "F22",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Previously refused supported question now displays the attributed It was believed ... behaviours were determined by the environment clause. Original British spelling retained. Historical discredited ideology is evaluated as an attributed source claim, not endorsed as science."
+    },
+    {
+      "variant": "fixed",
+      "id": "F23",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed source describes environmental determinism as a historical justification for colonial domination. Quoted for provenance; the discredited ideology/racial hierarchy is not endorsed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F24",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Both orientalism and tropicality now displayed, retaining the preceding environmental-determinism subject sentence. The racial-hierarchy claim is an attributed historical ideology, not an endorsement."
+    },
+    {
+      "variant": "fixed",
+      "id": "C01",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "One displayed quotation directly contains treaty name and stabilization objective."
+    },
+    {
+      "variant": "fixed",
+      "id": "C02",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "One displayed quotation directly supports easier-credit answer for both question facets."
+    },
+    {
+      "variant": "fixed",
+      "id": "C03",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true,
+        true
+      ],
+      "note": "Two quotations directly support Parliamentary time and jurisdiction issues, respectively."
+    },
+    {
+      "variant": "fixed",
+      "id": "C04",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "One displayed quotation supports both end-of-imperial-ambitions and Turkey facets. Unnecessary capital/decline-only second quote is removed. Frozen per-case PASS remains PASS and separate citation precision now passes."
+    },
+    {
+      "variant": "fixed",
+      "id": "U01",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "U02",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "U03",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "U04",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "A01",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "A02",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "A03",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "A04",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "A05",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "A06",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "A07",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "A08",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "P01",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "fixed",
+      "id": "P02",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "fixed",
+      "id": "P03",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Correct Reference Steward / standard shelf indexes / Tiravel Library tuple retained. Unrelated introductory colon line and internal heading removed, leaving only literal original approval paragraph."
+    },
+    {
+      "variant": "fixed",
+      "id": "P04",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Correct Reference Steward / standard shelf indexes / Tiravel Library tuple retained. Unrelated introductory colon line and internal heading removed, leaving only literal original approval paragraph."
+    },
+    {
+      "variant": "fixed",
+      "id": "P05",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "fixed",
+      "id": "P06",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "fixed",
+      "id": "P07",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "fixed",
+      "id": "P08",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "section",
+      "id": "F01",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed UNFCCC full treaty name and main international climate-treaty description support the frozen answer."
+    },
+    {
+      "variant": "section",
+      "id": "F02",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed objective explicitly gives greenhouse-gas concentrations in the atmosphere, preserving the source quotation."
+    },
+    {
+      "variant": "section",
+      "id": "F03",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed opening clause explicitly places IPCC under United Nations auspices."
+    },
+    {
+      "variant": "section",
+      "id": "F04",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "The exact clause now displays Ten of these 14 reconstructions. Frozen alternatives mix 14 and Ten and remain unchanged. The subset/total relation is retained, but the short quote lacks the earlier Medieval Warm Period anchor; the frozen PASS is an answer-span/paragraph result, not proof that the annotation resolves every ambiguity."
+    },
+    {
+      "variant": "section",
+      "id": "F05",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Quote says Ten of these 14 reconstructions covered 1,000 years or longer. Ten is the answer; original alternative 14 annotation is preserved, not endorsed as the count for this question."
+    },
+    {
+      "variant": "section",
+      "id": "F06",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Quote distinguishes AR4 published in 2007 from the 2001 Third Assessment Report; the requested report year is displayed."
+    },
+    {
+      "variant": "section",
+      "id": "F07",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed attributed-economic-argument passage gives extending easier credit to lower/middle earners. This is a source-content evaluation, not financial advice or a causal-world-fact certification."
+    },
+    {
+      "variant": "section",
+      "id": "F08",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed second sentence refers back to easier credit/monetary stimulation, supporting the frozen annotation."
+    },
+    {
+      "variant": "section",
+      "id": "F09",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed attributed Rajan quotation explicitly identifies systematic economic inequalities; source attribution is retained."
+    },
+    {
+      "variant": "section",
+      "id": "F10",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed estimate attributes variation to differences in inequality; no independent claim that the estimate is scientifically established."
+    },
+    {
+      "variant": "section",
+      "id": "F11",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed source states over fifty studies and larger income differences; it reports the passage rather than independently validating literature."
+    },
+    {
+      "variant": "section",
+      "id": "F12",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed passage concerns near-identical definitions of homicides, not identical homicide rates. Original short question/key wording retained."
+    },
+    {
+      "variant": "section",
+      "id": "F13",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed opening clause explicitly gives Parliamentary time; later schedule detail is broad context from frozen historic passage."
+    },
+    {
+      "variant": "section",
+      "id": "F14",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed clause gives issues under their jurisdiction. Original gold also includes the broad First Minister alternative, but actual quote contains the requested topic."
+    },
+    {
+      "variant": "section",
+      "id": "F15",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Four general questions is now a single literal body block ending in the original colon. The unrelated next heading/Presiding Officer paragraph is removed. The source itself ends this clause with a colon; no missing list is invented."
+    },
+    {
+      "variant": "section",
+      "id": "F16",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed language clause includes Scots and Gaelic plus agreement of Presiding Officer exception. No claim about current parliamentary rules."
+    },
+    {
+      "variant": "section",
+      "id": "F17",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed sentence names ministers or party leaders and speaking-time context."
+    },
+    {
+      "variant": "section",
+      "id": "F18",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed sentence gives different viewpoints and political parties, retaining both."
+    },
+    {
+      "variant": "section",
+      "id": "F19",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed final clause links post-WWI dissolution/new states to ending Turkish colonial ambitions, matching frozen alternatives."
+    },
+    {
+      "variant": "section",
+      "id": "F20",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal emergence of the new state of Turkey now displayed; correct original paragraph and filename. Broad alliance/dissolution context remains."
+    },
+    {
+      "variant": "section",
+      "id": "F21",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Explicit allied with Germany clause now displayed in its full original sentence. The source clause places the alliance in the early20th century and dissolution after WWI; it does not independently establish a precise date beyond source wording."
+    },
+    {
+      "variant": "section",
+      "id": "F22",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Previously refused supported question now displays the attributed It was believed ... behaviours were determined by the environment clause. Original British spelling retained. Historical discredited ideology is evaluated as an attributed source claim, not endorsed as science."
+    },
+    {
+      "variant": "section",
+      "id": "F23",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed source describes environmental determinism as a historical justification for colonial domination. Quoted for provenance; the discredited ideology/racial hierarchy is not endorsed."
+    },
+    {
+      "variant": "section",
+      "id": "F24",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Both orientalism and tropicality now displayed, retaining the preceding environmental-determinism subject sentence. The racial-hierarchy claim is an attributed historical ideology, not an endorsement."
+    },
+    {
+      "variant": "section",
+      "id": "C01",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "One displayed quotation directly contains treaty name and stabilization objective."
+    },
+    {
+      "variant": "section",
+      "id": "C02",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "One displayed quotation directly supports easier-credit answer for both question facets."
+    },
+    {
+      "variant": "section",
+      "id": "C03",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true,
+        true
+      ],
+      "note": "Two quotations directly support Parliamentary time and jurisdiction issues, respectively."
+    },
+    {
+      "variant": "section",
+      "id": "C04",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "One displayed quotation supports both end-of-imperial-ambitions and Turkey facets. Unnecessary capital/decline-only second quote is removed. Frozen per-case PASS remains PASS and separate citation precision now passes."
+    },
+    {
+      "variant": "section",
+      "id": "U01",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "U02",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "U03",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "U04",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "A01",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "A02",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "A03",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "A04",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "A05",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "A06",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "A07",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "A08",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported zero-citation refusal; original frozen absence controls preserved."
+    },
+    {
+      "variant": "section",
+      "id": "P01",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "section",
+      "id": "P02",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "section",
+      "id": "P03",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Correct Reference Steward / standard shelf indexes / Tiravel Library tuple retained. Unrelated introductory colon line and internal heading removed, leaving only literal original approval paragraph."
+    },
+    {
+      "variant": "section",
+      "id": "P04",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Correct Reference Steward / standard shelf indexes / Tiravel Library tuple retained. Unrelated introductory colon line and internal heading removed, leaving only literal original approval paragraph."
+    },
+    {
+      "variant": "section",
+      "id": "P05",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "section",
+      "id": "P06",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "section",
+      "id": "P07",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    },
+    {
+      "variant": "section",
+      "id": "P08",
+      "frozen_outcome": "PASS",
+      "independent_citation_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple directly relevant; unchanged from paired v18."
+    }
+  ],
+  "limitations": [
+    "All451 cases are exposed in-sample regression; not new independent accuracy or official SQuAD scoring.",
+    "The measured F17 gain comes from retaining a previously correct hyphenated count. The new active actor/action binding is covered by generic surface-rule unit controls; this run is not independent proof of general actor/coreference/entailment behavior.",
+    "Only required development sets and preservation checks are all PASS; older public failures outside the gate remain disclosed.",
+    "Precision48 F04/F05 original14/Ten annotation ambiguity remains unchanged; F04 short quotation lacks earlier event anchor.",
+    "DIRECT means at least a requested fact is supported; broad context and source-claim limitations remain.",
+    "Historical political/economic/colonial-ideology passages evaluated as attributed source contents, not current guidance or endorsements.",
+    "Candidate panels are isolated browser modules, not deployed v20 UI; some screenshot panel labels can be clipped by page scroll while raw JSON retains exact answers."
+  ]
+}

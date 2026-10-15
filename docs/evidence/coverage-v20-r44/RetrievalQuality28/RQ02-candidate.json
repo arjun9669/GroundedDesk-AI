@@ -1,0 +1,2687 @@
+{
+  "candidate_identity": "coverage-v20-count-binding",
+  "id": "RQ02",
+  "question": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+    "expected_display": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+    "rendered_question": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] # Orchard Depot — Current Dispatch Guide",
+    "sources": [
+      {
+        "filename": "01_Orchard_Depot_Current.md",
+        "excerpt": "# Orchard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.\nOperational note: This section concerns urgent release. Read",
+        "quote": "# Orchard Depot — Current Dispatch Guide"
+      }
+    ],
+    "displayed": "YOUR QUESTION\nAn Orchard order is released at 15:00 under the current guide. When does it depart?\n\nSearched all files: 01_Orchard_Depot_Current.md · 02_Orchard_Depot_Archived.md · 03_Hilltop_Equipment.md · 04_Lakeside_Purchasing.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] # Orchard Depot — Current Dispatch Guide\n\nSOURCE EVIDENCE\n[1]\n01_Orchard_Depot_Current.md\n\nText line 1 (normalized extraction)\n\n# Orchard Depot — Current Dispatch Guide Fictional development evaluation material. This is not a real organization policy. ## Release window Orders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day. Operational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. ## Urgent release Urgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator. Operational note: This section concerns urgent release. Read\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] # Orchard Depot — Current Dispatch Guide",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130:0",
+        "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+        "filename": "01_Orchard_Depot_Current.md",
+        "excerpt": "# Orchard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.\nOperational note: This section concerns urgent release. Read",
+        "quote": "# Orchard Depot — Current Dispatch Guide",
+        "score": 0.0466,
+        "lexicalScore": 8.843315549308748,
+        "semanticScore": 0.7012564942147417,
+        "matchedTerms": [
+          "orchard",
+          "released",
+          "current",
+          "guide"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130:0",
+        "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+        "filename": "01_Orchard_Depot_Current.md",
+        "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available",
+        "quote": "Orders released at or after 14:20 leave on the next operating day.",
+        "score": 0.0466,
+        "lexicalScore": 8.843315549308748,
+        "semanticScore": 0.7012564942147417,
+        "matchedTerms": [
+          "orchard",
+          "released",
+          "current",
+          "guide"
+        ],
+        "start": 224,
+        "end": 290
+      }
+    ],
+    "mode": "Experimental v20 paragraph relations",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Orchard_Depot_Current.md",
+        "quote": "Orders released at or after 14:20 leave on the next operating day.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Orchard_Depot_Current.md",
+        "quote": "Orders released at or after 14:20 leave on the next operating day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Orchard_Depot_Current.md",
+        "quote": "Orders released at or after 14:20 leave on the next operating day.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130:126",
+        "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+        "filename": "01_Orchard_Depot_Current.md",
+        "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available",
+        "quote": "Orders released at or after 14:20 leave on the next operating day.",
+        "score": 0.025,
+        "lexicalScore": null,
+        "semanticScore": 0.7347711978676885,
+        "matchedTerms": [
+          "orchard",
+          "released"
+        ],
+        "start": 224,
+        "end": 290
+      }
+    ],
+    "mode": "Experimental v20 paragraph relations",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Orchard_Depot_Current.md",
+        "quote": "Orders released at or after 14:20 leave on the next operating day.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Orchard_Depot_Current.md",
+        "quote": "Orders released at or after 14:20 leave on the next operating day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Orchard_Depot_Current.md",
+        "quote": "Orders released at or after 14:20 leave on the next operating day.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Orchard_Depot_Archived.md",
+      "start": 158,
+      "content": "Under the archived Orchard guide, orders released before 13:00 left the depot on the same operating day.",
+      "semanticScore": 0.8111253149225373,
+      "lexicalScore": 12.793857590093618
+    },
+    {
+      "filename": "01_Orchard_Depot_Current.md",
+      "start": 144,
+      "content": "Orders released before 14:20 leave the Orchard depot on the same operating day.",
+      "semanticScore": 0.8014985626882888,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Orchard_Depot_Current.md",
+      "start": 224,
+      "content": "Orders released at or after 14:20 leave on the next operating day.",
+      "semanticScore": 0.6498651473496749,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Orchard_Depot_Archived.md",
+      "start": 620,
+      "content": "Under the archived Orchard guide, urgent dispatch required approval from the Depot Manager.",
+      "semanticScore": 0.5889357944958643,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Orchard_Depot_Current.md",
+      "start": 3223,
+      "content": "Orchard visitors enter after 10:10.",
+      "semanticScore": 0.5796494401275427,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Fictional development evaluation material.",
+      "start": 42,
+      "end": 84,
+      "similarity": 0.07582616074078351,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "This is not a real organization policy.",
+      "start": 85,
+      "end": 124,
+      "similarity": 0.07735350734988555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Orders released before 14:20 leave the Orchard depot on the same operating day.",
+      "start": 144,
+      "end": 223,
+      "similarity": 0.8014985626882888,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Orders released at or after 14:20 leave on the next operating day.",
+      "start": 224,
+      "end": 290,
+      "similarity": 0.6498651473496749,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Operational note: This section concerns release window.",
+      "start": 291,
+      "end": 346,
+      "similarity": 0.32663563726263384,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 347,
+      "end": 400,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 401,
+      "end": 445,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "This section concerns release window.",
+      "start": 446,
+      "end": 483,
+      "similarity": 0.30848267393778284,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 484,
+      "end": 537,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 538,
+      "end": 582,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Urgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.",
+      "start": 603,
+      "end": 699,
+      "similarity": 0.45878807653042014,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Operational note: This section concerns urgent release.",
+      "start": 700,
+      "end": 755,
+      "similarity": 0.35208646087121903,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 756,
+      "end": 809,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 810,
+      "end": 854,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "This section concerns urgent release.",
+      "start": 855,
+      "end": 892,
+      "similarity": 0.3914835930063047,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 893,
+      "end": 946,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 947,
+      "end": 991,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Orchard cold crates must remain between 3 and 7 degrees Celsius.",
+      "start": 1009,
+      "end": 1073,
+      "similarity": 0.33860716434842286,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "A temperature excursion requires quarantine until the Quality Lead authorizes release.",
+      "start": 1074,
+      "end": 1160,
+      "similarity": 0.2240028796390259,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Operational note: This section concerns cold crates.",
+      "start": 1161,
+      "end": 1213,
+      "similarity": 0.15868442209348102,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 1214,
+      "end": 1267,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 1268,
+      "end": 1312,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "This section concerns cold crates.",
+      "start": 1313,
+      "end": 1347,
+      "similarity": 0.09159984679636952,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 1348,
+      "end": 1401,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 1402,
+      "end": 1446,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "When the bridge route is closed, Orchard drivers use the eastern bypass.",
+      "start": 1466,
+      "end": 1538,
+      "similarity": 0.39623803601059443,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "The Logistics Lead approves the revised route before departure.",
+      "start": 1539,
+      "end": 1602,
+      "similarity": 0.34111977710369684,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Operational note: This section concerns route closure.",
+      "start": 1603,
+      "end": 1657,
+      "similarity": 0.20992940584116748,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 1658,
+      "end": 1711,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 1712,
+      "end": 1756,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "This section concerns route closure.",
+      "start": 1757,
+      "end": 1793,
+      "similarity": 0.18572910668548148,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 1794,
+      "end": 1847,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 1848,
+      "end": 1892,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+      "start": 1914,
+      "end": 2011,
+      "similarity": 0.4316872959264091,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Operational note: This section concerns dispatch packet.",
+      "start": 2012,
+      "end": 2068,
+      "similarity": 0.1420218135600795,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 2069,
+      "end": 2122,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 2123,
+      "end": 2167,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "This section concerns dispatch packet.",
+      "start": 2168,
+      "end": 2206,
+      "similarity": 0.14193306810404802,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 2207,
+      "end": 2260,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 2261,
+      "end": 2305,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Orchard dispatch records are retained for 120 days.",
+      "start": 2330,
+      "end": 2381,
+      "similarity": 0.4449101962236101,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Records under an unresolved transport claim are kept until the claim closes.",
+      "start": 2382,
+      "end": 2458,
+      "similarity": 0.14166171218418333,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Operational note: This section concerns evidence retention.",
+      "start": 2459,
+      "end": 2518,
+      "similarity": 0.08753677525106177,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 2519,
+      "end": 2572,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 2573,
+      "end": 2617,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "This section concerns evidence retention.",
+      "start": 2618,
+      "end": 2659,
+      "similarity": 0.059791143721410644,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 2660,
+      "end": 2713,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 2714,
+      "end": 2758,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Orchard delivery partners acknowledge a dispatch notice within four business hours.",
+      "start": 2780,
+      "end": 2863,
+      "similarity": 0.5217512040569302,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Acknowledgement is not a delivery guarantee.",
+      "start": 2864,
+      "end": 2908,
+      "similarity": 0.20068548071804487,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Operational note: This section concerns acknowledgement.",
+      "start": 2909,
+      "end": 2965,
+      "similarity": 0.17659568299291278,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 2966,
+      "end": 3019,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 3020,
+      "end": 3064,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "This section concerns acknowledgement.",
+      "start": 3065,
+      "end": 3103,
+      "similarity": 0.09026197494771002,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 3104,
+      "end": 3157,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 3158,
+      "end": 3202,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Orchard visitors enter after 10:10.",
+      "start": 3223,
+      "end": 3258,
+      "similarity": 0.5796494401275427,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Orchard staff complete their morning checks by 08:40.",
+      "start": 3259,
+      "end": 3312,
+      "similarity": 0.5475181916351116,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Operational note: This section concerns visitor access.",
+      "start": 3313,
+      "end": 3368,
+      "similarity": 0.1394705034545948,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 3369,
+      "end": 3422,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 3423,
+      "end": 3467,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "This section concerns visitor access.",
+      "start": 3468,
+      "end": 3505,
+      "similarity": 0.09800422190451834,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Read the written instruction in its original context.",
+      "start": 3506,
+      "end": 3559,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+      "value": "Keep the original file available for review.",
+      "start": 3560,
+      "end": 3604,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Fictional development evaluation material.",
+      "start": 56,
+      "end": 98,
+      "similarity": 0.07582616074078351,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "This is not a real organization policy.",
+      "start": 99,
+      "end": 138,
+      "similarity": 0.07735350734988555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Under the archived Orchard guide, orders released before 13:00 left the depot on the same operating day.",
+      "start": 158,
+      "end": 262,
+      "similarity": 0.8111253149225373,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Later orders left on the next operating day.",
+      "start": 263,
+      "end": 307,
+      "similarity": 0.5265741467115396,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Operational note: This section concerns release window.",
+      "start": 308,
+      "end": 363,
+      "similarity": 0.32663563726263384,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 364,
+      "end": 417,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 418,
+      "end": 462,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "This section concerns release window.",
+      "start": 463,
+      "end": 500,
+      "similarity": 0.30848267393778284,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 501,
+      "end": 554,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 555,
+      "end": 599,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Under the archived Orchard guide, urgent dispatch required approval from the Depot Manager.",
+      "start": 620,
+      "end": 711,
+      "similarity": 0.5889357944958643,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Operational note: This section concerns urgent release.",
+      "start": 712,
+      "end": 767,
+      "similarity": 0.35208646087121903,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 768,
+      "end": 821,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 822,
+      "end": 866,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "This section concerns urgent release.",
+      "start": 867,
+      "end": 904,
+      "similarity": 0.3914835930063047,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 905,
+      "end": 958,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 959,
+      "end": 1003,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "The archived Orchard cold-crate range was 2 to 8 degrees Celsius.",
+      "start": 1021,
+      "end": 1086,
+      "similarity": 0.2839249665750209,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Operational note: This section concerns cold crates.",
+      "start": 1087,
+      "end": 1139,
+      "similarity": 0.15868442209348102,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 1140,
+      "end": 1193,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 1194,
+      "end": 1238,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "This section concerns cold crates.",
+      "start": 1239,
+      "end": 1273,
+      "similarity": 0.09159984679636952,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 1274,
+      "end": 1327,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 1328,
+      "end": 1372,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "The archived Orchard dispatch packet included a route sheet and crate inventory.",
+      "start": 1394,
+      "end": 1474,
+      "similarity": 0.4252629756874763,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Operational note: This section concerns dispatch packet.",
+      "start": 1475,
+      "end": 1531,
+      "similarity": 0.1420218135600795,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 1532,
+      "end": 1585,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 1586,
+      "end": 1630,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "This section concerns dispatch packet.",
+      "start": 1631,
+      "end": 1669,
+      "similarity": 0.14193306810404802,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 1670,
+      "end": 1723,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 1724,
+      "end": 1768,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Archived Orchard dispatch records were retained for 60 days.",
+      "start": 1784,
+      "end": 1844,
+      "similarity": 0.42355498738452685,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Operational note: This section concerns retention.",
+      "start": 1845,
+      "end": 1895,
+      "similarity": 0.1802432178978698,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 1896,
+      "end": 1949,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 1950,
+      "end": 1994,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "This section concerns retention.",
+      "start": 1995,
+      "end": 2027,
+      "similarity": 0.14271993100422234,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 2028,
+      "end": 2081,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 2082,
+      "end": 2126,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Archived Orchard visitors entered after 09:30.",
+      "start": 2141,
+      "end": 2187,
+      "similarity": 0.5356775812923252,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Operational note: This section concerns visitors.",
+      "start": 2188,
+      "end": 2237,
+      "similarity": 0.18375275406514904,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 2238,
+      "end": 2291,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 2292,
+      "end": 2336,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "This section concerns visitors.",
+      "start": 2337,
+      "end": 2368,
+      "similarity": 0.13525461546594822,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Read the written instruction in its original context.",
+      "start": 2369,
+      "end": 2422,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71ad653d-bab8-47a0-b659-0da4461f8979",
+      "value": "Keep the original file available for review.",
+      "start": 2423,
+      "end": 2467,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Fictional development evaluation material.",
+      "start": 43,
+      "end": 85,
+      "similarity": 0.07582616074078351,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "This is not a real organization policy.",
+      "start": 86,
+      "end": 125,
+      "similarity": 0.07735350734988555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Hilltop conveyor bearings are lubricated every 70 operating hours.",
+      "start": 142,
+      "end": 208,
+      "similarity": 0.16756491741502919,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "In a dusty bay, the lubrication interval is 35 operating hours.",
+      "start": 209,
+      "end": 272,
+      "similarity": 0.10330607821421492,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "The inspection interval remains 14 days.",
+      "start": 273,
+      "end": 313,
+      "similarity": 0.32193983856154484,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Operational note: This section concerns lubrication.",
+      "start": 314,
+      "end": 366,
+      "similarity": 0.028462161949581375,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 367,
+      "end": 420,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 421,
+      "end": 465,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "This section concerns lubrication.",
+      "start": 466,
+      "end": 500,
+      "similarity": -0.010012326401580625,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 501,
+      "end": 554,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 555,
+      "end": 599,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Hilltop pressure sensors are calibrated every 28 days.",
+      "start": 617,
+      "end": 671,
+      "similarity": 0.1963802213064124,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Following a sensor replacement, calibration is required before restarting the machine.",
+      "start": 672,
+      "end": 758,
+      "similarity": 0.13539084380558908,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Operational note: This section concerns calibration.",
+      "start": 759,
+      "end": 811,
+      "similarity": 0.15781959758584743,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 812,
+      "end": 865,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 866,
+      "end": 910,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "This section concerns calibration.",
+      "start": 911,
+      "end": 945,
+      "similarity": 0.11250250797046027,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 946,
+      "end": 999,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 1000,
+      "end": 1044,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Before clearing a Hilltop conveyor jam, the technician must isolate electrical power and attach a lockout tag.",
+      "start": 1058,
+      "end": 1168,
+      "similarity": 0.10756803124478415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Operational note: This section concerns lockout.",
+      "start": 1169,
+      "end": 1217,
+      "similarity": 0.21548801759110095,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 1218,
+      "end": 1271,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 1272,
+      "end": 1316,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "This section concerns lockout.",
+      "start": 1317,
+      "end": 1347,
+      "similarity": 0.18739379364873315,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 1348,
+      "end": 1401,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 1402,
+      "end": 1446,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Hilltop replacement belts must be checked by the Maintenance Lead before installation.",
+      "start": 1464,
+      "end": 1550,
+      "similarity": 0.21990262850813855,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Operational note: This section concerns spare parts.",
+      "start": 1551,
+      "end": 1603,
+      "similarity": 0.10576136440126006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 1604,
+      "end": 1657,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 1658,
+      "end": 1702,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "This section concerns spare parts.",
+      "start": 1703,
+      "end": 1737,
+      "similarity": 0.04241201618852991,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 1738,
+      "end": 1791,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 1792,
+      "end": 1836,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Hilltop service records are retained for 18 months.",
+      "start": 1850,
+      "end": 1901,
+      "similarity": 0.25683706168701775,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Records involved in an unresolved warranty dispute are kept until the dispute closes.",
+      "start": 1902,
+      "end": 1987,
+      "similarity": 0.127829974422469,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Operational note: This section concerns records.",
+      "start": 1988,
+      "end": 2036,
+      "similarity": 0.12409690581927041,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 2037,
+      "end": 2090,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 2091,
+      "end": 2135,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "This section concerns records.",
+      "start": 2136,
+      "end": 2166,
+      "similarity": 0.058747265996391275,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 2167,
+      "end": 2220,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 2221,
+      "end": 2265,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "The Hilltop restart packet contains a lockout record, calibration log and signed maintenance release.",
+      "start": 2286,
+      "end": 2387,
+      "similarity": 0.27892732862100994,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Operational note: This section concerns restart packet.",
+      "start": 2388,
+      "end": 2443,
+      "similarity": 0.21117934664064916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 2444,
+      "end": 2497,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 2498,
+      "end": 2542,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "This section concerns restart packet.",
+      "start": 2543,
+      "end": 2580,
+      "similarity": 0.21448337049894742,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 2581,
+      "end": 2634,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 2635,
+      "end": 2679,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "A Hilltop coolant leak requires the technician to stop the pump and notify the Maintenance Lead immediately.",
+      "start": 2699,
+      "end": 2807,
+      "similarity": 0.21369819040242838,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Operational note: This section concerns leak response.",
+      "start": 2808,
+      "end": 2862,
+      "similarity": 0.12847978800323173,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 2863,
+      "end": 2916,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 2917,
+      "end": 2961,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "This section concerns leak response.",
+      "start": 2962,
+      "end": 2998,
+      "similarity": 0.09026176373492148,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 2999,
+      "end": 3052,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 3053,
+      "end": 3097,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Hilltop battery packs are charged in the ventilated charging bay.",
+      "start": 3120,
+      "end": 3185,
+      "similarity": 0.04674831121215887,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Damaged battery packs must not be charged.",
+      "start": 3186,
+      "end": 3228,
+      "similarity": 0.016462696127653526,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Operational note: This section concerns battery charging.",
+      "start": 3229,
+      "end": 3286,
+      "similarity": 0.07348703247221534,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 3287,
+      "end": 3340,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 3341,
+      "end": 3385,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "This section concerns battery charging.",
+      "start": 3386,
+      "end": 3425,
+      "similarity": 0.010215515729324842,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Read the written instruction in its original context.",
+      "start": 3426,
+      "end": 3479,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "52f7229b-f2b1-45aa-bad7-69d9ad89eeb3",
+      "value": "Keep the original file available for review.",
+      "start": 3480,
+      "end": 3524,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Fictional development evaluation material.",
+      "start": 42,
+      "end": 84,
+      "similarity": 0.07582616074078351,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "This is not a real organization policy.",
+      "start": 85,
+      "end": 124,
+      "similarity": 0.07735350734988555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Lakeside purchases above 5200 credits require written approval from the Finance Lead and Studio Director.",
+      "start": 147,
+      "end": 252,
+      "similarity": 0.25151272021999,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Operational note: This section concerns purchase approval.",
+      "start": 253,
+      "end": 311,
+      "similarity": 0.29659206419252354,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 312,
+      "end": 365,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 366,
+      "end": 410,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "This section concerns purchase approval.",
+      "start": 411,
+      "end": 451,
+      "similarity": 0.28081714322785967,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 452,
+      "end": 505,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 506,
+      "end": 550,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Lakeside orders of at least 1800 credits require two supplier quotations.",
+      "start": 567,
+      "end": 640,
+      "similarity": 0.29461931740612635,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "An emergency purchase may use one quotation with written approval from the Studio Director.",
+      "start": 641,
+      "end": 732,
+      "similarity": 0.23354747859076352,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Operational note: This section concerns quotations.",
+      "start": 733,
+      "end": 784,
+      "similarity": 0.12830058630179572,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 785,
+      "end": 838,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 839,
+      "end": 883,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "This section concerns quotations.",
+      "start": 884,
+      "end": 917,
+      "similarity": 0.09216396252557332,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 918,
+      "end": 971,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 972,
+      "end": 1016,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.",
+      "start": 1039,
+      "end": 1137,
+      "similarity": 0.2945354498909588,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Operational note: This section concerns receiving packet.",
+      "start": 1138,
+      "end": 1195,
+      "similarity": 0.17110564549686486,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 1196,
+      "end": 1249,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 1250,
+      "end": 1294,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "This section concerns receiving packet.",
+      "start": 1295,
+      "end": 1334,
+      "similarity": 0.16228897405300774,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 1335,
+      "end": 1388,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 1389,
+      "end": 1433,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Lakeside invoices are paid within 21 days of accepted delivery.",
+      "start": 1448,
+      "end": 1511,
+      "similarity": 0.2800464615398983,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Operational note: This section concerns invoices.",
+      "start": 1512,
+      "end": 1561,
+      "similarity": 0.14771181877710615,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 1562,
+      "end": 1615,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 1616,
+      "end": 1660,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "This section concerns invoices.",
+      "start": 1661,
+      "end": 1692,
+      "similarity": 0.13990968673055,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 1693,
+      "end": 1746,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 1747,
+      "end": 1791,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Lakeside supplier assessment copies are deleted within 45 days after contract end.",
+      "start": 1814,
+      "end": 1896,
+      "similarity": 0.30738248495426923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Copies subject to a legal hold remain until the hold is lifted.",
+      "start": 1897,
+      "end": 1960,
+      "similarity": 0.1880007279840303,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Operational note: This section concerns supplier records.",
+      "start": 1961,
+      "end": 2018,
+      "similarity": 0.2201120589871412,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 2019,
+      "end": 2072,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 2073,
+      "end": 2117,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "This section concerns supplier records.",
+      "start": 2118,
+      "end": 2157,
+      "similarity": 0.18730450489975523,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 2158,
+      "end": 2211,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 2212,
+      "end": 2256,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Damaged Lakeside deliveries must be photographed and reported to the Purchasing Lead before acceptance.",
+      "start": 2276,
+      "end": 2379,
+      "similarity": 0.30660335808218786,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Operational note: This section concerns damaged goods.",
+      "start": 2380,
+      "end": 2434,
+      "similarity": 0.18759158847609045,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 2435,
+      "end": 2488,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 2489,
+      "end": 2533,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "This section concerns damaged goods.",
+      "start": 2534,
+      "end": 2570,
+      "similarity": 0.14440877384405584,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 2571,
+      "end": 2624,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 2625,
+      "end": 2669,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Changes to a Lakeside order require a revised purchase order signed by the Purchasing Lead.",
+      "start": 2689,
+      "end": 2780,
+      "similarity": 0.3517309641674456,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Operational note: This section concerns order changes.",
+      "start": 2781,
+      "end": 2835,
+      "similarity": 0.3741442190366792,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 2836,
+      "end": 2889,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 2890,
+      "end": 2934,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "This section concerns order changes.",
+      "start": 2935,
+      "end": 2971,
+      "similarity": 0.40376350870069366,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 2972,
+      "end": 3025,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 3026,
+      "end": 3070,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "High-risk Lakeside suppliers undergo a review every six months.",
+      "start": 3092,
+      "end": 3155,
+      "similarity": 0.3025671680406992,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Operational note: This section concerns supplier review.",
+      "start": 3156,
+      "end": 3212,
+      "similarity": 0.25012998247874635,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 3213,
+      "end": 3266,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 3267,
+      "end": 3311,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "This section concerns supplier review.",
+      "start": 3312,
+      "end": 3350,
+      "similarity": 0.24287779532546047,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Read the written instruction in its original context.",
+      "start": 3351,
+      "end": 3404,
+      "similarity": 0.13426455157667916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "def84822-38c9-4d9b-a907-6ad22455eb77",
+      "value": "Keep the original file available for review.",
+      "start": 3405,
+      "end": 3449,
+      "similarity": 0.16628957851473306,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130:0",
+          "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "score": 0.0466,
+          "lexicalScore": 8.843315549308748,
+          "semanticScore": 0.7012564942147417,
+          "matchedTerms": [
+            "orchard",
+            "released",
+            "current",
+            "guide"
+          ],
+          "start": 224,
+          "end": 290
+        }
+      ],
+      "mode": "Experimental v19 paragraph relations",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130:126",
+          "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "score": 0.025,
+          "lexicalScore": null,
+          "semanticScore": 0.7347711978676885,
+          "matchedTerms": [
+            "orchard",
+            "released"
+          ],
+          "start": 224,
+          "end": 290
+        }
+      ],
+      "mode": "Experimental v19 paragraph relations",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130:0",
+          "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "score": 0.0466,
+          "lexicalScore": 8.843315549308748,
+          "semanticScore": 0.7012564942147417,
+          "matchedTerms": [
+            "orchard",
+            "released",
+            "current",
+            "guide"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130:126",
+          "documentId": "f31aaf94-404e-4cd0-a62c-a64a4ffeb130",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "score": 0.025,
+          "lexicalScore": null,
+          "semanticScore": 0.7347711978676885,
+          "matchedTerms": [
+            "orchard",
+            "released"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.023505914956331253,
+    -0.008089601993560791,
+    0.02453513629734516,
+    0.047592684626579285,
+    0.09067173302173615,
+    0.027882136404514313,
+    -0.07537928968667984,
+    -0.0731256902217865,
+    -0.0034173664171248674,
+    0.020761648193001747,
+    0.09510118514299393,
+    0.06431664526462555,
+    -0.07724444568157196,
+    -0.01080848928540945,
+    -0.02432647906243801,
+    0.03030278906226158,
+    0.04665696620941162,
+    -0.112280935049057,
+    -0.011888444423675537,
+    -0.012609515339136124,
+    0.028262365609407425,
+    0.027676939964294434,
+    -0.051471225917339325,
+    0.051440075039863586,
+    -0.010042333044111729,
+    -0.02232084609568119,
+    -0.08031667023897171,
+    -0.05153234675526619,
+    -0.061643026769161224,
+    -0.017359120771288872,
+    -0.010152362287044525,
+    0.040125224739313126,
+    0.08360869437456131,
+    0.05407183617353439,
+    0.010135726071894169,
+    0.018760856240987778,
+    0.07217495143413544,
+    -0.11889584362506866,
+    0.02331119030714035,
+    0.019887179136276245,
+    0.018376462161540985,
+    0.00853689108043909,
+    -0.03664283826947212,
+    0.0449410006403923,
+    0.0034042641054838896,
+    0.01138368807733059,
+    -0.01016130018979311,
+    -0.02688951976597309,
+    0.029100624844431877,
+    0.061901066452264786,
+    -0.08564983308315277,
+    0.0019862873014062643,
+    -0.036794815212488174,
+    -0.0376015231013298,
+    0.002106268424540758,
+    0.16269885003566742,
+    0.034589044749736786,
+    -0.03418969362974167,
+    0.041588567197322845,
+    0.060778919607400894,
+    0.0663873553276062,
+    -0.06575704365968704,
+    -0.12790755927562714,
+    0.00587826780974865,
+    0.03884032741189003,
+    -0.0013794756960123777,
+    0.020565539598464966,
+    -0.031108258292078972,
+    0.06880556792020798,
+    -0.12175224721431732,
+    -0.015321235172450542,
+    -0.01141389925032854,
+    -0.01658915914595127,
+    -0.02906731888651848,
+    -0.05247156694531441,
+    0.05043771117925644,
+    0.0813128873705864,
+    -0.03550085797905922,
+    -0.01001532282680273,
+    -0.08018366247415543,
+    -0.06924419105052948,
+    0.005642109550535679,
+    -0.004524603020399809,
+    0.003966946620494127,
+    -0.02182029001414776,
+    0.00004314370744396001,
+    -0.0038763596676290035,
+    0.11207377165555954,
+    0.04505395144224167,
+    -0.0007450679549947381,
+    0.023154599592089653,
+    -0.013764315284788609,
+    -0.040133286267519,
+    0.04478634148836136,
+    -0.09350192546844482,
+    0.00015272361633833498,
+    -0.021328235045075417,
+    -0.10017797350883484,
+    -0.0630100667476654,
+    0.03380187228322029,
+    0.03271167725324631,
+    0.032099295407533646,
+    -0.0523211732506752,
+    -0.04717016592621803,
+    -0.05949800834059715,
+    -0.06557034701108932,
+    -0.06774501502513885,
+    0.016367429867386818,
+    -0.03534311801195145,
+    0.02448073960840702,
+    -0.011422031559050083,
+    0.052748385816812515,
+    0.02050168626010418,
+    -0.044188905507326126,
+    -0.030234502628445625,
+    0.11779902875423431,
+    0.01879389025270939,
+    0.01774824783205986,
+    0.0352398119866848,
+    -0.02344481833279133,
+    0.052094582468271255,
+    0.043167632073163986,
+    0.04722512885928154,
+    0.007994641549885273,
+    -0.07203145325183868,
+    0.025551285594701767,
+    -0.0036495865788310766,
+    -2.3419201300699657e-33,
+    -0.06676037609577179,
+    -0.044552356004714966,
+    0.016801713034510612,
+    -0.004609182942658663,
+    0.13299551606178284,
+    -0.1049867644906044,
+    0.038132745772600174,
+    -0.07072070240974426,
+    0.0015143988421186805,
+    -0.01864410750567913,
+    -0.014117546379566193,
+    -0.1437484472990036,
+    -0.0229524914175272,
+    -0.08715476840734482,
+    -0.08482570201158524,
+    -0.08995011448860168,
+    0.06831750273704529,
+    0.05873126536607742,
+    0.039569348096847534,
+    -0.02168423868715763,
+    -0.007466538809239864,
+    -0.047206077724695206,
+    -0.08633360266685486,
+    0.00666589941829443,
+    -0.0012736913049593568,
+    0.006899756379425526,
+    -0.006958289537578821,
+    0.07450337707996368,
+    0.11284646391868591,
+    0.032797545194625854,
+    0.0312496367841959,
+    0.03145371004939079,
+    -0.05875040590763092,
+    0.0026835331227630377,
+    0.021933913230895996,
+    0.030580129474401474,
+    -0.060861364006996155,
+    -0.0501411035656929,
+    0.06244241073727608,
+    -0.048997171223163605,
+    0.0025117481127381325,
+    0.048325832933187485,
+    -0.0032687820494174957,
+    0.04678777605295181,
+    0.0571148544549942,
+    -0.019400140270590782,
+    0.029127467423677444,
+    0.02651837095618248,
+    0.09425622969865799,
+    -0.018072977662086487,
+    -0.04991189017891884,
+    0.052696458995342255,
+    0.08756360411643982,
+    0.000027160233003087342,
+    -0.010710124857723713,
+    -0.04916615039110184,
+    0.031062599271535873,
+    -0.08639312535524368,
+    -0.020933249965310097,
+    -0.021928979083895683,
+    0.11870712041854858,
+    0.021440623328089714,
+    -0.03452787175774574,
+    -0.03830806165933609,
+    -0.03975609689950943,
+    -0.012308677658438683,
+    -0.06835286319255829,
+    -0.03981439769268036,
+    0.0015789507888257504,
+    0.004289247095584869,
+    0.02985253930091858,
+    0.07702378928661346,
+    0.05179338902235031,
+    -0.04098084568977356,
+    0.04013620689511299,
+    -0.009595490992069244,
+    -0.02837689220905304,
+    0.0076909540221095085,
+    0.04992740973830223,
+    0.06489253044128418,
+    -0.04637621343135834,
+    0.0688076913356781,
+    -0.005458573345094919,
+    0.05821194499731064,
+    0.03549512103199959,
+    -0.02310246415436268,
+    0.030133912339806557,
+    0.11135837435722351,
+    0.05925334617495537,
+    -0.025653662160038948,
+    -0.025986045598983765,
+    0.03182942047715187,
+    0.03106848895549774,
+    0.051932305097579956,
+    0.10049113631248474,
+    1.1262050461728436e-33,
+    0.037276364862918854,
+    0.0004510439757723361,
+    -0.09140389412641525,
+    0.017185425385832787,
+    -0.004316268023103476,
+    -0.049848198890686035,
+    -0.09061238914728165,
+    0.10497330874204636,
+    0.011424915865063667,
+    -0.043876614421606064,
+    -0.03464903682470322,
+    0.03971536457538605,
+    0.021848781034350395,
+    -0.011564266867935658,
+    0.005985218565911055,
+    0.04221571981906891,
+    0.08834012597799301,
+    0.005019557662308216,
+    0.0223013274371624,
+    0.0014885886339470744,
+    -0.002113275695592165,
+    -0.003632341744378209,
+    -0.039828717708587646,
+    -0.055103592574596405,
+    -0.007787502370774746,
+    -0.040081143379211426,
+    0.12839457392692566,
+    0.04882689192891121,
+    -0.10615498572587967,
+    -0.11225036531686783,
+    -0.026840005069971085,
+    -0.09661221504211426,
+    -0.025107016786932945,
+    0.03138907253742218,
+    0.0006505943601951003,
+    0.017152313143014908,
+    -0.07314785569906235,
+    -0.08411553502082825,
+    -0.01498657837510109,
+    0.11440759152173996,
+    -0.013193066231906414,
+    0.014154376462101936,
+    -0.04271587356925011,
+    0.07172472774982452,
+    -0.046483710408210754,
+    0.011285281740128994,
+    0.06850869208574295,
+    0.01761377789080143,
+    0.04986036196351051,
+    0.06301901489496231,
+    -0.04889996349811554,
+    -0.001382271060720086,
+    0.006480635143816471,
+    -0.056326039135456085,
+    0.021590758115053177,
+    0.049347881227731705,
+    0.045641541481018066,
+    0.05840883404016495,
+    -0.01762801595032215,
+    -0.007626691367477179,
+    -0.011877392418682575,
+    0.06241189315915108,
+    -0.012260890565812588,
+    -0.06136326864361763,
+    0.027911793440580368,
+    0.06250885128974915,
+    0.03573936969041824,
+    0.032709889113903046,
+    0.007504234090447426,
+    -0.00888085551559925,
+    -0.0475170835852623,
+    0.018896639347076416,
+    -0.01861278899013996,
+    -0.036882709711790085,
+    -0.06073305755853653,
+    -0.002819937886670232,
+    0.08932635933160782,
+    0.015535670332610607,
+    -0.030446605756878853,
+    -0.07410402595996857,
+    -0.03753037378191948,
+    0.01387760229408741,
+    -0.013901405036449432,
+    0.04744439199566841,
+    0.026796797290444374,
+    -0.06542719155550003,
+    0.058739930391311646,
+    -0.04473559558391571,
+    0.042065296322107315,
+    0.0417621023952961,
+    -0.01250037457793951,
+    -0.01225622370839119,
+    0.06543842703104019,
+    0.01615220680832863,
+    0.020359324291348457,
+    -2.0320992888400724e-8,
+    0.028190376237034798,
+    -0.033363111317157745,
+    -0.008256233297288418,
+    -0.06051064282655716,
+    0.12079651653766632,
+    0.050753217190504074,
+    0.023647110909223557,
+    0.032701198011636734,
+    0.004296207334846258,
+    0.05232222005724907,
+    0.014407501555979252,
+    0.040111057460308075,
+    -0.03808280825614929,
+    -0.027958424761891365,
+    0.03175833821296692,
+    -0.06360708922147751,
+    0.06767607480287552,
+    -0.03837103769183159,
+    -0.0585615411400795,
+    -0.11087352782487869,
+    -0.049900781363248825,
+    -0.024392541497945786,
+    0.14228440821170807,
+    -0.03540549427270889,
+    -0.0001163855631602928,
+    0.0027212451677769423,
+    -0.006118158809840679,
+    0.016850531101226807,
+    0.000736396701540798,
+    0.05953468754887581,
+    0.029961463063955307,
+    0.049639951437711716,
+    -0.006688812281936407,
+    -0.0013815236743539572,
+    -0.050403203815221786,
+    0.028710462152957916,
+    -0.08841727674007416,
+    0.0705321878194809,
+    0.03564570099115372,
+    0.018587367609143257,
+    -0.014497697353363037,
+    -0.004736627452075481,
+    -0.07756700366735458,
+    0.039420031011104584,
+    0.023894233629107475,
+    0.0004235688829794526,
+    -0.055285412818193436,
+    -0.03909808769822121,
+    -0.02367573231458664,
+    0.00887744128704071,
+    -0.013354389928281307,
+    -0.07651367038488388,
+    0.04195288568735123,
+    -0.006476704031229019,
+    0.0476326122879982,
+    0.018418075516819954,
+    0.042824361473321915,
+    -0.09747149050235748,
+    0.039665013551712036,
+    0.004249301739037037,
+    0.0065551213920116425,
+    -0.0456344299018383,
+    -0.043697159737348557,
+    -0.00178081588819623
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Orchard_Depot_Current.md",
+        "start": 0,
+        "content": "# Orchard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.\nOperational note: This section concerns urgent release. Read"
+      },
+      {
+        "filename": "02_Orchard_Depot_Archived.md",
+        "start": 0,
+        "content": "# Orchard Depot — Archived Dispatch Guide (superseded)\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nUnder the archived Orchard guide, orders released before 13:00 left the depot on the same operating day. Later orders left on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. \n\n## Urgent release\nUnder the archived Orchard guide, urgent dispatch required approval from the Depot Manager.\nOperational note: This section concerns urgent"
+      },
+      {
+        "filename": "01_Orchard_Depot_Current.md",
+        "start": 1319,
+        "content": "ection concerns cold crates. Read the written instruction in its original context. Keep the original file available for review. \n\n## Route closure\nWhen the bridge route is closed, Orchard drivers use the eastern bypass. The Logistics Lead approves the revised route before departure.\nOperational note: This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. \n\n## Dispatch packet\nEvery Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the"
+      },
+      {
+        "filename": "02_Orchard_Depot_Archived.md",
+        "start": 658,
+        "content": "nt dispatch required approval from the Depot Manager.\nOperational note: This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. \n\n## Cold crates\nThe archived Orchard cold-crate range was 2 to 8 degrees Celsius.\nOperational note: This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for review. This section concerns cold crates. Read the written instruction in its original context. Keep the original file available for review. \n\n## Dispatch packet\nThe archived Orchard"
+      },
+      {
+        "filename": "01_Orchard_Depot_Current.md",
+        "start": 2636,
+        "content": "rns evidence retention. Read the written instruction in its original context. Keep the original file available for review. \n\n## Acknowledgement\nOrchard delivery partners acknowledge a dispatch notice within four business hours. Acknowledgement is not a delivery guarantee.\nOperational note: This section concerns acknowledgement. Read the written instruction in its original context. Keep the original file available for review. This section concerns acknowledgement. Read the written instruction in its original context. Keep the original file available for review. \n\n## Visitor access\nOrchard visitors enter after 10:10. Orchard staff complete their morning checks by 08:40.\nOperational note: This section concerns visitor access. Read the written"
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Orchard_Depot_Archived.md",
+        "start": 140,
+        "content": "## Release window\nUnder the archived Orchard guide, orders released before 13:00 left the depot on the same operating day. Later orders left on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review."
+      },
+      {
+        "filename": "01_Orchard_Depot_Current.md",
+        "start": 126,
+        "content": "## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review."
+      },
+      {
+        "filename": "02_Orchard_Depot_Archived.md",
+        "start": 602,
+        "content": "## Urgent release\nUnder the archived Orchard guide, urgent dispatch required approval from the Depot Manager.\nOperational note: This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review."
+      },
+      {
+        "filename": "01_Orchard_Depot_Current.md",
+        "start": 585,
+        "content": "## Urgent release\nUrgent Orchard dispatch requires written approval from the Dispatch Lead and Safety Coordinator.\nOperational note: This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review. This section concerns urgent release. Read the written instruction in its original context. Keep the original file available for review."
+      },
+      {
+        "filename": "01_Orchard_Depot_Current.md",
+        "start": 3205,
+        "content": "## Visitor access\nOrchard visitors enter after 10:10. Orchard staff complete their morning checks by 08:40.\nOperational note: This section concerns visitor access. Read the written instruction in its original context. Keep the original file available for review. This section concerns visitor access. Read the written instruction in its original context. Keep the original file available for review."
+      }
+    ]
+  }
+}
