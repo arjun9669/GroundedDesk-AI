@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-15 — Paragraph-boundary v19 regression (no runtime release)
+
+- Captured451 unchanged exposed cases once with real local MiniLM in installed headless Chrome:427 Hybrid and24 separate lexical Comparison, Qwen disabled. Frozen candidate/paired/helper identity verified before questions;118 original input hashes and50 historical artifact members verified.382 unit tests and strict offline checks pass.
+- Precision48 reaches48/0/0 in both isolated variants, preserving its first40/0/8. Count/country/alliance/belief/list facts and three quotation-boundary failures are repaired. All37 citations per variant are source-literal, original-paragraph-contained and directly relevant; C04's unnecessary second citation is removed.
+- Frozen overall gate FAILS: V9Exposed32/F17 loses PASS in both variants. The count pattern misses Norwood's hyphenated61-yard return and selects Newton's unrelated numeric-yard clause without actor/event binding. Paragraph containment passes the wrong-actor answer; independent relevance and answer completeness fail it.
+- Reviewed20 changed outputs and all48 Precision48 cases. Original119 quotes unchanged; all83 unsupported cases refuse without citations, and one older supported false refusal remains. No post-answer tuning, retries, fresh sampling or runtime adoption; production remains r44. Exact first scores and raw evidence remain immutable.
+
 ## 2026-10-15 — Narrative-clause v18 and Precision48 first result (no runtime release)
 
 - Added isolated adjacent-initial name repair and constrained sport/action/quoted-alias selection within already cited paragraphs.403-case exposed regression gate PASS; Confirmation48 reaches48/0/0 in both variants and C04’s unrelated military quote is removed. All historical PASS cases and71 unsupported zero-citation refusals remain intact. Eight changed outputs independently reviewed; original119 quotations unchanged.
