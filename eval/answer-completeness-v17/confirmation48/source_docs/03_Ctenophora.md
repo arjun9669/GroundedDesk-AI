@@ -1,0 +1,10 @@
+# Ctenophora
+
+## Context 1
+Development of the fertilized eggs is direct, in other words there is no distinctive larval form, and juveniles of all groups generally resemble miniature cydippid adults. In the genus Beroe the juveniles, like the adults, lack tentacles and tentacle sheaths. In most species the juveniles gradually develop the body forms of their parents. In some groups, such as the flat, bottom-dwelling platyctenids, the juveniles behave more like true larvae, as they live among the plankton and thus occupy a different ecological niche from their parents and attain the adult form by a more radical metamorphosis, after dropping to the sea-floor.
+
+## Context 2
+The outer surface bears usually eight comb rows, called swimming-plates, which are used for swimming. The rows are oriented to run from near the mouth (the "oral pole") to the opposite end (the "aboral pole"), and are spaced more or less evenly around the body, although spacing patterns vary by species and in most species the comb rows extend only part of the distance from the aboral pole towards the mouth. The "combs" (also called "ctenes" or "comb plates") run across each row, and each consists of thousands of unusually long cilia, up to 2 millimeters (0.079 in). Unlike conventional cilia and flagella, which has a filament structure arranged in a 9 + 2 pattern, these cilia are arranged in a 9 + 3 pattern, where the extra compact filament is suspected to have a supporting function. These normally beat so that the propulsion stroke is away from the mouth, although they can also reverse direction. Hence ctenophores usually swim in the direction in which the mouth is pointing, unlike jellyfish. When trying to escape predators, one species can accelerate to six times its normal speed; some other species reverse direction as part of their escape behavior, by reversing the power stroke of the comb plate cilia.
+
+## Fictional approval appendix
+At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.
