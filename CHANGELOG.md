@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-15 — Clause-guard v21 regression FAIL (no runtime release)
+
+- Added an isolated wrapper over frozen v20 to check recognized named-actor count clauses on existing and replacement answers, select bounded inclusive cutoff spans with trailing holds, and strip leading headings in separate lexical Comparison. These are narrow structural rules, not general entailment checks.
+- Froze code, runner, scorers and 515 unchanged exposed cases; verified 124 original input hashes and candidate/helper/dependency identity before questions. Captured once with installed headless Chrome and real local MiniLM, fresh source/query/facet vectors, Qwen off: 487 Hybrid and 28 lexical Comparison. All 392 unit tests and strict offline checks pass.
+- Binding64 reaches 60 PASS / 1 PARTIAL / 3 FAIL in both variants; preserve its qualified v20 first 45/1/18 and original BLOCKED startup. All 12 unsupported controls refuse, all eight conditions and all four Comparison cases pass; Comparison gains are quotation-boundary precision, with factual completeness already present in v20.
+- Both gates FAIL. Three distinct previous PASS cases regress in each variant: Norwood V9/F17 falsely refuses, RQ02 loses its sentence subject and includes filler, and Binding64/T4A falsely refuses the supported tagging count. All original 119 and Precision48 remain all PASS; all 83 historical unsupported controls remain correct. No post-answer tuning, retry, further sample or adoption; live r44 unchanged. See [v21 report](./docs/COVERAGE_V21_R44_VALIDATION.md).
+
 ## 2026-10-15 — Binding64 confirmation FAIL and PDF test hardening
 
 - Preserve the original browser startup attempt as BLOCKED before model loading or questions. A separately frozen infrastructure recovery captured the first 64 answers once with actual local MiniLM in installed headless Chrome: 60 Hybrid and four separate lexical Comparison cases, Qwen off.

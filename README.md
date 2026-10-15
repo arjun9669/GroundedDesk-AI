@@ -11,12 +11,12 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v20** passed its exposed regression gate but **failed Binding64 confirmation**; not adopted |
-| Latest recorded checks | **387 unit tests**, strict offline evaluation and local PDF browser checks passed; CI qualification below |
+| Latest retrieval experiment | **v21** improves Binding64 but introduces three prior-PASS regressions; **gate FAIL**, not adopted |
+| Latest recorded checks | **392 unit tests** and strict offline evaluation pass locally; actual-model regression gate fails |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
-Experimental v20 is a development iteration, not retrieval build r20 or a new application release. A passing development gate does not establish production readiness or independent accuracy.
+Experimental v21 is a development iteration, not retrieval build r21 or a new application release. A passing development gate does not establish production readiness or independent accuracy.
 
 ## Try it in a few minutes
 
@@ -75,6 +75,12 @@ Readiness describes available extracted text. Blank/scanned pages, reading order
 
 ## Latest measured results
 
+The [v21 report](./docs/COVERAGE_V21_R44_VALIDATION.md) records **515 previously exposed questions captured once** in installed headless Chrome with actual local MiniLM, Qwen off: 487 Hybrid Q&A and 28 separate lexical Comparison. Actual production UI, isolated fixed/section v21 outputs and paired v20 are labelled separately. These are **in-sample regressions**, not new independent accuracy.
+
+Binding64 reaches **60 PASS / 1 PARTIAL / 3 FAIL** in both variants, preserving its qualified v20 first **45/1/18**. All 12 unsupported controls now refuse with zero citations, all eight conditions pass, and all four Comparison cases pass after heading removal; their facts were already complete in v20. But three previous PASS cases regress: **V9Exposed32/F17** (Norwood false refusal), **RetrievalQuality28/RQ02** (truncated subject and irrelevant quotation filler), and **Binding64/T4A** (tagging false refusal). All original 119 and Precision48 remain all PASS. **Both gates FAIL; v21 stays experimental and live r44 is unchanged.** [Scores and selected evidence](./docs/evidence/coverage-v21-r44/).
+
+Previous results remain preserved:
+
 The [Binding64 confirmation report](./docs/BINDING64_V20_CONFIRMATION.md) records **45 PASS / 1 PARTIAL / 18 FAIL** in both isolated v20 variants. Its original startup attempt was **BLOCKED before model loading or questions**. A separately frozen infrastructure recovery produced the first 64 answers once in installed headless Chrome with actual local MiniLM: 60 Hybrid and four separate lexical Comparison cases. This is a qualified prospective public/constructed test, not sealed independent accuracy. Every candidate answer matches paired v19.
 
 All 12 supported count cases pass, but all eight unsupported actor/action combinations are falsely accepted. Four exact-cutoff/exception cases fail; no supported false refusals occur. All 66 citations per variant are source-literal, which does not establish relevance or relational support. Four Comparison cases contain all requested facts but fail the unchanged body-paragraph boundary rule. **Confirmation gate FAIL: keep v20 experimental.** [Exact answers, scores and browser evidence](./docs/evidence/v20-binding64/).
@@ -130,7 +136,7 @@ GroundedDesk is a portfolio prototype, not a production-ready RAG, compliance or
 
 OCR, reliable table/column reconstruction, character-level partial-run highlights, comprehensive prompt-injection defenses and broad browser/device validation are not provided. Model availability, performance and memory use vary by device.
 
-Next work is a separately frozen development protocol for actor/action support across all answers, exact-cutoff selection and quotation boundaries, followed by preservation tests. Binding64's first results and all historical scores stay fixed. Keep optional models optional; v20 has not replaced live r44.
+Next work is a separately frozen repair protocol for v21's overbroad negation handling, action morphology and mid-sentence cutoff selection, followed by preservation tests. Keep the failed v21 result and every historical first score fixed. No candidate replaces live r44 until its required gates pass and integration is reviewed.
 
 ## Explore the project
 
