@@ -1,0 +1,1555 @@
+{
+  "classification": "Assistant read-only review of every displayed fixed/section answer against frozen paragraphs and key; no external-world fact checking, grade overrides or input changes",
+  "first_scores_preserved": {
+    "fixed": "40/0/8",
+    "section": "40/0/8"
+  },
+  "paired_v17_v18_exact_answer_and_quote_parity": {
+    "fixed": true,
+    "section": true
+  },
+  "citation_relevance_counts": {
+    "fixed": {
+      "DIRECT": 29,
+      "DIRECT_WITH_BOUNDARY_CONTAMINATION": 3,
+      "OFF_TOPIC_FOR_REQUESTED_FACT": 5
+    },
+    "section": {
+      "DIRECT": 29,
+      "DIRECT_WITH_BOUNDARY_CONTAMINATION": 3,
+      "OFF_TOPIC_FOR_REQUESTED_FACT": 5
+    }
+  },
+  "strict_failure_ids": [
+    "F04",
+    "F15",
+    "F20",
+    "F21",
+    "F22",
+    "F24",
+    "P03",
+    "P04"
+  ],
+  "literal_fact_present_boundary_failure_ids": [
+    "F15",
+    "P03",
+    "P04"
+  ],
+  "false_refusal_id": "F22",
+  "irrelevant_extra_citation": {
+    "id": "C04",
+    "citation": 2,
+    "frozen_outcome": "PASS",
+    "new_precision_gate": "FAIL"
+  },
+  "source_encoding": {
+    "file": "02_Economic_inequality.md",
+    "replacement_character_count": 0,
+    "original_en_dashes_preserved_in_saved_answer": true
+  },
+  "metric_limits": [
+    "Direct-gold-span metric is conditioned on original-paragraph containment; false can mean boundary failure despite literal answer presence.",
+    "Paragraph containment does not prove relevance: C04 second quote is in correct paragraph but answers neither facet.",
+    "Original F04/F05 annotations contain 14/Ten alternatives. Do not modify questions, annotations or outcomes after first answers.",
+    "Historic political/economic/colonial-ideology passage claims are evaluated as source contents, not current guidance or scientific endorsement.",
+    "Constructed scope controls repeat earlier templates; public data may have model exposure."
+  ],
+  "cases": [
+    {
+      "variant": "fixed",
+      "id": "F01",
+      "question": "What is the UN's climate change treaty?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed UNFCCC full treaty name and main international climate-treaty description support the frozen answer."
+    },
+    {
+      "variant": "fixed",
+      "id": "F02",
+      "question": "What does the UN want to stabilize?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed objective explicitly gives greenhouse-gas concentrations in the atmosphere, preserving the source quotation."
+    },
+    {
+      "variant": "fixed",
+      "id": "F03",
+      "question": "What organization is the IPCC a part of?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed opening clause explicitly places IPCC under United Nations auspices."
+    },
+    {
+      "variant": "fixed",
+      "id": "F04",
+      "question": "How many Medieval Warm Period reconstructions were used?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        false
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Quote names cited reconstruction authors/years but no requested total. Original gold alternatives 14/Ten are inconsistent annotations; neither is displayed. Frozen FAIL retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "F05",
+      "question": "How many Medieval Warm Period reconstructions covered 1,000+ years?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Quote says Ten of these 14 reconstructions covered 1,000 years or longer. Ten is the answer; original alternative 14 annotation is preserved, not endorsed as the count for this question."
+    },
+    {
+      "variant": "fixed",
+      "id": "F06",
+      "question": "When was the IPCC Third Assessment Report published?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Quote distinguishes AR4 published in 2007 from the 2001 Third Assessment Report; the requested report year is displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F07",
+      "question": "What does political pressure push to extend to compensate for stagnating purchasing power?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed attributed-economic-argument passage gives extending easier credit to lower/middle earners. This is a source-content evaluation, not financial advice or a causal-world-fact certification."
+    },
+    {
+      "variant": "fixed",
+      "id": "F08",
+      "question": "What has given the American economy a tendency to go \"from bubble to bubble\"?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed second sentence refers back to easier credit/monetary stimulation, supporting the frozen annotation."
+    },
+    {
+      "variant": "fixed",
+      "id": "F09",
+      "question": "What does Rajan feel has created deep financial fault lines?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed attributed Rajan quotation explicitly identifies systematic economic inequalities; source attribution is retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "F10",
+      "question": "What is it estimated that about half of all variation in homicide rates can be accounted for by?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed estimate attributes variation to differences in inequality; no independent claim that the estimate is scientifically established."
+    },
+    {
+      "variant": "fixed",
+      "id": "F11",
+      "question": "Over how many studies have shown that violence is more common in societies with income differences?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed source states over fifty studies and larger income differences; it reports the passage rather than independently validating literature."
+    },
+    {
+      "variant": "fixed",
+      "id": "F12",
+      "question": "What is almost identical across all nations and jurisdictions?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed passage concerns near-identical definitions of homicides, not identical homicide rates. Original short question/key wording retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "F13",
+      "question": "What is set aside for question periods in the debating chamber?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed opening clause explicitly gives Parliamentary time; later schedule detail is broad context from frozen historic passage."
+    },
+    {
+      "variant": "fixed",
+      "id": "F14",
+      "question": "What may members question the First Minister about directly during First Minister's Question Time?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed clause gives issues under their jurisdiction. Original gold also includes the broad First Minister alternative, but actual quote contains the requested topic."
+    },
+    {
+      "variant": "fixed",
+      "id": "F15",
+      "question": "How many general questions are available to opposition leaders?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "DIRECT_WITH_BOUNDARY_CONTAMINATION"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "PARTIAL",
+      "note": "Correct four is displayed, but quotation crosses an internal Context 2 heading into a different paragraph about the Presiding Officer. Facts present; frozen whole-quote paragraph rule fails. No score relaxation."
+    },
+    {
+      "variant": "fixed",
+      "id": "F16",
+      "question": "What language other than English has the Scottish Parliament had meetings in?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed language clause includes Scots and Gaelic plus agreement of Presiding Officer exception. No claim about current parliamentary rules."
+    },
+    {
+      "variant": "fixed",
+      "id": "F17",
+      "question": "What members typically open debates?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed sentence names ministers or party leaders and speaking-time context."
+    },
+    {
+      "variant": "fixed",
+      "id": "F18",
+      "question": "What does the Presiding Officer try to achieve a balance of between speakers?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed sentence gives different viewpoints and political parties, retaining both."
+    },
+    {
+      "variant": "fixed",
+      "id": "F19",
+      "question": "What ended Turkish imperial Ambitions?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed final clause links post-WWI dissolution/new states to ending Turkish colonial ambitions, matching frozen alternatives."
+    },
+    {
+      "variant": "fixed",
+      "id": "F20",
+      "question": "Which country today is a remnant of the Ottoman empire?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        false
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed Ottoman capital/decline window omits Turkey. Correct topic/source file but absent requested country; frozen FAIL."
+    },
+    {
+      "variant": "fixed",
+      "id": "F21",
+      "question": "Who did the Ottoman empire ally with in WW I?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        false
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed capital/decline window omits Germany. Correct topic/source file but absent requested ally; frozen FAIL."
+    },
+    {
+      "variant": "fixed",
+      "id": "F22",
+      "question": "What was thought to decide a person's behavior?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [
+        false
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal despite source belief statement about environment. That clause is displayed in F23, but no cross-answer/context credit is allowed. Supported false refusal, FAIL."
+    },
+    {
+      "variant": "fixed",
+      "id": "F23",
+      "question": "What served as a justification for imposing imperialistic policies on certain peoples or regions?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed source describes environmental determinism as a historical justification for colonial domination. Quoted for provenance; the discredited ideology/racial hierarchy is not endorsed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F24",
+      "question": "What were the two forms of environmental determinism?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        false
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed first-three-sentence explanation omits orientalism and tropicality, which occur later in the source paragraph. Frozen FAIL."
+    },
+    {
+      "variant": "fixed",
+      "id": "C01",
+      "question": "What is the UN's climate change treaty? Also, What does the UN want to stabilize?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true,
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "One displayed quotation directly contains treaty name and stabilization objective."
+    },
+    {
+      "variant": "fixed",
+      "id": "C02",
+      "question": "What does political pressure push to extend to compensate for stagnating purchasing power? Also, What has given the American economy a tendency to go \"from bubble to bubble\"?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true,
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "One displayed quotation directly supports easier-credit answer for both question facets."
+    },
+    {
+      "variant": "fixed",
+      "id": "C03",
+      "question": "What is set aside for question periods in the debating chamber? Also, What may members question the First Minister about directly during First Minister's Question Time?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true,
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true,
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Two quotations directly support Parliamentary time and jurisdiction issues, respectively."
+    },
+    {
+      "variant": "fixed",
+      "id": "C04",
+      "question": "What ended Turkish imperial Ambitions? Also, Which country today is a remnant of the Ottoman empire?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT",
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true,
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true,
+        true
+      ],
+      "independent_citation_precision": "PARTIAL",
+      "note": "First quotation contains both end-of-empire and Turkey groups. Second capital/decline quotation supports neither requested fact. Frozen paragraph-proxy PASS retained; new predeclared citation-span gate and independent citation precision fail."
+    },
+    {
+      "variant": "fixed",
+      "id": "U01",
+      "question": "What is the exact database password used by Intergovernmental Panel on Climate Change?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "U02",
+      "question": "What is the bank account number associated with Economic inequality?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "U03",
+      "question": "What is the date of birth of the fictional coordinator Neris Quill for Scottish Parliament?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "U04",
+      "question": "What is the current Bitcoin price in AED in the Imperialism documents?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "A01",
+      "question": "Who approves suborbital beacon charters at the fictional Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "A02",
+      "question": "Who has authority to approve standard cargo schedules at the fictional Ulvera Base?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "A03",
+      "question": "Who approves plasma telescope permissions at the fictional Tiravel Library?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "A04",
+      "question": "Who has authority to approve standard shelf indexes at the fictional Dovarin Spire?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "A05",
+      "question": "Who approves asteroid docking warrants at the fictional Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "A06",
+      "question": "Who has authority to approve standard vessel rosters at the fictional Serolan Vault?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "A07",
+      "question": "Who approves fusion capsule clearances at the fictional Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "A08",
+      "question": "Who has authority to approve standard display cards at the fictional Naviren Lab?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "fixed",
+      "id": "P01",
+      "question": "Who approves standard cargo schedules at the fictional Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P02",
+      "question": "Who has authority to approve standard cargo schedules at Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P03",
+      "question": "Who approves standard shelf indexes at the fictional Tiravel Library?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "DIRECT_WITH_BOUNDARY_CONTAMINATION"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "PARTIAL",
+      "note": "Correct Reference Steward/standard shelf indexes/Tiravel Library tuple appears, but a preceding unrelated academic-literature colon line and internal Markdown heading extend the quote beyond the gold paragraph. Source provenance true; factual role presence true; frozen boundary FAIL retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "P04",
+      "question": "Who has authority to approve standard shelf indexes at Tiravel Library?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "DIRECT_WITH_BOUNDARY_CONTAMINATION"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "PARTIAL",
+      "note": "Correct Reference Steward/standard shelf indexes/Tiravel Library tuple appears, but a preceding unrelated academic-literature colon line and internal Markdown heading extend the quote beyond the gold paragraph. Source provenance true; factual role presence true; frozen boundary FAIL retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "P05",
+      "question": "Who approves standard vessel rosters at the fictional Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P06",
+      "question": "Who has authority to approve standard vessel rosters at Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P07",
+      "question": "Who approves standard display cards at the fictional Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P08",
+      "question": "Who has authority to approve standard display cards at Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "F01",
+      "question": "What is the UN's climate change treaty?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed UNFCCC full treaty name and main international climate-treaty description support the frozen answer."
+    },
+    {
+      "variant": "section",
+      "id": "F02",
+      "question": "What does the UN want to stabilize?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed objective explicitly gives greenhouse-gas concentrations in the atmosphere, preserving the source quotation."
+    },
+    {
+      "variant": "section",
+      "id": "F03",
+      "question": "What organization is the IPCC a part of?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed opening clause explicitly places IPCC under United Nations auspices."
+    },
+    {
+      "variant": "section",
+      "id": "F04",
+      "question": "How many Medieval Warm Period reconstructions were used?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        false
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Quote names cited reconstruction authors/years but no requested total. Original gold alternatives 14/Ten are inconsistent annotations; neither is displayed. Frozen FAIL retained."
+    },
+    {
+      "variant": "section",
+      "id": "F05",
+      "question": "How many Medieval Warm Period reconstructions covered 1,000+ years?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Quote says Ten of these 14 reconstructions covered 1,000 years or longer. Ten is the answer; original alternative 14 annotation is preserved, not endorsed as the count for this question."
+    },
+    {
+      "variant": "section",
+      "id": "F06",
+      "question": "When was the IPCC Third Assessment Report published?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Quote distinguishes AR4 published in 2007 from the 2001 Third Assessment Report; the requested report year is displayed."
+    },
+    {
+      "variant": "section",
+      "id": "F07",
+      "question": "What does political pressure push to extend to compensate for stagnating purchasing power?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed attributed-economic-argument passage gives extending easier credit to lower/middle earners. This is a source-content evaluation, not financial advice or a causal-world-fact certification."
+    },
+    {
+      "variant": "section",
+      "id": "F08",
+      "question": "What has given the American economy a tendency to go \"from bubble to bubble\"?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed second sentence refers back to easier credit/monetary stimulation, supporting the frozen annotation."
+    },
+    {
+      "variant": "section",
+      "id": "F09",
+      "question": "What does Rajan feel has created deep financial fault lines?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed attributed Rajan quotation explicitly identifies systematic economic inequalities; source attribution is retained."
+    },
+    {
+      "variant": "section",
+      "id": "F10",
+      "question": "What is it estimated that about half of all variation in homicide rates can be accounted for by?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed estimate attributes variation to differences in inequality; no independent claim that the estimate is scientifically established."
+    },
+    {
+      "variant": "section",
+      "id": "F11",
+      "question": "Over how many studies have shown that violence is more common in societies with income differences?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed source states over fifty studies and larger income differences; it reports the passage rather than independently validating literature."
+    },
+    {
+      "variant": "section",
+      "id": "F12",
+      "question": "What is almost identical across all nations and jurisdictions?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed passage concerns near-identical definitions of homicides, not identical homicide rates. Original short question/key wording retained."
+    },
+    {
+      "variant": "section",
+      "id": "F13",
+      "question": "What is set aside for question periods in the debating chamber?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed opening clause explicitly gives Parliamentary time; later schedule detail is broad context from frozen historic passage."
+    },
+    {
+      "variant": "section",
+      "id": "F14",
+      "question": "What may members question the First Minister about directly during First Minister's Question Time?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed clause gives issues under their jurisdiction. Original gold also includes the broad First Minister alternative, but actual quote contains the requested topic."
+    },
+    {
+      "variant": "section",
+      "id": "F15",
+      "question": "How many general questions are available to opposition leaders?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "DIRECT_WITH_BOUNDARY_CONTAMINATION"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "PARTIAL",
+      "note": "Correct four is displayed, but quotation crosses an internal Context 2 heading into a different paragraph about the Presiding Officer. Facts present; frozen whole-quote paragraph rule fails. No score relaxation."
+    },
+    {
+      "variant": "section",
+      "id": "F16",
+      "question": "What language other than English has the Scottish Parliament had meetings in?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed language clause includes Scots and Gaelic plus agreement of Presiding Officer exception. No claim about current parliamentary rules."
+    },
+    {
+      "variant": "section",
+      "id": "F17",
+      "question": "What members typically open debates?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed sentence names ministers or party leaders and speaking-time context."
+    },
+    {
+      "variant": "section",
+      "id": "F18",
+      "question": "What does the Presiding Officer try to achieve a balance of between speakers?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed sentence gives different viewpoints and political parties, retaining both."
+    },
+    {
+      "variant": "section",
+      "id": "F19",
+      "question": "What ended Turkish imperial Ambitions?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed final clause links post-WWI dissolution/new states to ending Turkish colonial ambitions, matching frozen alternatives."
+    },
+    {
+      "variant": "section",
+      "id": "F20",
+      "question": "Which country today is a remnant of the Ottoman empire?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        false
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed Ottoman capital/decline window omits Turkey. Correct topic/source file but absent requested country; frozen FAIL."
+    },
+    {
+      "variant": "section",
+      "id": "F21",
+      "question": "Who did the Ottoman empire ally with in WW I?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        false
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed capital/decline window omits Germany. Correct topic/source file but absent requested ally; frozen FAIL."
+    },
+    {
+      "variant": "section",
+      "id": "F22",
+      "question": "What was thought to decide a person's behavior?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [
+        false
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal despite source belief statement about environment. That clause is displayed in F23, but no cross-answer/context credit is allowed. Supported false refusal, FAIL."
+    },
+    {
+      "variant": "section",
+      "id": "F23",
+      "question": "What served as a justification for imposing imperialistic policies on certain peoples or regions?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed source describes environmental determinism as a historical justification for colonial domination. Quoted for provenance; the discredited ideology/racial hierarchy is not endorsed."
+    },
+    {
+      "variant": "section",
+      "id": "F24",
+      "question": "What were the two forms of environmental determinism?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        false
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Displayed first-three-sentence explanation omits orientalism and tropicality, which occur later in the source paragraph. Frozen FAIL."
+    },
+    {
+      "variant": "section",
+      "id": "C01",
+      "question": "What is the UN's climate change treaty? Also, What does the UN want to stabilize?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true,
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "One displayed quotation directly contains treaty name and stabilization objective."
+    },
+    {
+      "variant": "section",
+      "id": "C02",
+      "question": "What does political pressure push to extend to compensate for stagnating purchasing power? Also, What has given the American economy a tendency to go \"from bubble to bubble\"?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true,
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "One displayed quotation directly supports easier-credit answer for both question facets."
+    },
+    {
+      "variant": "section",
+      "id": "C03",
+      "question": "What is set aside for question periods in the debating chamber? Also, What may members question the First Minister about directly during First Minister's Question Time?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true,
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true,
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Two quotations directly support Parliamentary time and jurisdiction issues, respectively."
+    },
+    {
+      "variant": "section",
+      "id": "C04",
+      "question": "What ended Turkish imperial Ambitions? Also, Which country today is a remnant of the Ottoman empire?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT",
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true,
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true,
+        true
+      ],
+      "independent_citation_precision": "PARTIAL",
+      "note": "First quotation contains both end-of-empire and Turkey groups. Second capital/decline quotation supports neither requested fact. Frozen paragraph-proxy PASS retained; new predeclared citation-span gate and independent citation precision fail."
+    },
+    {
+      "variant": "section",
+      "id": "U01",
+      "question": "What is the exact database password used by Intergovernmental Panel on Climate Change?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "U02",
+      "question": "What is the bank account number associated with Economic inequality?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "U03",
+      "question": "What is the date of birth of the fictional coordinator Neris Quill for Scottish Parliament?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "U04",
+      "question": "What is the current Bitcoin price in AED in the Imperialism documents?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "A01",
+      "question": "Who approves suborbital beacon charters at the fictional Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "A02",
+      "question": "Who has authority to approve standard cargo schedules at the fictional Ulvera Base?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "A03",
+      "question": "Who approves plasma telescope permissions at the fictional Tiravel Library?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "A04",
+      "question": "Who has authority to approve standard shelf indexes at the fictional Dovarin Spire?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "A05",
+      "question": "Who approves asteroid docking warrants at the fictional Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "A06",
+      "question": "Who has authority to approve standard vessel rosters at the fictional Serolan Vault?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "A07",
+      "question": "Who approves fusion capsule clearances at the fictional Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "A08",
+      "question": "Who has authority to approve standard display cards at the fictional Naviren Lab?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "literal_gold_groups_without_boundary_proxy": [],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Explicit zero-citation refusal; source absence checks frozen before first answers."
+    },
+    {
+      "variant": "section",
+      "id": "P01",
+      "question": "Who approves standard cargo schedules at the fictional Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P02",
+      "question": "Who has authority to approve standard cargo schedules at Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P03",
+      "question": "Who approves standard shelf indexes at the fictional Tiravel Library?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "DIRECT_WITH_BOUNDARY_CONTAMINATION"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "PARTIAL",
+      "note": "Correct Reference Steward/standard shelf indexes/Tiravel Library tuple appears, but a preceding unrelated academic-literature colon line and internal Markdown heading extend the quote beyond the gold paragraph. Source provenance true; factual role presence true; frozen boundary FAIL retained."
+    },
+    {
+      "variant": "section",
+      "id": "P04",
+      "question": "Who has authority to approve standard shelf indexes at Tiravel Library?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "DIRECT_WITH_BOUNDARY_CONTAMINATION"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "PARTIAL",
+      "note": "Correct Reference Steward/standard shelf indexes/Tiravel Library tuple appears, but a preceding unrelated academic-literature colon line and internal Markdown heading extend the quote beyond the gold paragraph. Source provenance true; factual role presence true; frozen boundary FAIL retained."
+    },
+    {
+      "variant": "section",
+      "id": "P05",
+      "question": "Who approves standard vessel rosters at the fictional Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P06",
+      "question": "Who has authority to approve standard vessel rosters at Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P07",
+      "question": "Who approves standard display cards at the fictional Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P08",
+      "question": "Who has authority to approve standard display cards at Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "literal_gold_groups_without_boundary_proxy": [
+        true
+      ],
+      "independent_citation_precision": "NO_OVERRIDE",
+      "note": "Literal role/action/object/site tuple correct, body-only source quotation directly relevant."
+    }
+  ]
+}

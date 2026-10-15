@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-15 — Narrative-clause v18 and Precision48 first result (no runtime release)
+
+- Added isolated adjacent-initial name repair and constrained sport/action/quoted-alias selection within already cited paragraphs.403-case exposed regression gate PASS; Confirmation48 reaches48/0/0 in both variants and C04’s unrelated military quote is removed. All historical PASS cases and71 unsupported zero-citation refusals remain intact. Eight changed outputs independently reviewed; original119 quotations unchanged.
+- Froze Precision48 before first answers with a predeclared seed,28 prior article exclusions, original public QA and repeated constructed controls. First scores40/0/8 in both variants; external supported18/24, role controls6/8, compounds4/4 and unsupported12/12. Confirmation FAILS; all fresh answers/quotes match paired v17, with no claimed causal fresh gain.
+- Independently distinguish missing facts/false refusal from three correct-fact quotation-boundary failures (F15/P03/P04). Preserve frozen C04 PASS while flagging its unrelated extra citation and failing the separate predeclared precision gate. All37 citations are source-literal per candidate; paragraph/direct-span proxies remain distinct from relevance and entailment.
+- Captured451 cases once in actual Chrome/MiniLM:427 Hybrid and24 separate lexical Comparison, Qwen off. All376 unit tests and strict offline checks pass;110 original input checks and45 historical archive artifacts verified. No post-answer tuning, retries, further sampling or runtime adoption; production remains r44.
+
 ## 2026-10-15 — Budget-clause preflight v17 and Confirmation48 first result (no runtime release)
 
 - Changed only isolated budget preflight to retain the exact eligible budget clause before displaying its literal entity-bound window. Scope48 reaches48/0/0 in both variants;355-case exposed regression gate PASS, no historical PASS loss,59 unsupported refusals preserved. Original Scope48 and v16 scores remain unchanged.
