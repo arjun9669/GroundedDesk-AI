@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — Cedar32 prospective v24 confirmation fails
+
+- Froze a protocol, four new fictional source documents,32 questions/key/scorer and47 file hashes before answers. Used unchanged isolated v24 and paired v23, actual installed headless Chrome155 and local MiniLM Hybrid, Qwen off;28 Hybrid questions and four separate lexical Comparisons captured once. Production UI baseline saved separately. No mock vectors, question retries or runtime changes.
+- First result **24 PASS /2 PARTIAL /6 FAIL** both; all20 supported Hybrid questions pass, but six of eight unsupported controls do not explicitly refuse and two Comparisons add unrelated shipping text. All37 quotations source-literal;27 fully relevant/paragraph-contained, two partly relevant Comparison citations and eight unsupported-control citations. Ambiguous/negated-premise non-refusals are strict behavioral failures, not six fabricated factual assertions.
+- Sealed raw outputs and first automated FAIL before review; review preserves the grades. V24 and v23 answers/quotes are identical across all32, with no same-session PASS loss. All405 unit tests and strict bundled Keyword checks pass; these are not MiniLM accuracy. Preserved Binding64's exposed64/0/0 and all historical scores.
+- This is an author-created prospective stress set, not independent third-party accuracy. It is now exposed for any future regression. Gate FAIL keeps v24 isolated and live5.6/r44 unchanged. See [full report](./docs/CEDAR32_V24_CONFIRMATION.md) and [JSON scorecard](./docs/evidence/cedar32-v24/scorecard.json).
+
 ## 2026-10-15 — Separate v24 literal-date follow-up passes frozen gates
 
 - Sealed the complete first v23 63/0/1 and overall FAIL before implementing a separate wrapper over unchanged v23. V24 permits exactly one literal positive event/date sentence in an already selected document, retaining the actual finite cosine without a semantic minimum for this fallback. No fabricated score/vector, key lookup, question rewrite or model-only improvement claim.
