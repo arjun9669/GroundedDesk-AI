@@ -11,12 +11,12 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v24** Cedar32 prospective confirmation **24 PASS / 2 PARTIAL / 6 FAIL** both; gate **FAIL**, not adopted |
-| Latest recorded checks | **405 unit tests** and strict offline evaluation pass locally; source-literal citations do not establish answer support |
+| Latest retrieval experiment | **v25** exposed Cedar32 regression **32/0/0** both; frozen regression gates **PASS**, not adopted |
+| Latest recorded checks | **412 unit tests** and strict offline evaluation pass locally; five older public-case failures remain |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
-Experimental v24 is a development iteration, not retrieval build r24 or a new application release. Its exposed Binding64 **64/0/0** remains unchanged. The fresh author-created [Cedar32 confirmation](./docs/CEDAR32_V24_CONFIRMATION.md) failed: six unsupported non-refusals and two imprecise Comparisons. All37 citations were source-literal, but only27 fully met relevance/paragraph criteria. This is not independent third-party accuracy. Live r44 stays unchanged.
+Experimental v25 is a development iteration, not retrieval build r25 or a new application release. Its [547-case in-sample regression](./docs/COVERAGE_V25_R44_VALIDATION.md) repairs six Cedar32 non-refusals and two imprecise Comparisons: Cedar32 **32/0/0**, Binding64 **64/0/0**, no prior PASS loss and all515 earlier answers/quotes unchanged. Cedar32's [first prospective result **24/2/6**](./docs/CEDAR32_V24_CONFIRMATION.md) remains immutable. Passing these exposed gates is not547/547 correct, independent accuracy or production readiness. Live r44 stays unchanged.
 
 ## Try it in a few minutes
 
@@ -74,6 +74,10 @@ Extractive quotations are the default. Optional models download only when enable
 Readiness describes available extracted text. Blank/scanned pages, reading order, columns and table relationships still need original-document review. Repeated or unsupported quotation locations receive an explanation rather than a fabricated page match.
 
 ## Latest measured results
+
+The [v25 regression report](./docs/COVERAGE_V25_R44_VALIDATION.md) records **Cedar32 32 PASS / 0 PARTIAL / 0 FAIL** both, after its preserved [first prospective 24/2/6](./docs/CEDAR32_V24_CONFIRMATION.md). A single real headless-Chrome/MiniLM run captured547 unchanged exposed cases:515 Hybrid and32 separate lexical Comparisons. Only six Cedar32 refusals and two Comparison excerpts change; all515 older answers/quotes match paired v24. Cedar32 has29/29 source-literal/relevant citations, all103 unsupported controls refuse uncited, and no prior PASS is lost. Binding64 and historical451 gates remain PASS. Five older public-case failures remain; this is not547/547 or independent accuracy. **V25 is not adopted; live r44 stays unchanged.**
+
+Earlier results remain preserved:
 
 The [v24 follow-up report](./docs/COVERAGE_V24_R44_VALIDATION.md) records **64 PASS / 0 PARTIAL / 0 FAIL** on the unchanged Binding64 rubric in both isolated variants, with no lost prior PASS. It captures the same 515 exposed questions once with real local MiniLM, Qwen off: 487 Hybrid and 28 separate lexical Comparison. F05 is repaired by a unique literal-date fallback inside the selected document, retaining its actual 0.2406 cosine unchanged. F08/C02 fixes from v23 and all 95 unsupported zero-citation refusals remain correct. All 58 Binding64 citations are source-literal, expected-paragraph-contained and include a required frozen span.
 
@@ -150,7 +154,7 @@ GroundedDesk is a portfolio prototype, not a production-ready RAG, compliance or
 
 OCR, reliable table/column reconstruction, character-level partial-run highlights, comprehensive prompt-injection defenses and broad browser/device validation are not provided. Model availability, performance and memory use vary by device.
 
-Next work is a separate design review for ambiguous events, negated premises, statistical qualifiers, entity/actor binding and Comparison evidence precision. Cedar32 is now exposed: any repair test on it must be labeled in-sample regression. Preserve its first **24/2/6**, v23's first FAIL, v24's exposed Binding64 PASS and every historical score. Runtime integration remains blocked by the failed confirmation gate; live r44 stays unchanged.
+Next work is a separately frozen prospective confirmation of unchanged v25 on unseen material, followed by integration/performance/citation-rendering review if warranted. The new guards recognize narrow surface patterns; five older public-case failures and earlier wording qualifications remain. Cedar32 **32/0/0** is exposed in-sample regression: preserve its first **24/2/6**, all earlier results and failed attempts. No runtime adoption has occurred; live r44 stays unchanged.
 
 ## Explore the project
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — Isolated v25 claim support repairs pass exposed regression gates
+
+- Added bounded guards over unchanged v24 for explicit-entity event/year relations, ambiguity/negation, qualified temperature statistics and present-tense actor/action/count/cadence binding. Separate lexical Comparison trims only an already displayed cross-paragraph retention excerpt with one qualifying paragraph, retaining its full exception. No benchmark IDs, source names or expected values in candidate routing; no general entailment or model-only improvement claim.
+- Froze code, runner, original scorers and547 unchanged exposed questions before one actual headless-Chrome155/MiniLM capture:515 Hybrid,32 separate lexical Comparison, Qwen off, fresh384D source/query/facet vectors. All412 unit checks and strict tiny bundled Keyword evaluation pass;131 input hashes and96 sealed historical artifact members verified. No mocks, retries, post-answer tuning or new sample.
+- Cedar32 improves from its preserved first24/2/6 to **32 PASS/0 PARTIAL/0 FAIL** both under its unchanged rubric, with29/29 literal/relevant citations, eight uncited refusals and zero false acceptances/false refusals. Only eight Cedar32 cases change; all515 earlier answers/quotes retain exact paired-v24 parity. Binding64 remains64/0/0; historical451 gate PASS. No prior PASS lost; all103 unsupported controls refuse uncited. ExternalSQuAD24's two FAIL and FreshConfirmation32's three FAIL remain outside passing subsets, including one supported false refusal per variant.
+- These are exposed in-sample regression gates, not547/547 or independent accuracy. First outputs and scores sealed separately before final review. All original scores and wording qualifications remain. Live5.6/r44 unchanged; no runtime adoption. See [v25 report](./docs/COVERAGE_V25_R44_VALIDATION.md) and [scorecards](./docs/evidence/coverage-v25-r44/).
+
 ## 2026-10-16 — Cedar32 prospective v24 confirmation fails
 
 - Froze a protocol, four new fictional source documents,32 questions/key/scorer and47 file hashes before answers. Used unchanged isolated v24 and paired v23, actual installed headless Chrome155 and local MiniLM Hybrid, Qwen off;28 Hybrid questions and four separate lexical Comparisons captured once. Production UI baseline saved separately. No mock vectors, question retries or runtime changes.

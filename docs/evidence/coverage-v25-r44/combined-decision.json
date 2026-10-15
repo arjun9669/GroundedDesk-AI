@@ -1,0 +1,21 @@
+{
+  "classification": "547 exposed in-sample v25 regressions; not independent accuracy",
+  "checks": {
+    "historical451_gate": true,
+    "Binding64_gate": true,
+    "Cedar32_gate": true,
+    "no_v24_or_production_PASS_loss": true,
+    "historical515_exact_answer_quote_parity": true,
+    "all103_unsupported_uncited": true,
+    "no_new_supported_false_refusal": true,
+    "Cedar32_all_citations_literal_relevant": true
+  },
+  "overall_gate": "PASS",
+  "candidate_adopted": false,
+  "production_build": "2026-10-13-r44",
+  "historical_first_scores_preserved": true,
+  "Cedar32_first": "24/2/6 both, unchanged",
+  "Cedar32_current": "32/0/0 both",
+  "question_retries": 0,
+  "remaining_failures": "ExternalSQuAD24 two FAIL and FreshConfirmation32 three FAIL per variant, unchanged and outside the passing subset gates"
+}
