@@ -1,0 +1,2634 @@
+{
+  "name": "Atlas15",
+  "classification": "Known in-sample regression; all prior first results preserved",
+  "browser": "155.0.8059.40",
+  "model": "Actual local Xenova/all-MiniLM-L6-v2 q8 WASM; Qwen disabled",
+  "build": "Loaded retrieval build: 2026-10-13-r44",
+  "integrity": "Current original-PDF SHA-256 recorded; no original historical manifest supplied. Questions are unchanged strings in tests/atlas15-accuracy.test.mjs; evidence concepts match user-provided original key.",
+  "paired_previous": {
+    "fixed": [
+      {
+        "id": "D01",
+        "question": "What two approvals are needed for a high-risk AI release?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.",
+        "sources": [
+          {
+            "filename": "01_Atlas_AI_Governance_Policy.pdf",
+            "quote": "High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.",
+            "excerpt": "ion answering. The policy is a self-contained test of release controls, traceable evidence, and risk ownership. G-01 Release authority Every AI release has a Model Owner, a Product Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls a"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "AI Release Council",
+          "Security Officer",
+          "written"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D02",
+        "question": "What must be included in the pre-release evidence package?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+        "sources": [
+          {
+            "filename": "01_Atlas_AI_Governance_Policy.pdf",
+            "quote": "G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+            "excerpt": "Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls and assesses whether sensitive records could leave the allowed processing boundary. G-03 Document privacy boundary Prototype testers may upload only public or explicitly permitted data. Session documents are held in browser memory and"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "model card",
+          "risk register",
+          "test results log",
+          "data-flow diagram",
+          "rollback plan"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D03",
+        "question": "What is the citation provenance target for the fictional pilot?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] At least 95 percent of displayed citations must match the original source text.",
+        "sources": [
+          {
+            "filename": "01_Atlas_AI_Governance_Policy.pdf",
+            "quote": "At least 95 percent of displayed citations must match the original source text.",
+            "excerpt": "s must confirm factual support before a claim enters a release report. G-05 Pre-release evaluation gate The Model Owner runs a forty-question pilot: thirty supported questions and ten deliberately unsupported questions. At least 95 percent of displayed citations must match the original source text. The source-selection target is at least 90 percent on the supported questions, and the unsupported-question refusal target is at least 90 percent. These are fictional release requirements, not observed project results.\n\nGROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 P"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "95"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D04",
+        "question": "How quickly must on-call staff acknowledge a P1 alert?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection.",
+        "sources": [
+          {
+            "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+            "quote": "R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection.",
+            "excerpt": "s-control bypass. Priority 2 (P2) includes repeated broken citations or significant service degradation without evidence of sensitive-data exposure. Priority 3 (P3) covers cosmetic errors and non-urgent monitoring gaps. R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection. P2 alerts must be acknowledged within 60 minutes. P3 alerts are reviewed by the next working day. These are acknowledgement targets, not time-to-fix guarantees. R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 m"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "15 minutes"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D05",
+        "question": "Who directs initial P1 containment, and what is the target?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation.",
+        "sources": [
+          {
+            "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+            "quote": "R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation.",
+            "excerpt": "must acknowledge P1 alerts within 15 minutes of detection. P2 alerts must be acknowledged within 60 minutes. P3 alerts are reviewed by the next working day. These are acknowledgement targets, not time-to-fix guarantees. R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation. For P2 incidents, the initial containment target is four hours. Containment may mean disabling a document upload, withholding generated answers, or revoking a leaked access token. R-04 Named responsibilities The On-Call Responder owns first acknowledgement and collects timestamp"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "Incident Commander",
+          "30 minutes"
+        ],
+        "assessment": "Correct P1 Incident Commander containment within 30 minutes. Unrequested P2 rule/examples removed; literal numbered heading remains. V5 exact displayed answer/filenames match the independently reviewed v4 record; current provenance is rechecked. V6 displayed answer and filenames preserve that reviewed evidence; provenance reverified. V7 exact displayed evidence preserves that reviewed record; current provenance rechecked.",
+        "quotation_scope_warning": "Numbered heading retained; unrelated P2 branch/examples removed.",
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D06",
+        "question": "How long are exported incident evidence packets retained?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+        "sources": [
+          {
+            "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+            "quote": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+            "excerpt": "raft answers must be withdrawn. R-05 Evidence handling An incident packet records the alert time, classification, affected document identifiers, hashes if available, redacted logs, actions taken, and the final sign-off. Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued. Do not paste confidential source text into public tickets.\n\nGROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 Page 2 R-06 Vendor escalation If a hosted model supplier or document-processing vendor might be involved, the Incident Commander alerts the Vendor Review Lead. I"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "90 days",
+          "legal hold"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D07",
+        "question": "Which supplier scores qualify as High risk?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High.",
+        "sources": [
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High.",
+            "excerpt": "se of customer data, incident contact, access logs, and deletion procedures. A marketing statement that an AI service is private is insufficient evidence. V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High. A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer. A Medium risk needs Security Officer acceptance; a Low risk needs Team Lead acceptance. V-04 External incident notification Supplier contracts must require notification to Atlas within"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "61",
+          "100"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D08",
+        "question": "What approvals are needed to accept a High-risk supplier?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer.",
+        "sources": [
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer.",
+            "excerpt": "statement that an AI service is private is insufficient evidence. V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High. A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer. A Medium risk needs Security Officer acceptance; a Low risk needs Team Lead acceptance. V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents. This is the"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "Legal Counsel",
+          "Security Officer",
+          "written"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C09",
+        "question": "Compare the internal Priority 1 containment deadline with the vendor notification deadline.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident.\n\n[2] V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents.",
+        "sources": [
+          {
+            "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+            "quote": "Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident.",
+            "excerpt": "Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident."
+          },
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents.",
+            "excerpt": "V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": [
+          true,
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "30 minutes",
+          "two hours"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C10",
+        "question": "Compare the retention periods for incident evidence and supplier document copies after contract end.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.\n\n[2] V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies.",
+        "sources": [
+          {
+            "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+            "quote": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+            "excerpt": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued."
+          },
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies.",
+            "excerpt": "V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": [
+          true,
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "90 days",
+          "30 days",
+          "legal hold",
+          "preservation"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C11",
+        "question": "Compare internal quarterly governance review with the high-risk vendor review exercise.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] G-07 Scheduled reviews The AI Release Council performs a quarterly governance review.\n\n[2] V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review.",
+        "sources": [
+          {
+            "filename": "01_Atlas_AI_Governance_Policy.pdf",
+            "quote": "G-07 Scheduled reviews The AI Release Council performs a quarterly governance review.",
+            "excerpt": "G-07 Scheduled reviews The AI Release Council performs a quarterly governance review."
+          },
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review.",
+            "excerpt": "V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": [
+          true,
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "quarterly",
+          "red-team"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C12",
+        "question": "How do the governance policy and vendor guide treat citation numbers versus factual correctness?",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported.\n\n[2] A correct citation number does not establish factual entailment.",
+        "sources": [
+          {
+            "filename": "01_Atlas_AI_Governance_Policy.pdf",
+            "quote": "Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported.",
+            "excerpt": "Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported."
+          },
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "A correct citation number does not establish factual entailment.",
+            "excerpt": "A correct citation number does not establish factual entailment."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": [
+          true,
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "structural",
+          "does not",
+          "factual"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "N13",
+        "question": "What is the CEO of Atlas Research Group's date of birth?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": [],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "N14",
+        "question": "What is the current price of Bitcoin in AED?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": [],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "N15",
+        "question": "What is the exact database password used by Atlas Research Group?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": [],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      }
+    ],
+    "section": [
+      {
+        "id": "D01",
+        "question": "What two approvals are needed for a high-risk AI release?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.",
+        "sources": [
+          {
+            "filename": "01_Atlas_AI_Governance_Policy.pdf",
+            "quote": "High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.",
+            "excerpt": "ion answering. The policy is a self-contained test of release controls, traceable evidence, and risk ownership. G-01 Release authority Every AI release has a Model Owner, a Product Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls a"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "AI Release Council",
+          "Security Officer",
+          "written"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D02",
+        "question": "What must be included in the pre-release evidence package?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+        "sources": [
+          {
+            "filename": "01_Atlas_AI_Governance_Policy.pdf",
+            "quote": "G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+            "excerpt": "Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls and assesses whether sensitive records could leave the allowed processing boundary. G-03 Document privacy boundary Prototype testers may upload only public or explicitly permitted data. Session documents are held in browser memory and"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "model card",
+          "risk register",
+          "test results log",
+          "data-flow diagram",
+          "rollback plan"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D03",
+        "question": "What is the citation provenance target for the fictional pilot?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] At least 95 percent of displayed citations must match the original source text.",
+        "sources": [
+          {
+            "filename": "01_Atlas_AI_Governance_Policy.pdf",
+            "quote": "At least 95 percent of displayed citations must match the original source text.",
+            "excerpt": "s must confirm factual support before a claim enters a release report. G-05 Pre-release evaluation gate The Model Owner runs a forty-question pilot: thirty supported questions and ten deliberately unsupported questions. At least 95 percent of displayed citations must match the original source text. The source-selection target is at least 90 percent on the supported questions, and the unsupported-question refusal target is at least 90 percent. These are fictional release requirements, not observed project results.\n\nGROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 P"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "95"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D04",
+        "question": "How quickly must on-call staff acknowledge a P1 alert?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection.",
+        "sources": [
+          {
+            "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+            "quote": "R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection.",
+            "excerpt": "s-control bypass. Priority 2 (P2) includes repeated broken citations or significant service degradation without evidence of sensitive-data exposure. Priority 3 (P3) covers cosmetic errors and non-urgent monitoring gaps. R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection. P2 alerts must be acknowledged within 60 minutes. P3 alerts are reviewed by the next working day. These are acknowledgement targets, not time-to-fix guarantees. R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 m"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "15 minutes"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D05",
+        "question": "Who directs initial P1 containment, and what is the target?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation.",
+        "sources": [
+          {
+            "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+            "quote": "R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation.",
+            "excerpt": "must acknowledge P1 alerts within 15 minutes of detection. P2 alerts must be acknowledged within 60 minutes. P3 alerts are reviewed by the next working day. These are acknowledgement targets, not time-to-fix guarantees. R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation. For P2 incidents, the initial containment target is four hours. Containment may mean disabling a document upload, withholding generated answers, or revoking a leaked access token. R-04 Named responsibilities The On-Call Responder owns first acknowledgement and collects timestamp"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "Incident Commander",
+          "30 minutes"
+        ],
+        "assessment": "Correct P1 Incident Commander containment within 30 minutes. Unrequested P2 rule/examples removed; literal numbered heading remains. V5 exact displayed answer/filenames match the independently reviewed v4 record; current provenance is rechecked. V6 displayed answer and filenames preserve that reviewed evidence; provenance reverified. V7 exact displayed evidence preserves that reviewed record; current provenance rechecked.",
+        "quotation_scope_warning": "Numbered heading retained; unrelated P2 branch/examples removed.",
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D06",
+        "question": "How long are exported incident evidence packets retained?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+        "sources": [
+          {
+            "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+            "quote": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+            "excerpt": "raft answers must be withdrawn. R-05 Evidence handling An incident packet records the alert time, classification, affected document identifiers, hashes if available, redacted logs, actions taken, and the final sign-off. Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued. Do not paste confidential source text into public tickets.\n\nGROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 Page 2 R-06 Vendor escalation If a hosted model supplier or document-processing vendor might be involved, the Incident Commander alerts the Vendor Review Lead. I"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "90 days",
+          "legal hold"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D07",
+        "question": "Which supplier scores qualify as High risk?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High.",
+        "sources": [
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High.",
+            "excerpt": "se of customer data, incident contact, access logs, and deletion procedures. A marketing statement that an AI service is private is insufficient evidence. V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High. A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer. A Medium risk needs Security Officer acceptance; a Low risk needs Team Lead acceptance. V-04 External incident notification Supplier contracts must require notification to Atlas within"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "61",
+          "100"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "D08",
+        "question": "What approvals are needed to accept a High-risk supplier?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer.",
+        "sources": [
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer.",
+            "excerpt": "statement that an AI service is private is insufficient evidence. V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High. A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer. A Medium risk needs Security Officer acceptance; a Low risk needs Team Lead acceptance. V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents. This is the"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": [
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "Legal Counsel",
+          "Security Officer",
+          "written"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C09",
+        "question": "Compare the internal Priority 1 containment deadline with the vendor notification deadline.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident.\n\n[2] V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents.",
+        "sources": [
+          {
+            "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+            "quote": "Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident.",
+            "excerpt": "Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident."
+          },
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents.",
+            "excerpt": "V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": [
+          true,
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "30 minutes",
+          "two hours"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C10",
+        "question": "Compare the retention periods for incident evidence and supplier document copies after contract end.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.\n\n[2] V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies.",
+        "sources": [
+          {
+            "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+            "quote": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+            "excerpt": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued."
+          },
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies.",
+            "excerpt": "V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": [
+          true,
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "90 days",
+          "30 days",
+          "legal hold",
+          "preservation"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C11",
+        "question": "Compare internal quarterly governance review with the high-risk vendor review exercise.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] G-07 Scheduled reviews The AI Release Council performs a quarterly governance review.\n\n[2] V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review.",
+        "sources": [
+          {
+            "filename": "01_Atlas_AI_Governance_Policy.pdf",
+            "quote": "G-07 Scheduled reviews The AI Release Council performs a quarterly governance review.",
+            "excerpt": "G-07 Scheduled reviews The AI Release Council performs a quarterly governance review."
+          },
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review.",
+            "excerpt": "V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": [
+          true,
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "quarterly",
+          "red-team"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C12",
+        "question": "How do the governance policy and vendor guide treat citation numbers versus factual correctness?",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported.\n\n[2] A correct citation number does not establish factual entailment.",
+        "sources": [
+          {
+            "filename": "01_Atlas_AI_Governance_Policy.pdf",
+            "quote": "Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported.",
+            "excerpt": "Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported."
+          },
+          {
+            "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+            "quote": "A correct citation number does not establish factual entailment.",
+            "excerpt": "A correct citation number does not establish factual entailment."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": [
+          true,
+          true
+        ],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "structural",
+          "does not",
+          "factual"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "N13",
+        "question": "What is the CEO of Atlas Research Group's date of birth?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": [],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "N14",
+        "question": "What is the current price of Bitcoin in AED?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": [],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "N15",
+        "question": "What is the exact database password used by Atlas Research Group?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": [],
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      }
+    ]
+  },
+  "summary": {
+    "baseline": {
+      "PASS": 15,
+      "PARTIAL": 0,
+      "FAIL": 0,
+      "citations": 16,
+      "valid_provenance": 16,
+      "relevant_citations": 16,
+      "false_acceptances": 0,
+      "false_refusals": 0,
+      "zero_citation_refusals": 3
+    },
+    "fixed": {
+      "PASS": 15,
+      "PARTIAL": 0,
+      "FAIL": 0,
+      "citations": 16,
+      "valid_provenance": 16,
+      "relevant_citations": 16,
+      "false_acceptances": 0,
+      "false_refusals": 0,
+      "zero_citation_refusals": 3
+    },
+    "section": {
+      "PASS": 15,
+      "PARTIAL": 0,
+      "FAIL": 0,
+      "citations": 16,
+      "valid_provenance": 16,
+      "relevant_citations": 16,
+      "false_acceptances": 0,
+      "false_refusals": 0,
+      "zero_citation_refusals": 3
+    }
+  },
+  "baseline": [
+    {
+      "id": "D01",
+      "question": "What two approvals are needed for a high-risk AI release?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.",
+          "excerpt": "ion answering. The policy is a self-contained test of release controls, traceable evidence, and risk ownership. G-01 Release authority Every AI release has a Model Owner, a Product Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls a"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "AI Release Council",
+        "Security Officer",
+        "written"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D02",
+      "question": "What must be included in the pre-release evidence package?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+          "excerpt": "val from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls and assesses whether sensitive records could leave the allowed processing boundary. G-03 Document privacy boundary Prototype testers may upload only public or explicitly permitted data. Session documents are held in browser memory and are cleared when the session is closed or refreshed. For this simulated policy, pilot teams must not use patient records, private bank statements, or"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "model card",
+        "risk register",
+        "test results log",
+        "data-flow diagram",
+        "rollback plan"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D03",
+      "question": "What is the citation provenance target for the fictional pilot?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] At least 95 percent of displayed citations must match the original source text.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "At least 95 percent of displayed citations must match the original source text.",
+          "excerpt": "s must confirm factual support before a claim enters a release report. G-05 Pre-release evaluation gate The Model Owner runs a forty-question pilot: thirty supported questions and ten deliberately unsupported questions. At least 95 percent of displayed citations must match the original source text. The source-selection target is at least 90 percent on the supported questions, and the unsupported-question refusal target is at least 90 percent. These are fictional release requirements, not observed project results.\n\nGROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 P"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "95"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D04",
+      "question": "How quickly must on-call staff acknowledge a P1 alert?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection.",
+          "excerpt": "s-control bypass. Priority 2 (P2) includes repeated broken citations or significant service degradation without evidence of sensitive-data exposure. Priority 3 (P3) covers cosmetic errors and non-urgent monitoring gaps. R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection. P2 alerts must be acknowledged within 60 minutes. P3 alerts are reviewed by the next working day. These are acknowledgement targets, not time-to-fix guarantees. R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 m"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "15 minutes"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D05",
+      "question": "Who directs initial P1 containment, and what is the target?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation. For P2 incidents, the initial containment target is four hours. Containment may mean disabling a document upload, withholding generated answers, or revoking a leaked access token.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation. For P2 incidents, the initial containment target is four hours. Containment may mean disabling a document upload, withholding generated answers, or revoking a leaked access token.",
+          "excerpt": "must acknowledge P1 alerts within 15 minutes of detection. P2 alerts must be acknowledged within 60 minutes. P3 alerts are reviewed by the next working day. These are acknowledgement targets, not time-to-fix guarantees. R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation. For P2 incidents, the initial containment target is four hours. Containment may mean disabling a document upload, withholding generated answers, or revoking a leaked access token. R-04 Named responsibilities The On-Call Responder owns first acknowledgement and collects timestamps. The Incident Commander coordinates containment and decisions. The Privacy Lead evaluates potential exposure of personal records. The Model Owner verifies whether source citation"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "Incident Commander",
+        "30 minutes"
+      ],
+      "assessment": "Manual original-key review: Incident Commander and 30-minute P1 target are correctly quoted and source-valid. PASS at the frozen answer/citation level; quote is overbroad, additionally showing an unrequested P2 rule and containment examples. Sentence-scope caution retained.",
+      "quotation_scope_warning": "Unrequested P2 branch and examples appear; no narrower sentence-precision claim.",
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D06",
+      "question": "How long are exported incident evidence packets retained?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+          "excerpt": "raft answers must be withdrawn. R-05 Evidence handling An incident packet records the alert time, classification, affected document identifiers, hashes if available, redacted logs, actions taken, and the final sign-off. Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued. Do not paste confidential source text into public tickets.\n\nGROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 Page 2 R-06 Vendor escalation If a hosted model supplier or document-processing vendor might be involved, the Incident Commander alerts the Vendor Review Lead. I"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "90 days",
+        "legal hold"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D07",
+      "question": "Which supplier scores qualify as High risk?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High.",
+      "sources": [
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High.",
+          "excerpt": "se of customer data, incident contact, access logs, and deletion procedures. A marketing statement that an AI service is private is insufficient evidence. V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High. A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer. A Medium risk needs Security Officer acceptance; a Low risk needs Team Lead acceptance. V-04 External incident notification Supplier contracts must require notification to Atlas within"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "61",
+        "100"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D08",
+      "question": "What approvals are needed to accept a High-risk supplier?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer.",
+      "sources": [
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer.",
+          "excerpt": "statement that an AI service is private is insufficient evidence. V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High. A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer. A Medium risk needs Security Officer acceptance; a Low risk needs Team Lead acceptance. V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents. This is the"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "Legal Counsel",
+        "Security Officer",
+        "written"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C09",
+      "question": "Compare the internal Priority 1 containment deadline with the vendor notification deadline.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident.\n\n[2] V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident.",
+          "excerpt": "Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents.",
+          "excerpt": "V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "30 minutes",
+        "two hours"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C10",
+      "question": "Compare the retention periods for incident evidence and supplier document copies after contract end.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.\n\n[2] V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+          "excerpt": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies.",
+          "excerpt": "V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "90 days",
+        "30 days",
+        "legal hold",
+        "preservation"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C11",
+      "question": "Compare internal quarterly governance review with the high-risk vendor review exercise.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] G-07 Scheduled reviews The AI Release Council performs a quarterly governance review.\n\n[2] V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "G-07 Scheduled reviews The AI Release Council performs a quarterly governance review.",
+          "excerpt": "G-07 Scheduled reviews The AI Release Council performs a quarterly governance review."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review.",
+          "excerpt": "V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "quarterly",
+        "red-team"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C12",
+      "question": "How do the governance policy and vendor guide treat citation numbers versus factual correctness?",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported.\n\n[2] A correct citation number does not establish factual entailment.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported.",
+          "excerpt": "Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "A correct citation number does not establish factual entailment.",
+          "excerpt": "A correct citation number does not establish factual entailment."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "structural",
+        "does not",
+        "factual"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "N13",
+      "question": "What is the CEO of Atlas Research Group's date of birth?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": [],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "N14",
+      "question": "What is the current price of Bitcoin in AED?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": [],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "N15",
+      "question": "What is the exact database password used by Atlas Research Group?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": [],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    }
+  ],
+  "fixed": [
+    {
+      "id": "D01",
+      "question": "What two approvals are needed for a high-risk AI release?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.",
+          "excerpt": "ion answering. The policy is a self-contained test of release controls, traceable evidence, and risk ownership. G-01 Release authority Every AI release has a Model Owner, a Product Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls a"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "AI Release Council",
+        "Security Officer",
+        "written"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D02",
+      "question": "What must be included in the pre-release evidence package?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+          "excerpt": "Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls and assesses whether sensitive records could leave the allowed processing boundary. G-03 Document privacy boundary Prototype testers may upload only public or explicitly permitted data. Session documents are held in browser memory and"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "model card",
+        "risk register",
+        "test results log",
+        "data-flow diagram",
+        "rollback plan"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D03",
+      "question": "What is the citation provenance target for the fictional pilot?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] At least 95 percent of displayed citations must match the original source text.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "At least 95 percent of displayed citations must match the original source text.",
+          "excerpt": "s must confirm factual support before a claim enters a release report. G-05 Pre-release evaluation gate The Model Owner runs a forty-question pilot: thirty supported questions and ten deliberately unsupported questions. At least 95 percent of displayed citations must match the original source text. The source-selection target is at least 90 percent on the supported questions, and the unsupported-question refusal target is at least 90 percent. These are fictional release requirements, not observed project results.\n\nGROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 P"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "95"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D04",
+      "question": "How quickly must on-call staff acknowledge a P1 alert?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection.",
+          "excerpt": "s-control bypass. Priority 2 (P2) includes repeated broken citations or significant service degradation without evidence of sensitive-data exposure. Priority 3 (P3) covers cosmetic errors and non-urgent monitoring gaps. R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection. P2 alerts must be acknowledged within 60 minutes. P3 alerts are reviewed by the next working day. These are acknowledgement targets, not time-to-fix guarantees. R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 m"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "15 minutes"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D05",
+      "question": "Who directs initial P1 containment, and what is the target?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation.",
+          "excerpt": "must acknowledge P1 alerts within 15 minutes of detection. P2 alerts must be acknowledged within 60 minutes. P3 alerts are reviewed by the next working day. These are acknowledgement targets, not time-to-fix guarantees. R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation. For P2 incidents, the initial containment target is four hours. Containment may mean disabling a document upload, withholding generated answers, or revoking a leaked access token. R-04 Named responsibilities The On-Call Responder owns first acknowledgement and collects timestamp"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "Incident Commander",
+        "30 minutes"
+      ],
+      "assessment": "Correct P1 Incident Commander containment within 30 minutes. Unrequested P2 rule/examples removed; literal numbered heading remains. V5 exact displayed answer/filenames match the independently reviewed v4 record; current provenance is rechecked. V6 displayed answer and filenames preserve that reviewed evidence; provenance reverified. V7 exact displayed evidence preserves that reviewed record; current provenance rechecked.",
+      "quotation_scope_warning": "Numbered heading retained; unrelated P2 branch/examples removed.",
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D06",
+      "question": "How long are exported incident evidence packets retained?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+          "excerpt": "raft answers must be withdrawn. R-05 Evidence handling An incident packet records the alert time, classification, affected document identifiers, hashes if available, redacted logs, actions taken, and the final sign-off. Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued. Do not paste confidential source text into public tickets.\n\nGROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 Page 2 R-06 Vendor escalation If a hosted model supplier or document-processing vendor might be involved, the Incident Commander alerts the Vendor Review Lead. I"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "90 days",
+        "legal hold"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D07",
+      "question": "Which supplier scores qualify as High risk?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High.",
+      "sources": [
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High.",
+          "excerpt": "se of customer data, incident contact, access logs, and deletion procedures. A marketing statement that an AI service is private is insufficient evidence. V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High. A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer. A Medium risk needs Security Officer acceptance; a Low risk needs Team Lead acceptance. V-04 External incident notification Supplier contracts must require notification to Atlas within"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "61",
+        "100"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D08",
+      "question": "What approvals are needed to accept a High-risk supplier?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer.",
+      "sources": [
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer.",
+          "excerpt": "statement that an AI service is private is insufficient evidence. V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High. A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer. A Medium risk needs Security Officer acceptance; a Low risk needs Team Lead acceptance. V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents. This is the"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "Legal Counsel",
+        "Security Officer",
+        "written"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C09",
+      "question": "Compare the internal Priority 1 containment deadline with the vendor notification deadline.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident.\n\n[2] V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident.",
+          "excerpt": "Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents.",
+          "excerpt": "V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "30 minutes",
+        "two hours"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C10",
+      "question": "Compare the retention periods for incident evidence and supplier document copies after contract end.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.\n\n[2] V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+          "excerpt": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies.",
+          "excerpt": "V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "90 days",
+        "30 days",
+        "legal hold",
+        "preservation"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C11",
+      "question": "Compare internal quarterly governance review with the high-risk vendor review exercise.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] G-07 Scheduled reviews The AI Release Council performs a quarterly governance review.\n\n[2] V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "G-07 Scheduled reviews The AI Release Council performs a quarterly governance review.",
+          "excerpt": "G-07 Scheduled reviews The AI Release Council performs a quarterly governance review."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review.",
+          "excerpt": "V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "quarterly",
+        "red-team"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C12",
+      "question": "How do the governance policy and vendor guide treat citation numbers versus factual correctness?",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported.\n\n[2] A correct citation number does not establish factual entailment.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported.",
+          "excerpt": "Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "A correct citation number does not establish factual entailment.",
+          "excerpt": "A correct citation number does not establish factual entailment."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "structural",
+        "does not",
+        "factual"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "N13",
+      "question": "What is the CEO of Atlas Research Group's date of birth?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": [],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "N14",
+      "question": "What is the current price of Bitcoin in AED?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": [],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "N15",
+      "question": "What is the exact database password used by Atlas Research Group?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": [],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    }
+  ],
+  "section": [
+    {
+      "id": "D01",
+      "question": "What two approvals are needed for a high-risk AI release?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment.",
+          "excerpt": "ion answering. The policy is a self-contained test of release controls, traceable evidence, and risk ownership. G-01 Release authority Every AI release has a Model Owner, a Product Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls a"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "AI Release Council",
+        "Security Officer",
+        "written"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D02",
+      "question": "What must be included in the pre-release evidence package?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+          "excerpt": "Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls and assesses whether sensitive records could leave the allowed processing boundary. G-03 Document privacy boundary Prototype testers may upload only public or explicitly permitted data. Session documents are held in browser memory and"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "model card",
+        "risk register",
+        "test results log",
+        "data-flow diagram",
+        "rollback plan"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D03",
+      "question": "What is the citation provenance target for the fictional pilot?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] At least 95 percent of displayed citations must match the original source text.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "At least 95 percent of displayed citations must match the original source text.",
+          "excerpt": "s must confirm factual support before a claim enters a release report. G-05 Pre-release evaluation gate The Model Owner runs a forty-question pilot: thirty supported questions and ten deliberately unsupported questions. At least 95 percent of displayed citations must match the original source text. The source-selection target is at least 90 percent on the supported questions, and the unsupported-question refusal target is at least 90 percent. These are fictional release requirements, not observed project results.\n\nGROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 P"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "95"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D04",
+      "question": "How quickly must on-call staff acknowledge a P1 alert?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection.",
+          "excerpt": "s-control bypass. Priority 2 (P2) includes repeated broken citations or significant service degradation without evidence of sensitive-data exposure. Priority 3 (P3) covers cosmetic errors and non-urgent monitoring gaps. R-02 Acknowledgement deadlines The on-call responder must acknowledge P1 alerts within 15 minutes of detection. P2 alerts must be acknowledged within 60 minutes. P3 alerts are reviewed by the next working day. These are acknowledgement targets, not time-to-fix guarantees. R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 m"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "15 minutes"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D05",
+      "question": "Who directs initial P1 containment, and what is the target?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation.",
+          "excerpt": "must acknowledge P1 alerts within 15 minutes of detection. P2 alerts must be acknowledged within 60 minutes. P3 alerts are reviewed by the next working day. These are acknowledgement targets, not time-to-fix guarantees. R-03 Internal containment targets For P1 incidents, the Incident Commander must direct initial containment within 30 minutes of confirmation. For P2 incidents, the initial containment target is four hours. Containment may mean disabling a document upload, withholding generated answers, or revoking a leaked access token. R-04 Named responsibilities The On-Call Responder owns first acknowledgement and collects timestamp"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "Incident Commander",
+        "30 minutes"
+      ],
+      "assessment": "Correct P1 Incident Commander containment within 30 minutes. Unrequested P2 rule/examples removed; literal numbered heading remains. V5 exact displayed answer/filenames match the independently reviewed v4 record; current provenance is rechecked. V6 displayed answer and filenames preserve that reviewed evidence; provenance reverified. V7 exact displayed evidence preserves that reviewed record; current provenance rechecked.",
+      "quotation_scope_warning": "Numbered heading retained; unrelated P2 branch/examples removed.",
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D06",
+      "question": "How long are exported incident evidence packets retained?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+          "excerpt": "raft answers must be withdrawn. R-05 Evidence handling An incident packet records the alert time, classification, affected document identifiers, hashes if available, redacted logs, actions taken, and the final sign-off. Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued. Do not paste confidential source text into public tickets.\n\nGROUNDEDDESK AI | SYNTHETIC BENCHMARK MATERIAL | OCT 2026 Page 2 R-06 Vendor escalation If a hosted model supplier or document-processing vendor might be involved, the Incident Commander alerts the Vendor Review Lead. I"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "90 days",
+        "legal hold"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D07",
+      "question": "Which supplier scores qualify as High risk?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High.",
+      "sources": [
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High.",
+          "excerpt": "se of customer data, incident contact, access logs, and deletion procedures. A marketing statement that an AI service is private is insufficient evidence. V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High. A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer. A Medium risk needs Security Officer acceptance; a Low risk needs Team Lead acceptance. V-04 External incident notification Supplier contracts must require notification to Atlas within"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "61",
+        "100"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "D08",
+      "question": "What approvals are needed to accept a High-risk supplier?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer.",
+      "sources": [
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer.",
+          "excerpt": "statement that an AI service is private is insufficient evidence. V-03 Risk scoring bands The supplier score ranges from 0 to 100. Scores from 0 through 25 are Low, 26 through 60 are Medium, and 61 through 100 are High. A High vendor risk requires written acceptance by both Legal Counsel and the Security Officer. A Medium risk needs Security Officer acceptance; a Low risk needs Team Lead acceptance. V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents. This is the"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": [
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "Legal Counsel",
+        "Security Officer",
+        "written"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C09",
+      "question": "Compare the internal Priority 1 containment deadline with the vendor notification deadline.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident.\n\n[2] V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident.",
+          "excerpt": "Internal P1 containment remains due within 30 minutes; the vendor contract separately requires supplier notification within two hours of a confirmed P1 service incident."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents.",
+          "excerpt": "V-04 External incident notification Supplier contracts must require notification to Atlas within two hours of a confirmed Priority 1 service incident involving customer documents."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "30 minutes",
+        "two hours"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C10",
+      "question": "Compare the retention periods for incident evidence and supplier document copies after contract end.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.\n\n[2] V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies.",
+      "sources": [
+        {
+          "filename": "02_Atlas_Incident_Response_Runbook.pdf",
+          "quote": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued.",
+          "excerpt": "Exported evidence packets are retained for 90 days in the simulated audit store, unless a longer legal hold is issued."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies.",
+          "excerpt": "V-05 Data retention and deletion Where customer document copies are permitted, contracts must require deletion within 30 days after the contract ends unless a lawful preservation obligation applies."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "90 days",
+        "30 days",
+        "legal hold",
+        "preservation"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C11",
+      "question": "Compare internal quarterly governance review with the high-risk vendor review exercise.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] G-07 Scheduled reviews The AI Release Council performs a quarterly governance review.\n\n[2] V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "G-07 Scheduled reviews The AI Release Council performs a quarterly governance review.",
+          "excerpt": "G-07 Scheduled reviews The AI Release Council performs a quarterly governance review."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review.",
+          "excerpt": "V-06 Testing and ongoing monitoring High-risk AI vendors require a quarterly red-team exercise and a monthly access-log review."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "quarterly",
+        "red-team"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C12",
+      "question": "How do the governance policy and vendor guide treat citation numbers versus factual correctness?",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported.\n\n[2] A correct citation number does not establish factual entailment.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported.",
+          "excerpt": "Source-number validation is a structural check only; it does not prove that an AI-generated sentence is factually supported."
+        },
+        {
+          "filename": "03_Atlas_Vendor_AI_Assessment.pdf",
+          "quote": "A correct citation number does not establish factual entailment.",
+          "excerpt": "A correct citation number does not establish factual entailment."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": [
+        true,
+        true
+      ],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "structural",
+        "does not",
+        "factual"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "N13",
+      "question": "What is the CEO of Atlas Research Group's date of birth?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": [],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "N14",
+      "question": "What is the current price of Bitcoin in AED?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": [],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "N15",
+      "question": "What is the exact database password used by Atlas Research Group?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": [],
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    }
+  ],
+  "regressions": {
+    "fixed": [],
+    "section": []
+  }
+}

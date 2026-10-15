@@ -1,0 +1,2633 @@
+{
+  "name": "Cobalt16",
+  "classification": "Known in-sample regression; all prior first results preserved",
+  "browser": "155.0.8059.40",
+  "model": "Actual local Xenova/all-MiniLM-L6-v2 q8 WASM; Qwen disabled",
+  "build": "Loaded retrieval build: 2026-10-13-r44",
+  "integrity": "All original manifest hashes verified",
+  "paired_previous": {
+    "fixed": [
+      {
+        "id": "H01",
+        "question": "How many visitors can attend one planetarium session?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Each planetarium session admits at most 48 visitors.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "Each planetarium session admits at most 48 visitors.",
+            "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "48"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H02",
+        "question": "When does the projection technician start the alignment check, and when must it be repeated?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+            "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "25 minutes",
+          "projector replacement"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H03",
+        "question": "How long are session attendance registers retained, including the exception?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+            "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "two years",
+          "safeguarding review"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H04",
+        "question": "Who must sign off a replacement projector before public use, and in what form?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+            "excerpt": "check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "written",
+          "Projection Technician",
+          "Programme Coordinator"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H05",
+        "question": "What happens to framed prints arriving with visible condensation?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+        "sources": [
+          {
+            "filename": "02_Cobalt_Gallery.txt",
+            "quote": "Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+            "excerpt": "visitors, not guides.\nG-02. Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.\nG-03. Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\nG-04. A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "Collection Curator",
+          "dry"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H06",
+        "question": "How long do seed envelopes dry, and what happens if they remain damp?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+        "sources": [
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+            "excerpt": "Cobalt Community Centre — Fictional Seed Library Guide\nS-01. Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed ba"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "18 hours",
+          "isolated",
+          "Seed Librarian",
+          "dry inspection"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H07",
+        "question": "What is the seed packet limit per visitor, including the donor exception?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+        "sources": [
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+            "excerpt": "Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "three",
+          "one packet",
+          "donor restriction"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H08",
+        "question": "Whose written acceptance is needed before donated seed batches can be distributed?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+        "sources": [
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+            "excerpt": "d for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "written",
+          "Seed Librarian",
+          "Conservation Coordinator"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H09",
+        "question": "What is the exact PIN code for the Cobalt planetarium door?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H10",
+        "question": "What is the current price of gold?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H11",
+        "question": "What is the Cobalt Gallery director's date of birth?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H12",
+        "question": "What is the exact projector lamp wattage?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C13",
+        "question": "Compare the visitor capacities of planetarium and guided gallery sessions.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Each planetarium session admits at most 48 visitors.\n\n[2] Each guided gallery session admits at most 32 visitors.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "Each planetarium session admits at most 48 visitors.",
+            "excerpt": "Each planetarium session admits at most 48 visitors."
+          },
+          {
+            "filename": "02_Cobalt_Gallery.txt",
+            "quote": "Each guided gallery session admits at most 32 visitors.",
+            "excerpt": "Each guided gallery session admits at most 32 visitors."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "48",
+          "32"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C14",
+        "question": "Compare planetarium attendance-register retention with seed accession-register retention, including exceptions.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\n\n[2] Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+            "excerpt": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention."
+          },
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+            "excerpt": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "two years",
+          "safeguarding review",
+          "five years",
+          "conservation hold"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C15",
+        "question": "Compare the written approvals for accepting gallery loans and donated seed batches.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.\n\n[2] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+        "sources": [
+          {
+            "filename": "02_Cobalt_Gallery.txt",
+            "quote": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.",
+            "excerpt": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+          },
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+            "excerpt": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "written",
+          "Collection Curator",
+          "Registrar",
+          "Seed Librarian",
+          "Conservation Coordinator"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C16",
+        "question": "Compare the initial holding times and dampness exceptions for framed prints and seed envelopes.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\n\n[2] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+        "sources": [
+          {
+            "filename": "02_Cobalt_Gallery.txt",
+            "quote": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+            "excerpt": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry."
+          },
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+            "excerpt": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "36 hours",
+          "Collection Curator",
+          "dry",
+          "18 hours",
+          "isolated",
+          "Seed Librarian",
+          "dry inspection"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      }
+    ],
+    "section": [
+      {
+        "id": "H01",
+        "question": "How many visitors can attend one planetarium session?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Each planetarium session admits at most 48 visitors.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "Each planetarium session admits at most 48 visitors.",
+            "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "48"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H02",
+        "question": "When does the projection technician start the alignment check, and when must it be repeated?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+            "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "25 minutes",
+          "projector replacement"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H03",
+        "question": "How long are session attendance registers retained, including the exception?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+            "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "two years",
+          "safeguarding review"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H04",
+        "question": "Who must sign off a replacement projector before public use, and in what form?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+            "excerpt": "check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "written",
+          "Projection Technician",
+          "Programme Coordinator"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H05",
+        "question": "What happens to framed prints arriving with visible condensation?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+        "sources": [
+          {
+            "filename": "02_Cobalt_Gallery.txt",
+            "quote": "Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+            "excerpt": "visitors, not guides.\nG-02. Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.\nG-03. Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\nG-04. A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "Collection Curator",
+          "dry"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H06",
+        "question": "How long do seed envelopes dry, and what happens if they remain damp?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+        "sources": [
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+            "excerpt": "Cobalt Community Centre — Fictional Seed Library Guide\nS-01. Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed ba"
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "18 hours",
+          "isolated",
+          "Seed Librarian",
+          "dry inspection"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H07",
+        "question": "What is the seed packet limit per visitor, including the donor exception?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+        "sources": [
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+            "excerpt": "Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "three",
+          "one packet",
+          "donor restriction"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H08",
+        "question": "Whose written acceptance is needed before donated seed batches can be distributed?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "[1] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+        "sources": [
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+            "excerpt": "d for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+          }
+        ],
+        "citation_provenance": [
+          true
+        ],
+        "citation_relevance": [
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "written",
+          "Seed Librarian",
+          "Conservation Coordinator"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H09",
+        "question": "What is the exact PIN code for the Cobalt planetarium door?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H10",
+        "question": "What is the current price of gold?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H11",
+        "question": "What is the Cobalt Gallery director's date of birth?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "H12",
+        "question": "What is the exact projector lamp wattage?",
+        "workflow": "hybrid",
+        "outcome": "PASS",
+        "answer": "I can't find this in the provided documents.",
+        "sources": [],
+        "citation_provenance": [],
+        "citation_relevance": [],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": true,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C13",
+        "question": "Compare the visitor capacities of planetarium and guided gallery sessions.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Each planetarium session admits at most 48 visitors.\n\n[2] Each guided gallery session admits at most 32 visitors.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "Each planetarium session admits at most 48 visitors.",
+            "excerpt": "Each planetarium session admits at most 48 visitors."
+          },
+          {
+            "filename": "02_Cobalt_Gallery.txt",
+            "quote": "Each guided gallery session admits at most 32 visitors.",
+            "excerpt": "Each guided gallery session admits at most 32 visitors."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "48",
+          "32"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C14",
+        "question": "Compare planetarium attendance-register retention with seed accession-register retention, including exceptions.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\n\n[2] Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+        "sources": [
+          {
+            "filename": "01_Cobalt_Planetarium.txt",
+            "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+            "excerpt": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention."
+          },
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+            "excerpt": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "two years",
+          "safeguarding review",
+          "five years",
+          "conservation hold"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C15",
+        "question": "Compare the written approvals for accepting gallery loans and donated seed batches.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.\n\n[2] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+        "sources": [
+          {
+            "filename": "02_Cobalt_Gallery.txt",
+            "quote": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.",
+            "excerpt": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+          },
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+            "excerpt": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "written",
+          "Collection Curator",
+          "Registrar",
+          "Seed Librarian",
+          "Conservation Coordinator"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      },
+      {
+        "id": "C16",
+        "question": "Compare the initial holding times and dampness exceptions for framed prints and seed envelopes.",
+        "workflow": "comparison",
+        "outcome": "PASS",
+        "answer": "[1] Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\n\n[2] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+        "sources": [
+          {
+            "filename": "02_Cobalt_Gallery.txt",
+            "quote": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+            "excerpt": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry."
+          },
+          {
+            "filename": "03_Cobalt_Seed_Library.txt",
+            "quote": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+            "excerpt": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection."
+          }
+        ],
+        "citation_provenance": [
+          true,
+          true
+        ],
+        "citation_relevance": [
+          true,
+          true
+        ],
+        "independent_pdf_provenance": null,
+        "prior_outcome": "PASS",
+        "prior_quote_parity": true,
+        "required_facts": [
+          "36 hours",
+          "Collection Curator",
+          "dry",
+          "18 hours",
+          "isolated",
+          "Seed Librarian",
+          "dry inspection"
+        ],
+        "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+        "quotation_scope_warning": null,
+        "explicit_refusal": false,
+        "false_acceptance": false,
+        "false_refusal": false,
+        "paired_browser": "155.0.8059.40",
+        "paired_actual_vectors": true
+      }
+    ]
+  },
+  "summary": {
+    "baseline": {
+      "PASS": 16,
+      "PARTIAL": 0,
+      "FAIL": 0,
+      "citations": 16,
+      "valid_provenance": 16,
+      "relevant_citations": 16,
+      "false_acceptances": 0,
+      "false_refusals": 0,
+      "zero_citation_refusals": 4
+    },
+    "fixed": {
+      "PASS": 16,
+      "PARTIAL": 0,
+      "FAIL": 0,
+      "citations": 16,
+      "valid_provenance": 16,
+      "relevant_citations": 16,
+      "false_acceptances": 0,
+      "false_refusals": 0,
+      "zero_citation_refusals": 4
+    },
+    "section": {
+      "PASS": 16,
+      "PARTIAL": 0,
+      "FAIL": 0,
+      "citations": 16,
+      "valid_provenance": 16,
+      "relevant_citations": 16,
+      "false_acceptances": 0,
+      "false_refusals": 0,
+      "zero_citation_refusals": 4
+    }
+  },
+  "baseline": [
+    {
+      "id": "H01",
+      "question": "How many visitors can attend one planetarium session?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Each planetarium session admits at most 48 visitors.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "48"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H02",
+      "question": "When does the projection technician start the alignment check, and when must it be repeated?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+          "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "25 minutes",
+        "projector replacement"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H03",
+      "question": "How long are session attendance registers retained, including the exception?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "two years",
+        "safeguarding review"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H04",
+      "question": "Who must sign off a replacement projector before public use, and in what form?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "excerpt": "check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "written",
+        "Projection Technician",
+        "Programme Coordinator"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H05",
+      "question": "What happens to framed prints arriving with visible condensation?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+          "excerpt": "visitors, not guides.\nG-02. Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.\nG-03. Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\nG-04. A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "Collection Curator",
+        "dry"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H06",
+      "question": "How long do seed envelopes dry, and what happens if they remain damp?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+          "excerpt": "Cobalt Community Centre — Fictional Seed Library Guide\nS-01. Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed ba"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "18 hours",
+        "isolated",
+        "Seed Librarian",
+        "dry inspection"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H07",
+      "question": "What is the seed packet limit per visitor, including the donor exception?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+          "excerpt": "Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "three",
+        "one packet",
+        "donor restriction"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H08",
+      "question": "Whose written acceptance is needed before donated seed batches can be distributed?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+          "excerpt": "d for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "written",
+        "Seed Librarian",
+        "Conservation Coordinator"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H09",
+      "question": "What is the exact PIN code for the Cobalt planetarium door?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H10",
+      "question": "What is the current price of gold?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H11",
+      "question": "What is the Cobalt Gallery director's date of birth?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H12",
+      "question": "What is the exact projector lamp wattage?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C13",
+      "question": "Compare the visitor capacities of planetarium and guided gallery sessions.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Each planetarium session admits at most 48 visitors.\n\n[2] Each guided gallery session admits at most 32 visitors.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "excerpt": "Each planetarium session admits at most 48 visitors."
+        },
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "Each guided gallery session admits at most 32 visitors.",
+          "excerpt": "Each guided gallery session admits at most 32 visitors."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "48",
+        "32"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C14",
+      "question": "Compare planetarium attendance-register retention with seed accession-register retention, including exceptions.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\n\n[2] Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "excerpt": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention."
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+          "excerpt": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "two years",
+        "safeguarding review",
+        "five years",
+        "conservation hold"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C15",
+      "question": "Compare the written approvals for accepting gallery loans and donated seed batches.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.\n\n[2] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.",
+          "excerpt": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+          "excerpt": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "written",
+        "Collection Curator",
+        "Registrar",
+        "Seed Librarian",
+        "Conservation Coordinator"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C16",
+      "question": "Compare the initial holding times and dampness exceptions for framed prints and seed envelopes.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\n\n[2] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+          "excerpt": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry."
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+          "excerpt": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "36 hours",
+        "Collection Curator",
+        "dry",
+        "18 hours",
+        "isolated",
+        "Seed Librarian",
+        "dry inspection"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    }
+  ],
+  "fixed": [
+    {
+      "id": "H01",
+      "question": "How many visitors can attend one planetarium session?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Each planetarium session admits at most 48 visitors.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "48"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H02",
+      "question": "When does the projection technician start the alignment check, and when must it be repeated?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+          "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "25 minutes",
+        "projector replacement"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H03",
+      "question": "How long are session attendance registers retained, including the exception?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "two years",
+        "safeguarding review"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H04",
+      "question": "Who must sign off a replacement projector before public use, and in what form?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "excerpt": "check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "written",
+        "Projection Technician",
+        "Programme Coordinator"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H05",
+      "question": "What happens to framed prints arriving with visible condensation?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+          "excerpt": "visitors, not guides.\nG-02. Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.\nG-03. Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\nG-04. A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "Collection Curator",
+        "dry"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H06",
+      "question": "How long do seed envelopes dry, and what happens if they remain damp?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+          "excerpt": "Cobalt Community Centre — Fictional Seed Library Guide\nS-01. Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed ba"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "18 hours",
+        "isolated",
+        "Seed Librarian",
+        "dry inspection"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H07",
+      "question": "What is the seed packet limit per visitor, including the donor exception?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+          "excerpt": "Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "three",
+        "one packet",
+        "donor restriction"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H08",
+      "question": "Whose written acceptance is needed before donated seed batches can be distributed?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+          "excerpt": "d for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "written",
+        "Seed Librarian",
+        "Conservation Coordinator"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H09",
+      "question": "What is the exact PIN code for the Cobalt planetarium door?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H10",
+      "question": "What is the current price of gold?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H11",
+      "question": "What is the Cobalt Gallery director's date of birth?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H12",
+      "question": "What is the exact projector lamp wattage?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C13",
+      "question": "Compare the visitor capacities of planetarium and guided gallery sessions.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Each planetarium session admits at most 48 visitors.\n\n[2] Each guided gallery session admits at most 32 visitors.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "excerpt": "Each planetarium session admits at most 48 visitors."
+        },
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "Each guided gallery session admits at most 32 visitors.",
+          "excerpt": "Each guided gallery session admits at most 32 visitors."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "48",
+        "32"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C14",
+      "question": "Compare planetarium attendance-register retention with seed accession-register retention, including exceptions.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\n\n[2] Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "excerpt": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention."
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+          "excerpt": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "two years",
+        "safeguarding review",
+        "five years",
+        "conservation hold"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C15",
+      "question": "Compare the written approvals for accepting gallery loans and donated seed batches.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.\n\n[2] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.",
+          "excerpt": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+          "excerpt": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "written",
+        "Collection Curator",
+        "Registrar",
+        "Seed Librarian",
+        "Conservation Coordinator"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C16",
+      "question": "Compare the initial holding times and dampness exceptions for framed prints and seed envelopes.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\n\n[2] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+          "excerpt": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry."
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+          "excerpt": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "36 hours",
+        "Collection Curator",
+        "dry",
+        "18 hours",
+        "isolated",
+        "Seed Librarian",
+        "dry inspection"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    }
+  ],
+  "section": [
+    {
+      "id": "H01",
+      "question": "How many visitors can attend one planetarium session?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Each planetarium session admits at most 48 visitors.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "48"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H02",
+      "question": "When does the projection technician start the alignment check, and when must it be repeated?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.",
+          "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "25 minutes",
+        "projector replacement"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H03",
+      "question": "How long are session attendance registers retained, including the exception?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "two years",
+        "safeguarding review"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H04",
+      "question": "Who must sign off a replacement projector before public use, and in what form?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "excerpt": "check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "written",
+        "Projection Technician",
+        "Programme Coordinator"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H05",
+      "question": "What happens to framed prints arriving with visible condensation?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+          "excerpt": "visitors, not guides.\nG-02. Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.\nG-03. Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\nG-04. A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "Collection Curator",
+        "dry"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H06",
+      "question": "How long do seed envelopes dry, and what happens if they remain damp?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+          "excerpt": "Cobalt Community Centre — Fictional Seed Library Guide\nS-01. Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed ba"
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "18 hours",
+        "isolated",
+        "Seed Librarian",
+        "dry inspection"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H07",
+      "question": "What is the seed packet limit per visitor, including the donor exception?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+          "excerpt": "Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.\nS-02. Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "three",
+        "one packet",
+        "donor restriction"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H08",
+      "question": "Whose written acceptance is needed before donated seed batches can be distributed?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "[1] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+      "sources": [
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+          "excerpt": "d for five years, unless an active conservation hold requires longer retention.\nS-03. Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.\nS-04. A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+        }
+      ],
+      "citation_provenance": [
+        true
+      ],
+      "citation_relevance": [
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "written",
+        "Seed Librarian",
+        "Conservation Coordinator"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H09",
+      "question": "What is the exact PIN code for the Cobalt planetarium door?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H10",
+      "question": "What is the current price of gold?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H11",
+      "question": "What is the Cobalt Gallery director's date of birth?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "H12",
+      "question": "What is the exact projector lamp wattage?",
+      "workflow": "hybrid",
+      "outcome": "PASS",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "citation_provenance": [],
+      "citation_relevance": [],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": true,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C13",
+      "question": "Compare the visitor capacities of planetarium and guided gallery sessions.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Each planetarium session admits at most 48 visitors.\n\n[2] Each guided gallery session admits at most 32 visitors.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "excerpt": "Each planetarium session admits at most 48 visitors."
+        },
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "Each guided gallery session admits at most 32 visitors.",
+          "excerpt": "Each guided gallery session admits at most 32 visitors."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "48",
+        "32"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C14",
+      "question": "Compare planetarium attendance-register retention with seed accession-register retention, including exceptions.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\n\n[2] Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+      "sources": [
+        {
+          "filename": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "excerpt": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention."
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+          "excerpt": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "two years",
+        "safeguarding review",
+        "five years",
+        "conservation hold"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C15",
+      "question": "Compare the written approvals for accepting gallery loans and donated seed batches.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.\n\n[2] A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.",
+          "excerpt": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+          "excerpt": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "written",
+        "Collection Curator",
+        "Registrar",
+        "Seed Librarian",
+        "Conservation Coordinator"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "id": "C16",
+      "question": "Compare the initial holding times and dampness exceptions for framed prints and seed envelopes.",
+      "workflow": "comparison",
+      "outcome": "PASS",
+      "answer": "[1] Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\n\n[2] Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+      "sources": [
+        {
+          "filename": "02_Cobalt_Gallery.txt",
+          "quote": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+          "excerpt": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry."
+        },
+        {
+          "filename": "03_Cobalt_Seed_Library.txt",
+          "quote": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+          "excerpt": "Seed envelopes air-dry for 18 hours before shelving. Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection."
+        }
+      ],
+      "citation_provenance": [
+        true,
+        true
+      ],
+      "citation_relevance": [
+        true,
+        true
+      ],
+      "independent_pdf_provenance": null,
+      "prior_outcome": "PASS",
+      "prior_quote_parity": true,
+      "required_facts": [
+        "36 hours",
+        "Collection Curator",
+        "dry",
+        "18 hours",
+        "isolated",
+        "Seed Librarian",
+        "dry inspection"
+      ],
+      "assessment": "Original required facts/rubric assessment preserved because every displayed quotation and filename matches the previous independently reviewed record; current source/excerpt provenance reverified.",
+      "quotation_scope_warning": null,
+      "explicit_refusal": false,
+      "false_acceptance": false,
+      "false_refusal": false
+    }
+  ],
+  "regressions": {
+    "fixed": [],
+    "section": []
+  }
+}
