@@ -1,0 +1,1187 @@
+{
+  "classification": "Assistant read-only review of every displayed candidate answer against frozen paragraphs and key; no external-world fact check or score overrides",
+  "frozen_first_scores_unchanged": true,
+  "paired_v16_v17_exact_answer_and_quote_parity": {
+    "fixed": true,
+    "section": true
+  },
+  "citation_direct_answer_relevance_counts": {
+    "fixed": {
+      "DIRECT": 34,
+      "PARTIAL_NAME": 1,
+      "OFF_TOPIC_FOR_REQUESTED_FACT": 2
+    },
+    "section": {
+      "DIRECT": 33,
+      "PARTIAL_NAME": 1,
+      "OFF_TOPIC_FOR_REQUESTED_FACT": 4
+    }
+  },
+  "relevance_definition": "DIRECT means the quote directly answers at least the requested fact/facet; PARTIAL_NAME identifies surname only; OFF_TOPIC_FOR_REQUESTED_FACT does not answer requested fact. Counts do not certify semantic entailment or all question quantifiers.",
+  "metric_limitations": [
+    "Paragraph containment is not semantic relevance: section C04 extra military citation remains frozen PASS but is independently flagged.",
+    "F11 correct surname is partial identification, while the frozen full-name span rule remains FAIL.",
+    "F09 original question/gold annotation is broad; F19 most-tourists quantifier is stronger than particularly-golf source wording.",
+    "Public SQuAD data may have model exposure; repeated fictional templates are constructed controls, not independent external questions."
+  ],
+  "cases": [
+    {
+      "variant": "fixed",
+      "id": "F01",
+      "question": "What is another name for the Yosemite Freeway?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed State Route 41 clause names Yosemite Freeway; broad neighboring route context retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "F02",
+      "question": "State Route 180 comes from which direction via Mendota?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed State Route 180 clause explicitly gives west via Mendota."
+    },
+    {
+      "variant": "fixed",
+      "id": "F03",
+      "question": "What route connects Fresno with the California Central Valley?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed first clause gives State Route 99 connection to Central Valley."
+    },
+    {
+      "variant": "fixed",
+      "id": "F04",
+      "question": "In what town did Bill Aiken grow up?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed paragraph names Madera as the neighboring town where Aken grew up; original question spelling Aiken remains unchanged."
+    },
+    {
+      "variant": "fixed",
+      "id": "F05",
+      "question": "Who was Bill Aiken's adopted mother?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed adoption clause names Lupe Mayorga; original question spelling Aiken remains unchanged."
+    },
+    {
+      "variant": "fixed",
+      "id": "F06",
+      "question": "Who recorded \"Walking in Fresno?\"",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed paragraph names Bob Gallion as recorder; original question title Walking in Fresno differs from source Walking Into Fresno. No question/key edits."
+    },
+    {
+      "variant": "fixed",
+      "id": "F07",
+      "question": "Since NASA didn't know how many attempts each test would end up requiring, what did they use instead of numbers for the trials?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed causal clause explicitly says letters were used instead of numbers because attempts were unknown."
+    },
+    {
+      "variant": "fixed",
+      "id": "F08",
+      "question": "What had to happen to each mission before they would continue on to the next mission?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed clause requires each step to be successfully accomplished before the next."
+    },
+    {
+      "variant": "fixed",
+      "id": "F09",
+      "question": "What type of missions were approved by Mueller after the incident?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed clause matches frozen sequence/manned-lunar-landing gold alternatives. Original question asks type of missions but the key includes broad sequence and success phrases; this PASS is under the original annotation, not a claim that the concrete mission-type list was recovered."
+    },
+    {
+      "variant": "fixed",
+      "id": "F10",
+      "question": "Where was the Manned Spacecraft Center located?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed literal window binds the new Manned Spacecraft Center to a Houston, Texas site donated by Rice University."
+    },
+    {
+      "variant": "fixed",
+      "id": "F11",
+      "question": "Who originally led the Space Task Group?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "PARTIAL_NAME"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Only surname Gilruth is displayed. Source paragraph includes Robert R. Gilruth but full frozen gold alternatives are absent from displayed evidence. Partial factual identification; frozen FAIL retained without relaxing to surname-only credit."
+    },
+    {
+      "variant": "fixed",
+      "id": "F12",
+      "question": "What university donated the land for the Manned Spacecraft Center?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed site donation clause names Rice University."
+    },
+    {
+      "variant": "fixed",
+      "id": "F13",
+      "question": "Which genus lack tentacles and sheaths?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed Beroe clause explicitly says juveniles and adults lack tentacles and sheaths."
+    },
+    {
+      "variant": "fixed",
+      "id": "F14",
+      "question": "Where do juvenile platyctenids live?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed platyctenid juvenile clause explicitly says live among plankton, with ecological distinction from parents."
+    },
+    {
+      "variant": "fixed",
+      "id": "F15",
+      "question": "Juvenile and adult  beroe lack what?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed clause gives both tentacles and tentacle sheaths, for juveniles and adults."
+    },
+    {
+      "variant": "fixed",
+      "id": "F16",
+      "question": "What does the 9 +3 pattern of cilia thought to do?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed 9 + 3 clause preserves suspected supporting function, rather than stating certainty."
+    },
+    {
+      "variant": "fixed",
+      "id": "F17",
+      "question": "What direction do ctenophore swim?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed paragraph gives usual mouth-facing swim direction and preserves reversal exceptions."
+    },
+    {
+      "variant": "fixed",
+      "id": "F18",
+      "question": "Cilia can g ow up too what length?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed comb-plate clause gives up to 2 millimeters (0.079 in); original question typo preserved."
+    },
+    {
+      "variant": "fixed",
+      "id": "F19",
+      "question": "What sport attracts most tourists to Jacksonville?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Fixed displays golf tourism. Section instead displays port/military facts and misses golf. Source says particularly tourism related to golf; the original question stronger most-tourists wording is not independently quantified by the passage."
+    },
+    {
+      "variant": "fixed",
+      "id": "F20",
+      "question": "What are those from Jacksonville sometimes called?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed resident-name clause includes Jacksonvillians, Jaxsons and Jaxons spelling."
+    },
+    {
+      "variant": "fixed",
+      "id": "F21",
+      "question": "What is the ranking of the military forces in Jacksonville?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed military-presence clause gives third largest in the United States; port ranking nearby is separate."
+    },
+    {
+      "variant": "fixed",
+      "id": "F22",
+      "question": "In the wake of the Jacksonville fire, what did the Florida Governor do?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed fire-origin/damage window omits governor action. Source/key require declaring martial law (and optional militia detail); frozen FAIL retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "F23",
+      "question": "What caused the spread of the Jacksonville fire in 1901?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed source explicitly links Spanish moss at mattress factory to rapid spread; original gold also permits kitchen fire. No key edits."
+    },
+    {
+      "variant": "fixed",
+      "id": "F24",
+      "question": "What was the Jacksonville fire later known as?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed fire-origin/damage window omits name Great Fire of 1901. Frozen FAIL retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "C01",
+      "question": "What is another name for the Yosemite Freeway? Also, State Route 180 comes from which direction via Mendota?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed single source window contains State Route 41 and west via Mendota."
+    },
+    {
+      "variant": "fixed",
+      "id": "C02",
+      "question": "Since NASA didn't know how many attempts each test would end up requiring, what did they use instead of numbers for the trials? Also, What had to happen to each mission before they would continue on to the next mission?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed single causal clause contains both letters and successful prior steps."
+    },
+    {
+      "variant": "fixed",
+      "id": "C03",
+      "question": "Which genus lack tentacles and sheaths? Also, Where do juvenile platyctenids live?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true,
+        true
+      ],
+      "note": "Two displayed clauses separately support Beroe and plankton; both directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "C04",
+      "question": "What sport attracts most tourists to Jacksonville? Also, What are those from Jacksonville sometimes called?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Fixed tourism/resident-name window supports both frozen groups. Section adds a port/military excerpt that supports neither requested facet, then a relevant tourism/resident-name excerpt. Frozen section PASS retained because original paragraph-containment proxy accepts both, but independent citation precision flags the extra excerpt."
+    },
+    {
+      "variant": "fixed",
+      "id": "U01",
+      "question": "What is the exact database password used by Fresno, California?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "U02",
+      "question": "What is the bank account number associated with Apollo program?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "U03",
+      "question": "What is the date of birth of the fictional coordinator Neris Quill for Ctenophora?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "U04",
+      "question": "What is the current Bitcoin price in AED in the Jacksonville, Florida documents?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "A01",
+      "question": "Who approves suborbital beacon charters at the fictional Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "A02",
+      "question": "Who has authority to approve standard cargo schedules at the fictional Ulvera Base?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "A03",
+      "question": "Who approves plasma telescope permissions at the fictional Tiravel Library?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "A04",
+      "question": "Who has authority to approve standard shelf indexes at the fictional Dovarin Spire?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "A05",
+      "question": "Who approves asteroid docking warrants at the fictional Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "A06",
+      "question": "Who has authority to approve standard vessel rosters at the fictional Serolan Vault?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "A07",
+      "question": "Who approves fusion capsule clearances at the fictional Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "A08",
+      "question": "Who has authority to approve standard display cards at the fictional Naviren Lab?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "fixed",
+      "id": "P01",
+      "question": "Who approves standard cargo schedules at the fictional Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P02",
+      "question": "Who has authority to approve standard cargo schedules at Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P03",
+      "question": "Who approves standard shelf indexes at the fictional Tiravel Library?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P04",
+      "question": "Who has authority to approve standard shelf indexes at Tiravel Library?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P05",
+      "question": "Who approves standard vessel rosters at the fictional Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P06",
+      "question": "Who has authority to approve standard vessel rosters at Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P07",
+      "question": "Who approves standard display cards at the fictional Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "fixed",
+      "id": "P08",
+      "question": "Who has authority to approve standard display cards at Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "F01",
+      "question": "What is another name for the Yosemite Freeway?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed State Route 41 clause names Yosemite Freeway; broad neighboring route context retained."
+    },
+    {
+      "variant": "section",
+      "id": "F02",
+      "question": "State Route 180 comes from which direction via Mendota?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed State Route 180 clause explicitly gives west via Mendota."
+    },
+    {
+      "variant": "section",
+      "id": "F03",
+      "question": "What route connects Fresno with the California Central Valley?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed first clause gives State Route 99 connection to Central Valley."
+    },
+    {
+      "variant": "section",
+      "id": "F04",
+      "question": "In what town did Bill Aiken grow up?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed paragraph names Madera as the neighboring town where Aken grew up; original question spelling Aiken remains unchanged."
+    },
+    {
+      "variant": "section",
+      "id": "F05",
+      "question": "Who was Bill Aiken's adopted mother?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed adoption clause names Lupe Mayorga; original question spelling Aiken remains unchanged."
+    },
+    {
+      "variant": "section",
+      "id": "F06",
+      "question": "Who recorded \"Walking in Fresno?\"",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed paragraph names Bob Gallion as recorder; original question title Walking in Fresno differs from source Walking Into Fresno. No question/key edits."
+    },
+    {
+      "variant": "section",
+      "id": "F07",
+      "question": "Since NASA didn't know how many attempts each test would end up requiring, what did they use instead of numbers for the trials?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed causal clause explicitly says letters were used instead of numbers because attempts were unknown."
+    },
+    {
+      "variant": "section",
+      "id": "F08",
+      "question": "What had to happen to each mission before they would continue on to the next mission?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed clause requires each step to be successfully accomplished before the next."
+    },
+    {
+      "variant": "section",
+      "id": "F09",
+      "question": "What type of missions were approved by Mueller after the incident?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed clause matches frozen sequence/manned-lunar-landing gold alternatives. Original question asks type of missions but the key includes broad sequence and success phrases; this PASS is under the original annotation, not a claim that the concrete mission-type list was recovered."
+    },
+    {
+      "variant": "section",
+      "id": "F10",
+      "question": "Where was the Manned Spacecraft Center located?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed literal window binds the new Manned Spacecraft Center to a Houston, Texas site donated by Rice University."
+    },
+    {
+      "variant": "section",
+      "id": "F11",
+      "question": "Who originally led the Space Task Group?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "PARTIAL_NAME"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Only surname Gilruth is displayed. Source paragraph includes Robert R. Gilruth but full frozen gold alternatives are absent from displayed evidence. Partial factual identification; frozen FAIL retained without relaxing to surname-only credit."
+    },
+    {
+      "variant": "section",
+      "id": "F12",
+      "question": "What university donated the land for the Manned Spacecraft Center?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed site donation clause names Rice University."
+    },
+    {
+      "variant": "section",
+      "id": "F13",
+      "question": "Which genus lack tentacles and sheaths?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed Beroe clause explicitly says juveniles and adults lack tentacles and sheaths."
+    },
+    {
+      "variant": "section",
+      "id": "F14",
+      "question": "Where do juvenile platyctenids live?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed platyctenid juvenile clause explicitly says live among plankton, with ecological distinction from parents."
+    },
+    {
+      "variant": "section",
+      "id": "F15",
+      "question": "Juvenile and adult  beroe lack what?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed clause gives both tentacles and tentacle sheaths, for juveniles and adults."
+    },
+    {
+      "variant": "section",
+      "id": "F16",
+      "question": "What does the 9 +3 pattern of cilia thought to do?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed 9 + 3 clause preserves suspected supporting function, rather than stating certainty."
+    },
+    {
+      "variant": "section",
+      "id": "F17",
+      "question": "What direction do ctenophore swim?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed paragraph gives usual mouth-facing swim direction and preserves reversal exceptions."
+    },
+    {
+      "variant": "section",
+      "id": "F18",
+      "question": "Cilia can g ow up too what length?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed comb-plate clause gives up to 2 millimeters (0.079 in); original question typo preserved."
+    },
+    {
+      "variant": "section",
+      "id": "F19",
+      "question": "What sport attracts most tourists to Jacksonville?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Fixed displays golf tourism. Section instead displays port/military facts and misses golf. Source says particularly tourism related to golf; the original question stronger most-tourists wording is not independently quantified by the passage."
+    },
+    {
+      "variant": "section",
+      "id": "F20",
+      "question": "What are those from Jacksonville sometimes called?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed resident-name clause includes Jacksonvillians, Jaxsons and Jaxons spelling."
+    },
+    {
+      "variant": "section",
+      "id": "F21",
+      "question": "What is the ranking of the military forces in Jacksonville?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed military-presence clause gives third largest in the United States; port ranking nearby is separate."
+    },
+    {
+      "variant": "section",
+      "id": "F22",
+      "question": "In the wake of the Jacksonville fire, what did the Florida Governor do?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed fire-origin/damage window omits governor action. Source/key require declaring martial law (and optional militia detail); frozen FAIL retained."
+    },
+    {
+      "variant": "section",
+      "id": "F23",
+      "question": "What caused the spread of the Jacksonville fire in 1901?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed source explicitly links Spanish moss at mattress factory to rapid spread; original gold also permits kitchen fire. No key edits."
+    },
+    {
+      "variant": "section",
+      "id": "F24",
+      "question": "What was the Jacksonville fire later known as?",
+      "frozen_outcome": "FAIL",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed fire-origin/damage window omits name Great Fire of 1901. Frozen FAIL retained."
+    },
+    {
+      "variant": "section",
+      "id": "C01",
+      "question": "What is another name for the Yosemite Freeway? Also, State Route 180 comes from which direction via Mendota?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed single source window contains State Route 41 and west via Mendota."
+    },
+    {
+      "variant": "section",
+      "id": "C02",
+      "question": "Since NASA didn't know how many attempts each test would end up requiring, what did they use instead of numbers for the trials? Also, What had to happen to each mission before they would continue on to the next mission?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Displayed single causal clause contains both letters and successful prior steps."
+    },
+    {
+      "variant": "section",
+      "id": "C03",
+      "question": "Which genus lack tentacles and sheaths? Also, Where do juvenile platyctenids live?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true,
+        true
+      ],
+      "note": "Two displayed clauses separately support Beroe and plankton; both directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "C04",
+      "question": "What sport attracts most tourists to Jacksonville? Also, What are those from Jacksonville sometimes called?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "OFF_TOPIC_FOR_REQUESTED_FACT",
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true,
+        true
+      ],
+      "note": "Fixed tourism/resident-name window supports both frozen groups. Section adds a port/military excerpt that supports neither requested facet, then a relevant tourism/resident-name excerpt. Frozen section PASS retained because original paragraph-containment proxy accepts both, but independent citation precision flags the extra excerpt."
+    },
+    {
+      "variant": "section",
+      "id": "U01",
+      "question": "What is the exact database password used by Fresno, California?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "U02",
+      "question": "What is the bank account number associated with Apollo program?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "U03",
+      "question": "What is the date of birth of the fictional coordinator Neris Quill for Ctenophora?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "U04",
+      "question": "What is the current Bitcoin price in AED in the Jacksonville, Florida documents?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "A01",
+      "question": "Who approves suborbital beacon charters at the fictional Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "A02",
+      "question": "Who has authority to approve standard cargo schedules at the fictional Ulvera Base?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "A03",
+      "question": "Who approves plasma telescope permissions at the fictional Tiravel Library?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "A04",
+      "question": "Who has authority to approve standard shelf indexes at the fictional Dovarin Spire?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "A05",
+      "question": "Who approves asteroid docking warrants at the fictional Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "A06",
+      "question": "Who has authority to approve standard vessel rosters at the fictional Serolan Vault?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "A07",
+      "question": "Who approves fusion capsule clearances at the fictional Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "A08",
+      "question": "Who has authority to approve standard display cards at the fictional Naviren Lab?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [],
+      "source_provenance": [],
+      "note": "Explicit unsupported refusal with zero citations; corpus absence audits frozen before testing."
+    },
+    {
+      "variant": "section",
+      "id": "P01",
+      "question": "Who approves standard cargo schedules at the fictional Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P02",
+      "question": "Who has authority to approve standard cargo schedules at Orvella Depot?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P03",
+      "question": "Who approves standard shelf indexes at the fictional Tiravel Library?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P04",
+      "question": "Who has authority to approve standard shelf indexes at Tiravel Library?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P05",
+      "question": "Who approves standard vessel rosters at the fictional Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P06",
+      "question": "Who has authority to approve standard vessel rosters at Calorin Pier?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P07",
+      "question": "Who approves standard display cards at the fictional Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    },
+    {
+      "variant": "section",
+      "id": "P08",
+      "question": "Who has authority to approve standard display cards at Fenora Gallery?",
+      "frozen_outcome": "PASS",
+      "citation_direct_answer_relevance": [
+        "DIRECT"
+      ],
+      "source_provenance": [
+        true
+      ],
+      "note": "Literal role/action/object/site tuple is correct; heading removed, body quotation source-literal and directly relevant."
+    }
+  ]
+}
