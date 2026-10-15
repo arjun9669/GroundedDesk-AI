@@ -75,6 +75,10 @@ Readiness describes available extracted text. Blank/scanned pages, reading order
 
 ## Latest measured results
 
+The [v25 regression report](./docs/COVERAGE_V25_R44_VALIDATION.md) records **Cedar32 32 PASS / 0 PARTIAL / 0 FAIL** both, after its preserved [first prospective 24/2/6](./docs/CEDAR32_V24_CONFIRMATION.md). A single real headless-Chrome/MiniLM run captured547 unchanged exposed cases:515 Hybrid and32 separate lexical Comparisons. Only six Cedar32 refusals and two Comparison excerpts change; all515 older answers/quotes match paired v24. Cedar32 has29/29 source-literal/relevant citations, all103 unsupported controls refuse uncited, and no prior PASS is lost. Binding64 and historical451 gates remain PASS. Five older public-case failures remain; this is not547/547 or independent accuracy. **V25 is not adopted; live r44 stays unchanged.**
+
+Earlier results remain preserved:
+
 The [v24 follow-up report](./docs/COVERAGE_V24_R44_VALIDATION.md) records **64 PASS / 0 PARTIAL / 0 FAIL** on the unchanged Binding64 rubric in both isolated variants, with no lost prior PASS. It captures the same 515 exposed questions once with real local MiniLM, Qwen off: 487 Hybrid and 28 separate lexical Comparison. F05 is repaired by a unique literal-date fallback inside the selected document, retaining its actual 0.2406 cosine unchanged. F08/C02 fixes from v23 and all 95 unsupported zero-citation refusals remain correct. All 58 Binding64 citations are source-literal, expected-paragraph-contained and include a required frozen span.
 
 Both frozen development gates **PASS**, but this is **in-sample frozen-key compliance**, not 515/515, new independent accuracy or full question entailment. Known temperature wording qualifications remain below. **v24 is not adopted; live r44 stays unchanged pending separately frozen confirmation and integration review.** [Scores and selected evidence](./docs/evidence/coverage-v24-r44/).
