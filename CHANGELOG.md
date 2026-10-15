@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-15 — Preservation v22 restores regressions; overall gate FAIL
+
+- Copied isolated v21 over unchanged v20, adding bounded action-form alternatives for suffix doubling, affirmative pronoun/count-nominal handling after earlier unrelated negation, and complete-sentence cutoff spans with conditional holds but no operational filler. No application runtime change.
+- Froze candidate, runner, scorers and 515 unchanged exposed questions before a single real Chrome/MiniLM capture: 487 Hybrid and 28 separate lexical Comparison, fresh 384D vectors, Qwen off. All 397 unit tests and strict offline checks pass; 124 original input hashes and 70 historical archive members verified.
+- Restore Norwood V9/F17, RQ02 and Binding64/T4A to PASS in both variants. Their exact displayed quotations match historical v20; only those three cases change versus paired v21. No prior PASS is lost; the historical 451-case gate returns to PASS. All 95 unsupported controls explicitly refuse without citations; the older supported FreshConfirmation32/F10 false refusal remains.
+- Binding64 reaches 61 PASS / 1 PARTIAL / 2 FAIL both. Preserve its qualified first 45/1/18, v21 60/1/3, original BLOCKED startup and every historical score. Unchanged F05/F08 failures and C02 PARTIAL keep Binding64 and overall gates FAIL. No post-answer tuning, retry, new sample or adoption; production remains 5.6/r44. See [v22 report](./docs/COVERAGE_V22_R44_VALIDATION.md).
+
 ## 2026-10-15 — Clause-guard v21 regression FAIL (no runtime release)
 
 - Added an isolated wrapper over frozen v20 to check recognized named-actor count clauses on existing and replacement answers, select bounded inclusive cutoff spans with trailing holds, and strip leading headings in separate lexical Comparison. These are narrow structural rules, not general entailment checks.
