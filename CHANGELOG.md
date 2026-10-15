@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-10-15 — Separate v24 literal-date follow-up passes frozen gates
+
+- Sealed the complete first v23 63/0/1 and overall FAIL before implementing a separate wrapper over unchanged v23. V24 permits exactly one literal positive event/date sentence in an already selected document, retaining the actual finite cosine without a semantic minimum for this fallback. No fabricated score/vector, key lookup, question rewrite or model-only improvement claim.
+- Froze and captured the unchanged 515 exposed questions once with actual MiniLM in installed headless Chrome, Qwen off, fresh384D vectors: 487 Hybrid and28 lexical Comparison. V23 and v24 are two different frozen runs, not one run or a replacement of v23. All405 unit tests and strict offline checks pass;124 original input hashes and82 historical archive members verified.
+- Binding64 reaches64 PASS /0 PARTIAL /0 FAIL both. Only F05 changes, displaying the correct occupation/date sentence with the original0.2406 actual cosine. Every previous PASS and all95 unsupported uncited refusals are preserved; all58 citations satisfy source/body/span checks. Historical451 and full frozen development gates PASS, not515/515 or independent accuracy. Older public failures and temperature wording/average-bound qualifications remain explicit.
+- No post-answer tuning, fresh sample or adoption. Live5.6/r44 unchanged pending separately frozen confirmation/integration review. See [v24 report](./docs/COVERAGE_V24_R44_VALIDATION.md); preserve [v23 first result](./docs/COVERAGE_V23_R44_VALIDATION.md).
+
+## 2026-10-15 — Evidence v23 first result 63/0/1, overall FAIL
+
+- Added isolated exact-event/date and numeric-temperature evidence selection over unchanged v22, with selected-document/paragraph scope, actual cosine >=0.35, uniqueness, literal subject context and compound facet preservation. No source/question/key rewrite or runtime adoption.
+- Froze and captured all 515 unchanged exposed questions once with actual local MiniLM in installed headless Chrome, fresh 384D vectors, Qwen off: 487 Hybrid and 28 separate lexical Comparison. All 402 unit tests and strict offline checks pass; 124 input hashes and 76 historical archive members verified.
+- Binding64 first result: 63 PASS / 0 PARTIAL / 1 FAIL both. Only F08/C02 change; winter evidence is now displayed, while F05's correct event/date sentence is excluded by its actual 0.2406 cosine below 0.35. Historical451 gate PASS, overall FAIL. No prior PASS lost; all95 unsupported controls refuse without citations. Preserve this result, all earlier scores and original blocked startup; no v23 tuning/retry or adoption. Keep monthly-versus-maximum and winter-average wording qualifications explicit. See [v23 report](./docs/COVERAGE_V23_R44_VALIDATION.md).
+
 ## 2026-10-15 — Preservation v22 restores regressions; overall gate FAIL
 
 - Copied isolated v21 over unchanged v20, adding bounded action-form alternatives for suffix doubling, affirmative pronoun/count-nominal handling after earlier unrelated negation, and complete-sentence cutoff spans with conditional holds but no operational filler. No application runtime change.

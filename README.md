@@ -11,12 +11,12 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v22** restores all three v21 regressions with no lost PASS; **overall gate FAIL**, not adopted |
-| Latest recorded checks | **397 unit tests** and strict offline evaluation pass locally; historical gate PASS, Binding64 gate FAIL |
+| Latest retrieval experiment | **v24** passes the exposed development gates; Binding64 **64/0/0** both; not adopted |
+| Latest recorded checks | **405 unit tests** and strict offline evaluation pass locally; frozen in-sample gates PASS |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
-Experimental v22 is a development iteration, not retrieval build r22 or a new application release. A passing development gate does not establish production readiness or independent accuracy.
+Experimental v24 is a development iteration, not retrieval build r24 or a new application release. A passing development gate does not establish production readiness or independent accuracy.
 
 ## Try it in a few minutes
 
@@ -74,6 +74,16 @@ Extractive quotations are the default. Optional models download only when enable
 Readiness describes available extracted text. Blank/scanned pages, reading order, columns and table relationships still need original-document review. Repeated or unsupported quotation locations receive an explanation rather than a fabricated page match.
 
 ## Latest measured results
+
+The [v24 follow-up report](./docs/COVERAGE_V24_R44_VALIDATION.md) records **64 PASS / 0 PARTIAL / 0 FAIL** on the unchanged Binding64 rubric in both isolated variants, with no lost prior PASS. It captures the same 515 exposed questions once with real local MiniLM, Qwen off: 487 Hybrid and 28 separate lexical Comparison. F05 is repaired by a unique literal-date fallback inside the selected document, retaining its actual 0.2406 cosine unchanged. F08/C02 fixes from v23 and all 95 unsupported zero-citation refusals remain correct. All 58 Binding64 citations are source-literal, expected-paragraph-contained and include a required frozen span.
+
+Both frozen development gates **PASS**, but this is **in-sample frozen-key compliance**, not 515/515, new independent accuracy or full question entailment. Known temperature wording qualifications remain below. **v24 is not adopted; live r44 stays unchanged pending separately frozen confirmation and integration review.** [Scores and selected evidence](./docs/evidence/coverage-v24-r44/).
+
+V23 and v24 are **two separate 515-case runs with different frozen candidates**. V23's first 63/0/1 was committed and archived before v24 implementation; it is not overwritten or relabelled as a pass:
+
+The [v23 report](./docs/COVERAGE_V23_R44_VALIDATION.md) preserves its first **63 PASS / 0 PARTIAL / 1 FAIL** Binding64 result in both isolated variants. F08 and C02 now display the missing winter-average evidence; F05 still excludes the correct event/date sentence because its actual cosine is 0.2406, below the frozen 0.35 minimum. The same 515 exposed cases were captured once with actual local MiniLM in installed headless Chrome, Qwen off; no prior PASS was lost and all 95 unsupported controls still refuse without citations. Overall gate **FAIL**, r44 unchanged. [Scorecards and selected evidence](./docs/evidence/coverage-v23-r44/).
+
+Frozen-key grades retain wording limits: F07/C02 ask about a monthly temperature while the source/key gives a maximum since WWII; F08/C02 give a winter-average bound, not an absolute low. These results are in-sample development evidence, not independent accuracy or a release.
 
 The [v22 report](./docs/COVERAGE_V22_R44_VALIDATION.md) records the same **515 exposed questions captured once** with actual local MiniLM in installed headless Chrome, Qwen off: 487 Hybrid and 28 separate lexical Comparison cases. **All three v21 regressions are restored**: Norwood's 61-yard return, Orchard's complete departure sentence without filler, and the supported tagging count. Only these three cases change; their displayed quotations exactly match historical v20. No prior PASS is lost, and the historical 451-case gate returns to PASS.
 
@@ -140,7 +150,7 @@ GroundedDesk is a portfolio prototype, not a production-ready RAG, compliance or
 
 OCR, reliable table/column reconstruction, character-level partial-run highlights, comprehensive prompt-injection defenses and broad browser/device validation are not provided. Model availability, performance and memory use vary by device.
 
-Next work is a separately frozen investigation of Binding64's remaining wrong-paragraph and missing-temperature/compound evidence, followed by preservation tests. Keep the failed overall gates and every historical first score fixed. No new sample or runtime integration follows the v22 run; live r44 stays unchanged.
+Next work is a separately frozen prospective confirmation and integration review, including question/source wording, ambiguous dates and operational limits. Preserve both v23's first FAIL and v24's exposed PASS, along with every historical score. No new sample or runtime integration was performed in these runs; live r44 stays unchanged.
 
 ## Explore the project
 
