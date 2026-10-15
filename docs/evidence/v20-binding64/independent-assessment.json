@@ -1,0 +1,1631 @@
+{
+  "classification": "Read-only assistant review of all64 fixed/section answers against frozen key/source. Exact fixed/section/paired-v19 parity verified; no new human/external validation claim, grade override or source change.",
+  "original_first_attempt": "BLOCKED/ungraded;0questions",
+  "qualified_first_answers": {
+    "baseline": {
+      "PASS": 24,
+      "PARTIAL": 1,
+      "FAIL": 39,
+      "citations": 64,
+      "valid_provenance": 64,
+      "gold_paragraph_citations": 24,
+      "direct_span_citations": 21,
+      "false_acceptances": 8,
+      "false_refusals": 0,
+      "zero_citation_refusals": 4
+    },
+    "fixed": {
+      "PASS": 45,
+      "PARTIAL": 1,
+      "FAIL": 18,
+      "citations": 66,
+      "valid_provenance": 66,
+      "gold_paragraph_citations": 49,
+      "direct_span_citations": 43,
+      "false_acceptances": 8,
+      "false_refusals": 0,
+      "zero_citation_refusals": 4
+    },
+    "section": {
+      "PASS": 45,
+      "PARTIAL": 1,
+      "FAIL": 18,
+      "citations": 66,
+      "valid_provenance": 66,
+      "gold_paragraph_citations": 49,
+      "direct_span_citations": 43,
+      "false_acceptances": 8,
+      "false_refusals": 0,
+      "zero_citation_refusals": 4
+    },
+    "paired_fixed": {
+      "PASS": 45,
+      "PARTIAL": 1,
+      "FAIL": 18,
+      "citations": 66,
+      "valid_provenance": 66,
+      "gold_paragraph_citations": 49,
+      "direct_span_citations": 43,
+      "false_acceptances": 8,
+      "false_refusals": 0,
+      "zero_citation_refusals": 4
+    },
+    "paired_section": {
+      "PASS": 45,
+      "PARTIAL": 1,
+      "FAIL": 18,
+      "citations": 66,
+      "valid_provenance": 66,
+      "gold_paragraph_citations": 49,
+      "direct_span_citations": 43,
+      "false_acceptances": 8,
+      "false_refusals": 0,
+      "zero_citation_refusals": 4
+    }
+  },
+  "gate": "FAIL",
+  "question_retries": 0,
+  "paired_v19_exact_answer_quote_parity": {
+    "fixed": true,
+    "section": true
+  },
+  "citation_relevance_counts": {
+    "fixed": {
+      "DIRECT": 42,
+      "MISSING_REQUESTED_FACT_OR_WRONG_PARAGRAPH": 3,
+      "DIRECT_PER_KEY_WORDING_LIMIT": 1,
+      "WRONG_TEMPORAL_BRANCH_AND_OMITTED_HOLD": 4,
+      "NO_REQUESTED_ACTOR_ACTION_TUPLE": 8,
+      "DIRECT_WITH_HEADING_BOUNDARY_FAILURE": 8
+    },
+    "section": {
+      "DIRECT": 42,
+      "MISSING_REQUESTED_FACT_OR_WRONG_PARAGRAPH": 3,
+      "DIRECT_PER_KEY_WORDING_LIMIT": 1,
+      "WRONG_TEMPORAL_BRANCH_AND_OMITTED_HOLD": 4,
+      "NO_REQUESTED_ACTOR_ACTION_TUPLE": 8,
+      "DIRECT_WITH_HEADING_BOUNDARY_FAILURE": 8
+    }
+  },
+  "factual_comparison_completeness": "4/4 both sides all duration/exception facts present; strict grades remain FAIL due heading boundary",
+  "public_question_limits": [
+    "F05/F23 use deictic references; F08 original typo winner retained.",
+    "F07 monthly question versus maximum-temperature source/key mismatch; frozen PASS retained with explicit limitation.",
+    "F19/F20 exact duplicate strings sampled from distinct original IDs; C04 repeats their wording; no post-freeze resampling or deduplication.",
+    "Historical values/claims are source contents, not current world facts or advice."
+  ],
+  "cases": [
+    {
+      "variant": "fixed",
+      "id": "F01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "New France displayed; broader historical context retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "F02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Seven Years War relation displayed in the same original sentence."
+    },
+    {
+      "variant": "fixed",
+      "id": "F03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "1759-60 displayed for British defeat of New France."
+    },
+    {
+      "variant": "fixed",
+      "id": "F04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Dorotheenstadt and Friedrichstadt both displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F05",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "MISSING_REQUESTED_FACT_OR_WRONG_PARAGRAPH"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false
+      ],
+      "note": "Wrong paragraph/date: displayed New France1759-60 instead of frozen Prussian occupation1806-07. Original standalone this occupation question is deictic and ambiguous; retain exact question/key and FAIL, do not treat it as context-free representative QA."
+    },
+    {
+      "variant": "fixed",
+      "id": "F06",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Original northern-European congregation list displayed; no list items inferred from outside quote."
+    },
+    {
+      "variant": "fixed",
+      "id": "F07",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT_PER_KEY_WORDING_LIMIT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Frozen key48.8degreesC displayed, so frozen PASS retained. Question asks highest monthly temperature, while quoted source states highest maximum since WWII. Annotation/question wording mismatch remains an independent limitation, not a newly verified monthly statistic."
+    },
+    {
+      "variant": "fixed",
+      "id": "F08",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "MISSING_REQUESTED_FACT_OR_WRONG_PARAGRAPH"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false
+      ],
+      "note": "Original typo winner is preserved. Displayed warm-region sentence omits required winter15degreesC. FAIL; no source-context-only credit."
+    },
+    {
+      "variant": "fixed",
+      "id": "F09",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Historical heatwave date7February2009 displayed; not a claim about current records."
+    },
+    {
+      "variant": "fixed",
+      "id": "F10",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Source gives17percent increase during2003-04; evaluated as historical source content, not financial advice."
+    },
+    {
+      "variant": "fixed",
+      "id": "F11",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "32,463farms displayed with explicit as-of2004 qualification; not a current farm count."
+    },
+    {
+      "variant": "fixed",
+      "id": "F12",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "More than60percent of state land displayed, preserving its qualifier."
+    },
+    {
+      "variant": "fixed",
+      "id": "F13",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Ibn Sina/Avicenna full name displayed with source-attributed historical claim."
+    },
+    {
+      "variant": "fixed",
+      "id": "F14",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Persia displayed; quote starts with surname Garrison after initials were truncated. Requested location present, broad authorship context in key remains."
+    },
+    {
+      "variant": "fixed",
+      "id": "F15",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Abu al-Rayhan al-Biruni and date range displayed literally."
+    },
+    {
+      "variant": "fixed",
+      "id": "F16",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Wave speeds inside earth displayed; original deictic/recent wording retained, no current-date claim."
+    },
+    {
+      "variant": "fixed",
+      "id": "F17",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Mantle and within-layer seismic discontinuities displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F18",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Seismic waves displayed in original imaging sentence."
+    },
+    {
+      "variant": "fixed",
+      "id": "F19",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Asynchronous/FIFO forwarding displayed. Exact question text duplicates F20 because different original QA IDs were sampled; no deduplication after freeze."
+    },
+    {
+      "variant": "fixed",
+      "id": "F20",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Same original question string as F19, separate annotation retained. This repetition reduces diversity; do not count it as independently different wording."
+    },
+    {
+      "variant": "fixed",
+      "id": "F21",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Multiple access scheme for shared physical media displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F22",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Distributed Adaptive Message Block Switching and Baran attribution displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F23",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Fault-tolerant efficient routing goal displayed; original system reference is deictic, with source context supplied only by retrieval."
+    },
+    {
+      "variant": "fixed",
+      "id": "F24",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Donald Davies and naming attribution displayed, retaining preceding identifying sentence."
+    },
+    {
+      "variant": "fixed",
+      "id": "C01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Both New France and Seven Years War facets displayed in one source-literal quote."
+    },
+    {
+      "variant": "fixed",
+      "id": "C02",
+      "frozen_outcome": "PARTIAL",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "MISSING_REQUESTED_FACT_OR_WRONG_PARAGRAPH"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        false
+      ],
+      "note": "Temperature maximum facet displayed; second quote gives warm region but omits15degreesC winter fact. Frozen PARTIAL and off-topic extra citation retained; monthly/maximum wording ambiguity carried fromF07."
+    },
+    {
+      "variant": "fixed",
+      "id": "C03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Ibn Sina and Persia facets both displayed in distinct relevant quotes."
+    },
+    {
+      "variant": "fixed",
+      "id": "C04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Constructed from F19/F20 identical question strings with original annotations. Both frozen groups displayed; frozen PASS retained, but this is not two independently distinct question facets."
+    },
+    {
+      "variant": "fixed",
+      "id": "T1A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T1B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T1C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "E1A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "E1B",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "WRONG_TEMPORAL_BRANCH_AND_OMITTED_HOLD"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false,
+        false
+      ],
+      "note": "At the exact cutoff, source requires next operating day, plus no sending until unresolved review closes. Displayed quote instead uses the before-cutoff same-day branch and omits the hold. Wrong answer, not merely shortened context."
+    },
+    {
+      "variant": "fixed",
+      "id": "N11",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "fixed",
+      "id": "N12",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "fixed",
+      "id": "T2A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T2B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T2C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "E2A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "E2B",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "WRONG_TEMPORAL_BRANCH_AND_OMITTED_HOLD"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false,
+        false
+      ],
+      "note": "At the exact cutoff, source requires next operating day, plus no sending until unresolved review closes. Displayed quote instead uses the before-cutoff same-day branch and omits the hold. Wrong answer, not merely shortened context."
+    },
+    {
+      "variant": "fixed",
+      "id": "N21",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "fixed",
+      "id": "N22",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "fixed",
+      "id": "T3A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T3B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T3C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "E3A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "E3B",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "WRONG_TEMPORAL_BRANCH_AND_OMITTED_HOLD"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false,
+        false
+      ],
+      "note": "At the exact cutoff, source requires next operating day, plus no sending until unresolved review closes. Displayed quote instead uses the before-cutoff same-day branch and omits the hold. Wrong answer, not merely shortened context."
+    },
+    {
+      "variant": "fixed",
+      "id": "N31",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "fixed",
+      "id": "N32",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "fixed",
+      "id": "T4A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T4B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T4C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "E4A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "E4B",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "WRONG_TEMPORAL_BRANCH_AND_OMITTED_HOLD"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false,
+        false
+      ],
+      "note": "At the exact cutoff, source requires next operating day, plus no sending until unresolved review closes. Displayed quote instead uses the before-cutoff same-day branch and omits the hold. Wrong answer, not merely shortened context."
+    },
+    {
+      "variant": "fixed",
+      "id": "N41",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "fixed",
+      "id": "N42",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "fixed",
+      "id": "X01",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE",
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "note": "Both documents selected correctly; both durations and both exceptions are literally displayed. All facts present independently, but each quote includes a leading Markdown heading outside its frozen gold body paragraph. Frozen FAIL retained; source provenance and factual completeness are distinct from strict whole-quote boundary proxy."
+    },
+    {
+      "variant": "fixed",
+      "id": "X02",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE",
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "note": "Both documents selected correctly; both durations and both exceptions are literally displayed. All facts present independently, but each quote includes a leading Markdown heading outside its frozen gold body paragraph. Frozen FAIL retained; source provenance and factual completeness are distinct from strict whole-quote boundary proxy."
+    },
+    {
+      "variant": "fixed",
+      "id": "X03",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE",
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "note": "Both documents selected correctly; both durations and both exceptions are literally displayed. All facts present independently, but each quote includes a leading Markdown heading outside its frozen gold body paragraph. Frozen FAIL retained; source provenance and factual completeness are distinct from strict whole-quote boundary proxy."
+    },
+    {
+      "variant": "fixed",
+      "id": "X04",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE",
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "note": "Both documents selected correctly; both durations and both exceptions are literally displayed. All facts present independently, but each quote includes a leading Markdown heading outside its frozen gold body paragraph. Frozen FAIL retained; source provenance and factual completeness are distinct from strict whole-quote boundary proxy."
+    },
+    {
+      "variant": "fixed",
+      "id": "U01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "fixed",
+      "id": "U02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "fixed",
+      "id": "U03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "fixed",
+      "id": "U04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "section",
+      "id": "F01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "New France displayed; broader historical context retained."
+    },
+    {
+      "variant": "section",
+      "id": "F02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Seven Years War relation displayed in the same original sentence."
+    },
+    {
+      "variant": "section",
+      "id": "F03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "1759-60 displayed for British defeat of New France."
+    },
+    {
+      "variant": "section",
+      "id": "F04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Dorotheenstadt and Friedrichstadt both displayed."
+    },
+    {
+      "variant": "section",
+      "id": "F05",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "MISSING_REQUESTED_FACT_OR_WRONG_PARAGRAPH"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false
+      ],
+      "note": "Wrong paragraph/date: displayed New France1759-60 instead of frozen Prussian occupation1806-07. Original standalone this occupation question is deictic and ambiguous; retain exact question/key and FAIL, do not treat it as context-free representative QA."
+    },
+    {
+      "variant": "section",
+      "id": "F06",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Original northern-European congregation list displayed; no list items inferred from outside quote."
+    },
+    {
+      "variant": "section",
+      "id": "F07",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT_PER_KEY_WORDING_LIMIT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Frozen key48.8degreesC displayed, so frozen PASS retained. Question asks highest monthly temperature, while quoted source states highest maximum since WWII. Annotation/question wording mismatch remains an independent limitation, not a newly verified monthly statistic."
+    },
+    {
+      "variant": "section",
+      "id": "F08",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "MISSING_REQUESTED_FACT_OR_WRONG_PARAGRAPH"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false
+      ],
+      "note": "Original typo winner is preserved. Displayed warm-region sentence omits required winter15degreesC. FAIL; no source-context-only credit."
+    },
+    {
+      "variant": "section",
+      "id": "F09",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Historical heatwave date7February2009 displayed; not a claim about current records."
+    },
+    {
+      "variant": "section",
+      "id": "F10",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Source gives17percent increase during2003-04; evaluated as historical source content, not financial advice."
+    },
+    {
+      "variant": "section",
+      "id": "F11",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "32,463farms displayed with explicit as-of2004 qualification; not a current farm count."
+    },
+    {
+      "variant": "section",
+      "id": "F12",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "More than60percent of state land displayed, preserving its qualifier."
+    },
+    {
+      "variant": "section",
+      "id": "F13",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Ibn Sina/Avicenna full name displayed with source-attributed historical claim."
+    },
+    {
+      "variant": "section",
+      "id": "F14",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Persia displayed; quote starts with surname Garrison after initials were truncated. Requested location present, broad authorship context in key remains."
+    },
+    {
+      "variant": "section",
+      "id": "F15",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Abu al-Rayhan al-Biruni and date range displayed literally."
+    },
+    {
+      "variant": "section",
+      "id": "F16",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Wave speeds inside earth displayed; original deictic/recent wording retained, no current-date claim."
+    },
+    {
+      "variant": "section",
+      "id": "F17",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Mantle and within-layer seismic discontinuities displayed."
+    },
+    {
+      "variant": "section",
+      "id": "F18",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Seismic waves displayed in original imaging sentence."
+    },
+    {
+      "variant": "section",
+      "id": "F19",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Asynchronous/FIFO forwarding displayed. Exact question text duplicates F20 because different original QA IDs were sampled; no deduplication after freeze."
+    },
+    {
+      "variant": "section",
+      "id": "F20",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Same original question string as F19, separate annotation retained. This repetition reduces diversity; do not count it as independently different wording."
+    },
+    {
+      "variant": "section",
+      "id": "F21",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Multiple access scheme for shared physical media displayed."
+    },
+    {
+      "variant": "section",
+      "id": "F22",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Distributed Adaptive Message Block Switching and Baran attribution displayed."
+    },
+    {
+      "variant": "section",
+      "id": "F23",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Fault-tolerant efficient routing goal displayed; original system reference is deictic, with source context supplied only by retrieval."
+    },
+    {
+      "variant": "section",
+      "id": "F24",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "Donald Davies and naming attribution displayed, retaining preceding identifying sentence."
+    },
+    {
+      "variant": "section",
+      "id": "C01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Both New France and Seven Years War facets displayed in one source-literal quote."
+    },
+    {
+      "variant": "section",
+      "id": "C02",
+      "frozen_outcome": "PARTIAL",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "MISSING_REQUESTED_FACT_OR_WRONG_PARAGRAPH"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        false
+      ],
+      "note": "Temperature maximum facet displayed; second quote gives warm region but omits15degreesC winter fact. Frozen PARTIAL and off-topic extra citation retained; monthly/maximum wording ambiguity carried fromF07."
+    },
+    {
+      "variant": "section",
+      "id": "C03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Ibn Sina and Persia facets both displayed in distinct relevant quotes."
+    },
+    {
+      "variant": "section",
+      "id": "C04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Constructed from F19/F20 identical question strings with original annotations. Both frozen groups displayed; frozen PASS retained, but this is not two independently distinct question facets."
+    },
+    {
+      "variant": "section",
+      "id": "T1A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T1B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T1C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "E1A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "section",
+      "id": "E1B",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "WRONG_TEMPORAL_BRANCH_AND_OMITTED_HOLD"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false,
+        false
+      ],
+      "note": "At the exact cutoff, source requires next operating day, plus no sending until unresolved review closes. Displayed quote instead uses the before-cutoff same-day branch and omits the hold. Wrong answer, not merely shortened context."
+    },
+    {
+      "variant": "section",
+      "id": "N11",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "section",
+      "id": "N12",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "section",
+      "id": "T2A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T2B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T2C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "E2A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "section",
+      "id": "E2B",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "WRONG_TEMPORAL_BRANCH_AND_OMITTED_HOLD"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false,
+        false
+      ],
+      "note": "At the exact cutoff, source requires next operating day, plus no sending until unresolved review closes. Displayed quote instead uses the before-cutoff same-day branch and omits the hold. Wrong answer, not merely shortened context."
+    },
+    {
+      "variant": "section",
+      "id": "N21",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "section",
+      "id": "N22",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "section",
+      "id": "T3A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T3B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T3C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "E3A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "section",
+      "id": "E3B",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "WRONG_TEMPORAL_BRANCH_AND_OMITTED_HOLD"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false,
+        false
+      ],
+      "note": "At the exact cutoff, source requires next operating day, plus no sending until unresolved review closes. Displayed quote instead uses the before-cutoff same-day branch and omits the hold. Wrong answer, not merely shortened context."
+    },
+    {
+      "variant": "section",
+      "id": "N31",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "section",
+      "id": "N32",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "section",
+      "id": "T4A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T4B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T4C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "E4A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "section",
+      "id": "E4B",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "WRONG_TEMPORAL_BRANCH_AND_OMITTED_HOLD"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        false,
+        false
+      ],
+      "note": "At the exact cutoff, source requires next operating day, plus no sending until unresolved review closes. Displayed quote instead uses the before-cutoff same-day branch and omits the hold. Wrong answer, not merely shortened context."
+    },
+    {
+      "variant": "section",
+      "id": "N41",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "section",
+      "id": "N42",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "NO_REQUESTED_ACTOR_ACTION_TUPLE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Explicit zero-citation refusal contract fails. The cited genuine paragraph lists other actor/action combinations and says no count is recorded for others; it does not provide the requested tuple. No new numeral was invented, but app marks answered and supplies citations instead of explicit uncited refusal. Count guard only applies to new repairs and co-occurrence is not relational entailment; no causal fresh gain attributed to v20."
+    },
+    {
+      "variant": "section",
+      "id": "X01",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE",
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "note": "Both documents selected correctly; both durations and both exceptions are literally displayed. All facts present independently, but each quote includes a leading Markdown heading outside its frozen gold body paragraph. Frozen FAIL retained; source provenance and factual completeness are distinct from strict whole-quote boundary proxy."
+    },
+    {
+      "variant": "section",
+      "id": "X02",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE",
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "note": "Both documents selected correctly; both durations and both exceptions are literally displayed. All facts present independently, but each quote includes a leading Markdown heading outside its frozen gold body paragraph. Frozen FAIL retained; source provenance and factual completeness are distinct from strict whole-quote boundary proxy."
+    },
+    {
+      "variant": "section",
+      "id": "X03",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE",
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "note": "Both documents selected correctly; both durations and both exceptions are literally displayed. All facts present independently, but each quote includes a leading Markdown heading outside its frozen gold body paragraph. Frozen FAIL retained; source provenance and factual completeness are distinct from strict whole-quote boundary proxy."
+    },
+    {
+      "variant": "section",
+      "id": "X04",
+      "frozen_outcome": "FAIL",
+      "citation_independent_relevance": [
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE",
+        "DIRECT_WITH_HEADING_BOUNDARY_FAILURE"
+      ],
+      "literal_group_presence_without_paragraph_proxy": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "note": "Both documents selected correctly; both durations and both exceptions are literally displayed. All facts present independently, but each quote includes a leading Markdown heading outside its frozen gold body paragraph. Frozen FAIL retained; source provenance and factual completeness are distinct from strict whole-quote boundary proxy."
+    },
+    {
+      "variant": "section",
+      "id": "U01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "section",
+      "id": "U02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "section",
+      "id": "U03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "section",
+      "id": "U04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "literal_group_presence_without_paragraph_proxy": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    }
+  ]
+}

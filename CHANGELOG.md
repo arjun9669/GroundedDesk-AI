@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-15 — Binding64 confirmation FAIL and PDF test hardening
+
+- Preserve the original browser startup attempt as BLOCKED before model loading or questions. A separately frozen infrastructure recovery captured the first 64 answers once with actual local MiniLM in installed headless Chrome: 60 Hybrid and four separate lexical Comparison cases, Qwen off.
+- Both isolated v20 variants score 45 PASS / 1 PARTIAL / 18 FAIL, exactly matching paired v19. All 12 supported counts pass, but eight unsupported actor/action combinations are falsely accepted and four exact-cutoff/exception answers fail. All 66 citations per variant are source-literal. Four Comparison answers contain all requested facts but fail the frozen body-paragraph boundary rule. Confirmation gate FAIL; no runtime integration or post-answer tuning.
+- Preserve source/question/key/module hashes, exact answers, independent evidence review, screenshots and both attempt ledgers. Historical results remain unchanged; live application stays r44. See [Binding64 report](./docs/BINDING64_V20_CONFIRMATION.md).
+- Investigated the old PDF resize CI failure across 84 viewport changes without reproducing it; an intentional 8-pixel distortion was detected. Harden only the test by sampling both boxes in one browser task after two fixed animation frames. Keep the original <1-pixel tolerance; original cause unconfirmed. Seven PDF highlight scenarios, mobile upload, 387 unit tests and strict offline checks pass locally.
+
 ## 2026-10-15 — Count-binding v20 regression (no runtime release)
 
 - Added isolated recognition of spaced and hyphenated count units, preserving already supported answers. New active count selections require the named actor and action stem in the literal selected clause; unbound active requests retain prior evidence. Other v19 behavior and its v18 base remain unchanged.

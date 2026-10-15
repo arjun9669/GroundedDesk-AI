@@ -11,8 +11,8 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v20** passed its frozen 451-case exposed regression gate; **not adopted in the live app** |
-| Latest recorded checks | **387 unit tests**, strict offline evaluation and browser CI passed; CI retry qualification below |
+| Latest retrieval experiment | **v20** passed its exposed regression gate but **failed Binding64 confirmation**; not adopted |
+| Latest recorded checks | **387 unit tests**, strict offline evaluation and local PDF browser checks passed; CI qualification below |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
@@ -75,6 +75,10 @@ Readiness describes available extracted text. Blank/scanned pages, reading order
 
 ## Latest measured results
 
+The [Binding64 confirmation report](./docs/BINDING64_V20_CONFIRMATION.md) records **45 PASS / 1 PARTIAL / 18 FAIL** in both isolated v20 variants. Its original startup attempt was **BLOCKED before model loading or questions**. A separately frozen infrastructure recovery produced the first 64 answers once in installed headless Chrome with actual local MiniLM: 60 Hybrid and four separate lexical Comparison cases. This is a qualified prospective public/constructed test, not sealed independent accuracy. Every candidate answer matches paired v19.
+
+All 12 supported count cases pass, but all eight unsupported actor/action combinations are falsely accepted. Four exact-cutoff/exception cases fail; no supported false refusals occur. All 66 citations per variant are source-literal, which does not establish relevance or relational support. Four Comparison cases contain all requested facts but fail the unchanged body-paragraph boundary rule. **Confirmation gate FAIL: keep v20 experimental.** [Exact answers, scores and browser evidence](./docs/evidence/v20-binding64/).
+
 The [v20 report](./docs/COVERAGE_V20_R44_VALIDATION.md) records **451 exposed cases captured once** in installed headless Chrome with real local MiniLM, Qwen off: **427 Hybrid Q&A** and **24 separate lexical Comparison** cases. Production UI answers and isolated experimental outputs are labelled separately.
 
 | v20 check | Result in both experimental variants |
@@ -87,6 +91,8 @@ The [v20 report](./docs/COVERAGE_V20_R44_VALIDATION.md) records **451 exposed ca
 This is **in-sample regression, not new independent accuracy or 451/451 correct answers**. Older public failures outside the required gate sets—including a supported false refusal—remain in the report. Precision48's first **40 PASS / 0 PARTIAL / 8 FAIL** in both variants and v19's **failed** overall gate remain unchanged. Do not pool different corpora and rubrics into one accuracy claim.
 
 The PR's first synthetic PDF UI smoke attempt failed an unchanged overlay-size assertion after viewport resizing. One unchanged CI retry and a separate local real-Chrome PDF diagnostic passed; main-branch CI then passed on its first attempt. **No benchmark question was retried.** [PR #83 and CI qualification](https://github.com/arjun9669/GroundedDesk-AI/pull/83).
+
+A subsequent 84-resize diagnostic did not reproduce that failure and detected an intentional 8-pixel distortion. The test now samples both boxes in one browser task after two fixed animation frames, retaining the original less-than-1-pixel tolerance. The original cause remains unconfirmed; PDF runtime code is unchanged. [Diagnostic and evidence](./docs/BINDING64_V20_CONFIRMATION.md#pdf-highlight-test-investigation).
 
 See the [v20 results and limitations](./docs/COVERAGE_V20_R44_VALIDATION.md), [public evidence and scorecards](./docs/evidence/coverage-v20-r44/) and [original Chrome benchmark history](./docs/BROWSER_BENCHMARK_HISTORY.md). The previous long-form README and its experiment links are preserved in the [development archive](./docs/README_HISTORY.md).
 
@@ -124,7 +130,7 @@ GroundedDesk is a portfolio prototype, not a production-ready RAG, compliance or
 
 OCR, reliable table/column reconstruction, character-level partial-run highlights, comprehensive prompt-injection defenses and broad browser/device validation are not provided. Model availability, performance and memory use vary by device.
 
-Next work is a separately frozen prospective confirmation test before retrieval integration, investigation of the PDF resize-check flake, and further document/browser validation. Keep optional models optional and preserve first-look results before tuning. The v20 candidate has not replaced live r44.
+Next work is a separately frozen development protocol for actor/action support across all answers, exact-cutoff selection and quotation boundaries, followed by preservation tests. Binding64's first results and all historical scores stay fixed. Keep optional models optional; v20 has not replaced live r44.
 
 ## Explore the project
 

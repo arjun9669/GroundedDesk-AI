@@ -5,6 +5,7 @@ import path from "node:path";
 import { createHash } from "node:crypto";
 import { chromium } from "playwright";
 import { pdfFixture, pdfLayoutFixture } from "./fixtures/pdf-fixture.mjs";
+import { readPDFGeometry } from "./fixtures/pdf-geometry.mjs";
 const dir = process.env.EVIDENCE_DIR;
 const cases = [
   {id:"unique",quote:"Depot drivers inspect seals every morning.",pdf:pdfFixture(["Depot drivers inspect seals every morning."]),expected:"matched",regions:1},
@@ -68,11 +69,13 @@ try {
     if(dir) await page.screenshot({path:path.join(dir,c.id+".png"),fullPage:true});
     if(c.id==="unique") {
       await page.setViewportSize({width:390,height:844});
-      const bounds=await page.locator(".pdf-page-stage").boundingBox();
-      const overlay=await page.locator(".pdf-highlight-overlay").boundingBox();
+      // One settled task avoids comparing boxes from different resize frames.
+      // No wait-until-success loop and no change to the original tolerance.
+      const geometry=await readPDFGeometry(page);
+      const bounds=geometry.stage,overlay=geometry.overlay;
       assert.ok(bounds.x>=0 && bounds.x+bounds.width<=390);
       assert.ok(Math.abs(bounds.width-overlay.width)<1 && Math.abs(bounds.height-overlay.height)<1);
-      observations.mobile={viewport:"390x844",stage:bounds,overlay,outcome:"PASS",scope:"responsive original page and highlight alignment; desktop Chrome emulation, not a physical phone"};
+      observations.mobile={viewport:"390x844",stage:bounds,overlay,sampled_same_task:geometry.sampled_same_task,settle_frames:geometry.settle_frames,outcome:"PASS",scope:"responsive original page and highlight alignment; desktop Chrome emulation, not a physical phone"};
       if(dir) await page.screenshot({path:path.join(dir,"mobile-highlight.png"),fullPage:true});
       await page.setViewportSize({width:1400,height:1000});
     }
