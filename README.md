@@ -54,6 +54,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Paragraph-boundary experiment:** v19 captures all **451 exposed regressions** with actual MiniLM in installed headless Chrome. Precision48 improves from its immutable first40/0/8 to **48/0/0 in both variants**; all37 citations per variant now contain requested evidence in the expected paragraph, and C04's extra citation is removed. The overall gate **FAILS**: V9Exposed32/F17 regresses because a count repair replaces Norwood's61-yard punt return with unrelated Newton yardage. All83 unsupported zero-citation refusals remain correct, and382 unit tests pass. No post-answer tuning, new sample or runtime adoption; production stays r44. [Full report, preserved regression and browser evidence](./docs/COVERAGE_V19_R44_VALIDATION.md).
 
+**Count-binding experiment:** v20 passes the **451-case exposed regression gate**, restoring V9Exposed32 to **32/32 in both variants** by preserving Norwood's literal 61-yard return instead of unrelated Newton yardage. Precision48 remains **48/48**, with 37/37 relevant source-literal citations per variant; all 83 unsupported controls refuse without citations. The new count recognizer accepts hyphenated units and constrains new active selections to the queried actor/action. Original first scores and v19's failed gate remain unchanged. Older public failures outside the gate remain; this is not 451/451 or independent accuracy. Actual MiniLM in installed headless Chrome, 387 unit tests and strict offline checks pass. No new sample or runtime adoption; production stays r44. [Full report, paired evidence and limitations](./docs/COVERAGE_V20_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |

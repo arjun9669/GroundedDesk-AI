@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-15 — Count-binding v20 regression (no runtime release)
+
+- Added isolated recognition of spaced and hyphenated count units, preserving already supported answers. New active count selections require the named actor and action stem in the literal selected clause; unbound active requests retain prior evidence. Other v19 behavior and its v18 base remain unchanged.
+- Captured all 451 exposed cases once with actual local MiniLM in installed headless Chrome: 427 Hybrid Q&A and 24 separate lexical Comparison, Qwen off. Candidate/paired/helper hashes verified before questions; 118 original input hashes and 55 historical artifacts verified. All 387 unit tests and strict offline checks pass.
+- Frozen regression gate PASS. V9Exposed32/F17 is restored to the source-literal 61-yard Norwood punt return in both variants. Exactly two displayed candidate outputs change versus paired v19; original 119 quotations and all Precision48 evidence remain unchanged. Precision48 stays 48/0/0 both, all 37 citations per variant directly relevant, and all 83 unsupported controls explicitly refuse without citations.
+- Preserve v19's FAIL and all original first results, including Precision48's first 40/0/8 both. Older public failures and one supported false refusal remain outside required gate sets; a passing gate is not 451/451 or independent accuracy. No post-answer tuning, retries, new confirmation sample or runtime adoption; production remains r44.
+
 ## 2026-10-15 — Paragraph-boundary v19 regression (no runtime release)
 
 - Captured451 unchanged exposed cases once with real local MiniLM in installed headless Chrome:427 Hybrid and24 separate lexical Comparison, Qwen disabled. Frozen candidate/paired/helper identity verified before questions;118 original input hashes and50 historical artifact members verified.382 unit tests and strict offline checks pass.
