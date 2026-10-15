@@ -1,0 +1,305 @@
+{
+  "classification": "Read-only assistant review of all eight changed candidate outputs against frozen source paragraphs/key; unchanged cases retain previous adjudication and current literal/provenance checks. No score/input changes or external world fact check.",
+  "all_changed_cases_directly_relevant": true,
+  "changed_outputs": 8,
+  "original_119_changed_quote_queue": [],
+  "unsupported_zero_citation_refusals": {
+    "fixed": 71,
+    "section": 71
+  },
+  "confirmation48_regression_summary": {
+    "baseline": {
+      "PASS": 19,
+      "PARTIAL": 3,
+      "FAIL": 26,
+      "citations": 44,
+      "valid_provenance": 44,
+      "relevant_citations": 25,
+      "false_acceptances": 8,
+      "false_refusals": 0,
+      "zero_citation_refusals": 4
+    },
+    "fixed": {
+      "PASS": 48,
+      "PARTIAL": 0,
+      "FAIL": 0,
+      "citations": 37,
+      "valid_provenance": 37,
+      "relevant_citations": 37,
+      "false_acceptances": 0,
+      "false_refusals": 0,
+      "zero_citation_refusals": 12
+    },
+    "section": {
+      "PASS": 48,
+      "PARTIAL": 0,
+      "FAIL": 0,
+      "citations": 37,
+      "valid_provenance": 37,
+      "relevant_citations": 37,
+      "false_acceptances": 0,
+      "false_refusals": 0,
+      "zero_citation_refusals": 12
+    }
+  },
+  "historical_first_scores_preserved": {
+    "fixed": "45/0/3",
+    "section": "44/0/4"
+  },
+  "limitations": [
+    "Narrative quotations retain neighboring unrequested context; DIRECT relevance means at least the requested fact is supported, not every word needed.",
+    "F09 mission-type annotations are broad; F19 and C04 most-tourists wording is stronger than the passage particularly-golf wording. No annotation or question changes.",
+    "Paragraph containment and answer-span presence are not general entailment certification.",
+    "Older public failures including FreshConfirmation32/F10 supported false refusal remain recorded."
+  ],
+  "cases": [
+    {
+      "pack": "Confirmation48",
+      "id": "F11",
+      "variant": "fixed",
+      "question": "Who originally led the Space Task Group?",
+      "prior_answer": "[1] Gilruth's Space Task Group, which had been directing the nation's manned space program from NASA's Langley Research Center. So Gilruth was given authority to grow his organization into a new NASA center, the Manned Spacecraft Center (MSC). A site was chosen in Houston, Texas, on land donated by Rice University, and Administrator Webb announced the conversion on September 19, 1961.",
+      "answer": "[1] Robert R. Gilruth's Space Task Group, which had been directing the nation's manned space program from NASA's Langley Research Center. So Gilruth was given authority to grow his organization into a new NASA center, the Manned Spacecraft Center (MSC). A site was chosen in Houston, Texas, on land donated by Rice University, and Administrator Webb announced the conversion on September 19, 1961.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "93d48e33-027c-432e-abfc-2569e21128a6:658",
+          "documentId": "93d48e33-027c-432e-abfc-2569e21128a6",
+          "filename": "02_Apollo_program.md",
+          "excerpt": "lunar exploration to include H lunar landings, I for lunar orbital survey missions, and J for extended-stay lunar landings.\n\n## Context 2\nIt became clear that managing the Apollo program would exceed the capabilities of Robert R. Gilruth's Space Task Group, which had been directing the nation's manned space program from NASA's Langley Research Center. So Gilruth was given authority to grow his organization into a new NASA center, the Manned Spacecraft Center (MSC). A site was chosen in Houston, Texas, on land donated by Rice University, and Administrator Webb announced the conversion on September 19, 1961. It was also clear NASA would soon outgrow its practice of controlling missions from its Cape Canaveral Air Force Station launch facilities in Florida, so a new Mission Control Center would be included in the MSC.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library,",
+          "quote": "Robert R. Gilruth's Space Task Group, which had been directing the nation's manned space program from NASA's Langley Research Center. So Gilruth was given authority to grow his organization into a new NASA center, the Manned Spacecraft Center (MSC). A site was chosen in Houston, Texas, on land donated by Rice University, and Administrator Webb announced the conversion on September 19, 1961.",
+          "score": 0.0476,
+          "lexicalScore": 7.150756810808311,
+          "semanticScore": 0.4567636732048233,
+          "matchedTerms": [
+            "space",
+            "task",
+            "group"
+          ],
+          "start": 1095,
+          "end": 1488
+        }
+      ],
+      "diagnostics": null,
+      "frozen_outcome": "PASS",
+      "source_provenance": [
+        true
+      ],
+      "direct_answer_span": [
+        true
+      ],
+      "independent_note": "Full Robert R. Gilruth restored as an exact adjacent literal prefix; frozen full-name group now present. No name expansion from outside source paragraph."
+    },
+    {
+      "pack": "Confirmation48",
+      "id": "F11",
+      "variant": "section",
+      "question": "Who originally led the Space Task Group?",
+      "prior_answer": "[1] Gilruth's Space Task Group, which had been directing the nation's manned space program from NASA's Langley Research Center. So Gilruth was given authority to grow his organization into a new NASA center, the Manned Spacecraft Center (MSC). A site was chosen in Houston, Texas, on land donated by Rice University, and Administrator Webb announced the conversion on September 19, 1961.",
+      "answer": "[1] Robert R. Gilruth's Space Task Group, which had been directing the nation's manned space program from NASA's Langley Research Center. So Gilruth was given authority to grow his organization into a new NASA center, the Manned Spacecraft Center (MSC). A site was chosen in Houston, Texas, on land donated by Rice University, and Administrator Webb announced the conversion on September 19, 1961.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "93d48e33-027c-432e-abfc-2569e21128a6:1000",
+          "documentId": "93d48e33-027c-432e-abfc-2569e21128a6",
+          "filename": "02_Apollo_program.md",
+          "excerpt": "lunar exploration to include H lunar landings, I for lunar orbital survey missions, and J for extended-stay lunar landings.\n\n## Context 2\nIt became clear that managing the Apollo program would exceed the capabilities of Robert R. Gilruth's Space Task Group, which had been directing the nation's manned space program from NASA's Langley Research Center. So Gilruth was given authority to grow his organization into a new NASA center, the Manned Spacecraft Center (MSC). A site was chosen in Houston, Texas, on land donated by Rice University, and Administrator Webb announced the conversion on September 19, 1961. It was also clear NASA would soon outgrow its practice of controlling missions from its Cape Canaveral Air Force Station launch facilities in Florida, so a new Mission Control Center would be included in the MSC.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library,",
+          "quote": "Robert R. Gilruth's Space Task Group, which had been directing the nation's manned space program from NASA's Langley Research Center. So Gilruth was given authority to grow his organization into a new NASA center, the Manned Spacecraft Center (MSC). A site was chosen in Houston, Texas, on land donated by Rice University, and Administrator Webb announced the conversion on September 19, 1961.",
+          "score": 0.0476,
+          "lexicalScore": 7.091142564209356,
+          "semanticScore": 0.5016066001395008,
+          "matchedTerms": [
+            "space",
+            "task",
+            "group"
+          ],
+          "start": 1095,
+          "end": 1488
+        }
+      ],
+      "diagnostics": null,
+      "frozen_outcome": "PASS",
+      "source_provenance": [
+        true
+      ],
+      "direct_answer_span": [
+        true
+      ],
+      "independent_note": "Full Robert R. Gilruth restored as an exact adjacent literal prefix; frozen full-name group now present. No name expansion from outside source paragraph."
+    },
+    {
+      "pack": "Confirmation48",
+      "id": "F19",
+      "variant": "section",
+      "question": "What sport attracts most tourists to Jacksonville?",
+      "prior_answer": "[1] Harbor improvements since the late 19th century have made Jacksonville a major military and civilian deep-water port. Its riverine location facilitates two United States Navy bases and the Port of Jacksonville, Florida's third largest seaport. The two US Navy bases, Blount Island Command and the nearby Naval Submarine Base Kings Bay form the third largest military presence in the United States.",
+      "answer": "[1] Significant factors in the local economy include services such as banking, insurance, healthcare and logistics. As with much of Florida, tourism is also important to the Jacksonville area, particularly tourism related to golf. People from Jacksonville may be called \"Jacksonvillians\" or \"Jaxsons\" (also spelled \"Jaxons\").",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "935a9239-c904-42f9-b134-726ac7ecaaca:body:548",
+          "documentId": "935a9239-c904-42f9-b134-726ac7ecaaca",
+          "filename": "04_Jacksonville__Florida.md",
+          "quote": "Significant factors in the local economy include services such as banking, insurance, healthcare and logistics. As with much of Florida, tourism is also important to the Jacksonville area, particularly tourism related to golf. People from Jacksonville may be called \"Jacksonvillians\" or \"Jaxsons\" (also spelled \"Jaxons\").",
+          "start": 436,
+          "end": 757,
+          "excerpt": "es and the Port of Jacksonville, Florida's third largest seaport. The two US Navy bases, Blount Island Command and the nearby Naval Submarine Base Kings Bay form the third largest military presence in the United States. Significant factors in the local economy include services such as banking, insurance, healthcare and logistics. As with much of Florida, tourism is also important to the Jacksonville area, particularly tourism related to golf. People from Jacksonville may be called \"Jacksonvillians\" or \"Jaxsons\" (also spelled \"Jaxons\").\n\n## Context 2\nOn May 3, 1901, downtown Jacksonville was ravaged by a fire that started as a kitchen fire. Spanish moss at a nearby mattress factory was quickly engulfed in flames and enabling the fire to spread rapidly. In just eight hours, it swept through 146 city blocks, dest"
+        }
+      ],
+      "diagnostics": null,
+      "frozen_outcome": "PASS",
+      "source_provenance": [
+        true
+      ],
+      "direct_answer_span": [
+        true
+      ],
+      "independent_note": "Selected quotation now contains the golf-tourism clause instead of military/port facts. Source particularly-golf wording does not prove the question most-tourists quantifier."
+    },
+    {
+      "pack": "Confirmation48",
+      "id": "F22",
+      "variant": "fixed",
+      "question": "In the wake of the Jacksonville fire, what did the Florida Governor do?",
+      "prior_answer": "[1] On May 3, 1901, downtown Jacksonville was ravaged by a fire that started as a kitchen fire. Spanish moss at a nearby mattress factory was quickly engulfed in flames and enabling the fire to spread rapidly. In just eight hours, it swept through 146 city blocks, destroyed over 2,000 buildings, left about 10,000 homeless and killed 7 residents.",
+      "answer": "[1] Governor Jennings declare martial law and sent the state militia to maintain order. On May 17 municipal authority resumed in Jacksonville. It is said the glow from the flames could be seen in Savannah, Georgia, and the smoke plumes seen in Raleigh, North Carolina.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "935a9239-c904-42f9-b134-726ac7ecaaca:body:1208",
+          "documentId": "935a9239-c904-42f9-b134-726ac7ecaaca",
+          "filename": "04_Jacksonville__Florida.md",
+          "quote": "Governor Jennings declare martial law and sent the state militia to maintain order. On May 17 municipal authority resumed in Jacksonville. It is said the glow from the flames could be seen in Savannah, Georgia, and the smoke plumes seen in Raleigh, North Carolina.",
+          "start": 1208,
+          "end": 1472,
+          "excerpt": "ght hours, it swept through 146 city blocks, destroyed over 2,000 buildings, left about 10,000 homeless and killed 7 residents. The Confederate Monument in Hemming Park was one of the only landmarks to survive the fire. Governor Jennings declare martial law and sent the state militia to maintain order. On May 17 municipal authority resumed in Jacksonville. It is said the glow from the flames could be seen in Savannah, Georgia, and the smoke plumes seen in Raleigh, North Carolina. Known as the \"Great Fire of 1901\", it was one of the worst disasters in Florida history and the largest urban fire in the southeastern United States. Architect Henry John Klutho was a primary figure in the reconstruction of the city. The first multi-story structure built by Klut"
+        }
+      ],
+      "diagnostics": null,
+      "frozen_outcome": "PASS",
+      "source_provenance": [
+        true
+      ],
+      "direct_answer_span": [
+        true
+      ],
+      "independent_note": "Displayed Governor Jennings clause includes declaring martial law and sending state militia; original source grammar declare retained verbatim. Neighboring sentences remain broad context."
+    },
+    {
+      "pack": "Confirmation48",
+      "id": "F22",
+      "variant": "section",
+      "question": "In the wake of the Jacksonville fire, what did the Florida Governor do?",
+      "prior_answer": "[1] On May 3, 1901, downtown Jacksonville was ravaged by a fire that started as a kitchen fire. Spanish moss at a nearby mattress factory was quickly engulfed in flames and enabling the fire to spread rapidly. In just eight hours, it swept through 146 city blocks, destroyed over 2,000 buildings, left about 10,000 homeless and killed 7 residents.",
+      "answer": "[1] Governor Jennings declare martial law and sent the state militia to maintain order. On May 17 municipal authority resumed in Jacksonville. It is said the glow from the flames could be seen in Savannah, Georgia, and the smoke plumes seen in Raleigh, North Carolina.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "935a9239-c904-42f9-b134-726ac7ecaaca:body:1208",
+          "documentId": "935a9239-c904-42f9-b134-726ac7ecaaca",
+          "filename": "04_Jacksonville__Florida.md",
+          "quote": "Governor Jennings declare martial law and sent the state militia to maintain order. On May 17 municipal authority resumed in Jacksonville. It is said the glow from the flames could be seen in Savannah, Georgia, and the smoke plumes seen in Raleigh, North Carolina.",
+          "start": 1208,
+          "end": 1472,
+          "excerpt": "ght hours, it swept through 146 city blocks, destroyed over 2,000 buildings, left about 10,000 homeless and killed 7 residents. The Confederate Monument in Hemming Park was one of the only landmarks to survive the fire. Governor Jennings declare martial law and sent the state militia to maintain order. On May 17 municipal authority resumed in Jacksonville. It is said the glow from the flames could be seen in Savannah, Georgia, and the smoke plumes seen in Raleigh, North Carolina. Known as the \"Great Fire of 1901\", it was one of the worst disasters in Florida history and the largest urban fire in the southeastern United States. Architect Henry John Klutho was a primary figure in the reconstruction of the city. The first multi-story structure built by Klut"
+        }
+      ],
+      "diagnostics": null,
+      "frozen_outcome": "PASS",
+      "source_provenance": [
+        true
+      ],
+      "direct_answer_span": [
+        true
+      ],
+      "independent_note": "Displayed Governor Jennings clause includes declaring martial law and sending state militia; original source grammar declare retained verbatim. Neighboring sentences remain broad context."
+    },
+    {
+      "pack": "Confirmation48",
+      "id": "F24",
+      "variant": "fixed",
+      "question": "What was the Jacksonville fire later known as?",
+      "prior_answer": "[1] On May 3, 1901, downtown Jacksonville was ravaged by a fire that started as a kitchen fire. Spanish moss at a nearby mattress factory was quickly engulfed in flames and enabling the fire to spread rapidly. In just eight hours, it swept through 146 city blocks, destroyed over 2,000 buildings, left about 10,000 homeless and killed 7 residents.",
+      "answer": "[1] Known as the \"Great Fire of 1901\", it was one of the worst disasters in Florida history and the largest urban fire in the southeastern United States. Architect Henry John Klutho was a primary figure in the reconstruction of the city. The first multi-story structure built by Klutho was the Dyal-Upchurch Building in 1902.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "935a9239-c904-42f9-b134-726ac7ecaaca:body:1473",
+          "documentId": "935a9239-c904-42f9-b134-726ac7ecaaca",
+          "filename": "04_Jacksonville__Florida.md",
+          "quote": "Known as the \"Great Fire of 1901\", it was one of the worst disasters in Florida history and the largest urban fire in the southeastern United States. Architect Henry John Klutho was a primary figure in the reconstruction of the city. The first multi-story structure built by Klutho was the Dyal-Upchurch Building in 1902.",
+          "start": 1473,
+          "end": 1794,
+          "excerpt": "t the state militia to maintain order. On May 17 municipal authority resumed in Jacksonville. It is said the glow from the flames could be seen in Savannah, Georgia, and the smoke plumes seen in Raleigh, North Carolina. Known as the \"Great Fire of 1901\", it was one of the worst disasters in Florida history and the largest urban fire in the southeastern United States. Architect Henry John Klutho was a primary figure in the reconstruction of the city. The first multi-story structure built by Klutho was the Dyal-Upchurch Building in 1902. The St. James Building, built on the previous site of the St. James Hotel that burned down, was built in 1912 as Klutho's crowning achievement.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. Thi"
+        }
+      ],
+      "diagnostics": null,
+      "frozen_outcome": "PASS",
+      "source_provenance": [
+        true
+      ],
+      "direct_answer_span": [
+        true
+      ],
+      "independent_note": "Displayed naming clause includes Great Fire of 1901, followed by broad reconstruction context."
+    },
+    {
+      "pack": "Confirmation48",
+      "id": "F24",
+      "variant": "section",
+      "question": "What was the Jacksonville fire later known as?",
+      "prior_answer": "[1] On May 3, 1901, downtown Jacksonville was ravaged by a fire that started as a kitchen fire. Spanish moss at a nearby mattress factory was quickly engulfed in flames and enabling the fire to spread rapidly. In just eight hours, it swept through 146 city blocks, destroyed over 2,000 buildings, left about 10,000 homeless and killed 7 residents.",
+      "answer": "[1] Known as the \"Great Fire of 1901\", it was one of the worst disasters in Florida history and the largest urban fire in the southeastern United States. Architect Henry John Klutho was a primary figure in the reconstruction of the city. The first multi-story structure built by Klutho was the Dyal-Upchurch Building in 1902.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "935a9239-c904-42f9-b134-726ac7ecaaca:body:1473",
+          "documentId": "935a9239-c904-42f9-b134-726ac7ecaaca",
+          "filename": "04_Jacksonville__Florida.md",
+          "quote": "Known as the \"Great Fire of 1901\", it was one of the worst disasters in Florida history and the largest urban fire in the southeastern United States. Architect Henry John Klutho was a primary figure in the reconstruction of the city. The first multi-story structure built by Klutho was the Dyal-Upchurch Building in 1902.",
+          "start": 1473,
+          "end": 1794,
+          "excerpt": "t the state militia to maintain order. On May 17 municipal authority resumed in Jacksonville. It is said the glow from the flames could be seen in Savannah, Georgia, and the smoke plumes seen in Raleigh, North Carolina. Known as the \"Great Fire of 1901\", it was one of the worst disasters in Florida history and the largest urban fire in the southeastern United States. Architect Henry John Klutho was a primary figure in the reconstruction of the city. The first multi-story structure built by Klutho was the Dyal-Upchurch Building in 1902. The St. James Building, built on the previous site of the St. James Hotel that burned down, was built in 1912 as Klutho's crowning achievement.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. Thi"
+        }
+      ],
+      "diagnostics": null,
+      "frozen_outcome": "PASS",
+      "source_provenance": [
+        true
+      ],
+      "direct_answer_span": [
+        true
+      ],
+      "independent_note": "Displayed naming clause includes Great Fire of 1901, followed by broad reconstruction context."
+    },
+    {
+      "pack": "Confirmation48",
+      "id": "C04",
+      "variant": "section",
+      "question": "What sport attracts most tourists to Jacksonville? Also, What are those from Jacksonville sometimes called?",
+      "prior_answer": "[1] Harbor improvements since the late 19th century have made Jacksonville a major military and civilian deep-water port. Its riverine location facilitates two United States Navy bases and the Port of Jacksonville, Florida's third largest seaport. The two US Navy bases, Blount Island Command and the nearby Naval Submarine Base Kings Bay form the third largest military presence in the United States.\n\n[2] Significant factors in the local economy include services such as banking, insurance, healthcare and logistics. As with much of Florida, tourism is also important to the Jacksonville area, particularly tourism related to golf. People from Jacksonville may be called \"Jacksonvillians\" or \"Jaxsons\" (also spelled \"Jaxons\").",
+      "answer": "[1] Significant factors in the local economy include services such as banking, insurance, healthcare and logistics. As with much of Florida, tourism is also important to the Jacksonville area, particularly tourism related to golf. People from Jacksonville may be called \"Jacksonvillians\" or \"Jaxsons\" (also spelled \"Jaxons\").",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "935a9239-c904-42f9-b134-726ac7ecaaca:body:548",
+          "documentId": "935a9239-c904-42f9-b134-726ac7ecaaca",
+          "filename": "04_Jacksonville__Florida.md",
+          "quote": "Significant factors in the local economy include services such as banking, insurance, healthcare and logistics. As with much of Florida, tourism is also important to the Jacksonville area, particularly tourism related to golf. People from Jacksonville may be called \"Jacksonvillians\" or \"Jaxsons\" (also spelled \"Jaxons\").",
+          "start": 436,
+          "end": 757,
+          "excerpt": "es and the Port of Jacksonville, Florida's third largest seaport. The two US Navy bases, Blount Island Command and the nearby Naval Submarine Base Kings Bay form the third largest military presence in the United States. Significant factors in the local economy include services such as banking, insurance, healthcare and logistics. As with much of Florida, tourism is also important to the Jacksonville area, particularly tourism related to golf. People from Jacksonville may be called \"Jacksonvillians\" or \"Jaxsons\" (also spelled \"Jaxons\").\n\n## Context 2\nOn May 3, 1901, downtown Jacksonville was ravaged by a fire that started as a kitchen fire. Spanish moss at a nearby mattress factory was quickly engulfed in flames and enabling the fire to spread rapidly. In just eight hours, it swept through 146 city blocks, dest"
+        }
+      ],
+      "diagnostics": null,
+      "frozen_outcome": "PASS",
+      "source_provenance": [
+        true
+      ],
+      "direct_answer_span": [
+        true
+      ],
+      "independent_note": "One quotation now contains golf tourism and resident-name facets; unrelated military excerpt removed. The original first PASS is unchanged; new precision gate also passes."
+    }
+  ]
+}

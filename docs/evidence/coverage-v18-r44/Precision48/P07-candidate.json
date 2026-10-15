@@ -1,0 +1,1427 @@
+{
+  "candidate_identity": "coverage-v18-narrative-clause-selection",
+  "id": "P07",
+  "question": "Who approves standard display cards at the fictional Fenora Gallery?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who approves standard display cards at the fictional Fenora Gallery?",
+    "expected_display": "Who approves standard display cards at the fictional Fenora Gallery?",
+    "rendered_question": "Who approves standard display cards at the fictional Fenora Gallery?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional approval appendix At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+    "sources": [
+      {
+        "filename": "04_Imperialism.md",
+        "excerpt": "ialism (first in the Americas, second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "quote": "## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho approves standard display cards at the fictional Fenora Gallery?\n\nSearched all files: 01_Intergovernmental_Panel_on_Climate_Change.md · 02_Economic_inequality.md · 03_Scottish_Parliament.md · 04_Imperialism.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional approval appendix At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.\n\nSOURCE EVIDENCE\n[1]\n04_Imperialism.md\n\nText lines 9–10 (normalized extraction)\n\nialism (first in the Americas, second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality. ## Fictional approval appendix At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7:1315",
+        "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+        "filename": "04_Imperialism.md",
+        "excerpt": "ialism (first in the Americas, second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "quote": "## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+        "score": 0.0476,
+        "lexicalScore": 17.999399839288788,
+        "semanticScore": 0.7134303550727048,
+        "matchedTerms": [
+          "standard",
+          "display",
+          "cards",
+          "fictional",
+          "fenora",
+          "gallery"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7:1315",
+        "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+        "filename": "04_Imperialism.md",
+        "excerpt": "second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "score": 0.0476,
+        "lexicalScore": 17.999399839288788,
+        "semanticScore": 0.7134303550727048,
+        "matchedTerms": [
+          "standard",
+          "display",
+          "cards",
+          "fictional",
+          "fenora",
+          "gallery"
+        ],
+        "start": 1444,
+        "end": 1682
+      }
+    ],
+    "mode": "Experimental v18 narrative selection",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Imperialism.md",
+        "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1444,
+          "cosine": 0.8714181550257006,
+          "slot_supported": true,
+          "lexical_matches": 7
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Imperialism.md",
+        "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Imperialism.md",
+        "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "standard",
+          "display",
+          "card"
+        ],
+        "site": [
+          "fenora",
+          "gallery"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 1,
+      "preserved": true
+    }
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7:1413",
+        "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+        "filename": "04_Imperialism.md",
+        "excerpt": "second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "score": 0.0476,
+        "lexicalScore": 21.645815874291788,
+        "semanticScore": 0.7767551550425046,
+        "matchedTerms": [
+          "standard",
+          "display",
+          "cards",
+          "fictional",
+          "fenora",
+          "gallery"
+        ],
+        "start": 1444,
+        "end": 1682
+      }
+    ],
+    "mode": "Experimental v18 narrative selection",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Imperialism.md",
+        "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1444,
+          "cosine": 0.8714181550257006,
+          "slot_supported": true,
+          "lexical_matches": 7
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Imperialism.md",
+        "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Imperialism.md",
+        "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "standard",
+          "display",
+          "card"
+        ],
+        "site": [
+          "fenora",
+          "gallery"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 1,
+      "preserved": true
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Imperialism.md",
+      "start": 1444,
+      "content": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "semanticScore": 0.8714181550257006,
+      "lexicalScore": 21.008526470669125
+    },
+    {
+      "filename": "04_Imperialism.md",
+      "start": 1544,
+      "content": "This approval authority applies only to standard display cards at Fenora Gallery.",
+      "semanticScore": 0.7544370923563916,
+      "lexicalScore": 16.891755392947207
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "The Intergovernmental Panel on Climate Change (IPCC) is a scientific intergovernmental body under the auspices of the United Nations, set up at the request of member governments.",
+      "start": 58,
+      "end": 236,
+      "similarity": 0.03835845376150153,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "It was first established in 1988 by two United Nations organizations, the World Meteorological Organization (WMO) and the United Nations Environment Programme (UNEP), and later endorsed by the United Nations General Assembly through Resolution 43/53.",
+      "start": 237,
+      "end": 487,
+      "similarity": 0.0345774505505834,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "Membership of the IPCC is open to all members of the WMO and UNEP.",
+      "start": 488,
+      "end": 554,
+      "similarity": 0.05002727986694225,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "The IPCC produces reports that support the United Nations Framework Convention on Climate Change (UNFCCC), which is the main international treaty on climate change.",
+      "start": 555,
+      "end": 719,
+      "similarity": 0.11085515017148594,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "The ultimate objective of the UNFCCC is to \"stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous anthropogenic [i.e., human-induced] interference with the climate system\".",
+      "start": 720,
+      "end": 936,
+      "similarity": 0.04364991702423466,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "IPCC reports cover \"the scientific, technical and socio-economic information relevant to understanding the scientific basis of risk of human-induced climate change, its potential impacts and options for adaptation and mitigation.\"",
+      "start": 937,
+      "end": 1167,
+      "similarity": -0.01497716876157881,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "The IPCC Fourth Assessment Report (AR4) published in 2007 featured a graph showing 12 proxy based temperature reconstructions, including the three highlighted in the 2001 Third Assessment Report (TAR); Mann, Bradley & Hughes 1999 as before, Jones et al. 1998 and Briffa 2000 had both been calibrated by newer studies.",
+      "start": 1182,
+      "end": 1499,
+      "similarity": 0.004903533668526356,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "In addition, analysis of the Medieval Warm Period cited reconstructions by Crowley & Lowery 2000 (as cited in the TAR) and Osborn & Briffa 2006.",
+      "start": 1500,
+      "end": 1644,
+      "similarity": 0.1083709324403161,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "Ten of these 14 reconstructions covered 1,000 years or longer.",
+      "start": 1645,
+      "end": 1707,
+      "similarity": 0.02865521641970837,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "Most reconstructions shared some data series, particularly tree ring data, but newer reconstructions used additional data and covered a wider area, using a variety of statistical methods.",
+      "start": 1708,
+      "end": 1895,
+      "similarity": 0.028057394404357176,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "The section discussed the divergence problem affecting certain tree ring data.",
+      "start": 1896,
+      "end": 1974,
+      "similarity": 0.021508714715943088,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "start": 2007,
+      "end": 2107,
+      "similarity": 0.24998280859844804,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "This approval authority applies only to standard cargo schedules at Orvella Depot.",
+      "start": 2108,
+      "end": 2190,
+      "similarity": 0.14370481099125768,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "57b4c6f5-48da-46a9-b6fc-54fcc9296962",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2191,
+      "end": 2247,
+      "similarity": 0.15837337103289223,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "Central Banking economist Raghuram Rajan argues that \"systematic economic inequalities, within the United States and around the world, have created deep financial 'fault lines' that have made [financial] crises more likely to happen than in the past\" – the Financial crisis of 2007–08 being the most recent example.",
+      "start": 36,
+      "end": 351,
+      "similarity": -0.08329166668680964,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "To compensate for stagnating and declining purchasing power, political pressure has developed to extend easier credit to the lower and middle income earners – particularly to buy homes – and easier credit in general to keep unemployment rates low.",
+      "start": 352,
+      "end": 599,
+      "similarity": -0.013565763052826236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "This has given the American economy a tendency to go \"from bubble to bubble\" fueled by unsustainable monetary stimulation.",
+      "start": 600,
+      "end": 722,
+      "similarity": 0.07056364616801951,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "Crime rate has also been shown to be correlated with inequality in society.",
+      "start": 737,
+      "end": 812,
+      "similarity": -0.03289230713325304,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "Most studies looking into the relationship have concentrated on homicides – since homicides are almost identically defined across all nations and jurisdictions.",
+      "start": 813,
+      "end": 973,
+      "similarity": 0.020563618471611096,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "There have been over fifty studies showing tendencies for violence to be more common in societies where income differences are larger.",
+      "start": 974,
+      "end": 1108,
+      "similarity": -0.026428903876049906,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "Research has been conducted comparing developed countries with undeveloped countries, as well as studying areas within countries.",
+      "start": 1109,
+      "end": 1238,
+      "similarity": -0.05346925312456024,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "Daly et al. 2001 found that among U.S States and Canadian Provinces there is a tenfold difference in homicide rates related to inequality.",
+      "start": 1239,
+      "end": 1377,
+      "similarity": -0.09179092681091984,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "They estimated that about half of all variation in homicide rates can be accounted for by differences in the amount of inequality in each province or state.",
+      "start": 1378,
+      "end": 1534,
+      "similarity": -0.04393541458760599,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "Fajnzylber et al. (2002) found a similar relationship worldwide.",
+      "start": 1535,
+      "end": 1599,
+      "similarity": 0.048827145559298776,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "Among comments in academic literature on the relationship between homicides and inequality are:",
+      "start": 1600,
+      "end": 1695,
+      "similarity": -0.011888702878879286,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "start": 1728,
+      "end": 1828,
+      "similarity": 0.35846762263479887,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "This approval authority applies only to standard shelf indexes at Tiravel Library.",
+      "start": 1829,
+      "end": 1911,
+      "similarity": 0.2833402874819098,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0c389027-9577-464b-b5c4-0246cb4ad4d8",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1912,
+      "end": 1968,
+      "similarity": 0.15837337103289223,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "Parliamentary time is also set aside for question periods in the debating chamber.",
+      "start": 36,
+      "end": 118,
+      "similarity": 0.11571378857120732,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "A \"General Question Time\" takes place on a Thursday between 11:40 a.m. and 12 p.m. where members can direct questions to any member of the Scottish Government.",
+      "start": 119,
+      "end": 278,
+      "similarity": 0.06898060634131341,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "At 2.30pm, a 40-minute long themed \"Question Time\" takes place, where members can ask questions of ministers in departments that are selected for questioning that sitting day, such as health and justice or education and transport.",
+      "start": 279,
+      "end": 509,
+      "similarity": 0.059864128233948814,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "Between 12 p.m. and 12:30 p.m. on Thursdays, when Parliament is sitting, First Minister's Question Time takes place.",
+      "start": 510,
+      "end": 626,
+      "similarity": 0.004964990815497255,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "This gives members an opportunity to question the First Minister directly on issues under their jurisdiction.",
+      "start": 627,
+      "end": 736,
+      "similarity": 0.10032283401400834,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "Opposition leaders ask a general question of the First Minister and then supplementary questions.",
+      "start": 737,
+      "end": 834,
+      "similarity": 0.08034362282783326,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "Such a practice enables a \"lead-in\" to the questioner, who then uses their supplementary question to ask the First Minister any issue.",
+      "start": 835,
+      "end": 969,
+      "similarity": 0.09417625334900695,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "The four general questions available to opposition leaders are:",
+      "start": 970,
+      "end": 1033,
+      "similarity": 0.11964385201220959,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "The Presiding Officer (or Deputy Presiding Officer) decides who speaks in chamber debates and the amount of time for which they are allowed to speak.",
+      "start": 1048,
+      "end": 1197,
+      "similarity": 0.08305106635293762,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "Normally, the Presiding Officer tries to achieve a balance between different viewpoints and political parties when selecting members to speak.",
+      "start": 1198,
+      "end": 1340,
+      "similarity": 0.08351261753012071,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "Typically, ministers or party leaders open debates, with opening speakers given between 5 and 20 minutes, and succeeding speakers allocated less time.",
+      "start": 1341,
+      "end": 1491,
+      "similarity": 0.019030638187135452,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "The Presiding Officer can reduce speaking time if a large number of members wish to participate in the debate.",
+      "start": 1492,
+      "end": 1602,
+      "similarity": 0.016650660336439266,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "Debate is more informal than in some parliamentary systems.",
+      "start": 1603,
+      "end": 1662,
+      "similarity": 0.07641144843582634,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "Members may call each other directly by name, rather than by constituency or cabinet position, and hand clapping is allowed.",
+      "start": 1663,
+      "end": 1787,
+      "similarity": 0.08331794570200284,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "Speeches to the chamber are normally delivered in English, but members may use Scots, Gaelic, or any other language with the agreement of the Presiding Officer.",
+      "start": 1788,
+      "end": 1948,
+      "similarity": 0.15116306056989146,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "The Scottish Parliament has conducted debates in the Gaelic language.",
+      "start": 1949,
+      "end": 2018,
+      "similarity": 0.0341428610289736,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "start": 2051,
+      "end": 2146,
+      "similarity": 0.3215051876789787,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "start": 2147,
+      "end": 2227,
+      "similarity": 0.25609118897086036,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4d2864ca-8f3f-4ecc-b238-2d17ef841321",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2228,
+      "end": 2284,
+      "similarity": 0.15837337103289223,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "With Istanbul as its capital and control of lands around the Mediterranean basin, the Ottoman Empire was at the center of interactions between the Eastern and Western worlds for six centuries.",
+      "start": 28,
+      "end": 220,
+      "similarity": -0.043856944010767916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "Following a long period of military setbacks against European powers, the Ottoman Empire gradually declined into the late nineteenth century.",
+      "start": 221,
+      "end": 362,
+      "similarity": -0.08458520527914488,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "The empire allied with Germany in the early 20th century, with the imperial ambition of recovering its lost territories, but it dissolved in the aftermath of World War I, leading to the emergence of the new state of Turkey in the Ottoman Anatolian heartland, as well as the creation of modern Balkan and Middle Eastern states, thus ending Turkish colonial ambitions.",
+      "start": 363,
+      "end": 729,
+      "similarity": -0.09562279624518556,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "The concept environmental determinism served as a moral justification for domination of certain territories and peoples.",
+      "start": 744,
+      "end": 864,
+      "similarity": 0.0030945471984147595,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "It was believed that a certain person's behaviours were determined by the environment in which they lived and thus validated their domination.",
+      "start": 865,
+      "end": 1007,
+      "similarity": 0.047484753769603205,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "For example, people living in tropical environments were seen as \"less civilized\" therefore justifying colonial control as a civilizing mission.",
+      "start": 1008,
+      "end": 1152,
+      "similarity": -0.02650465251984403,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "Across the three waves of European colonialism (first in the Americas, second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy.",
+      "start": 1153,
+      "end": 1360,
+      "similarity": -0.00619457687095126,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "This takes two forms, orientalism and tropicality.",
+      "start": 1361,
+      "end": 1411,
+      "similarity": 0.06285490381862849,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "start": 1444,
+      "end": 1543,
+      "similarity": 0.8714181550257006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "This approval authority applies only to standard display cards at Fenora Gallery.",
+      "start": 1544,
+      "end": 1625,
+      "similarity": 0.7544370923563916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1626,
+      "end": 1682,
+      "similarity": 0.15837337103289223,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7:1315",
+          "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+          "filename": "04_Imperialism.md",
+          "excerpt": "second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+          "score": 0.0476,
+          "lexicalScore": 17.999399839288788,
+          "semanticScore": 0.7134303550727048,
+          "matchedTerms": [
+            "standard",
+            "display",
+            "cards",
+            "fictional",
+            "fenora",
+            "gallery"
+          ],
+          "start": 1444,
+          "end": 1682
+        }
+      ],
+      "mode": "Experimental v17 budget clause preflight",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Imperialism.md",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1444,
+            "cosine": 0.8714181550257006,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Imperialism.md",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Imperialism.md",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "standard",
+            "display",
+            "card"
+          ],
+          "site": [
+            "fenora",
+            "gallery"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 1,
+        "preserved": true
+      }
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7:1413",
+          "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+          "filename": "04_Imperialism.md",
+          "excerpt": "second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+          "score": 0.0476,
+          "lexicalScore": 21.645815874291788,
+          "semanticScore": 0.7767551550425046,
+          "matchedTerms": [
+            "standard",
+            "display",
+            "cards",
+            "fictional",
+            "fenora",
+            "gallery"
+          ],
+          "start": 1444,
+          "end": 1682
+        }
+      ],
+      "mode": "Experimental v17 budget clause preflight",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Imperialism.md",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1444,
+            "cosine": 0.8714181550257006,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Imperialism.md",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Imperialism.md",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "standard",
+            "display",
+            "card"
+          ],
+          "site": [
+            "fenora",
+            "gallery"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 1,
+        "preserved": true
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7:1315",
+          "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+          "filename": "04_Imperialism.md",
+          "excerpt": "second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+          "score": 0.0476,
+          "lexicalScore": 17.999399839288788,
+          "semanticScore": 0.7134303550727048,
+          "matchedTerms": [
+            "standard",
+            "display",
+            "cards",
+            "fictional",
+            "fenora",
+            "gallery"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Imperialism.md",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1444,
+            "cosine": 0.8714181550257006,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Imperialism.md",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7:1413",
+          "documentId": "0b89fa6c-acf8-4e8f-a93d-0564b0555de7",
+          "filename": "04_Imperialism.md",
+          "excerpt": "second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+          "score": 0.0476,
+          "lexicalScore": 21.645815874291788,
+          "semanticScore": 0.7767551550425046,
+          "matchedTerms": [
+            "standard",
+            "display",
+            "cards",
+            "fictional",
+            "fenora",
+            "gallery"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Imperialism.md",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1444,
+            "cosine": 0.8714181550257006,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Imperialism.md",
+          "quote": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.013749875128269196,
+    0.029202882200479507,
+    -0.05077173933386803,
+    -0.05241677537560463,
+    0.022652504965662956,
+    0.019318360835313797,
+    -0.0037724082358181477,
+    0.01014439295977354,
+    0.02496275119483471,
+    -0.051589235663414,
+    -0.04561495780944824,
+    0.04898432269692421,
+    -0.056227315217256546,
+    0.04345773532986641,
+    -0.08690805733203888,
+    -0.057950641959905624,
+    0.06699385493993759,
+    -0.04746704176068306,
+    0.08167126774787903,
+    0.11309624463319778,
+    0.017643649131059647,
+    -0.02405424788594246,
+    0.03829265758395195,
+    0.04009593650698662,
+    -0.059188831597566605,
+    -0.04173627868294716,
+    -0.04945502057671547,
+    -0.028366731479763985,
+    -0.0642763301730156,
+    -0.0617825910449028,
+    -0.037459906190633774,
+    0.06251849234104156,
+    0.09317824989557266,
+    0.022066546604037285,
+    -0.03383263945579529,
+    -0.03927503526210785,
+    0.08401154726743698,
+    -0.010984563268721104,
+    -0.0025329841300845146,
+    -0.002239202382043004,
+    -0.024784205481410027,
+    -0.05944545939564705,
+    -0.05680035427212715,
+    0.049990661442279816,
+    0.024799948558211327,
+    -0.05450744926929474,
+    0.01895454153418541,
+    0.01104288175702095,
+    -0.013492463156580925,
+    0.03229466825723648,
+    0.006563742179423571,
+    0.004055684432387352,
+    -0.015521585941314697,
+    -0.018689850345253944,
+    0.0006479015573859215,
+    -0.031774573028087616,
+    0.004485990386456251,
+    -0.09264900535345078,
+    0.10754968225955963,
+    0.034185994416475296,
+    0.02472515217959881,
+    0.011109045706689358,
+    -0.06960975378751755,
+    0.08321254700422287,
+    0.02196030505001545,
+    -0.03396836295723915,
+    -0.024465709924697876,
+    0.0010917767649516463,
+    -0.021852290257811546,
+    -0.04091506451368332,
+    0.04346751421689987,
+    0.018278900533914566,
+    0.1146363615989685,
+    -0.08103615790605545,
+    -0.0008411151356995106,
+    0.034850697964429855,
+    -0.057877928018569946,
+    -0.09941886365413666,
+    -0.015568314120173454,
+    -0.011535313911736012,
+    0.006167025770992041,
+    0.00786462053656578,
+    0.04815848171710968,
+    0.008412253111600876,
+    0.05707385390996933,
+    0.006641021929681301,
+    0.0045748003758490086,
+    -0.015582690946757793,
+    -0.02712981402873993,
+    -0.052597712725400925,
+    -0.00502858217805624,
+    0.041772473603487015,
+    -0.00911397859454155,
+    0.016091974452137947,
+    -0.04632055014371872,
+    -0.03597579151391983,
+    0.0454653725028038,
+    -0.007822562009096146,
+    -0.06925714015960693,
+    0.0631476640701294,
+    0.02034941129386425,
+    0.009862154722213745,
+    0.08844368159770966,
+    0.036513932049274445,
+    0.01632637344300747,
+    -0.053420279175043106,
+    0.029304714873433113,
+    0.03053365834057331,
+    -0.014552547596395016,
+    0.01966373436152935,
+    -0.013095501810312271,
+    -0.02669004164636135,
+    -0.07058008015155792,
+    -0.02452997863292694,
+    -0.010293092578649521,
+    0.01703033037483692,
+    0.026121366769075394,
+    -0.020780837163329124,
+    0.0487653911113739,
+    -0.008240947499871254,
+    0.03619614988565445,
+    0.02143225446343422,
+    0.047154154628515244,
+    0.0503479540348053,
+    -0.01022180076688528,
+    -0.005455519072711468,
+    -0.10839955508708954,
+    -2.7990395773910212e-33,
+    -0.0397823341190815,
+    0.116899274289608,
+    0.0053025782108306885,
+    -0.009689785540103912,
+    -0.018398316577076912,
+    0.03665926307439804,
+    -0.05263806879520416,
+    -0.013160384260118008,
+    0.03665972873568535,
+    0.046669624745845795,
+    0.03433069959282875,
+    0.06862937659025192,
+    -0.05088062211871147,
+    0.05924709513783455,
+    -0.004887386225163937,
+    0.08336938917636871,
+    -0.07457514852285385,
+    0.04064283147454262,
+    0.00014869081496726722,
+    0.012980887666344643,
+    0.04003908112645149,
+    0.03780399262905121,
+    -0.03360472992062569,
+    0.046451013535261154,
+    -0.06427919119596481,
+    0.09869600087404251,
+    -0.025203384459018707,
+    0.030588926747441292,
+    0.04911188408732414,
+    0.04959176108241081,
+    0.031753987073898315,
+    -0.06089248135685921,
+    0.0723976120352745,
+    -0.04919302836060524,
+    -0.019462401047348976,
+    0.004047914408147335,
+    -0.04642750322818756,
+    -0.0770552009344101,
+    0.006125099956989288,
+    0.05707617104053497,
+    -0.040068432688713074,
+    0.01640699990093708,
+    -0.058546971529722214,
+    0.02137528359889984,
+    -0.012587733566761017,
+    0.07386904954910278,
+    0.1159406453371048,
+    -0.04324084520339966,
+    0.011715341359376907,
+    0.0594753697514534,
+    -0.02367210015654564,
+    -0.03724530339241028,
+    -0.07276581972837448,
+    -0.008201905526220798,
+    -0.00564307626336813,
+    -0.1115175262093544,
+    -0.06896096467971802,
+    0.0055343653075397015,
+    0.08180072903633118,
+    -0.019068844616413116,
+    -0.0057750181294977665,
+    0.0597611665725708,
+    -0.01931670866906643,
+    0.027389664202928543,
+    -0.04068667069077492,
+    0.06619874387979507,
+    -0.02240302599966526,
+    -0.011644609272480011,
+    -0.028918618336319923,
+    -0.024150805547833443,
+    -0.06510373950004578,
+    0.04076239466667175,
+    -0.022737953811883926,
+    -0.04397071525454521,
+    -0.013399508781731129,
+    -0.04783136770129204,
+    0.02015667036175728,
+    0.07570375502109528,
+    0.006382353603839874,
+    -0.0025699948891997337,
+    -0.03503655642271042,
+    -0.06464774161577225,
+    -0.0071535357274115086,
+    0.031179087236523628,
+    -0.04321276769042015,
+    -0.03796299919486046,
+    0.012643340043723583,
+    0.06363148987293243,
+    -0.003113956656306982,
+    -0.0434245727956295,
+    0.025541553273797035,
+    -0.015153410844504833,
+    0.03640446066856384,
+    -0.0004891139687970281,
+    -0.0015900894068181515,
+    1.3928782456133647e-33,
+    0.04932785406708717,
+    -0.07168547064065933,
+    -0.043073516339063644,
+    -0.03861837089061737,
+    -0.018932925537228584,
+    -0.006527661811560392,
+    -0.10114774107933044,
+    0.03954663500189781,
+    0.11129925400018692,
+    -0.0336465947329998,
+    -0.02571745216846466,
+    0.037534166127443314,
+    -0.05728871002793312,
+    -0.015111646614968777,
+    -0.013662018813192844,
+    -0.12142891436815262,
+    0.08563021570444107,
+    -0.05185225233435631,
+    -0.012979179620742798,
+    -0.02936382032930851,
+    0.06051303446292877,
+    0.055149950087070465,
+    -0.04163620248436928,
+    0.009631983935832977,
+    0.009541727602481842,
+    0.07270719110965729,
+    0.10596353560686111,
+    -0.06456973403692245,
+    -0.03728863224387169,
+    -0.006865144707262516,
+    0.02984645962715149,
+    -0.09134365618228912,
+    -0.041016485542058945,
+    0.0684543251991272,
+    0.04915536195039749,
+    0.02991272136569023,
+    -0.03910340368747711,
+    0.052618127316236496,
+    -0.02487178146839142,
+    0.022131791338324547,
+    0.014340388588607311,
+    0.05187103897333145,
+    -0.019575059413909912,
+    0.11249584704637527,
+    -0.03266049176454544,
+    -0.08280448615550995,
+    0.04224660247564316,
+    -0.01909509487450123,
+    0.12660175561904907,
+    -0.05459853261709213,
+    -0.15264765918254852,
+    -0.021663090214133263,
+    -0.006772469263523817,
+    -0.09501080214977264,
+    -0.08587401360273361,
+    -0.04054494574666023,
+    0.01823047548532486,
+    0.0653332844376564,
+    0.03326984494924545,
+    0.011529223993420601,
+    0.013700174167752266,
+    0.0046045961789786816,
+    -0.07120075821876526,
+    -0.10215301811695099,
+    -0.021352997049689293,
+    0.010067524388432503,
+    -0.06209198012948036,
+    0.020134540274739265,
+    0.026782209053635597,
+    0.05140623077750206,
+    0.05937904864549637,
+    -0.0226335059851408,
+    -0.07659444957971573,
+    0.05123391002416611,
+    -0.036224160343408585,
+    0.0357799269258976,
+    0.12537617981433868,
+    0.01305281464010477,
+    0.04770352318882942,
+    0.0002580907894298434,
+    0.0013289349153637886,
+    -0.029870182275772095,
+    0.046052202582359314,
+    0.004764416255056858,
+    0.11097165197134018,
+    0.004366605542600155,
+    -0.035230156034231186,
+    -0.11295728385448456,
+    -0.031807348132133484,
+    -0.01728256233036518,
+    0.09945517033338547,
+    0.03665268048644066,
+    0.08278591185808182,
+    -0.05401765555143356,
+    0.001937143038958311,
+    -1.746829170201636e-8,
+    0.03366508707404137,
+    0.03872506320476532,
+    0.03523694723844528,
+    -0.07054346054792404,
+    -0.03841512277722359,
+    -0.03597254306077957,
+    -0.009793496690690517,
+    -0.06218959018588066,
+    -0.057315267622470856,
+    0.003489163238555193,
+    0.12205459177494049,
+    0.023009775206446648,
+    -0.000013665090591530316,
+    -0.09175358712673187,
+    0.1219329833984375,
+    0.02541789598762989,
+    0.07839730381965637,
+    0.011537636630237103,
+    -0.08832675963640213,
+    0.10576991736888885,
+    -0.00006602007488254458,
+    -0.007893765345215797,
+    0.07457318902015686,
+    -0.0825631394982338,
+    -0.1188405454158783,
+    0.044265471398830414,
+    0.05555461719632149,
+    -0.11462078243494034,
+    0.02807783894240856,
+    0.04351966083049774,
+    0.05070888251066208,
+    0.034118298441171646,
+    0.002414158545434475,
+    0.054151155054569244,
+    0.060856178402900696,
+    -0.03372444957494736,
+    -0.11311226338148117,
+    0.03289596363902092,
+    0.04476740211248398,
+    0.023825999349355698,
+    0.020778855308890343,
+    -0.10830310732126236,
+    -0.012738830409944057,
+    -0.0038517203647643328,
+    0.0009611176792532206,
+    0.007533707655966282,
+    0.044594503939151764,
+    -0.05978813394904137,
+    -0.025406667962670326,
+    0.02914470061659813,
+    -0.023636067286133766,
+    -0.03374596685171127,
+    0.018450401723384857,
+    0.051752395927906036,
+    -0.011964312754571438,
+    -0.06336718052625656,
+    0.08005011826753616,
+    0.009969011880457401,
+    -0.0100345928221941,
+    -0.005217809230089188,
+    0.06496283411979675,
+    -0.004390276037156582,
+    0.034984394907951355,
+    0.03730706870555878
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Imperialism.md",
+        "start": 1315,
+        "content": "lace indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus."
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Imperialism.md",
+        "start": 1413,
+        "content": "## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "02_Economic_inequality.md",
+        "start": 1697,
+        "content": "## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus."
+      }
+    ]
+  }
+}

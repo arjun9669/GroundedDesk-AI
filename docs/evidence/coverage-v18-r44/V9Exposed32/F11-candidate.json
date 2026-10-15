@@ -1,0 +1,1206 @@
+{
+  "candidate_identity": "coverage-v18-narrative-clause-selection",
+  "id": "F11",
+  "question": "When was free primary school introduced?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When was free primary school introduced?",
+    "expected_display": "When was free primary school introduced?",
+    "rendered_question": "When was free primary school introduced?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] In January 2003, the Government of Kenya announced the introduction of free primary education.",
+    "sources": [
+      {
+        "filename": "02_Kenya.md",
+        "excerpt": "em in the country. Shortfalls of electricity occur periodically, when drought reduces water flow. To become energy sufficient, Kenya aims to build a nuclear power plant by 2017.\n\n## Context 2\nThe current 8–4–4 system was launched in January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government",
+        "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen was free primary school introduced?\n\nSearched all files: 01_Amazon_rainforest.md · 02_Kenya.md · 03_Super_Bowl_50.md · 04_Civil_disobedience.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] In January 2003, the Government of Kenya announced the introduction of free primary education.\n\nSOURCE EVIDENCE\n[1]\n02_Kenya.md\n\nText line 7 (normalized extraction)\n\nem in the country. Shortfalls of electricity occur periodically, when drought reduces water flow. To become energy sufficient, Kenya aims to build a nuclear power plant by 2017. ## Context 2 The current 8–4–4 system was launched in January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] In January 2003, the Government of Kenya announced the introduction of free primary education.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "937b4187-f054-4bc5-9886-b96af8f115e3:654",
+        "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+        "filename": "02_Kenya.md",
+        "excerpt": "em in the country. Shortfalls of electricity occur periodically, when drought reduces water flow. To become energy sufficient, Kenya aims to build a nuclear power plant by 2017.\n\n## Context 2\nThe current 8–4–4 system was launched in January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government",
+        "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+        "score": 0.0476,
+        "lexicalScore": 6.827461984188016,
+        "semanticScore": 0.4888305552207297,
+        "matchedTerms": [
+          "free",
+          "primary",
+          "school"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "937b4187-f054-4bc5-9886-b96af8f115e3:654",
+        "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+        "filename": "02_Kenya.md",
+        "excerpt": "n January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+        "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+        "score": 0.0476,
+        "lexicalScore": 6.827461984188016,
+        "semanticScore": 0.4888305552207297,
+        "matchedTerms": [
+          "free",
+          "primary",
+          "school"
+        ],
+        "start": 1105,
+        "end": 1387
+      }
+    ],
+    "mode": "Experimental v18 narrative selection",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Kenya.md",
+        "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1105,
+          "cosine": 0.6365744963604956,
+          "slot_supported": true,
+          "lexical_matches": 2
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Kenya.md",
+        "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Kenya.md",
+        "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+        "reason": "Forward-priority literal narrative window"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "937b4187-f054-4bc5-9886-b96af8f115e3:833",
+        "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+        "filename": "02_Kenya.md",
+        "excerpt": "n January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+        "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+        "score": 0.0476,
+        "lexicalScore": 7.13650801670735,
+        "semanticScore": 0.6064115509779032,
+        "matchedTerms": [
+          "free",
+          "primary",
+          "school"
+        ],
+        "start": 1105,
+        "end": 1387
+      }
+    ],
+    "mode": "Experimental v18 narrative selection",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Kenya.md",
+        "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1105,
+          "cosine": 0.6365744963604956,
+          "slot_supported": true,
+          "lexical_matches": 2
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Kenya.md",
+        "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Kenya.md",
+        "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+        "reason": "Forward-priority literal narrative window"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Kenya.md",
+      "start": 1105,
+      "content": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+      "semanticScore": 0.6365744963604956,
+      "lexicalScore": 7.11069563280074
+    },
+    {
+      "filename": "02_Kenya.md",
+      "start": 1200,
+      "content": "As a result, primary school enrolment increased by about 70%.",
+      "semanticScore": 0.5031362068037818,
+      "lexicalScore": 6.955846996299773
+    },
+    {
+      "filename": "02_Kenya.md",
+      "start": 901,
+      "content": "It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector.",
+      "semanticScore": 0.4362726808198497,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Kenya.md",
+      "start": 1388,
+      "content": "In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+      "semanticScore": 0.40901314444388875,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "The rainforest contains several species that can pose a hazard.",
+      "start": 34,
+      "end": 97,
+      "similarity": -0.06200517271177832,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "Among the largest predatory creatures are the black caiman, jaguar, cougar, and anaconda.",
+      "start": 98,
+      "end": 187,
+      "similarity": -0.05080714271602486,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "In the river, electric eels can produce an electric shock that can stun or kill, while piranha are known to bite and injure humans.",
+      "start": 188,
+      "end": 319,
+      "similarity": -0.052617396230811166,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "Various species of poison dart frogs secrete lipophilic alkaloid toxins through their flesh.",
+      "start": 320,
+      "end": 412,
+      "similarity": -0.07320806847773173,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "There are also numerous parasites and disease vectors.",
+      "start": 413,
+      "end": 467,
+      "similarity": 0.018027361629279377,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "Vampire bats dwell in the rainforest and can spread the rabies virus.",
+      "start": 468,
+      "end": 537,
+      "similarity": -0.034400642823335784,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "Malaria, yellow fever and Dengue fever can also be contracted in the Amazon region.",
+      "start": 538,
+      "end": 621,
+      "similarity": -0.048100583316529284,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "The region is home to about 2.5 million insect species, tens of thousands of plants, and some 2,000 birds and mammals.",
+      "start": 636,
+      "end": 754,
+      "similarity": -0.04509601617226422,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "To date, at least 40,000 plant species, 2,200 fishes, 1,294 birds, 427 mammals, 428 amphibians, and 378 reptiles have been scientifically classified in the region.",
+      "start": 755,
+      "end": 918,
+      "similarity": -0.04573984729588181,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "One in five of all the bird species in the world live in the rainforests of the Amazon, and one in five of the fish species live in Amazonian rivers and streams.",
+      "start": 919,
+      "end": 1080,
+      "similarity": -0.0819900450601722,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f24ba3f1-6d29-42b5-b7b5-52abe31f8da1",
+      "value": "Scientists have described between 96,660 and 128,843 invertebrate species in Brazil alone.",
+      "start": 1081,
+      "end": 1171,
+      "similarity": -0.060815421374100266,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "The largest share of Kenya's electricity supply comes from hydroelectric stations at dams along the upper Tana River, as well as the Turkwel Gorge Dam in the west.",
+      "start": 22,
+      "end": 185,
+      "similarity": 0.03685967149747813,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "A petroleum-fired plant on the coast, geothermal facilities at Olkaria (near Nairobi), and electricity imported from Uganda make up the rest of the supply.",
+      "start": 186,
+      "end": 341,
+      "similarity": 0.04300608469047823,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "Kenya's installed capacity stood at 1,142 megawatts between 2001 and 2003.",
+      "start": 342,
+      "end": 416,
+      "similarity": 0.024278044028398137,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "The state-owned Kenya Electricity Generating Company (KenGen), established in 1997 under the name of Kenya Power Company, handles the generation of electricity, while Kenya Power handles the electricity transmission and distribution system in the country.",
+      "start": 417,
+      "end": 672,
+      "similarity": 0.05683612292701618,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "Shortfalls of electricity occur periodically, when drought reduces water flow.",
+      "start": 673,
+      "end": 751,
+      "similarity": 0.08863721705317511,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "To become energy sufficient, Kenya aims to build a nuclear power plant by 2017.",
+      "start": 752,
+      "end": 831,
+      "similarity": 0.033959775740616434,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "The current 8–4–4 system was launched in January 1985.",
+      "start": 846,
+      "end": 900,
+      "similarity": 0.1575311765500986,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector.",
+      "start": 901,
+      "end": 1104,
+      "similarity": 0.4362726808198497,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+      "start": 1105,
+      "end": 1199,
+      "similarity": 0.6365744963604956,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "As a result, primary school enrolment increased by about 70%.",
+      "start": 1200,
+      "end": 1261,
+      "similarity": 0.5031362068037818,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+      "start": 1262,
+      "end": 1387,
+      "similarity": 0.35442370121996936,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+      "value": "In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+      "start": 1388,
+      "end": 1551,
+      "similarity": 0.40901314444388875,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "be0a3a26-732e-42fc-9795-8b69d6bd6f97",
+      "value": "After each team punted, Panthers quarterback Cam Newton appeared to complete a 24-yard pass Jerricho Cotchery, but the call was ruled an incompletion and upheld after a replay challenge.",
+      "start": 30,
+      "end": 216,
+      "similarity": 0.03181442092262837,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "be0a3a26-732e-42fc-9795-8b69d6bd6f97",
+      "value": "CBS analyst and retired referee Mike Carey stated he disagreed with the call and felt the review clearly showed the pass was complete.",
+      "start": 217,
+      "end": 351,
+      "similarity": -0.026093825459162338,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "be0a3a26-732e-42fc-9795-8b69d6bd6f97",
+      "value": "A few plays later, on 3rd-and-10 from the 15-yard line, linebacker Von Miller knocked the ball out of Newton's hands while sacking him, and Malik Jackson recovered it in the end zone for a Broncos touchdown, giving the team a 10–0 lead.",
+      "start": 352,
+      "end": 588,
+      "similarity": 0.03825385510193839,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "be0a3a26-732e-42fc-9795-8b69d6bd6f97",
+      "value": "This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.",
+      "start": 589,
+      "end": 702,
+      "similarity": 0.05564256827785834,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "be0a3a26-732e-42fc-9795-8b69d6bd6f97",
+      "value": "After a punt from both teams, Carolina got on track with a 9-play, 73-yard scoring drive.",
+      "start": 717,
+      "end": 806,
+      "similarity": 0.04328035454703836,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "be0a3a26-732e-42fc-9795-8b69d6bd6f97",
+      "value": "Newton completed 4 of 4 passes for 51 yards and rushed twice for 25 yards, while Jonathan Stewart finished the drive with a 1-yard touchdown run, cutting the score to 10–7 with 11:28 left in the second quarter.",
+      "start": 807,
+      "end": 1017,
+      "similarity": 0.015674450024991984,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "be0a3a26-732e-42fc-9795-8b69d6bd6f97",
+      "value": "Later on, Broncos receiver Jordan Norwood received Brad Nortman's short 28-yard punt surrounded by Panthers players, but none of them attempted to make a tackle, apparently thinking Norwood had called a fair catch.",
+      "start": 1018,
+      "end": 1232,
+      "similarity": 0.0418682922245447,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "be0a3a26-732e-42fc-9795-8b69d6bd6f97",
+      "value": "Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line.",
+      "start": 1233,
+      "end": 1411,
+      "similarity": 0.04543676473089567,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "be0a3a26-732e-42fc-9795-8b69d6bd6f97",
+      "value": "Despite Denver's excellent field position, they could not get the ball into the end zone, so McManus kicked a 33-yard field goal that increased their lead to 13–7.",
+      "start": 1412,
+      "end": 1575,
+      "similarity": 0.08424889324562157,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+      "start": 35,
+      "end": 183,
+      "similarity": 0.11850152899919335,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "Brownlee argues, \"Bringing in deterrence at the level of justification detracts from the law’s engagement in a moral dialogue with the offender as a rational person because it focuses attention on the threat of punishment and not the moral reasons to follow this law.\"",
+      "start": 184,
+      "end": 452,
+      "similarity": 0.05017222794026797,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good.",
+      "start": 453,
+      "end": 617,
+      "similarity": 0.12240644362626125,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "This means that the objector has no right not to be punished.",
+      "start": 618,
+      "end": 679,
+      "similarity": 0.10856763789623952,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "It is a matter for the state (including the judges) to decide on utilitarian grounds whether to do so or not.\"",
+      "start": 680,
+      "end": 790,
+      "similarity": 0.14077047188492156,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "Steven Barkan writes that if defendants plead not guilty, \"they must decide whether their primary goal will be to win an acquittal and avoid imprisonment or a fine, or to use the proceedings as a forum to inform the jury and the public of the political circumstances surrounding the case and their reasons for breaking the law via civil disobedience.\"",
+      "start": 805,
+      "end": 1156,
+      "similarity": 0.005789035146538769,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "A technical defense may enhance the chances for acquittal but make for more boring proceedings and reduced press coverage.",
+      "start": 1157,
+      "end": 1279,
+      "similarity": -0.021537021767586515,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "During the Vietnam War era, the Chicago Eight used a political defense, while Benjamin Spock used a technical defense.",
+      "start": 1280,
+      "end": 1398,
+      "similarity": 0.10966197591668284,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "In countries such as the United States whose laws guarantee the right to a jury trial but do not excuse lawbreaking for political purposes, some civil disobedients seek jury nullification.",
+      "start": 1399,
+      "end": 1587,
+      "similarity": -0.00193457742275948,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "Over the years, this has been made more difficult by court decisions such as Sparf v.",
+      "start": 1588,
+      "end": 1673,
+      "similarity": 0.13551741766172853,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "United States, which held that the judge need not inform jurors of their nullification prerogative, and United States v.",
+      "start": 1674,
+      "end": 1794,
+      "similarity": 0.04907317019065815,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67f868ae-3fa8-4a47-91e9-c42bb047aff7",
+      "value": "Dougherty, which held that the judge need not allow defendants to openly seek jury nullification.",
+      "start": 1795,
+      "end": 1892,
+      "similarity": 0.16525048612310742,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "937b4187-f054-4bc5-9886-b96af8f115e3:654",
+          "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+          "filename": "02_Kenya.md",
+          "excerpt": "n January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+          "score": 0.0476,
+          "lexicalScore": 6.827461984188016,
+          "semanticScore": 0.4888305552207297,
+          "matchedTerms": [
+            "free",
+            "primary",
+            "school"
+          ],
+          "start": 1105,
+          "end": 1387
+        }
+      ],
+      "mode": "Experimental v17 budget clause preflight",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1105,
+            "cosine": 0.6365744963604956,
+            "slot_supported": true,
+            "lexical_matches": 2
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kenya.md",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+          "reason": "Forward-priority literal narrative window"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "937b4187-f054-4bc5-9886-b96af8f115e3:833",
+          "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+          "filename": "02_Kenya.md",
+          "excerpt": "n January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+          "score": 0.0476,
+          "lexicalScore": 7.13650801670735,
+          "semanticScore": 0.6064115509779032,
+          "matchedTerms": [
+            "free",
+            "primary",
+            "school"
+          ],
+          "start": 1105,
+          "end": 1387
+        }
+      ],
+      "mode": "Experimental v17 budget clause preflight",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1105,
+            "cosine": 0.6365744963604956,
+            "slot_supported": true,
+            "lexical_matches": 2
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kenya.md",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+          "reason": "Forward-priority literal narrative window"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] In January 2003, the Government of Kenya announced the introduction of free primary education.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "937b4187-f054-4bc5-9886-b96af8f115e3:654",
+          "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+          "filename": "02_Kenya.md",
+          "excerpt": "n January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education wou",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+          "score": 0.0476,
+          "lexicalScore": 6.827461984188016,
+          "semanticScore": 0.4888305552207297,
+          "matchedTerms": [
+            "free",
+            "primary",
+            "school"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1105,
+            "cosine": 0.6365744963604956,
+            "slot_supported": true,
+            "lexical_matches": 2
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kenya.md",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] In January 2003, the Government of Kenya announced the introduction of free primary education.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "937b4187-f054-4bc5-9886-b96af8f115e3:833",
+          "documentId": "937b4187-f054-4bc5-9886-b96af8f115e3",
+          "filename": "02_Kenya.md",
+          "excerpt": "n January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education wou",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+          "score": 0.0476,
+          "lexicalScore": 7.13650801670735,
+          "semanticScore": 0.6064115509779032,
+          "matchedTerms": [
+            "free",
+            "primary",
+            "school"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1105,
+            "cosine": 0.6365744963604956,
+            "slot_supported": true,
+            "lexical_matches": 2
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kenya.md",
+          "quote": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.022449344396591187,
+    0.07741980254650116,
+    0.0036747953854501247,
+    0.048833880573511124,
+    0.013958588242530823,
+    0.06442435085773468,
+    -0.0585520900785923,
+    0.018309801816940308,
+    0.03820188716053963,
+    0.11054956167936325,
+    0.11062637716531754,
+    0.06186003237962723,
+    -0.022933322936296463,
+    -0.017375055700540543,
+    0.045665379613637924,
+    -0.006509856786578894,
+    -0.028251908719539642,
+    -0.022881902754306793,
+    0.057586539536714554,
+    -0.05327524617314339,
+    -0.05916827544569969,
+    -0.05992339178919792,
+    -0.015528116375207901,
+    0.01078624278306961,
+    0.0809185653924942,
+    0.03176084905862808,
+    0.0887165367603302,
+    -0.08786071836948395,
+    0.03820329159498215,
+    0.01898825354874134,
+    -0.024075783789157867,
+    0.015574745833873749,
+    0.054090067744255066,
+    0.019233528524637222,
+    0.05494147166609764,
+    0.022129256278276443,
+    0.1489536464214325,
+    0.035505615174770355,
+    -0.10275126248598099,
+    0.0102122463285923,
+    -0.06630587577819824,
+    -0.05841144919395447,
+    -0.0008176393457688391,
+    0.061890196055173874,
+    0.008081412874162197,
+    0.03209887817502022,
+    0.008245948702096939,
+    -0.0035342713817954063,
+    0.01849963702261448,
+    -0.04085594788193703,
+    0.0844794437289238,
+    0.06798333674669266,
+    0.030444227159023285,
+    0.012835762463510036,
+    -0.02086515538394451,
+    0.04149152711033821,
+    -0.07767567038536072,
+    -0.031035495921969414,
+    -0.04439898207783699,
+    0.05567526817321777,
+    -0.09414739906787872,
+    0.018814900889992714,
+    -0.10401342064142227,
+    0.021197548136115074,
+    0.04089502990245819,
+    0.024526821449398994,
+    -0.07157792150974274,
+    0.011846221052110195,
+    0.05285797640681267,
+    -0.04607261344790459,
+    -0.07594886422157288,
+    0.008617364801466465,
+    0.0924067497253418,
+    -0.028777020052075386,
+    0.0546029657125473,
+    -0.02624274604022503,
+    0.007534658536314964,
+    0.12583084404468536,
+    0.03953753784298897,
+    0.006243628915399313,
+    -0.012834370136260986,
+    0.009716644883155823,
+    -0.03089457005262375,
+    0.017851034179329872,
+    0.009358632378280163,
+    0.010344761423766613,
+    -0.08326628059148788,
+    -0.01571035198867321,
+    0.038336243480443954,
+    -0.06155738607048988,
+    0.03101530857384205,
+    0.02724926546216011,
+    -0.03395364060997963,
+    0.05258560925722122,
+    -0.02480757236480713,
+    -0.010915001854300499,
+    -0.06022145226597786,
+    -0.025959206745028496,
+    0.014929641969501972,
+    0.03651009500026703,
+    -0.017886513844132423,
+    -0.018893156200647354,
+    0.06156923621892929,
+    0.040996938943862915,
+    -0.022318772971630096,
+    -0.03489477187395096,
+    0.07126267999410629,
+    -0.025907078757882118,
+    -0.02026834897696972,
+    -0.010295473970472813,
+    0.011549019254744053,
+    -0.05394251272082329,
+    0.08738801628351212,
+    -0.003524918807670474,
+    -0.016606410965323448,
+    0.03201223909854889,
+    0.00405465392395854,
+    -0.08658435195684433,
+    0.07822617143392563,
+    0.020740007981657982,
+    -0.011365966871380806,
+    -0.01428883895277977,
+    -0.01299973763525486,
+    -0.06374067813158035,
+    -0.09227047860622406,
+    0.059834323823451996,
+    -0.0815194621682167,
+    -3.774289751247678e-33,
+    0.04498276859521866,
+    0.016444634646177292,
+    0.026814132928848267,
+    -0.024339430034160614,
+    -0.02611500769853592,
+    -0.08417882025241852,
+    0.02042137086391449,
+    -0.0483848936855793,
+    -0.03523730859160423,
+    -0.03858093544840813,
+    0.09063244611024857,
+    -0.041554976254701614,
+    0.024774083867669106,
+    -0.038986608386039734,
+    0.07207594066858292,
+    -0.038619160652160645,
+    -0.04874730855226517,
+    0.08428069949150085,
+    0.10403196513652802,
+    0.03721199184656143,
+    -0.007204772904515266,
+    0.05531556159257889,
+    0.05679943412542343,
+    -0.04583364352583885,
+    -0.06213968247175217,
+    -0.005650701932609081,
+    -0.08305168151855469,
+    -0.0957801416516304,
+    0.07562284916639328,
+    0.01236365083605051,
+    0.0496157743036747,
+    0.006935161538422108,
+    -0.03942090645432472,
+    -0.0001690563658485189,
+    0.046604230999946594,
+    -0.001005647936835885,
+    0.018634574487805367,
+    -0.03084121271967888,
+    -0.006154506467282772,
+    -0.04259171336889267,
+    0.036938875913619995,
+    -0.07892543822526932,
+    0.10877720266580582,
+    0.009397878311574459,
+    0.05273638665676117,
+    0.05803770571947098,
+    -0.06873224675655365,
+    -0.016042061150074005,
+    0.016933655366301537,
+    -0.013462604023516178,
+    -0.007804566528648138,
+    0.00560770882293582,
+    -0.17140895128250122,
+    -0.05984021723270416,
+    -0.017719881609082222,
+    0.0688777044415474,
+    0.008897398598492146,
+    0.04176272079348564,
+    0.03294521942734718,
+    -0.0351572260260582,
+    -0.05729897320270538,
+    0.09466654062271118,
+    -0.004308720119297504,
+    -0.009484736248850822,
+    -0.05091194435954094,
+    -0.06104202941060066,
+    0.008277703076601028,
+    -0.02813413180410862,
+    0.07474509626626968,
+    -0.044857751578092575,
+    0.02225792035460472,
+    0.05264605954289436,
+    -0.07374054938554764,
+    0.002065426902845502,
+    0.012486163526773453,
+    0.05290929600596428,
+    0.02910188026726246,
+    -0.02983071096241474,
+    0.0005930019542574883,
+    0.030763236805796623,
+    0.02723696269094944,
+    -0.004244793672114611,
+    0.03765593841671944,
+    0.0024851809721440077,
+    0.04125181958079338,
+    -0.004945751745253801,
+    -0.010818257927894592,
+    0.008994936011731625,
+    0.033371444791555405,
+    -0.04666031152009964,
+    -0.04295358434319496,
+    0.013132620602846146,
+    -0.06554161012172699,
+    0.030255334451794624,
+    0.008154858835041523,
+    2.111230649418038e-33,
+    -0.0053821709007024765,
+    0.008399154990911484,
+    -0.03460020571947098,
+    0.005918285809457302,
+    0.033452171832323074,
+    0.0020825336687266827,
+    0.006794817745685577,
+    0.035507719963788986,
+    0.09756283462047577,
+    0.0035180419217795134,
+    -0.01574867032468319,
+    -0.025969216600060463,
+    0.06076691672205925,
+    0.05170176923274994,
+    0.043064843863248825,
+    -0.04671943932771683,
+    -0.05362163856625557,
+    -0.004049454350024462,
+    0.01322743110358715,
+    -0.023459451273083687,
+    0.027518918737769127,
+    0.06887637078762054,
+    -0.10142833739519119,
+    -0.04321785271167755,
+    -0.0042672124691307545,
+    -0.07362109422683716,
+    -0.1418788731098175,
+    0.05527517572045326,
+    -0.046135980635881424,
+    0.10667363554239273,
+    -0.009640061296522617,
+    0.04717327654361725,
+    -0.03718264028429985,
+    0.023999113589525223,
+    -0.011748474091291428,
+    -0.04956474527716637,
+    -0.07172958552837372,
+    0.06781055778265,
+    -0.07411274313926697,
+    0.04497513175010681,
+    -0.03882376477122307,
+    -0.05160222202539444,
+    -0.03132832795381546,
+    0.07479900121688843,
+    0.011533528566360474,
+    0.09467047452926636,
+    -0.010519647039473057,
+    -0.03946501389145851,
+    0.06097714602947235,
+    0.0496390163898468,
+    -0.08261958509683609,
+    0.030613355338573456,
+    0.04059901461005211,
+    -0.03938544541597366,
+    0.06888680905103683,
+    0.009359183721244335,
+    0.05408768728375435,
+    0.0308510921895504,
+    -0.01784689351916313,
+    0.036647699773311615,
+    0.06462351977825165,
+    -0.07678121328353882,
+    -0.13471227884292603,
+    -0.014354721643030643,
+    0.11358247697353363,
+    0.03321864828467369,
+    -0.02766471728682518,
+    0.002566833281889558,
+    -0.05161620303988457,
+    -0.054048024117946625,
+    0.045576311647892,
+    0.06503999978303909,
+    -0.00445482088252902,
+    -0.06308554112911224,
+    -0.12263946235179901,
+    0.09681583195924759,
+    0.05378877371549606,
+    0.014244507066905499,
+    -0.04815058037638664,
+    0.02649221010506153,
+    -0.08926639705896378,
+    -0.04345414415001869,
+    -0.06006350368261337,
+    -0.05201797932386398,
+    -0.06950175762176514,
+    -0.018291916698217392,
+    0.06868986040353775,
+    -0.07472936064004898,
+    -0.013734842650592327,
+    0.014059919863939285,
+    0.034493595361709595,
+    -0.02107885107398033,
+    0.016714997589588165,
+    0.0055440678261220455,
+    -0.04043199121952057,
+    -1.4486717603290344e-8,
+    -0.003195930039510131,
+    0.005044653080403805,
+    -0.0038109496235847473,
+    0.07009367644786835,
+    0.11041977256536484,
+    -0.005848698318004608,
+    0.008882462047040462,
+    0.011202327907085419,
+    0.009622873738408089,
+    0.061372365802526474,
+    -0.08659014850854874,
+    0.007386251352727413,
+    -0.020650848746299744,
+    0.034871987998485565,
+    0.044687941670417786,
+    0.0013333575334399939,
+    0.037406183779239655,
+    -0.010536017827689648,
+    -0.05991741269826889,
+    0.008001280948519707,
+    0.0390702560544014,
+    0.012498507276177406,
+    -0.015997814014554024,
+    -0.03914077207446098,
+    -0.060263171792030334,
+    -0.018539495766162872,
+    0.06080883741378784,
+    0.004656677134335041,
+    -0.015434636734426022,
+    -0.006293406710028648,
+    0.008570588193833828,
+    0.03477617725729942,
+    -0.036313172429800034,
+    -0.06489897519350052,
+    -0.06796617805957794,
+    0.06260258704423904,
+    -0.10805598646402359,
+    0.057058464735746384,
+    0.026633627712726593,
+    -0.07895231246948242,
+    -0.011538734659552574,
+    0.04618801921606064,
+    0.026634786278009415,
+    -0.031247057020664215,
+    -0.022850021719932556,
+    0.11020057648420334,
+    -0.0798897072672844,
+    -0.04839508980512619,
+    0.04070480540394783,
+    0.03860621526837349,
+    -0.03679008409380913,
+    0.008472448214888573,
+    0.045524340122938156,
+    -0.11100125312805176,
+    0.09147728234529495,
+    0.007975257001817226,
+    0.028510743752121925,
+    -0.06053803488612175,
+    -0.009651226922869682,
+    -0.03828888013958931,
+    0.030436860397458076,
+    -0.009346693754196167,
+    0.036667600274086,
+    0.05693062022328377
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Kenya.md",
+        "start": 654,
+        "content": "em in the country. Shortfalls of electricity occur periodically, when drought reduces water flow. To become energy sufficient, Kenya aims to build a nuclear power plant by 2017.\n\n## Context 2\nThe current 8–4–4 system was launched in January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government"
+      },
+      {
+        "filename": "02_Kenya.md",
+        "start": 1310,
+        "content": "ot increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Kenya.md",
+        "start": 833,
+        "content": "## Context 2\nThe current 8–4–4 system was launched in January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees."
+      }
+    ]
+  }
+}
