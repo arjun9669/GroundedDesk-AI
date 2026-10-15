@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,hashlib,subprocess,datetime
-repo=Path.cwd();base=repo.parent.parent/'outputs';out=base/'coverage-v16-inputs';out.mkdir(exist_ok=False)
+repo=Path.cwd();base=repo.parent.parent/'outputs';out=base/'coverage-v16-inputs';out.mkdir(exist_ok=True);assert not list(out.iterdir())
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 config=json.loads((base/'coverage-v15-inputs/run-config.json').read_bytes())
 scope=json.loads((base/'coverage-v15-fresh-inputs/run-config.json').read_bytes())['packs'][0];config['packs'].append(scope)
@@ -15,7 +15,7 @@ for p in [packroot/'freeze-manifest.json',base/'coverage-v15-fresh-inputs/run-co
 for pack in config['packs']:
  for f in pack['files']:assert sha(Path(f['path']))==f['sha256']
 assert len(checks)==102 and sum(len(p['cases']) for p in config['packs'])==355
-assert sum(c.get('workflow','hybrid')=='comparison' for p in config['packs'] for c in p['cases'])==24
+assert sum(c.get('workflow','hybrid').lower()=='comparison' for p in config['packs'] for c in p['cases'])==24
 spec=lambda p:{'path':'/'+p,'sha256':sha(repo/p)}
 dependencies=[p.relative_to(repo).as_posix() for p in (repo/'eval').glob('answer-completeness*/coverage.mjs') if 'v16' not in str(p)]+['retrieval.mjs','hybrid.mjs','semantic.mjs','eval/retrieval-quality/section-index.mjs']
 config['module_identity']={'candidate':{**spec('eval/answer-completeness-v16/coverage.mjs'),'id':'coverage-v16-literal-body-recovery'},'paired':spec('eval/answer-completeness-v15/coverage.mjs'),'helper':spec('tests/fixtures/module-identity.mjs'),'dependencies':[spec(p) for p in dependencies]}
