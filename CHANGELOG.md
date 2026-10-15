@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-15 — Separate v24 literal-date follow-up passes frozen gates
+
+- Sealed the complete first v23 63/0/1 and overall FAIL before implementing a separate wrapper over unchanged v23. V24 permits exactly one literal positive event/date sentence in an already selected document, retaining the actual finite cosine without a semantic minimum for this fallback. No fabricated score/vector, key lookup, question rewrite or model-only improvement claim.
+- Froze and captured the unchanged 515 exposed questions once with actual MiniLM in installed headless Chrome, Qwen off, fresh384D vectors: 487 Hybrid and28 lexical Comparison. V23 and v24 are two different frozen runs, not one run or a replacement of v23. All405 unit tests and strict offline checks pass;124 original input hashes and82 historical archive members verified.
+- Binding64 reaches64 PASS /0 PARTIAL /0 FAIL both. Only F05 changes, displaying the correct occupation/date sentence with the original0.2406 actual cosine. Every previous PASS and all95 unsupported uncited refusals are preserved; all58 citations satisfy source/body/span checks. Historical451 and full frozen development gates PASS, not515/515 or independent accuracy. Older public failures and temperature wording/average-bound qualifications remain explicit.
+- No post-answer tuning, fresh sample or adoption. Live5.6/r44 unchanged pending separately frozen confirmation/integration review. See [v24 report](./docs/COVERAGE_V24_R44_VALIDATION.md); preserve [v23 first result](./docs/COVERAGE_V23_R44_VALIDATION.md).
+
 ## 2026-10-15 — Evidence v23 first result 63/0/1, overall FAIL
 
 - Added isolated exact-event/date and numeric-temperature evidence selection over unchanged v22, with selected-document/paragraph scope, actual cosine >=0.35, uniqueness, literal subject context and compound facet preservation. No source/question/key rewrite or runtime adoption.
