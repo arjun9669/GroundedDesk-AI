@@ -1,0 +1,1258 @@
+{
+  "candidate_identity": "coverage-v16-literal-body-recovery",
+  "id": "A05",
+  "question": "Who approves asteroid docking warrants at the fictional Calorin Pier?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who approves asteroid docking warrants at the fictional Calorin Pier?",
+    "expected_display": "Who approves asteroid docking warrants at the fictional Calorin Pier?",
+    "rendered_question": "Who approves asteroid docking warrants at the fictional Calorin Pier?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+    "sources": [
+      {
+        "filename": "03_European_Union_law.md",
+        "excerpt": "oval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho approves asteroid docking warrants at the fictional Calorin Pier?\n\nSearched all files: 01_University_of_Chicago.md · 02_Islamism.md · 03_European_Union_law.md · 04_Normans.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.\n\nSOURCE EVIDENCE\n[1]\n03_European_Union_law.md\n\nText line 10 (normalized extraction)\n\noval appendix At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "b366efc5-ad66-4889-a719-c87505defd92:1964",
+        "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+        "filename": "03_European_Union_law.md",
+        "excerpt": "oval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+        "score": 0.0476,
+        "lexicalScore": 6.933916408544474,
+        "semanticScore": 0.551939853243928,
+        "matchedTerms": [
+          "fictional",
+          "calorin",
+          "pier"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v16 literal body recovery",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_European_Union_law.md",
+        "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1978,
+          "cosine": 0.6030257364125075,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_European_Union_law.md",
+        "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_European_Union_law.md",
+        "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "asteroid",
+          "dock",
+          "warrant"
+        ],
+        "site": [
+          "calorin",
+          "pier"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v16 literal body recovery",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_European_Union_law.md",
+        "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1978,
+          "cosine": 0.6030257364125075,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_European_Union_law.md",
+        "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_European_Union_law.md",
+        "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "asteroid",
+          "dock",
+          "warrant"
+        ],
+        "site": [
+          "calorin",
+          "pier"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_European_Union_law.md",
+      "start": 1978,
+      "content": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "semanticScore": 0.6030257364125075,
+      "lexicalScore": 9.973470857730035
+    },
+    {
+      "filename": "03_European_Union_law.md",
+      "start": 2074,
+      "content": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "semanticScore": 0.4655256347952103,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "The first buildings of the University of Chicago campus, which make up what is now known as the Main Quadrangles, were part of a \"master plan\" conceived by two University of Chicago trustees and plotted by Chicago architect Henry Ives Cobb.",
+      "start": 38,
+      "end": 278,
+      "similarity": 0.10842922474369168,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "The Main Quadrangles consist of six quadrangles, each surrounded by buildings, bordering one larger quadrangle.",
+      "start": 279,
+      "end": 390,
+      "similarity": 0.07420840698822097,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "The buildings of the Main Quadrangles were designed by Cobb, Shepley, Rutan and Coolidge, Holabird & Roche, and other architectural firms in a mixture of the Victorian Gothic and Collegiate Gothic styles, patterned on the colleges of the University of Oxford.",
+      "start": 391,
+      "end": 650,
+      "similarity": 0.11112924407943113,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "(Mitchell Tower, for example, is modeled after Oxford's Magdalen Tower, and the university Commons, Hutchinson Hall, replicates Christ Church Hall.)",
+      "start": 651,
+      "end": 799,
+      "similarity": 0.197966416751691,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "All Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government.",
+      "start": 814,
+      "end": 1036,
+      "similarity": 0.08834030175462779,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit.",
+      "start": 1037,
+      "end": 1171,
+      "similarity": -0.03122791112046821,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring.",
+      "start": 1172,
+      "end": 1391,
+      "similarity": 0.11569582694131118,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "Its annual budget is greater than $2 million.",
+      "start": 1392,
+      "end": 1437,
+      "similarity": 0.11372502006580895,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "start": 1470,
+      "end": 1570,
+      "similarity": 0.2221392901505913,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "This approval authority applies only to standard cargo schedules at Orvella Depot.",
+      "start": 1571,
+      "end": 1653,
+      "similarity": 0.1659854884215313,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1654,
+      "end": 1710,
+      "similarity": 0.04788010367312206,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "Some elements of the Brotherhood, though perhaps against orders, did engage in violence against the government, and its founder Al-Banna was assassinated in 1949 in retaliation for the assassination of Egypt's premier Mahmud Fami Naqrashi three months earlier.",
+      "start": 25,
+      "end": 285,
+      "similarity": 0.0007022791845078755,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "The Brotherhood has suffered periodic repression in Egypt and has been banned several times, in 1948 and several years later following confrontations with Egyptian president Gamal Abdul Nasser, who jailed thousands of members for several years.",
+      "start": 286,
+      "end": 530,
+      "similarity": 0.017352724121319267,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "After al-Nimeiry was overthrown in 1985 the party did poorly in national elections, but in 1989 it was able to overthrow the elected post-al-Nimeiry government with the help of the military.",
+      "start": 545,
+      "end": 735,
+      "similarity": -0.019533860419305688,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "Turabi was noted for proclaiming his support for the democratic process and a liberal government before coming to power, but strict application of sharia law, torture and mass imprisonment of the opposition, and an intensification of the long-running war in southern Sudan, once in power.",
+      "start": 736,
+      "end": 1024,
+      "similarity": 0.05366169829070408,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.",
+      "start": 1025,
+      "end": 1188,
+      "similarity": 0.057660959406601965,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "start": 1221,
+      "end": 1321,
+      "similarity": 0.23930928987308517,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "This approval authority applies only to standard shelf indexes at Tiravel Library.",
+      "start": 1322,
+      "end": 1404,
+      "similarity": 0.16699941778488464,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1405,
+      "end": 1461,
+      "similarity": 0.04788010367312206,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "Following the Nice Treaty, there was an attempt to reform the constitutional law of the European Union and make it more transparent; this would have also produced a single constitutional document.",
+      "start": 35,
+      "end": 231,
+      "similarity": 0.03147795410011526,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "However, as a result of the referendum in France and the referendum in the Netherlands, the 2004 Treaty establishing a Constitution for Europe never came into force.",
+      "start": 232,
+      "end": 397,
+      "similarity": 0.0008979984957959065,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "Instead, the Lisbon Treaty was enacted.",
+      "start": 398,
+      "end": 437,
+      "similarity": 0.16492162785068037,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "Its substance was very similar to the proposed constitutional treaty, but it was formally an amending treaty, and – though it significantly altered the existing treaties – it did not completely replace them.",
+      "start": 438,
+      "end": 645,
+      "similarity": 0.10451087391322432,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "None of the original treaties establishing the European Union mention protection for fundamental rights.",
+      "start": 660,
+      "end": 764,
+      "similarity": 0.012154797456641374,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "It was not envisaged for European Union measures, that is legislative and administrative actions by European Union institutions, to be subject to human rights.",
+      "start": 765,
+      "end": 924,
+      "similarity": 0.00152519680923981,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "At the time the only concern was that member states should be prevented from violating human rights, hence the establishment of the European Convention on Human Rights in 1950 and the establishment of the European Court of Human Rights.",
+      "start": 925,
+      "end": 1161,
+      "similarity": 0.059051014894233846,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "The European Court of Justice recognised fundamental rights as general principle of European Union law as the need to ensure that European Union measures are compatible with the human rights enshrined in member states' constitution became ever more apparent.",
+      "start": 1162,
+      "end": 1420,
+      "similarity": 0.022311965092194883,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "In 1999 the European Council set up a body tasked with drafting a European Charter of Human Rights, which could form the constitutional basis for the European Union and as such tailored specifically to apply to the European Union and its institutions.",
+      "start": 1421,
+      "end": 1672,
+      "similarity": -0.007867962634122368,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "The Charter of Fundamental Rights of the European Union draws a list of fundamental rights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.",
+      "start": 1673,
+      "end": 1945,
+      "similarity": 0.02943588256784039,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "start": 1978,
+      "end": 2073,
+      "similarity": 0.6030257364125075,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "start": 2074,
+      "end": 2154,
+      "similarity": 0.4655256347952103,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2155,
+      "end": 2211,
+      "similarity": 0.04788010367312206,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Various princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan.",
+      "start": 24,
+      "end": 125,
+      "similarity": 0.06708593967031862,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+      "start": 126,
+      "end": 233,
+      "similarity": 0.11812607997775022,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard.",
+      "start": 234,
+      "end": 407,
+      "similarity": -0.0040280985202070085,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "But Isaac changed his mind and tried to escape.",
+      "start": 408,
+      "end": 455,
+      "similarity": 0.07032078472427424,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan.",
+      "start": 456,
+      "end": 548,
+      "similarity": 0.022967472104995744,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons.",
+      "start": 549,
+      "end": 670,
+      "similarity": 0.03793048347963234,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "By 1 June, Richard had conquered the whole island.",
+      "start": 671,
+      "end": 721,
+      "similarity": 0.012806845983820455,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "His exploit was well publicized and contributed to his reputation; he also derived significant financial gains from the conquest of the island.",
+      "start": 722,
+      "end": 865,
+      "similarity": 0.06826906650382127,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Richard left for Acre on 5 June, with his allies.",
+      "start": 866,
+      "end": 915,
+      "similarity": 0.046072008923495444,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Before his departure, he named two of his Norman generals, Richard de Camville and Robert de Thornham, as governors of Cyprus.",
+      "start": 916,
+      "end": 1042,
+      "similarity": 0.023369445082143527,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France.",
+      "start": 1057,
+      "end": 1223,
+      "similarity": 0.023564480370121963,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "They were descended from Norse (\"Norman\" comes from \"Norseman\") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia.",
+      "start": 1224,
+      "end": 1431,
+      "similarity": 0.06773917378673677,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia.",
+      "start": 1432,
+      "end": 1627,
+      "similarity": -0.07596577481282887,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.",
+      "start": 1628,
+      "end": 1799,
+      "similarity": -0.06283510017876852,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "start": 1832,
+      "end": 1931,
+      "similarity": 0.28662367466381083,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "This approval authority applies only to standard display cards at Fenora Gallery.",
+      "start": 1932,
+      "end": 2013,
+      "similarity": 0.1864808185447117,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2014,
+      "end": 2070,
+      "similarity": 0.04788010367312206,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v15 scope binding",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_European_Union_law.md",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1978,
+            "cosine": 0.6030257364125075,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_European_Union_law.md",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_European_Union_law.md",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "asteroid",
+            "dock",
+            "warrant"
+          ],
+          "site": [
+            "calorin",
+            "pier"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v15 scope binding",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_European_Union_law.md",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1978,
+            "cosine": 0.6030257364125075,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_European_Union_law.md",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_European_Union_law.md",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "asteroid",
+            "dock",
+            "warrant"
+          ],
+          "site": [
+            "calorin",
+            "pier"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b366efc5-ad66-4889-a719-c87505defd92:1964",
+          "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+          "filename": "03_European_Union_law.md",
+          "excerpt": "ights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+          "score": 0.0476,
+          "lexicalScore": 6.933916408544474,
+          "semanticScore": 0.551939853243928,
+          "matchedTerms": [
+            "fictional",
+            "calorin",
+            "pier"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_European_Union_law.md",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1978,
+            "cosine": 0.6030257364125075,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_European_Union_law.md",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b366efc5-ad66-4889-a719-c87505defd92:1947",
+          "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+          "filename": "03_European_Union_law.md",
+          "excerpt": "ights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+          "score": 0.0476,
+          "lexicalScore": 10.14089598516194,
+          "semanticScore": 0.563326066269923,
+          "matchedTerms": [
+            "fictional",
+            "calorin",
+            "pier"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_European_Union_law.md",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1978,
+            "cosine": 0.6030257364125075,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_European_Union_law.md",
+          "quote": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.050936587154865265,
+    -0.023967823013663292,
+    0.0323432981967926,
+    -0.04141891747713089,
+    0.020854070782661438,
+    -0.07892949879169464,
+    0.021984370425343513,
+    -0.012839457020163536,
+    0.023837998509407043,
+    0.0524166077375412,
+    -0.009284911677241325,
+    0.0026447048876434565,
+    -0.00241302652284503,
+    -0.011526936665177345,
+    -0.03723599389195442,
+    -0.03139464557170868,
+    0.0541803203523159,
+    -0.08490753918886185,
+    0.08969569206237793,
+    0.13330118358135223,
+    -0.011931332759559155,
+    0.029539579525589943,
+    0.012825687415897846,
+    0.0036297710612416267,
+    -0.1032562181353569,
+    0.016107603907585144,
+    0.005892075132578611,
+    0.015524192713201046,
+    -0.07789716869592667,
+    -0.034252822399139404,
+    -0.05274643376469612,
+    0.08771763741970062,
+    -0.025927502661943436,
+    -0.06048223003745079,
+    0.08098844438791275,
+    0.02710636518895626,
+    -0.010781971737742424,
+    -0.06945057213306427,
+    -0.06446459144353867,
+    -0.06507355719804764,
+    -0.021220270544290543,
+    -0.037234608083963394,
+    0.0822119265794754,
+    0.05015235394239426,
+    -0.052683182060718536,
+    -0.0637422502040863,
+    0.004547886550426483,
+    -0.06444871425628662,
+    0.04486211761832237,
+    0.06916569173336029,
+    -0.009167303331196308,
+    -0.019907904788851738,
+    0.032560091465711594,
+    -0.029722608625888824,
+    0.0041061160154640675,
+    0.009219875559210777,
+    0.01734987646341324,
+    -0.027579784393310547,
+    0.06865518540143967,
+    -0.03604819253087044,
+    0.08653269708156586,
+    -0.005233790725469589,
+    -0.06234400346875191,
+    -0.028024140745401382,
+    0.07670792192220688,
+    -0.014959592372179031,
+    -0.06571149080991745,
+    -0.025246458128094673,
+    0.04953404888510704,
+    -0.0201761145144701,
+    0.04758412018418312,
+    0.062313541769981384,
+    0.07984104007482529,
+    -0.03474492207169533,
+    0.007358402945101261,
+    -0.04555066302418709,
+    0.00737168500199914,
+    0.02101680263876915,
+    0.04292350262403488,
+    -0.054244011640548706,
+    -0.06658949702978134,
+    -0.05764948949217796,
+    0.022650420665740967,
+    -0.05743090808391571,
+    0.00799032673239708,
+    0.0796872153878212,
+    -0.005936445202678442,
+    0.01591978594660759,
+    0.040764085948467255,
+    -0.020292581990361214,
+    0.005531784147024155,
+    -0.016703367233276367,
+    -0.04633026942610741,
+    -0.06450284272432327,
+    -0.06266369670629501,
+    -0.02899513766169548,
+    -0.05016870051622391,
+    0.01535035576671362,
+    -0.0906515121459961,
+    0.044037893414497375,
+    0.05390819534659386,
+    0.09868355095386505,
+    -0.045109931379556656,
+    -0.03231997415423393,
+    0.0744871273636818,
+    -0.012965216301381588,
+    -0.031636450439691544,
+    -0.012368615716695786,
+    -0.06149953231215477,
+    0.03721867874264717,
+    0.04792042449116707,
+    0.021866369992494583,
+    0.027569111436605453,
+    0.06661202758550644,
+    -0.034602291882038116,
+    0.12053073197603226,
+    -0.014362627640366554,
+    -0.007743549067527056,
+    -0.006570061668753624,
+    -0.05570267140865326,
+    0.010592683218419552,
+    0.03631991893053055,
+    0.0326378270983696,
+    0.051751937717199326,
+    -0.024040307849645615,
+    -0.027165206149220467,
+    -0.11667978763580322,
+    -4.40374530293592e-33,
+    0.041006188839673996,
+    0.07333535701036453,
+    -0.023491302505135536,
+    -0.06088161841034889,
+    0.11231622099876404,
+    -0.021617181599140167,
+    -0.09960050880908966,
+    0.04138737544417381,
+    0.01405053585767746,
+    -0.003619653172791004,
+    -0.025578079745173454,
+    -0.03923286497592926,
+    -0.009671728126704693,
+    -0.03754451125860214,
+    0.002601752057671547,
+    -0.010129825212061405,
+    -0.03406486287713051,
+    0.04721776023507118,
+    -0.06911066919565201,
+    -0.06043185666203499,
+    0.014602907001972198,
+    -0.02535703033208847,
+    -0.06828578561544418,
+    -0.01079767569899559,
+    -0.033566392958164215,
+    0.1393173336982727,
+    -0.054733701050281525,
+    0.07594723254442215,
+    0.04960447549819946,
+    0.07759666442871094,
+    0.008280979469418526,
+    -0.010686514899134636,
+    -0.0006314297206699848,
+    0.025093555450439453,
+    0.05726024508476257,
+    -0.007641374599188566,
+    -0.0045773666352033615,
+    -0.03099033050239086,
+    -0.12295130640268326,
+    0.049521200358867645,
+    -0.017842691391706467,
+    -0.014523934572935104,
+    -0.06148489937186241,
+    0.061080481857061386,
+    0.026816383004188538,
+    -0.04277864843606949,
+    0.11535713076591492,
+    -0.003617659443989396,
+    0.0670682042837143,
+    0.012550679966807365,
+    0.04513763263821602,
+    -0.02473142184317112,
+    -0.09430096298456192,
+    0.04254589229822159,
+    -0.029115822166204453,
+    -0.04401664063334465,
+    -0.031960245221853256,
+    -0.0639270544052124,
+    -0.017272811383008957,
+    -0.007891126908361912,
+    0.01126896869391203,
+    0.025211814790964127,
+    -0.010455670766532421,
+    0.031217914074659348,
+    -0.026566993445158005,
+    0.10915248841047287,
+    0.04798060655593872,
+    0.004841553512960672,
+    0.02001558430492878,
+    0.007758175954222679,
+    -0.021419303491711617,
+    -0.013248528353869915,
+    0.024946250021457672,
+    0.07051607966423035,
+    -0.11580488085746765,
+    0.033073000609874725,
+    0.022350868210196495,
+    0.02590499445796013,
+    0.06973003596067429,
+    0.04703211784362793,
+    -0.039592280983924866,
+    -0.023955155164003372,
+    0.05116308480501175,
+    0.03822461515665054,
+    -0.05681883916258812,
+    -0.10380561649799347,
+    0.04526279866695404,
+    0.022506611421704292,
+    -0.015508330427110195,
+    -0.03879883885383606,
+    0.0229335967451334,
+    -0.024896003305912018,
+    0.03769540414214134,
+    -0.04823555797338486,
+    -0.16567225754261017,
+    1.6494575301646725e-33,
+    -0.043965861201286316,
+    -0.05508823320269585,
+    -0.034620027989149094,
+    -0.056846003979444504,
+    -0.04301156476140022,
+    0.007235937286168337,
+    -0.05534224212169647,
+    -0.08449580520391464,
+    0.04466572776436806,
+    -0.09735332429409027,
+    -0.13096627593040466,
+    0.06596174836158752,
+    0.021991252899169922,
+    -0.023449620231986046,
+    0.058188602328300476,
+    0.07256492972373962,
+    0.09951174259185791,
+    -0.06017381697893143,
+    -0.01618478260934353,
+    -0.03925411030650139,
+    0.08180607110261917,
+    -0.03388277441263199,
+    0.022477762773633003,
+    0.044786036014556885,
+    0.0020714004058390856,
+    0.0019371940288692713,
+    0.1410660594701767,
+    -0.08543643355369568,
+    -0.0651034414768219,
+    0.016074933111667633,
+    -0.045692358165979385,
+    0.009373770095407963,
+    -0.04206115007400513,
+    0.008427383378148079,
+    0.0002837371139321476,
+    0.06724340468645096,
+    0.011997580528259277,
+    0.0567048117518425,
+    -0.01939515583217144,
+    0.008442811667919159,
+    0.01062970981001854,
+    -0.003536585718393326,
+    -0.04103134945034981,
+    0.10106045007705688,
+    -0.05345091223716736,
+    -0.0955454632639885,
+    0.019695227965712547,
+    0.05365798994898796,
+    -0.022122107446193695,
+    0.046919215470552444,
+    -0.06589002162218094,
+    -0.02844054438173771,
+    0.03663152828812599,
+    -0.08968004584312439,
+    -0.0597749762237072,
+    0.01824609562754631,
+    -0.012703725136816502,
+    0.02167084440588951,
+    -0.03253951668739319,
+    0.0786968469619751,
+    0.07166220992803574,
+    0.03294725716114044,
+    -0.02183825522661209,
+    0.08769775182008743,
+    0.03818642348051071,
+    0.054449837654829025,
+    -0.033230219036340714,
+    0.010398879647254944,
+    -0.07979551702737808,
+    0.05246193706989288,
+    0.10352662205696106,
+    -0.07740544527769089,
+    -0.08932704478502274,
+    0.06438332051038742,
+    0.036577653139829636,
+    -0.0008329593110829592,
+    0.05242951214313507,
+    -0.011408394202589989,
+    -0.005831193178892136,
+    0.008240263909101486,
+    -0.03940559923648834,
+    -0.003898754483088851,
+    0.05150093138217926,
+    0.011512406170368195,
+    0.038735281676054,
+    0.011215453036129475,
+    -0.032502494752407074,
+    -0.057270314544439316,
+    0.02361867018043995,
+    0.04136596620082855,
+    -0.0037307115271687508,
+    -0.04974314942955971,
+    -0.048877861350774765,
+    -0.039275869727134705,
+    -0.0344749353826046,
+    -1.7762769033424775e-8,
+    0.10367462038993835,
+    0.052632253617048264,
+    0.0053969090804457664,
+    -0.02556772530078888,
+    -0.009508614428341389,
+    0.006103063002228737,
+    -0.044747721403837204,
+    0.07865096628665924,
+    -0.04410877823829651,
+    0.014391818083822727,
+    0.014582592062652111,
+    0.005423214752227068,
+    -0.04931187629699707,
+    0.004342787433415651,
+    0.06725691258907318,
+    0.06130490452051163,
+    0.03798756003379822,
+    -0.04890745133161545,
+    -0.15882302820682526,
+    -0.04203491657972336,
+    -0.0018234694143757224,
+    0.03617009520530701,
+    0.08084855228662491,
+    -0.08686777204275131,
+    -0.03378676250576973,
+    0.052992016077041626,
+    -0.01907046139240265,
+    -0.003574412316083908,
+    0.006840226706117392,
+    0.05145394429564476,
+    0.0002053333300864324,
+    -0.016326460987329483,
+    -0.10110864788293839,
+    0.002147586550563574,
+    0.023301810026168823,
+    0.0538448728621006,
+    0.04884488880634308,
+    -0.0027654485311359167,
+    0.004713548347353935,
+    0.03921453654766083,
+    -0.014021997340023518,
+    0.04826446250081062,
+    -0.039703674614429474,
+    0.04593071714043617,
+    0.05838332325220108,
+    0.06838991492986679,
+    0.04585763439536095,
+    -0.029209012165665627,
+    0.029181428253650665,
+    0.006643783766776323,
+    -0.011716530658304691,
+    0.024962255731225014,
+    0.015078381635248661,
+    0.001787438872270286,
+    -0.0245986171066761,
+    0.09659955650568008,
+    0.01208682730793953,
+    0.010428173467516899,
+    0.005694664549082518,
+    0.02522062510251999,
+    0.040980659425258636,
+    0.03528102859854698,
+    0.024399204179644585,
+    0.014511413872241974
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_European_Union_law.md",
+        "start": 1964,
+        "content": "oval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "03_European_Union_law.md",
+        "start": 1310,
+        "content": "sures are compatible with the human rights enshrined in member states' constitution became ever more apparent. In 1999 the European Council set up a body tasked with drafting a European Charter of Human Rights, which could form the constitutional basis for the European Union and as such tailored specifically to apply to the European Union and its institutions. The Charter of Fundamental Rights of the European Union draws a list of fundamental rights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel"
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_European_Union_law.md",
+        "start": 1947,
+        "content": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+      }
+    ]
+  }
+}

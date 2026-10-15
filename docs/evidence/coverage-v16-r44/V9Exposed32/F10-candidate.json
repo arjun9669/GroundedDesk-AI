@@ -1,0 +1,1162 @@
+{
+  "candidate_identity": "coverage-v16-literal-body-recovery",
+  "id": "F10",
+  "question": "How much did enrollment increase?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How much did enrollment increase?",
+    "expected_display": "How much did enrollment increase?",
+    "rendered_question": "How much did enrollment increase?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+    "sources": [
+      {
+        "filename": "02_Kenya.md",
+        "excerpt": "Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+        "quote": "Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow much did enrollment increase?\n\nSearched all files: 01_Amazon_rainforest.md · 02_Kenya.md · 03_Super_Bowl_50.md · 04_Civil_disobedience.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.\n\nSOURCE EVIDENCE\n[1]\n02_Kenya.md\n\nText line 7 (normalized extraction)\n\nSecondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "34586abe-2ccf-4dee-892d-f74f03c2eb6b:1310",
+        "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+        "filename": "02_Kenya.md",
+        "excerpt": "Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+        "quote": "Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+        "score": 0.0262,
+        "lexicalScore": null,
+        "semanticScore": 0.5601234241277467,
+        "matchedTerms": []
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "34586abe-2ccf-4dee-892d-f74f03c2eb6b:1310",
+        "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+        "filename": "02_Kenya.md",
+        "excerpt": "cture would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+        "quote": "As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+        "score": 0.0262,
+        "lexicalScore": null,
+        "semanticScore": 0.5601234241277467,
+        "matchedTerms": [],
+        "start": 1200,
+        "end": 1551
+      }
+    ],
+    "mode": "Experimental v16 literal body recovery",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V16 isolated literal body recovery; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Kenya.md",
+        "quote": "As a result, primary school enrolment increased by about 70%.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Bounded actual MiniLM sentence/slot gain",
+        "selected": {
+          "start": 1200,
+          "cosine": 0.5581869058003766,
+          "slot_supported": true,
+          "lexical_matches": 1
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Kenya.md",
+        "quote": "As a result, primary school enrolment increased by about 70%.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Kenya.md",
+        "quote": "As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+        "reason": "Forward-priority literal narrative window"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "34586abe-2ccf-4dee-892d-f74f03c2eb6b:833",
+        "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+        "filename": "02_Kenya.md",
+        "excerpt": "cture would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+        "quote": "As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+        "score": 0.0262,
+        "lexicalScore": null,
+        "semanticScore": 0.40749326904740296,
+        "matchedTerms": [],
+        "start": 1200,
+        "end": 1551
+      }
+    ],
+    "mode": "Experimental v16 literal body recovery",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V16 isolated literal body recovery; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Kenya.md",
+        "quote": "As a result, primary school enrolment increased by about 70%.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1200,
+          "cosine": 0.5581869058003766,
+          "slot_supported": true,
+          "lexical_matches": 1
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Kenya.md",
+        "quote": "As a result, primary school enrolment increased by about 70%.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Kenya.md",
+        "quote": "As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+        "reason": "Forward-priority literal narrative window"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Kenya.md",
+      "start": 1200,
+      "content": "As a result, primary school enrolment increased by about 70%.",
+      "semanticScore": 0.5581869058003766,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Kenya.md",
+      "start": 1388,
+      "content": "In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+      "semanticScore": 0.44886941870381347,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Kenya.md",
+      "start": 1262,
+      "content": "Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+      "semanticScore": 0.41454170704107857,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "The rainforest contains several species that can pose a hazard.",
+      "start": 34,
+      "end": 97,
+      "similarity": -0.1285697007987253,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "Among the largest predatory creatures are the black caiman, jaguar, cougar, and anaconda.",
+      "start": 98,
+      "end": 187,
+      "similarity": 0.005663511909810528,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "In the river, electric eels can produce an electric shock that can stun or kill, while piranha are known to bite and injure humans.",
+      "start": 188,
+      "end": 319,
+      "similarity": -0.1057634889228625,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "Various species of poison dart frogs secrete lipophilic alkaloid toxins through their flesh.",
+      "start": 320,
+      "end": 412,
+      "similarity": -0.07427404569721688,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "There are also numerous parasites and disease vectors.",
+      "start": 413,
+      "end": 467,
+      "similarity": 0.031838459891815336,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "Vampire bats dwell in the rainforest and can spread the rabies virus.",
+      "start": 468,
+      "end": 537,
+      "similarity": -0.01184947198196872,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "Malaria, yellow fever and Dengue fever can also be contracted in the Amazon region.",
+      "start": 538,
+      "end": 621,
+      "similarity": -0.034369884608401,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "The region is home to about 2.5 million insect species, tens of thousands of plants, and some 2,000 birds and mammals.",
+      "start": 636,
+      "end": 754,
+      "similarity": 0.11057907579195865,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "To date, at least 40,000 plant species, 2,200 fishes, 1,294 birds, 427 mammals, 428 amphibians, and 378 reptiles have been scientifically classified in the region.",
+      "start": 755,
+      "end": 918,
+      "similarity": 0.049238581500114086,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "One in five of all the bird species in the world live in the rainforests of the Amazon, and one in five of the fish species live in Amazonian rivers and streams.",
+      "start": 919,
+      "end": 1080,
+      "similarity": -0.09288874283882133,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "96a008ef-ed22-4633-b865-00eddeeea0bd",
+      "value": "Scientists have described between 96,660 and 128,843 invertebrate species in Brazil alone.",
+      "start": 1081,
+      "end": 1171,
+      "similarity": 0.06154394540637983,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "The largest share of Kenya's electricity supply comes from hydroelectric stations at dams along the upper Tana River, as well as the Turkwel Gorge Dam in the west.",
+      "start": 22,
+      "end": 185,
+      "similarity": -0.006091965871193108,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "A petroleum-fired plant on the coast, geothermal facilities at Olkaria (near Nairobi), and electricity imported from Uganda make up the rest of the supply.",
+      "start": 186,
+      "end": 341,
+      "similarity": 0.0240521279285759,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "Kenya's installed capacity stood at 1,142 megawatts between 2001 and 2003.",
+      "start": 342,
+      "end": 416,
+      "similarity": 0.13888892061159833,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "The state-owned Kenya Electricity Generating Company (KenGen), established in 1997 under the name of Kenya Power Company, handles the generation of electricity, while Kenya Power handles the electricity transmission and distribution system in the country.",
+      "start": 417,
+      "end": 672,
+      "similarity": -0.020919843526784068,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "Shortfalls of electricity occur periodically, when drought reduces water flow.",
+      "start": 673,
+      "end": 751,
+      "similarity": 0.029041775501251168,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "To become energy sufficient, Kenya aims to build a nuclear power plant by 2017.",
+      "start": 752,
+      "end": 831,
+      "similarity": -0.016065011735515118,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "The current 8–4–4 system was launched in January 1985.",
+      "start": 846,
+      "end": 900,
+      "similarity": 0.2454621801404661,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector.",
+      "start": 901,
+      "end": 1104,
+      "similarity": 0.2600387115355253,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "In January 2003, the Government of Kenya announced the introduction of free primary education.",
+      "start": 1105,
+      "end": 1199,
+      "similarity": 0.3160847443241373,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "As a result, primary school enrolment increased by about 70%.",
+      "start": 1200,
+      "end": 1261,
+      "similarity": 0.5581869058003766,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance.",
+      "start": 1262,
+      "end": 1387,
+      "similarity": 0.41454170704107857,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+      "value": "In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+      "start": 1388,
+      "end": 1551,
+      "similarity": 0.44886941870381347,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fea9d7a8-14e6-4e9e-b580-95190d928fc8",
+      "value": "After each team punted, Panthers quarterback Cam Newton appeared to complete a 24-yard pass Jerricho Cotchery, but the call was ruled an incompletion and upheld after a replay challenge.",
+      "start": 30,
+      "end": 216,
+      "similarity": 0.04272956259571949,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fea9d7a8-14e6-4e9e-b580-95190d928fc8",
+      "value": "CBS analyst and retired referee Mike Carey stated he disagreed with the call and felt the review clearly showed the pass was complete.",
+      "start": 217,
+      "end": 351,
+      "similarity": -0.005488961203234607,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fea9d7a8-14e6-4e9e-b580-95190d928fc8",
+      "value": "A few plays later, on 3rd-and-10 from the 15-yard line, linebacker Von Miller knocked the ball out of Newton's hands while sacking him, and Malik Jackson recovered it in the end zone for a Broncos touchdown, giving the team a 10–0 lead.",
+      "start": 352,
+      "end": 588,
+      "similarity": -0.0010670423797879637,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fea9d7a8-14e6-4e9e-b580-95190d928fc8",
+      "value": "This was the first fumble return touchdown in a Super Bowl since Super Bowl XXVIII at the end of the 1993 season.",
+      "start": 589,
+      "end": 702,
+      "similarity": 0.08171588724156298,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fea9d7a8-14e6-4e9e-b580-95190d928fc8",
+      "value": "After a punt from both teams, Carolina got on track with a 9-play, 73-yard scoring drive.",
+      "start": 717,
+      "end": 806,
+      "similarity": 0.11259306630135922,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fea9d7a8-14e6-4e9e-b580-95190d928fc8",
+      "value": "Newton completed 4 of 4 passes for 51 yards and rushed twice for 25 yards, while Jonathan Stewart finished the drive with a 1-yard touchdown run, cutting the score to 10–7 with 11:28 left in the second quarter.",
+      "start": 807,
+      "end": 1017,
+      "similarity": 0.02038064870552507,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fea9d7a8-14e6-4e9e-b580-95190d928fc8",
+      "value": "Later on, Broncos receiver Jordan Norwood received Brad Nortman's short 28-yard punt surrounded by Panthers players, but none of them attempted to make a tackle, apparently thinking Norwood had called a fair catch.",
+      "start": 1018,
+      "end": 1232,
+      "similarity": 0.0204728149918763,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fea9d7a8-14e6-4e9e-b580-95190d928fc8",
+      "value": "Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line.",
+      "start": 1233,
+      "end": 1411,
+      "similarity": 0.03358115423232847,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fea9d7a8-14e6-4e9e-b580-95190d928fc8",
+      "value": "Despite Denver's excellent field position, they could not get the ball into the end zone, so McManus kicked a 33-yard field goal that increased their lead to 13–7.",
+      "start": 1412,
+      "end": 1575,
+      "similarity": 0.11299686046775319,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "Along with giving the offender his \"just deserts\", achieving crime control via incapacitation and deterrence is a major goal of criminal punishment.",
+      "start": 35,
+      "end": 183,
+      "similarity": -0.021148876928658814,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "Brownlee argues, \"Bringing in deterrence at the level of justification detracts from the law’s engagement in a moral dialogue with the offender as a rational person because it focuses attention on the threat of punishment and not the moral reasons to follow this law.\"",
+      "start": 184,
+      "end": 452,
+      "similarity": 0.00032193666296747464,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "Leonard Hubert Hoffmann writes, \"In deciding whether or not to impose punishment, the most important consideration would be whether it would do more harm than good.",
+      "start": 453,
+      "end": 617,
+      "similarity": 0.027330198080883137,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "This means that the objector has no right not to be punished.",
+      "start": 618,
+      "end": 679,
+      "similarity": -0.10543161226706807,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "It is a matter for the state (including the judges) to decide on utilitarian grounds whether to do so or not.\"",
+      "start": 680,
+      "end": 790,
+      "similarity": 0.039257627960465405,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "Steven Barkan writes that if defendants plead not guilty, \"they must decide whether their primary goal will be to win an acquittal and avoid imprisonment or a fine, or to use the proceedings as a forum to inform the jury and the public of the political circumstances surrounding the case and their reasons for breaking the law via civil disobedience.\"",
+      "start": 805,
+      "end": 1156,
+      "similarity": -0.0997541610925935,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "A technical defense may enhance the chances for acquittal but make for more boring proceedings and reduced press coverage.",
+      "start": 1157,
+      "end": 1279,
+      "similarity": -0.02545916136044823,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "During the Vietnam War era, the Chicago Eight used a political defense, while Benjamin Spock used a technical defense.",
+      "start": 1280,
+      "end": 1398,
+      "similarity": 0.059849002653990485,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "In countries such as the United States whose laws guarantee the right to a jury trial but do not excuse lawbreaking for political purposes, some civil disobedients seek jury nullification.",
+      "start": 1399,
+      "end": 1587,
+      "similarity": -0.09029995866236258,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "Over the years, this has been made more difficult by court decisions such as Sparf v.",
+      "start": 1588,
+      "end": 1673,
+      "similarity": 0.09983802116649368,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "United States, which held that the judge need not inform jurors of their nullification prerogative, and United States v.",
+      "start": 1674,
+      "end": 1794,
+      "similarity": -0.04542073342256116,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2313b0af-65fb-44cb-8aff-9961849f9d63",
+      "value": "Dougherty, which held that the judge need not allow defendants to openly seek jury nullification.",
+      "start": 1795,
+      "end": 1892,
+      "similarity": -0.034229184509685505,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "34586abe-2ccf-4dee-892d-f74f03c2eb6b:1310",
+          "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+          "filename": "02_Kenya.md",
+          "excerpt": "cture would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+          "quote": "As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+          "score": 0.0262,
+          "lexicalScore": null,
+          "semanticScore": 0.5601234241277467,
+          "matchedTerms": []
+        }
+      ],
+      "mode": "Experimental v15 scope binding",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "As a result, primary school enrolment increased by about 70%.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 1200,
+            "cosine": 0.5581869058003766,
+            "slot_supported": true,
+            "lexical_matches": 1
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kenya.md",
+          "quote": "As a result, primary school enrolment increased by about 70%.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+          "reason": "Forward-priority literal narrative window"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "34586abe-2ccf-4dee-892d-f74f03c2eb6b:833",
+          "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+          "filename": "02_Kenya.md",
+          "excerpt": "cture would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+          "quote": "As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+          "score": 0.0262,
+          "lexicalScore": null,
+          "semanticScore": 0.40749326904740296,
+          "matchedTerms": []
+        }
+      ],
+      "mode": "Experimental v15 scope binding",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "As a result, primary school enrolment increased by about 70%.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1200,
+            "cosine": 0.5581869058003766,
+            "slot_supported": true,
+            "lexical_matches": 1
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kenya.md",
+          "quote": "As a result, primary school enrolment increased by about 70%.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees.",
+          "reason": "Forward-priority literal narrative window"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] As a result, primary school enrolment increased by about 70%.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "34586abe-2ccf-4dee-892d-f74f03c2eb6b:1310",
+          "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+          "filename": "02_Kenya.md",
+          "excerpt": "cture would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tui",
+          "quote": "As a result, primary school enrolment increased by about 70%.",
+          "score": 0.0262,
+          "lexicalScore": null,
+          "semanticScore": 0.5601234241277467,
+          "matchedTerms": []
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "As a result, primary school enrolment increased by about 70%.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 1200,
+            "cosine": 0.5581869058003766,
+            "slot_supported": true,
+            "lexical_matches": 1
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kenya.md",
+          "quote": "As a result, primary school enrolment increased by about 70%.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] As a result, primary school enrolment increased by about 70%.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "34586abe-2ccf-4dee-892d-f74f03c2eb6b:833",
+          "documentId": "34586abe-2ccf-4dee-892d-f74f03c2eb6b",
+          "filename": "02_Kenya.md",
+          "excerpt": "cture would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tui",
+          "quote": "As a result, primary school enrolment increased by about 70%.",
+          "score": 0.0262,
+          "lexicalScore": null,
+          "semanticScore": 0.40749326904740296,
+          "matchedTerms": []
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kenya.md",
+          "quote": "As a result, primary school enrolment increased by about 70%.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1200,
+            "cosine": 0.5581869058003766,
+            "slot_supported": true,
+            "lexical_matches": 1
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kenya.md",
+          "quote": "As a result, primary school enrolment increased by about 70%.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.07119940221309662,
+    -0.020345404744148254,
+    0.03443938493728638,
+    0.0370853990316391,
+    0.007795465178787708,
+    -0.008226771838963032,
+    -0.09194736927747726,
+    0.05561388283967972,
+    -0.050100747495889664,
+    0.055516283959150314,
+    0.060118090361356735,
+    0.07081367075443268,
+    0.04092727601528168,
+    -0.08263938874006271,
+    0.053967997431755066,
+    0.0030026021413505077,
+    0.016271108761429787,
+    -0.08187531679868698,
+    -0.03867029398679733,
+    -0.039501022547483444,
+    -0.06644667685031891,
+    -0.05417132005095482,
+    0.02104991115629673,
+    0.050407774746418,
+    0.13229045271873474,
+    0.01988826133310795,
+    0.02076798304915428,
+    -0.015010456554591656,
+    -0.004034791607409716,
+    0.024446969851851463,
+    -0.06080174446105957,
+    0.04718545824289322,
+    0.07085603475570679,
+    0.02269541099667549,
+    0.037014156579971313,
+    -0.08212525397539139,
+    0.08311222493648529,
+    0.012845726683735847,
+    -0.0842408761382103,
+    -0.0026369434781372547,
+    -0.024986276403069496,
+    -0.04739613085985184,
+    -0.069875068962574,
+    0.076546311378479,
+    0.004689930006861687,
+    0.023752961307764053,
+    -0.058688946068286896,
+    0.07837777584791183,
+    -0.002774810651317239,
+    0.08291973918676376,
+    -0.03021879494190216,
+    0.027855994179844856,
+    0.03448590636253357,
+    -0.030131690204143524,
+    0.021321840584278107,
+    0.008324818685650826,
+    -0.0044746701605618,
+    0.017153466120362282,
+    -0.020532306283712387,
+    0.03260786831378937,
+    -0.06869548559188843,
+    0.034777864813804626,
+    -0.04520124942064285,
+    0.03014359250664711,
+    -0.05828796699643135,
+    -0.010125171393156052,
+    -0.05922766402363777,
+    -0.06833690404891968,
+    0.05643059313297272,
+    0.00841748621314764,
+    0.008486109785735607,
+    0.02775144763290882,
+    0.025683443993330002,
+    -0.027987269684672356,
+    0.057702481746673584,
+    -0.057827092707157135,
+    0.03531147539615631,
+    0.15237943828105927,
+    0.15183906257152557,
+    -0.06003016605973244,
+    0.02912619151175022,
+    -0.044012293219566345,
+    -0.0596935898065567,
+    0.018347585573792458,
+    0.034283287823200226,
+    -0.03511275723576546,
+    0.023955579847097397,
+    -0.0012133303098380566,
+    -0.04779168590903282,
+    -0.041233062744140625,
+    0.08334138989448547,
+    0.017339589074254036,
+    -0.03780321031808853,
+    0.025662468746304512,
+    -0.059342607855796814,
+    0.008263166062533855,
+    -0.12020465731620789,
+    -0.08713380247354507,
+    0.06664052605628967,
+    0.09269119054079056,
+    -0.09473226219415665,
+    0.023711716756224632,
+    0.011322925798594952,
+    -0.02384938858449459,
+    -0.08498723804950714,
+    -0.04258977994322777,
+    -0.039222635328769684,
+    0.019323445856571198,
+    -0.010829648934304714,
+    0.042825326323509216,
+    -0.01429217029362917,
+    -0.04787295311689377,
+    0.0038707409985363483,
+    0.013592862524092197,
+    -0.02570853941142559,
+    0.013281856663525105,
+    0.07300366461277008,
+    0.002929521957412362,
+    0.04321777820587158,
+    0.055971939116716385,
+    0.04078876972198486,
+    0.04738181456923485,
+    -0.08161377906799316,
+    -0.031246189028024673,
+    -0.08551128208637238,
+    -0.02589915506541729,
+    -0.08507625013589859,
+    -4.1703542056580164e-33,
+    0.02867927774786949,
+    -0.012928071431815624,
+    0.029052311554551125,
+    0.036216095089912415,
+    -0.04487660899758339,
+    -0.08006326109170914,
+    0.014247472397983074,
+    0.010816124267876148,
+    -0.0023025739938020706,
+    -0.02624177187681198,
+    -0.02372674271464348,
+    0.05020633339881897,
+    0.05064820125699043,
+    0.012628808617591858,
+    0.0751589834690094,
+    -0.1262253373861313,
+    -0.11134384572505951,
+    0.07897444069385529,
+    0.009560025297105312,
+    0.09453192353248596,
+    -0.031681858003139496,
+    0.01775185763835907,
+    -0.02175404131412506,
+    0.006922352593392134,
+    -0.004395068623125553,
+    0.06058087944984436,
+    -0.018831156194210052,
+    -0.002743853023275733,
+    0.025694938376545906,
+    0.010039613582193851,
+    0.09142807871103287,
+    -0.08686204999685287,
+    -0.008800330571830273,
+    -0.09638236463069916,
+    0.0438293032348156,
+    0.0024202263448387384,
+    0.06252288818359375,
+    -0.06294013559818268,
+    -0.04198584333062172,
+    -0.02630401961505413,
+    0.001352609833702445,
+    0.0008262927876785398,
+    0.07774442434310913,
+    0.0136703597381711,
+    -0.021300820633769035,
+    0.10208195447921753,
+    -0.035067297518253326,
+    -0.0758923813700676,
+    0.029786616563796997,
+    -0.006738600321114063,
+    -0.036323025822639465,
+    0.0020051843021064997,
+    -0.07942306250333786,
+    -0.02831503003835678,
+    -0.0008102394640445709,
+    -0.025921346619725227,
+    -0.005994088016450405,
+    -0.017253395169973373,
+    0.022854045033454895,
+    -0.026514478027820587,
+    -0.04328040033578873,
+    -0.004342029336839914,
+    0.055591415613889694,
+    -0.010917735286056995,
+    -0.06162939965724945,
+    -0.011690960265696049,
+    -0.028475522994995117,
+    -0.020070096477866173,
+    0.005579976364970207,
+    0.035571757704019547,
+    0.002245335141196847,
+    -0.018396183848381042,
+    -0.0858168825507164,
+    -0.01811692863702774,
+    -0.05597807094454765,
+    0.014330263249576092,
+    -0.02476579137146473,
+    -0.04141779989004135,
+    0.038624219596385956,
+    0.028081795200705528,
+    0.05968552827835083,
+    -0.0423196479678154,
+    0.04238686338067055,
+    -0.032900214195251465,
+    0.06953798979520798,
+    0.048386432230472565,
+    -0.016839757561683655,
+    0.04273274540901184,
+    0.0449066236615181,
+    -0.041060011833906174,
+    -0.0041885701939463615,
+    -0.024079030379652977,
+    -0.003764390479773283,
+    0.046193744987249374,
+    0.04169314727187157,
+    1.5984710137107327e-33,
+    0.002254462568089366,
+    0.10794000327587128,
+    -0.005116314627230167,
+    0.006444175262004137,
+    0.011472134850919247,
+    -0.05495340749621391,
+    0.0935329869389534,
+    0.06674953550100327,
+    0.017258036881685257,
+    -0.036661699414253235,
+    0.03770587593317032,
+    0.035312019288539886,
+    0.09048373252153397,
+    0.07641977816820145,
+    -0.04320906475186348,
+    -0.01821953058242798,
+    0.021087896078824997,
+    -0.001160576124675572,
+    0.06190929561853409,
+    0.010216398164629936,
+    -0.05907594785094261,
+    0.010017024353146553,
+    0.01565208099782467,
+    0.02610776200890541,
+    0.037295930087566376,
+    -0.006758861243724823,
+    -0.016391953453421593,
+    0.09736253321170807,
+    0.016104063019156456,
+    -0.06463051587343216,
+    0.007702128496021032,
+    0.009528682567179203,
+    -0.043368492275476456,
+    0.09818997234106064,
+    0.03556801751255989,
+    0.018188973888754845,
+    0.004930442664772272,
+    0.0795576348900795,
+    -0.04669675603508949,
+    -0.03432708606123924,
+    0.07027288526296616,
+    -0.11867359280586243,
+    0.015100805088877678,
+    0.07961320132017136,
+    0.0761699303984642,
+    0.04870549961924553,
+    0.07295692712068558,
+    0.008000693283975124,
+    0.04512765631079674,
+    0.0011851283488795161,
+    -0.1130727082490921,
+    -0.04096374660730362,
+    0.0554848313331604,
+    0.029979275539517403,
+    0.05060354247689247,
+    -0.02253090590238571,
+    0.05820939689874649,
+    -0.057294003665447235,
+    -0.0298932995647192,
+    0.024498868733644485,
+    0.007572130765765905,
+    0.024304840713739395,
+    -0.10900718718767166,
+    0.0027428902685642242,
+    0.028952384367585182,
+    -0.012953354977071285,
+    -0.016725538298487663,
+    -0.09024962782859802,
+    -0.02992825396358967,
+    -0.03352861851453781,
+    0.04994167760014534,
+    -0.03025221638381481,
+    -0.0030626640655100346,
+    -0.02238120138645172,
+    -0.08393002301454544,
+    0.013231937773525715,
+    0.014777768403291702,
+    0.03409069404006004,
+    -0.039552994072437286,
+    0.053188711404800415,
+    -0.1230887770652771,
+    -0.013019388541579247,
+    -0.02421422488987446,
+    -0.043405406177043915,
+    -0.036917608231306076,
+    0.01293681189417839,
+    0.007336658891290426,
+    -0.05061175674200058,
+    -0.04724601283669472,
+    0.07465307414531708,
+    -0.05817641317844391,
+    -0.010085598565638065,
+    -0.024799663573503494,
+    -0.14066176116466522,
+    -0.03277377784252167,
+    -1.4707855378048862e-8,
+    0.022441795095801353,
+    0.05683256685733795,
+    -0.013211455196142197,
+    0.03201881796121597,
+    0.1335192322731018,
+    -0.02335173822939396,
+    -0.008952708914875984,
+    0.05533360689878464,
+    0.02240752801299095,
+    0.033359844237565994,
+    -0.015796348452568054,
+    0.05431734770536423,
+    0.012561282142996788,
+    -0.030254503712058067,
+    0.02338632568717003,
+    0.009636962786316872,
+    -0.04923027381300926,
+    0.05159801244735718,
+    -0.0012874032836407423,
+    -0.05831495672464371,
+    -0.0034205017145723104,
+    0.037934619933366776,
+    0.023207953199744225,
+    -0.0029062950052320957,
+    -0.03924543410539627,
+    0.08864080905914307,
+    -0.003959250636398792,
+    0.14939455687999725,
+    -0.035335998982191086,
+    -0.04810810834169388,
+    0.011441807262599468,
+    0.0004899027408100665,
+    -0.022025372833013535,
+    -0.09043251723051071,
+    0.006639090366661549,
+    -0.023394299671053886,
+    -0.12073350697755814,
+    0.009180706925690174,
+    0.07545381039381027,
+    -0.12189047783613205,
+    0.014514289796352386,
+    0.003586385864764452,
+    0.04287061467766762,
+    -0.0008505012956447899,
+    0.04513964056968689,
+    0.08443576842546463,
+    -0.1035282090306282,
+    0.03556869551539421,
+    0.024795398116111755,
+    -0.05168095603585243,
+    -0.006374616175889969,
+    0.022495709359645844,
+    -0.034046806395053864,
+    -0.010632287710905075,
+    0.021980009973049164,
+    -0.06306228786706924,
+    -0.0347895510494709,
+    -0.03835795819759369,
+    -0.047558337450027466,
+    -0.002436018781736493,
+    -0.025091946125030518,
+    -0.06643971055746078,
+    -0.0669243112206459,
+    0.0364806167781353
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Kenya.md",
+        "start": 1310,
+        "content": "ot increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Kenya.md",
+        "start": 833,
+        "content": "## Context 2\nThe current 8–4–4 system was launched in January 1985. It put more emphasis on vocational subjects on the assumption that the new structure would enable school drop-outs at all levels either to be self-employed or to secure employment in the informal sector. In January 2003, the Government of Kenya announced the introduction of free primary education. As a result, primary school enrolment increased by about 70%. Secondary and tertiary education enrolment has not increased proportionally because payment is still required for attendance. In 2007 the government issued a statement declaring that from 2008, secondary education would be heavily subsidiszed, with the government footing all tuition fees."
+      }
+    ]
+  }
+}

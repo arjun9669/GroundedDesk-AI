@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-15 — Literal-body recovery v16 (no runtime release)
+
+- Captured355 unchanged exposed cases once in installed headless Chrome with actual new MiniLM query/source vectors:331 Hybrid and24 separate lexical Comparison. Verified module identity,102 original input hashes and35 historical archive artifacts; all367 unit tests and strict offline checks pass.
+- Removed leading Markdown headings from literal body quotations and recovered the section country clause. Scope48 now scores47/0/1 in both variants, retaining its first43/0/5 and42/0/6 unchanged. All historical PASS cases and59 unsupported zero-citation refusals remain correct.
+- Budget F06 remains a false refusal: the proposed named-entity budget window reaches production preflight, which still declines the selected evidence. Development gate FAIL; no post-answer tuning, retries, fresh confirmation sampling or runtime adoption. Older public failures remain recorded; production stays r44.
+
 ## 2026-10-15 — Site-qualified routing v15 and Scope48 first result (no runtime release)
 
 - Restricted strict object/site binding to located source frames, restoring narrative F20/C04 without losing any historical PASS. All307 exposed regressions captured with verified v15 imports, actual new MiniLM queries/source vectors and Qwen disabled; regression gate PASS. All362 unit tests and strict offline checks pass.

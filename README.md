@@ -46,6 +46,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Benchmark capture reliability:** future runs preserve exact inputs, require fresh result nodes, and save partial answers/quotes/checkpoints/screenshots before failure closure. Validated in Chrome with Keyword and actual MiniLM; historical V9 F06 stays ungraded. Read-only diagnosis separates paragraph, ranking and coverage failures. Production stays r44. [Recovery tests and diagnosis](./docs/RUNNER_EVIDENCE_RECOVERY_R44.md).
 
+**Literal-body recovery experiment:** v16 captures all **355 exposed regressions** with actual MiniLM in installed headless Chrome. Scope48 improves to **47 PASS / 0 PARTIAL / 1 FAIL** in both chunking variants: the four heading-boundary failures and section country refusal are resolved, but the supported budget question still refuses. All historical PASS cases and59 unsupported zero-citation refusals are preserved;367 unit tests pass. The frozen development gate **FAILS**, so no new confirmation sample is consumed and production stays r44. Original Scope48 first scores remain unchanged. [Results, exact quotations and browser evidence](./docs/COVERAGE_V16_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |

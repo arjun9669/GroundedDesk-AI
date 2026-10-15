@@ -1,0 +1,1382 @@
+{
+  "candidate_identity": "coverage-v16-literal-body-recovery",
+  "id": "P01",
+  "question": "Who approves standard cargo schedules at the fictional Orvella Depot?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who approves standard cargo schedules at the fictional Orvella Depot?",
+    "expected_display": "Who approves standard cargo schedules at the fictional Orvella Depot?",
+    "rendered_question": "Who approves standard cargo schedules at the fictional Orvella Depot?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional approval appendix At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+    "sources": [
+      {
+        "filename": "01_University_of_Chicago.md",
+        "excerpt": "a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "quote": "## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho approves standard cargo schedules at the fictional Orvella Depot?\n\nSearched all files: 01_University_of_Chicago.md · 02_Islamism.md · 03_European_Union_law.md · 04_Normans.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional approval appendix At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.\n\nSOURCE EVIDENCE\n[1]\n01_University_of_Chicago.md\n\nText lines 9–10 (normalized extraction)\n\na President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million. ## Fictional approval appendix At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "4439c0e5-63e1-4785-bc82-c40eeeb4741d:1309",
+        "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+        "filename": "01_University_of_Chicago.md",
+        "excerpt": "a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "quote": "## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+        "score": 0.0476,
+        "lexicalScore": 16.22899736464795,
+        "semanticScore": 0.6323714677542495,
+        "matchedTerms": [
+          "standard",
+          "cargo",
+          "schedules",
+          "fictional",
+          "orvella",
+          "depot"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "4439c0e5-63e1-4785-bc82-c40eeeb4741d:1309",
+        "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+        "filename": "01_University_of_Chicago.md",
+        "excerpt": "e of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "score": 0.0476,
+        "lexicalScore": 16.22899736464795,
+        "semanticScore": 0.6323714677542495,
+        "matchedTerms": [
+          "standard",
+          "cargo",
+          "schedules",
+          "fictional",
+          "orvella",
+          "depot"
+        ],
+        "start": 1470,
+        "end": 1710
+      }
+    ],
+    "mode": "Experimental v16 literal body recovery",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V16 isolated literal body recovery; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_University_of_Chicago.md",
+        "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1470,
+          "cosine": 0.8601990433570478,
+          "slot_supported": true,
+          "lexical_matches": 7
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_University_of_Chicago.md",
+        "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_University_of_Chicago.md",
+        "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "standard",
+          "cargo",
+          "schedul"
+        ],
+        "site": [
+          "orvella",
+          "depot"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 1,
+      "preserved": true
+    }
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "4439c0e5-63e1-4785-bc82-c40eeeb4741d:1439",
+        "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+        "filename": "01_University_of_Chicago.md",
+        "excerpt": "e of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "score": 0.0476,
+        "lexicalScore": 20.28179197032388,
+        "semanticScore": 0.7676935727484925,
+        "matchedTerms": [
+          "standard",
+          "cargo",
+          "schedules",
+          "fictional",
+          "orvella",
+          "depot"
+        ],
+        "start": 1470,
+        "end": 1710
+      }
+    ],
+    "mode": "Experimental v16 literal body recovery",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V16 isolated literal body recovery; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_University_of_Chicago.md",
+        "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1470,
+          "cosine": 0.8601990433570478,
+          "slot_supported": true,
+          "lexical_matches": 7
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_University_of_Chicago.md",
+        "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_University_of_Chicago.md",
+        "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "standard",
+          "cargo",
+          "schedul"
+        ],
+        "site": [
+          "orvella",
+          "depot"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 1,
+      "preserved": true
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_University_of_Chicago.md",
+      "start": 1470,
+      "content": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "semanticScore": 0.8601990433570478,
+      "lexicalScore": 19.191767802875763
+    },
+    {
+      "filename": "01_University_of_Chicago.md",
+      "start": 1571,
+      "content": "This approval authority applies only to standard cargo schedules at Orvella Depot.",
+      "semanticScore": 0.7180767159954883,
+      "lexicalScore": 16.332569965225233
+    },
+    {
+      "filename": "03_European_Union_law.md",
+      "start": 1978,
+      "content": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "semanticScore": 0.45442284070189365,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Islamism.md",
+      "start": 1221,
+      "content": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "semanticScore": 0.42902938223553333,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_European_Union_law.md",
+      "start": 2074,
+      "content": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "semanticScore": 0.3704587918455837,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "The first buildings of the University of Chicago campus, which make up what is now known as the Main Quadrangles, were part of a \"master plan\" conceived by two University of Chicago trustees and plotted by Chicago architect Henry Ives Cobb.",
+      "start": 38,
+      "end": 278,
+      "similarity": 0.04895865367420554,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "The Main Quadrangles consist of six quadrangles, each surrounded by buildings, bordering one larger quadrangle.",
+      "start": 279,
+      "end": 390,
+      "similarity": 0.059413377279331755,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "The buildings of the Main Quadrangles were designed by Cobb, Shepley, Rutan and Coolidge, Holabird & Roche, and other architectural firms in a mixture of the Victorian Gothic and Collegiate Gothic styles, patterned on the colleges of the University of Oxford.",
+      "start": 391,
+      "end": 650,
+      "similarity": 0.124203160015303,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "(Mitchell Tower, for example, is modeled after Oxford's Magdalen Tower, and the university Commons, Hutchinson Hall, replicates Christ Church Hall.)",
+      "start": 651,
+      "end": 799,
+      "similarity": 0.1062030936794144,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "All Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government.",
+      "start": 814,
+      "end": 1036,
+      "similarity": 0.14698130705333454,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit.",
+      "start": 1037,
+      "end": 1171,
+      "similarity": -0.009006619610059236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring.",
+      "start": 1172,
+      "end": 1391,
+      "similarity": 0.11844122867772952,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "Its annual budget is greater than $2 million.",
+      "start": 1392,
+      "end": 1437,
+      "similarity": 0.15136163519036921,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "start": 1470,
+      "end": 1570,
+      "similarity": 0.8601990433570478,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "This approval authority applies only to standard cargo schedules at Orvella Depot.",
+      "start": 1571,
+      "end": 1653,
+      "similarity": 0.7180767159954883,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1654,
+      "end": 1710,
+      "similarity": 0.09991335887410462,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "Some elements of the Brotherhood, though perhaps against orders, did engage in violence against the government, and its founder Al-Banna was assassinated in 1949 in retaliation for the assassination of Egypt's premier Mahmud Fami Naqrashi three months earlier.",
+      "start": 25,
+      "end": 285,
+      "similarity": 0.005780084751776029,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "The Brotherhood has suffered periodic repression in Egypt and has been banned several times, in 1948 and several years later following confrontations with Egyptian president Gamal Abdul Nasser, who jailed thousands of members for several years.",
+      "start": 286,
+      "end": 530,
+      "similarity": 0.10000597054066857,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "After al-Nimeiry was overthrown in 1985 the party did poorly in national elections, but in 1989 it was able to overthrow the elected post-al-Nimeiry government with the help of the military.",
+      "start": 545,
+      "end": 735,
+      "similarity": -0.0500433685829125,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "Turabi was noted for proclaiming his support for the democratic process and a liberal government before coming to power, but strict application of sharia law, torture and mass imprisonment of the opposition, and an intensification of the long-running war in southern Sudan, once in power.",
+      "start": 736,
+      "end": 1024,
+      "similarity": 0.00046114062719522774,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.",
+      "start": 1025,
+      "end": 1188,
+      "similarity": 0.01877094496862328,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "start": 1221,
+      "end": 1321,
+      "similarity": 0.42902938223553333,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "This approval authority applies only to standard shelf indexes at Tiravel Library.",
+      "start": 1322,
+      "end": 1404,
+      "similarity": 0.31546230023274113,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "26431861-adc2-4269-a4c4-f476ae0fa13c",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1405,
+      "end": 1461,
+      "similarity": 0.09991335887410462,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "Following the Nice Treaty, there was an attempt to reform the constitutional law of the European Union and make it more transparent; this would have also produced a single constitutional document.",
+      "start": 35,
+      "end": 231,
+      "similarity": -0.02020858714102057,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "However, as a result of the referendum in France and the referendum in the Netherlands, the 2004 Treaty establishing a Constitution for Europe never came into force.",
+      "start": 232,
+      "end": 397,
+      "similarity": -0.08310199194679135,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "Instead, the Lisbon Treaty was enacted.",
+      "start": 398,
+      "end": 437,
+      "similarity": 0.1368474676431653,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "Its substance was very similar to the proposed constitutional treaty, but it was formally an amending treaty, and – though it significantly altered the existing treaties – it did not completely replace them.",
+      "start": 438,
+      "end": 645,
+      "similarity": -0.03515698039934939,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "None of the original treaties establishing the European Union mention protection for fundamental rights.",
+      "start": 660,
+      "end": 764,
+      "similarity": -0.053599083853082916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "It was not envisaged for European Union measures, that is legislative and administrative actions by European Union institutions, to be subject to human rights.",
+      "start": 765,
+      "end": 924,
+      "similarity": 0.035511233611314905,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "At the time the only concern was that member states should be prevented from violating human rights, hence the establishment of the European Convention on Human Rights in 1950 and the establishment of the European Court of Human Rights.",
+      "start": 925,
+      "end": 1161,
+      "similarity": 0.054384122757379624,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "The European Court of Justice recognised fundamental rights as general principle of European Union law as the need to ensure that European Union measures are compatible with the human rights enshrined in member states' constitution became ever more apparent.",
+      "start": 1162,
+      "end": 1420,
+      "similarity": -0.026838001973514262,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "In 1999 the European Council set up a body tasked with drafting a European Charter of Human Rights, which could form the constitutional basis for the European Union and as such tailored specifically to apply to the European Union and its institutions.",
+      "start": 1421,
+      "end": 1672,
+      "similarity": 0.02853778827984931,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "The Charter of Fundamental Rights of the European Union draws a list of fundamental rights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.",
+      "start": 1673,
+      "end": 1945,
+      "similarity": 0.0652951677346915,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "start": 1978,
+      "end": 2073,
+      "similarity": 0.45442284070189365,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "start": 2074,
+      "end": 2154,
+      "similarity": 0.3704587918455837,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b366efc5-ad66-4889-a719-c87505defd92",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2155,
+      "end": 2211,
+      "similarity": 0.09991335887410462,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Various princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan.",
+      "start": 24,
+      "end": 125,
+      "similarity": 0.04206811707656432,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+      "start": 126,
+      "end": 233,
+      "similarity": 0.06032922351277736,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard.",
+      "start": 234,
+      "end": 407,
+      "similarity": -0.046132385169554174,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "But Isaac changed his mind and tried to escape.",
+      "start": 408,
+      "end": 455,
+      "similarity": 0.00035823785513516046,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan.",
+      "start": 456,
+      "end": 548,
+      "similarity": -0.012665622922918273,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons.",
+      "start": 549,
+      "end": 670,
+      "similarity": 0.01620047986538681,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "By 1 June, Richard had conquered the whole island.",
+      "start": 671,
+      "end": 721,
+      "similarity": -0.010653796726499987,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "His exploit was well publicized and contributed to his reputation; he also derived significant financial gains from the conquest of the island.",
+      "start": 722,
+      "end": 865,
+      "similarity": 0.05985005335976961,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Richard left for Acre on 5 June, with his allies.",
+      "start": 866,
+      "end": 915,
+      "similarity": -0.00033703652702555897,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Before his departure, he named two of his Norman generals, Richard de Camville and Robert de Thornham, as governors of Cyprus.",
+      "start": 916,
+      "end": 1042,
+      "similarity": 0.018040438766091196,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France.",
+      "start": 1057,
+      "end": 1223,
+      "similarity": -0.012643062736014817,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "They were descended from Norse (\"Norman\" comes from \"Norseman\") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia.",
+      "start": 1224,
+      "end": 1431,
+      "similarity": 0.01390864304589258,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia.",
+      "start": 1432,
+      "end": 1627,
+      "similarity": -0.036605996186461494,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.",
+      "start": 1628,
+      "end": 1799,
+      "similarity": -0.04935931107458097,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "start": 1832,
+      "end": 1931,
+      "similarity": 0.32881697503368984,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "This approval authority applies only to standard display cards at Fenora Gallery.",
+      "start": 1932,
+      "end": 2013,
+      "similarity": 0.2243448152497788,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f00c8f81-5751-4fc0-b604-9ecaa99d2bc3",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2014,
+      "end": 2070,
+      "similarity": 0.09991335887410462,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "4439c0e5-63e1-4785-bc82-c40eeeb4741d:1309",
+          "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+          "filename": "01_University_of_Chicago.md",
+          "excerpt": "e of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+          "score": 0.0476,
+          "lexicalScore": 16.22899736464795,
+          "semanticScore": 0.6323714677542495,
+          "matchedTerms": [
+            "standard",
+            "cargo",
+            "schedules",
+            "fictional",
+            "orvella",
+            "depot"
+          ]
+        }
+      ],
+      "mode": "Experimental v15 scope binding",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_University_of_Chicago.md",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1470,
+            "cosine": 0.8601990433570478,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_University_of_Chicago.md",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_University_of_Chicago.md",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "standard",
+            "cargo",
+            "schedul"
+          ],
+          "site": [
+            "orvella",
+            "depot"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 1,
+        "preserved": true
+      }
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "4439c0e5-63e1-4785-bc82-c40eeeb4741d:1439",
+          "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+          "filename": "01_University_of_Chicago.md",
+          "excerpt": "e of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+          "score": 0.0476,
+          "lexicalScore": 20.28179197032388,
+          "semanticScore": 0.7676935727484925,
+          "matchedTerms": [
+            "standard",
+            "cargo",
+            "schedules",
+            "fictional",
+            "orvella",
+            "depot"
+          ]
+        }
+      ],
+      "mode": "Experimental v15 scope binding",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_University_of_Chicago.md",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1470,
+            "cosine": 0.8601990433570478,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_University_of_Chicago.md",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_University_of_Chicago.md",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "standard",
+            "cargo",
+            "schedul"
+          ],
+          "site": [
+            "orvella",
+            "depot"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 1,
+        "preserved": true
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "4439c0e5-63e1-4785-bc82-c40eeeb4741d:1309",
+          "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+          "filename": "01_University_of_Chicago.md",
+          "excerpt": "e of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+          "score": 0.0476,
+          "lexicalScore": 16.22899736464795,
+          "semanticScore": 0.6323714677542495,
+          "matchedTerms": [
+            "standard",
+            "cargo",
+            "schedules",
+            "fictional",
+            "orvella",
+            "depot"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_University_of_Chicago.md",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1470,
+            "cosine": 0.8601990433570478,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_University_of_Chicago.md",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "4439c0e5-63e1-4785-bc82-c40eeeb4741d:1439",
+          "documentId": "4439c0e5-63e1-4785-bc82-c40eeeb4741d",
+          "filename": "01_University_of_Chicago.md",
+          "excerpt": "e of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+          "score": 0.0476,
+          "lexicalScore": 20.28179197032388,
+          "semanticScore": 0.7676935727484925,
+          "matchedTerms": [
+            "standard",
+            "cargo",
+            "schedules",
+            "fictional",
+            "orvella",
+            "depot"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_University_of_Chicago.md",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1470,
+            "cosine": 0.8601990433570478,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_University_of_Chicago.md",
+          "quote": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.07257083803415298,
+    0.03032257780432701,
+    -0.017896996811032295,
+    0.003163769608363509,
+    -0.04525863751769066,
+    -0.006371522322297096,
+    -0.043596766889095306,
+    -0.06689348071813583,
+    0.012579076923429966,
+    0.003990023862570524,
+    0.04546467959880829,
+    0.075678251683712,
+    -0.015610828064382076,
+    0.039725832641124725,
+    -0.026374157518148422,
+    -0.01808393932878971,
+    0.11509779095649719,
+    -0.052567027509212494,
+    0.0022859741002321243,
+    0.0025541495997458696,
+    0.031661227345466614,
+    -0.015979159623384476,
+    0.027319911867380142,
+    0.033279310911893845,
+    -0.06843063235282898,
+    -0.01763973943889141,
+    -0.0442090705037117,
+    0.04861688241362572,
+    -0.024805502966046333,
+    -0.10505954921245575,
+    -0.07773759961128235,
+    0.03035239316523075,
+    0.04318948835134506,
+    -0.007485946640372276,
+    0.031064733862876892,
+    0.04825213924050331,
+    0.10969583690166473,
+    -0.00023881594825070351,
+    0.02686501480638981,
+    0.003051880979910493,
+    0.027527760714292526,
+    -0.08377984166145325,
+    -0.06901907920837402,
+    0.04278094321489334,
+    -0.06461352854967117,
+    -0.1319396197795868,
+    -0.0024199835024774075,
+    -0.09466966986656189,
+    -0.0035951954778283834,
+    0.037721142172813416,
+    0.052515074610710144,
+    0.02546394243836403,
+    0.08541636168956757,
+    -0.013371612876653671,
+    0.012659969739615917,
+    0.004516815301030874,
+    0.01473290380090475,
+    -0.032151348888874054,
+    0.06987744569778442,
+    0.02903708815574646,
+    0.009650672785937786,
+    -0.04483434557914734,
+    -0.11999683827161789,
+    0.055048175156116486,
+    -0.02127499133348465,
+    0.010153602808713913,
+    -0.09493006020784378,
+    0.014253821223974228,
+    -0.043504498898983,
+    -0.10346627980470657,
+    -0.026187095791101456,
+    0.013469284400343895,
+    0.02549057826399803,
+    0.062425315380096436,
+    0.09805302321910858,
+    -0.0008421589736826718,
+    0.02183820866048336,
+    0.014846116304397583,
+    0.006218003109097481,
+    -0.11781267821788788,
+    -0.10018159449100494,
+    -0.030368473380804062,
+    -0.03888855129480362,
+    0.02387918345630169,
+    -0.03238910809159279,
+    -0.02804289199411869,
+    0.019595779478549957,
+    0.054117247462272644,
+    0.08854646235704422,
+    0.0355742946267128,
+    0.010685553774237633,
+    -0.04132350906729698,
+    0.048391666263341904,
+    -0.06420549750328064,
+    -0.0726594477891922,
+    0.08621925115585327,
+    -0.0629550963640213,
+    0.03268904238939285,
+    -0.03156251460313797,
+    0.018694160506129265,
+    0.048177655786275864,
+    0.018876077607274055,
+    -0.032578207552433014,
+    0.03901805356144905,
+    -0.009426400065422058,
+    -0.0177774541079998,
+    -0.005001244135200977,
+    -0.04389794543385506,
+    -0.0003139506443403661,
+    -0.008905661292374134,
+    -0.01726052165031433,
+    0.01502346619963646,
+    0.012902401387691498,
+    -0.02912089414894581,
+    -0.1008623018860817,
+    0.10081623494625092,
+    -0.032180193811655045,
+    -0.02887292206287384,
+    0.022274555638432503,
+    -0.08399350941181183,
+    0.018352722749114037,
+    -0.02150081656873226,
+    0.08148682862520218,
+    0.058456096798181534,
+    -0.031181927770376205,
+    0.01640978828072548,
+    0.009505821391940117,
+    -2.3296376834718113e-33,
+    -0.08597056567668915,
+    0.04064609110355377,
+    -0.010005599819123745,
+    0.027471577748656273,
+    0.06680750846862793,
+    -0.0020646736957132816,
+    -0.04300197958946228,
+    -0.0011632563546299934,
+    0.06843695044517517,
+    -0.0002059704129351303,
+    -0.030301962047815323,
+    0.04356179013848305,
+    -0.11979904770851135,
+    0.038096386939287186,
+    0.01009642705321312,
+    -0.012342787347733974,
+    0.007579884026199579,
+    0.018932560458779335,
+    -0.010952001437544823,
+    -0.06933549046516418,
+    0.02405039221048355,
+    -0.020909853279590607,
+    -0.0656905323266983,
+    -0.003112706821411848,
+    0.047493547201156616,
+    0.047775086015462875,
+    0.02153111808001995,
+    -0.00274099875241518,
+    0.10706043243408203,
+    0.07842851430177689,
+    0.08532043546438217,
+    0.022991497069597244,
+    0.03119194321334362,
+    0.00010700227721827105,
+    0.014987919479608536,
+    0.059492383152246475,
+    -0.053826894611120224,
+    0.027058232575654984,
+    -0.04414664953947067,
+    0.020907768979668617,
+    -0.004951485898345709,
+    -0.03884345665574074,
+    -0.09871584922075272,
+    0.10649579763412476,
+    0.03385636955499649,
+    0.04535020887851715,
+    0.12089183926582336,
+    -0.028350351378321648,
+    0.023050760850310326,
+    0.06160294637084007,
+    -0.026243872940540314,
+    0.08047419786453247,
+    -0.044234246015548706,
+    -0.01198576483875513,
+    0.012822447344660759,
+    -0.09423360973596573,
+    0.07667554169893265,
+    -0.04231825843453407,
+    0.03465136140584946,
+    -0.004218751098960638,
+    0.004311311058700085,
+    0.1501939445734024,
+    0.010000798851251602,
+    0.025754470378160477,
+    0.010842048563063145,
+    0.010264146141707897,
+    -0.044122740626335144,
+    -0.0003443395544309169,
+    0.06164616718888283,
+    -0.02015415020287037,
+    0.011376917362213135,
+    0.03177912160754204,
+    -0.021932989358901978,
+    0.014200053177773952,
+    -0.04905927553772926,
+    0.015447086654603481,
+    -0.017227448523044586,
+    0.07845579087734222,
+    0.025317050516605377,
+    -0.041939523071050644,
+    0.04635988548398018,
+    0.007446382660418749,
+    0.0648377314209938,
+    0.036028455942869186,
+    0.005645452998578548,
+    -0.04942426085472107,
+    0.05618070438504219,
+    0.0641472116112709,
+    -0.00020599948766175658,
+    -0.024599382653832436,
+    -0.009508601389825344,
+    0.023880252614617348,
+    0.032931867986917496,
+    0.047994568943977356,
+    0.022536475211381912,
+    1.3205964551328291e-33,
+    0.0692063570022583,
+    -0.0054705762304365635,
+    0.006617096718400717,
+    0.00015154927677940577,
+    -0.010096189565956593,
+    -0.03749086707830429,
+    -0.1231573075056076,
+    -0.01616729609668255,
+    0.06918356567621231,
+    0.06282156705856323,
+    -0.12645737826824188,
+    0.0068696169182658195,
+    0.04813182353973389,
+    -0.00929659977555275,
+    0.07550738006830215,
+    -0.026428159326314926,
+    0.09270584583282471,
+    -0.057552266865968704,
+    -0.04797154292464256,
+    -0.04195225238800049,
+    0.028097813948988914,
+    -0.02153177000582218,
+    -0.11454226076602936,
+    0.06237642094492912,
+    0.04534924402832985,
+    0.06626097857952118,
+    0.021975373849272728,
+    -0.026066577062010765,
+    -0.14178982377052307,
+    0.013803226873278618,
+    -0.05846249312162399,
+    -0.03514323756098747,
+    -0.04121851176023483,
+    0.03651611879467964,
+    -0.03343985974788666,
+    -0.013822841458022594,
+    -0.07233867794275284,
+    0.1288209855556488,
+    -0.008326772600412369,
+    -0.01570618338882923,
+    0.04067376255989075,
+    -0.06223442777991295,
+    -0.05483400076627731,
+    0.04694613069295883,
+    -0.11077435314655304,
+    -0.042834196239709854,
+    0.04360627010464668,
+    -0.0969075858592987,
+    0.006439791992306709,
+    -0.04281773045659065,
+    -0.07724881172180176,
+    0.029520386829972267,
+    -0.03888896107673645,
+    -0.03158247098326683,
+    0.029925992712378502,
+    0.08302389085292816,
+    -0.01822902262210846,
+    -0.019361650571227074,
+    0.022816205397248268,
+    -0.024555707350373268,
+    0.05324402451515198,
+    0.05724623054265976,
+    0.04514838382601738,
+    -0.00452754320576787,
+    -0.03276117146015167,
+    -0.0464797168970108,
+    0.057417094707489014,
+    -0.06902346014976501,
+    -0.0211285762488842,
+    -0.0082883071154356,
+    0.023228347301483154,
+    -0.06691805273294449,
+    -0.07358791679143906,
+    0.006708616856485605,
+    -0.05373726785182953,
+    0.03218686208128929,
+    0.06434839218854904,
+    -0.04614890739321709,
+    -0.05126504600048065,
+    0.049147266894578934,
+    -0.08618802577257156,
+    -0.08268529921770096,
+    0.020906873047351837,
+    0.041703756898641586,
+    0.03547404333949089,
+    0.06146375089883804,
+    -0.011316836811602116,
+    0.04162725433707237,
+    0.02219228819012642,
+    0.06307796388864517,
+    0.07514188438653946,
+    0.008295160718262196,
+    -0.039832692593336105,
+    0.0027349719312042,
+    0.026266923174262047,
+    -2.0137999712233068e-8,
+    0.012872942723333836,
+    -0.037973370403051376,
+    0.02845172770321369,
+    0.003659372916445136,
+    0.027443334460258484,
+    -0.08413206040859222,
+    -0.017394186928868294,
+    0.010873610153794289,
+    -0.05485206097364426,
+    0.0544138140976429,
+    0.10657060146331787,
+    0.016563406214118004,
+    -0.06543302536010742,
+    0.019816411659121513,
+    0.0710611492395401,
+    0.03268837556242943,
+    0.09125597774982452,
+    0.04404124990105629,
+    -0.09967053681612015,
+    -0.047242458909749985,
+    -0.004220898263156414,
+    0.025244148448109627,
+    0.021557709202170372,
+    -0.04769513010978699,
+    -0.03675401210784912,
+    0.017126960679888725,
+    -0.035495780408382416,
+    0.013432160019874573,
+    0.131529301404953,
+    0.0493733249604702,
+    0.02511122077703476,
+    0.033955495804548264,
+    -0.05833612382411957,
+    -0.04603886976838112,
+    0.05860515683889389,
+    -0.02770615927875042,
+    -0.0592120960354805,
+    0.027065420523285866,
+    0.02484465017914772,
+    -0.02563527226448059,
+    0.006858679931610823,
+    -0.028384961187839508,
+    0.0008448672015219927,
+    0.020802514627575874,
+    0.07383479923009872,
+    0.0670962855219841,
+    -0.06757315993309021,
+    -0.008899548090994358,
+    -0.05466366931796074,
+    -0.032971661537885666,
+    -0.03901303559541702,
+    -0.06475961208343506,
+    0.08101370930671692,
+    0.05428189039230347,
+    0.04928365722298622,
+    -0.019722163677215576,
+    -0.030801285058259964,
+    -0.059818852692842484,
+    -0.01821357011795044,
+    -0.028196491301059723,
+    -0.018805118277668953,
+    0.02070871740579605,
+    0.009599135257303715,
+    -0.03001076728105545
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_University_of_Chicago.md",
+        "start": 1309,
+        "content": "her for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "03_European_Union_law.md",
+        "start": 1964,
+        "content": "oval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_University_of_Chicago.md",
+        "start": 1439,
+        "content": "## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "03_European_Union_law.md",
+        "start": 1947,
+        "content": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "02_Islamism.md",
+        "start": 1190,
+        "content": "## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus."
+      }
+    ]
+  }
+}
