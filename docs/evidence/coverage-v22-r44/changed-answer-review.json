@@ -1,0 +1,95 @@
+{
+  "classification": "Read-only displayed-evidence review; no score/key changes",
+  "changed_cases": [
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "question": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+      "prior_answer": "[1] at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available for review.",
+      "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "371ea5ee-6081-4fc3-848c-68d117fbc601:body:144",
+          "documentId": "371ea5ee-6081-4fc3-848c-68d117fbc601",
+          "filename": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "start": 224,
+          "end": 290,
+          "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available"
+        }
+      ],
+      "diagnostics": {
+        "route": "Explicit inclusive clock branch and trailing conditions"
+      }
+    },
+    {
+      "pack": "V9Exposed32",
+      "id": "F17",
+      "question": "How many yards did Jordan Norwood return a punt to set the Super Bowl record?",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "0bd16880-31ee-4570-98cb-f408577bed68:659",
+          "documentId": "0bd16880-31ee-4570-98cb-f408577bed68",
+          "filename": "03_Super_Bowl_50.md",
+          "excerpt": "ter. Later on, Broncos receiver Jordan Norwood received Brad Nortman's short 28-yard punt surrounded by Panthers players, but none of them attempted to make a tackle, apparently thinking Norwood had called a fair catch. Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line. Despite Denver's excellent field position, they could not get the ball into the end zone, so McManus kicked a 33-yard field goal that increased their lead to 13–7.",
+          "quote": "Norwood had not done so, and with no resistance around him, he took off for a Super Bowl record 61-yard return before Mario Addison dragged him down on the Panthers 14-yard line.",
+          "score": 0.0476,
+          "lexicalScore": 14.936436746200544,
+          "semanticScore": 0.7280813378275705,
+          "matchedTerms": [
+            "yards",
+            "jordan",
+            "norwood",
+            "return",
+            "punt",
+            "super",
+            "bowl",
+            "record"
+          ],
+          "start": 1233,
+          "end": 1411
+        }
+      ],
+      "diagnostics": {
+        "route": "Validated prior count clause"
+      }
+    },
+    {
+      "pack": "Binding64",
+      "id": "T4A",
+      "question": "How many trays did Vera Linven tag at Soravin Specimen Studio?",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "3319a6a6-ad9a-4788-86ea-ae53d2fb1d67:1319",
+          "documentId": "3319a6a6-ad9a-4788-86ea-ae53d2fb1d67",
+          "filename": "04_Packet_switching.md",
+          "excerpt": "me packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.\n\n## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.\n\n## Fictional copy requests\nAt Soravin Specimen Studio, a public copy r",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+          "score": 0.0476,
+          "lexicalScore": 16.783719378653004,
+          "semanticScore": 0.6024691537196104,
+          "matchedTerms": [
+            "trays",
+            "vera",
+            "linven",
+            "soravin",
+            "specimen",
+            "studio"
+          ],
+          "start": 1606,
+          "end": 1878
+        }
+      ],
+      "diagnostics": {
+        "route": "Validated prior count clause"
+      }
+    }
+  ]
+}
