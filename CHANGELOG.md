@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-15 — Budget-clause preflight v17 and Confirmation48 first result (no runtime release)
+
+- Changed only isolated budget preflight to retain the exact eligible budget clause before displaying its literal entity-bound window. Scope48 reaches48/0/0 in both variants;355-case exposed regression gate PASS, no historical PASS loss,59 unsupported refusals preserved. Original Scope48 and v16 scores remain unchanged.
+- Consumed the previously frozen v16 Confirmation48 plan only after that gate passed, retaining its original seed, sampling,24 article exclusions, questions/templates and criteria. First results: fixed45/0/3, section44/0/4. Section external supported20/24 misses the21 threshold, so confirmation FAILS. All12 unsupported controls refuse; all4 compounds and8 supported role controls pass under the frozen criteria.
+- Independently reviewed every candidate answer: full-name omission F11, missing governor action F22, missing fire name F24, and section wrong-topic F19 remain FAIL. Section C04’s extra military excerpt is independently irrelevant, while its frozen paragraph-proxy PASS is preserved. Source-literal provenance does not prove relevance or entailment.
+- Captured403 cases once in actual Chrome/MiniLM:379 Hybrid and24 separate lexical Comparison.371 unit tests and strict offline checks pass;102 old input checks and40 historical archive artifacts verified. No post-answer tuning, retries, extra sample or runtime adoption; production remains r44.
+
 ## 2026-10-15 — Literal-body recovery v16 (no runtime release)
 
 - Captured355 unchanged exposed cases once in installed headless Chrome with actual new MiniLM query/source vectors:331 Hybrid and24 separate lexical Comparison. Verified module identity,102 original input hashes and35 historical archive artifacts; all367 unit tests and strict offline checks pass.

@@ -48,6 +48,8 @@ Current retrieval build: **2026-10-13-r44** (5.6, document-readiness feedback; r
 
 **Literal-body recovery experiment:** v16 captures all **355 exposed regressions** with actual MiniLM in installed headless Chrome. Scope48 improves to **47 PASS / 0 PARTIAL / 1 FAIL** in both chunking variants: the four heading-boundary failures and section country refusal are resolved, but the supported budget question still refuses. All historical PASS cases and59 unsupported zero-citation refusals are preserved;367 unit tests pass. The frozen development gate **FAILS**, so no new confirmation sample is consumed and production stays r44. Original Scope48 first scores remain unchanged. [Results, exact quotations and browser evidence](./docs/COVERAGE_V16_R44_VALIDATION.md).
 
+**Budget-clause preflight experiment:** v17 passes the **355-case exposed regression gate**, repairs Scope48’s budget refusal and reaches **48/48 Scope48 passes in both variants**. All historical PASS cases and unsupported safeguards remain intact. The previously unconsumed Confirmation48 plan then yields first results of **45 PASS / 0 PARTIAL / 3 FAIL** fixed and **44 / 0 / 4** section. Its gate **FAILS** because section external supported questions score20/24, below21. A separate citation review flags an irrelevant section C04 excerpt despite its frozen PASS; original scores remain unchanged. Actual MiniLM in installed headless Chrome,371 unit tests, no runtime adoption; production stays r44. This prospective public/adversarial test is not sealed independent accuracy. [Full results, citation review and browser evidence](./docs/COVERAGE_V17_R44_VALIDATION.md).
+
 ## Features
 
 | Milestone | Capability | Execution |
