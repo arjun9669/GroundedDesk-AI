@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — Morrow32 prospective v30 confirmation FAIL
+
+- Protocol committed before authoring; four new fictional TXT sources,32 questions/key/rubric/runner and59-file freeze committed before answers. Actual local MiniLM q8 WASM in installed headless Chrome155.0.8059.80; Qwen off;28 Hybrid and4 separate lexical Comparisons once. Author-created stress sample, not external independent accuracy or deployed-candidate validation.
+- First30 PASS/0 PARTIAL/2 FAIL both. M11 falsely refuses a source-supported2005 rebuild date that r44 answers; M32 selects correct files but irrelevant relocation/acknowledgement quotations for packet contents.30/30 literal,28/30 relevant citations; all8 unsupported controls refuse uncited. Paired v29 records27/3/2; v30 improves only three Comparisons.
+- Original first archive retains a stale v28 filename suffix; actual module/config/screenshots identify v30. Preserve original seal and bytes, provide a correctly named byte-identical copy and explicit archive-label erratum. No answer/grade/input change.
+- All32 cases reviewed without grade changes;59 frozen files,4 source hashes, finite unit384D vectors,160 citation-number checks and9 unchanged runtime files verified.486 unit and strict bundled checks pass separately from failed confirmation. Conditional integration-readiness review stopped; no tuning/new sample/adoption. Live r44 and all historical scores unchanged. [Full report](./docs/MORROW32_V30_CONFIRMATION.md), [JSON](./docs/evidence/morrow32-v30/REVIEWED_SCORECARD.json).
+
 ## 2026-10-16 — isolated v30 exposed regression gate PASS; not adopted
 
 - Changed only lexical Comparison: preserve complete quoted evidence, split bounded literal blocks at Markdown headings/numbered policies and complete an existing unique anchor only when requested categories are missing. Exact v29 Hybrid functions re-exported unchanged; no embedding-model improvement claim.
