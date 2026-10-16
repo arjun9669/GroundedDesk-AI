@@ -19,6 +19,8 @@ jobs:
           node-version: '22'
       - name: Syntax check
         run: |
+          node --check eval/v25-fresh-confirmation/score.mjs
+          node --check tests/browser-bracken32-v25.mjs
           node --check eval/answer-completeness-v25/coverage.mjs
           node --check eval/answer-completeness-v25/score.mjs
           node --check eval/answer-completeness-v25/score-binding64.mjs
