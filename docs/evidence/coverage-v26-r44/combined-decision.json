@@ -1,0 +1,234 @@
+{
+  "classification": "579 exposed in-sample v26 regressions; not independent accuracy",
+  "checks": {
+    "historical451_original_gate": false,
+    "Binding64_original_gate": false,
+    "Cedar32_all32": false,
+    "Bracken32_all32": false,
+    "no_v25_PASS_loss": false,
+    "no_new_false_acceptance": true,
+    "no_new_supported_false_refusal": false
+  },
+  "overall_gate": "FAIL",
+  "production_build": "2026-10-13-r44",
+  "production_change": "NONE",
+  "prior_pass_regressions": [
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ23",
+      "variant": "fixed",
+      "outcome": "PARTIAL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ23",
+      "variant": "section",
+      "outcome": "PARTIAL"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "section",
+      "outcome": "FAIL"
+    }
+  ],
+  "new_false_acceptances": [],
+  "new_supported_false_refusals": [
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "fixed"
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "section"
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "fixed"
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "section"
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "fixed"
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "section"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "fixed"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "section"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "fixed"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "section"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "fixed"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "section"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "fixed"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "section"
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "fixed"
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "section"
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "fixed"
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "section"
+    }
+  ],
+  "first_Bracken32_preserved": "21 PASS /1 PARTIAL /10 FAIL both",
+  "first_Cedar32_preserved": "24 PASS /2 PARTIAL /6 FAIL both",
+  "question_retries": 0,
+  "candidate_adopted": false
+}

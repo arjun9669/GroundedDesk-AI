@@ -1,0 +1,667 @@
+{
+  "changed_outputs": [
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "fixed",
+      "question": "An outbound order is released at 15:00. When does it leave the depot?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] Orders released after 14:20 leave on the next operating day.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "section",
+      "question": "An outbound order is released at 15:00. When does it leave the depot?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] Orders released after 14:20 leave on the next operating day.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "fixed",
+      "question": "How does the dusty demonstration bay change the lubrication interval?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "section",
+      "question": "How does the dusty demonstration bay change the lubrication interval?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "fixed",
+      "question": "What must be included in the pre-release evidence package?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "section",
+      "question": "What must be included in the pre-release evidence package?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "fixed",
+      "question": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "section",
+      "question": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "fixed",
+      "question": "How often are Hilltop conveyor bearings lubricated normally, in a dusty bay, and how often are they inspected?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] Hilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "section",
+      "question": "How often are Hilltop conveyor bearings lubricated normally, in a dusty bay, and how often are they inspected?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] Hilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ23",
+      "variant": "fixed",
+      "question": "What do the current Orchard dispatch packet and Lakeside receiving packet each contain?",
+      "prior_outcome": "PASS",
+      "outcome": "PARTIAL",
+      "prior_answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.\n\n[2] Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.",
+      "answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "83cb2fe8-4bd6-4dac-b4bd-e4404b9393e9:body:1914",
+          "documentId": "83cb2fe8-4bd6-4dac-b4bd-e4404b9393e9",
+          "filename": "01_Orchard_Depot_Current.md",
+          "quote": "Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+          "start": 1914,
+          "end": 2011,
+          "actualCosine": 0.6907134275185909,
+          "excerpt": "original context. Keep the original file available for review. This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. \n\n## Dispatch packet\nEvery Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file availab"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ23",
+      "variant": "section",
+      "question": "What do the current Orchard dispatch packet and Lakeside receiving packet each contain?",
+      "prior_outcome": "PASS",
+      "outcome": "PARTIAL",
+      "prior_answer": "[1] Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.\n\n[2] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.",
+      "answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "83cb2fe8-4bd6-4dac-b4bd-e4404b9393e9:body:1914",
+          "documentId": "83cb2fe8-4bd6-4dac-b4bd-e4404b9393e9",
+          "filename": "01_Orchard_Depot_Current.md",
+          "quote": "Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+          "start": 1914,
+          "end": 2011,
+          "actualCosine": 0.6907134275185909,
+          "excerpt": "original context. Keep the original file available for review. This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. \n\n## Dispatch packet\nEvery Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file availab"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "fixed",
+      "question": "In which year did the gallery of Japanese art open?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "section",
+      "question": "In which year did the gallery of Japanese art open?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "fixed",
+      "question": "What is preserved in a closed system of forces when acted upon?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] A conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "section",
+      "question": "What is preserved in a closed system of forces when acted upon?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] A conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "fixed",
+      "question": "What are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "section",
+      "question": "What are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B02",
+      "variant": "fixed",
+      "question": "What year did the first Rillpoint Lightstation restoration take place?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Its first restoration was completed in 1913.",
+      "sources": [
+        {
+          "filename": "01_Rillpoint_Lightstation.txt",
+          "quote": "Its first restoration was completed in 1913.",
+          "excerpt": "Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest rec"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B02",
+      "variant": "section",
+      "question": "What year did the first Rillpoint Lightstation restoration take place?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Its first restoration was completed in 1913.",
+      "sources": [
+        {
+          "filename": "01_Rillpoint_Lightstation.txt",
+          "quote": "Its first restoration was completed in 1913.",
+          "excerpt": "Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest rec"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B08",
+      "variant": "fixed",
+      "question": "How often does the Tavren Ceramics press need lubrication in clean and dusty bays, and does inspection frequency change?",
+      "prior_outcome": "PARTIAL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.",
+      "answer": "[1] Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.\n\n[2] In a dusty bay, use a 42-hour lubrication interval.\n\n[3] Inspection remains every 21 operating hours in both bays.",
+      "sources": [
+        {
+          "filename": "02_Tavren_Ceramics.txt",
+          "quote": "Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.",
+          "excerpt": "t occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead. The purchasing packet contains a supplier quotation, i"
+        },
+        {
+          "filename": "02_Tavren_Ceramics.txt",
+          "quote": "In a dusty bay, use a 42-hour lubrication interval.",
+          "excerpt": "sius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead. The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code."
+        },
+        {
+          "filename": "02_Tavren_Ceramics.txt",
+          "quote": "Inspection remains every 21 operating hours in both bays.",
+          "excerpt": "egrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead. The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.\n\nTavren Ceramics maintenance records are retained for 4 yea"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B08",
+      "variant": "section",
+      "question": "How often does the Tavren Ceramics press need lubrication in clean and dusty bays, and does inspection frequency change?",
+      "prior_outcome": "PARTIAL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.",
+      "answer": "[1] Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.\n\n[2] In a dusty bay, use a 42-hour lubrication interval.\n\n[3] Inspection remains every 21 operating hours in both bays.",
+      "sources": [
+        {
+          "filename": "02_Tavren_Ceramics.txt",
+          "quote": "Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.",
+          "excerpt": "t occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead. The purchasing packet contains a supplier quotation, i"
+        },
+        {
+          "filename": "02_Tavren_Ceramics.txt",
+          "quote": "In a dusty bay, use a 42-hour lubrication interval.",
+          "excerpt": "sius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead. The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code."
+        },
+        {
+          "filename": "02_Tavren_Ceramics.txt",
+          "quote": "Inspection remains every 21 operating hours in both bays.",
+          "excerpt": "egrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead. The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.\n\nTavren Ceramics maintenance records are retained for 4 yea"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B10",
+      "variant": "fixed",
+      "question": "List everything that belongs in the Tavren Ceramics purchasing packet.",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Purchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead.",
+      "answer": "[1] The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.",
+      "sources": [
+        {
+          "filename": "02_Tavren_Ceramics.txt",
+          "quote": "The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.",
+          "excerpt": "dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead. The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.\n\nTavren Ceramics maintenance records are retained for 4 years, unless an unresolved warranty claim requires longer retention."
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B10",
+      "variant": "section",
+      "question": "List everything that belongs in the Tavren Ceramics purchasing packet.",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Purchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead.",
+      "answer": "[1] The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.",
+      "sources": [
+        {
+          "filename": "02_Tavren_Ceramics.txt",
+          "quote": "The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.",
+          "excerpt": "dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead. The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.\n\nTavren Ceramics maintenance records are retained for 4 years, unless an unresolved warranty claim requires longer retention."
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "fixed",
+      "question": "Which year was the Rossell Seed Library public desk opened?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "section",
+      "question": "Which year was the Rossell Seed Library public desk opened?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B12",
+      "variant": "fixed",
+      "question": "What year did the Rossell Seed Library relocation take place?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Its warehouse relocation took place in 2011.",
+      "sources": [
+        {
+          "filename": "03_Rossell_Seed_Library.txt",
+          "quote": "Its warehouse relocation took place in 2011.",
+          "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the ne"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B12",
+      "variant": "section",
+      "question": "What year did the Rossell Seed Library relocation take place?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Its warehouse relocation took place in 2011.",
+      "sources": [
+        {
+          "filename": "03_Rossell_Seed_Library.txt",
+          "quote": "Its warehouse relocation took place in 2011.",
+          "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the ne"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B14",
+      "variant": "fixed",
+      "question": "For a Rossell request released exactly at 11:45, which working day is departure, and what hold can prevent it?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Requests released before 11:45 are shipped the same working day.",
+      "answer": "[1] At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.",
+      "sources": [
+        {
+          "filename": "03_Rossell_Seed_Library.txt",
+          "quote": "At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.",
+          "excerpt": "or a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.\n\nRossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius. The winter log contains monthly averages rather than individual extreme readings.\n\nRossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires lo"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B14",
+      "variant": "section",
+      "question": "For a Rossell request released exactly at 11:45, which working day is departure, and what hold can prevent it?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Requests released before 11:45 are shipped the same working day.",
+      "answer": "[1] At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.",
+      "sources": [
+        {
+          "filename": "03_Rossell_Seed_Library.txt",
+          "quote": "At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.",
+          "excerpt": "or a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.\n\nRossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius. The winter log contains monthly averages rather than individual extreme readings.\n\nRossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires lo"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B16",
+      "variant": "fixed",
+      "question": "In what year did Lenwick Canal Transit move?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+      "answer": "[1] Lenwick Canal Transit relocated in 1882.",
+      "sources": [
+        {
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit relocated in 1882.",
+          "excerpt": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 d"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B16",
+      "variant": "section",
+      "question": "In what year did Lenwick Canal Transit move?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+      "answer": "[1] Lenwick Canal Transit relocated in 1882.",
+      "sources": [
+        {
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit relocated in 1882.",
+          "excerpt": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 d"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B21",
+      "variant": "fixed",
+      "question": "When was Rillpoint Lightstation restored?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B21",
+      "variant": "section",
+      "question": "When was Rillpoint Lightstation restored?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B23",
+      "variant": "fixed",
+      "question": "Which year did the planned Tavren Ceramics transfer happen?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B23",
+      "variant": "section",
+      "question": "Which year did the planned Tavren Ceramics transfer happen?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B24",
+      "variant": "fixed",
+      "question": "What was the coldest individual winter reading at Rillpoint Lightstation?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Winter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B24",
+      "variant": "section",
+      "question": "What was the coldest individual winter reading at Rillpoint Lightstation?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Winter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B27",
+      "variant": "fixed",
+      "question": "How many seed packets does Nalin label per day?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Nalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B27",
+      "variant": "section",
+      "question": "How many seed packets does Nalin label per day?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Nalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B28",
+      "variant": "fixed",
+      "question": "How hot does the Stoneford Depot get during its hottest month?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.\n\n[2] Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B28",
+      "variant": "section",
+      "question": "How hot does the Stoneford Depot get during its hottest month?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.\n\n[2] Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": false
+    }
+  ],
+  "method": "Exact displayed-answer/quote comparison against same-session unchanged v25; all changed evidence retained for assistant review. Frozen per-pack grading unchanged."
+}
