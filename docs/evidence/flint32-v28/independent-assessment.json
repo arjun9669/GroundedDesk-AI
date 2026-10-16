@@ -1,0 +1,347 @@
+{
+  "classification": "Flint32 prospective author-created confirmation, not third-party independent accuracy",
+  "gate": "FAIL",
+  "decision": "Keep v28 isolated; stop before integration/performance/memory/citation-navigation/export qualification. No tuning or replacement sample.",
+  "summary": {
+    "baseline": {
+      "PASS": 16,
+      "PARTIAL": 5,
+      "FAIL": 11,
+      "citations": 35,
+      "literal": 35,
+      "relevant": 23,
+      "citation_integrity_cases": 32,
+      "false_acceptances": 6,
+      "false_refusals": 0
+    },
+    "fixed": {
+      "PASS": 26,
+      "PARTIAL": 3,
+      "FAIL": 3,
+      "citations": 30,
+      "literal": 30,
+      "relevant": 29,
+      "citation_integrity_cases": 32,
+      "false_acceptances": 1,
+      "false_refusals": 2
+    },
+    "section": {
+      "PASS": 26,
+      "PARTIAL": 3,
+      "FAIL": 3,
+      "citations": 30,
+      "literal": 30,
+      "relevant": 29,
+      "citation_integrity_cases": 32,
+      "false_acceptances": 1,
+      "false_refusals": 2
+    },
+    "paired_fixed": {
+      "PASS": 24,
+      "PARTIAL": 3,
+      "FAIL": 5,
+      "citations": 27,
+      "literal": 27,
+      "relevant": 26,
+      "citation_integrity_cases": 32,
+      "false_acceptances": 1,
+      "false_refusals": 4
+    },
+    "paired_section": {
+      "PASS": 24,
+      "PARTIAL": 3,
+      "FAIL": 5,
+      "citations": 27,
+      "literal": 27,
+      "relevant": 26,
+      "citation_integrity_cases": 32,
+      "false_acceptances": 1,
+      "false_refusals": 4
+    }
+  },
+  "regressions": {
+    "fixed": [
+      "F08"
+    ],
+    "section": [
+      "F08"
+    ]
+  },
+  "all_cases_reviewed": true,
+  "method": "Assistant checked every displayed v28 answer against frozen source paragraphs/groups, plus automated five-variant integrity checks. Same assistant, not a blinded external reviewer.",
+  "citation_scope": "Expected-paragraph relevance; a relevant whole paragraph may contain additional unrequested facts. Literal provenance does not establish requested-fact support.",
+  "false_acceptance_qualification": "F21 is a nonresponsive literal retention quotation, not a fabricated event year; strict frozen uncited-refusal rule still fails it.",
+  "browser_limitation": "Installed headless Chrome155.0.8059.80; locally served r44 plus isolated unchanged v28, not attached visible-tab or deployed-candidate validation. No model/browser blocker.",
+  "grade_changes": 0,
+  "reviews": [
+    {
+      "id": "F01",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Visitor opening1906 explicit; full event paragraph contains additional dated facts without contradiction.",
+      "grade_changed": false
+    },
+    {
+      "id": "F02",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Second overhaul1994 distinguished from first1961. Whole paragraph contains both dates.",
+      "grade_changed": false
+    },
+    {
+      "id": "F03",
+      "fixed": "FAIL",
+      "section": "FAIL",
+      "review": "False refusal: highest monthly mean19 degrees in September is explicit in source but no quotation displayed.",
+      "grade_changed": false
+    },
+    {
+      "id": "F04",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Correct actor/action/object/cadence: Iona collects seven water samples per fortnight.",
+      "grade_changed": false
+    },
+    {
+      "id": "F05",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Includes8-year retention and separate next-sentence access-dispute disposal suspension until resolution.",
+      "grade_changed": false
+    },
+    {
+      "id": "F06",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Gallery restoration1986 supported by Its and immediately preceding named-gallery sentence; storehouse inspection2001 is distinct. Paired v27 falsely refused.",
+      "grade_changed": false
+    },
+    {
+      "id": "F07",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Gallery relocation1934 explicit; later restoration and inspection dates remain context.",
+      "grade_changed": false
+    },
+    {
+      "id": "F08",
+      "fixed": "FAIL",
+      "section": "FAIL",
+      "review": "False refusal and production PASS loss: source explicitly gives absolute minimum winter2 degrees in same sentence as average14. r44 baseline correctly displays both.",
+      "grade_changed": false
+    },
+    {
+      "id": "F09",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "All normal96-hour, dusty48-hour and unchanged24-hour inspection intervals displayed across three citations.",
+      "grade_changed": false
+    },
+    {
+      "id": "F10",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Written approval by both Finance Custodian and Workshop Director for above3800 credits complete.",
+      "grade_changed": false
+    },
+    {
+      "id": "F11",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "All five purchasing items displayed, without irrelevant approval or other-document citations.",
+      "grade_changed": false
+    },
+    {
+      "id": "F12",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Packing-office move2012 distinguished from ramp rebuild2021 and reading-desk opening2007.",
+      "grade_changed": false
+    },
+    {
+      "id": "F13",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Mina sorts five return bins daily: correct tuple, without substituting nearby actor/object.",
+      "grade_changed": false
+    },
+    {
+      "id": "F14",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Exactly14:20 falls in at-or-after clause; following service day and road-closure hold displayed.",
+      "grade_changed": false
+    },
+    {
+      "id": "F15",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Includes10 months and unresolved loss-claim exception, without adjacent packet-content citation.",
+      "grade_changed": false
+    },
+    {
+      "id": "F16",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Workshop founding1981 explicit; rebuilding/restoration dates concern other objects.",
+      "grade_changed": false
+    },
+    {
+      "id": "F17",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Four business-hour acknowledgement and explicit non-guarantee of repair completion displayed.",
+      "grade_changed": false
+    },
+    {
+      "id": "F18",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Explicit highest monthly mean27 distinguished from daily39 in same sentence.",
+      "grade_changed": false
+    },
+    {
+      "id": "F19",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "All four dispatch items displayed, without adjacent retention sentence.",
+      "grade_changed": false
+    },
+    {
+      "id": "F20",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Both document facets present: gallery restoration1986 and reservoir opening1906. Pronoun anchored by preceding gallery sentence. Paired v27 falsely refused.",
+      "grade_changed": false
+    },
+    {
+      "id": "F21",
+      "fixed": "FAIL",
+      "section": "FAIL",
+      "review": "False acceptance under frozen rubric: ambiguous overhaul question gets unrelated8-year permit retention, not clarification/refusal. Literal nonresponsive quote, not fabricated overhaul date.",
+      "grade_changed": false
+    },
+    {
+      "id": "F22",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Explicit uncited refusal for rejected path closure; no actual closure date.",
+      "grade_changed": false
+    },
+    {
+      "id": "F23",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Explicit uncited refusal: gallery restoration cannot establish storehouse restoration from its later inspection.",
+      "grade_changed": false
+    },
+    {
+      "id": "F24",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Explicit uncited refusal: Sela polishes flutes, Daro polishes a display stand; requested tuple absent.",
+      "grade_changed": false
+    },
+    {
+      "id": "F25",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Explicit uncited refusal for absent bank account number.",
+      "grade_changed": false
+    },
+    {
+      "id": "F26",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Explicit uncited refusal for absent spindle torque; operating-hour intervals do not supply torque.",
+      "grade_changed": false
+    },
+    {
+      "id": "F27",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Explicit uncited refusal: monthly means cannot supply an absolute minimum.",
+      "grade_changed": false
+    },
+    {
+      "id": "F28",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Explicit uncited refusal for absent Dunvale Ferry Station.",
+      "grade_changed": false
+    },
+    {
+      "id": "F29",
+      "fixed": "PARTIAL",
+      "section": "PARTIAL",
+      "review": "PARTIAL: both durations and ownership exception present; reservoir access-dispute exception absent from displayed quotation.",
+      "grade_changed": false
+    },
+    {
+      "id": "F30",
+      "fixed": "PARTIAL",
+      "section": "PARTIAL",
+      "review": "PARTIAL: collection normal96, workshop normal70/dusty35 present; collection dusty48, inspection24 and workshop inspection14 omitted.",
+      "grade_changed": false
+    },
+    {
+      "id": "F31",
+      "fixed": "PASS",
+      "section": "PASS",
+      "review": "Both packet lists complete: five purchasing items and four dispatch items, no irrelevant retention or approval quotes.",
+      "grade_changed": false
+    },
+    {
+      "id": "F32",
+      "fixed": "PARTIAL",
+      "section": "PARTIAL",
+      "review": "PARTIAL: both deadlines displayed, both non-guarantee limitations omitted. Expanded source context cannot earn credit.",
+      "grade_changed": false
+    }
+  ],
+  "integrity": {
+    "frozen_files_verified": 57,
+    "source_hashes_verified": 4,
+    "cases_once": 32,
+    "hybrid_submissions": 28,
+    "lexical_comparisons": 4,
+    "source_vectors": 44,
+    "query_vectors": 28,
+    "facet_vectors": 2,
+    "all_vectors_finite_384D": true,
+    "citation_number_cases_verified": 160,
+    "runtime_files_unchanged": [
+      "app.mjs",
+      "retrieval.mjs",
+      "hybrid.mjs",
+      "semantic.mjs",
+      "research.mjs",
+      "index.html",
+      "styles.css",
+      "pdf-preview.mjs",
+      "pdf-highlight.mjs"
+    ],
+    "historical_archives_unchanged": {
+      "GroundedDesk-coverage-v28-first-evidence.zip": "6ada4f2295cb76f107c2f5acf70efd246336cc5f9a23ca655c443a6ed3c6fd85",
+      "GroundedDesk-coverage-v27-first-evidence.zip": "06235a65f155eddb60be1b4519790bbe1b9e176c90e79f94588b0bfcbd8ecb1a",
+      "GroundedDesk-coverage-v26-first-evidence.zip": "385ca19f9f1a3b78ffe0397a4ee90add925b48c97dba461ea8bad02f611799dd",
+      "GroundedDesk-Bracken32-v25-first-evidence.zip": "f8487fd4f95645efbee31d3a75b646019914b7497ece5567628bcbb1085c2d2d",
+      "GroundedDesk-Cedar32-v24-first-evidence.zip": "0d5c87b68289ea17d518ac1c8dfd5a08d2f3aaf866e4bf9c5d6cffb5eba0f2a5"
+    },
+    "first_archive_unchanged": {
+      "archive": "GroundedDesk-Flint32-v28-first-evidence.zip",
+      "sha256": "82d3ad6633c8e754dc4187779c3bb310b358ba37277b2bf8efaa4b0268ec53de",
+      "verified_members": 293,
+      "sealed_utc": "2026-10-16T14:53:56.698090+00:00",
+      "freeze_commit": "ef00e01e2cc40d795e2798bdc71062b8e3672abe",
+      "scope": "Once-only first answers and frozen automated grades before assistant diagnosis; review and publication separate."
+    },
+    "changed_vs_v27": [
+      "F06",
+      "F20"
+    ],
+    "unchanged_vs_v27": 30,
+    "candidate_code_changed": false,
+    "grade_changes": 0
+  }
+}

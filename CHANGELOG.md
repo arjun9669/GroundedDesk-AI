@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — Flint32 prospective v28 confirmation FAIL
+
+- Protocol committed before authoring; four source documents,32 questions/key/rubric/runner and57 file hashes frozen before answers. Actual headless Chrome155.0.8059.80, local MiniLM q8 WASM, Qwen off;28 Hybrid and4 separate lexical Comparisons once. Author-created stress set, not external independent accuracy.
+- First26 PASS/3 PARTIAL/3 FAIL both;30/30 literal,29/30 paragraph-relevant citations. F03/F08 falsely refuse temperatures; F21 returns unrelated retention for ambiguous overhaul. F29/F30/F32 comparisons omit required details. F08 loses an r44 baseline PASS. Paired v27 records24/3/5; v28 recovers F06/F20.
+- First outputs/grades sealed before diagnosis; all cases reviewed without grade changes.57 frozen files,4 source hashes,44 source vectors,28 query vectors,2 facet vectors,160 citation-number checks and9 unchanged runtime files verified. All earlier first scores and v28 exposed579 gate PASS preserved.
+- Failed gate stops integration qualification. No tuning/retry/replacement sample/adoption; live5.6/r44 unchanged. [Full report](./docs/FLINT32_V28_CONFIRMATION.md) and [reviewed JSON](./docs/evidence/flint32-v28/REVIEWED_SCORECARD.json).
+
 ## 2026-10-16 — isolated v28 regression gate passes; not adopted
 
 - Added bounded immediately preceding named-subject descriptor support for singular Its within one paragraph, with affirmative dates, literal offsets and event/object/ordinal ambiguity guards. No unrestricted coreference or model-score fabrication.

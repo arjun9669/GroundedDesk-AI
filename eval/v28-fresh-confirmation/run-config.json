@@ -1,0 +1,902 @@
+{
+  "candidate_commit": "bffc465f0ad35522d47f5cfdec4e9b5cfd21af4a",
+  "classification": "Flint32 prospective author-created confirmation of unchanged v28; not external independent accuracy",
+  "total_questions": 32,
+  "module_identity": {
+    "candidate": {
+      "path": "/eval/answer-completeness-v28/coverage.mjs",
+      "sha256": "f2ab295ca35be510d2c3595ccd70e1e48780152e8ba5e2faa05f1db3316fdf41",
+      "id": "coverage-v28-scoped-antecedent"
+    },
+    "paired": {
+      "path": "/eval/answer-completeness-v27/coverage.mjs",
+      "sha256": "2b8102f32bf97553b88ab01c691b4c04390505ef6c624add24a3766e2b6a3d6e"
+    },
+    "helper": {
+      "path": "/tests/fixtures/module-identity.mjs",
+      "sha256": "1271b1bfd118d965b193fffa25514712c6492a4e9701cb6eddc8d7c26679448b"
+    },
+    "dependencies": [
+      {
+        "path": "/eval/answer-completeness/coverage.mjs",
+        "sha256": "c0470d698bc9c400093a130d27aecb67b0ec26a2dce0305efcdcadcce5e59d46"
+      },
+      {
+        "path": "/eval/answer-completeness-v10/coverage.mjs",
+        "sha256": "d8a020e80cdb8546486dfeb0fdeadadebd65e59cd97abf2acff4181e0a5b260f"
+      },
+      {
+        "path": "/eval/answer-completeness-v11/coverage.mjs",
+        "sha256": "49fe76c8f872feed4fccdab740ec9dbc6eb662fc2f5929693ecfa45dc4b26c12"
+      },
+      {
+        "path": "/eval/answer-completeness-v12/coverage.mjs",
+        "sha256": "1d246db6becc2b526ae5a6f3793830cc7d6e95673408e7370fc95a1c385c6579"
+      },
+      {
+        "path": "/eval/answer-completeness-v13/coverage.mjs",
+        "sha256": "aca5f356c25c01461397cbd848ee9042ef47a8496a7a2da3a8ad5ef627299d3b"
+      },
+      {
+        "path": "/eval/answer-completeness-v14/coverage.mjs",
+        "sha256": "eacc40b03f0005b9f6ba36e1d73a1ef74bf0afabcff954a93d9debdf9b7a67d8"
+      },
+      {
+        "path": "/eval/answer-completeness-v15/coverage.mjs",
+        "sha256": "ad6e6490ab03ab0b596f9903b1f5d2ce1f2fb2846d10c8560743fada626dda5f"
+      },
+      {
+        "path": "/eval/answer-completeness-v16/coverage.mjs",
+        "sha256": "f34074685779e6d63bdd0530dc63602a6812bd42b009478825d11eb3a9a75026"
+      },
+      {
+        "path": "/eval/answer-completeness-v17/coverage.mjs",
+        "sha256": "ddb34258de81b27b3aab02dea53dc1243e3ca50224eb7973055c9e468ab52b9e"
+      },
+      {
+        "path": "/eval/answer-completeness-v18/coverage.mjs",
+        "sha256": "664c545581f554d553f8672a317639b32fba90621f0933a7dc15e8ce09bab249"
+      },
+      {
+        "path": "/eval/answer-completeness-v19/coverage.mjs",
+        "sha256": "8a951f213cb9674a584fe0aa69a84af50cda0eff1bc2f71581e05773528164cb"
+      },
+      {
+        "path": "/eval/answer-completeness-v2/coverage.mjs",
+        "sha256": "fe8489198a4a644126963d3509fb7146ab8b97bb03a726cc8bdf1722df764659"
+      },
+      {
+        "path": "/eval/answer-completeness-v20/coverage.mjs",
+        "sha256": "b57cb4a49eb70fe9a7cff4c84b9f3058eb2edea3fd6cb238eaa9683195c58cc1"
+      },
+      {
+        "path": "/eval/answer-completeness-v21/coverage.mjs",
+        "sha256": "b353bceb05acdb5fd56f81fbd4d2176e90256dcacef6a670356ba63763119faf"
+      },
+      {
+        "path": "/eval/answer-completeness-v22/coverage.mjs",
+        "sha256": "d8db199f55825dba92aa6a0ce6f35f340cdda0a5191ce7a2b267dc177d6dc454"
+      },
+      {
+        "path": "/eval/answer-completeness-v23/coverage.mjs",
+        "sha256": "febb0ab77db5790d13665e11c8fba31ad08033fdab2241562e04e4c665f6a409"
+      },
+      {
+        "path": "/eval/answer-completeness-v24/coverage.mjs",
+        "sha256": "222d155c8c67f8f657f3843f170ad906defc630bc8e13608e4c6c74c87270d79"
+      },
+      {
+        "path": "/eval/answer-completeness-v25/coverage.mjs",
+        "sha256": "bb47df7c5bfce57776712f792912d24909b3879da4805ec38acac27190c71a8e"
+      },
+      {
+        "path": "/eval/answer-completeness-v26/coverage.mjs",
+        "sha256": "b37cb0963d9772135e31d94556b848cf06608908003c5d9066df05f32ce9bff9"
+      },
+      {
+        "path": "/eval/answer-completeness-v27/coverage.mjs",
+        "sha256": "2b8102f32bf97553b88ab01c691b4c04390505ef6c624add24a3766e2b6a3d6e"
+      },
+      {
+        "path": "/eval/answer-completeness-v3/coverage.mjs",
+        "sha256": "0cd7281a127704f0db35a27ddf525f7e69c392b094759f7c16734497bd578f90"
+      },
+      {
+        "path": "/eval/answer-completeness-v4/coverage.mjs",
+        "sha256": "0982a0f7b73aa6c10d47c1b393d4c54316687bb95fba7aef97aebc0d2170ff01"
+      },
+      {
+        "path": "/eval/answer-completeness-v5/coverage.mjs",
+        "sha256": "654e2e766b846f9f39603b681037f8b0a7b2e93003172b0a8fcecb211bbc14ae"
+      },
+      {
+        "path": "/eval/answer-completeness-v6/coverage.mjs",
+        "sha256": "c6ab3885abdb67c0a433f09bffe16ec7667c59ff732cdfef60e70623d887a49f"
+      },
+      {
+        "path": "/eval/answer-completeness-v7/coverage.mjs",
+        "sha256": "ac373a55484defb362b8cf4b48ae3cd306ccd72eec7b1f68c53469d98865b70f"
+      },
+      {
+        "path": "/eval/answer-completeness-v8/coverage.mjs",
+        "sha256": "4741632341b16e2a4ddd7513412e369cc7a40f71d1222deac7b6adfa695b1930"
+      },
+      {
+        "path": "/eval/answer-completeness-v9/coverage.mjs",
+        "sha256": "98911771a58ef25429bc090be54a3e2739cc7079c55780e8ae57f9ef6027d6ec"
+      },
+      {
+        "path": "/retrieval.mjs",
+        "sha256": "28714b5d1f3c6e4527be04a73d12419e77213c3dee83cf8f3ccf58f8f28857a5"
+      },
+      {
+        "path": "/hybrid.mjs",
+        "sha256": "9e00aa49e0d17e21fd3808ba7e4c58b786ffacadc0850817d58b88707e72c3d5"
+      },
+      {
+        "path": "/semantic.mjs",
+        "sha256": "569b6c0582223d90e081dbb64a000d3463db2b539127be7b7c01eb0c5bd50175"
+      },
+      {
+        "path": "/research.mjs",
+        "sha256": "2ccea3ad69881a87371811e894a5780c969c09df5d83b3344ec3fe25d4e82a63"
+      },
+      {
+        "path": "/eval/retrieval-quality/section-index.mjs",
+        "sha256": "efbe6158dfd862a06607f2ae1a8e0fce5a5e20c956f15aff12ea0c8552a6837e"
+      },
+      {
+        "path": "/eval/retrieval-quality/grade.mjs",
+        "sha256": "1a51adc5fbeb32319f3b5bc2c676e817fc004affc298b9d73f2275f53604c751"
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "Flint32",
+      "files": [
+        {
+          "name": "01_Flintmere_Reservoir.txt",
+          "path": "C:\\Users\\arjun\\Documents\\Codex\\2026-10-11\\test-groundeddesk-ai-r16-in-chrome\\work\\r25-checkout\\eval\\v28-fresh-confirmation\\source_docs\\01_Flintmere_Reservoir.txt",
+          "sha256": "a377e968c85cfa4711915eb892ad5a7763f97dbe761865f7bee40e0d8d79e678"
+        },
+        {
+          "name": "02_Orren_Horology_Collection.txt",
+          "path": "C:\\Users\\arjun\\Documents\\Codex\\2026-10-11\\test-groundeddesk-ai-r16-in-chrome\\work\\r25-checkout\\eval\\v28-fresh-confirmation\\source_docs\\02_Orren_Horology_Collection.txt",
+          "sha256": "723fbdf72a8f29d72201b6afb3adf7d2bf1e1b9af334fabe8872ce51de8b0522"
+        },
+        {
+          "name": "03_Velric_Instrument_Workshop.txt",
+          "path": "C:\\Users\\arjun\\Documents\\Codex\\2026-10-11\\test-groundeddesk-ai-r16-in-chrome\\work\\r25-checkout\\eval\\v28-fresh-confirmation\\source_docs\\03_Velric_Instrument_Workshop.txt",
+          "sha256": "b7a22db42637a7202e9a6ed9922ea43754b139dd3c6a1ede7f1bafb455c59c2d"
+        },
+        {
+          "name": "04_Sable_Travelling_Books.txt",
+          "path": "C:\\Users\\arjun\\Documents\\Codex\\2026-10-11\\test-groundeddesk-ai-r16-in-chrome\\work\\r25-checkout\\eval\\v28-fresh-confirmation\\source_docs\\04_Sable_Travelling_Books.txt",
+          "sha256": "b4e78eaba727df1d717b575b5d123c4a5107a003d1f797cc7a666b618bc73f3f"
+        }
+      ],
+      "cases": [
+        {
+          "id": "F01",
+          "question": "When did Flintmere Reservoir first admit visitors?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Flintmere_Reservoir.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Flintmere_Reservoir.txt",
+              "context": "Flintmere Reservoir opened to visitors in 1906. The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.",
+              "groups": [
+                [
+                  "opened to visitors in 1906"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F02",
+          "question": "In which year was the second Flintmere Reservoir spillway overhaul completed?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Flintmere_Reservoir.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Flintmere_Reservoir.txt",
+              "context": "Flintmere Reservoir opened to visitors in 1906. The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.",
+              "groups": [
+                [
+                  "second spillway overhaul was completed in 1994"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F03",
+          "question": "What is the highest monthly mean temperature at Flintmere Reservoir, and in which month?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Flintmere_Reservoir.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Flintmere_Reservoir.txt",
+              "context": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.",
+              "groups": [
+                [
+                  "highest monthly mean is 19 degrees Celsius, in September"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F04",
+          "question": "How many water samples does Iona collect per fortnight?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Flintmere_Reservoir.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Flintmere_Reservoir.txt",
+              "context": "Iona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.",
+              "groups": [
+                [
+                  "Iona collects seven water samples per fortnight"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F05",
+          "question": "How long should Flintmere Reservoir visitor permits be kept, and what prevents disposal?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Flintmere_Reservoir.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Flintmere_Reservoir.txt",
+              "context": "Keep Flintmere Reservoir visitor permits for 8 years. An active access dispute suspends disposal until the dispute is resolved.",
+              "groups": [
+                [
+                  "8 years"
+                ],
+                [
+                  "active access dispute suspends disposal until the dispute is resolved"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F06",
+          "question": "What year did the Orren Horology Collection gallery restoration take place?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Orren_Horology_Collection.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Orren_Horology_Collection.txt",
+              "context": "The Orren Horology Collection gallery relocation took place in 1934. Its restoration took place in 1986. A separate storehouse was inspected in 2001.",
+              "groups": [
+                [
+                  "Its restoration took place in 1986"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F07",
+          "question": "What year did the Orren Horology Collection gallery relocation take place?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Orren_Horology_Collection.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Orren_Horology_Collection.txt",
+              "context": "The Orren Horology Collection gallery relocation took place in 1934. Its restoration took place in 1986. A separate storehouse was inspected in 2001.",
+              "groups": [
+                [
+                  "gallery relocation took place in 1934"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F08",
+          "question": "What is the Orren Horology Collection absolute minimum winter temperature?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Orren_Horology_Collection.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Orren_Horology_Collection.txt",
+              "context": "The Orren Horology Collection winter average temperature is 14 degrees Celsius; the absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean is 21 degrees Celsius.",
+              "groups": [
+                [
+                  "absolute minimum winter temperature is 2 degrees Celsius"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F09",
+          "question": "Give the normal and dusty-room lubrication intervals for the Orren Horology Collection winding rig, and say whether its inspection interval changes.",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Orren_Horology_Collection.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Orren_Horology_Collection.txt",
+              "context": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.",
+              "groups": [
+                [
+                  "96 operating hours"
+                ],
+                [
+                  "48 operating hours"
+                ],
+                [
+                  "24 operating hours in either room"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F10",
+          "question": "For a Velric Instrument Workshop purchase above 3800 credits, who must give written approval?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Velric_Instrument_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Velric_Instrument_Workshop.txt",
+              "context": "Velric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+              "groups": [
+                [
+                  "written approval from both the Finance Custodian and the Workshop Director"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F11",
+          "question": "What are all five contents of the Velric Instrument Workshop purchasing packet?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Velric_Instrument_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Velric_Instrument_Workshop.txt",
+              "context": "Velric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+              "groups": [
+                [
+                  "supplier quote"
+                ],
+                [
+                  "cost sheet"
+                ],
+                [
+                  "purchase order"
+                ],
+                [
+                  "safety checklist"
+                ],
+                [
+                  "funding code"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F12",
+          "question": "In which year did Sable Travelling Books move its packing office?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Sable_Travelling_Books.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Sable_Travelling_Books.txt",
+              "context": "Sable Travelling Books moved its packing office in 2012. Its loading ramp was rebuilt in 2021. The public reading desk opened in 2007.",
+              "groups": [
+                [
+                  "moved its packing office in 2012"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F13",
+          "question": "How many return bins does Mina sort per day?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Sable_Travelling_Books.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Sable_Travelling_Books.txt",
+              "context": "Mina sorts five return bins per day. Jules labels eight book bundles per day. Mina labels three route envelopes per day.",
+              "groups": [
+                [
+                  "Mina sorts five return bins per day"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F14",
+          "question": "When does a Sable Travelling Books order released exactly at 14:20 depart, and which hold overrides departure?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Sable_Travelling_Books.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Sable_Travelling_Books.txt",
+              "context": "At Sable Travelling Books, orders released before 14:20 depart on the same service day. Orders released at or after 14:20 depart on the following service day, unless a road-closure hold is in effect.",
+              "groups": [
+                [
+                  "at or after 14:20 depart on the following service day"
+                ],
+                [
+                  "unless a road-closure hold is in effect"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F15",
+          "question": "What is the Sable Travelling Books dispatch-receipt retention period, including the exception?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Sable_Travelling_Books.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Sable_Travelling_Books.txt",
+              "context": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip. Keep dispatch receipts for 10 months, unless an unresolved loss claim requires longer retention.",
+              "groups": [
+                [
+                  "10 months"
+                ],
+                [
+                  "unless an unresolved loss claim requires longer retention"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F16",
+          "question": "When was Velric Instrument Workshop founded?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Velric_Instrument_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Velric_Instrument_Workshop.txt",
+              "context": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+              "groups": [
+                [
+                  "founded in 1981"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F17",
+          "question": "How soon does Velric Instrument Workshop acknowledge a service request, and does that deadline promise repair completion?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Velric_Instrument_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Velric_Instrument_Workshop.txt",
+              "context": "Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.",
+              "groups": [
+                [
+                  "within four business hours"
+                ],
+                [
+                  "acknowledgement is not a promise that the repair will be completed within four hours"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F18",
+          "question": "What is the Velric Instrument Workshop highest monthly mean temperature?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Velric_Instrument_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Velric_Instrument_Workshop.txt",
+              "context": "Velric Instrument Workshop has a highest monthly mean temperature of 27 degrees Celsius and a highest recorded daily temperature of 39 degrees Celsius.",
+              "groups": [
+                [
+                  "highest monthly mean temperature of 27 degrees Celsius"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F19",
+          "question": "List the contents of a Sable Travelling Books dispatch packet.",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Sable_Travelling_Books.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Sable_Travelling_Books.txt",
+              "context": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip. Keep dispatch receipts for 10 months, unless an unresolved loss claim requires longer retention.",
+              "groups": [
+                [
+                  "route sheet"
+                ],
+                [
+                  "parcel list"
+                ],
+                [
+                  "driver authorization"
+                ],
+                [
+                  "delivery slip"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F20",
+          "question": "What year did the Orren Horology Collection gallery restoration take place? Also, when did Flintmere Reservoir open to visitors?",
+          "workflow": "hybrid",
+          "category": "compound",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Orren_Horology_Collection.txt",
+            "01_Flintmere_Reservoir.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Orren_Horology_Collection.txt",
+              "context": "The Orren Horology Collection gallery relocation took place in 1934. Its restoration took place in 1986. A separate storehouse was inspected in 2001.",
+              "groups": [
+                [
+                  "Its restoration took place in 1986"
+                ]
+              ]
+            },
+            {
+              "filename": "01_Flintmere_Reservoir.txt",
+              "context": "Flintmere Reservoir opened to visitors in 1906. The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.",
+              "groups": [
+                [
+                  "opened to visitors in 1906"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F21",
+          "question": "What year was the Flintmere Reservoir spillway overhauled?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Two spillway overhauls are dated1961 and1994. Clarification or no-evidence refusal with zero citations required."
+        },
+        {
+          "id": "F22",
+          "question": "In what year did the Flintmere Reservoir visitor path close?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Proposed closure was rejected; no actual closure date. Even true negative evidence is not an explicit uncited refusal under this strict rubric."
+        },
+        {
+          "id": "F23",
+          "question": "What year did the Orren Horology Collection storehouse restoration take place?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Only the gallery restoration is dated; storehouse has an inspection, not a restoration."
+        },
+        {
+          "id": "F24",
+          "question": "How many flutes does Daro polish per week?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Sela polishes flutes; Daro polishes a display stand. Requested tuple absent."
+        },
+        {
+          "id": "F25",
+          "question": "What is the bank account number for Velric Instrument Workshop?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "No bank account number in any source."
+        },
+        {
+          "id": "F26",
+          "question": "What exact torque in newton-metres should be used on the Velric Instrument Workshop drill spindle?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "No torque value is specified. Lubrication and inspection hours are not torque."
+        },
+        {
+          "id": "F27",
+          "question": "What is the absolute minimum winter temperature at Flintmere Reservoir?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Monthly means do not determine an absolute minimum reading."
+        },
+        {
+          "id": "F28",
+          "question": "What is the highest monthly mean temperature at Dunvale Ferry Station?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Dunvale Ferry Station is absent from all four sources."
+        },
+        {
+          "id": "F29",
+          "question": "Compare how long Flintmere Reservoir keeps visitor permits and Orren Horology Collection keeps loan receipts, including both disposal exceptions.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Flintmere_Reservoir.txt",
+            "02_Orren_Horology_Collection.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Flintmere_Reservoir.txt",
+              "context": "Keep Flintmere Reservoir visitor permits for 8 years. An active access dispute suspends disposal until the dispute is resolved.",
+              "groups": [
+                [
+                  "8 years"
+                ],
+                [
+                  "active access dispute suspends disposal until the dispute is resolved"
+                ]
+              ]
+            },
+            {
+              "filename": "02_Orren_Horology_Collection.txt",
+              "context": "Orren Horology Collection loan receipts are retained for 6 years, except that an open ownership claim requires retention until the claim is settled.",
+              "groups": [
+                [
+                  "6 years"
+                ],
+                [
+                  "open ownership claim requires retention until the claim is settled"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F30",
+          "question": "Compare normal lubrication, dusty-room lubrication and inspection intervals for the Orren Horology Collection winding rig and Velric Instrument Workshop drill.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Orren_Horology_Collection.txt",
+            "03_Velric_Instrument_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Orren_Horology_Collection.txt",
+              "context": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.",
+              "groups": [
+                [
+                  "96 operating hours"
+                ],
+                [
+                  "48 operating hours"
+                ],
+                [
+                  "24 operating hours"
+                ]
+              ]
+            },
+            {
+              "filename": "03_Velric_Instrument_Workshop.txt",
+              "context": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+              "groups": [
+                [
+                  "70 operating hours"
+                ],
+                [
+                  "35 operating hours"
+                ],
+                [
+                  "14 operating hours"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F31",
+          "question": "Compare all packet contents for Velric Instrument Workshop purchasing and Sable Travelling Books dispatch.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Velric_Instrument_Workshop.txt",
+            "04_Sable_Travelling_Books.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Velric_Instrument_Workshop.txt",
+              "context": "Velric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+              "groups": [
+                [
+                  "supplier quote"
+                ],
+                [
+                  "cost sheet"
+                ],
+                [
+                  "purchase order"
+                ],
+                [
+                  "safety checklist"
+                ],
+                [
+                  "funding code"
+                ]
+              ]
+            },
+            {
+              "filename": "04_Sable_Travelling_Books.txt",
+              "context": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip. Keep dispatch receipts for 10 months, unless an unresolved loss claim requires longer retention.",
+              "groups": [
+                [
+                  "route sheet"
+                ],
+                [
+                  "parcel list"
+                ],
+                [
+                  "driver authorization"
+                ],
+                [
+                  "delivery slip"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F32",
+          "question": "Compare acknowledgement deadlines and their limits for Velric Instrument Workshop service requests and Sable Travelling Books reservations.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Velric_Instrument_Workshop.txt",
+            "04_Sable_Travelling_Books.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Velric_Instrument_Workshop.txt",
+              "context": "Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.",
+              "groups": [
+                [
+                  "four business hours"
+                ],
+                [
+                  "not a promise that the repair will be completed within four hours"
+                ]
+              ]
+            },
+            {
+              "filename": "04_Sable_Travelling_Books.txt",
+              "context": "Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+              "groups": [
+                [
+                  "two service days"
+                ],
+                [
+                  "does not guarantee that a reserved book will be available"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "integrity": "Four original fictional TXT sources and32 questions/key frozen before first answers"
+    }
+  ]
+}
