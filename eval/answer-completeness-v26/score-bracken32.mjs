@@ -1,0 +1,31 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const root=path.resolve('eval/answer-completeness-v26'),out=path.resolve('../../outputs/coverage-v26-bracken32-final'),raw=path.resolve('../../outputs/coverage-v26-first-run');
+const norm=s=>String(s??'').replace(/\s+/g,' ').trim();
+const freeze=JSON.parse(await fs.readFile(path.join(root,'freeze-manifest.json')));
+for(const f of freeze.files)assert.equal(createHash('sha256').update(await fs.readFile(f.path)).digest('hex'),f.sha256,f.path);
+assert.equal(JSON.parse(await fs.readFile(path.join(raw,'run-status.json'))).status,'COMPLETE');
+const key=JSON.parse(await fs.readFile('../../outputs/coverage-v26-inputs/run-config.json')).packs.find(p=>p.name==='Bracken32').cases,capture=JSON.parse(await fs.readFile(path.join(raw,'Bracken32/capture.json'))),docs=JSON.parse(await fs.readFile(path.join(raw,'Bracken32/source-extraction.json'))).documents;
+assert.equal(capture.cases.length,32);await fs.mkdir(out);const variants={};
+for(const v of ['baseline','fixed','section','paired_fixed','paired_section'])variants[v]=capture.cases.map((row,i)=>{
+ const k=key[i];assert.equal(k.id,row.id);assert.equal(k.question,row.question);
+ const r=v.startsWith('paired_')?row.pairedPrevious[v.slice(7)]:row[v];
+ const sources=r.sources.map(s=>({filename:s.filename,quote:s.quote,excerpt:s.excerpt}));
+ const provenance=sources.map(s=>Boolean(s.quote)&&norm(docs.find(d=>d.name===s.filename)?.text).includes(norm(s.quote)));
+ const paragraph=sources.map(s=>k.expected_sources.some(e=>e.filename===s.filename&&norm(e.context).includes(norm(s.quote))));
+ const relevant=sources.map((s,j)=>paragraph[j]&&k.expected_sources.some(e=>e.filename===s.filename&&e.groups.some(g=>g.some(a=>norm(s.quote).includes(norm(a))))));
+ const groups=k.expected_sources.flatMap(e=>e.groups.map(g=>({filename:e.filename,alternatives:g})));
+ const matched=groups.map(g=>sources.some((s,j)=>paragraph[j]&&s.filename===g.filename&&g.alternatives.some(a=>norm(s.quote).includes(norm(a)))));
+ const refusal=!r.answered&&sources.length===0&&/can't find|cannot find|not (?:in|provided|specified)|clarif|which restoration/i.test(r.answer);
+ const outcome=k.unsupported?(refusal?'PASS':'FAIL'):provenance.some(x=>!x)||!matched.some(Boolean)?'FAIL':matched.every(Boolean)&&relevant.every(Boolean)?'PASS':'PARTIAL';
+ return {id:k.id,question:k.question,workflow:k.workflow,category:k.category,outcome,answer:r.answer,sources,provenance,paragraph_precision:paragraph,citation_relevance:relevant,matched_groups:matched,required_groups:groups,refusal,false_acceptance:k.unsupported&&!refusal,false_refusal:!k.unsupported&&refusal};
+});
+const summarize=rs=>({PASS:rs.filter(r=>r.outcome==='PASS').length,PARTIAL:rs.filter(r=>r.outcome==='PARTIAL').length,FAIL:rs.filter(r=>r.outcome==='FAIL').length,citations:rs.flatMap(r=>r.sources).length,literal:rs.flatMap(r=>r.provenance).filter(Boolean).length,relevant:rs.flatMap(r=>r.citation_relevance).filter(Boolean).length,false_acceptances:rs.filter(r=>r.false_acceptance).length,false_refusals:rs.filter(r=>r.false_refusal).length});
+const regressions=Object.fromEntries(['fixed','section'].map(v=>[v,variants[v].filter((r,i)=>['baseline','paired_fixed','paired_section'].some(p=>variants[p][i].outcome==='PASS')&&r.outcome!=='PASS').map(r=>r.id)]));
+const result={classification:'Bracken32 exposed v26 in-sample regression; preserve original prospective v25 21/1/10',build:capture.build,browser:capture.browser,model:capture.model,summary:Object.fromEntries(Object.entries(variants).map(([v,rs])=>[v,summarize(rs)])),regressions,gate:['fixed','section'].every(v=>variants[v].every(r=>r.outcome==='PASS')&&regressions[v].length===0)?'PASS':'FAIL',question_retries:0,production_change:'NONE',variants};
+await fs.writeFile(path.join(out,'automated-scorecard.json'),JSON.stringify(result,null,2),{flag:'wx'});
+const lines=['# Bracken32 — v26 exposed in-sample regression','','This is an exposed author-created stress set; preserve original first21/1/10. Not independent third-party accuracy. Actual installed headless Chrome; production UI baseline and isolated v26 fixed/section outputs are distinct. Four separate lexical Comparisons are not Hybrid. No question retries. r44 stays unchanged.','','```json',JSON.stringify({summary:result.summary,regressions,gate:result.gate},null,2),'```',''];
+for(let i=0;i<key.length;i++){lines.push(`## ${key[i].id} — ${key[i].question}`,'');for(const [v,rs] of Object.entries(variants)){const r=rs[i];lines.push(`**${v}: ${r.outcome}**`,'',r.answer,'');r.sources.forEach((s,j)=>lines.push(`Source: ${s.filename}; literal ${r.provenance[j]}; relevant ${r.citation_relevance[j]}.`,'',`> ${s.quote.replaceAll('\n','\n> ')}`,''));lines.push('Frozen group matches: '+JSON.stringify(r.matched_groups),'');}}
+await fs.writeFile(path.join(out,'AUTOMATED_REPORT.md'),lines.join('\n'),{flag:'wx'});console.log(JSON.stringify({summary:result.summary,regressions,gate:result.gate},null,2));
