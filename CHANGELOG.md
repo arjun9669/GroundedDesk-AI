@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — isolated v27 regression, not adopted
+
+- Froze complete-evidence preservation, event objects, month/year dates, identity aliases, multi-packet subjects and maintenance/clock grammar before579 once-only installed Chrome155.0.8059.80 cases with actual local MiniLM:543 Hybrid and36 separate lexical Comparison; Qwen off.
+- Restored all ten v26 regressions. Bracken32 reaches32/0/0 both; Binding64 stays64/0/0 and historical451 original gate passes. Cedar32 is30/0/2: C07 and C20 newly falsely refuse the archive restoration relation. Combined gate FAIL; live r44 unchanged.
+- Preserve all initial scores and raw evidence. Reviewed24 changed outputs; verified140 original inputs,50 frozen code/scoring files,113 historical sealed-artifact checks,2895 citation-number checks and1158 paired-v26 answer/quote checks.431 unit tests and strict bundled offline checks pass. No post-answer tuning or fresh sample.
+- [Full report and machine-readable evidence](./docs/COVERAGE_V27_R44_VALIDATION.md).
+
 ## 2026-10-16 — isolated v26 regression, not adopted
 
 - Froze a separate structural evidence-selection experiment and579 exposed questions before once-only installed Chrome155.0.8059.80 testing with real local MiniLM:543 Hybrid and36 separate lexical Comparison cases; Qwen off.

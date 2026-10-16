@@ -1,0 +1,541 @@
+{
+  "changed_outputs": [
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "fixed",
+      "question": "An outbound order is released at 15:00. When does it leave the depot?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Orders released after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "filename": "01_Meridian_Logistics.txt",
+          "quote": "Orders released after 14:20 leave on the next operating day.",
+          "excerpt": "L LOGISTICS OPERATIONS\nVersion 1.0. Invented non-sensitive evaluation material; not real operating advice.\n\nL-01 Dispatch cutoff\nStandard outbound orders must be released by 14:20 local depot time for same-day dispatch. Orders released after 14:20 leave on the next operating day.\n\nL-02 Shipping packet\nThe dispatch coordinator prepares a packing list, a route sheet, a seal record, and a delivery contact card for every shipment. The purchasing team does not prepare the shipping packet.\n\nL-03 Cold cargo\nCooling crates must remain between 3 and 7 degrees Cel"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "section",
+      "question": "An outbound order is released at 15:00. When does it leave the depot?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Orders released after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "filename": "01_Meridian_Logistics.txt",
+          "quote": "Orders released after 14:20 leave on the next operating day.",
+          "excerpt": "L LOGISTICS OPERATIONS\nVersion 1.0. Invented non-sensitive evaluation material; not real operating advice.\n\nL-01 Dispatch cutoff\nStandard outbound orders must be released by 14:20 local depot time for same-day dispatch. Orders released after 14:20 leave on the next operating day.\n\nL-02 Shipping packet\nThe dispatch coordinator prepares a packing list, a route sheet, a seal record, and a delivery contact card for every shipment. The purchasing team does not prepare the shipping packet.\n\nL-03 Cold cargo\nCooling crates must remain between 3 and 7 degrees Cel"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "fixed",
+      "question": "How does the dusty demonstration bay change the lubrication interval?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] The standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.",
+      "sources": [
+        {
+          "filename": "02_Meridian_Maintenance.txt",
+          "quote": "The standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.",
+          "excerpt": "pection cards are retained for 240 days after service. A card associated with an unresolved equipment investigation is retained until that investigation closes, even if this exceeds 240 days.\n\nM-05 Lubrication exception\nThe standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.\n\nM-06 Parts and purchasing\nReplacement belts must carry part code ZB-42. A maintenance request identifies the asset tag, defect description, requested part code, and required delivery date. The purchasing approval thresholds are defined in the purchasing guide.\n\nM-07 Review cade"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "section",
+      "question": "How does the dusty demonstration bay change the lubrication interval?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] The standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.",
+      "sources": [
+        {
+          "filename": "02_Meridian_Maintenance.txt",
+          "quote": "The standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.",
+          "excerpt": "pection cards are retained for 240 days after service. A card associated with an unresolved equipment investigation is retained until that investigation closes, even if this exceeds 240 days.\n\nM-05 Lubrication exception\nThe standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.\n\nM-06 Parts and purchasing\nReplacement belts must carry part code ZB-42. A maintenance request identifies the asset tag, defect description, requested part code, and required delivery date. The purchasing approval thresholds are defined in the purchasing guide.\n\nM-07 Review cade"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "fixed",
+      "question": "What must be included in the pre-release evidence package?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+          "excerpt": "Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls and assesses whether sensitive records could leave the allowed processing boundary. G-03 Document privacy boundary Prototype testers may upload only public or explicitly permitted data. Session documents are held in browser memory and"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "section",
+      "question": "What must be included in the pre-release evidence package?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+          "excerpt": "Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls and assesses whether sensitive records could leave the allowed processing boundary. G-03 Document privacy boundary Prototype testers may upload only public or explicitly permitted data. Session documents are held in browser memory and"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "fixed",
+      "question": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b172f2f9-2aac-4e21-885d-cab425803d31:body:144",
+          "documentId": "b172f2f9-2aac-4e21-885d-cab425803d31",
+          "filename": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "start": 224,
+          "end": 290,
+          "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "section",
+      "question": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b172f2f9-2aac-4e21-885d-cab425803d31:body:144",
+          "documentId": "b172f2f9-2aac-4e21-885d-cab425803d31",
+          "filename": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "start": 224,
+          "end": 290,
+          "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "fixed",
+      "question": "How often are Hilltop conveyor bearings lubricated normally, in a dusty bay, and how often are they inspected?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Hilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "7f2d3291-5b79-471f-b2c4-1febfba129b5:0",
+          "documentId": "7f2d3291-5b79-471f-b2c4-1febfba129b5",
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "# Hilltop Workshop — Equipment Care Notes\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Lubrication\nHilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. \n\n## Calibration\nHilltop pressure sensors are calibrated every 28 days. Following a sensor replacement, calibration is required before restarting the machine.\nOperational note: This section concerns calibration. Read the written instruction in its original context. Keep the orig",
+          "quote": "Hilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0476,
+          "lexicalScore": 14.414828065619329,
+          "semanticScore": 0.7322982263313524,
+          "matchedTerms": [
+            "hilltop",
+            "conveyor",
+            "bearings",
+            "lubricated",
+            "dusty",
+            "bay"
+          ],
+          "start": 142,
+          "end": 599
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "section",
+      "question": "How often are Hilltop conveyor bearings lubricated normally, in a dusty bay, and how often are they inspected?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Hilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "7f2d3291-5b79-471f-b2c4-1febfba129b5:127",
+          "documentId": "7f2d3291-5b79-471f-b2c4-1febfba129b5",
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "# Hilltop Workshop — Equipment Care Notes\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Lubrication\nHilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. \n\n## Calibration\nHilltop pressure sensors are calibrated every 28 days. Following a sensor replacement, calibration is required before restarting the machine.\nOperational note: This section concerns calibration. Read the written instruction in its original context. Keep the orig",
+          "quote": "Hilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0476,
+          "lexicalScore": 14.710193212518105,
+          "semanticScore": 0.8351633173395626,
+          "matchedTerms": [
+            "hilltop",
+            "conveyor",
+            "bearings",
+            "lubricated",
+            "dusty",
+            "bay"
+          ],
+          "start": 142,
+          "end": 599
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ23",
+      "variant": "fixed",
+      "question": "What do the current Orchard dispatch packet and Lakeside receiving packet each contain?",
+      "prior_outcome": "PARTIAL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+      "answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.\n\n[2] Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b172f2f9-2aac-4e21-885d-cab425803d31:1319",
+          "documentId": "b172f2f9-2aac-4e21-885d-cab425803d31",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "original context. Keep the original file available for review. This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. \n\n## Dispatch packet\nEvery Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Evidence retention\nOrchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.\nOperational note: This section concerns evidence retention. Read the written instruction in its original context. Keep the ori",
+          "quote": "Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0442,
+          "lexicalScore": 4.383341296406266,
+          "semanticScore": 0.480806508937051,
+          "matchedTerms": [
+            "orchard",
+            "dispatch",
+            "packet"
+          ],
+          "start": 1914,
+          "end": 2305
+        },
+        {
+          "citation": 2,
+          "id": "d83142ac-cbde-484b-9fe6-28bfeafb74a1:655",
+          "documentId": "d83142ac-cbde-484b-9fe6-28bfeafb74a1",
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "s original context. Keep the original file available for review. This section concerns quotations. Read the written instruction in its original context. Keep the original file available for review. \n\n## Receiving packet\nEvery Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Invoices\nLakeside invoices are paid within 21 days of accepted delivery.\nOperational note: This section concerns invoices. Read the written instruction in its original context. Keep the original file available for review. This section concerns invoices. Read the written ins",
+          "quote": "Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0214,
+          "lexicalScore": 6.932410927316251,
+          "semanticScore": null,
+          "matchedTerms": [
+            "packet",
+            "lakeside",
+            "receiving"
+          ],
+          "start": 1039,
+          "end": 1433
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ23",
+      "variant": "section",
+      "question": "What do the current Orchard dispatch packet and Lakeside receiving packet each contain?",
+      "prior_outcome": "PARTIAL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+      "answer": "[1] Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.\n\n[2] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "d83142ac-cbde-484b-9fe6-28bfeafb74a1:1019",
+          "documentId": "d83142ac-cbde-484b-9fe6-28bfeafb74a1",
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "s original context. Keep the original file available for review. This section concerns quotations. Read the written instruction in its original context. Keep the original file available for review. \n\n## Receiving packet\nEvery Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Invoices\nLakeside invoices are paid within 21 days of accepted delivery.\nOperational note: This section concerns invoices. Read the written instruction in its original context. Keep the original file available for review. This section concerns invoices. Read the written ins",
+          "quote": "Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0453,
+          "lexicalScore": 9.963788262782852,
+          "semanticScore": 0.5491130784911357,
+          "matchedTerms": [
+            "packet",
+            "lakeside",
+            "receiving"
+          ],
+          "start": 1039,
+          "end": 1433
+        },
+        {
+          "citation": 2,
+          "id": "b172f2f9-2aac-4e21-885d-cab425803d31:1895",
+          "documentId": "b172f2f9-2aac-4e21-885d-cab425803d31",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "original context. Keep the original file available for review. This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. \n\n## Dispatch packet\nEvery Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Evidence retention\nOrchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.\nOperational note: This section concerns evidence retention. Read the written instruction in its original context. Keep the ori",
+          "quote": "Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0449,
+          "lexicalScore": 6.31004024065135,
+          "semanticScore": 0.5893857033779352,
+          "matchedTerms": [
+            "orchard",
+            "dispatch",
+            "packet"
+          ],
+          "start": 1914,
+          "end": 2305
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "fixed",
+      "question": "In which year did the gallery of Japanese art open?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] The Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai.",
+      "sources": [
+        {
+          "filename": "02_Victoria_and_Albert_Museum.md",
+          "quote": "The Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai.",
+          "excerpt": "windows to the galleries are also mullioned and transomed, again a Gothic feature, the top row of windows are interspersed with statues of many of the British artists whose work is displayed in the museum.\n\n## Context 2\nThe Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai. Examples of classic Japanese armour from the mid-19th century, steel sword blades (Katana), Inrō, lacquerware including the Mazarin Chest dated c1640 is one of the finest surviving pieces from Kyoto, porcelain including Imari, Netsuke, woodblock prints including the work of Ando"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "section",
+      "question": "In which year did the gallery of Japanese art open?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] The Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai.",
+      "sources": [
+        {
+          "filename": "02_Victoria_and_Albert_Museum.md",
+          "quote": "The Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai.",
+          "excerpt": "windows to the galleries are also mullioned and transomed, again a Gothic feature, the top row of windows are interspersed with statues of many of the British artists whose work is displayed in the museum.\n\n## Context 2\nThe Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai. Examples of classic Japanese armour from the mid-19th century, steel sword blades (Katana), Inrō, lacquerware including the Mazarin Chest dated c1640 is one of the finest surviving pieces from Kyoto, porcelain including Imari, Netsuke, woodblock prints including the work of Ando"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "fixed",
+      "question": "What is preserved in a closed system of forces when acted upon?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] A conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.",
+      "sources": [
+        {
+          "filename": "03_Force.md",
+          "quote": "A conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.",
+          "excerpt": "# Force\n\n## Context 1\nA conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.\n\n## Context 2\nThe concept of inertia can be further generalized to explain the tendency of objects to continue in many different forms of constant motion, even those that are not strictly constant velocity. The rotational inertia of planet Earth is what fixes the constancy of th"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "section",
+      "question": "What is preserved in a closed system of forces when acted upon?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] A conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.",
+      "sources": [
+        {
+          "filename": "03_Force.md",
+          "quote": "A conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.",
+          "excerpt": "# Force\n\n## Context 1\nA conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.\n\n## Context 2\nThe concept of inertia can be further generalized to explain the tendency of objects to continue in many different forms of constant motion, even those that are not strictly constant velocity. The rotational inertia of planet Earth is what fixes the constancy of th"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C07",
+      "variant": "fixed",
+      "question": "What year did the Harbor Cartography archive restoration take place?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C07",
+      "variant": "section",
+      "question": "What year did the Harbor Cartography archive restoration take place?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "fixed",
+      "question": "What are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+      "sources": [
+        {
+          "filename": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+          "excerpt": "occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention."
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "section",
+      "question": "What are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+      "sources": [
+        {
+          "filename": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+          "excerpt": "occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention."
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C20",
+      "variant": "fixed",
+      "question": "What year did the Cedar Observatory relocation take place? Also, what year did the Harbor Cartography archive restoration take place?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\n[2] The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C20",
+      "variant": "section",
+      "question": "What year did the Cedar Observatory relocation take place? Also, what year did the Harbor Cartography archive restoration take place?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\n[2] The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "fixed",
+      "question": "Which year was the Rossell Seed Library public desk opened?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+      "sources": [
+        {
+          "filename": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+          "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still acti"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "section",
+      "question": "Which year was the Rossell Seed Library public desk opened?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+      "sources": [
+        {
+          "filename": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+          "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still acti"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false
+    }
+  ],
+  "method": "Exact displayed-answer/quote comparison against same-session unchanged v26; all changed evidence retained for assistant review. Frozen per-pack grading unchanged."
+}

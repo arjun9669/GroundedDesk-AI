@@ -1,0 +1,1864 @@
+{
+  "method": "Assistant review of all24 changed outputs (12 questions, both variants) against exact displayed quotes, original keys and source paragraphs. All20 output regressions from v26 (ten unique questions) are now PASS. Unchanged evidence retains previous assessments only after1158 exact same-session v26 answer/quote parity checks; not blinded external adjudication. Original119-case manual grades followed original rules after complete capture. No frozen grade, code, source, question or threshold changed.",
+  "changed_reviews": [
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "fixed",
+      "question": "An outbound order is released at 15:00. When does it leave the depot?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Orders released after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "filename": "01_Meridian_Logistics.txt",
+          "quote": "Orders released after 14:20 leave on the next operating day.",
+          "excerpt": "L LOGISTICS OPERATIONS\nVersion 1.0. Invented non-sensitive evaluation material; not real operating advice.\n\nL-01 Dispatch cutoff\nStandard outbound orders must be released by 14:20 local depot time for same-day dispatch. Orders released after 14:20 leave on the next operating day.\n\nL-02 Shipping packet\nThe dispatch coordinator prepares a packing list, a route sheet, a seal record, and a delivery contact card for every shipment. The purchasing team does not prepare the shipping packet.\n\nL-03 Cold cargo\nCooling crates must remain between 3 and 7 degrees Cel"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS:15:00 is after14:20; the correct next-operating-day leave clause is displayed. Correct Logistics file, no irrelevant citation. The clock selector now accepts the leave predicate.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "section",
+      "question": "An outbound order is released at 15:00. When does it leave the depot?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Orders released after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "filename": "01_Meridian_Logistics.txt",
+          "quote": "Orders released after 14:20 leave on the next operating day.",
+          "excerpt": "L LOGISTICS OPERATIONS\nVersion 1.0. Invented non-sensitive evaluation material; not real operating advice.\n\nL-01 Dispatch cutoff\nStandard outbound orders must be released by 14:20 local depot time for same-day dispatch. Orders released after 14:20 leave on the next operating day.\n\nL-02 Shipping packet\nThe dispatch coordinator prepares a packing list, a route sheet, a seal record, and a delivery contact card for every shipment. The purchasing team does not prepare the shipping packet.\n\nL-03 Cold cargo\nCooling crates must remain between 3 and 7 degrees Cel"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS:15:00 is after14:20; the correct next-operating-day leave clause is displayed. Correct Logistics file, no irrelevant citation. The clock selector now accepts the leave predicate.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "fixed",
+      "question": "How does the dusty demonstration bay change the lubrication interval?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] The standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.",
+      "sources": [
+        {
+          "filename": "02_Meridian_Maintenance.txt",
+          "quote": "The standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.",
+          "excerpt": "pection cards are retained for 240 days after service. A card associated with an unresolved equipment investigation is retained until that investigation closes, even if this exceeds 240 days.\n\nM-05 Lubrication exception\nThe standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.\n\nM-06 Parts and purchasing\nReplacement belts must carry part code ZB-42. A maintenance request identifies the asset tag, defect description, requested part code, and required delivery date. The purchasing approval thresholds are defined in the purchasing guide.\n\nM-07 Review cade"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: standard60-hour lubrication, dusty reduced30-hour interval and explicitly unchanged inspection are all displayed. The source uses interval anaphora; prior complete literal evidence remains intact.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "section",
+      "question": "How does the dusty demonstration bay change the lubrication interval?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] The standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.",
+      "sources": [
+        {
+          "filename": "02_Meridian_Maintenance.txt",
+          "quote": "The standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.",
+          "excerpt": "pection cards are retained for 240 days after service. A card associated with an unresolved equipment investigation is retained until that investigation closes, even if this exceeds 240 days.\n\nM-05 Lubrication exception\nThe standard lubrication interval is 60 operating hours. For a conveyor running in the dusty demonstration bay, the interval is reduced to 30 operating hours. The exception changes the lubrication interval, not the inspection interval.\n\nM-06 Parts and purchasing\nReplacement belts must carry part code ZB-42. A maintenance request identifies the asset tag, defect description, requested part code, and required delivery date. The purchasing approval thresholds are defined in the purchasing guide.\n\nM-07 Review cade"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: standard60-hour lubrication, dusty reduced30-hour interval and explicitly unchanged inspection are all displayed. The source uses interval anaphora; prior complete literal evidence remains intact.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "fixed",
+      "question": "What must be included in the pre-release evidence package?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+          "excerpt": "Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls and assesses whether sensitive records could leave the allowed processing boundary. G-03 Document privacy boundary Prototype testers may upload only public or explicitly permitted data. Session documents are held in browser memory and"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: Governance G-02 displays all model card, risk register, test results log, data-flow diagram and rollback plan items. No Runbook or Vendor citation. Assembly-list grammar no longer discards the complete prior answer.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "section",
+      "question": "What must be included in the pre-release evidence package?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+      "sources": [
+        {
+          "filename": "01_Atlas_AI_Governance_Policy.pdf",
+          "quote": "G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan.",
+          "excerpt": "Sponsor, and a named Security Officer. High-risk releases require written approval from both the AI Release Council and the Security Officer before deployment. The Product Sponsor cannot substitute for either approval. G-02 Required evidence package Before a release review, the Model Owner assembles a model card, a risk register, a test results log, a data-flow diagram, and a rollback plan. The Security Officer checks access controls and assesses whether sensitive records could leave the allowed processing boundary. G-03 Document privacy boundary Prototype testers may upload only public or explicitly permitted data. Session documents are held in browser memory and"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: Governance G-02 displays all model card, risk register, test results log, data-flow diagram and rollback plan items. No Runbook or Vendor citation. Assembly-list grammar no longer discards the complete prior answer.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "fixed",
+      "question": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b172f2f9-2aac-4e21-885d-cab425803d31:body:144",
+          "documentId": "b172f2f9-2aac-4e21-885d-cab425803d31",
+          "filename": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "start": 224,
+          "end": 290,
+          "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: the current Orchard guide at-or-after14:20 leave clause supports next operating day for15:00. Leading An no longer creates a foreign two-word proper-name phrase. The source selection remains the current guide.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "section",
+      "question": "An Orchard order is released at 15:00 under the current guide. When does it depart?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Orders released at or after 14:20 leave on the next operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b172f2f9-2aac-4e21-885d-cab425803d31:body:144",
+          "documentId": "b172f2f9-2aac-4e21-885d-cab425803d31",
+          "filename": "01_Orchard_Depot_Current.md",
+          "quote": "Orders released at or after 14:20 leave on the next operating day.",
+          "start": 224,
+          "end": 290,
+          "excerpt": "chard Depot — Current Dispatch Guide\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Release window\nOrders released before 14:20 leave the Orchard depot on the same operating day. Orders released at or after 14:20 leave on the next operating day.\nOperational note: This section concerns release window. Read the written instruction in its original context. Keep the original file available for review. This section concerns release window. Read the written instruction in its original context. Keep the original file available"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: the current Orchard guide at-or-after14:20 leave clause supports next operating day for15:00. Leading An no longer creates a foreign two-word proper-name phrase. The source selection remains the current guide.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "fixed",
+      "question": "How often are Hilltop conveyor bearings lubricated normally, in a dusty bay, and how often are they inspected?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Hilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "7f2d3291-5b79-471f-b2c4-1febfba129b5:0",
+          "documentId": "7f2d3291-5b79-471f-b2c4-1febfba129b5",
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "# Hilltop Workshop — Equipment Care Notes\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Lubrication\nHilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. \n\n## Calibration\nHilltop pressure sensors are calibrated every 28 days. Following a sensor replacement, calibration is required before restarting the machine.\nOperational note: This section concerns calibration. Read the written instruction in its original context. Keep the orig",
+          "quote": "Hilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0476,
+          "lexicalScore": 14.414828065619329,
+          "semanticScore": 0.7322982263313524,
+          "matchedTerms": [
+            "hilltop",
+            "conveyor",
+            "bearings",
+            "lubricated",
+            "dusty",
+            "bay"
+          ],
+          "start": 142,
+          "end": 599
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: all70-hour normal lubrication,35-hour dusty lubrication and14-day inspection facts remain in the original displayed source quote. Implicit baseline grammar is recognized; existing operational-note padding is preserved under the unchanged rubric rather than claimed as new concise evidence.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "section",
+      "question": "How often are Hilltop conveyor bearings lubricated normally, in a dusty bay, and how often are they inspected?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Hilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "7f2d3291-5b79-471f-b2c4-1febfba129b5:127",
+          "documentId": "7f2d3291-5b79-471f-b2c4-1febfba129b5",
+          "filename": "03_Hilltop_Equipment.md",
+          "excerpt": "# Hilltop Workshop — Equipment Care Notes\n\nFictional development evaluation material. This is not a real organization policy.\n\n## Lubrication\nHilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. \n\n## Calibration\nHilltop pressure sensors are calibrated every 28 days. Following a sensor replacement, calibration is required before restarting the machine.\nOperational note: This section concerns calibration. Read the written instruction in its original context. Keep the orig",
+          "quote": "Hilltop conveyor bearings are lubricated every 70 operating hours. In a dusty bay, the lubrication interval is 35 operating hours. The inspection interval remains 14 days.\nOperational note: This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review. This section concerns lubrication. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0476,
+          "lexicalScore": 14.710193212518105,
+          "semanticScore": 0.8351633173395626,
+          "matchedTerms": [
+            "hilltop",
+            "conveyor",
+            "bearings",
+            "lubricated",
+            "dusty",
+            "bay"
+          ],
+          "start": 142,
+          "end": 599
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: all70-hour normal lubrication,35-hour dusty lubrication and14-day inspection facts remain in the original displayed source quote. Implicit baseline grammar is recognized; existing operational-note padding is preserved under the unchanged rubric rather than claimed as new concise evidence.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ23",
+      "variant": "fixed",
+      "question": "What do the current Orchard dispatch packet and Lakeside receiving packet each contain?",
+      "prior_outcome": "PARTIAL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+      "answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.\n\n[2] Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b172f2f9-2aac-4e21-885d-cab425803d31:1319",
+          "documentId": "b172f2f9-2aac-4e21-885d-cab425803d31",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "original context. Keep the original file available for review. This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. \n\n## Dispatch packet\nEvery Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Evidence retention\nOrchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.\nOperational note: This section concerns evidence retention. Read the written instruction in its original context. Keep the ori",
+          "quote": "Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0442,
+          "lexicalScore": 4.383341296406266,
+          "semanticScore": 0.480806508937051,
+          "matchedTerms": [
+            "orchard",
+            "dispatch",
+            "packet"
+          ],
+          "start": 1914,
+          "end": 2305
+        },
+        {
+          "citation": 2,
+          "id": "d83142ac-cbde-484b-9fe6-28bfeafb74a1:655",
+          "documentId": "d83142ac-cbde-484b-9fe6-28bfeafb74a1",
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "s original context. Keep the original file available for review. This section concerns quotations. Read the written instruction in its original context. Keep the original file available for review. \n\n## Receiving packet\nEvery Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Invoices\nLakeside invoices are paid within 21 days of accepted delivery.\nOperational note: This section concerns invoices. Read the written instruction in its original context. Keep the original file available for review. This section concerns invoices. Read the written ins",
+          "quote": "Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0214,
+          "lexicalScore": 6.932410927316251,
+          "semanticScore": null,
+          "matchedTerms": [
+            "packet",
+            "lakeside",
+            "receiving"
+          ],
+          "start": 1039,
+          "end": 1433
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: both Orchard dispatch items(route sheet, crate inventory, signed handover form) and Lakeside receiving items(purchase order, supplier invoice, inspection note) are displayed from their correct documents. The earlier missing second subject is restored. Original operational-note padding remains.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ23",
+      "variant": "section",
+      "question": "What do the current Orchard dispatch packet and Lakeside receiving packet each contain?",
+      "prior_outcome": "PARTIAL",
+      "outcome": "PASS",
+      "prior_answer": "[1] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.",
+      "answer": "[1] Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.\n\n[2] Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "d83142ac-cbde-484b-9fe6-28bfeafb74a1:1019",
+          "documentId": "d83142ac-cbde-484b-9fe6-28bfeafb74a1",
+          "filename": "04_Lakeside_Purchasing.md",
+          "excerpt": "s original context. Keep the original file available for review. This section concerns quotations. Read the written instruction in its original context. Keep the original file available for review. \n\n## Receiving packet\nEvery Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Invoices\nLakeside invoices are paid within 21 days of accepted delivery.\nOperational note: This section concerns invoices. Read the written instruction in its original context. Keep the original file available for review. This section concerns invoices. Read the written ins",
+          "quote": "Every Lakeside receiving packet contains the purchase order, supplier invoice and inspection note.\nOperational note: This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns receiving packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0453,
+          "lexicalScore": 9.963788262782852,
+          "semanticScore": 0.5491130784911357,
+          "matchedTerms": [
+            "packet",
+            "lakeside",
+            "receiving"
+          ],
+          "start": 1039,
+          "end": 1433
+        },
+        {
+          "citation": 2,
+          "id": "b172f2f9-2aac-4e21-885d-cab425803d31:1895",
+          "documentId": "b172f2f9-2aac-4e21-885d-cab425803d31",
+          "filename": "01_Orchard_Depot_Current.md",
+          "excerpt": "original context. Keep the original file available for review. This section concerns route closure. Read the written instruction in its original context. Keep the original file available for review. \n\n## Dispatch packet\nEvery Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. \n\n## Evidence retention\nOrchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.\nOperational note: This section concerns evidence retention. Read the written instruction in its original context. Keep the ori",
+          "quote": "Every Orchard dispatch packet includes the route sheet, crate inventory and signed handover form.\nOperational note: This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review. This section concerns dispatch packet. Read the written instruction in its original context. Keep the original file available for review.",
+          "score": 0.0449,
+          "lexicalScore": 6.31004024065135,
+          "semanticScore": 0.5893857033779352,
+          "matchedTerms": [
+            "orchard",
+            "dispatch",
+            "packet"
+          ],
+          "start": 1914,
+          "end": 2305
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: both Orchard dispatch items(route sheet, crate inventory, signed handover form) and Lakeside receiving items(purchase order, supplier invoice, inspection note) are displayed from their correct documents. The earlier missing second subject is restored. Original operational-note padding remains.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "fixed",
+      "question": "In which year did the gallery of Japanese art open?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] The Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai.",
+      "sources": [
+        {
+          "filename": "02_Victoria_and_Albert_Museum.md",
+          "quote": "The Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai.",
+          "excerpt": "windows to the galleries are also mullioned and transomed, again a Gothic feature, the top row of windows are interspersed with statues of many of the British artists whose work is displayed in the museum.\n\n## Context 2\nThe Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai. Examples of classic Japanese armour from the mid-19th century, steel sword blades (Katana), Inrō, lacquerware including the Mazarin Chest dated c1640 is one of the finest surviving pieces from Kyoto, porcelain including Imari, Netsuke, woodblock prints including the work of Ando"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: the Toshiba gallery of Japanese art opened in December1986, displayed in its original source paragraph. Month/year date grammar is accepted; no new paraphrased or generated claim.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "section",
+      "question": "In which year did the gallery of Japanese art open?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] The Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai.",
+      "sources": [
+        {
+          "filename": "02_Victoria_and_Albert_Museum.md",
+          "quote": "The Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai.",
+          "excerpt": "windows to the galleries are also mullioned and transomed, again a Gothic feature, the top row of windows are interspersed with statues of many of the British artists whose work is displayed in the museum.\n\n## Context 2\nThe Toshiba gallery of Japanese art opened in December 1986. The majority of exhibits date from 1550 to 1900, but one of the oldest pieces displayed is the 13th-century sculpture of Amida Nyorai. Examples of classic Japanese armour from the mid-19th century, steel sword blades (Katana), Inrō, lacquerware including the Mazarin Chest dated c1640 is one of the finest surviving pieces from Kyoto, porcelain including Imari, Netsuke, woodblock prints including the work of Ando"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: the Toshiba gallery of Japanese art opened in December1986, displayed in its original source paragraph. Month/year date grammar is accepted; no new paraphrased or generated claim.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "fixed",
+      "question": "What is preserved in a closed system of forces when acted upon?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] A conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.",
+      "sources": [
+        {
+          "filename": "03_Force.md",
+          "quote": "A conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.",
+          "excerpt": "# Force\n\n## Context 1\nA conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.\n\n## Context 2\nThe concept of inertia can be further generalized to explain the tendency of objects to continue in many different forms of constant motion, even those that are not strictly constant velocity. The rotational inertia of planet Earth is what fixes the constancy of th"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: the original closed-system net-mechanical-energy quotation is retained. Subordinate when no longer creates a dated closure request. The displayed source context and frozen answer-span rule are unchanged.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "section",
+      "question": "What is preserved in a closed system of forces when acted upon?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] A conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.",
+      "sources": [
+        {
+          "filename": "03_Force.md",
+          "quote": "A conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.",
+          "excerpt": "# Force\n\n## Context 1\nA conservative force that acts on a closed system has an associated mechanical work that allows energy to convert only between kinetic or potential forms. This means that for a closed system, the net mechanical energy is conserved whenever a conservative force acts on the system. The force, therefore, is related directly to the difference in potential energy between two different locations in space, and can be considered to be an artifact of the potential field in the same way that the direction and amount of a flow of water can be considered to be an artifact of the contour map of the elevation of an area.\n\n## Context 2\nThe concept of inertia can be further generalized to explain the tendency of objects to continue in many different forms of constant motion, even those that are not strictly constant velocity. The rotational inertia of planet Earth is what fixes the constancy of th"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: the original closed-system net-mechanical-energy quotation is retained. Subordinate when no longer creates a dated closure request. The displayed source context and frozen answer-span rule are unchanged.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C07",
+      "variant": "fixed",
+      "question": "What year did the Harbor Cartography archive restoration take place?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true,
+      "assessment": "New supported false refusal, FAIL. The query says Harbor Cartography archive restoration. The source first names The Harbor Cartography archive, then says Its restoration took place in1938. The new residual-object matcher requires archive inside the restoration sentence itself, fails the pronoun/subject-descriptor link and discards prior complete support. No missing date or source ambiguity justifies this refusal.",
+      "recorded_diagnostics": {
+        "refused": true,
+        "reason": "No affirmative dated event relation"
+      }
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C07",
+      "variant": "section",
+      "question": "What year did the Harbor Cartography archive restoration take place?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true,
+      "assessment": "New supported false refusal, FAIL. The query says Harbor Cartography archive restoration. The source first names The Harbor Cartography archive, then says Its restoration took place in1938. The new residual-object matcher requires archive inside the restoration sentence itself, fails the pronoun/subject-descriptor link and discards prior complete support. No missing date or source ambiguity justifies this refusal.",
+      "recorded_diagnostics": {
+        "refused": true,
+        "reason": "No affirmative dated event relation"
+      }
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "fixed",
+      "question": "What are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+      "sources": [
+        {
+          "filename": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+          "excerpt": "occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention."
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS:72-hour normal lubrication,36-hour dusty lubrication and18-hour inspection in either environment are preserved. The baseline sentence does not need an explicit normal/clean marker.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "section",
+      "question": "What are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+      "sources": [
+        {
+          "filename": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+          "excerpt": "occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention."
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS:72-hour normal lubrication,36-hour dusty lubrication and18-hour inspection in either environment are preserved. The baseline sentence does not need an explicit normal/clean marker.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C20",
+      "variant": "fixed",
+      "question": "What year did the Cedar Observatory relocation take place? Also, what year did the Harbor Cartography archive restoration take place?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\n[2] The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true,
+      "assessment": "New supported compound false refusal, FAIL. Cedar relocation1874 and Harbor archive restoration1938 are both supported. The same C07 residual-object/antecedent failure invalidates the Harbor facet, so the all-facets rule refuses the entire compound. Fresh separately ranked facet vectors exist; the error is the structural support decision, not missing embeddings.",
+      "recorded_diagnostics": {
+        "refused": true,
+        "reason": "Unsupported or ambiguous compound facet"
+      }
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C20",
+      "variant": "section",
+      "question": "What year did the Cedar Observatory relocation take place? Also, what year did the Harbor Cartography archive restoration take place?",
+      "prior_outcome": "PASS",
+      "outcome": "FAIL",
+      "prior_answer": "[1] The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\n[2] The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.",
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "false_acceptance": false,
+      "false_refusal": true,
+      "assessment": "New supported compound false refusal, FAIL. Cedar relocation1874 and Harbor archive restoration1938 are both supported. The same C07 residual-object/antecedent failure invalidates the Harbor facet, so the all-facets rule refuses the entire compound. Fresh separately ranked facet vectors exist; the error is the structural support decision, not missing embeddings.",
+      "recorded_diagnostics": {
+        "refused": true,
+        "reason": "Unsupported or ambiguous compound facet"
+      }
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "fixed",
+      "question": "Which year was the Rossell Seed Library public desk opened?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+      "sources": [
+        {
+          "filename": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+          "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still acti"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: the requested public-desk opening1996 is distinguished from separate-annex ceremony2018. The complete prior Rossell history paragraph remains displayed. The frozen rubric permits that paragraph, so the extra annex date is still visible; this is not a newly synthesized single-date answer.",
+      "recorded_diagnostics": null
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "section",
+      "question": "Which year was the Rossell Seed Library public desk opened?",
+      "prior_outcome": "FAIL",
+      "outcome": "PASS",
+      "prior_answer": "I can't find this in the provided documents.",
+      "answer": "[1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+      "sources": [
+        {
+          "filename": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+          "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still acti"
+        }
+      ],
+      "false_acceptance": false,
+      "false_refusal": false,
+      "assessment": "Restored PASS: the requested public-desk opening1996 is distinguished from separate-annex ceremony2018. The complete prior Rossell history paragraph remains displayed. The frozen rubric permits that paragraph, so the extra annex date is still visible; this is not a newly synthesized single-date answer.",
+      "recorded_diagnostics": null
+    }
+  ],
+  "restored_v26_regressions": [
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I10",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Meridian24",
+      "id": "I15",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Atlas15",
+      "id": "D02",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ02",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ13",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ23",
+      "variant": "fixed",
+      "outcome": "PARTIAL"
+    },
+    {
+      "pack": "RetrievalQuality28",
+      "id": "RQ23",
+      "variant": "section",
+      "outcome": "PARTIAL"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E11",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E13",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Cedar32",
+      "id": "C14",
+      "variant": "section",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "fixed",
+      "outcome": "FAIL"
+    },
+    {
+      "pack": "Bracken32",
+      "id": "B11",
+      "variant": "section",
+      "outcome": "FAIL"
+    }
+  ],
+  "prior_Binding64_reviews_preserved": [
+    {
+      "variant": "fixed",
+      "id": "F01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "New France displayed; broader historical context retained."
+    },
+    {
+      "variant": "fixed",
+      "id": "F02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Seven Years War relation displayed in the same original sentence."
+    },
+    {
+      "variant": "fixed",
+      "id": "F03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "1759-60 displayed for British defeat of New France."
+    },
+    {
+      "variant": "fixed",
+      "id": "F04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Dorotheenstadt and Friedrichstadt both displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F05",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Displayed literal sentence explicitly relates the occupation of Prussia by Napoleon to1806-07 in the correct frozen body paragraph. Actual model cosine remains below0.35 and is unchanged, not fabricated. Recovery is caused by the separately frozen unique literal-date fallback within the selected document, not improved model knowledge or general deictic resolution."
+    },
+    {
+      "variant": "fixed",
+      "id": "F06",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Original northern-European congregation list displayed; no list items inferred from outside quote."
+    },
+    {
+      "variant": "fixed",
+      "id": "F07",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT_PER_KEY_WORDING_LIMIT"
+      ],
+      "note": "Frozen key48.8degreesC displayed, so frozen PASS retained. Question asks highest monthly temperature, while quoted source states highest maximum since WWII. Annotation/question wording mismatch remains an independent limitation, not a newly verified monthly statistic."
+    },
+    {
+      "variant": "fixed",
+      "id": "F08",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT_PER_KEY_AVERAGE_BOUND_LIMIT"
+      ],
+      "note": "Displayed quote now includes the literal named-region subject and summer/winter average-temperature sentence, including15 degreesC in winter. It says averages exceed that value, not an absolute minimum; original winner typo is unchanged. Frozen key PASS with average-bound qualification."
+    },
+    {
+      "variant": "fixed",
+      "id": "F09",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Historical heatwave date7February2009 displayed; not a claim about current records."
+    },
+    {
+      "variant": "fixed",
+      "id": "F10",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Source gives17percent increase during2003-04; evaluated as historical source content, not financial advice."
+    },
+    {
+      "variant": "fixed",
+      "id": "F11",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "32,463farms displayed with explicit as-of2004 qualification; not a current farm count."
+    },
+    {
+      "variant": "fixed",
+      "id": "F12",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "More than60percent of state land displayed, preserving its qualifier."
+    },
+    {
+      "variant": "fixed",
+      "id": "F13",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Ibn Sina/Avicenna full name displayed with source-attributed historical claim."
+    },
+    {
+      "variant": "fixed",
+      "id": "F14",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Persia displayed; quote starts with surname Garrison after initials were truncated. Requested location present, broad authorship context in key remains."
+    },
+    {
+      "variant": "fixed",
+      "id": "F15",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Abu al-Rayhan al-Biruni and date range displayed literally."
+    },
+    {
+      "variant": "fixed",
+      "id": "F16",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Wave speeds inside earth displayed; original deictic/recent wording retained, no current-date claim."
+    },
+    {
+      "variant": "fixed",
+      "id": "F17",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Mantle and within-layer seismic discontinuities displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F18",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Seismic waves displayed in original imaging sentence."
+    },
+    {
+      "variant": "fixed",
+      "id": "F19",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Asynchronous/FIFO forwarding displayed. Exact question text duplicates F20 because different original QA IDs were sampled; no deduplication after freeze."
+    },
+    {
+      "variant": "fixed",
+      "id": "F20",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Same original question string as F19, separate annotation retained. This repetition reduces diversity; do not count it as independently different wording."
+    },
+    {
+      "variant": "fixed",
+      "id": "F21",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Multiple access scheme for shared physical media displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F22",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Distributed Adaptive Message Block Switching and Baran attribution displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "F23",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Fault-tolerant efficient routing goal displayed; original system reference is deictic, with source context supplied only by retrieval."
+    },
+    {
+      "variant": "fixed",
+      "id": "F24",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Donald Davies and naming attribution displayed, retaining preceding identifying sentence."
+    },
+    {
+      "variant": "fixed",
+      "id": "C01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Both New France and Seven Years War facets displayed in one source-literal quote."
+    },
+    {
+      "variant": "fixed",
+      "id": "C02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT_PER_KEY_WORDING_LIMIT",
+        "DIRECT_PER_KEY_AVERAGE_BOUND_LIMIT"
+      ],
+      "note": "Both frozen temperature groups are displayed in two literal same-paragraph quotations. Maximum-since-WWII is not a highest monthly statistic; the winter figure is an average lower bound. Frozen key PASS, with both question/source wording limits retained rather than claiming full entailment."
+    },
+    {
+      "variant": "fixed",
+      "id": "C03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "note": "Ibn Sina and Persia facets both displayed in distinct relevant quotes."
+    },
+    {
+      "variant": "fixed",
+      "id": "C04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Constructed from F19/F20 identical question strings with original annotations. Both frozen groups displayed; frozen PASS retained, but this is not two independently distinct question facets."
+    },
+    {
+      "variant": "fixed",
+      "id": "T1A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T1B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T1C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "E1A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "E1B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Exact-cutoff next-operating-day branch and the named unresolved-review hold are both displayed as one literal contiguous span in the correct source body paragraph. Before-cutoff same-day text is absent. All frozen groups match."
+    },
+    {
+      "variant": "fixed",
+      "id": "N11",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "fixed",
+      "id": "N12",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "fixed",
+      "id": "T2A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T2B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T2C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "E2A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "E2B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Exact-cutoff next-operating-day branch and the named unresolved-review hold are both displayed as one literal contiguous span in the correct source body paragraph. Before-cutoff same-day text is absent. All frozen groups match."
+    },
+    {
+      "variant": "fixed",
+      "id": "N21",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "fixed",
+      "id": "N22",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "fixed",
+      "id": "T3A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T3B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T3C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "E3A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "E3B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Exact-cutoff next-operating-day branch and the named unresolved-review hold are both displayed as one literal contiguous span in the correct source body paragraph. Before-cutoff same-day text is absent. All frozen groups match."
+    },
+    {
+      "variant": "fixed",
+      "id": "N31",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "fixed",
+      "id": "N32",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "fixed",
+      "id": "T4A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "The literal quotation explicitly states Vera Linven completed a24-tray tagging run. Doubled-consonant alternatives allow tag/tagging without borrowing Eran Morven task/count. Broader paragraph contains two other counts but the requested tuple is displayed. Exact quote/answer matches historical qualified v20; no narrowed or synthetic quotation is substituted."
+    },
+    {
+      "variant": "fixed",
+      "id": "T4B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "T4C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "fixed",
+      "id": "E4A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "fixed",
+      "id": "E4B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Exact-cutoff next-operating-day branch and the named unresolved-review hold are both displayed as one literal contiguous span in the correct source body paragraph. Before-cutoff same-day text is absent. All frozen groups match."
+    },
+    {
+      "variant": "fixed",
+      "id": "N41",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "fixed",
+      "id": "N42",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "fixed",
+      "id": "X01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "note": "Both correct filenames, both durations and both open-review exceptions remain displayed. Only complete leading Markdown headings are removed. New quotes are original body paragraph substrings; factual completeness was already present in v20, so the gain is boundary precision, not newly recovered facts. Separate lexical workflow, not Hybrid."
+    },
+    {
+      "variant": "fixed",
+      "id": "X02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "note": "Both correct filenames, both durations and both open-review exceptions remain displayed. Only complete leading Markdown headings are removed. New quotes are original body paragraph substrings; factual completeness was already present in v20, so the gain is boundary precision, not newly recovered facts. Separate lexical workflow, not Hybrid."
+    },
+    {
+      "variant": "fixed",
+      "id": "X03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "note": "Both correct filenames, both durations and both open-review exceptions remain displayed. Only complete leading Markdown headings are removed. New quotes are original body paragraph substrings; factual completeness was already present in v20, so the gain is boundary precision, not newly recovered facts. Separate lexical workflow, not Hybrid."
+    },
+    {
+      "variant": "fixed",
+      "id": "X04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "note": "Both correct filenames, both durations and both open-review exceptions remain displayed. Only complete leading Markdown headings are removed. New quotes are original body paragraph substrings; factual completeness was already present in v20, so the gain is boundary precision, not newly recovered facts. Separate lexical workflow, not Hybrid."
+    },
+    {
+      "variant": "fixed",
+      "id": "U01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "fixed",
+      "id": "U02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "fixed",
+      "id": "U03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "fixed",
+      "id": "U04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "section",
+      "id": "F01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "New France displayed; broader historical context retained."
+    },
+    {
+      "variant": "section",
+      "id": "F02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Seven Years War relation displayed in the same original sentence."
+    },
+    {
+      "variant": "section",
+      "id": "F03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "1759-60 displayed for British defeat of New France."
+    },
+    {
+      "variant": "section",
+      "id": "F04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Dorotheenstadt and Friedrichstadt both displayed."
+    },
+    {
+      "variant": "section",
+      "id": "F05",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Displayed literal sentence explicitly relates the occupation of Prussia by Napoleon to1806-07 in the correct frozen body paragraph. Actual model cosine remains below0.35 and is unchanged, not fabricated. Recovery is caused by the separately frozen unique literal-date fallback within the selected document, not improved model knowledge or general deictic resolution."
+    },
+    {
+      "variant": "section",
+      "id": "F06",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Original northern-European congregation list displayed; no list items inferred from outside quote."
+    },
+    {
+      "variant": "section",
+      "id": "F07",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT_PER_KEY_WORDING_LIMIT"
+      ],
+      "note": "Frozen key48.8degreesC displayed, so frozen PASS retained. Question asks highest monthly temperature, while quoted source states highest maximum since WWII. Annotation/question wording mismatch remains an independent limitation, not a newly verified monthly statistic."
+    },
+    {
+      "variant": "section",
+      "id": "F08",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT_PER_KEY_AVERAGE_BOUND_LIMIT"
+      ],
+      "note": "Displayed quote now includes the literal named-region subject and summer/winter average-temperature sentence, including15 degreesC in winter. It says averages exceed that value, not an absolute minimum; original winner typo is unchanged. Frozen key PASS with average-bound qualification."
+    },
+    {
+      "variant": "section",
+      "id": "F09",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Historical heatwave date7February2009 displayed; not a claim about current records."
+    },
+    {
+      "variant": "section",
+      "id": "F10",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Source gives17percent increase during2003-04; evaluated as historical source content, not financial advice."
+    },
+    {
+      "variant": "section",
+      "id": "F11",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "32,463farms displayed with explicit as-of2004 qualification; not a current farm count."
+    },
+    {
+      "variant": "section",
+      "id": "F12",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "More than60percent of state land displayed, preserving its qualifier."
+    },
+    {
+      "variant": "section",
+      "id": "F13",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Ibn Sina/Avicenna full name displayed with source-attributed historical claim."
+    },
+    {
+      "variant": "section",
+      "id": "F14",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Persia displayed; quote starts with surname Garrison after initials were truncated. Requested location present, broad authorship context in key remains."
+    },
+    {
+      "variant": "section",
+      "id": "F15",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Abu al-Rayhan al-Biruni and date range displayed literally."
+    },
+    {
+      "variant": "section",
+      "id": "F16",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Wave speeds inside earth displayed; original deictic/recent wording retained, no current-date claim."
+    },
+    {
+      "variant": "section",
+      "id": "F17",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Mantle and within-layer seismic discontinuities displayed."
+    },
+    {
+      "variant": "section",
+      "id": "F18",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Seismic waves displayed in original imaging sentence."
+    },
+    {
+      "variant": "section",
+      "id": "F19",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Asynchronous/FIFO forwarding displayed. Exact question text duplicates F20 because different original QA IDs were sampled; no deduplication after freeze."
+    },
+    {
+      "variant": "section",
+      "id": "F20",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Same original question string as F19, separate annotation retained. This repetition reduces diversity; do not count it as independently different wording."
+    },
+    {
+      "variant": "section",
+      "id": "F21",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Multiple access scheme for shared physical media displayed."
+    },
+    {
+      "variant": "section",
+      "id": "F22",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Distributed Adaptive Message Block Switching and Baran attribution displayed."
+    },
+    {
+      "variant": "section",
+      "id": "F23",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Fault-tolerant efficient routing goal displayed; original system reference is deictic, with source context supplied only by retrieval."
+    },
+    {
+      "variant": "section",
+      "id": "F24",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Donald Davies and naming attribution displayed, retaining preceding identifying sentence."
+    },
+    {
+      "variant": "section",
+      "id": "C01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Both New France and Seven Years War facets displayed in one source-literal quote."
+    },
+    {
+      "variant": "section",
+      "id": "C02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT_PER_KEY_WORDING_LIMIT",
+        "DIRECT_PER_KEY_AVERAGE_BOUND_LIMIT"
+      ],
+      "note": "Both frozen temperature groups are displayed in two literal same-paragraph quotations. Maximum-since-WWII is not a highest monthly statistic; the winter figure is an average lower bound. Frozen key PASS, with both question/source wording limits retained rather than claiming full entailment."
+    },
+    {
+      "variant": "section",
+      "id": "C03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "note": "Ibn Sina and Persia facets both displayed in distinct relevant quotes."
+    },
+    {
+      "variant": "section",
+      "id": "C04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Constructed from F19/F20 identical question strings with original annotations. Both frozen groups displayed; frozen PASS retained, but this is not two independently distinct question facets."
+    },
+    {
+      "variant": "section",
+      "id": "T1A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T1B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T1C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "E1A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "section",
+      "id": "E1B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Exact-cutoff next-operating-day branch and the named unresolved-review hold are both displayed as one literal contiguous span in the correct source body paragraph. Before-cutoff same-day text is absent. All frozen groups match."
+    },
+    {
+      "variant": "section",
+      "id": "N11",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "section",
+      "id": "N12",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "section",
+      "id": "T2A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T2B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T2C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "E2A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "section",
+      "id": "E2B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Exact-cutoff next-operating-day branch and the named unresolved-review hold are both displayed as one literal contiguous span in the correct source body paragraph. Before-cutoff same-day text is absent. All frozen groups match."
+    },
+    {
+      "variant": "section",
+      "id": "N21",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "section",
+      "id": "N22",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "section",
+      "id": "T3A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T3B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T3C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "E3A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "section",
+      "id": "E3B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Exact-cutoff next-operating-day branch and the named unresolved-review hold are both displayed as one literal contiguous span in the correct source body paragraph. Before-cutoff same-day text is absent. All frozen groups match."
+    },
+    {
+      "variant": "section",
+      "id": "N31",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "section",
+      "id": "N32",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "section",
+      "id": "T4A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "The literal quotation explicitly states Vera Linven completed a24-tray tagging run. Doubled-consonant alternatives allow tag/tagging without borrowing Eran Morven task/count. Broader paragraph contains two other counts but the requested tuple is displayed. Exact quote/answer matches historical qualified v20; no narrowed or synthetic quotation is substituted."
+    },
+    {
+      "variant": "section",
+      "id": "T4B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "T4C",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "All three actors/action counts are quoted broadly. Requested literal tuple is present, so supported PASS; not proof of precise tuple discrimination. The paired unsupported question exposes that limitation."
+    },
+    {
+      "variant": "section",
+      "id": "E4A",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Correct retention duration and review-open hold-until-closure exception both displayed."
+    },
+    {
+      "variant": "section",
+      "id": "E4B",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT"
+      ],
+      "note": "Exact-cutoff next-operating-day branch and the named unresolved-review hold are both displayed as one literal contiguous span in the correct source body paragraph. Before-cutoff same-day text is absent. All frozen groups match."
+    },
+    {
+      "variant": "section",
+      "id": "N41",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "section",
+      "id": "N42",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "The requested named actor/action combination is absent while other actors/tasks/counts are present. Candidate explicitly refuses with zero citations. This is an exposed repair, not proof of general relation/entailment handling."
+    },
+    {
+      "variant": "section",
+      "id": "X01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "note": "Both correct filenames, both durations and both open-review exceptions remain displayed. Only complete leading Markdown headings are removed. New quotes are original body paragraph substrings; factual completeness was already present in v20, so the gain is boundary precision, not newly recovered facts. Separate lexical workflow, not Hybrid."
+    },
+    {
+      "variant": "section",
+      "id": "X02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "note": "Both correct filenames, both durations and both open-review exceptions remain displayed. Only complete leading Markdown headings are removed. New quotes are original body paragraph substrings; factual completeness was already present in v20, so the gain is boundary precision, not newly recovered facts. Separate lexical workflow, not Hybrid."
+    },
+    {
+      "variant": "section",
+      "id": "X03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "note": "Both correct filenames, both durations and both open-review exceptions remain displayed. Only complete leading Markdown headings are removed. New quotes are original body paragraph substrings; factual completeness was already present in v20, so the gain is boundary precision, not newly recovered facts. Separate lexical workflow, not Hybrid."
+    },
+    {
+      "variant": "section",
+      "id": "X04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [
+        "DIRECT",
+        "DIRECT"
+      ],
+      "note": "Both correct filenames, both durations and both open-review exceptions remain displayed. Only complete leading Markdown headings are removed. New quotes are original body paragraph substrings; factual completeness was already present in v20, so the gain is boundary precision, not newly recovered facts. Separate lexical workflow, not Hybrid."
+    },
+    {
+      "variant": "section",
+      "id": "U01",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "section",
+      "id": "U02",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "section",
+      "id": "U03",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    },
+    {
+      "variant": "section",
+      "id": "U04",
+      "frozen_outcome": "PASS",
+      "citation_independent_relevance": [],
+      "note": "Correct explicit unsupported refusal with zero citations."
+    }
+  ],
+  "prior_wording_qualifications": [
+    "F07/C02 highest-monthly wording differs from source/key maximum since WWII.",
+    "F08/C02 winter figure is an average lower bound, not an absolute low; typo winner unchanged.",
+    "F05 deictic question and F19/F20 duplicate strings/repeated C04 facet remain.",
+    "All515 cases are exposed in-sample regression; provenance/paragraph/span checks are not entailment."
+  ],
+  "new_false_refusal_unique_questions": [
+    "Cedar32/C07",
+    "Cedar32/C20"
+  ],
+  "supported_false_refusals_per_variant": 3,
+  "existing_supported_false_refusal": "FreshConfirmation32/F10 remains unchanged",
+  "unsupported_uncited_refusals_per_variant": 111,
+  "false_acceptances_per_variant": 0,
+  "frozen_grades_changed": false,
+  "first_archive": {
+    "archive": "GroundedDesk-coverage-v27-first-evidence.zip",
+    "sha256": "06235a65f155eddb60be1b4519790bbe1b9e176c90e79f94588b0bfcbd8ecb1a",
+    "verified_members": 4326,
+    "sealed_utc": "2026-10-16T11:14:02.206120+00:00",
+    "scope": "First once-only browser answers, initial grades, frozen code/config and unchanged source/key snapshots. Subsequent assistant review and publication kept separately."
+  },
+  "next_work": "A separate iteration needs to distinguish query subject descriptors from true event objects and bind an unambiguous pronoun to its named paragraph subject without borrowing events from another subject. Preserve complete evidence only with positive scoped support. No post-answer tuning or fresh sample here."
+}

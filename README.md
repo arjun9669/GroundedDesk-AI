@@ -11,14 +11,16 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v26** in-sample regression: Bracken32 **31/0/1** both, but **10 prior PASS regressions**; gate **FAIL**, not adopted |
-| Latest recorded checks | **418 unit tests** and bundled offline checks pass; real MiniLM v26 regression gate fails |
+| Latest retrieval experiment | **v27** in-sample regression: Bracken32 **32/0/0**, Cedar32 **30/0/2** both; **2 new prior PASS regressions**, gate **FAIL**, not adopted |
+| Latest recorded checks | **431 unit tests** and bundled offline checks pass; real MiniLM v27 combined regression gate fails |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
-Experimental v26 is a development iteration, not retrieval build r26 or a new application release. Its [579-case real Chrome/MiniLM in-sample regression](./docs/COVERAGE_V26_R44_VALIDATION.md) improves Bracken32 to **31/0/1**, but loses **10 previously passing questions** in both variants: nine false refusals and one incomplete two-document answer. Cedar32 falls to **31/0/1**; Binding64 remains **64/0/0**, while the required historical gate fails. **V26 is not adopted; live r44 stays unchanged.**
+Experimental v27 is a development iteration, not retrieval build r27 or a new application release. The [579-case real Chrome/MiniLM in-sample regression](./docs/COVERAGE_V27_R44_VALIDATION.md) restores all ten v26 regressions and reaches **Bracken32 32/0/0** and **Binding64 64/0/0**, with the original historical451 gate passing. But **Cedar32 falls to30/0/2**: C07 and compound C20 newly falsely refuse a supported archive restoration date. **The combined gate FAILS; v27 is not adopted and live r44 stays unchanged.**
 
-Bracken32's [first-look v25 21/1/10](./docs/BRACKEN32_V25_CONFIRMATION.md), the [earlier exposed v25 Cedar32 32/0/0](./docs/COVERAGE_V25_R44_VALIDATION.md), and Cedar32's [first24/2/6](./docs/CEDAR32_V24_CONFIRMATION.md) remain immutable. The report documents all exact answers, source quotations, regressions and the copied screenshot-heading error. Next work is to preserve complete prior evidence when a structural frame does not cover the query or source grammar, then run a separately frozen regression.
+All previous results remain immutable: [v26's failed gate and ten regressions](./docs/COVERAGE_V26_R44_VALIDATION.md), [Bracken32's first-look v25 21/1/10](./docs/BRACKEN32_V25_CONFIRMATION.md), [v25 exposed Cedar32 32/0/0](./docs/COVERAGE_V25_R44_VALIDATION.md), and [Cedar32 first24/2/6](./docs/CEDAR32_V24_CONFIRMATION.md). V27 has zero false acceptances,111 correct unsupported uncited refusals and three supported false refusals per variant (two new Cedar cases and one existing FreshConfirmation32 case). The report records all exact answers and quotations; no fresh independent benchmark or live integration was performed.
+
+Next work is a separately frozen repair for query subject descriptors and source pronoun/antecedent binding, preserving the completed v27 result before another run. A fresh confirmation remains deferred until the complete regression gate passes.
 
 ## Try it in a few minutes
 
