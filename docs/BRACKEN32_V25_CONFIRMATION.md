@@ -6,6 +6,8 @@ This is a new author-created prospective stress set on lightstation observations
 
 ## Execution and browser qualification
 
+Reporting-label correction: the preserved raw AUTOMATED_REPORT.md heading inherited the words "v24 confirmation" from its scoring scaffold. Its body says v25, and the frozen runner/module proof identifies actual candidate coverage-v25-claim-support-guards (SHA256bb47df7c5bfce57776712f792912d24909b3879da4805ec38acac27190c71a8e), paired v24. The raw file and first archive remain byte-for-byte unchanged. The evaluated candidate and all scores are unchanged.
+
 Protocol38aefaf preceded preparation; documents/key/scorerd5719b0 and50-file freezea8332d4 preceded any answers. Read-only preflight found installed Chrome had updated from155.0.8059.40 to155.0.8059.80. No model, upload or question had run. Original protocol/freeze/runner were preserved. A separate amendment and exact-version runner copy were frozen in e2adb1f before the first benchmark execution. The sole runner edit is the exact Chrome assertion. This is a qualified first-answer confirmation after a documented pre-question infrastructure amendment, not a same-browser-version comparison with the old Cedar32 run. Both freezes and preflight evidence are included. No deliberately failing old runner was executed.
 
 Actual installed headless **Chrome155.0.8059.80** used a locally served checkout with unchanged v25 SHA256bb47df7c5bfce57776712f792912d24909b3879da4805ec38acac27190c71a8e and paired v24 SHA256222d155c8c67f8f657f3843f170ad906defc630bc8e13608e4c6c74c87270d79. Production UI baseline saved before each isolated candidate computation; screenshots label those outputs. This was not an attached visible-tab test or deployed candidate.
