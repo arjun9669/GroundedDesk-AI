@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — Bracken32 prospective v25 confirmation FAIL
+
+- Froze four new fictional sources,32 questions/key/scorer and50 original file hashes before answers. Preflight observed Chrome updated from155.0.8059.40 to155.0.8059.80 before model/upload/questions. Preserved the original freeze and added a separately frozen exact-version runner amendment; no candidate/input/scoring changes. This is a qualified first-answer prospective author-created stress test, not external independent accuracy or a same-browser-version comparison with Cedar32.
+- Captured28 actual local MiniLM Hybrid questions and4 separate lexical Comparisons once, Qwen off, fresh384D vectors. First result **21 PASS /1 PARTIAL /10 FAIL** both, with33/33 literal but24/33 relevant quotations, five unsupported non-refusals and two supported false refusals. All4 Comparisons pass. Source-literal quotations still fail entity, actor/object, statistic, cutoff and facet support. Partial B08 omits dusty lubrication and inspection; other misses remain exact in the scorecard.
+- Paired v24 records18/1/13. Three unsupported controls improve to uncited refusals; two already-failing cited answers become supported false refusals. No prior PASS loss does not erase that behavior change. First scores and browser evidence sealed before review; review preserves grades. Original Cedar32 first24/2/6, exposed v25 Cedar32 32/0/0, Binding64 64/0/0 and all older scores remain immutable.
+- Gate FAIL stops the conditional performance/memory/citation/export integration qualification. V25 stays isolated; live5.6/r44 unchanged. No post-answer tuning, retry, replacement sample or runtime adoption. See [full report](./docs/BRACKEN32_V25_CONFIRMATION.md) and [JSON scorecard](./docs/evidence/bracken32-v25/scorecard.json).
+
 ## 2026-10-16 — Isolated v25 claim support repairs pass exposed regression gates
 
 - Added bounded guards over unchanged v24 for explicit-entity event/year relations, ambiguity/negation, qualified temperature statistics and present-tense actor/action/count/cadence binding. Separate lexical Comparison trims only an already displayed cross-paragraph retention excerpt with one qualifying paragraph, retaining its full exception. No benchmark IDs, source names or expected values in candidate routing; no general entailment or model-only improvement claim.
