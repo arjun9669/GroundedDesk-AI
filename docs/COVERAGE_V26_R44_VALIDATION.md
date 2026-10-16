@@ -803,6 +803,38 @@ Observed:
 
 I can't find this in the provided documents.
 
+## Assistant review after first seal
+
+Bracken32 improves from21/1/10 to31/0/1 in both variants, with30/30 literal and rubric-relevant citations, all eight unsupported controls explicitly refusing without citations, and one supported false refusal(B11). This is in-sample improvement, not independent accuracy. Cedar32 drops from32/0/0 to31/0/1(C14), with28/28 literal/relevant citations and one false refusal. Binding64 stays64/0/0 and58/58 literal/gold-span citations; its combined confirmation gate is FAIL because the required historical451 gate fails. Its wording qualifications remain.
+
+Ten unique prior PASS questions regress in both variants:nine false refusals and one incomplete two-document packet answer. No new false acceptance occurs. Eleven Bracken32 questions improve, including both formerly false-refused supported questions. All42 changed outputs are reviewed below; the original first archive is unchanged. The earlier existing FreshConfirmation32 F10 supported false refusal remains.
+
+| Changed case | Assessment |
+|---|---|
+| Meridian24/I10 | New false refusal. The clock frame recognizes the time request but does not accept the original leave predicate; the complete next-operating-day quotation is discarded. |
+| Meridian24/I15 | New false refusal. The source uses standard lubrication and a dusty-bay reduced interval across clauses; the new normal/clean and dusty-lubrication record grammar does not cover those clauses. The prior60/30/unchanged-inspection answer was complete. |
+| Atlas15/D02 | New false refusal. The original assembles clause lists all five evidence items, but the packet selector only accepts contains/includes grammar. It discards the correct model-card/risk-register/test-log/data-flow/rollback quotation. |
+| RetrievalQuality28/RQ02 | New false refusal. The recorded diagnostic is explicit entity does not match a source document. The An Orchard prefix is treated as a capitalized entity phrase, while the exact filename-derived identity is longer. Alias/identity normalization rejects the prior correct cutoff answer. |
+| RetrievalQuality28/RQ13 | New false refusal. The source gives70-hour normal lubrication,35-hour dusty lubrication and14-day inspection; the normal sentence lacks the literal clean/normal marker demanded by the new maintenance record selector. |
+| RetrievalQuality28/RQ23 | New incomplete answer. The request contains two named packet subjects joined by and. The single packet selector keeps only Orchard dispatch contents, dropping all Lakeside receiving items. This is PARTIAL, not a refusal or a new false acceptance. |
+| ExternalSQuAD24/E11 | New false refusal. The literal source says opened in December1986. The dated-event record expects digits directly after in/during/from and fails the month-year form. |
+| ExternalSQuAD24/E13 | New false refusal. A subordinate when and closed system are misclassified as a dated closure request. The physics quotation supporting conserved net mechanical energy is discarded. |
+| Cedar32/C14 | New false refusal. The correct72-hour normal,36-hour dusty and18-hour inspection quotation lacks the literal normal/clean marker in its source baseline sentence. Earlier v25 PASS and first Cedar32 baseline remain unchanged. |
+| Bracken32/B02 | Recovered unique first restoration completion in1913, literal to Rillpoint source and requested ordinal. Prior supported false refusal is removed. The displayed pronoun Its relies on the correct source filename and original paragraph antecedent; no general coreference claim. |
+| Bracken32/B08 | All three requested maintenance clauses are now displayed:clean84 operating hours, dusty42-hour lubrication and inspection21 operating hours in both bays. Three separate literal citations retain every requested facet. |
+| Bracken32/B10 | Correct purchasing-packet list replaces unrelated approval evidence. All supplier quotation, inspection report, purchase order and budget-code groups are displayed from Tavren. |
+| Bracken32/B11 | New false refusal. Public-desk opening1996 and separate-annex ceremony2018 are both typed as opening. Missing event-object binding makes a specific desk question appear ambiguous. The prior source quotation supported the requested public desk. |
+| Bracken32/B12 | Recovered warehouse relocation2011 from Rossell, removing a prior supported false refusal. Correct filename and original paragraph establish the pronoun antecedent. |
+| Bracken32/B14 | Exact11:45 equality now selects at-or-after departure next working day and retains the active seed-inspection-hold exception. The before-cutoff same-day branch is absent. |
+| Bracken32/B16 | Literal Lenwick relocated in1882 replaces the unrelated3-year voyage-log retention evidence. The move/relocation morphology is supported by the dated source predicate. |
+| Bracken32/B21 | Unqualified restoration is ambiguous between first1913 and second1962. Explicit zero-citation refusal satisfies the frozen behavioral rule; it is not an interactive clarification conversation. |
+| Bracken32/B23 | Planned transfer did not occur; explicit zero-citation refusal now satisfies the unchanged negative-premise control. The prior negative source quotation was literal and did not fabricate an affirmative transfer. |
+| Bracken32/B24 | Monthly means6–9 do not establish an individual winter minimum. Zero-citation refusal now passes the frozen statistic control. |
+| Bracken32/B27 | Nalin labels storage boxes; Vera labels seed packets. The requested Nalin/label/seed-packets/day tuple is absent. Explicit zero-citation refusal avoids actor/object borrowing. |
+| Bracken32/B28 | Stoneford Depot is absent from all four documents. Explicit zero-citation refusal replaces unrelated Rillpoint and Lenwick history quotations. |
+
+The main failure is incomplete structural interpretation overriding valid existing evidence. Clock predicate aliases, standard/dusty anaphora, packet assembles grammar, multi-subject requests, date formats and event objects require explicit coverage in a separate iteration. A correct recent-set score cannot waive old-case regression gates. No further candidate or fresh sample is tested here.
+
 ## Every exact answer and displayed quotation
 
 ### Lantern32 / H01 — At what time may general visitors enter the east gallery?

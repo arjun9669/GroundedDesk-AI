@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — isolated v26 regression, not adopted
+
+- Froze a separate structural evidence-selection experiment and579 exposed questions before once-only installed Chrome155.0.8059.80 testing with real local MiniLM:543 Hybrid and36 separate lexical Comparison cases; Qwen off.
+- Bracken32 improves to31/0/1 both, but10 earlier PASS questions regress:nine false refusals and one incomplete two-document answer. Cedar32 drops to31/0/1; Binding64 remains64/0/0. Historical and combined gates FAIL. Live r44 runtime unchanged.
+- Preserve all first scores, raw outputs,42 changed-output reviews,140 original-input hashes,418 passing unit tests and first evidence archive. Report the inherited V25 screenshot heading separately from verified v26 module identity; do not relabel original PNGs.
+- [Full report and per-case evidence](./docs/COVERAGE_V26_R44_VALIDATION.md). No post-answer tuning, fresh sample or runtime adoption.
+
 ## 2026-10-16 — Bracken32 prospective v25 confirmation FAIL
 
 - Froze four new fictional sources,32 questions/key/scorer and50 original file hashes before answers. Preflight observed Chrome updated from155.0.8059.40 to155.0.8059.80 before model/upload/questions. Preserved the original freeze and added a separately frozen exact-version runner amendment; no candidate/input/scoring changes. This is a qualified first-answer prospective author-created stress test, not external independent accuracy or a same-browser-version comparison with Cedar32.
