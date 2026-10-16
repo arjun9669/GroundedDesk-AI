@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — isolated v30 exposed regression gate PASS; not adopted
+
+- Changed only lexical Comparison: preserve complete quoted evidence, split bounded literal blocks at Markdown headings/numbered policies and complete an existing unique anchor only when requested categories are missing. Exact v29 Hybrid functions re-exported unchanged; no embedding-model improvement claim.
+- Frozen once-only Chrome155.0.8059.80 run:571 actual local MiniLM Hybrid and40 separate lexical Comparison cases, Qwen off. Cobalt16 restores16/0/0, Binding64 restores64/0/0, Flint32/Cedar32/Bracken32 stay32/0/0 both. Historical451 original and combined gates PASS; older public failures remain.
+- Ten reviewed changed outputs/five Comparison questions;606 unchanged questions, all571 Hybrid unchanged.149 input hashes,54 frozen files,144 historical sealed checks,1222 paired-v29 checks and3055 citation-number checks pass. All119 unsupported controls refuse uncited; zero false acceptance or new supported false refusal.486 unit tests and strict bundled checks pass separately.
+- First answers/grades sealed before review. All earlier first results, including v29 FAIL and Flint32 first26/3/3, remain preserved. No new sample, post-answer tuning or adoption. Live5.6/r44 unchanged pending separately frozen fresh confirmation and integration review. [Full report](./docs/COVERAGE_V30_R44_VALIDATION.md).
+
 ## 2026-10-16 — isolated v29 regression FAIL; live r44 unchanged
 
 - Frozen bounded temperature-label/value clauses, overhaul morphology and lexical same-paragraph Comparison completion before611 once-only installed Chrome155.0.8059.80 cases:571 real local MiniLM Hybrid and40 separate lexical Comparisons; Qwen off. No new unseen sample or independent accuracy claim.
