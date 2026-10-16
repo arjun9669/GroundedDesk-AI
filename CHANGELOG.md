@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — isolated v29 regression FAIL; live r44 unchanged
+
+- Frozen bounded temperature-label/value clauses, overhaul morphology and lexical same-paragraph Comparison completion before611 once-only installed Chrome155.0.8059.80 cases:571 real local MiniLM Hybrid and40 separate lexical Comparisons; Qwen off. No new unseen sample or independent accuracy claim.
+- Flint32 repairs all six misses to32/0/0 both; original first26/3/3 remains immutable. Cedar32/Bracken32 stay32/0/0. Wider gate FAIL: Cobalt16 C14 becomes PARTIAL from unrelated numbered policies; Binding64 X01–X04 become FAIL from added Markdown headings outside frozen gold paragraphs. Both facts/exceptions remain present in those four cases; preserve strict span grades.
+- Reviewed22 changed outputs/11 questions;600 unchanged questions,1222 paired-v28 answer/quote checks,3055 citation-number checks,149 input hashes,53 frozen files and134 historical sealed-artifact checks pass. All119 unsupported controls refuse uncited; no false acceptance or new supported false refusal. One older supported false refusal and public-set failures remain.
+- 473 unit tests and strict bundled offline checks pass separately from the failed MiniLM gate. First outputs/grades sealed before review; no post-answer tuning, replacement sample or adoption. [Full report](./docs/COVERAGE_V29_R44_VALIDATION.md). Live5.6/r44 remains unchanged.
+
 ## 2026-10-16 — Flint32 prospective v28 confirmation FAIL
 
 - Protocol committed before authoring; four source documents,32 questions/key/rubric/runner and57 file hashes frozen before answers. Actual headless Chrome155.0.8059.80, local MiniLM q8 WASM, Qwen off;28 Hybrid and4 separate lexical Comparisons once. Author-created stress set, not external independent accuracy.
