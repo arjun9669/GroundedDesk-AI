@@ -416,6 +416,31 @@ Observed:
 
 [1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.
 
+## Assistant review after first seal
+
+V27 restores all ten v26 regressed questions in both variants. Bracken32 improves to32/0/0 with31/31 literal and rubric-relevant citations; all eight unsupported questions refuse without citations. Binding64 remains64/0/0 with58/58 literal/gold-span citations, and the historical451 original gate passes. These are frozen-key regression results, not independent accuracy or full579/579. Older ExternalSQuAD24 and FreshConfirmation32 failures remain visible in the per-pack table.
+
+The combined gate still FAILS: Cedar32 is30/0/2 with26/26 literal/relevant citations, but C07 and C20 newly falsely refuse supported information in both variants. The source says The Harbor Cartography archive relocation took place in1889. Its restoration took place in1938. Requiring the query word archive in the second sentence mistakes a subject descriptor/pronoun for an unmet event-object condition. The compound C20 inherits the same failure.
+
+Across the known sets there are zero false acceptances and111 correct zero-citation unsupported refusals per variant. Three supported false refusals remain per variant: the two new Cedar cases and the existing FreshConfirmation32 F10. The no-new-supported-false-refusal and prior-PASS-preservation gates fail. V26 first31/0/1 Bracken and31/0/1 Cedar results, all prior first scores and its failed gate remain unchanged.
+
+The literal-prior fallback for unfamiliar packet/maintenance/clock grammar verifies provenance and preserves previous evidence; it is not general factual-support validation. Event/date frames do not use that fallback and still overreject some scoped source grammar. No candidate is adopted, and no fresh sample is consumed.
+
+| Changed case | Assessment |
+|---|---|
+| Meridian24/I10 | Restored PASS:15:00 is after14:20; the correct next-operating-day leave clause is displayed. Correct Logistics file, no irrelevant citation. The clock selector now accepts the leave predicate. |
+| Meridian24/I15 | Restored PASS: standard60-hour lubrication, dusty reduced30-hour interval and explicitly unchanged inspection are all displayed. The source uses interval anaphora; prior complete literal evidence remains intact. |
+| Atlas15/D02 | Restored PASS: Governance G-02 displays all model card, risk register, test results log, data-flow diagram and rollback plan items. No Runbook or Vendor citation. Assembly-list grammar no longer discards the complete prior answer. |
+| RetrievalQuality28/RQ02 | Restored PASS: the current Orchard guide at-or-after14:20 leave clause supports next operating day for15:00. Leading An no longer creates a foreign two-word proper-name phrase. The source selection remains the current guide. |
+| RetrievalQuality28/RQ13 | Restored PASS: all70-hour normal lubrication,35-hour dusty lubrication and14-day inspection facts remain in the original displayed source quote. Implicit baseline grammar is recognized; existing operational-note padding is preserved under the unchanged rubric rather than claimed as new concise evidence. |
+| RetrievalQuality28/RQ23 | Restored PASS: both Orchard dispatch items(route sheet, crate inventory, signed handover form) and Lakeside receiving items(purchase order, supplier invoice, inspection note) are displayed from their correct documents. The earlier missing second subject is restored. Original operational-note padding remains. |
+| ExternalSQuAD24/E11 | Restored PASS: the Toshiba gallery of Japanese art opened in December1986, displayed in its original source paragraph. Month/year date grammar is accepted; no new paraphrased or generated claim. |
+| ExternalSQuAD24/E13 | Restored PASS: the original closed-system net-mechanical-energy quotation is retained. Subordinate when no longer creates a dated closure request. The displayed source context and frozen answer-span rule are unchanged. |
+| Cedar32/C07 | New supported false refusal, FAIL. The query says Harbor Cartography archive restoration. The source first names The Harbor Cartography archive, then says Its restoration took place in1938. The new residual-object matcher requires archive inside the restoration sentence itself, fails the pronoun/subject-descriptor link and discards prior complete support. No missing date or source ambiguity justifies this refusal. |
+| Cedar32/C14 | Restored PASS:72-hour normal lubrication,36-hour dusty lubrication and18-hour inspection in either environment are preserved. The baseline sentence does not need an explicit normal/clean marker. |
+| Cedar32/C20 | New supported compound false refusal, FAIL. Cedar relocation1874 and Harbor archive restoration1938 are both supported. The same C07 residual-object/antecedent failure invalidates the Harbor facet, so the all-facets rule refuses the entire compound. Fresh separately ranked facet vectors exist; the error is the structural support decision, not missing embeddings. |
+| Bracken32/B11 | Restored PASS: the requested public-desk opening1996 is distinguished from separate-annex ceremony2018. The complete prior Rossell history paragraph remains displayed. The frozen rubric permits that paragraph, so the extra annex date is still visible; this is not a newly synthesized single-date answer. |
+
 ## Every exact answer and displayed quotation
 
 ### Lantern32 / H01 — At what time may general visitors enter the east gallery?
