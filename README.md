@@ -11,16 +11,16 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v28** in-sample regression gate **PASS**: Cedar32 **32/0/0**, Bracken32 **32/0/0**, Binding64 **64/0/0** both; awaiting fresh confirmation, not adopted |
+| Latest retrieval experiment | **v28** in-sample regression gate **PASS**: Cedar32 **32/0/0**, Bracken32 **32/0/0**, Binding64 **64/0/0** both; Flint32 prospective confirmation **26/3/3, gate FAIL**, not adopted |
 | Latest recorded checks | **448 unit tests**, bundled strict offline checks and real MiniLM v28 regression gates pass |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
-Experimental v28 is a development iteration, not retrieval build r28 or a new application release. The [579-case real Chrome/MiniLM in-sample regression](./docs/COVERAGE_V28_R44_VALIDATION.md) restores Cedar32 C07/C20, giving **Cedar32 32/0/0**, **Bracken32 32/0/0** and **Binding64 64/0/0** in both variants. The historical451 original subset gate also passes, with no prior PASS loss or new false acceptance/refusal. Only four outputs change;577 questions retain the v27 answers and quotes. **Live r44 remains unchanged; v28 awaits a fresh confirmation and integration review.**
+Experimental v28 is a development iteration, not retrieval build r28 or a new application release. The [579-case real Chrome/MiniLM in-sample regression](./docs/COVERAGE_V28_R44_VALIDATION.md) restores Cedar32 C07/C20, giving **Cedar32 32/0/0**, **Bracken32 32/0/0** and **Binding64 64/0/0** in both variants. The historical451 original subset gate also passes, with no prior PASS loss or new false acceptance/refusal. Only four outputs change;577 questions retain the v27 answers and quotes. **Live r44 remains unchanged. The separately frozen [Flint32 confirmation](./docs/FLINT32_V28_CONFIRMATION.md) fails: 26 PASS / 3 PARTIAL / 3 FAIL in both variants. v28 is not adopted.**
 
 These are exposed regression results. Older public-set failures remain: ExternalSQuAD24 has two FAIL fixed/one FAIL section, and FreshConfirmation32 has three FAIL fixed/two FAIL section. One existing supported false refusal remains per variant; all111 unsupported controls refuse without citations. Passing the original gates does not establish independent accuracy or6.0 readiness.
 
-All first results remain immutable: [v27's failed gate](./docs/COVERAGE_V27_R44_VALIDATION.md), [v26's failed gate](./docs/COVERAGE_V26_R44_VALIDATION.md), [Bracken32 first21/1/10](./docs/BRACKEN32_V25_CONFIRMATION.md), [v25 exposed Cedar32 32/0/0](./docs/COVERAGE_V25_R44_VALIDATION.md), and [Cedar32 first24/2/6](./docs/CEDAR32_V24_CONFIRMATION.md). Next is a separately frozen, previously unseen confirmation with actual local MiniLM before considering runtime integration.
+All first results remain immutable: [v27's failed gate](./docs/COVERAGE_V27_R44_VALIDATION.md), [v26's failed gate](./docs/COVERAGE_V26_R44_VALIDATION.md), [Bracken32 first21/1/10](./docs/BRACKEN32_V25_CONFIRMATION.md), [v25 exposed Cedar32 32/0/0](./docs/COVERAGE_V25_R44_VALIDATION.md), and [Cedar32 first24/2/6](./docs/CEDAR32_V24_CONFIRMATION.md). Flint32 is a separate prospective author-created stress set, not external independent accuracy: 28 real MiniLM Hybrid and 4 lexical Comparison cases. It has 30/30 literal but 29/30 relevant citations, one unsupported non-refusal, two supported false refusals and one production PASS loss (F08). Failed confirmation blocks integration; original 579 exposed regression results remain unchanged.
 
 ## Try it in a few minutes
 
