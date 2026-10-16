@@ -19,6 +19,8 @@ jobs:
           node-version: '22'
       - name: Syntax check
         run: |
+          node --check eval/v28-fresh-confirmation/score.mjs
+          node --check tests/browser-flint32-v28.mjs
           node --check eval/answer-completeness-v28/coverage.mjs
           node --check eval/answer-completeness-v28/score.mjs
           node --check eval/answer-completeness-v28/score-combined.mjs
