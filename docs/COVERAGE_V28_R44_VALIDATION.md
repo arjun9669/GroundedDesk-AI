@@ -121,6 +121,30 @@ Observed:
 
 [2] The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.
 
+## Assistant review after first seal
+
+The combined regression gate PASSES in both variants. Cedar32 is restored from v27 30/0/2 to32/0/0, with29/29 source-literal and rubric-relevant citations. Bracken32 remains32/0/0 with31/31 literal/relevant citations. Binding64 stays64/0/0 with58/58 literal/gold-span citations, retaining all original wording qualifications. The historical451 original subset gate passes.
+
+Only C07 and C20 change: four outputs across fixed/section. The other577 questions retain exactly the prior v27 answers and quotations (1154 checks), including all36 separate lexical Comparison cases (72 checks). All1158 same-session paired-v27 answer/quote checks match the preserved predecessor run. No prior production/v25/v26/v27 PASS is lost, no new supported refusal occurs, and all111 unsupported controls explicitly refuse without citations per variant.
+
+This is in-sample regression, not a new independent benchmark or579/579. ExternalSQuAD24 retains two FAIL fixed/one FAIL section; FreshConfirmation32 retains three FAIL fixed/two FAIL section, including the existing F10 supported false refusal. These older failures remain outside the original passing subset gates. All previous first scores and failed runs stay unchanged.
+
+### Reviewed changes
+
+**Cedar32 C07 — PASS in both variants**
+
+PASS: the displayed Harbor Cartography source first names The Harbor Cartography archive and its relocation1889, immediately followed by Its restoration took place in1938 in the same paragraph. The requested archive descriptor belongs to that subject;1938 is the restoration year. The paragraph also retains the relocation and negative closure context, allowed by the unchanged rubric. No source rewriting or generated date.
+
+**Cedar32 C20 — PASS in both variants**
+
+PASS: the first displayed source supports Cedar Observatory relocation1874; the second supports Harbor Cartography archive restoration1938 via the same immediate named-subject/Its relation as C07. Both original source paragraphs and correct filenames are displayed; fresh separately ranked facet vectors are preserved. Other dates remain visible as original paragraph context, not newly selected event answers.
+
+### Scope and next gate
+
+Only immediately preceding affirmative dated same-entity subject descriptors, same paragraph, singular Its and unambiguous explicit event/ordinal/object scope are supported. No unrestricted coreference or entailment. Literal-prior fallback elsewhere is not factual verification. Earlier Binding64/public-key wording and original Atlas historical-manifest limitations remain.
+
+The unchanged full paragraph quotes retain other event dates and negative closure context. Frozen paragraph/span scoring accepts these quotations; the new rule does not synthesize a concise date response or establish general factual entailment. No model-only improvement, performance/memory qualification, PDF-navigation/export integration or deployed-candidate accuracy is claimed. Live r44 is unchanged. A separately frozen unseen confirmation and integration review remain required.
+
 ## Every exact answer and displayed quotation
 
 ### Lantern32 / H01 — At what time may general visitors enter the east gallery?
