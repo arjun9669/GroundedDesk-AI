@@ -1,0 +1,26 @@
+{
+  "classification": "579 exposed in-sample v28 regressions; not independent accuracy",
+  "checks": {
+    "historical451_original_gate": true,
+    "Binding64_original_gate": true,
+    "Cedar32_all32": true,
+    "Bracken32_all32": true,
+    "no_production_v25_v26_v27_PASS_loss": true,
+    "no_new_false_acceptance": true,
+    "no_new_supported_false_refusal": true
+  },
+  "overall_gate": "PASS",
+  "prior_pass_regressions": [],
+  "new_false_acceptances": [],
+  "new_supported_false_refusals": [],
+  "first_Bracken32_preserved": "21 PASS /1 PARTIAL /10 FAIL both",
+  "v26_Bracken32_preserved": "31/0/1 both; failed gate and ten prior PASS regressions",
+  "first_Cedar32_preserved": "24/2/6 both",
+  "v25_Cedar32_preserved": "32/0/0 both",
+  "v26_Cedar32_preserved": "31/0/1 both",
+  "v27_first_preserved": "Bracken32 32/0/0, Cedar32 30/0/2 both; combined FAIL",
+  "candidate_adopted": false,
+  "production_build": "2026-10-13-r44",
+  "production_change": "NONE",
+  "question_retries": 0
+}

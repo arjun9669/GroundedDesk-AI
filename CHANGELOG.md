@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — isolated v28 regression gate passes; not adopted
+
+- Added bounded immediately preceding named-subject descriptor support for singular Its within one paragraph, with affirmative dates, literal offsets and event/object/ordinal ambiguity guards. No unrestricted coreference or model-score fabrication.
+- Frozen once-only installed Chrome155.0.8059.80 run:543 real local MiniLM Hybrid plus36 separate lexical Comparison cases; Qwen off. Cedar32 restores32/0/0, Bracken32 stays32/0/0, Binding64 stays64/0/0, historical451 original gate PASS, combined gate PASS in both variants. Existing public-set failures remain visible.
+- Four changed outputs(C07/C20 both variants),577 unchanged questions, no prior PASS loss or new false acceptance/refusal. Verified140 original inputs,51 frozen code/scoring files,122 historical sealed-artifact checks,1158 paired-v27 checks and2895 citation-number checks.448 unit tests and strict bundled offline checks pass.
+- Preserve all first scores and exact browser evidence. No post-answer tuning, new independent sample or runtime integration. Live r44 remains unchanged pending separately frozen fresh confirmation and integration review. [Full report](./docs/COVERAGE_V28_R44_VALIDATION.md).
+
 ## 2026-10-16 — isolated v27 regression, not adopted
 
 - Froze complete-evidence preservation, event objects, month/year dates, identity aliases, multi-packet subjects and maintenance/clock grammar before579 once-only installed Chrome155.0.8059.80 cases with actual local MiniLM:543 Hybrid and36 separate lexical Comparison; Qwen off.
