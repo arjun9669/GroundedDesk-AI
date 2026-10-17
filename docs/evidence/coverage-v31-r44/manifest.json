@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-17T09:35:20.196530+00:00",
+  "created_utc": "2026-10-17T09:42:47.747704+00:00",
   "classification": "v31 exposed in-sample regression; gate FAIL; not adopted",
   "scope": "sha256 is original local bytes; sha256_committed is staged canonical Git bytes, which may differ through text newline normalization. These are local experiment hashes, not deployed-candidate validation.",
   "first_archive": {
@@ -421,6 +421,16 @@
       "sha256_committed": "d9687b45a01612d7e6983f35282beb0a6b42bb6188abeefe7017c557ea9bc6a1"
     },
     {
+      "path": "docs/evidence/coverage-v31-r44/integrity-audit-corrected.json",
+      "sha256": "aa4118de091057e3d0d4c6d4f0e686ff1f3d0f62ce8180d695ff288df8a2e196",
+      "sha256_committed": "645a2ca335fea94c209e2d1a7b4a21b33cfe7da544fb1b8730f0d7905ee9ef11"
+    },
+    {
+      "path": "docs/evidence/coverage-v31-r44/integrity-audit-erratum.json",
+      "sha256": "252be303f8cd6ddb95bbf045c4b93bdd30cdd759d46941899d2a0dd81fee90f4",
+      "sha256_committed": "dde536d1e2f9b9b1d63dcabba64916cb559e89451ff31a5a286880aa9d08e236"
+    },
+    {
       "path": "docs/evidence/coverage-v31-r44/integrity-audit.json",
       "sha256": "9552473128d93fc85fab2f5b0b5f65f8912c104e9543a1955961792a9c1273a4",
       "sha256_committed": "a93dd092863e92ce43d9d7d1dc16d58dcba3e31e7568681e5a3831db2521887c"
@@ -620,5 +630,6 @@
       "sha256": "07d11b43957e6951578b66ac87e57e8a815b8d56a3bccbb4ce059a5255f5c7bf",
       "sha256_committed": "07d11b43957e6951578b66ac87e57e8a815b8d56a3bccbb4ce059a5255f5c7bf"
     }
-  ]
+  ],
+  "additive_reporting_erratum": "integrity-audit-erratum.json; original sealed audit scalar40 corrected to44 in derived view only"
 }
