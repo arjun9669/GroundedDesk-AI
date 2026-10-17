@@ -11,18 +11,18 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v33** exposed675 gate **FAIL**; Hearth32 qualified retake (original first BLOCKED preserved); not adopted |
-| Latest recorded checks | **522 unit tests**, strict bundled checks; real MiniLM v33 results recorded separately |
+| Latest retrieval experiment | **v34** exposed 675 gate **PASS**; Hearth32 qualified retake; **engineering review HOLD**; not adopted |
+| Latest recorded checks | **529 frozen unit tests**; **post-seal quotation probe FAIL**, strict bundled checks; real MiniLM v34 results recorded separately |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
-The isolated [v33 real Chrome/MiniLM regression](./docs/COVERAGE_V33_R44_VALIDATION.md) records combined gate **FAIL** across 643 previous cases plus a 32-case Hearth32 qualified retake. Hearth32 records **31/1/0 fixed / 31/1/0 section** under its original key and rubric. Exact answers, quotations, citation checks, failures, regressions and paired execution errors are preserved in the [machine-readable scorecards](./docs/evidence/coverage-v33-r44/ALL_SCORECARDS.json). **Live 5.6/r44 remains unchanged; v33 is not adopted.**
+The isolated [v34 real Chrome/MiniLM regression](./docs/COVERAGE_V34_R44_VALIDATION.md) records combined gate **PASS** across 675 exposed cases. Hearth32 records **32/0/0 fixed / 32/0/0 section** under its unchanged key and rubric. Every exact answer, quotation, citation check and regression is preserved in the [machine-readable scorecards](./docs/evidence/coverage-v34-r44/ALL_SCORECARDS.json). **Live 5.6/r44 remains unchanged; v34 is not adopted.**
 
-The run used 627 actual local MiniLM Hybrid questions and 48 separate lexical Comparisons, Qwen off, installed headless Chrome. It is exposed in-sample regression, not a claim of 675/675 or new independent accuracy; different rubrics are not pooled. V33 addresses compound source metadata and bullet inventories. **H30 remains PARTIAL**: the Caldra quotation omits 42-hour salt-spray lubrication and 21-hour inspection, so the combined gate FAIL stops fresh confirmation and integration. Older public-set failures remain visible.
+**Engineering review is HOLD**: a separate post-seal synthetic probe showed expansion of an already-complete quote to include an unrelated sentence in the same paragraph. Native benchmark scores remain unchanged. Fresh confirmation is stopped pending a separately frozen complete-quotation guard.
 
-Hearth32's [original v32 first attempt](./docs/HEARTH32_V32_CONFIRMATION.md) remains **BLOCKED at H20, no complete accuracy score**. Its first 19 captured cases stay ungraded; H21–H32 were originally unexecuted. The qualified retake does not replace that first attempt or assign it a retrospective score. V32's [643-case gate PASS](./docs/COVERAGE_V32_R44_VALIDATION.md) also stays unchanged.
+V34 adds a narrow source-local maintenance Comparison wrapper; its Hybrid functions are exact unchanged v33 exports. The run used 627 actual local MiniLM Hybrid questions and 48 separate lexical Comparisons, Qwen off, installed headless Chrome. Different rubrics are not pooled into an accuracy percentage. Older public-set failures remain visible. A PASS permits only a later separately frozen fresh confirmation before integration review; 6.0 readiness is not established.
 
-All earlier first scores, failed gates and reporting errata remain preserved, including [Morrow32 first30/0/2](./docs/MORROW32_V30_CONFIRMATION.md), [Flint32 first26/3/3](./docs/FLINT32_V28_CONFIRMATION.md), [Bracken32 first21/1/10](./docs/BRACKEN32_V25_CONFIRMATION.md), [Cedar32 first24/2/6](./docs/CEDAR32_V24_CONFIRMATION.md), and v31's failed gate and Comparison-count erratum. A passing exposed gate only permits separately frozen fresh confirmation and later integration review; **6.0 readiness is not established**.
+[V33's first 675-case gate FAIL](./docs/COVERAGE_V33_R44_VALIDATION.md) and Hearth32 qualified retake **31 PASS/1 PARTIAL/0 FAIL** remain unchanged, including H30's missing Caldra exception/inspection. Hearth32's [original v32 first attempt](./docs/HEARTH32_V32_CONFIRMATION.md) remains **BLOCKED at H20, no complete accuracy score**; its first 19 captured cases stay ungraded and H21–H32 were originally unexecuted. No retrospective score replaces it. V32's [643-case exposed gate PASS](./docs/COVERAGE_V32_R44_VALIDATION.md), all older first scores, failed gates, source/key qualifications and explicit reporting errata are preserved.
 
 ## Try it in a few minutes
 

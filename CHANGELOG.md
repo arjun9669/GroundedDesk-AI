@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-17 — isolated v34 gate PASS; Hearth32 qualified retake
+
+- Source-local conditional maintenance Comparison completeness; exact unchanged v33 Hybrid exports. Production 5.6/r44 unchanged; v33 first failed gate and Hearth32 first 31/1/0 remain immutable.
+- Frozen 675-case run: 627 real local MiniLM Hybrid, 48 lexical Comparison, Qwen off, installed headless Chrome 155.0.8059.80. Hearth32 retake 32/0/0 fixed / 32/0/0 section; original first remains BLOCKED/ungraded.
+- 529 frozen unit tests and strict bundled checks pass separately. Post-seal Node synthetic complete-quotation probe FAIL: unrelated same-paragraph context can be appended. Engineering review HOLD; fresh confirmation stopped; native 675 grades unchanged. Exact answers, native grades, citation checks, all failures, paired exceptions and history hashes preserved. No post-answer tuning, retry, paid service, independent accuracy or adoption claim.
+- [Report](./docs/COVERAGE_V34_R44_VALIDATION.md), [JSON](./docs/evidence/coverage-v34-r44/ALL_SCORECARDS.json).
+
 ## 2026-10-17 — isolated v33 gate FAIL; Hearth32 qualified retake
 
 - Compound quotations bind to unique literal spans and actual facet-scored body anchors; bounded bullet inventories support Hybrid and lexical Comparison. Production 5.6/r44 unchanged.
