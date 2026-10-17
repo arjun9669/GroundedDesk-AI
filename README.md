@@ -11,8 +11,8 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v36** exposed 707 gate **PASS**; engineering review **PASS**; not adopted |
-| Latest recorded checks | **Prism32 first confirmation: 29 PASS / 0 PARTIAL / 3 FAIL** both variants; gate **FAIL**, integration review stopped. 551 unit controls pass separately |
+| Latest retrieval experiment | **v37** 739 exposed cases gate **PASS**; engineering **FAIL / HOLD**; not adopted |
+| Latest recorded checks | **560 unit tests**, strict bundled checks; actual MiniLM recorded separately |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
@@ -25,6 +25,8 @@ V36 trims only uniquely anchored literal maintenance/bullet inventory quotations
 The 707 cases used 655 actual local MiniLM Hybrid questions and 52 lexical Comparisons, Qwen off, installed headless Chrome. All are exposed in-sample regressions, not new independent accuracy or 707/707. Older public-set failures remain visible and different rubrics are not pooled. Performance, memory, citation-navigation/export integration and 6.0 readiness remain unestablished.
 
 [Lumen32's first 28/2/2 confirmation FAIL](./docs/LUMEN32_V35_CONFIRMATION.md), [v35 exposed 675 PASS and separate engineering PASS](./docs/COVERAGE_V35_R44_VALIDATION.md), [v34's original engineering FAIL/HOLD](./docs/COVERAGE_V34_R44_VALIDATION.md), [v33's first FAIL](./docs/COVERAGE_V33_R44_VALIDATION.md), [Hearth32's original BLOCKED/ungraded first attempt](./docs/HEARTH32_V32_CONFIRMATION.md), all older firsts, failures and explicit reporting errata remain unchanged. No first result was replaced or retrospectively rescored.
+
+The [v37 isolated real Chrome/MiniLM regression](./docs/COVERAGE_V37_R44_VALIDATION.md) records 739 exposed cases gate **PASS** and engineering review **FAIL**. It targets the three preserved Prism32 failures with scoped literal policy selection. [Per-case JSON](./docs/evidence/coverage-v37-r44/ALL_SCORECARDS.json) retains all outcomes. Prism32 first 29/0/3 FAIL and every historical first result remain unchanged. Live 5.6/r44 and upload limits remain unchanged. This is an in-sample regression, not new independent accuracy. A separate post-seal synthetic intent probe found that the cutoff handler can override a justified refusal with departure information for a different question; integration is **HOLD** and fresh confirmation is **NOT RUN**.
 
 ## Try it in a few minutes
 

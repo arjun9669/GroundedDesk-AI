@@ -1,0 +1,19 @@
+{
+  "classification": "Separate same-assistant post-seal engineering review; first native regression PASS preserved",
+  "native_regression_gate": "PASS",
+  "literal_body_anchor_audit": "PASS",
+  "unit_suite_before_freeze": "560 PASS, no failures; synthetic engineering checks not model accuracy",
+  "post_seal_intent_probe": {
+    "outcome": "FAIL",
+    "positive_controls_passed": 1,
+    "unsupported_intent_controls_failed": 3,
+    "evidence": "post-seal-intent-probe.json",
+    "scope": "Pure-function synthetic finite-cosine contract fixtures, not actual Chrome/MiniLM accuracy. No question rerun or vector replay."
+  },
+  "engineering_review": "FAIL",
+  "integration_review": "HOLD",
+  "fresh_confirmation": "NOT RUN: engineering FAIL; no new unseen corpus authored",
+  "production_change": "NONE",
+  "candidate_adopted": false,
+  "next_work": "Repair request-intent and requested-facet validation before a policy handler may replace prior refusals. Preserve this v37 PASS regression and separate engineering FAIL; any later candidate must have a new precommitted protocol/freeze and pass regression plus engineering checks before one fresh prospective confirmation."
+}
