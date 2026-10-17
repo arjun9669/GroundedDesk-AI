@@ -37,7 +37,7 @@ paths=[(p,p.relative_to(b).as_posix()) for d in [raw,out,b/'prism32-v36-init-dia
 paths += [(root/'freeze-manifest.json','frozen-repository/eval/v36-fresh-confirmation/freeze-manifest.json')]+[(r/x['path'],'frozen-repository/'+x['path']) for x in freeze['files']]
 for n in ['prism32-v36-served-preflight.json','prism32-v36-browser.log','prism32-v36-unit-tests.log','prism32-v36-offline-checks.log','prepare-prism32-v36-inputs.py']:
  if (b/n).exists():paths.append((b/n,n))
-archive=b/('GroundedDesk-Prism32-v35-first-'+('evidence' if complete else 'BLOCKED-evidence')+'.zip')
+archive=b/('GroundedDesk-Prism32-v36-first-'+('evidence' if complete else 'BLOCKED-evidence')+'.zip')
 with zipfile.ZipFile(archive,'x',zipfile.ZIP_DEFLATED) as z:
  for p,n in paths:z.write(p,n)
 with zipfile.ZipFile(archive) as z:
