@@ -24,6 +24,8 @@ This is exposed in-sample regression, not new independent accuracy or 643/643. T
 
 Morrow32's [immutable first confirmation](./docs/MORROW32_V30_CONFIRMATION.md) remains **30 PASS / 0 PARTIAL / 2 FAIL** in v30. V30's [611-case exposed gate PASS](./docs/COVERAGE_V30_R44_VALIDATION.md), [v29 FAIL](./docs/COVERAGE_V29_R44_VALIDATION.md), [Flint32 first26/3/3](./docs/FLINT32_V28_CONFIRMATION.md), [Bracken32 first21/1/10](./docs/BRACKEN32_V25_CONFIRMATION.md), [Cedar32 first24/2/6](./docs/CEDAR32_V24_CONFIRMATION.md) and all earlier first results remain unchanged. Original public-set failures and key-wording qualifications remain visible. A passing exposed gate only permits separately frozen prospective confirmation and later integration review; it does not establish 6.0 readiness.
 
+Reporting correction: the original sealed `integrity-audit.json` has a stale `lexical_Comparison: 40` scalar. The frozen configuration and 643 captured workflow labels verify **599 Hybrid + 44 separate lexical Comparison**. Preserve the original audit/archive; use the [additive erratum](./docs/evidence/coverage-v31-r44/integrity-audit-erratum.json) and corrected derived audit. No outputs, grades or test inputs changed.
+
 ## Try it in a few minutes
 
 1. [Open GroundedDesk](https://arjun9669.github.io/GroundedDesk-AI/?build=20261013-r44). Try the bundled examples, or clear them and choose your own files.

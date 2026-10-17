@@ -86,6 +86,10 @@ Morrow32 M11 and M32 recover to PASS, but Bracken32 B14 newly falsely refuses it
 }
 ```
 
+## Reporting erratum
+
+The original sealed integrity audit reports lexical_Comparison40 due to a stale v30 summary scalar. Frozen configuration and every captured workflow label confirm599 Hybrid plus44 lexical Comparison=643. The original audit and first archive remain unchanged; integrity-audit-erratum.json explains the correction and integrity-audit-corrected.json is a derived view. Answers, scores, questions, documents, model evidence and the failed gate are unchanged.
+
 ## Evidence and limitations
 
 Verified 158 original input hashes, 56 frozen code files, 1286 same-session v30 answer/quote parity checks and 3215 citation-number checks. All source/query/facet vectors are finite384-dimensional. Original Atlas historical hash manifest remains unavailable; current PDF hashes and independent text provenance remain checked.
