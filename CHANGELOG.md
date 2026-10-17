@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-18 — isolated v36 native gate PASS; engineering PASS
+
+- Refine unique bounded literal maintenance and contiguous bullet quotations; refuse undifferentiated same-object renewal dates with competing completed years. Same source pairs, exact offsets and actual finite body-cosine anchors. No application changes.
+- Frozen 707-case run: 655 real local MiniLM Hybrid and 52 lexical Comparisons, Qwen off, installed headless Chrome 155.0.8059.80. Lumen32 32/0/0 fixed / 32/0/0 section under unchanged criteria. 551 unit controls and strict bundled checks separately recorded.
+- Preserve Lumen32 first 28/2/2 confirmation FAIL, v35 native/engineering PASS, v34 original FAIL/HOLD and all earlier first scores, blocked attempts and reporting errata. No independent-accuracy claim, retries, post-answer tuning or live adoption.
+- Eligible only for a later separately frozen prospective confirmation. No fresh sample or live integration in this task; adoption, integration qualification and 6.0 readiness remain unestablished.
+- [Full report](./docs/COVERAGE_V36_R44_VALIDATION.md), [JSON](./docs/evidence/coverage-v36-r44/ALL_SCORECARDS.json), [engineering review](./docs/evidence/coverage-v36-r44/engineering-review.json).
+
 ## 2026-10-17 — Lumen32 first prospective confirmation FAIL
 
 - Unchanged isolated v35: **28 PASS / 2 PARTIAL / 2 FAIL** both variants across 28 actual MiniLM Hybrid and 4 lexical Comparison cases, Qwen off, installed headless Chrome 155.0.8059.80. All 32 first answers captured once after source/key/rubric/hash freeze.

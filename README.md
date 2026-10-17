@@ -11,20 +11,18 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v35** exposed 675 gate **PASS**; engineering review **PASS**; not adopted |
-| Latest recorded checks | **Lumen32 first confirmation: 28 PASS / 2 PARTIAL / 2 FAIL** both variants; gate **FAIL**, integration review stopped. 540 unit controls pass separately |
+| Latest retrieval experiment | **v36** exposed 707 gate **PASS**; engineering review **PASS**; not adopted |
+| Latest recorded checks | **551 frozen unit tests**, strict bundled checks; actual MiniLM recorded separately |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
-The [Lumen32 first prospective v35 confirmation](./docs/LUMEN32_V35_CONFIRMATION.md) records **28 PASS / 2 PARTIAL / 2 FAIL** in both variants. **Confirmation gate FAIL; integration-readiness work is stopped.** [Exact answers and JSON](./docs/evidence/lumen32-v35/REVIEWED_SCORECARD.json) preserve the first result. This is an author-created prospective stress set, not externally blinded independent accuracy. One ambiguous renewal question lacks refusal/clarification; maintenance quotations include unrelated text and a packet quote includes the next policy marker. Correct visible facts do not override frozen context-precision rules. No questions or code changed after answers. Live 5.6/r44 remains unchanged; v35 is not adopted.
+The isolated [v36 real Chrome/MiniLM regression](./docs/COVERAGE_V36_R44_VALIDATION.md) records native gate **PASS** and engineering review **PASS** across 707 exposed cases. Lumen32 records **32/0/0 fixed / 32/0/0 section** under its unchanged key and strict context-precision criteria. [Every exact answer and JSON scorecards](./docs/evidence/coverage-v36-r44/ALL_SCORECARDS.json) preserve all results. **Live 5.6/r44 remains unchanged; v36 is not adopted.**
 
-The isolated [v35 real Chrome/MiniLM regression](./docs/COVERAGE_V35_R44_VALIDATION.md) records native gate **PASS** and engineering review **PASS** across 675 exposed cases. Hearth32 records **32/0/0 fixed / 32/0/0 section** under its unchanged key/rubric. [Exact answers and JSON scorecards](./docs/evidence/coverage-v35-r44/ALL_SCORECARDS.json) preserve every result and regression. **Live 5.6/r44 remains unchanged; v35 is not adopted.**
+V36 trims only uniquely anchored literal maintenance/bullet inventory quotations and refuses undifferentiated same-object renewal dates. Actual finite source-body cosine anchors remain recorded for refined Hybrid evidence; lexical Comparisons remain separate. Eligible only for a later separately frozen prospective confirmation. No fresh sample or live integration in this task; adoption, integration qualification and 6.0 readiness remain unestablished.
 
-V35 preserves an already-complete uniquely anchored literal maintenance quotation before considering context expansion. Its parser and Hybrid functions remain unchanged. Replaying the original v34 synthetic quotation probe against v35 records **PASS** in a separate frozen engineering check, outside the 675 browser cases. That regression qualified v35 for prospective confirmation; the later Lumen32 confirmation above failed. Integration review is stopped, and adoption and 6.0 readiness remain unestablished.
+The 707 cases used 655 actual local MiniLM Hybrid questions and 52 lexical Comparisons, Qwen off, installed headless Chrome. All are exposed in-sample regressions, not new independent accuracy or 707/707. Older public-set failures remain visible and different rubrics are not pooled. Performance, memory, citation-navigation/export integration and 6.0 readiness remain unestablished.
 
-The run used 627 actual local MiniLM Hybrid questions and 48 separate lexical Comparisons, Qwen off, installed headless Chrome. This is in-sample regression, not independent accuracy or 675/675; different rubrics are not pooled. Older public-set failures remain visible. Performance, memory, citation-navigation and export integration readiness and 6.0 readiness remain unestablished.
-
-[V34's original native PASS, Hearth32 32/0/0 and engineering HOLD](./docs/COVERAGE_V34_R44_VALIDATION.md) remain unchanged, including its original post-seal probe FAIL. [V33's first FAIL/Hearth32 31/1/0](./docs/COVERAGE_V33_R44_VALIDATION.md), [Hearth32's original v32 BLOCKED/ungraded first attempt](./docs/HEARTH32_V32_CONFIRMATION.md), all older first scores, failed gates and explicit reporting errata are preserved. No first result is replaced or retrospectively rescored.
+[Lumen32's first 28/2/2 confirmation FAIL](./docs/LUMEN32_V35_CONFIRMATION.md), [v35 exposed 675 PASS and separate engineering PASS](./docs/COVERAGE_V35_R44_VALIDATION.md), [v34's original engineering FAIL/HOLD](./docs/COVERAGE_V34_R44_VALIDATION.md), [v33's first FAIL](./docs/COVERAGE_V33_R44_VALIDATION.md), [Hearth32's original BLOCKED/ungraded first attempt](./docs/HEARTH32_V32_CONFIRMATION.md), all older firsts, failures and explicit reporting errata remain unchanged. No first result was replaced or retrospectively rescored.
 
 ## Try it in a few minutes
 
