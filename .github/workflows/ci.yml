@@ -19,6 +19,8 @@ jobs:
           node-version: '22'
       - name: Syntax check
         run: |
+          node --check eval/v35-fresh-confirmation/score.mjs
+          node --check tests/browser-lumen32-v35.mjs
           node --check eval/v32-fresh-confirmation/score.mjs
           node --check tests/browser-hearth32-v32.mjs
           node --check eval/answer-completeness-v35/engineering-probe.mjs

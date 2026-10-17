@@ -11,14 +11,16 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v35** exposed675 gate **PASS**; engineering review **PASS**; not adopted |
-| Latest recorded checks | **540 frozen unit tests**, strict bundled checks; original quotation probe replay **PASS**; actual MiniLM recorded separately |
+| Latest retrieval experiment | **v35** exposed 675 gate **PASS**; engineering review **PASS**; not adopted |
+| Latest recorded checks | **Lumen32 first confirmation: 28 PASS / 2 PARTIAL / 2 FAIL** both variants; gate **FAIL**, integration review stopped. 540 unit controls pass separately |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
+The [Lumen32 first prospective v35 confirmation](./docs/LUMEN32_V35_CONFIRMATION.md) records **28 PASS / 2 PARTIAL / 2 FAIL** in both variants. **Confirmation gate FAIL; integration-readiness work is stopped.** [Exact answers and JSON](./docs/evidence/lumen32-v35/REVIEWED_SCORECARD.json) preserve the first result. This is an author-created prospective stress set, not externally blinded independent accuracy. One ambiguous renewal question lacks refusal/clarification; maintenance quotations include unrelated text and a packet quote includes the next policy marker. Correct visible facts do not override frozen context-precision rules. No questions or code changed after answers. Live 5.6/r44 remains unchanged; v35 is not adopted.
+
 The isolated [v35 real Chrome/MiniLM regression](./docs/COVERAGE_V35_R44_VALIDATION.md) records native gate **PASS** and engineering review **PASS** across 675 exposed cases. Hearth32 records **32/0/0 fixed / 32/0/0 section** under its unchanged key/rubric. [Exact answers and JSON scorecards](./docs/evidence/coverage-v35-r44/ALL_SCORECARDS.json) preserve every result and regression. **Live 5.6/r44 remains unchanged; v35 is not adopted.**
 
-V35 preserves an already-complete uniquely anchored literal maintenance quotation before considering context expansion. Its parser and Hybrid functions remain unchanged. The original v34 synthetic quotation probe now records **PASS** in a separately reported frozen engineering replay, outside the 675 browser cases. Eligible only to prepare a separately frozen prospective confirmation in a later task; no fresh sample was created here. Candidate adoption, integration review and 6.0 readiness remain unestablished.
+V35 preserves an already-complete uniquely anchored literal maintenance quotation before considering context expansion. Its parser and Hybrid functions remain unchanged. Replaying the original v34 synthetic quotation probe against v35 records **PASS** in a separate frozen engineering check, outside the 675 browser cases. That regression qualified v35 for prospective confirmation; the later Lumen32 confirmation above failed. Integration review is stopped, and adoption and 6.0 readiness remain unestablished.
 
 The run used 627 actual local MiniLM Hybrid questions and 48 separate lexical Comparisons, Qwen off, installed headless Chrome. This is in-sample regression, not independent accuracy or 675/675; different rubrics are not pooled. Older public-set failures remain visible. Performance, memory, citation-navigation and export integration readiness and 6.0 readiness remain unestablished.
 
