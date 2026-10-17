@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-17 — isolated v32 exposed regression gate PASS; not adopted
+
+- Frozen event-only location invocation before 643 once-only cases; unchanged v31 lexical packet selection: 599 actual local MiniLM Hybrid and 44 lexical Comparisons, Qwen off, installed headless Chrome155.0.8059.80. No benchmark identities, dates or answer values hardcoded.
+- Bracken32 B14 recovers with exact cutoff/day/hold quotation, restoring32/0/0. All642 other questions and all44 lexical Comparisons retain v31 answer/quote parity;127 unsupported controls refuse uncited, no new false acceptance/refusal or PASS loss. One older supported false refusal remains.
+- Morrow32 records 32/0/0 fixed / 32/0/0 section. Original first30/0/2 stays immutable. All per-pack scores and regressions are preserved under unchanged native keys and rubrics; no pooled accuracy claim.
+- Reviewed 2 changed outputs across 1 questions after first seal; 1284 unchanged answer/quote checks. 158 input hashes,58 frozen files,171 historical sealed checks,1286 paired-v31 checks and3215 citation-number checks verified. 505 unit tests and strict bundled offline checks pass separately from model accuracy.
+- Original sealed prose captions in the change-review method/heading retain v30; an explicit additive label note verifies actual paired v31 from frozen module hashes and1286 exact checks. Reviewed heading clarified; no altered answer/grade/archive. Workflow counts derive599+44 correctly.
+- No question retries, post-answer candidate tuning, new unseen sample or live integration. Live5.6/r44 and all first scores unchanged. [Full report](./docs/COVERAGE_V32_R44_VALIDATION.md), [JSON](./docs/evidence/coverage-v32-r44/ALL_SCORECARDS.json).
+
 ## 2026-10-17 — isolated v31 exposed regression gate FAIL; not adopted
 
 - Frozen source-location scope and separate lexical packet selection before 643 once-only cases: 599 actual local MiniLM Hybrid and 44 lexical Comparisons, Qwen off, installed headless Chrome155.0.8059.80. No benchmark identities, dates or answer values hardcoded.
