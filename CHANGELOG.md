@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-18 — isolated v37 scoped policy regression PASS
+
+- Scope inclusive cutoff, packet-document and records-kept questions to unique source files and actual MiniLM body anchors; production unchanged.
+- 739 unchanged exposed cases:683 actual local MiniLM Hybrid and 56 lexical Comparisons, Qwen off. Engineering review **FAIL / HOLD** because a separate synthetic intent probe found refusal overrides. 560 unit controls and strict bundled checks separately passed.
+- Preserve Prism32 first 29/0/3 FAIL and all earlier firsts, blockers, failed gates and errata. No new independent-accuracy claim or live adoption.
+- [Full report](./docs/COVERAGE_V37_R44_VALIDATION.md) and [JSON](./docs/evidence/coverage-v37-r44/ALL_SCORECARDS.json).
+
 ## 2026-10-18 — Prism32 first prospective confirmation FAIL
 
 - Unchanged isolated v36 records **29 PASS / 0 PARTIAL / 3 FAIL** both variants: 28 real local MiniLM Hybrid and 4 separate lexical Comparison cases, Qwen off, installed headless Chrome 155.0.8059.80, captured once after 67-file/68-served-hash freeze.
@@ -48,32 +55,32 @@
 
 ## 2026-10-17 — Hearth32 prospective v32 confirmation BLOCKED
 
-- Protocol committed before authoring; four fictional sources,32 questions/key/rubric and63 frozen files committed before answers. Actual local MiniLM q8 WASM in installed headless Chrome155.0.8059.80, Hybrid, Qwen off.
+- Protocol committed before authoring; four fictional sources,32 questions/key/rubric and63 frozen files committed before answers. Actual local MiniLM q8 WASM in installed headless Chrome 155.0.8059.80, Hybrid, Qwen off.
 - H20 compound candidate computation threw `Bounded literal evidence and finite actual cosine required`. Preserve19 complete candidate cases,20 actual UI observations and all diagnostics. H21–H32, including8 unsupported controls and4 Comparisons, unexecuted. No native grades or complete accuracy score; unknown counts are not zero.
 - First blocked evidence archive sealed before diagnosis. Read-only compound metadata-handoff hypothesis is qualified; no reproduction, fix, continuation or retry. H10's saved inventory answer is a nonresponsive historical paragraph, retained as an unscored content observation.
 - All frozen source/code bytes and twelve older first archives preserved.505 unit and strict bundled checks pass separately from the blocked model run. Conditional integration-readiness review stops; live r44 and v32 exposed643 PASS unchanged. [Full report](./docs/HEARTH32_V32_CONFIRMATION.md), [ungraded JSON](./docs/evidence/hearth32-v32/UNSCORED_SCORECARD.json).
 
 ## 2026-10-17 — isolated v32 exposed regression gate PASS; not adopted
 
-- Frozen event-only location invocation before 643 once-only cases; unchanged v31 lexical packet selection: 599 actual local MiniLM Hybrid and 44 lexical Comparisons, Qwen off, installed headless Chrome155.0.8059.80. No benchmark identities, dates or answer values hardcoded.
+- Frozen event-only location invocation before 643 once-only cases; unchanged v31 lexical packet selection: 599 actual local MiniLM Hybrid and 44 lexical Comparisons, Qwen off, installed headless Chrome 155.0.8059.80. No benchmark identities, dates or answer values hardcoded.
 - Bracken32 B14 recovers with exact cutoff/day/hold quotation, restoring32/0/0. All642 other questions and all44 lexical Comparisons retain v31 answer/quote parity;127 unsupported controls refuse uncited, no new false acceptance/refusal or PASS loss. One older supported false refusal remains.
 - Morrow32 records 32/0/0 fixed / 32/0/0 section. Original first30/0/2 stays immutable. All per-pack scores and regressions are preserved under unchanged native keys and rubrics; no pooled accuracy claim.
 - Reviewed 2 changed outputs across 1 questions after first seal; 1284 unchanged answer/quote checks. 158 input hashes,58 frozen files,171 historical sealed checks,1286 paired-v31 checks and3215 citation-number checks verified. 505 unit tests and strict bundled offline checks pass separately from model accuracy.
 - Original sealed prose captions in the change-review method/heading retain v30; an explicit additive label note verifies actual paired v31 from frozen module hashes and1286 exact checks. Reviewed heading clarified; no altered answer/grade/archive. Workflow counts derive599+44 correctly.
-- No question retries, post-answer candidate tuning, new unseen sample or live integration. Live5.6/r44 and all first scores unchanged. [Full report](./docs/COVERAGE_V32_R44_VALIDATION.md), [JSON](./docs/evidence/coverage-v32-r44/ALL_SCORECARDS.json).
+- No question retries, post-answer candidate tuning, new unseen sample or live integration. Live 5.6/r44 and all first scores unchanged. [Full report](./docs/COVERAGE_V32_R44_VALIDATION.md), [JSON](./docs/evidence/coverage-v32-r44/ALL_SCORECARDS.json).
 
 ## 2026-10-17 — isolated v31 exposed regression gate FAIL; not adopted
 
-- Frozen source-location scope and separate lexical packet selection before 643 once-only cases: 599 actual local MiniLM Hybrid and 44 lexical Comparisons, Qwen off, installed headless Chrome155.0.8059.80. No benchmark identities, dates or answer values hardcoded.
+- Frozen source-location scope and separate lexical packet selection before 643 once-only cases: 599 actual local MiniLM Hybrid and 44 lexical Comparisons, Qwen off, installed headless Chrome 155.0.8059.80. No benchmark identities, dates or answer values hardcoded.
 - Morrow32 records 32/0/0 fixed / 32/0/0 section. Original first30/0/2 stays immutable. All per-pack scores and regressions are preserved under unchanged native keys and rubrics; no pooled accuracy claim.
 - Overall gate FAIL: Bracken32 B14 loses its prior PASS because the location-prefix guard rejects the temporal “At or after 11:45” clause. Bracken32 is31/0/1 both; all other set gates pass. All127 unsupported controls refuse uncited; zero false acceptances, two supported false refusals per variant (new B14 plus existing FreshConfirmation32/F10). No post-answer repair or rerun.
 - Reviewed 6 changed outputs across 3 questions after first seal; 1280 unchanged answer/quote checks. 158 input hashes,56 frozen files,157 historical sealed checks,1286 paired-v30 checks and3215 citation-number checks verified. 494 unit tests and strict bundled offline checks pass separately from model accuracy.
 - Added an explicit reporting erratum: the original sealed audit scalar40 should be44 lexical Comparisons; frozen configuration and all643 workflow labels verify599+44. Original audit/archive and all grades remain unchanged.
-- No question retries, post-answer candidate tuning, new unseen sample or live integration. Live5.6/r44 and all first scores unchanged. [Full report](./docs/COVERAGE_V31_R44_VALIDATION.md), [JSON](./docs/evidence/coverage-v31-r44/ALL_SCORECARDS.json).
+- No question retries, post-answer candidate tuning, new unseen sample or live integration. Live 5.6/r44 and all first scores unchanged. [Full report](./docs/COVERAGE_V31_R44_VALIDATION.md), [JSON](./docs/evidence/coverage-v31-r44/ALL_SCORECARDS.json).
 
 ## 2026-10-16 — Morrow32 prospective v30 confirmation FAIL
 
-- Protocol committed before authoring; four new fictional TXT sources,32 questions/key/rubric/runner and59-file freeze committed before answers. Actual local MiniLM q8 WASM in installed headless Chrome155.0.8059.80; Qwen off;28 Hybrid and4 separate lexical Comparisons once. Author-created stress sample, not external independent accuracy or deployed-candidate validation.
+- Protocol committed before authoring; four new fictional TXT sources,32 questions/key/rubric/runner and59-file freeze committed before answers. Actual local MiniLM q8 WASM in installed headless Chrome 155.0.8059.80; Qwen off;28 Hybrid and4 separate lexical Comparisons once. Author-created stress sample, not external independent accuracy or deployed-candidate validation.
 - First30 PASS/0 PARTIAL/2 FAIL both. M11 falsely refuses a source-supported2005 rebuild date that r44 answers; M32 selects correct files but irrelevant relocation/acknowledgement quotations for packet contents.30/30 literal,28/30 relevant citations; all8 unsupported controls refuse uncited. Paired v29 records27/3/2; v30 improves only three Comparisons.
 - Original first archive retains a stale v28 filename suffix; actual module/config/screenshots identify v30. Preserve original seal and bytes, provide a correctly named byte-identical copy and explicit archive-label erratum. No answer/grade/input change.
 - All32 cases reviewed without grade changes;59 frozen files,4 source hashes, finite unit384D vectors,160 citation-number checks and9 unchanged runtime files verified.486 unit and strict bundled checks pass separately from failed confirmation. Conditional integration-readiness review stopped; no tuning/new sample/adoption. Live r44 and all historical scores unchanged. [Full report](./docs/MORROW32_V30_CONFIRMATION.md), [JSON](./docs/evidence/morrow32-v30/REVIEWED_SCORECARD.json).
@@ -81,20 +88,20 @@
 ## 2026-10-16 — isolated v30 exposed regression gate PASS; not adopted
 
 - Changed only lexical Comparison: preserve complete quoted evidence, split bounded literal blocks at Markdown headings/numbered policies and complete an existing unique anchor only when requested categories are missing. Exact v29 Hybrid functions re-exported unchanged; no embedding-model improvement claim.
-- Frozen once-only Chrome155.0.8059.80 run:571 actual local MiniLM Hybrid and40 separate lexical Comparison cases, Qwen off. Cobalt16 restores16/0/0, Binding64 restores64/0/0, Flint32/Cedar32/Bracken32 stay32/0/0 both. Historical451 original and combined gates PASS; older public failures remain.
+- Frozen once-only Chrome 155.0.8059.80 run:571 actual local MiniLM Hybrid and40 separate lexical Comparison cases, Qwen off. Cobalt16 restores16/0/0, Binding64 restores64/0/0, Flint32/Cedar32/Bracken32 stay32/0/0 both. Historical451 original and combined gates PASS; older public failures remain.
 - Ten reviewed changed outputs/five Comparison questions;606 unchanged questions, all571 Hybrid unchanged.149 input hashes,54 frozen files,144 historical sealed checks,1222 paired-v29 checks and3055 citation-number checks pass. All119 unsupported controls refuse uncited; zero false acceptance or new supported false refusal.486 unit tests and strict bundled checks pass separately.
-- First answers/grades sealed before review. All earlier first results, including v29 FAIL and Flint32 first26/3/3, remain preserved. No new sample, post-answer tuning or adoption. Live5.6/r44 unchanged pending separately frozen fresh confirmation and integration review. [Full report](./docs/COVERAGE_V30_R44_VALIDATION.md).
+- First answers/grades sealed before review. All earlier first results, including v29 FAIL and Flint32 first26/3/3, remain preserved. No new sample, post-answer tuning or adoption. Live 5.6/r44 unchanged pending separately frozen fresh confirmation and integration review. [Full report](./docs/COVERAGE_V30_R44_VALIDATION.md).
 
 ## 2026-10-16 — isolated v29 regression FAIL; live r44 unchanged
 
-- Frozen bounded temperature-label/value clauses, overhaul morphology and lexical same-paragraph Comparison completion before611 once-only installed Chrome155.0.8059.80 cases:571 real local MiniLM Hybrid and40 separate lexical Comparisons; Qwen off. No new unseen sample or independent accuracy claim.
+- Frozen bounded temperature-label/value clauses, overhaul morphology and lexical same-paragraph Comparison completion before611 once-only installed Chrome 155.0.8059.80 cases:571 real local MiniLM Hybrid and40 separate lexical Comparisons; Qwen off. No new unseen sample or independent accuracy claim.
 - Flint32 repairs all six misses to32/0/0 both; original first26/3/3 remains immutable. Cedar32/Bracken32 stay32/0/0. Wider gate FAIL: Cobalt16 C14 becomes PARTIAL from unrelated numbered policies; Binding64 X01–X04 become FAIL from added Markdown headings outside frozen gold paragraphs. Both facts/exceptions remain present in those four cases; preserve strict span grades.
 - Reviewed22 changed outputs/11 questions;600 unchanged questions,1222 paired-v28 answer/quote checks,3055 citation-number checks,149 input hashes,53 frozen files and134 historical sealed-artifact checks pass. All119 unsupported controls refuse uncited; no false acceptance or new supported false refusal. One older supported false refusal and public-set failures remain.
-- 473 unit tests and strict bundled offline checks pass separately from the failed MiniLM gate. First outputs/grades sealed before review; no post-answer tuning, replacement sample or adoption. [Full report](./docs/COVERAGE_V29_R44_VALIDATION.md). Live5.6/r44 remains unchanged.
+- 473 unit tests and strict bundled offline checks pass separately from the failed MiniLM gate. First outputs/grades sealed before review; no post-answer tuning, replacement sample or adoption. [Full report](./docs/COVERAGE_V29_R44_VALIDATION.md). Live 5.6/r44 remains unchanged.
 
 ## 2026-10-16 — Flint32 prospective v28 confirmation FAIL
 
-- Protocol committed before authoring; four source documents,32 questions/key/rubric/runner and57 file hashes frozen before answers. Actual headless Chrome155.0.8059.80, local MiniLM q8 WASM, Qwen off;28 Hybrid and4 separate lexical Comparisons once. Author-created stress set, not external independent accuracy.
+- Protocol committed before authoring; four source documents,32 questions/key/rubric/runner and57 file hashes frozen before answers. Actual headless Chrome 155.0.8059.80, local MiniLM q8 WASM, Qwen off;28 Hybrid and4 separate lexical Comparisons once. Author-created stress set, not external independent accuracy.
 - First26 PASS/3 PARTIAL/3 FAIL both;30/30 literal,29/30 paragraph-relevant citations. F03/F08 falsely refuse temperatures; F21 returns unrelated retention for ambiguous overhaul. F29/F30/F32 comparisons omit required details. F08 loses an r44 baseline PASS. Paired v27 records24/3/5; v28 recovers F06/F20.
 - First outputs/grades sealed before diagnosis; all cases reviewed without grade changes.57 frozen files,4 source hashes,44 source vectors,28 query vectors,2 facet vectors,160 citation-number checks and9 unchanged runtime files verified. All earlier first scores and v28 exposed579 gate PASS preserved.
 - Failed gate stops integration qualification. No tuning/retry/replacement sample/adoption; live5.6/r44 unchanged. [Full report](./docs/FLINT32_V28_CONFIRMATION.md) and [reviewed JSON](./docs/evidence/flint32-v28/REVIEWED_SCORECARD.json).
@@ -102,20 +109,20 @@
 ## 2026-10-16 — isolated v28 regression gate passes; not adopted
 
 - Added bounded immediately preceding named-subject descriptor support for singular Its within one paragraph, with affirmative dates, literal offsets and event/object/ordinal ambiguity guards. No unrestricted coreference or model-score fabrication.
-- Frozen once-only installed Chrome155.0.8059.80 run:543 real local MiniLM Hybrid plus36 separate lexical Comparison cases; Qwen off. Cedar32 restores32/0/0, Bracken32 stays32/0/0, Binding64 stays64/0/0, historical451 original gate PASS, combined gate PASS in both variants. Existing public-set failures remain visible.
+- Frozen once-only installed Chrome 155.0.8059.80 run:543 real local MiniLM Hybrid plus36 separate lexical Comparison cases; Qwen off. Cedar32 restores32/0/0, Bracken32 stays32/0/0, Binding64 stays64/0/0, historical451 original gate PASS, combined gate PASS in both variants. Existing public-set failures remain visible.
 - Four changed outputs(C07/C20 both variants),577 unchanged questions, no prior PASS loss or new false acceptance/refusal. Verified140 original inputs,51 frozen code/scoring files,122 historical sealed-artifact checks,1158 paired-v27 checks and2895 citation-number checks.448 unit tests and strict bundled offline checks pass.
 - Preserve all first scores and exact browser evidence. No post-answer tuning, new independent sample or runtime integration. Live r44 remains unchanged pending separately frozen fresh confirmation and integration review. [Full report](./docs/COVERAGE_V28_R44_VALIDATION.md).
 
 ## 2026-10-16 — isolated v27 regression, not adopted
 
-- Froze complete-evidence preservation, event objects, month/year dates, identity aliases, multi-packet subjects and maintenance/clock grammar before579 once-only installed Chrome155.0.8059.80 cases with actual local MiniLM:543 Hybrid and36 separate lexical Comparison; Qwen off.
+- Froze complete-evidence preservation, event objects, month/year dates, identity aliases, multi-packet subjects and maintenance/clock grammar before579 once-only installed Chrome 155.0.8059.80 cases with actual local MiniLM:543 Hybrid and36 separate lexical Comparison; Qwen off.
 - Restored all ten v26 regressions. Bracken32 reaches32/0/0 both; Binding64 stays64/0/0 and historical451 original gate passes. Cedar32 is30/0/2: C07 and C20 newly falsely refuse the archive restoration relation. Combined gate FAIL; live r44 unchanged.
 - Preserve all initial scores and raw evidence. Reviewed24 changed outputs; verified140 original inputs,50 frozen code/scoring files,113 historical sealed-artifact checks,2895 citation-number checks and1158 paired-v26 answer/quote checks.431 unit tests and strict bundled offline checks pass. No post-answer tuning or fresh sample.
 - [Full report and machine-readable evidence](./docs/COVERAGE_V27_R44_VALIDATION.md).
 
 ## 2026-10-16 — isolated v26 regression, not adopted
 
-- Froze a separate structural evidence-selection experiment and579 exposed questions before once-only installed Chrome155.0.8059.80 testing with real local MiniLM:543 Hybrid and36 separate lexical Comparison cases; Qwen off.
+- Froze a separate structural evidence-selection experiment and579 exposed questions before once-only installed Chrome 155.0.8059.80 testing with real local MiniLM:543 Hybrid and36 separate lexical Comparison cases; Qwen off.
 - Bracken32 improves to31/0/1 both, but10 earlier PASS questions regress:nine false refusals and one incomplete two-document answer. Cedar32 drops to31/0/1; Binding64 remains64/0/0. Historical and combined gates FAIL. Live r44 runtime unchanged.
 - Preserve all first scores, raw outputs,42 changed-output reviews,140 original-input hashes,418 passing unit tests and first evidence archive. Report the inherited V25 screenshot heading separately from verified v26 module identity; do not relabel original PNGs.
 - [Full report and per-case evidence](./docs/COVERAGE_V26_R44_VALIDATION.md). No post-answer tuning, fresh sample or runtime adoption.
@@ -132,7 +139,7 @@
 - Added bounded guards over unchanged v24 for explicit-entity event/year relations, ambiguity/negation, qualified temperature statistics and present-tense actor/action/count/cadence binding. Separate lexical Comparison trims only an already displayed cross-paragraph retention excerpt with one qualifying paragraph, retaining its full exception. No benchmark IDs, source names or expected values in candidate routing; no general entailment or model-only improvement claim.
 - Froze code, runner, original scorers and547 unchanged exposed questions before one actual headless-Chrome155/MiniLM capture:515 Hybrid,32 separate lexical Comparison, Qwen off, fresh384D source/query/facet vectors. All412 unit checks and strict tiny bundled Keyword evaluation pass;131 input hashes and96 sealed historical artifact members verified. No mocks, retries, post-answer tuning or new sample.
 - Cedar32 improves from its preserved first24/2/6 to **32 PASS/0 PARTIAL/0 FAIL** both under its unchanged rubric, with29/29 literal/relevant citations, eight uncited refusals and zero false acceptances/false refusals. Only eight Cedar32 cases change; all515 earlier answers/quotes retain exact paired-v24 parity. Binding64 remains64/0/0; historical451 gate PASS. No prior PASS lost; all103 unsupported controls refuse uncited. ExternalSQuAD24's two FAIL and FreshConfirmation32's three FAIL remain outside passing subsets, including one supported false refusal per variant.
-- These are exposed in-sample regression gates, not547/547 or independent accuracy. First outputs and scores sealed separately before final review. All original scores and wording qualifications remain. Live5.6/r44 unchanged; no runtime adoption. See [v25 report](./docs/COVERAGE_V25_R44_VALIDATION.md) and [scorecards](./docs/evidence/coverage-v25-r44/).
+- These are exposed in-sample regression gates, not547/547 or independent accuracy. First outputs and scores sealed separately before final review. All original scores and wording qualifications remain. Live 5.6/r44 unchanged; no runtime adoption. See [v25 report](./docs/COVERAGE_V25_R44_VALIDATION.md) and [scorecards](./docs/evidence/coverage-v25-r44/).
 
 ## 2026-10-16 — Cedar32 prospective v24 confirmation fails
 
@@ -146,7 +153,7 @@
 - Sealed the complete first v23 63/0/1 and overall FAIL before implementing a separate wrapper over unchanged v23. V24 permits exactly one literal positive event/date sentence in an already selected document, retaining the actual finite cosine without a semantic minimum for this fallback. No fabricated score/vector, key lookup, question rewrite or model-only improvement claim.
 - Froze and captured the unchanged 515 exposed questions once with actual MiniLM in installed headless Chrome, Qwen off, fresh384D vectors: 487 Hybrid and28 lexical Comparison. V23 and v24 are two different frozen runs, not one run or a replacement of v23. All405 unit tests and strict offline checks pass;124 original input hashes and82 historical archive members verified.
 - Binding64 reaches64 PASS /0 PARTIAL /0 FAIL both. Only F05 changes, displaying the correct occupation/date sentence with the original0.2406 actual cosine. Every previous PASS and all95 unsupported uncited refusals are preserved; all58 citations satisfy source/body/span checks. Historical451 and full frozen development gates PASS, not515/515 or independent accuracy. Older public failures and temperature wording/average-bound qualifications remain explicit.
-- No post-answer tuning, fresh sample or adoption. Live5.6/r44 unchanged pending separately frozen confirmation/integration review. See [v24 report](./docs/COVERAGE_V24_R44_VALIDATION.md); preserve [v23 first result](./docs/COVERAGE_V23_R44_VALIDATION.md).
+- No post-answer tuning, fresh sample or adoption. Live 5.6/r44 unchanged pending separately frozen confirmation/integration review. See [v24 report](./docs/COVERAGE_V24_R44_VALIDATION.md); preserve [v23 first result](./docs/COVERAGE_V23_R44_VALIDATION.md).
 
 ## 2026-10-15 — Evidence v23 first result 63/0/1, overall FAIL
 
