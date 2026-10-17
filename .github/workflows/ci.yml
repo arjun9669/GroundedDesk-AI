@@ -19,6 +19,8 @@ jobs:
           node-version: '22'
       - name: Syntax check
         run: |
+          node --check eval/v38-fresh-confirmation/score.mjs
+          node --check tests/browser-vela32-v38.mjs
           node --check eval/answer-completeness-v38/engineering-probe.mjs
           node --check eval/answer-completeness-v38/coverage.mjs
           node --check eval/answer-completeness-v38/review.mjs

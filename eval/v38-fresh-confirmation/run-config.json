@@ -1,0 +1,948 @@
+{
+  "candidate_commit": "98f5bca635ef0015c8c394b846b7403bc8fb3d4b",
+  "classification": "Vela32 first prospective author-created stress confirmation of unchanged v38; known failure families, not externally blinded independent accuracy",
+  "total_questions": 32,
+  "module_identity": {
+    "candidate": {
+      "path": "/eval/answer-completeness-v38/coverage.mjs",
+      "sha256": "98fc377e59420d662f1a940ea75726870ac987364a97d5d8236e238c6a828baf",
+      "id": "coverage-v38-departure-intent"
+    },
+    "paired": {
+      "path": "/eval/answer-completeness-v37/coverage.mjs",
+      "sha256": "5bd3edd9c13b895289801eeb3df35fefeababbcc6df33c21a77c2c8913fe6cc9"
+    },
+    "helper": {
+      "path": "/tests/fixtures/module-identity.mjs",
+      "sha256": "1271b1bfd118d965b193fffa25514712c6492a4e9701cb6eddc8d7c26679448b"
+    },
+    "dependencies": [
+      {
+        "path": "/eval/answer-completeness/coverage.mjs",
+        "sha256": "c0470d698bc9c400093a130d27aecb67b0ec26a2dce0305efcdcadcce5e59d46"
+      },
+      {
+        "path": "/eval/answer-completeness-v10/coverage.mjs",
+        "sha256": "d8a020e80cdb8546486dfeb0fdeadadebd65e59cd97abf2acff4181e0a5b260f"
+      },
+      {
+        "path": "/eval/answer-completeness-v11/coverage.mjs",
+        "sha256": "49fe76c8f872feed4fccdab740ec9dbc6eb662fc2f5929693ecfa45dc4b26c12"
+      },
+      {
+        "path": "/eval/answer-completeness-v12/coverage.mjs",
+        "sha256": "1d246db6becc2b526ae5a6f3793830cc7d6e95673408e7370fc95a1c385c6579"
+      },
+      {
+        "path": "/eval/answer-completeness-v13/coverage.mjs",
+        "sha256": "aca5f356c25c01461397cbd848ee9042ef47a8496a7a2da3a8ad5ef627299d3b"
+      },
+      {
+        "path": "/eval/answer-completeness-v14/coverage.mjs",
+        "sha256": "eacc40b03f0005b9f6ba36e1d73a1ef74bf0afabcff954a93d9debdf9b7a67d8"
+      },
+      {
+        "path": "/eval/answer-completeness-v15/coverage.mjs",
+        "sha256": "ad6e6490ab03ab0b596f9903b1f5d2ce1f2fb2846d10c8560743fada626dda5f"
+      },
+      {
+        "path": "/eval/answer-completeness-v16/coverage.mjs",
+        "sha256": "f34074685779e6d63bdd0530dc63602a6812bd42b009478825d11eb3a9a75026"
+      },
+      {
+        "path": "/eval/answer-completeness-v17/coverage.mjs",
+        "sha256": "ddb34258de81b27b3aab02dea53dc1243e3ca50224eb7973055c9e468ab52b9e"
+      },
+      {
+        "path": "/eval/answer-completeness-v18/coverage.mjs",
+        "sha256": "664c545581f554d553f8672a317639b32fba90621f0933a7dc15e8ce09bab249"
+      },
+      {
+        "path": "/eval/answer-completeness-v19/coverage.mjs",
+        "sha256": "8a951f213cb9674a584fe0aa69a84af50cda0eff1bc2f71581e05773528164cb"
+      },
+      {
+        "path": "/eval/answer-completeness-v2/coverage.mjs",
+        "sha256": "fe8489198a4a644126963d3509fb7146ab8b97bb03a726cc8bdf1722df764659"
+      },
+      {
+        "path": "/eval/answer-completeness-v20/coverage.mjs",
+        "sha256": "b57cb4a49eb70fe9a7cff4c84b9f3058eb2edea3fd6cb238eaa9683195c58cc1"
+      },
+      {
+        "path": "/eval/answer-completeness-v21/coverage.mjs",
+        "sha256": "b353bceb05acdb5fd56f81fbd4d2176e90256dcacef6a670356ba63763119faf"
+      },
+      {
+        "path": "/eval/answer-completeness-v22/coverage.mjs",
+        "sha256": "d8db199f55825dba92aa6a0ce6f35f340cdda0a5191ce7a2b267dc177d6dc454"
+      },
+      {
+        "path": "/eval/answer-completeness-v23/coverage.mjs",
+        "sha256": "febb0ab77db5790d13665e11c8fba31ad08033fdab2241562e04e4c665f6a409"
+      },
+      {
+        "path": "/eval/answer-completeness-v24/coverage.mjs",
+        "sha256": "222d155c8c67f8f657f3843f170ad906defc630bc8e13608e4c6c74c87270d79"
+      },
+      {
+        "path": "/eval/answer-completeness-v25/coverage.mjs",
+        "sha256": "bb47df7c5bfce57776712f792912d24909b3879da4805ec38acac27190c71a8e"
+      },
+      {
+        "path": "/eval/answer-completeness-v26/coverage.mjs",
+        "sha256": "b37cb0963d9772135e31d94556b848cf06608908003c5d9066df05f32ce9bff9"
+      },
+      {
+        "path": "/eval/answer-completeness-v27/coverage.mjs",
+        "sha256": "2b8102f32bf97553b88ab01c691b4c04390505ef6c624add24a3766e2b6a3d6e"
+      },
+      {
+        "path": "/eval/answer-completeness-v28/coverage.mjs",
+        "sha256": "f2ab295ca35be510d2c3595ccd70e1e48780152e8ba5e2faa05f1db3316fdf41"
+      },
+      {
+        "path": "/eval/answer-completeness-v29/coverage.mjs",
+        "sha256": "444259997b2995fb211255d8dcb51103addd1c1e194fcf5b717c401e14363258"
+      },
+      {
+        "path": "/eval/answer-completeness-v3/coverage.mjs",
+        "sha256": "0cd7281a127704f0db35a27ddf525f7e69c392b094759f7c16734497bd578f90"
+      },
+      {
+        "path": "/eval/answer-completeness-v30/coverage.mjs",
+        "sha256": "b05b9c3065192b712f05956ea99748344127b8d4e45d435d254cb8491cdbd446"
+      },
+      {
+        "path": "/eval/answer-completeness-v31/coverage.mjs",
+        "sha256": "e2dc91e814f8e87afe513cf518e1b331d0733c7fd348f23c45bfb0ebc7762723"
+      },
+      {
+        "path": "/eval/answer-completeness-v32/coverage.mjs",
+        "sha256": "c00f09462b0a6cc9165f8c60c5011614d91237f31990b793ea6fae1b14bb80f4"
+      },
+      {
+        "path": "/eval/answer-completeness-v33/coverage.mjs",
+        "sha256": "dacd4d33a6d1a85f3b81c32fcb4ff3b4c6028dda5017d44c99e7135f6d16d90c"
+      },
+      {
+        "path": "/eval/answer-completeness-v34/coverage.mjs",
+        "sha256": "784cbaff767d46662c552962375ce3c03591a5bf775cd4229f015d93c8235819"
+      },
+      {
+        "path": "/eval/answer-completeness-v35/coverage.mjs",
+        "sha256": "5b1bc83e25c00e57caed596f5a21e63207210fd4ba317a7cc8a6691fe22aa296"
+      },
+      {
+        "path": "/eval/answer-completeness-v36/coverage.mjs",
+        "sha256": "03cc94d2a4bc89622d4f96b5d1f24dcfbcae189eb14903ea5198cf019bd14f39"
+      },
+      {
+        "path": "/eval/answer-completeness-v37/coverage.mjs",
+        "sha256": "5bd3edd9c13b895289801eeb3df35fefeababbcc6df33c21a77c2c8913fe6cc9"
+      },
+      {
+        "path": "/eval/answer-completeness-v4/coverage.mjs",
+        "sha256": "0982a0f7b73aa6c10d47c1b393d4c54316687bb95fba7aef97aebc0d2170ff01"
+      },
+      {
+        "path": "/eval/answer-completeness-v5/coverage.mjs",
+        "sha256": "654e2e766b846f9f39603b681037f8b0a7b2e93003172b0a8fcecb211bbc14ae"
+      },
+      {
+        "path": "/eval/answer-completeness-v6/coverage.mjs",
+        "sha256": "c6ab3885abdb67c0a433f09bffe16ec7667c59ff732cdfef60e70623d887a49f"
+      },
+      {
+        "path": "/eval/answer-completeness-v7/coverage.mjs",
+        "sha256": "ac373a55484defb362b8cf4b48ae3cd306ccd72eec7b1f68c53469d98865b70f"
+      },
+      {
+        "path": "/eval/answer-completeness-v8/coverage.mjs",
+        "sha256": "4741632341b16e2a4ddd7513412e369cc7a40f71d1222deac7b6adfa695b1930"
+      },
+      {
+        "path": "/eval/answer-completeness-v9/coverage.mjs",
+        "sha256": "98911771a58ef25429bc090be54a3e2739cc7079c55780e8ae57f9ef6027d6ec"
+      },
+      {
+        "path": "/retrieval.mjs",
+        "sha256": "28714b5d1f3c6e4527be04a73d12419e77213c3dee83cf8f3ccf58f8f28857a5"
+      },
+      {
+        "path": "/hybrid.mjs",
+        "sha256": "9e00aa49e0d17e21fd3808ba7e4c58b786ffacadc0850817d58b88707e72c3d5"
+      },
+      {
+        "path": "/semantic.mjs",
+        "sha256": "569b6c0582223d90e081dbb64a000d3463db2b539127be7b7c01eb0c5bd50175"
+      },
+      {
+        "path": "/research.mjs",
+        "sha256": "2ccea3ad69881a87371811e894a5780c969c09df5d83b3344ec3fe25d4e82a63"
+      },
+      {
+        "path": "/eval/retrieval-quality/section-index.mjs",
+        "sha256": "efbe6158dfd862a06607f2ae1a8e0fce5a5e20c956f15aff12ea0c8552a6837e"
+      },
+      {
+        "path": "/eval/retrieval-quality/grade.mjs",
+        "sha256": "1a51adc5fbeb32319f3b5bc2c676e817fc004affc298b9d73f2275f53604c751"
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "Vela32",
+      "files": [
+        {
+          "name": "01_Serevin_Seed_Library.txt",
+          "path": "C:\\Users\\arjun\\Documents\\Codex\\2026-10-11\\test-groundeddesk-ai-r16-in-chrome\\work\\r25-checkout\\eval\\v38-fresh-confirmation\\source_docs\\01_Serevin_Seed_Library.txt",
+          "sha256": "42584a35842baaa9d22c332795b7ff9187a6c3de1fadcc4a7e7166ae014b4a9b"
+        },
+        {
+          "name": "02_Avrel_Bell_Workshop.txt",
+          "path": "C:\\Users\\arjun\\Documents\\Codex\\2026-10-11\\test-groundeddesk-ai-r16-in-chrome\\work\\r25-checkout\\eval\\v38-fresh-confirmation\\source_docs\\02_Avrel_Bell_Workshop.txt",
+          "sha256": "98c3d8144cdcb943c9e44309dc09544ca832aff181523b1bc476086ce2047273"
+        },
+        {
+          "name": "03_Relmont_Canal_Garden.txt",
+          "path": "C:\\Users\\arjun\\Documents\\Codex\\2026-10-11\\test-groundeddesk-ai-r16-in-chrome\\work\\r25-checkout\\eval\\v38-fresh-confirmation\\source_docs\\03_Relmont_Canal_Garden.txt",
+          "sha256": "8af2ecfecc41df81d14f2ac448f0752190aa8cb0527ac975e7e9eafd00048da4"
+        },
+        {
+          "name": "04_Korven_Instrument_Coop.txt",
+          "path": "C:\\Users\\arjun\\Documents\\Codex\\2026-10-11\\test-groundeddesk-ai-r16-in-chrome\\work\\r25-checkout\\eval\\v38-fresh-confirmation\\source_docs\\04_Korven_Instrument_Coop.txt",
+          "sha256": "3b299b8d9623f9bfe88410e2d2491727c79e661b451097163d3ce3b2f092f1a8"
+        }
+      ],
+      "cases": [
+        {
+          "id": "V01",
+          "question": "When did public seed lending begin at Serevin Seed Library?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Serevin_Seed_Library.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Serevin_Seed_Library.txt",
+              "context": "Serevin Seed Library began public seed lending in 1958. The first ventilation fan renewal was completed in 1984; the second ventilation fan renewal was completed in 2011.",
+              "groups": [
+                [
+                  "began public seed lending in 1958"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V02",
+          "question": "In which year was the second ventilation fan renewal at Serevin Seed Library completed?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Serevin_Seed_Library.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Serevin_Seed_Library.txt",
+              "context": "Serevin Seed Library began public seed lending in 1958. The first ventilation fan renewal was completed in 1984; the second ventilation fan renewal was completed in 2011.",
+              "groups": [
+                [
+                  "second ventilation fan renewal was completed in 2011"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V03",
+          "question": "Who must approve in writing a Korven Instrument Coop purchase above 6200 credits?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Korven_Instrument_Coop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Korven_Instrument_Coop.txt",
+              "context": "IC-03. Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer.",
+              "groups": [
+                [
+                  "written approval from the Collection Steward and Workshop Treasurer"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V04",
+          "question": "A Serevin Seed Library dispatch request is released exactly at 14:35. When will it depart, and which hold can block departure?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Serevin_Seed_Library.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Serevin_Seed_Library.txt",
+              "context": "SL-01. Dispatch requests released before 14:35 leave on the current service day. At 14:35 or later, departure is the next service day, unless a phytosanitary hold is open.",
+              "groups": [
+                [
+                  "At 14:35 or later, departure is the next service day"
+                ],
+                [
+                  "unless a phytosanitary hold is open"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V05",
+          "question": "How many seed lots does Beren check per week?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Serevin_Seed_Library.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Serevin_Seed_Library.txt",
+              "context": "SL-02. Beren checks four seed lots per week. Olan checks six storage trays per week. Beren labels two transport boxes per month.",
+              "groups": [
+                [
+                  "Beren checks four seed lots per week"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V06",
+          "question": "When was the Avrel Bell Workshop casting hall restoration completed?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Avrel_Bell_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "The Avrel Bell Workshop casting hall moved in 1912. Its restoration was completed in 1983. A plan to close the mould annex in 2016 was rejected; the annex remains open.",
+              "groups": [
+                [
+                  "Its restoration was completed in 1983"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V07",
+          "question": "How long are Avrel Bell Workshop signed calibration records kept, including the exception for an unresolved material claim?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Avrel_Bell_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "BW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is settled.",
+              "groups": [
+                [
+                  "4 years"
+                ],
+                [
+                  "An unresolved material claim extends retention of affected records until the claim is settled"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V08",
+          "question": "What is the lowest winter temperature in the Avrel Bell Workshop alloy store?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Avrel_Bell_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "BW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.",
+              "groups": [
+                [
+                  "absolute minimum winter temperature is -2 degrees Celsius"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V09",
+          "question": "Give the highest monthly mean temperature in the Avrel Bell Workshop alloy store and its month.",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Avrel_Bell_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "BW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.",
+              "groups": [
+                [
+                  "highest monthly mean temperature is 26 degrees Celsius in July"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V10",
+          "question": "Which documents belong in the Avrel Bell Workshop calibration packet?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Avrel_Bell_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "BW-03. The calibration packet must contain:\n- a clapper inventory\n- an alloy certificate\n- a tuning chart\n- an inspection log\n- a return tag",
+              "groups": [
+                [
+                  "clapper inventory"
+                ],
+                [
+                  "alloy certificate"
+                ],
+                [
+                  "tuning chart"
+                ],
+                [
+                  "inspection log"
+                ],
+                [
+                  "return tag"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V11",
+          "question": "When was the Relmont Canal Garden watergate rebuilt?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Relmont_Canal_Garden.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Relmont_Canal_Garden.txt",
+              "context": "At Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.",
+              "groups": [
+                [
+                  "watergate was rebuilt in 1979"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V12",
+          "question": "What is the highest recorded daily temperature at Relmont Canal Garden?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Relmont_Canal_Garden.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Relmont_Canal_Garden.txt",
+              "context": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+              "groups": [
+                [
+                  "highest recorded daily temperature is 39 degrees Celsius"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V13",
+          "question": "How many flow readings does Balen record per shift?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Relmont_Canal_Garden.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Relmont_Canal_Garden.txt",
+              "context": "Balen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month.",
+              "groups": [
+                [
+                  "Balen records six flow readings per shift"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V14",
+          "question": "Give the Avrel Bell Workshop striker greasing intervals under normal and humid conditions, together with its inspection interval.",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Avrel_Bell_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "Grease the Avrel Bell Workshop striker every 360 cycles under normal conditions. In a humid chamber, grease it every 180 cycles. Inspect the striker every 90 cycles regardless of chamber.",
+              "groups": [
+                [
+                  "360 cycles under normal conditions"
+                ],
+                [
+                  "In a humid chamber, grease it every 180 cycles"
+                ],
+                [
+                  "Inspect the striker every 90 cycles regardless of chamber"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V15",
+          "question": "How soon is a Korven Instrument Coop rental request acknowledged, and does acknowledgement guarantee an instrument reservation?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Korven_Instrument_Coop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Korven_Instrument_Coop.txt",
+              "context": "IC-01. A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+              "groups": [
+                [
+                  "within seven working hours"
+                ],
+                [
+                  "does not guarantee an instrument reservation"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V16",
+          "question": "List every item in the Korven Instrument Coop shipping packet.",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Korven_Instrument_Coop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Korven_Instrument_Coop.txt",
+              "context": "IC-02. The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.",
+              "groups": [
+                [
+                  "loan form"
+                ],
+                [
+                  "serial register"
+                ],
+                [
+                  "condition checklist"
+                ],
+                [
+                  "collection permit"
+                ],
+                [
+                  "release receipt"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V17",
+          "question": "How long are Korven Instrument Coop completed loan records kept, and what claim can extend that time?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Korven_Instrument_Coop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Korven_Instrument_Coop.txt",
+              "context": "IC-04. Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+              "groups": [
+                [
+                  "11 months"
+                ],
+                [
+                  "unless an unresolved damage claim requires longer retention"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V18",
+          "question": "What is the winter average temperature in the Avrel Bell Workshop alloy store?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Avrel_Bell_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "BW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.",
+              "groups": [
+                [
+                  "winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V19",
+          "question": "Which month has the highest monthly mean temperature at Relmont Canal Garden, and what is that mean?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Relmont_Canal_Garden.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Relmont_Canal_Garden.txt",
+              "context": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+              "groups": [
+                [
+                  "highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V20",
+          "question": "When did public seed lending begin at Serevin Seed Library? Also, when was the Avrel Bell Workshop casting hall restoration completed?",
+          "workflow": "hybrid",
+          "category": "compound",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Serevin_Seed_Library.txt",
+            "02_Avrel_Bell_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Serevin_Seed_Library.txt",
+              "context": "Serevin Seed Library began public seed lending in 1958. The first ventilation fan renewal was completed in 1984; the second ventilation fan renewal was completed in 2011.",
+              "groups": [
+                [
+                  "began public seed lending in 1958"
+                ]
+              ]
+            },
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "The Avrel Bell Workshop casting hall moved in 1912. Its restoration was completed in 1983. A plan to close the mould annex in 2016 was rejected; the annex remains open.",
+              "groups": [
+                [
+                  "Its restoration was completed in 1983"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V21",
+          "question": "When was the Serevin Seed Library ventilation fan renewed?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Two completed fan renewals1984/2011, no ordinal. Require uncited refusal or clarification."
+        },
+        {
+          "id": "V22",
+          "question": "What is the Serevin Seed Library dispatch password at 14:35?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "At-boundary clock context does not supply a password."
+        },
+        {
+          "id": "V23",
+          "question": "Who approves a Serevin Seed Library dispatch at 14:34?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Before-cutoff timing is not an approver identity; no dispatch approver specified. Do not borrow Coop purchase approvals."
+        },
+        {
+          "id": "V24",
+          "question": "Which vehicle leaves the Serevin Seed Library dispatch yard at 16:00?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "After-cutoff clock context does not specify a vehicle."
+        },
+        {
+          "id": "V25",
+          "question": "What is the bank account number of Korven Instrument Coop?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "No bank account number present."
+        },
+        {
+          "id": "V26",
+          "question": "What exact torque in newton-metres is specified for Avrel Bell Workshop striker bolts?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "No torque value present."
+        },
+        {
+          "id": "V27",
+          "question": "A Serevin Seed Library dispatch request is released at 14:34. When will it leave, and what is its password?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Mixed before-cutoff departure plus absent password; strict whole-question unsupported refusal required, zero citations."
+        },
+        {
+          "id": "V28",
+          "question": "What is the highest monthly mean temperature at Talven Quarry Archive?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Entity absent from every source."
+        },
+        {
+          "id": "V29",
+          "question": "Compare movement-slip retention at Serevin Seed Library and signed-calibration-record retention at Avrel Bell Workshop, including both hold and claim exceptions.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Serevin_Seed_Library.txt",
+            "02_Avrel_Bell_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Serevin_Seed_Library.txt",
+              "context": "SL-04. Keep movement slips for 17 months. While a seed-quarantine hold is open, retain affected slips until the hold is released.",
+              "groups": [
+                [
+                  "17 months"
+                ],
+                [
+                  "While a seed-quarantine hold is open, retain affected slips until the hold is released"
+                ]
+              ]
+            },
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "BW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is settled.",
+              "groups": [
+                [
+                  "4 years"
+                ],
+                [
+                  "An unresolved material claim extends retention of affected records until the claim is settled"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V30",
+          "question": "Compare normal and exception greasing plus inspection intervals for the Avrel Bell Workshop humid-chamber striker and Korven Instrument Coop dusty-room reed trimmer.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Avrel_Bell_Workshop.txt",
+            "04_Korven_Instrument_Coop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "Grease the Avrel Bell Workshop striker every 360 cycles under normal conditions. In a humid chamber, grease it every 180 cycles. Inspect the striker every 90 cycles regardless of chamber.",
+              "groups": [
+                [
+                  "360 cycles under normal conditions"
+                ],
+                [
+                  "In a humid chamber, grease it every 180 cycles"
+                ],
+                [
+                  "Inspect the striker every 90 cycles regardless of chamber"
+                ]
+              ]
+            },
+            {
+              "filename": "04_Korven_Instrument_Coop.txt",
+              "context": "Grease the Korven Instrument Coop reed trimmer every 114 operating hours under normal conditions. In a dusty room, grease it every 57 operating hours. Inspect the reed trimmer every 19 operating hours in either room.",
+              "groups": [
+                [
+                  "114 operating hours under normal conditions"
+                ],
+                [
+                  "In a dusty room, grease it every 57 operating hours"
+                ],
+                [
+                  "Inspect the reed trimmer every 19 operating hours in either room"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V31",
+          "question": "Compare acknowledgement deadlines and their limits for Serevin Seed Library seed-reservation requests and Korven Instrument Coop rental requests.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Serevin_Seed_Library.txt",
+            "04_Korven_Instrument_Coop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Serevin_Seed_Library.txt",
+              "context": "SL-05. Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.",
+              "groups": [
+                [
+                  "within three business days"
+                ],
+                [
+                  "not a guarantee that seeds remain available"
+                ]
+              ]
+            },
+            {
+              "filename": "04_Korven_Instrument_Coop.txt",
+              "context": "IC-01. A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+              "groups": [
+                [
+                  "within seven working hours"
+                ],
+                [
+                  "does not guarantee an instrument reservation"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "V32",
+          "question": "Compare all contents of the Avrel Bell Workshop calibration packet and Korven Instrument Coop shipping packet.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Avrel_Bell_Workshop.txt",
+            "04_Korven_Instrument_Coop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Avrel_Bell_Workshop.txt",
+              "context": "BW-03. The calibration packet must contain:\n- a clapper inventory\n- an alloy certificate\n- a tuning chart\n- an inspection log\n- a return tag",
+              "groups": [
+                [
+                  "clapper inventory"
+                ],
+                [
+                  "alloy certificate"
+                ],
+                [
+                  "tuning chart"
+                ],
+                [
+                  "inspection log"
+                ],
+                [
+                  "return tag"
+                ]
+              ]
+            },
+            {
+              "filename": "04_Korven_Instrument_Coop.txt",
+              "context": "IC-02. The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.",
+              "groups": [
+                [
+                  "loan form"
+                ],
+                [
+                  "serial register"
+                ],
+                [
+                  "condition checklist"
+                ],
+                [
+                  "collection permit"
+                ],
+                [
+                  "release receipt"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "integrity": "Four new fictional source documents and32 exact questions/key frozen before first answers. Varied cutoff equality/before/after and mixed unsupported intents; no model dry runs or outcome filtering."
+    }
+  ]
+}
