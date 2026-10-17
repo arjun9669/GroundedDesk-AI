@@ -11,10 +11,12 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v32** exposed643 regression gate **PASS**; Morrow32 **32/0/0** fixed / **32/0/0** section; not adopted |
+| Latest retrieval experiment | **v32** exposed643 gate **PASS**; Hearth32 prospective first attempt **BLOCKED at H20**, no accuracy score; not adopted |
 | Latest recorded checks | **505 unit tests**, strict bundled checks; real MiniLM v32 results recorded separately |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
+
+The separately frozen [Hearth32 prospective confirmation](./docs/HEARTH32_V32_CONFIRMATION.md) **blocked at H20** during isolated v32 compound-answer assembly. H01–H19 have captured outputs; H20 has production UI output but no saved candidate result; H21–H32 were not run. The frozen capture-all-before-grading rule means **no32-case accuracy or refusal/Comparison score** is reported. The first interrupted archive is sealed; no retry, tuning or replacement sample. Conditional integration-readiness review stopped. **V32 stays isolated; live5.6/r44 is unchanged.**
 
 Experimental v32 is an isolated development iteration, not an application release. Its [643-case real Chrome/MiniLM regression](./docs/COVERAGE_V32_R44_VALIDATION.md) has frozen gate **PASS** in both variants. It restricts location-prefix processing to event questions, preserving temporal cutoff wording and the unchanged v31 lexical packet Comparison behavior. Morrow32 now records **32/0/0 fixed / 32/0/0 section** under its unchanged key. Bracken32 B14 restores that set to **32/0/0**; all other642 questions retain exact v31 answers and quotations. All127 unsupported controls refuse uncited, with no new false acceptance/refusal or prior PASS loss. Older public-set failures remain visible in the report. **Live 5.6/r44 remains unchanged; v32 is not adopted.**
 

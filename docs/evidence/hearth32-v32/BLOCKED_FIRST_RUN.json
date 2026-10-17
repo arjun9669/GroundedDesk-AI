@@ -1,0 +1,78 @@
+{
+  "classification": "Hearth32 prospective author-created confirmation; first attempt BLOCKED, not an accuracy score",
+  "status": "BLOCKED",
+  "failure": {
+    "status": "BLOCKED",
+    "utc": "2026-10-17T10:37:25.201Z",
+    "error": "page.evaluate: Error: Bounded literal evidence and finite actual cosine required\n    at http://127.0.0.1:8810/eval/answer-completeness-v32/coverage.mjs?sha256=c00f09462b0a6cc9165f8c60c5011614d91237f31990b793ea6fae1b14bb80f4:116:88\n    at Array.map (<anonymous>)\n    at finish (http://127.0.0.1:8810/eval/answer-completeness-v32/coverage.mjs?sha256=c00f09462b0a6cc9165f8c60c5011614d91237f31990b793ea6fae1b14bb80f4:114:23)\n    at Object.answerWithCoverage (http://127.0.0.1:8810/eval/answer-completeness-v32/coverage.mjs?sha256=c00f09462b0a6cc9165f8c60c5011614d91237f31990b793ea6fae1b14bb80f4:209:9)\n    at eval (eval at evaluate (:290:30), <anonymous>:23:55)\n    at async <anonymous>:316:30\n    at C:\\Users\\arjun\\Documents\\Codex\\2026-10-11\\test-groundeddesk-ai-r16-in-chrome\\work\\r25-checkout\\tests\\browser-hearth32-v32.mjs:135:33",
+    "context": {
+      "activePack": "Hearth32",
+      "activeCase": "H20",
+      "original_question": "When did Veylan Seed Conservatory open its public gallery to visitors? Also, what year did the Ostren Instrument Library rehearsal room restoration take place?",
+      "phase": "candidate_computation",
+      "completed": [],
+      "completed_cases": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H05",
+        "H06",
+        "H07",
+        "H08",
+        "H09",
+        "H10",
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17",
+        "H18",
+        "H19"
+      ]
+    },
+    "receipt": {
+      "token": "groundeddesk_capture_0c9081f8-88e5-4efe-86bc-7ec6451cbce7",
+      "original_question": "When did Veylan Seed Conservatory open its public gallery to visitors? Also, what year did the Ostren Instrument Library rehearsal room restoration take place?",
+      "browser_input": "When did Veylan Seed Conservatory open its public gallery to visitors? Also, what year did the Ostren Instrument Library rehearsal room restoration take place?",
+      "browser_newlines_canonicalized": false,
+      "expected_display": "When did Veylan Seed Conservatory open its public gallery to visitors? Also, what year did the Ostren Instrument Library rehearsal room restoration take place?"
+    },
+    "saved": [
+      "run-failure-dom.json",
+      "run-failure.png"
+    ],
+    "collection_errors": [],
+    "scoring_warning": "Failure snapshots are diagnostic, not automatically scored; verify question identity, freshness and actual retrieval mode."
+  },
+  "complete_candidate_cases": 19,
+  "production_UI_cases": 20,
+  "candidate_blocked_case": "H20",
+  "unexecuted_cases": [
+    "H21",
+    "H22",
+    "H23",
+    "H24",
+    "H25",
+    "H26",
+    "H27",
+    "H28",
+    "H29",
+    "H30",
+    "H31",
+    "H32"
+  ],
+  "frozen_questions": 32,
+  "candidate": "unchanged v32",
+  "paired": "unchanged v31",
+  "native_scorer_executed": false,
+  "accuracy_grades_assigned": false,
+  "reason": "Frozen protocol requires all outputs before grading; incomplete run cannot produce32-case accuracy, refusal or Comparison counts. Preserve first attempt without retries.",
+  "question_retries": 0,
+  "source_or_code_changes_after_answers": false,
+  "conditional_integration_review": "STOPPED: confirmation blocked",
+  "production_build": "2026-10-13-r44",
+  "production_change": "NONE"
+}
