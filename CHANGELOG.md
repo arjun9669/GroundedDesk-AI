@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-17 — isolated v33 gate FAIL; Hearth32 qualified retake
+
+- Compound quotations bind to unique literal spans and actual facet-scored body anchors; bounded bullet inventories support Hybrid and lexical Comparison. Production 5.6/r44 unchanged.
+- Frozen 675-case run: 627 real local MiniLM Hybrid, 48 lexical Comparison, Qwen off, installed headless Chrome 155.0.8059.80. Hearth32 retake 31/1/0 fixed / 31/1/0 section; original first remains BLOCKED/ungraded.
+- 522 unit tests and strict bundled checks pass separately. Exact answers, native grades, citation checks, all failures, paired exceptions and history hashes preserved. No post-answer tuning, retry, paid service, independent accuracy or adoption claim.
+- [Report](./docs/COVERAGE_V33_R44_VALIDATION.md), [JSON](./docs/evidence/coverage-v33-r44/ALL_SCORECARDS.json).
+
 ## 2026-10-17 — Hearth32 prospective v32 confirmation BLOCKED
 
 - Protocol committed before authoring; four fictional sources,32 questions/key/rubric and63 frozen files committed before answers. Actual local MiniLM q8 WASM in installed headless Chrome155.0.8059.80, Hybrid, Qwen off.
