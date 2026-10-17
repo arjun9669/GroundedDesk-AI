@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-18 — Prism32 first prospective confirmation FAIL
+
+- Unchanged isolated v36 records **29 PASS / 0 PARTIAL / 3 FAIL** both variants: 28 real local MiniLM Hybrid and 4 separate lexical Comparison cases, Qwen off, installed headless Chrome 155.0.8059.80, captured once after 67-file/68-served-hash freeze.
+- P04 false refusal; P10/P17 wrong-section supported nonresponse. All 8 unsupported controls refuse uncited;28/28 citations literal, 26/28 relevant; zero false acceptances, one false refusal. P04 production-baseline PASS loss is inherited from v35; no paired-v35 PASS loss. Original criteria/native grades retained.
+- First archive sealed before broader review; 18 earlier first archives unchanged. 551 unit controls and strict bundled checks pass separately. No external blinded accuracy claim, retries, tuning or replacement set.
+- Confirmation FAIL stops integration work. Live 5.6/r44 and candidate/dependencies unchanged, no adoption or 6.0-readiness claim. Capacity expansion remains deferred.
+- [Full first report](./docs/PRISM32_V36_CONFIRMATION.md), [JSON](./docs/evidence/prism32-v36/REVIEWED_SCORECARD.json).
+
 ## 2026-10-18 — isolated v36 native gate PASS; engineering PASS
 
 - Refine unique bounded literal maintenance and contiguous bullet quotations; refuse undifferentiated same-object renewal dates with competing completed years. Same source pairs, exact offsets and actual finite body-cosine anchors. No application changes.

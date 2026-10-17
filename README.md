@@ -12,13 +12,15 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
 | Latest retrieval experiment | **v36** exposed 707 gate **PASS**; engineering review **PASS**; not adopted |
-| Latest recorded checks | **551 frozen unit tests**, strict bundled checks; actual MiniLM recorded separately |
+| Latest recorded checks | **Prism32 first confirmation: 29 PASS / 0 PARTIAL / 3 FAIL** both variants; gate **FAIL**, integration review stopped. 551 unit controls pass separately |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
+The [Prism32 first prospective v36 confirmation](./docs/PRISM32_V36_CONFIRMATION.md) records **29 PASS / 0 PARTIAL / 3 FAIL** in both variants. **Confirmation gate FAIL; integration-readiness work is stopped.** [Exact answers and JSON](./docs/evidence/prism32-v36/REVIEWED_SCORECARD.json) preserve every original result. P04 falsely refuses supported cutoff/hold evidence; P10 and P17 quote unrelated history/acknowledgement instead of packet contents and retention. All eight unsupported cases refuse uncited; citations are 28/28 literal but 26/28 relevant. P04 loses a production-baseline PASS, inherited from v35; no paired-v35 PASS is lost. This is author-created prospective stress confirmation, not externally blinded independent accuracy. No retries, input/rubric/code edits or replacement set. Live 5.6/r44 remains unchanged; capacity expansion stays deferred.
+
 The isolated [v36 real Chrome/MiniLM regression](./docs/COVERAGE_V36_R44_VALIDATION.md) records native gate **PASS** and engineering review **PASS** across 707 exposed cases. Lumen32 records **32/0/0 fixed / 32/0/0 section** under its unchanged key and strict context-precision criteria. [Every exact answer and JSON scorecards](./docs/evidence/coverage-v36-r44/ALL_SCORECARDS.json) preserve all results. **Live 5.6/r44 remains unchanged; v36 is not adopted.**
 
-V36 trims only uniquely anchored literal maintenance/bullet inventory quotations and refuses undifferentiated same-object renewal dates. Actual finite source-body cosine anchors remain recorded for refined Hybrid evidence; lexical Comparisons remain separate. Eligible only for a later separately frozen prospective confirmation. No fresh sample or live integration in this task; adoption, integration qualification and 6.0 readiness remain unestablished.
+V36 trims only uniquely anchored literal maintenance/bullet inventory quotations and refuses undifferentiated same-object renewal dates. Actual finite source-body cosine anchors remain recorded for refined Hybrid evidence; lexical Comparisons remain separate. That exposed regression qualified v36 for prospective confirmation; the later Prism32 first confirmation above failed. Integration review is stopped. Adoption, integration qualification and 6.0 readiness remain unestablished.
 
 The 707 cases used 655 actual local MiniLM Hybrid questions and 52 lexical Comparisons, Qwen off, installed headless Chrome. All are exposed in-sample regressions, not new independent accuracy or 707/707. Older public-set failures remain visible and different rubrics are not pooled. Performance, memory, citation-navigation/export integration and 6.0 readiness remain unestablished.
 
