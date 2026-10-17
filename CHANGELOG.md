@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-17 — isolated v35 native gate PASS; engineering PASS
+
+- Preserve complete unique literal maintenance quotations before bounded context expansion; unchanged v34 parser and exact v33 Hybrid exports. Live 5.6/r44 unchanged.
+- Frozen 675-case run: 627 actual local MiniLM Hybrid and 48 lexical Comparisons, Qwen off, installed headless Chrome 155.0.8059.80. Hearth32 32/0/0 fixed / 32/0/0 section. All native grades and prior PASS checks preserved.
+- 540 frozen unit tests and strict bundled checks pass separately. Exact original v34 probe replay: PASS. V34's original probe FAIL and HOLD remain immutable; no new independent accuracy, post-answer tuning, benchmark retry or live adoption.
+- Eligible only to prepare a separately frozen prospective confirmation in a later task; no fresh sample was created here. Candidate adoption, integration review and 6.0 readiness remain unestablished.
+- [Full report](./docs/COVERAGE_V35_R44_VALIDATION.md), [JSON](./docs/evidence/coverage-v35-r44/ALL_SCORECARDS.json), [engineering review](./docs/evidence/coverage-v35-r44/engineering-review.json).
+
 ## 2026-10-17 — isolated v34 gate PASS; Hearth32 qualified retake
 
 - Source-local conditional maintenance Comparison completeness; exact unchanged v33 Hybrid exports. Production 5.6/r44 unchanged; v33 first failed gate and Hearth32 first 31/1/0 remain immutable.
