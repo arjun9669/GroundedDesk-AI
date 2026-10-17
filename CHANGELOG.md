@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-17 — Lumen32 first prospective confirmation FAIL
+
+- Unchanged isolated v35: **28 PASS / 2 PARTIAL / 2 FAIL** both variants across 28 actual MiniLM Hybrid and 4 lexical Comparison cases, Qwen off, installed headless Chrome 155.0.8059.80. All 32 first answers captured once after source/key/rubric/hash freeze.
+- Preserve original native grades; 30/30 citations literal, 26/30 relevant under frozen context rules; one strict unsupported non-refusal, zero false refusals. Correct maintenance/packet facts visibly present in overbroad quotes are explained without relaxing scoring. Paired unchanged v34 matches all 64 outputs exactly.
+- First evidence sealed before review; all 16 earlier first archives unchanged. 540 unit controls and strict bundled checks PASS separately. No external independent-accuracy claim, retries or post-answer tuning.
+- Confirmation FAIL stops conditional integration work; live 5.6/r44 and candidate/runtime modules unchanged. No adoption or 6.0-readiness claim.
+- [Full first report](./docs/LUMEN32_V35_CONFIRMATION.md), [JSON](./docs/evidence/lumen32-v35/REVIEWED_SCORECARD.json).
+
 ## 2026-10-17 — isolated v35 native gate PASS; engineering PASS
 
 - Preserve complete unique literal maintenance quotations before bounded context expansion; unchanged v34 parser and exact v33 Hybrid exports. Live 5.6/r44 unchanged.
