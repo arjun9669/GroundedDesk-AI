@@ -11,18 +11,18 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v34** exposed 675 gate **PASS**; Hearth32 qualified retake; **engineering review HOLD**; not adopted |
-| Latest recorded checks | **529 frozen unit tests**; **post-seal quotation probe FAIL**, strict bundled checks; real MiniLM v34 results recorded separately |
+| Latest retrieval experiment | **v35** exposed675 gate **PASS**; engineering review **PASS**; not adopted |
+| Latest recorded checks | **540 frozen unit tests**, strict bundled checks; original quotation probe replay **PASS**; actual MiniLM recorded separately |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
-The isolated [v34 real Chrome/MiniLM regression](./docs/COVERAGE_V34_R44_VALIDATION.md) records combined gate **PASS** across 675 exposed cases. Hearth32 records **32/0/0 fixed / 32/0/0 section** under its unchanged key and rubric. Every exact answer, quotation, citation check and regression is preserved in the [machine-readable scorecards](./docs/evidence/coverage-v34-r44/ALL_SCORECARDS.json). **Live 5.6/r44 remains unchanged; v34 is not adopted.**
+The isolated [v35 real Chrome/MiniLM regression](./docs/COVERAGE_V35_R44_VALIDATION.md) records native gate **PASS** and engineering review **PASS** across 675 exposed cases. Hearth32 records **32/0/0 fixed / 32/0/0 section** under its unchanged key/rubric. [Exact answers and JSON scorecards](./docs/evidence/coverage-v35-r44/ALL_SCORECARDS.json) preserve every result and regression. **Live 5.6/r44 remains unchanged; v35 is not adopted.**
 
-**Engineering review is HOLD**: a separate post-seal synthetic probe showed expansion of an already-complete quote to include an unrelated sentence in the same paragraph. Native benchmark scores remain unchanged. Fresh confirmation is stopped pending a separately frozen complete-quotation guard.
+V35 preserves an already-complete uniquely anchored literal maintenance quotation before considering context expansion. Its parser and Hybrid functions remain unchanged. The original v34 synthetic quotation probe now records **PASS** in a separately reported frozen engineering replay, outside the 675 browser cases. Eligible only to prepare a separately frozen prospective confirmation in a later task; no fresh sample was created here. Candidate adoption, integration review and 6.0 readiness remain unestablished.
 
-V34 adds a narrow source-local maintenance Comparison wrapper; its Hybrid functions are exact unchanged v33 exports. The run used 627 actual local MiniLM Hybrid questions and 48 separate lexical Comparisons, Qwen off, installed headless Chrome. Different rubrics are not pooled into an accuracy percentage. Older public-set failures remain visible. A PASS permits only a later separately frozen fresh confirmation before integration review; 6.0 readiness is not established.
+The run used 627 actual local MiniLM Hybrid questions and 48 separate lexical Comparisons, Qwen off, installed headless Chrome. This is in-sample regression, not independent accuracy or 675/675; different rubrics are not pooled. Older public-set failures remain visible. Performance, memory, citation-navigation and export integration readiness and 6.0 readiness remain unestablished.
 
-[V33's first 675-case gate FAIL](./docs/COVERAGE_V33_R44_VALIDATION.md) and Hearth32 qualified retake **31 PASS/1 PARTIAL/0 FAIL** remain unchanged, including H30's missing Caldra exception/inspection. Hearth32's [original v32 first attempt](./docs/HEARTH32_V32_CONFIRMATION.md) remains **BLOCKED at H20, no complete accuracy score**; its first 19 captured cases stay ungraded and H21–H32 were originally unexecuted. No retrospective score replaces it. V32's [643-case exposed gate PASS](./docs/COVERAGE_V32_R44_VALIDATION.md), all older first scores, failed gates, source/key qualifications and explicit reporting errata are preserved.
+[V34's original native PASS, Hearth32 32/0/0 and engineering HOLD](./docs/COVERAGE_V34_R44_VALIDATION.md) remain unchanged, including its original post-seal probe FAIL. [V33's first FAIL/Hearth32 31/1/0](./docs/COVERAGE_V33_R44_VALIDATION.md), [Hearth32's original v32 BLOCKED/ungraded first attempt](./docs/HEARTH32_V32_CONFIRMATION.md), all older first scores, failed gates and explicit reporting errata are preserved. No first result is replaced or retrospectively rescored.
 
 ## Try it in a few minutes
 
