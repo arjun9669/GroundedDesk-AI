@@ -21,6 +21,17 @@ jobs:
         run: |
           node --check eval/v32-fresh-confirmation/score.mjs
           node --check tests/browser-hearth32-v32.mjs
+          node --check eval/answer-completeness-v34/coverage.mjs
+          node --check eval/answer-completeness-v34/review.mjs
+          node --check eval/answer-completeness-v34/score-binding64.mjs
+          node --check eval/answer-completeness-v34/score-bracken32.mjs
+          node --check eval/answer-completeness-v34/score-cedar32.mjs
+          node --check eval/answer-completeness-v34/score-combined.mjs
+          node --check eval/answer-completeness-v34/score-flint32.mjs
+          node --check eval/answer-completeness-v34/score-hearth32.mjs
+          node --check eval/answer-completeness-v34/score-morrow32.mjs
+          node --check eval/answer-completeness-v34/score.mjs
+          node --check tests/browser-coverage-v34.mjs
           node --check eval/answer-completeness-v33/coverage.mjs
           node --check eval/answer-completeness-v33/review.mjs
           node --check eval/answer-completeness-v33/score-binding64.mjs
