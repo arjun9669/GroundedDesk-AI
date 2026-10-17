@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-18 — v38 departure intent, regression PASS, first Vela32 FAIL
+
+- Validate the complete departure-time request before invoking cutoff repair; preserve original password/approver/vehicle refusals. Unique literal evidence and actual MiniLM body anchors retained.
+- 739 unchanged exposed regressions:683 actual MiniLM Hybrid and 56 lexical Comparisons;573 unit controls and strict bundled checks separately passed. Original intent probe PASS, v37's original FAIL unchanged.
+- Separate frozen first Vela32 confirmation:28 real MiniLM Hybrid and4 lexical Comparisons; native first gate **FAIL**. All answers/failures sealed before review; no candidate tuning or replacement set.
+- Preserve all prior first scores, blockers, packaging failure/continuation and reporting errata. Production r44 unchanged; no independent blind-accuracy claim, capacity expansion or adoption.
+- [Regression report](./docs/COVERAGE_V38_R44_VALIDATION.md), [Vela32 first report](./docs/VELA32_V38_CONFIRMATION.md).
+
 ## 2026-10-18 — isolated v37 scoped policy regression PASS
 
 - Scope inclusive cutoff, packet-document and records-kept questions to unique source files and actual MiniLM body anchors; production unchanged.
@@ -80,7 +88,7 @@
 
 ## 2026-10-16 — Morrow32 prospective v30 confirmation FAIL
 
-- Protocol committed before authoring; four new fictional TXT sources,32 questions/key/rubric/runner and59-file freeze committed before answers. Actual local MiniLM q8 WASM in installed headless Chrome 155.0.8059.80; Qwen off;28 Hybrid and4 separate lexical Comparisons once. Author-created stress sample, not external independent accuracy or deployed-candidate validation.
+- Protocol committed before authoring; four new fictional TXT sources,32 questions/key/rubric/runner and59-file freeze committed before answers. Actual local MiniLM q8 WASM in installed headless Chrome 155.0.8059.80; Qwen off;28 Hybrid and 4 separate lexical Comparisons once. Author-created stress sample, not external independent accuracy or deployed-candidate validation.
 - First30 PASS/0 PARTIAL/2 FAIL both. M11 falsely refuses a source-supported2005 rebuild date that r44 answers; M32 selects correct files but irrelevant relocation/acknowledgement quotations for packet contents.30/30 literal,28/30 relevant citations; all8 unsupported controls refuse uncited. Paired v29 records27/3/2; v30 improves only three Comparisons.
 - Original first archive retains a stale v28 filename suffix; actual module/config/screenshots identify v30. Preserve original seal and bytes, provide a correctly named byte-identical copy and explicit archive-label erratum. No answer/grade/input change.
 - All32 cases reviewed without grade changes;59 frozen files,4 source hashes, finite unit384D vectors,160 citation-number checks and9 unchanged runtime files verified.486 unit and strict bundled checks pass separately from failed confirmation. Conditional integration-readiness review stopped; no tuning/new sample/adoption. Live r44 and all historical scores unchanged. [Full report](./docs/MORROW32_V30_CONFIRMATION.md), [JSON](./docs/evidence/morrow32-v30/REVIEWED_SCORECARD.json).
@@ -101,7 +109,7 @@
 
 ## 2026-10-16 — Flint32 prospective v28 confirmation FAIL
 
-- Protocol committed before authoring; four source documents,32 questions/key/rubric/runner and57 file hashes frozen before answers. Actual headless Chrome 155.0.8059.80, local MiniLM q8 WASM, Qwen off;28 Hybrid and4 separate lexical Comparisons once. Author-created stress set, not external independent accuracy.
+- Protocol committed before authoring; four source documents,32 questions/key/rubric/runner and57 file hashes frozen before answers. Actual headless Chrome 155.0.8059.80, local MiniLM q8 WASM, Qwen off;28 Hybrid and 4 separate lexical Comparisons once. Author-created stress set, not external independent accuracy.
 - First26 PASS/3 PARTIAL/3 FAIL both;30/30 literal,29/30 paragraph-relevant citations. F03/F08 falsely refuse temperatures; F21 returns unrelated retention for ambiguous overhaul. F29/F30/F32 comparisons omit required details. F08 loses an r44 baseline PASS. Paired v27 records24/3/5; v28 recovers F06/F20.
 - First outputs/grades sealed before diagnosis; all cases reviewed without grade changes.57 frozen files,4 source hashes,44 source vectors,28 query vectors,2 facet vectors,160 citation-number checks and9 unchanged runtime files verified. All earlier first scores and v28 exposed579 gate PASS preserved.
 - Failed gate stops integration qualification. No tuning/retry/replacement sample/adoption; live5.6/r44 unchanged. [Full report](./docs/FLINT32_V28_CONFIRMATION.md) and [reviewed JSON](./docs/evidence/flint32-v28/REVIEWED_SCORECARD.json).
@@ -130,22 +138,22 @@
 ## 2026-10-16 — Bracken32 prospective v25 confirmation FAIL
 
 - Froze four new fictional sources,32 questions/key/scorer and50 original file hashes before answers. Preflight observed Chrome updated from155.0.8059.40 to155.0.8059.80 before model/upload/questions. Preserved the original freeze and added a separately frozen exact-version runner amendment; no candidate/input/scoring changes. This is a qualified first-answer prospective author-created stress test, not external independent accuracy or a same-browser-version comparison with Cedar32.
-- Captured28 actual local MiniLM Hybrid questions and4 separate lexical Comparisons once, Qwen off, fresh384D vectors. First result **21 PASS /1 PARTIAL /10 FAIL** both, with33/33 literal but24/33 relevant quotations, five unsupported non-refusals and two supported false refusals. All4 Comparisons pass. Source-literal quotations still fail entity, actor/object, statistic, cutoff and facet support. Partial B08 omits dusty lubrication and inspection; other misses remain exact in the scorecard.
+- Captured28 actual local MiniLM Hybrid questions and 4 separate lexical Comparisons once, Qwen off, fresh384D vectors. First result **21 PASS /1 PARTIAL /10 FAIL** both, with33/33 literal but24/33 relevant quotations, five unsupported non-refusals and two supported false refusals. All4 Comparisons pass. Source-literal quotations still fail entity, actor/object, statistic, cutoff and facet support. Partial B08 omits dusty lubrication and inspection; other misses remain exact in the scorecard.
 - Paired v24 records18/1/13. Three unsupported controls improve to uncited refusals; two already-failing cited answers become supported false refusals. No prior PASS loss does not erase that behavior change. First scores and browser evidence sealed before review; review preserves grades. Original Cedar32 first24/2/6, exposed v25 Cedar32 32/0/0, Binding64 64/0/0 and all older scores remain immutable.
 - Gate FAIL stops the conditional performance/memory/citation/export integration qualification. V25 stays isolated; live5.6/r44 unchanged. No post-answer tuning, retry, replacement sample or runtime adoption. See [full report](./docs/BRACKEN32_V25_CONFIRMATION.md) and [JSON scorecard](./docs/evidence/bracken32-v25/scorecard.json).
 
 ## 2026-10-16 — Isolated v25 claim support repairs pass exposed regression gates
 
 - Added bounded guards over unchanged v24 for explicit-entity event/year relations, ambiguity/negation, qualified temperature statistics and present-tense actor/action/count/cadence binding. Separate lexical Comparison trims only an already displayed cross-paragraph retention excerpt with one qualifying paragraph, retaining its full exception. No benchmark IDs, source names or expected values in candidate routing; no general entailment or model-only improvement claim.
-- Froze code, runner, original scorers and547 unchanged exposed questions before one actual headless-Chrome155/MiniLM capture:515 Hybrid,32 separate lexical Comparison, Qwen off, fresh384D source/query/facet vectors. All412 unit checks and strict tiny bundled Keyword evaluation pass;131 input hashes and96 sealed historical artifact members verified. No mocks, retries, post-answer tuning or new sample.
+- Froze code, runner, original scorers and547 unchanged exposed questions before one actual headless-Chrome 155/MiniLM capture:515 Hybrid,32 separate lexical Comparison, Qwen off, fresh384D source/query/facet vectors. All412 unit checks and strict tiny bundled Keyword evaluation pass;131 input hashes and96 sealed historical artifact members verified. No mocks, retries, post-answer tuning or new sample.
 - Cedar32 improves from its preserved first24/2/6 to **32 PASS/0 PARTIAL/0 FAIL** both under its unchanged rubric, with29/29 literal/relevant citations, eight uncited refusals and zero false acceptances/false refusals. Only eight Cedar32 cases change; all515 earlier answers/quotes retain exact paired-v24 parity. Binding64 remains64/0/0; historical451 gate PASS. No prior PASS lost; all103 unsupported controls refuse uncited. ExternalSQuAD24's two FAIL and FreshConfirmation32's three FAIL remain outside passing subsets, including one supported false refusal per variant.
 - These are exposed in-sample regression gates, not547/547 or independent accuracy. First outputs and scores sealed separately before final review. All original scores and wording qualifications remain. Live 5.6/r44 unchanged; no runtime adoption. See [v25 report](./docs/COVERAGE_V25_R44_VALIDATION.md) and [scorecards](./docs/evidence/coverage-v25-r44/).
 
 ## 2026-10-16 — Cedar32 prospective v24 confirmation fails
 
-- Froze a protocol, four new fictional source documents,32 questions/key/scorer and47 file hashes before answers. Used unchanged isolated v24 and paired v23, actual installed headless Chrome155 and local MiniLM Hybrid, Qwen off;28 Hybrid questions and four separate lexical Comparisons captured once. Production UI baseline saved separately. No mock vectors, question retries or runtime changes.
+- Froze a protocol, four new fictional source documents,32 questions/key/scorer and47 file hashes before answers. Used unchanged isolated v24 and paired v23, actual installed headless Chrome 155 and local MiniLM Hybrid, Qwen off;28 Hybrid questions and four separate lexical Comparisons captured once. Production UI baseline saved separately. No mock vectors, question retries or runtime changes.
 - First result **24 PASS /2 PARTIAL /6 FAIL** both; all20 supported Hybrid questions pass, but six of eight unsupported controls do not explicitly refuse and two Comparisons add unrelated shipping text. All37 quotations source-literal;27 fully relevant/paragraph-contained, two partly relevant Comparison citations and eight unsupported-control citations. Ambiguous/negated-premise non-refusals are strict behavioral failures, not six fabricated factual assertions.
-- Sealed raw outputs and first automated FAIL before review; review preserves the grades. V24 and v23 answers/quotes are identical across all32, with no same-session PASS loss. All405 unit tests and strict bundled Keyword checks pass; these are not MiniLM accuracy. Preserved Binding64's exposed64/0/0 and all historical scores.
+- Sealed raw outputs and first automated FAIL before review; review preserves the grades. V24 and v23 answers/quotes are identical across all 32, with no same-session PASS loss. All405 unit tests and strict bundled Keyword checks pass; these are not MiniLM accuracy. Preserved Binding64's exposed64/0/0 and all historical scores.
 - This is an author-created prospective stress set, not independent third-party accuracy. It is now exposed for any future regression. Gate FAIL keeps v24 isolated and live5.6/r44 unchanged. See [full report](./docs/CEDAR32_V24_CONFIRMATION.md) and [JSON scorecard](./docs/evidence/cedar32-v24/scorecard.json).
 
 ## 2026-10-15 — Separate v24 literal-date follow-up passes frozen gates
@@ -280,7 +288,7 @@
 
 ## 2026-10-14 — Question-form v6 experiment (no runtime release)
 
-- Froze generic actor-predicate/duration signals; captured203 known cases in Chrome155 with actual MiniLM and paired v5 on identical vectors.
+- Froze generic actor-predicate/duration signals; captured203 known cases in Chrome 155 with actual MiniLM and paired v5 on identical vectors.
 - Restored F10; all original119, development28 and compound4 passes preserved.
 - F12 remains FAIL because a closing-quotation/modal sentence is filtered before duration scoring; failed staged gate preserved without tuning.
 - No fresh sample consumed; production stays r44. Saved exact outputs, diagnosis and private/local versus licensed/public evidence separately.
