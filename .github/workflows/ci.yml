@@ -19,6 +19,18 @@ jobs:
           node-version: '22'
       - name: Syntax check
         run: |
+          node --check eval/answer-completeness-v36/coverage.mjs
+          node --check eval/answer-completeness-v36/review.mjs
+          node --check eval/answer-completeness-v36/score.mjs
+          node --check eval/answer-completeness-v36/score-binding64.mjs
+          node --check eval/answer-completeness-v36/score-cedar32.mjs
+          node --check eval/answer-completeness-v36/score-bracken32.mjs
+          node --check eval/answer-completeness-v36/score-flint32.mjs
+          node --check eval/answer-completeness-v36/score-morrow32.mjs
+          node --check eval/answer-completeness-v36/score-hearth32.mjs
+          node --check eval/answer-completeness-v36/score-lumen32.mjs
+          node --check eval/answer-completeness-v36/score-combined.mjs
+          node --check tests/browser-coverage-v36.mjs
           node --check eval/v35-fresh-confirmation/score.mjs
           node --check tests/browser-lumen32-v35.mjs
           node --check eval/v32-fresh-confirmation/score.mjs
