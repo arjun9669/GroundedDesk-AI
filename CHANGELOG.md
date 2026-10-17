@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-17 — Hearth32 prospective v32 confirmation BLOCKED
+
+- Protocol committed before authoring; four fictional sources,32 questions/key/rubric and63 frozen files committed before answers. Actual local MiniLM q8 WASM in installed headless Chrome155.0.8059.80, Hybrid, Qwen off.
+- H20 compound candidate computation threw `Bounded literal evidence and finite actual cosine required`. Preserve19 complete candidate cases,20 actual UI observations and all diagnostics. H21–H32, including8 unsupported controls and4 Comparisons, unexecuted. No native grades or complete accuracy score; unknown counts are not zero.
+- First blocked evidence archive sealed before diagnosis. Read-only compound metadata-handoff hypothesis is qualified; no reproduction, fix, continuation or retry. H10's saved inventory answer is a nonresponsive historical paragraph, retained as an unscored content observation.
+- All frozen source/code bytes and twelve older first archives preserved.505 unit and strict bundled checks pass separately from the blocked model run. Conditional integration-readiness review stops; live r44 and v32 exposed643 PASS unchanged. [Full report](./docs/HEARTH32_V32_CONFIRMATION.md), [ungraded JSON](./docs/evidence/hearth32-v32/UNSCORED_SCORECARD.json).
+
 ## 2026-10-17 — isolated v32 exposed regression gate PASS; not adopted
 
 - Frozen event-only location invocation before 643 once-only cases; unchanged v31 lexical packet selection: 599 actual local MiniLM Hybrid and 44 lexical Comparisons, Qwen off, installed headless Chrome155.0.8059.80. No benchmark identities, dates or answer values hardcoded.
