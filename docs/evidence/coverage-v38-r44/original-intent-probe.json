@@ -1,0 +1,113 @@
+{
+  "classification": "Separate post-seal pure-function engineering verification; original v37 fixture source/body/questions/prior/expectations unchanged. Synthetic finite cosine is a contract fixture, not Chrome/MiniLM accuracy or vector replay.",
+  "source": "At 13:40 or later, departure is the next operating day, unless a storm hold is open.",
+  "body": {
+    "id": "synthetic-contract-body",
+    "documentId": "elm",
+    "filename": "01_Elm_Depot.txt",
+    "content": "At 13:40 or later, departure is the next operating day, unless a storm hold is open.",
+    "sourceText": "At 13:40 or later, departure is the next operating day, unless a storm hold is open.",
+    "start": 0,
+    "actualCosine": 0.43
+  },
+  "controls": [
+    {
+      "id": "positive-cutoff-control",
+      "question": "An Elm Depot dispatch request is cleared at 13:40. When does it leave and what hold applies?",
+      "prior": {
+        "answered": false,
+        "answer": "I can't find this in the provided documents.",
+        "sources": []
+      },
+      "expected_answered": true,
+      "observed": {
+        "answered": true,
+        "answer": "[1] At 13:40 or later, departure is the next operating day, unless a storm hold is open.",
+        "sources": [
+          {
+            "citation": 1,
+            "id": "synthetic-contract-body",
+            "documentId": "elm",
+            "filename": "01_Elm_Depot.txt",
+            "quote": "At 13:40 or later, departure is the next operating day, unless a storm hold is open.",
+            "excerpt": "At 13:40 or later, departure is the next operating day, unless a storm hold is open.",
+            "start": 0,
+            "end": 84,
+            "actualCosine": 0.43,
+            "cosineAnchor": {
+              "id": "synthetic-contract-body",
+              "start": 0,
+              "end": 84,
+              "actualCosine": 0.43
+            }
+          }
+        ],
+        "experiment": "V38 isolated scoped literal policy form; production unchanged",
+        "evidence_frame_diagnostics": {
+          "repaired": true,
+          "frame": {
+            "kind": "clock",
+            "entity": "Elm Depot",
+            "time": "13:40",
+            "exception": "hold"
+          },
+          "actual_cosines": [
+            0.43
+          ]
+        }
+      },
+      "outcome": "PASS"
+    },
+    {
+      "id": "unsupported-password-intent",
+      "question": "What is the Elm Depot dispatch password at 13:40?",
+      "prior": {
+        "answered": false,
+        "answer": "I can't find this in the provided documents.",
+        "sources": []
+      },
+      "expected_answered": false,
+      "observed": {
+        "answered": false,
+        "answer": "I can't find this in the provided documents.",
+        "sources": []
+      },
+      "outcome": "PASS"
+    },
+    {
+      "id": "unsupported-approver-intent",
+      "question": "Who approves an Elm Depot dispatch at 13:40?",
+      "prior": {
+        "answered": false,
+        "answer": "I can't find this in the provided documents.",
+        "sources": []
+      },
+      "expected_answered": false,
+      "observed": {
+        "answered": false,
+        "answer": "I can't find this in the provided documents.",
+        "sources": []
+      },
+      "outcome": "PASS"
+    },
+    {
+      "id": "unsupported-vehicle-intent",
+      "question": "Which vehicle leaves the Elm Depot dispatch yard at 13:40?",
+      "prior": {
+        "answered": false,
+        "answer": "I can't find this in the provided documents.",
+        "sources": []
+      },
+      "expected_answered": false,
+      "observed": {
+        "answered": false,
+        "answer": "I can't find this in the provided documents.",
+        "sources": []
+      },
+      "outcome": "PASS"
+    }
+  ],
+  "engineering_outcome": "PASS",
+  "production_change": "NONE",
+  "candidate_edited": false
+}

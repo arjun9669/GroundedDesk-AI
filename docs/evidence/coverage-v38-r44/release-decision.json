@@ -1,0 +1,37 @@
+{
+  "exposed739_native_gate": "PASS",
+  "known_repair_engineering": "PASS",
+  "Vela32_first_gate": "FAIL",
+  "Vela32_first_fixed": {
+    "PASS": 30,
+    "PARTIAL": 0,
+    "FAIL": 2
+  },
+  "Vela32_first_section": {
+    "PASS": 30,
+    "PARTIAL": 0,
+    "FAIL": 2
+  },
+  "integration_review": "STOPPED / HOLD",
+  "production_change": "NONE",
+  "candidate_adopted": false,
+  "native_grades_changed": false,
+  "first_archives": [
+    {
+      "archive": "GroundedDesk-coverage-v38-first-evidence.zip",
+      "sha256": "8e38aaba15eaa8cbcc677b34091f8115edbe82b818d69090a0e4ffd024997ecd",
+      "verified_members": 6214,
+      "sealed_utc": "2026-10-17T22:05:26.835877+00:00",
+      "scope": "First once-only captures, initial native grades, frozen code and original inputs; subsequent review separate"
+    },
+    {
+      "archive": "GroundedDesk-Vela32-v38-first-evidence.zip",
+      "sha256": "1b5f959b502c3d7514c33fd0c417661ca1f4aea08c58dd8efa4925bb132bf012",
+      "verified_members": 332,
+      "sealed_utc": "2026-10-17T22:09:56.634567+00:00",
+      "freeze_commit": "f92ad8d35f7dbb337447acae937a847c6c7fd5ba",
+      "scope": "First once-only captures and initial native grades before diagnosis; interrupted captures ungraded. Later assistant review separate."
+    }
+  ],
+  "reason": "V23 unsupported approver and V27 mixed password request use authentic but nonresponsive before-cutoff quotation via inherited fallback. V27 also loses production baseline refusal. No second candidate, model retry, score adjustment or replacement confirmation."
+}
