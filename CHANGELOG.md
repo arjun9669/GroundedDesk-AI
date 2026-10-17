@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-17 — isolated v31 exposed regression gate FAIL; not adopted
+
+- Frozen source-location scope and separate lexical packet selection before 643 once-only cases: 599 actual local MiniLM Hybrid and 44 lexical Comparisons, Qwen off, installed headless Chrome155.0.8059.80. No benchmark identities, dates or answer values hardcoded.
+- Morrow32 records 32/0/0 fixed / 32/0/0 section. Original first30/0/2 stays immutable. All per-pack scores and regressions are preserved under unchanged native keys and rubrics; no pooled accuracy claim.
+- Overall gate FAIL: Bracken32 B14 loses its prior PASS because the location-prefix guard rejects the temporal “At or after 11:45” clause. Bracken32 is31/0/1 both; all other set gates pass. All127 unsupported controls refuse uncited; zero false acceptances, two supported false refusals per variant (new B14 plus existing FreshConfirmation32/F10). No post-answer repair or rerun.
+- Reviewed 6 changed outputs across 3 questions after first seal; 1280 unchanged answer/quote checks. 158 input hashes,56 frozen files,157 historical sealed checks,1286 paired-v30 checks and3215 citation-number checks verified. 494 unit tests and strict bundled offline checks pass separately from model accuracy.
+- No question retries, post-answer candidate tuning, new unseen sample or live integration. Live5.6/r44 and all first scores unchanged. [Full report](./docs/COVERAGE_V31_R44_VALIDATION.md), [JSON](./docs/evidence/coverage-v31-r44/ALL_SCORECARDS.json).
+
 ## 2026-10-16 — Morrow32 prospective v30 confirmation FAIL
 
 - Protocol committed before authoring; four new fictional TXT sources,32 questions/key/rubric/runner and59-file freeze committed before answers. Actual local MiniLM q8 WASM in installed headless Chrome155.0.8059.80; Qwen off;28 Hybrid and4 separate lexical Comparisons once. Author-created stress sample, not external independent accuracy or deployed-candidate validation.
