@@ -6,6 +6,8 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 
 **[Open the live app](https://arjun9669.github.io/GroundedDesk-AI/?build=20261013-r44)** · [Engineering case study](./docs/CASE_STUDY.md) · [Security and privacy](./docs/SECURITY.md) · [Changelog](./CHANGELOG.md)
 
+**Development handoff:** [Current project status and decisions](./PROJECT_STATUS.md) · [macOS/Windows setup and GitHub synchronization](./docs/DEVELOPMENT.md).
+
 ## Current status
 
 | Area | Status |

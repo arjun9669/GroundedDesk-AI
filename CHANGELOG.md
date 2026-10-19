@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-19 — Mac development handoff and local setup
+
+- Establish the Mac working branch from reviewed upstream commit `2c6457c6` and add `PROJECT_STATUS.md` for current progress, decisions, blockers and verification scope.
+- Add macOS/Windows setup and GitHub synchronization guidance, plus `.nvmrc` selecting Node 22 to match CI.
+- Add a dependency-free loopback development server with a larger connection queue after Mac browser diagnostics observed module-request connection resets.
+- Preserve application build 5.6/r44, isolated retrieval candidates, frozen inputs, historical results and existing CI/deployment behavior. V38 adoption remains on HOLD after Vela32's first 30/0/2 FAIL.
+
 ## 2026-10-18 — v38 departure intent, regression PASS, first Vela32 FAIL
 
 - Validate the complete departure-time request before invoking cutoff repair; preserve original password/approver/vehicle refusals. Unique literal evidence and actual MiniLM body anchors retained.
