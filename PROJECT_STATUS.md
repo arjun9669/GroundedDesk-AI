@@ -1,6 +1,6 @@
 # GroundedDesk AI — project status
 
-Last updated: **2026-10-19 (Asia/Kolkata)**.
+Last updated: **2026-10-20 (Asia/Kolkata)**.
 
 This is the current development handoff. Preserve historical results in their
 original reports; link them here instead of rewriting or rescoring them.
@@ -13,11 +13,11 @@ original reports; link them here instead of rewriting or rescoring them.
 | Official Mac checkout | `/Users/arjunkumar/Projects/GroundedDesk-AI` |
 | Shared development branch | `main` required on both machines; Mac tracks `origin/main` |
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
-| Design review baseline | `b0d4224`; Vela32 fallback review complete, proposed isolated v39 not implemented |
+| Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v38; not adopted |
+| Latest isolated candidate | v39 implemented, 19 synthetic contract controls PASS; actual-model gates NOT RUN; not adopted |
 | Release decision | Integration **STOPPED / HOLD** after Vela32 confirmation FAIL |
-| Setup changes | Documentation, Node version guidance and a local development server; application and evaluation code unchanged |
+| Current change | Isolated v39 engineering implementation; live r44 and frozen candidates unchanged |
 
 The Mac folder was initially an empty Git repository. The initial setup commit
 `a883e28` was published on `mac-work-oct2026` and merged into `main` through PR
@@ -63,6 +63,8 @@ syntax do not establish factual support, completeness or compliance.
 - **October 19:** Mac checkout, cross-platform handoff and setup documentation;
   setup merged through PR #111, followed by the user's direct-to-main workflow,
   official-checkout reconciliation and Vela32 refusal design review.
+- **October 20:** isolated v39 dispatch contract implemented and unit-validated
+  under precommitted protocol `c73a8fe`; no actual-model evaluation or live adoption.
 
 Initial setup publication used the connected GitHub account because terminal Git
 in the original chat checkout could not authenticate. Terminal publication from
@@ -126,6 +128,20 @@ no fix or new actual-model result is claimed.
 
 ## Current retrieval blocker
 
+The [v39 engineering report](docs/COVERAGE_V39_ENGINEERING.md) records **592/592
+unit tests PASS**, including 19 new synthetic full-entry-point controls, and a
+passing strict bundled 28-case Keyword evaluation on bundled Node 24.19.0.
+Governed dispatch/time requests now bypass inherited answer producers and must
+have complete scoped literal support for all planned facets. Other requests and
+lexical Comparison retain the frozen v38 path. Multi-facet success requires
+explicitly aligned separately scored evidence; finite unit values are synthetic.
+
+Both original V23/V27 questions refuse in the constructed body-evidence controls.
+This is **not** a new real-model Vela32 result. The broader 771-input model run,
+fresh confirmation, performance/device/integration gates remain **NOT RUN**.
+The bounded grammar can cause supported false refusals, so v39 is not adopted.
+Live 5.6/r44 and every original first result remain unchanged.
+
 The [v38 regression report](docs/COVERAGE_V38_R44_VALIDATION.md) records a native
 gate PASS and engineering PASS on **739 exposed cases**: 683 actual MiniLM Hybrid
 questions and 56 lexical Comparisons. This is not 739/739 accuracy; historical
@@ -182,14 +198,14 @@ or model rerun occurred in this design task. Preserve the original
    original first scores, failures, blockers and reporting errata.
 4. Reconcile any unpublished Windows work before integrating divergent changes.
    Use [the synchronization workflow](docs/DEVELOPMENT.md#synchronize-mac-and-windows).
-5. **Design review completed October 19:** the
-   [Vela32 refusal plan](docs/VELA32_REFUSAL_DESIGN_REVIEW.md) proposes an isolated
-   v39 adapter with final support validation, full-wrapper engineering controls
-   and a separately frozen 771-input exposed regression (711 Hybrid / 60 lexical
-   Comparisons), followed only conditionally by fresh confirmation. This is a
-   proposal, not code, a freeze or a new accuracy result. Next: request approval
-   to implement and unit-validate the isolated candidate. Vela32's first failure
-   remains unchanged.
+5. **Implementation authorized and completed October 20:** the isolated v39
+   adapter and final dispatch contract pass 19 synthetic controls, with all 573
+   earlier tests passing (592 total). Protocol `c73a8fe` preceded coding. See the
+   [engineering report](docs/COVERAGE_V39_ENGINEERING.md) for grammar, evidence API,
+   limitations and exact verification scope. Next requires separate authorization:
+   prepare/freeze the actual-model runner and original inputs for the 771-input
+   exposed regression (711 Hybrid / 60 lexical Comparisons). No new accuracy
+   result or adoption is claimed; Vela32's first failure remains unchanged.
 6. Require exposed-regression preservation and separate prospective confirmation
    before integration review. Then qualify navigation/export, memory, performance
    and target browsers. Passing unit tests alone does not authorize adoption.

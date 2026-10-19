@@ -13,8 +13,8 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest retrieval experiment | **v38** 739 exposed cases gate **PASS**, engineering **PASS**; Vela32 first **FAIL / HOLD**; not adopted |
-| Latest recorded checks | **573 unit tests**, strict bundled checks; real MiniLM regression and prospective confirmation recorded separately |
+| Latest isolated candidate | **v39 engineering implementation**, 19 synthetic controls PASS; actual-model gates **NOT RUN**, not adopted. V38 Vela32 first **FAIL / HOLD** remains unchanged |
+| Latest recorded checks | **592 unit tests**, strict bundled checks; real MiniLM regression and prospective confirmation recorded separately |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
@@ -170,7 +170,7 @@ GroundedDesk is a portfolio prototype, not a production-ready RAG, compliance or
 
 OCR, reliable table/column reconstruction, character-level partial-run highlights, comprehensive prompt-injection defenses and broad browser/device validation are not provided. Model availability, performance and memory use vary by device.
 
-The [completed Vela32 refusal design review](./docs/VELA32_REFUSAL_DESIGN_REVIEW.md) traces both failures through the inherited clock selector and proposes a final whole-question support contract for a new isolated candidate. Implementation and model evaluation have not occurred in this design task. Next is separately approved implementation and engineering validation, then frozen exposed regression and conditional fresh confirmation. Preserve Vela32 first **30/0/2**, Bracken32 first **21/1/10**, Cedar32 first **24/2/6**, exposed Cedar32 **32/0/0** and every older result. Performance/integration qualification remains deferred; live r44 stays unchanged.
+The [Vela32 design review](./docs/VELA32_REFUSAL_DESIGN_REVIEW.md) led to an [isolated v39 engineering implementation](./docs/COVERAGE_V39_ENGINEERING.md): 19 synthetic contract controls pass, including the two original failure questions under constructed body evidence. No actual-model study or live adoption occurred. Next is separately authorized runner/input preparation and frozen exposed regression, followed only conditionally by fresh confirmation. Preserve Vela32 first **30/0/2**, Bracken32 first **21/1/10**, Cedar32 first **24/2/6**, exposed Cedar32 **32/0/0** and every older result. Performance/integration qualification remains deferred; live r44 stays unchanged.
 
 ## Explore the project
 

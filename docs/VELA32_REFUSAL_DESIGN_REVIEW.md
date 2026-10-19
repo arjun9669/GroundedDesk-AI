@@ -1,7 +1,11 @@
 # Vela32 refusal and fallback design review
 
 Date: **2026-10-19 (Asia/Kolkata)**. Reviewed code: **`b0d4224`**.
-Status: **design review complete; implementation proposed, not implemented**.
+Status at the October 19 review: **design complete; implementation proposed, not implemented**.
+
+October 20 follow-up: the [isolated v39 engineering implementation](COVERAGE_V39_ENGINEERING.md)
+has 19 synthetic controls passing. Actual-model studies and live adoption remain
+deferred. The original review and historical results below retain their dated scope.
 
 The requested outcome is a concrete fix plan for V23 and V27. This change does
 not modify the live 5.6/r44 application, frozen candidates, benchmark inputs,

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-20 — Isolated v39 dispatch contract engineering
+
+- Record protocol `c73a8fe` before coding, then implement an isolated adapter that owns complete dispatch/time requests before inherited selectors run. Require scoped literal support for every planned facet; unknown or incomplete requests refuse without a later fallback.
+- Preserve unrelated v38 behavior and the exact lexical Comparison export. Require separately scored/aligned multi-facet evidence, literal anchors and citation bounds; support explicitly documented approvals and attributes without a keyword blacklist.
+- Protect only the new v39 protocol/code/test paths from newline conversion across Mac/Windows; do not renormalize older packs or evidence.
+- All 592 unit tests PASS (573 prior plus 19 synthetic controls); strict bundled 28-case Keyword evaluation PASS. Original V23/V27 questions refuse only under constructed evidence controls; no new model-quality claim.
+- Live r44, frozen candidates, existing tests, original keys/rubrics and historical evidence unchanged. Actual-model 771-input regression and fresh confirmation NOT RUN; no adoption. [Engineering report](docs/COVERAGE_V39_ENGINEERING.md).
+
 ## 2026-10-19 — Vela32 refusal design review
 
 - Trace V23/V27 through v38's prior-first wrapper, v36, v35's v33 re-export and the inherited clock selector; distinguish code/classifier inspection from a new model reproduction.
