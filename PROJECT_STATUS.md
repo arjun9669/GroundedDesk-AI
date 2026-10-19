@@ -17,7 +17,7 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v39 implemented, 19 synthetic contract controls PASS; actual-model gates NOT RUN; not adopted |
 | Release decision | Integration **STOPPED / HOLD** after Vela32 confirmation FAIL |
-| Current change | Isolated v39 engineering implementation; live r44 and frozen candidates unchanged |
+| Current change | Prepare a frozen Vela32-only v39 runner; missing 739-case inputs block full regression; live r44 unchanged |
 
 The Mac folder was initially an empty Git repository. The initial setup commit
 `a883e28` was published on `mac-work-oct2026` and merged into `main` through PR
@@ -128,6 +128,29 @@ no fix or new actual-model result is claimed.
 
 ## Current retrieval blocker
 
+### October 20 recoverable-input preparation
+
+GitHub CI for implementation `75a334c` passed. The original external
+`coverage-v38-inputs/run-config.json` and input-integrity manifest were not found
+in the searched Mac folders or path history. Windows is unavailable. The user
+authorized continuing with the available inputs, without reconstructing or
+claiming the missing 739-case regression.
+
+The [partial-regression preparation](docs/V39_RECOVERABLE_REGRESSION.md) freezes
+the original Vela32 pack (28 Hybrid questions / four lexical Comparisons) for
+isolated v39, paired v38 and unchanged r44 UI. All four source hashes and original
+key/config/rubric bytes are checked. The new runner embeds exact planner facet
+queries separately and retains pre-candidate vectors and recovery evidence.
+New paths do not modify the original Windows configuration or first results.
+
+Before freeze: bundled Node 24.19.0 passed **596 unit tests** (four new integrity/
+scoring controls), strict `node eval/run.mjs --strict` passed 28/28, and installed
+Chrome 155.0.8059.80 passed read-only r44 startup with zero failed requests/page
+errors. Actual-model capture/scoring has not run at this preparation checkpoint.
+The full 771-case gate and fresh confirmation remain NOT RUN; adoption stays HOLD.
+
+### Existing engineering and historical model results
+
 The [v39 engineering report](docs/COVERAGE_V39_ENGINEERING.md) records **592/592
 unit tests PASS**, including 19 new synthetic full-entry-point controls, and a
 passing strict bundled 28-case Keyword evaluation on bundled Node 24.19.0.
@@ -206,6 +229,11 @@ or model rerun occurred in this design task. Preserve the original
    prepare/freeze the actual-model runner and original inputs for the 771-input
    exposed regression (711 Hybrid / 60 lexical Comparisons). No new accuracy
    result or adoption is claimed; Vela32's first failure remains unchanged.
+   **Subsequently authorized October 20:** prepare/freeze and evaluate the
+   recoverable Vela32 subset while Windows is unavailable. The first 739-case
+   input configuration cannot be recovered here. This subset does not satisfy
+   the full regression gate. See the preparation checkpoint above for tests
+   and actual execution status; retain failures and ask before any retries.
 6. Require exposed-regression preservation and separate prospective confirmation
    before integration review. Then qualify navigation/export, memory, performance
    and target browsers. Passing unit tests alone does not authorize adoption.

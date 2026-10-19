@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Recoverable Vela32 regression preparation
+
+- Prepare an isolated v39 browser runner, integrity checks and unchanged-criteria scorer for the original 32 now-exposed Vela32 questions, with separately embedded planner facets and preserved historical PASS checks.
+- Preserve original Windows paths and frozen bytes; map files in a new Mac configuration. Missing external 739-case inputs remain a blocker to the full 771-case gate. The user authorized the available subset while Windows is unavailable.
+- Engineering preparation: 596 unit tests PASS, strict 28-case Keyword evaluation PASS, read-only Chrome startup PASS. Model capture/scoring not run at this preparation checkpoint; live r44 and first results unchanged. [Scope and operation](docs/V39_RECOVERABLE_REGRESSION.md).
+
 ## 2026-10-20 — Isolated v39 dispatch contract engineering
 
 - Record protocol `c73a8fe` before coding, then implement an isolated adapter that owns complete dispatch/time requests before inherited selectors run. Require scoped literal support for every planned facet; unknown or incomplete requests refuse without a later fallback.
