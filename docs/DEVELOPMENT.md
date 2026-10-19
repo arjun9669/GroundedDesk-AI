@@ -130,11 +130,17 @@ The shared source is https://github.com/arjun9669/GroundedDesk-AI. Browser
 snapshots, model caches, local environment settings and uncommitted files are not
 transferred by GitHub.
 
-Public fetches do not require authentication, but terminal pushes do. The October
-19 Mac setup has no command-line HTTPS credentials; initial publication uses the
-connected GitHub account. Before terminal pushes, sign in through a Git credential
-manager or GitHub CLI (`gh auth login`, then `gh auth setup-git` if GitHub CLI is
-installed). Do not put access tokens in remote URLs or committed files.
+The official Mac checkout is `/Users/arjunkumar/Projects/GroundedDesk-AI`. The
+earlier chat workspace is a separate repository, not a linked worktree. Verify
+`git rev-parse --show-toplevel` before editing, committing or pushing; use the
+official checkout for Mac development.
+
+Public fetches do not require authentication, but terminal pushes do. Initial
+setup used the connected GitHub account because terminal Git in the chat checkout
+could not authenticate. The official checkout subsequently pushed `b0d4224`
+successfully. For a checkout without credentials, sign in through a Git credential
+manager or GitHub CLI (`gh auth login`, then `gh auth setup-git` if installed).
+Do not put access tokens in remote URLs or committed files.
 
 Use the existing **`main`** branch on both machines. The initial Mac setup branch
 was merged through PR #111; it is retained as history, not the active workflow.

@@ -10,8 +10,10 @@ original reports; link them here instead of rewriting or rescoring them.
 | Item | Current state |
 | --- | --- |
 | Repository | https://github.com/arjun9669/GroundedDesk-AI |
+| Official Mac checkout | `/Users/arjunkumar/Projects/GroundedDesk-AI` |
 | Shared development branch | `main` required on both machines; Mac tracks `origin/main` |
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
+| Design review baseline | `b0d4224`; Vela32 fallback review complete, proposed isolated v39 not implemented |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v38; not adopted |
 | Release decision | Integration **STOPPED / HOLD** after Vela32 confirmation FAIL |
@@ -20,8 +22,13 @@ original reports; link them here instead of rewriting or rescoring them.
 The Mac folder was initially an empty Git repository. The initial setup commit
 `a883e28` was published on `mac-work-oct2026` and merged into `main` through PR
 #111 (`a47780e`). The Mac checkout now uses the existing shared `main` branch.
-Historical branches remain preserved. This does not establish whether Windows
-has unpublished local work; inspect and preserve it before switching branches.
+The original chat checkout was `/Users/arjunkumar/Documents/ChatGPT/GroundDesk AI 3`,
+a separate repository, not a linked worktree. Commit `b0d4224` was transferred to
+the official checkout by local fetch and fast-forward, then pushed from the
+official checkout and verified on GitHub. Use the official path above for future
+Mac work. Historical branches and the other repositories remain preserved.
+This does not establish whether Windows has unpublished local work; inspect and
+preserve it before switching branches.
 
 ## Architecture and delivered functionality
 
@@ -54,11 +61,14 @@ syntax do not establish factual support, completeness or compliance.
 - **October 13–18:** isolated retrieval experiments and frozen regression/fresh
   confirmation studies. Experimental versions are not application releases.
 - **October 19:** Mac checkout, cross-platform handoff and setup documentation;
-  setup merged through PR #111, followed by the user's direct-to-main workflow.
+  setup merged through PR #111, followed by the user's direct-to-main workflow,
+  official-checkout reconciliation and Vela32 refusal design review.
 
-Mac command-line Git can fetch the public repository but currently has no HTTPS
-push credentials. Setup publication uses the connected GitHub account. Configure
-Git authentication before relying on terminal `git push` on this Mac.
+Initial setup publication used the connected GitHub account because terminal Git
+in the original chat checkout could not authenticate. Terminal publication from
+the official checkout is now working: `b0d4224` reached `origin/main` with its
+original noreply author identity. Authentication is not inferred from file edits
+or a successful public fetch; verify every push against GitHub.
 
 See [CHANGELOG](CHANGELOG.md), [commit history](https://github.com/arjun9669/GroundedDesk-AI/commits/main)
 and [browser benchmark history](docs/BROWSER_BENCHMARK_HISTORY.md). Earlier Codex
@@ -107,6 +117,13 @@ strict 28-case Keyword evaluation passed. Documentation links and diff whitespac
 checks passed; the intended documentation diff was reviewed for errors and
 sensitive information. No application or evaluation code changed.
 
+The Vela32 design review was verified in the official checkout on baseline
+`b0d4224`: 573 existing unit tests and the strict 28-case Keyword evaluation
+passed with bundled Node 24.19.0. Documentation links and diff checks passed.
+The read-only classifier inspection computed no answers and loaded no model.
+Runtime code, existing tests, frozen inputs and historical evidence are unchanged;
+no fix or new actual-model result is claimed.
+
 ## Current retrieval blocker
 
 The [v38 regression report](docs/COVERAGE_V38_R44_VALIDATION.md) records a native
@@ -123,11 +140,14 @@ The [first Vela32 confirmation](docs/VELA32_V38_CONFIRMATION.md) records
   omitting the unsupported password facet; the frozen whole-question criterion
   requires an uncited refusal. The production baseline refused correctly.
 
-The preserved diagnosis is that v38's admission guard does not prevent inherited
-fallback selection from returning clock evidence. The next design review must
-consider the complete fallback chain and every requested facet, rather than only
-the newest repair. No new implementation or benchmark rerun is approved by this
-setup change. See the [release decision](docs/evidence/coverage-v38-r44/release-decision.json).
+The [completed design review](docs/VELA32_REFUSAL_DESIGN_REVIEW.md) traces v38's
+prior-first call through v36 and v35's re-export of v33. The inherited clock
+selector can authorize departure evidence before v38 declines its own repair.
+Existing helper-only controls do not cover the two before-cutoff failures through
+the complete wrapper. Recommend a new isolated full-question/displayed-support
+contract, including all requested facets and every return path; no implementation
+or model rerun occurred in this design task. Preserve the original
+[release decision](docs/evidence/coverage-v38-r44/release-decision.json).
 
 ## Limits and unresolved work
 
@@ -162,9 +182,14 @@ setup change. See the [release decision](docs/evidence/coverage-v38-r44/release-
    original first scores, failures, blockers and reporting errata.
 4. Reconcile any unpublished Windows work before integrating divergent changes.
    Use [the synchronization workflow](docs/DEVELOPMENT.md#synchronize-mac-and-windows).
-5. Next proposed engineering task: design the end-to-end refusal/facet contract,
-   then freeze a separately reviewed candidate and regression protocol before
-   actual-model evaluation. Vela32's first failure remains unchanged.
+5. **Design review completed October 19:** the
+   [Vela32 refusal plan](docs/VELA32_REFUSAL_DESIGN_REVIEW.md) proposes an isolated
+   v39 adapter with final support validation, full-wrapper engineering controls
+   and a separately frozen 771-input exposed regression (711 Hybrid / 60 lexical
+   Comparisons), followed only conditionally by fresh confirmation. This is a
+   proposal, not code, a freeze or a new accuracy result. Next: request approval
+   to implement and unit-validate the isolated candidate. Vela32's first failure
+   remains unchanged.
 6. Require exposed-regression preservation and separate prospective confirmation
    before integration review. Then qualify navigation/export, memory, performance
    and target browsers. Passing unit tests alone does not authorize adoption.

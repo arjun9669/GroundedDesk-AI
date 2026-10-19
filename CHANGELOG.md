@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-19 — Vela32 refusal design review
+
+- Trace V23/V27 through v38's prior-first wrapper, v36, v35's v33 re-export and the inherited clock selector; distinguish code/classifier inspection from a new model reproduction.
+- Document the helper/full-wrapper control gap and propose a new isolated final request/evidence contract, positive and negative engineering controls, preserved native gates and a conditional 771-input exposed regression.
+- Record the canonical Mac checkout and successful terminal publication of `b0d4224`; update the current roadmap. No application, frozen candidate, question, rubric or historical result changed; no new model run or live adoption.
+
 ## 2026-10-19 — Shared main-branch development workflow
 
 - Record the user's standing Mac/Windows workflow in `AGENTS.md`: preserve functionality, work on existing `main`, test and review, commit successful changes, push directly to `origin/main`, and verify GitHub receipt.

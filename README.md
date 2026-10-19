@@ -170,7 +170,7 @@ GroundedDesk is a portfolio prototype, not a production-ready RAG, compliance or
 
 OCR, reliable table/column reconstruction, character-level partial-run highlights, comprehensive prompt-injection defenses and broad browser/device validation are not provided. Model availability, performance and memory use vary by device.
 
-Next work is a broader relation/facet-support design review using the preserved Bracken32 failures, followed by a separately frozen candidate and explicitly in-sample regression if authorized. Narrow surface guards did not generalize adequately to fresh phrasings. Preserve Bracken32 first **21/1/10**, Cedar32 first **24/2/6**, exposed Cedar32 **32/0/0** and every older result. Performance/integration qualification is deferred after the failed confirmation; live r44 stays unchanged.
+The [completed Vela32 refusal design review](./docs/VELA32_REFUSAL_DESIGN_REVIEW.md) traces both failures through the inherited clock selector and proposes a final whole-question support contract for a new isolated candidate. Implementation and model evaluation have not occurred in this design task. Next is separately approved implementation and engineering validation, then frozen exposed regression and conditional fresh confirmation. Preserve Vela32 first **30/0/2**, Bracken32 first **21/1/10**, Cedar32 first **24/2/6**, exposed Cedar32 **32/0/0** and every older result. Performance/integration qualification remains deferred; live r44 stays unchanged.
 
 ## Explore the project
 
