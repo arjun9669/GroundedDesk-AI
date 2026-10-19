@@ -1,0 +1,228 @@
+{
+  "candidate_identity": "coverage-v39-final-dispatch-contract",
+  "id": "P31",
+  "question": "Compare acknowledgement deadlines and their limits for Liraven Planetarium dome-booking requests and Yalara Grain Exchange loading requests.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] Acknowledge dome-booking requests within two business days.\n\n[2] A loading request at Yalara Grain Exchange is acknowledged within six working hours.",
+    "sources": [
+      {
+        "filename": "01_Liraven_Planetarium.txt",
+        "quote": "Acknowledge dome-booking requests within two business days."
+      },
+      {
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "quote": "A loading request at Yalara Grain Exchange is acknowledged within six working hours."
+      }
+    ],
+    "displayed": "Shared vocabulary: acknowledgement, completed, dispatch, guarantee, months, service, unless, within. Shared terms do not establish factual agreement.\n\n[1] 01_Liraven_Planetarium.txt\n\nAcknowledge dome-booking requests within two business days.\n\nText line 8 (normalized extraction)\n\nLocate in library ↗\n[2] 04_Yalara_Grain_Exchange.txt\n\nA loading request at Yalara Grain Exchange is acknowledged within six working hours.\n\nText line 2 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Liraven Planetarium dome-booking requests and Yalara Grain Exchange loading requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+        "filename": "01_Liraven_Planetarium.txt",
+        "excerpt": "Acknowledge dome-booking requests within two business days.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge dome-booking requests within two business days."
+      },
+      {
+        "citation": 2,
+        "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "excerpt": "A loading request at Yalara Grain Exchange is acknowledged within six working hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "A loading request at Yalara Grain Exchange is acknowledged within six working hours."
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "completed",
+      "dispatch",
+      "guarantee",
+      "months",
+      "service",
+      "unless",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge dome-booking requests within two business days.\n\n[2] A loading request at Yalara Grain Exchange is acknowledged within six working hours."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Liraven Planetarium dome-booking requests and Yalara Grain Exchange loading requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+        "filename": "01_Liraven_Planetarium.txt",
+        "excerpt": "Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.",
+        "start": 783,
+        "end": 909
+      },
+      {
+        "citation": 2,
+        "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "excerpt": "A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+        "warning": false,
+        "supported": true,
+        "quote": "A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+        "start": 33,
+        "end": 173
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "completed",
+      "dispatch",
+      "guarantee",
+      "months",
+      "service",
+      "unless",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.\n\n[2] A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Liraven Planetarium dome-booking requests and Yalara Grain Exchange loading requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+        "filename": "01_Liraven_Planetarium.txt",
+        "excerpt": "Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.",
+        "start": 783,
+        "end": 909
+      },
+      {
+        "citation": 2,
+        "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "excerpt": "A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+        "warning": false,
+        "supported": true,
+        "quote": "A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+        "start": 33,
+        "end": 173
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "completed",
+      "dispatch",
+      "guarantee",
+      "months",
+      "service",
+      "unless",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.\n\n[2] A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare acknowledgement deadlines and their limits for Liraven Planetarium dome-booking requests and Yalara Grain Exchange loading requests.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+          "filename": "01_Liraven_Planetarium.txt",
+          "excerpt": "Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.",
+          "warning": false,
+          "supported": true,
+          "quote": "Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.",
+          "start": 783,
+          "end": 909
+        },
+        {
+          "citation": 2,
+          "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+          "filename": "04_Yalara_Grain_Exchange.txt",
+          "excerpt": "A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+          "warning": false,
+          "supported": true,
+          "quote": "A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+          "start": 33,
+          "end": 173
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "completed",
+        "dispatch",
+        "guarantee",
+        "months",
+        "service",
+        "unless",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.\n\n[2] A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare acknowledgement deadlines and their limits for Liraven Planetarium dome-booking requests and Yalara Grain Exchange loading requests.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+          "filename": "01_Liraven_Planetarium.txt",
+          "excerpt": "Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.",
+          "warning": false,
+          "supported": true,
+          "quote": "Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.",
+          "start": 783,
+          "end": 909
+        },
+        {
+          "citation": 2,
+          "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+          "filename": "04_Yalara_Grain_Exchange.txt",
+          "excerpt": "A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+          "warning": false,
+          "supported": true,
+          "quote": "A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+          "start": 33,
+          "end": 173
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "completed",
+        "dispatch",
+        "guarantee",
+        "months",
+        "service",
+        "unless",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.\n\n[2] A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v39 and paired v38 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

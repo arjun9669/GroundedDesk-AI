@@ -15,9 +15,9 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v39 Vela32 partial actual-model gate: 32/32 PASS in both variants; full 771-case gate NOT RUN; not adopted |
-| Release decision | Integration **STOPPED / HOLD** after Vela32 confirmation FAIL |
-| Current change | Phase 1 of the five-phase 6.0 working roadmap: prepare a separate frozen Prism32 regression; live r44 unchanged |
+| Latest isolated candidate | v39 Vela32 and Prism32 partial gates each 32/32 PASS in both variants; full 771-case gate NOT RUN; not adopted |
+| Release decision | Integration **HOLD**; broader regression and fresh confirmation incomplete; original first failures preserved |
+| Current change | Phase 1 of the five-phase 6.0 working roadmap: preserve Prism32 partial PASS; next Lumen32 preparation; live r44 unchanged |
 
 ## Working roadmap for 6.0
 
@@ -135,6 +135,28 @@ Runtime code, existing tests, frozen inputs and historical evidence are unchange
 no fix or new actual-model result is claimed.
 
 ## Current retrieval blocker
+
+### October 20 first Mac Prism32 result
+
+The [first v39 Prism32 partial exposed regression](docs/V39_PRISM32_MAC_RESULTS.md)
+passed **32/32 in both v39 variants**, with zero false accepts/refusals, execution
+errors or historical PASS losses. Paired v38 also passed 32/32. First-v36 29/0/3
+FAIL, v37/v38 history and Vela32's first v39 pass remain unchanged. All 28 Hybrid
+questions used actual MiniLM q8 WASM, Qwen off; four Comparisons remained lexical.
+
+Preparation/freeze was pushed as `49c836f` before questions. All 430 frozen files
+and fifteen historical variant alignments verify. Actual source/query/planner-
+facet vectors were preserved before candidate calls, every baseline/UI source
+match passed, and independent facet cosine recomputation passed. Assistant
+contradiction review changed no grades. Zero model-question retries. The complete
+258-artifact first capture/score (24,031,274 bytes) is sealed under
+`docs/evidence/v39-prism32-mac/manifest.json`.
+
+There are now **64 distinct v39-tested cases** in two separately reported packs:
+Vela32 and Prism32. **604** of the 668 verified cases await v39 testing; **103**
+original cases and combined-config/external-adjudication inputs remain unavailable.
+Phase 1 is incomplete. Next prepare a new Lumen32 partial regression, then Hearth32;
+no full-regression, prospective-confirmation, integration or release claim.
 
 ### October 20 Prism32 preparation checkpoint
 
@@ -325,8 +347,10 @@ or model rerun occurred in this design task. Preserve the original
    all original first failures remain preserved. Next inventory and verify other
    recoverable packs before extending coverage. **Inventory completed:** 19 packs /
    668 input cases verified, including Vela32; 103 cases and the original combined
-   configuration remain unavailable. Next prepare Prism32 under a new freeze,
-   then extend with native criteria. Full regression and live adoption remain blocked.
+   configuration remain unavailable. **Prism32 now passes 32/32 in both v39
+   variants**, giving 64 tested cases across two packs; 604 verified cases await
+   v39 testing. Next prepare Lumen32 under a new freeze, then Hearth32, with native
+   criteria. Full regression and live adoption remain blocked.
 6. Require exposed-regression preservation and separate prospective confirmation
    before integration review. Then qualify navigation/export, memory, performance
    and target browsers. Passing unit tests alone does not authorize adoption.

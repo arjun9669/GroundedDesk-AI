@@ -18,9 +18,12 @@ phase. Inputs for 668 cases are verified; 103 original cases and the old combine
 configuration remain unavailable. New tests cannot retrospectively establish
 preservation on those missing originals. Do not silently replace the full gate.
 
-The immediate task is a newly frozen Prism32 partial exposed regression using
-unchanged v39, paired v38 and unchanged live r44 UI. Its original source bytes,
-questions, native rubric and historical failures stay preserved. Any required
+Vela32 and the [first Prism32 partial exposed run](V39_PRISM32_MAC_RESULTS.md) each
+pass 32/32 in both v39 variants; 64 distinct cases are tested, with pack scores
+kept separate. There are 604 verified cases awaiting v39 testing and 103 original
+cases unavailable. Next prepare Lumen32, then Hearth32, under new freezes using
+unchanged candidates and live r44 UI. Original source bytes, questions, native
+rubrics and historical failures stay preserved. Any required
 test/integrity/execution/scoring failure stops work and requires user input before
 implementation, retries, commits or publication. A passing subset alone cannot
 authorize fresh confirmation or adoption.

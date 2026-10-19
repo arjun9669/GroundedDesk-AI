@@ -3,6 +3,11 @@
 Date: October 20, 2026. Phase **1 — broader regression** of the
 [6.0 working roadmap](ROADMAP_6_0.md). Live 5.6/r44 is unchanged; no adoption.
 
+**Completed follow-up:** the [first actual-model Prism32 run](V39_PRISM32_MAC_RESULTS.md)
+passed 32/32 in both v39 variants without historical PASS loss. The checkpoint
+below records preparation before questions; the original infrastructure failure
+and authorized recovery remain preserved. Do not overwrite this first freeze.
+
 This task prepares a separate first v39 capture of original exposed Prism32:
 **32 cases: 20 supported Hybrid, eight unsupported Hybrid, four lexical
 Comparisons**. Candidate v39, its inherited v38 path, existing tests, original

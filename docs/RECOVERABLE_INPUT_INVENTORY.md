@@ -5,6 +5,12 @@ Scope: the original 739 exposed cases plus Vela32, **771 cases across 23 packs**
 This is an input-identity inventory; no model answers or new quality scores were
 computed. Live 5.6/r44 and all first results remain unchanged.
 
+Subsequent model work: [Prism32's first v39 run](V39_PRISM32_MAC_RESULTS.md) passes
+32/32 in both variants, alongside Vela32. That gives 64 tested cases and 604
+verified cases awaiting v39 testing. The inventory counts/statuses below and its
+JSON preserve the earlier checkpoint before Prism32 questions; no original
+inventory observation or input hash is rewritten.
+
 GitHub CI for `7d75820` passed before this inventory was published.
 
 ## What is available

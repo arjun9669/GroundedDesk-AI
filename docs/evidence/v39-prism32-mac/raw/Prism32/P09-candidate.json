@@ -1,0 +1,1289 @@
+{
+  "candidate_identity": "coverage-v39-final-dispatch-contract",
+  "id": "P09",
+  "question": "Give the highest monthly mean temperature in the Osvik Puppet Theatre prop store and the month it occurs.",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Give the highest monthly mean temperature in the Osvik Puppet Theatre prop store and the month it occurs.",
+    "expected_display": "Give the highest monthly mean temperature in the Osvik Puppet Theatre prop store and the month it occurs.",
+    "rendered_question": "Give the highest monthly mean temperature in the Osvik Puppet Theatre prop store and the month it occurs.",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+    "sources": [
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is",
+        "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nGive the highest monthly mean temperature in the Osvik Puppet Theatre prop store and the month it occurs.\n\nSearched all files: 01_Liraven_Planetarium.txt · 02_Osvik_Puppet_Theatre.txt · 03_Tavren_Ferry_Workshop.txt · 04_Yalara_Grain_Exchange.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.\n\nSOURCE EVIDENCE\n[1]\n02_Osvik_Puppet_Theatre.txt\n\nText line 4 (normalized extraction)\n\nThe Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open. ## Prop store and touring T-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September. T-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "25cdf962-5f7a-4563-8dea-05c9ba623d89:0",
+        "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is",
+        "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 13.736332799234411,
+        "semanticScore": 0.7245318148294696,
+        "matchedTerms": [
+          "highest",
+          "monthly",
+          "mean",
+          "temperature",
+          "osvik",
+          "puppet",
+          "theatre",
+          "prop",
+          "store"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature is 27 degrees Celsius in September.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "25cdf962-5f7a-4563-8dea-05c9ba623d89:body:358",
+        "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+        "start": 358,
+        "end": 430,
+        "actualCosine": 0.4548705602850942,
+        "excerpt": "ejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04."
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "temperature",
+        "statistic": "monthly"
+      },
+      "actual_cosines": [
+        0.4548705602850942
+      ]
+    }
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature is 27 degrees Celsius in September.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "25cdf962-5f7a-4563-8dea-05c9ba623d89:body:358",
+        "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+        "start": 358,
+        "end": 430,
+        "actualCosine": 0.4548705602850942,
+        "excerpt": "ejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04."
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "temperature",
+        "statistic": "monthly"
+      },
+      "actual_cosines": [
+        0.4548705602850942
+      ]
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Osvik_Puppet_Theatre.txt",
+      "start": 204,
+      "content": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "semanticScore": 0.75181012802831,
+      "lexicalScore": 13.901056903920693
+    },
+    {
+      "filename": "03_Tavren_Ferry_Workshop.txt",
+      "start": 132,
+      "content": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "semanticScore": 0.5132993005242088,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Liraven_Planetarium.txt",
+      "start": 514,
+      "content": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "semanticScore": 0.48707171648785624,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Tavren_Ferry_Workshop.txt",
+      "start": 227,
+      "content": "Its highest recorded daily temperature is 38 degrees Celsius.",
+      "semanticScore": 0.45980707713571956,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Osvik_Puppet_Theatre.txt",
+      "start": 358,
+      "content": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+      "semanticScore": 0.4548705602850942,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "Liraven Planetarium began public dome shows in 1967.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.1589189081756077,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "start": 53,
+      "end": 165,
+      "similarity": 0.06959994423735777,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "D-01.",
+      "start": 197,
+      "end": 202,
+      "similarity": 0.11784825365746948,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "Dispatch requests cleared before 16:20 leave on the current service day.",
+      "start": 203,
+      "end": 275,
+      "similarity": 0.07306624452668191,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.",
+      "start": 276,
+      "end": 368,
+      "similarity": 0.11798434270454028,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "D-02.",
+      "start": 369,
+      "end": 374,
+      "similarity": 0.13929900644260146,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "Eris checks five projector filters per morning.",
+      "start": 375,
+      "end": 422,
+      "similarity": 0.11812235641529006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "Nalo checks three door hinges per morning.",
+      "start": 423,
+      "end": 465,
+      "similarity": 0.11673032077845608,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "Eris labels two transport cases per week.",
+      "start": 466,
+      "end": 507,
+      "similarity": 0.1294928229638953,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "D-03.",
+      "start": 508,
+      "end": 513,
+      "similarity": 0.09449642680922794,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "start": 514,
+      "end": 599,
+      "similarity": 0.48707171648785624,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "Individual winter extremes are not recorded.",
+      "start": 600,
+      "end": 644,
+      "similarity": 0.3059821451872221,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "D-04.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.09110520042044008,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "Keep movement slips for 19 months.",
+      "start": 651,
+      "end": 685,
+      "similarity": 0.1497803507506689,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "While an export-review hold is open, retain the affected slips until the hold is released.",
+      "start": 686,
+      "end": 776,
+      "similarity": -0.10566341224023383,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "D-05.",
+      "start": 777,
+      "end": 782,
+      "similarity": 0.05191838273669502,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "Acknowledge dome-booking requests within two business days.",
+      "start": 783,
+      "end": 842,
+      "similarity": 0.16767105717083688,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fd09f432-b900-4a30-ba4b-61f7c19d7d98",
+      "value": "An acknowledgement is not a guarantee that seats remain available.",
+      "start": 843,
+      "end": 909,
+      "similarity": 0.026770962181002438,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.41938369282222704,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "Its restoration was completed in 1986.",
+      "start": 55,
+      "end": 93,
+      "similarity": -0.03132201645489524,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+      "start": 94,
+      "end": 170,
+      "similarity": 0.08285512767637912,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "T-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.15959406221568875,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "start": 204,
+      "end": 296,
+      "similarity": 0.75181012802831,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 297,
+      "end": 357,
+      "similarity": 0.4294436765815922,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+      "start": 358,
+      "end": 430,
+      "similarity": 0.4548705602850942,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "T-02.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.1713011515584407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "Signed touring records are retained for 5 years.",
+      "start": 437,
+      "end": 485,
+      "similarity": 0.03330522919747114,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "An unresolved ownership claim extends retention of the affected records until the claim is settled.",
+      "start": 486,
+      "end": 585,
+      "similarity": -0.05225272169335289,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "T-03.",
+      "start": 586,
+      "end": 591,
+      "similarity": 0.14431456844987267,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "The touring packet must contain:",
+      "start": 592,
+      "end": 624,
+      "similarity": 0.11113510222840155,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "T-04.",
+      "start": 705,
+      "end": 710,
+      "similarity": 0.1297533570695542,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+      "value": "The stage clock was replaced in 2023.",
+      "start": 711,
+      "end": 748,
+      "similarity": 0.2152237204305142,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "start": 28,
+      "end": 90,
+      "similarity": 0.04256204945573368,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "The ramp shelter was repainted in 2012.",
+      "start": 91,
+      "end": 130,
+      "similarity": 0.12919322629468602,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "start": 132,
+      "end": 226,
+      "similarity": 0.5132993005242088,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "Its highest recorded daily temperature is 38 degrees Celsius.",
+      "start": 227,
+      "end": 288,
+      "similarity": 0.45980707713571956,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "Varen records seven cable-tension readings per shift.",
+      "start": 290,
+      "end": 343,
+      "similarity": 0.06255650321583109,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "Tesi records five ramp tests per shift.",
+      "start": 344,
+      "end": 383,
+      "similarity": 0.10472841351494105,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "Varen tags two lifting hooks per month.",
+      "start": 384,
+      "end": 423,
+      "similarity": 0.18709177874397856,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.",
+      "start": 425,
+      "end": 532,
+      "similarity": 0.11257996664320723,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "In a salt-spray shelter, lubricate it every 45 operating hours.",
+      "start": 533,
+      "end": 596,
+      "similarity": 0.18312218987405735,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "Inspect the loading winch every 15 operating hours regardless of shelter.",
+      "start": 597,
+      "end": 670,
+      "similarity": 0.14954188723696996,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e76f6d8a-3ca6-4841-b04c-2c357d0048f3",
+      "value": "The office cabinet was painted in 2021.",
+      "start": 671,
+      "end": 710,
+      "similarity": 0.11951264105686747,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "GX-01.",
+      "start": 26,
+      "end": 32,
+      "similarity": 0.1794497200541252,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "A loading request at Yalara Grain Exchange is acknowledged within six working hours.",
+      "start": 33,
+      "end": 117,
+      "similarity": 0.1107620888199582,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "This acknowledgement does not guarantee a loading slot.",
+      "start": 118,
+      "end": 173,
+      "similarity": -0.06439553341702431,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "GX-02.",
+      "start": 174,
+      "end": 180,
+      "similarity": 0.19102079129332752,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+      "start": 181,
+      "end": 299,
+      "similarity": 0.08649062749870871,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "GX-03.",
+      "start": 300,
+      "end": 306,
+      "similarity": 0.15857317410685484,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.",
+      "start": 307,
+      "end": 413,
+      "similarity": -0.018780446612432503,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "GX-04.",
+      "start": 414,
+      "end": 420,
+      "similarity": 0.13374526194540282,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.",
+      "start": 421,
+      "end": 534,
+      "similarity": -0.005881806733520224,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "The office bell was installed in 1980.",
+      "start": 536,
+      "end": 574,
+      "similarity": 0.06190425611407415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+      "start": 575,
+      "end": 665,
+      "similarity": 0.1555441159481267,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "In a dust-heavy bay, grease it every 66 service hours.",
+      "start": 666,
+      "end": 720,
+      "similarity": 0.21975755352552415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1d43b849-79d1-430e-a80e-ccf1e19b1fe8",
+      "value": "Inspect the conveyor every 33 service hours in either bay.",
+      "start": 721,
+      "end": 779,
+      "similarity": 0.188158460794153,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature is 27 degrees Celsius in September.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "25cdf962-5f7a-4563-8dea-05c9ba623d89:body:358",
+          "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+          "filename": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+          "start": 358,
+          "end": 430,
+          "actualCosine": 0.4548705602850942,
+          "excerpt": "ejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04."
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "temperature",
+          "statistic": "monthly"
+        },
+        "actual_cosines": [
+          0.4548705602850942
+        ]
+      }
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature is 27 degrees Celsius in September.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "25cdf962-5f7a-4563-8dea-05c9ba623d89:body:358",
+          "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+          "filename": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+          "start": 358,
+          "end": 430,
+          "actualCosine": 0.4548705602850942,
+          "excerpt": "ejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04."
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "temperature",
+          "statistic": "monthly"
+        },
+        "actual_cosines": [
+          0.4548705602850942
+        ]
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "25cdf962-5f7a-4563-8dea-05c9ba623d89:0",
+          "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+          "filename": "02_Osvik_Puppet_Theatre.txt",
+          "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 13.736332799234411,
+          "semanticScore": 0.7245318148294696,
+          "matchedTerms": [
+            "highest",
+            "monthly",
+            "mean",
+            "temperature",
+            "osvik",
+            "puppet",
+            "theatre",
+            "prop",
+            "store"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "25cdf962-5f7a-4563-8dea-05c9ba623d89:172",
+          "documentId": "25cdf962-5f7a-4563-8dea-05c9ba623d89",
+          "filename": "02_Osvik_Puppet_Theatre.txt",
+          "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 11.317920316313629,
+          "semanticScore": 0.7683171230983986,
+          "matchedTerms": [
+            "highest",
+            "monthly",
+            "mean",
+            "temperature",
+            "osvik",
+            "puppet",
+            "theatre",
+            "prop",
+            "store"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.01158860232681036,
+    0.031119339168071747,
+    -0.0016694352962076664,
+    0.019581906497478485,
+    -0.0644865334033966,
+    0.02657703496515751,
+    -0.05201074481010437,
+    0.012765888124704361,
+    -0.06795941293239594,
+    0.05561354011297226,
+    0.028683185577392578,
+    -0.03882763907313347,
+    0.02846335619688034,
+    -0.043035589158535004,
+    0.030350588262081146,
+    -0.05035994574427605,
+    0.10330183058977127,
+    0.029033780097961426,
+    0.0325869657099247,
+    -0.008737614378333092,
+    0.0738188847899437,
+    -0.07064858078956604,
+    0.01722770556807518,
+    -0.005953752901405096,
+    0.06851870566606522,
+    0.031136468052864075,
+    0.009244372136890888,
+    0.07745184749364853,
+    0.028583647683262825,
+    0.07065461575984955,
+    -0.04800080507993698,
+    0.04433048143982887,
+    0.0732773095369339,
+    -0.036486539989709854,
+    0.03224010765552521,
+    0.020388590171933174,
+    -0.06389227509498596,
+    -0.07924240082502365,
+    -0.06262993067502975,
+    0.007083757780492306,
+    -0.0037597089540213346,
+    -0.021590424701571465,
+    0.014704324305057526,
+    0.0055700340308249,
+    -0.055880479514598846,
+    0.02860422432422638,
+    -0.03323899954557419,
+    0.03421952202916145,
+    -0.0424436591565609,
+    0.10308680683374405,
+    -0.021828873082995415,
+    -0.014002717100083828,
+    0.011507924646139145,
+    -0.029085000976920128,
+    -0.020082838833332062,
+    -0.07770919799804688,
+    -0.061992041766643524,
+    -0.03571607172489166,
+    0.00909776333719492,
+    -0.0032696002162992954,
+    -0.006437284871935844,
+    0.012398985214531422,
+    -0.09010213613510132,
+    0.027417903766036034,
+    0.08129433542490005,
+    -0.059646375477313995,
+    0.014609870500862598,
+    0.05578417703509331,
+    0.010349355638027191,
+    -0.02627149410545826,
+    0.038091544061899185,
+    0.024206185713410378,
+    0.12788310647010803,
+    -0.1269938051700592,
+    0.01639171876013279,
+    -0.06692170351743698,
+    -0.0056366645731031895,
+    -0.1276072859764099,
+    0.06751038134098053,
+    0.04137036204338074,
+    0.007514710072427988,
+    -0.08605579286813736,
+    -0.011640449054539204,
+    -0.021556762978434563,
+    0.01647675782442093,
+    0.03986360877752304,
+    0.06781095266342163,
+    0.0399448536336422,
+    -0.029096024110913277,
+    0.07726500928401947,
+    -0.012687167152762413,
+    0.018681438639760017,
+    -0.028240231797099113,
+    -0.025394024327397346,
+    -0.030220303684473038,
+    0.068757064640522,
+    -0.013202597387135029,
+    0.04867437854409218,
+    0.0724773183465004,
+    0.024390263482928276,
+    -0.03848062455654144,
+    -0.03780522570014,
+    -0.004344351589679718,
+    0.06946499645709991,
+    0.017688004299998283,
+    -0.043270718306303024,
+    0.004787927959114313,
+    -0.02481202408671379,
+    -0.059514183551073074,
+    0.057565171271562576,
+    -0.16009794175624847,
+    -0.028470220044255257,
+    0.06485700607299805,
+    -0.07215385884046555,
+    0.021346112713217735,
+    -0.04949257895350456,
+    0.003952773753553629,
+    0.02814159356057644,
+    0.049872372299432755,
+    0.01697111688554287,
+    0.08366742730140686,
+    0.03485611826181412,
+    0.003275752067565918,
+    0.11160910129547119,
+    -0.029756030067801476,
+    0.037081457674503326,
+    0.024978606030344963,
+    -1.5026129391500292e-33,
+    0.029839999973773956,
+    -0.05467015877366066,
+    0.07492674142122269,
+    -0.034474216401576996,
+    0.02845763973891735,
+    0.013691738247871399,
+    -0.024256983771920204,
+    -0.003472857177257538,
+    0.02720523811876774,
+    0.03418052941560745,
+    0.03093264065682888,
+    -0.03162485361099243,
+    -0.07121957838535309,
+    0.005421396344900131,
+    -0.0241636224091053,
+    -0.007794867269694805,
+    0.0462186224758625,
+    0.06021498143672943,
+    -0.01833154633641243,
+    0.025267047807574272,
+    -0.03576422482728958,
+    -0.018631327897310257,
+    -0.020052483305335045,
+    0.03112565539777279,
+    0.04172525927424431,
+    0.03878319635987282,
+    0.06726741045713425,
+    0.031192725524306297,
+    -0.03646228462457657,
+    0.013291570357978344,
+    0.11323273926973343,
+    -0.07516466826200485,
+    -0.07767342776060104,
+    0.0046062106266617775,
+    0.018404657021164894,
+    -0.03331958130002022,
+    -0.021279102191329002,
+    -0.01088310219347477,
+    -0.03584634140133858,
+    0.003078651614487171,
+    0.02025032974779606,
+    -0.07261400669813156,
+    0.028730425983667374,
+    0.024633970111608505,
+    0.03595099598169327,
+    0.021942520514130592,
+    -0.026853486895561218,
+    0.0009178694454021752,
+    0.05691578984260559,
+    -0.007040032651275396,
+    -0.03701518103480339,
+    0.02865886315703392,
+    -0.012840049341320992,
+    -0.0048101432621479034,
+    0.04110722243785858,
+    0.04542125016450882,
+    0.014990553259849548,
+    -0.018524019047617912,
+    -0.027852490544319153,
+    -0.02525847963988781,
+    -0.10355927050113678,
+    -0.0027915416285395622,
+    0.10333383083343506,
+    -0.07428181916475296,
+    0.023120960220694542,
+    -0.03203733637928963,
+    -0.011683314107358456,
+    -0.03230201452970505,
+    -0.026544641703367233,
+    0.034832362085580826,
+    0.03215431049466133,
+    0.013787670992314816,
+    0.04977859556674957,
+    -0.060688748955726624,
+    -0.032545674592256546,
+    0.02766791172325611,
+    0.07164046913385391,
+    -0.020257676020264626,
+    -0.042370885610580444,
+    -0.03055412322282791,
+    -0.04259015992283821,
+    0.02526886574923992,
+    0.04733075574040413,
+    -0.02990887500345707,
+    -0.02461359277367592,
+    -0.05789235234260559,
+    -0.02684326283633709,
+    -0.01849045790731907,
+    -0.005064811557531357,
+    0.06297389417886734,
+    0.0036164051853120327,
+    -0.09026850759983063,
+    -0.03679714351892471,
+    0.052439261227846146,
+    -0.03295501321554184,
+    4.535865817016056e-34,
+    0.06003378704190254,
+    0.04609603062272072,
+    0.0014000904047861695,
+    0.08784427493810654,
+    -0.0392245277762413,
+    -0.05275377258658409,
+    -0.023793773725628853,
+    0.03897837549448013,
+    0.05000260844826698,
+    0.07149959355592728,
+    -0.0488976314663887,
+    -0.02053697779774666,
+    0.07607998698949814,
+    -0.0717264786362648,
+    0.022296138107776642,
+    0.058103930205106735,
+    0.10069039463996887,
+    0.007153080776333809,
+    0.025462837889790535,
+    -0.021038752049207687,
+    -0.11026914417743683,
+    0.059015534818172455,
+    -0.015134969726204872,
+    -0.019110895693302155,
+    -0.08264189958572388,
+    0.012293115258216858,
+    -0.011585521511733532,
+    0.007288260851055384,
+    -0.09780512005090714,
+    0.014486967585980892,
+    -0.06700582802295685,
+    -0.026858897879719734,
+    -0.0005215098499320447,
+    0.059346362948417664,
+    -0.08617666363716125,
+    0.046841371804475784,
+    0.000587576359976083,
+    -0.07930146157741547,
+    -0.03183154761791229,
+    0.008931942284107208,
+    0.09567123651504517,
+    -0.029864534735679626,
+    0.07023261487483978,
+    0.04884874448180199,
+    0.03826191648840904,
+    -0.027258913964033127,
+    0.04407721012830734,
+    0.049900732934474945,
+    0.11287005245685577,
+    -0.06615889817476273,
+    0.0011788582196459174,
+    -0.0902421623468399,
+    -0.12852610647678375,
+    -0.021164782345294952,
+    0.04674779996275902,
+    0.015684980899095535,
+    -0.044488575309515,
+    -0.013353596441447735,
+    0.021718882024288177,
+    -0.08108676970005035,
+    0.11128319799900055,
+    -0.05992116034030914,
+    -0.036663737148046494,
+    0.08288835734128952,
+    -0.041880715638399124,
+    0.042279429733753204,
+    -0.03366895020008087,
+    -0.054724231362342834,
+    0.06552927196025848,
+    0.1011221781373024,
+    0.09873957931995392,
+    0.0876377522945404,
+    0.012649471871554852,
+    -0.029605744406580925,
+    -0.029443129897117615,
+    0.013468501158058643,
+    0.03778453916311264,
+    0.059167660772800446,
+    0.04367482289671898,
+    -0.061118949204683304,
+    -0.11207839101552963,
+    0.07050896435976028,
+    -0.10245808213949203,
+    0.07068689912557602,
+    0.027443433180451393,
+    -0.021442046388983727,
+    0.018989045172929764,
+    -0.0468592569231987,
+    -0.03281126543879509,
+    -0.0009637828334234655,
+    -0.07070130854845047,
+    0.06152679771184921,
+    -0.07615233212709427,
+    0.018734673038125038,
+    0.01119745709002018,
+    -2.0084838681100337e-8,
+    0.055046286433935165,
+    -0.02551598660647869,
+    0.018086271360516548,
+    -0.007211064454168081,
+    0.0741056576371193,
+    -0.05210668966174126,
+    0.06797385215759277,
+    -0.05712719261646271,
+    -0.0066782161593437195,
+    0.080245740711689,
+    0.06604758650064468,
+    0.028336284682154655,
+    0.005668714642524719,
+    -0.021705197170376778,
+    0.023112768307328224,
+    -0.05470197647809982,
+    -0.04943399503827095,
+    0.06499776244163513,
+    -0.09330013394355774,
+    -0.1556863635778427,
+    -0.032026246190071106,
+    0.04515314847230911,
+    0.09104829281568527,
+    0.01878693327307701,
+    -0.0017051262548193336,
+    0.076114222407341,
+    -0.015656286850571632,
+    0.07622037082910538,
+    0.04257100448012352,
+    0.06341385841369629,
+    -0.06057392433285713,
+    -0.05429115518927574,
+    -0.02806621603667736,
+    -0.1522998958826065,
+    -0.04036901518702507,
+    0.030988486483693123,
+    -0.08025506883859634,
+    0.07908817380666733,
+    -0.012257427908480167,
+    -0.009939411655068398,
+    -0.012186375446617603,
+    0.002311986405402422,
+    -0.00801597349345684,
+    0.043509628623723984,
+    -0.03799119591712952,
+    -0.0355529710650444,
+    0.01280025765299797,
+    0.028765466064214706,
+    0.012280075810849667,
+    0.001708528958261013,
+    0.004577710293233395,
+    0.00500065740197897,
+    -0.04105503484606743,
+    0.03685716167092323,
+    -0.036701928824186325,
+    0.01594715751707554,
+    -0.0026441249065101147,
+    0.047488223761320114,
+    -0.023339087143540382,
+    0.019699841737747192,
+    -0.021795043721795082,
+    -0.03699154779314995,
+    -0.09863138198852539,
+    -0.006846938747912645
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "start": 0,
+        "content": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04. The stage clock was replaced in 2023."
+      },
+      {
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "start": 0,
+        "content": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter. The office cabinet was painted in 2021."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "start": 172,
+        "content": "## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04. The stage clock was replaced in 2023."
+      },
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "start": 0,
+        "content": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open."
+      },
+      {
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "start": 0,
+        "content": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter. The office cabinet was painted in 2021."
+      }
+    ]
+  }
+}

@@ -13,14 +13,15 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest isolated candidate | **v39 Vela32 partial model gate: 32/32 PASS in both variants**; full regression blocked by 103 unavailable cases and missing combined configuration, not adopted. V38 first **FAIL / HOLD** remains preserved |
-| Latest recorded checks | **596 unit tests**, strict bundled checks; [actual MiniLM Vela32 subset](./docs/V39_VELA32_MAC_RESULTS.md) distinct from full regression/fresh confirmation |
+| Latest isolated candidate | **v39 Vela32 and Prism32 partial gates each 32/32 PASS in both variants**; full regression blocked by 103 unavailable cases and missing combined configuration; not adopted |
+| Latest recorded checks | **599 unit tests**, strict bundled checks; [Vela32](./docs/V39_VELA32_MAC_RESULTS.md) and [Prism32](./docs/V39_PRISM32_MAC_RESULTS.md) actual-model subsets distinct from full regression/fresh confirmation |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
 The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. Current phase:
-**1 — broader regression**, starting with a
-[separately frozen Prism32 run](./docs/V39_PRISM32_PREPARATION.md). Detailed
+**1 — broader regression**. The
+[separately frozen Prism32 run](./docs/V39_PRISM32_MAC_RESULTS.md) passed; next
+prepare Lumen32. Detailed
 release targets remain to be agreed; the roadmap does not authorize live adoption.
 
 The [Prism32 first prospective v36 confirmation](./docs/PRISM32_V36_CONFIRMATION.md) records **29 PASS / 0 PARTIAL / 3 FAIL** in both variants. **Confirmation gate FAIL; integration-readiness work is stopped.** [Exact answers and JSON](./docs/evidence/prism32-v36/REVIEWED_SCORECARD.json) preserve every original result. P04 falsely refuses supported cutoff/hold evidence; P10 and P17 quote unrelated history/acknowledgement instead of packet contents and retention. All eight unsupported cases refuse uncited; citations are 28/28 literal but 26/28 relevant. P04 loses a production-baseline PASS, inherited from v35; no paired-v35 PASS is lost. This is author-created prospective stress confirmation, not externally blinded independent accuracy. No retries, input/rubric/code edits or replacement set. Live 5.6/r44 remains unchanged; capacity expansion stays deferred.
@@ -175,7 +176,7 @@ GroundedDesk is a portfolio prototype, not a production-ready RAG, compliance or
 
 OCR, reliable table/column reconstruction, character-level partial-run highlights, comprehensive prompt-injection defenses and broad browser/device validation are not provided. Model availability, performance and memory use vary by device.
 
-The [Vela32 design review](./docs/VELA32_REFUSAL_DESIGN_REVIEW.md) led to an [isolated v39 engineering implementation](./docs/COVERAGE_V39_ENGINEERING.md), followed by a [first Mac partial exposed regression](./docs/V39_VELA32_MAC_RESULTS.md): both v39 variants pass all 32 Vela32 cases, repairing V23/V27 with no historical PASS loss. The [input inventory](./docs/RECOVERABLE_INPUT_INVENTORY.md) verifies original inputs for 668 cases, including Vela32; 636 additional cases await model testing, while 103 original cases and the combined Windows configuration remain unavailable. Next prepare a newly frozen Prism32 partial gate before extending coverage. This does not satisfy the full 771-case gate or fresh confirmation. Preserve Vela32 first **30/0/2**, Bracken32 first **21/1/10**, Cedar32 first **24/2/6**, exposed Cedar32 **32/0/0** and every older result. Performance/integration qualification remains deferred; live r44 stays unchanged.
+The [Vela32 design review](./docs/VELA32_REFUSAL_DESIGN_REVIEW.md) led to an [isolated v39 engineering implementation](./docs/COVERAGE_V39_ENGINEERING.md), followed by [Vela32](./docs/V39_VELA32_MAC_RESULTS.md) and [Prism32](./docs/V39_PRISM32_MAC_RESULTS.md) partial exposed regressions: both v39 variants pass all 32 cases in each pack with no historical PASS loss. The [input inventory](./docs/RECOVERABLE_INPUT_INVENTORY.md) verifies original inputs for 668 cases; 64 distinct cases are now tested and 604 await v39 testing, while 103 original cases and the combined Windows configuration remain unavailable. Next prepare a newly frozen Lumen32 partial gate, then Hearth32. This does not satisfy the full 771-case gate or fresh confirmation. Preserve Vela32 first **30/0/2**, Bracken32 first **21/1/10**, Cedar32 first **24/2/6**, exposed Cedar32 **32/0/0** and every older result. Performance/integration qualification remains deferred; live r44 stays unchanged.
 
 ## Explore the project
 

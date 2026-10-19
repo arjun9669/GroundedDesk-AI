@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-20 — First Mac v39 Prism32 partial PASS
+
+- The authorized freeze recovery preserves all 411 eligible code/assets while avoiding Node's full-path-list buffer limit. Preparation and 430-file freeze were published as `49c836f` before model questions; retain the initial infrastructure failure and pause/recovery record.
+- Capture the complete original Prism32 pack once with actual MiniLM q8 WASM (28 Hybrid / four lexical Comparisons), Qwen off. Both v39 variants and paired v38 pass 32/32; no historical PASS loss, false accepts/refusals or model retries. Preserve original v36 29/0/3 FAIL and all first results.
+- Seal 258 full first-capture/score artifacts with SHA256; verify real vectors, source/UI matches and independently recomputed planner-facet cosines. Assistant review changes no automated grade. Live r44 and candidate code unchanged.
+- Phase 1 continues: 64 distinct v39-tested cases across Vela32/Prism32; 604 verified cases await testing and 103 originals remain unavailable. Next Lumen32 preparation, then Hearth32. No full-gate/fresh-confirmation/adoption claim. [Results](docs/V39_PRISM32_MAC_RESULTS.md).
+
 ## 2026-10-20 — 6.0 working roadmap and Prism32 preparation
 
 - Record the accepted five-phase working sequence; phase 1 is broader regression. Product promises and quantitative release targets remain unfrozen; no integration or release-readiness claim.
