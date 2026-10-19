@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — 6.0 working roadmap and Prism32 preparation
+
+- Record the accepted five-phase working sequence; phase 1 is broader regression. Product promises and quantitative release targets remain unfrozen; no integration or release-readiness claim.
+- Prepare a new isolated Prism32 v39 runner/configuration/scorer, reusing unchanged automated criteria and preserving first-v36 plus v37/v38 passes. Preserve the Vela32 freeze and all original inputs and results.
+- Preparation checks: 599 unit tests PASS, strict 28-case Keyword evaluation PASS, original input/history checks PASS and clean read-only Chrome r44 startup. Actual Prism32 model capture/grading NOT RUN at this preparation checkpoint. [Preparation and stop rule](docs/V39_PRISM32_PREPARATION.md).
+
 ## 2026-10-20 — Recoverable historical input inventory
 
 - Verify 117 original frozen input-file entries across 19 packs / 668 cases; preserve exact question IDs/order/strings and map native scoring references. Vela32 accounts for 32 already tested cases; 636 more cases await v39 model testing.

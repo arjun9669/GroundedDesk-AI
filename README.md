@@ -18,6 +18,11 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
+The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. Current phase:
+**1 — broader regression**, starting with a
+[separately frozen Prism32 run](./docs/V39_PRISM32_PREPARATION.md). Detailed
+release targets remain to be agreed; the roadmap does not authorize live adoption.
+
 The [Prism32 first prospective v36 confirmation](./docs/PRISM32_V36_CONFIRMATION.md) records **29 PASS / 0 PARTIAL / 3 FAIL** in both variants. **Confirmation gate FAIL; integration-readiness work is stopped.** [Exact answers and JSON](./docs/evidence/prism32-v36/REVIEWED_SCORECARD.json) preserve every original result. P04 falsely refuses supported cutoff/hold evidence; P10 and P17 quote unrelated history/acknowledgement instead of packet contents and retention. All eight unsupported cases refuse uncited; citations are 28/28 literal but 26/28 relevant. P04 loses a production-baseline PASS, inherited from v35; no paired-v35 PASS is lost. This is author-created prospective stress confirmation, not externally blinded independent accuracy. No retries, input/rubric/code edits or replacement set. Live 5.6/r44 remains unchanged; capacity expansion stays deferred.
 
 The isolated [v36 real Chrome/MiniLM regression](./docs/COVERAGE_V36_R44_VALIDATION.md) records native gate **PASS** and engineering review **PASS** across 707 exposed cases. Lumen32 records **32/0/0 fixed / 32/0/0 section** under its unchanged key and strict context-precision criteria. [Every exact answer and JSON scorecards](./docs/evidence/coverage-v36-r44/ALL_SCORECARDS.json) preserve all results. **Live 5.6/r44 remains unchanged; v36 is not adopted.**

@@ -17,7 +17,15 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v39 Vela32 partial actual-model gate: 32/32 PASS in both variants; full 771-case gate NOT RUN; not adopted |
 | Release decision | Integration **STOPPED / HOLD** after Vela32 confirmation FAIL |
-| Current change | Input inventory verifies 19 packs / 668 cases; 636 additional cases await v39 testing, 103 original cases unavailable; live r44 unchanged |
+| Current change | Phase 1 of the five-phase 6.0 working roadmap: prepare a separate frozen Prism32 regression; live r44 unchanged |
+
+## Working roadmap for 6.0
+
+The user accepted a [five-phase working sequence](docs/ROADMAP_6_0.md):
+broader regression → fresh confirmation → integration → product qualification →
+release preparation. We are in **phase 1**. User-facing product promises and
+quantitative release criteria are not yet frozen. This plan does not waive the
+missing-input gap, authorize integration or establish production readiness.
 
 The Mac folder was initially an empty Git repository. The initial setup commit
 `a883e28` was published on `mac-work-oct2026` and merged into `main` through PR
@@ -127,6 +135,34 @@ Runtime code, existing tests, frozen inputs and historical evidence are unchange
 no fix or new actual-model result is claimed.
 
 ## Current retrieval blocker
+
+### October 20 Prism32 preparation checkpoint
+
+The [separate Prism32 preparation](docs/V39_PRISM32_PREPARATION.md) keeps v39,
+live r44, the Vela32 runner/freeze, original Prism32 inputs and historical scores
+unchanged. It selects the complete original 32-case exposed pack (28 Hybrid /
+four lexical Comparisons), paired v38, with first-v36 and v37/v38 preservation
+checks. Original config/key/rubric/protocol/scorer and source hashes pass.
+
+Before new questions: **599 unit tests PASS**, zero failed/skipped; strict
+`node eval/run.mjs --strict` **28/28 PASS**. Bundled Node 24.19.0, installed
+Chrome 155.0.8059.80; read-only r44 startup has no failed requests/page errors.
+New runner/preparer syntax and fifteen historical variant alignments pass.
+Prism32 model capture/scoring is **NOT RUN at this preparation checkpoint**.
+Publish the successful preparation/freeze before one capture; stop and ask after
+any required failure. Full regression, fresh confirmation and adoption stay HOLD.
+
+The initial freeze preparation failed before writing a config/manifest or asking
+questions (`spawnSync git ENOBUFS`: the complete tracked-path listing exceeded
+Node's buffer). Work stopped. The user then authorized limiting that listing to
+the exact code/HTML/CSS inputs used by the freeze and retrying; original input/
+history verification remains unchanged. This infrastructure failure is retained
+separately from the unrun model gate.
+
+Authorized recovery succeeded: the narrowed path set equals all 411 originally
+eligible tracked code/assets, all 599 unit tests pass after the change, and the
+first successful Prism32 freeze records 430 code/input files. No model question
+was asked during preparation. Review and publish this checkpoint before capture.
 
 ### October 20 historical input inventory
 

@@ -1,0 +1,958 @@
+{
+  "classification": "V39 partial exposed Prism32 regression; not fresh confirmation or full 771-case gate",
+  "preparation_head": "9d6a7f9e0767566f818dd7d71c4b7c82d67d6fb0",
+  "total_questions": 32,
+  "hybrid": 28,
+  "lexical_comparison": 4,
+  "outside_this_capture": 739,
+  "unavailable_input_cases": 103,
+  "environment": {
+    "browser": "155.0.8059.80",
+    "platform": "darwin",
+    "arch": "arm64",
+    "node": "v24.19.0",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "preflight_sha256": "d0af2952eed31695c56856c0aa7cab5776f0d1a75c4fec910c489a3b3be31247"
+  },
+  "module_identity": {
+    "candidate": {
+      "path": "/eval/answer-completeness-v39/coverage.mjs",
+      "sha256": "f07acd276cae6b1f45d8358058a3e99caa1ea2a5a363076a0b9357f7a8ccc94a",
+      "id": "coverage-v39-final-dispatch-contract"
+    },
+    "paired": {
+      "path": "/eval/answer-completeness-v38/coverage.mjs",
+      "sha256": "98fc377e59420d662f1a940ea75726870ac987364a97d5d8236e238c6a828baf"
+    },
+    "helper": {
+      "path": "/tests/fixtures/module-identity.mjs",
+      "sha256": "1271b1bfd118d965b193fffa25514712c6492a4e9701cb6eddc8d7c26679448b"
+    },
+    "dependencies": [
+      {
+        "path": "/eval/answer-completeness-v10/coverage.mjs",
+        "sha256": "d8a020e80cdb8546486dfeb0fdeadadebd65e59cd97abf2acff4181e0a5b260f"
+      },
+      {
+        "path": "/eval/answer-completeness-v11/coverage.mjs",
+        "sha256": "49fe76c8f872feed4fccdab740ec9dbc6eb662fc2f5929693ecfa45dc4b26c12"
+      },
+      {
+        "path": "/eval/answer-completeness-v12/coverage.mjs",
+        "sha256": "1d246db6becc2b526ae5a6f3793830cc7d6e95673408e7370fc95a1c385c6579"
+      },
+      {
+        "path": "/eval/answer-completeness-v13/coverage.mjs",
+        "sha256": "aca5f356c25c01461397cbd848ee9042ef47a8496a7a2da3a8ad5ef627299d3b"
+      },
+      {
+        "path": "/eval/answer-completeness-v14/coverage.mjs",
+        "sha256": "eacc40b03f0005b9f6ba36e1d73a1ef74bf0afabcff954a93d9debdf9b7a67d8"
+      },
+      {
+        "path": "/eval/answer-completeness-v15/coverage.mjs",
+        "sha256": "ad6e6490ab03ab0b596f9903b1f5d2ce1f2fb2846d10c8560743fada626dda5f"
+      },
+      {
+        "path": "/eval/answer-completeness-v16/coverage.mjs",
+        "sha256": "f34074685779e6d63bdd0530dc63602a6812bd42b009478825d11eb3a9a75026"
+      },
+      {
+        "path": "/eval/answer-completeness-v17/coverage.mjs",
+        "sha256": "ddb34258de81b27b3aab02dea53dc1243e3ca50224eb7973055c9e468ab52b9e"
+      },
+      {
+        "path": "/eval/answer-completeness-v18/coverage.mjs",
+        "sha256": "664c545581f554d553f8672a317639b32fba90621f0933a7dc15e8ce09bab249"
+      },
+      {
+        "path": "/eval/answer-completeness-v19/coverage.mjs",
+        "sha256": "8a951f213cb9674a584fe0aa69a84af50cda0eff1bc2f71581e05773528164cb"
+      },
+      {
+        "path": "/eval/answer-completeness-v2/coverage.mjs",
+        "sha256": "9ad975a368895324c04aaa3e6c9084c4304cc785e31be456d8675011096c2426"
+      },
+      {
+        "path": "/eval/answer-completeness-v20/coverage.mjs",
+        "sha256": "b57cb4a49eb70fe9a7cff4c84b9f3058eb2edea3fd6cb238eaa9683195c58cc1"
+      },
+      {
+        "path": "/eval/answer-completeness-v21/coverage.mjs",
+        "sha256": "b353bceb05acdb5fd56f81fbd4d2176e90256dcacef6a670356ba63763119faf"
+      },
+      {
+        "path": "/eval/answer-completeness-v22/coverage.mjs",
+        "sha256": "d8db199f55825dba92aa6a0ce6f35f340cdda0a5191ce7a2b267dc177d6dc454"
+      },
+      {
+        "path": "/eval/answer-completeness-v23/coverage.mjs",
+        "sha256": "febb0ab77db5790d13665e11c8fba31ad08033fdab2241562e04e4c665f6a409"
+      },
+      {
+        "path": "/eval/answer-completeness-v24/coverage.mjs",
+        "sha256": "222d155c8c67f8f657f3843f170ad906defc630bc8e13608e4c6c74c87270d79"
+      },
+      {
+        "path": "/eval/answer-completeness-v25/coverage.mjs",
+        "sha256": "bb47df7c5bfce57776712f792912d24909b3879da4805ec38acac27190c71a8e"
+      },
+      {
+        "path": "/eval/answer-completeness-v26/coverage.mjs",
+        "sha256": "b37cb0963d9772135e31d94556b848cf06608908003c5d9066df05f32ce9bff9"
+      },
+      {
+        "path": "/eval/answer-completeness-v27/coverage.mjs",
+        "sha256": "2b8102f32bf97553b88ab01c691b4c04390505ef6c624add24a3766e2b6a3d6e"
+      },
+      {
+        "path": "/eval/answer-completeness-v28/coverage.mjs",
+        "sha256": "f2ab295ca35be510d2c3595ccd70e1e48780152e8ba5e2faa05f1db3316fdf41"
+      },
+      {
+        "path": "/eval/answer-completeness-v29/coverage.mjs",
+        "sha256": "444259997b2995fb211255d8dcb51103addd1c1e194fcf5b717c401e14363258"
+      },
+      {
+        "path": "/eval/answer-completeness-v3/coverage.mjs",
+        "sha256": "3f0b06de128fc13f5a3637e50da8c3c2d5661bf542f73e33bcc0d8a76c7ce5e2"
+      },
+      {
+        "path": "/eval/answer-completeness-v30/coverage.mjs",
+        "sha256": "b05b9c3065192b712f05956ea99748344127b8d4e45d435d254cb8491cdbd446"
+      },
+      {
+        "path": "/eval/answer-completeness-v31/coverage.mjs",
+        "sha256": "e2dc91e814f8e87afe513cf518e1b331d0733c7fd348f23c45bfb0ebc7762723"
+      },
+      {
+        "path": "/eval/answer-completeness-v32/coverage.mjs",
+        "sha256": "c00f09462b0a6cc9165f8c60c5011614d91237f31990b793ea6fae1b14bb80f4"
+      },
+      {
+        "path": "/eval/answer-completeness-v33/coverage.mjs",
+        "sha256": "dacd4d33a6d1a85f3b81c32fcb4ff3b4c6028dda5017d44c99e7135f6d16d90c"
+      },
+      {
+        "path": "/eval/answer-completeness-v34/coverage.mjs",
+        "sha256": "784cbaff767d46662c552962375ce3c03591a5bf775cd4229f015d93c8235819"
+      },
+      {
+        "path": "/eval/answer-completeness-v35/coverage.mjs",
+        "sha256": "5b1bc83e25c00e57caed596f5a21e63207210fd4ba317a7cc8a6691fe22aa296"
+      },
+      {
+        "path": "/eval/answer-completeness-v36/coverage.mjs",
+        "sha256": "03cc94d2a4bc89622d4f96b5d1f24dcfbcae189eb14903ea5198cf019bd14f39"
+      },
+      {
+        "path": "/eval/answer-completeness-v37/coverage.mjs",
+        "sha256": "5bd3edd9c13b895289801eeb3df35fefeababbcc6df33c21a77c2c8913fe6cc9"
+      },
+      {
+        "path": "/eval/answer-completeness-v38/coverage.mjs",
+        "sha256": "98fc377e59420d662f1a940ea75726870ac987364a97d5d8236e238c6a828baf"
+      },
+      {
+        "path": "/eval/answer-completeness-v4/coverage.mjs",
+        "sha256": "0982a0f7b73aa6c10d47c1b393d4c54316687bb95fba7aef97aebc0d2170ff01"
+      },
+      {
+        "path": "/eval/answer-completeness-v5/coverage.mjs",
+        "sha256": "654e2e766b846f9f39603b681037f8b0a7b2e93003172b0a8fcecb211bbc14ae"
+      },
+      {
+        "path": "/eval/answer-completeness-v6/coverage.mjs",
+        "sha256": "c6ab3885abdb67c0a433f09bffe16ec7667c59ff732cdfef60e70623d887a49f"
+      },
+      {
+        "path": "/eval/answer-completeness-v7/coverage.mjs",
+        "sha256": "ac373a55484defb362b8cf4b48ae3cd306ccd72eec7b1f68c53469d98865b70f"
+      },
+      {
+        "path": "/eval/answer-completeness-v8/coverage.mjs",
+        "sha256": "4741632341b16e2a4ddd7513412e369cc7a40f71d1222deac7b6adfa695b1930"
+      },
+      {
+        "path": "/eval/answer-completeness-v9/coverage.mjs",
+        "sha256": "98911771a58ef25429bc090be54a3e2739cc7079c55780e8ae57f9ef6027d6ec"
+      },
+      {
+        "path": "/eval/answer-completeness/coverage.mjs",
+        "sha256": "6af7a6fbf339facbaf14ce1595f2b603086bedf68121fc6c79a09f2204aeac59"
+      },
+      {
+        "path": "/eval/answer-completeness-v39/clock-contract.mjs",
+        "sha256": "4bb1bed7fa88b77e2f08af0225f1aba2b5da785a7ba198218c17b0f68932e6c5"
+      },
+      {
+        "path": "/retrieval.mjs",
+        "sha256": "a1970ed9cd09e7bdde177492332ea758161ff4d0b3d8fcac8fd9c822924fa2f7"
+      },
+      {
+        "path": "/hybrid.mjs",
+        "sha256": "dc758bed27215e3af4420ad3645c1adfd206bbf0d52ab55624773d1a9013db72"
+      },
+      {
+        "path": "/semantic.mjs",
+        "sha256": "2a1fd8605594f3659ba862ded534a86cba6728cc4ba58edb6054e93d6f7f7b49"
+      },
+      {
+        "path": "/research.mjs",
+        "sha256": "33e9c2aca7c33762be2a4318adf06a90d30111319b37d14dde23212f3d201c07"
+      },
+      {
+        "path": "/eval/retrieval-quality/section-index.mjs",
+        "sha256": "c079596ec37be33b81111acda5075d91c28195c38dfaeeae81026a5564dbe940"
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "Prism32",
+      "files": [
+        {
+          "name": "01_Liraven_Planetarium.txt",
+          "path": "eval/v36-fresh-confirmation/source_docs/01_Liraven_Planetarium.txt",
+          "sha256": "213860cc493d77a40a50b1d78ebdcded62c4f797027ddcd826969745d1adb9d9"
+        },
+        {
+          "name": "02_Osvik_Puppet_Theatre.txt",
+          "path": "eval/v36-fresh-confirmation/source_docs/02_Osvik_Puppet_Theatre.txt",
+          "sha256": "7ecd2c2d5805aa1aade87d9a7a684a9cc744a7a9ce6584005ba0ce4cf55b325e"
+        },
+        {
+          "name": "03_Tavren_Ferry_Workshop.txt",
+          "path": "eval/v36-fresh-confirmation/source_docs/03_Tavren_Ferry_Workshop.txt",
+          "sha256": "009c2b55a2d38200a3f51723181617eefa409f61730fb8b1286e7f39046ce447"
+        },
+        {
+          "name": "04_Yalara_Grain_Exchange.txt",
+          "path": "eval/v36-fresh-confirmation/source_docs/04_Yalara_Grain_Exchange.txt",
+          "sha256": "22da6d53a1b9a94dc0d71a138fb673126cf486180015672f7acee4e5a2e19134"
+        }
+      ],
+      "cases": [
+        {
+          "id": "P01",
+          "question": "In what year did public dome shows begin at Liraven Planetarium?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Liraven_Planetarium.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Liraven_Planetarium.txt",
+              "context": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+              "groups": [
+                [
+                  "began public dome shows in 1967"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P02",
+          "question": "What year was the second projector lens renewal at Liraven Planetarium completed?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Liraven_Planetarium.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Liraven_Planetarium.txt",
+              "context": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+              "groups": [
+                [
+                  "second projector lens renewal was completed in 2015"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P03",
+          "question": "Who must approve in writing a Yalara Grain Exchange purchase above 7400 credits?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Yalara_Grain_Exchange.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Yalara_Grain_Exchange.txt",
+              "context": "GX-03. Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.",
+              "groups": [
+                [
+                  "written approval from the Budget Steward and Exchange Supervisor"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P04",
+          "question": "A Liraven Planetarium dispatch request is cleared exactly at 16:20. When does it leave, and what hold can prevent departure?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Liraven_Planetarium.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Liraven_Planetarium.txt",
+              "context": "D-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.",
+              "groups": [
+                [
+                  "At 16:20 or later, departure is the next service day"
+                ],
+                [
+                  "unless an optical-safety hold is open"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P05",
+          "question": "How many projector filters does Eris check per morning?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Liraven_Planetarium.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Liraven_Planetarium.txt",
+              "context": "D-02. Eris checks five projector filters per morning. Nalo checks three door hinges per morning. Eris labels two transport cases per week.",
+              "groups": [
+                [
+                  "Eris checks five projector filters per morning"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P06",
+          "question": "When was the Osvik Puppet Theatre rehearsal room restoration completed?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Osvik_Puppet_Theatre.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Osvik_Puppet_Theatre.txt",
+              "context": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+              "groups": [
+                [
+                  "Its restoration was completed in 1986"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P07",
+          "question": "How long are Osvik Puppet Theatre signed touring records kept, including the exception for an unresolved ownership claim?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Osvik_Puppet_Theatre.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Osvik_Puppet_Theatre.txt",
+              "context": "T-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.",
+              "groups": [
+                [
+                  "5 years"
+                ],
+                [
+                  "An unresolved ownership claim extends retention of the affected records until the claim is settled"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P08",
+          "question": "What is the absolute minimum winter temperature in the Osvik Puppet Theatre prop store?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Osvik_Puppet_Theatre.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Osvik_Puppet_Theatre.txt",
+              "context": "T-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.",
+              "groups": [
+                [
+                  "absolute minimum winter temperature is 1 degree Celsius"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P09",
+          "question": "Give the highest monthly mean temperature in the Osvik Puppet Theatre prop store and the month it occurs.",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Osvik_Puppet_Theatre.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Osvik_Puppet_Theatre.txt",
+              "context": "T-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.",
+              "groups": [
+                [
+                  "highest monthly mean temperature is 27 degrees Celsius in September"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P10",
+          "question": "Which documents belong in the Osvik Puppet Theatre touring packet?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Osvik_Puppet_Theatre.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Osvik_Puppet_Theatre.txt",
+              "context": "T-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record",
+              "groups": [
+                [
+                  "puppet inventory"
+                ],
+                [
+                  "condition sheet"
+                ],
+                [
+                  "transport permit"
+                ],
+                [
+                  "return record"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P11",
+          "question": "When was the Tavren Ferry Workshop cable tower rebuilt?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Tavren_Ferry_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Tavren_Ferry_Workshop.txt",
+              "context": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+              "groups": [
+                [
+                  "cable tower was rebuilt in 1994"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P12",
+          "question": "What is the highest recorded daily temperature at Tavren Ferry Workshop?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Tavren_Ferry_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Tavren_Ferry_Workshop.txt",
+              "context": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+              "groups": [
+                [
+                  "highest recorded daily temperature is 38 degrees Celsius"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P13",
+          "question": "How many cable-tension readings does Varen record per shift?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Tavren_Ferry_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Tavren_Ferry_Workshop.txt",
+              "context": "Varen records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.",
+              "groups": [
+                [
+                  "Varen records seven cable-tension readings per shift"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P14",
+          "question": "Give the Tavren Ferry Workshop loading winch lubrication intervals under normal and salt-spray conditions, together with its inspection interval.",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Tavren_Ferry_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Tavren_Ferry_Workshop.txt",
+              "context": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.",
+              "groups": [
+                [
+                  "90 operating hours under normal conditions"
+                ],
+                [
+                  "In a salt-spray shelter, lubricate it every 45 operating hours"
+                ],
+                [
+                  "Inspect the loading winch every 15 operating hours regardless of shelter"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P15",
+          "question": "How soon is a Yalara Grain Exchange loading request acknowledged, and does acknowledgement guarantee a loading slot?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Yalara_Grain_Exchange.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Yalara_Grain_Exchange.txt",
+              "context": "GX-01. A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+              "groups": [
+                [
+                  "within six working hours"
+                ],
+                [
+                  "does not guarantee a loading slot"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P16",
+          "question": "List every item in the Yalara Grain Exchange dispatch packet.",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Yalara_Grain_Exchange.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Yalara_Grain_Exchange.txt",
+              "context": "GX-02. The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+              "groups": [
+                [
+                  "weighing slip"
+                ],
+                [
+                  "batch register"
+                ],
+                [
+                  "moisture checklist"
+                ],
+                [
+                  "loading permit"
+                ],
+                [
+                  "release receipt"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P17",
+          "question": "How long are Yalara Grain Exchange completed loading records kept, and what dispute can extend that time?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "04_Yalara_Grain_Exchange.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "04_Yalara_Grain_Exchange.txt",
+              "context": "GX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.",
+              "groups": [
+                [
+                  "8 months"
+                ],
+                [
+                  "unless an unresolved weighing dispute requires longer retention"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P18",
+          "question": "What is the winter average temperature in the Osvik Puppet Theatre prop store?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Osvik_Puppet_Theatre.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Osvik_Puppet_Theatre.txt",
+              "context": "T-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.",
+              "groups": [
+                [
+                  "winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P19",
+          "question": "Which month has the highest monthly mean temperature at Tavren Ferry Workshop, and what is that mean?",
+          "workflow": "hybrid",
+          "category": "supported",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Tavren_Ferry_Workshop.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Tavren_Ferry_Workshop.txt",
+              "context": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+              "groups": [
+                [
+                  "highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P20",
+          "question": "In what year did public dome shows begin at Liraven Planetarium? Also, when was the Osvik Puppet Theatre rehearsal room restoration completed?",
+          "workflow": "hybrid",
+          "category": "compound",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Liraven_Planetarium.txt",
+            "02_Osvik_Puppet_Theatre.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Liraven_Planetarium.txt",
+              "context": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+              "groups": [
+                [
+                  "began public dome shows in 1967"
+                ]
+              ]
+            },
+            {
+              "filename": "02_Osvik_Puppet_Theatre.txt",
+              "context": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+              "groups": [
+                [
+                  "Its restoration was completed in 1986"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P21",
+          "question": "When was the Liraven Planetarium projector lens renewed?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Two completed lens renewals1992 and2015; strict uncited refusal or ambiguity clarification required."
+        },
+        {
+          "id": "P22",
+          "question": "What year did the Osvik Puppet Theatre prop annex close?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Rejected2017 plan; no completed closure date. Literal negative evidence still fails strict uncited refusal criterion."
+        },
+        {
+          "id": "P23",
+          "question": "When was the Tavren Ferry Workshop ramp shelter rebuilt?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Cable tower rebuilt1994, ramp shelter repainted2012; no ramp-shelter rebuild date."
+        },
+        {
+          "id": "P24",
+          "question": "How many door hinges does Eris check per morning?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Nalo checks hinges; Eris checks projector filters and labels cases. Requested actor/action/object absent."
+        },
+        {
+          "id": "P25",
+          "question": "What is the bank account number of Yalara Grain Exchange?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "No bank account number provided."
+        },
+        {
+          "id": "P26",
+          "question": "What exact torque in newton-metres is specified for Tavren Ferry Workshop winch bolts?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "No winch-bolt torque specification."
+        },
+        {
+          "id": "P27",
+          "question": "What is the absolute minimum winter temperature in the Liraven Planetarium dome store?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Only monthly means5–7 provided, not an absolute minimum; do not borrow theatre statistic."
+        },
+        {
+          "id": "P28",
+          "question": "What is the highest monthly mean temperature at Neskar Mirror Depot?",
+          "workflow": "hybrid",
+          "category": "unsupported",
+          "unsupported": true,
+          "expected_documents": [],
+          "expected_sources": [],
+          "scoring_notes": "Entity absent from every source."
+        },
+        {
+          "id": "P29",
+          "question": "Compare movement-slip retention at Liraven Planetarium and signed-touring-record retention at Osvik Puppet Theatre, including both hold and claim exceptions.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Liraven_Planetarium.txt",
+            "02_Osvik_Puppet_Theatre.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Liraven_Planetarium.txt",
+              "context": "D-04. Keep movement slips for 19 months. While an export-review hold is open, retain the affected slips until the hold is released.",
+              "groups": [
+                [
+                  "19 months"
+                ],
+                [
+                  "While an export-review hold is open, retain the affected slips until the hold is released"
+                ]
+              ]
+            },
+            {
+              "filename": "02_Osvik_Puppet_Theatre.txt",
+              "context": "T-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.",
+              "groups": [
+                [
+                  "5 years"
+                ],
+                [
+                  "An unresolved ownership claim extends retention of the affected records until the claim is settled"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P30",
+          "question": "Compare normal and exception lubrication or greasing plus inspection intervals for the Tavren Ferry Workshop salt-spray loading winch and Yalara Grain Exchange dust-heavy conveyor.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "03_Tavren_Ferry_Workshop.txt",
+            "04_Yalara_Grain_Exchange.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "03_Tavren_Ferry_Workshop.txt",
+              "context": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.",
+              "groups": [
+                [
+                  "90 operating hours under normal conditions"
+                ],
+                [
+                  "In a salt-spray shelter, lubricate it every 45 operating hours"
+                ],
+                [
+                  "Inspect the loading winch every 15 operating hours regardless of shelter"
+                ]
+              ]
+            },
+            {
+              "filename": "04_Yalara_Grain_Exchange.txt",
+              "context": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+              "groups": [
+                [
+                  "132 service hours under normal conditions"
+                ],
+                [
+                  "In a dust-heavy bay, grease it every 66 service hours"
+                ],
+                [
+                  "Inspect the conveyor every 33 service hours in either bay"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P31",
+          "question": "Compare acknowledgement deadlines and their limits for Liraven Planetarium dome-booking requests and Yalara Grain Exchange loading requests.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "01_Liraven_Planetarium.txt",
+            "04_Yalara_Grain_Exchange.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "01_Liraven_Planetarium.txt",
+              "context": "D-05. Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available.",
+              "groups": [
+                [
+                  "within two business days"
+                ],
+                [
+                  "not a guarantee that seats remain available"
+                ]
+              ]
+            },
+            {
+              "filename": "04_Yalara_Grain_Exchange.txt",
+              "context": "GX-01. A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.",
+              "groups": [
+                [
+                  "within six working hours"
+                ],
+                [
+                  "does not guarantee a loading slot"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P32",
+          "question": "Compare all contents of the Osvik Puppet Theatre touring packet and Yalara Grain Exchange dispatch packet.",
+          "workflow": "comparison",
+          "category": "comparison",
+          "unsupported": false,
+          "expected_documents": [
+            "02_Osvik_Puppet_Theatre.txt",
+            "04_Yalara_Grain_Exchange.txt"
+          ],
+          "expected_sources": [
+            {
+              "filename": "02_Osvik_Puppet_Theatre.txt",
+              "context": "T-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record",
+              "groups": [
+                [
+                  "puppet inventory"
+                ],
+                [
+                  "condition sheet"
+                ],
+                [
+                  "transport permit"
+                ],
+                [
+                  "return record"
+                ]
+              ]
+            },
+            {
+              "filename": "04_Yalara_Grain_Exchange.txt",
+              "context": "GX-02. The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+              "groups": [
+                [
+                  "weighing slip"
+                ],
+                [
+                  "batch register"
+                ],
+                [
+                  "moisture checklist"
+                ],
+                [
+                  "loading permit"
+                ],
+                [
+                  "release receipt"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "integrity": "Original frozen Prism32 bytes and criteria; exposed partial regression. Relative paths only; original 103-case gap remains."
+    }
+  ]
+}
