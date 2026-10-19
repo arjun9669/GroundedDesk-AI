@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-19 — Shared main-branch development workflow
+
+- Record the user's standing Mac/Windows workflow in `AGENTS.md`: preserve functionality, work on existing `main`, test and review, commit successful changes, push directly to `origin/main`, and verify GitHub receipt.
+- Update project status and synchronization instructions after setup PR #111 merged. Preserve historical branches and require user input for conflicts or failing checks; never force-push.
+- Distinguish local edits/commits from publication, preserve the approved author identity, and report authentication or permission blockers explicitly. Application and experimental evaluation behavior are unchanged.
+
 ## 2026-10-19 — Mac development handoff and local setup
 
 - Establish the Mac working branch from reviewed upstream commit `2c6457c6` and add `PROJECT_STATUS.md` for current progress, decisions, blockers and verification scope.

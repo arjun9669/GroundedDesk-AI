@@ -136,50 +136,84 @@ connected GitHub account. Before terminal pushes, sign in through a Git credenti
 manager or GitHub CLI (`gh auth login`, then `gh auth setup-git` if GitHub CLI is
 installed). Do not put access tokens in remote URLs or committed files.
 
+Use the existing **`main`** branch on both machines. The initial Mac setup branch
+was merged through PR #111; it is retained as history, not the active workflow.
+Standing agent instructions are in [AGENTS.md](../AGENTS.md).
+
 Before first synchronizing Windows, inspect its current branch and local changes.
 Commit wanted work on its existing branch or preserve it separately before
-switching. The new Mac branch does not prove Windows has no unpublished work.
-If Windows already has a different `mac-work-oct2026`, compare it with GitHub
-before setting tracking or pulling; do not overwrite it.
+switching. Do not overwrite an existing divergent `main` or unpublished work.
 
-For an existing checkout where the intended branch is not yet local:
+At the start of every task, inspect the working tree first. If it contains work,
+preserve and account for that work before switching branches or pulling. With a
+clean working tree:
 
 ```sh
 git status --short --branch
-git fetch origin
-git switch --track origin/mac-work-oct2026
+git fetch origin main
+git switch main
+git pull --ff-only origin main
 ```
 
-At the start of a session on either machine, with a clean working tree:
+If an existing checkout has no local `main` yet, create its tracking checkout
+with `git switch --track origin/main`, then use the same workflow. Do not create
+a new feature branch for routine tasks.
 
-```sh
-git switch mac-work-oct2026
-git pull --ff-only
-```
+Implement the requested change while preserving existing functionality. Run the
+relevant checks from this guide. **If a required test fails, stop and ask the
+user before proceeding.** Do not silently retry, alter grading or commit failures.
 
-After work, update `PROJECT_STATUS.md`, review the diff, stage intended paths,
-commit and push:
+Update `PROJECT_STATUS.md`, then review the changes for errors, regressions,
+credentials, sensitive document content and unintended files:
 
 ```sh
 git diff --check
 git diff
 git status --short
-git add PROJECT_STATUS.md
-# Also stage each intended source/documentation path explicitly.
-git commit -m "Describe the completed change"
-git push
 ```
 
-Pull on the other machine before continuing. A failed fast-forward means the
-histories need review; preserve both sets of commits and resolve deliberately.
-Do not force-push or reset away existing work. Configure author identity locally
-per checkout with `git config --local user.name` and `user.email` as needed.
+Stage the intended paths explicitly, review the staged diff, commit successful
+changes using the approved identity, and push directly to `origin/main`:
+
+```sh
+git add PROJECT_STATUS.md
+# Also stage each intended source/documentation path explicitly.
+git diff --cached --check
+git diff --cached
+git commit -m "Describe the completed change"
+git push origin main
+```
+
+**Verify upload; an edited file or local commit is not synchronization.** Compare
+the local commit SHA with the SHA returned for GitHub's `refs/heads/main`:
+
+```sh
+git rev-parse HEAD
+git ls-remote --heads origin main
+```
+
+They should match immediately after a successful push. If another machine has
+advanced `main` in the meantime, fetch and inspect the remote history to confirm
+the published commit is an ancestor; do not overwrite the newer commit.
+
+Pull on the other machine before continuing, and avoid simultaneous editing of
+the same work on both machines. A rejected push or failed fast-forward requires
+history inspection. **Ask the user before resolving conflicts. Never force-push,
+reset away work or overwrite another machine's changes.** If authentication or
+permissions prevent pushing, retain the local commit and explicitly report that
+GitHub has not received it. Do not replace the approved commit identity with a
+connector's account-default identity without permission.
+
+Configure author identity locally per checkout with `git config --local user.name`
+and `user.email` as needed. Historical branches need not be deleted.
 
 Preserve `.gitattributes` and frozen evidence bytes. Review `git config --get
 core.autocrlf` on Windows before changing newline behavior. Current attributes
 do not explicitly protect every newer frozen pack; do not run bulk normalization
 or resave evidence to make a hash mismatch disappear.
 
-CI runs on pull requests and pushes to `main`; a work-branch push alone does not
-trigger the existing push workflow. Pages deploys only after successful main CI.
-Use a pull request for integration and verify its checks before merging.
+Every direct push to `main` triggers the existing CI workflow. Pages deploys only
+after successful main CI. Confirm receipt separately from CI/deployment completion;
+do not claim checks passed while they are still running. If CI fails, stop and ask
+before further changes. A pull request is not required for the user's current
+direct-to-main workflow.

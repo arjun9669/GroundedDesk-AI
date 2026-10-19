@@ -10,18 +10,18 @@ original reports; link them here instead of rewriting or rescoring them.
 | Item | Current state |
 | --- | --- |
 | Repository | https://github.com/arjun9669/GroundedDesk-AI |
-| Mac working branch | `mac-work-oct2026` |
+| Shared development branch | `main` required on both machines; Mac tracks `origin/main` |
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v38; not adopted |
 | Release decision | Integration **STOPPED / HOLD** after Vela32 confirmation FAIL |
 | Setup changes | Documentation, Node version guidance and a local development server; application and evaluation code unchanged |
 
-The Mac folder was initially an empty Git repository. It is now connected to
-`origin`, and the working branch starts at the reviewed upstream baseline. No
-remote `mac-work-oct2026` branch existed when checked on October 19. This does
-not establish whether a separate local Windows branch or uncommitted work exists.
-Preserve and reconcile that work before merging divergent histories.
+The Mac folder was initially an empty Git repository. The initial setup commit
+`a883e28` was published on `mac-work-oct2026` and merged into `main` through PR
+#111 (`a47780e`). The Mac checkout now uses the existing shared `main` branch.
+Historical branches remain preserved. This does not establish whether Windows
+has unpublished local work; inspect and preserve it before switching branches.
 
 ## Architecture and delivered functionality
 
@@ -53,7 +53,8 @@ syntax do not establish factual support, completeness or compliance.
   explicit local snapshots and document readiness. Current live baseline is r44.
 - **October 13–18:** isolated retrieval experiments and frozen regression/fresh
   confirmation studies. Experimental versions are not application releases.
-- **October 19:** Mac checkout, cross-platform handoff and setup documentation.
+- **October 19:** Mac checkout, cross-platform handoff and setup documentation;
+  setup merged through PR #111, followed by the user's direct-to-main workflow.
 
 Mac command-line Git can fetch the public repository but currently has no HTTPS
 push credentials. Setup publication uses the connected GitHub account. Configure
@@ -100,6 +101,12 @@ evaluation. The new server passed three consecutive clean Chrome startups with
 all three samples, the unchanged r44 footer and no failed requests or page errors.
 Python syntax, documentation links and `git diff --check` also passed.
 
+The direct-to-main workflow documentation update was checked on upstream
+`a47780e` with the same bundled Node 24.19.0 runtime: all 573 unit tests and the
+strict 28-case Keyword evaluation passed. Documentation links and diff whitespace
+checks passed; the intended documentation diff was reviewed for errors and
+sensitive information. No application or evaluation code changed.
+
 ## Current retrieval blocker
 
 The [v38 regression report](docs/COVERAGE_V38_R44_VALIDATION.md) records a native
@@ -145,14 +152,20 @@ setup change. See the [release decision](docs/evidence/coverage-v38-r44/release-
 1. **Approved October 19:** connect the Mac checkout to GitHub, establish the
    requested branch and add this handoff plus cross-platform development guidance.
    Use the user's approved GitHub noreply identity for repository-local commits.
-2. Preserve live 5.6/r44, existing functionality, frozen inputs, native rubrics,
+2. **Updated October 19:** use existing `main` for every development task on both
+   machines. Preserve functionality, implement the request, run relevant tests,
+   review the diff for errors and sensitive information, commit, push directly to
+   `origin/main`, and verify the remote commit. File edits alone are not uploaded.
+   Never force-push or overwrite conflicts. Ask before proceeding with merge
+   conflicts or failing checks. [AGENTS.md](AGENTS.md) records these instructions.
+3. Preserve live 5.6/r44, existing functionality, frozen inputs, native rubrics,
    original first scores, failures, blockers and reporting errata.
-3. Reconcile any unpublished Windows work before integrating divergent changes.
+4. Reconcile any unpublished Windows work before integrating divergent changes.
    Use [the synchronization workflow](docs/DEVELOPMENT.md#synchronize-mac-and-windows).
-4. Next proposed engineering task: design the end-to-end refusal/facet contract,
+5. Next proposed engineering task: design the end-to-end refusal/facet contract,
    then freeze a separately reviewed candidate and regression protocol before
    actual-model evaluation. Vela32's first failure remains unchanged.
-5. Require exposed-regression preservation and separate prospective confirmation
+6. Require exposed-regression preservation and separate prospective confirmation
    before integration review. Then qualify navigation/export, memory, performance
    and target browsers. Passing unit tests alone does not authorize adoption.
 
