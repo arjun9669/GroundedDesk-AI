@@ -1,0 +1,1010 @@
+{
+  "classification": "Input identity inventory only; no new answers or model-quality result",
+  "observed_utc": "2026-10-19T21:48:26.344421+00:00",
+  "repository_head": "7d758200b75ff3f38c841ec07923a7008a0271b7",
+  "history_references": [
+    {
+      "path": "docs/evidence/coverage-v38-r44/ALL_SCORECARDS.json",
+      "sha256": "da3f82146b32b7eb24aa20d9a025fef25211989b703049129704c9d8a71a1188"
+    },
+    {
+      "path": "docs/evidence/vela32-v38/automated-scorecard.json",
+      "sha256": "cf2912f440da638ba378f3b8afc2609cff3edd933bf235ceea30ef20b2058f94"
+    }
+  ],
+  "summary": {
+    "verified_packs": 19,
+    "verified_input_cases": 668,
+    "already_v39_model_tested": 32,
+    "additional_input_cases_not_v39_model_tested": 636,
+    "unavailable_packs": 4,
+    "unavailable_input_cases": 103,
+    "original_combined_739_config": "UNAVAILABLE; this inventory is not its reconstruction",
+    "full_771_gate": "NOT RUN",
+    "adoption": "HOLD"
+  },
+  "available": [
+    {
+      "name": "Cobalt16",
+      "questions": 16,
+      "hybrid": 12,
+      "lexical_comparison": 4,
+      "source_documents": 3,
+      "key": "docs/evidence/r29/cobalt16/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "docs/evidence/r29/cobalt16/freeze-manifest.json",
+        "sha256": "d4f545aa9ca69f8de564729de6f003741ad046304dd70a69089c10015ac86639"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "docs/evidence/r29/cobalt16/source_docs/01_Cobalt_Planetarium.txt",
+          "sha256": "21c7f3a2bff9c58bfa2fd92df204120dcb7eec930cf2884ab28616bcbd0685d6"
+        },
+        {
+          "path": "docs/evidence/r29/cobalt16/source_docs/02_Cobalt_Gallery.txt",
+          "sha256": "f6cfdd69802bf1c50a8292d9c6d19974be4143b1e995b66e796c3c1812ed778f"
+        },
+        {
+          "path": "docs/evidence/r29/cobalt16/source_docs/03_Cobalt_Seed_Library.txt",
+          "sha256": "ca25bc1308bccd4a5e2471ab5afc9361812030d6036a6a7dc33c7aca4bfd88dc"
+        },
+        {
+          "path": "docs/evidence/r29/cobalt16/fixed-answer-key.json",
+          "sha256": "632caa3614a0b2166feef802e3f4930e925e23c018e5b2c9b306fcc5199b7af7"
+        },
+        {
+          "path": "docs/evidence/r29/cobalt16/FROZEN_RUBRIC.md",
+          "sha256": "c69d9377e596b476611de86f05d04ccf6bff92a3e2c4c1348ed48ae8c4d41bb1"
+        }
+      ],
+      "scoring_family": "historical_manual",
+      "native_scoring_references": [
+        {
+          "path": "eval/answer-completeness-v38/score.mjs",
+          "sha256": "fea56fd89cf2d1baef5b6f2440d5e0d834866cabbd948e1bbf51b36a4c69f23d"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "RetrievalQuality28",
+      "questions": 28,
+      "hybrid": 28,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "key": "eval/retrieval-quality/fixed-cases.json",
+      "original_freeze": {
+        "path": "eval/retrieval-quality/freeze-manifest.json",
+        "sha256": "1a0e0faa77debb2a9e95ee9c9e95aebcccee03b1c6dcad465b4443c1604aa736"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/retrieval-quality/fixed-cases.json",
+          "sha256": "4a098c471edb16c38119fb2b622330a1ed2993dbd55b1f0dd8d690f07315351f"
+        },
+        {
+          "path": "eval/retrieval-quality/PROTOCOL.md",
+          "sha256": "6026f1e2f823eab709dd1916d308732fadc0cc1d45fb92a9ebfc721fd2d40173"
+        },
+        {
+          "path": "eval/retrieval-quality/source_docs/01_Orchard_Depot_Current.md",
+          "sha256": "153f90273983948a83f71875e3ee9c522f1bc0cb64b8de0c8b0e0f1db80e924f"
+        },
+        {
+          "path": "eval/retrieval-quality/source_docs/02_Orchard_Depot_Archived.md",
+          "sha256": "610842b7c5cd2a603393ad187f341e0c55a98acd190114441cb433051f40d708"
+        },
+        {
+          "path": "eval/retrieval-quality/source_docs/03_Hilltop_Equipment.md",
+          "sha256": "51ccba7e8ff96839f0487f0136144f13511f67b345d54facc825c9304f0e3d99"
+        },
+        {
+          "path": "eval/retrieval-quality/source_docs/04_Lakeside_Purchasing.md",
+          "sha256": "bcecba2338d023cd4923c665219d28d5c448c6f5b7661a6fcebdc6e284f384d3"
+        }
+      ],
+      "scoring_family": "exact_sentence",
+      "native_scoring_references": [
+        {
+          "path": "eval/retrieval-quality/grade.mjs",
+          "sha256": "ccfaf4767cdbb5a3f49d6aee982c7957cf26bc74b62ec19d112888b760bc865e"
+        },
+        {
+          "path": "eval/retrieval-quality/PROTOCOL.md",
+          "sha256": "6026f1e2f823eab709dd1916d308732fadc0cc1d45fb92a9ebfc721fd2d40173"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "ExternalSQuAD24",
+      "questions": 24,
+      "hybrid": 24,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "key": "eval/answer-completeness-v2/external24/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/answer-completeness-v2/external24/freeze-manifest.json",
+        "sha256": "70710eb0a4d9bd5f9cf8da0660901334bb79d75fcac7c78ce9d16e2606be3538"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/answer-completeness-v2/external24/source_docs/01_Warsaw.md",
+          "sha256": "2d7c37b43d27d43dbf3d3b0ae26b842de2ef6916b0c9f1f9f80332628a23a92e"
+        },
+        {
+          "path": "eval/answer-completeness-v2/external24/source_docs/02_Victoria_and_Albert_Museum.md",
+          "sha256": "b077197b55ef47bdde3423b25284004be288ef4b4d8e897c24691d315f9c2143"
+        },
+        {
+          "path": "eval/answer-completeness-v2/external24/source_docs/03_Force.md",
+          "sha256": "cc29737b49bd99aebebac06ef6d396d403ad35c6c5c9964f4cad05c00ff6e609"
+        },
+        {
+          "path": "eval/answer-completeness-v2/external24/source_docs/04_Oxygen.md",
+          "sha256": "08abcd9c70d20bd132c7441e7d582c20b78a7a3bb984b4a1e9282b37ea643c9d"
+        },
+        {
+          "path": "eval/answer-completeness-v2/external24/fixed-answer-key.json",
+          "sha256": "0d786929dce2240b82cf48e779a85df11367850b5e850c9b48d496311c9430c4"
+        },
+        {
+          "path": "eval/answer-completeness-v2/external24/ATTRIBUTION.md",
+          "sha256": "bc1c8510a4b6795576ac0bf2f37901ffb57e5fb46d9e94820f0e7bb45996e177"
+        }
+      ],
+      "scoring_family": "gold_span",
+      "native_scoring_references": [
+        {
+          "path": "eval/answer-completeness-v38/score.mjs",
+          "sha256": "fea56fd89cf2d1baef5b6f2440d5e0d834866cabbd948e1bbf51b36a4c69f23d"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "FreshMixed32",
+      "questions": 32,
+      "hybrid": 32,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "key": "eval/answer-completeness-v3/fresh32/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/answer-completeness-v3/fresh32/freeze-manifest.json",
+        "sha256": "c4b3855dc9d89cffcd20a5b3b9fba07fc81b050a644410ffe5b04a8fdc4068bd"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/answer-completeness-v3/fresh32/source_docs/01_Yuan_dynasty.md",
+          "sha256": "101417931e36b7c8a330008152a43c8ef08e5830772d59f3abb3a7da1818edbe"
+        },
+        {
+          "path": "eval/answer-completeness-v3/fresh32/source_docs/02_1973_oil_crisis.md",
+          "sha256": "1bbf4720bca3c31f966ca66645f6cc7834e27f521d3acf7abe98198e0240af6c"
+        },
+        {
+          "path": "eval/answer-completeness-v3/fresh32/source_docs/03_Steam_engine.md",
+          "sha256": "6fba18ca008b258edcc072dfa000ab292fedbbc7ba8c919f4b23c5ccf0a30759"
+        },
+        {
+          "path": "eval/answer-completeness-v3/fresh32/source_docs/04_Construction.md",
+          "sha256": "ff8d704d4cfc9a77a45e9deeb8a450edf341e0e795e8af2f0098080dda62fc7f"
+        },
+        {
+          "path": "eval/answer-completeness-v3/fresh32/fixed-answer-key.json",
+          "sha256": "4e3e73a7b7f531b780fea05c22ebe94946b02a8d8e8c60ce83d147b27f600f72"
+        },
+        {
+          "path": "eval/answer-completeness-v3/fresh32/ATTRIBUTION.md",
+          "sha256": "1bfada97afae1cffa784103228300ee64363ee5285051de3e797e999b7258a23"
+        }
+      ],
+      "scoring_family": "gold_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/answer-completeness-v38/score.mjs",
+          "sha256": "fea56fd89cf2d1baef5b6f2440d5e0d834866cabbd948e1bbf51b36a4c69f23d"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "FreshConfirmation32",
+      "questions": 32,
+      "hybrid": 32,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "key": "eval/answer-completeness-v7/fresh32/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/answer-completeness-v7/fresh32/freeze-manifest.json",
+        "sha256": "a989ded4d4dee0151a8b0f470950292b7626c47e225dd8d86e3c3f075143f534"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/answer-completeness-v7/fresh32/source_docs/01_Doctor_Who.md",
+          "sha256": "755cf489b2a62fb08967d80268794790eee9038a48990ac47bd8a9ddff8a432e"
+        },
+        {
+          "path": "eval/answer-completeness-v7/fresh32/source_docs/02_Martin_Luther.md",
+          "sha256": "2ce0d759e022d2e86d00af558e01045009ed07aae29220518025fe8bba08d106"
+        },
+        {
+          "path": "eval/answer-completeness-v7/fresh32/source_docs/03_Computational_complexity_theory.md",
+          "sha256": "dc1349032a175a26b7e9b5e439c0705f7b60df24720cefa9d649d284590858c8"
+        },
+        {
+          "path": "eval/answer-completeness-v7/fresh32/source_docs/04_United_Methodist_Church.md",
+          "sha256": "a89d9a139545b428ba555636b1390001ce951e67ed606f9e02eaf9ca4cb678a8"
+        },
+        {
+          "path": "eval/answer-completeness-v7/fresh32/fixed-answer-key.json",
+          "sha256": "4c6ce2ff90f06df22132b02015a9352255ce636b7be998b4aab73f5386593348"
+        },
+        {
+          "path": "eval/answer-completeness-v7/fresh32/ATTRIBUTION.md",
+          "sha256": "a74199872cf38f8a18da9d552582641f14e77ea29a6e2c9b4554cfe979981b0d"
+        }
+      ],
+      "scoring_family": "gold_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/answer-completeness-v38/score.mjs",
+          "sha256": "fea56fd89cf2d1baef5b6f2440d5e0d834866cabbd948e1bbf51b36a4c69f23d"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "V9Exposed32",
+      "questions": 32,
+      "hybrid": 32,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "key": "eval/answer-completeness-v9/fresh32/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/answer-completeness-v9/fresh32/freeze-manifest.json",
+        "sha256": "0d61223476225a0e0ca8c6f0801f9bce1f5734ff4d90552622e9322dbbc90df5"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/answer-completeness-v9/fresh32/source_docs/01_Amazon_rainforest.md",
+          "sha256": "f317a6714a94512135adb93e189d7d8b7b9117c10fbbb55a2f72ee934c12159d"
+        },
+        {
+          "path": "eval/answer-completeness-v9/fresh32/source_docs/02_Kenya.md",
+          "sha256": "74d6b2845b50e21e2a74b9873a66bfd157779df7e2d540429a2d5c8623da3c04"
+        },
+        {
+          "path": "eval/answer-completeness-v9/fresh32/source_docs/03_Super_Bowl_50.md",
+          "sha256": "6b82bdc986ffaecbb5f6f0ca5e51531e7a6273301b43cf13a43a712bc041cb24"
+        },
+        {
+          "path": "eval/answer-completeness-v9/fresh32/source_docs/04_Civil_disobedience.md",
+          "sha256": "21649d1c959091cb7afe1927d92e394f687de384f2a5b87d7363ddf6ef0d81a2"
+        },
+        {
+          "path": "eval/answer-completeness-v9/fresh32/fixed-answer-key.json",
+          "sha256": "55e04bf6bd882cae23d2fcb6316317f29bb4981469574cb7e1747c40b4e24650"
+        },
+        {
+          "path": "eval/answer-completeness-v9/fresh32/ATTRIBUTION.md",
+          "sha256": "e8445197a6fc02a63973e74af81de27672c0a732e23248ec3c54fb17c887534e"
+        }
+      ],
+      "scoring_family": "gold_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/answer-completeness-v38/score.mjs",
+          "sha256": "fea56fd89cf2d1baef5b6f2440d5e0d834866cabbd948e1bbf51b36a4c69f23d"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Actor40",
+      "questions": 40,
+      "hybrid": 40,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "key": "eval/answer-completeness-v13/actor40/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/answer-completeness-v13/actor40/freeze-manifest.json",
+        "sha256": "45c0f34bf96099ec29097135d11e2a4c228ddce9f248d16a402c4cbed13718f2"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/answer-completeness-v13/actor40/source_docs/01_Harvard_University.md",
+          "sha256": "b8340ae236466b025578e73b433d18f7e9f371e9d60c07698fc5ed6113a70f5d"
+        },
+        {
+          "path": "eval/answer-completeness-v13/actor40/source_docs/02_Prime_number.md",
+          "sha256": "c17791735a665e5c124384c0efc8f313b11e9bb12052b4d951ff2cb27b037892"
+        },
+        {
+          "path": "eval/answer-completeness-v13/actor40/source_docs/03_Sky__United_Kingdom_.md",
+          "sha256": "2da1b4165b7e5cae3a811e835ce30f4f76fb1e71dee850a5b4f3bb9dcb31968d"
+        },
+        {
+          "path": "eval/answer-completeness-v13/actor40/source_docs/04_Chloroplast.md",
+          "sha256": "53c46a5f4498f3c32ec0a177ac62d74e248a80e057248188d3416a8f4b38d482"
+        },
+        {
+          "path": "eval/answer-completeness-v13/actor40/fixed-answer-key.json",
+          "sha256": "274cb425143890058c50e7d4c9928f82bbd72d88301f5eb870838f9e662a5fd9"
+        },
+        {
+          "path": "eval/answer-completeness-v13/actor40/ATTRIBUTION.md",
+          "sha256": "1b3c5bc18e56232ca88f757379e8e563bc957e83910e1d69553516f75c2a2fc4"
+        }
+      ],
+      "scoring_family": "gold_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/answer-completeness-v38/score.mjs",
+          "sha256": "fea56fd89cf2d1baef5b6f2440d5e0d834866cabbd948e1bbf51b36a4c69f23d"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Scope48",
+      "questions": 48,
+      "hybrid": 48,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "key": "eval/answer-completeness-v15/scope48/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/answer-completeness-v15/scope48/freeze-manifest.json",
+        "sha256": "39edeb441d1a9a5c018b4ee33662b9e39f0f236a0fbf44207debda57477f8f71"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/answer-completeness-v15/scope48/source_docs/01_University_of_Chicago.md",
+          "sha256": "a0132fffb414758be30f395d7d8841cfc851fd142f941b3e6d962222c709887c"
+        },
+        {
+          "path": "eval/answer-completeness-v15/scope48/source_docs/02_Islamism.md",
+          "sha256": "c25417549e5fc13bf3ae3531740366e5f31d87f0f1179dc733d564376a23823f"
+        },
+        {
+          "path": "eval/answer-completeness-v15/scope48/source_docs/03_European_Union_law.md",
+          "sha256": "668daf7239d7d82d9a1aaab50bd6b38a74adfbae3dbdc966ab5204e910fc3b62"
+        },
+        {
+          "path": "eval/answer-completeness-v15/scope48/source_docs/04_Normans.md",
+          "sha256": "a99ae53667d01a94975575d34f73c8174ef23e619f7fbe165039ee0e0528ee5c"
+        },
+        {
+          "path": "eval/answer-completeness-v15/scope48/fixed-answer-key.json",
+          "sha256": "3927e82cbfb7f91d2dbbeacd0842ebc03be917ecb3e1b31d29eae3351169c37d"
+        },
+        {
+          "path": "eval/answer-completeness-v15/scope48/ATTRIBUTION.md",
+          "sha256": "7d43f3e6e554e56e276b47897a5d202a4e6c8d1d694c4b3f8d3530c2d798ef00"
+        }
+      ],
+      "scoring_family": "gold_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/answer-completeness-v38/score.mjs",
+          "sha256": "fea56fd89cf2d1baef5b6f2440d5e0d834866cabbd948e1bbf51b36a4c69f23d"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Confirmation48",
+      "questions": 48,
+      "hybrid": 48,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "key": "eval/answer-completeness-v17/confirmation48/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/answer-completeness-v17/confirmation48/freeze-manifest.json",
+        "sha256": "6e3fc0b951a289ca162245082629c7daa11daf0bc3cd5e0fc266cb3e86fe3674"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/answer-completeness-v17/confirmation48/source_docs/01_Fresno__California.md",
+          "sha256": "0135a290406faf8e10e14723e8cb89433597e7b289664be38b0ee97ca6dadd77"
+        },
+        {
+          "path": "eval/answer-completeness-v17/confirmation48/source_docs/02_Apollo_program.md",
+          "sha256": "76f972e88a27b38273430d91a540305835512477317082d2d5484d46ec664ceb"
+        },
+        {
+          "path": "eval/answer-completeness-v17/confirmation48/source_docs/03_Ctenophora.md",
+          "sha256": "5e3984af9edf35887c11a65f913fa24e0d7a6887eb9082eec7ea38d4fbffffa3"
+        },
+        {
+          "path": "eval/answer-completeness-v17/confirmation48/source_docs/04_Jacksonville__Florida.md",
+          "sha256": "d65cf9154bc6a1c92c45e366b5da6056952de477c318804c697eb7c2e0c6e10d"
+        },
+        {
+          "path": "eval/answer-completeness-v17/confirmation48/fixed-answer-key.json",
+          "sha256": "4c0c4fccb1b4d7f5f503491fdffcd47731718885f6507592f5dbc4f3f2bbdd0c"
+        },
+        {
+          "path": "eval/answer-completeness-v17/confirmation48/ATTRIBUTION.md",
+          "sha256": "4ee75a84aea00efa78662b43d6091a6805106528edbbbd79e38296622fd6e836"
+        }
+      ],
+      "scoring_family": "gold_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/answer-completeness-v38/score.mjs",
+          "sha256": "fea56fd89cf2d1baef5b6f2440d5e0d834866cabbd948e1bbf51b36a4c69f23d"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Precision48",
+      "questions": 48,
+      "hybrid": 48,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "key": "eval/answer-completeness-v18/precision48/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/answer-completeness-v18/precision48/freeze-manifest.json",
+        "sha256": "0c466a14472c872a798e83f44bc9c5fea7c716a6ae4b3bc8ecbf15a85d7f3ee9"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/answer-completeness-v18/precision48/source_docs/01_Intergovernmental_Panel_on_Climate_Change.md",
+          "sha256": "fb53dc9e0c35725873127d2fc99d80942f83977c762af9b42caf319778753711"
+        },
+        {
+          "path": "eval/answer-completeness-v18/precision48/source_docs/02_Economic_inequality.md",
+          "sha256": "9ab4aa495721b3f3893a02696befc265d82a307ff8739e522f1d67235518a11e"
+        },
+        {
+          "path": "eval/answer-completeness-v18/precision48/source_docs/03_Scottish_Parliament.md",
+          "sha256": "f9b54cb81c90ede473cd09590a1ca13194bc4a512e2b0cde14422fb5677a8563"
+        },
+        {
+          "path": "eval/answer-completeness-v18/precision48/source_docs/04_Imperialism.md",
+          "sha256": "f65ae042a67af2804a9bc2bae31b40a95753ee71f7f2e3828ede1ac2c990a71d"
+        },
+        {
+          "path": "eval/answer-completeness-v18/precision48/fixed-answer-key.json",
+          "sha256": "40fae78a0396f0dd64a4b363bd27dd1a0cc5372ef3306711e0797f711e498057"
+        },
+        {
+          "path": "eval/answer-completeness-v18/precision48/ATTRIBUTION.md",
+          "sha256": "6c5398ac8e0a62aee3a591f3b757e32d2084c9590cbec805027fbb81834f077d"
+        }
+      ],
+      "scoring_family": "gold_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/answer-completeness-v38/score.mjs",
+          "sha256": "fea56fd89cf2d1baef5b6f2440d5e0d834866cabbd948e1bbf51b36a4c69f23d"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Binding64",
+      "questions": 64,
+      "hybrid": 60,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "key": "eval/v20-confirmation/binding64/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/v20-confirmation/binding64/freeze-manifest.json",
+        "sha256": "46cd123937a7bcff8f0396172153f9ae32aa7bc8bc1c76124b6ebd61574c4a5f"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/v20-confirmation/binding64/source_docs/01_Huguenot.md",
+          "sha256": "05ab6a18fe57f7298c0a230497ec998831df26dd68f0da79120935080e179a0c"
+        },
+        {
+          "path": "eval/v20-confirmation/binding64/source_docs/02_Victoria__Australia_.md",
+          "sha256": "73d5a66f6d3baad719ce968b6e92e7811a8d7cb7bc60ee19a80d339b28bbd675"
+        },
+        {
+          "path": "eval/v20-confirmation/binding64/source_docs/03_Geology.md",
+          "sha256": "185261ff0836b1343426dcbf301db5de556e937827da549fe1442a9992edf90a"
+        },
+        {
+          "path": "eval/v20-confirmation/binding64/source_docs/04_Packet_switching.md",
+          "sha256": "5af614dbdd60859b050b8d4bf446b1fc502e3eaa0c0e7ee1f38b58c61c371142"
+        },
+        {
+          "path": "eval/v20-confirmation/binding64/fixed-answer-key.json",
+          "sha256": "9f899d969b43d89ad6bcbcbcd9440f3ee940d97a136db02c018d1029e969ff15"
+        },
+        {
+          "path": "eval/v20-confirmation/binding64/ATTRIBUTION.md",
+          "sha256": "37d054b4e67ab448bfc678857c331aba97f4fe29a254af368bb6fc391d4cc51f"
+        }
+      ],
+      "scoring_family": "binding_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/answer-completeness-v38/score-binding64.mjs",
+          "sha256": "de917c11f06169a038f89a077e772ef4c64b8a461f39a13afa8f4dba534388cd"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Cedar32",
+      "questions": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "key": "eval/v24-fresh-confirmation/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/v24-fresh-confirmation/freeze-manifest.json",
+        "sha256": "8522a380afc2dc7a2560fb604ee6dd7f215e83890c74d5e66c6bd567431b3938"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/v24-fresh-confirmation/PROTOCOL.md",
+          "sha256": "67aa2f29ac5785bc35ec28e4139f37c398c5c57f8e346a901bb391face2de586"
+        },
+        {
+          "path": "eval/v24-fresh-confirmation/fixed-answer-key.json",
+          "sha256": "c32bc469cda04f835783d7ec8efac7d261c38ebd093bca893805726429c25892"
+        },
+        {
+          "path": "eval/v24-fresh-confirmation/source_docs/01_Cedar_Observatory.txt",
+          "sha256": "baf58c10069b4856e121baefed91788368267be1cb4fc6fd77de7c3e18e90084"
+        },
+        {
+          "path": "eval/v24-fresh-confirmation/source_docs/02_Harbor_Cartography.txt",
+          "sha256": "ec7c19f2607f0ca1efd7340162b00ea2526dbe1a6d874c50e27c4175e1ad6f76"
+        },
+        {
+          "path": "eval/v24-fresh-confirmation/source_docs/03_Juniper_Workshop.txt",
+          "sha256": "c6d78cea27db8361b0654977193f59390f7e8edd0a4032584169be8cde5589a3"
+        },
+        {
+          "path": "eval/v24-fresh-confirmation/source_docs/04_Willow_Conservatory.txt",
+          "sha256": "00dc3f24e853147c88981d6c69934b70c756e50f26e941db5093f89450db8425"
+        }
+      ],
+      "scoring_family": "literal_context_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/v24-fresh-confirmation/score.mjs",
+          "sha256": "21a635be91ed84dee8b6696b6d01d114caa2b8d4f27060b4a009f65601bb2266"
+        },
+        {
+          "path": "eval/v24-fresh-confirmation/PROTOCOL.md",
+          "sha256": "67aa2f29ac5785bc35ec28e4139f37c398c5c57f8e346a901bb391face2de586"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Bracken32",
+      "questions": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "key": "eval/v25-fresh-confirmation/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/v25-fresh-confirmation/freeze-manifest.json",
+        "sha256": "65916dd390a0829e6a776bf341fd630eb36557ab70ce47e9ef42a35a67ebdd5f"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/v25-fresh-confirmation/PROTOCOL.md",
+          "sha256": "e1e6db60b080c09185b5c6f5d0c1883d19f134e3fd082eb8ecc1afac09c268cb"
+        },
+        {
+          "path": "eval/v25-fresh-confirmation/fixed-answer-key.json",
+          "sha256": "29b851a6c8e8675848a833d524379335333844c91b439845741ad01304b44db1"
+        },
+        {
+          "path": "eval/v25-fresh-confirmation/source_docs/01_Rillpoint_Lightstation.txt",
+          "sha256": "faec5cec777592cc5809eb65bfe74602a58a8f6c804756cba176b7fdc29a54cb"
+        },
+        {
+          "path": "eval/v25-fresh-confirmation/source_docs/02_Tavren_Ceramics.txt",
+          "sha256": "5fa3047b9675698a2e63b93cc86fba9c98ad4871a4902a0a81510fb1d150e9cb"
+        },
+        {
+          "path": "eval/v25-fresh-confirmation/source_docs/03_Rossell_Seed_Library.txt",
+          "sha256": "bc7d6ab2114e7829f3f1400051984d277f467f6c215e39791089722bf522b696"
+        },
+        {
+          "path": "eval/v25-fresh-confirmation/source_docs/04_Lenwick_Canal_Transit.txt",
+          "sha256": "2e5ca14fabfabf3467036200a052b2c213723939a415952a773753ebaff9752e"
+        }
+      ],
+      "scoring_family": "literal_context_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/v25-fresh-confirmation/score.mjs",
+          "sha256": "5798e7b9d2dd0b9c6d0638b27fbe40c6c9a6c8a3576d95055afe191b1813d5ab"
+        },
+        {
+          "path": "eval/v25-fresh-confirmation/PROTOCOL.md",
+          "sha256": "e1e6db60b080c09185b5c6f5d0c1883d19f134e3fd082eb8ecc1afac09c268cb"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Flint32",
+      "questions": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "key": "eval/v28-fresh-confirmation/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/v28-fresh-confirmation/freeze-manifest.json",
+        "sha256": "e7d65bd871bcd3b927f731fd8c24633479f48ceb955026b7f28c1eb511d08a0b"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/v28-fresh-confirmation/PROTOCOL.md",
+          "sha256": "700ea6f0044b627c3af89b3ebbc03f4097b12cd0ccae26ac270748c382400241"
+        },
+        {
+          "path": "eval/v28-fresh-confirmation/fixed-answer-key.json",
+          "sha256": "2a67e846012affc884b0ba88a4ee7b5204301b50062a510512acbef5abc98de0"
+        },
+        {
+          "path": "eval/v28-fresh-confirmation/source_docs/01_Flintmere_Reservoir.txt",
+          "sha256": "a377e968c85cfa4711915eb892ad5a7763f97dbe761865f7bee40e0d8d79e678"
+        },
+        {
+          "path": "eval/v28-fresh-confirmation/source_docs/02_Orren_Horology_Collection.txt",
+          "sha256": "723fbdf72a8f29d72201b6afb3adf7d2bf1e1b9af334fabe8872ce51de8b0522"
+        },
+        {
+          "path": "eval/v28-fresh-confirmation/source_docs/03_Velric_Instrument_Workshop.txt",
+          "sha256": "b7a22db42637a7202e9a6ed9922ea43754b139dd3c6a1ede7f1bafb455c59c2d"
+        },
+        {
+          "path": "eval/v28-fresh-confirmation/source_docs/04_Sable_Travelling_Books.txt",
+          "sha256": "b4e78eaba727df1d717b575b5d123c4a5107a003d1f797cc7a666b618bc73f3f"
+        }
+      ],
+      "scoring_family": "literal_context_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/v28-fresh-confirmation/score.mjs",
+          "sha256": "77a53c2833bf007ca6ad72acfa23fd92d94951c5801c436b0922fc3fc9da10fc"
+        },
+        {
+          "path": "eval/v28-fresh-confirmation/PROTOCOL.md",
+          "sha256": "700ea6f0044b627c3af89b3ebbc03f4097b12cd0ccae26ac270748c382400241"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Morrow32",
+      "questions": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "key": "eval/v30-fresh-confirmation/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/v30-fresh-confirmation/freeze-manifest.json",
+        "sha256": "fd2045751b1a5da39dcd8ac6cd3c15f5bc9b4b3947e6c300e77f8037acc66190"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/v30-fresh-confirmation/PROTOCOL.md",
+          "sha256": "5d1522285050d6ddf749405bac326a3f103ac503482eea3018fa956bf856c044"
+        },
+        {
+          "path": "eval/v30-fresh-confirmation/fixed-answer-key.json",
+          "sha256": "1d726da309646fad5986c9d3b1249f2fe8de0c4d596c431771a566bfbeec0035"
+        },
+        {
+          "path": "eval/v30-fresh-confirmation/source_docs/01_Ashmere_Funicular.txt",
+          "sha256": "c7f5acbf98c31c606d1816af34b8a26bba1012c6f07015dbb2732e078ffcddc7"
+        },
+        {
+          "path": "eval/v30-fresh-confirmation/source_docs/02_Selwick_Textile_Archive.txt",
+          "sha256": "ea48ac62aa57548b58fead8c5ccc9dd704dace3ed64a4c0d1f5970051c880b1d"
+        },
+        {
+          "path": "eval/v30-fresh-confirmation/source_docs/03_Pelden_Acoustic_Station.txt",
+          "sha256": "fa9a8c6953a057be8aa74d8a983d60dc8655eb94652ccac38a4621340f5f6f24"
+        },
+        {
+          "path": "eval/v30-fresh-confirmation/source_docs/04_Noryn_Print_Cooperative.txt",
+          "sha256": "a705a685d22a09ce0e44befcc40096f06c92c774d127f54e5c318d777b08980c"
+        }
+      ],
+      "scoring_family": "literal_context_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/v30-fresh-confirmation/score.mjs",
+          "sha256": "65b4f5d27faa1de09b0f6837852ddedd617ed8f1afd27cd3cbf2b2408aaaf465"
+        },
+        {
+          "path": "eval/v30-fresh-confirmation/PROTOCOL.md",
+          "sha256": "5d1522285050d6ddf749405bac326a3f103ac503482eea3018fa956bf856c044"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Hearth32",
+      "questions": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "key": "eval/v32-fresh-confirmation/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/v32-fresh-confirmation/freeze-manifest.json",
+        "sha256": "fc0cb289c4a6bee55c1ce3f8c751025bf83c2f74a3d73e84c38e30e056033092"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/v32-fresh-confirmation/FROZEN_RUBRIC.md",
+          "sha256": "204c75af4e43e99976ac19ffb7b44aeaca8872b055d689771092fa04bc8b1f95"
+        },
+        {
+          "path": "eval/v32-fresh-confirmation/PROTOCOL.md",
+          "sha256": "4dbe889382c48732c82f4b6c45c4e76a94d5d22ee9fa8f2d1b686a39d6e03b26"
+        },
+        {
+          "path": "eval/v32-fresh-confirmation/fixed-answer-key.json",
+          "sha256": "8f9a711d4237a9b4db949824d82d66d87fb790504cac5dd1cadb11be35102f08"
+        },
+        {
+          "path": "eval/v32-fresh-confirmation/source_docs/01_Veylan_Seed_Conservatory.txt",
+          "sha256": "a11a7bb2757d442d198a8578a27cffb38b5ec2b23a1e5e0d3c02d7b957b5aea1"
+        },
+        {
+          "path": "eval/v32-fresh-confirmation/source_docs/02_Ostren_Instrument_Library.txt",
+          "sha256": "cfc9334af82bc016e985d51c5b3ac9da229f89d59a8058393535f57fbf4dc7d1"
+        },
+        {
+          "path": "eval/v32-fresh-confirmation/source_docs/03_Caldra_Tide_Station.txt",
+          "sha256": "69bcdcc66af30a18c6e0a6f9984d02f00cd05a36cd1d4bc94b06df493ba1d079"
+        },
+        {
+          "path": "eval/v32-fresh-confirmation/source_docs/04_Tessarin_Repair_Cafe.txt",
+          "sha256": "cf1d3f7ee12a2119cdc96811191d1709459914abd5a0c8f426f3943e3d18da82"
+        }
+      ],
+      "scoring_family": "literal_context_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/v32-fresh-confirmation/score.mjs",
+          "sha256": "b07f9bf50ff823a67b33ee50f48158b9787a87bcc800eb3f72df5b8d6d095152"
+        },
+        {
+          "path": "eval/v32-fresh-confirmation/PROTOCOL.md",
+          "sha256": "4dbe889382c48732c82f4b6c45c4e76a94d5d22ee9fa8f2d1b686a39d6e03b26"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Lumen32",
+      "questions": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "key": "eval/v35-fresh-confirmation/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/v35-fresh-confirmation/freeze-manifest.json",
+        "sha256": "f656610d6265b22330301ac56ff0608cf83b4fb04c23d2980b5116e80b8cf2e6"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/v35-fresh-confirmation/FROZEN_RUBRIC.md",
+          "sha256": "f641bc91d5867ae31bf7188966e5c63c419a86eaf3012e0e4144aaf9dd65bf2c"
+        },
+        {
+          "path": "eval/v35-fresh-confirmation/PROTOCOL.md",
+          "sha256": "ae44fe8c3bb3d0d321c510a639f000132a8c8176bfe13a7a0a8e660ec9603591"
+        },
+        {
+          "path": "eval/v35-fresh-confirmation/fixed-answer-key.json",
+          "sha256": "066cc32b7d30c28232ad9d407684856b9fae466b39d972e56bcee85704afecda"
+        },
+        {
+          "path": "eval/v35-fresh-confirmation/source_docs/01_Oridel_Map_Archive.txt",
+          "sha256": "c0bb6e34f696df87055c450bbde8f521aac867f69b3a259aa605961a5e5a1c07"
+        },
+        {
+          "path": "eval/v35-fresh-confirmation/source_docs/02_Perrin_Community_Kiln.txt",
+          "sha256": "ed5266b49de0360d381e97eb5a933be2c34f9174f55a21947027d2a58eaabdbd"
+        },
+        {
+          "path": "eval/v35-fresh-confirmation/source_docs/03_Ruvane_Canal_Lock.txt",
+          "sha256": "4009f18790552ecfbbb39c2388ac3caf7855251e29e35e369a523228cdeb48c6"
+        },
+        {
+          "path": "eval/v35-fresh-confirmation/source_docs/04_Neris_Kite_Club.txt",
+          "sha256": "84d3f45711032e91bb0d40e551d3290a70898352fc585fa85f76a030789fa6cf"
+        }
+      ],
+      "scoring_family": "literal_context_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/v35-fresh-confirmation/score.mjs",
+          "sha256": "299698d74ac3a05cd935eb2132ff585233ccab79623c689a3c36d0bcf1cb3c34"
+        },
+        {
+          "path": "eval/v35-fresh-confirmation/PROTOCOL.md",
+          "sha256": "ae44fe8c3bb3d0d321c510a639f000132a8c8176bfe13a7a0a8e660ec9603591"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Prism32",
+      "questions": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "key": "eval/v36-fresh-confirmation/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/v36-fresh-confirmation/freeze-manifest.json",
+        "sha256": "2f2c7f656aa54facc5e97a719ecb235e64621f26c08847cddcaf4012008beaf7"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/v36-fresh-confirmation/FROZEN_RUBRIC.md",
+          "sha256": "155e0fedb3be693248bcf2fb6e0d1fd8ccda63907de0444fa744da58fe93b483"
+        },
+        {
+          "path": "eval/v36-fresh-confirmation/PROTOCOL.md",
+          "sha256": "d10e7cde54ac1d5d95333546cf15d67585939f7a598eecc67a84d4a7fff59962"
+        },
+        {
+          "path": "eval/v36-fresh-confirmation/fixed-answer-key.json",
+          "sha256": "49605a12e36d7c9195748a7aeb3ef946af6273972c41f3da7fa69fc0e0429def"
+        },
+        {
+          "path": "eval/v36-fresh-confirmation/source_docs/01_Liraven_Planetarium.txt",
+          "sha256": "213860cc493d77a40a50b1d78ebdcded62c4f797027ddcd826969745d1adb9d9"
+        },
+        {
+          "path": "eval/v36-fresh-confirmation/source_docs/02_Osvik_Puppet_Theatre.txt",
+          "sha256": "7ecd2c2d5805aa1aade87d9a7a684a9cc744a7a9ce6584005ba0ce4cf55b325e"
+        },
+        {
+          "path": "eval/v36-fresh-confirmation/source_docs/03_Tavren_Ferry_Workshop.txt",
+          "sha256": "009c2b55a2d38200a3f51723181617eefa409f61730fb8b1286e7f39046ce447"
+        },
+        {
+          "path": "eval/v36-fresh-confirmation/source_docs/04_Yalara_Grain_Exchange.txt",
+          "sha256": "22da6d53a1b9a94dc0d71a138fb673126cf486180015672f7acee4e5a2e19134"
+        }
+      ],
+      "scoring_family": "literal_context_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/v36-fresh-confirmation/score.mjs",
+          "sha256": "3692796e753aece0dbc0e95f90828a434a712e4da2f8ff8f56fa25b2e9a0f44f"
+        },
+        {
+          "path": "eval/v36-fresh-confirmation/PROTOCOL.md",
+          "sha256": "d10e7cde54ac1d5d95333546cf15d67585939f7a598eecc67a84d4a7fff59962"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "NOT RUN",
+      "qualification": "Input identity verified; native runner/scorer and preservation-gate porting still required"
+    },
+    {
+      "name": "Vela32",
+      "questions": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "key": "eval/v38-fresh-confirmation/fixed-answer-key.json",
+      "original_freeze": {
+        "path": "eval/v38-fresh-confirmation/freeze-manifest.json",
+        "sha256": "af1a062fe5b9a161636d40e72b23ccb759e42c28e8b982239fc745d6f5895375"
+      },
+      "verified_original_input_files": [
+        {
+          "path": "eval/v38-fresh-confirmation/FROZEN_RUBRIC.md",
+          "sha256": "43caec226ce3e597a3ebece54e52c391725ad06ef7667d72583ceb940aa68222"
+        },
+        {
+          "path": "eval/v38-fresh-confirmation/PROTOCOL.md",
+          "sha256": "0d18958725517cb440bd2b969b4cbbbf7c3af859158eb1cb2b70d2982bfc2898"
+        },
+        {
+          "path": "eval/v38-fresh-confirmation/fixed-answer-key.json",
+          "sha256": "134abf11e7cffc3586a2f02688cb9d820c2e5e5fe58f89a9e3faf7ea0d968a33"
+        },
+        {
+          "path": "eval/v38-fresh-confirmation/source_docs/01_Serevin_Seed_Library.txt",
+          "sha256": "42584a35842baaa9d22c332795b7ff9187a6c3de1fadcc4a7e7166ae014b4a9b"
+        },
+        {
+          "path": "eval/v38-fresh-confirmation/source_docs/02_Avrel_Bell_Workshop.txt",
+          "sha256": "98c3d8144cdcb943c9e44309dc09544ca832aff181523b1bc476086ce2047273"
+        },
+        {
+          "path": "eval/v38-fresh-confirmation/source_docs/03_Relmont_Canal_Garden.txt",
+          "sha256": "8af2ecfecc41df81d14f2ac448f0752190aa8cb0527ac975e7e9eafd00048da4"
+        },
+        {
+          "path": "eval/v38-fresh-confirmation/source_docs/04_Korven_Instrument_Coop.txt",
+          "sha256": "3b299b8d9623f9bfe88410e2d2491727c79e661b451097163d3ce3b2f092f1a8"
+        }
+      ],
+      "scoring_family": "literal_context_groups",
+      "native_scoring_references": [
+        {
+          "path": "eval/v38-fresh-confirmation/score.mjs",
+          "sha256": "1b1e25396137fc23e2c052dc4f10693daeaab0aaa9dbd7118fa152e36664eaca"
+        },
+        {
+          "path": "eval/v38-fresh-confirmation/PROTOCOL.md",
+          "sha256": "0d18958725517cb440bd2b969b4cbbbf7c3af859158eb1cb2b70d2982bfc2898"
+        }
+      ],
+      "historical_alignment": "Exact case IDs/order/question strings match preserved fixed scorecard",
+      "v39_model_status": "Vela32 first partial gate PASS",
+      "qualification": "Completed partial exposed regression; full gate remains blocked"
+    }
+  ],
+  "unavailable": [
+    {
+      "name": "Lantern32",
+      "questions": 32,
+      "status": "Original complete source/key/manifest pack not located; archived outputs are not substitutes"
+    },
+    {
+      "name": "Aster32",
+      "questions": 32,
+      "status": "Original complete source/key/manifest pack not located; archived outputs are not substitutes"
+    },
+    {
+      "name": "Meridian24",
+      "questions": 24,
+      "status": "Original complete source/key/manifest pack not located; archived outputs are not substitutes"
+    },
+    {
+      "name": "Atlas15",
+      "questions": 15,
+      "status": "Original complete source/key/manifest pack not located; archived outputs are not substitutes"
+    }
+  ]
+}

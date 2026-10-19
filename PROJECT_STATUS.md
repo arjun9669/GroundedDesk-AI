@@ -17,7 +17,7 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v39 Vela32 partial actual-model gate: 32/32 PASS in both variants; full 771-case gate NOT RUN; not adopted |
 | Release decision | Integration **STOPPED / HOLD** after Vela32 confirmation FAIL |
-| Current change | Preserve first Mac v39 partial-model results and complete evidence; missing 739-case inputs block full regression; live r44 unchanged |
+| Current change | Input inventory verifies 19 packs / 668 cases; 636 additional cases await v39 testing, 103 original cases unavailable; live r44 unchanged |
 
 The Mac folder was initially an empty Git repository. The initial setup commit
 `a883e28` was published on `mac-work-oct2026` and merged into `main` through PR
@@ -128,6 +128,33 @@ no fix or new actual-model result is claimed.
 
 ## Current retrieval blocker
 
+### October 20 historical input inventory
+
+GitHub CI for `7d75820` passed. A read-only
+[input inventory](docs/RECOVERABLE_INPUT_INVENTORY.md) verified **117 original
+input-file entries**, including 75 source documents, across **19 packs / 668
+cases** (628 Hybrid / 40 lexical Comparisons). Frozen source/key/available
+criteria hashes match; exact IDs, question order and strings align with preserved
+historical scorecards. This is input qualification, not a new model score.
+
+Vela32's 32 cases are already tested with v39; **636 additional cases** have
+verified inputs but require new frozen runners/scorers and native preservation
+gates. **103 cases** still lack original input bundles: Lantern32, Aster32,
+Meridian24 and Atlas15. The original combined 739-case configuration/integrity
+manifest and external manual-adjudication dependencies remain unavailable.
+Archived answers and synthetic Atlas unit fixtures cannot replace those inputs.
+
+Recommended next: prepare/freeze Prism32's original 32-case partial v39 gate,
+then Lumen32 and Hearth32, preserving original criteria and all first results.
+No model questions, new quality results, source edits or live-code changes occur
+in this inventory task. Full regression, fresh confirmation and adoption stay HOLD.
+
+Verification on bundled Node 24.19.0: `node --test tests/*.test.mjs` passed all
+596 tests, zero failed/skipped; `node eval/run.mjs --strict` passed 28/28 with
+zero false accepts/provenance errors. The Python inventory command, syntax,
+recorded-hash/accounting checks, documentation links and `git diff --check`
+passed. The intended tool/report diff was reviewed for errors and sensitive data.
+
 ### October 20 first Mac partial-model result
 
 The frozen runner/configuration were committed and pushed as `2453826` before
@@ -218,7 +245,7 @@ or model rerun occurred in this design task. Preserve the original
   per document. MiniLM: 72 passages per session. Capacity expansion remains deferred.
 - No OCR or reliable reconstruction of tables/columns; highlights are bounded
   location aids, not factual support checks.
-- Broader Safari/device, memory, performance and actual Mac-model testing remains.
+- Broader Safari/device, memory, performance and actual Qwen testing remains.
 - Initial PDF/model downloads require network access. Model and dependency caches
   are separate from document snapshots.
 - Snapshots are manual, origin/browser-specific and not encrypted by the app.
@@ -260,8 +287,10 @@ or model rerun occurred in this design task. Preserve the original
    and actual execution status; retain failures and ask before any retries.
    **Completed subset:** both v39 variants pass all 32 exposed Vela32 cases;
    all original first failures remain preserved. Next inventory and verify other
-   recoverable packs before extending coverage. The missing original 739-case
-   inputs still block full regression; no live adoption is authorized.
+   recoverable packs before extending coverage. **Inventory completed:** 19 packs /
+   668 input cases verified, including Vela32; 103 cases and the original combined
+   configuration remain unavailable. Next prepare Prism32 under a new freeze,
+   then extend with native criteria. Full regression and live adoption remain blocked.
 6. Require exposed-regression preservation and separate prospective confirmation
    before integration review. Then qualify navigation/export, memory, performance
    and target browsers. Passing unit tests alone does not authorize adoption.

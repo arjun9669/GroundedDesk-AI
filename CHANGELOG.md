@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Recoverable historical input inventory
+
+- Verify 117 original frozen input-file entries across 19 packs / 668 cases; preserve exact question IDs/order/strings and map native scoring references. Vela32 accounts for 32 already tested cases; 636 more cases await v39 model testing.
+- Identify 103 cases with unavailable original bundles: Lantern32, Aster32, Meridian24 and Atlas15. The original combined 739-case configuration and external adjudication inputs remain unavailable; archived outputs are not replacement inputs.
+- Add a read-only, exclusive-output Python inventory tool and preserve its first JSON observation. Recommend a newly frozen Prism32 partial regression, followed by Lumen32 and Hearth32. No new model answers, scoring changes, source edits or live adoption. [Inventory and next gates](docs/RECOVERABLE_INPUT_INVENTORY.md).
+
 ## 2026-10-20 — First Mac v39 Vela32 partial-model PASS
 
 - Capture all 32 original exposed Vela32 cases once with actual local MiniLM q8 WASM (28 Hybrid / four lexical Comparisons), using the runner and freeze published as `2453826` before questions.
