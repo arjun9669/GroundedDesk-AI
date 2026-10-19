@@ -13,8 +13,8 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest isolated candidate | **v39 engineering implementation**, 19 synthetic controls PASS; actual-model gates **NOT RUN**, not adopted. V38 Vela32 first **FAIL / HOLD** remains unchanged |
-| Latest recorded checks | **592 unit tests**, strict bundled checks; real MiniLM regression and prospective confirmation recorded separately |
+| Latest isolated candidate | **v39 Vela32 partial model gate: 32/32 PASS in both variants**; full regression blocked by missing 739-case inputs, not adopted. V38 first **FAIL / HOLD** remains preserved |
+| Latest recorded checks | **596 unit tests**, strict bundled checks; [actual MiniLM Vela32 subset](./docs/V39_VELA32_MAC_RESULTS.md) distinct from full regression/fresh confirmation |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; **6.0 readiness has not been established** |
 
@@ -170,7 +170,7 @@ GroundedDesk is a portfolio prototype, not a production-ready RAG, compliance or
 
 OCR, reliable table/column reconstruction, character-level partial-run highlights, comprehensive prompt-injection defenses and broad browser/device validation are not provided. Model availability, performance and memory use vary by device.
 
-The [Vela32 design review](./docs/VELA32_REFUSAL_DESIGN_REVIEW.md) led to an [isolated v39 engineering implementation](./docs/COVERAGE_V39_ENGINEERING.md): 19 synthetic contract controls pass, including the two original failure questions under constructed body evidence. No actual-model study or live adoption occurred. Next is separately authorized runner/input preparation and frozen exposed regression, followed only conditionally by fresh confirmation. Preserve Vela32 first **30/0/2**, Bracken32 first **21/1/10**, Cedar32 first **24/2/6**, exposed Cedar32 **32/0/0** and every older result. Performance/integration qualification remains deferred; live r44 stays unchanged.
+The [Vela32 design review](./docs/VELA32_REFUSAL_DESIGN_REVIEW.md) led to an [isolated v39 engineering implementation](./docs/COVERAGE_V39_ENGINEERING.md), followed by a [first Mac partial exposed regression](./docs/V39_VELA32_MAC_RESULTS.md): both v39 variants pass all 32 Vela32 cases, repairing V23/V27 with no historical PASS loss. The original 739-case external inputs are unavailable while Windows cannot be accessed; this subset does not satisfy the full 771-case gate or fresh confirmation. Next inventory and verify other recoverable packs before extending coverage. Preserve Vela32 first **30/0/2**, Bracken32 first **21/1/10**, Cedar32 first **24/2/6**, exposed Cedar32 **32/0/0** and every older result. Performance/integration qualification remains deferred; live r44 stays unchanged.
 
 ## Explore the project
 

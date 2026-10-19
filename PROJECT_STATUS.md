@@ -15,9 +15,9 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v39 implemented, 19 synthetic contract controls PASS; actual-model gates NOT RUN; not adopted |
+| Latest isolated candidate | v39 Vela32 partial actual-model gate: 32/32 PASS in both variants; full 771-case gate NOT RUN; not adopted |
 | Release decision | Integration **STOPPED / HOLD** after Vela32 confirmation FAIL |
-| Current change | Prepare a frozen Vela32-only v39 runner; missing 739-case inputs block full regression; live r44 unchanged |
+| Current change | Preserve first Mac v39 partial-model results and complete evidence; missing 739-case inputs block full regression; live r44 unchanged |
 
 The Mac folder was initially an empty Git repository. The initial setup commit
 `a883e28` was published on `mac-work-oct2026` and merged into `main` through PR
@@ -128,6 +128,28 @@ no fix or new actual-model result is claimed.
 
 ## Current retrieval blocker
 
+### October 20 first Mac partial-model result
+
+The frozen runner/configuration were committed and pushed as `2453826` before
+model questions. The [first Vela32-only actual-model run](docs/V39_VELA32_MAC_RESULTS.md)
+then passed **32/32 in both isolated v39 variants**, with no false acceptance/
+refusal or historical PASS loss. Paired v38 reproduced **30 PASS / 0 PARTIAL /
+2 FAIL**. V39 repairs exposed V23/V27 while preserving the other 30 passes.
+The actual-model subset is 28 Hybrid questions and four lexical Comparisons;
+do not pool variants or call it fresh confirmation or a full 771-case PASS.
+
+All 422 frozen code/input hashes, source/key/rubric identities and actual UI/
+instrumented-baseline source matches passed. Actual MiniLM q8 WASM vectors and
+separately embedded planner facets were captured before candidate use. Offline
+recomputation verified every planner-facet/body cosine; assistant contradiction
+review changed no grades. Zero question retries or production changes.
+
+The complete first capture and score are preserved as 258 files (24,750,223 bytes)
+under `docs/evidence/v39-vela32-mac/`, sealed by a SHA256 manifest. These fictional
+evaluation artifacts synchronize through GitHub; the temporary output directory
+is not the only copy. Original first results remain unchanged. Full historical
+regression, fresh confirmation, device/performance checks and adoption stay HOLD.
+
 ### October 20 recoverable-input preparation
 
 GitHub CI for implementation `75a334c` passed. The original external
@@ -148,6 +170,7 @@ scoring controls), strict `node eval/run.mjs --strict` passed 28/28, and install
 Chrome 155.0.8059.80 passed read-only r44 startup with zero failed requests/page
 errors. Actual-model capture/scoring has not run at this preparation checkpoint.
 The full 771-case gate and fresh confirmation remain NOT RUN; adoption stays HOLD.
+The completed actual-model subset is recorded in the subsequent result above.
 
 ### Existing engineering and historical model results
 
@@ -160,7 +183,8 @@ lexical Comparison retain the frozen v38 path. Multi-facet success requires
 explicitly aligned separately scored evidence; finite unit values are synthetic.
 
 Both original V23/V27 questions refuse in the constructed body-evidence controls.
-This is **not** a new real-model Vela32 result. The broader 771-input model run,
+Those constructed controls are **not** real-model Vela32 measurements; the later
+actual-model subset is recorded separately above. The broader 771-input model run,
 fresh confirmation, performance/device/integration gates remain **NOT RUN**.
 The bounded grammar can cause supported false refusals, so v39 is not adopted.
 Live 5.6/r44 and every original first result remain unchanged.
@@ -234,6 +258,10 @@ or model rerun occurred in this design task. Preserve the original
    input configuration cannot be recovered here. This subset does not satisfy
    the full regression gate. See the preparation checkpoint above for tests
    and actual execution status; retain failures and ask before any retries.
+   **Completed subset:** both v39 variants pass all 32 exposed Vela32 cases;
+   all original first failures remain preserved. Next inventory and verify other
+   recoverable packs before extending coverage. The missing original 739-case
+   inputs still block full regression; no live adoption is authorized.
 6. Require exposed-regression preservation and separate prospective confirmation
    before integration review. Then qualify navigation/export, memory, performance
    and target browsers. Passing unit tests alone does not authorize adoption.

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-20 — First Mac v39 Vela32 partial-model PASS
+
+- Capture all 32 original exposed Vela32 cases once with actual local MiniLM q8 WASM (28 Hybrid / four lexical Comparisons), using the runner and freeze published as `2453826` before questions.
+- Both isolated v39 variants pass 32/32, with zero false accepts/refusals or historical PASS loss. Paired v38 reproduces 30/0/2; preserve its first failure. V23/V27 now refuse correctly while the other 30 passes remain.
+- Preserve the complete first raw capture, vectors, ledger, screenshots and scorecard in GitHub under a SHA256 manifest. Independent facet cosine checks pass; contradiction review changes no scores. No question retries or live-code changes.
+- Missing original 739-case inputs still block the full 771-case regression. This partial exposed run is not fresh confirmation or live adoption. [Results and limitations](docs/V39_VELA32_MAC_RESULTS.md).
+
 ## 2026-10-20 — Recoverable Vela32 regression preparation
 
 - Prepare an isolated v39 browser runner, integrity checks and unchanged-criteria scorer for the original 32 now-exposed Vela32 questions, with separately embedded planner facets and preserved historical PASS checks.

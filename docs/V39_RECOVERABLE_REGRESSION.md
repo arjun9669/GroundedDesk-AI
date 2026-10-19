@@ -2,6 +2,13 @@
 
 Prepared October 20, 2026. Live 5.6/r44 is unchanged; integration remains HOLD.
 
+**Completed follow-up:** the first actual-model Vela32 capture passed **32/32 in
+both v39 variants**, with zero historical PASS loss. See the
+[results and complete preserved evidence](V39_VELA32_MAC_RESULTS.md). The
+preparation checkpoint below is retained as the state before questions; the
+full 771-case regression and fresh confirmation remain NOT RUN. Do not rerun
+over this first capture or freeze.
+
 The original 739-case configuration was generated outside Git under
 `coverage-v38-inputs`. Its expected SHA256 is recorded in the historical v38
 freeze, but the configuration, input-integrity manifest and complete referenced

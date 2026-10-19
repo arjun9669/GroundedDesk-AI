@@ -4,6 +4,10 @@ Date: **2026-10-20 (Asia/Kolkata)**.
 Status: **implemented; synthetic engineering controls PASS; actual-model gates NOT RUN**.
 Live application: **5.6 / `2026-10-13-r44`, unchanged**. Integration remains **HOLD**.
 
+Subsequent authorized work: the [first Mac Vela32 partial exposed regression](V39_VELA32_MAC_RESULTS.md)
+passed 32/32 in both v39 variants. The engineering checkpoint below predates that
+run. The missing 739-case inputs still block the full regression; no adoption.
+
 The [protocol](../eval/answer-completeness-v39/PROTOCOL.md) was committed and
 pushed as `c73a8fe` before implementation. It follows the
 [Vela32 design review](VELA32_REFUSAL_DESIGN_REVIEW.md). This task authorizes
