@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-21 — First combined 668-case v43 available-input regression
+
+- Freeze `560e3a8b` preceded one capture of all 19 verified families: 628 actual MiniLM Hybrid/40 lexical Comparisons. All native available-input regression gates PASS; five fixed/three section public FAIL rows stay FAIL. No prior PASS loss or model retries; v43/live r44 unchanged.
+- All 1,336 answer/quote signatures match prior native outputs. Audit 40,030 body cosines/54 facet anchors, all 75 source texts and original C04 gates; preserve 6,591 earlier artifact hashes. Seal 5,352 artifacts/587,220,023 bytes.
+- 771 unit/28 Keyword/827-file freeze checks PASS; first 767/3 engineering failure and approved duplicate-reference correction preserved. All verified available cases tested; 103 originals/private combined config still block formal phase 1 closure. No full 771-case, fresh-confirmation or adoption claim. [Results](docs/V43_ALL_AVAILABLE_MAC_RESULTS.md).
+
 ## 2026-10-20 — Prepare one combined668-case available-input regression
 
 - Freeze unchanged v43 across19 native families:628 actual MiniLM Hybrid/40 lexical Comparisons, original75 documents/117 input entries. Native adapters retain original grades, category gates and variant-specific history preservation; known public failures remain FAIL, changed manual Cobalt output requires review.

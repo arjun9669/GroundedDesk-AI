@@ -1,0 +1,57 @@
+{
+  "classification": "Separate assistant review of saved outputs; native grades unchanged, no model/answer/scorer rerun",
+  "native_grade_changes": 0,
+  "method": "Verify all1336 normalized displayed answer/filename/quote signatures against prior first-v43 nine-pack or v38 native cards; review five existing public non-PASS cases against expected groups and source context. Recheck Cobalt manual parity, original C04 direct-span criteria, original75 source identities and vector/anchor audit.",
+  "public_failure_review": [
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E08",
+      "variants": [
+        "fixed",
+        "section"
+      ],
+      "outcome": "FAIL",
+      "assessment": "Quote discusses the entrance crown/statue rather than the requested top row of windows. Literal provenance and correct paragraph do not supply the gold fact."
+    },
+    {
+      "pack": "ExternalSQuAD24",
+      "id": "E24",
+      "variants": [
+        "fixed"
+      ],
+      "outcome": "FAIL",
+      "assessment": "Fixed quotes organic compound examples rather than the requested energy content. Section retains its historical PASS."
+    },
+    {
+      "pack": "FreshConfirmation32",
+      "id": "F07",
+      "variants": [
+        "fixed"
+      ],
+      "outcome": "FAIL",
+      "assessment": "Fixed selects a different historical paragraph and misses the keyed characterization of the destruction. Section retains its historical PASS."
+    },
+    {
+      "pack": "FreshConfirmation32",
+      "id": "F09",
+      "variants": [
+        "fixed",
+        "section"
+      ],
+      "outcome": "FAIL",
+      "assessment": "Selected paragraph does not name the nobles requested by the revolt question. The source is literal but unrelated to the requested fact."
+    },
+    {
+      "pack": "FreshConfirmation32",
+      "id": "F10",
+      "variants": [
+        "fixed",
+        "section"
+      ],
+      "outcome": "FAIL",
+      "assessment": "Explicit uncited refusal despite the keyed1543 date; supported false refusal remains visible. V38 and paired-v9 qualification unchanged."
+    }
+  ],
+  "interpretation": "All19 native available-input regression gates PASS; this is not668/668 answers passing. Known public failures remain FAIL. No general accuracy percentage, full771-case gate, fresh-confirmation or production-adoption claim.",
+  "limitations": "103 originals/four packs and original combined config unavailable. Phase1 closure requires recovery or explicit revised acceptance approval. Live5.6/r44 unchanged."
+}

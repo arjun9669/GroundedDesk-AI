@@ -1,0 +1,1249 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "L11",
+  "question": "In which year was the Ruvane Canal Lock lifting bridge rebuilt?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "In which year was the Ruvane Canal Lock lifting bridge rebuilt?",
+    "expected_display": "In which year was the Ruvane Canal Lock lifting bridge rebuilt?",
+    "rendered_question": "In which year was the Ruvane Canal Lock lifting bridge rebuilt?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Ruvane operations record At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+    "sources": [
+      {
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth r",
+        "quote": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nIn which year was the Ruvane Canal Lock lifting bridge rebuilt?\n\nSearched all files: 01_Oridel_Map_Archive.txt · 02_Perrin_Community_Kiln.txt · 03_Ruvane_Canal_Lock.txt · 04_Neris_Kite_Club.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Ruvane operations record At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.\n\nSOURCE EVIDENCE\n[1]\n03_Ruvane_Canal_Lock.txt\n\nText lines 1–2 (normalized extraction)\n\n## Ruvane operations record At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013. The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius. Lena records eight gate-position readings per shift. Oren records five water-depth r\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+        "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth r",
+        "quote": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+        "score": 0.0476,
+        "lexicalScore": 10.985564738639503,
+        "semanticScore": 0.6451181791246965,
+        "matchedTerms": [
+          "ruvane",
+          "canal",
+          "lock",
+          "lifting",
+          "bridge",
+          "rebuilt"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+        "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service",
+        "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+        "score": 0.0476,
+        "lexicalScore": 10.985564738639503,
+        "semanticScore": 0.6451181791246965,
+        "matchedTerms": [
+          "ruvane",
+          "canal",
+          "lock",
+          "lifting",
+          "bridge",
+          "rebuilt"
+        ],
+        "start": 28,
+        "end": 131
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+        "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service",
+        "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+        "score": 0.0476,
+        "lexicalScore": 11.166178785347938,
+        "semanticScore": 0.6451181791246965,
+        "matchedTerms": [
+          "ruvane",
+          "canal",
+          "lock",
+          "lifting",
+          "bridge",
+          "rebuilt"
+        ],
+        "start": 28,
+        "end": 131
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Ruvane_Canal_Lock.txt",
+      "start": 28,
+      "content": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+      "semanticScore": 0.9173221600865631,
+      "lexicalScore": 18.51416797110539
+    },
+    {
+      "filename": "03_Ruvane_Canal_Lock.txt",
+      "start": 133,
+      "content": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+      "semanticScore": 0.5467360671591935,
+      "lexicalScore": 6.447572698955932
+    },
+    {
+      "filename": "03_Ruvane_Canal_Lock.txt",
+      "start": 430,
+      "content": "The Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions.",
+      "semanticScore": 0.473026688720316,
+      "lexicalScore": 5.6173051427688385
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Oridel Map Archive was founded in 1859.",
+      "start": 0,
+      "end": 39,
+      "similarity": 0.12935266478234264,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "It opened its public map room in 1971.",
+      "start": 40,
+      "end": 78,
+      "similarity": 0.18777330651279747,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "The first roof renewal was completed in 1988; the second roof renewal was completed in 2018.",
+      "start": 79,
+      "end": 171,
+      "similarity": 0.21249280899571824,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "A-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.03154549692144842,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Dispatch requests released before 12:40 leave on the current service day.",
+      "start": 204,
+      "end": 277,
+      "similarity": 0.035289592943887636,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.",
+      "start": 278,
+      "end": 386,
+      "similarity": 0.03359835937470104,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "A-02.",
+      "start": 387,
+      "end": 392,
+      "similarity": 0.044932137978949405,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Jori checks seven map drawers per morning.",
+      "start": 393,
+      "end": 435,
+      "similarity": 0.015241693682939515,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Veda checks four humidity sensors per morning.",
+      "start": 436,
+      "end": 482,
+      "similarity": -0.0752789213594409,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Jori seals three transport cases per week.",
+      "start": 483,
+      "end": 525,
+      "similarity": 0.09834141091902317,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "A-03.",
+      "start": 526,
+      "end": 531,
+      "similarity": 0.07093669097624748,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius.",
+      "start": 532,
+      "end": 616,
+      "similarity": -0.06067036835482813,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "No individual winter extreme is recorded here.",
+      "start": 617,
+      "end": 663,
+      "similarity": 0.07032125843374928,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "A-04.",
+      "start": 664,
+      "end": 669,
+      "similarity": 0.04113503857212898,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Transport slips are retained for 14 months.",
+      "start": 670,
+      "end": 713,
+      "similarity": 0.016525107408200727,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "If a provenance review is unresolved, keep the affected slips until the review is cleared.",
+      "start": 714,
+      "end": 804,
+      "similarity": 0.012205136864025978,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "A-05.",
+      "start": 805,
+      "end": 810,
+      "similarity": 0.056740531983364144,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Acknowledge map-copy requests within three service days.",
+      "start": 811,
+      "end": 867,
+      "similarity": 0.06536950260919058,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Acknowledgement does not guarantee that a reproduction is available.",
+      "start": 868,
+      "end": 936,
+      "similarity": -0.045485352798395794,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+      "start": 0,
+      "end": 61,
+      "similarity": 0.147689760942556,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "Its restoration was completed in 2007.",
+      "start": 62,
+      "end": 100,
+      "similarity": 0.28465196455826836,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+      "start": 101,
+      "end": 183,
+      "similarity": 0.077516271601191,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "K-01.",
+      "start": 222,
+      "end": 227,
+      "similarity": 0.047002909328914544,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius.",
+      "start": 228,
+      "end": 325,
+      "similarity": 0.009901818447016982,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "The absolute minimum winter temperature is 2 degrees Celsius.",
+      "start": 326,
+      "end": 387,
+      "similarity": -0.07852014356720623,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "The highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 388,
+      "end": 455,
+      "similarity": -0.09371993238936074,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "K-02.",
+      "start": 456,
+      "end": 461,
+      "similarity": 0.05548040486268766,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "Signed firing records are retained for 6 years.",
+      "start": 462,
+      "end": 509,
+      "similarity": -0.0004756386767257172,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "If a compensation claim is open, retain the affected records until that claim is settled.",
+      "start": 510,
+      "end": 599,
+      "similarity": 0.06992009479196182,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "K-03.",
+      "start": 600,
+      "end": 605,
+      "similarity": 0.0828309208922816,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "Each firing handover packet must contain:",
+      "start": 606,
+      "end": 647,
+      "similarity": -0.013664239927272814,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "K-04.",
+      "start": 729,
+      "end": 734,
+      "similarity": 0.041460431351411725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "Purchases above 6800 credits require written approval from the Accounts Steward and Kiln Manager.",
+      "start": 735,
+      "end": 832,
+      "similarity": 0.037322086173899635,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+      "start": 28,
+      "end": 89,
+      "similarity": 0.9173221600865631,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "The ticket shelter was repainted in 2013.",
+      "start": 90,
+      "end": 131,
+      "similarity": 0.13238751606099547,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+      "start": 133,
+      "end": 221,
+      "similarity": 0.5467360671591935,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "The highest recorded daily temperature is 35 degrees Celsius.",
+      "start": 222,
+      "end": 283,
+      "similarity": -0.008237829157259296,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "Lena records eight gate-position readings per shift.",
+      "start": 285,
+      "end": 337,
+      "similarity": 0.08545385217007433,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "Oren records five water-depth readings per shift.",
+      "start": 338,
+      "end": 387,
+      "similarity": 0.07521033178294122,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "Lena labels two service crates per week.",
+      "start": 388,
+      "end": 428,
+      "similarity": 0.028078078116443826,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "The Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions.",
+      "start": 430,
+      "end": 535,
+      "similarity": 0.473026688720316,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "In a misty chamber, lubricate it every 55 operating hours.",
+      "start": 536,
+      "end": 594,
+      "similarity": 0.002270779216123215,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "Inspect the chain hoist every 22 operating hours regardless of chamber.",
+      "start": 595,
+      "end": 666,
+      "similarity": 0.07928506398308809,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "The ticket shelter noticeboard was replaced in 2022.",
+      "start": 667,
+      "end": 719,
+      "similarity": 0.1086892669308541,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "N-01.",
+      "start": 24,
+      "end": 29,
+      "similarity": 0.005506472181137901,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "Neris Kite Club acknowledges equipment requests within five business hours.",
+      "start": 30,
+      "end": 105,
+      "similarity": 0.05961103767264269,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "An acknowledgement does not promise that equipment will be ready within five hours.",
+      "start": 106,
+      "end": 189,
+      "similarity": 0.03445223318431851,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "N-02.",
+      "start": 190,
+      "end": 195,
+      "similarity": -0.011615389794818824,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "The field issue packet includes a booking form, tether log, weather checklist, flight permit, and return signature.",
+      "start": 196,
+      "end": 311,
+      "similarity": -0.013689933553963623,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "N-03.",
+      "start": 312,
+      "end": 317,
+      "similarity": 0.025908453159687147,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "Completed flight records are retained for 9 months, unless an unresolved damage claim requires longer retention.",
+      "start": 318,
+      "end": 430,
+      "similarity": -0.005295831896960816,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "N-04.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.011531750688584617,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "Lubricate the Neris Kite Club winding reel every 66 operating hours under normal conditions.",
+      "start": 437,
+      "end": 529,
+      "similarity": 0.08240684735291903,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "In a sandy enclosure, lubricate it every 33 operating hours.",
+      "start": 530,
+      "end": 590,
+      "similarity": 0.048818899797660596,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "Inspect the winding reel every 11 operating hours in either enclosure.",
+      "start": 591,
+      "end": 661,
+      "similarity": 0.1429160436847301,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+          "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+          "score": 0.0476,
+          "lexicalScore": 10.985564738639503,
+          "semanticScore": 0.6451181791246965,
+          "matchedTerms": [
+            "ruvane",
+            "canal",
+            "lock",
+            "lifting",
+            "bridge",
+            "rebuilt"
+          ],
+          "start": 28,
+          "end": 131
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+          "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+          "score": 0.0476,
+          "lexicalScore": 11.166178785347938,
+          "semanticScore": 0.6451181791246965,
+          "matchedTerms": [
+            "ruvane",
+            "canal",
+            "lock",
+            "lifting",
+            "bridge",
+            "rebuilt"
+          ],
+          "start": 28,
+          "end": 131
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+          "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth r",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+          "score": 0.0476,
+          "lexicalScore": 10.985564738639503,
+          "semanticScore": 0.6451181791246965,
+          "matchedTerms": [
+            "ruvane",
+            "canal",
+            "lock",
+            "lifting",
+            "bridge",
+            "rebuilt"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+          "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth r",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+          "score": 0.0476,
+          "lexicalScore": 11.166178785347938,
+          "semanticScore": 0.6451181791246965,
+          "matchedTerms": [
+            "ruvane",
+            "canal",
+            "lock",
+            "lifting",
+            "bridge",
+            "rebuilt"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.11246562004089355,
+    0.015972545370459557,
+    -0.028277156874537468,
+    0.035220421850681305,
+    -0.08462002873420715,
+    -0.06594491004943848,
+    -0.0661487951874733,
+    0.039998698979616165,
+    -0.03341638669371605,
+    0.02457697130739689,
+    -0.015549498610198498,
+    0.025870662182569504,
+    -0.011940685100853443,
+    -0.0009415941312909126,
+    0.00037209567381069064,
+    0.08718758821487427,
+    -0.10751230269670486,
+    0.01927223615348339,
+    -0.062217388302087784,
+    0.032625701278448105,
+    0.06468767672777176,
+    0.011522646062076092,
+    0.039264529943466187,
+    -0.02510015293955803,
+    -0.0117393983528018,
+    -0.015956973657011986,
+    0.021473493427038193,
+    0.04103900119662285,
+    -0.02504061348736286,
+    -0.02443637326359749,
+    -0.07495391368865967,
+    -0.10552338510751724,
+    -0.05493411049246788,
+    -0.06496813148260117,
+    0.0013668258907273412,
+    0.10573630779981613,
+    -0.028416000306606293,
+    0.004337320104241371,
+    0.005660859402269125,
+    0.01901501789689064,
+    -0.10754617303609848,
+    0.019284863024950027,
+    0.019297946244478226,
+    -0.04416040703654289,
+    0.017369160428643227,
+    0.03965345025062561,
+    0.0029913110192865133,
+    -0.03774642199277878,
+    0.026964934542775154,
+    -0.0679197907447815,
+    0.08523418754339218,
+    0.05981014668941498,
+    -0.021431999281048775,
+    -0.03779821842908859,
+    0.01026854757219553,
+    0.027000611647963524,
+    -0.0662148967385292,
+    0.005879814270883799,
+    0.060388997197151184,
+    0.04822930321097374,
+    0.12113292515277863,
+    0.03793702274560928,
+    -0.045260678976774216,
+    -0.035199183970689774,
+    -0.06183026358485222,
+    0.019402971491217613,
+    0.04045733064413071,
+    -0.07044138014316559,
+    0.04238402098417282,
+    -0.08999989181756973,
+    -0.01457161083817482,
+    -0.04417954012751579,
+    -0.06352598965167999,
+    -0.043958596885204315,
+    0.08031405508518219,
+    -0.0013822795590385795,
+    0.010595220141112804,
+    0.06885550916194916,
+    -0.07973744720220566,
+    -0.004847740288823843,
+    0.05072423815727234,
+    -0.12303566932678223,
+    -0.012260249815881252,
+    0.05436316877603531,
+    0.04940911754965782,
+    0.052168507128953934,
+    0.04103575646877289,
+    -0.013404344208538532,
+    0.05956035479903221,
+    0.019590158015489578,
+    0.03473201021552086,
+    -0.03760046139359474,
+    -0.06682493537664413,
+    -0.007008372340351343,
+    -0.01677505299448967,
+    -0.02327701821923256,
+    -0.07323861122131348,
+    0.025479383766651154,
+    -0.053299639374017715,
+    0.04625872150063515,
+    0.01824237033724785,
+    0.03177470341324806,
+    -0.015486055053770542,
+    0.0029679303988814354,
+    0.010975425131618977,
+    0.0667576789855957,
+    0.00436802813783288,
+    0.02371150813996792,
+    -0.04167134314775467,
+    -0.016868500038981438,
+    0.01942904107272625,
+    0.01937306672334671,
+    0.07703185081481934,
+    0.013770983554422855,
+    -0.0546787828207016,
+    0.057116616517305374,
+    -0.05139010399580002,
+    -0.0044983453117311,
+    -0.025112174451351166,
+    0.08821704983711243,
+    0.013654419220983982,
+    0.036940447986125946,
+    -0.02796410769224167,
+    -0.019456617534160614,
+    -0.10147210210561752,
+    0.03655494749546051,
+    0.01384487934410572,
+    -3.9797426538843976e-33,
+    -0.03320426866412163,
+    0.010624988935887814,
+    -0.09321419149637222,
+    -0.008748865686357021,
+    -0.029545435681939125,
+    0.036890480667352676,
+    -0.03529447317123413,
+    0.022648673504590988,
+    -0.028235863894224167,
+    -0.06476423889398575,
+    0.03160237893462181,
+    -0.030385084450244904,
+    -0.016823431476950645,
+    -0.10994451493024826,
+    0.0016466750530526042,
+    0.04191849008202553,
+    -0.025523433461785316,
+    0.006274196319282055,
+    -0.07585225254297256,
+    0.032885994762182236,
+    0.01183538418263197,
+    -0.012052260339260101,
+    0.08025205880403519,
+    -0.007592132315039635,
+    0.02281983010470867,
+    -0.08506082743406296,
+    0.048695821315050125,
+    -0.057145263999700546,
+    0.03095632791519165,
+    -0.018296927213668823,
+    -0.04843314364552498,
+    -0.03256875276565552,
+    0.0386703722178936,
+    0.03429247811436653,
+    -0.08866685628890991,
+    0.0435858815908432,
+    0.06372383236885071,
+    -0.10499691963195801,
+    -0.09371717274188995,
+    -0.014128325507044792,
+    -0.002024505054578185,
+    -0.04932491481304169,
+    -0.05264108255505562,
+    0.03287891671061516,
+    0.03184681385755539,
+    -0.05428730323910713,
+    -0.03488774225115776,
+    0.03714863210916519,
+    0.031986210495233536,
+    0.04380529746413231,
+    -0.026940951123833656,
+    0.08218605071306229,
+    -0.10611996799707413,
+    0.023551302030682564,
+    -0.060468364506959915,
+    -0.02742845006287098,
+    0.002428788458928466,
+    0.08342012017965317,
+    0.05413227155804634,
+    0.031057173386216164,
+    -0.010916405357420444,
+    0.016615577042102814,
+    0.08543572574853897,
+    0.01596531644463539,
+    0.05789623036980629,
+    0.09300464391708374,
+    0.029057512059807777,
+    0.08480262756347656,
+    0.000697702111210674,
+    -0.053596947342157364,
+    -0.09682921320199966,
+    -0.058821432292461395,
+    -0.05645184591412544,
+    0.04875703528523445,
+    -0.05197621136903763,
+    0.08319267630577087,
+    -0.024725481867790222,
+    0.06433488428592682,
+    0.09834732115268707,
+    0.007646840065717697,
+    -0.040739260613918304,
+    0.03184462711215019,
+    0.01607552543282509,
+    0.14185716211795807,
+    0.05968166142702103,
+    -0.01851779781281948,
+    0.01736876554787159,
+    -0.03403499722480774,
+    0.022392798215150833,
+    0.04841332882642746,
+    -0.012742218561470509,
+    0.011614608578383923,
+    -0.09091208875179291,
+    0.007519709877669811,
+    0.05266641825437546,
+    1.7741824399037097e-33,
+    0.043707896023988724,
+    0.030982181429862976,
+    -0.027601998299360275,
+    0.0036587193608283997,
+    0.10484721511602402,
+    -0.012409185990691185,
+    -0.059366993606090546,
+    -0.03969796374440193,
+    -0.08885852992534637,
+    0.025132935494184494,
+    0.09163686633110046,
+    -0.0013603151310235262,
+    -0.04751558229327202,
+    0.05269310250878334,
+    0.003182548563927412,
+    -0.08263376355171204,
+    0.03256063535809517,
+    0.0036986875347793102,
+    -0.09451471269130707,
+    0.08201504498720169,
+    0.04345729202032089,
+    0.13177376985549927,
+    -0.06361187994480133,
+    0.052810877561569214,
+    -0.02978375181555748,
+    -0.02241242676973343,
+    -0.0451943464577198,
+    -0.038540489971637726,
+    0.024305645376443863,
+    0.010499976575374603,
+    -0.016516761854290962,
+    -0.01627206616103649,
+    -0.010752599686384201,
+    0.07860130071640015,
+    -0.0229506753385067,
+    0.10751708596944809,
+    0.09414757043123245,
+    0.035714585334062576,
+    0.012599844485521317,
+    -0.002064144005998969,
+    0.028578544035553932,
+    0.031852345913648605,
+    -0.05488446727395058,
+    0.06700271368026733,
+    -0.03260140120983124,
+    0.032679483294487,
+    -0.017211757600307465,
+    -0.1016402468085289,
+    -0.0033241230994462967,
+    0.007624641992151737,
+    0.049987927079200745,
+    0.10298710316419601,
+    0.03609878942370415,
+    -0.08858609199523926,
+    0.06048913672566414,
+    -0.023526184260845184,
+    0.030988942831754684,
+    -0.05484333634376526,
+    -0.08828718960285187,
+    0.04770688712596893,
+    -0.04416098818182945,
+    0.015758009627461433,
+    0.034318115562200546,
+    -0.0337759368121624,
+    0.05042869970202446,
+    -0.016732849180698395,
+    -0.012623392976820469,
+    -0.061292216181755066,
+    -0.11935199052095413,
+    -0.046750858426094055,
+    0.06475595384836197,
+    -0.017851173877716064,
+    0.07751774787902832,
+    0.07059938460588455,
+    -0.011840611696243286,
+    -0.042326223105192184,
+    0.018437612801790237,
+    -0.011196908541023731,
+    -0.00733904866501689,
+    0.01712735742330551,
+    -0.009971074759960175,
+    -0.027082860469818115,
+    0.06730447709560394,
+    0.03958079218864441,
+    0.04899640381336212,
+    -0.004142620135098696,
+    -0.02059416100382805,
+    -0.019717469811439514,
+    0.05776214599609375,
+    -0.04076703265309334,
+    0.061140742152929306,
+    0.0028788787312805653,
+    -0.07773524522781372,
+    -0.010356967337429523,
+    0.030590809881687164,
+    -1.738956001418046e-8,
+    0.04445160552859306,
+    0.06294732540845871,
+    -0.0824846401810646,
+    0.0221096221357584,
+    0.042364541441202164,
+    -0.0007085611578077078,
+    0.0026797568425536156,
+    0.03893780708312988,
+    -0.14548170566558838,
+    -0.03952660411596298,
+    0.006037358194589615,
+    0.040624551475048065,
+    -0.05445912852883339,
+    0.06644541025161743,
+    -0.06469354033470154,
+    -0.0021123269107192755,
+    -0.015486810356378555,
+    0.05377662926912308,
+    0.004277702420949936,
+    -0.072296641767025,
+    0.007428509183228016,
+    -0.014307893812656403,
+    0.023032410070300102,
+    -0.005044454708695412,
+    0.007435679901391268,
+    -0.09100718051195145,
+    -0.03775564208626747,
+    -0.008532161824405193,
+    0.019275033846497536,
+    -0.07736426591873169,
+    0.07487624138593674,
+    -0.041286345571279526,
+    -0.002101331949234009,
+    0.047488730400800705,
+    -0.0027260466013103724,
+    0.05942728742957115,
+    0.03110026940703392,
+    0.033192239701747894,
+    -0.023187769576907158,
+    -0.030533427372574806,
+    -0.005512095522135496,
+    0.03848988190293312,
+    0.030817966908216476,
+    0.02708437293767929,
+    0.044643331319093704,
+    0.13099148869514465,
+    -0.09761830419301987,
+    0.015143850818276405,
+    0.011198809370398521,
+    0.010033829137682915,
+    0.031061815097928047,
+    -0.0007126495474949479,
+    0.1009708046913147,
+    0.015587409026920795,
+    -0.021034689620137215,
+    0.09237512946128845,
+    -0.004418657626956701,
+    -0.04090099781751633,
+    -0.04103509336709976,
+    -0.011381705291569233,
+    -0.0140164690092206,
+    -0.01734321005642414,
+    -0.005076652858406305,
+    -0.01094667799770832
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "start": 0,
+        "content": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hoist every 22 operating hours regardless of chamber. The ticket shelter noticeboard was replaced in 2022."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "start": 0,
+        "content": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hoist every 22 operating hours regardless of chamber. The ticket shelter noticeboard was replaced in 2022."
+      }
+    ]
+  }
+}

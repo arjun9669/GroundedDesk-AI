@@ -1,0 +1,1288 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "P12",
+  "question": "What is the highest recorded daily temperature at Tavren Ferry Workshop?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What is the highest recorded daily temperature at Tavren Ferry Workshop?",
+    "expected_display": "What is the highest recorded daily temperature at Tavren Ferry Workshop?",
+    "rendered_question": "What is the highest recorded daily temperature at Tavren Ferry Workshop?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+    "sources": [
+      {
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hour",
+        "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat is the highest recorded daily temperature at Tavren Ferry Workshop?\n\nSearched all files: 01_Liraven_Planetarium.txt · 02_Osvik_Puppet_Theatre.txt · 03_Tavren_Ferry_Workshop.txt · 04_Yalara_Grain_Exchange.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.\n\nSOURCE EVIDENCE\n[1]\n03_Tavren_Ferry_Workshop.txt\n\nText line 4 (normalized extraction)\n\n## Workshop operating notes At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012. The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius. Varen records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month. The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hour\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ac0240fe-26ee-4fba-a9ca-50a685aaadee:0",
+        "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hour",
+        "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+        "score": 0.0476,
+        "lexicalScore": 11.88433658211531,
+        "semanticScore": 0.7310913416595494,
+        "matchedTerms": [
+          "highest",
+          "recorded",
+          "daily",
+          "temperature",
+          "tavren",
+          "ferry",
+          "workshop"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ac0240fe-26ee-4fba-a9ca-50a685aaadee:0",
+        "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate",
+        "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 11.88433658211531,
+        "semanticScore": 0.7310913416595494,
+        "matchedTerms": [
+          "highest",
+          "recorded",
+          "daily",
+          "temperature",
+          "tavren",
+          "ferry",
+          "workshop"
+        ],
+        "start": 132,
+        "end": 288
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ac0240fe-26ee-4fba-a9ca-50a685aaadee:0",
+        "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate",
+        "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 12.282795440763696,
+        "semanticScore": 0.7310913416595494,
+        "matchedTerms": [
+          "highest",
+          "recorded",
+          "daily",
+          "temperature",
+          "tavren",
+          "ferry",
+          "workshop"
+        ],
+        "start": 132,
+        "end": 288
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Tavren_Ferry_Workshop.txt",
+      "start": 132,
+      "content": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "semanticScore": 0.7834176322418993,
+      "lexicalScore": 10.441553856975968
+    },
+    {
+      "filename": "03_Tavren_Ferry_Workshop.txt",
+      "start": 227,
+      "content": "Its highest recorded daily temperature is 38 degrees Celsius.",
+      "semanticScore": 0.6132410758137073,
+      "lexicalScore": 11.46191893490827
+    },
+    {
+      "filename": "03_Tavren_Ferry_Workshop.txt",
+      "start": 28,
+      "content": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "semanticScore": 0.3622932188110759,
+      "lexicalScore": 8.067491270841073
+    },
+    {
+      "filename": "02_Osvik_Puppet_Theatre.txt",
+      "start": 297,
+      "content": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "semanticScore": 0.41607059753492215,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Osvik_Puppet_Theatre.txt",
+      "start": 204,
+      "content": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "semanticScore": 0.360985317259707,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "Liraven Planetarium began public dome shows in 1967.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.12350181461246236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "start": 53,
+      "end": 165,
+      "similarity": 0.022420413517364846,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "D-01.",
+      "start": 197,
+      "end": 202,
+      "similarity": 0.14197771585689545,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "Dispatch requests cleared before 16:20 leave on the current service day.",
+      "start": 203,
+      "end": 275,
+      "similarity": 0.09201436165594676,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.",
+      "start": 276,
+      "end": 368,
+      "similarity": 0.13710630041420688,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "D-02.",
+      "start": 369,
+      "end": 374,
+      "similarity": 0.1412398567495468,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "Eris checks five projector filters per morning.",
+      "start": 375,
+      "end": 422,
+      "similarity": 0.16873414511403345,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "Nalo checks three door hinges per morning.",
+      "start": 423,
+      "end": 465,
+      "similarity": 0.11289902593315068,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "Eris labels two transport cases per week.",
+      "start": 466,
+      "end": 507,
+      "similarity": 0.21832805080659895,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "D-03.",
+      "start": 508,
+      "end": 513,
+      "similarity": 0.1259794997773586,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "start": 514,
+      "end": 599,
+      "similarity": 0.30908068448358805,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "Individual winter extremes are not recorded.",
+      "start": 600,
+      "end": 644,
+      "similarity": 0.3485426646270928,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "D-04.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.1063689756808973,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "Keep movement slips for 19 months.",
+      "start": 651,
+      "end": 685,
+      "similarity": 0.10406211182305916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "While an export-review hold is open, retain the affected slips until the hold is released.",
+      "start": 686,
+      "end": 776,
+      "similarity": -0.057318259815810645,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "D-05.",
+      "start": 777,
+      "end": 782,
+      "similarity": 0.10673039544379394,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "Acknowledge dome-booking requests within two business days.",
+      "start": 783,
+      "end": 842,
+      "similarity": 0.10031276095198564,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0e55250c-274a-4bfa-b67b-452453754351",
+      "value": "An acknowledgement is not a guarantee that seats remain available.",
+      "start": 843,
+      "end": 909,
+      "similarity": -0.010254571146051737,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.09589083221248322,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "Its restoration was completed in 1986.",
+      "start": 55,
+      "end": 93,
+      "similarity": 0.05678295832123842,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+      "start": 94,
+      "end": 170,
+      "similarity": -0.003285054187806023,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "T-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.22522844275351042,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "start": 204,
+      "end": 296,
+      "similarity": 0.360985317259707,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 297,
+      "end": 357,
+      "similarity": 0.41607059753492215,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+      "start": 358,
+      "end": 430,
+      "similarity": 0.3481721752379398,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "T-02.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.2157595199726639,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "Signed touring records are retained for 5 years.",
+      "start": 437,
+      "end": 485,
+      "similarity": 0.14603505468759714,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "An unresolved ownership claim extends retention of the affected records until the claim is settled.",
+      "start": 486,
+      "end": 585,
+      "similarity": 0.0018962341475376634,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "T-03.",
+      "start": 586,
+      "end": 591,
+      "similarity": 0.20488752475054953,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "The touring packet must contain:",
+      "start": 592,
+      "end": 624,
+      "similarity": 0.2128571997281321,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "T-04.",
+      "start": 705,
+      "end": 710,
+      "similarity": 0.1606079359133849,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "abef7bab-5851-4039-88a5-c59c43dc4e43",
+      "value": "The stage clock was replaced in 2023.",
+      "start": 711,
+      "end": 748,
+      "similarity": 0.12864077307212954,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "start": 28,
+      "end": 90,
+      "similarity": 0.3622932188110759,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "The ramp shelter was repainted in 2012.",
+      "start": 91,
+      "end": 130,
+      "similarity": 0.15388139725509495,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "start": 132,
+      "end": 226,
+      "similarity": 0.7834176322418993,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "Its highest recorded daily temperature is 38 degrees Celsius.",
+      "start": 227,
+      "end": 288,
+      "similarity": 0.6132410758137073,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "Varen records seven cable-tension readings per shift.",
+      "start": 290,
+      "end": 343,
+      "similarity": 0.25587914513647997,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "Tesi records five ramp tests per shift.",
+      "start": 344,
+      "end": 383,
+      "similarity": 0.2802272953016645,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "Varen tags two lifting hooks per month.",
+      "start": 384,
+      "end": 423,
+      "similarity": 0.166183445974832,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.",
+      "start": 425,
+      "end": 532,
+      "similarity": 0.29923742055011576,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "In a salt-spray shelter, lubricate it every 45 operating hours.",
+      "start": 533,
+      "end": 596,
+      "similarity": 0.20946706560273023,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "Inspect the loading winch every 15 operating hours regardless of shelter.",
+      "start": 597,
+      "end": 670,
+      "similarity": 0.20606902139716934,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+      "value": "The office cabinet was painted in 2021.",
+      "start": 671,
+      "end": 710,
+      "similarity": 0.052305682905026615,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "GX-01.",
+      "start": 26,
+      "end": 32,
+      "similarity": 0.1480332209484875,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "A loading request at Yalara Grain Exchange is acknowledged within six working hours.",
+      "start": 33,
+      "end": 117,
+      "similarity": 0.1540244922465225,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "This acknowledgement does not guarantee a loading slot.",
+      "start": 118,
+      "end": 173,
+      "similarity": -0.05337559293871769,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "GX-02.",
+      "start": 174,
+      "end": 180,
+      "similarity": 0.14906395889901236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+      "start": 181,
+      "end": 299,
+      "similarity": 0.07696472007015381,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "GX-03.",
+      "start": 300,
+      "end": 306,
+      "similarity": 0.13881636043868492,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.",
+      "start": 307,
+      "end": 413,
+      "similarity": -0.02052362870849374,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "GX-04.",
+      "start": 414,
+      "end": 420,
+      "similarity": 0.07736349543199694,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.",
+      "start": 421,
+      "end": 534,
+      "similarity": 0.019843994146824327,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "The office bell was installed in 1980.",
+      "start": 536,
+      "end": 574,
+      "similarity": 0.059488868317065846,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+      "start": 575,
+      "end": 665,
+      "similarity": 0.19382747430915223,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "In a dust-heavy bay, grease it every 66 service hours.",
+      "start": 666,
+      "end": 720,
+      "similarity": 0.2962949569545782,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "edaca4f6-c681-4919-84d6-3374afaad836",
+      "value": "Inspect the conveyor every 33 service hours in either bay.",
+      "start": 721,
+      "end": 779,
+      "similarity": 0.3211628005704541,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ac0240fe-26ee-4fba-a9ca-50a685aaadee:0",
+          "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+          "filename": "03_Tavren_Ferry_Workshop.txt",
+          "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 11.88433658211531,
+          "semanticScore": 0.7310913416595494,
+          "matchedTerms": [
+            "highest",
+            "recorded",
+            "daily",
+            "temperature",
+            "tavren",
+            "ferry",
+            "workshop"
+          ],
+          "start": 132,
+          "end": 288
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ac0240fe-26ee-4fba-a9ca-50a685aaadee:0",
+          "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+          "filename": "03_Tavren_Ferry_Workshop.txt",
+          "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 12.282795440763696,
+          "semanticScore": 0.7310913416595494,
+          "matchedTerms": [
+            "highest",
+            "recorded",
+            "daily",
+            "temperature",
+            "tavren",
+            "ferry",
+            "workshop"
+          ],
+          "start": 132,
+          "end": 288
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ac0240fe-26ee-4fba-a9ca-50a685aaadee:0",
+          "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+          "filename": "03_Tavren_Ferry_Workshop.txt",
+          "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hour",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+          "score": 0.0476,
+          "lexicalScore": 11.88433658211531,
+          "semanticScore": 0.7310913416595494,
+          "matchedTerms": [
+            "highest",
+            "recorded",
+            "daily",
+            "temperature",
+            "tavren",
+            "ferry",
+            "workshop"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ac0240fe-26ee-4fba-a9ca-50a685aaadee:0",
+          "documentId": "ac0240fe-26ee-4fba-a9ca-50a685aaadee",
+          "filename": "03_Tavren_Ferry_Workshop.txt",
+          "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hour",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+          "score": 0.0476,
+          "lexicalScore": 12.282795440763696,
+          "semanticScore": 0.7310913416595494,
+          "matchedTerms": [
+            "highest",
+            "recorded",
+            "daily",
+            "temperature",
+            "tavren",
+            "ferry",
+            "workshop"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.006087434943765402,
+    0.050611332058906555,
+    -0.02676421031355858,
+    0.10915527492761612,
+    -0.07741883397102356,
+    -0.07979719340801239,
+    0.006054756231606007,
+    -0.034066587686538696,
+    -0.08430153876543045,
+    -0.0012724302941933274,
+    0.015520731918513775,
+    -0.08091533184051514,
+    0.030866354703903198,
+    0.024067897349596024,
+    -0.028096776455640793,
+    -0.06271959096193314,
+    0.042416345328092575,
+    -0.06702838093042374,
+    0.056677356362342834,
+    -0.01790241338312626,
+    -0.035117682069540024,
+    -0.011731632985174656,
+    0.027476532384753227,
+    -0.027340050786733627,
+    0.018497049808502197,
+    -0.01143669057637453,
+    -0.017159922048449516,
+    0.09186390787363052,
+    0.007210712879896164,
+    0.0322735533118248,
+    -0.11935508251190186,
+    0.006698255892843008,
+    -0.036964111030101776,
+    -0.02787785977125168,
+    0.024393383413553238,
+    0.050237346440553665,
+    0.011671320535242558,
+    -0.09874315559864044,
+    -0.015871429815888405,
+    0.015099940821528435,
+    -0.026836667209863663,
+    -0.07178254425525665,
+    0.07650347054004669,
+    0.013182833790779114,
+    -0.05414202809333801,
+    0.02198939584195614,
+    0.013345214538276196,
+    -0.021415559574961662,
+    -0.005076059140264988,
+    0.08304423093795776,
+    -0.0025700354017317295,
+    0.045232947915792465,
+    0.02966604195535183,
+    0.011529465205967426,
+    -0.0569676011800766,
+    0.007048671133816242,
+    -0.09471466392278671,
+    -0.007949216291308403,
+    0.03791855648159981,
+    0.03148696944117546,
+    0.020461982116103172,
+    0.07992278039455414,
+    -0.142560675740242,
+    -0.014488780871033669,
+    0.0783114954829216,
+    -0.0755995437502861,
+    -0.065120629966259,
+    0.055123597383499146,
+    0.010478739626705647,
+    -0.07711046189069748,
+    0.0017723654164001346,
+    0.027778901159763336,
+    0.029291285201907158,
+    -0.07176822423934937,
+    0.031530626118183136,
+    -0.03635171055793762,
+    -0.004069717135280371,
+    -0.012287484481930733,
+    -0.026513272896409035,
+    -0.04489804431796074,
+    -0.009998571127653122,
+    -0.07796783745288849,
+    -0.005623777862638235,
+    0.05738522484898567,
+    -0.007025445345789194,
+    0.051823072135448456,
+    0.08495732396841049,
+    0.11837393045425415,
+    0.020771309733390808,
+    0.0848594680428505,
+    0.04819551855325699,
+    0.05584973096847534,
+    -0.08205078542232513,
+    -0.027849523350596428,
+    -0.07410639524459839,
+    0.08963058888912201,
+    -0.02163202129304409,
+    0.11018510907888412,
+    -0.020636683329939842,
+    -0.010336119681596756,
+    -0.0058559225872159,
+    0.00715872086584568,
+    -0.05722179263830185,
+    0.05406631529331207,
+    -0.0229172520339489,
+    -0.015181679278612137,
+    0.00910252146422863,
+    -0.0007538158097304404,
+    -0.012965765781700611,
+    -0.02977749891579151,
+    -0.06169546768069267,
+    0.05253244563937187,
+    0.00712287612259388,
+    -0.06008979678153992,
+    0.017073921859264374,
+    -0.015812279656529427,
+    -0.060844410210847855,
+    -0.011114628985524178,
+    0.01494032982736826,
+    0.029032457619905472,
+    0.03535362705588341,
+    0.017974715679883957,
+    0.0599154531955719,
+    0.09954264760017395,
+    -0.046629879623651505,
+    0.09534408152103424,
+    0.05625799670815468,
+    -1.6318330127550077e-33,
+    0.04673704504966736,
+    0.030665472149848938,
+    0.04952302947640419,
+    -0.0281995702534914,
+    0.09052355587482452,
+    -0.024525383487343788,
+    -0.08201656490564346,
+    -0.0017811933066695929,
+    0.013303346000611782,
+    -0.010242298245429993,
+    -0.016586296260356903,
+    -0.02352275140583515,
+    -0.034977950155735016,
+    -0.019383838400244713,
+    -0.01886747218668461,
+    -0.01833307556807995,
+    -0.003439350286498666,
+    0.030455512925982475,
+    -0.1163066029548645,
+    -0.05179748311638832,
+    -0.04408606141805649,
+    0.022342119365930557,
+    0.05655786767601967,
+    0.015003611333668232,
+    0.011687510646879673,
+    0.02651938423514366,
+    0.06454195827245712,
+    0.027247445657849312,
+    0.015091277658939362,
+    0.0327829048037529,
+    0.08514387160539627,
+    -0.07650846242904663,
+    -0.029962964355945587,
+    -0.007394039537757635,
+    0.0671217292547226,
+    0.059557970613241196,
+    -0.01001567579805851,
+    0.0203231368213892,
+    -0.039781056344509125,
+    0.08268970996141434,
+    0.06513915210962296,
+    -0.0527917854487896,
+    0.11721287667751312,
+    0.0059267934411764145,
+    0.016092324629426003,
+    0.0304951723664999,
+    0.03707059845328331,
+    0.006542847957462072,
+    0.00335555337369442,
+    0.006097621284425259,
+    -0.032751765102148056,
+    -0.023859873414039612,
+    -0.062279172241687775,
+    -0.03496033698320389,
+    0.002973465947434306,
+    0.060843225568532944,
+    0.03704984486103058,
+    -0.049585338681936264,
+    0.005752173718065023,
+    0.059061985462903976,
+    -0.0696253776550293,
+    0.09361683577299118,
+    0.07319704443216324,
+    -0.049782294780015945,
+    0.016274157911539078,
+    0.010844997130334377,
+    0.008213240653276443,
+    -0.04557982459664345,
+    0.009745679795742035,
+    -0.010418133810162544,
+    0.05132312327623367,
+    -0.02670988067984581,
+    0.07739382237195969,
+    -0.05009078234434128,
+    0.03263328969478607,
+    0.06872791051864624,
+    0.04137514904141426,
+    -0.005623742938041687,
+    0.010925889946520329,
+    0.021699821576476097,
+    -0.13027697801589966,
+    0.032153498381376266,
+    0.05521629378199577,
+    -0.017234407365322113,
+    0.016917455941438675,
+    -0.09680621325969696,
+    -0.06206665560603142,
+    0.03680639714002609,
+    -0.026185542345046997,
+    0.07344812154769897,
+    -0.07783542573451996,
+    -0.01887836493551731,
+    -0.03142872080206871,
+    -0.032839711755514145,
+    -0.060197412967681885,
+    8.12215627717833e-34,
+    0.06849101930856705,
+    0.02581196278333664,
+    0.026082979515194893,
+    0.05269956216216087,
+    -0.04064466804265976,
+    -0.022665465250611305,
+    0.09728018939495087,
+    0.07370869070291519,
+    -0.0002494302752893418,
+    0.05661989748477936,
+    0.031314343214035034,
+    -0.03507823124527931,
+    0.055015627294778824,
+    -0.030088374391198158,
+    0.04013115540146828,
+    0.014761392958462238,
+    0.052345339208841324,
+    0.05001210421323776,
+    -0.011037833988666534,
+    -0.019853118807077408,
+    -0.09779060631990433,
+    0.037739988416433334,
+    -0.02777808904647827,
+    0.09803420305252075,
+    -0.013857169076800346,
+    -0.0014938308158889413,
+    0.009226083755493164,
+    -0.036142442375421524,
+    -0.020624281838536263,
+    -0.061637282371520996,
+    -0.02232087217271328,
+    -0.005508954171091318,
+    -0.014140702784061432,
+    0.08486422151327133,
+    -0.07503832131624222,
+    0.07798830419778824,
+    0.1130957379937172,
+    0.0031100783962756395,
+    0.002044109394773841,
+    0.03210458531975746,
+    0.08327784389257431,
+    -0.073098324239254,
+    -0.017349636182188988,
+    0.052731797099113464,
+    -0.010823944583535194,
+    0.014284917153418064,
+    -0.06529112160205841,
+    0.00009487018542131409,
+    0.05659405514597893,
+    0.051523447036743164,
+    0.05090362951159477,
+    -0.043913159519433975,
+    -0.05148501321673393,
+    0.00351918232627213,
+    0.08005667477846146,
+    0.015569359064102173,
+    -0.030651139095425606,
+    0.01601347140967846,
+    -0.07541938126087189,
+    -0.06249634176492691,
+    0.12050285935401917,
+    -0.01587698794901371,
+    -0.0075090304017066956,
+    0.08429129421710968,
+    0.05423137545585632,
+    0.03159482404589653,
+    -0.04383078217506409,
+    0.020403455942869186,
+    -0.05454833433032036,
+    -0.0066909343004226685,
+    0.07333105057477951,
+    -0.012927336618304253,
+    0.026512768119573593,
+    -0.09898281842470169,
+    -0.09032413363456726,
+    -0.0617980994284153,
+    0.03986600041389465,
+    0.04463949054479599,
+    0.021832292899489403,
+    -0.01599719375371933,
+    -0.13735269010066986,
+    -0.03910272568464279,
+    -0.04744688794016838,
+    0.020505713298916817,
+    -0.000388273096177727,
+    -0.050206054002046585,
+    0.06273072212934494,
+    -0.05869442597031593,
+    0.042303796857595444,
+    0.03319421410560608,
+    -0.022722315043210983,
+    -0.024648915976285934,
+    -0.11646195501089096,
+    -0.015007763169705868,
+    -0.025824205949902534,
+    -1.6929510238128387e-8,
+    -0.009064950980246067,
+    0.048490576446056366,
+    -0.03742896392941475,
+    0.008092573843896389,
+    0.007201068568974733,
+    -0.019801311194896698,
+    0.07329094409942627,
+    0.03356021270155907,
+    -0.061219099909067154,
+    0.08940007537603378,
+    0.084143728017807,
+    0.0151493139564991,
+    0.050014711916446686,
+    0.0020775794982910156,
+    -0.018429594114422798,
+    -0.0975116491317749,
+    -0.003601993201300502,
+    0.007289719767868519,
+    -0.053145553916692734,
+    -0.1456819474697113,
+    0.054974667727947235,
+    0.02646039053797722,
+    0.010188930667936802,
+    -0.012733540497720242,
+    0.022458260878920555,
+    -0.0005485048750415444,
+    -0.022931326180696487,
+    0.06469126790761948,
+    0.0676460787653923,
+    -0.05697041377425194,
+    -0.05874788388609886,
+    -0.058426473289728165,
+    -0.028098255395889282,
+    -0.09468065202236176,
+    -4.724508784192949e-9,
+    -0.012531902641057968,
+    -0.04908527806401253,
+    0.061969950795173645,
+    -0.0014215385308489203,
+    -0.0033311652950942516,
+    -0.0331692136824131,
+    0.02408144623041153,
+    -0.06038122624158859,
+    0.017786920070648193,
+    0.003332672407850623,
+    -0.0007426339434459805,
+    -0.06988874077796936,
+    0.05163448303937912,
+    0.018538229167461395,
+    0.02457651123404503,
+    0.024720897898077965,
+    0.04489264264702797,
+    0.07117357850074768,
+    0.022264787927269936,
+    -0.04386364296078682,
+    0.040729671716690063,
+    -0.003986821509897709,
+    -0.016932981088757515,
+    -0.08142244815826416,
+    0.0008301328052766621,
+    0.038101859390735626,
+    -0.02415759675204754,
+    -0.1496364325284958,
+    0.007059411145746708
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "start": 0,
+        "content": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter. The office cabinet was painted in 2021."
+      },
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "start": 0,
+        "content": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04. The stage clock was replaced in 2023."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "start": 0,
+        "content": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter. The office cabinet was painted in 2021."
+      },
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "start": 172,
+        "content": "## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04. The stage clock was replaced in 2023."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1308 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "A06",
+  "question": "Who approves routine berth charts at the fictional Mireth Dome?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who approves routine berth charts at the fictional Mireth Dome?",
+    "expected_display": "Who approves routine berth charts at the fictional Mireth Dome?",
+    "rendered_question": "Who approves routine berth charts at the fictional Mireth Dome?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional approval appendix At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+    "sources": [
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "excerpt": "ies, free carriage on a BSkyB leased transponder, or actual payment for being carried. However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.\n\n## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus.",
+        "quote": "## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho approves routine berth charts at the fictional Mireth Dome?\n\nSearched all files: 01_Harvard_University.md · 02_Prime_number.md · 03_Sky__United_Kingdom_.md · 04_Chloroplast.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional approval appendix At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.\n\nSOURCE EVIDENCE\n[1]\n03_Sky__United_Kingdom_.md\n\nText lines 9–10 (normalized extraction)\n\nies, free carriage on a BSkyB leased transponder, or actual payment for being carried. However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality. ## Fictional approval appendix At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "785a4df8-07ce-4e9b-a079-919df7a620bd:1319",
+        "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+        "filename": "03_Sky__United_Kingdom_.md",
+        "excerpt": "ies, free carriage on a BSkyB leased transponder, or actual payment for being carried. However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.\n\n## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus.",
+        "quote": "## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+        "score": 0.0476,
+        "lexicalScore": 10.235811193283705,
+        "semanticScore": 0.45517925205795196,
+        "matchedTerms": [
+          "routine",
+          "berth",
+          "charts",
+          "fictional"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1396,
+          "cosine": 0.5162110147471844,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "routin",
+          "berth",
+          "chart"
+        ],
+        "site": [
+          "mireth",
+          "dom"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1396,
+          "cosine": 0.5162110147471844,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "routin",
+          "berth",
+          "chart"
+        ],
+        "site": [
+          "mireth",
+          "dom"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Sky__United_Kingdom_.md",
+      "start": 1396,
+      "content": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+      "semanticScore": 0.5162110147471844,
+      "lexicalScore": 12.36823772049304
+    },
+    {
+      "filename": "03_Sky__United_Kingdom_.md",
+      "start": 1494,
+      "content": "This approval authority applies only to routine berth charts at Solune Station.",
+      "semanticScore": 0.38973593590064726,
+      "lexicalScore": 9.434284000483514
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "Harvard's athletic rivalry with Yale is intense in every sport in which they meet, coming to a climax each fall in the annual football meeting, which dates back to 1875 and is usually called simply \"The Game\".",
+      "start": 35,
+      "end": 244,
+      "similarity": 0.07685872551108264,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "While Harvard's football team is no longer one of the country's best as it often was a century ago during football's early days (it won the Rose Bowl in 1920), both it and Yale have influenced the way the game is played.",
+      "start": 245,
+      "end": 465,
+      "similarity": 0.061650078928881163,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "In 1903, Harvard Stadium introduced a new era into football with the first-ever permanent reinforced concrete stadium of its kind in the country.",
+      "start": 466,
+      "end": 611,
+      "similarity": 0.06527275469906564,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "The stadium's structure actually played a role in the evolution of the college game.",
+      "start": 612,
+      "end": 696,
+      "similarity": 0.19400776194996772,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "Seeking to reduce the alarming number of deaths and serious injuries in the sport, Walter Camp (former captain of the Yale football team), suggested widening the field to open up the game.",
+      "start": 697,
+      "end": 885,
+      "similarity": 0.15235673495240848,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "But the stadium was too narrow to accommodate a wider playing surface.",
+      "start": 886,
+      "end": 956,
+      "similarity": 0.12855064972510455,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "So, other steps had to be taken.",
+      "start": 957,
+      "end": 989,
+      "similarity": -0.017528397974684314,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "Camp would instead support revolutionary new rules for the 1906 season.",
+      "start": 990,
+      "end": 1061,
+      "similarity": 0.18588078815858672,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "These included legalizing the forward pass, perhaps the most significant rule change in the sport's history.",
+      "start": 1062,
+      "end": 1170,
+      "similarity": 0.09960082488178373,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "Harvard has purchased tracts of land in Allston, a walk across the Charles River from Cambridge, with the intent of major expansion southward.",
+      "start": 1185,
+      "end": 1327,
+      "similarity": 0.027409600270226875,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "The university now owns approximately fifty percent more land in Allston than in Cambridge.",
+      "start": 1328,
+      "end": 1419,
+      "similarity": 0.027137707878833253,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "Proposals to connect the Cambridge campus with the new Allston campus include new and enlarged bridges, a shuttle service and/or a tram.",
+      "start": 1420,
+      "end": 1556,
+      "similarity": 0.12295764477212463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "Plans also call for sinking part of Storrow Drive (at Harvard's expense) for replacement with park land and pedestrian access to the Charles River, as well as the construction of bike paths, and buildings throughout the Allston campus.",
+      "start": 1557,
+      "end": 1792,
+      "similarity": 0.1100636074808384,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "The institution asserts that such expansion will benefit not only the school, but surrounding community, pointing to such features as the enhanced transit infrastructure, possible shuttles open to the public, and park space which will also be publicly accessible.",
+      "start": 1793,
+      "end": 2056,
+      "similarity": 0.16929128428796114,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+      "start": 2089,
+      "end": 2184,
+      "similarity": 0.21555633202081995,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "This approval authority applies only to routine ledger filings at Velora Annex.",
+      "start": 2185,
+      "end": 2264,
+      "similarity": 0.07217597302465815,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "393222ab-0ed4-4f34-b5c3-f1dacd878ed5",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2265,
+      "end": 2321,
+      "similarity": 0.058682524677271516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "The evolutionary strategy used by cicadas of the genus Magicicada make use of prime numbers.",
+      "start": 29,
+      "end": 121,
+      "similarity": -0.04192899678695409,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "These insects spend most of their lives as grubs underground.",
+      "start": 122,
+      "end": 183,
+      "similarity": 0.011811275222380204,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "They only pupate and then emerge from their burrows after 7, 13 or 17 years, at which point they fly about, breed, and then die after a few weeks at most.",
+      "start": 184,
+      "end": 338,
+      "similarity": 0.04730378157573469,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "The logic for this is believed to be that the prime number intervals between emergences make it very difficult for predators to evolve that could specialize as predators on Magicicadas.",
+      "start": 339,
+      "end": 524,
+      "similarity": -0.04117741173907869,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "If Magicicadas appeared at a non-prime number intervals, say every 12 years, then predators appearing every 2, 3, 4, 6, or 12 years would be sure to meet them.",
+      "start": 525,
+      "end": 684,
+      "similarity": 0.019723367328050544,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "Over a 200-year period, average predator populations during hypothetical outbreaks of 14- and 15-year cicadas would be up to 2% higher than during outbreaks of 13- and 17-year cicadas.",
+      "start": 685,
+      "end": 869,
+      "similarity": -0.08274626047324458,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "Though small, this advantage appears to have been enough to drive natural selection in favour of a prime-numbered life-cycle for these insects.",
+      "start": 870,
+      "end": 1013,
+      "similarity": -0.0350228045190266,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "Prime numbers have influenced many artists and writers.",
+      "start": 1028,
+      "end": 1083,
+      "similarity": 0.178270494173526,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "The French composer Olivier Messiaen used prime numbers to create ametrical music through \"natural phenomena\".",
+      "start": 1084,
+      "end": 1194,
+      "similarity": 0.11751255878661429,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "In works such as La Nativité du Seigneur (1935) and Quatre études de rythme (1949–50), he simultaneously employs motifs with lengths given by different prime numbers to create unpredictable rhythms: the primes 41, 43, 47 and 53 appear in the third étude, \"Neumes rythmiques\".",
+      "start": 1195,
+      "end": 1470,
+      "similarity": 0.1704548531420006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\".",
+      "start": 1471,
+      "end": 1598,
+      "similarity": 0.08981811155237404,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+      "start": 1631,
+      "end": 1724,
+      "similarity": 0.34530317333088784,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "This approval authority applies only to routine kit labels at Nerith Hall.",
+      "start": 1725,
+      "end": 1799,
+      "similarity": 0.2305285751385395,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a3267cb-a364-45fa-94fb-2847464f94d2",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1800,
+      "end": 1856,
+      "similarity": 0.058682524677271516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+      "start": 37,
+      "end": 187,
+      "similarity": -0.006730995090360679,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services.",
+      "start": 188,
+      "end": 316,
+      "similarity": 0.15649878335830647,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now called Sky Active, BSkyB competed with the ONdigital (later ITV Digital) terrestrial offering and cable services.",
+      "start": 317,
+      "end": 577,
+      "similarity": 0.11117595254351,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "Within 30 days, over 100,000 digiboxes had been sold, which help bolstered BSkyB's decision to give away free digiboxes and minidishes from May 1999.",
+      "start": 578,
+      "end": 727,
+      "similarity": -0.01984424272279133,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "BSkyB has no veto over the presence of channels on their EPG, with open access being an enforced part of their operating licence from Ofcom.",
+      "start": 742,
+      "end": 882,
+      "similarity": 0.040168764463983354,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "Any channel which can get carriage on a suitable beam of a satellite at 28° East is entitled to access to BSkyB's EPG for a fee, ranging from £15–100,000.",
+      "start": 883,
+      "end": 1037,
+      "similarity": 0.08977779364313172,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "Third-party channels which opt for encryption receive discounts ranging from reduced price to free EPG entries, free carriage on a BSkyB leased transponder, or actual payment for being carried.",
+      "start": 1038,
+      "end": 1231,
+      "similarity": 0.012998420280594112,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.",
+      "start": 1232,
+      "end": 1363,
+      "similarity": 0.033819192382008756,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+      "start": 1396,
+      "end": 1493,
+      "similarity": 0.5162110147471844,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "This approval authority applies only to routine berth charts at Solune Station.",
+      "start": 1494,
+      "end": 1573,
+      "similarity": 0.38973593590064726,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1574,
+      "end": 1630,
+      "similarity": 0.058682524677271516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "Chloroplasts' main role is to conduct photosynthesis, where the photosynthetic pigment chlorophyll captures the energy from sunlight and converts it and stores it in the energy-storage molecules ATP and NADPH while freeing oxygen from water.",
+      "start": 28,
+      "end": 269,
+      "similarity": -0.032273741997582754,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "They then use the ATP and NADPH to make organic molecules from carbon dioxide in a process known as the Calvin cycle.",
+      "start": 270,
+      "end": 387,
+      "similarity": -0.14428910825617633,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "Chloroplasts carry out a number of other functions, including fatty acid synthesis, much amino acid synthesis, and the immune response in plants.",
+      "start": 388,
+      "end": 533,
+      "similarity": -0.03923872965557335,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "The number of chloroplasts per cell varies from 1 in algae up to 100 in plants like Arabidopsis and wheat.",
+      "start": 534,
+      "end": 640,
+      "similarity": -0.04434879607438659,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "There are two types of thylakoids—granal thylakoids, which are arranged in grana, and stromal thylakoids, which are in contact with the stroma.",
+      "start": 655,
+      "end": 798,
+      "similarity": -0.009941398582750748,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "Granal thylakoids are pancake-shaped circular disks about 300–600 nanometers in diameter.",
+      "start": 799,
+      "end": 888,
+      "similarity": 0.029753387220358675,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "Stromal thylakoids are helicoid sheets that spiral around grana.",
+      "start": 889,
+      "end": 953,
+      "similarity": 0.06045416336610319,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "The flat tops and bottoms of granal thylakoids contain only the relatively flat photosystem II protein complex.",
+      "start": 954,
+      "end": 1065,
+      "similarity": 0.03787440885901595,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "This allows them to stack tightly, forming grana with many layers of tightly appressed membrane, called granal membrane, increasing stability and surface area for light capture.",
+      "start": 1066,
+      "end": 1243,
+      "similarity": 0.005720868029830643,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+      "start": 1276,
+      "end": 1367,
+      "similarity": 0.29428663620524026,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "This approval authority applies only to routine exhibit tags at Tavora House.",
+      "start": 1368,
+      "end": 1445,
+      "similarity": 0.1587821714718162,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bedaea5c-c786-41d9-95bf-273d783ceccb",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1446,
+      "end": 1502,
+      "similarity": 0.058682524677271516,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1396,
+            "cosine": 0.5162110147471844,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "routin",
+            "berth",
+            "chart"
+          ],
+          "site": [
+            "mireth",
+            "dom"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1396,
+            "cosine": 0.5162110147471844,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "routin",
+            "berth",
+            "chart"
+          ],
+          "site": [
+            "mireth",
+            "dom"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "785a4df8-07ce-4e9b-a079-919df7a620bd:1319",
+          "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+          "filename": "03_Sky__United_Kingdom_.md",
+          "excerpt": "eased transponder, or actual payment for being carried. However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.\n\n## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+          "score": 0.0476,
+          "lexicalScore": 10.235811193283705,
+          "semanticScore": 0.45517925205795196,
+          "matchedTerms": [
+            "routine",
+            "berth",
+            "charts",
+            "fictional"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1396,
+            "cosine": 0.5162110147471844,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "785a4df8-07ce-4e9b-a079-919df7a620bd:1365",
+          "documentId": "785a4df8-07ce-4e9b-a079-919df7a620bd",
+          "filename": "03_Sky__United_Kingdom_.md",
+          "excerpt": "eased transponder, or actual payment for being carried. However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.\n\n## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+          "score": 0.0476,
+          "lexicalScore": 12.54337364317964,
+          "semanticScore": 0.477047095032661,
+          "matchedTerms": [
+            "routine",
+            "berth",
+            "charts",
+            "fictional"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1396,
+            "cosine": 0.5162110147471844,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.04932421073317528,
+    0.014620714820921421,
+    0.04384516552090645,
+    0.00283323647454381,
+    -0.05793877691030502,
+    0.09702275693416595,
+    0.04797399789094925,
+    -0.013604797422885895,
+    0.06257568299770355,
+    0.04275846481323242,
+    -0.1130283996462822,
+    0.016799643635749817,
+    0.029358312487602234,
+    -0.000198783163796179,
+    -0.021807346493005753,
+    -0.08043493330478668,
+    0.01969604752957821,
+    -0.04405631870031357,
+    0.086753249168396,
+    0.009302748367190361,
+    -0.03261851146817207,
+    0.0066094533540308475,
+    0.030082661658525467,
+    0.006621141918003559,
+    -0.02145509049296379,
+    -0.013660977594554424,
+    -0.013243921101093292,
+    0.06892605870962143,
+    -0.018946420401334763,
+    -0.024723192676901817,
+    -0.06069093197584152,
+    0.058683883398771286,
+    0.019414186477661133,
+    -0.018560945987701416,
+    0.00036687811370939016,
+    0.07850875705480576,
+    0.09784138947725296,
+    -0.01322638988494873,
+    -0.023002834990620613,
+    0.01929471828043461,
+    0.038712333887815475,
+    -0.048963356763124466,
+    0.02957625314593315,
+    -0.017147984355688095,
+    -0.015808111056685448,
+    0.01979362964630127,
+    -0.049803126603364944,
+    -0.14103010296821594,
+    -0.020587235689163208,
+    0.09698683023452759,
+    -0.04810468852519989,
+    0.02355094812810421,
+    0.10171565413475037,
+    -0.024745633825659752,
+    0.02218654192984104,
+    0.018867874518036842,
+    -0.013070579618215561,
+    -0.008699876256287098,
+    0.062489159405231476,
+    -0.013929921202361584,
+    -0.032610997557640076,
+    -0.03203870356082916,
+    -0.03451061621308327,
+    -0.016450071707367897,
+    0.028710538521409035,
+    -0.02991911582648754,
+    -0.07559342682361603,
+    0.050099290907382965,
+    0.056352242827415466,
+    -0.06025831773877144,
+    0.0431661382317543,
+    0.057148683816194534,
+    0.053606633096933365,
+    -0.07375109195709229,
+    0.041440173983573914,
+    -0.008790806867182255,
+    -0.009288757108151913,
+    -0.05769546329975128,
+    -0.006693234201520681,
+    -0.0895870104432106,
+    -0.015270561911165714,
+    0.024847351014614105,
+    -0.004558197688311338,
+    -0.03195460885763168,
+    0.0022842951584607363,
+    0.02546805702149868,
+    -0.010735576041042805,
+    -0.009948331862688065,
+    -0.0958450436592102,
+    0.02911587618291378,
+    -0.01179741881787777,
+    -0.0358089841902256,
+    0.005728042684495449,
+    0.041418105363845825,
+    0.014477611519396305,
+    0.03689917176961899,
+    -0.08963754773139954,
+    -0.0289137065410614,
+    -0.03678463399410248,
+    0.07062892615795135,
+    0.036159858107566833,
+    0.012382944114506245,
+    -0.02820170857012272,
+    0.09999299049377441,
+    0.02998376078903675,
+    -0.10787684470415115,
+    0.022052641957998276,
+    -0.01773129589855671,
+    0.0009949097875505686,
+    -0.1223999410867691,
+    -0.031638629734516144,
+    0.012105956673622131,
+    -0.009892561472952366,
+    0.054342083632946014,
+    -0.05123060196638107,
+    0.044700197875499725,
+    0.03646884858608246,
+    0.05047006160020828,
+    0.011125396005809307,
+    -0.014231488108634949,
+    0.06273657828569412,
+    0.01002630777657032,
+    0.04125490412116051,
+    0.07280539721250534,
+    -0.04189425706863403,
+    -0.06710627675056458,
+    -0.08801281452178955,
+    -2.813885152686945e-33,
+    -0.07747025787830353,
+    0.0111444853246212,
+    0.07435683161020279,
+    0.027548622339963913,
+    0.03442299738526344,
+    -0.009866524487733841,
+    -0.09047719091176987,
+    -0.03792887553572655,
+    0.07221721857786179,
+    -0.02405453473329544,
+    -0.03879266232252121,
+    0.009785637259483337,
+    -0.05544373765587807,
+    -0.05086240917444229,
+    0.06506576389074326,
+    0.023245492950081825,
+    -0.038536932319402695,
+    0.003280997509136796,
+    -0.11291688680648804,
+    -0.04742374271154404,
+    -0.00909511186182499,
+    0.036836180835962296,
+    -0.026324158534407616,
+    0.003104484872892499,
+    -0.007167315110564232,
+    0.05505644530057907,
+    0.08818413317203522,
+    0.0534554198384285,
+    -0.009129305370151997,
+    0.09148896485567093,
+    -0.016025586053729057,
+    -0.038278281688690186,
+    0.033285535871982574,
+    -0.0027466830797493458,
+    0.02413112297654152,
+    0.06462857872247696,
+    -0.07363307476043701,
+    0.0042180451564490795,
+    -0.06471799314022064,
+    0.030359933152794838,
+    -0.005040277726948261,
+    -0.03378763794898987,
+    -0.06866159290075302,
+    0.11554702371358871,
+    -0.11787886917591095,
+    0.06485588848590851,
+    0.011809619143605232,
+    -0.03995931148529053,
+    0.10629785805940628,
+    0.04945308715105057,
+    0.04544804245233536,
+    0.09535648673772812,
+    -0.10315193235874176,
+    -0.05269970744848251,
+    0.017016662284731865,
+    -0.07252731174230576,
+    -0.0043831621296703815,
+    -0.023247085511684418,
+    -0.003995541483163834,
+    -0.04012812301516533,
+    -0.004934093914926052,
+    -0.06608621031045914,
+    0.00831097923219204,
+    -0.03636752814054489,
+    -0.027018433436751366,
+    0.09345659613609314,
+    -0.03746643289923668,
+    -0.045666638761758804,
+    -0.008916421793401241,
+    0.013737344183027744,
+    -0.031338613480329514,
+    0.08078587800264359,
+    -0.016971604898571968,
+    -0.03109629638493061,
+    -0.04894881322979927,
+    -0.009029812179505825,
+    -0.015333411283791065,
+    -0.00899876281619072,
+    -0.03691703453660011,
+    0.01916734129190445,
+    0.043112099170684814,
+    0.0853792205452919,
+    -0.04072974622249603,
+    0.013496204279363155,
+    0.005380384624004364,
+    -0.13254378736019135,
+    0.09463184326887131,
+    0.06420433521270752,
+    0.009866100735962391,
+    -0.03528304398059845,
+    0.06911559402942657,
+    0.011917578987777233,
+    0.039668239653110504,
+    -0.007196880877017975,
+    -0.17703452706336975,
+    2.1647163770644213e-33,
+    -0.036507297307252884,
+    0.018727431073784828,
+    -0.04397802799940109,
+    -0.050479281693696976,
+    -0.0006277698557823896,
+    -0.006659097503870726,
+    0.0132285226136446,
+    0.04677208513021469,
+    0.049714166671037674,
+    0.03315901756286621,
+    -0.07614540308713913,
+    -0.038165345788002014,
+    -0.02281235158443451,
+    -0.031784165650606155,
+    -0.01872417889535427,
+    -0.051010217517614365,
+    0.07282287627458572,
+    -0.009898833930492401,
+    0.02258039452135563,
+    0.01733659766614437,
+    0.07866252958774567,
+    -0.02875022031366825,
+    -0.049398958683013916,
+    0.016436276957392693,
+    -0.009532230906188488,
+    0.08030547201633453,
+    0.05301143601536751,
+    0.038390155881643295,
+    -0.11510414630174637,
+    -0.017736732959747314,
+    -0.001127392752096057,
+    -0.09998609870672226,
+    -0.11689236015081406,
+    -0.014409411698579788,
+    0.035103291273117065,
+    0.06947340071201324,
+    0.020604655146598816,
+    0.0011521540582180023,
+    -0.08880487829446793,
+    -0.0629655197262764,
+    0.0007071405416354537,
+    -0.05130667984485626,
+    -0.0595853328704834,
+    0.0923675075173378,
+    -0.0026241810992360115,
+    -0.05298735201358795,
+    0.04924629628658295,
+    0.06501144170761108,
+    0.0047315615229308605,
+    -0.0007484176894649863,
+    -0.10335254669189453,
+    -0.015032947063446045,
+    0.03318636864423752,
+    -0.004375476390123367,
+    0.012118048034608364,
+    -0.003968298900872469,
+    -0.0868283286690712,
+    0.07843564450740814,
+    0.07130604237318039,
+    0.03629681095480919,
+    0.014994925819337368,
+    0.006502999924123287,
+    -0.002344655804336071,
+    0.005861295387148857,
+    0.011584609746932983,
+    0.0004340760060586035,
+    0.06547378748655319,
+    -0.04602599889039993,
+    -0.07174461334943771,
+    0.029671702533960342,
+    0.022631267085671425,
+    -0.03811482712626457,
+    -0.06004735082387924,
+    0.031410567462444305,
+    0.007676389068365097,
+    0.04021685943007469,
+    0.04515940696001053,
+    0.012812736444175243,
+    -0.05431115999817848,
+    0.03124271333217621,
+    -0.03892705962061882,
+    -0.08612380176782608,
+    -0.003209722461178899,
+    0.03354765102267265,
+    0.03990776091814041,
+    0.03731463477015495,
+    0.05141890048980713,
+    -0.02751752734184265,
+    -0.0401700995862484,
+    0.07785110175609589,
+    0.08528538048267365,
+    0.012187188491225243,
+    -0.047040604054927826,
+    -0.006027963012456894,
+    0.06339961290359497,
+    -1.970707685927664e-8,
+    -0.019744668155908585,
+    -0.012488665990531445,
+    -0.04179838299751282,
+    -0.06930746883153915,
+    -0.04764975234866142,
+    -0.04579215496778488,
+    -0.02716301754117012,
+    -0.004317615646868944,
+    -0.06212332099676132,
+    0.06979141384363174,
+    0.12473830580711365,
+    -0.05308346822857857,
+    -0.043569568544626236,
+    -0.07590488344430923,
+    0.012861914932727814,
+    0.036686692386865616,
+    -0.015803787857294083,
+    0.06773323565721512,
+    -0.07324258983135223,
+    0.007185535039752722,
+    -0.019409537315368652,
+    0.0727977305650711,
+    0.06560204923152924,
+    -0.09428057074546814,
+    -0.060248151421546936,
+    0.08777539432048798,
+    0.016279762610793114,
+    -0.0321476086974144,
+    -0.015965627506375313,
+    0.04206682741641998,
+    0.05604764074087143,
+    0.006451604422181845,
+    -0.0014751271810382605,
+    0.04552251845598221,
+    -0.07097510993480682,
+    -0.018788082525134087,
+    -0.04581325873732567,
+    0.07901617139577866,
+    0.020865021273493767,
+    0.08803028613328934,
+    0.03736671805381775,
+    0.04829296097159386,
+    -0.008978034369647503,
+    0.07557552307844162,
+    0.05965205281972885,
+    0.09899149090051651,
+    0.026197651401162148,
+    0.0029964707791805267,
+    -0.00195957045070827,
+    -0.025418903678655624,
+    0.0008944224682636559,
+    -0.02505144476890564,
+    0.06285920739173889,
+    0.08125267922878265,
+    -0.03263283148407936,
+    0.07543384283781052,
+    0.062351856380701065,
+    0.00398223614320159,
+    -0.03366957604885101,
+    0.012619131244719028,
+    -0.03616379201412201,
+    -0.02227800339460373,
+    -0.000054313652071869,
+    0.005010005086660385
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "start": 1319,
+        "content": "or carriage issues such as picture quality.\n\n## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "start": 1365,
+        "content": "## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus."
+      }
+    ]
+  }
+}

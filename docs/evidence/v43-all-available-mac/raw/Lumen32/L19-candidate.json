@@ -1,0 +1,1280 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "L19",
+  "question": "Which month has the highest monthly mean temperature at Ruvane Canal Lock, and what is the temperature?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Which month has the highest monthly mean temperature at Ruvane Canal Lock, and what is the temperature?",
+    "expected_display": "Which month has the highest monthly mean temperature at Ruvane Canal Lock, and what is the temperature?",
+    "rendered_question": "Which month has the highest monthly mean temperature at Ruvane Canal Lock, and what is the temperature?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+    "sources": [
+      {
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operat",
+        "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhich month has the highest monthly mean temperature at Ruvane Canal Lock, and what is the temperature?\n\nSearched all files: 01_Oridel_Map_Archive.txt · 02_Perrin_Community_Kiln.txt · 03_Ruvane_Canal_Lock.txt · 04_Neris_Kite_Club.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.\n\nSOURCE EVIDENCE\n[1]\n03_Ruvane_Canal_Lock.txt\n\nText line 4 (normalized extraction)\n\n## Ruvane operations record At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013. The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius. Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week. The Ruvane Canal Lock chain hoist requires lubrication every 110 operat\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+        "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operat",
+        "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+        "score": 0.0476,
+        "lexicalScore": 10.73580162395164,
+        "semanticScore": 0.7509589879549127,
+        "matchedTerms": [
+          "highest",
+          "monthly",
+          "mean",
+          "temperature",
+          "ruvane",
+          "canal",
+          "lock"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+        "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubrica",
+        "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 10.73580162395164,
+        "semanticScore": 0.7509589879549127,
+        "matchedTerms": [
+          "highest",
+          "monthly",
+          "mean",
+          "temperature",
+          "ruvane",
+          "canal",
+          "lock"
+        ],
+        "start": 133,
+        "end": 283
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+        "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubrica",
+        "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 11.206494358139187,
+        "semanticScore": 0.7509589879549127,
+        "matchedTerms": [
+          "highest",
+          "monthly",
+          "mean",
+          "temperature",
+          "ruvane",
+          "canal",
+          "lock"
+        ],
+        "start": 133,
+        "end": 283
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Ruvane_Canal_Lock.txt",
+      "start": 133,
+      "content": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+      "semanticScore": 0.8668507336004166,
+      "lexicalScore": 14.69397697202279
+    },
+    {
+      "filename": "02_Perrin_Community_Kiln.txt",
+      "start": 388,
+      "content": "The highest monthly mean temperature is 26 degrees Celsius in July.",
+      "semanticScore": 0.5115673142432586,
+      "lexicalScore": 9.676667102488056
+    },
+    {
+      "filename": "03_Ruvane_Canal_Lock.txt",
+      "start": 28,
+      "content": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+      "semanticScore": 0.3884795841853548,
+      "lexicalScore": 8.030093331648725
+    },
+    {
+      "filename": "03_Ruvane_Canal_Lock.txt",
+      "start": 430,
+      "content": "The Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions.",
+      "semanticScore": 0.3783288799560137,
+      "lexicalScore": 5.6173051427688385
+    },
+    {
+      "filename": "01_Oridel_Map_Archive.txt",
+      "start": 532,
+      "content": "Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius.",
+      "semanticScore": 0.43167996868248537,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Oridel Map Archive was founded in 1859.",
+      "start": 0,
+      "end": 39,
+      "similarity": 0.04392361156302022,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "It opened its public map room in 1971.",
+      "start": 40,
+      "end": 78,
+      "similarity": 0.09562139115821844,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "The first roof renewal was completed in 1988; the second roof renewal was completed in 2018.",
+      "start": 79,
+      "end": 171,
+      "similarity": 0.0893093762935234,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "A-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.18499309749937615,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Dispatch requests released before 12:40 leave on the current service day.",
+      "start": 204,
+      "end": 277,
+      "similarity": 0.07915739975559462,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.",
+      "start": 278,
+      "end": 386,
+      "similarity": 0.09528490048705407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "A-02.",
+      "start": 387,
+      "end": 392,
+      "similarity": 0.16604926512034512,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Jori checks seven map drawers per morning.",
+      "start": 393,
+      "end": 435,
+      "similarity": 0.06497247294152815,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Veda checks four humidity sensors per morning.",
+      "start": 436,
+      "end": 482,
+      "similarity": 0.23476908262271576,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Jori seals three transport cases per week.",
+      "start": 483,
+      "end": 525,
+      "similarity": 0.2064599153219269,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "A-03.",
+      "start": 526,
+      "end": 531,
+      "similarity": 0.13779437643649903,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius.",
+      "start": 532,
+      "end": 616,
+      "similarity": 0.43167996868248537,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "No individual winter extreme is recorded here.",
+      "start": 617,
+      "end": 663,
+      "similarity": 0.2642237483510271,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "A-04.",
+      "start": 664,
+      "end": 669,
+      "similarity": 0.126158839797413,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Transport slips are retained for 14 months.",
+      "start": 670,
+      "end": 713,
+      "similarity": 0.07256316072174245,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "If a provenance review is unresolved, keep the affected slips until the review is cleared.",
+      "start": 714,
+      "end": 804,
+      "similarity": -0.08523098750875045,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "A-05.",
+      "start": 805,
+      "end": 810,
+      "similarity": 0.09369385759651093,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Acknowledge map-copy requests within three service days.",
+      "start": 811,
+      "end": 867,
+      "similarity": 0.0033052841774829584,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "9e813bad-70bd-4420-bfb1-d11e3713ec20",
+      "value": "Acknowledgement does not guarantee that a reproduction is available.",
+      "start": 868,
+      "end": 936,
+      "similarity": -0.06527983408575501,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+      "start": 0,
+      "end": 61,
+      "similarity": 0.017359930960988226,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "Its restoration was completed in 2007.",
+      "start": 62,
+      "end": 100,
+      "similarity": 0.10886552484611454,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+      "start": 101,
+      "end": 183,
+      "similarity": 0.09474446900599354,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "K-01.",
+      "start": 222,
+      "end": 227,
+      "similarity": 0.1787670585734573,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius.",
+      "start": 228,
+      "end": 325,
+      "similarity": 0.3438632517795936,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "The absolute minimum winter temperature is 2 degrees Celsius.",
+      "start": 326,
+      "end": 387,
+      "similarity": 0.35972081048169163,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "The highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 388,
+      "end": 455,
+      "similarity": 0.5115673142432586,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "K-02.",
+      "start": 456,
+      "end": 461,
+      "similarity": 0.1985351873293665,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "Signed firing records are retained for 6 years.",
+      "start": 462,
+      "end": 509,
+      "similarity": 0.051531243834905975,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "If a compensation claim is open, retain the affected records until that claim is settled.",
+      "start": 510,
+      "end": 599,
+      "similarity": -0.0361771068087449,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "K-03.",
+      "start": 600,
+      "end": 605,
+      "similarity": 0.1796197688089462,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "Each firing handover packet must contain:",
+      "start": 606,
+      "end": 647,
+      "similarity": -0.014063754329936529,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "K-04.",
+      "start": 729,
+      "end": 734,
+      "similarity": 0.13359413608558177,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b1659e1-48ee-46bb-bd3a-5cfbf0083dd1",
+      "value": "Purchases above 6800 credits require written approval from the Accounts Steward and Kiln Manager.",
+      "start": 735,
+      "end": 832,
+      "similarity": 0.041473224718394285,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+      "start": 28,
+      "end": 89,
+      "similarity": 0.3884795841853548,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "The ticket shelter was repainted in 2013.",
+      "start": 90,
+      "end": 131,
+      "similarity": 0.10663936048525954,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+      "start": 133,
+      "end": 221,
+      "similarity": 0.8668507336004166,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "The highest recorded daily temperature is 35 degrees Celsius.",
+      "start": 222,
+      "end": 283,
+      "similarity": 0.429882753164969,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "Lena records eight gate-position readings per shift.",
+      "start": 285,
+      "end": 337,
+      "similarity": 0.09040502170306307,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "Oren records five water-depth readings per shift.",
+      "start": 338,
+      "end": 387,
+      "similarity": 0.15708238438524041,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "Lena labels two service crates per week.",
+      "start": 388,
+      "end": 428,
+      "similarity": 0.09137195565411155,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "The Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions.",
+      "start": 430,
+      "end": 535,
+      "similarity": 0.3783288799560137,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "In a misty chamber, lubricate it every 55 operating hours.",
+      "start": 536,
+      "end": 594,
+      "similarity": 0.1594383866530978,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "Inspect the chain hoist every 22 operating hours regardless of chamber.",
+      "start": 595,
+      "end": 666,
+      "similarity": 0.045685502113335254,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+      "value": "The ticket shelter noticeboard was replaced in 2022.",
+      "start": 667,
+      "end": 719,
+      "similarity": 0.05859991409015093,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "N-01.",
+      "start": 24,
+      "end": 29,
+      "similarity": 0.11393183862994019,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "Neris Kite Club acknowledges equipment requests within five business hours.",
+      "start": 30,
+      "end": 105,
+      "similarity": 0.01280128940520736,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "An acknowledgement does not promise that equipment will be ready within five hours.",
+      "start": 106,
+      "end": 189,
+      "similarity": -0.002546085322142421,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "N-02.",
+      "start": 190,
+      "end": 195,
+      "similarity": 0.1456734910074051,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "The field issue packet includes a booking form, tether log, weather checklist, flight permit, and return signature.",
+      "start": 196,
+      "end": 311,
+      "similarity": 0.08172744745494495,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "N-03.",
+      "start": 312,
+      "end": 317,
+      "similarity": 0.12021446545322644,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "Completed flight records are retained for 9 months, unless an unresolved damage claim requires longer retention.",
+      "start": 318,
+      "end": 430,
+      "similarity": -0.04637913710005643,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "N-04.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.0963548109404869,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "Lubricate the Neris Kite Club winding reel every 66 operating hours under normal conditions.",
+      "start": 437,
+      "end": 529,
+      "similarity": 0.16648848247873588,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "In a sandy enclosure, lubricate it every 33 operating hours.",
+      "start": 530,
+      "end": 590,
+      "similarity": 0.20683233003492218,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8dc5d1e1-adc9-45b0-84b2-53c5e9bee598",
+      "value": "Inspect the winding reel every 11 operating hours in either enclosure.",
+      "start": 591,
+      "end": 661,
+      "similarity": 0.213529677597823,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+          "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubrica",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 10.73580162395164,
+          "semanticScore": 0.7509589879549127,
+          "matchedTerms": [
+            "highest",
+            "monthly",
+            "mean",
+            "temperature",
+            "ruvane",
+            "canal",
+            "lock"
+          ],
+          "start": 133,
+          "end": 283
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+          "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubrica",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 11.206494358139187,
+          "semanticScore": 0.7509589879549127,
+          "matchedTerms": [
+            "highest",
+            "monthly",
+            "mean",
+            "temperature",
+            "ruvane",
+            "canal",
+            "lock"
+          ],
+          "start": 133,
+          "end": 283
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+          "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operat",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+          "score": 0.0476,
+          "lexicalScore": 10.73580162395164,
+          "semanticScore": 0.7509589879549127,
+          "matchedTerms": [
+            "highest",
+            "monthly",
+            "mean",
+            "temperature",
+            "ruvane",
+            "canal",
+            "lock"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "515a5dd9-c826-4fa3-9a70-3d15658ffd13:0",
+          "documentId": "515a5dd9-c826-4fa3-9a70-3d15658ffd13",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operat",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+          "score": 0.0476,
+          "lexicalScore": 11.206494358139187,
+          "semanticScore": 0.7509589879549127,
+          "matchedTerms": [
+            "highest",
+            "monthly",
+            "mean",
+            "temperature",
+            "ruvane",
+            "canal",
+            "lock"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.02088252454996109,
+    -0.07386552542448044,
+    -0.04163976013660431,
+    0.06808066368103027,
+    -0.092735156416893,
+    -0.05589412897825241,
+    -0.03618249297142029,
+    0.015498979948461056,
+    -0.023130638524889946,
+    0.02722928486764431,
+    0.03598824888467789,
+    -0.059489160776138306,
+    -0.0025236967485398054,
+    -0.015060587786138058,
+    -0.0019074289593845606,
+    -0.00014967650349717587,
+    -0.015371314249932766,
+    -0.05316739156842232,
+    -0.013200914487242699,
+    0.02377120591700077,
+    0.10997722297906876,
+    0.015147661790251732,
+    -0.004863054491579533,
+    -0.033519964665174484,
+    0.00541711924597621,
+    -0.012751206755638123,
+    0.0243561752140522,
+    0.03893252834677696,
+    -0.026617642492055893,
+    0.08950632810592651,
+    -0.11493236571550369,
+    -0.01362081989645958,
+    0.02370571903884411,
+    -0.049348801374435425,
+    0.0017252066172659397,
+    0.0012416052632033825,
+    -0.07541860640048981,
+    -0.07716614007949829,
+    -0.034079425036907196,
+    0.04363347589969635,
+    -0.08774275332689285,
+    -0.008605502545833588,
+    0.039596736431121826,
+    -0.0406564399600029,
+    -0.011709839105606079,
+    0.050601083785295486,
+    -0.04285334795713425,
+    0.042975254356861115,
+    -0.012962334789335728,
+    0.007203080225735903,
+    0.0932985320687294,
+    0.08449521660804749,
+    -0.08788317441940308,
+    0.06761449575424194,
+    -0.024561163038015366,
+    -0.02814561128616333,
+    -0.11342725902795792,
+    -0.00871275831013918,
+    0.038304269313812256,
+    0.08383076637983322,
+    0.05196807533502579,
+    0.12813740968704224,
+    -0.13525743782520294,
+    0.006427227519452572,
+    0.07906891405582428,
+    -0.022300951182842255,
+    0.03152485191822052,
+    0.039193008095026016,
+    0.0766746997833252,
+    -0.07256688922643661,
+    -0.015624833293259144,
+    -0.033178798854351044,
+    -0.0010153009789064527,
+    -0.07269997894763947,
+    0.04577014967799187,
+    -0.07342711091041565,
+    -0.012563366442918777,
+    0.0013164121191948652,
+    0.0014987963950261474,
+    -0.04334922507405281,
+    0.00782167911529541,
+    -0.10872745513916016,
+    0.035434793680906296,
+    0.04437410086393356,
+    0.03660828620195389,
+    0.06707000732421875,
+    0.0940757766366005,
+    0.044570934027433395,
+    0.020957201719284058,
+    0.011372724547982216,
+    0.05635092779994011,
+    0.008492895402014256,
+    -0.0745953768491745,
+    -0.07097324728965759,
+    -0.061872079968452454,
+    0.06903217732906342,
+    -0.03412872180342674,
+    0.02639722265303135,
+    -0.02375808171927929,
+    -0.023768292739987373,
+    -0.012868188321590424,
+    -0.0538029782474041,
+    -0.06044066697359085,
+    0.059095848351716995,
+    0.012054217979311943,
+    0.03250499442219734,
+    -0.00002357090670557227,
+    -0.06813140958547592,
+    -0.028781192377209663,
+    0.022841040045022964,
+    -0.0901472195982933,
+    0.043918363749980927,
+    0.07310996204614639,
+    -0.02212897688150406,
+    0.04713224619626999,
+    -0.00838190596550703,
+    -0.05116597190499306,
+    0.01260885875672102,
+    0.04497408866882324,
+    0.08502456545829773,
+    -0.04129335656762123,
+    0.045465800911188126,
+    -0.046751245856285095,
+    0.055228643119335175,
+    -0.03703434765338898,
+    0.05572046712040901,
+    0.028427744284272194,
+    -2.5904929205597314e-33,
+    0.010682565160095692,
+    -0.020609276369214058,
+    -0.0003641724761109799,
+    -0.06652528792619705,
+    -0.01849927008152008,
+    -0.00006042435779818334,
+    -0.04308609664440155,
+    -0.007671339437365532,
+    0.009390559047460556,
+    0.04270253702998161,
+    0.03265465423464775,
+    -0.08275222778320312,
+    -0.04088275134563446,
+    -0.027977265417575836,
+    0.046221088618040085,
+    0.05452152341604233,
+    0.04923689365386963,
+    0.00435519777238369,
+    -0.0649799332022667,
+    0.08487780392169952,
+    -0.034158799797296524,
+    0.02187957428395748,
+    0.07851174473762512,
+    -0.03338919207453728,
+    0.05747000500559807,
+    -0.0790235847234726,
+    0.04887888580560684,
+    -0.022112516686320305,
+    0.007516586221754551,
+    0.023580452427268028,
+    0.013766884803771973,
+    -0.04247383773326874,
+    -0.02279423549771309,
+    0.004893333185464144,
+    -0.048440515995025635,
+    0.016169972717761993,
+    0.005354732740670443,
+    -0.02429034188389778,
+    -0.06408851593732834,
+    0.009583278559148312,
+    0.035892680287361145,
+    -0.023647606372833252,
+    -0.007870437577366829,
+    0.06372420489788055,
+    0.04270995780825615,
+    0.026525968685746193,
+    0.004988852888345718,
+    0.03951014205813408,
+    0.08379043638706207,
+    -0.008635012432932854,
+    -0.057117365300655365,
+    0.030858773738145828,
+    -0.05554323270916939,
+    -0.02561476267874241,
+    -0.010413262993097305,
+    0.03762705251574516,
+    0.01996353454887867,
+    0.011832007206976414,
+    -0.01523424033075571,
+    -0.006088510155677795,
+    -0.05672046169638634,
+    0.016781708225607872,
+    0.09133253991603851,
+    -0.08652827888727188,
+    0.05050304904580116,
+    0.029351558536291122,
+    0.016275081783533096,
+    0.08355008065700531,
+    -0.024274112656712532,
+    -0.02486182563006878,
+    -0.09050007909536362,
+    -0.009507708251476288,
+    0.01966371200978756,
+    -0.008328507654368877,
+    -0.07928575575351715,
+    0.056263551115989685,
+    0.11616487801074982,
+    0.02766873687505722,
+    0.023441923782229424,
+    0.01755298115313053,
+    -0.09458624571561813,
+    0.047404687851667404,
+    0.11096644401550293,
+    0.0462079755961895,
+    -0.014091070741415024,
+    -0.040303993970155716,
+    -0.02598641999065876,
+    0.06669151037931442,
+    0.02362903207540512,
+    0.061061613261699677,
+    0.04504938796162605,
+    -0.0317591056227684,
+    -0.02754715457558632,
+    0.07647369056940079,
+    0.008805916644632816,
+    1.0323692810730352e-33,
+    0.052282508462667465,
+    0.02486943081021309,
+    0.006403530016541481,
+    0.0748053565621376,
+    0.04284629225730896,
+    -0.008557532913982868,
+    -0.02374923974275589,
+    0.05809919163584709,
+    -0.004233881365507841,
+    0.032269131392240524,
+    0.041030336171388626,
+    -0.000040090879338094965,
+    0.026035865768790245,
+    0.008545548655092716,
+    0.07577288895845413,
+    0.00029847383848391473,
+    0.03032827191054821,
+    0.07029158622026443,
+    -0.0530511699616909,
+    0.03950842469930649,
+    -0.14594732224941254,
+    0.07348977029323578,
+    -0.07380390912294388,
+    -0.01940261386334896,
+    -0.07629899680614471,
+    -0.00798502005636692,
+    -0.05640310421586037,
+    -0.061388786882162094,
+    -0.08722150325775146,
+    -0.035237088799476624,
+    -0.05052085593342781,
+    0.006845043506473303,
+    -0.03844437748193741,
+    0.03257591649889946,
+    -0.10381856560707092,
+    0.0799703374505043,
+    0.07902344316244125,
+    -0.044784724712371826,
+    -0.013113017193973064,
+    0.0256919227540493,
+    0.07172750681638718,
+    -0.004688612185418606,
+    0.058514706790447235,
+    0.0573657788336277,
+    0.0004308176867198199,
+    0.02219526283442974,
+    0.05360761657357216,
+    -0.04384135082364082,
+    0.026396537199616432,
+    0.030108291655778885,
+    0.08564616739749908,
+    -0.03863803669810295,
+    -0.06497049331665039,
+    -0.003980041481554508,
+    0.05742796137928963,
+    -0.02154032327234745,
+    0.01782781444489956,
+    -0.03955560177564621,
+    -0.08458488434553146,
+    -0.07728172838687897,
+    0.02363838627934456,
+    -0.02158437669277191,
+    -0.011674828827381134,
+    0.0265060905367136,
+    0.008606878109276295,
+    0.016241751611232758,
+    -0.0013649377506226301,
+    -0.07100477069616318,
+    -0.024977151304483414,
+    -0.0026416804175823927,
+    0.09025011956691742,
+    -0.03852945193648338,
+    0.03114951215684414,
+    -0.006960289552807808,
+    -0.03518126532435417,
+    -0.021505162119865417,
+    0.004022276494652033,
+    -0.04249386489391327,
+    -0.02310304529964924,
+    -0.0008164808386936784,
+    -0.07921136915683746,
+    0.04813912883400917,
+    -0.0770101547241211,
+    0.07339531928300858,
+    0.029231224209070206,
+    -0.07352527230978012,
+    -0.0013348356587812304,
+    -0.0770002007484436,
+    0.03923626244068146,
+    -0.023842662572860718,
+    -0.0017867450369521976,
+    0.017986051738262177,
+    -0.11775800585746765,
+    -0.005779629573225975,
+    0.03343110904097557,
+    -1.8597491546756828e-8,
+    0.11506927013397217,
+    0.02217833511531353,
+    -0.07105618715286255,
+    0.018306465819478035,
+    0.0824839249253273,
+    -0.02809409610927105,
+    0.028405170887708664,
+    0.02860240451991558,
+    -0.10383687168359756,
+    0.07639730721712112,
+    0.07551395893096924,
+    0.05706680566072464,
+    -0.0301008652895689,
+    -0.031324852257966995,
+    -0.05089695379137993,
+    -0.030113670974969864,
+    -0.04049644246697426,
+    0.032432813197374344,
+    -0.03144659474492073,
+    -0.16009901463985443,
+    0.0023068932350724936,
+    -0.0069276452995836735,
+    0.008478641510009766,
+    0.0021536361891776323,
+    0.0510479211807251,
+    -0.030147988349199295,
+    0.007074842695146799,
+    0.1456061154603958,
+    0.01985483430325985,
+    -0.005376468412578106,
+    -0.0037906146608293056,
+    -0.07727104425430298,
+    0.012177558615803719,
+    -0.0344027578830719,
+    -0.038264110684394836,
+    0.0470861941576004,
+    0.03115168586373329,
+    0.12138611823320389,
+    -0.011151951737701893,
+    -0.051911357790231705,
+    0.025980232283473015,
+    -0.05096456781029701,
+    -0.008375156670808792,
+    0.03063780628144741,
+    -0.02444913610816002,
+    0.025178205221891403,
+    -0.012455456890165806,
+    0.026674004271626472,
+    0.054467085748910904,
+    0.009533203206956387,
+    0.011700315400958061,
+    -0.02492452599108219,
+    0.10871592164039612,
+    0.07478812336921692,
+    -0.005022253375500441,
+    0.06267683953046799,
+    -0.025804564356803894,
+    -0.0017905784770846367,
+    -0.01586628146469593,
+    0.04647133871912956,
+    -0.05640510842204094,
+    -0.03866152837872505,
+    -0.10382423549890518,
+    -0.03538292646408081
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "start": 0,
+        "content": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hoist every 22 operating hours regardless of chamber. The ticket shelter noticeboard was replaced in 2022."
+      },
+      {
+        "filename": "02_Perrin_Community_Kiln.txt",
+        "start": 0,
+        "content": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.\n\n## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nK-02. Signed firing records are retained for 6 years. If a compensation claim is open, retain the affected records until that claim is settled.\nK-03. Each firing handover packet must contain:\n- a batch ticket\n- a glaze inventory\n- a safety checklist\n- a collection receipt\nK-04. Purchases above 6800"
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "start": 0,
+        "content": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hoist every 22 operating hours regardless of chamber. The ticket shelter noticeboard was replaced in 2022."
+      },
+      {
+        "filename": "02_Perrin_Community_Kiln.txt",
+        "start": 185,
+        "content": "## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nK-02. Signed firing records are retained for 6 years. If a compensation claim is open, retain the affected records until that claim is settled.\nK-03. Each firing handover packet must contain:\n- a batch ticket\n- a glaze inventory\n- a safety checklist\n- a collection receipt\nK-04. Purchases above 6800 credits require written approval from the Accounts Steward and Kiln Manager."
+      }
+    ]
+  }
+}

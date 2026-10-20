@@ -1,0 +1,1100 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "H01",
+  "question": "How many visitors can attend one planetarium session?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many visitors can attend one planetarium session?",
+    "expected_display": "How many visitors can attend one planetarium session?",
+    "rendered_question": "How many visitors can attend one planetarium session?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Each planetarium session admits at most 48 visitors.",
+    "sources": [
+      {
+        "filename": "01_Cobalt_Planetarium.txt",
+        "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+        "quote": "Each planetarium session admits at most 48 visitors."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many visitors can attend one planetarium session?\n\nSearched all files: 01_Cobalt_Planetarium.txt · 02_Cobalt_Gallery.txt · 03_Cobalt_Seed_Library.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Each planetarium session admits at most 48 visitors.\n\nSOURCE EVIDENCE\n[1]\n01_Cobalt_Planetarium.txt\n\nText line 2 (normalized extraction)\n\nCobalt Community Centre — Fictional Planetarium Guide P-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff. P-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement. P-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention. P-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Each planetarium session admits at most 48 visitors.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "2b75ee88-3281-466d-be64-92dbddc3c86d:0",
+        "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+        "filename": "01_Cobalt_Planetarium.txt",
+        "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+        "quote": "Each planetarium session admits at most 48 visitors.",
+        "score": 0.0476,
+        "lexicalScore": 2.6667608640540004,
+        "semanticScore": 0.5904789255612612,
+        "matchedTerms": [
+          "visitors",
+          "planetarium",
+          "session"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Each planetarium session admits at most 48 visitors.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "2b75ee88-3281-466d-be64-92dbddc3c86d:0",
+        "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+        "filename": "01_Cobalt_Planetarium.txt",
+        "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding",
+        "quote": "Each planetarium session admits at most 48 visitors.",
+        "score": 0.0476,
+        "lexicalScore": 2.6667608640540004,
+        "semanticScore": 0.5904789255612612,
+        "matchedTerms": [
+          "visitors",
+          "planetarium",
+          "session"
+        ],
+        "start": 60,
+        "end": 112
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Cobalt_Planetarium.txt",
+        "quote": "Each planetarium session admits at most 48 visitors.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 60,
+          "cosine": 0.843137628902157,
+          "slot_supported": true,
+          "lexical_matches": 3
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Cobalt_Planetarium.txt",
+        "quote": "Each planetarium session admits at most 48 visitors.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Cobalt_Planetarium.txt",
+        "quote": "Each planetarium session admits at most 48 visitors.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Each planetarium session admits at most 48 visitors.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "2b75ee88-3281-466d-be64-92dbddc3c86d:0",
+        "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+        "filename": "01_Cobalt_Planetarium.txt",
+        "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding",
+        "quote": "Each planetarium session admits at most 48 visitors.",
+        "score": 0.0476,
+        "lexicalScore": 2.6667608640540004,
+        "semanticScore": 0.5904789255612612,
+        "matchedTerms": [
+          "visitors",
+          "planetarium",
+          "session"
+        ],
+        "start": 60,
+        "end": 112
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Cobalt_Planetarium.txt",
+        "quote": "Each planetarium session admits at most 48 visitors.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 60,
+          "cosine": 0.843137628902157,
+          "slot_supported": true,
+          "lexical_matches": 3
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Cobalt_Planetarium.txt",
+        "quote": "Each planetarium session admits at most 48 visitors.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Cobalt_Planetarium.txt",
+        "quote": "Each planetarium session admits at most 48 visitors.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Cobalt_Planetarium.txt",
+      "start": 60,
+      "content": "Each planetarium session admits at most 48 visitors.",
+      "semanticScore": 0.843137628902157,
+      "lexicalScore": 6.787501780969247
+    },
+    {
+      "filename": "02_Cobalt_Gallery.txt",
+      "start": 56,
+      "content": "Each guided gallery session admits at most 32 visitors.",
+      "semanticScore": 0.5543629095237088,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Cobalt_Planetarium.txt",
+      "start": 113,
+      "content": "The number counts seated visitors, not staff.",
+      "semanticScore": 0.4678367766616252,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Cobalt_Seed_Library.txt",
+      "start": 333,
+      "content": "Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+      "semanticScore": 0.41612746062958494,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Cobalt_Gallery.txt",
+      "start": 112,
+      "content": "The number counts visitors, not guides.",
+      "semanticScore": 0.41198885779857186,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+      "value": "P-01.",
+      "start": 54,
+      "end": 59,
+      "similarity": 0.14052132574901294,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+      "value": "Each planetarium session admits at most 48 visitors.",
+      "start": 60,
+      "end": 112,
+      "similarity": 0.843137628902157,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+      "value": "The number counts seated visitors, not staff.",
+      "start": 113,
+      "end": 158,
+      "similarity": 0.4678367766616252,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+      "value": "P-02.",
+      "start": 159,
+      "end": 164,
+      "similarity": 0.12213050533076626,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+      "value": "The projection technician begins the alignment check 25 minutes before doors open.",
+      "start": 165,
+      "end": 247,
+      "similarity": 0.1186444594232501,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+      "value": "The check is repeated after any projector replacement.",
+      "start": 248,
+      "end": 302,
+      "similarity": 0.11947136819135971,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+      "value": "P-03.",
+      "start": 303,
+      "end": 308,
+      "similarity": 0.15226889330838156,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+      "value": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "start": 309,
+      "end": 425,
+      "similarity": 0.2936056110886652,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+      "value": "P-04.",
+      "start": 426,
+      "end": 431,
+      "similarity": 0.15572263468484696,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+      "value": "A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+      "start": 432,
+      "end": 561,
+      "similarity": 0.12953705074382413,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b0be5d9-7ff0-4378-ab3a-e618a0d5df61",
+      "value": "G-01.",
+      "start": 50,
+      "end": 55,
+      "similarity": 0.10140088872408015,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b0be5d9-7ff0-4378-ab3a-e618a0d5df61",
+      "value": "Each guided gallery session admits at most 32 visitors.",
+      "start": 56,
+      "end": 111,
+      "similarity": 0.5543629095237088,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b0be5d9-7ff0-4378-ab3a-e618a0d5df61",
+      "value": "The number counts visitors, not guides.",
+      "start": 112,
+      "end": 151,
+      "similarity": 0.41198885779857186,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b0be5d9-7ff0-4378-ab3a-e618a0d5df61",
+      "value": "G-02.",
+      "start": 152,
+      "end": 157,
+      "similarity": 0.09490738086848118,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b0be5d9-7ff0-4378-ab3a-e618a0d5df61",
+      "value": "Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.",
+      "start": 158,
+      "end": 260,
+      "similarity": 0.16285083134929113,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b0be5d9-7ff0-4378-ab3a-e618a0d5df61",
+      "value": "G-03.",
+      "start": 261,
+      "end": 266,
+      "similarity": 0.0821043619294579,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b0be5d9-7ff0-4378-ab3a-e618a0d5df61",
+      "value": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours.",
+      "start": 267,
+      "end": 348,
+      "similarity": 0.14508917540262184,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b0be5d9-7ff0-4378-ab3a-e618a0d5df61",
+      "value": "Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+      "start": 349,
+      "end": 455,
+      "similarity": 0.07785019257635405,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b0be5d9-7ff0-4378-ab3a-e618a0d5df61",
+      "value": "G-04.",
+      "start": 456,
+      "end": 461,
+      "similarity": 0.12106310093386181,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b0be5d9-7ff0-4378-ab3a-e618a0d5df61",
+      "value": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.",
+      "start": 462,
+      "end": 562,
+      "similarity": 0.18475537774194145,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b7a36f79-bf25-4a4f-b05f-87c84f9b3f38",
+      "value": "S-01.",
+      "start": 55,
+      "end": 60,
+      "similarity": 0.08700181559221094,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b7a36f79-bf25-4a4f-b05f-87c84f9b3f38",
+      "value": "Seed envelopes air-dry for 18 hours before shelving.",
+      "start": 61,
+      "end": 113,
+      "similarity": 0.02648891805093606,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b7a36f79-bf25-4a4f-b05f-87c84f9b3f38",
+      "value": "Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+      "start": 114,
+      "end": 204,
+      "similarity": 0.07522009421644746,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b7a36f79-bf25-4a4f-b05f-87c84f9b3f38",
+      "value": "S-02.",
+      "start": 205,
+      "end": 210,
+      "similarity": 0.09347221919202024,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b7a36f79-bf25-4a4f-b05f-87c84f9b3f38",
+      "value": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+      "start": 211,
+      "end": 326,
+      "similarity": 0.11822155318916913,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b7a36f79-bf25-4a4f-b05f-87c84f9b3f38",
+      "value": "S-03.",
+      "start": 327,
+      "end": 332,
+      "similarity": 0.08440697685318348,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b7a36f79-bf25-4a4f-b05f-87c84f9b3f38",
+      "value": "Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+      "start": 333,
+      "end": 460,
+      "similarity": 0.41612746062958494,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b7a36f79-bf25-4a4f-b05f-87c84f9b3f38",
+      "value": "S-04.",
+      "start": 461,
+      "end": 466,
+      "similarity": 0.11602450017352794,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b7a36f79-bf25-4a4f-b05f-87c84f9b3f38",
+      "value": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+      "start": 467,
+      "end": 593,
+      "similarity": 0.09385309401198781,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Each planetarium session admits at most 48 visitors.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2b75ee88-3281-466d-be64-92dbddc3c86d:0",
+          "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+          "filename": "01_Cobalt_Planetarium.txt",
+          "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "score": 0.0476,
+          "lexicalScore": 2.6667608640540004,
+          "semanticScore": 0.5904789255612612,
+          "matchedTerms": [
+            "visitors",
+            "planetarium",
+            "session"
+          ],
+          "start": 60,
+          "end": 112
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 60,
+            "cosine": 0.843137628902157,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Each planetarium session admits at most 48 visitors.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2b75ee88-3281-466d-be64-92dbddc3c86d:0",
+          "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+          "filename": "01_Cobalt_Planetarium.txt",
+          "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "score": 0.0476,
+          "lexicalScore": 2.6667608640540004,
+          "semanticScore": 0.5904789255612612,
+          "matchedTerms": [
+            "visitors",
+            "planetarium",
+            "session"
+          ],
+          "start": 60,
+          "end": 112
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 60,
+            "cosine": 0.843137628902157,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Each planetarium session admits at most 48 visitors.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2b75ee88-3281-466d-be64-92dbddc3c86d:0",
+          "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+          "filename": "01_Cobalt_Planetarium.txt",
+          "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "score": 0.0476,
+          "lexicalScore": 2.6667608640540004,
+          "semanticScore": 0.5904789255612612,
+          "matchedTerms": [
+            "visitors",
+            "planetarium",
+            "session"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 60,
+            "cosine": 0.843137628902157,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Each planetarium session admits at most 48 visitors.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2b75ee88-3281-466d-be64-92dbddc3c86d:0",
+          "documentId": "2b75ee88-3281-466d-be64-92dbddc3c86d",
+          "filename": "01_Cobalt_Planetarium.txt",
+          "excerpt": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "score": 0.0476,
+          "lexicalScore": 2.6667608640540004,
+          "semanticScore": 0.5904789255612612,
+          "matchedTerms": [
+            "visitors",
+            "planetarium",
+            "session"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 60,
+            "cosine": 0.843137628902157,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Each planetarium session admits at most 48 visitors.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.1884048730134964,
+    -0.013409122824668884,
+    -0.0011875139316543937,
+    -0.016227036714553833,
+    -0.07167228311300278,
+    -0.05568760633468628,
+    0.04070569947361946,
+    -0.0056829084642231464,
+    -0.00884772464632988,
+    0.01756834238767624,
+    -0.09064650535583496,
+    -0.08901738375425339,
+    0.02282761037349701,
+    0.007563407998532057,
+    0.010395843535661697,
+    -0.03860269859433174,
+    0.032182320952415466,
+    -0.07531731575727463,
+    0.08715765178203583,
+    0.014669381082057953,
+    -0.017955435439944267,
+    -0.027631133794784546,
+    0.012821612879633904,
+    0.06895361095666885,
+    -0.027390671893954277,
+    -0.020448748022317886,
+    -0.06187081336975098,
+    -0.0371137335896492,
+    0.023839624598622322,
+    0.011809010989964008,
+    -0.030024250969290733,
+    0.09748613089323044,
+    -0.021475899964571,
+    0.008931552059948444,
+    0.0064956918358802795,
+    0.08539866656064987,
+    0.020488867536187172,
+    -0.08135760575532913,
+    -0.07765534520149231,
+    0.03921279311180115,
+    0.000048141726438188925,
+    0.0026491875760257244,
+    0.04543839395046234,
+    0.007887696847319603,
+    -0.02090197242796421,
+    -0.03908973187208176,
+    -0.062232062220573425,
+    0.015077048912644386,
+    0.09762036055326462,
+    0.063112273812294,
+    0.08382756263017654,
+    0.03751436620950699,
+    0.04687090218067169,
+    0.005088798236101866,
+    -0.008472371846437454,
+    0.0023858824279159307,
+    -0.09003382176160812,
+    -0.07421068102121353,
+    0.007871320471167564,
+    0.01035957969725132,
+    -0.02903049625456333,
+    -0.07070717960596085,
+    -0.0831078588962555,
+    -0.007501949090510607,
+    0.030790084972977638,
+    -0.0165138840675354,
+    -0.09362374991178513,
+    -0.051137033849954605,
+    0.0990215614438057,
+    -0.03009900264441967,
+    -0.04895814135670662,
+    -0.0011931083863601089,
+    0.02979951724410057,
+    -0.027009570971131325,
+    -0.036128778010606766,
+    0.01915365643799305,
+    -0.023533979430794716,
+    -0.004713004920631647,
+    0.03285183757543564,
+    -0.042586926370859146,
+    0.024120407178997993,
+    0.016109537333250046,
+    0.009722276590764523,
+    -0.06676611304283142,
+    0.02814888209104538,
+    -0.03188319504261017,
+    -0.047080088406801224,
+    0.08941862732172012,
+    -0.03681116923689842,
+    0.022942589595913887,
+    0.01762521080672741,
+    0.0765104815363884,
+    -0.022956082597374916,
+    -0.04040856286883354,
+    -0.10485636442899704,
+    0.03561774268746376,
+    -0.06460370868444443,
+    0.04334854334592819,
+    0.0910632535815239,
+    0.06372826546430588,
+    0.023192623630166054,
+    0.06601161509752274,
+    0.05070646479725838,
+    0.04387668892741203,
+    -0.12391488999128342,
+    -0.03452049940824509,
+    0.009515594691038132,
+    0.02407415583729744,
+    0.017216099426150322,
+    -0.001890209037810564,
+    -0.048296064138412476,
+    0.04771868884563446,
+    0.03697701171040535,
+    -0.003350196173414588,
+    -0.004801877774298191,
+    0.05957406759262085,
+    0.09597587585449219,
+    0.0005464718560688198,
+    -0.007701839320361614,
+    0.03217769041657448,
+    0.04251858964562416,
+    -0.010191994719207287,
+    0.12795057892799377,
+    0.028102856129407883,
+    -0.03520975261926651,
+    -0.049088574945926666,
+    -0.02775455079972744,
+    -2.6297746356863505e-33,
+    0.00937511958181858,
+    -0.006379371974617243,
+    0.02512226440012455,
+    0.027476416900753975,
+    0.05821642279624939,
+    0.02501700632274151,
+    -0.0972466841340065,
+    0.021582411602139473,
+    -0.012604830786585808,
+    -0.03606543689966202,
+    0.05362890660762787,
+    -0.0018294599140062928,
+    0.08185679465532303,
+    -0.048283372074365616,
+    0.04492224380373955,
+    0.06581499427556992,
+    0.05486472323536873,
+    0.06807957589626312,
+    -0.06936873495578766,
+    -0.054483380168676376,
+    -0.04625983163714409,
+    -0.08423030376434326,
+    -0.04638543352484703,
+    0.14814066886901855,
+    0.050183068960905075,
+    0.061218973249197006,
+    0.03588161617517471,
+    -0.014141170307993889,
+    0.07704533636569977,
+    0.014946815557777882,
+    0.0694945827126503,
+    -0.011596190743148327,
+    -0.007848677225410938,
+    0.031907834112644196,
+    0.03986719623208046,
+    0.02693055011332035,
+    0.04668392613530159,
+    0.031639426946640015,
+    0.04021859169006348,
+    -0.08775581419467926,
+    -0.10451261699199677,
+    0.025788268074393272,
+    0.08156096190214157,
+    -0.02078794315457344,
+    -0.05746350809931755,
+    0.047547563910484314,
+    0.05503936484456062,
+    -0.021431418135762215,
+    0.0014443532563745975,
+    0.057769402861595154,
+    -0.0200650691986084,
+    0.011331820860505104,
+    -0.09304535388946533,
+    0.03656214103102684,
+    0.01905333623290062,
+    0.01709219440817833,
+    0.034357182681560516,
+    -0.0051919687539339066,
+    -0.010277459397912025,
+    0.03937125578522682,
+    0.00990874320268631,
+    0.10505291819572449,
+    -0.04003476724028587,
+    -0.0030972084496170282,
+    0.000351814174791798,
+    0.039827849715948105,
+    -0.047294981777668,
+    -0.030486570671200752,
+    -0.0003264620609115809,
+    -0.02644471637904644,
+    -0.005105793010443449,
+    0.017689598724246025,
+    -0.021322699263691902,
+    -0.07912144064903259,
+    -0.011204240843653679,
+    -0.012014471925795078,
+    0.04304087534546852,
+    0.020786631852388382,
+    0.0012787197483703494,
+    0.13741236925125122,
+    -0.09822317957878113,
+    -0.0636446550488472,
+    0.03333478793501854,
+    0.00986064225435257,
+    0.00925794243812561,
+    0.02763224206864834,
+    0.0027467713225632906,
+    0.022884618490934372,
+    -0.026580527424812317,
+    -0.05221577361226082,
+    0.0762239620089531,
+    -0.07765018194913864,
+    0.06168618053197861,
+    0.0022676377557218075,
+    -0.11583033204078674,
+    5.006380389806716e-34,
+    -0.04208669438958168,
+    0.012542654760181904,
+    0.012594513595104218,
+    -0.03032241389155388,
+    0.01453722920268774,
+    -0.0022518872283399105,
+    -0.036449991166591644,
+    0.06855320930480957,
+    -0.062482889741659164,
+    -0.01742495223879814,
+    -0.03923708572983742,
+    0.08379783481359482,
+    0.06275568902492523,
+    -0.015618788078427315,
+    -0.01497204601764679,
+    -0.043013013899326324,
+    0.1042245626449585,
+    0.01894713006913662,
+    -0.024116240441799164,
+    0.05083034187555313,
+    -0.006919069681316614,
+    0.031458381563425064,
+    -0.055279526859521866,
+    -0.009395475499331951,
+    -0.0759429782629013,
+    0.04499654844403267,
+    0.023294571787118912,
+    -0.09511609375476837,
+    -0.024250492453575134,
+    -0.03536910563707352,
+    -0.03559480234980583,
+    0.012551787309348583,
+    -0.0752573162317276,
+    0.00255222269333899,
+    0.0387984961271286,
+    -0.007627960294485092,
+    0.03349318727850914,
+    0.044066429138183594,
+    -0.0786375030875206,
+    0.07650461047887802,
+    -0.02146272361278534,
+    0.03861572965979576,
+    -0.00047542477841489017,
+    0.002827492542564869,
+    0.035888589918613434,
+    0.033868491649627686,
+    -0.05307518318295479,
+    0.0270281620323658,
+    -0.05720922723412514,
+    -0.047710828483104706,
+    -0.09228505939245224,
+    -0.032441746443510056,
+    -0.05978554114699364,
+    -0.06125161051750183,
+    0.022610938176512718,
+    -0.016969522461295128,
+    -0.04467860609292984,
+    0.016796693205833435,
+    0.049227070063352585,
+    -0.06010454148054123,
+    0.0455264076590538,
+    0.007425942458212376,
+    -0.08292403072118759,
+    0.0779164582490921,
+    -0.032067667692899704,
+    -0.050020985305309296,
+    -0.03360499441623688,
+    0.11636827886104584,
+    -0.09607023745775223,
+    0.0549972727894783,
+    0.03793194517493248,
+    -0.029918845742940903,
+    -0.013560018502175808,
+    0.01981407031416893,
+    -0.01264057494699955,
+    0.011934277601540089,
+    0.11377199739217758,
+    -0.0579192116856575,
+    0.009924016892910004,
+    0.014382768422365189,
+    -0.08958639204502106,
+    0.032249804586172104,
+    0.0015976730501279235,
+    -0.04180645942687988,
+    0.08657648414373398,
+    -0.006652061827480793,
+    0.06319155544042587,
+    -0.04463246837258339,
+    -0.07283157855272293,
+    0.0554448701441288,
+    -0.00555659644305706,
+    -0.017814012244343758,
+    0.015790976583957672,
+    -0.1000942513346672,
+    0.02643173560500145,
+    -1.4846951224001259e-8,
+    0.010252267122268677,
+    0.06535682082176208,
+    0.007471286226063967,
+    -0.05207797512412071,
+    0.01146768033504486,
+    -0.0966576486825943,
+    0.01371475774794817,
+    0.10725434124469757,
+    -0.05641165003180504,
+    0.04476534202694893,
+    0.0708300992846489,
+    0.008072544820606709,
+    0.01771167665719986,
+    -0.020951537415385246,
+    0.014887175522744656,
+    0.030847759917378426,
+    0.006518838927149773,
+    0.0021504072938114405,
+    -0.06176614761352539,
+    0.050879042595624924,
+    -0.01192053034901619,
+    0.0140761137008667,
+    0.08247193694114685,
+    -0.06079239025712013,
+    0.006928189657628536,
+    0.0689195916056633,
+    0.03244593366980553,
+    0.03430686518549919,
+    -0.009321743622422218,
+    -0.08107347041368484,
+    -0.01205175556242466,
+    0.012125608511269093,
+    -0.08855479955673218,
+    -0.019711673259735107,
+    -0.009389464743435383,
+    -0.02997869811952114,
+    -0.08516602218151093,
+    -0.04533477500081062,
+    0.045687608420848846,
+    -0.004667702596634626,
+    -0.05670744180679321,
+    -0.07052285969257355,
+    -0.0012578075984492898,
+    0.11259543895721436,
+    0.04228062927722931,
+    0.06067575141787529,
+    -0.03386559337377548,
+    -0.057280175387859344,
+    0.012814642861485481,
+    -0.05423866957426071,
+    -0.041443947702646255,
+    0.01407783292233944,
+    -0.005055319983512163,
+    -0.060448259115219116,
+    0.018559491261839867,
+    0.002107124077156186,
+    0.04478198662400246,
+    -0.04735035449266434,
+    0.0021020988933742046,
+    -0.02134752832353115,
+    0.01873810403048992,
+    -0.020098533481359482,
+    -0.1321018636226654,
+    -0.041729945689439774
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Cobalt_Planetarium.txt",
+        "start": 0,
+        "content": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Cobalt_Planetarium.txt",
+        "start": 0,
+        "content": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+      }
+    ]
+  }
+}

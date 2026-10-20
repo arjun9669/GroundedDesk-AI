@@ -1,0 +1,1122 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "C14",
+  "question": "What are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?",
+    "expected_display": "What are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?",
+    "rendered_question": "What are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Lubricate the Juniper press every 72 operating hours.",
+    "sources": [
+      {
+        "filename": "03_Juniper_Workshop.txt",
+        "excerpt": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+        "quote": "Lubricate the Juniper press every 72 operating hours."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat are the normal and dusty-bay lubrication intervals for the Juniper press, and does its inspection interval change?\n\nSearched all files: 01_Cedar_Observatory.txt · 02_Harbor_Cartography.txt · 03_Juniper_Workshop.txt · 04_Willow_Conservatory.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Lubricate the Juniper press every 72 operating hours.\n\nSOURCE EVIDENCE\n[1]\n03_Juniper_Workshop.txt\n\nText line 5 (normalized extraction)\n\nThe Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred. Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius. Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment. Juniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Lubricate the Juniper press every 72 operating hours.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+        "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+        "filename": "03_Juniper_Workshop.txt",
+        "excerpt": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+        "quote": "Lubricate the Juniper press every 72 operating hours.",
+        "score": 0.0476,
+        "lexicalScore": 6.019621661049875,
+        "semanticScore": 0.5556410002173089,
+        "matchedTerms": [
+          "dusty",
+          "bay",
+          "juniper",
+          "press"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+        "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+        "filename": "03_Juniper_Workshop.txt",
+        "excerpt": "occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+        "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+        "score": 0.0476,
+        "lexicalScore": 6.019621661049875,
+        "semanticScore": 0.5556410002173089,
+        "matchedTerms": [
+          "dusty",
+          "bay",
+          "juniper",
+          "press"
+        ],
+        "start": 394,
+        "end": 568
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Lubricate the Juniper press every 72 operating hours.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Lubricate the Juniper press every 72 operating hours.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+        "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+        "filename": "03_Juniper_Workshop.txt",
+        "excerpt": "occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+        "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+        "score": 0.0476,
+        "lexicalScore": 6.019621661049875,
+        "semanticScore": 0.5556410002173089,
+        "matchedTerms": [
+          "dusty",
+          "bay",
+          "juniper",
+          "press"
+        ],
+        "start": 394,
+        "end": 568
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Lubricate the Juniper press every 72 operating hours.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Lubricate the Juniper press every 72 operating hours.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Juniper_Workshop.txt",
+      "start": 394,
+      "content": "Lubricate the Juniper press every 72 operating hours.",
+      "semanticScore": 0.7182226294822452,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Juniper_Workshop.txt",
+      "start": 448,
+      "content": "In a dusty bay, lubricate it every 36 operating hours.",
+      "semanticScore": 0.6354945898005353,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Juniper_Workshop.txt",
+      "start": 503,
+      "content": "Inspect the press every 18 operating hours in either environment.",
+      "semanticScore": 0.4563758454536362,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Juniper_Workshop.txt",
+      "start": 570,
+      "content": "Juniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+      "semanticScore": 0.4158007663540511,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "The Cedar Observatory relocation took place in 1874.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.13232489012925328,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Its restoration took place in 1926.",
+      "start": 53,
+      "end": 88,
+      "similarity": 0.09346957657049841,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "A proposed closure in 1941 did not occur.",
+      "start": 89,
+      "end": 130,
+      "similarity": 0.013201752574917715,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+      "start": 132,
+      "end": 204,
+      "similarity": 0.19052226280660925,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Its highest monthly mean temperature is 29 degrees Celsius in August.",
+      "start": 205,
+      "end": 274,
+      "similarity": 0.0376350508667565,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Its highest recorded daily temperature is 42 degrees Celsius.",
+      "start": 275,
+      "end": 336,
+      "similarity": 0.11575482219483035,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Mira catalogs seven plates per shift.",
+      "start": 338,
+      "end": 375,
+      "similarity": 0.2251033187103812,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Oren cleans four lenses per shift.",
+      "start": 376,
+      "end": 410,
+      "similarity": 0.1971200505202328,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Mira checks two clocks per shift.",
+      "start": 411,
+      "end": 444,
+      "similarity": 0.16634990888508308,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Cedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.",
+      "start": 446,
+      "end": 567,
+      "similarity": 0.2455956185715297,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "The Harbor Cartography archive relocation took place in 1889.",
+      "start": 0,
+      "end": 61,
+      "similarity": -0.004263051413695135,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Its restoration took place in 1938.",
+      "start": 62,
+      "end": 97,
+      "similarity": 0.051510662941337604,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "The archive did not close in 1952.",
+      "start": 98,
+      "end": 132,
+      "similarity": 0.04175941413274721,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Harbor Cartography archive winter average temperatures exceed 9 degrees Celsius.",
+      "start": 134,
+      "end": 214,
+      "similarity": 0.059478114027663204,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Its highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 215,
+      "end": 282,
+      "similarity": 0.030565643007174806,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Its highest recorded daily temperature is 39 degrees Celsius.",
+      "start": 283,
+      "end": 344,
+      "similarity": 0.08477470698403468,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Orders released before 14:20 depart the same operating day.",
+      "start": 346,
+      "end": 405,
+      "similarity": 0.18879784499932245,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Orders released at or after 14:20 depart the next operating day, unless a customs hold prevents departure.",
+      "start": 406,
+      "end": 512,
+      "similarity": 0.16331439576513193,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Harbor Cartography shipping records are retained for 22 months, unless a customs investigation requires longer retention.",
+      "start": 514,
+      "end": 635,
+      "similarity": 0.17326741524610448,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "The Juniper Workshop relocation took place in 1907.",
+      "start": 0,
+      "end": 51,
+      "similarity": 0.3104110016675677,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Its first restoration took place in 1946.",
+      "start": 52,
+      "end": 93,
+      "similarity": 0.09568139046048886,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Its second restoration took place in 1979.",
+      "start": 94,
+      "end": 136,
+      "similarity": 0.12497061847216437,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "The proposed demolition in 1988 never occurred.",
+      "start": 137,
+      "end": 184,
+      "similarity": -0.005286384985181021,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius.",
+      "start": 186,
+      "end": 257,
+      "similarity": 0.3390437924993791,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+      "start": 258,
+      "end": 330,
+      "similarity": 0.007128585191615827,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Its highest recorded daily temperature is 45 degrees Celsius.",
+      "start": 331,
+      "end": 392,
+      "similarity": 0.13066952933178275,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Lubricate the Juniper press every 72 operating hours.",
+      "start": 394,
+      "end": 447,
+      "similarity": 0.7182226294822452,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "In a dusty bay, lubricate it every 36 operating hours.",
+      "start": 448,
+      "end": 502,
+      "similarity": 0.6354945898005353,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Inspect the press every 18 operating hours in either environment.",
+      "start": 503,
+      "end": 568,
+      "similarity": 0.4563758454536362,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Juniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+      "start": 570,
+      "end": 687,
+      "similarity": 0.4158007663540511,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "The Willow Conservatory relocation took place in 1863.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.08718990559852453,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Its restoration took place in 1917.",
+      "start": 55,
+      "end": 90,
+      "similarity": 0.0957887460214737,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Its inventory took place in 1917.",
+      "start": 91,
+      "end": 124,
+      "similarity": 0.10935936050209587,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "The canceled expansion in 1930 did not occur.",
+      "start": 125,
+      "end": 170,
+      "similarity": -0.003859352630958551,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Willow Conservatory winter average temperatures exceed 16 degrees Celsius.",
+      "start": 172,
+      "end": 246,
+      "similarity": 0.13825799367350347,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Its highest monthly mean temperature is 33 degrees Celsius in June.",
+      "start": 247,
+      "end": 314,
+      "similarity": 0.04057891493575065,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Its highest recorded daily temperature is 47 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.12329881793760385,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Purchases above 5300 credits require written approval from the Curator and Finance Manager.",
+      "start": 378,
+      "end": 469,
+      "similarity": 0.0999436074252123,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "start": 470,
+      "end": 581,
+      "similarity": 0.12150169728699119,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Willow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+      "start": 583,
+      "end": 700,
+      "similarity": 0.17743710206455665,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+          "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+          "filename": "03_Juniper_Workshop.txt",
+          "excerpt": "occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+          "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+          "score": 0.0476,
+          "lexicalScore": 6.019621661049875,
+          "semanticScore": 0.5556410002173089,
+          "matchedTerms": [
+            "dusty",
+            "bay",
+            "juniper",
+            "press"
+          ],
+          "start": 394,
+          "end": 568
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+          "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+          "filename": "03_Juniper_Workshop.txt",
+          "excerpt": "occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+          "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+          "score": 0.0476,
+          "lexicalScore": 6.019621661049875,
+          "semanticScore": 0.5556410002173089,
+          "matchedTerms": [
+            "dusty",
+            "bay",
+            "juniper",
+            "press"
+          ],
+          "start": 394,
+          "end": 568
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Lubricate the Juniper press every 72 operating hours.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+          "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+          "filename": "03_Juniper_Workshop.txt",
+          "excerpt": "occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+          "quote": "Lubricate the Juniper press every 72 operating hours.",
+          "score": 0.0476,
+          "lexicalScore": 6.019621661049875,
+          "semanticScore": 0.5556410002173089,
+          "matchedTerms": [
+            "dusty",
+            "bay",
+            "juniper",
+            "press"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Lubricate the Juniper press every 72 operating hours.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+          "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+          "filename": "03_Juniper_Workshop.txt",
+          "excerpt": "occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+          "quote": "Lubricate the Juniper press every 72 operating hours.",
+          "score": 0.0476,
+          "lexicalScore": 6.019621661049875,
+          "semanticScore": 0.5556410002173089,
+          "matchedTerms": [
+            "dusty",
+            "bay",
+            "juniper",
+            "press"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Lubricate the Juniper press every 72 operating hours.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.07520411163568497,
+    -0.08696496486663818,
+    0.09332998096942902,
+    0.0057522389106452465,
+    0.00012621194764506072,
+    -0.0359974205493927,
+    -0.029047638177871704,
+    0.02150360494852066,
+    -0.011674617417156696,
+    -0.05548739433288574,
+    0.025930123403668404,
+    0.0452188104391098,
+    0.004104355815798044,
+    0.008785253390669823,
+    -0.07580167055130005,
+    -0.04786853492259979,
+    0.07384639233350754,
+    -0.1030220091342926,
+    0.010387868620455265,
+    -0.00020874280016869307,
+    0.03431762009859085,
+    0.03815377503633499,
+    0.033067651093006134,
+    -0.006899640429764986,
+    -0.05800929665565491,
+    0.030576467514038086,
+    -0.0591549426317215,
+    -0.04154137149453163,
+    0.05631585046648979,
+    0.02094467543065548,
+    -0.025589991360902786,
+    0.0475158654153347,
+    0.02475581131875515,
+    -0.03829770162701607,
+    -0.012887638993561268,
+    -0.06159180402755737,
+    0.010182620957493782,
+    -0.09258974343538284,
+    0.024409407749772072,
+    0.026310212910175323,
+    -0.03586071729660034,
+    -0.0588744580745697,
+    0.017337650060653687,
+    -0.03389111906290054,
+    0.00624519307166338,
+    0.03061736188828945,
+    0.032994288951158524,
+    -0.027124004438519478,
+    0.036633607000112534,
+    -0.07761741429567337,
+    -0.012763761915266514,
+    -0.07611870765686035,
+    0.015846485272049904,
+    -0.04082593321800232,
+    0.0365140438079834,
+    0.010785304941236973,
+    0.012902947142720222,
+    -0.08698325604200363,
+    0.03964740037918091,
+    0.08598698675632477,
+    -0.010496060363948345,
+    0.029841439798474312,
+    -0.0927053764462471,
+    0.0286580678075552,
+    0.03307436406612396,
+    -0.03291155397891998,
+    -0.010701386258006096,
+    -0.04168316721916199,
+    0.0572650283575058,
+    0.04868314415216446,
+    -0.07755829393863678,
+    0.08554050326347351,
+    -0.08208619058132172,
+    -0.015446910634636879,
+    -0.006185182835906744,
+    0.005350271239876747,
+    -0.05754324048757553,
+    0.031116796657443047,
+    -0.021223673596978188,
+    -0.1524525135755539,
+    -0.07663606852293015,
+    0.013563842512667179,
+    0.09156690537929535,
+    -0.012820304371416569,
+    0.031203310936689377,
+    -0.010450885631144047,
+    0.046667493879795074,
+    0.07641521096229553,
+    0.031107205897569656,
+    0.11718781292438507,
+    0.06329816579818726,
+    0.038185540586709976,
+    -0.12977570295333862,
+    0.023460786789655685,
+    0.008880413137376308,
+    0.059182167053222656,
+    -0.04181452468037605,
+    0.061722204089164734,
+    0.0016913700383156538,
+    0.022433975711464882,
+    -0.07797631621360779,
+    -0.03585989400744438,
+    -0.09349224716424942,
+    -0.03510918468236923,
+    -0.038635801523923874,
+    0.03369162604212761,
+    -0.028863023966550827,
+    0.027341404929757118,
+    -0.061020366847515106,
+    0.02954643964767456,
+    0.06685599684715271,
+    0.03904743865132332,
+    0.027324184775352478,
+    -0.061632875353097916,
+    -0.022185808047652245,
+    -0.02282416820526123,
+    0.03126177936792374,
+    0.026693224906921387,
+    -0.05624060332775116,
+    0.043688107281923294,
+    0.043225083500146866,
+    -0.02080538123846054,
+    -0.02947581745684147,
+    -0.05450502038002014,
+    -0.039649490267038345,
+    0.006949569098651409,
+    0.06009116768836975,
+    -3.3231967328555024e-33,
+    0.036540187895298004,
+    -0.05306316539645195,
+    -0.02534327283501625,
+    0.04505881667137146,
+    -0.08876672387123108,
+    0.10297993570566177,
+    -0.023687321692705154,
+    0.007074992638081312,
+    0.023697668686509132,
+    0.0495535247027874,
+    0.028524156659841537,
+    0.054185397922992706,
+    -0.10440833866596222,
+    -0.06004084646701813,
+    -0.00044752989197149873,
+    0.006758192088454962,
+    0.02249068394303322,
+    0.04346535727381706,
+    -0.016250941902399063,
+    0.0010653366334736347,
+    0.015892570838332176,
+    -0.08868998289108276,
+    -0.02594985067844391,
+    0.0004203779681120068,
+    0.03814685717225075,
+    0.023303350433707237,
+    0.0011870096204802394,
+    -0.03290881961584091,
+    -0.021866068243980408,
+    0.0734698697924614,
+    0.05083217844367027,
+    -0.004922776482999325,
+    -0.02333841845393181,
+    0.02649143524467945,
+    -0.014006436802446842,
+    0.05687180534005165,
+    0.0016300006536766887,
+    -0.015510284341871738,
+    0.020743949338793755,
+    -0.04953501746058464,
+    -0.02464195340871811,
+    0.004841713700443506,
+    -0.003740262007340789,
+    0.06098567321896553,
+    -0.02821352891623974,
+    0.04186083748936653,
+    -0.01701326109468937,
+    -0.020186888054013252,
+    0.05412818118929863,
+    0.007575551979243755,
+    -0.009532715193927288,
+    0.07136499136686325,
+    0.09362311661243439,
+    -0.05426963418722153,
+    0.024335015565156937,
+    0.0997360348701477,
+    0.14071184396743774,
+    -0.05213260278105736,
+    -0.04020735248923302,
+    0.052514661103487015,
+    0.0012852048967033625,
+    0.12990111112594604,
+    -0.017664220184087753,
+    -0.05490095540881157,
+    0.017966866493225098,
+    0.11972296237945557,
+    -0.01681804098188877,
+    0.015661172568798065,
+    -0.017511213198304176,
+    0.022197628393769264,
+    0.00043074580025859177,
+    -0.09586796164512634,
+    0.04773202911019325,
+    0.01623217575252056,
+    -0.044227320700883865,
+    -0.058186810463666916,
+    -0.0030121125746518373,
+    -0.005808302201330662,
+    0.036014456301927567,
+    0.0023922184482216835,
+    -0.017234236001968384,
+    0.03712709993124008,
+    -0.009967352263629436,
+    -0.03744567930698395,
+    -0.023712381720542908,
+    -0.011979001574218273,
+    0.012729087844491005,
+    0.06649113446474075,
+    -0.017103638499975204,
+    -0.012683367356657982,
+    0.043414995074272156,
+    -0.014280240051448345,
+    0.02910354733467102,
+    0.04769078642129898,
+    -0.02495340257883072,
+    2.476375010626942e-33,
+    -0.005291592795401812,
+    0.026201870292425156,
+    -0.05475655198097229,
+    0.08555705100297928,
+    -0.019032884389162064,
+    0.041772935539484024,
+    0.021296285092830658,
+    0.1476079523563385,
+    -0.005727099254727364,
+    0.04876972734928131,
+    0.02442314103245735,
+    -0.028319917619228363,
+    -0.11101631820201874,
+    -0.02222365140914917,
+    -0.06061498075723648,
+    0.05492379516363144,
+    -0.0019309800118207932,
+    -0.08251456916332245,
+    -0.05244438350200653,
+    -0.039198290556669235,
+    0.09506110101938248,
+    -0.014659186825156212,
+    0.0546422153711319,
+    0.045603372156620026,
+    -0.0014824295649304986,
+    -0.018524672836065292,
+    -0.02451077662408352,
+    0.021002357825636864,
+    -0.06917284429073334,
+    -0.08309831470251083,
+    -0.0730220302939415,
+    -0.048827994614839554,
+    -0.021338237449526787,
+    -0.03844675421714783,
+    -0.01958126574754715,
+    -0.04431283101439476,
+    0.006305830553174019,
+    0.05368052050471306,
+    -0.037828586995601654,
+    -0.054289329797029495,
+    0.06509605795145035,
+    0.020495647564530373,
+    0.04208065941929817,
+    0.05374319478869438,
+    -0.05906953662633896,
+    0.040111247450113297,
+    -0.03702104836702347,
+    -0.06365518271923065,
+    -0.03690531477332115,
+    0.052416834980249405,
+    0.020488901063799858,
+    0.016940677538514137,
+    0.03542530536651611,
+    0.08813508599996567,
+    -0.012184000574052334,
+    0.053590863943099976,
+    -0.01727723330259323,
+    -0.05591462552547455,
+    -0.04203419014811516,
+    0.13452613353729248,
+    0.07413166761398315,
+    0.04575953260064125,
+    -0.06583470106124878,
+    0.06107836589217186,
+    0.07670281082391739,
+    0.036784578114748,
+    0.082156240940094,
+    0.017730148509144783,
+    0.02296173945069313,
+    -0.056598495692014694,
+    0.012437502853572369,
+    -0.0028051044791936874,
+    0.023375598713755608,
+    -0.10396823287010193,
+    0.02003716491162777,
+    -0.010314841754734516,
+    0.02057611383497715,
+    -0.11998055875301361,
+    -0.1134362518787384,
+    0.03087877668440342,
+    -0.0045680394396185875,
+    0.056694503873586655,
+    -0.04973379150032997,
+    0.09735111892223358,
+    -0.003945774398744106,
+    -0.022883476689457893,
+    -0.0009332309709861875,
+    0.005255450494587421,
+    0.06309062987565994,
+    0.02817254699766636,
+    0.04577763378620148,
+    0.048358894884586334,
+    -0.013357164338231087,
+    -0.07082866132259369,
+    0.010498309507966042,
+    -1.9292857089681092e-8,
+    -0.11374349147081375,
+    0.002062499523162842,
+    0.04721838980913162,
+    -0.024666020646691322,
+    0.07238409668207169,
+    -0.031106531620025635,
+    -0.007049620151519775,
+    0.07659884542226791,
+    -0.009627779014408588,
+    -0.004507677163928747,
+    0.07179120182991028,
+    -0.01347989123314619,
+    0.06808561831712723,
+    -0.004235332831740379,
+    0.027297550812363625,
+    -0.03881293535232544,
+    -0.028551291674375534,
+    0.013754213228821754,
+    -0.04127895087003708,
+    -0.09579260647296906,
+    0.09912755340337753,
+    -0.015677709132432938,
+    0.10711976140737534,
+    0.05746674910187721,
+    -0.04584734886884689,
+    -0.0566733293235302,
+    -0.027295896783471107,
+    0.02402426116168499,
+    -0.017339864745736122,
+    -0.07761427760124207,
+    -0.024911873042583466,
+    0.008869794197380543,
+    0.021874887868762016,
+    0.05828253552317619,
+    -0.07823099195957184,
+    -0.01059904508292675,
+    -0.11384083330631256,
+    0.009236888028681278,
+    -0.03582309931516647,
+    0.06866717338562012,
+    -0.05213594809174538,
+    -0.08627211302518845,
+    0.024195915088057518,
+    0.02482866868376732,
+    0.026142040267586708,
+    0.04738536477088928,
+    -0.037691421806812286,
+    0.054411631077528,
+    0.006966283079236746,
+    0.02073374204337597,
+    0.0848911702632904,
+    0.08350019156932831,
+    0.04659492149949074,
+    0.044592272490262985,
+    -0.049656350165605545,
+    -0.06349493563175201,
+    0.003774035256356001,
+    0.04480736330151558,
+    0.03232283517718315,
+    -0.05125698819756508,
+    -0.01952771469950676,
+    -0.08287577331066132,
+    -0.0341142900288105,
+    0.02150350622832775
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Juniper_Workshop.txt",
+        "start": 0,
+        "content": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Juniper_Workshop.txt",
+        "start": 0,
+        "content": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention."
+      }
+    ]
+  }
+}

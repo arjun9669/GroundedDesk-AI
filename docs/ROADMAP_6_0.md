@@ -18,18 +18,17 @@ phase. Inputs for 668 cases are verified; 103 original cases and the old combine
 configuration remain unavailable. New tests cannot retrospectively establish
 preservation on those missing originals. Do not silently replace the full gate.
 
-The [first v43 nine-pack exposed regression](V43_NINE_PACK_MAC_RESULTS.md) passes
-eight 32-case families 32/32 each and RetrievalQuality28 28/28 in both variants.
-Four deferred clock forms now restore earlier v38 answers under the structured
-contract; all first v42/v41/v40/v39 and earlier evidence remains unchanged.
-V43 is not integrated. There are 284 distinct exposed v43-tested cases, 384 verified
-cases awaiting testing across 10 families and 103 originals/combined configuration
-unavailable. No full-regression/fresh-confirmation gate claim.
+The [first combined v43 available-input study](V43_ALL_AVAILABLE_MAC_RESULTS.md)
+captures all 668 verified cases/19 families once. All native regression gates PASS,
+while five fixed-variant/three section-variant known public FAIL rows stay FAIL.
+No verified available family remains untested in this scope; no candidate/live
+integration change occurred. All first results and historical evidence remain.
 
-Next freeze the remaining verified scoring families with their original native
-criteria. Phase 1 exit still requires broader agreed regression/preservation and
-an explicit missing-input decision. No phase 2/adoption authorization follows from
-nine partial exposed regression gates.
+Phase 1 now awaits recovery of 103 original cases/the private combined configuration
+or an explicitly approved revised acceptance protocol. Known public-data answer
+failures remain quality limitations; preservation success is not general accuracy.
+No full 771-case gate/fresh-confirmation claim or phase 2/adoption authorization
+follows from the available-input gate. Resolve that decision before closing phase 1.
 Any required failure stops work for user input before retries, implementation,
 committing or publication. Preserve original inputs, rubrics, frozen candidates
 and first evidence.

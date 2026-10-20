@@ -1,0 +1,1173 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "C15",
+  "question": "What is the Juniper Workshop highest monthly mean temperature?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What is the Juniper Workshop highest monthly mean temperature?",
+    "expected_display": "What is the Juniper Workshop highest monthly mean temperature?",
+    "rendered_question": "What is the Juniper Workshop highest monthly mean temperature?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Its highest monthly mean temperature is 31 degrees Celsius in September.",
+    "sources": [
+      {
+        "filename": "03_Juniper_Workshop.txt",
+        "excerpt": "lace in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are",
+        "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat is the Juniper Workshop highest monthly mean temperature?\n\nSearched all files: 01_Cedar_Observatory.txt · 02_Harbor_Cartography.txt · 03_Juniper_Workshop.txt · 04_Willow_Conservatory.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Its highest monthly mean temperature is 31 degrees Celsius in September.\n\nSOURCE EVIDENCE\n[1]\n03_Juniper_Workshop.txt\n\nText line 3 (normalized extraction)\n\nlace in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred. Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius. Lubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment. Juniper Workshop maintenance records are\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Its highest monthly mean temperature is 31 degrees Celsius in September.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+        "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+        "filename": "03_Juniper_Workshop.txt",
+        "excerpt": "lace in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are",
+        "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+        "score": 0.0476,
+        "lexicalScore": 4.387983958047489,
+        "semanticScore": 0.7131777740903401,
+        "matchedTerms": [
+          "juniper",
+          "workshop",
+          "highest",
+          "monthly",
+          "mean",
+          "temperature"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+        "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+        "filename": "03_Juniper_Workshop.txt",
+        "excerpt": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires lo",
+        "quote": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 4.387983958047489,
+        "semanticScore": 0.7131777740903401,
+        "matchedTerms": [
+          "juniper",
+          "workshop",
+          "highest",
+          "monthly",
+          "mean",
+          "temperature"
+        ],
+        "start": 186,
+        "end": 392
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+        "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+        "filename": "03_Juniper_Workshop.txt",
+        "excerpt": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires lo",
+        "quote": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 4.387983958047489,
+        "semanticScore": 0.7131777740903401,
+        "matchedTerms": [
+          "juniper",
+          "workshop",
+          "highest",
+          "monthly",
+          "mean",
+          "temperature"
+        ],
+        "start": 186,
+        "end": 392
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Juniper_Workshop.txt",
+        "quote": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Harbor_Cartography.txt",
+      "start": 215,
+      "content": "Its highest monthly mean temperature is 26 degrees Celsius in July.",
+      "semanticScore": 0.5659846229400984,
+      "lexicalScore": 7.426993251196277
+    },
+    {
+      "filename": "01_Cedar_Observatory.txt",
+      "start": 205,
+      "content": "Its highest monthly mean temperature is 29 degrees Celsius in August.",
+      "semanticScore": 0.5400591360634225,
+      "lexicalScore": 7.426993251196277
+    },
+    {
+      "filename": "04_Willow_Conservatory.txt",
+      "start": 247,
+      "content": "Its highest monthly mean temperature is 33 degrees Celsius in June.",
+      "semanticScore": 0.55326891047173,
+      "lexicalScore": 7.426993251196277
+    },
+    {
+      "filename": "03_Juniper_Workshop.txt",
+      "start": 258,
+      "content": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+      "semanticScore": 0.4360366929549663,
+      "lexicalScore": 7.426993251196277
+    },
+    {
+      "filename": "03_Juniper_Workshop.txt",
+      "start": 186,
+      "content": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius.",
+      "semanticScore": 0.7319087400541893,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "The Cedar Observatory relocation took place in 1874.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.265783277956611,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Its restoration took place in 1926.",
+      "start": 53,
+      "end": 88,
+      "similarity": 0.015980588779855708,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "A proposed closure in 1941 did not occur.",
+      "start": 89,
+      "end": 130,
+      "similarity": -0.016226033723139216,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+      "start": 132,
+      "end": 204,
+      "similarity": 0.5294671798398284,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Its highest monthly mean temperature is 29 degrees Celsius in August.",
+      "start": 205,
+      "end": 274,
+      "similarity": 0.5400591360634225,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Its highest recorded daily temperature is 42 degrees Celsius.",
+      "start": 275,
+      "end": 336,
+      "similarity": 0.5088438590894849,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Mira catalogs seven plates per shift.",
+      "start": 338,
+      "end": 375,
+      "similarity": 0.1803849701494224,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Oren cleans four lenses per shift.",
+      "start": 376,
+      "end": 410,
+      "similarity": 0.06774934398940828,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Mira checks two clocks per shift.",
+      "start": 411,
+      "end": 444,
+      "similarity": 0.13423939972894003,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bfe55864-5458-48e0-8f35-9c0220544f52",
+      "value": "Cedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.",
+      "start": 446,
+      "end": 567,
+      "similarity": 0.2521626237574161,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "The Harbor Cartography archive relocation took place in 1889.",
+      "start": 0,
+      "end": 61,
+      "similarity": -0.08937310626461133,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Its restoration took place in 1938.",
+      "start": 62,
+      "end": 97,
+      "similarity": 0.01913048148180218,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "The archive did not close in 1952.",
+      "start": 98,
+      "end": 132,
+      "similarity": 0.061946503543956394,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Harbor Cartography archive winter average temperatures exceed 9 degrees Celsius.",
+      "start": 134,
+      "end": 214,
+      "similarity": 0.2739325542340749,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Its highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 215,
+      "end": 282,
+      "similarity": 0.5659846229400984,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Its highest recorded daily temperature is 39 degrees Celsius.",
+      "start": 283,
+      "end": 344,
+      "similarity": 0.4988826325776178,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Orders released before 14:20 depart the same operating day.",
+      "start": 346,
+      "end": 405,
+      "similarity": 0.10203905003295989,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Orders released at or after 14:20 depart the next operating day, unless a customs hold prevents departure.",
+      "start": 406,
+      "end": 512,
+      "similarity": 0.055085303337418415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1672ab85-a525-44cf-9dc6-5dbec6be7818",
+      "value": "Harbor Cartography shipping records are retained for 22 months, unless a customs investigation requires longer retention.",
+      "start": 514,
+      "end": 635,
+      "similarity": -0.005388723809458415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "The Juniper Workshop relocation took place in 1907.",
+      "start": 0,
+      "end": 51,
+      "similarity": 0.4255747195836384,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Its first restoration took place in 1946.",
+      "start": 52,
+      "end": 93,
+      "similarity": 0.049747782909105774,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Its second restoration took place in 1979.",
+      "start": 94,
+      "end": 136,
+      "similarity": 0.10621109452345476,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "The proposed demolition in 1988 never occurred.",
+      "start": 137,
+      "end": 184,
+      "similarity": 0.00522160711556881,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius.",
+      "start": 186,
+      "end": 257,
+      "similarity": 0.7319087400541893,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+      "start": 258,
+      "end": 330,
+      "similarity": 0.4360366929549663,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Its highest recorded daily temperature is 45 degrees Celsius.",
+      "start": 331,
+      "end": 392,
+      "similarity": 0.5134985250832378,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Lubricate the Juniper press every 72 operating hours.",
+      "start": 394,
+      "end": 447,
+      "similarity": 0.41198289723971065,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "In a dusty bay, lubricate it every 36 operating hours.",
+      "start": 448,
+      "end": 502,
+      "similarity": 0.266109357431029,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Inspect the press every 18 operating hours in either environment.",
+      "start": 503,
+      "end": 568,
+      "similarity": 0.2225601812408521,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+      "value": "Juniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+      "start": 570,
+      "end": 687,
+      "similarity": 0.3586537581132491,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "The Willow Conservatory relocation took place in 1863.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.1690944280892186,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Its restoration took place in 1917.",
+      "start": 55,
+      "end": 90,
+      "similarity": 0.04543638745861752,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Its inventory took place in 1917.",
+      "start": 91,
+      "end": 124,
+      "similarity": 0.08178242591806764,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "The canceled expansion in 1930 did not occur.",
+      "start": 125,
+      "end": 170,
+      "similarity": -0.031240741076246012,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Willow Conservatory winter average temperatures exceed 16 degrees Celsius.",
+      "start": 172,
+      "end": 246,
+      "similarity": 0.4716208584767096,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Its highest monthly mean temperature is 33 degrees Celsius in June.",
+      "start": 247,
+      "end": 314,
+      "similarity": 0.55326891047173,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Its highest recorded daily temperature is 47 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.534226947271209,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Purchases above 5300 credits require written approval from the Curator and Finance Manager.",
+      "start": 378,
+      "end": 469,
+      "similarity": 0.0764499803845897,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "start": 470,
+      "end": 581,
+      "similarity": 0.03658361318774456,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5da70716-3b41-489c-8e8d-9a9d482a4635",
+      "value": "Willow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+      "start": 583,
+      "end": 700,
+      "similarity": 0.17724967048447635,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+          "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+          "filename": "03_Juniper_Workshop.txt",
+          "excerpt": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires lo",
+          "quote": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 4.387983958047489,
+          "semanticScore": 0.7131777740903401,
+          "matchedTerms": [
+            "juniper",
+            "workshop",
+            "highest",
+            "monthly",
+            "mean",
+            "temperature"
+          ],
+          "start": 186,
+          "end": 392
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+          "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+          "filename": "03_Juniper_Workshop.txt",
+          "excerpt": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires lo",
+          "quote": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 4.387983958047489,
+          "semanticScore": 0.7131777740903401,
+          "matchedTerms": [
+            "juniper",
+            "workshop",
+            "highest",
+            "monthly",
+            "mean",
+            "temperature"
+          ],
+          "start": 186,
+          "end": 392
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Its highest monthly mean temperature is 31 degrees Celsius in September.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+          "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+          "filename": "03_Juniper_Workshop.txt",
+          "excerpt": "lace in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are",
+          "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+          "score": 0.0476,
+          "lexicalScore": 4.387983958047489,
+          "semanticScore": 0.7131777740903401,
+          "matchedTerms": [
+            "juniper",
+            "workshop",
+            "highest",
+            "monthly",
+            "mean",
+            "temperature"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Its highest monthly mean temperature is 31 degrees Celsius in September.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6323e278-6691-4c4e-a0e6-ea0315a094f8:0",
+          "documentId": "6323e278-6691-4c4e-a0e6-ea0315a094f8",
+          "filename": "03_Juniper_Workshop.txt",
+          "excerpt": "lace in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are",
+          "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+          "score": 0.0476,
+          "lexicalScore": 4.387983958047489,
+          "semanticScore": 0.7131777740903401,
+          "matchedTerms": [
+            "juniper",
+            "workshop",
+            "highest",
+            "monthly",
+            "mean",
+            "temperature"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Juniper_Workshop.txt",
+          "quote": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.05784105882048607,
+    -0.05262676253914833,
+    -0.05549418553709984,
+    0.05999598652124405,
+    -0.03725726157426834,
+    -0.03949951380491257,
+    -0.006203734781593084,
+    -0.01701504923403263,
+    -0.004517305642366409,
+    0.002668475965037942,
+    0.04276013374328613,
+    -0.03374753147363663,
+    0.016043027862906456,
+    0.011167138814926147,
+    0.011860984377563,
+    -0.0703074112534523,
+    0.038943540304899216,
+    -0.07686327397823334,
+    0.0838615670800209,
+    -0.04729415103793144,
+    0.007640549447387457,
+    0.049294255673885345,
+    0.030744519084692,
+    -0.010654158890247345,
+    0.05660165846347809,
+    -0.021889325231313705,
+    -0.09584089368581772,
+    0.034483350813388824,
+    0.040636252611875534,
+    0.05663143843412399,
+    -0.07545348256826401,
+    0.12861882150173187,
+    0.03760724887251854,
+    0.01567750610411167,
+    -0.05359519273042679,
+    -0.0016462616622447968,
+    -0.008355461992323399,
+    -0.12720756232738495,
+    -0.0404699370265007,
+    0.01075174380093813,
+    -0.09174101799726486,
+    -0.005177766550332308,
+    0.08003018796443939,
+    -0.05210946872830391,
+    -0.08044620603322983,
+    0.03236467391252518,
+    0.009562510065734386,
+    -0.000617974263150245,
+    0.03655169904232025,
+    -0.023077456280589104,
+    0.03870677575469017,
+    0.01726943999528885,
+    -0.02933218516409397,
+    0.04741575941443443,
+    -0.018665585666894913,
+    0.04637117311358452,
+    -0.08888258785009384,
+    -0.04458921402692795,
+    0.0006024399772286415,
+    0.07783633470535278,
+    -0.006331081036478281,
+    0.06574588268995285,
+    -0.13182835280895233,
+    0.043392423540353775,
+    0.13621294498443604,
+    -0.06233150139451027,
+    -0.041977446526288986,
+    0.06354138255119324,
+    0.06358882039785385,
+    -0.05015849694609642,
+    -0.03610887750983238,
+    -0.003396834246814251,
+    -0.018534032627940178,
+    -0.048202987760305405,
+    0.009916151873767376,
+    0.003016872564330697,
+    0.04764324799180031,
+    0.010053708218038082,
+    0.08607747405767441,
+    -0.09455759823322296,
+    -0.03944864869117737,
+    -0.001042192685417831,
+    0.006133243907243013,
+    0.062405701726675034,
+    -0.006411356385797262,
+    0.034761808812618256,
+    0.09083826839923859,
+    0.1341775506734848,
+    0.04451899603009224,
+    0.07514378428459167,
+    0.04328475147485733,
+    0.07277573645114899,
+    -0.10253069549798965,
+    0.01830338127911091,
+    -0.10990867018699646,
+    0.15054745972156525,
+    0.01265399344265461,
+    0.00501934764906764,
+    -0.012154756113886833,
+    -0.00481432257220149,
+    -0.013685567304491997,
+    0.0004991624155081809,
+    -0.02034749463200569,
+    0.0311221182346344,
+    -0.05319470912218094,
+    0.012841719202697277,
+    -0.004458334296941757,
+    0.036980148404836655,
+    0.014673227444291115,
+    0.025031626224517822,
+    -0.058117836713790894,
+    0.006485178600996733,
+    -0.008631594479084015,
+    -0.03552846983075142,
+    0.03647775575518608,
+    -0.0533985011279583,
+    0.03529025614261627,
+    -0.008035299368202686,
+    -0.02626240812242031,
+    0.03880351781845093,
+    0.006438047159463167,
+    0.062006764113903046,
+    0.009468605741858482,
+    0.08316957950592041,
+    -0.052255939692258835,
+    0.11337267607450485,
+    0.01181522011756897,
+    -2.2890324351745632e-33,
+    0.06146572157740593,
+    0.0038878461346030235,
+    0.019693253561854362,
+    -0.0003613410226535052,
+    0.012581766583025455,
+    0.006473288405686617,
+    -0.06293012201786041,
+    0.03730982542037964,
+    0.01054314523935318,
+    0.012028886005282402,
+    -0.023005293682217598,
+    -0.011570202186703682,
+    -0.040847159922122955,
+    -0.026955850422382355,
+    0.05778259038925171,
+    -0.03745816648006439,
+    0.0024321686942130327,
+    0.031212113797664642,
+    -0.02603299543261528,
+    -0.01045772060751915,
+    -0.04907997325062752,
+    0.03460776060819626,
+    0.024995697662234306,
+    -0.0076145147904753685,
+    0.05785809084773064,
+    0.003626029472798109,
+    0.11153616011142731,
+    0.005077209789305925,
+    -0.04029626399278641,
+    0.03240564465522766,
+    0.1061265841126442,
+    -0.08361869305372238,
+    -0.039450522512197495,
+    0.0018241312354803085,
+    0.05821455270051956,
+    0.025418978184461594,
+    -0.010962947271764278,
+    -0.005428785923868418,
+    0.0032511944882571697,
+    0.07450704276561737,
+    0.013891337439417839,
+    0.004132334142923355,
+    0.06359679251909256,
+    0.06111648678779602,
+    0.0401063971221447,
+    0.0636085644364357,
+    0.006745513528585434,
+    0.02168222703039646,
+    -0.0005126712494529784,
+    0.018758021295070648,
+    -0.06059955805540085,
+    0.024971656501293182,
+    0.046735845506191254,
+    -0.03695647418498993,
+    0.041391875594854355,
+    0.13279667496681213,
+    0.07110179960727692,
+    -0.01919879950582981,
+    0.012257441878318787,
+    0.01896337792277336,
+    -0.13759519159793854,
+    0.04659717157483101,
+    -0.014035207219421864,
+    -0.016892964020371437,
+    0.0010458978358656168,
+    0.009520534425973892,
+    -0.0376061387360096,
+    -0.0007427932578139007,
+    -0.06399691104888916,
+    0.05071963742375374,
+    -0.019326070323586464,
+    -0.026721401140093803,
+    0.04650154709815979,
+    -0.0654430091381073,
+    -0.005030200816690922,
+    -0.03862013667821884,
+    0.06021849811077118,
+    -0.014102984219789505,
+    0.0003045980120077729,
+    0.0581691674888134,
+    -0.10506317764520645,
+    0.02305375598371029,
+    0.08380799740552902,
+    -0.0009093728149309754,
+    -0.017482129856944084,
+    -0.06491835415363312,
+    -0.029766244813799858,
+    0.10510815680027008,
+    -0.0005435652565211058,
+    0.06458230316638947,
+    0.03245861455798149,
+    -0.062064919620752335,
+    0.0492175929248333,
+    0.050218939781188965,
+    -0.005994834471493959,
+    2.2033679170164044e-33,
+    0.007304065395146608,
+    0.03611084073781967,
+    0.0005026086582802236,
+    0.05942535772919655,
+    -0.008474624715745449,
+    -0.03995351865887642,
+    -0.010761831887066364,
+    0.07938671857118607,
+    -0.011974813416600227,
+    0.028468087315559387,
+    0.04713515564799309,
+    0.019053397700190544,
+    0.036648355424404144,
+    -0.044155560433864594,
+    0.06523037701845169,
+    -0.005713847931474447,
+    -0.019738106057047844,
+    0.025861607864499092,
+    -0.00913513358682394,
+    0.015055632218718529,
+    -0.0845416709780693,
+    0.05343051627278328,
+    -0.03638344630599022,
+    0.006229177583009005,
+    -0.04149405658245087,
+    -0.009121888317167759,
+    -0.0022063010837882757,
+    0.0031464630737900734,
+    -0.08043941110372543,
+    -0.08374997228384018,
+    0.046389155089855194,
+    -0.06096784025430679,
+    -0.0853845402598381,
+    0.012845284305512905,
+    -0.04983322322368622,
+    -0.01930450089275837,
+    0.0669461190700531,
+    -0.04276406019926071,
+    -0.060021594166755676,
+    0.03334479406476021,
+    0.12066445499658585,
+    -0.017290061339735985,
+    0.005850170273333788,
+    0.028523892164230347,
+    -0.01965390145778656,
+    0.01656438037753105,
+    -0.04361312463879585,
+    -0.013276471756398678,
+    0.0629035234451294,
+    0.04455801099538803,
+    0.006176268216222525,
+    -0.09043852984905243,
+    -0.05856430158019066,
+    0.01774025522172451,
+    0.018887152895331383,
+    -0.09697503596544266,
+    -0.013314533978700638,
+    0.05476823449134827,
+    -0.029348379001021385,
+    -0.0330037921667099,
+    0.1151726245880127,
+    -0.052498769015073776,
+    -0.0009315139031969011,
+    0.09546532481908798,
+    0.0102778859436512,
+    0.008483336307108402,
+    -0.0126899853348732,
+    0.03620849549770355,
+    -0.03292802721261978,
+    0.016813479363918304,
+    0.10313031077384949,
+    -0.055762119591236115,
+    0.01639108918607235,
+    -0.07718092948198318,
+    -0.0166190043091774,
+    -0.02708820067346096,
+    0.07001892477273941,
+    -0.04942620173096657,
+    -0.02775798924267292,
+    -0.03500637412071228,
+    -0.08214114606380463,
+    0.06096351146697998,
+    -0.09923117607831955,
+    0.027880219742655754,
+    0.03518170863389969,
+    -0.12069247663021088,
+    -0.00341834151186049,
+    0.01815735548734665,
+    0.012847167439758778,
+    0.058056287467479706,
+    -0.037022463977336884,
+    -0.008047360926866531,
+    -0.03907506540417671,
+    -0.015143487602472305,
+    0.0027263774536550045,
+    -1.4033163076021538e-8,
+    -0.04970742389559746,
+    0.07546314597129822,
+    -0.010097775608301163,
+    -0.020499389618635178,
+    0.07996593415737152,
+    -0.022721149027347565,
+    0.024129459634423256,
+    0.03394530713558197,
+    -0.008377178572118282,
+    0.08637657016515732,
+    0.11287625879049301,
+    0.025157073512673378,
+    0.05096080154180527,
+    -0.009377635084092617,
+    -0.016467411071062088,
+    -0.06747119128704071,
+    -0.017842402681708336,
+    -0.007294753100723028,
+    -0.06434793770313263,
+    -0.13206514716148376,
+    0.05001204460859299,
+    -0.005321707110852003,
+    0.027470136061310768,
+    0.011420164257287979,
+    0.02159341238439083,
+    -0.03881550952792168,
+    0.013768590986728668,
+    0.09435155987739563,
+    0.05563361570239067,
+    -0.02874334156513214,
+    -0.10161358118057251,
+    -0.011245463974773884,
+    -0.004835385363548994,
+    -0.057582590728998184,
+    -0.08186996728181839,
+    0.03253844380378723,
+    -0.03583821281790733,
+    0.07937886565923691,
+    -0.00261984602548182,
+    -0.03655361011624336,
+    -0.019553035497665405,
+    -0.030769743025302887,
+    -0.014552873559296131,
+    -0.0031896219588816166,
+    -0.03534753993153572,
+    -0.009481805376708508,
+    -0.05797511339187622,
+    0.06529765576124191,
+    0.04651208594441414,
+    0.02941589243710041,
+    0.029403259977698326,
+    -0.010976439341902733,
+    0.0780925527215004,
+    0.0035283102188259363,
+    -0.06689529865980148,
+    -0.03558548167347908,
+    -0.020529840141534805,
+    -0.03186579421162605,
+    0.008640190586447716,
+    -0.05834457650780678,
+    -0.010308240540325642,
+    -0.1073463186621666,
+    -0.11332666873931885,
+    -0.016472624614834785
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Juniper_Workshop.txt",
+        "start": 0,
+        "content": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention."
+      },
+      {
+        "filename": "01_Cedar_Observatory.txt",
+        "start": 0,
+        "content": "The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\nCedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention."
+      },
+      {
+        "filename": "04_Willow_Conservatory.txt",
+        "start": 0,
+        "content": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention."
+      },
+      {
+        "filename": "02_Harbor_Cartography.txt",
+        "start": 0,
+        "content": "The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.\n\nHarbor Cartography archive winter average temperatures exceed 9 degrees Celsius. Its highest monthly mean temperature is 26 degrees Celsius in July. Its highest recorded daily temperature is 39 degrees Celsius.\n\nOrders released before 14:20 depart the same operating day. Orders released at or after 14:20 depart the next operating day, unless a customs hold prevents departure.\n\nHarbor Cartography shipping records are retained for 22 months, unless a customs investigation requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Juniper_Workshop.txt",
+        "start": 0,
+        "content": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention."
+      },
+      {
+        "filename": "01_Cedar_Observatory.txt",
+        "start": 0,
+        "content": "The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\nCedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention."
+      },
+      {
+        "filename": "04_Willow_Conservatory.txt",
+        "start": 0,
+        "content": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention."
+      },
+      {
+        "filename": "02_Harbor_Cartography.txt",
+        "start": 0,
+        "content": "The Harbor Cartography archive relocation took place in 1889. Its restoration took place in 1938. The archive did not close in 1952.\n\nHarbor Cartography archive winter average temperatures exceed 9 degrees Celsius. Its highest monthly mean temperature is 26 degrees Celsius in July. Its highest recorded daily temperature is 39 degrees Celsius.\n\nOrders released before 14:20 depart the same operating day. Orders released at or after 14:20 depart the next operating day, unless a customs hold prevents departure.\n\nHarbor Cartography shipping records are retained for 22 months, unless a customs investigation requires longer retention."
+      }
+    ]
+  }
+}

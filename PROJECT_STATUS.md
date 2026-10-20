@@ -1,6 +1,6 @@
 # GroundedDesk AI — project status
 
-Last updated: **2026-10-20 (Asia/Kolkata)**.
+Last updated: **2026-10-21 (Asia/Kolkata)**.
 
 This is the current development handoff. Preserve historical results in their
 original reports; link them here instead of rewriting or rescoring them.
@@ -15,9 +15,35 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v43: eight 32-case packs 32/32 and RetrievalQuality28 28/28 PASS, both variants; not adopted |
+| Latest isolated candidate | v43: all 19 available native regression gates PASS across 668 cases; known public FAIL rows retained; not adopted |
 | Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: preparing one frozen668-case run across all19 available families; original candidate unchanged |
+| Current change | Phase 1: all 668 verified cases captured/scored; 103 missing originals/acceptance decision still blocks closure |
+
+## Latest combined available-input result — 19 native gates PASS
+
+Freeze `560e3a8b` preceded one uninterrupted capture of all 668 available original
+cases / 19 families: 628 actual MiniLM Hybrid plus 40 lexical Comparisons. Candidate
+v43 and paired v42 unchanged. All 19 original available-input native regression/
+preservation gates PASS; no prior PASS loss, new false acceptance/refusal,
+execution errors, manual-review blockers or retries. This is NOT 668/668 answers
+passing: ExternalSQuAD24 fixed 22/24, section 23/24; FreshConfirmation32 fixed 29/32,
+section 30/32 retain their historical FAIL rows, including F10's false refusal.
+All other native candidate cases PASS. No pooled accuracy claim.
+
+[Results](docs/V43_ALL_AVAILABLE_MAC_RESULTS.md) seal 5,352 artifacts/587,220,023 bytes.
+All 1,336 normalized answer/quote signatures match prior first-v43/v38 native cards;
+75 source texts match. Offline audit recomputes 40,030 body cosines/checks 54 facet
+anchors and original C04 direct-span gates; 6,591 selected earlier artifact hashes
+remain intact. Native grades and separate review are unchanged. 771 unit/28 Keyword,
+827-file freeze/input/history/adapter checks PASS; first 767/3 engineering failure
+and approved correction remain recorded below. Live 5.6/r44 is unchanged.
+
+No verified available family remains untested with v43. **Phase 1 still awaits the
+103-original missing-input/acceptance decision**; the old combined private config
+also remains unavailable. The five known public-data case limitations stay visible.
+Next recover missing originals or explicitly freeze a revised acceptance protocol,
+then proceed to prospective confirmation only after phase 1's exit is agreed.
+No full 771-case gate, fresh confirmation, production adoption or 6.0 release claim.
 
 ## All-available combined run — preparation
 

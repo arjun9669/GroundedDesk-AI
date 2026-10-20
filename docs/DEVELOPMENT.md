@@ -301,3 +301,13 @@ Keyword checks pass after an approved duplicate-reference validator correction;
 827 files frozen. Known public failures stay visible, changed manual Cobalt output
 requires review. Model study NOT RUN at this checkpoint.103 missing originals
 and phase1/full-regression/adoption holds remain; never reuse first evidence paths.
+
+## V43 first combined available-input result
+
+[Combined results](V43_ALL_AVAILABLE_MAC_RESULTS.md): all 668 verified original cases
+were captured once across 19 native families (628 Hybrid/40 lexical Comparisons),
+with unchanged v43 and paired v42. All 19 native regression gates PASS; five fixed/
+three section public-data FAIL rows remain unchanged. No prior PASS loss or retries.
+771 units/28 Keyword and 827-file freeze PASS. No verified available family remains
+untested in this scope, but 103 originals/combined config and the phase 1 acceptance
+decision remain unresolved. Live 5.6/r44 and fresh-confirmation/adoption holds remain.
