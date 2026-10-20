@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Hearth32 v40 exposed-regression preparation
+
+- Prepare a new original-input Hearth32 runner/freeze with unchanged v40 and separately embedded paired-v39 planner facets. Preserve the first v32 BLOCKED/UNGRADED capture, v33 qualified 31/1/0 and all v34–v38 passes.
+- 633 unit tests and strict 28-case Keyword checks pass, with clean Chrome 155.0.8059.85 startup, exact original grading/input/history verification and a 456-file freeze. Model capture/scoring NOT RUN at this checkpoint; publish before questions.
+- Live r44, all candidates and earlier study artifacts remain unchanged. [Preparation](docs/V40_HEARTH32_PREPARATION.md).
+
 ## 2026-10-20 — First v40 three-pack exposed regression PASS
 
 - Published protocol `894bc74` before coding and freeze `da10734` before model questions. Both v40 variants pass Vela32, Prism32 and Lumen32 32/32 each, repairing L04 with the full literal conservation-hold exception. Paired v39 retains L04 FAIL; all first failures remain unchanged.

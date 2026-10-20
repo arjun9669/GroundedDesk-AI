@@ -17,7 +17,17 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v40: Vela32, Prism32 and Lumen32 each **32/32 PASS** in both variants; L04 repaired; v39 first failure preserved; not adopted |
 | Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: v40 fix and 96-case exposed revalidation completed; next Hearth32 and other verified packs; no live adoption |
+| Current change | Phase 1: Hearth32 v40 preparation/freeze ready; actual capture not yet run at this checkpoint; no live adoption |
+
+## Hearth32 v40 preparation checkpoint
+
+User authorized the next exposed Hearth32 regression. A new **456-file freeze**
+pins original inputs/native criteria, unchanged v40, paired v39 and Chrome
+**155.0.8059.85** (updated since the earlier .80 study). All **633 unit tests**,
+strict **28/28 Keyword** evaluation, clean startup and original input/history checks
+pass. Original v32 BLOCKED/UNGRADED and v33 qualified 31/1/0 remain preserved.
+[Preparation and protocol](docs/V40_HEARTH32_PREPARATION.md). Actual model capture/
+scoring **NOT RUN at this preparation checkpoint**; publish freeze before questions.
 
 ## Current v40 result — three partial gates PASS
 
