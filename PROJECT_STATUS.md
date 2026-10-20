@@ -17,7 +17,7 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v39 Vela32 and Prism32 partial gates each 32/32 PASS in both variants; full 771-case gate NOT RUN; not adopted |
 | Release decision | Integration **HOLD**; broader regression and fresh confirmation incomplete; original first failures preserved |
-| Current change | Phase 1 of the five-phase 6.0 working roadmap: preserve Prism32 partial PASS; next Lumen32 preparation; live r44 unchanged |
+| Current change | Phase 1: prepare a separate frozen Lumen32 regression; prior v39 partial results and live r44 unchanged |
 
 ## Working roadmap for 6.0
 
@@ -135,6 +135,28 @@ Runtime code, existing tests, frozen inputs and historical evidence are unchange
 no fix or new actual-model result is claimed.
 
 ## Current retrieval blocker
+
+### October 20 Lumen32 preparation checkpoint
+
+Latest main `9ce75c0` CI and Pages passed. The
+[separate Lumen32 preparation](docs/V39_LUMEN32_PREPARATION.md) verifies original
+config/key/rubric/protocol/scorer and four source hashes, exact questions/document
+pairs and twenty historical variant arrays. Preserve first v35 28/2/2 FAIL,
+publication/measurement qualifications and v36–v38 exposed passes. Reuse the
+identical frozen grader without changing criteria; v39, paired v38, earlier
+runners/freezes, original inputs and live r44 remain unchanged.
+
+Before questions: bundled Node 24.19.0 passed **602 unit tests**, zero failed/
+skipped; strict `node eval/run.mjs --strict` passed **28/28**. Syntax and original
+input/history checks pass. Installed Chrome 155.0.8059.80 read-only r44 startup
+has no failed requests/page errors. Actual Lumen32 capture/scoring is **NOT RUN
+at this preparation checkpoint**. Publish the new freeze before one capture;
+stop and ask after a required failure. Full regression/adoption remain HOLD.
+
+The first successful Lumen32 freeze records 436 code/input files; all frozen
+hashes and historical alignments verify. Documentation links, `git diff --check`
+and sensitive-information/intended-path review pass before publication. No model
+questions have been asked at this checkpoint.
 
 ### October 20 first Mac Prism32 result
 

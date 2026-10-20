@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Lumen32 v39 partial-regression preparation
+
+- Prepare a separate original-input Lumen32 runner/configuration/scorer with unchanged native criteria and twenty first/later historical variant preservation checks. Keep first v35 28/2/2 FAIL, qualifications and later passes intact.
+- All 602 unit tests and strict 28-case Keyword checks pass; original input/scorer/history checks and clean read-only Chrome r44 startup pass. Actual Lumen32 capture/grading NOT RUN at this preparation checkpoint.
+- Preserve v39, paired v38, live r44, old runners/freezes, source/key/rubric bytes and previous v39 partial results. Publish the new freeze before one actual-model capture. [Preparation and stop rule](docs/V39_LUMEN32_PREPARATION.md).
+
 ## 2026-10-20 — First Mac v39 Prism32 partial PASS
 
 - The authorized freeze recovery preserves all 411 eligible code/assets while avoiding Node's full-path-list buffer limit. Preparation and 430-file freeze were published as `49c836f` before model questions; retain the initial infrastructure failure and pause/recovery record.
