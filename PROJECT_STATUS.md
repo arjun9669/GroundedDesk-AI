@@ -15,9 +15,32 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v40 Hearth32 **FAIL: 31/0/1** both variants, H04 false refusal; earlier three-pack passes preserved; not adopted |
-| Release decision | Integration **HOLD** after Hearth32 regression; full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: v41 fix and new four-pack validation authorized; protocol precedes implementation; no live integration |
+| Latest isolated candidate | v41: Vela32, Prism32, Lumen32, Hearth32 each **32/32 PASS** both variants; H04 repaired; v40 first failure preserved; not adopted |
+| Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
+| Current change | Phase 1: v41 fix and four-pack revalidation complete; next Morrow32 and other verified packs; no live integration |
+
+## Latest v41 result — four partial gates PASS
+
+Protocol `72c74ad7` preceded implementation; freeze `d3b854f4` reached GitHub before
+questions. Both v41 variants pass Vela32, Prism32, Lumen32, Hearth32 **32/32 each**.
+H04 now cites the next collection day and full seed-health-hold exception. Paired
+v40 still fails H04; its first 31/0/1 and every older first result remain preserved.
+No historical PASS loss, false accepts/refusals, execution errors or question retries
+in v41. These are 128 distinct exposed cases (112 Hybrid / 16 lexical Comparisons),
+not fresh confirmation or a full regression gate.
+
+[Results/evidence](docs/V41_FOUR_PACK_MAC_RESULTS.md) include unchanged native grades,
+assistant review and a SHA256 seal of 1,016 artifacts (97,119,958 bytes). Only H04's
+answers/quotes change versus first v40; all 16 source texts and other 127 case outputs
+remain unchanged. Offline audit independently recomputes 7,536 body cosines and checks
+28 facet-anchor entries. Prior v40/v39 seals and original inputs/history remain intact.
+Engineering checks: **667 unit tests**, strict **28/28 Keyword**, clean Chrome
+155.0.8059.85 startup and 500-file freeze PASS. Live 5.6/r44 unchanged.
+
+Next: separately prepare/freeze Morrow32, among **540 verified cases / 15 packs
+untested with v41**. The 103 unavailable original cases/combined configuration,
+full regression, prospective confirmation and integration/product/release gates
+remain open. Still phase 1; no live adoption.
 
 ## Authorized v41 — protocol checkpoint
 
@@ -26,20 +49,20 @@ The user approved the isolated v41 fix and four-pack validation on October20.
 bounded order/collection-day/active-hold grammar, engineering controls, then a
 published new freeze and128 exposed cases with fresh candidate/paired-v40 vectors.
 At this checkpoint no v41 code or model result exists. Preserve v40 Hearth32 FAIL,
-all first evidence and live5.6/r44. Current engineering baseline633 unit/28 Keyword
+all first evidence and live 5.6/r44. Current engineering baseline633 unit/28 Keyword
 checks passed in the prior review; this protocol adds no executable code.
 
 ## V41 engineering/preparation checkpoint
 
 The isolated v41 implementation and four-pack runner are prepared under protocol
 `72c74ad7`. **667 unit tests** and strict **28/28 Keyword** checks PASS; clean
-read-only Chrome155.0.8059.85 startup and original input/history checks PASS.
+read-only Chrome 155.0.8059.85 startup and original input/history checks PASS.
 A new **500-file freeze** covers128 exposed cases and independently embedded v41/
 paired-v40 planner queries. Actual model capture/scoring **NOT RUN at this
 preparation checkpoint**. Publish freeze before questions. See
 [engineering and execution scope](docs/COVERAGE_V41_PREPARATION.md).
 
-## Latest Hearth32 result — FAIL / HOLD
+## Preserved first v40 Hearth32 result — FAIL / HOLD
 
 Freeze `ba2ccb1e` preceded questions. First actual-model Hearth32 capture is complete:
 **31 PASS / 0 PARTIAL / 1 FAIL** in both v40 variants and paired v39. H04 incorrectly
@@ -63,8 +86,8 @@ hashes remain unchanged. These engineering passes do not override the model FAIL
 
 There are now **128 distinct exposed v40-tested cases / four packs**, separately
 scored: three pack gates PASS, Hearth32 FAIL. **540 verified cases / 15 packs remain
-untested with v40**, plus 103 unavailable originals. Next decision: a separately
-precommitted v41 fix protocol and new four-pack validation, before broader regression.
+untested with v40**, plus 103 unavailable originals. At that checkpoint the next
+decision was a separate v41 fix/four-pack validation; it has since passed above.
 Full regression, prospective confirmation and live integration remain blocked.
 
 ## Hearth32 v40 preparation checkpoint

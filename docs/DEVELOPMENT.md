@@ -238,3 +238,13 @@ both v40 variants on H04; its first evidence and all older results remain unchan
 The [investigation](HEARTH32_V40_FAILURE_REVIEW.md) proposes a separate v41
 protocol/four-pack revalidation, with no implementation or rerun in publication
 work. Read PROJECT_STATUS.md for the hold, missing-input gap and release gates.
+
+## Latest isolated v41 checkpoint
+
+The [first four-pack v41 result](V41_FOUR_PACK_MAC_RESULTS.md) passes four native
+32-case gates in both variants, including repaired H04. The first v40 Hearth32
+FAIL remains preserved. Current engineering suite: 667 unit tests; strict Keyword
+suite: 28 cases. [Preparation](COVERAGE_V41_PREPARATION.md) records the 500-file
+freeze; never reuse its completed evidence directories. Live 5.6/r44 is unchanged.
+Next prepare/freeze Morrow32; 540 verified cases remain untested with v41 and 103
+originals unavailable. Phase 1, full regression and later release gates remain open.

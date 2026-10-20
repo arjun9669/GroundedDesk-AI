@@ -1,0 +1,1292 @@
+{
+  "candidate_identity": "coverage-v41-order-collection",
+  "id": "H05",
+  "question": "How many germination trays does Mira check per day?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many germination trays does Mira check per day?",
+    "expected_display": "How many germination trays does Mira check per day?",
+    "rendered_question": "How many germination trays does Mira check per day?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Mira checks five germination trays per day.",
+    "sources": [
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. I",
+        "quote": "Mira checks five germination trays per day."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many germination trays does Mira check per day?\n\nSearched all files: 01_Veylan_Seed_Conservatory.txt · 02_Ostren_Instrument_Library.txt · 03_Caldra_Tide_Station.txt · 04_Tessarin_Repair_Cafe.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Mira checks five germination trays per day.\n\nSOURCE EVIDENCE\n[1]\n01_Veylan_Seed_Conservatory.txt\n\nText line 5 (normalized extraction)\n\ntook place in 2014. ## Collection operations V-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active. V-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week. V-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed. V-04. Collection slips are retained for 16 months. I\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Mira checks five germination trays per day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "0738a58b-32da-4c14-b986-b8d3fe57db59:0",
+        "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. I",
+        "quote": "Mira checks five germination trays per day.",
+        "score": 0.0476,
+        "lexicalScore": 7.695304701338223,
+        "semanticScore": 0.5455214834330799,
+        "matchedTerms": [
+          "germination",
+          "trays",
+          "mira",
+          "per",
+          "day"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Mira checks five germination trays per day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "0738a58b-32da-4c14-b986-b8d3fe57db59:0",
+        "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. I",
+        "quote": "Mira checks five germination trays per day.",
+        "score": 0.0476,
+        "lexicalScore": 7.695304701338223,
+        "semanticScore": 0.5455214834330799,
+        "matchedTerms": [
+          "germination",
+          "trays",
+          "mira",
+          "per",
+          "day"
+        ],
+        "start": 373,
+        "end": 416
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Mira checks five germination trays per day.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 373,
+          "cosine": 0.908785523906665,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Mira checks five germination trays per day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Mira checks five germination trays per day.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Mira checks five germination trays per day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "0738a58b-32da-4c14-b986-b8d3fe57db59:174",
+        "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. I",
+        "quote": "Mira checks five germination trays per day.",
+        "score": 0.0476,
+        "lexicalScore": 8.184423539486808,
+        "semanticScore": 0.591526036496591,
+        "matchedTerms": [
+          "germination",
+          "trays",
+          "mira",
+          "per",
+          "day"
+        ],
+        "start": 373,
+        "end": 416
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Mira checks five germination trays per day.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 373,
+          "cosine": 0.908785523906665,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Mira checks five germination trays per day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Mira checks five germination trays per day.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Veylan_Seed_Conservatory.txt",
+      "start": 373,
+      "content": "Mira checks five germination trays per day.",
+      "semanticScore": 0.908785523906665,
+      "lexicalScore": 14.344232691838531
+    },
+    {
+      "filename": "01_Veylan_Seed_Conservatory.txt",
+      "start": 463,
+      "content": "Mira labels two storage bins per week.",
+      "semanticScore": 0.5045570203442002,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Veylan_Seed_Conservatory.txt",
+      "start": 417,
+      "content": "Tobin checks three irrigation valves per day.",
+      "semanticScore": 0.38922350154538726,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+      "start": 0,
+      "end": 71,
+      "similarity": 0.26059392141558163,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "start": 72,
+      "end": 172,
+      "similarity": 0.11194235525663306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "V-01.",
+      "start": 199,
+      "end": 204,
+      "similarity": 0.0796283839538796,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Orders released before 14:10 leave on the same collection day.",
+      "start": 205,
+      "end": 267,
+      "similarity": 0.1782962670497677,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.",
+      "start": 268,
+      "end": 366,
+      "similarity": 0.27517598710768637,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "V-02.",
+      "start": 367,
+      "end": 372,
+      "similarity": 0.06202950021255212,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Mira checks five germination trays per day.",
+      "start": 373,
+      "end": 416,
+      "similarity": 0.908785523906665,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Tobin checks three irrigation valves per day.",
+      "start": 417,
+      "end": 462,
+      "similarity": 0.38922350154538726,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Mira labels two storage bins per week.",
+      "start": 463,
+      "end": 501,
+      "similarity": 0.5045570203442002,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "V-03.",
+      "start": 502,
+      "end": 507,
+      "similarity": 0.05382592113111481,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius.",
+      "start": 508,
+      "end": 600,
+      "similarity": 0.26098496520999875,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Individual winter extremes are not listed.",
+      "start": 601,
+      "end": 643,
+      "similarity": 0.09200377331222244,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "V-04.",
+      "start": 644,
+      "end": 649,
+      "similarity": 0.111332797361638,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Collection slips are retained for 16 months.",
+      "start": 650,
+      "end": 694,
+      "similarity": 0.17629688965811152,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "If a seed-health review is unresolved, keep the affected slips until clearance is recorded.",
+      "start": 695,
+      "end": 786,
+      "similarity": 0.3154977341050726,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "V-05.",
+      "start": 787,
+      "end": 792,
+      "similarity": 0.06475341834487014,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Acknowledge collection requests within two collection days.",
+      "start": 793,
+      "end": 852,
+      "similarity": 0.18646221327120227,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "This acknowledgement does not guarantee stock availability.",
+      "start": 853,
+      "end": 912,
+      "similarity": 0.10452598536206813,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.02380151806752717,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "Its restoration was completed in 1974.",
+      "start": 74,
+      "end": 112,
+      "similarity": 0.03152357941220164,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "A proposal to close the annex in 2009 was abandoned; the annex stayed open.",
+      "start": 113,
+      "end": 188,
+      "similarity": -0.003337115921835231,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "L-01.",
+      "start": 216,
+      "end": 221,
+      "similarity": 0.08912061106754701,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+      "start": 222,
+      "end": 314,
+      "similarity": 0.09277550197427117,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.08334769741545518,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "The highest monthly mean temperature is 25 degrees Celsius, in August.",
+      "start": 377,
+      "end": 447,
+      "similarity": 0.17450411611851127,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "L-02.",
+      "start": 448,
+      "end": 453,
+      "similarity": 0.06267301968221446,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "Signed loan records are retained for 8 years.",
+      "start": 454,
+      "end": 499,
+      "similarity": 0.029358530984484373,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "If an ownership dispute is open, keep the affected records until the dispute is settled.",
+      "start": 500,
+      "end": 588,
+      "similarity": -0.08411847334065262,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "L-03.",
+      "start": 589,
+      "end": 594,
+      "similarity": 0.03860633352436313,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "The custody packet contains:",
+      "start": 595,
+      "end": 623,
+      "similarity": 0.09455379687748018,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "At Caldra Tide Station, the gauge tower was rebuilt in 1993.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.11601536411112162,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "The equipment shed was painted in 2016.",
+      "start": 61,
+      "end": 100,
+      "similarity": 0.04603750007610259,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+      "start": 102,
+      "end": 197,
+      "similarity": 0.1791329663338368,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 198,
+      "end": 259,
+      "similarity": 0.21050456709633567,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "Ruan records six water level readings per watch.",
+      "start": 261,
+      "end": 309,
+      "similarity": 0.27767310575518217,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "Sena records four salinity samples per watch.",
+      "start": 310,
+      "end": 355,
+      "similarity": 0.31530933854293086,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "Ruan tags two anchor markers per week.",
+      "start": 356,
+      "end": 394,
+      "similarity": 0.2433592172772116,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.",
+      "start": 396,
+      "end": 493,
+      "similarity": 0.3244363704652164,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "In a salt-spray bay, lubricate it every 42 operating hours.",
+      "start": 494,
+      "end": 553,
+      "similarity": 0.3035112814369018,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "Inspect the winch every 21 operating hours regardless of bay.",
+      "start": 554,
+      "end": 615,
+      "similarity": 0.2655039196066271,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "R-01.",
+      "start": 21,
+      "end": 26,
+      "similarity": 0.07021579158898437,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+      "start": 27,
+      "end": 104,
+      "similarity": 0.19952682246930478,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "An acknowledgement is not a promise that the repair will finish within four hours.",
+      "start": 105,
+      "end": 187,
+      "similarity": 0.05923722009408363,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "R-02.",
+      "start": 188,
+      "end": 193,
+      "similarity": 0.05201159889614282,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "start": 194,
+      "end": 305,
+      "similarity": 0.02540568679391964,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "R-03.",
+      "start": 306,
+      "end": 311,
+      "similarity": 0.03818644084481526,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.",
+      "start": 312,
+      "end": 411,
+      "similarity": 0.1701952580405551,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "R-04.",
+      "start": 412,
+      "end": 417,
+      "similarity": 0.08813846789550923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions.",
+      "start": 418,
+      "end": 515,
+      "similarity": 0.24010902219460584,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "In a dusty workroom, lubricate it every 52 operating hours.",
+      "start": 516,
+      "end": 575,
+      "similarity": 0.2753788714844533,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "Inspect the drill every 26 operating hours in either room.",
+      "start": 576,
+      "end": 634,
+      "similarity": 0.31391442212681586,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "R-05.",
+      "start": 635,
+      "end": 640,
+      "similarity": 0.058456892933446386,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention.",
+      "start": 641,
+      "end": 755,
+      "similarity": 0.06302008104028035,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Mira checks five germination trays per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "0738a58b-32da-4c14-b986-b8d3fe57db59:0",
+          "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. I",
+          "quote": "Mira checks five germination trays per day.",
+          "score": 0.0476,
+          "lexicalScore": 7.695304701338223,
+          "semanticScore": 0.5455214834330799,
+          "matchedTerms": [
+            "germination",
+            "trays",
+            "mira",
+            "per",
+            "day"
+          ],
+          "start": 373,
+          "end": 416
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Mira checks five germination trays per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 373,
+            "cosine": 0.908785523906665,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Mira checks five germination trays per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Mira checks five germination trays per day.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Mira checks five germination trays per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "0738a58b-32da-4c14-b986-b8d3fe57db59:174",
+          "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. I",
+          "quote": "Mira checks five germination trays per day.",
+          "score": 0.0476,
+          "lexicalScore": 8.184423539486808,
+          "semanticScore": 0.591526036496591,
+          "matchedTerms": [
+            "germination",
+            "trays",
+            "mira",
+            "per",
+            "day"
+          ],
+          "start": 373,
+          "end": 416
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Mira checks five germination trays per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 373,
+            "cosine": 0.908785523906665,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Mira checks five germination trays per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Mira checks five germination trays per day.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Mira checks five germination trays per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "0738a58b-32da-4c14-b986-b8d3fe57db59:0",
+          "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. I",
+          "quote": "Mira checks five germination trays per day.",
+          "score": 0.0476,
+          "lexicalScore": 7.695304701338223,
+          "semanticScore": 0.5455214834330799,
+          "matchedTerms": [
+            "germination",
+            "trays",
+            "mira",
+            "per",
+            "day"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Mira checks five germination trays per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 373,
+            "cosine": 0.908785523906665,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Mira checks five germination trays per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Mira checks five germination trays per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "0738a58b-32da-4c14-b986-b8d3fe57db59:174",
+          "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. I",
+          "quote": "Mira checks five germination trays per day.",
+          "score": 0.0476,
+          "lexicalScore": 8.184423539486808,
+          "semanticScore": 0.591526036496591,
+          "matchedTerms": [
+            "germination",
+            "trays",
+            "mira",
+            "per",
+            "day"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Mira checks five germination trays per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 373,
+            "cosine": 0.908785523906665,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Mira checks five germination trays per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.03232646733522415,
+    0.03655638173222542,
+    -0.022841382771730423,
+    0.06313949823379517,
+    -0.0067315069027245045,
+    -0.08877815306186676,
+    0.08416550606489182,
+    -0.02269873209297657,
+    -0.023339606821537018,
+    -0.015359886921942234,
+    0.06700851768255234,
+    -0.07569511979818344,
+    -0.016084836795926094,
+    0.10327056050300598,
+    -0.037576496601104736,
+    -0.05238388851284981,
+    -0.03788513317704201,
+    -0.10479354858398438,
+    -0.012374572455883026,
+    -0.034471213817596436,
+    0.031829383224248886,
+    -0.05139830335974693,
+    0.04259330406785011,
+    0.01885247603058815,
+    0.002048098249360919,
+    -0.013231294229626656,
+    -0.05066608637571335,
+    -0.03185386583209038,
+    0.0055379560217261314,
+    -0.008548690006136894,
+    -0.034628551453351974,
+    0.08148065954446793,
+    0.07370544224977493,
+    -0.021067582070827484,
+    0.0062758480198681355,
+    -0.054141815751791,
+    0.01645674742758274,
+    -0.04686674103140831,
+    0.014567186124622822,
+    0.07407566905021667,
+    0.02997511997818947,
+    -0.04512607678771019,
+    0.01727547124028206,
+    0.0024327354039996862,
+    -0.05386378988623619,
+    -0.036451660096645355,
+    -0.035476282238960266,
+    0.009819098748266697,
+    0.03966943547129631,
+    0.0747397169470787,
+    -0.042968276888132095,
+    -0.06555958837270737,
+    -0.05826094374060631,
+    0.014794661663472652,
+    -0.03650787100195885,
+    -0.008181949146091938,
+    0.006251715123653412,
+    -0.014857812784612179,
+    0.02881254069507122,
+    0.014643585309386253,
+    0.025124097242951393,
+    0.0022235848009586334,
+    -0.04600152000784874,
+    -0.007218863349407911,
+    -0.01983812265098095,
+    0.03261181339621544,
+    -0.08475122600793839,
+    -0.030861765146255493,
+    0.09934549033641815,
+    0.006709132343530655,
+    -0.01275545358657837,
+    0.05478055775165558,
+    0.11176571995019913,
+    0.0342986024916172,
+    -0.002365200314670801,
+    -0.014726073481142521,
+    0.08360221982002258,
+    -0.011225488968193531,
+    0.02638363279402256,
+    -0.08131393790245056,
+    -0.09559205919504166,
+    0.03224429860711098,
+    0.013252772390842438,
+    0.009112938307225704,
+    0.013092177920043468,
+    0.029280660673975945,
+    0.005232532974332571,
+    0.11312755942344666,
+    0.04700549319386482,
+    -0.013233741745352745,
+    0.09820593148469925,
+    0.04484035447239876,
+    -0.07623517513275146,
+    0.020950838923454285,
+    -0.055311501026153564,
+    0.07067126780748367,
+    -0.03846685588359833,
+    -0.060762111097574234,
+    -0.027729738503694534,
+    0.02330344170331955,
+    -0.05326780676841736,
+    -0.0457489974796772,
+    0.06772511452436447,
+    0.0418081060051918,
+    -0.012424366548657417,
+    -0.02945695072412491,
+    0.00809699296951294,
+    -0.035715196281671524,
+    -0.025289641693234444,
+    0.07075666636228561,
+    -0.04013945162296295,
+    -0.0023392001166939735,
+    0.15928708016872406,
+    0.07062751799821854,
+    -0.02607659436762333,
+    0.04882417991757393,
+    0.036889564245939255,
+    0.054237451404333115,
+    0.03391433134675026,
+    0.08752971887588501,
+    0.07218017429113388,
+    -0.010481424629688263,
+    0.06656815856695175,
+    -0.06798055768013,
+    -0.016287831589579582,
+    0.056845806539058685,
+    0.018239110708236694,
+    3.4180600568012596e-35,
+    -0.014074521139264107,
+    -0.002667362568899989,
+    0.04041782766580582,
+    0.09515552967786789,
+    0.044120702892541885,
+    -0.018047820776700974,
+    -0.027551576495170593,
+    -0.020077187567949295,
+    0.06990273296833038,
+    -0.06279168277978897,
+    -0.07081225514411926,
+    -0.0463138110935688,
+    -0.038052406162023544,
+    -0.001800747704692185,
+    -0.002353889402002096,
+    -0.013889560475945473,
+    0.022745909169316292,
+    0.06680307537317276,
+    -0.050503429025411606,
+    -0.025799784809350967,
+    -0.03639491647481918,
+    -0.075936459004879,
+    -0.06675850600004196,
+    -0.04363023117184639,
+    0.05585962533950806,
+    0.07406749576330185,
+    0.03101971000432968,
+    0.015613953582942486,
+    -0.020725691691040993,
+    0.02733352780342102,
+    0.14961667358875275,
+    -0.011316449381411076,
+    -0.0029016865883022547,
+    0.02690952643752098,
+    -0.00261384854093194,
+    0.07562074810266495,
+    0.009181994013488293,
+    -0.001884385826997459,
+    0.024626340717077255,
+    -0.028621960431337357,
+    -0.01971231959760189,
+    0.04768568277359009,
+    0.15208013355731964,
+    0.05171041935682297,
+    0.011584462597966194,
+    -0.017083648592233658,
+    -0.008345015347003937,
+    0.02228272520005703,
+    0.04499054327607155,
+    0.024141186848282814,
+    0.007874252274632454,
+    0.036368656903505325,
+    -0.07941772043704987,
+    0.024891788139939308,
+    0.008354505524039268,
+    0.05959136784076691,
+    0.009498586878180504,
+    -0.030504878610372543,
+    -0.006476874463260174,
+    0.040816642343997955,
+    0.09288382530212402,
+    -0.007410421501845121,
+    0.02240215241909027,
+    -0.01990402117371559,
+    0.031260229647159576,
+    0.04702542722225189,
+    -0.02698737382888794,
+    0.014188023284077644,
+    0.02704181894659996,
+    0.08919098973274231,
+    0.007472989149391651,
+    -0.0956532433629036,
+    -0.02404526248574257,
+    -0.10014749318361282,
+    -0.10540779680013657,
+    -0.06212833523750305,
+    0.13401634991168976,
+    0.013221771456301212,
+    -0.0606529526412487,
+    0.043199412524700165,
+    0.028573740273714066,
+    0.006669085007160902,
+    -0.015462880954146385,
+    0.017126142978668213,
+    0.0006643803790211678,
+    0.011288207955658436,
+    -0.02765658125281334,
+    0.09347265958786011,
+    0.025636551901698112,
+    -0.011787131428718567,
+    0.013017086312174797,
+    0.010168144479393959,
+    -0.039425402879714966,
+    -0.06720195710659027,
+    -0.06549660116434097,
+    4.53989050763518e-34,
+    -0.029832929372787476,
+    0.015241267159581184,
+    0.001043880358338356,
+    0.09402337670326233,
+    -0.0484536774456501,
+    -0.042714446783065796,
+    0.02055121585726738,
+    0.06322616338729858,
+    0.008082624524831772,
+    0.052985385060310364,
+    -0.04920400306582451,
+    0.07699167728424072,
+    0.01863335631787777,
+    -0.05048615485429764,
+    -0.055232882499694824,
+    0.08976149559020996,
+    0.07886718958616257,
+    -0.05913889780640602,
+    0.031719353049993515,
+    -0.04018526151776314,
+    -0.1374504566192627,
+    0.07918498665094376,
+    -0.05265361815690994,
+    -0.006471733096987009,
+    -0.0050199516117572784,
+    0.026646403595805168,
+    0.02213164232671261,
+    0.009779924526810646,
+    -0.04377053305506706,
+    -0.051166027784347534,
+    -0.003922093193978071,
+    -0.09941618144512177,
+    -0.09018632769584656,
+    0.032950468361377716,
+    0.005719518754631281,
+    -0.08470743149518967,
+    0.031065355986356735,
+    0.012570026330649853,
+    0.00754593638703227,
+    0.04975074529647827,
+    0.06261926889419556,
+    -0.04148360341787338,
+    -0.010003811679780483,
+    0.035455040633678436,
+    -0.017585324123501778,
+    0.04643923044204712,
+    0.05753502994775772,
+    0.019113164395093918,
+    0.016630057245492935,
+    0.017532313242554665,
+    -0.032092608511447906,
+    -0.033408064395189285,
+    -0.10109129548072815,
+    0.033541418612003326,
+    -0.008840806782245636,
+    -0.020615490153431892,
+    0.040964335203170776,
+    -0.01756797358393669,
+    -0.07367247343063354,
+    -0.049541741609573364,
+    0.008849682286381721,
+    0.029465872794389725,
+    -0.08333195745944977,
+    0.036275479942560196,
+    -0.07880808413028717,
+    0.029777169227600098,
+    0.0380505733191967,
+    0.06179676949977875,
+    0.00009741222311276942,
+    -0.06537675857543945,
+    0.08924499154090881,
+    0.0050540645606815815,
+    -0.004463184159249067,
+    -0.1009749323129654,
+    -0.15575052797794342,
+    0.029749147593975067,
+    -0.017698928713798523,
+    -0.044152725487947464,
+    -0.005285743623971939,
+    -0.05009904131293297,
+    -0.15240289270877838,
+    -0.07587939500808716,
+    -0.010404475964605808,
+    -0.014175686053931713,
+    -0.06556729972362518,
+    -0.09945223480463028,
+    0.036812905222177505,
+    -0.01524220872670412,
+    -0.0049598501063883305,
+    0.07059542089700699,
+    -0.027482299134135246,
+    -0.05192265287041664,
+    -0.027091164141893387,
+    -0.02293585054576397,
+    0.062182165682315826,
+    -1.737632437937009e-8,
+    -0.012279481627047062,
+    0.021196966990828514,
+    0.015649406239390373,
+    -0.00889632012695074,
+    0.05651924014091492,
+    -0.08177679777145386,
+    -0.018296007066965103,
+    0.0692170187830925,
+    0.013720906339585781,
+    0.06215512007474899,
+    0.058099765330553055,
+    0.000977801508270204,
+    -0.05109880864620209,
+    0.00514348316937685,
+    0.021507060155272484,
+    -0.016930872574448586,
+    0.007643961813300848,
+    0.0982869565486908,
+    -0.08278930187225342,
+    -0.0412091463804245,
+    0.01960350014269352,
+    0.032270755618810654,
+    0.0015207338146865368,
+    0.008070705458521843,
+    -0.012988940812647343,
+    0.04955276474356651,
+    0.030443206429481506,
+    0.06003032252192497,
+    -0.004419261123985052,
+    -0.04533378779888153,
+    0.036607496440410614,
+    -0.010365528054535389,
+    0.036334265023469925,
+    -0.008176853880286217,
+    -0.04369721934199333,
+    0.024599019438028336,
+    -0.08883023262023926,
+    0.0032493167091161013,
+    0.016508035361766815,
+    0.04146208241581917,
+    0.02071695774793625,
+    -0.09813003242015839,
+    0.04366707801818848,
+    0.0038786137010902166,
+    -0.07244700938463211,
+    0.055214911699295044,
+    -0.07797738164663315,
+    -0.03580764681100845,
+    -0.013856213539838791,
+    -0.02057799883186817,
+    0.03928777202963829,
+    -0.043445684015750885,
+    0.09401106089353561,
+    0.02039056271314621,
+    -0.06789985299110413,
+    0.01904227025806904,
+    0.039212822914123535,
+    -0.08828967064619064,
+    0.06194516643881798,
+    0.07205480337142944,
+    -0.03225898742675781,
+    -0.04037121683359146,
+    0.018739067018032074,
+    -0.051531895995140076
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "start": 0,
+        "content": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. If a seed-health review is unresolved, keep the affected slips"
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "start": 174,
+        "content": "## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. If a seed-health review is unresolved, keep the affected slips until clearance is recorded.\nV-05. Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability."
+      }
+    ]
+  }
+}

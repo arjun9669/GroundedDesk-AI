@@ -1,0 +1,1252 @@
+{
+  "candidate_identity": "coverage-v41-order-collection",
+  "id": "H19",
+  "question": "Which month is warmest on a monthly-mean basis at Caldra Tide Station, and what is that mean temperature?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Which month is warmest on a monthly-mean basis at Caldra Tide Station, and what is that mean temperature?",
+    "expected_display": "Which month is warmest on a monthly-mean basis at Caldra Tide Station, and what is that mean temperature?",
+    "rendered_question": "Which month is warmest on a monthly-mean basis at Caldra Tide Station, and what is that mean temperature?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+    "sources": [
+      {
+        "filename": "03_Caldra_Tide_Station.txt",
+        "excerpt": "At Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016.\n\nThe highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.\n\nRuan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week.\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under no",
+        "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhich month is warmest on a monthly-mean basis at Caldra Tide Station, and what is that mean temperature?\n\nSearched all files: 01_Veylan_Seed_Conservatory.txt · 02_Ostren_Instrument_Library.txt · 03_Caldra_Tide_Station.txt · 04_Tessarin_Repair_Cafe.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.\n\nSOURCE EVIDENCE\n[1]\n03_Caldra_Tide_Station.txt\n\nText line 3 (normalized extraction)\n\nAt Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016. The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius. Ruan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week. The Caldra Tide Station winch needs lubrication every 84 operating hours under no\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "e41a8cae-d87a-4644-92f2-905eba8426ee:0",
+        "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+        "filename": "03_Caldra_Tide_Station.txt",
+        "excerpt": "At Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016.\n\nThe highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.\n\nRuan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week.\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under no",
+        "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+        "score": 0.0476,
+        "lexicalScore": 8.637974864637233,
+        "semanticScore": 0.7012508997590714,
+        "matchedTerms": [
+          "monthly",
+          "mean",
+          "caldra",
+          "tide",
+          "station",
+          "temperature"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "e41a8cae-d87a-4644-92f2-905eba8426ee:0",
+        "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+        "filename": "03_Caldra_Tide_Station.txt",
+        "excerpt": "At Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016.\n\nThe highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.\n\nRuan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week.\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 op",
+        "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 8.637974864637233,
+        "semanticScore": 0.7012508997590714,
+        "matchedTerms": [
+          "monthly",
+          "mean",
+          "caldra",
+          "tide",
+          "station",
+          "temperature"
+        ],
+        "start": 102,
+        "end": 259
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Caldra_Tide_Station.txt",
+        "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Caldra_Tide_Station.txt",
+        "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Caldra_Tide_Station.txt",
+        "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "e41a8cae-d87a-4644-92f2-905eba8426ee:0",
+        "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+        "filename": "03_Caldra_Tide_Station.txt",
+        "excerpt": "At Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016.\n\nThe highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.\n\nRuan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week.\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 op",
+        "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 9.268501589903352,
+        "semanticScore": 0.7012508997590714,
+        "matchedTerms": [
+          "monthly",
+          "mean",
+          "caldra",
+          "tide",
+          "station",
+          "temperature"
+        ],
+        "start": 102,
+        "end": 259
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Caldra_Tide_Station.txt",
+        "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Caldra_Tide_Station.txt",
+        "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Caldra_Tide_Station.txt",
+        "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Caldra_Tide_Station.txt",
+      "start": 102,
+      "content": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+      "semanticScore": 0.7907327217439477,
+      "lexicalScore": 12.392781210904774
+    },
+    {
+      "filename": "02_Ostren_Instrument_Library.txt",
+      "start": 377,
+      "content": "The highest monthly mean temperature is 25 degrees Celsius, in August.",
+      "semanticScore": 0.5638364028833573,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Caldra_Tide_Station.txt",
+      "start": 198,
+      "content": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "semanticScore": 0.44024233415633934,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Caldra_Tide_Station.txt",
+      "start": 396,
+      "content": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.",
+      "semanticScore": 0.43860852737267064,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Ostren_Instrument_Library.txt",
+      "start": 315,
+      "content": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "semanticScore": 0.42812497178831843,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+      "start": 0,
+      "end": 71,
+      "similarity": 0.02656803863218384,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "start": 72,
+      "end": 172,
+      "similarity": 0.042566962838289785,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "V-01.",
+      "start": 199,
+      "end": 204,
+      "similarity": 0.08328513357740479,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Orders released before 14:10 leave on the same collection day.",
+      "start": 205,
+      "end": 267,
+      "similarity": 0.07528935615941423,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.",
+      "start": 268,
+      "end": 366,
+      "similarity": 0.09445223072000829,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "V-02.",
+      "start": 367,
+      "end": 372,
+      "similarity": 0.06968797061815195,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Mira checks five germination trays per day.",
+      "start": 373,
+      "end": 416,
+      "similarity": 0.23920398528478498,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Tobin checks three irrigation valves per day.",
+      "start": 417,
+      "end": 462,
+      "similarity": 0.19183153781118817,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Mira labels two storage bins per week.",
+      "start": 463,
+      "end": 501,
+      "similarity": 0.20466430875609137,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "V-03.",
+      "start": 502,
+      "end": 507,
+      "similarity": 0.07349849836190997,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius.",
+      "start": 508,
+      "end": 600,
+      "similarity": 0.35011566009567524,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Individual winter extremes are not listed.",
+      "start": 601,
+      "end": 643,
+      "similarity": 0.33132479199457016,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "V-04.",
+      "start": 644,
+      "end": 649,
+      "similarity": 0.03542057351855107,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Collection slips are retained for 16 months.",
+      "start": 650,
+      "end": 694,
+      "similarity": 0.016999504434696375,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "If a seed-health review is unresolved, keep the affected slips until clearance is recorded.",
+      "start": 695,
+      "end": 786,
+      "similarity": -0.017360852340023988,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "V-05.",
+      "start": 787,
+      "end": 792,
+      "similarity": 0.01803456688112675,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "Acknowledge collection requests within two collection days.",
+      "start": 793,
+      "end": 852,
+      "similarity": 0.04289218403978098,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0738a58b-32da-4c14-b986-b8d3fe57db59",
+      "value": "This acknowledgement does not guarantee stock availability.",
+      "start": 853,
+      "end": 912,
+      "similarity": -0.015744266085347364,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.07320496850186298,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "Its restoration was completed in 1974.",
+      "start": 74,
+      "end": 112,
+      "similarity": -0.04164597854494008,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "A proposal to close the annex in 2009 was abandoned; the annex stayed open.",
+      "start": 113,
+      "end": 188,
+      "similarity": -0.028672837689332067,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "L-01.",
+      "start": 216,
+      "end": 221,
+      "similarity": 0.10754915056832919,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+      "start": 222,
+      "end": 314,
+      "similarity": 0.35279228369246746,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.42812497178831843,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "The highest monthly mean temperature is 25 degrees Celsius, in August.",
+      "start": 377,
+      "end": 447,
+      "similarity": 0.5638364028833573,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "L-02.",
+      "start": 448,
+      "end": 453,
+      "similarity": 0.06537790468288654,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "Signed loan records are retained for 8 years.",
+      "start": 454,
+      "end": 499,
+      "similarity": 0.028142423897120343,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "If an ownership dispute is open, keep the affected records until the dispute is settled.",
+      "start": 500,
+      "end": 588,
+      "similarity": -0.11205845874978465,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "L-03.",
+      "start": 589,
+      "end": 594,
+      "similarity": 0.07447187228902005,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "50d0be84-2f73-4852-93ce-832bae9ab10a",
+      "value": "The custody packet contains:",
+      "start": 595,
+      "end": 623,
+      "similarity": -0.050986721413258385,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "At Caldra Tide Station, the gauge tower was rebuilt in 1993.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.33929686830265415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "The equipment shed was painted in 2016.",
+      "start": 61,
+      "end": 100,
+      "similarity": 0.012381185480482688,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+      "start": 102,
+      "end": 197,
+      "similarity": 0.7907327217439477,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 198,
+      "end": 259,
+      "similarity": 0.44024233415633934,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "Ruan records six water level readings per watch.",
+      "start": 261,
+      "end": 309,
+      "similarity": 0.22546526829187205,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "Sena records four salinity samples per watch.",
+      "start": 310,
+      "end": 355,
+      "similarity": 0.3091504743662229,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "Ruan tags two anchor markers per week.",
+      "start": 356,
+      "end": 394,
+      "similarity": 0.1626935708459268,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.",
+      "start": 396,
+      "end": 493,
+      "similarity": 0.43860852737267064,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "In a salt-spray bay, lubricate it every 42 operating hours.",
+      "start": 494,
+      "end": 553,
+      "similarity": 0.16281011084470906,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+      "value": "Inspect the winch every 21 operating hours regardless of bay.",
+      "start": 554,
+      "end": 615,
+      "similarity": 0.11706364331224925,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "R-01.",
+      "start": 21,
+      "end": 26,
+      "similarity": 0.05756984249962596,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+      "start": 27,
+      "end": 104,
+      "similarity": 0.01886943648254985,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "An acknowledgement is not a promise that the repair will finish within four hours.",
+      "start": 105,
+      "end": 187,
+      "similarity": -0.014381775273641225,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "R-02.",
+      "start": 188,
+      "end": 193,
+      "similarity": 0.060956000717780616,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "start": 194,
+      "end": 305,
+      "similarity": -0.007049206375663993,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "R-03.",
+      "start": 306,
+      "end": 311,
+      "similarity": 0.04566379203386654,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.",
+      "start": 312,
+      "end": 411,
+      "similarity": -0.00022051315487322618,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "R-04.",
+      "start": 412,
+      "end": 417,
+      "similarity": 0.06642887142384303,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions.",
+      "start": 418,
+      "end": 515,
+      "similarity": 0.10522867924980697,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "In a dusty workroom, lubricate it every 52 operating hours.",
+      "start": 516,
+      "end": 575,
+      "similarity": 0.11444650986241343,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "Inspect the drill every 26 operating hours in either room.",
+      "start": 576,
+      "end": 634,
+      "similarity": 0.1261772311363703,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "R-05.",
+      "start": 635,
+      "end": 640,
+      "similarity": -0.01080577238785365,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f5be003f-2059-4108-94a4-9dbd73b6e038",
+      "value": "Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention.",
+      "start": 641,
+      "end": 755,
+      "similarity": -0.0004408864776369652,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e41a8cae-d87a-4644-92f2-905eba8426ee:0",
+          "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+          "filename": "03_Caldra_Tide_Station.txt",
+          "excerpt": "At Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016.\n\nThe highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.\n\nRuan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week.\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 op",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 8.637974864637233,
+          "semanticScore": 0.7012508997590714,
+          "matchedTerms": [
+            "monthly",
+            "mean",
+            "caldra",
+            "tide",
+            "station",
+            "temperature"
+          ],
+          "start": 102,
+          "end": 259
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Caldra_Tide_Station.txt",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Caldra_Tide_Station.txt",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Caldra_Tide_Station.txt",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e41a8cae-d87a-4644-92f2-905eba8426ee:0",
+          "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+          "filename": "03_Caldra_Tide_Station.txt",
+          "excerpt": "At Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016.\n\nThe highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.\n\nRuan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week.\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 op",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 9.268501589903352,
+          "semanticScore": 0.7012508997590714,
+          "matchedTerms": [
+            "monthly",
+            "mean",
+            "caldra",
+            "tide",
+            "station",
+            "temperature"
+          ],
+          "start": 102,
+          "end": 259
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Caldra_Tide_Station.txt",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Caldra_Tide_Station.txt",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Caldra_Tide_Station.txt",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e41a8cae-d87a-4644-92f2-905eba8426ee:0",
+          "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+          "filename": "03_Caldra_Tide_Station.txt",
+          "excerpt": "At Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016.\n\nThe highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.\n\nRuan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week.\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under no",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+          "score": 0.0476,
+          "lexicalScore": 8.637974864637233,
+          "semanticScore": 0.7012508997590714,
+          "matchedTerms": [
+            "monthly",
+            "mean",
+            "caldra",
+            "tide",
+            "station",
+            "temperature"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Caldra_Tide_Station.txt",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Caldra_Tide_Station.txt",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e41a8cae-d87a-4644-92f2-905eba8426ee:0",
+          "documentId": "e41a8cae-d87a-4644-92f2-905eba8426ee",
+          "filename": "03_Caldra_Tide_Station.txt",
+          "excerpt": "At Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016.\n\nThe highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.\n\nRuan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week.\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under no",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+          "score": 0.0476,
+          "lexicalScore": 9.268501589903352,
+          "semanticScore": 0.7012508997590714,
+          "matchedTerms": [
+            "monthly",
+            "mean",
+            "caldra",
+            "tide",
+            "station",
+            "temperature"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Caldra_Tide_Station.txt",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Caldra_Tide_Station.txt",
+          "quote": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.0049756597727537155,
+    -0.04335379600524902,
+    -0.00956997461616993,
+    0.005316559225320816,
+    -0.04641130566596985,
+    0.0026339306496083736,
+    -0.022518837824463844,
+    -0.032879676669836044,
+    -0.03174494951963425,
+    -0.001417341292835772,
+    0.015138018876314163,
+    -0.10037881135940552,
+    0.08045201003551483,
+    -0.03146284073591232,
+    0.08946575224399567,
+    -0.016557015478610992,
+    0.00542412931099534,
+    -0.07891464978456497,
+    0.06657473742961884,
+    0.036259401589632034,
+    0.032110054045915604,
+    -0.0014434176264330745,
+    -0.07377447932958603,
+    -0.03507400304079056,
+    0.02449149824678898,
+    -0.00839306227862835,
+    -0.04409950226545334,
+    0.03472798690199852,
+    -0.023398298770189285,
+    0.1123373955488205,
+    -0.10694094747304916,
+    0.08708269149065018,
+    0.02740999311208725,
+    -0.018293801695108414,
+    -0.03234213963150978,
+    -0.008906671777367592,
+    -0.07759799808263779,
+    -0.10307072848081589,
+    -0.0918445959687233,
+    0.00951081421226263,
+    -0.043694332242012024,
+    -0.008102021180093288,
+    0.03889916092157364,
+    0.022881802171468735,
+    -0.09837617725133896,
+    0.0416005440056324,
+    0.01515743788331747,
+    0.04232903569936752,
+    0.0014277157606557012,
+    0.07648752629756927,
+    0.060827311128377914,
+    0.05131181702017784,
+    -0.1186373382806778,
+    0.14179323613643646,
+    -0.03779517114162445,
+    -0.011711617931723595,
+    -0.06635984033346176,
+    -0.03631305694580078,
+    0.04447437450289726,
+    0.06508545577526093,
+    -0.003863421268761158,
+    0.08686991780996323,
+    -0.05331536754965782,
+    0.02485400065779686,
+    0.09358970075845718,
+    0.005548056680709124,
+    -0.014577275142073631,
+    0.03840898722410202,
+    0.034162797033786774,
+    -0.06820330023765564,
+    -0.0349498875439167,
+    0.018418798223137856,
+    0.06416788697242737,
+    0.003397332038730383,
+    0.03717290982604027,
+    -0.14542827010154724,
+    0.04764191806316376,
+    -0.02811647579073906,
+    0.07648224383592606,
+    -0.033338505774736404,
+    -0.11891955882310867,
+    -0.06801777333021164,
+    -0.00017873382603283972,
+    0.050589267164468765,
+    0.0009055400150828063,
+    -0.025177698582410812,
+    0.0427270345389843,
+    0.015287411399185658,
+    0.04855496808886528,
+    0.012817480601370335,
+    0.08653189986944199,
+    0.08528165519237518,
+    -0.037693314254283905,
+    0.0032301449682563543,
+    0.01109579112380743,
+    0.11158007383346558,
+    -0.029420964419841766,
+    0.03519769012928009,
+    0.004648733418434858,
+    -0.03387812525033951,
+    -0.026988355442881584,
+    0.010488967411220074,
+    -0.030656784772872925,
+    0.046081867069005966,
+    0.030643941834568977,
+    -0.07608946412801743,
+    -0.018654292449355125,
+    -0.05138549581170082,
+    -0.07431155443191528,
+    0.0390397347509861,
+    -0.024741994217038155,
+    -0.003660163376480341,
+    0.0529271624982357,
+    0.012099926359951496,
+    -0.004604043904691935,
+    -0.002749551320448518,
+    -0.009087971411645412,
+    0.0379163920879364,
+    0.04708694666624069,
+    -0.001250382512807846,
+    -0.03706974536180496,
+    0.039456307888031006,
+    -0.06162341684103012,
+    0.02838371880352497,
+    -0.04300722852349281,
+    0.0396379791200161,
+    0.014641794376075268,
+    -1.714231125985819e-33,
+    0.0712149441242218,
+    -0.0021966511849313974,
+    0.05927451699972153,
+    -0.05974854528903961,
+    0.08643724024295807,
+    -0.00585237517952919,
+    -0.026144351810216904,
+    0.00380837544798851,
+    0.04811764135956764,
+    0.03418684005737305,
+    0.01638488657772541,
+    -0.001374667277559638,
+    -0.042803458869457245,
+    0.04177672788500786,
+    0.046433329582214355,
+    -0.0014582775766029954,
+    -0.022116445004940033,
+    -0.02195177599787712,
+    -0.10404913872480392,
+    0.06752848625183105,
+    -0.06612427532672882,
+    0.027655990794301033,
+    0.0509464405477047,
+    -0.10165836662054062,
+    -0.030229883268475533,
+    -0.0009235483012162149,
+    -0.0019830421078950167,
+    0.08195534348487854,
+    -0.0480753630399704,
+    0.044441256672143936,
+    0.014844643883407116,
+    -0.07842498272657394,
+    -0.022259926423430443,
+    -0.02192007191479206,
+    0.05597001686692238,
+    -0.009142470546066761,
+    -0.006025322247296572,
+    0.03609692305326462,
+    -0.03277276083827019,
+    0.04508831724524498,
+    0.0820266380906105,
+    0.03531314805150032,
+    0.0659869983792305,
+    0.011089893989264965,
+    0.026098404079675674,
+    0.054644737392663956,
+    0.05004395917057991,
+    0.007076166104525328,
+    0.08855841308832169,
+    -0.001848241314291954,
+    -0.029857158660888672,
+    -0.031786706298589706,
+    -0.0072495052590966225,
+    -0.05957693234086037,
+    -0.006822145543992519,
+    0.12945090234279633,
+    0.0008810799336060882,
+    0.022029465064406395,
+    -0.0956118255853653,
+    -0.028933551162481308,
+    -0.07247196137905121,
+    -0.012710523791611195,
+    0.13298283517360687,
+    -0.04900224506855011,
+    0.021889610216021538,
+    -0.022644052281975746,
+    -0.00710716936737299,
+    0.0230296328663826,
+    -0.05278892442584038,
+    -0.04651034623384476,
+    -0.0009555993019603193,
+    0.003908064216375351,
+    0.07316634058952332,
+    -0.039526887238025665,
+    0.01860654726624489,
+    0.05619065836071968,
+    0.106606125831604,
+    0.01734202913939953,
+    0.002599152037873864,
+    0.019071100279688835,
+    -0.05560265854001045,
+    0.030296893790364265,
+    0.08602169901132584,
+    0.0005659879534505308,
+    -0.06129898875951767,
+    -0.010558941401541233,
+    -0.017718352377414703,
+    0.052226170897483826,
+    0.005704890005290508,
+    0.036099426448345184,
+    0.021738598123192787,
+    -0.007044984959065914,
+    0.005658279173076153,
+    0.01300277654081583,
+    -0.05255014821887016,
+    -4.162751971450562e-34,
+    0.00043508459930308163,
+    0.04226243495941162,
+    0.03308534622192383,
+    0.06762760877609253,
+    -0.010988875292241573,
+    -0.018756764009594917,
+    0.03666078299283981,
+    0.03324368596076965,
+    0.037583693861961365,
+    0.09276483207941055,
+    -0.014023980125784874,
+    -0.0022721097338944674,
+    0.010085824877023697,
+    -0.07765282690525055,
+    -0.03211481124162674,
+    0.1005985289812088,
+    0.06062432378530502,
+    0.033460583537817,
+    -0.05507716163992882,
+    -0.017112385481595993,
+    -0.08381814509630203,
+    0.06547105312347412,
+    -0.027754897251725197,
+    -0.0030748951248824596,
+    -0.016215452924370766,
+    -0.039392776787281036,
+    -0.007590506691485643,
+    0.00929229985922575,
+    -0.05985008180141449,
+    -0.06393877416849136,
+    -0.021455319598317146,
+    -0.029227590188384056,
+    -0.0093771917745471,
+    -0.06004509702324867,
+    -0.08330360800027847,
+    0.04419228434562683,
+    0.05090395733714104,
+    0.006901127751916647,
+    -0.002389238215982914,
+    0.05735231935977936,
+    0.09685219824314117,
+    -0.06857305020093918,
+    0.07316790521144867,
+    -0.035832200199365616,
+    0.026519443839788437,
+    0.022973302751779556,
+    0.019248995929956436,
+    0.01860387995839119,
+    -0.025395387783646584,
+    0.06762070208787918,
+    -0.020543565973639488,
+    -0.10559247434139252,
+    -0.054642125964164734,
+    0.011849354021251202,
+    0.03298697620630264,
+    0.024908773601055145,
+    -0.005371903069317341,
+    0.0592527873814106,
+    -0.07312949001789093,
+    -0.10642270743846893,
+    0.05183511972427368,
+    -0.06608684360980988,
+    -0.004938503727316856,
+    0.00152770325075835,
+    -0.06181186065077782,
+    0.07097972184419632,
+    0.0008138076518662274,
+    -0.09192375093698502,
+    0.00812972616404295,
+    0.029393469914793968,
+    -0.027067014947533607,
+    -0.046654630452394485,
+    -0.04072519391775131,
+    -0.09511113911867142,
+    -0.05707424879074097,
+    0.014667743816971779,
+    0.017766721546649933,
+    -0.04189462587237358,
+    -0.038572248071432114,
+    0.004872795194387436,
+    -0.10884032398462296,
+    0.03696039691567421,
+    -0.10624277591705322,
+    0.044302310794591904,
+    -0.048615191131830215,
+    -0.04973398521542549,
+    -0.015790533274412155,
+    -0.04021475091576576,
+    0.0262472964823246,
+    0.030309926718473434,
+    -0.06008463352918625,
+    -0.035499390214681625,
+    -0.13581517338752747,
+    0.010899660177528858,
+    -0.008702948689460754,
+    -2.0652217713745813e-8,
+    0.07985544949769974,
+    -0.0030448331963270903,
+    -0.0028400705195963383,
+    -0.0362544059753418,
+    0.015976762399077415,
+    -0.07499410212039948,
+    0.03260788321495056,
+    -0.016177693381905556,
+    -0.01010543666779995,
+    0.015733782202005386,
+    0.10637714713811874,
+    0.01450426410883665,
+    0.025405509397387505,
+    -0.02711218036711216,
+    0.00335763324983418,
+    -0.010519785806536674,
+    0.014450022019445896,
+    -0.023769956082105637,
+    -0.09691353142261505,
+    -0.13756240904331207,
+    0.0036217966116964817,
+    0.029334213584661484,
+    0.041071049869060516,
+    0.06895945966243744,
+    0.029584022238850594,
+    0.06430079787969589,
+    0.012998279184103012,
+    0.1322375386953354,
+    -0.001855612499639392,
+    0.00316109461709857,
+    -0.0372810959815979,
+    -0.007277504075318575,
+    -0.07842712104320526,
+    -0.1353527307510376,
+    -0.053580548614263535,
+    0.0394354946911335,
+    -0.00257494836114347,
+    0.001232912763953209,
+    0.027517369017004967,
+    0.040898047387599945,
+    0.033265434205532074,
+    0.008928658440709114,
+    -0.05188523232936859,
+    0.03252686187624931,
+    -0.02030361257493496,
+    -0.010573651641607285,
+    0.013055524788796902,
+    0.05310358107089996,
+    0.05816556513309479,
+    0.012865648604929447,
+    0.04970396310091019,
+    0.0064824228174984455,
+    -0.002860174048691988,
+    0.052612148225307465,
+    -0.03039676696062088,
+    0.07498037815093994,
+    -0.0603928379714489,
+    -0.013482890091836452,
+    -0.03502299636602402,
+    0.07408008724451065,
+    -0.00446751993149519,
+    0.0005793372984044254,
+    -0.05908631905913353,
+    -0.03049049898982048
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Caldra_Tide_Station.txt",
+        "start": 0,
+        "content": "At Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016.\n\nThe highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.\n\nRuan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week.\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Caldra_Tide_Station.txt",
+        "start": 0,
+        "content": "At Caldra Tide Station, the gauge tower was rebuilt in 1993. The equipment shed was painted in 2016.\n\nThe highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September. Its highest recorded daily temperature is 34 degrees Celsius.\n\nRuan records six water level readings per watch. Sena records four salinity samples per watch. Ruan tags two anchor markers per week.\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay."
+      },
+      {
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "start": 190,
+        "content": "## Store and loan records\nL-01. The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. The highest monthly mean temperature is 25 degrees Celsius, in August.\nL-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled.\nL-03. The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt"
+      }
+    ]
+  }
+}

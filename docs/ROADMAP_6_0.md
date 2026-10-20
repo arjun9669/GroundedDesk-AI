@@ -18,21 +18,20 @@ phase. Inputs for 668 cases are verified; 103 original cases and the old combine
 configuration remain unavailable. New tests cannot retrospectively establish
 preservation on those missing originals. Do not silently replace the full gate.
 
-The [v40 three-pack exposed regression](V40_THREE_PACK_MAC_RESULTS.md) passes
-Vela32, Prism32, Lumen32 separately 32/32 in both variants; original v39 Lumen32
-31/0/1 remains preserved. The [subsequent Hearth32 v40 first run](V40_HEARTH32_MAC_RESULTS.md)
-FAILS 31/0/1 in both variants on H04, a supported false refusal. Its first evidence
-is preserved after a stop and explicit publication approval. V40 is implemented
-but not adopted. There are 128 distinct exposed v40-tested cases across four packs,
-540 verified cases awaiting v40 testing and 103 originals unavailable.
+The [first v41 four-pack exposed regression](V41_FOUR_PACK_MAC_RESULTS.md) passes
+Vela32, Prism32, Lumen32, Hearth32 separately 32/32 in both variants. H04 is repaired;
+original v40 Hearth32 31/0/1, v39 Lumen32 31/0/1, v32 BLOCKED/UNGRADED and all
+historical first results remain preserved. V41 is implemented but not integrated.
+There are 128 distinct exposed v41-tested cases, 540 verified cases awaiting v41
+testing and 103 originals plus the combined configuration unavailable.
 
-Next decision: a separately precommitted v41 fix and new four-pack revalidation,
-as proposed in the [H04 investigation](HEARTH32_V40_FAILURE_REVIEW.md), before
-broader regression resumes. No v41 implementation or model rerun is authorized by
-this report. Original source bytes, questions, native rubrics, frozen candidates
-and historical failures stay preserved. Any required test/integrity/execution/
-scoring failure stops work and requires user input before implementation, retries,
-commits or publication. A passing subset cannot authorize phase 2 or adoption.
+Next prepare/freeze Morrow32 with original native criteria and historical PASS
+preservation, then the remaining verified packs. Phase 1's exit gate still requires
+broader agreed regression and explicit resolution of the missing-input gap; no
+phase 2 or adoption authorization follows from these four partial gates. Preserve
+original source bytes, questions, native rubrics, frozen candidates and failures.
+Any required test/integrity/execution/scoring failure stops work for user input
+before implementation, retries, commits or publication.
 
 See [project status](../PROJECT_STATUS.md), [verified inputs](RECOVERABLE_INPUT_INVENTORY.md)
 and [v39 Vela32 results](V39_VELA32_MAC_RESULTS.md). Use the recorded `main`

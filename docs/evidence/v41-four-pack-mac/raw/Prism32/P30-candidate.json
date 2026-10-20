@@ -1,0 +1,225 @@
+{
+  "candidate_identity": "coverage-v41-order-collection",
+  "id": "P30",
+  "question": "Compare normal and exception lubrication or greasing plus inspection intervals for the Tavren Ferry Workshop salt-spray loading winch and Yalara Grain Exchange dust-heavy conveyor.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.\n\n[2] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+    "sources": [
+      {
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions."
+      },
+      {
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay."
+      }
+    ],
+    "displayed": "Shared vocabulary: conditions, every, hours, inspect, loading, normal, office, records, under. Shared terms do not establish factual agreement.\n\n[1] 03_Tavren_Ferry_Workshop.txt\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.\n\nText line 8 (normalized extraction)\n\nLocate in library ↗\n[2] 04_Yalara_Grain_Exchange.txt\n\nGrease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.\n\nText line 7 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare normal and exception lubrication or greasing plus inspection intervals for the Tavren Ferry Workshop salt-spray loading winch and Yalara Grain Exchange dust-heavy conveyor.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.",
+        "warning": false,
+        "supported": true,
+        "quote": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions."
+      },
+      {
+        "citation": 2,
+        "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "excerpt": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+        "warning": false,
+        "supported": true,
+        "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay."
+      }
+    ],
+    "sharedTerms": [
+      "conditions",
+      "every",
+      "hours",
+      "inspect",
+      "loading",
+      "normal",
+      "office",
+      "records",
+      "under"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.\n\n[2] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare normal and exception lubrication or greasing plus inspection intervals for the Tavren Ferry Workshop salt-spray loading winch and Yalara Grain Exchange dust-heavy conveyor.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.",
+        "warning": false,
+        "supported": true,
+        "quote": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.",
+        "start": 425,
+        "end": 670
+      },
+      {
+        "citation": 2,
+        "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "excerpt": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+        "warning": false,
+        "supported": true,
+        "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay."
+      }
+    ],
+    "sharedTerms": [
+      "conditions",
+      "every",
+      "hours",
+      "inspect",
+      "loading",
+      "normal",
+      "office",
+      "records",
+      "under"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.\n\n[2] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+    "experiment": "V36 isolated literal-boundary lexical Comparison; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare normal and exception lubrication or greasing plus inspection intervals for the Tavren Ferry Workshop salt-spray loading winch and Yalara Grain Exchange dust-heavy conveyor.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.",
+        "warning": false,
+        "supported": true,
+        "quote": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.",
+        "start": 425,
+        "end": 670
+      },
+      {
+        "citation": 2,
+        "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "excerpt": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+        "warning": false,
+        "supported": true,
+        "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay."
+      }
+    ],
+    "sharedTerms": [
+      "conditions",
+      "every",
+      "hours",
+      "inspect",
+      "loading",
+      "normal",
+      "office",
+      "records",
+      "under"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.\n\n[2] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+    "experiment": "V36 isolated literal-boundary lexical Comparison; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare normal and exception lubrication or greasing plus inspection intervals for the Tavren Ferry Workshop salt-spray loading winch and Yalara Grain Exchange dust-heavy conveyor.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+          "filename": "03_Tavren_Ferry_Workshop.txt",
+          "excerpt": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.",
+          "warning": false,
+          "supported": true,
+          "quote": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.",
+          "start": 425,
+          "end": 670
+        },
+        {
+          "citation": 2,
+          "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+          "filename": "04_Yalara_Grain_Exchange.txt",
+          "excerpt": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+          "warning": false,
+          "supported": true,
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay."
+        }
+      ],
+      "sharedTerms": [
+        "conditions",
+        "every",
+        "hours",
+        "inspect",
+        "loading",
+        "normal",
+        "office",
+        "records",
+        "under"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.\n\n[2] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+      "experiment": "V36 isolated literal-boundary lexical Comparison; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare normal and exception lubrication or greasing plus inspection intervals for the Tavren Ferry Workshop salt-spray loading winch and Yalara Grain Exchange dust-heavy conveyor.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+          "filename": "03_Tavren_Ferry_Workshop.txt",
+          "excerpt": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.",
+          "warning": false,
+          "supported": true,
+          "quote": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.",
+          "start": 425,
+          "end": 670
+        },
+        {
+          "citation": 2,
+          "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+          "filename": "04_Yalara_Grain_Exchange.txt",
+          "excerpt": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+          "warning": false,
+          "supported": true,
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay."
+        }
+      ],
+      "sharedTerms": [
+        "conditions",
+        "every",
+        "hours",
+        "inspect",
+        "loading",
+        "normal",
+        "office",
+        "records",
+        "under"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter.\n\n[2] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+      "experiment": "V36 isolated literal-boundary lexical Comparison; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v41 and paired v40 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

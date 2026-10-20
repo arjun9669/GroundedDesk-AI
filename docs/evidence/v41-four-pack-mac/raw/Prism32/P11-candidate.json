@@ -1,0 +1,1323 @@
+{
+  "candidate_identity": "coverage-v41-order-collection",
+  "id": "P11",
+  "question": "When was the Tavren Ferry Workshop cable tower rebuilt?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When was the Tavren Ferry Workshop cable tower rebuilt?",
+    "expected_display": "When was the Tavren Ferry Workshop cable tower rebuilt?",
+    "rendered_question": "When was the Tavren Ferry Workshop cable tower rebuilt?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Workshop operating notes At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+    "sources": [
+      {
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tes",
+        "quote": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen was the Tavren Ferry Workshop cable tower rebuilt?\n\nSearched all files: 01_Liraven_Planetarium.txt · 02_Osvik_Puppet_Theatre.txt · 03_Tavren_Ferry_Workshop.txt · 04_Yalara_Grain_Exchange.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Workshop operating notes At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.\n\nSOURCE EVIDENCE\n[1]\n03_Tavren_Ferry_Workshop.txt\n\nText lines 1–2 (normalized extraction)\n\n## Workshop operating notes At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012. The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius. Varen records seven cable-tension readings per shift. Tesi records five ramp tes\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "f1363940-2a74-4c82-bbad-6fa85465bfe8:0",
+        "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tes",
+        "quote": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+        "score": 0.0476,
+        "lexicalScore": 11.681564036049416,
+        "semanticScore": 0.6176930166714211,
+        "matchedTerms": [
+          "tavren",
+          "ferry",
+          "workshop",
+          "cable",
+          "tower",
+          "rebuilt"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "f1363940-2a74-4c82-bbad-6fa85465bfe8:0",
+        "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hoo",
+        "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+        "score": 0.0476,
+        "lexicalScore": 11.681564036049416,
+        "semanticScore": 0.6176930166714211,
+        "matchedTerms": [
+          "tavren",
+          "ferry",
+          "workshop",
+          "cable",
+          "tower",
+          "rebuilt"
+        ],
+        "start": 28,
+        "end": 130
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 28,
+          "cosine": 0.9091092430147095,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "f1363940-2a74-4c82-bbad-6fa85465bfe8:0",
+        "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hoo",
+        "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+        "score": 0.0476,
+        "lexicalScore": 11.924768698886492,
+        "semanticScore": 0.6176930166714211,
+        "matchedTerms": [
+          "tavren",
+          "ferry",
+          "workshop",
+          "cable",
+          "tower",
+          "rebuilt"
+        ],
+        "start": 28,
+        "end": 130
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 28,
+          "cosine": 0.9091092430147095,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Tavren_Ferry_Workshop.txt",
+        "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Tavren_Ferry_Workshop.txt",
+      "start": 28,
+      "content": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "semanticScore": 0.9091092430147095,
+      "lexicalScore": 18.092441324782893
+    },
+    {
+      "filename": "03_Tavren_Ferry_Workshop.txt",
+      "start": 132,
+      "content": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "semanticScore": 0.4310091940670724,
+      "lexicalScore": 6.4746930726219345
+    },
+    {
+      "filename": "03_Tavren_Ferry_Workshop.txt",
+      "start": 425,
+      "content": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.",
+      "semanticScore": null,
+      "lexicalScore": 5.639605132179697
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "Liraven Planetarium began public dome shows in 1967.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.16795390153841597,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "start": 53,
+      "end": 165,
+      "similarity": 0.16032328887486216,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "D-01.",
+      "start": 197,
+      "end": 202,
+      "similarity": 0.04676134359961182,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "Dispatch requests cleared before 16:20 leave on the current service day.",
+      "start": 203,
+      "end": 275,
+      "similarity": 0.11346679738587594,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.",
+      "start": 276,
+      "end": 368,
+      "similarity": 0.06869774949677926,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "D-02.",
+      "start": 369,
+      "end": 374,
+      "similarity": 0.08024256986327762,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "Eris checks five projector filters per morning.",
+      "start": 375,
+      "end": 422,
+      "similarity": 0.04985303617861694,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "Nalo checks three door hinges per morning.",
+      "start": 423,
+      "end": 465,
+      "similarity": 0.07218444319036592,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "Eris labels two transport cases per week.",
+      "start": 466,
+      "end": 507,
+      "similarity": 0.036384640729541874,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "D-03.",
+      "start": 508,
+      "end": 513,
+      "similarity": 0.1018195820270305,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "start": 514,
+      "end": 599,
+      "similarity": 0.005034773389074523,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "Individual winter extremes are not recorded.",
+      "start": 600,
+      "end": 644,
+      "similarity": -0.016644932592979153,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "D-04.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.09864099498679076,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "Keep movement slips for 19 months.",
+      "start": 651,
+      "end": 685,
+      "similarity": 0.1035717171513727,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "While an export-review hold is open, retain the affected slips until the hold is released.",
+      "start": 686,
+      "end": 776,
+      "similarity": 0.007324888257902012,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "D-05.",
+      "start": 777,
+      "end": 782,
+      "similarity": 0.06736577462580379,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "Acknowledge dome-booking requests within two business days.",
+      "start": 783,
+      "end": 842,
+      "similarity": 0.10522264373825901,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9048dfe-0889-49be-9aa9-3914868f5c03",
+      "value": "An acknowledgement is not a guarantee that seats remain available.",
+      "start": 843,
+      "end": 909,
+      "similarity": 0.032086166734184685,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.17941793042769455,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "Its restoration was completed in 1986.",
+      "start": 55,
+      "end": 93,
+      "similarity": 0.31507061450210777,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+      "start": 94,
+      "end": 170,
+      "similarity": 0.024735331005899093,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "T-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.1423744092989992,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "start": 204,
+      "end": 296,
+      "similarity": 0.018878611200838138,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 297,
+      "end": 357,
+      "similarity": -0.03651660722816922,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+      "start": 358,
+      "end": 430,
+      "similarity": -0.007313030262638087,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "T-02.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.16024914768372495,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "Signed touring records are retained for 5 years.",
+      "start": 437,
+      "end": 485,
+      "similarity": 0.07526005211269551,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "An unresolved ownership claim extends retention of the affected records until the claim is settled.",
+      "start": 486,
+      "end": 585,
+      "similarity": 0.07101344322874804,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "T-03.",
+      "start": 586,
+      "end": 591,
+      "similarity": 0.17138372982350175,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "The touring packet must contain:",
+      "start": 592,
+      "end": 624,
+      "similarity": 0.1359390428671864,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "T-04.",
+      "start": 705,
+      "end": 710,
+      "similarity": 0.14109943971970826,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "10ee40bd-3b15-4a26-8b0c-230972d13867",
+      "value": "The stage clock was replaced in 2023.",
+      "start": 711,
+      "end": 748,
+      "similarity": 0.16497026503390935,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "start": 28,
+      "end": 90,
+      "similarity": 0.9091092430147095,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "The ramp shelter was repainted in 2012.",
+      "start": 91,
+      "end": 130,
+      "similarity": 0.25644672916799993,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "start": 132,
+      "end": 226,
+      "similarity": 0.4310091940670724,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "Its highest recorded daily temperature is 38 degrees Celsius.",
+      "start": 227,
+      "end": 288,
+      "similarity": 0.0711705698194759,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "Varen records seven cable-tension readings per shift.",
+      "start": 290,
+      "end": 343,
+      "similarity": 0.2946467488363719,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "Tesi records five ramp tests per shift.",
+      "start": 344,
+      "end": 383,
+      "similarity": 0.17344346914330583,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "Varen tags two lifting hooks per month.",
+      "start": 384,
+      "end": 423,
+      "similarity": 0.1736642541810726,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.",
+      "start": 425,
+      "end": 532,
+      "similarity": 0.287167350462176,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "In a salt-spray shelter, lubricate it every 45 operating hours.",
+      "start": 533,
+      "end": 596,
+      "similarity": 0.08212720108606025,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "Inspect the loading winch every 15 operating hours regardless of shelter.",
+      "start": 597,
+      "end": 670,
+      "similarity": 0.17148318105625687,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+      "value": "The office cabinet was painted in 2021.",
+      "start": 671,
+      "end": 710,
+      "similarity": 0.10440563175031682,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "GX-01.",
+      "start": 26,
+      "end": 32,
+      "similarity": 0.044500878727711315,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "A loading request at Yalara Grain Exchange is acknowledged within six working hours.",
+      "start": 33,
+      "end": 117,
+      "similarity": 0.07405391211861834,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "This acknowledgement does not guarantee a loading slot.",
+      "start": 118,
+      "end": 173,
+      "similarity": 0.046225133552220805,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "GX-02.",
+      "start": 174,
+      "end": 180,
+      "similarity": 0.046247282934060795,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+      "start": 181,
+      "end": 299,
+      "similarity": -0.002215640821838372,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "GX-03.",
+      "start": 300,
+      "end": 306,
+      "similarity": 0.06346193774020019,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.",
+      "start": 307,
+      "end": 413,
+      "similarity": -0.07564875673374229,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "GX-04.",
+      "start": 414,
+      "end": 420,
+      "similarity": 0.03594288878130302,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.",
+      "start": 421,
+      "end": 534,
+      "similarity": 0.0489868605061841,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "The office bell was installed in 1980.",
+      "start": 536,
+      "end": 574,
+      "similarity": 0.17821645852816106,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+      "start": 575,
+      "end": 665,
+      "similarity": 0.046316432926335235,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "In a dust-heavy bay, grease it every 66 service hours.",
+      "start": 666,
+      "end": 720,
+      "similarity": 0.09629115553796556,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ab07f18d-f578-4ff8-9324-be5c657964b5",
+      "value": "Inspect the conveyor every 33 service hours in either bay.",
+      "start": 721,
+      "end": 779,
+      "similarity": 0.26654424926457987,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f1363940-2a74-4c82-bbad-6fa85465bfe8:0",
+          "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+          "filename": "03_Tavren_Ferry_Workshop.txt",
+          "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hoo",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+          "score": 0.0476,
+          "lexicalScore": 11.681564036049416,
+          "semanticScore": 0.6176930166714211,
+          "matchedTerms": [
+            "tavren",
+            "ferry",
+            "workshop",
+            "cable",
+            "tower",
+            "rebuilt"
+          ],
+          "start": 28,
+          "end": 130
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 28,
+            "cosine": 0.9091092430147095,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f1363940-2a74-4c82-bbad-6fa85465bfe8:0",
+          "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+          "filename": "03_Tavren_Ferry_Workshop.txt",
+          "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hoo",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+          "score": 0.0476,
+          "lexicalScore": 11.924768698886492,
+          "semanticScore": 0.6176930166714211,
+          "matchedTerms": [
+            "tavren",
+            "ferry",
+            "workshop",
+            "cable",
+            "tower",
+            "rebuilt"
+          ],
+          "start": 28,
+          "end": 130
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 28,
+            "cosine": 0.9091092430147095,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f1363940-2a74-4c82-bbad-6fa85465bfe8:0",
+          "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+          "filename": "03_Tavren_Ferry_Workshop.txt",
+          "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tes",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+          "score": 0.0476,
+          "lexicalScore": 11.681564036049416,
+          "semanticScore": 0.6176930166714211,
+          "matchedTerms": [
+            "tavren",
+            "ferry",
+            "workshop",
+            "cable",
+            "tower",
+            "rebuilt"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 28,
+            "cosine": 0.9091092430147095,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f1363940-2a74-4c82-bbad-6fa85465bfe8:0",
+          "documentId": "f1363940-2a74-4c82-bbad-6fa85465bfe8",
+          "filename": "03_Tavren_Ferry_Workshop.txt",
+          "excerpt": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tes",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+          "score": 0.0476,
+          "lexicalScore": 11.924768698886492,
+          "semanticScore": 0.6176930166714211,
+          "matchedTerms": [
+            "tavren",
+            "ferry",
+            "workshop",
+            "cable",
+            "tower",
+            "rebuilt"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 28,
+            "cosine": 0.9091092430147095,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Tavren_Ferry_Workshop.txt",
+          "quote": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.0712723582983017,
+    0.03922918438911438,
+    -0.00271353917196393,
+    0.029984334483742714,
+    -0.07755261659622192,
+    -0.05923121050000191,
+    -0.10264867544174194,
+    0.011933240108191967,
+    -0.109860360622406,
+    -0.0026290290988981724,
+    0.05051141232252121,
+    0.04185225069522858,
+    0.0043648467399179935,
+    -0.007683929521590471,
+    -0.10449795424938202,
+    0.026264261454343796,
+    -0.010044514201581478,
+    -0.020243508741259575,
+    0.10174956917762756,
+    -0.0062033082358539104,
+    -0.046959877014160156,
+    -0.07200650870800018,
+    0.047461818903684616,
+    -0.060023531317710876,
+    0.03065725788474083,
+    0.003793983720242977,
+    -0.030897872522473335,
+    0.0837729424238205,
+    0.033336054533720016,
+    -0.050088200718164444,
+    -0.09807739406824112,
+    -0.05272575467824936,
+    -0.10889799147844315,
+    0.020672662183642387,
+    0.0415755994617939,
+    0.13632215559482574,
+    0.09184438735246658,
+    -0.03962893784046173,
+    0.013867474161088467,
+    -0.04244128242135048,
+    -0.015129129402339458,
+    -0.03098224848508835,
+    -0.009638388641178608,
+    0.04788939654827118,
+    -0.04101056233048439,
+    -0.003097334410995245,
+    0.08316732197999954,
+    -0.1265546977519989,
+    -0.0025618241634219885,
+    0.03514261171221733,
+    0.02095518819987774,
+    0.002861892804503441,
+    0.03744915872812271,
+    -0.09342832863330841,
+    0.04039955139160156,
+    0.0397975891828537,
+    -0.05248023942112923,
+    0.0748712569475174,
+    0.08317766338586807,
+    -0.009517150931060314,
+    0.1285213977098465,
+    0.013065657578408718,
+    -0.08857078850269318,
+    -0.01694519817829132,
+    0.011511741206049919,
+    -0.02623862959444523,
+    0.019966445863246918,
+    0.01614350453019142,
+    0.01016917172819376,
+    -0.04618915915489197,
+    0.012243237346410751,
+    -0.02354084700345993,
+    0.023627547547221184,
+    -0.033307358622550964,
+    0.040754690766334534,
+    0.07109048217535019,
+    0.043616145849227905,
+    0.018414266407489777,
+    -0.08845257014036179,
+    0.04280848428606987,
+    -0.05006590113043785,
+    0.005391795188188553,
+    -0.04612840712070465,
+    0.07478344440460205,
+    -0.0012225235113874078,
+    0.039009422063827515,
+    -0.003481819061562419,
+    0.03614962846040726,
+    0.0011863071704283357,
+    0.024890178814530373,
+    0.10724683851003647,
+    0.019574744626879692,
+    -0.05947501212358475,
+    0.05424746870994568,
+    -0.04264257475733757,
+    -0.012868818826973438,
+    -0.07633065432310104,
+    0.07298543304204941,
+    -0.019796129316091537,
+    0.020152030512690544,
+    0.0011048645246773958,
+    0.07228119671344757,
+    -0.036480117589235306,
+    -0.03847808018326759,
+    -0.020908933132886887,
+    0.015588712878525257,
+    -0.049605291336774826,
+    0.07614895701408386,
+    -0.048547279089689255,
+    -0.05764080956578255,
+    -0.02100827731192112,
+    0.041174013167619705,
+    -0.013606538996100426,
+    -0.0191244687885046,
+    -0.040106151252985,
+    0.03138406202197075,
+    -0.06406839191913605,
+    -0.009409946389496326,
+    0.0331425666809082,
+    0.02038590796291828,
+    0.11077751964330673,
+    -0.026769457384943962,
+    0.06053875759243965,
+    0.04715817794203758,
+    -0.05628455430269241,
+    0.01262775156646967,
+    0.045697178691625595,
+    -2.5789822594712887e-33,
+    0.03826766088604927,
+    0.07238651067018509,
+    -0.01913776621222496,
+    0.06181955337524414,
+    0.10240834206342697,
+    0.005409595090895891,
+    0.02235342748463154,
+    0.07501781731843948,
+    -0.03201926127076149,
+    -0.013916783034801483,
+    -0.03001304529607296,
+    -0.030143072828650475,
+    -0.06735999137163162,
+    -0.07079674303531647,
+    -0.05190825089812279,
+    -0.11026966571807861,
+    -0.018901225179433823,
+    -0.06795864552259445,
+    -0.12476270645856857,
+    -0.104332335293293,
+    0.008717291057109833,
+    0.003572460263967514,
+    0.07835175842046738,
+    -0.025157060474157333,
+    0.006352133583277464,
+    0.015669409185647964,
+    0.040247369557619095,
+    0.027091490104794502,
+    -0.017584752291440964,
+    0.03553147614002228,
+    0.01979942061007023,
+    -0.015370815992355347,
+    0.034464042633771896,
+    0.020396173000335693,
+    0.034784507006406784,
+    0.03465842083096504,
+    0.045854952186346054,
+    -0.036301352083683014,
+    -0.05199913680553436,
+    0.0729619488120079,
+    0.05122210830450058,
+    -0.04010920599102974,
+    0.04043155908584595,
+    0.08123307675123215,
+    0.003970400895923376,
+    -0.05429786443710327,
+    0.05866515636444092,
+    -0.05078241974115372,
+    0.010535038076341152,
+    -0.03225799277424812,
+    0.04283641278743744,
+    0.0195328276604414,
+    -0.0656050369143486,
+    -0.02162988856434822,
+    -0.010301693342626095,
+    0.004322729539126158,
+    0.002030391013249755,
+    -0.015161285176873207,
+    0.04949682578444481,
+    0.042875029146671295,
+    -0.012374499812722206,
+    0.027522215619683266,
+    0.07255396246910095,
+    0.04602932184934616,
+    -0.004841875284910202,
+    0.03738341107964516,
+    0.026736900210380554,
+    -0.032196275889873505,
+    0.01591607928276062,
+    -0.036383554339408875,
+    0.018369918689131737,
+    -0.014892900362610817,
+    0.029013780876994133,
+    -0.019842693582177162,
+    -0.018025554716587067,
+    0.09254249185323715,
+    -0.17297914624214172,
+    0.029380813241004944,
+    0.022453851997852325,
+    -0.03968087583780289,
+    -0.08972922712564468,
+    0.024017110466957092,
+    0.033832915127277374,
+    0.04094485566020012,
+    0.11935145407915115,
+    -0.040992800146341324,
+    0.048328738659620285,
+    -0.029573015868663788,
+    0.019806453958153725,
+    0.04748854041099548,
+    -0.11991869658231735,
+    0.008750584907829762,
+    -0.010257500223815441,
+    -0.12244290858507156,
+    0.004844733979552984,
+    1.600979408452792e-33,
+    0.028537757694721222,
+    0.0223699938505888,
+    -0.03763725236058235,
+    -0.06332018971443176,
+    -0.09706230461597443,
+    -0.051021330058574677,
+    0.03657533973455429,
+    0.02288379892706871,
+    -0.058397773653268814,
+    0.025168266147375107,
+    0.006008143071085215,
+    -0.010412536561489105,
+    0.02983872964978218,
+    0.018251070752739906,
+    -0.00900645274668932,
+    0.05027947202324867,
+    0.02047363854944706,
+    -0.07591607421636581,
+    -0.03929160162806511,
+    -0.007594209164381027,
+    0.012209347449243069,
+    0.0314452201128006,
+    -0.03492692485451698,
+    0.06483197212219238,
+    0.023732783272862434,
+    0.03038017451763153,
+    0.020094985142350197,
+    -0.03887110576033592,
+    0.06381627917289734,
+    -0.006016795057803392,
+    -0.0038808120880275965,
+    -0.04961765557527542,
+    0.015728317201137543,
+    0.11659745126962662,
+    -0.00447848578915,
+    0.13386665284633636,
+    0.0801251158118248,
+    0.07016858458518982,
+    0.0467354841530323,
+    -0.02016795426607132,
+    0.07005313038825989,
+    -0.06105107441544533,
+    -0.028673222288489342,
+    0.03641538321971893,
+    -0.00722870510071516,
+    -0.0639442652463913,
+    -0.08530694246292114,
+    -0.05876142159104347,
+    0.01032007485628128,
+    0.06272441893815994,
+    0.015845030546188354,
+    0.05901689454913139,
+    0.04980901628732681,
+    -0.01732969656586647,
+    0.05054914951324463,
+    0.048677340149879456,
+    -0.01941254548728466,
+    0.01742212288081646,
+    -0.03936867043375969,
+    -0.0071052201092243195,
+    0.06240880861878395,
+    -0.06147375330328941,
+    -0.011948851868510246,
+    -0.024420753121376038,
+    0.1057758703827858,
+    0.09550044685602188,
+    0.015593519434332848,
+    -0.03641921281814575,
+    -0.0514552928507328,
+    -0.014297649264335632,
+    0.07128877192735672,
+    0.07488492131233215,
+    -0.023744098842144012,
+    -0.05967416986823082,
+    -0.0804886445403099,
+    -0.06288259476423264,
+    -0.006676589138805866,
+    0.0916791781783104,
+    -0.011239496059715748,
+    -0.00375674432143569,
+    -0.06303274631500244,
+    -0.04485476389527321,
+    0.0008275710279121995,
+    -0.0002574036188889295,
+    -0.03322717919945717,
+    0.02026633359491825,
+    0.1458992213010788,
+    0.04728043079376221,
+    0.005588284227997065,
+    -0.079371377825737,
+    0.03993840143084526,
+    -0.04682471230626106,
+    -0.09111421555280685,
+    -0.007168223150074482,
+    -0.014190231449902058,
+    -1.628041346179998e-8,
+    -0.006642536725848913,
+    0.0939464420080185,
+    -0.13014446198940277,
+    -0.009682520292699337,
+    0.05655309930443764,
+    -0.07144580036401749,
+    0.0036053615622222424,
+    0.051969483494758606,
+    -0.07972730696201324,
+    -0.014564977958798409,
+    0.011173750273883343,
+    -0.020582010969519615,
+    0.00013583216059487313,
+    0.036815300583839417,
+    -0.022434143349528313,
+    -0.04571932181715965,
+    -0.03652404248714447,
+    -0.027554431930184364,
+    -0.047532182186841965,
+    -0.02957368642091751,
+    0.01983932964503765,
+    0.049379777163267136,
+    -0.0004751376109197736,
+    0.06697547435760498,
+    -0.017749259248375893,
+    0.004528266843408346,
+    -0.04859600588679314,
+    -0.03385814651846886,
+    0.050797656178474426,
+    -0.05431564524769783,
+    0.028597204014658928,
+    -0.031775593757629395,
+    -0.01967802084982395,
+    -0.0023426946718245745,
+    0.0018919366411864758,
+    0.057950492948293686,
+    0.006924557965248823,
+    -0.030168896540999413,
+    0.009367367252707481,
+    -0.052880510687828064,
+    -0.007905897684395313,
+    0.004556396976113319,
+    -0.0121133578941226,
+    0.060162924230098724,
+    0.05312798544764519,
+    0.07215997576713562,
+    -0.07629020512104034,
+    0.0041750106029212475,
+    -0.025729874148964882,
+    -0.025355951860547066,
+    0.010503988713026047,
+    0.07129886001348495,
+    0.01706286333501339,
+    0.008679636754095554,
+    -0.017834894359111786,
+    -0.012015989050269127,
+    0.03513367474079132,
+    0.02382863312959671,
+    -0.061053499579429626,
+    0.00471474789083004,
+    0.03938475251197815,
+    0.005861309822648764,
+    -0.006855703424662352,
+    -0.029841724783182144
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "start": 0,
+        "content": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter. The office cabinet was painted in 2021."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Tavren_Ferry_Workshop.txt",
+        "start": 0,
+        "content": "## Workshop operating notes\nAt Tavren Ferry Workshop, the cable tower was rebuilt in 1994. The ramp shelter was repainted in 2012.\n\nThe highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August. Its highest recorded daily temperature is 38 degrees Celsius.\n\nVaren records seven cable-tension readings per shift. Tesi records five ramp tests per shift. Varen tags two lifting hooks per month.\n\nThe Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions. In a salt-spray shelter, lubricate it every 45 operating hours. Inspect the loading winch every 15 operating hours regardless of shelter. The office cabinet was painted in 2021."
+      }
+    ]
+  }
+}

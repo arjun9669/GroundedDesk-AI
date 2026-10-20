@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — First v41 four-pack exposed regression PASS
+
+- Protocol `72c74ad7` preceded implementation; freeze `d3b854f4` preceded questions. Vela32, Prism32, Lumen32 and Hearth32 each pass 32/32 in both v41 variants. H04 is repaired with the full original collection-day/hold quotation; paired v40 retains FAIL. All historical first results preserved.
+- Capture 128 distinct exposed cases once (112 actual MiniLM Hybrid / 16 lexical Comparisons), Qwen off. No candidate false accepts/refusals, historical PASS losses, execution errors or question retries. Only H04 changes from first v40 outputs; review changes no native grades. Independently audit 7,536 body cosines/28 facet anchors and seal 1,016 artifacts.
+- 667 unit/28 strict Keyword checks and 500-file freeze PASS. Live r44 unchanged; phase 1 continues with 540 verified cases untested and 103 originals unavailable. Recommend Morrow32 next; no full-gate/fresh-confirmation/adoption claim. [Results](docs/V41_FOUR_PACK_MAC_RESULTS.md).
+
 ## 2026-10-20 — Isolated v41 engineering and four-pack preparation
 
 - Protocol `72c74ad7` precedes bounded bare-order/collection-day/active-hold support. Preserve whole-question refusal, exact literal units, independent facet evidence and all frozen v40/first results; live r44 unchanged.

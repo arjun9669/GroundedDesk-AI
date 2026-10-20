@@ -1,0 +1,40 @@
+{
+  "classification": "Offline answer/quote comparison; no answer producer/model/scorer rerun",
+  "distinct_cases": 128,
+  "variant_outputs_compared": 256,
+  "unchanged_answer_quote_outputs": 254,
+  "changed": [
+    {
+      "pack": "Hearth32",
+      "id": "H04",
+      "variant": "fixed",
+      "before_answer": "I can't find this in the provided documents.",
+      "after_answer": "[1] At or after 14:10, departure is the next collection day, unless a seed-health hold remains active."
+    },
+    {
+      "pack": "Hearth32",
+      "id": "H04",
+      "variant": "section",
+      "before_answer": "I can't find this in the provided documents.",
+      "after_answer": "[1] At or after 14:10, departure is the next collection day, unless a seed-health hold remains active."
+    }
+  ],
+  "source_identity": [
+    {
+      "pack": "Vela32",
+      "source_text_identical": true
+    },
+    {
+      "pack": "Prism32",
+      "source_text_identical": true
+    },
+    {
+      "pack": "Lumen32",
+      "source_text_identical": true
+    },
+    {
+      "pack": "Hearth32",
+      "source_text_identical": true
+    }
+  ]
+}

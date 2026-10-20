@@ -1,0 +1,690 @@
+{
+  "classification": "Post-capture offline evidence audit; no model or answer-producer rerun",
+  "passed": true,
+  "native_grades_unchanged": true,
+  "counts": {
+    "distinct_cases": 128,
+    "hybrid_cases": 112,
+    "comparison_cases": 16,
+    "source_vectors": 494,
+    "query_vectors": 112,
+    "v41_facet_vectors": 13,
+    "paired_v40_facet_vectors": 11,
+    "independent_cosines": 7536,
+    "displayed_facet_anchors": 28
+  },
+  "checks": [
+    "All source/query/planner vectors finite 384D",
+    "Whole-query and both planner families independently recomputed from recorded vectors",
+    "Returned facet anchors aligned to exact per-facet queries and body identities",
+    "All fixed/section quotations literal in original source context",
+    "All paired variants execute without ERROR; original v40 H04 failure retained"
+  ],
+  "assistant_review": [
+    {
+      "name": "Vela32",
+      "native_grades_unchanged": true,
+      "cases": [
+        {
+          "id": "V01",
+          "question": "When did public seed lending begin at Serevin Seed Library?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V02",
+          "question": "In which year was the second ventilation fan renewal at Serevin Seed Library completed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V03",
+          "question": "Who must approve in writing a Korven Instrument Coop purchase above 6200 credits?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V04",
+          "question": "A Serevin Seed Library dispatch request is released exactly at 14:35. When will it depart, and which hold can block departure?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V05",
+          "question": "How many seed lots does Beren check per week?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V06",
+          "question": "When was the Avrel Bell Workshop casting hall restoration completed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V07",
+          "question": "How long are Avrel Bell Workshop signed calibration records kept, including the exception for an unresolved material claim?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V08",
+          "question": "What is the lowest winter temperature in the Avrel Bell Workshop alloy store?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V09",
+          "question": "Give the highest monthly mean temperature in the Avrel Bell Workshop alloy store and its month.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V10",
+          "question": "Which documents belong in the Avrel Bell Workshop calibration packet?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V11",
+          "question": "When was the Relmont Canal Garden watergate rebuilt?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V12",
+          "question": "What is the highest recorded daily temperature at Relmont Canal Garden?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V13",
+          "question": "How many flow readings does Balen record per shift?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V14",
+          "question": "Give the Avrel Bell Workshop striker greasing intervals under normal and humid conditions, together with its inspection interval.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V15",
+          "question": "How soon is a Korven Instrument Coop rental request acknowledged, and does acknowledgement guarantee an instrument reservation?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V16",
+          "question": "List every item in the Korven Instrument Coop shipping packet.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V17",
+          "question": "How long are Korven Instrument Coop completed loan records kept, and what claim can extend that time?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V18",
+          "question": "What is the winter average temperature in the Avrel Bell Workshop alloy store?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V19",
+          "question": "Which month has the highest monthly mean temperature at Relmont Canal Garden, and what is that mean?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V20",
+          "question": "When did public seed lending begin at Serevin Seed Library? Also, when was the Avrel Bell Workshop casting hall restoration completed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V21",
+          "question": "When was the Serevin Seed Library ventilation fan renewed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V22",
+          "question": "What is the Serevin Seed Library dispatch password at 14:35?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V23",
+          "question": "Who approves a Serevin Seed Library dispatch at 14:34?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V24",
+          "question": "Which vehicle leaves the Serevin Seed Library dispatch yard at 16:00?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V25",
+          "question": "What is the bank account number of Korven Instrument Coop?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V26",
+          "question": "What exact torque in newton-metres is specified for Avrel Bell Workshop striker bolts?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V27",
+          "question": "A Serevin Seed Library dispatch request is released at 14:34. When will it leave, and what is its password?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V28",
+          "question": "What is the highest monthly mean temperature at Talven Quarry Archive?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V29",
+          "question": "Compare movement-slip retention at Serevin Seed Library and signed-calibration-record retention at Avrel Bell Workshop, including both hold and claim exceptions.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V30",
+          "question": "Compare normal and exception greasing plus inspection intervals for the Avrel Bell Workshop humid-chamber striker and Korven Instrument Coop dusty-room reed trimmer.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V31",
+          "question": "Compare acknowledgement deadlines and their limits for Serevin Seed Library seed-reservation requests and Korven Instrument Coop rental requests.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "V32",
+          "question": "Compare all contents of the Avrel Bell Workshop calibration packet and Korven Instrument Coop shipping packet.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        }
+      ]
+    },
+    {
+      "name": "Prism32",
+      "native_grades_unchanged": true,
+      "cases": [
+        {
+          "id": "P01",
+          "question": "In what year did public dome shows begin at Liraven Planetarium?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P02",
+          "question": "What year was the second projector lens renewal at Liraven Planetarium completed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P03",
+          "question": "Who must approve in writing a Yalara Grain Exchange purchase above 7400 credits?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P04",
+          "question": "A Liraven Planetarium dispatch request is cleared exactly at 16:20. When does it leave, and what hold can prevent departure?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P05",
+          "question": "How many projector filters does Eris check per morning?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P06",
+          "question": "When was the Osvik Puppet Theatre rehearsal room restoration completed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P07",
+          "question": "How long are Osvik Puppet Theatre signed touring records kept, including the exception for an unresolved ownership claim?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P08",
+          "question": "What is the absolute minimum winter temperature in the Osvik Puppet Theatre prop store?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P09",
+          "question": "Give the highest monthly mean temperature in the Osvik Puppet Theatre prop store and the month it occurs.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P10",
+          "question": "Which documents belong in the Osvik Puppet Theatre touring packet?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P11",
+          "question": "When was the Tavren Ferry Workshop cable tower rebuilt?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P12",
+          "question": "What is the highest recorded daily temperature at Tavren Ferry Workshop?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P13",
+          "question": "How many cable-tension readings does Varen record per shift?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P14",
+          "question": "Give the Tavren Ferry Workshop loading winch lubrication intervals under normal and salt-spray conditions, together with its inspection interval.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P15",
+          "question": "How soon is a Yalara Grain Exchange loading request acknowledged, and does acknowledgement guarantee a loading slot?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P16",
+          "question": "List every item in the Yalara Grain Exchange dispatch packet.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P17",
+          "question": "How long are Yalara Grain Exchange completed loading records kept, and what dispute can extend that time?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P18",
+          "question": "What is the winter average temperature in the Osvik Puppet Theatre prop store?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P19",
+          "question": "Which month has the highest monthly mean temperature at Tavren Ferry Workshop, and what is that mean?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P20",
+          "question": "In what year did public dome shows begin at Liraven Planetarium? Also, when was the Osvik Puppet Theatre rehearsal room restoration completed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P21",
+          "question": "When was the Liraven Planetarium projector lens renewed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P22",
+          "question": "What year did the Osvik Puppet Theatre prop annex close?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P23",
+          "question": "When was the Tavren Ferry Workshop ramp shelter rebuilt?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P24",
+          "question": "How many door hinges does Eris check per morning?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P25",
+          "question": "What is the bank account number of Yalara Grain Exchange?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P26",
+          "question": "What exact torque in newton-metres is specified for Tavren Ferry Workshop winch bolts?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P27",
+          "question": "What is the absolute minimum winter temperature in the Liraven Planetarium dome store?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P28",
+          "question": "What is the highest monthly mean temperature at Neskar Mirror Depot?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P29",
+          "question": "Compare movement-slip retention at Liraven Planetarium and signed-touring-record retention at Osvik Puppet Theatre, including both hold and claim exceptions.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P30",
+          "question": "Compare normal and exception lubrication or greasing plus inspection intervals for the Tavren Ferry Workshop salt-spray loading winch and Yalara Grain Exchange dust-heavy conveyor.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P31",
+          "question": "Compare acknowledgement deadlines and their limits for Liraven Planetarium dome-booking requests and Yalara Grain Exchange loading requests.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "P32",
+          "question": "Compare all contents of the Osvik Puppet Theatre touring packet and Yalara Grain Exchange dispatch packet.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        }
+      ]
+    },
+    {
+      "name": "Lumen32",
+      "native_grades_unchanged": true,
+      "cases": [
+        {
+          "id": "L01",
+          "question": "In what year did Oridel Map Archive open its public map room?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L02",
+          "question": "When was the second roof renewal at Oridel Map Archive completed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L03",
+          "question": "Who must give written approval for a Perrin Community Kiln purchase above 6800 credits?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L04",
+          "question": "An Oridel Map Archive dispatch request is released exactly at 12:40. When should it depart, and which hold can prevent departure?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L05",
+          "question": "How many map drawers does Jori check per morning?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L06",
+          "question": "When was the Perrin Community Kiln pottery hall restoration completed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L07",
+          "question": "How long must Perrin Community Kiln signed firing records be kept, including the exception for an open compensation claim?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L08",
+          "question": "What is the absolute minimum winter temperature in the Perrin Community Kiln material store?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L09",
+          "question": "Give the highest monthly mean temperature in the Perrin Community Kiln material store and its month.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L10",
+          "question": "List every item required in a Perrin Community Kiln firing handover packet.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L11",
+          "question": "In which year was the Ruvane Canal Lock lifting bridge rebuilt?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L12",
+          "question": "What is the highest recorded daily temperature at Ruvane Canal Lock?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L13",
+          "question": "How many gate-position readings does Lena record per shift?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L14",
+          "question": "State the Ruvane Canal Lock chain hoist lubrication intervals for normal and misty conditions, plus its inspection interval.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L15",
+          "question": "How soon does Neris Kite Club acknowledge equipment requests, and does that promise equipment readiness?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L16",
+          "question": "What are all five items in the Neris Kite Club field issue packet?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L17",
+          "question": "How long does Neris Kite Club keep completed flight records, and what may extend the retention period?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L18",
+          "question": "What is the winter average temperature in the Perrin Community Kiln material store?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L19",
+          "question": "Which month has the highest monthly mean temperature at Ruvane Canal Lock, and what is the temperature?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L20",
+          "question": "In what year did Oridel Map Archive open its public map room? Also, when was the Perrin Community Kiln pottery hall restoration completed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L21",
+          "question": "When was the Oridel Map Archive roof renewed?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L22",
+          "question": "What year did the Perrin Community Kiln drying annex close?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L23",
+          "question": "When was the Ruvane Canal Lock ticket shelter rebuilt?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L24",
+          "question": "How many humidity sensors does Jori check per morning?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L25",
+          "question": "What is the bank account number of Neris Kite Club?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L26",
+          "question": "What exact torque in newton-metres is specified for Ruvane Canal Lock hoist bolts?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L27",
+          "question": "What is the absolute minimum winter temperature in the Oridel Map Archive map store?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L28",
+          "question": "What is the highest monthly mean temperature at Velora Balloon Yard?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L29",
+          "question": "Compare transport-slip retention at Oridel Map Archive with signed-firing-record retention at Perrin Community Kiln, including both review and claim exceptions.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L30",
+          "question": "Compare normal and exception lubrication plus inspection intervals for the Ruvane Canal Lock misty-chamber chain hoist and Neris Kite Club sandy-enclosure winding reel.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L31",
+          "question": "Compare acknowledgement deadlines and their limits for Oridel Map Archive map-copy requests and Neris Kite Club equipment requests.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "L32",
+          "question": "Compare every item in the Perrin Community Kiln firing handover packet and Neris Kite Club field issue packet.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        }
+      ]
+    },
+    {
+      "name": "Hearth32",
+      "native_grades_unchanged": true,
+      "cases": [
+        {
+          "id": "H01",
+          "question": "When did Veylan Seed Conservatory first admit visitors to its public gallery?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H02",
+          "question": "When did the second glass-roof overhaul at Veylan Seed Conservatory take place?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H03",
+          "question": "Whose written approval is needed for a Tessarin Repair Cafe purchase above 5200 credits?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H04",
+          "question": "A Veylan Seed Conservatory order is released exactly at 14:10. Which collection day is departure, and what hold can prevent it?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H05",
+          "question": "How many germination trays does Mira check per day?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H06",
+          "question": "What year did the Ostren Instrument Library rehearsal room restoration take place?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H07",
+          "question": "How long are Ostren Instrument Library signed loan records retained, and what happens while an ownership dispute is open?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H08",
+          "question": "What is the absolute minimum winter temperature in the Ostren Instrument Library store?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H09",
+          "question": "What is the Ostren Instrument Library highest monthly mean temperature, including the month?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H10",
+          "question": "List every item in the Ostren Instrument Library custody packet.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H11",
+          "question": "When did Caldra Tide Station rebuild its gauge tower?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H12",
+          "question": "What is the Caldra Tide Station highest recorded daily temperature?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H13",
+          "question": "How many water level readings does Ruan record per watch?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H14",
+          "question": "Give the normal-bay and salt-spray-bay lubrication intervals for the Caldra Tide Station winch, together with its inspection interval.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H15",
+          "question": "How quickly does Tessarin Repair Cafe acknowledge a repair request, and does acknowledgement promise completion?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H16",
+          "question": "What are all five contents of the Tessarin Repair Cafe dispatch packet?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H17",
+          "question": "For how long does Tessarin Repair Cafe retain completed repair records, and which exception can extend that period?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H18",
+          "question": "What is the winter average temperature in the Ostren Instrument Library store?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H19",
+          "question": "Which month is warmest on a monthly-mean basis at Caldra Tide Station, and what is that mean temperature?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H20",
+          "question": "When did Veylan Seed Conservatory open its public gallery to visitors? Also, what year did the Ostren Instrument Library rehearsal room restoration take place?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H21",
+          "question": "When was the Veylan Seed Conservatory glass roof overhauled?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H22",
+          "question": "What year did the Ostren Instrument Library annex close?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H23",
+          "question": "What year did the Caldra Tide Station equipment shed rebuild take place?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H24",
+          "question": "How many irrigation valves does Mira check per day?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H25",
+          "question": "What is the bank account number for Tessarin Repair Cafe?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H26",
+          "question": "What exact torque in newton-metres should be used on the Caldra Tide Station anchor bolts?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H27",
+          "question": "What is the absolute minimum winter temperature at Veylan Seed Conservatory?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H28",
+          "question": "What is the highest monthly mean temperature at Norvik Fog Depot?",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H29",
+          "question": "Compare collection-slip retention at Veylan Seed Conservatory and signed-loan-record retention at Ostren Instrument Library, including both review or dispute exceptions.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H30",
+          "question": "Compare normal and exception lubrication plus inspection intervals for the Caldra Tide Station salt-spray winch and Tessarin Repair Cafe dusty-workroom bench drill.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H31",
+          "question": "Compare acknowledgement deadlines and their limits for Veylan Seed Conservatory collection requests and Tessarin Repair Cafe repair requests.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        },
+        {
+          "id": "H32",
+          "question": "Compare all contents of the Ostren Instrument Library custody packet and Tessarin Repair Cafe dispatch packet.",
+          "fixed_and_section_review": "Native PASS retained; literal source, requested facets and full source context reviewed"
+        }
+      ]
+    }
+  ],
+  "limitations": "128 exposed cases only; not fresh confirmation, full 771-case gate or adoption"
+}
