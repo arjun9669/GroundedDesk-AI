@@ -248,3 +248,14 @@ suite: 28 cases. [Preparation](COVERAGE_V41_PREPARATION.md) records the 500-file
 freeze; never reuse its completed evidence directories. Live 5.6/r44 is unchanged.
 Next prepare/freeze Morrow32; 540 verified cases remain untested with v41 and 103
 originals unavailable. Phase 1, full regression and later release gates remain open.
+
+## Latest Morrow32 v41 checkpoint
+
+[First Morrow32](V41_MORROW32_MAC_RESULTS.md) FAILS 31/0/1 in both v41 variants
+on M04. The prior four-pack passes and all first failures remain preserved.
+Current engineering suite: 670 unit tests; strict Keyword: 28 cases. Original 469-file
+freeze/input/history and publication integrity checks PASS, separate from the
+failed model gate. [Investigation](MORROW32_V41_FAILURE_REVIEW.md) proposes a
+separate structured v42 protocol and five-pack revalidation. No candidate fix or
+model rerun in this publication task. 508 verified cases and 103 unavailable originals
+remain; phase 1 and live-adoption holds stay in place. Read PROJECT_STATUS.md.

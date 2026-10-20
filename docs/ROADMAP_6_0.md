@@ -22,16 +22,24 @@ The [first v41 four-pack exposed regression](V41_FOUR_PACK_MAC_RESULTS.md) passe
 Vela32, Prism32, Lumen32, Hearth32 separately 32/32 in both variants. H04 is repaired;
 original v40 Hearth32 31/0/1, v39 Lumen32 31/0/1, v32 BLOCKED/UNGRADED and all
 historical first results remain preserved. V41 is implemented but not integrated.
-There are 128 distinct exposed v41-tested cases, 540 verified cases awaiting v41
-testing and 103 originals plus the combined configuration unavailable.
+At that earlier checkpoint there were 128 distinct exposed v41-tested cases and 540
+verified cases awaiting testing. Morrow32 subsequently fails, as recorded below.
 
-Next prepare/freeze Morrow32 with original native criteria and historical PASS
-preservation, then the remaining verified packs. Phase 1's exit gate still requires
-broader agreed regression and explicit resolution of the missing-input gap; no
-phase 2 or adoption authorization follows from these four partial gates. Preserve
-original source bytes, questions, native rubrics, frozen candidates and failures.
-Any required test/integrity/execution/scoring failure stops work for user input
-before implementation, retries, commits or publication.
+The [subsequent v41 Morrow32 first run](V41_MORROW32_MAC_RESULTS.md) FAILS 31/0/1
+in both variants on supported question M04; its first evidence is preserved after
+a stop and explicit publication approval. There are 160 distinct exposed v41-tested
+cases across five packs, 508 verified cases untested and 103 originals/combined
+configuration unavailable. The earlier four pack gates PASS remain valid, not full
+regression acceptance. Live 5.6/r44 and all first results stay unchanged.
+
+Next decision: a separately precommitted structured v42 grammar fix and new
+five-pack revalidation, as proposed in the [M04 investigation](MORROW32_V41_FAILURE_REVIEW.md),
+before broader regression. No v42 implementation/model rerun is authorized by
+this publication. Phase 1 exit still requires agreed regression preservation and
+explicit missing-input resolution; no phase 2 or adoption claim. Any required
+check failure stops work for user input before implementation, retries, commits
+or publication. Preserve original source bytes, questions, native rubrics,
+frozen candidates and historical failures.
 
 See [project status](../PROJECT_STATUS.md), [verified inputs](RECOVERABLE_INPUT_INVENTORY.md)
 and [v39 Vela32 results](V39_VELA32_MAC_RESULTS.md). Use the recorded `main`

@@ -15,9 +15,36 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v41: Vela32, Prism32, Lumen32, Hearth32 each **32/32 PASS** both variants; H04 repaired; v40 first failure preserved; not adopted |
-| Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: Morrow32 preparation/freeze ready; actual capture not yet run at this checkpoint; v41 unchanged |
+| Latest isolated candidate | v41 Morrow32 **FAIL: 31/0/1** both variants, M04 false refusal; earlier four-pack passes preserved; not adopted |
+| Release decision | Integration **HOLD** after Morrow32 regression; full regression/fresh confirmation incomplete; all first failures preserved |
+| Current change | Phase 1: publish preserved Morrow32 failure and investigate M04; proposed separate v42; no candidate edits/model reruns |
+
+## Latest Morrow32 result — FAIL / HOLD
+
+Freeze `0ffd3e11` preceded model questions. First Morrow32 actual-model capture
+completed 32 cases: **31 PASS / 0 PARTIAL / 1 FAIL** in both v41 variants and paired
+v40, with M04 a supported false refusal and historical PASS loss. Zero execution
+errors or question retries. Work stopped; user explicitly approved unchanged failure
+publication and investigation. The required gate remains **FAIL**.
+
+[First results](docs/V41_MORROW32_MAC_RESULTS.md) preserve 258 original artifacts
+(23,363,293 bytes) under a SHA256 manifest. [Investigation](docs/MORROW32_V41_FAILURE_REVIEW.md)
+confirms the ticket-order entity boundary, hold-question idiom and independent
+source grammar gaps. Only the unchanged pure planner/regex/literal splitter were
+used on M04; no candidate change, model rerun or scorer re-execution. Original
+v30 M11/M32 failures, archive-name qualification and all later results remain intact.
+
+**670 unit tests**, strict **28/28 Keyword**, 469-file freeze/input/history and
+publication checks PASS. Prior selected v41/v40/v39 seals retain 2,811 artifact
+hashes. These engineering/integrity passes do not override the actual-model FAIL.
+Live 5.6/r44 and all candidates/first evidence remain unchanged.
+
+V41 now has **160 distinct exposed tested cases / five packs**, separately scored:
+four gates PASS, Morrow32 FAIL. **508 verified cases / 14 other packs** remain
+untested with v41; 103 originals/combined configuration are unavailable. Next is a
+separate v42 protocol/structured grammar decision and five-pack revalidation,
+before broader regression. Phase 1, full regression, fresh confirmation and live
+integration/product/release gates remain open.
 
 ## Morrow32 v41 preparation checkpoint
 
@@ -29,7 +56,7 @@ PASS. Preserve first v30 30/0/2 and archive-name qualification unchanged.
 [Preparation](docs/V41_MORROW32_PREPARATION.md). Actual capture/scoring **NOT RUN at
 this checkpoint**; publish freeze before questions. Live5.6/r44 unchanged.
 
-## Latest v41 result — four partial gates PASS
+## Earlier v41 result — four partial gates PASS
 
 Protocol `72c74ad7` preceded implementation; freeze `d3b854f4` reached GitHub before
 questions. Both v41 variants pass Vela32, Prism32, Lumen32, Hearth32 **32/32 each**.
@@ -47,8 +74,9 @@ remain unchanged. Offline audit independently recomputes 7,536 body cosines and 
 Engineering checks: **667 unit tests**, strict **28/28 Keyword**, clean Chrome
 155.0.8059.85 startup and 500-file freeze PASS. Live 5.6/r44 unchanged.
 
-Next: separately prepare/freeze Morrow32, among **540 verified cases / 15 packs
-untested with v41**. The 103 unavailable original cases/combined configuration,
+At that earlier checkpoint Morrow32 was next among **540 verified cases / 15 packs
+untested with v41**. Morrow32 has since failed; see the latest result above. The
+103 unavailable original cases/combined configuration,
 full regression, prospective confirmation and integration/product/release gates
 remain open. Still phase 1; no live adoption.
 

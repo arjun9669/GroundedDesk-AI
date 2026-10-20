@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Preserve first v41 Morrow32 FAIL and investigate M04
+
+- Publish unchanged first evidence after explicit approval: both v41 variants and paired v40 31/0/1, M04 supported false refusal/historical PASS loss. Seal 258 original artifacts (23,363,293 bytes); no candidate change, model rerun or regrading.
+- Trace immediate failure to unrecognized hold-question wording; identify the bare-order entity swallowing `ticket`, plus independent Ticket-orders/imperative-source grammar gaps. Propose a separate structured v42 protocol and five-pack revalidation, not an inherited fallback.
+- 670 unit/28 strict Keyword checks and 469-file freeze/publication validation PASS; prior 2,811 sealed artifact hashes unchanged. Phase 1 held: 160 exposed v41-tested cases/five packs, 508 verified cases untested, 103 originals unavailable. Live r44 unchanged. [First failure](docs/V41_MORROW32_MAC_RESULTS.md), [investigation](docs/MORROW32_V41_FAILURE_REVIEW.md).
+
 ## 2026-10-20 — Morrow32 v41 exposed-regression preparation
 
 - Prepare original-input Morrow32 validation with unchanged v41 and paired v40, exact native criteria and45 historical variant preservation checks. Preserve first v30 30/0/2 (M11,M32), unchanged review and archive filename erratum.
