@@ -18,19 +18,21 @@ phase. Inputs for 668 cases are verified; 103 original cases and the old combine
 configuration remain unavailable. New tests cannot retrospectively establish
 preservation on those missing originals. Do not silently replace the full gate.
 
-Vela32 and the [first Prism32 partial exposed run](V39_PRISM32_MAC_RESULTS.md) each
-pass 32/32 in both v39 variants. The [first Lumen32 v39 run](V39_LUMEN32_MAC_RESULTS.md)
-fails 31/0/1 in both variants on supported question L04. Work stopped; the user
-authorized publishing the first failure and investigating a separate fix.
-There are 96 distinct v39-tested cases, with pack scores kept separate, 572
-verified cases awaiting v39 testing and 103 original cases unavailable.
-Next is the [proposed v40 fix and revalidation plan](LUMEN32_V39_FAILURE_REVIEW.md)
-before proceeding to Hearth32. V40 is not implemented. Original source bytes,
-questions, native rubrics, frozen candidates and historical failures stay preserved.
-Any required
-test/integrity/execution/scoring failure stops work and requires user input before
-implementation, retries, commits or publication. A passing subset alone cannot
-authorize fresh confirmation or adoption.
+The [v40 three-pack exposed regression](V40_THREE_PACK_MAC_RESULTS.md) passes
+Vela32, Prism32, Lumen32 separately 32/32 in both variants; original v39 Lumen32
+31/0/1 remains preserved. The [subsequent Hearth32 v40 first run](V40_HEARTH32_MAC_RESULTS.md)
+FAILS 31/0/1 in both variants on H04, a supported false refusal. Its first evidence
+is preserved after a stop and explicit publication approval. V40 is implemented
+but not adopted. There are 128 distinct exposed v40-tested cases across four packs,
+540 verified cases awaiting v40 testing and 103 originals unavailable.
+
+Next decision: a separately precommitted v41 fix and new four-pack revalidation,
+as proposed in the [H04 investigation](HEARTH32_V40_FAILURE_REVIEW.md), before
+broader regression resumes. No v41 implementation or model rerun is authorized by
+this report. Original source bytes, questions, native rubrics, frozen candidates
+and historical failures stay preserved. Any required test/integrity/execution/
+scoring failure stops work and requires user input before implementation, retries,
+commits or publication. A passing subset cannot authorize phase 2 or adoption.
 
 See [project status](../PROJECT_STATUS.md), [verified inputs](RECOVERABLE_INPUT_INVENTORY.md)
 and [v39 Vela32 results](V39_VELA32_MAC_RESULTS.md). Use the recorded `main`

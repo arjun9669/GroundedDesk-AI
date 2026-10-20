@@ -1,0 +1,1238 @@
+{
+  "candidate_identity": "coverage-v40-dispatch-grammar",
+  "id": "H16",
+  "question": "What are all five contents of the Tessarin Repair Cafe dispatch packet?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What are all five contents of the Tessarin Repair Cafe dispatch packet?",
+    "expected_display": "What are all five contents of the Tessarin Repair Cafe dispatch packet?",
+    "rendered_question": "What are all five contents of the Tessarin Repair Cafe dispatch packet?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+    "sources": [
+      {
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "## Workshop policies\nR-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.\nR-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\nR-03. Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.\nR-04. Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.\nR-05. Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention.",
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat are all five contents of the Tessarin Repair Cafe dispatch packet?\n\nSearched all files: 01_Veylan_Seed_Conservatory.txt · 02_Ostren_Instrument_Library.txt · 03_Caldra_Tide_Station.txt · 04_Tessarin_Repair_Cafe.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Tessarin Repair Cafe acknowledges repair requests within four business hours.\n\nSOURCE EVIDENCE\n[1]\n04_Tessarin_Repair_Cafe.txt\n\nText line 2 (normalized extraction)\n\n## Workshop policies R-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours. R-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature. R-03. Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead. R-04. Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room. R-05. Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c:0",
+        "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "## Workshop policies\nR-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.\nR-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\nR-03. Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.\nR-04. Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.\nR-05. Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention.",
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+        "score": 0.0476,
+        "lexicalScore": 8.077722840392983,
+        "semanticScore": 0.5134529616128614,
+        "matchedTerms": [
+          "tessarin",
+          "repair",
+          "cafe",
+          "dispatch",
+          "packet"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c:body:194",
+        "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+        "start": 194,
+        "end": 305,
+        "actualCosine": 0.5500277476273753,
+        "excerpt": "## Workshop policies\nR-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.\nR-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\nR-03. Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.\nR-04. Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect t"
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "packet",
+        "subjects": [
+          "dispatch"
+        ]
+      },
+      "actual_cosines": [
+        0.5500277476273753
+      ]
+    }
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c:body:194",
+        "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+        "start": 194,
+        "end": 305,
+        "actualCosine": 0.5500277476273753,
+        "excerpt": "## Workshop policies\nR-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.\nR-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\nR-03. Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.\nR-04. Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect t"
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "packet",
+        "subjects": [
+          "dispatch"
+        ]
+      },
+      "actual_cosines": [
+        0.5500277476273753
+      ]
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Tessarin_Repair_Cafe.txt",
+      "start": 27,
+      "content": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+      "semanticScore": 0.5709244411118268,
+      "lexicalScore": 7.976365613038855
+    },
+    {
+      "filename": "04_Tessarin_Repair_Cafe.txt",
+      "start": 418,
+      "content": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions.",
+      "semanticScore": 0.37900272104783317,
+      "lexicalScore": 6.098837854086769
+    },
+    {
+      "filename": "04_Tessarin_Repair_Cafe.txt",
+      "start": 194,
+      "content": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "semanticScore": 0.5500277476273753,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+      "start": 0,
+      "end": 71,
+      "similarity": 0.021610812255376807,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "start": 72,
+      "end": 172,
+      "similarity": 0.07684804351835975,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-01.",
+      "start": 199,
+      "end": 204,
+      "similarity": 0.15316054480652155,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Orders released before 14:10 leave on the same collection day.",
+      "start": 205,
+      "end": 267,
+      "similarity": 0.1568618337838165,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.",
+      "start": 268,
+      "end": 366,
+      "similarity": 0.16646150848190194,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-02.",
+      "start": 367,
+      "end": 372,
+      "similarity": 0.16094163164926598,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Mira checks five germination trays per day.",
+      "start": 373,
+      "end": 416,
+      "similarity": 0.2979580649405145,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Tobin checks three irrigation valves per day.",
+      "start": 417,
+      "end": 462,
+      "similarity": 0.28908675158371705,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Mira labels two storage bins per week.",
+      "start": 463,
+      "end": 501,
+      "similarity": 0.27837393114832487,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-03.",
+      "start": 502,
+      "end": 507,
+      "similarity": 0.15735000547298766,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius.",
+      "start": 508,
+      "end": 600,
+      "similarity": -0.026735799320768153,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Individual winter extremes are not listed.",
+      "start": 601,
+      "end": 643,
+      "similarity": 0.06207009010716856,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-04.",
+      "start": 644,
+      "end": 649,
+      "similarity": 0.1564866955745577,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Collection slips are retained for 16 months.",
+      "start": 650,
+      "end": 694,
+      "similarity": 0.1288332273690537,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "If a seed-health review is unresolved, keep the affected slips until clearance is recorded.",
+      "start": 695,
+      "end": 786,
+      "similarity": 0.1542641957069153,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-05.",
+      "start": 787,
+      "end": 792,
+      "similarity": 0.18945657399981777,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Acknowledge collection requests within two collection days.",
+      "start": 793,
+      "end": 852,
+      "similarity": 0.1793821249255393,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "This acknowledgement does not guarantee stock availability.",
+      "start": 853,
+      "end": 912,
+      "similarity": 0.10096487917720806,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.02569540011281767,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "Its restoration was completed in 1974.",
+      "start": 74,
+      "end": 112,
+      "similarity": 0.17594375120898395,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "A proposal to close the annex in 2009 was abandoned; the annex stayed open.",
+      "start": 113,
+      "end": 188,
+      "similarity": 0.08174665242977926,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "L-01.",
+      "start": 216,
+      "end": 221,
+      "similarity": 0.17635595817967228,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+      "start": 222,
+      "end": 314,
+      "similarity": 0.02121032626067437,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.0038273467910114383,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The highest monthly mean temperature is 25 degrees Celsius, in August.",
+      "start": 377,
+      "end": 447,
+      "similarity": -0.0904416103193915,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "L-02.",
+      "start": 448,
+      "end": 453,
+      "similarity": 0.19520924535865203,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "Signed loan records are retained for 8 years.",
+      "start": 454,
+      "end": 499,
+      "similarity": -0.03130801031536811,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "If an ownership dispute is open, keep the affected records until the dispute is settled.",
+      "start": 500,
+      "end": 588,
+      "similarity": 0.049321350136354185,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "L-03.",
+      "start": 589,
+      "end": 594,
+      "similarity": 0.14701265603891972,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The custody packet contains:",
+      "start": 595,
+      "end": 623,
+      "similarity": 0.3492440145680452,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "At Caldra Tide Station, the gauge tower was rebuilt in 1993.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.12906992765958664,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "The equipment shed was painted in 2016.",
+      "start": 61,
+      "end": 100,
+      "similarity": 0.17505902881818838,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+      "start": 102,
+      "end": 197,
+      "similarity": 0.006302810041769116,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 198,
+      "end": 259,
+      "similarity": -0.02241030256999143,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Ruan records six water level readings per watch.",
+      "start": 261,
+      "end": 309,
+      "similarity": 0.17435118455467885,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Sena records four salinity samples per watch.",
+      "start": 310,
+      "end": 355,
+      "similarity": 0.2402497910096788,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Ruan tags two anchor markers per week.",
+      "start": 356,
+      "end": 394,
+      "similarity": 0.1919837446143456,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.",
+      "start": 396,
+      "end": 493,
+      "similarity": 0.1770280328146349,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "In a salt-spray bay, lubricate it every 42 operating hours.",
+      "start": 494,
+      "end": 553,
+      "similarity": 0.22206411706945517,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Inspect the winch every 21 operating hours regardless of bay.",
+      "start": 554,
+      "end": 615,
+      "similarity": 0.2351407033106631,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-01.",
+      "start": 21,
+      "end": 26,
+      "similarity": 0.15558263041325238,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+      "start": 27,
+      "end": 104,
+      "similarity": 0.5709244411118268,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "An acknowledgement is not a promise that the repair will finish within four hours.",
+      "start": 105,
+      "end": 187,
+      "similarity": 0.20201546401357268,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-02.",
+      "start": 188,
+      "end": 193,
+      "similarity": 0.16654397564909126,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "start": 194,
+      "end": 305,
+      "similarity": 0.5500277476273753,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-03.",
+      "start": 306,
+      "end": 311,
+      "similarity": 0.17630996248267686,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.",
+      "start": 312,
+      "end": 411,
+      "similarity": 0.2813737185238144,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-04.",
+      "start": 412,
+      "end": 417,
+      "similarity": 0.14733722843143324,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions.",
+      "start": 418,
+      "end": 515,
+      "similarity": 0.37900272104783317,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "In a dusty workroom, lubricate it every 52 operating hours.",
+      "start": 516,
+      "end": 575,
+      "similarity": 0.21904080157220426,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Inspect the drill every 26 operating hours in either room.",
+      "start": 576,
+      "end": 634,
+      "similarity": 0.1769802774776835,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-05.",
+      "start": 635,
+      "end": 640,
+      "similarity": 0.2229705247613462,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention.",
+      "start": 641,
+      "end": 755,
+      "similarity": 0.08220145003746619,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c:body:194",
+          "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+          "filename": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+          "start": 194,
+          "end": 305,
+          "actualCosine": 0.5500277476273753,
+          "excerpt": "## Workshop policies\nR-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.\nR-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\nR-03. Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.\nR-04. Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect t"
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "packet",
+          "subjects": [
+            "dispatch"
+          ]
+        },
+        "actual_cosines": [
+          0.5500277476273753
+        ]
+      }
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c:body:194",
+          "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+          "filename": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+          "start": 194,
+          "end": 305,
+          "actualCosine": 0.5500277476273753,
+          "excerpt": "## Workshop policies\nR-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.\nR-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\nR-03. Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.\nR-04. Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect t"
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "packet",
+          "subjects": [
+            "dispatch"
+          ]
+        },
+        "actual_cosines": [
+          0.5500277476273753
+        ]
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c:0",
+          "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+          "filename": "04_Tessarin_Repair_Cafe.txt",
+          "excerpt": "## Workshop policies\nR-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.\nR-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\nR-03. Purchases above 5200 credits need written approval from the Treasury Coo",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "score": 0.0476,
+          "lexicalScore": 8.077722840392983,
+          "semanticScore": 0.5134529616128614,
+          "matchedTerms": [
+            "tessarin",
+            "repair",
+            "cafe",
+            "dispatch",
+            "packet"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c:0",
+          "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+          "filename": "04_Tessarin_Repair_Cafe.txt",
+          "excerpt": "## Workshop policies\nR-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.\nR-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\nR-03. Purchases above 5200 credits need written approval from the Treasury Coo",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "score": 0.0476,
+          "lexicalScore": 8.40404326496649,
+          "semanticScore": 0.5134529616128614,
+          "matchedTerms": [
+            "tessarin",
+            "repair",
+            "cafe",
+            "dispatch",
+            "packet"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Tessarin_Repair_Cafe.txt",
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.10611055046319962,
+    0.028504282236099243,
+    0.03962666541337967,
+    0.0228787362575531,
+    0.041592974215745926,
+    0.0647161602973938,
+    0.09767138212919235,
+    -0.00179156637750566,
+    -0.04535532370209694,
+    -0.0017626009648665786,
+    0.06322932988405228,
+    -0.031125815585255623,
+    -0.0214339941740036,
+    -0.03337571397423744,
+    -0.07521898299455643,
+    -0.026578493416309357,
+    0.012018631212413311,
+    -0.029402337968349457,
+    -0.052793361246585846,
+    -0.06025852635502815,
+    -0.008044577203691006,
+    0.061389464884996414,
+    0.013847853988409042,
+    0.0613560825586319,
+    -0.020374977961182594,
+    0.09981779754161835,
+    -0.06098409742116928,
+    -0.018348388373851776,
+    0.027057427912950516,
+    -0.09144226461648941,
+    -0.018974415957927704,
+    0.03457663580775261,
+    0.027011962607502937,
+    -0.054648466408252716,
+    0.030570894479751587,
+    0.07050258666276932,
+    0.06454367935657501,
+    -0.04300535470247269,
+    0.058830663561820984,
+    0.038152873516082764,
+    -0.0226314514875412,
+    -0.10704970359802246,
+    -0.07283910363912582,
+    0.01876685954630375,
+    0.06807510554790497,
+    0.009095322340726852,
+    0.04448120668530464,
+    0.00945390947163105,
+    0.05290193110704422,
+    -0.026738662272691727,
+    0.015551101416349411,
+    0.006080158054828644,
+    -0.05693517252802849,
+    0.02309122309088707,
+    0.08242949843406677,
+    -0.04219571873545647,
+    -0.04359259083867073,
+    -0.016235865652561188,
+    0.05286213383078575,
+    0.041760314255952835,
+    0.03259696438908577,
+    -0.05669068917632103,
+    -0.0749489814043045,
+    0.0908319503068924,
+    0.05146060138940811,
+    0.03320033475756645,
+    -0.04844020679593086,
+    -0.033150989562273026,
+    0.033591534942388535,
+    -0.038973547518253326,
+    -0.10179713368415833,
+    -0.02611858956515789,
+    0.017681360244750977,
+    0.0011559500126168132,
+    -0.013524112291634083,
+    0.02437601238489151,
+    0.05927623063325882,
+    -0.07341131567955017,
+    -0.05019841343164444,
+    -0.01997995562851429,
+    -0.05101137235760689,
+    0.04785335808992386,
+    0.08203849196434021,
+    0.1369386613368988,
+    0.0031339258421212435,
+    0.057759884744882584,
+    0.03442053124308586,
+    -0.04369310289621353,
+    0.007261251099407673,
+    0.012116731144487858,
+    0.014387269504368305,
+    0.005117469932883978,
+    0.056031856685876846,
+    0.00399534497410059,
+    -0.06375803053379059,
+    0.0379897765815258,
+    -0.03446071967482567,
+    -0.02221633866429329,
+    0.0013327758060768247,
+    0.08178310096263885,
+    -0.00022538691700901836,
+    0.0055194734595716,
+    -0.03730208799242973,
+    -0.09961369633674622,
+    -0.046352677047252655,
+    -0.0580751970410347,
+    -0.055413246154785156,
+    -0.001173677621409297,
+    0.030696773901581764,
+    0.04140548035502434,
+    -0.05462770164012909,
+    -0.03387526795268059,
+    -0.05256695672869682,
+    -0.047449108213186264,
+    -0.011004207655787468,
+    0.006135375704616308,
+    -0.015583592467010021,
+    -0.023347223177552223,
+    0.03029119037091732,
+    0.00667935935780406,
+    -0.008356600068509579,
+    -0.04041285067796707,
+    0.036543384194374084,
+    -0.04162828251719475,
+    -0.12735328078269958,
+    -0.00756636681035161,
+    0.06369086354970932,
+    -8.267321564310228e-34,
+    0.0090052280575037,
+    0.01249719224870205,
+    -0.002664985368028283,
+    0.08576537668704987,
+    0.07066543400287628,
+    0.007116515655070543,
+    0.01536577194929123,
+    -0.055636707693338394,
+    0.047589223831892014,
+    0.018600502982735634,
+    -0.02456832490861416,
+    0.0765838772058487,
+    -0.09219358116388321,
+    0.07601574808359146,
+    0.008132782764732838,
+    -0.028497101739048958,
+    -0.061423201113939285,
+    0.06056831777095795,
+    0.005671390797942877,
+    -0.01957477629184723,
+    -0.006675302516669035,
+    0.020092161372303963,
+    -0.004355334676802158,
+    0.0073319380171597,
+    0.08274982124567032,
+    0.10418425500392914,
+    0.002897277008742094,
+    0.017823481932282448,
+    0.028211992233991623,
+    0.02644476108253002,
+    0.01475503295660019,
+    0.06881459802389145,
+    0.0237664096057415,
+    0.05883592367172241,
+    -0.09209252893924713,
+    0.04792891815304756,
+    -0.06210409849882126,
+    -0.08227881044149399,
+    -0.019911471754312515,
+    0.00611138716340065,
+    -0.05237879604101181,
+    0.005648262333124876,
+    -0.06093704327940941,
+    0.027719741687178612,
+    0.033808380365371704,
+    -0.07034870237112045,
+    -0.045421648770570755,
+    0.023326637223362923,
+    0.05505538731813431,
+    -0.011818175204098225,
+    -0.03273027762770653,
+    0.01277929451316595,
+    -0.0038407891988754272,
+    -0.020425962284207344,
+    -0.036344654858112335,
+    -0.027092238888144493,
+    0.027575794607400894,
+    0.010282034054398537,
+    0.016529694199562073,
+    0.11312607675790787,
+    0.029614200815558434,
+    0.04215877875685692,
+    0.009723063558340073,
+    0.005785747431218624,
+    0.07938418537378311,
+    0.037007153034210205,
+    -0.06859177350997925,
+    -0.01840520277619362,
+    0.07736596465110779,
+    -0.04723230376839638,
+    -0.05662541463971138,
+    0.04360834136605263,
+    0.09904168546199799,
+    0.019635234028100967,
+    0.00862084235996008,
+    0.013112975284457207,
+    -0.0004911823198199272,
+    -0.0036740805953741074,
+    -0.09549207985401154,
+    -0.000979489297606051,
+    -0.03228545933961868,
+    -0.08471406251192093,
+    0.054072536528110504,
+    0.08372749388217926,
+    -0.0360477976500988,
+    0.0266816858202219,
+    0.09024955332279205,
+    -0.046172771602869034,
+    0.03589211404323578,
+    0.03843400254845619,
+    -0.09149244427680969,
+    -0.08282718062400818,
+    -0.005351715721189976,
+    -0.046254463493824005,
+    -0.05506234988570213,
+    4.735497359386817e-35,
+    0.07600665837526321,
+    -0.015128357335925102,
+    -0.04258075729012489,
+    0.04688650369644165,
+    -0.057870734483003616,
+    0.02555118501186371,
+    0.007867465727031231,
+    -0.04682018607854843,
+    0.04016457870602608,
+    0.052786100655794144,
+    -0.015430671162903309,
+    -0.014063921757042408,
+    0.017779996618628502,
+    0.004286057781428099,
+    -0.07288585603237152,
+    0.0710875391960144,
+    0.07177845388650894,
+    -0.03306448459625244,
+    -0.06120689585804939,
+    -0.025840867310762405,
+    0.0067759184166789055,
+    0.0288177989423275,
+    -0.05799292027950287,
+    0.04538320377469063,
+    -0.012643303722143173,
+    0.10030067712068558,
+    0.05371704697608948,
+    -0.05717368796467781,
+    -0.013499642722308636,
+    0.021944528445601463,
+    -0.00188481155782938,
+    -0.09368302673101425,
+    -0.044949065893888474,
+    0.04110147804021835,
+    -0.009072389453649521,
+    0.03243773430585861,
+    0.038070324808359146,
+    0.040917474776506424,
+    -0.0018860317068174481,
+    -0.011299801990389824,
+    0.05253138393163681,
+    -0.053997479379177094,
+    -0.02787085995078087,
+    0.12893038988113403,
+    0.004039823543280363,
+    -0.07339949160814285,
+    -0.023753369227051735,
+    -0.07213559746742249,
+    -0.049183327704668045,
+    0.01773837022483349,
+    0.0930761769413948,
+    0.004912989679723978,
+    -0.05897079035639763,
+    0.10136139392852783,
+    -0.04368218407034874,
+    0.11121619492769241,
+    0.07181352376937866,
+    -0.05974322557449341,
+    -0.005987114738672972,
+    -0.031157126650214195,
+    0.04907951131463051,
+    0.017042795196175575,
+    0.007205933798104525,
+    0.015679892152547836,
+    0.04331712797284126,
+    -0.016157208010554314,
+    0.029132455587387085,
+    -0.04887605458498001,
+    0.019553598016500473,
+    -0.06527712196111679,
+    0.04045325890183449,
+    -0.019092334434390068,
+    0.07124344259500504,
+    -0.10571896284818649,
+    0.009686309844255447,
+    0.03037729300558567,
+    -0.027714120224118233,
+    -0.02912159450352192,
+    -0.0433989018201828,
+    0.019454246386885643,
+    -0.0633697435259819,
+    -0.06979260593652725,
+    -0.003195059485733509,
+    0.07900574803352356,
+    0.031074997037649155,
+    -0.053750813007354736,
+    0.11590162664651871,
+    0.0026045721024274826,
+    0.0620051808655262,
+    0.03894922882318497,
+    -0.037892237305641174,
+    0.07589852064847946,
+    -0.005682887509465218,
+    0.04440820962190628,
+    0.07297699898481369,
+    -1.7340022751000106e-8,
+    0.0010519825154915452,
+    -0.00664619542658329,
+    -0.04961591958999634,
+    0.002207127632573247,
+    0.013565974310040474,
+    0.003337126225233078,
+    0.007624113000929356,
+    0.05446547269821167,
+    -0.06149552762508392,
+    0.01652906835079193,
+    0.004369516856968403,
+    0.068757563829422,
+    -0.09252762794494629,
+    -0.03330710157752037,
+    0.030397554859519005,
+    -0.03846679627895355,
+    -0.02771412767469883,
+    0.04133819788694382,
+    -0.09248621016740799,
+    -0.08289281278848648,
+    -0.03998745232820511,
+    0.0030601161997765303,
+    0.06925823539495468,
+    -0.0715278685092926,
+    -0.017901651561260223,
+    -0.055152662098407745,
+    0.09961915016174316,
+    0.010772748850286007,
+    0.035640377551317215,
+    0.02100404165685177,
+    -0.026258690282702446,
+    -0.0443313904106617,
+    -0.021429715678095818,
+    -0.06005195155739784,
+    0.0006177134346216917,
+    0.10011863708496094,
+    -0.019878728315234184,
+    -0.0717744529247284,
+    -0.01651175133883953,
+    0.0005374542088247836,
+    -0.08644293248653412,
+    -0.14399069547653198,
+    -0.014635603874921799,
+    0.03809044137597084,
+    0.01773008704185486,
+    -0.010184080339968204,
+    -0.1311774104833603,
+    0.0034214905463159084,
+    -0.03014278970658779,
+    -0.051057249307632446,
+    0.032332051545381546,
+    0.022905850782990456,
+    0.025702374055981636,
+    0.07231780141592026,
+    -0.04787805676460266,
+    0.03917435556650162,
+    0.029484421014785767,
+    -0.1160256415605545,
+    0.07439369708299637,
+    0.03410452976822853,
+    -0.09067735821008682,
+    0.015906834974884987,
+    0.048247627913951874,
+    -0.04595646262168884
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "start": 0,
+        "content": "## Workshop policies\nR-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.\nR-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\nR-03. Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.\nR-04. Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.\nR-05. Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "start": 0,
+        "content": "## Workshop policies\nR-01. Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.\nR-02. The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\nR-03. Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.\nR-04. Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.\nR-05. Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention."
+      }
+    ]
+  }
+}

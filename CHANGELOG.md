@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Preserve v40 Hearth32 FAIL and investigate H04
+
+- Publish the complete unchanged first Hearth32 evidence after a stop and explicit approval: both v40 variants and paired v39 31/0/1, H04 supported false refusal and historical PASS loss. Seal 258 original artifacts (23,337,052 bytes); no model rerun, regrading or candidate change.
+- Document bare-order context, collection-day request/source and `hold remains active` grammar gaps. Propose a separate v41 protocol/four-pack revalidation; no implementation or adoption. Record the failed publication hash assumption and explicitly approved correction: original frozen bytes match metadata, copied JSON differs only by final newline; no evidence rewritten.
+- 633 unit/28 strict Keyword checks PASS; 456-file freeze and corrected publication/archive checks PASS. Phase 1 remains held: 128 exposed cases tested with v40 across four separately scored packs, 540 verified cases untested, 103 originals unavailable. [Results](docs/V40_HEARTH32_MAC_RESULTS.md), [investigation](docs/HEARTH32_V40_FAILURE_REVIEW.md).
+
 ## 2026-10-20 — Hearth32 v40 exposed-regression preparation
 
 - Prepare a new original-input Hearth32 runner/freeze with unchanged v40 and separately embedded paired-v39 planner facets. Preserve the first v32 BLOCKED/UNGRADED capture, v33 qualified 31/1/0 and all v34–v38 passes.

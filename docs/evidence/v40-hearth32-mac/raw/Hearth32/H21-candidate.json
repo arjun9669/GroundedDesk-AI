@@ -1,0 +1,1229 @@
+{
+  "candidate_identity": "coverage-v40-dispatch-grammar",
+  "id": "H21",
+  "question": "When was the Veylan Seed Conservatory glass roof overhauled?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When was the Veylan Seed Conservatory glass roof overhauled?",
+    "expected_display": "When was the Veylan Seed Conservatory glass roof overhauled?",
+    "rendered_question": "When was the Veylan Seed Conservatory glass roof overhauled?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+    "sources": [
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. If a seed-health review is unresolved, keep the affected slips",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen was the Veylan Seed Conservatory glass roof overhauled?\n\nSearched all files: 01_Veylan_Seed_Conservatory.txt · 02_Ostren_Instrument_Library.txt · 03_Caldra_Tide_Station.txt · 04_Tessarin_Repair_Cafe.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962.\n\nSOURCE EVIDENCE\n[1]\n01_Veylan_Seed_Conservatory.txt\n\nText line 1 (normalized extraction)\n\nVeylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014. ## Collection operations V-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active. V-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week. V-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed. V-04. Collection slips are retained for 16 months. If a seed-health review is unresolved, keep the affected slips\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1:0",
+        "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. If a seed-health review is unresolved, keep the affected slips",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+        "score": 0.0476,
+        "lexicalScore": 8.382803000152201,
+        "semanticScore": 0.6876783162424739,
+        "matchedTerms": [
+          "veylan",
+          "seed",
+          "conservatory",
+          "glass",
+          "roof"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Bounded actual MiniLM sentence/slot gain",
+        "selected": {
+          "start": 72,
+          "cosine": 0.6522757037453095,
+          "slot_supported": true,
+          "lexical_matches": 3
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "Ambiguous affirmative event relations"
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Bounded actual MiniLM sentence/slot gain",
+        "selected": {
+          "start": 72,
+          "cosine": 0.6522757037453095,
+          "slot_supported": true,
+          "lexical_matches": 3
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "Ambiguous affirmative event relations"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Veylan_Seed_Conservatory.txt",
+      "start": 0,
+      "content": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+      "semanticScore": 0.5453235538329748,
+      "lexicalScore": 7.859395622423364
+    },
+    {
+      "filename": "01_Veylan_Seed_Conservatory.txt",
+      "start": 508,
+      "content": "Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius.",
+      "semanticScore": 0.4498519009019236,
+      "lexicalScore": 7.045825372445947
+    },
+    {
+      "filename": "01_Veylan_Seed_Conservatory.txt",
+      "start": 72,
+      "content": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "semanticScore": 0.6522757037453095,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+      "start": 0,
+      "end": 71,
+      "similarity": 0.5453235538329748,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "start": 72,
+      "end": 172,
+      "similarity": 0.6522757037453095,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-01.",
+      "start": 199,
+      "end": 204,
+      "similarity": 0.048980411256699385,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Orders released before 14:10 leave on the same collection day.",
+      "start": 205,
+      "end": 267,
+      "similarity": 0.11731425373782753,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.",
+      "start": 268,
+      "end": 366,
+      "similarity": 0.16587031240900338,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-02.",
+      "start": 367,
+      "end": 372,
+      "similarity": 0.04961688823546307,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Mira checks five germination trays per day.",
+      "start": 373,
+      "end": 416,
+      "similarity": 0.2795738010717239,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Tobin checks three irrigation valves per day.",
+      "start": 417,
+      "end": 462,
+      "similarity": 0.10077709184143503,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Mira labels two storage bins per week.",
+      "start": 463,
+      "end": 501,
+      "similarity": 0.19134744366907325,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-03.",
+      "start": 502,
+      "end": 507,
+      "similarity": 0.08567729020602961,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius.",
+      "start": 508,
+      "end": 600,
+      "similarity": 0.4498519009019236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Individual winter extremes are not listed.",
+      "start": 601,
+      "end": 643,
+      "similarity": 0.02407415329293227,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-04.",
+      "start": 644,
+      "end": 649,
+      "similarity": 0.101930905612641,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Collection slips are retained for 16 months.",
+      "start": 650,
+      "end": 694,
+      "similarity": 0.09994757304565703,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "If a seed-health review is unresolved, keep the affected slips until clearance is recorded.",
+      "start": 695,
+      "end": 786,
+      "similarity": 0.24686670083247994,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-05.",
+      "start": 787,
+      "end": 792,
+      "similarity": 0.06086585527564327,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Acknowledge collection requests within two collection days.",
+      "start": 793,
+      "end": 852,
+      "similarity": 0.10250025355067638,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "This acknowledgement does not guarantee stock availability.",
+      "start": 853,
+      "end": 912,
+      "similarity": 0.06122561447869262,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.22427857961307524,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "Its restoration was completed in 1974.",
+      "start": 74,
+      "end": 112,
+      "similarity": 0.3599764379723477,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "A proposal to close the annex in 2009 was abandoned; the annex stayed open.",
+      "start": 113,
+      "end": 188,
+      "similarity": 0.13745153413933126,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "L-01.",
+      "start": 216,
+      "end": 221,
+      "similarity": 0.05461284869463415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+      "start": 222,
+      "end": 314,
+      "similarity": 0.09247408035694189,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.060168958981072176,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The highest monthly mean temperature is 25 degrees Celsius, in August.",
+      "start": 377,
+      "end": 447,
+      "similarity": 0.0594627809168936,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "L-02.",
+      "start": 448,
+      "end": 453,
+      "similarity": 0.058116349750466464,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "Signed loan records are retained for 8 years.",
+      "start": 454,
+      "end": 499,
+      "similarity": 0.07883451849527039,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "If an ownership dispute is open, keep the affected records until the dispute is settled.",
+      "start": 500,
+      "end": 588,
+      "similarity": 0.0746764058241123,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "L-03.",
+      "start": 589,
+      "end": 594,
+      "similarity": 0.06228436157136811,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The custody packet contains:",
+      "start": 595,
+      "end": 623,
+      "similarity": 0.07686141583957612,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "At Caldra Tide Station, the gauge tower was rebuilt in 1993.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.2543489875663542,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "The equipment shed was painted in 2016.",
+      "start": 61,
+      "end": 100,
+      "similarity": 0.2595180071087304,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+      "start": 102,
+      "end": 197,
+      "similarity": 0.05981119503514461,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 198,
+      "end": 259,
+      "similarity": 0.06145973290136206,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Ruan records six water level readings per watch.",
+      "start": 261,
+      "end": 309,
+      "similarity": 0.04397383161668726,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Sena records four salinity samples per watch.",
+      "start": 310,
+      "end": 355,
+      "similarity": 0.03589290913358276,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Ruan tags two anchor markers per week.",
+      "start": 356,
+      "end": 394,
+      "similarity": 0.10567346907907563,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.",
+      "start": 396,
+      "end": 493,
+      "similarity": 0.08379381009051222,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "In a salt-spray bay, lubricate it every 42 operating hours.",
+      "start": 494,
+      "end": 553,
+      "similarity": 0.08068705281436386,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Inspect the winch every 21 operating hours regardless of bay.",
+      "start": 554,
+      "end": 615,
+      "similarity": 0.1623682186159867,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-01.",
+      "start": 21,
+      "end": 26,
+      "similarity": 0.008639188290762122,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+      "start": 27,
+      "end": 104,
+      "similarity": 0.2223393806079463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "An acknowledgement is not a promise that the repair will finish within four hours.",
+      "start": 105,
+      "end": 187,
+      "similarity": 0.17020849668888993,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-02.",
+      "start": 188,
+      "end": 193,
+      "similarity": 0.012952687821587454,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "start": 194,
+      "end": 305,
+      "similarity": -0.030656007036468327,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-03.",
+      "start": 306,
+      "end": 311,
+      "similarity": 0.03552339576581118,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.",
+      "start": 312,
+      "end": 411,
+      "similarity": 0.0734621157839941,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-04.",
+      "start": 412,
+      "end": 417,
+      "similarity": 0.0713796329717534,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions.",
+      "start": 418,
+      "end": 515,
+      "similarity": 0.06305130257857575,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "In a dusty workroom, lubricate it every 52 operating hours.",
+      "start": 516,
+      "end": 575,
+      "similarity": 0.07424106964895295,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Inspect the drill every 26 operating hours in either room.",
+      "start": 576,
+      "end": 634,
+      "similarity": 0.135016159570887,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-05.",
+      "start": 635,
+      "end": 640,
+      "similarity": 0.036089315115350455,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention.",
+      "start": 641,
+      "end": 755,
+      "similarity": 0.10628210077731247,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 72,
+            "cosine": 0.6522757037453095,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "Ambiguous affirmative event relations"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 72,
+            "cosine": 0.6522757037453095,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "Ambiguous affirmative event relations"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1:0",
+          "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valve",
+          "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "score": 0.0476,
+          "lexicalScore": 8.382803000152201,
+          "semanticScore": 0.6876783162424739,
+          "matchedTerms": [
+            "veylan",
+            "seed",
+            "conservatory",
+            "glass",
+            "roof"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 72,
+            "cosine": 0.6522757037453095,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1:0",
+          "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valve",
+          "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "score": 0.0476,
+          "lexicalScore": 9.31084220562704,
+          "semanticScore": 0.8538707277788679,
+          "matchedTerms": [
+            "veylan",
+            "seed",
+            "conservatory",
+            "glass",
+            "roof"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 72,
+            "cosine": 0.6522757037453095,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.02573491632938385,
+    0.05693504586815834,
+    0.007766507100313902,
+    -0.004562103655189276,
+    0.01430410984903574,
+    -0.0642290785908699,
+    -0.06023121625185013,
+    -0.044181328266859055,
+    -0.07567589730024338,
+    0.013611606322228909,
+    -0.04252000153064728,
+    0.047755107283592224,
+    -0.057235024869441986,
+    0.028502410277724266,
+    -0.060101088136434555,
+    -0.007923130877315998,
+    -0.020821627229452133,
+    -0.025519607588648796,
+    0.05221664160490036,
+    0.004265675786882639,
+    -0.07214699685573578,
+    -0.03289823606610298,
+    0.025819798931479454,
+    0.00008496223017573357,
+    0.09786298871040344,
+    -0.020519910380244255,
+    -0.13399893045425415,
+    0.08484935760498047,
+    0.016626913100481033,
+    -0.011324557475745678,
+    0.02404005266726017,
+    0.03917624428868294,
+    -0.007434580009430647,
+    -0.024955853819847107,
+    0.05321922525763512,
+    0.04490027204155922,
+    0.0043985177762806416,
+    -0.047572869807481766,
+    -0.0725753977894783,
+    -0.010092217475175858,
+    -0.010981220752000809,
+    -0.0020387619733810425,
+    -0.06702177971601486,
+    0.03540439158678055,
+    -0.07418790459632874,
+    0.008334093727171421,
+    0.016521872952580452,
+    -0.03220782428979874,
+    0.02091938443481922,
+    -0.0031728153117001057,
+    -0.026598135009407997,
+    -0.00022518556215800345,
+    -0.019626377150416374,
+    -0.1296471804380417,
+    -0.012716318480670452,
+    0.1264978051185608,
+    0.008250046521425247,
+    0.058071427047252655,
+    0.046995360404253006,
+    0.07208172231912613,
+    0.10510723292827606,
+    0.0012089229421690106,
+    -0.12295279651880264,
+    0.00867241807281971,
+    0.02368447743356228,
+    0.013882264494895935,
+    -0.031496159732341766,
+    0.0067399973049759865,
+    0.11002139002084732,
+    -0.01695532165467739,
+    0.08325743675231934,
+    -0.07882925122976303,
+    0.024591753259301186,
+    -0.12202790379524231,
+    0.004584506154060364,
+    -0.006842463277280331,
+    0.06750107556581497,
+    -0.01496238075196743,
+    -0.031209832057356834,
+    -0.05211859941482544,
+    -0.02310820110142231,
+    -0.006564402487128973,
+    -0.02456708811223507,
+    -0.0023177172988653183,
+    -0.06053312495350838,
+    0.007381025701761246,
+    -0.035589586943387985,
+    0.05271779000759125,
+    0.0442223958671093,
+    0.03246467188000679,
+    0.09523986279964447,
+    0.009431624785065651,
+    -0.09060616791248322,
+    0.02015133947134018,
+    0.025686107575893402,
+    0.04892914742231369,
+    -0.026842841878533363,
+    -0.08142582327127457,
+    0.026929572224617004,
+    0.07178580015897751,
+    -0.05527776852250099,
+    -0.010579007677733898,
+    0.07084213197231293,
+    -0.021302100270986557,
+    -0.02714468166232109,
+    -0.0280342735350132,
+    -0.004005419090390205,
+    0.0691034346818924,
+    -0.05622020363807678,
+    -0.005670538637787104,
+    -0.0030080443248152733,
+    0.030234908685088158,
+    0.09059903770685196,
+    0.10039115697145462,
+    -0.03053758293390274,
+    -0.012927478179335594,
+    0.06624206155538559,
+    -0.042457081377506256,
+    0.05622050166130066,
+    -0.025235475972294807,
+    0.0728950947523117,
+    0.001544299186207354,
+    0.08461830765008926,
+    0.030626248568296432,
+    -0.05915756896138191,
+    0.0026975779328495264,
+    -0.048875175416469574,
+    -3.321571244573506e-33,
+    0.05883873254060745,
+    0.01454848237335682,
+    0.02923152782022953,
+    0.057237476110458374,
+    0.09433289617300034,
+    0.024004874750971794,
+    0.014547123573720455,
+    0.006528638768941164,
+    -0.04515071585774422,
+    -0.04999115318059921,
+    -0.030845846980810165,
+    -0.0790080651640892,
+    -0.03253060579299927,
+    -0.09648251533508301,
+    0.03698357194662094,
+    -0.05938297137618065,
+    -0.06186114251613617,
+    0.08104512840509415,
+    -0.052811454981565475,
+    -0.0031869113445281982,
+    -0.04702409729361534,
+    0.03427842631936073,
+    -0.034735582768917084,
+    -0.0010151303140446544,
+    0.054112013429403305,
+    -0.010107917711138725,
+    0.08095232397317886,
+    0.023546291515231133,
+    -0.042840346693992615,
+    0.029187364503741264,
+    0.10361004620790482,
+    -0.0031994651071727276,
+    0.0016099276253953576,
+    0.03823297843337059,
+    0.0207403264939785,
+    0.06439456343650818,
+    -0.07556255906820297,
+    -0.04761733114719391,
+    0.024467136710882187,
+    -0.009184319525957108,
+    0.0116804214194417,
+    0.06993257999420166,
+    0.11819268763065338,
+    0.028964588418602943,
+    0.018785178661346436,
+    0.03850177302956581,
+    0.02526608482003212,
+    0.05368124321103096,
+    -0.02082817070186138,
+    -0.03156612440943718,
+    0.058761849999427795,
+    0.06052658334374428,
+    -0.07408058643341064,
+    -0.03732587397098541,
+    -0.04881250858306885,
+    0.07928455621004105,
+    0.06295119225978851,
+    0.016764039173722267,
+    0.06195276603102684,
+    -0.036241330206394196,
+    0.04767737165093422,
+    0.022169508039951324,
+    -0.00944166723638773,
+    -0.03852859139442444,
+    0.0503431111574173,
+    0.0097576342523098,
+    -0.02859385684132576,
+    0.03761046752333641,
+    -0.05166928842663765,
+    -0.05758048966526985,
+    -0.01592465490102768,
+    -0.022653792053461075,
+    -0.05772785097360611,
+    -0.008962738327682018,
+    -0.006625894457101822,
+    0.014658302068710327,
+    -0.04485752061009407,
+    0.058519020676612854,
+    -0.03464202210307121,
+    0.038275305181741714,
+    0.02496129646897316,
+    0.012072090059518814,
+    -0.02950335294008255,
+    -0.031973741948604584,
+    -0.019139911979436874,
+    -0.032322127372026443,
+    0.028021089732646942,
+    0.09168676286935806,
+    0.038217075169086456,
+    -0.01763949543237686,
+    0.01582375355064869,
+    -0.06352842599153519,
+    0.006389097776263952,
+    -0.04166235402226448,
+    -0.046571481972932816,
+    2.288337056797655e-33,
+    0.005673673469573259,
+    -0.07280316948890686,
+    0.027192886918783188,
+    0.04284167289733887,
+    0.023694677278399467,
+    -0.03970308601856232,
+    -0.08411537855863571,
+    0.0820702388882637,
+    -0.041576530784368515,
+    -0.07912832498550415,
+    0.05563736706972122,
+    0.03910772129893303,
+    0.03892840817570686,
+    -0.029398273676633835,
+    -0.0683005154132843,
+    0.06928528845310211,
+    -0.0031431373208761215,
+    -0.03424772620201111,
+    -0.07400937378406525,
+    -0.0007687853649258614,
+    -0.0027696688193827868,
+    0.006310711149126291,
+    -0.04375674948096275,
+    0.052469342947006226,
+    -0.026789145544171333,
+    -0.04825247824192047,
+    0.15159721672534943,
+    0.03760950267314911,
+    -0.06585969775915146,
+    -0.04389441758394241,
+    0.002239724388346076,
+    -0.09095191210508347,
+    -0.10321531444787979,
+    0.09829926490783691,
+    0.041073989123106,
+    0.03840489685535431,
+    0.026056602597236633,
+    -0.06753108650445938,
+    -0.05310659855604172,
+    -0.03530966490507126,
+    0.03831497207283974,
+    0.030938228592276573,
+    -0.015795672312378883,
+    0.08891114592552185,
+    0.03362495079636574,
+    -0.01410118117928505,
+    -0.004369381349533796,
+    0.011534323915839195,
+    0.039289720356464386,
+    -0.07074110954999924,
+    0.020099129527807236,
+    -0.00042498207767494023,
+    0.056343771517276764,
+    -0.026826582849025726,
+    0.034043088555336,
+    -0.062075722962617874,
+    0.10574076324701309,
+    0.0569722019135952,
+    -0.015615003183484077,
+    0.018888425081968307,
+    0.016419528052210808,
+    0.05081741511821747,
+    -0.007921826094388962,
+    -0.070995032787323,
+    -0.011306949891149998,
+    0.04072731360793114,
+    -0.016931846737861633,
+    0.012906059622764587,
+    -0.04957343265414238,
+    -0.034772537648677826,
+    0.08725661039352417,
+    0.004196840338408947,
+    -0.019898174330592155,
+    0.06643162667751312,
+    -0.06856264919042587,
+    -0.011425012722611427,
+    0.07364512234926224,
+    0.005944268777966499,
+    -0.013804953545331955,
+    -0.013653288595378399,
+    -0.026046235114336014,
+    -0.037271272391080856,
+    0.00712290545925498,
+    0.09921199828386307,
+    0.04424434155225754,
+    -0.09405549615621567,
+    0.0978659838438034,
+    0.03233085945248604,
+    0.02094407193362713,
+    -0.015408146195113659,
+    0.03640183433890343,
+    0.018530936911702156,
+    -0.06844110041856766,
+    0.033794619143009186,
+    0.10226564854383469,
+    -1.5792238627909683e-8,
+    0.010911393910646439,
+    0.0697300136089325,
+    -0.051920026540756226,
+    -0.04789987951517105,
+    0.03248952701687813,
+    -0.06543126702308655,
+    0.1210721880197525,
+    0.11490512639284134,
+    -0.06365145742893219,
+    -0.06276587396860123,
+    -0.08753114193677902,
+    0.020211301743984222,
+    -0.04606270790100098,
+    -0.004450635518878698,
+    -0.03256645426154137,
+    -0.027643021196126938,
+    -0.03197018429636955,
+    0.052704621106386185,
+    -0.052682116627693176,
+    -0.01739496923983097,
+    0.04331262409687042,
+    -0.03809604048728943,
+    0.06709017604589462,
+    0.08872523903846741,
+    -0.049317628145217896,
+    0.03864644467830658,
+    -0.03954129293560982,
+    -0.0578312948346138,
+    0.08658159524202347,
+    -0.015311763621866703,
+    0.04415520653128624,
+    -0.003038280876353383,
+    0.012731795199215412,
+    0.03373819217085838,
+    -0.11829421669244766,
+    0.056298255920410156,
+    -0.06061834841966629,
+    -0.021073227748274803,
+    -0.03267524391412735,
+    -0.041333477944135666,
+    0.007581556215882301,
+    -0.08854414522647858,
+    0.026989052072167397,
+    -0.00075966288568452,
+    -0.053111616522073746,
+    0.03879355266690254,
+    -0.050069134682416916,
+    0.05112794041633606,
+    -0.03442644327878952,
+    -0.015588047914206982,
+    0.10881305485963821,
+    0.016958417370915413,
+    0.029522158205509186,
+    -0.01116885244846344,
+    -0.05348717048764229,
+    -0.06586944311857224,
+    -0.002866117749363184,
+    -0.047988276928663254,
+    0.07764437794685364,
+    0.025147629901766777,
+    0.010854102671146393,
+    -0.03252766653895378,
+    -0.013064688071608543,
+    0.02762014977633953
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "start": 0,
+        "content": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. If a seed-health review is unresolved, keep the affected slips"
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "start": 0,
+        "content": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014."
+      },
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "start": 174,
+        "content": "## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. If a seed-health review is unresolved, keep the affected slips until clearance is recorded.\nV-05. Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability."
+      }
+    ]
+  }
+}

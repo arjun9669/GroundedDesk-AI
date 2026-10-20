@@ -230,8 +230,11 @@ The [first Mac three-pack result](V40_THREE_PACK_MAC_RESULTS.md) records a nativ
 PASS on Vela32, Prism32 and Lumen32, separately 32/32 for both v40 variants. These
 are exposed studies (84 actual MiniLM Hybrid / 12 lexical Comparisons), not a live
 upgrade or fresh confirmation. All earlier first failures remain recorded.
-Current engineering suite: 630 unit tests; strict bundled Keyword suite: 28 cases.
+Current engineering suite: 633 unit tests; strict bundled Keyword suite: 28 cases.
 Use the [v40 preparation instructions](COVERAGE_V40_PREPARATION.md) to understand
 its frozen run; never execute into its completed first evidence directories.
-Next work requires a new pack-specific freeze, starting with Hearth32. Read
-PROJECT_STATUS.md for the missing-input gap and remaining release gates.
+The [subsequent Hearth32 first run](V40_HEARTH32_MAC_RESULTS.md) FAILS 31/0/1 in
+both v40 variants on H04; its first evidence and all older results remain unchanged.
+The [investigation](HEARTH32_V40_FAILURE_REVIEW.md) proposes a separate v41
+protocol/four-pack revalidation, with no implementation or rerun in publication
+work. Read PROJECT_STATUS.md for the hold, missing-input gap and release gates.

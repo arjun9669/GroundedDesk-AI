@@ -15,9 +15,37 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v40: Vela32, Prism32 and Lumen32 each **32/32 PASS** in both variants; L04 repaired; v39 first failure preserved; not adopted |
-| Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: Hearth32 v40 preparation/freeze ready; actual capture not yet run at this checkpoint; no live adoption |
+| Latest isolated candidate | v40 Hearth32 **FAIL: 31/0/1** both variants, H04 false refusal; earlier three-pack passes preserved; not adopted |
+| Release decision | Integration **HOLD** after Hearth32 regression; full regression/fresh confirmation incomplete; all first failures preserved |
+| Current change | Phase 1: preserve/publish Hearth32 failure and investigate H04; proposed separate v41; no candidate edits or model reruns |
+
+## Latest Hearth32 result — FAIL / HOLD
+
+Freeze `ba2ccb1e` preceded questions. First actual-model Hearth32 capture is complete:
+**31 PASS / 0 PARTIAL / 1 FAIL** in both v40 variants and paired v39. H04 incorrectly
+refuses a supported next-collection-day/seed-health-hold request, losing a v33–v38
+PASS. Zero execution errors or question retries. The gate remains **FAIL**.
+Work stopped; the user explicitly approved unchanged failure publication and
+investigation, then approved correcting a separate publication-validation assumption.
+
+[First results](docs/V40_HEARTH32_MAC_RESULTS.md) preserve all 258 original artifacts
+(23,337,052 bytes) under a SHA256 manifest. [Investigation](docs/HEARTH32_V40_FAILURE_REVIEW.md)
+confirms bare-order context and collection-day question/source/hold grammar gaps.
+No candidate edit, model rerun or regrading. The original frozen config hash matches
+run/score metadata; its ledger copy has identical JSON but omits a final newline.
+The approved check correction changes no evidence bytes; both the initial check
+failure and correction remain recorded. All earlier first results remain intact.
+
+Engineering verification: 633 unit tests and strict 28/28 Keyword checks PASS on
+bundled Node 24.19.0 at unchanged baseline; 456-file freeze/input/history and corrected
+publication validation PASS. Prior v40 three-pack 763 and v39 archives 774 artifact
+hashes remain unchanged. These engineering passes do not override the model FAIL.
+
+There are now **128 distinct exposed v40-tested cases / four packs**, separately
+scored: three pack gates PASS, Hearth32 FAIL. **540 verified cases / 15 packs remain
+untested with v40**, plus 103 unavailable originals. Next decision: a separately
+precommitted v41 fix protocol and new four-pack validation, before broader regression.
+Full regression, prospective confirmation and live integration remain blocked.
 
 ## Hearth32 v40 preparation checkpoint
 
@@ -29,7 +57,7 @@ pass. Original v32 BLOCKED/UNGRADED and v33 qualified 31/1/0 remain preserved.
 [Preparation and protocol](docs/V40_HEARTH32_PREPARATION.md). Actual model capture/
 scoring **NOT RUN at this preparation checkpoint**; publish freeze before questions.
 
-## Current v40 result — three partial gates PASS
+## Earlier v40 result — three partial gates PASS
 
 Protocol `894bc74` preceded implementation; freeze `da10734` was published before
 questions. First actual MiniLM capture: **Vela32 32/0/0, Prism32 32/0/0, Lumen32
@@ -44,8 +72,9 @@ scorecards, assistant review, independently recomputed facet cosines and a seal 
 hashes. Engineering checks: **630 unit tests PASS**, strict **28/28 Keyword PASS**,
 clean Chrome startup and **470 frozen files verified**. Live 5.6/r44 unchanged.
 
-Next: prepare/freeze Hearth32, then continue the **572 verified cases / 16 packs
-untested with v40**. The 103 unavailable cases, full regression, prospective
+At that earlier checkpoint: next Hearth32, with **572 verified cases / 16 packs
+untested with v40**. Hearth32 has since failed; see the latest result above. The 103
+unavailable cases, full regression, prospective
 confirmation, integration and product/release gates remain blockers.
 
 ## Authorized v40 work — preparation checkpoint

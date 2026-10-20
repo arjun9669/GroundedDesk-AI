@@ -1,0 +1,35 @@
+{
+  "classification": "Approved publication validation correction; read-only checks on original first evidence",
+  "passed": true,
+  "initial_check_failure": "Incorrectly compared original-file config hash to reserialized ledger JSON copy",
+  "approved_correction": "Check recorded metadata against original frozen config bytes; verify captured copy parsed contents separately",
+  "original_config_sha256": "3f78c0cc08bc6394bfa41027648578f9c9dcd1efda35e42a84decbee56afb969",
+  "captured_copy_sha256": "ebc0a5be5501a4892f1d163af55e1aefc099b4deaf28307b9d111f5b2b7c209d",
+  "original_config_bytes": 37896,
+  "captured_copy_bytes": 37895,
+  "parsed_json_equal": true,
+  "difference": "Final newline omitted by ledger serialization; no input or evidence bytes changed",
+  "original_artifacts": 258,
+  "original_artifact_bytes": 23337052,
+  "first_model_gate": "FAIL; H04 supported false refusal; no regrading",
+  "historical_archives": [
+    {
+      "archive": "v40-three-pack-mac",
+      "artifacts_verified": 763
+    },
+    {
+      "archive": "v39-vela32-mac",
+      "artifacts_verified": 258
+    },
+    {
+      "archive": "v39-prism32-mac",
+      "artifacts_verified": 258
+    },
+    {
+      "archive": "v39-lumen32-mac",
+      "artifacts_verified": 258
+    }
+  ],
+  "model_questions_rerun": 0,
+  "candidate_changes": "NONE"
+}

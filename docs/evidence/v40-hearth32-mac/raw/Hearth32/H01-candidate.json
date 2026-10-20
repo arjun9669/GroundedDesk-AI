@@ -1,0 +1,1304 @@
+{
+  "candidate_identity": "coverage-v40-dispatch-grammar",
+  "id": "H01",
+  "question": "When did Veylan Seed Conservatory first admit visitors to its public gallery?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When did Veylan Seed Conservatory first admit visitors to its public gallery?",
+    "expected_display": "When did Veylan Seed Conservatory first admit visitors to its public gallery?",
+    "rendered_question": "When did Veylan Seed Conservatory first admit visitors to its public gallery?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+    "sources": [
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen did Veylan Seed Conservatory first admit visitors to its public gallery?\n\nSearched all files: 01_Veylan_Seed_Conservatory.txt · 02_Ostren_Instrument_Library.txt · 03_Caldra_Tide_Station.txt · 04_Tessarin_Repair_Cafe.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962.\n\nSOURCE EVIDENCE\n[1]\n01_Veylan_Seed_Conservatory.txt\n\nText line 1 (normalized extraction)\n\nVeylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014. ## Collection operations V-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1:0",
+        "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+        "score": 0.0476,
+        "lexicalScore": 9.78169445790609,
+        "semanticScore": 0.6810512034772466,
+        "matchedTerms": [
+          "veylan",
+          "seed",
+          "conservatory",
+          "first",
+          "visitors",
+          "public",
+          "gallery"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1:0",
+        "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valve",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+        "score": 0.0476,
+        "lexicalScore": 9.78169445790609,
+        "semanticScore": 0.6810512034772466,
+        "matchedTerms": [
+          "veylan",
+          "seed",
+          "conservatory",
+          "first",
+          "visitors",
+          "public",
+          "gallery"
+        ],
+        "start": 0,
+        "end": 172
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.879593750801912,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1:0",
+        "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valve",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+        "score": 0.0476,
+        "lexicalScore": 12.464318770632714,
+        "semanticScore": 0.8341110722867434,
+        "matchedTerms": [
+          "veylan",
+          "seed",
+          "conservatory",
+          "first",
+          "visitors",
+          "public",
+          "gallery"
+        ],
+        "start": 0,
+        "end": 172
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.879593750801912,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Veylan_Seed_Conservatory.txt",
+      "start": 0,
+      "content": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+      "semanticScore": 0.879593750801912,
+      "lexicalScore": 17.64966304905509
+    },
+    {
+      "filename": "01_Veylan_Seed_Conservatory.txt",
+      "start": 508,
+      "content": "Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius.",
+      "semanticScore": 0.5374981795908472,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+      "start": 0,
+      "end": 71,
+      "similarity": 0.879593750801912,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "start": 72,
+      "end": 172,
+      "similarity": 0.18811011928399615,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-01.",
+      "start": 199,
+      "end": 204,
+      "similarity": 0.03538067045619643,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Orders released before 14:10 leave on the same collection day.",
+      "start": 205,
+      "end": 267,
+      "similarity": 0.18665832895535572,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.",
+      "start": 268,
+      "end": 366,
+      "similarity": 0.22867732347085082,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-02.",
+      "start": 367,
+      "end": 372,
+      "similarity": 0.02821850016339718,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Mira checks five germination trays per day.",
+      "start": 373,
+      "end": 416,
+      "similarity": 0.25716848951617677,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Tobin checks three irrigation valves per day.",
+      "start": 417,
+      "end": 462,
+      "similarity": 0.1300646098878979,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Mira labels two storage bins per week.",
+      "start": 463,
+      "end": 501,
+      "similarity": 0.19483994494829077,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-03.",
+      "start": 502,
+      "end": 507,
+      "similarity": 0.037515920508644836,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius.",
+      "start": 508,
+      "end": 600,
+      "similarity": 0.5374981795908472,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Individual winter extremes are not listed.",
+      "start": 601,
+      "end": 643,
+      "similarity": -0.0319274413842155,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-04.",
+      "start": 644,
+      "end": 649,
+      "similarity": 0.06627325715609923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Collection slips are retained for 16 months.",
+      "start": 650,
+      "end": 694,
+      "similarity": 0.10685358752665781,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "If a seed-health review is unresolved, keep the affected slips until clearance is recorded.",
+      "start": 695,
+      "end": 786,
+      "similarity": 0.28650939691689226,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "V-05.",
+      "start": 787,
+      "end": 792,
+      "similarity": 0.00353645018936125,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "Acknowledge collection requests within two collection days.",
+      "start": 793,
+      "end": 852,
+      "similarity": 0.0922771025661906,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+      "value": "This acknowledgement does not guarantee stock availability.",
+      "start": 853,
+      "end": 912,
+      "similarity": 0.05523436289460081,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.28583832191335706,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "Its restoration was completed in 1974.",
+      "start": 74,
+      "end": 112,
+      "similarity": 0.12241870809371541,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "A proposal to close the annex in 2009 was abandoned; the annex stayed open.",
+      "start": 113,
+      "end": 188,
+      "similarity": 0.11932584756774729,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "L-01.",
+      "start": 216,
+      "end": 221,
+      "similarity": 0.03693539126316187,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+      "start": 222,
+      "end": 314,
+      "similarity": 0.08886691373157844,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.0604493156663002,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The highest monthly mean temperature is 25 degrees Celsius, in August.",
+      "start": 377,
+      "end": 447,
+      "similarity": 0.037774036973840346,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "L-02.",
+      "start": 448,
+      "end": 453,
+      "similarity": 0.02349859192466171,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "Signed loan records are retained for 8 years.",
+      "start": 454,
+      "end": 499,
+      "similarity": 0.029548533288923512,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "If an ownership dispute is open, keep the affected records until the dispute is settled.",
+      "start": 500,
+      "end": 588,
+      "similarity": 0.03126860603155314,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "L-03.",
+      "start": 589,
+      "end": 594,
+      "similarity": -0.015006724880489401,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "dd6277f1-e62f-42d6-87fd-d950dc7dd677",
+      "value": "The custody packet contains:",
+      "start": 595,
+      "end": 623,
+      "similarity": 0.08437218016626333,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "At Caldra Tide Station, the gauge tower was rebuilt in 1993.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.040091073269933136,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "The equipment shed was painted in 2016.",
+      "start": 61,
+      "end": 100,
+      "similarity": 0.14913787679913745,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+      "start": 102,
+      "end": 197,
+      "similarity": -0.02550080264451795,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 198,
+      "end": 259,
+      "similarity": 0.0023648530166961628,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Ruan records six water level readings per watch.",
+      "start": 261,
+      "end": 309,
+      "similarity": 0.026522206190697725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Sena records four salinity samples per watch.",
+      "start": 310,
+      "end": 355,
+      "similarity": 0.022890724273412804,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Ruan tags two anchor markers per week.",
+      "start": 356,
+      "end": 394,
+      "similarity": 0.06788787360050136,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.",
+      "start": 396,
+      "end": 493,
+      "similarity": 0.031895126206917444,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "In a salt-spray bay, lubricate it every 42 operating hours.",
+      "start": 494,
+      "end": 553,
+      "similarity": 0.02859721231877243,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "856a6ffa-00e5-4710-a101-7a76d23e90d2",
+      "value": "Inspect the winch every 21 operating hours regardless of bay.",
+      "start": 554,
+      "end": 615,
+      "similarity": 0.09021009171543795,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-01.",
+      "start": 21,
+      "end": 26,
+      "similarity": 0.036845870276582274,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+      "start": 27,
+      "end": 104,
+      "similarity": 0.11706363414689382,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "An acknowledgement is not a promise that the repair will finish within four hours.",
+      "start": 105,
+      "end": 187,
+      "similarity": 0.013922307677824621,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-02.",
+      "start": 188,
+      "end": 193,
+      "similarity": -0.006505513409944155,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "start": 194,
+      "end": 305,
+      "similarity": -0.10451248294794815,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-03.",
+      "start": 306,
+      "end": 311,
+      "similarity": -0.00533676204994396,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.",
+      "start": 312,
+      "end": 411,
+      "similarity": 0.08081777587302262,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-04.",
+      "start": 412,
+      "end": 417,
+      "similarity": 0.01620389757447688,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions.",
+      "start": 418,
+      "end": 515,
+      "similarity": 0.03748803514832858,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "In a dusty workroom, lubricate it every 52 operating hours.",
+      "start": 516,
+      "end": 575,
+      "similarity": -0.009444067246529372,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Inspect the drill every 26 operating hours in either room.",
+      "start": 576,
+      "end": 634,
+      "similarity": 0.11323199228021173,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "R-05.",
+      "start": 635,
+      "end": 640,
+      "similarity": -0.0037655358071064285,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "92ae1ade-6cc4-4d22-a930-b8e251e3a61c",
+      "value": "Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention.",
+      "start": 641,
+      "end": 755,
+      "similarity": -0.03308523224255037,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1:0",
+          "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valve",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "score": 0.0476,
+          "lexicalScore": 9.78169445790609,
+          "semanticScore": 0.6810512034772466,
+          "matchedTerms": [
+            "veylan",
+            "seed",
+            "conservatory",
+            "first",
+            "visitors",
+            "public",
+            "gallery"
+          ],
+          "start": 0,
+          "end": 172
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.879593750801912,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1:0",
+          "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valve",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "score": 0.0476,
+          "lexicalScore": 12.464318770632714,
+          "semanticScore": 0.8341110722867434,
+          "matchedTerms": [
+            "veylan",
+            "seed",
+            "conservatory",
+            "first",
+            "visitors",
+            "public",
+            "gallery"
+          ],
+          "start": 0,
+          "end": 172
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.879593750801912,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1:0",
+          "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+          "score": 0.0476,
+          "lexicalScore": 9.78169445790609,
+          "semanticScore": 0.6810512034772466,
+          "matchedTerms": [
+            "veylan",
+            "seed",
+            "conservatory",
+            "first",
+            "visitors",
+            "public",
+            "gallery"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.879593750801912,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1:0",
+          "documentId": "a7d1b706-2fe1-4e50-83c0-2ea045cfd8b1",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+          "score": 0.0476,
+          "lexicalScore": 12.464318770632714,
+          "semanticScore": 0.8341110722867434,
+          "matchedTerms": [
+            "veylan",
+            "seed",
+            "conservatory",
+            "first",
+            "visitors",
+            "public",
+            "gallery"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.879593750801912,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Veylan_Seed_Conservatory.txt",
+          "quote": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.04265766218304634,
+    -0.012742001563310623,
+    -0.038406796753406525,
+    0.030710168182849884,
+    0.026835454627871513,
+    0.02195272035896778,
+    -0.0259634330868721,
+    -0.046990592032670975,
+    0.006180254276841879,
+    -0.03304555267095566,
+    0.02594580128788948,
+    -0.01122343260794878,
+    -0.029579423367977142,
+    0.07321451604366302,
+    -0.021248145028948784,
+    -0.014278320595622063,
+    0.046044621616601944,
+    -0.015939317643642426,
+    0.0714678093791008,
+    0.007048195693641901,
+    -0.0999603271484375,
+    -0.018089162185788155,
+    0.06759993731975555,
+    0.02924133464694023,
+    0.08771319687366486,
+    -0.07154427468776703,
+    -0.08308841288089752,
+    0.04331690073013306,
+    0.051371317356824875,
+    0.018725572153925896,
+    0.06229438632726669,
+    0.021994704380631447,
+    0.0536746121942997,
+    0.01084305252879858,
+    0.08272331953048706,
+    0.07890777289867401,
+    0.02013791725039482,
+    -0.08856081962585449,
+    -0.0692153051495552,
+    0.03890551999211311,
+    0.02825983241200447,
+    -0.010777761228382587,
+    0.029904624447226524,
+    0.013731090351939201,
+    -0.04855175316333771,
+    -0.024817751720547676,
+    0.0700373500585556,
+    0.016619926318526268,
+    0.04826751723885536,
+    0.027649078518152237,
+    -0.047239743173122406,
+    -0.026729635894298553,
+    -0.004456682130694389,
+    -0.11793161183595657,
+    -0.03031475469470024,
+    0.05564034730195999,
+    0.007357923313975334,
+    0.01564667746424675,
+    -0.009510952979326248,
+    0.05926675722002983,
+    0.08852764964103699,
+    -0.04086277633905411,
+    -0.08608178049325943,
+    -0.009044785052537918,
+    -0.026686975732445717,
+    0.03700781241059303,
+    -0.033468686044216156,
+    0.052712295204401016,
+    0.20072896778583527,
+    -0.09087894856929779,
+    0.12248438596725464,
+    -0.04574010521173477,
+    0.005150963552296162,
+    -0.04448869824409485,
+    -0.06090913712978363,
+    0.002533483086153865,
+    0.012448581866919994,
+    0.014984918758273125,
+    -0.030979633331298828,
+    -0.09025602787733078,
+    0.03356746956706047,
+    -0.04080541059374809,
+    0.01713680662214756,
+    0.007594934664666653,
+    -0.07344282418489456,
+    0.00972806103527546,
+    -0.042256105691194534,
+    0.017816822975873947,
+    0.008508546277880669,
+    0.002877168357372284,
+    0.06040618568658829,
+    0.0004808729572687298,
+    -0.1206647977232933,
+    0.01501383725553751,
+    0.02069059945642948,
+    -0.003665377851575613,
+    -0.03132816031575203,
+    -0.08536957204341888,
+    0.030068911612033844,
+    0.057609036564826965,
+    -0.03743487223982811,
+    0.03378220647573471,
+    0.0520574226975441,
+    0.02850446291267872,
+    -0.012380949221551418,
+    -0.0496462881565094,
+    -0.016367804259061813,
+    0.020376764237880707,
+    -0.0655602365732193,
+    0.030877232551574707,
+    -0.01246780063956976,
+    0.02609395608305931,
+    0.1238195076584816,
+    0.06423120945692062,
+    -0.04545524716377258,
+    -0.021331042051315308,
+    0.020605674013495445,
+    -0.04822126403450966,
+    0.08515661954879761,
+    -0.024524396285414696,
+    0.043412867933511734,
+    0.030781788751482964,
+    0.06297090649604797,
+    -0.01804930344223976,
+    -0.026251021772623062,
+    -0.06269131600856781,
+    -0.07730389386415482,
+    -3.1036669180257015e-33,
+    0.02831125073134899,
+    -0.030552750453352928,
+    0.04507779702544212,
+    0.08654674887657166,
+    0.06643828004598618,
+    0.03351982682943344,
+    0.00928033608943224,
+    0.0006490759551525116,
+    -0.05942203104496002,
+    -0.06314902007579803,
+    0.09509708732366562,
+    -0.11099917441606522,
+    0.002556595718488097,
+    -0.031629420816898346,
+    -0.030228037387132645,
+    0.023177210241556168,
+    0.011469157412648201,
+    0.08626633137464523,
+    0.031732767820358276,
+    -0.010843166150152683,
+    -0.04677346721291542,
+    -0.003180277533829212,
+    -0.05447624623775482,
+    0.010520867072045803,
+    -0.029580462723970413,
+    -0.031604234129190445,
+    0.036532025784254074,
+    0.03303324803709984,
+    -0.00038073331234045327,
+    0.019004713743925095,
+    0.046044815331697464,
+    -0.034076642245054245,
+    0.025504400953650475,
+    -0.047138605266809464,
+    0.06383094191551208,
+    0.0044296542182564735,
+    -0.05044672638177872,
+    -0.06520645320415497,
+    0.06601669639348984,
+    -0.00848508533090353,
+    0.03287489712238312,
+    0.05954095721244812,
+    0.04085604101419449,
+    -0.0035877807531505823,
+    -0.005142305977642536,
+    0.1018705740571022,
+    0.022712666541337967,
+    0.02673150971531868,
+    -0.0037974303122609854,
+    0.022300802171230316,
+    0.061472028493881226,
+    0.012669318355619907,
+    -0.062398362904787064,
+    0.02081964910030365,
+    -0.0387069508433342,
+    -0.01581764407455921,
+    0.0497867651283741,
+    0.019318338483572006,
+    -0.006919478997588158,
+    -0.0800904855132103,
+    0.016935227438807487,
+    0.11163229495286942,
+    -0.033116474747657776,
+    -0.021453671157360077,
+    0.04311903566122055,
+    -0.0570756234228611,
+    -0.05616924166679382,
+    -0.03436491638422012,
+    0.033608876168727875,
+    -0.027487726882100105,
+    0.010293722152709961,
+    0.07727412134408951,
+    -0.07374340295791626,
+    -0.13045059144496918,
+    0.03989699110388756,
+    -0.03412160649895668,
+    -0.05440276488661766,
+    0.08477629721164703,
+    0.006389787420630455,
+    0.08820248395204544,
+    -0.0009729528683237731,
+    -0.011154990643262863,
+    -0.018957605585455894,
+    0.017175517976284027,
+    -0.06798854470252991,
+    0.04805712774395943,
+    0.02274688333272934,
+    0.08875197172164917,
+    0.003908450715243816,
+    -0.04569495841860771,
+    0.014485458843410015,
+    0.02099589630961418,
+    0.008120935410261154,
+    0.0051612756215035915,
+    -0.05200529471039772,
+    2.100770035392666e-33,
+    -0.04063471034169197,
+    -0.03392265737056732,
+    0.03389635309576988,
+    0.03841839358210564,
+    0.0238842461258173,
+    0.01885286346077919,
+    -0.09256255626678467,
+    0.04353834688663483,
+    0.027521762996912003,
+    -0.0037274423521012068,
+    0.03567115217447281,
+    0.05805191397666931,
+    0.06963280588388443,
+    -0.06098569929599762,
+    -0.03279239684343338,
+    0.04644942656159401,
+    0.018728021532297134,
+    0.006322115194052458,
+    -0.005932193715125322,
+    -0.011581366881728172,
+    -0.08121977001428604,
+    0.005835733842104673,
+    -0.044818684458732605,
+    0.009752060286700726,
+    -0.03506267070770264,
+    -0.0071106827817857265,
+    0.12109672278165817,
+    -0.013082792051136494,
+    -0.10623199492692947,
+    -0.04666152223944664,
+    0.04247410595417023,
+    -0.0750306025147438,
+    -0.12862519919872284,
+    0.060513246804475784,
+    0.030864546075463295,
+    0.0066387546248734,
+    0.015418616123497486,
+    -0.04518618807196617,
+    -0.04645620286464691,
+    0.04022161290049553,
+    -0.024716921150684357,
+    0.027936195954680443,
+    -0.057335447520017624,
+    0.053622372448444366,
+    -0.029180089011788368,
+    -0.017079394310712814,
+    0.009624836966395378,
+    -0.0017571237403899431,
+    0.07007517665624619,
+    -0.041090402752161026,
+    -0.05454093590378761,
+    0.01710066758096218,
+    0.026051897555589676,
+    -0.09136010706424713,
+    0.03866212069988251,
+    -0.0266724806278944,
+    0.028230173513293266,
+    0.09591682255268097,
+    0.03004911169409752,
+    0.04454382508993149,
+    -0.011519525200128555,
+    0.001954818842932582,
+    -0.06698265671730042,
+    -0.03813612088561058,
+    -0.08033367246389389,
+    0.014012199826538563,
+    -0.054494068026542664,
+    0.07974009215831757,
+    -0.055120062083005905,
+    -0.05081120878458023,
+    0.10943558812141418,
+    0.08843741565942764,
+    0.05154188349843025,
+    0.05580295994877815,
+    -0.08623149245977402,
+    0.01242374163120985,
+    0.12234775722026825,
+    -0.023246949538588524,
+    -0.0004211346968077123,
+    -0.0299396775662899,
+    -0.04120924696326256,
+    -0.01737413927912712,
+    -0.03588099032640457,
+    0.00875273160636425,
+    0.03948987275362015,
+    -0.057637833058834076,
+    0.0908452570438385,
+    -0.03626507893204689,
+    0.00027745074476115406,
+    -0.009156505577266216,
+    0.01946675032377243,
+    -0.012534589506685734,
+    -0.01586826890707016,
+    -0.03262796625494957,
+    0.14549055695533752,
+    -1.9040976795281495e-8,
+    -0.03543376550078392,
+    0.007908150553703308,
+    -0.030555274337530136,
+    -0.05380783975124359,
+    0.04627553001046181,
+    -0.09198499470949173,
+    0.0780143067240715,
+    0.12441697716712952,
+    -0.05564665049314499,
+    0.015708377584815025,
+    -0.04055563732981682,
+    0.012064043432474136,
+    -0.06888819485902786,
+    0.014027309603989124,
+    0.01005016639828682,
+    -0.04107838496565819,
+    0.017458748072385788,
+    -0.007285277359187603,
+    -0.057909414172172546,
+    0.03606479614973068,
+    0.03254501521587372,
+    -0.03605133667588234,
+    0.0658765658736229,
+    -0.030137429013848305,
+    -0.08320486545562744,
+    -0.004388695117086172,
+    0.003985669929534197,
+    -0.0998130738735199,
+    0.06458339095115662,
+    -0.024795321747660637,
+    0.025304824113845825,
+    -0.007412840612232685,
+    0.0000760644834372215,
+    0.04881220683455467,
+    -0.07576537877321243,
+    -0.004956491757184267,
+    -0.0908399149775505,
+    -0.019097907468676567,
+    -0.023548942059278488,
+    0.006407300941646099,
+    -0.0007937417249195278,
+    -0.11769821494817734,
+    0.03405798599123955,
+    0.03628742694854736,
+    -0.11786321550607681,
+    0.062369730323553085,
+    0.0275130495429039,
+    0.04023817554116249,
+    -0.02069948986172676,
+    0.015492585487663746,
+    -0.007058791350573301,
+    -0.0029420959763228893,
+    0.02487933076918125,
+    -0.04063529521226883,
+    -0.0035434504970908165,
+    -0.04876522719860077,
+    -0.006662991363555193,
+    0.006132233422249556,
+    0.07029842585325241,
+    0.08807791024446487,
+    -0.022376064211130142,
+    0.027876470237970352,
+    -0.03260965645313263,
+    -0.01694434881210327
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "start": 0,
+        "content": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.\n\n## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. If a seed-health review is unresolved, keep the affected slips"
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "start": 0,
+        "content": "Veylan Seed Conservatory opened its public gallery to visitors in 1962. The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014."
+      },
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "start": 174,
+        "content": "## Collection operations\nV-01. Orders released before 14:10 leave on the same collection day. At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.\nV-02. Mira checks five germination trays per day. Tobin checks three irrigation valves per day. Mira labels two storage bins per week.\nV-03. Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius. Individual winter extremes are not listed.\nV-04. Collection slips are retained for 16 months. If a seed-health review is unresolved, keep the affected slips until clearance is recorded.\nV-05. Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability."
+      }
+    ]
+  }
+}
