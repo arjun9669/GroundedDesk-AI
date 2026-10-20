@@ -311,3 +311,16 @@ three section public-data FAIL rows remain unchanged. No prior PASS loss or retr
 771 units/28 Keyword and 827-file freeze PASS. No verified available family remains
 untested in this scope, but 103 originals/combined config and the phase 1 acceptance
 decision remain unresolved. Live 5.6/r44 and fresh-confirmation/adoption holds remain.
+
+## Revised phase 1 acceptance and phase 2 input preparation
+
+[Acceptance decision](PHASE1_REVISED_ACCEPTANCE.md) records explicit approval of
+the668-case phase1 scope and successful accepted-evidence CI.103 original cases
+remain excluded/untested; full771 gate NOT RUN and known public failures retained.
+Current phase:2, preparation. [Fresh64](../eval/phase2-fresh64/PROTOCOL.md) freezes
+8 new fictional TXT sources and64 cases (40 supported Hybrid,16 unsupported Hybrid,
+8 lexical Comparisons), with strict64/64-per-variant prospective gates. No model/
+candidate/planner probe or fresh score exists; do not consume the set during unit
+checks. Input validation and771 unit/28 Keyword checks PASS. Prepare a separate
+immutable execution freeze before questions. Existing v43/live5.6/r44 and all
+historical evidence stay unchanged; integration/product/release gates remain open.

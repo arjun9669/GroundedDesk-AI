@@ -1,17 +1,17 @@
 # GroundedDesk 6.0 working roadmap
 
 Accepted as a working sequence in the October 20, 2026 conversation. Current
-phase: **1 — broader regression**. Detailed product promises and quantitative
+phase: **2 — fresh confirmation preparation**. Detailed product promises and quantitative
 release targets are not yet frozen; this roadmap does not declare 6.0 ready,
 promise production/security certification or authorize live integration.
 
-| Phase | Work | Exit gate |
-| --- | --- | --- |
-| 1. Broader regression | Validate the isolated candidate on verified historical packs; start with Prism32, then Lumen32/Hearth32; explicitly resolve the missing-input gap | Agreed native regression and preservation gates pass; missing cases are recovered or an explicit revised acceptance protocol is approved |
-| 2. Fresh confirmation | Agree user-facing scope and freeze new unseen documents/questions, scoring and target environments before answers | Prospective quality gates pass without post-answer tuning, changed criteria or replacement sets |
-| 3. Integration | Connect a validated candidate to the application under separate authorization; preserve Ask/Compare/Research and existing evidence/storage flows | Integration checks, evidence navigation and exports pass without loss of existing behavior |
-| 4. Product qualification | Validate supported browsers/devices, PDF workflows, memory and end-to-end performance; qualify optional Qwen separately | Defined compatibility/performance targets pass; limitations and privacy boundaries are documented |
-| 5. Release preparation | Final review, release documentation/changelog, CI, deployment and hosted-byte verification | Approve the release and verify that the intended successful commit is deployed |
+| Phase | Status | Work | Exit gate |
+| --- | --- | --- | --- |
+| 1. Broader regression | COMPLETE under revised668-case scope | All19 available native gates pass;103 originals remain untested | Explicit [revised acceptance](PHASE1_REVISED_ACCEPTANCE.md) approved2026-10-21; accepted evidence CI passed |
+| 2. Fresh confirmation | PREPARATION —64 new cases/input rubric frozen; no model run | Agree user-facing scope and freeze new unseen documents/questions, scoring and target environments before answers | Prospective quality gates pass without post-answer tuning, changed criteria or replacement sets |
+| 3. Integration | NOT STARTED | Connect a validated candidate to the application under separate authorization; preserve Ask/Compare/Research and existing evidence/storage flows | Integration checks, evidence navigation and exports pass without loss of existing behavior |
+| 4. Product qualification | NOT STARTED | Validate supported browsers/devices, PDF workflows, memory and end-to-end performance; qualify optional Qwen separately | Defined compatibility/performance targets pass; limitations and privacy boundaries are documented |
+| 5. Release preparation | NOT STARTED | Final review, release documentation/changelog, CI, deployment and hosted-byte verification | Approve the release and verify that the intended successful commit is deployed |
 
 Vela32's 32/32 v39 partial PASS is evidence within phase 1, not completion of that
 phase. Inputs for 668 cases are verified; 103 original cases and the old combined
@@ -24,11 +24,20 @@ while five fixed-variant/three section-variant known public FAIL rows stay FAIL.
 No verified available family remains untested in this scope; no candidate/live
 integration change occurred. All first results and historical evidence remain.
 
-Phase 1 now awaits recovery of 103 original cases/the private combined configuration
-or an explicitly approved revised acceptance protocol. Known public-data answer
-failures remain quality limitations; preservation success is not general accuracy.
-No full 771-case gate/fresh-confirmation claim or phase 2/adoption authorization
-follows from the available-input gate. Resolve that decision before closing phase 1.
+On2026-10-21 the user explicitly approved accepting phase1 for these668 verified
+cases. [Decision PH1-668-20261021](PHASE1_REVISED_ACCEPTANCE.md) records closure
+under that revised scope.103 originals/the private combined configuration remain
+unavailable and untested; full771-case gate is NOT RUN. Known public answer failures
+remain quality limitations. No historical scores/evidence were rewritten.
+
+Phase2 now has a [Fresh64 protocol and input freeze](../eval/phase2-fresh64/PROTOCOL.md):
+8 new fictional TXT documents,56 Hybrid questions (40 supported/16 unsupported)
+and8 lexical Comparisons. The controlled prospective target is64/64 in each
+unchanged v43 variant; it is not a general release-accuracy target. Input authoring
+and engineering validation are complete; no candidate/model answers were requested.
+Next freeze/publish execution code/modules/environment, then capture once. This
+is author-created targeted confirmation, not blinded external validation. No
+phase3 integration/adoption is authorized by the acceptance revision.
 Any required failure stops work for user input before retries, implementation,
 committing or publication. Preserve original inputs, rubrics, frozen candidates
 and first evidence.

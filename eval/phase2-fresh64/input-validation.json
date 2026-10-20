@@ -1,0 +1,24 @@
+{
+  "classification": "Static input authoring validation only; no candidate/planner/embedding/answer/scorer invocation",
+  "passed": true,
+  "documents": 8,
+  "cases": 64,
+  "categories": {
+    "supported_hybrid": 40,
+    "unsupported_hybrid": 16,
+    "lexical_comparison": 8
+  },
+  "hybrid": 56,
+  "lexical_comparison": 8,
+  "historical_question_strings_checked": 738,
+  "exact_historical_question_reuse": 0,
+  "checks": [
+    "Unique IDs/order/questions",
+    "All literal contexts and group alternatives present in original source bytes",
+    "Comparison pairs exact and distinct",
+    "Unsupported controls have no expected-source credit",
+    "No duplicate exact question string from old739-case/Vela32 cards"
+  ],
+  "fresh_candidate_status": "NOT RUN",
+  "execution_readiness": "NOT PREPARED; separate execution freeze required"
+}

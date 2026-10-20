@@ -16,8 +16,38 @@ original reports; link them here instead of rewriting or rescoring them.
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v43: all 19 available native regression gates PASS across 668 cases; known public FAIL rows retained; not adopted |
-| Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: all 668 verified cases captured/scored; 103 missing originals/acceptance decision still blocks closure |
+| Release decision | Integration **HOLD**: fresh confirmation not run; known quality/device/release gates remain open |
+| Current change | Phase 1 COMPLETE under approved668-case scope; phase 2 PREPARATION:64 new cases/input rubric frozen; model run pending |
+
+## Current stage — phase 2 preparation
+
+The user explicitly approved revising phase1 acceptance to the668 verified cases
+and proceeding to fresh-confirmation preparation. [Decision PH1-668-20261021](docs/PHASE1_REVISED_ACCEPTANCE.md)
+records the scope, evidence and retained limitations. CI for accepted evidence
+`e2bbc626` completed successfully. **Phase1 COMPLETE under the revised scope**;
+full771-case gate remains NOT RUN.103 originals/four packs and the old private
+combined config stay unavailable/untested, excluded rather than marked passing.
+The five known public-data case limitations and all historical failures remain.
+
+**Phase2 PREPARATION**: [Fresh64 protocol](eval/phase2-fresh64/PROTOCOL.md) and
+[input freeze](eval/phase2-fresh64/input-freeze-manifest.json) preserve8 newly
+authored fictional TXT documents/64 questions:40 supported Hybrid,16 unsupported
+Hybrid,8 lexical Comparisons. All input contexts/groups/pairs validate; questions
+are unique and none exactly repeats an archived739/Vela32 question. Pure input
+resource check:11 fixed/11 section passages, sentence upper bound151. No candidate,
+planner, embedder, model or scorer was invoked on this pack; no fresh quality
+result exists. This is author-created targeted confirmation, not blinded external
+validation or a representative accuracy benchmark.
+
+The prospective gate is64/64 PASS separately in both unchanged v43 variants,
+including all unsupported refusals and comparisons, with no citation/provenance
+errors/retries. A failed first run stays failed; a later replay is regression.
+Next prepare/publish an immutable execution freeze with runner/scorer, all module
+and actual environment/model identities, then perform the first once-only capture.
+The input freeze alone is not execution-ready. **771 unit tests /28 strict Keyword
+checks PASS**; these are separate from the still-unrun64-case study. Live5.6/r44
+and candidate code stay unchanged; phase3 integration is not authorized by this
+scope revision, and later product qualification/release gates remain open.
 
 ## Latest combined available-input result — 19 native gates PASS
 
@@ -38,12 +68,12 @@ remain intact. Native grades and separate review are unchanged. 771 unit/28 Keyw
 827-file freeze/input/history/adapter checks PASS; first 767/3 engineering failure
 and approved correction remain recorded below. Live 5.6/r44 is unchanged.
 
-No verified available family remains untested with v43. **Phase 1 still awaits the
-103-original missing-input/acceptance decision**; the old combined private config
-also remains unavailable. The five known public-data case limitations stay visible.
-Next recover missing originals or explicitly freeze a revised acceptance protocol,
-then proceed to prospective confirmation only after phase 1's exit is agreed.
-No full 771-case gate, fresh confirmation, production adoption or 6.0 release claim.
+No verified available family remains untested with v43. The subsequent explicitly
+approved [revised acceptance](docs/PHASE1_REVISED_ACCEPTANCE.md) closes phase1 for
+this668-case scope;103 missing originals/the private combined config stay untested.
+The original combined study/report remains unchanged as its dated checkpoint.
+The known public failures stay visible. No full771-case gate, fresh-confirmation
+result, production adoption or6.0 release claim follows from that revision.
 
 ## All-available combined run — preparation
 

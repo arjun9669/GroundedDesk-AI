@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-21 — Approve revised phase1 scope and prepare Fresh64 inputs
+
+- Record explicit user approval accepting phase1 over668 verified cases/19 native gates, with successful CI for `e2bbc626`.103 originals and private combined config stay untested/excluded; full771 gate NOT RUN, five known public-data case limitations and all first evidence preserved.
+- Move planning to phase2 preparation. Author/freeze8 fictional TXT sources and64 new cases (56 Hybrid/8 lexical Comparisons), literal gold contexts/groups, strict64/64-per-variant rubric and prospective protocol. No candidate/planner/model/scorer invocation on this pack; no fresh-quality result or external/blinded accuracy claim.
+- Static input/pair/group/novel-question/resource validation PASS;771 unit/28 Keyword checks PASS. Separate execution freeze required before first capture; candidate/live r44 unchanged. [Decision](docs/PHASE1_REVISED_ACCEPTANCE.md), [protocol](eval/phase2-fresh64/PROTOCOL.md).
+
 ## 2026-10-21 — First combined 668-case v43 available-input regression
 
 - Freeze `560e3a8b` preceded one capture of all 19 verified families: 628 actual MiniLM Hybrid/40 lexical Comparisons. All native available-input regression gates PASS; five fixed/three section public FAIL rows stay FAIL. No prior PASS loss or model retries; v43/live r44 unchanged.
