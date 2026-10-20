@@ -17,7 +17,18 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v39 Lumen32 gate **FAIL: 31 PASS / 1 FAIL** both variants (L04 false refusal); earlier Vela32/Prism32 passes preserved; not adopted |
 | Release decision | Integration **HOLD** after Lumen32 regression; full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: publish preserved Lumen32 failure and investigate a separate v40 fix; no candidate or live-code changes |
+| Current change | Phase 1: authorized isolated v40 grammar fix and fresh Vela32/Prism32/Lumen32 regression; protocol precedes implementation; no live adoption |
+
+## Authorized v40 work — protocol checkpoint
+
+User approved the [v40 protocol](eval/answer-completeness-v40/PROTOCOL.md) on
+October 20: bounded grammar changes followed by engineering checks and a new
+96-case exposed regression with fresh actual MiniLM and paired v39 facet vectors.
+This checkpoint precedes implementation and model questions. V39 Lumen32 remains
+FAIL/HOLD; all historical evidence and production 5.6/r44 remain unchanged.
+Protocol checkpoint verification: bundled Node 24.19.0 passed `node --test
+tests/*.test.mjs` (602/602) and `node eval/run.mjs --strict` (28/28);
+`git diff --check` and review passed. No model questions were run.
 
 ## Working roadmap for 6.0
 
