@@ -19,6 +19,20 @@ original reports; link them here instead of rewriting or rescoring them.
 | Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
 | Current change | Phase 1: v43 deferred clock forms implemented; 284-case nine-pack freeze prepared; model gates pending; no live integration |
 
+## Approved raw-log whitespace exception
+
+The user approved preserving the first failed engineering log verbatim and a
+whitespace exception limited to trailing blanks in that exact file. The final
+check on preparation `89c23ef9` had flagged log lines780/2066; the command sequence
+incorrectly continued to commit/push before that output was handled. This is
+recorded as a workflow error, not a clean check. No model questions had run.
+The exception changes only Git's whitespace policy for this archived log; original
+bytes, native rubrics, candidate code and the609-file freeze remain unchanged.
+Reverification PASS:764/764 units, strict28/28 Keyword,609-file freeze/native
+histories and all five preparation artifact hashes. Both current diff and the
+preparation commit whitespace check pass under the approved exact-file policy.
+Publish this correction/confirm remote receipt before once-only model capture.
+
 ## V43 engineering and nine-pack freeze
 
 Protocol `c88c6fbc` preceded implementation. Isolated v43 accounts for RQ02,C09,
