@@ -19,6 +19,18 @@ original reports; link them here instead of rewriting or rescoring them.
 | Release decision | Integration **HOLD**: fresh confirmation not run; known quality/device/release gates remain open |
 | Current change | Phase 1 COMPLETE under approved668-case scope; phase 2 PREPARATION:64 new cases/input rubric frozen; model run pending |
 
+## README phase 1 handoff update — 2026-10-21
+
+README now summarizes the approved 668-case phase 1 closure, all 19 native family
+results, five retained public-data limitations, 103 excluded/untested originals,
+engineering correction history and evidence links. It distinguishes phase 2 input
+preparation from an unrun fresh model study and retains earlier README experiment
+summaries as historical checkpoints. Documentation only; no runtime, candidate,
+frozen inputs or historical evidence changed. Verification: 771/771 unit tests PASS;
+62 README local links resolve; all 19 result rows match the original report and
+total 668 cases. Credential-pattern review and `git diff --check` PASS. No model
+study or browser rerun was needed for this documentation-only update.
+
 ## Current stage — phase 2 preparation
 
 The user explicitly approved revising phase1 acceptance to the668 verified cases

@@ -13,16 +13,137 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest isolated candidate | **v39 Lumen32 FAIL: 31 PASS / 1 FAIL in both variants**, L04 supported false refusal; Vela32/Prism32 first passes preserved; not adopted |
-| Latest recorded checks | **602 unit tests**, strict bundled checks; [Lumen32 first failure](./docs/V39_LUMEN32_MAC_RESULTS.md) is separate from engineering passes and prior [Vela32](./docs/V39_VELA32_MAC_RESULTS.md)/[Prism32](./docs/V39_PRISM32_MAC_RESULTS.md) model results |
+| Latest isolated candidate | **v43**; all 19 available-input native regression gates PASS across 668 cases; known failed answers retained; not adopted |
+| Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
+| Current phase | **2 — fresh confirmation preparation**; 64 new cases and rubric frozen; model study **NOT RUN** |
+| Latest recorded engineering checks | **771 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
-| Release maturity | Educational prototype; **6.0 readiness has not been established** |
+| Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
 
-The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. Current phase:
-**1 — broader regression**, held after the
-[first Lumen32 v39 failure](./docs/V39_LUMEN32_MAC_RESULTS.md). Next is a
-[separate fix/revalidation decision](./docs/LUMEN32_V39_FAILURE_REVIEW.md). Detailed
-release targets remain to be agreed; the roadmap does not authorize live adoption.
+The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. The following
+phase 1 summary reflects the approved decision on **21 October 2026**; earlier
+reports remain dated checkpoints and preserve their original failures and holds.
+
+## Phase 1 — broader regression: completed under revised scope
+
+The user approved [decision PH1-668-20261021](./docs/PHASE1_REVISED_ACCEPTANCE.md)
+accepting the **668 cases with verified original inputs across 19 families**.
+The [first combined v43 study](./docs/V43_ALL_AVAILABLE_MAC_RESULTS.md) captured
+all of them once: **628 actual local MiniLM Hybrid questions and 40 separate
+lexical Comparisons**, with Qwen off. Both fixed and section variants used the
+unchanged isolated v43 candidate, with paired v42 for preservation checks.
+The Mac run used Chrome 155.0.8059.85, Node 24.19.0 on Apple silicon and MiniLM
+q8 WASM. This scope does not qualify Windows, Safari, optional Qwen or PDF workflows.
+
+**All 19 native regression gates PASS; this does not mean 668/668 correct answers.**
+No prior PASS was lost in either variant, and there were no new unsupported false
+acceptances, supported false refusals, execution errors or question retries.
+The historical public-data failures below remain failures. This is exposed
+regression evidence, not fresh confirmation or independent accuracy.
+
+### Results by family
+
+Each variant cell is **PASS / PARTIAL / FAIL**. All families have zero ERROR and
+BLOCKED results. Native gates preserve each family's original criteria; grades
+from different corpora and rubrics are not pooled into one accuracy percentage.
+
+| Family | Cases | v43 fixed | v43 section | Native regression gate |
+| --- | ---: | --- | --- | --- |
+| Cobalt16 | 16 | 16 / 0 / 0 | 16 / 0 / 0 | PASS |
+| RetrievalQuality28 | 28 | 28 / 0 / 0 | 28 / 0 / 0 | PASS |
+| ExternalSQuAD24 | 24 | 22 / 0 / 2 | 23 / 0 / 1 | PASS |
+| FreshMixed32 | 32 | 32 / 0 / 0 | 32 / 0 / 0 | PASS |
+| FreshConfirmation32 | 32 | 29 / 0 / 3 | 30 / 0 / 2 | PASS |
+| V9Exposed32 | 32 | 32 / 0 / 0 | 32 / 0 / 0 | PASS |
+| Actor40 | 40 | 40 / 0 / 0 | 40 / 0 / 0 | PASS |
+| Scope48 | 48 | 48 / 0 / 0 | 48 / 0 / 0 | PASS |
+| Confirmation48 | 48 | 48 / 0 / 0 | 48 / 0 / 0 | PASS |
+| Precision48 | 48 | 48 / 0 / 0 | 48 / 0 / 0 | PASS |
+| Binding64 | 64 | 64 / 0 / 0 | 64 / 0 / 0 | PASS |
+| Cedar32 | 32 | 32 / 0 / 0 | 32 / 0 / 0 | PASS |
+| Bracken32 | 32 | 32 / 0 / 0 | 32 / 0 / 0 | PASS |
+| Flint32 | 32 | 32 / 0 / 0 | 32 / 0 / 0 | PASS |
+| Morrow32 | 32 | 32 / 0 / 0 | 32 / 0 / 0 | PASS |
+| Hearth32 | 32 | 32 / 0 / 0 | 32 / 0 / 0 | PASS |
+| Lumen32 | 32 | 32 / 0 / 0 | 32 / 0 / 0 | PASS |
+| Prism32 | 32 | 32 / 0 / 0 | 32 / 0 / 0 | PASS |
+| Vela32 | 32 | 32 / 0 / 0 | 32 / 0 / 0 | PASS |
+
+### Known failed answers remain open
+
+The original public-sample gates allow these known failures outside their
+constructed-control subset gates. Passing preservation gates does not resolve them.
+
+| Case | Fixed | Section | Remaining limitation |
+| --- | --- | --- | --- |
+| ExternalSQuAD24 E08 | FAIL | FAIL | Quotation omits the requested window location |
+| ExternalSQuAD24 E24 | FAIL | PASS | Fixed quotes compounds instead of the requested energy content |
+| FreshConfirmation32 F07 | FAIL | PASS | Fixed selects a different paragraph and misses the keyed characterization |
+| FreshConfirmation32 F09 | FAIL | FAIL | Quotation omits the requested actor |
+| FreshConfirmation32 F10 | FAIL | FAIL | Supported publication date receives an uncited refusal |
+
+### Excluded inputs remain untested
+
+| Missing original pack | Cases | Status |
+| --- | ---: | --- |
+| Lantern32 | 32 | Original complete bundle unavailable; untested |
+| Aster32 | 32 | Original complete bundle unavailable; untested |
+| Meridian24 | 24 | Original external input bundle unavailable; untested |
+| Atlas15 | 15 | Original PDFs/run identities unavailable; untested |
+| **Total** | **103** | **Excluded from revised acceptance; not marked PASS** |
+
+The original private combined configuration is also unavailable. **The full
+771-case historical gate is NOT RUN.** The new available-input configuration is
+not a recovery of that original configuration. Missing-input recovery remains
+open; archived answers, quotations or synthetic substitutes cannot replace the
+original source bytes. Phase 1 closure applies only to the approved 668-case scope.
+
+### Verification and preserved evidence
+
+The study verified 75 original source texts, the 827-file execution freeze,
+40,030 recomputed body cosines, 54 facet anchors and the original direct-span gates.
+All 1,336 variant answer/quote signatures match prior recorded results after
+whitespace normalization; 6,591 selected historical artifact hashes remain intact.
+The [evidence manifest](./docs/evidence/v43-all-available-mac/manifest.json) seals
+5,352 artifacts, with [per-family native scorecards](./docs/evidence/v43-all-available-mac/score/native-scorecards.json)
+and separate integrity/manual review linked from the [full report](./docs/V43_ALL_AVAILABLE_MAC_RESULTS.md).
+Accepted evidence commit: `e2bbc6266e4f69395b37afd503f82131df4e97eb`;
+[its CI passed](https://github.com/arjun9669/GroundedDesk-AI/actions/runs/39475873673).
+
+The initial engineering validation recorded **767 PASS / 3 FAIL out of 770** from
+an overlapping input/native-reference check. Work stopped, and the user approved
+separate category validation retaining every hash, duplicate guard and a conflicting-
+hash negative control. The corrected suite passed **771/771**, alongside **28/28
+strict Keyword checks**. The first failure and approved correction logs remain
+unchanged. These engineering counts are not model-case counts or quality scores.
+All earlier first failures, blocked runs, rubrics and original evidence remain preserved.
+
+### Phase 2 handoff and release boundary
+
+[Fresh64 inputs and protocol](./eval/phase2-fresh64/PROTOCOL.md) are frozen:
+8 newly authored fictional TXT documents and 64 questions, comprising 40 supported
+Hybrid questions, 16 unsupported Hybrid questions and 8 lexical Comparisons.
+**No candidate, planner, embedder, model or scorer has run on this pack.** Static
+input validation has passed; this is author-created targeted confirmation, not
+blinded external validation or a representative accuracy benchmark.
+
+Next, prepare and publish a separate immutable execution freeze covering the
+runner, scorer, module hashes and actual environment/model identities, then capture
+the 64 cases once. The prospective gate requires **64/64 PASS independently in
+both variants**, with no grandfathered failures. Preserve the first result and stop
+on required check failures. The input freeze alone is not execution-ready.
+
+**Live GroundedDesk remains 5.6 / r44; v43 is not adopted.** Revised phase 1 acceptance
+does not approve integration or a 6.0 release. Fresh confirmation, integration,
+performance/memory, broader device/browser/PDF validation and release qualification
+remain open. See [current project status](./PROJECT_STATUS.md) and the
+[five-phase roadmap](./docs/ROADMAP_6_0.md) for the continuing plan.
+
+## Historical development checkpoints
+
+The following summaries preserve earlier experiments. Their dated failures and
+holds remain valid historical results; the current phase 1 decision and v43 scope
+are described above.
 
 The [Prism32 first prospective v36 confirmation](./docs/PRISM32_V36_CONFIRMATION.md) records **29 PASS / 0 PARTIAL / 3 FAIL** in both variants. **Confirmation gate FAIL; integration-readiness work is stopped.** [Exact answers and JSON](./docs/evidence/prism32-v36/REVIEWED_SCORECARD.json) preserve every original result. P04 falsely refuses supported cutoff/hold evidence; P10 and P17 quote unrelated history/acknowledgement instead of packet contents and retention. All eight unsupported cases refuse uncited; citations are 28/28 literal but 26/28 relevant. P04 loses a production-baseline PASS, inherited from v35; no paired-v35 PASS is lost. This is author-created prospective stress confirmation, not externally blinded independent accuracy. No retries, input/rubric/code edits or replacement set. Live 5.6/r44 remains unchanged; capacity expansion stays deferred.
 
@@ -93,7 +214,7 @@ Extractive quotations are the default. Optional models download only when enable
 
 Readiness describes available extracted text. Blank/scanned pages, reading order, columns and table relationships still need original-document review. Repeated or unsupported quotation locations receive an explanation rather than a fabricated page match.
 
-## Latest measured results
+## Historical measured results
 
 The [Bracken32 report](./docs/BRACKEN32_V25_CONFIRMATION.md) preserves the first **21 PASS / 1 PARTIAL / 10 FAIL** in both unchanged v25 variants on four new fictional documents:28 actual local MiniLM Hybrid questions and 4 separate lexical Comparisons, captured once. This is prospective author-created stress testing. A Chrome patch change from155.0.8059.40 to155.0.8059.80 was detected and explicitly amended/frozen before any model, uploads or questions; it qualifies comparison with older runs. All33 quotations are literal, but24 are relevant. Five unsupported controls do not refuse; two supported questions falsely refuse. All4 Comparisons pass. No prior paired-v24 PASS is lost, but two previously incorrect cited answers become false refusals. **Confirmation FAIL; performance/integration qualification stopped.** Preserve this first result; Bracken32 is now exposed for future regression.
 
@@ -176,7 +297,14 @@ GroundedDesk is a portfolio prototype, not a production-ready RAG, compliance or
 
 OCR, reliable table/column reconstruction, character-level partial-run highlights, comprehensive prompt-injection defenses and broad browser/device validation are not provided. Model availability, performance and memory use vary by device.
 
-The [Vela32 design review](./docs/VELA32_REFUSAL_DESIGN_REVIEW.md) led to an [isolated v39 engineering implementation](./docs/COVERAGE_V39_ENGINEERING.md). V39 passes both [Vela32](./docs/V39_VELA32_MAC_RESULTS.md) and [Prism32](./docs/V39_PRISM32_MAC_RESULTS.md) 32-case partial gates, but its [first Lumen32 run](./docs/V39_LUMEN32_MAC_RESULTS.md) fails **31/0/1** in both variants on supported L04. Paired v38 passes Lumen32 32/32. The [failure review](./docs/LUMEN32_V39_FAILURE_REVIEW.md) proposes a separate v40 request/source grammar fix; no implementation or rerun has occurred. The [input inventory](./docs/RECOVERABLE_INPUT_INVENTORY.md) verifies 668 cases; 96 distinct cases have now been tested with separate pack scores and 572 await v39 testing, while 103 original cases and the combined Windows configuration remain unavailable. Repair/revalidation is required before proceeding to Hearth32. Preserve every original first result, including v39's new failure; full regression, fresh confirmation and performance/integration qualification remain incomplete. Live r44 stays unchanged.
+Phase 1 is complete only under the [approved 668-case scope](./docs/PHASE1_REVISED_ACCEPTANCE.md).
+The five known public-data case limitations remain open, 103 missing original
+cases remain untested, and full 771-case coverage is not claimed. Phase 2 inputs
+are prepared, but fresh model confirmation has not run. Freeze execution before
+the first capture; later integration and product/release qualification remain on
+hold. The [combined v43 report](./docs/V43_ALL_AVAILABLE_MAC_RESULTS.md) and
+[current project status](./PROJECT_STATUS.md) distinguish these results from
+historical candidate failures. Live r44 and upload limits remain unchanged.
 
 ## Explore the project
 

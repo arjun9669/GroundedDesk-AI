@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-21 — Refresh README phase 1 status
+
+- Replace stale v39/current-phase claims with the approved 668-case phase 1 decision, complete family results, known failures, missing-input exclusions and evidence links.
+- Explain phase 2 preparation and remaining release gates; retain earlier experiment summaries as historical checkpoints. Runtime and frozen evidence unchanged.
+
 ## 2026-10-21 — Approve revised phase1 scope and prepare Fresh64 inputs
 
 - Record explicit user approval accepting phase1 over668 verified cases/19 native gates, with successful CI for `e2bbc626`.103 originals and private combined config stay untested/excluded; full771 gate NOT RUN, five known public-data case limitations and all first evidence preserved.
