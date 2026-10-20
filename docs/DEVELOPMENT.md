@@ -273,3 +273,12 @@ The preimplementation inventory identified four other unresolved clock forms
 request/source grammar and native criteria before expanding affected packs.
 508 verified cases / 14 packs and 103 missing originals remain; phase 1, full regression,
 fresh confirmation and integration/product/release gates stay open.
+
+## V43 nine-pack preparation checkpoint
+
+[Preparation](COVERAGE_V43_PREPARATION.md) records the isolated deferred-clock
+implementation and609-file freeze.764 unit/28 Keyword checks PASS following the
+user-approved review-annotation validator correction; the first762/1 unit result
+and both original scorecards remain preserved. Model study NOT RUN at this
+checkpoint. Native28/32-case rubrics stay separate; never reuse the completed
+historical evidence directories. Read PROJECT_STATUS.md for current holds.

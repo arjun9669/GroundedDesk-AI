@@ -15,9 +15,32 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v42: all five exposed packs **32/32 PASS** both variants; M04 repaired; v41 first failure preserved; not adopted |
+| Latest isolated candidate | v43 engineering/preparation PASS; nine-pack model study pending; v42 five-pack PASS preserved; not adopted |
 | Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: v42 five-pack revalidation complete; deferred clock forms/508 remaining verified cases need separate protocols; no live integration |
+| Current change | Phase 1: v43 deferred clock forms implemented; 284-case nine-pack freeze prepared; model gates pending; no live integration |
+
+## V43 engineering and nine-pack freeze
+
+Protocol `c88c6fbc` preceded implementation. Isolated v43 accounts for RQ02,C09,
+B14,F14 using bounded new forms, unique prefix/current-heading/anonymous scopes
+and complete literal clock policies. [Preparation](docs/COVERAGE_V43_PREPARATION.md).
+**764/764 unit tests**, strict **28/28 Keyword**, clean Chrome155.0.8059.85 startup,
+original input/history checks and **609-file freeze** PASS. Model capture/native
+scoring **NOT RUN at this checkpoint**; publish this freeze before questions.
+
+The first engineering run was **762 PASS/1 FAIL of763**: a new validator compared
+review annotations as native grade fields. Work stopped and the user authorized a
+correction/recheck. Only the reviewed `review_note` annotation is excluded from
+native equality; every grade/answer/quote/other field remains checked. Both original
+files remain byte-for-byte unchanged. First failure and approved passing logs are
+preserved in [engineering evidence](docs/evidence/v43-nine-pack-mac-preparation/engineering-checks.json).
+No model retry occurred. All historical first failures remain recorded.
+
+This freezes284 exposed cases/nine packs (252 actual MiniLM Hybrid,32 separately
+labelled lexical Comparisons), with each family's original native rubric. Success
+would leave384 verified cases/10packs untested with v43;103 originals and the
+combined configuration remain unavailable. No full regression/fresh confirmation/
+quality/adoption claim; live5.6/r44 and phase1/integration HOLD stay unchanged.
 
 ## Authorized v43 — deferred clock protocol
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — V43 deferred clock engineering and nine-pack preparation
+
+- Precommitted protocol `c88c6fbc`; implement isolated bounded request/source forms for RQ02,C09,B14,F14, preserving v42 and live r44.
+- First engineering check762/1 stopped on review-note/native-field equality; user approved validation correction. Preserve first log and original scorecards; reject any native grade/answer/quote change. Approved764 unit/28 Keyword checks and clean Chrome155.0.8059.85 startup PASS.
+- Freeze609 files before284 exposed cases/nine packs (252 Hybrid/32 lexical Comparisons), native rubrics separate. Actual model capture/scoring NOT RUN at this checkpoint; all adoption/full-regression/confirmation holds remain. [Preparation](docs/COVERAGE_V43_PREPARATION.md).
+
 ## 2026-10-20 — First v42 five-pack exposed regression PASS
 
 - Protocol/inventory `7ed219e1` preceded implementation; freeze `8970bd5c` preceded questions. Both v42 variants pass Vela32, Prism32, Lumen32, Hearth32, Morrow32 32/32 each. M04 now binds ticket type separately from entity and quotes full departure/hold support. Paired v41 retains M04 FAIL; all historical first results preserved.

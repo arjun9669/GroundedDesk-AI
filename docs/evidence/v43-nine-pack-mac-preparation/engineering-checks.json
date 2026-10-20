@@ -1,0 +1,33 @@
+{
+  "classification": "Engineering only; no model questions or model scorecards",
+  "first_unit_run": {
+    "tests": 763,
+    "pass": 762,
+    "fail": 1,
+    "reason": "History validator compared full reviewed rows; only review_note differed in Cedar/Bracken. Originals preserved."
+  },
+  "user_authorized_correction": true,
+  "correction": "Exclude only reviewed review_note text; compare every remaining native field unchanged. Added negative controls for changed grades/quotes/unknown fields.",
+  "approved_unit_run": {
+    "tests": 764,
+    "pass": 764,
+    "fail": 0,
+    "node": "v24.19.0"
+  },
+  "strict_keyword": {
+    "cases": 28,
+    "pass": 28,
+    "false_accept_count": 0,
+    "citation_provenance_errors": 0
+  },
+  "logs": [
+    {
+      "path": "first-unit-failure.log",
+      "sha256": "f05c5b317e0aab5e3485e41d907dee702f1c31b60134de57149d8350fc7b1f0c"
+    },
+    {
+      "path": "approved-unit-pass.log",
+      "sha256": "571f0505b055ae97fcd412b252225fd216dbdf1fcbe36763d219d4c1374c4885"
+    }
+  ]
+}
