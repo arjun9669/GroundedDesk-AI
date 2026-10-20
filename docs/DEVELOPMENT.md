@@ -282,3 +282,13 @@ user-approved review-annotation validator correction; the first762/1 unit result
 and both original scorecards remain preserved. Model study NOT RUN at this
 checkpoint. Native28/32-case rubrics stay separate; never reuse the completed
 historical evidence directories. Read PROJECT_STATUS.md for current holds.
+
+## V43 first nine-pack model result
+
+[First results](V43_NINE_PACK_MAC_RESULTS.md): eight 32-case native families each
+32/32 and RetrievalQuality28 28/28 PASS in both variants, no historical PASS loss.
+252 actual MiniLM Hybrid and 32 lexical Comparisons; Qwen off. Four target forms
+restore historical v38 outputs under structured scope. 764 unit/28 Keyword checks
+and 609-file freeze PASS. Never reuse completed first evidence directories.
+384 verified cases/10 families and 103 unavailable originals remain; phase 1, fresh
+confirmation and adoption holds stay open. Live5.6/r44 is unchanged.

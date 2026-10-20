@@ -1,0 +1,1265 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "P16",
+  "question": "List every item in the Yalara Grain Exchange dispatch packet.",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "List every item in the Yalara Grain Exchange dispatch packet.",
+    "expected_display": "List every item in the Yalara Grain Exchange dispatch packet.",
+    "rendered_question": "List every item in the Yalara Grain Exchange dispatch packet.",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+    "sources": [
+      {
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "excerpt": "approval from the Budget Steward and Exchange Supervisor.\nGX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.\n\nThe office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+        "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nList every item in the Yalara Grain Exchange dispatch packet.\n\nSearched all files: 01_Liraven_Planetarium.txt · 02_Osvik_Puppet_Theatre.txt · 03_Tavren_Ferry_Workshop.txt · 04_Yalara_Grain_Exchange.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.\n\nSOURCE EVIDENCE\n[1]\n04_Yalara_Grain_Exchange.txt\n\nText line 7 (normalized extraction)\n\napproval from the Budget Steward and Exchange Supervisor. GX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention. The office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "b5ac54a3-e031-4dfe-bb1a-0f4698963211:0",
+        "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "excerpt": "approval from the Budget Steward and Exchange Supervisor.\nGX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.\n\nThe office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+        "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+        "score": 0.0476,
+        "lexicalScore": 9.140736781924746,
+        "semanticScore": 0.5348982666107064,
+        "matchedTerms": [
+          "every",
+          "yalara",
+          "grain",
+          "exchange",
+          "dispatch",
+          "packet"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "b5ac54a3-e031-4dfe-bb1a-0f4698963211:body:181",
+        "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "quote": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+        "start": 181,
+        "end": 299,
+        "actualCosine": 0.4665592721557883,
+        "excerpt": "## Exchange working rules\nGX-01. A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.\nGX-02. The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.\nGX-03. Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.\nGX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.\n\nThe office bell was installed in 1980. Grea"
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Yalara_Grain_Exchange.txt",
+        "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Yalara_Grain_Exchange.txt",
+        "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Yalara_Grain_Exchange.txt",
+        "quote": "The office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "packet",
+        "subjects": [
+          "dispatch"
+        ]
+      },
+      "actual_cosines": [
+        0.4665592721557883
+      ]
+    }
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "b5ac54a3-e031-4dfe-bb1a-0f4698963211:body:181",
+        "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "quote": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+        "start": 181,
+        "end": 299,
+        "actualCosine": 0.4665592721557883,
+        "excerpt": "## Exchange working rules\nGX-01. A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.\nGX-02. The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.\nGX-03. Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.\nGX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.\n\nThe office bell was installed in 1980. Grea"
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Yalara_Grain_Exchange.txt",
+        "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Yalara_Grain_Exchange.txt",
+        "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Yalara_Grain_Exchange.txt",
+        "quote": "The office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "packet",
+        "subjects": [
+          "dispatch"
+        ]
+      },
+      "actual_cosines": [
+        0.4665592721557883
+      ]
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Yalara_Grain_Exchange.txt",
+      "start": 33,
+      "content": "A loading request at Yalara Grain Exchange is acknowledged within six working hours.",
+      "semanticScore": 0.6094277619035088,
+      "lexicalScore": 7.358401814588572
+    },
+    {
+      "filename": "04_Yalara_Grain_Exchange.txt",
+      "start": 575,
+      "content": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+      "semanticScore": 0.5940036678566339,
+      "lexicalScore": 8.266591855753596
+    },
+    {
+      "filename": "04_Yalara_Grain_Exchange.txt",
+      "start": 181,
+      "content": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+      "semanticScore": 0.4665592721557883,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "Liraven Planetarium began public dome shows in 1967.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.01365561203404931,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "start": 53,
+      "end": 165,
+      "similarity": 0.034531638278703654,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "D-01.",
+      "start": 197,
+      "end": 202,
+      "similarity": 0.11606038271259844,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "Dispatch requests cleared before 16:20 leave on the current service day.",
+      "start": 203,
+      "end": 275,
+      "similarity": 0.18370354033753392,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.",
+      "start": 276,
+      "end": 368,
+      "similarity": 0.04879555441120974,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "D-02.",
+      "start": 369,
+      "end": 374,
+      "similarity": 0.12760938603793717,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "Eris checks five projector filters per morning.",
+      "start": 375,
+      "end": 422,
+      "similarity": 0.19340284303370017,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "Nalo checks three door hinges per morning.",
+      "start": 423,
+      "end": 465,
+      "similarity": 0.20952164017302066,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "Eris labels two transport cases per week.",
+      "start": 466,
+      "end": 507,
+      "similarity": 0.20370842098856698,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "D-03.",
+      "start": 508,
+      "end": 513,
+      "similarity": 0.12135941206056416,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "start": 514,
+      "end": 599,
+      "similarity": 0.034645814025718355,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "Individual winter extremes are not recorded.",
+      "start": 600,
+      "end": 644,
+      "similarity": 0.0627901550584986,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "D-04.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.03895589896190862,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "Keep movement slips for 19 months.",
+      "start": 651,
+      "end": 685,
+      "similarity": 0.06769183196839616,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "While an export-review hold is open, retain the affected slips until the hold is released.",
+      "start": 686,
+      "end": 776,
+      "similarity": 0.08643617642442895,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "D-05.",
+      "start": 777,
+      "end": 782,
+      "similarity": 0.05735863106546122,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "Acknowledge dome-booking requests within two business days.",
+      "start": 783,
+      "end": 842,
+      "similarity": 0.12161305383880398,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "72ff5ddc-62f4-4a06-9f8d-d4c099afccc7",
+      "value": "An acknowledgement is not a guarantee that seats remain available.",
+      "start": 843,
+      "end": 909,
+      "similarity": -0.039534769377505725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.004165348493643101,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "Its restoration was completed in 1986.",
+      "start": 55,
+      "end": 93,
+      "similarity": 0.018860829348040658,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+      "start": 94,
+      "end": 170,
+      "similarity": -0.018060570121652873,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "T-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.14307501726753952,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "start": 204,
+      "end": 296,
+      "similarity": 0.058625723546252194,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 297,
+      "end": 357,
+      "similarity": -0.014195261992410193,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+      "start": 358,
+      "end": 430,
+      "similarity": -0.05984964092068066,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "T-02.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.1649895935069124,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "Signed touring records are retained for 5 years.",
+      "start": 437,
+      "end": 485,
+      "similarity": -0.05392027894752124,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "An unresolved ownership claim extends retention of the affected records until the claim is settled.",
+      "start": 486,
+      "end": 585,
+      "similarity": -0.009515059225704923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "T-03.",
+      "start": 586,
+      "end": 591,
+      "similarity": 0.14792860464016547,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "The touring packet must contain:",
+      "start": 592,
+      "end": 624,
+      "similarity": 0.2689287277024523,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "T-04.",
+      "start": 705,
+      "end": 710,
+      "similarity": 0.044543253901011555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f5d883e-c2e4-4515-b410-7f91d172fb97",
+      "value": "The stage clock was replaced in 2023.",
+      "start": 711,
+      "end": 748,
+      "similarity": -0.004772854402229763,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "start": 28,
+      "end": 90,
+      "similarity": 0.012974470355726263,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "The ramp shelter was repainted in 2012.",
+      "start": 91,
+      "end": 130,
+      "similarity": -0.005742999138371586,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "start": 132,
+      "end": 226,
+      "similarity": 0.05978123495554405,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "Its highest recorded daily temperature is 38 degrees Celsius.",
+      "start": 227,
+      "end": 288,
+      "similarity": 0.08018022202040978,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "Varen records seven cable-tension readings per shift.",
+      "start": 290,
+      "end": 343,
+      "similarity": 0.11179858314884338,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "Tesi records five ramp tests per shift.",
+      "start": 344,
+      "end": 383,
+      "similarity": 0.16083371020575588,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "Varen tags two lifting hooks per month.",
+      "start": 384,
+      "end": 423,
+      "similarity": 0.160286469953062,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.",
+      "start": 425,
+      "end": 532,
+      "similarity": 0.06947866791456482,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "In a salt-spray shelter, lubricate it every 45 operating hours.",
+      "start": 533,
+      "end": 596,
+      "similarity": 0.13961913851828908,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "Inspect the loading winch every 15 operating hours regardless of shelter.",
+      "start": 597,
+      "end": 670,
+      "similarity": 0.12766503304026652,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "60e76561-bd53-493c-ae3c-6cab38103091",
+      "value": "The office cabinet was painted in 2021.",
+      "start": 671,
+      "end": 710,
+      "similarity": 0.034622162010223785,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "GX-01.",
+      "start": 26,
+      "end": 32,
+      "similarity": 0.16437738421114992,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "A loading request at Yalara Grain Exchange is acknowledged within six working hours.",
+      "start": 33,
+      "end": 117,
+      "similarity": 0.6094277619035088,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "This acknowledgement does not guarantee a loading slot.",
+      "start": 118,
+      "end": 173,
+      "similarity": 0.12708178662718111,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "GX-02.",
+      "start": 174,
+      "end": 180,
+      "similarity": 0.1928709910864808,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+      "start": 181,
+      "end": 299,
+      "similarity": 0.4665592721557883,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "GX-03.",
+      "start": 300,
+      "end": 306,
+      "similarity": 0.1728775429170175,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.",
+      "start": 307,
+      "end": 413,
+      "similarity": 0.13975158290111042,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "GX-04.",
+      "start": 414,
+      "end": 420,
+      "similarity": 0.08133158506796899,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.",
+      "start": 421,
+      "end": 534,
+      "similarity": 0.10158045967967444,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "The office bell was installed in 1980.",
+      "start": 536,
+      "end": 574,
+      "similarity": 0.03285295795178409,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+      "start": 575,
+      "end": 665,
+      "similarity": 0.5940036678566339,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "In a dust-heavy bay, grease it every 66 service hours.",
+      "start": 666,
+      "end": 720,
+      "similarity": 0.21693213690989283,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+      "value": "Inspect the conveyor every 33 service hours in either bay.",
+      "start": 721,
+      "end": 779,
+      "similarity": 0.29642643565899834,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b5ac54a3-e031-4dfe-bb1a-0f4698963211:body:181",
+          "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+          "filename": "04_Yalara_Grain_Exchange.txt",
+          "quote": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+          "start": 181,
+          "end": 299,
+          "actualCosine": 0.4665592721557883,
+          "excerpt": "## Exchange working rules\nGX-01. A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.\nGX-02. The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.\nGX-03. Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.\nGX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.\n\nThe office bell was installed in 1980. Grea"
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Yalara_Grain_Exchange.txt",
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Yalara_Grain_Exchange.txt",
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Yalara_Grain_Exchange.txt",
+          "quote": "The office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "packet",
+          "subjects": [
+            "dispatch"
+          ]
+        },
+        "actual_cosines": [
+          0.4665592721557883
+        ]
+      }
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b5ac54a3-e031-4dfe-bb1a-0f4698963211:body:181",
+          "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+          "filename": "04_Yalara_Grain_Exchange.txt",
+          "quote": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+          "start": 181,
+          "end": 299,
+          "actualCosine": 0.4665592721557883,
+          "excerpt": "## Exchange working rules\nGX-01. A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.\nGX-02. The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.\nGX-03. Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.\nGX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.\n\nThe office bell was installed in 1980. Grea"
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Yalara_Grain_Exchange.txt",
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Yalara_Grain_Exchange.txt",
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Yalara_Grain_Exchange.txt",
+          "quote": "The office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "packet",
+          "subjects": [
+            "dispatch"
+          ]
+        },
+        "actual_cosines": [
+          0.4665592721557883
+        ]
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b5ac54a3-e031-4dfe-bb1a-0f4698963211:0",
+          "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+          "filename": "04_Yalara_Grain_Exchange.txt",
+          "excerpt": "approval from the Budget Steward and Exchange Supervisor.\nGX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.\n\nThe office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+          "score": 0.0476,
+          "lexicalScore": 9.140736781924746,
+          "semanticScore": 0.5348982666107064,
+          "matchedTerms": [
+            "every",
+            "yalara",
+            "grain",
+            "exchange",
+            "dispatch",
+            "packet"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Yalara_Grain_Exchange.txt",
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Yalara_Grain_Exchange.txt",
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b5ac54a3-e031-4dfe-bb1a-0f4698963211:0",
+          "documentId": "b5ac54a3-e031-4dfe-bb1a-0f4698963211",
+          "filename": "04_Yalara_Grain_Exchange.txt",
+          "excerpt": "approval from the Budget Steward and Exchange Supervisor.\nGX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.\n\nThe office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service hours in either bay.",
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+          "score": 0.0476,
+          "lexicalScore": 9.478745160990599,
+          "semanticScore": 0.5348982666107064,
+          "matchedTerms": [
+            "every",
+            "yalara",
+            "grain",
+            "exchange",
+            "dispatch",
+            "packet"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Yalara_Grain_Exchange.txt",
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Yalara_Grain_Exchange.txt",
+          "quote": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.007687680888921022,
+    0.043873392045497894,
+    -0.0012573550920933485,
+    0.011380486190319061,
+    -0.020420648157596588,
+    -0.03643844276666641,
+    0.0663890615105629,
+    -0.02025996893644333,
+    -0.0585041344165802,
+    -0.002003129804506898,
+    0.06939900666475296,
+    -0.03888522833585739,
+    -0.114103764295578,
+    -0.04871430993080139,
+    -0.03332783654332161,
+    0.037674430757761,
+    0.06484179198741913,
+    0.06167587265372276,
+    -0.018352171406149864,
+    -0.1873961240053177,
+    0.10585076361894608,
+    0.0539809875190258,
+    0.013346359133720398,
+    -0.003015164751559496,
+    0.018360789865255356,
+    0.059400323778390884,
+    -0.03554180637001991,
+    0.007416417356580496,
+    -0.011472417041659355,
+    -0.1323767453432083,
+    -0.035044021904468536,
+    -0.0008318920154124498,
+    0.04398149996995926,
+    0.046989649534225464,
+    0.0707307755947113,
+    0.02207193523645401,
+    0.051222436130046844,
+    -0.08214712888002396,
+    0.02812446467578411,
+    -0.03900939226150513,
+    -0.008474305272102356,
+    -0.009204166010022163,
+    -0.04368050396442413,
+    0.0031854454427957535,
+    -0.06514915078878403,
+    -0.06769520044326782,
+    -0.08388011157512665,
+    0.011850069276988506,
+    0.08807586133480072,
+    0.02378758229315281,
+    -0.01836436428129673,
+    -0.05437813699245453,
+    -0.06921309977769852,
+    0.11459283530712128,
+    0.10092809796333313,
+    0.017179755493998528,
+    -0.0423286072909832,
+    -0.10721242427825928,
+    -0.01683449186384678,
+    0.05058678239583969,
+    -0.05981123074889183,
+    -0.0048924959264695644,
+    -0.032844427973032,
+    0.022594371810555458,
+    0.010783212259411812,
+    -0.015210973098874092,
+    0.001284369733184576,
+    0.03868316859006882,
+    -0.0263654924929142,
+    -0.048658449202775955,
+    0.04485016316175461,
+    -0.030313236638903618,
+    -0.013874861411750317,
+    0.05869083106517792,
+    -0.03506112098693848,
+    -0.009259020909667015,
+    0.006271782331168652,
+    -0.00945977307856083,
+    -0.02996048703789711,
+    -0.0007619397365488112,
+    -0.07602844387292862,
+    0.05533992126584053,
+    0.07129678875207901,
+    0.007421813905239105,
+    0.020706770941615105,
+    -0.019909702241420746,
+    -0.054714005440473557,
+    0.02633582055568695,
+    0.082106813788414,
+    0.060375239700078964,
+    -0.06650560349225998,
+    -0.009774933569133282,
+    0.0018912841333076358,
+    -0.004866083152592182,
+    0.035664353519678116,
+    0.04066231846809387,
+    0.033933814615011215,
+    -0.05877051129937172,
+    -0.011329837143421173,
+    0.06299138814210892,
+    0.04906535521149635,
+    -0.011813681572675705,
+    -0.010798139497637749,
+    -0.03860866650938988,
+    -0.08173786848783493,
+    0.026384329423308372,
+    -0.06812462210655212,
+    -0.08790765702724457,
+    -0.09247836470603943,
+    -0.015555261634290218,
+    -0.05789009481668472,
+    0.06092072278261185,
+    -0.05529429018497467,
+    0.0009385642479173839,
+    -0.06365040689706802,
+    -0.010132478550076485,
+    -0.015205944888293743,
+    0.04061507806181908,
+    -0.024866530671715736,
+    -0.06801743805408478,
+    0.030900390818715096,
+    0.0216018408536911,
+    0.002280536573380232,
+    0.011508381925523281,
+    -0.05244468152523041,
+    0.050074219703674316,
+    -0.060134146362543106,
+    1.0583082399217338e-34,
+    0.01558475662022829,
+    -0.05844910442829132,
+    0.008808420971035957,
+    -0.02405615523457527,
+    -0.054347533732652664,
+    -0.06962089985609055,
+    0.025554314255714417,
+    0.007782279048115015,
+    -0.010858581401407719,
+    0.03424140065908432,
+    -0.0704149678349495,
+    0.08759280294179916,
+    -0.011215375736355782,
+    -0.017646366730332375,
+    0.047526728361845016,
+    -0.021989354863762856,
+    -0.0008284423383884132,
+    0.0876968652009964,
+    0.04324695095419884,
+    -0.028535112738609314,
+    -0.025530081242322922,
+    -0.06533647328615189,
+    -0.041010014712810516,
+    0.010747945867478848,
+    0.010903768241405487,
+    0.033453140407800674,
+    0.065971240401268,
+    -0.07484439760446548,
+    -0.014002193696796894,
+    0.05493248626589775,
+    0.07502000778913498,
+    0.03272796422243118,
+    -0.012735430151224136,
+    0.012739721685647964,
+    0.02260163053870201,
+    0.02799261175096035,
+    -0.03353980928659439,
+    -0.003790512215346098,
+    -0.035707343369722366,
+    -0.020658303052186966,
+    0.04242983087897301,
+    0.018314480781555176,
+    -0.03242338448762894,
+    -0.004942728206515312,
+    -0.06171201914548874,
+    0.02718120627105236,
+    -0.01849788799881935,
+    0.03887747600674629,
+    0.11826510727405548,
+    0.021878501400351524,
+    0.05856844410300255,
+    -0.01426374539732933,
+    -0.05985045060515404,
+    0.021128570660948753,
+    0.0048457421362400055,
+    -0.008638361468911171,
+    0.056096334010362625,
+    0.010115867480635643,
+    0.0060433815233409405,
+    0.06641063839197159,
+    -0.060766514390707016,
+    -0.002244367264211178,
+    -0.0007693734369240701,
+    -0.007846885360777378,
+    0.0007498146151192486,
+    0.019191788509488106,
+    -0.06103255972266197,
+    -0.021299077197909355,
+    -0.0474565364420414,
+    0.12055312097072601,
+    -0.037040967494249344,
+    0.001684723887592554,
+    0.03426213562488556,
+    0.06486384570598602,
+    0.007841465063393116,
+    -0.061164144426584244,
+    0.03497907519340515,
+    0.029703721404075623,
+    -0.07102061063051224,
+    -0.004097418859601021,
+    -0.006785655859857798,
+    0.01194499246776104,
+    -0.0069775949232280254,
+    0.08213505893945694,
+    -0.02354452945291996,
+    0.014181144535541534,
+    0.05921086668968201,
+    -0.012437832541763783,
+    0.019716355949640274,
+    0.044605858623981476,
+    -0.02667764388024807,
+    0.024435557425022125,
+    0.014331302605569363,
+    -0.05716851353645325,
+    -0.08845854550600052,
+    -1.2184547204185073e-33,
+    0.08975370228290558,
+    0.0392194539308548,
+    -0.0214779544621706,
+    0.03297984600067139,
+    -0.01818663813173771,
+    -0.050644651055336,
+    0.0386371910572052,
+    0.0360480472445488,
+    0.09432797878980637,
+    0.08678319305181503,
+    -0.021930856630206108,
+    0.020524902269244194,
+    0.0619516596198082,
+    -0.03808319568634033,
+    0.014714031480252743,
+    0.039058372378349304,
+    0.013799215666949749,
+    -0.00636846199631691,
+    -0.006181955803185701,
+    -0.06392063945531845,
+    -0.05695316195487976,
+    0.05792040377855301,
+    0.04866308718919754,
+    -0.01857113093137741,
+    0.0026522153057157993,
+    -0.04363270476460457,
+    0.039839837700128555,
+    0.01732804998755455,
+    -0.04973839223384857,
+    -0.06564917415380478,
+    0.06449976563453674,
+    -0.09332993626594543,
+    0.0020967493765056133,
+    -0.010887579061090946,
+    -0.05994842201471329,
+    -0.00023365719243884087,
+    0.050488557666540146,
+    0.02819817140698433,
+    0.04139689728617668,
+    0.09725414216518402,
+    0.039730995893478394,
+    0.00936613418161869,
+    -0.04368085414171219,
+    0.0968950092792511,
+    -0.11061200499534607,
+    -0.058730654418468475,
+    -0.02487276867032051,
+    0.02408457361161709,
+    -0.0339016392827034,
+    0.04969847947359085,
+    0.04231462627649307,
+    0.03745338320732117,
+    -0.02982359007000923,
+    -0.011090719141066074,
+    0.010836316272616386,
+    0.1171516701579094,
+    0.03722833842039108,
+    -0.06817193329334259,
+    -0.025576239451766014,
+    -0.04949617758393288,
+    0.005610624793916941,
+    -0.031692951917648315,
+    0.047755274921655655,
+    0.03210967034101486,
+    0.09288117289543152,
+    -0.05982373654842377,
+    0.011131389066576958,
+    -0.10115737468004227,
+    -0.010165340267121792,
+    -0.0032863279338926077,
+    0.0812641903758049,
+    0.003537058597430587,
+    -0.03745415434241295,
+    -0.04849327728152275,
+    0.019788119941949844,
+    -0.0427822470664978,
+    -0.06899259239435196,
+    -0.023537807166576385,
+    0.0027071665972471237,
+    0.023720450699329376,
+    -0.019538193941116333,
+    0.06242078170180321,
+    0.05258411169052124,
+    0.01799943298101425,
+    0.06436712294816971,
+    0.030174225568771362,
+    0.05855400115251541,
+    0.13243485987186432,
+    0.0706731453537941,
+    0.07568797469139099,
+    -0.012929183430969715,
+    -0.06056433543562889,
+    0.04775949940085411,
+    0.08426156640052795,
+    0.038279253989458084,
+    -1.9113901572609393e-8,
+    -0.09854009747505188,
+    -0.07550086826086044,
+    -0.033029016107320786,
+    0.02506254054605961,
+    0.012340105138719082,
+    0.032950591295957565,
+    0.0034577688202261925,
+    0.12045051157474518,
+    0.008104185573756695,
+    -0.04062514379620552,
+    0.047065962105989456,
+    0.10298384726047516,
+    -0.09933406859636307,
+    -0.005467990878969431,
+    0.048838067799806595,
+    -0.01395684015005827,
+    0.03849608078598976,
+    0.05926509201526642,
+    -0.09145398437976837,
+    -0.06339897215366364,
+    0.01125059463083744,
+    0.025831259787082672,
+    0.03494243323802948,
+    0.025674546137452126,
+    -0.058717165142297745,
+    0.04601825401186943,
+    -0.00043007591739296913,
+    0.018436025828123093,
+    0.08920814096927643,
+    0.027023809030652046,
+    -0.0255117267370224,
+    -0.026119526475667953,
+    0.035547055304050446,
+    -0.11543445289134979,
+    -0.04910159856081009,
+    0.01966167241334915,
+    -0.05468172952532768,
+    0.019663667306303978,
+    0.02510409988462925,
+    -0.008379538543522358,
+    -0.07583069801330566,
+    -0.11493176221847534,
+    -0.03319069370627403,
+    0.051734693348407745,
+    -0.039869461208581924,
+    0.05813312903046608,
+    -0.14355462789535522,
+    -0.015578808262944221,
+    -0.037131115794181824,
+    0.04939407855272293,
+    0.008845539763569832,
+    -0.053544413298368454,
+    0.04643665626645088,
+    0.07767093181610107,
+    -0.06628764420747757,
+    0.016733430325984955,
+    0.02610209956765175,
+    -0.12929394841194153,
+    0.08202610164880753,
+    -0.032403722405433655,
+    0.03616119921207428,
+    -0.02376798912882805,
+    -0.006614965852349997,
+    0.047311242669820786
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "start": 0,
+        "content": "## Exchange working rules\nGX-01. A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.\nGX-02. The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.\nGX-03. Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.\nGX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.\n\nThe office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service"
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Yalara_Grain_Exchange.txt",
+        "start": 0,
+        "content": "## Exchange working rules\nGX-01. A loading request at Yalara Grain Exchange is acknowledged within six working hours. This acknowledgement does not guarantee a loading slot.\nGX-02. The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.\nGX-03. Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.\nGX-04. Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.\n\nThe office bell was installed in 1980. Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions. In a dust-heavy bay, grease it every 66 service hours. Inspect the conveyor every 33 service"
+      }
+    ]
+  }
+}

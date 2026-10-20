@@ -18,18 +18,18 @@ phase. Inputs for 668 cases are verified; 103 original cases and the old combine
 configuration remain unavailable. New tests cannot retrospectively establish
 preservation on those missing originals. Do not silently replace the full gate.
 
-The [first v42 five-pack exposed regression](V42_FIVE_PACK_MAC_RESULTS.md) passes
-Vela32, Prism32, Lumen32, Hearth32, Morrow32 separately 32/32 in both variants. M04 is
-repaired; original v41 Morrow32, v40 Hearth32, v39 Lumen32 failures, blocked captures
-and every historical first result remain unchanged. V42 is not integrated.
-There are 160 distinct exposed v42-tested cases, 508 verified cases awaiting testing
-and 103 originals/combined configuration unavailable. No full-regression gate claim.
+The [first v43 nine-pack exposed regression](V43_NINE_PACK_MAC_RESULTS.md) passes
+eight 32-case families 32/32 each and RetrievalQuality28 28/28 in both variants.
+Four deferred clock forms now restore earlier v38 answers under the structured
+contract; all first v42/v41/v40/v39 and earlier evidence remains unchanged.
+V43 is not integrated. There are 284 distinct exposed v43-tested cases, 384 verified
+cases awaiting testing across 10 families and 103 originals/combined configuration
+unavailable. No full-regression/fresh-confirmation gate claim.
 
-Next review/freeze four deliberately deferred clock forms RQ02,C09,B14,F14 and
-their source/native acceptance criteria before expanding affected packs; prepare
-other verified scoring families with their original criteria. Phase 1 exit still
-requires broader agreed regression/preservation and an explicit missing-input
-decision. No phase 2/adoption authorization follows from five partial passes.
+Next freeze the remaining verified scoring families with their original native
+criteria. Phase 1 exit still requires broader agreed regression/preservation and
+an explicit missing-input decision. No phase 2/adoption authorization follows from
+nine partial exposed regression gates.
 Any required failure stops work for user input before retries, implementation,
 committing or publication. Preserve original inputs, rubrics, frozen candidates
 and first evidence.

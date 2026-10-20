@@ -15,9 +15,34 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v43 engineering/preparation PASS; nine-pack model study pending; v42 five-pack PASS preserved; not adopted |
+| Latest isolated candidate | v43: eight 32-case packs 32/32 and RetrievalQuality28 28/28 PASS, both variants; not adopted |
 | Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: v43 deferred clock forms implemented; 284-case nine-pack freeze prepared; model gates pending; no live integration |
+| Current change | Phase 1: v43 nine-pack regression complete; 384 verified cases/10 families remain; no live integration |
+
+## Latest v43 result — nine separate exposed gates PASS
+
+Protocol `c88c6fbc` preceded coding; freeze `89c23ef9` and approved exact-log policy
+`b8f6281b` preceded questions. Vela32,Prism32,Lumen32,Hearth32,Morrow32,Cedar32,
+Bracken32,Flint32 pass 32/32 each; RetrievalQuality28 passes 28/28, separately, in
+both v43 variants. No historical PASS loss, candidate false accepts/refusals,
+execution errors or question retries. RQ02,C09,B14,F14 restore earlier v38 answers
+under the structured contract; paired v42 retains their supported refusals.
+
+[Results](docs/V43_NINE_PACK_MAC_RESULTS.md) seal 2,254 artifacts/242,067,069 bytes.
+All 36 source texts match; 19,934 body cosines and 54 displayed facet anchors audit
+successfully. All 568 answer/quote variant signatures match prior passing v42/v38
+history after whitespace normalization; only the four target cases change versus
+paired v42. All 4,337 selected older sealed artifacts remain unchanged. Native
+rubrics/automated grades and separate review remain distinct. 764 unit/28 Keyword,
+609-file freeze/input/history and approved whitespace checks PASS.
+
+These are 284 distinct exposed cases (252 Hybrid/32 lexical Comparisons), not fresh
+confirmation or a full 771-case gate. **384 verified cases/10 other families** remain
+untested with v43, plus 103 unavailable originals/combined configuration. Next
+freeze the remaining regression scope/native rubrics and resolve the missing-input
+acceptance decision. Phase 1, full regression and later release/adoption holds stay
+open; live 5.6/r44 remains unchanged. All original failures and the engineering/
+whitespace workflow errors below remain preserved and explicitly qualified.
 
 ## Approved raw-log whitespace exception
 

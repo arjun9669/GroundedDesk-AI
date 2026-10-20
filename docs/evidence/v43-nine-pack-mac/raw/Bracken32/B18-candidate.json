@@ -1,0 +1,1236 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "B18",
+  "question": "How many lock gates does Pavel inspect per shift?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many lock gates does Pavel inspect per shift?",
+    "expected_display": "How many lock gates does Pavel inspect per shift?",
+    "rendered_question": "How many lock gates does Pavel inspect per shift?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Pavel inspects eight lock gates per shift.",
+    "sources": [
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "nnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigat",
+        "quote": "Pavel inspects eight lock gates per shift."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many lock gates does Pavel inspect per shift?\n\nSearched all files: 01_Rillpoint_Lightstation.txt · 02_Tavren_Ceramics.txt · 03_Rossell_Seed_Library.txt · 04_Lenwick_Canal_Transit.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Pavel inspects eight lock gates per shift.\n\nSOURCE EVIDENCE\n[1]\n04_Lenwick_Canal_Transit.txt\n\nText line 5 (normalized extraction)\n\nnnel did not close. Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius. Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift. The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization. Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigat\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Pavel inspects eight lock gates per shift.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d:0",
+        "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "nnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigat",
+        "quote": "Pavel inspects eight lock gates per shift.",
+        "score": 0.0214,
+        "lexicalScore": 7.194399682227933,
+        "semanticScore": null,
+        "matchedTerms": [
+          "lock",
+          "gates",
+          "pavel",
+          "per",
+          "shift"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d:0",
+        "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "nnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+        "quote": "Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+        "score": 0.0214,
+        "lexicalScore": 7.194399682227933,
+        "semanticScore": null,
+        "matchedTerms": [
+          "lock",
+          "gates",
+          "pavel",
+          "per",
+          "shift"
+        ],
+        "start": 397,
+        "end": 512
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Pavel inspects eight lock gates per shift.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 397,
+          "cosine": 0.9212451748621365,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Pavel inspects eight lock gates per shift.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d:0",
+        "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "nnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+        "quote": "Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+        "score": 0.0214,
+        "lexicalScore": 7.194399682227933,
+        "semanticScore": null,
+        "matchedTerms": [
+          "lock",
+          "gates",
+          "pavel",
+          "per",
+          "shift"
+        ],
+        "start": 397,
+        "end": 512
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Pavel inspects eight lock gates per shift.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 397,
+          "cosine": 0.9212451748621365,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Pavel inspects eight lock gates per shift.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 397,
+      "content": "Pavel inspects eight lock gates per shift.",
+      "semanticScore": 0.9212451748621365,
+      "lexicalScore": 14.714004462019716
+    },
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 478,
+      "content": "Pavel greases one hinge per shift.",
+      "semanticScore": 0.6092375591873062,
+      "lexicalScore": 7.912668961707664
+    },
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 440,
+      "content": "Rena greases three winches per shift.",
+      "semanticScore": 0.455746799359463,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "Rillpoint Lightstation transferred to North Spit in 1859.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.15045539444403716,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "Its first restoration was completed in 1913.",
+      "start": 58,
+      "end": 102,
+      "similarity": 0.011644877888077122,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "A second restoration was completed in 1962.",
+      "start": 103,
+      "end": 146,
+      "similarity": 0.09463253163501531,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "The proposed demolition in 1987 was canceled and never took place.",
+      "start": 147,
+      "end": 213,
+      "similarity": -0.021963785669936123,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "Winter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius.",
+      "start": 215,
+      "end": 296,
+      "similarity": 0.15075386918353875,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "Its highest monthly mean temperature is 23 degrees Celsius in August.",
+      "start": 297,
+      "end": 366,
+      "similarity": 0.011269059119784135,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 367,
+      "end": 428,
+      "similarity": 0.03805180282579326,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "Edda binds nine charts per week.",
+      "start": 430,
+      "end": 462,
+      "similarity": 0.1890709937644251,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "Soren checks three beacons per night.",
+      "start": 463,
+      "end": 500,
+      "similarity": 0.31394648508063283,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "Edda washes two lanterns per week.",
+      "start": 501,
+      "end": 535,
+      "similarity": 0.13791813319001162,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "090a5a63-00de-458c-9feb-e590e79840ac",
+      "value": "Rillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+      "start": 537,
+      "end": 660,
+      "similarity": 0.11499481643199085,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "The Tavren Ceramics kiln was commissioned in 1978.",
+      "start": 0,
+      "end": 50,
+      "similarity": 0.09325585224341923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "Its rebuild took place in 2009.",
+      "start": 51,
+      "end": 82,
+      "similarity": 0.056906144248527364,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "The planned transfer in 2020 did not occur.",
+      "start": 83,
+      "end": 126,
+      "similarity": 0.030426535348877,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+      "start": 128,
+      "end": 206,
+      "similarity": 0.10574594424396813,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 207,
+      "end": 268,
+      "similarity": 0.033526037896072926,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "Its highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 269,
+      "end": 336,
+      "similarity": -0.01643359649807145,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.",
+      "start": 338,
+      "end": 420,
+      "similarity": 0.23514117051133507,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "In a dusty bay, use a 42-hour lubrication interval.",
+      "start": 421,
+      "end": 472,
+      "similarity": 0.14606508570499793,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "Inspection remains every 21 operating hours in both bays.",
+      "start": 473,
+      "end": 530,
+      "similarity": 0.26684994362060427,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "Purchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead.",
+      "start": 532,
+      "end": 645,
+      "similarity": 0.17802171578497492,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.",
+      "start": 646,
+      "end": 750,
+      "similarity": 0.11890395066558179,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6651d56e-6dcd-41dd-a04d-ebe3ba1267a4",
+      "value": "Tavren Ceramics maintenance records are retained for 4 years, unless an unresolved warranty claim requires longer retention.",
+      "start": 752,
+      "end": 876,
+      "similarity": 0.10851175858414835,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "Rossell Seed Library opened its public desk in 1996.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.07705588002669221,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "Its warehouse relocation took place in 2011.",
+      "start": 53,
+      "end": 97,
+      "similarity": 0.052024581708729985,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "An opening ceremony for a separate annex occurred in 2018.",
+      "start": 98,
+      "end": 156,
+      "similarity": 0.14835085912608711,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "Nalin sorts six seed trays per day.",
+      "start": 158,
+      "end": 193,
+      "similarity": 0.24868007632653008,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "Vera labels four seed packets per day.",
+      "start": 194,
+      "end": 232,
+      "similarity": 0.09990637469026478,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "Nalin labels two storage boxes per day.",
+      "start": 233,
+      "end": 272,
+      "similarity": 0.19704366964953793,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "Requests released before 11:45 are shipped the same working day.",
+      "start": 274,
+      "end": 338,
+      "similarity": 0.07548898383230668,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.",
+      "start": 339,
+      "end": 439,
+      "similarity": 0.22254447707071146,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "Rossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius.",
+      "start": 441,
+      "end": 525,
+      "similarity": 0.020643691732684797,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "The winter log contains monthly averages rather than individual extreme readings.",
+      "start": 526,
+      "end": 607,
+      "similarity": 0.044245645392657365,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e963ace8-6c94-4028-8d9d-6fd8e3939e77",
+      "value": "Rossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires longer retention.",
+      "start": 609,
+      "end": 734,
+      "similarity": 0.09209872612246033,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "Lenwick Canal Transit relocated in 1882.",
+      "start": 0,
+      "end": 40,
+      "similarity": 0.06656775696522013,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "The depot renovation occurred in 1931.",
+      "start": 41,
+      "end": 79,
+      "similarity": 0.12473971229667241,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "Another depot renovation occurred in 1974.",
+      "start": 80,
+      "end": 122,
+      "similarity": 0.14352925193780114,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "A proposed tunnel closure in 1999 was rejected; the tunnel did not close.",
+      "start": 123,
+      "end": 196,
+      "similarity": 0.12826485519601613,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+      "start": 198,
+      "end": 273,
+      "similarity": 0.05363889821895002,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "Its highest recorded daily temperature is 36 degrees Celsius.",
+      "start": 274,
+      "end": 335,
+      "similarity": 0.04531042058018769,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "Its highest monthly mean temperature is 22 degrees Celsius.",
+      "start": 336,
+      "end": 395,
+      "similarity": 0.03633269787148315,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "Pavel inspects eight lock gates per shift.",
+      "start": 397,
+      "end": 439,
+      "similarity": 0.9212451748621365,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "Rena greases three winches per shift.",
+      "start": 440,
+      "end": 477,
+      "similarity": 0.455746799359463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "Pavel greases one hinge per shift.",
+      "start": 478,
+      "end": 512,
+      "similarity": 0.6092375591873062,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "start": 514,
+      "end": 641,
+      "similarity": 0.08077789727124725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+      "value": "Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+      "start": 643,
+      "end": 757,
+      "similarity": 0.11537974369520969,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d:0",
+          "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "nnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+          "quote": "Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+          "score": 0.0214,
+          "lexicalScore": 7.194399682227933,
+          "semanticScore": null,
+          "matchedTerms": [
+            "lock",
+            "gates",
+            "pavel",
+            "per",
+            "shift"
+          ],
+          "start": 397,
+          "end": 512
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Pavel inspects eight lock gates per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 397,
+            "cosine": 0.9212451748621365,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Pavel inspects eight lock gates per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d:0",
+          "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "nnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+          "quote": "Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+          "score": 0.0214,
+          "lexicalScore": 7.194399682227933,
+          "semanticScore": null,
+          "matchedTerms": [
+            "lock",
+            "gates",
+            "pavel",
+            "per",
+            "shift"
+          ],
+          "start": 397,
+          "end": 512
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Pavel inspects eight lock gates per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 397,
+            "cosine": 0.9212451748621365,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Pavel inspects eight lock gates per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Pavel inspects eight lock gates per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d:0",
+          "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "nnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigat",
+          "quote": "Pavel inspects eight lock gates per shift.",
+          "score": 0.0214,
+          "lexicalScore": 7.194399682227933,
+          "semanticScore": null,
+          "matchedTerms": [
+            "lock",
+            "gates",
+            "pavel",
+            "per",
+            "shift"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Pavel inspects eight lock gates per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 397,
+            "cosine": 0.9212451748621365,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Pavel inspects eight lock gates per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Pavel inspects eight lock gates per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d:0",
+          "documentId": "6cf13564-ab0b-4cbb-8dea-f5e4e9c8e45d",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "nnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigat",
+          "quote": "Pavel inspects eight lock gates per shift.",
+          "score": 0.0214,
+          "lexicalScore": 7.194399682227933,
+          "semanticScore": null,
+          "matchedTerms": [
+            "lock",
+            "gates",
+            "pavel",
+            "per",
+            "shift"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Pavel inspects eight lock gates per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 397,
+            "cosine": 0.9212451748621365,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Pavel inspects eight lock gates per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.022067159414291382,
+    -0.05479155853390694,
+    -0.109847791492939,
+    -0.027145802974700928,
+    -0.027866041287779808,
+    0.06884229183197021,
+    0.0383051261305809,
+    -0.002557914238423109,
+    0.08041179925203323,
+    0.030501380562782288,
+    -0.010840621776878834,
+    0.038661133497953415,
+    -0.06258057057857513,
+    -0.045374900102615356,
+    -0.01557767204940319,
+    0.00017591071082279086,
+    -0.04767780005931854,
+    -0.010035074315965176,
+    0.006514600478112698,
+    -0.04514960199594498,
+    0.03412354737520218,
+    -0.12332630902528763,
+    0.059989143162965775,
+    -0.04079931229352951,
+    -0.04370609298348427,
+    -0.0038805322255939245,
+    -0.024891823530197144,
+    0.005264645908027887,
+    0.06468255817890167,
+    -0.06146896630525589,
+    -0.10988041758537292,
+    0.04420715942978859,
+    0.020287150517106056,
+    0.046344757080078125,
+    -0.021579604595899582,
+    -0.018585780635476112,
+    0.001850803499110043,
+    0.037336353212594986,
+    0.0192211102694273,
+    0.016080088913440704,
+    -0.0032453476451337337,
+    -0.005730431526899338,
+    -0.01825227402150631,
+    -0.005131832789629698,
+    0.045285213738679886,
+    0.0737713873386383,
+    -0.0537957027554512,
+    0.012025192379951477,
+    0.06980543583631516,
+    -0.06360945850610733,
+    -0.07769808918237686,
+    0.0916583463549614,
+    -0.020763490349054337,
+    0.04107366502285004,
+    0.01258279848843813,
+    -0.0332358293235302,
+    0.0684933215379715,
+    -0.009565792977809906,
+    0.06409649550914764,
+    0.026982557028532028,
+    0.0206124447286129,
+    -0.012499340809881687,
+    -0.08784408867359161,
+    -0.014483197592198849,
+    -0.013047253713011742,
+    0.01872875541448593,
+    -0.08352786302566528,
+    -0.08641025424003601,
+    0.05771788954734802,
+    0.01880234107375145,
+    0.010151483118534088,
+    -0.025317123159766197,
+    -0.019539205357432365,
+    -0.07569900155067444,
+    -0.009014146402478218,
+    -0.10810010135173798,
+    -0.03499631956219673,
+    0.0008380390354432166,
+    0.021858669817447662,
+    -0.11352236568927765,
+    0.006000074092298746,
+    -0.05412571504712105,
+    -0.029952872544527054,
+    0.058087948709726334,
+    0.05651748180389404,
+    0.024972960352897644,
+    -0.0377306267619133,
+    0.05736570432782173,
+    0.02089616470038891,
+    0.05834956094622612,
+    -0.0381026454269886,
+    -0.028793567791581154,
+    0.012881618924438953,
+    -0.06485654413700104,
+    -0.019937537610530853,
+    0.007958773523569107,
+    -0.034539997577667236,
+    0.03692392259836197,
+    -0.052276644855737686,
+    0.059397365897893906,
+    0.028553763404488564,
+    -0.010121595114469528,
+    0.022710468620061874,
+    0.01007254421710968,
+    -0.0330408476293087,
+    0.08775665611028671,
+    0.08958962559700012,
+    0.0037865713238716125,
+    -0.016297852620482445,
+    -0.012415989302098751,
+    0.010860875248908997,
+    0.042630258947610855,
+    0.049471355974674225,
+    0.029959160834550858,
+    0.015053480863571167,
+    -0.03111574612557888,
+    -0.06571204960346222,
+    0.09655500203371048,
+    0.058305151760578156,
+    0.12961041927337646,
+    0.036815330386161804,
+    -0.0313444510102272,
+    0.051173292100429535,
+    0.008994393981993198,
+    -0.04488029703497887,
+    -0.009411953389644623,
+    -0.004070931579917669,
+    -2.5209910823833943e-33,
+    0.01956094242632389,
+    -0.018817685544490814,
+    -0.08301710337400436,
+    0.014062042348086834,
+    0.01841481775045395,
+    0.05924759432673454,
+    -0.037275563925504684,
+    -0.04457731917500496,
+    0.01869315840303898,
+    0.07626798003911972,
+    0.01363016851246357,
+    -0.054905712604522705,
+    0.004778687842190266,
+    -0.017334051430225372,
+    0.07418505102396011,
+    -0.023783214390277863,
+    0.05462735518813133,
+    0.059295013546943665,
+    -0.03955217823386192,
+    -0.0022763332817703485,
+    0.04876353219151497,
+    -0.0269191712141037,
+    0.0004878815670963377,
+    0.04309755936264992,
+    0.08753511309623718,
+    -0.03285918012261391,
+    0.010199679993093014,
+    -0.05310560017824173,
+    0.021119674667716026,
+    0.03832457587122917,
+    -0.09250661730766296,
+    0.10495472699403763,
+    -0.048603665083646774,
+    0.059073880314826965,
+    -0.01915230043232441,
+    0.044213440269231796,
+    0.005359006579965353,
+    -0.04481641948223114,
+    0.022836970165371895,
+    -0.10547428578138351,
+    -0.053828682750463486,
+    -0.11955007165670395,
+    -0.005760791711509228,
+    -0.07652681320905685,
+    -0.06466814875602722,
+    0.016682960093021393,
+    -0.026489978656172752,
+    0.07522056996822357,
+    -0.0008300040499307215,
+    0.05388646572828293,
+    0.05413852632045746,
+    0.062408093363046646,
+    -0.0884748324751854,
+    -0.000730411964468658,
+    -0.023846818134188652,
+    0.002509466139599681,
+    0.09023170918226242,
+    0.0022784946486353874,
+    0.06738054007291794,
+    0.11488528549671173,
+    -0.030443008989095688,
+    0.026935309171676636,
+    0.036575254052877426,
+    0.05264667794108391,
+    0.03625926002860069,
+    0.011378305032849312,
+    -0.0682968720793724,
+    -0.03201215714216232,
+    0.03800579160451889,
+    0.06846203655004501,
+    -0.10658153146505356,
+    -0.06620173156261444,
+    -0.03614751994609833,
+    -0.03461287543177605,
+    -0.04028046503663063,
+    -0.006870996206998825,
+    -0.03426381200551987,
+    0.04590103402733803,
+    -0.00989232212305069,
+    -0.009345510974526405,
+    -0.030084021389484406,
+    0.05742722749710083,
+    0.02651936002075672,
+    0.071380116045475,
+    0.02890985645353794,
+    -0.008958065882325172,
+    0.004787631798535585,
+    0.03713997080922127,
+    -0.08253755420446396,
+    -0.023173119872808456,
+    0.03937576338648796,
+    -0.10199978947639465,
+    0.06504982709884644,
+    0.009713276289403439,
+    -0.10012327134609222,
+    1.1341005111195307e-33,
+    -0.061581432819366455,
+    -0.001002614852041006,
+    0.02992674894630909,
+    0.016955243423581123,
+    -0.005105715245008469,
+    -0.002734143054112792,
+    -0.017108185216784477,
+    0.06750592589378357,
+    0.03191009536385536,
+    0.04928365349769592,
+    0.07306157797574997,
+    0.03232230991125107,
+    -0.04437440261244774,
+    0.03885616734623909,
+    0.0010712601942941546,
+    -0.0026455954648554325,
+    0.10512878745794296,
+    0.062194809317588806,
+    -0.028831645846366882,
+    -0.017606422305107117,
+    0.07912734150886536,
+    -0.012129652313888073,
+    -0.05763982608914375,
+    0.1170908659696579,
+    -0.0641109049320221,
+    0.09223850816488266,
+    0.0369398407638073,
+    0.04057368263602257,
+    -0.052238572388887405,
+    0.0358111672103405,
+    -0.07777456939220428,
+    -0.0035516968928277493,
+    -0.049223802983760834,
+    0.10189751535654068,
+    0.040087368339300156,
+    -0.008633065037429333,
+    -0.013710894621908665,
+    0.04581445828080177,
+    -0.09994889795780182,
+    0.09099943935871124,
+    0.05991862341761589,
+    0.02979251742362976,
+    0.0351749062538147,
+    0.06499122083187103,
+    -0.03422719985246658,
+    0.02788412943482399,
+    0.02185746096074581,
+    0.013010404072701931,
+    -0.09051302075386047,
+    -0.04429202526807785,
+    0.008853071369230747,
+    0.05553273484110832,
+    -0.04784030839800835,
+    0.027093075215816498,
+    -0.02922009862959385,
+    0.06819574534893036,
+    -0.00565455062314868,
+    0.008759855292737484,
+    0.07408713549375534,
+    -0.03368953615427017,
+    0.04451664909720421,
+    -0.003794177668169141,
+    0.024163156747817993,
+    0.02901049517095089,
+    0.03893384709954262,
+    -0.02965940162539482,
+    0.05075578764081001,
+    -0.06484055519104004,
+    -0.04815772548317909,
+    -0.019422480836510658,
+    0.12250030785799026,
+    -0.0003161660279147327,
+    0.045726094394922256,
+    -0.015470273792743683,
+    -0.04985839128494263,
+    -0.004493010696023703,
+    -0.01580159366130829,
+    -0.09603956341743469,
+    -0.0276519563049078,
+    0.02275284379720688,
+    -0.08393731713294983,
+    -0.13682503998279572,
+    -0.028318611904978752,
+    0.08508259057998657,
+    -0.07723510265350342,
+    -0.0076690902933478355,
+    0.0398210845887661,
+    -0.030016154050827026,
+    0.07881855219602585,
+    -0.027818147093057632,
+    0.010917634703218937,
+    0.013105225749313831,
+    0.024883028119802475,
+    -0.09310761094093323,
+    0.0518399216234684,
+    -1.5168730271852837e-8,
+    -0.0008597633568570018,
+    0.009503488428890705,
+    -0.006961649749428034,
+    -0.050881460309028625,
+    0.059534382075071335,
+    -0.05361253395676613,
+    -0.009553370997309685,
+    0.017955102026462555,
+    -0.1143651232123375,
+    -0.009226057678461075,
+    0.052888043224811554,
+    0.02717694081366062,
+    -0.03540197014808655,
+    -0.0019826481584459543,
+    0.03877580910921097,
+    0.005018091760575771,
+    -0.029910916462540627,
+    0.017581341788172722,
+    -0.0455336757004261,
+    -0.06416892260313034,
+    0.05062911659479141,
+    0.0005495228688232601,
+    0.0665048211812973,
+    0.03902166336774826,
+    -0.06990759074687958,
+    -0.021056750789284706,
+    -0.03838086128234863,
+    0.003403742564842105,
+    0.04198543354868889,
+    -0.02959921397268772,
+    0.029702790081501007,
+    0.005817589815706015,
+    0.06482239067554474,
+    0.04027581587433815,
+    0.04282164201140404,
+    0.06951270997524261,
+    -0.04055510088801384,
+    -0.004830497782677412,
+    0.09466802328824997,
+    0.03693399578332901,
+    -0.04451474919915199,
+    -0.13799647986888885,
+    -0.022917723283171654,
+    0.06150098517537117,
+    -0.10382268577814102,
+    0.012157324701547623,
+    -0.07186421006917953,
+    -0.035625677555799484,
+    -0.06500875949859619,
+    -0.05659206584095955,
+    0.007872228510677814,
+    0.05537974461913109,
+    -0.017665881663560867,
+    0.04900750145316124,
+    -0.03021402657032013,
+    0.044283680617809296,
+    -0.03078310750424862,
+    -0.11034873872995377,
+    0.0293747466057539,
+    0.011047881096601486,
+    -0.01640108786523342,
+    -0.018866732716560364,
+    -0.050763197243213654,
+    -0.05354487523436546
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "start": 0,
+        "content": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "start": 0,
+        "content": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention."
+      }
+    ]
+  }
+}

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — First v43 nine-pack exposed regression PASS
+
+- Preserve raw engineering log with approved exact-file trailing-blank exception (`b8f6281b`); retain the first unit failure and publication workflow error. No historical evidence/rubric rewrite.
+- First frozen v43 study: eight 32-case families 32/32 each and RetrievalQuality28 28/28 in both variants; 284 distinct exposed cases (252 actual MiniLM Hybrid/32 lexical Comparisons), no historical PASS loss or retries. RQ02,C09,B14,F14 restore historical v38 answers; only these differ versus paired v42.
+- Audit 19,934 body cosines/54 facet anchors; seal 2,254 artifacts and preserve 4,337 older artifact hashes. 764 unit/28 Keyword/609-file freeze checks PASS. 384 verified cases and 103 missing originals remain; live r44 unchanged, phase 1 and adoption holds remain. [Results](docs/V43_NINE_PACK_MAC_RESULTS.md).
+
 ## 2026-10-20 — V43 deferred clock engineering and nine-pack preparation
 
 - Precommitted protocol `c88c6fbc`; implement isolated bounded request/source forms for RQ02,C09,B14,F14, preserving v42 and live r44.
