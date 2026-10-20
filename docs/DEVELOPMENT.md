@@ -292,3 +292,12 @@ restore historical v38 outputs under structured scope. 764 unit/28 Keyword check
 and 609-file freeze PASS. Never reuse completed first evidence directories.
 384 verified cases/10 families and 103 unavailable originals remain; phase 1, fresh
 confirmation and adoption holds stay open. Live5.6/r44 is unchanged.
+
+## V43 all-available combined preparation
+
+[Preparation](V43_ALL_AVAILABLE_PREPARATION.md) freezes one668-case run across all19
+available families, with unchanged v43/native scoring and paired v42.771 unit/28
+Keyword checks pass after an approved duplicate-reference validator correction;
+827 files frozen. Known public failures stay visible, changed manual Cobalt output
+requires review. Model study NOT RUN at this checkpoint.103 missing originals
+and phase1/full-regression/adoption holds remain; never reuse first evidence paths.

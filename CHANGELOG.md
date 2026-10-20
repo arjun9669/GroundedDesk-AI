@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Prepare one combined668-case available-input regression
+
+- Freeze unchanged v43 across19 native families:628 actual MiniLM Hybrid/40 lexical Comparisons, original75 documents/117 input entries. Native adapters retain original grades, category gates and variant-specific history preservation; known public failures remain FAIL, changed manual Cobalt output requires review.
+- First engineering767/3 of770 stopped on a duplicate protocol across reference categories. User approved independent category hash checks;771 units/28 Keyword and clean Chrome155.0.8059.85 startup PASS. Preserve first/passing logs and all old evidence.
+- New827-file freeze before questions; capture/scoring NOT RUN at this checkpoint.103 originals/combined config remain unavailable; live r44 unchanged and no full771-case/adoption claim. [Preparation](docs/V43_ALL_AVAILABLE_PREPARATION.md).
+
 ## 2026-10-20 — First v43 nine-pack exposed regression PASS
 
 - Preserve raw engineering log with approved exact-file trailing-blank exception (`b8f6281b`); retain the first unit failure and publication workflow error. No historical evidence/rubric rewrite.

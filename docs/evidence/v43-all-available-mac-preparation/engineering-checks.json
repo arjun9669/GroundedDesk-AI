@@ -1,0 +1,20 @@
+{
+  "classification": "Engineering only; no new model questions",
+  "first_unit_run": {
+    "tests": 770,
+    "PASS": 767,
+    "FAIL": 3,
+    "cause": "All three fail on a protocol appearing in both verified-input and native-reference lists; no input hash mismatch."
+  },
+  "approved_correction": "Verify each reference category independently, preserving every hash and intra-category duplicate guard. Negative controls reject conflicting hashes.",
+  "approved_unit_run": {
+    "tests": 771,
+    "PASS": 771,
+    "FAIL": 0
+  },
+  "keyword_strict": {
+    "cases": 28,
+    "PASS": 28
+  },
+  "note": "771 is the unit-test count, not771 model cases. The planned model scope is668 available original cases."
+}

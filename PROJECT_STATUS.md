@@ -17,7 +17,33 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v43: eight 32-case packs 32/32 and RetrievalQuality28 28/28 PASS, both variants; not adopted |
 | Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: v43 nine-pack regression complete; 384 verified cases/10 families remain; no live integration |
+| Current change | Phase 1: preparing one frozen668-case run across all19 available families; original candidate unchanged |
+
+## All-available combined run — preparation
+
+The user requested all cases in one shot and approved correcting an overlapping
+input-reference validator. The new [protocol](eval/v43-all-available-regression/PROTOCOL.md)
+and [preparation](docs/V43_ALL_AVAILABLE_PREPARATION.md) define668 original cases
+across19 families:628 actual MiniLM Hybrid plus40 lexical Comparisons. This is
+an explicit NEW available-input config, not recovery of the missing original
+combined config. V43, v42, live5.6/r44 and all historical evidence remain unchanged.
+
+The first engineering check recorded767 PASS/3 FAIL of770, all from one protocol
+listed in both input and native-reference categories. Work stopped; user approved
+the correction. Each category now retains independent complete hash verification
+and its own duplicate guard; conflicting cross-category hashes still fail.
+**771/771 unit tests**, strict **28/28 Keyword**, clean Chrome155.0.8059.85 startup,
+original input/history/adapter-equivalence/resource checks PASS. The771 unit count
+is not771 model cases. The original failed log and approved passing log are
+preserved verbatim. **827-file freeze** prepared; model capture/scoring NOT RUN
+at this checkpoint. Publish before questions.
+
+Native gates remain separate. Known public failures (ExternalSQuAD24 E08/E24;
+FreshConfirmation32 F07/F09/F10, variant-specific) retain FAIL outcomes. No new
+failure/PASS loss or changed known-failure signature is allowed. Changed Cobalt
+manual answers require adjudication; no new automatic semantic grade is invented.
+103 unavailable originals and phase1/full-gate/fresh-confirmation/adoption holds
+remain. Previous nine-pack results below stay preserved.
 
 ## Latest v43 result — nine separate exposed gates PASS
 
