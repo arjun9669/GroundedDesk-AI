@@ -17,7 +17,17 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v41: Vela32, Prism32, Lumen32, Hearth32 each **32/32 PASS** both variants; H04 repaired; v40 first failure preserved; not adopted |
 | Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: v41 fix and four-pack revalidation complete; next Morrow32 and other verified packs; no live integration |
+| Current change | Phase 1: Morrow32 preparation/freeze ready; actual capture not yet run at this checkpoint; v41 unchanged |
+
+## Morrow32 v41 preparation checkpoint
+
+User authorized the next exposed Morrow32 regression. A new **469-file freeze**
+pins unchanged v41/paired v40, original sources/key/protocol/native criteria,
+45 historical variant arrays and Chrome155.0.8059.85 startup. **670 unit tests**,
+strict **28/28 Keyword**, original criteria/input/history and clean startup checks
+PASS. Preserve first v30 30/0/2 and archive-name qualification unchanged.
+[Preparation](docs/V41_MORROW32_PREPARATION.md). Actual capture/scoring **NOT RUN at
+this checkpoint**; publish freeze before questions. Live5.6/r44 unchanged.
 
 ## Latest v41 result — four partial gates PASS
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Morrow32 v41 exposed-regression preparation
+
+- Prepare original-input Morrow32 validation with unchanged v41 and paired v40, exact native criteria and45 historical variant preservation checks. Preserve first v30 30/0/2 (M11,M32), unchanged review and archive filename erratum.
+- 670 unit/28 strict Keyword checks PASS; clean Chrome155.0.8059.85 startup and original input/history/scoring checks PASS. Freeze469 files before a new once-only32-case capture; model capture/scoring NOT RUN at this checkpoint.
+- All candidates, first evidence and live r44 unchanged. [Preparation](docs/V41_MORROW32_PREPARATION.md).
+
 ## 2026-10-20 — First v41 four-pack exposed regression PASS
 
 - Protocol `72c74ad7` preceded implementation; freeze `d3b854f4` preceded questions. Vela32, Prism32, Lumen32 and Hearth32 each pass 32/32 in both v41 variants. H04 is repaired with the full original collection-day/hold quotation; paired v40 retains FAIL. All historical first results preserved.
