@@ -259,3 +259,17 @@ failed model gate. [Investigation](MORROW32_V41_FAILURE_REVIEW.md) proposes a
 separate structured v42 protocol and five-pack revalidation. No candidate fix or
 model rerun in this publication task. 508 verified cases and 103 unavailable originals
 remain; phase 1 and live-adoption holds stay in place. Read PROJECT_STATUS.md.
+
+## Latest isolated v42 checkpoint
+
+[First five-pack v42 results](V42_FIVE_PACK_MAC_RESULTS.md) pass 32/32 per pack in
+both variants, repairing M04 while preserving its failed v41 first evidence.
+Current engineering suite: 710 unit tests; strict Keyword: 28 cases; 529-file freeze
+verified. [Preparation](COVERAGE_V42_PREPARATION.md) records exact scope/environment;
+never reuse completed evidence directories. Live 5.6/r44 remains unchanged.
+
+The preimplementation inventory identified four other unresolved clock forms
+(RQ02,C09,B14,F14) deliberately deferred from this study. Review/freeze their
+request/source grammar and native criteria before expanding affected packs.
+508 verified cases / 14 packs and 103 missing originals remain; phase 1, full regression,
+fresh confirmation and integration/product/release gates stay open.

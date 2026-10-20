@@ -15,9 +15,34 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v41 Morrow32 **FAIL: 31/0/1** both variants, M04 false refusal; earlier four-pack passes preserved; not adopted |
-| Release decision | Integration **HOLD** after Morrow32 regression; full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: v42 implementation and five-pack validation authorized; inventory complete, protocol precedes coding; no live integration |
+| Latest isolated candidate | v42: all five exposed packs **32/32 PASS** both variants; M04 repaired; v41 first failure preserved; not adopted |
+| Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
+| Current change | Phase 1: v42 five-pack revalidation complete; deferred clock forms/508 remaining verified cases need separate protocols; no live integration |
+
+## Latest v42 result — five partial gates PASS
+
+Protocol/inventory `7ed219e1` preceded coding; freeze `8970bd5c` reached GitHub before
+questions. Vela32, Prism32, Lumen32, Hearth32, Morrow32 each pass **32/32** in both
+v42 variants. M04 binds the correct entity/ticket type and full literal next-day/
+wind-suspension-hold relation. Paired v41 retains its 31/0/1 Morrow32 FAIL. No
+historical PASS loss, false accepts/refusals, execution errors or question retries.
+These are 160 distinct exposed cases (140 Hybrid / 20 lexical Comparisons), not
+fresh confirmation or the full regression gate.
+
+[Results/evidence](docs/V42_FIVE_PACK_MAC_RESULTS.md) preserve native grades,
+assistant review and a seal of 1,268 artifacts (120,959,783 bytes). Only M04's two
+variant answers/quotes change versus first v41; all 20 source texts and 159 other
+case outputs stay unchanged. Offline audit recomputes 9,202 body cosines and checks
+36 facet anchors. All 3,069 selected previous v41/v40/v39 artifact hashes and original
+input/history identities remain intact. Engineering: **710 unit tests**, strict
+**28/28 Keyword**, clean Chrome 155.0.8059.85 startup and 529-file freeze PASS.
+Live 5.6/r44 remains unchanged; no runtime integration.
+
+Next review/freeze the four deliberately deferred clock forms RQ02,C09,B14,F14
+and native pack criteria before expanding affected regressions. **508 verified
+cases / 14 other packs** remain untested with v42; 103 originals/combined configuration
+remain unavailable. Phase 1, full regression, missing-input decision, prospective
+confirmation and product/integration/release gates remain open.
 
 ## Authorized v42 — protocol checkpoint
 
@@ -41,7 +66,7 @@ exposed cases and exact independently embedded candidate/paired-v41 facet querie
 this checkpoint**; publish freeze before questions. Four deferred clock forms and
 508 untested verified cases remain explicit. No live integration or adoption.
 
-## Latest Morrow32 result — FAIL / HOLD
+## Preserved first v41 Morrow32 result — FAIL / HOLD
 
 Freeze `0ffd3e11` preceded model questions. First Morrow32 actual-model capture
 completed 32 cases: **31 PASS / 0 PARTIAL / 1 FAIL** in both v41 variants and paired
@@ -63,9 +88,9 @@ Live 5.6/r44 and all candidates/first evidence remain unchanged.
 
 V41 now has **160 distinct exposed tested cases / five packs**, separately scored:
 four gates PASS, Morrow32 FAIL. **508 verified cases / 14 other packs** remain
-untested with v41; 103 originals/combined configuration are unavailable. Next is a
-separate v42 protocol/structured grammar decision and five-pack revalidation,
-before broader regression. Phase 1, full regression, fresh confirmation and live
+untested with v41; 103 originals/combined configuration are unavailable. At that
+checkpoint the next decision was separate v42 design/five-pack revalidation; it
+has since passed above. Phase 1, full regression, fresh confirmation and live
 integration/product/release gates remain open.
 
 ## Morrow32 v41 preparation checkpoint

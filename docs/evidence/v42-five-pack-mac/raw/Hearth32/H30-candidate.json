@@ -1,0 +1,230 @@
+{
+  "candidate_identity": "coverage-v42-ticket-relations",
+  "id": "H30",
+  "question": "Compare normal and exception lubrication plus inspection intervals for the Caldra Tide Station salt-spray winch and Tessarin Repair Cafe dusty-workroom bench drill.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.\n\n[2] Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.",
+    "sources": [
+      {
+        "filename": "03_Caldra_Tide_Station.txt",
+        "quote": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions."
+      },
+      {
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room."
+      }
+    ],
+    "displayed": "Shared vocabulary: conditions, every, four, hours, inspect, lubricate, normal, operating, records, under. Shared terms do not establish factual agreement.\n\n[1] 03_Caldra_Tide_Station.txt\n\nThe Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.\n\nText line 7 (normalized extraction)\n\nLocate in library ↗\n[2] 04_Tessarin_Repair_Cafe.txt\n\nLubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.\n\nText line 5 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare normal and exception lubrication plus inspection intervals for the Caldra Tide Station salt-spray winch and Tessarin Repair Cafe dusty-workroom bench drill.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+        "filename": "03_Caldra_Tide_Station.txt",
+        "excerpt": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.",
+        "warning": false,
+        "supported": true,
+        "quote": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions."
+      },
+      {
+        "citation": 2,
+        "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.",
+        "warning": false,
+        "supported": true,
+        "quote": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room."
+      }
+    ],
+    "sharedTerms": [
+      "conditions",
+      "every",
+      "four",
+      "hours",
+      "inspect",
+      "lubricate",
+      "normal",
+      "operating",
+      "records",
+      "under"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.\n\n[2] Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare normal and exception lubrication plus inspection intervals for the Caldra Tide Station salt-spray winch and Tessarin Repair Cafe dusty-workroom bench drill.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+        "filename": "03_Caldra_Tide_Station.txt",
+        "excerpt": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.",
+        "warning": false,
+        "supported": true,
+        "quote": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.",
+        "start": 396,
+        "end": 615
+      },
+      {
+        "citation": 2,
+        "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.",
+        "warning": false,
+        "supported": true,
+        "quote": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room."
+      }
+    ],
+    "sharedTerms": [
+      "conditions",
+      "every",
+      "four",
+      "hours",
+      "inspect",
+      "lubricate",
+      "normal",
+      "operating",
+      "records",
+      "under"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.\n\n[2] Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.",
+    "experiment": "V35 isolated source-local maintenance Comparison; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare normal and exception lubrication plus inspection intervals for the Caldra Tide Station salt-spray winch and Tessarin Repair Cafe dusty-workroom bench drill.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+        "filename": "03_Caldra_Tide_Station.txt",
+        "excerpt": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.",
+        "warning": false,
+        "supported": true,
+        "quote": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.",
+        "start": 396,
+        "end": 615
+      },
+      {
+        "citation": 2,
+        "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.",
+        "warning": false,
+        "supported": true,
+        "quote": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room."
+      }
+    ],
+    "sharedTerms": [
+      "conditions",
+      "every",
+      "four",
+      "hours",
+      "inspect",
+      "lubricate",
+      "normal",
+      "operating",
+      "records",
+      "under"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.\n\n[2] Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.",
+    "experiment": "V35 isolated source-local maintenance Comparison; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare normal and exception lubrication plus inspection intervals for the Caldra Tide Station salt-spray winch and Tessarin Repair Cafe dusty-workroom bench drill.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+          "filename": "03_Caldra_Tide_Station.txt",
+          "excerpt": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.",
+          "warning": false,
+          "supported": true,
+          "quote": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.",
+          "start": 396,
+          "end": 615
+        },
+        {
+          "citation": 2,
+          "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+          "filename": "04_Tessarin_Repair_Cafe.txt",
+          "excerpt": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.",
+          "warning": false,
+          "supported": true,
+          "quote": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room."
+        }
+      ],
+      "sharedTerms": [
+        "conditions",
+        "every",
+        "four",
+        "hours",
+        "inspect",
+        "lubricate",
+        "normal",
+        "operating",
+        "records",
+        "under"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.\n\n[2] Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.",
+      "experiment": "V35 isolated source-local maintenance Comparison; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare normal and exception lubrication plus inspection intervals for the Caldra Tide Station salt-spray winch and Tessarin Repair Cafe dusty-workroom bench drill.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+          "filename": "03_Caldra_Tide_Station.txt",
+          "excerpt": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.",
+          "warning": false,
+          "supported": true,
+          "quote": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.",
+          "start": 396,
+          "end": 615
+        },
+        {
+          "citation": 2,
+          "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+          "filename": "04_Tessarin_Repair_Cafe.txt",
+          "excerpt": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.",
+          "warning": false,
+          "supported": true,
+          "quote": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room."
+        }
+      ],
+      "sharedTerms": [
+        "conditions",
+        "every",
+        "four",
+        "hours",
+        "inspect",
+        "lubricate",
+        "normal",
+        "operating",
+        "records",
+        "under"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions. In a salt-spray bay, lubricate it every 42 operating hours. Inspect the winch every 21 operating hours regardless of bay.\n\n[2] Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions. In a dusty workroom, lubricate it every 52 operating hours. Inspect the drill every 26 operating hours in either room.",
+      "experiment": "V35 isolated source-local maintenance Comparison; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v42 and paired v41 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

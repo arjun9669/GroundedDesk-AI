@@ -1,0 +1,1274 @@
+{
+  "candidate_identity": "coverage-v42-ticket-relations",
+  "id": "H10",
+  "question": "List every item in the Ostren Instrument Library custody packet.",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "List every item in the Ostren Instrument Library custody packet.",
+    "expected_display": "List every item in the Ostren Instrument Library custody packet.",
+    "rendered_question": "List every item in the Ostren Instrument Library custody packet.",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+    "sources": [
+      {
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "excerpt": "The Ostren Instrument Library rehearsal room relocation occurred in 1936. Its restoration was completed in 1974. A proposal to close the annex in 2009 was abandoned; the annex stayed open.\n\n## Store and loan records\nL-01. The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. The highest monthly mean temperature is 25 degrees Celsius, in August.\nL-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled.\nL-03. The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+        "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nList every item in the Ostren Instrument Library custody packet.\n\nSearched all files: 01_Veylan_Seed_Conservatory.txt · 02_Ostren_Instrument_Library.txt · 03_Caldra_Tide_Station.txt · 04_Tessarin_Repair_Cafe.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The Ostren Instrument Library rehearsal room relocation occurred in 1936.\n\nSOURCE EVIDENCE\n[1]\n02_Ostren_Instrument_Library.txt\n\nText line 1 (normalized extraction)\n\nThe Ostren Instrument Library rehearsal room relocation occurred in 1936. Its restoration was completed in 1974. A proposal to close the annex in 2009 was abandoned; the annex stayed open. ## Store and loan records L-01. The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. The highest monthly mean temperature is 25 degrees Celsius, in August. L-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled. L-03. The custody packet contains: - a loan agreement - a condition checklist - an accessory inventory - a return receipt\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "17bd7265-66ba-4454-af45-84fd77a2133e:0",
+        "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "excerpt": "The Ostren Instrument Library rehearsal room relocation occurred in 1936. Its restoration was completed in 1974. A proposal to close the annex in 2009 was abandoned; the annex stayed open.\n\n## Store and loan records\nL-01. The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. The highest monthly mean temperature is 25 degrees Celsius, in August.\nL-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled.\nL-03. The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+        "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+        "score": 0.0476,
+        "lexicalScore": 7.973367351068053,
+        "semanticScore": 0.48830322904098283,
+        "matchedTerms": [
+          "ostren",
+          "instrument",
+          "library",
+          "custody",
+          "packet"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "17bd7265-66ba-4454-af45-84fd77a2133e:body:595",
+        "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "quote": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+        "start": 595,
+        "end": 710,
+        "actualCosine": 0.4689110196818396,
+        "cosineAnchor": {
+          "id": "17bd7265-66ba-4454-af45-84fd77a2133e:body:595",
+          "start": 595,
+          "end": 623,
+          "actualCosine": 0.4689110196818396
+        },
+        "excerpt": ". The highest monthly mean temperature is 25 degrees Celsius, in August.\nL-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled.\nL-03. The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt"
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Ostren_Instrument_Library.txt",
+        "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Ostren_Instrument_Library.txt",
+        "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Ostren_Instrument_Library.txt",
+        "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936. Its restoration was completed in 1974. A proposal to close the annex in 2009 was abandoned; the annex stayed open.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "packet",
+        "subjects": [
+          "custody"
+        ]
+      },
+      "actual_cosines": [
+        0.4689110196818396
+      ]
+    }
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "17bd7265-66ba-4454-af45-84fd77a2133e:body:595",
+        "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "quote": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+        "start": 595,
+        "end": 710,
+        "actualCosine": 0.4689110196818396,
+        "cosineAnchor": {
+          "id": "17bd7265-66ba-4454-af45-84fd77a2133e:body:595",
+          "start": 595,
+          "end": 623,
+          "actualCosine": 0.4689110196818396
+        },
+        "excerpt": ". The highest monthly mean temperature is 25 degrees Celsius, in August.\nL-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled.\nL-03. The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt"
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Ostren_Instrument_Library.txt",
+        "quote": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Ostren_Instrument_Library.txt",
+        "quote": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Ostren_Instrument_Library.txt",
+        "quote": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "packet",
+        "subjects": [
+          "custody"
+        ]
+      },
+      "actual_cosines": [
+        0.4689110196818396
+      ]
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Ostren_Instrument_Library.txt",
+      "start": 222,
+      "content": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+      "semanticScore": 0.42055055805752023,
+      "lexicalScore": 7.525698079338692
+    },
+    {
+      "filename": "02_Ostren_Instrument_Library.txt",
+      "start": 595,
+      "content": "The custody packet contains:",
+      "semanticScore": 0.4689110196818396,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Tessarin_Repair_Cafe.txt",
+      "start": 194,
+      "content": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "semanticScore": 0.3702273217807296,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Ostren_Instrument_Library.txt",
+      "start": 0,
+      "content": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+      "semanticScore": null,
+      "lexicalScore": 8.394678467584772
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "Veylan Seed Conservatory opened its public gallery to visitors in 1962.",
+      "start": 0,
+      "end": 71,
+      "similarity": 0.07584791267853028,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "The first glass-roof overhaul took place in 1987; the second glass-roof overhaul took place in 2014.",
+      "start": 72,
+      "end": 172,
+      "similarity": 0.011878998164707501,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "V-01.",
+      "start": 199,
+      "end": 204,
+      "similarity": 0.1333528821394136,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "Orders released before 14:10 leave on the same collection day.",
+      "start": 205,
+      "end": 267,
+      "similarity": 0.143315407939766,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "At or after 14:10, departure is the next collection day, unless a seed-health hold remains active.",
+      "start": 268,
+      "end": 366,
+      "similarity": 0.16287811170879982,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "V-02.",
+      "start": 367,
+      "end": 372,
+      "similarity": 0.11722504064839598,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "Mira checks five germination trays per day.",
+      "start": 373,
+      "end": 416,
+      "similarity": 0.1716974596886253,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "Tobin checks three irrigation valves per day.",
+      "start": 417,
+      "end": 462,
+      "similarity": 0.12676647062336688,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "Mira labels two storage bins per week.",
+      "start": 463,
+      "end": 501,
+      "similarity": 0.2954187377609526,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "V-03.",
+      "start": 502,
+      "end": 507,
+      "similarity": 0.10771003005560187,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "Veylan Seed Conservatory winter monthly mean temperatures range from 6 to 8 degrees Celsius.",
+      "start": 508,
+      "end": 600,
+      "similarity": 0.024745173464336086,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "Individual winter extremes are not listed.",
+      "start": 601,
+      "end": 643,
+      "similarity": 0.15074751122098232,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "V-04.",
+      "start": 644,
+      "end": 649,
+      "similarity": 0.108269862639414,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "Collection slips are retained for 16 months.",
+      "start": 650,
+      "end": 694,
+      "similarity": 0.14183677724637753,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "If a seed-health review is unresolved, keep the affected slips until clearance is recorded.",
+      "start": 695,
+      "end": 786,
+      "similarity": 0.06326206776424913,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "V-05.",
+      "start": 787,
+      "end": 792,
+      "similarity": 0.08604854432130259,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "Acknowledge collection requests within two collection days.",
+      "start": 793,
+      "end": 852,
+      "similarity": 0.14546635031290453,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+      "value": "This acknowledgement does not guarantee stock availability.",
+      "start": 853,
+      "end": 912,
+      "similarity": 0.03666325224884825,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.34624636197221065,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "Its restoration was completed in 1974.",
+      "start": 74,
+      "end": 112,
+      "similarity": 0.012095957522223245,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "A proposal to close the annex in 2009 was abandoned; the annex stayed open.",
+      "start": 113,
+      "end": 188,
+      "similarity": 0.023980873091128105,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "L-01.",
+      "start": 216,
+      "end": 221,
+      "similarity": 0.22712332987560824,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+      "start": 222,
+      "end": 314,
+      "similarity": 0.42055055805752023,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": -0.02915303675644856,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "The highest monthly mean temperature is 25 degrees Celsius, in August.",
+      "start": 377,
+      "end": 447,
+      "similarity": 0.020880969037876167,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "L-02.",
+      "start": 448,
+      "end": 453,
+      "similarity": 0.19877468282572117,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "Signed loan records are retained for 8 years.",
+      "start": 454,
+      "end": 499,
+      "similarity": 0.11375364497362014,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "If an ownership dispute is open, keep the affected records until the dispute is settled.",
+      "start": 500,
+      "end": 588,
+      "similarity": 0.12118973347507758,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "L-03.",
+      "start": 589,
+      "end": 594,
+      "similarity": 0.1717362056555628,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+      "value": "The custody packet contains:",
+      "start": 595,
+      "end": 623,
+      "similarity": 0.4689110196818396,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+      "value": "At Caldra Tide Station, the gauge tower was rebuilt in 1993.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.06289091389675847,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+      "value": "The equipment shed was painted in 2016.",
+      "start": 61,
+      "end": 100,
+      "similarity": 0.10874605019025656,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+      "value": "The highest monthly mean temperature at Caldra Tide Station is 21 degrees Celsius in September.",
+      "start": 102,
+      "end": 197,
+      "similarity": 0.06812161865746745,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 198,
+      "end": 259,
+      "similarity": 0.046394346141904616,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+      "value": "Ruan records six water level readings per watch.",
+      "start": 261,
+      "end": 309,
+      "similarity": 0.16887499679757595,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+      "value": "Sena records four salinity samples per watch.",
+      "start": 310,
+      "end": 355,
+      "similarity": 0.29736899893297636,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+      "value": "Ruan tags two anchor markers per week.",
+      "start": 356,
+      "end": 394,
+      "similarity": 0.06891263424071606,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+      "value": "The Caldra Tide Station winch needs lubrication every 84 operating hours under normal conditions.",
+      "start": 396,
+      "end": 493,
+      "similarity": 0.09223134644479312,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+      "value": "In a salt-spray bay, lubricate it every 42 operating hours.",
+      "start": 494,
+      "end": 553,
+      "similarity": 0.0930292277299864,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07838614-989b-4573-a68f-22055ffbdb8c",
+      "value": "Inspect the winch every 21 operating hours regardless of bay.",
+      "start": 554,
+      "end": 615,
+      "similarity": 0.19624490294880154,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "R-01.",
+      "start": 21,
+      "end": 26,
+      "similarity": 0.16810464967231045,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+      "start": 27,
+      "end": 104,
+      "similarity": 0.05730310421893601,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "An acknowledgement is not a promise that the repair will finish within four hours.",
+      "start": 105,
+      "end": 187,
+      "similarity": -0.008163602452473549,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "R-02.",
+      "start": 188,
+      "end": 193,
+      "similarity": 0.12474240952704378,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "start": 194,
+      "end": 305,
+      "similarity": 0.3702273217807296,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "R-03.",
+      "start": 306,
+      "end": 311,
+      "similarity": 0.1443515019458782,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "Purchases above 5200 credits need written approval from the Treasury Coordinator and Workshop Lead.",
+      "start": 312,
+      "end": 411,
+      "similarity": 0.16646026312268405,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "R-04.",
+      "start": 412,
+      "end": 417,
+      "similarity": 0.08523911693499296,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "Lubricate the Tessarin Repair Cafe bench drill every 104 operating hours under normal conditions.",
+      "start": 418,
+      "end": 515,
+      "similarity": 0.0477899041152418,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "In a dusty workroom, lubricate it every 52 operating hours.",
+      "start": 516,
+      "end": 575,
+      "similarity": 0.08384695631679577,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "Inspect the drill every 26 operating hours in either room.",
+      "start": 576,
+      "end": 634,
+      "similarity": 0.14167273428776184,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "R-05.",
+      "start": 635,
+      "end": 640,
+      "similarity": 0.10729768051547364,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+      "value": "Completed repair records are retained for 7 months, unless an unresolved warranty claim requires longer retention.",
+      "start": 641,
+      "end": 755,
+      "similarity": 0.0307825690138433,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "17bd7265-66ba-4454-af45-84fd77a2133e:body:595",
+          "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+          "filename": "02_Ostren_Instrument_Library.txt",
+          "quote": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+          "start": 595,
+          "end": 710,
+          "actualCosine": 0.4689110196818396,
+          "cosineAnchor": {
+            "id": "17bd7265-66ba-4454-af45-84fd77a2133e:body:595",
+            "start": 595,
+            "end": 623,
+            "actualCosine": 0.4689110196818396
+          },
+          "excerpt": ". The highest monthly mean temperature is 25 degrees Celsius, in August.\nL-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled.\nL-03. The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt"
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Ostren_Instrument_Library.txt",
+          "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Ostren_Instrument_Library.txt",
+          "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Ostren_Instrument_Library.txt",
+          "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936. Its restoration was completed in 1974. A proposal to close the annex in 2009 was abandoned; the annex stayed open.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "packet",
+          "subjects": [
+            "custody"
+          ]
+        },
+        "actual_cosines": [
+          0.4689110196818396
+        ]
+      }
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "17bd7265-66ba-4454-af45-84fd77a2133e:body:595",
+          "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+          "filename": "02_Ostren_Instrument_Library.txt",
+          "quote": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+          "start": 595,
+          "end": 710,
+          "actualCosine": 0.4689110196818396,
+          "cosineAnchor": {
+            "id": "17bd7265-66ba-4454-af45-84fd77a2133e:body:595",
+            "start": 595,
+            "end": 623,
+            "actualCosine": 0.4689110196818396
+          },
+          "excerpt": ". The highest monthly mean temperature is 25 degrees Celsius, in August.\nL-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled.\nL-03. The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt"
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Ostren_Instrument_Library.txt",
+          "quote": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Ostren_Instrument_Library.txt",
+          "quote": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Ostren_Instrument_Library.txt",
+          "quote": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "packet",
+          "subjects": [
+            "custody"
+          ]
+        },
+        "actual_cosines": [
+          0.4689110196818396
+        ]
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "17bd7265-66ba-4454-af45-84fd77a2133e:0",
+          "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+          "filename": "02_Ostren_Instrument_Library.txt",
+          "excerpt": "The Ostren Instrument Library rehearsal room relocation occurred in 1936. Its restoration was completed in 1974. A proposal to close the annex in 2009 was abandoned; the annex stayed open.\n\n## Store and loan records\nL-01. The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius. Its absolute minimum winter temperatur",
+          "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+          "score": 0.0476,
+          "lexicalScore": 7.973367351068053,
+          "semanticScore": 0.48830322904098283,
+          "matchedTerms": [
+            "ostren",
+            "instrument",
+            "library",
+            "custody",
+            "packet"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Ostren_Instrument_Library.txt",
+          "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Ostren_Instrument_Library.txt",
+          "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "17bd7265-66ba-4454-af45-84fd77a2133e:190",
+          "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+          "filename": "02_Ostren_Instrument_Library.txt",
+          "excerpt": "e Ostren Instrument Library rehearsal room relocation occurred in 1936. Its restoration was completed in 1974. A proposal to close the annex in 2009 was abandoned; the annex stayed open.\n\n## Store and loan records\nL-01. The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. The highest monthly mean temperature is 25 degrees Celsius, in August.\nL-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled.\nL-03.",
+          "quote": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 5.839597813922241,
+          "semanticScore": 0.37549454330096554,
+          "matchedTerms": [
+            "ostren",
+            "instrument",
+            "library",
+            "custody",
+            "packet"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Ostren_Instrument_Library.txt",
+          "quote": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Ostren_Instrument_Library.txt",
+          "quote": "The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.003754395991563797,
+    0.039390381425619125,
+    -0.0487852543592453,
+    -0.06894725561141968,
+    0.030688010156154633,
+    -0.0015593402786180377,
+    0.055745866149663925,
+    0.041624993085861206,
+    -0.000660630117636174,
+    -0.015344027429819107,
+    0.05649116262793541,
+    -0.03312024101614952,
+    -0.043113719671964645,
+    -0.08134840428829193,
+    -0.06785892695188522,
+    -0.006751317996531725,
+    -0.017979085445404053,
+    0.03446575254201889,
+    0.015609786845743656,
+    -0.06485425680875778,
+    0.07625453174114227,
+    0.07513383030891418,
+    0.045803479850292206,
+    -0.014334497042000294,
+    -0.046370357275009155,
+    0.08589392155408859,
+    -0.03782975673675537,
+    0.003922238480299711,
+    0.01595565862953663,
+    -0.03300248458981514,
+    0.009664076380431652,
+    0.00022460808395408094,
+    0.04823768883943558,
+    0.03215621039271355,
+    0.06834602355957031,
+    -0.010078229010105133,
+    0.016274629160761833,
+    -0.03481387346982956,
+    -0.05485834181308746,
+    0.015557816252112389,
+    0.01114883366972208,
+    -0.0056269168853759766,
+    -0.029463674873113632,
+    0.0424555167555809,
+    -0.0728026032447815,
+    -0.07421021163463593,
+    -0.04540220648050308,
+    -0.06765956431627274,
+    0.021898308768868446,
+    0.10696456581354141,
+    -0.03384077548980713,
+    -0.09476272761821747,
+    -0.032392606139183044,
+    0.096994549036026,
+    0.06645817309617996,
+    0.0016214012866839767,
+    -0.10030115395784378,
+    -0.01105604600161314,
+    0.015476697124540806,
+    0.014064149931073189,
+    -0.015660827979445457,
+    0.0010835377033799887,
+    -0.0875740572810173,
+    0.039869725704193115,
+    -0.011700370348989964,
+    0.08715280145406723,
+    0.06984124332666397,
+    0.013675724156200886,
+    0.005742715671658516,
+    -0.0424823984503746,
+    0.011107263155281544,
+    -0.027683213353157043,
+    0.04868573322892189,
+    0.04911191388964653,
+    0.043083108961582184,
+    0.03735363483428955,
+    0.007846355438232422,
+    -0.0428377203643322,
+    0.004861763678491116,
+    -0.08306606113910675,
+    -0.06878006458282471,
+    0.026448437944054604,
+    -0.04072929918766022,
+    0.030863195657730103,
+    0.006158554460853338,
+    0.014055194333195686,
+    -0.018279235810041428,
+    0.019939253106713295,
+    -0.011836167424917221,
+    0.05671623349189758,
+    -0.06164809316396713,
+    -0.04034709930419922,
+    0.03975195065140724,
+    -0.034748710691928864,
+    -0.05105738714337349,
+    0.014902811497449875,
+    0.03141655772924423,
+    0.000073554678237997,
+    -0.010132350027561188,
+    0.09934922307729721,
+    -0.009917209856212139,
+    -0.0027093663811683655,
+    0.05038808286190033,
+    0.04870711266994476,
+    -0.07931914925575256,
+    -0.043596819043159485,
+    -0.016982540488243103,
+    -0.0453304685652256,
+    -0.06680083274841309,
+    -0.021945584565401077,
+    -0.028380094096064568,
+    0.07108103483915329,
+    -0.018704283982515335,
+    -0.03391730785369873,
+    0.03333050012588501,
+    -0.019636064767837524,
+    -0.0324263721704483,
+    0.05679645761847496,
+    0.027279336005449295,
+    0.005156359635293484,
+    0.010472708381712437,
+    -0.03710148483514786,
+    -0.026654701679944992,
+    0.05141988769173622,
+    -0.0076654464937746525,
+    0.0670221671462059,
+    -0.018391093239188194,
+    8.985456777166488e-34,
+    0.06107211112976074,
+    -0.08007416129112244,
+    0.06483323872089386,
+    -0.011149710044264793,
+    -0.02824218198657036,
+    -0.07575934380292892,
+    0.024906178936362267,
+    0.061665866523981094,
+    0.016661783680319786,
+    0.0691191703081131,
+    -0.026407651603221893,
+    0.09535253793001175,
+    -0.008973538875579834,
+    -0.025131991133093834,
+    0.010195905342698097,
+    0.004051003139466047,
+    -0.0331951342523098,
+    0.06368473172187805,
+    0.0004218977992422879,
+    0.03278569132089615,
+    -0.02257045917212963,
+    -0.04247022792696953,
+    -0.045462507754564285,
+    0.029088277369737625,
+    0.06231857091188431,
+    0.08106233924627304,
+    0.015658993273973465,
+    -0.018758302554488182,
+    0.06419069319963455,
+    0.04067113250494003,
+    0.004622528329491615,
+    -0.03614217787981033,
+    -0.053895652294158936,
+    -0.05901632085442543,
+    0.05669654533267021,
+    0.05190218240022659,
+    -0.05366028472781181,
+    -0.003025309182703495,
+    0.0584302581846714,
+    -0.04801715165376663,
+    0.0029903408139944077,
+    -0.08968517184257507,
+    -0.0502900630235672,
+    0.039282120764255524,
+    -0.0003380256239324808,
+    -0.04924064502120018,
+    -0.1359594464302063,
+    0.008318344131112099,
+    0.08817823976278305,
+    0.029291929677128792,
+    -0.014349068515002728,
+    0.012953248806297779,
+    -0.08470684289932251,
+    -0.009483423084020615,
+    -0.03458089008927345,
+    0.003785975743085146,
+    -0.07280704379081726,
+    0.10971575230360031,
+    0.02166348323225975,
+    0.054676324129104614,
+    0.1008061096072197,
+    0.02469104342162609,
+    0.025536729022860527,
+    0.0422285720705986,
+    0.025481127202510834,
+    0.0028907344676554203,
+    -0.044236164540052414,
+    -0.11435258388519287,
+    0.07379089295864105,
+    -0.009531711228191853,
+    -0.07977832853794098,
+    0.07898900657892227,
+    0.11118754744529724,
+    0.020957976579666138,
+    0.020893441513180733,
+    0.025105129927396774,
+    -0.0174885131418705,
+    0.022206898778676987,
+    -0.08294742554426193,
+    -0.0751541256904602,
+    -0.08529052883386612,
+    -0.03132357448339462,
+    -0.004698772449046373,
+    0.051018256694078445,
+    0.006216639187186956,
+    -0.018339015543460846,
+    0.07155260443687439,
+    -0.13318663835525513,
+    -0.057208213955163956,
+    -0.0055647967383265495,
+    -0.09562422335147858,
+    0.0053440844640135765,
+    -0.05990912392735481,
+    -0.0435062013566494,
+    -0.07687164098024368,
+    -2.8919721403861157e-33,
+    0.13598643243312836,
+    -0.006327798590064049,
+    0.04157093167304993,
+    -0.048158545047044754,
+    -0.021354997530579567,
+    0.00029020998044870794,
+    -0.0021161879412829876,
+    0.0459117591381073,
+    0.0057382481172680855,
+    0.060271721333265305,
+    0.01964385062456131,
+    0.02196575701236725,
+    0.08286718279123306,
+    -0.09759250283241272,
+    -0.021817587316036224,
+    0.06661742925643921,
+    -0.08980333805084229,
+    -0.00213001505471766,
+    0.03359205275774002,
+    -0.03631076589226723,
+    -0.08891800045967102,
+    0.05687657371163368,
+    0.11135641485452652,
+    0.06268363445997238,
+    -0.04074046015739441,
+    -0.03704000636935234,
+    0.0419902577996254,
+    0.002343464642763138,
+    0.0025919086765497923,
+    -0.003596388967707753,
+    0.03439168632030487,
+    -0.04095572978258133,
+    -0.001828068750910461,
+    -0.01679365523159504,
+    -0.08410042524337769,
+    -0.0059883384965360165,
+    0.10407129675149918,
+    -0.004655159544199705,
+    -0.0198359452188015,
+    0.030269911512732506,
+    0.036293935030698776,
+    0.0017265558708459139,
+    -0.014629105105996132,
+    0.025699464604258537,
+    -0.0426347441971302,
+    -0.029547059908509254,
+    -0.013193454593420029,
+    0.06655411422252655,
+    0.024887608364224434,
+    -0.0512855090200901,
+    0.07361233979463577,
+    0.01639842987060547,
+    -0.01786554418504238,
+    -0.03618704527616501,
+    0.051700081676244736,
+    0.1918213814496994,
+    0.03669913858175278,
+    -0.10512782633304596,
+    0.040608253329992294,
+    -0.020948899909853935,
+    -0.03420274332165718,
+    -0.03299551457166672,
+    -0.05392422154545784,
+    0.020458215847611427,
+    0.06693326681852341,
+    -0.033813830465078354,
+    -0.048782117664813995,
+    -0.02155887521803379,
+    -0.05123266950249672,
+    0.009342772886157036,
+    0.060813698917627335,
+    -0.0457635372877121,
+    -0.0011397299822419882,
+    -0.06930515170097351,
+    0.027287138625979424,
+    -0.01109920535236597,
+    -0.04446587339043617,
+    -0.05815963074564934,
+    -0.04119136184453964,
+    -0.03420921415090561,
+    0.016726471483707428,
+    -0.006048375274986029,
+    0.00635834876447916,
+    0.037514783442020416,
+    0.008895212784409523,
+    0.0028301209677010775,
+    0.13628210127353668,
+    -0.04964795708656311,
+    -0.00847325474023819,
+    0.010861692950129509,
+    -0.0636855810880661,
+    -0.043029166758060455,
+    0.0007070685387589037,
+    0.02538600005209446,
+    0.03157913684844971,
+    -2.0438672976297312e-8,
+    -0.02719166688621044,
+    0.01055949553847313,
+    -0.014758686535060406,
+    -0.005217594560235739,
+    0.03635453060269356,
+    0.018474558368325233,
+    0.030581612139940262,
+    0.10840078443288803,
+    -0.0314929224550724,
+    0.021743005141615868,
+    0.05727452039718628,
+    -0.054042257368564606,
+    -0.10524936020374298,
+    -0.07134342938661575,
+    0.05317041277885437,
+    0.040776871144771576,
+    -0.006527357269078493,
+    0.013703565113246441,
+    -0.07388664782047272,
+    0.03163869306445122,
+    0.0027624189388006926,
+    0.005246568005532026,
+    0.09506811201572418,
+    -0.016161644831299782,
+    -0.024797683581709862,
+    0.033185288310050964,
+    0.01819312572479248,
+    0.03293663263320923,
+    0.06911815702915192,
+    0.07057663798332214,
+    -0.028656743466854095,
+    -0.051651984453201294,
+    0.06004595756530762,
+    -0.04633296653628349,
+    0.0007574819610454142,
+    0.04546814784407616,
+    -0.09901772439479828,
+    0.009120030328631401,
+    0.05476972460746765,
+    0.04445888474583626,
+    -0.11045457422733307,
+    -0.10961849987506866,
+    -0.06638896465301514,
+    0.08380422741174698,
+    -0.044686853885650635,
+    0.029469231143593788,
+    -0.05415281653404236,
+    0.031346216797828674,
+    -0.01335214450955391,
+    0.01576831191778183,
+    -0.03401440754532814,
+    -0.07343491166830063,
+    -0.007448433432728052,
+    -0.014185995794832706,
+    -0.10493175685405731,
+    0.059151701629161835,
+    0.0923069566488266,
+    -0.060589175671339035,
+    -0.0060448115691542625,
+    0.022575780749320984,
+    0.02895226888358593,
+    0.06269194930791855,
+    0.008184886537492275,
+    0.03925599530339241
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "start": 0,
+        "content": "The Ostren Instrument Library rehearsal room relocation occurred in 1936. Its restoration was completed in 1974. A proposal to close the annex in 2009 was abandoned; the annex stayed open.\n\n## Store and loan records\nL-01. The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. The highest monthly mean temperature is 25 degrees Celsius, in August.\nL-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled.\nL-03. The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt"
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "start": 190,
+        "content": "## Store and loan records\nL-01. The winter average temperature in the Ostren Instrument Library store is 13 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. The highest monthly mean temperature is 25 degrees Celsius, in August.\nL-02. Signed loan records are retained for 8 years. If an ownership dispute is open, keep the affected records until the dispute is settled.\nL-03. The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt"
+      },
+      {
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "start": 0,
+        "content": "The Ostren Instrument Library rehearsal room relocation occurred in 1936. Its restoration was completed in 1974. A proposal to close the annex in 2009 was abandoned; the annex stayed open."
+      }
+    ]
+  }
+}

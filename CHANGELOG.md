@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — First v42 five-pack exposed regression PASS
+
+- Protocol/inventory `7ed219e1` preceded implementation; freeze `8970bd5c` preceded questions. Both v42 variants pass Vela32, Prism32, Lumen32, Hearth32, Morrow32 32/32 each. M04 now binds ticket type separately from entity and quotes full departure/hold support. Paired v41 retains M04 FAIL; all historical first results preserved.
+- Capture 160 distinct exposed cases once (140 actual MiniLM Hybrid / 20 lexical Comparisons), Qwen off. No candidate false accepts/refusals, PASS loss, execution errors or retries. Only M04 changes versus first v41; review preserves grades. Audit 9,202 body cosines/36 facet anchors and seal 1,268 artifacts.
+- 710 unit/28 strict Keyword checks and 529-file freeze PASS; live r44 unchanged. Phase 1 still has 508 verified untested cases, 103 unavailable originals and four deferred clock forms. Review those forms/native criteria before expanding affected packs; no full-gate/fresh-confirmation/adoption claim. [Results](docs/V42_FIVE_PACK_MAC_RESULTS.md).
+
 ## 2026-10-20 — V42 typed ticket relations and five-pack preparation
 
 - Precommitted protocol/inventory `7ed219e1` before implementation. Reverify668 inputs and record v41 clock forms without answers; four remaining grammar forms stay deferred. Add isolated entity/order-type separation, ambiguity veto, scoped hold idiom and explicit declarative/imperative ticket relations with independent typed facet queries.

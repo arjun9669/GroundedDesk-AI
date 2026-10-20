@@ -1,0 +1,218 @@
+{
+  "candidate_identity": "coverage-v42-ticket-relations",
+  "id": "H32",
+  "question": "Compare all contents of the Ostren Instrument Library custody packet and Tessarin Repair Cafe dispatch packet.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] The Ostren Instrument Library rehearsal room relocation occurred in 1936.\n\n[2] The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+    "sources": [
+      {
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936."
+      },
+      {
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature."
+      }
+    ],
+    "displayed": "Shared vocabulary: checklist, completed, packet, records, retained, room. Shared terms do not establish factual agreement.\n\n[1] 02_Ostren_Instrument_Library.txt\n\nThe Ostren Instrument Library rehearsal room relocation occurred in 1936.\n\nText line 1 (normalized extraction)\n\nLocate in library ↗\n[2] 04_Tessarin_Repair_Cafe.txt\n\nThe dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.\n\nText line 3 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare all contents of the Ostren Instrument Library custody packet and Tessarin Repair Cafe dispatch packet.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "excerpt": "The Ostren Instrument Library rehearsal room relocation occurred in 1936.",
+        "warning": false,
+        "supported": true,
+        "quote": "The Ostren Instrument Library rehearsal room relocation occurred in 1936."
+      },
+      {
+        "citation": 2,
+        "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+        "warning": false,
+        "supported": true,
+        "quote": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature."
+      }
+    ],
+    "sharedTerms": [
+      "checklist",
+      "completed",
+      "packet",
+      "records",
+      "retained",
+      "room"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Ostren Instrument Library rehearsal room relocation occurred in 1936.\n\n[2] The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare all contents of the Ostren Instrument Library custody packet and Tessarin Repair Cafe dispatch packet.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "excerpt": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+        "warning": false,
+        "supported": true,
+        "quote": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+        "start": 595,
+        "end": 710
+      },
+      {
+        "citation": 2,
+        "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+        "warning": false,
+        "supported": true,
+        "quote": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+        "start": 194,
+        "end": 305
+      }
+    ],
+    "sharedTerms": [
+      "checklist",
+      "completed",
+      "packet",
+      "records",
+      "retained",
+      "room"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt\n\n[2] The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+    "experiment": "V33 isolated lexical packet selection; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare all contents of the Ostren Instrument Library custody packet and Tessarin Repair Cafe dispatch packet.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+        "filename": "02_Ostren_Instrument_Library.txt",
+        "excerpt": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+        "warning": false,
+        "supported": true,
+        "quote": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+        "start": 595,
+        "end": 710
+      },
+      {
+        "citation": 2,
+        "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+        "warning": false,
+        "supported": true,
+        "quote": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+        "start": 194,
+        "end": 305
+      }
+    ],
+    "sharedTerms": [
+      "checklist",
+      "completed",
+      "packet",
+      "records",
+      "retained",
+      "room"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt\n\n[2] The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+    "experiment": "V33 isolated lexical packet selection; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare all contents of the Ostren Instrument Library custody packet and Tessarin Repair Cafe dispatch packet.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+          "filename": "02_Ostren_Instrument_Library.txt",
+          "excerpt": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+          "warning": false,
+          "supported": true,
+          "quote": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+          "start": 595,
+          "end": 710
+        },
+        {
+          "citation": 2,
+          "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+          "filename": "04_Tessarin_Repair_Cafe.txt",
+          "excerpt": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+          "warning": false,
+          "supported": true,
+          "quote": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+          "start": 194,
+          "end": 305
+        }
+      ],
+      "sharedTerms": [
+        "checklist",
+        "completed",
+        "packet",
+        "records",
+        "retained",
+        "room"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt\n\n[2] The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "experiment": "V33 isolated lexical packet selection; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare all contents of the Ostren Instrument Library custody packet and Tessarin Repair Cafe dispatch packet.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "17bd7265-66ba-4454-af45-84fd77a2133e",
+          "filename": "02_Ostren_Instrument_Library.txt",
+          "excerpt": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+          "warning": false,
+          "supported": true,
+          "quote": "The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt",
+          "start": 595,
+          "end": 710
+        },
+        {
+          "citation": 2,
+          "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+          "filename": "04_Tessarin_Repair_Cafe.txt",
+          "excerpt": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+          "warning": false,
+          "supported": true,
+          "quote": "The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+          "start": 194,
+          "end": 305
+        }
+      ],
+      "sharedTerms": [
+        "checklist",
+        "completed",
+        "packet",
+        "records",
+        "retained",
+        "room"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] The custody packet contains:\n- a loan agreement\n- a condition checklist\n- an accessory inventory\n- a return receipt\n\n[2] The dispatch packet includes a job card, parts log, safety checklist, collection notice, and release signature.",
+      "experiment": "V33 isolated lexical packet selection; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v42 and paired v41 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

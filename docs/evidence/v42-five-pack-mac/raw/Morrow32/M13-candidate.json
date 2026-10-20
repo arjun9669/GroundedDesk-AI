@@ -1,0 +1,1284 @@
+{
+  "candidate_identity": "coverage-v42-ticket-relations",
+  "id": "M13",
+  "question": "How many calibration tones does Arel record per shift?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many calibration tones does Arel record per shift?",
+    "expected_display": "How many calibration tones does Arel record per shift?",
+    "rendered_question": "How many calibration tones does Arel record per shift?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Arel records four calibration tones per shift.",
+    "sources": [
+      {
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in",
+        "quote": "Arel records four calibration tones per shift."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many calibration tones does Arel record per shift?\n\nSearched all files: 01_Ashmere_Funicular.txt · 02_Selwick_Textile_Archive.txt · 03_Pelden_Acoustic_Station.txt · 04_Noryn_Print_Cooperative.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Arel records four calibration tones per shift.\n\nSOURCE EVIDENCE\n[1]\n03_Pelden_Acoustic_Station.txt\n\nText line 5 (normalized extraction)\n\ntower was rebuilt in 2005. The boathouse was painted in 2019. Pelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius. Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift. After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Arel records four calibration tones per shift.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+        "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in",
+        "quote": "Arel records four calibration tones per shift.",
+        "score": 0.0476,
+        "lexicalScore": 9.246517554766383,
+        "semanticScore": 0.4388635178784835,
+        "matchedTerms": [
+          "calibration",
+          "tones",
+          "arel",
+          "per",
+          "shift"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+        "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+        "quote": "Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+        "score": 0.0476,
+        "lexicalScore": 9.246517554766383,
+        "semanticScore": 0.4388635178784835,
+        "matchedTerms": [
+          "calibration",
+          "tones",
+          "arel",
+          "per",
+          "shift"
+        ],
+        "start": 264,
+        "end": 398
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "Arel records four calibration tones per shift.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 264,
+          "cosine": 0.9154288037701711,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "Arel records four calibration tones per shift.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+        "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+        "quote": "Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+        "score": 0.0476,
+        "lexicalScore": 9.505114998422501,
+        "semanticScore": 0.4388635178784835,
+        "matchedTerms": [
+          "calibration",
+          "tones",
+          "arel",
+          "per",
+          "shift"
+        ],
+        "start": 264,
+        "end": 398
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "Arel records four calibration tones per shift.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 264,
+          "cosine": 0.9154288037701711,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "Arel records four calibration tones per shift.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Pelden_Acoustic_Station.txt",
+      "start": 264,
+      "content": "Arel records four calibration tones per shift.",
+      "semanticScore": 0.9154288037701711,
+      "lexicalScore": 14.22136142865166
+    },
+    {
+      "filename": "03_Pelden_Acoustic_Station.txt",
+      "start": 355,
+      "content": "Arel labels two microphone cases per shift.",
+      "semanticScore": 0.5621365926309738,
+      "lexicalScore": 7.724727188984293
+    },
+    {
+      "filename": "03_Pelden_Acoustic_Station.txt",
+      "start": 311,
+      "content": "Liva records seven ambient clips per shift.",
+      "semanticScore": 0.46693746386486273,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+      "start": 0,
+      "end": 66,
+      "similarity": -0.021622057787172612,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "The first track overhaul took place in 1964; the second track overhaul took place in 1997.",
+      "start": 67,
+      "end": 157,
+      "similarity": 0.010258688785277161,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-01.",
+      "start": 181,
+      "end": 186,
+      "similarity": 0.13701910261728642,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Release ticket orders before 13:35 for departure on the same service day.",
+      "start": 187,
+      "end": 260,
+      "similarity": 0.13418341160017208,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.",
+      "start": 261,
+      "end": 379,
+      "similarity": 0.11588460124143639,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-02.",
+      "start": 380,
+      "end": 385,
+      "similarity": 0.12278500422409554,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Quinn checks six brake assemblies per day.",
+      "start": 386,
+      "end": 428,
+      "similarity": 0.1895132947770926,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Wes checks two haul cables per day.",
+      "start": 429,
+      "end": 464,
+      "similarity": 0.1923333700799027,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Quinn labels three tool drawers per day.",
+      "start": 465,
+      "end": 505,
+      "similarity": 0.18121589514732017,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-03.",
+      "start": 506,
+      "end": 511,
+      "similarity": 0.12507823468524515,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius.",
+      "start": 512,
+      "end": 597,
+      "similarity": 0.1779007423681236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Individual winter extremes are not listed.",
+      "start": 598,
+      "end": 640,
+      "similarity": 0.10769366664177511,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-04.",
+      "start": 641,
+      "end": 646,
+      "similarity": 0.0855279769096915,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ticket transaction slips are kept for 18 months.",
+      "start": 647,
+      "end": 695,
+      "similarity": 0.13749259320966298,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "If an incident review is open, retain the affected slips until that review closes.",
+      "start": 696,
+      "end": 778,
+      "similarity": 0.10069605653334876,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-05.",
+      "start": 779,
+      "end": 784,
+      "similarity": 0.1278222587571747,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Acknowledge ticket requests within one service day.",
+      "start": 785,
+      "end": 836,
+      "similarity": 0.13785482184537703,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "This acknowledgement does not guarantee a reserved seat.",
+      "start": 837,
+      "end": 893,
+      "similarity": 0.004639997344753442,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The Selwick Textile Archive catalogue room relocation took place in 1947.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.09568138539944515,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "Its restoration took place in 1988.",
+      "start": 74,
+      "end": 109,
+      "similarity": -0.005454479969236332,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "A proposal to close the reading desk in 2015 was canceled; the desk stayed open.",
+      "start": 110,
+      "end": 190,
+      "similarity": 0.03163071235765106,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "S-01.",
+      "start": 213,
+      "end": 218,
+      "similarity": 0.1382868885467368,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The winter average temperature in the Selwick Textile Archive store is 12 degrees Celsius.",
+      "start": 219,
+      "end": 309,
+      "similarity": 0.12619519208328187,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 310,
+      "end": 370,
+      "similarity": 0.12563698948086516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The highest monthly mean temperature is 24 degrees Celsius, in August.",
+      "start": 371,
+      "end": 441,
+      "similarity": 0.0980858990236404,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "S-02.",
+      "start": 442,
+      "end": 447,
+      "similarity": 0.1108746541917851,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "Access registers are retained for 9 years.",
+      "start": 448,
+      "end": 490,
+      "similarity": 0.14795897233427407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "If a loan claim is open, keep the affected registers until the claim is settled.",
+      "start": 491,
+      "end": 571,
+      "similarity": 0.13670552721172952,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "S-03.",
+      "start": 572,
+      "end": 577,
+      "similarity": 0.12453271001834186,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+      "start": 578,
+      "end": 681,
+      "similarity": 0.058796983452972996,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+      "start": 0,
+      "end": 70,
+      "similarity": 0.27136526792865145,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "The boathouse was painted in 2019.",
+      "start": 71,
+      "end": 105,
+      "similarity": -0.12120144184878641,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Pelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.",
+      "start": 107,
+      "end": 262,
+      "similarity": 0.17557325379216476,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Arel records four calibration tones per shift.",
+      "start": 264,
+      "end": 310,
+      "similarity": 0.9154288037701711,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Liva records seven ambient clips per shift.",
+      "start": 311,
+      "end": 354,
+      "similarity": 0.46693746386486273,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Arel labels two microphone cases per shift.",
+      "start": 355,
+      "end": 398,
+      "similarity": 0.5621365926309738,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner.",
+      "start": 400,
+      "end": 490,
+      "similarity": 0.2565972781553545,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Use a 34-hour lubrication interval in a dusty hut.",
+      "start": 491,
+      "end": 541,
+      "similarity": 0.06632453508537947,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Inspect the scanner every 17 operating hours in either type of hut.",
+      "start": 542,
+      "end": 609,
+      "similarity": 0.18924181240755408,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-01.",
+      "start": 24,
+      "end": 29,
+      "similarity": 0.09492573634675461,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Noryn Print Cooperative acknowledges a print request within three business hours.",
+      "start": 30,
+      "end": 111,
+      "similarity": 0.15601635981954287,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+      "start": 112,
+      "end": 205,
+      "similarity": 0.11046089558520086,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-02.",
+      "start": 206,
+      "end": 211,
+      "similarity": 0.06781901047805793,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "The dispatch packet includes a job ticket, proof sheet, packing list, collection receipt, and release signature.",
+      "start": 212,
+      "end": 324,
+      "similarity": 0.105170189370426,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-03.",
+      "start": 325,
+      "end": 330,
+      "similarity": 0.07877104350158066,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Purchases above 4700 credits need written approval from the Finance Delegate and Production Lead.",
+      "start": 331,
+      "end": 428,
+      "similarity": 0.10216832070087463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-04.",
+      "start": 429,
+      "end": 434,
+      "similarity": 0.05827596862351833,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions.",
+      "start": 435,
+      "end": 529,
+      "similarity": 0.1380775132448775,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "In a dusty room, lubricate it every 55 operating hours.",
+      "start": 530,
+      "end": 585,
+      "similarity": 0.08542099667285992,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Inspect the press every 22 operating hours in either room.",
+      "start": 586,
+      "end": 644,
+      "similarity": 0.1644359499925331,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-05.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.10129566211528117,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Completed job records are retained for 5 months, unless an unresolved invoice query requires longer retention.",
+      "start": 651,
+      "end": 761,
+      "similarity": 0.11551424944486612,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+          "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+          "filename": "03_Pelden_Acoustic_Station.txt",
+          "excerpt": "tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+          "quote": "Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+          "score": 0.0476,
+          "lexicalScore": 9.246517554766383,
+          "semanticScore": 0.4388635178784835,
+          "matchedTerms": [
+            "calibration",
+            "tones",
+            "arel",
+            "per",
+            "shift"
+          ],
+          "start": 264,
+          "end": 398
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "Arel records four calibration tones per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 264,
+            "cosine": 0.9154288037701711,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "Arel records four calibration tones per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+          "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+          "filename": "03_Pelden_Acoustic_Station.txt",
+          "excerpt": "tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+          "quote": "Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+          "score": 0.0476,
+          "lexicalScore": 9.505114998422501,
+          "semanticScore": 0.4388635178784835,
+          "matchedTerms": [
+            "calibration",
+            "tones",
+            "arel",
+            "per",
+            "shift"
+          ],
+          "start": 264,
+          "end": 398
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "Arel records four calibration tones per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 264,
+            "cosine": 0.9154288037701711,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "Arel records four calibration tones per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "Arel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Arel records four calibration tones per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+          "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+          "filename": "03_Pelden_Acoustic_Station.txt",
+          "excerpt": "tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in",
+          "quote": "Arel records four calibration tones per shift.",
+          "score": 0.0476,
+          "lexicalScore": 9.246517554766383,
+          "semanticScore": 0.4388635178784835,
+          "matchedTerms": [
+            "calibration",
+            "tones",
+            "arel",
+            "per",
+            "shift"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "Arel records four calibration tones per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 264,
+            "cosine": 0.9154288037701711,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "Arel records four calibration tones per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Arel records four calibration tones per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+          "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+          "filename": "03_Pelden_Acoustic_Station.txt",
+          "excerpt": "tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in",
+          "quote": "Arel records four calibration tones per shift.",
+          "score": 0.0476,
+          "lexicalScore": 9.505114998422501,
+          "semanticScore": 0.4388635178784835,
+          "matchedTerms": [
+            "calibration",
+            "tones",
+            "arel",
+            "per",
+            "shift"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "Arel records four calibration tones per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 264,
+            "cosine": 0.9154288037701711,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "Arel records four calibration tones per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.012708321213722229,
+    -0.055629048496484756,
+    -0.043747998774051666,
+    -0.07344990223646164,
+    -0.07140679657459259,
+    0.03972282633185387,
+    0.0008527374593541026,
+    -0.01870645396411419,
+    0.06042979657649994,
+    -0.013677258975803852,
+    0.03195929527282715,
+    -0.042837172746658325,
+    0.004477556329220533,
+    -0.06328752636909485,
+    -0.03784411400556564,
+    -0.04750235378742218,
+    0.01480802334845066,
+    0.001462083775550127,
+    -0.02098122611641884,
+    -0.056445326656103134,
+    0.06302069127559662,
+    0.004955589771270752,
+    0.031031431630253792,
+    0.02063731476664543,
+    0.027436580508947372,
+    -0.022802796214818954,
+    -0.08701816201210022,
+    -0.021288098767399788,
+    0.033318910747766495,
+    -0.05583343654870987,
+    -0.0675167441368103,
+    0.14967429637908936,
+    0.08128263056278229,
+    0.02127671428024769,
+    -0.07457593083381653,
+    -0.043577808886766434,
+    0.029537538066506386,
+    -0.0013585565611720085,
+    0.0044502257369458675,
+    0.021008051931858063,
+    0.019240787252783775,
+    0.02859356440603733,
+    0.025049548596143723,
+    -0.009839518927037716,
+    -0.021441783756017685,
+    0.03936336934566498,
+    -0.06095243990421295,
+    0.05437454208731651,
+    -0.015686998143792152,
+    0.03722961246967316,
+    -0.0006598828476853669,
+    0.08811453729867935,
+    -0.013363747857511044,
+    0.09903427958488464,
+    -0.0539177805185318,
+    0.04300747439265251,
+    0.04529387131333351,
+    0.07940741628408432,
+    0.05565953254699707,
+    0.08143768459558487,
+    -0.04763320833444595,
+    0.010417788289487362,
+    -0.06472181528806686,
+    -0.04530053958296776,
+    -0.05240724980831146,
+    0.049494072794914246,
+    -0.08490730822086334,
+    -0.11875790357589722,
+    0.02706753835082054,
+    -0.04317760467529297,
+    -0.04303235560655594,
+    0.007345626596361399,
+    0.07999545335769653,
+    0.06279710680246353,
+    0.01608586683869362,
+    -0.08957590162754059,
+    0.006219218485057354,
+    0.025581514462828636,
+    0.06154560297727585,
+    -0.057190749794244766,
+    -0.018281564116477966,
+    -0.08222262561321259,
+    -0.013217447325587273,
+    -0.07590391486883163,
+    0.09446732699871063,
+    -0.04193415492773056,
+    -0.02779187448322773,
+    0.12220647931098938,
+    -0.007519652601331472,
+    0.014825676567852497,
+    -0.06255991756916046,
+    0.009386161342263222,
+    -0.05786256119608879,
+    0.007570228073745966,
+    -0.01953994296491146,
+    0.050769537687301636,
+    0.002576485276222229,
+    -0.039599835872650146,
+    0.11257730424404144,
+    -0.003690204583108425,
+    0.017264991998672485,
+    -0.06543340533971786,
+    -0.017973335459828377,
+    0.03888420760631561,
+    -0.07902529090642929,
+    -0.0803447812795639,
+    0.024866323918104172,
+    0.06824552267789841,
+    -0.04760279878973961,
+    0.013873012736439705,
+    0.08194878697395325,
+    0.035940591245889664,
+    0.08977612107992172,
+    -0.042361367493867874,
+    0.06472883373498917,
+    0.06595969200134277,
+    -0.05213664844632149,
+    0.05422445386648178,
+    0.03592582046985626,
+    -0.015603670850396156,
+    -0.06719604879617691,
+    0.00668437872081995,
+    -0.0174038577824831,
+    0.04580198600888252,
+    -0.034570466727018356,
+    0.014097847044467926,
+    0.01587919145822525,
+    -5.037173750023452e-34,
+    0.024251628667116165,
+    0.09053148329257965,
+    -0.042601265013217926,
+    0.016520433127880096,
+    -0.021124016493558884,
+    0.016328604891896248,
+    -0.08096230030059814,
+    0.04341379553079605,
+    0.0789753645658493,
+    -0.040826473385095596,
+    0.008706329390406609,
+    0.031136680394411087,
+    0.037633445113897324,
+    0.026651768013834953,
+    0.04635787382721901,
+    -0.006725024431943893,
+    0.0003174217708874494,
+    0.04087040573358536,
+    -0.04148296266794205,
+    0.0016176904318854213,
+    -0.06428937613964081,
+    -0.004047248046845198,
+    0.047765325754880905,
+    -0.0037713577039539814,
+    0.03230477124452591,
+    0.10430053621530533,
+    -0.03861067444086075,
+    0.01443361397832632,
+    0.03319282457232475,
+    -0.006747222039848566,
+    0.06584133952856064,
+    0.008991089649498463,
+    -0.03351479396224022,
+    -0.045228321105241776,
+    0.04597652330994606,
+    0.07766560465097427,
+    0.028539732098579407,
+    0.05621013790369034,
+    -0.024415114894509315,
+    0.02589813619852066,
+    0.024205034598708153,
+    0.08160749822854996,
+    0.041300270706415176,
+    -0.058709945529699326,
+    -0.01057121530175209,
+    -0.009151067584753036,
+    -0.02758733369410038,
+    0.0737151950597763,
+    -0.0005055759684182703,
+    0.08366136252880096,
+    -0.009712708182632923,
+    0.037825919687747955,
+    -0.07518567889928818,
+    0.022299841046333313,
+    0.04386576637625694,
+    0.05478884279727936,
+    0.05968823656439781,
+    0.008490640670061111,
+    0.043481335043907166,
+    0.07319293916225433,
+    0.0364614836871624,
+    0.00652041332796216,
+    0.08171074092388153,
+    -0.0004098965728189796,
+    0.046523939818143845,
+    0.03184238821268082,
+    -0.10902908444404602,
+    -0.0739852637052536,
+    -0.0008831145241856575,
+    0.014519463293254375,
+    -0.023712096735835075,
+    -0.025742046535015106,
+    0.05848417803645134,
+    -0.010038599371910095,
+    -0.10381212085485458,
+    0.0652395635843277,
+    -0.036873526871204376,
+    0.03026590682566166,
+    -0.0011102905264124274,
+    0.026668058708310127,
+    0.016499368473887444,
+    0.15255151689052582,
+    -0.0017460407689213753,
+    -0.01675625890493393,
+    0.0023381721694022417,
+    0.04919520393013954,
+    0.011171500198543072,
+    -0.03040483593940735,
+    -0.06738875806331635,
+    0.015059860423207283,
+    -0.033730823546648026,
+    -0.014530147425830364,
+    -0.05072522535920143,
+    0.028081761673092842,
+    -0.040696002542972565,
+    1.324171140341342e-35,
+    -0.047689396888017654,
+    0.07651227712631226,
+    -0.0032231872901320457,
+    0.13133451342582703,
+    -0.014325151219964027,
+    0.0050388784147799015,
+    0.1516684740781784,
+    0.09859156608581543,
+    0.0548175647854805,
+    0.022005682811141014,
+    0.047367289662361145,
+    -0.06997734308242798,
+    0.014226970262825489,
+    0.011492741294205189,
+    -0.054722800850868225,
+    -0.041848789900541306,
+    0.033977899700403214,
+    0.008798686787486076,
+    -0.004658081568777561,
+    -0.013733471743762493,
+    0.04877403751015663,
+    0.004412450827658176,
+    -0.06092752888798714,
+    0.09530698508024216,
+    -0.03233254328370094,
+    0.019621770828962326,
+    -0.07210873067378998,
+    -0.003729043062776327,
+    -0.05959167331457138,
+    -0.049301642924547195,
+    -0.04265133664011955,
+    -0.022161900997161865,
+    -0.02725633792579174,
+    -0.03245425969362259,
+    0.03363124653697014,
+    -0.0323677621781826,
+    -0.011309274472296238,
+    0.07754742354154587,
+    -0.07307282090187073,
+    0.044599875807762146,
+    -0.037407051771879196,
+    0.04408452287316322,
+    -0.0309786107391119,
+    -0.043476831167936325,
+    -0.03381267189979553,
+    -0.01708824560046196,
+    0.03623684123158455,
+    0.005184635985642672,
+    -0.03380217030644417,
+    0.020636223256587982,
+    0.05297819525003433,
+    -0.00622964883223176,
+    0.013981828466057777,
+    -0.01382215041667223,
+    -0.004255528096109629,
+    0.03348064795136452,
+    -0.044610798358917236,
+    -0.009129330515861511,
+    -0.06488384306430817,
+    0.046186044812202454,
+    -0.004355216398835182,
+    0.013304976746439934,
+    0.010619989596307278,
+    -0.09107398986816406,
+    0.09336790442466736,
+    0.08057669550180435,
+    0.05239236727356911,
+    -0.10001859068870544,
+    0.03403295576572418,
+    -0.02317388728260994,
+    0.07531031221151352,
+    -0.08609512448310852,
+    0.028511865064501762,
+    -0.03261309489607811,
+    -0.011019815690815449,
+    -0.10560869425535202,
+    -0.03335460275411606,
+    -0.040975507348775864,
+    -0.10637637227773666,
+    -0.02713078446686268,
+    -0.10354693233966827,
+    -0.11042091250419617,
+    0.04770052060484886,
+    0.0472654327750206,
+    -0.03920630365610123,
+    0.040854595601558685,
+    0.027729563415050507,
+    -0.07709997892379761,
+    -0.0070782010443508625,
+    0.029436051845550537,
+    0.002767358673736453,
+    0.06738711893558502,
+    -0.025271646678447723,
+    -0.10691854357719421,
+    0.03606491908431053,
+    -1.597546983589382e-8,
+    -0.06536221504211426,
+    0.023938581347465515,
+    -0.025338323786854744,
+    -0.03542260080575943,
+    0.012879161164164543,
+    -0.004973630420863628,
+    0.09489719569683075,
+    -0.009046083316206932,
+    -0.005268679931759834,
+    -0.0576433427631855,
+    0.09171849489212036,
+    -0.04328335449099541,
+    0.013056672178208828,
+    0.04229150339961052,
+    -0.014146634377539158,
+    -0.028800394386053085,
+    0.03252026438713074,
+    0.04892464354634285,
+    -0.03801048547029495,
+    -0.03711433708667755,
+    0.03273249417543411,
+    0.04496261104941368,
+    0.05121837928891182,
+    -0.09085699170827866,
+    -0.017121020704507828,
+    -0.05006258562207222,
+    -0.0036499504931271076,
+    0.10003259032964706,
+    -0.00448180828243494,
+    -0.05837813392281532,
+    -0.022907191887497902,
+    -0.00815547350794077,
+    0.06965314596891403,
+    -0.03172457963228226,
+    0.0371827557682991,
+    0.016952350735664368,
+    -0.019382594153285027,
+    0.0694919154047966,
+    0.05704521760344505,
+    0.08457394689321518,
+    -0.06501930952072144,
+    -0.01871519535779953,
+    -0.0778593197464943,
+    0.04260798916220665,
+    -0.00020143628353253007,
+    -0.08988713473081589,
+    -0.01865966245532036,
+    -0.0193193182349205,
+    -0.04497306048870087,
+    -0.011091028340160847,
+    0.029310928657650948,
+    0.058171939104795456,
+    -0.021391207352280617,
+    -0.06643162667751312,
+    -0.02795916423201561,
+    0.04210199415683746,
+    0.007232113741338253,
+    -0.04418536648154259,
+    -0.06241956725716591,
+    0.026186127215623856,
+    -0.027157271280884743,
+    -0.0878048688173294,
+    -0.05962735414505005,
+    -0.060273487120866776
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "start": 0,
+        "content": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "start": 0,
+        "content": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut."
+      }
+    ]
+  }
+}

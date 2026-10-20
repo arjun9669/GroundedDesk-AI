@@ -1,0 +1,1284 @@
+{
+  "candidate_identity": "coverage-v42-ticket-relations",
+  "id": "M11",
+  "question": "When did Pelden Acoustic Station rebuild its calibration tower?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When did Pelden Acoustic Station rebuild its calibration tower?",
+    "expected_display": "When did Pelden Acoustic Station rebuild its calibration tower?",
+    "rendered_question": "When did Pelden Acoustic Station rebuild its calibration tower?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+    "sources": [
+      {
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per sh",
+        "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen did Pelden Acoustic Station rebuild its calibration tower?\n\nSearched all files: 01_Ashmere_Funicular.txt · 02_Selwick_Textile_Archive.txt · 03_Pelden_Acoustic_Station.txt · 04_Noryn_Print_Cooperative.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.\n\nSOURCE EVIDENCE\n[1]\n03_Pelden_Acoustic_Station.txt\n\nText line 1 (normalized extraction)\n\nAt Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019. Pelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius. Arel records four calibration tones per shift. Liva records seven ambient clips per sh\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+        "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per sh",
+        "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+        "score": 0.0476,
+        "lexicalScore": 10.329576709697381,
+        "semanticScore": 0.6971241894076121,
+        "matchedTerms": [
+          "pelden",
+          "acoustic",
+          "station",
+          "calibration",
+          "tower"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+        "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cas",
+        "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+        "score": 0.0476,
+        "lexicalScore": 10.329576709697381,
+        "semanticScore": 0.6971241894076121,
+        "matchedTerms": [
+          "pelden",
+          "acoustic",
+          "station",
+          "calibration",
+          "tower"
+        ],
+        "start": 0,
+        "end": 105
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.892502932472452,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+        "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cas",
+        "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+        "score": 0.0476,
+        "lexicalScore": 10.59056632242666,
+        "semanticScore": 0.6971241894076121,
+        "matchedTerms": [
+          "pelden",
+          "acoustic",
+          "station",
+          "calibration",
+          "tower"
+        ],
+        "start": 0,
+        "end": 105
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.892502932472452,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Pelden_Acoustic_Station.txt",
+        "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Pelden_Acoustic_Station.txt",
+      "start": 0,
+      "content": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+      "semanticScore": 0.892502932472452,
+      "lexicalScore": 14.4987117794191
+    },
+    {
+      "filename": "03_Pelden_Acoustic_Station.txt",
+      "start": 107,
+      "content": "Pelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.",
+      "semanticScore": 0.5176415610062769,
+      "lexicalScore": 4.820528638404659
+    },
+    {
+      "filename": "03_Pelden_Acoustic_Station.txt",
+      "start": 400,
+      "content": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner.",
+      "semanticScore": 0.45744335282339094,
+      "lexicalScore": 6.155444261347487
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+      "start": 0,
+      "end": 66,
+      "similarity": 0.1638673951424709,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "The first track overhaul took place in 1964; the second track overhaul took place in 1997.",
+      "start": 67,
+      "end": 157,
+      "similarity": 0.1702480042811639,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-01.",
+      "start": 181,
+      "end": 186,
+      "similarity": 0.07747959263552603,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Release ticket orders before 13:35 for departure on the same service day.",
+      "start": 187,
+      "end": 260,
+      "similarity": 0.07670155105462886,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.",
+      "start": 261,
+      "end": 379,
+      "similarity": 0.0642981960261068,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-02.",
+      "start": 380,
+      "end": 385,
+      "similarity": 0.07830924921172754,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Quinn checks six brake assemblies per day.",
+      "start": 386,
+      "end": 428,
+      "similarity": 0.05271809904731576,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Wes checks two haul cables per day.",
+      "start": 429,
+      "end": 464,
+      "similarity": 0.19280431018972027,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Quinn labels three tool drawers per day.",
+      "start": 465,
+      "end": 505,
+      "similarity": 0.1364668203284156,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-03.",
+      "start": 506,
+      "end": 511,
+      "similarity": 0.0872622101206891,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius.",
+      "start": 512,
+      "end": 597,
+      "similarity": 0.08004622406683583,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Individual winter extremes are not listed.",
+      "start": 598,
+      "end": 640,
+      "similarity": 0.004667352901317094,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-04.",
+      "start": 641,
+      "end": 646,
+      "similarity": 0.05349363524375309,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ticket transaction slips are kept for 18 months.",
+      "start": 647,
+      "end": 695,
+      "similarity": 0.03492722288454374,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "If an incident review is open, retain the affected slips until that review closes.",
+      "start": 696,
+      "end": 778,
+      "similarity": 0.03699269942863839,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-05.",
+      "start": 779,
+      "end": 784,
+      "similarity": 0.09046385944725809,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Acknowledge ticket requests within one service day.",
+      "start": 785,
+      "end": 836,
+      "similarity": 0.09479935272711018,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "This acknowledgement does not guarantee a reserved seat.",
+      "start": 837,
+      "end": 893,
+      "similarity": 0.05105141110563752,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The Selwick Textile Archive catalogue room relocation took place in 1947.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.23097372461680293,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "Its restoration took place in 1988.",
+      "start": 74,
+      "end": 109,
+      "similarity": 0.3118964455142765,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "A proposal to close the reading desk in 2015 was canceled; the desk stayed open.",
+      "start": 110,
+      "end": 190,
+      "similarity": 0.16318453265529553,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "S-01.",
+      "start": 213,
+      "end": 218,
+      "similarity": 0.0438270786344093,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The winter average temperature in the Selwick Textile Archive store is 12 degrees Celsius.",
+      "start": 219,
+      "end": 309,
+      "similarity": 0.11748581050875753,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 310,
+      "end": 370,
+      "similarity": 0.09025898857428395,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The highest monthly mean temperature is 24 degrees Celsius, in August.",
+      "start": 371,
+      "end": 441,
+      "similarity": 0.10325733957135026,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "S-02.",
+      "start": 442,
+      "end": 447,
+      "similarity": 0.06780962765935475,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "Access registers are retained for 9 years.",
+      "start": 448,
+      "end": 490,
+      "similarity": 0.13248508007221713,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "If a loan claim is open, keep the affected registers until the claim is settled.",
+      "start": 491,
+      "end": 571,
+      "similarity": 0.05666085467302324,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "S-03.",
+      "start": 572,
+      "end": 577,
+      "similarity": 0.07313773244521375,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+      "start": 578,
+      "end": 681,
+      "similarity": -0.033032735160919605,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+      "start": 0,
+      "end": 70,
+      "similarity": 0.892502932472452,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "The boathouse was painted in 2019.",
+      "start": 71,
+      "end": 105,
+      "similarity": 0.20814122997626378,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Pelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.",
+      "start": 107,
+      "end": 262,
+      "similarity": 0.5176415610062769,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Arel records four calibration tones per shift.",
+      "start": 264,
+      "end": 310,
+      "similarity": 0.26937281616166336,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Liva records seven ambient clips per shift.",
+      "start": 311,
+      "end": 354,
+      "similarity": 0.1279460566317612,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Arel labels two microphone cases per shift.",
+      "start": 355,
+      "end": 398,
+      "similarity": 0.15101187313076134,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner.",
+      "start": 400,
+      "end": 490,
+      "similarity": 0.45744335282339094,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Use a 34-hour lubrication interval in a dusty hut.",
+      "start": 491,
+      "end": 541,
+      "similarity": 0.09102129654387293,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Inspect the scanner every 17 operating hours in either type of hut.",
+      "start": 542,
+      "end": 609,
+      "similarity": 0.24545488543139235,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-01.",
+      "start": 24,
+      "end": 29,
+      "similarity": 0.1221675375876512,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Noryn Print Cooperative acknowledges a print request within three business hours.",
+      "start": 30,
+      "end": 111,
+      "similarity": 0.13610870924750554,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+      "start": 112,
+      "end": 205,
+      "similarity": 0.09628914955643006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-02.",
+      "start": 206,
+      "end": 211,
+      "similarity": 0.09780649442220753,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "The dispatch packet includes a job ticket, proof sheet, packing list, collection receipt, and release signature.",
+      "start": 212,
+      "end": 324,
+      "similarity": 0.008339863920732923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-03.",
+      "start": 325,
+      "end": 330,
+      "similarity": 0.1268037599538812,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Purchases above 4700 credits need written approval from the Finance Delegate and Production Lead.",
+      "start": 331,
+      "end": 428,
+      "similarity": 0.0434980342309266,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-04.",
+      "start": 429,
+      "end": 434,
+      "similarity": 0.11664185380348145,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions.",
+      "start": 435,
+      "end": 529,
+      "similarity": 0.19435131759636884,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "In a dusty room, lubricate it every 55 operating hours.",
+      "start": 530,
+      "end": 585,
+      "similarity": 0.13511435526487617,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Inspect the press every 22 operating hours in either room.",
+      "start": 586,
+      "end": 644,
+      "similarity": 0.24275401028824586,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-05.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.13778826601661584,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Completed job records are retained for 5 months, unless an unresolved invoice query requires longer retention.",
+      "start": 651,
+      "end": 761,
+      "similarity": 0.023415993545473482,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+          "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+          "filename": "03_Pelden_Acoustic_Station.txt",
+          "excerpt": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cas",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+          "score": 0.0476,
+          "lexicalScore": 10.329576709697381,
+          "semanticScore": 0.6971241894076121,
+          "matchedTerms": [
+            "pelden",
+            "acoustic",
+            "station",
+            "calibration",
+            "tower"
+          ],
+          "start": 0,
+          "end": 105
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.892502932472452,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+          "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+          "filename": "03_Pelden_Acoustic_Station.txt",
+          "excerpt": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cas",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+          "score": 0.0476,
+          "lexicalScore": 10.59056632242666,
+          "semanticScore": 0.6971241894076121,
+          "matchedTerms": [
+            "pelden",
+            "acoustic",
+            "station",
+            "calibration",
+            "tower"
+          ],
+          "start": 0,
+          "end": 105
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.892502932472452,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+          "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+          "filename": "03_Pelden_Acoustic_Station.txt",
+          "excerpt": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per sh",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+          "score": 0.0476,
+          "lexicalScore": 10.329576709697381,
+          "semanticScore": 0.6971241894076121,
+          "matchedTerms": [
+            "pelden",
+            "acoustic",
+            "station",
+            "calibration",
+            "tower"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.892502932472452,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "328499aa-cedb-4f73-9491-23b1894b0f40:0",
+          "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+          "filename": "03_Pelden_Acoustic_Station.txt",
+          "excerpt": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per sh",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+          "score": 0.0476,
+          "lexicalScore": 10.59056632242666,
+          "semanticScore": 0.6971241894076121,
+          "matchedTerms": [
+            "pelden",
+            "acoustic",
+            "station",
+            "calibration",
+            "tower"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.892502932472452,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Pelden_Acoustic_Station.txt",
+          "quote": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.09154438972473145,
+    -0.006323263514786959,
+    0.006621168926358223,
+    -0.0485050268471241,
+    -0.08841846138238907,
+    -0.03575322777032852,
+    -0.08785782009363174,
+    0.034305352717638016,
+    -0.029614608734846115,
+    -0.04708867520093918,
+    0.02408483810722828,
+    0.029306016862392426,
+    0.019101513549685478,
+    -0.05278705805540085,
+    -0.04953328147530556,
+    -0.02697920612990856,
+    0.009526864625513554,
+    0.002460216172039509,
+    0.12188001722097397,
+    -0.029085028916597366,
+    -0.03725714236497879,
+    -0.014577977359294891,
+    0.015782946720719337,
+    0.0018821205012500286,
+    0.06329977512359619,
+    0.07668257504701614,
+    -0.05003367364406586,
+    0.09680133312940598,
+    0.029177552089095116,
+    -0.026124300435185432,
+    -0.07007818669080734,
+    -0.011976172216236591,
+    0.09410528093576431,
+    -0.00014463545812759548,
+    -0.008319047279655933,
+    0.05742444097995758,
+    0.01732594147324562,
+    -0.0517895445227623,
+    -0.04039858281612396,
+    -0.035836610943078995,
+    -0.020501799881458282,
+    0.004477106500416994,
+    0.033588558435440063,
+    0.04905618354678154,
+    -0.046468161046504974,
+    -0.0298920888453722,
+    0.017969995737075806,
+    -0.05671028420329094,
+    -0.019853128120303154,
+    0.006574094295501709,
+    0.08216474205255508,
+    -0.04206268489360809,
+    0.10988307744264603,
+    -0.06685806065797806,
+    0.015273954719305038,
+    0.06973440945148468,
+    0.04440277814865112,
+    0.07508067041635513,
+    0.07144756615161896,
+    0.06068402901291847,
+    0.04816415533423424,
+    0.05823739990592003,
+    -0.15580900013446808,
+    -0.04882767051458359,
+    0.06780088692903519,
+    -0.017900222912430763,
+    0.02065485529601574,
+    -0.006591035518795252,
+    0.07287011295557022,
+    -0.009353329427540302,
+    0.04873453080654144,
+    0.04175402596592903,
+    0.042463939636945724,
+    -0.039273399859666824,
+    0.023883618414402008,
+    0.06696734577417374,
+    0.009448617696762085,
+    -0.026764610782265663,
+    0.015598537400364876,
+    0.028839511796832085,
+    -0.00232771597802639,
+    -0.03836939483880997,
+    -0.049882493913173676,
+    -0.045796092599630356,
+    -0.011734610423445702,
+    0.01171388104557991,
+    0.035991370677948,
+    0.0454244390130043,
+    -0.0197448693215847,
+    -0.06722437590360641,
+    0.06777267903089523,
+    0.036585837602615356,
+    -0.20672516524791718,
+    0.10559564083814621,
+    -0.02794460952281952,
+    0.02521420083940029,
+    -0.1207185611128807,
+    -0.005436944309622049,
+    0.035555075854063034,
+    0.0003091924008913338,
+    0.02144528366625309,
+    0.08183553069829941,
+    0.04292893409729004,
+    -0.028865111991763115,
+    -0.06741079688072205,
+    -0.09251265972852707,
+    -0.014707083813846111,
+    0.1510685235261917,
+    -0.0668996199965477,
+    -0.04790777340531349,
+    -0.028863366693258286,
+    -0.04364641383290291,
+    0.04930718615651131,
+    0.06281207501888275,
+    -0.009513325989246368,
+    0.034341152757406235,
+    -0.08310847729444504,
+    -0.0038356378208845854,
+    -0.044871918857097626,
+    0.01454081479460001,
+    0.02858496829867363,
+    -0.01454542763531208,
+    -0.04889273643493652,
+    0.06675615906715393,
+    -0.09139325469732285,
+    0.0018191703129559755,
+    0.01984315924346447,
+    -2.869318527535847e-33,
+    -0.013376083225011826,
+    0.045311104506254196,
+    -0.031068580225110054,
+    0.03613921254873276,
+    0.06402131170034409,
+    0.019316986203193665,
+    -0.08281026780605316,
+    0.06454352289438248,
+    0.07790973782539368,
+    -0.03406377509236336,
+    0.07036419212818146,
+    0.046782512217760086,
+    -0.059174735099077225,
+    -0.08176570385694504,
+    0.04065436124801636,
+    -0.1408800631761551,
+    -0.021239902824163437,
+    0.027253037318587303,
+    -0.027993667870759964,
+    -0.04185033217072487,
+    0.046577319502830505,
+    0.0031998218037188053,
+    0.005794301629066467,
+    -0.032074812799692154,
+    0.05484456941485405,
+    0.05765126645565033,
+    0.06917284429073334,
+    0.03786272183060646,
+    -0.037471093237400055,
+    0.025886399671435356,
+    0.03177286311984062,
+    -0.04969731718301773,
+    -0.010765185579657555,
+    0.005946299992501736,
+    0.024670802056789398,
+    0.033141959458589554,
+    0.02650783769786358,
+    -0.008402757346630096,
+    -0.0794452577829361,
+    0.014633278362452984,
+    0.06097404658794403,
+    0.0399283729493618,
+    0.04995211213827133,
+    0.08899126946926117,
+    0.04304823279380798,
+    -0.007808476686477661,
+    -0.011400096118450165,
+    0.026616400107741356,
+    0.14265406131744385,
+    -0.048168379813432693,
+    0.02339494228363037,
+    0.043978169560432434,
+    -0.1160876452922821,
+    -0.007338720839470625,
+    0.04163026064634323,
+    -0.00970793329179287,
+    0.032327938824892044,
+    -0.03350500017404556,
+    0.026215476915240288,
+    -0.05278641730546951,
+    0.04586050286889076,
+    0.09271670877933502,
+    0.07873807847499847,
+    -0.036980967968702316,
+    0.016933124512434006,
+    0.018513357266783714,
+    -0.03445642068982124,
+    -0.059333574026823044,
+    0.017679285258054733,
+    0.010651796124875546,
+    -0.044726841151714325,
+    -0.05124523863196373,
+    0.03410251438617706,
+    -0.002289758063852787,
+    -0.052139345556497574,
+    0.038584109395742416,
+    -0.12207679450511932,
+    0.03739490732550621,
+    -0.010363329201936722,
+    -0.009899122640490532,
+    -0.0663323849439621,
+    0.05173806473612785,
+    0.02495148591697216,
+    0.03378600627183914,
+    0.039439115673303604,
+    -0.03874557092785835,
+    0.030401382595300674,
+    0.05913640558719635,
+    0.0037856968119740486,
+    0.025707459077239037,
+    -0.05182851105928421,
+    -0.043515123426914215,
+    -0.08027493953704834,
+    0.027520757168531418,
+    -0.004836972337216139,
+    1.55273987535993e-33,
+    -0.06030280888080597,
+    0.05308367684483528,
+    0.019284695386886597,
+    -0.0019536474719643593,
+    -0.06665091216564178,
+    0.02569987252354622,
+    0.0317220613360405,
+    0.06393158435821533,
+    0.027517300099134445,
+    0.0642842948436737,
+    -0.01407200749963522,
+    -0.016301030293107033,
+    0.07489895075559616,
+    -0.0052014426328241825,
+    0.01900634355843067,
+    0.09386707097291946,
+    -0.042586345225572586,
+    -0.010636460036039352,
+    -0.06821515411138535,
+    -0.011104628443717957,
+    0.039623286575078964,
+    0.03689161688089371,
+    -0.0287628211081028,
+    0.11078721284866333,
+    0.024554144591093063,
+    0.03312290087342262,
+    0.06437543034553528,
+    -0.10288948565721512,
+    -0.03656533360481262,
+    -0.008901477791368961,
+    -0.08881238102912903,
+    -0.040480002760887146,
+    -0.031221797689795494,
+    0.06664858013391495,
+    -0.036561548709869385,
+    0.06185390427708626,
+    0.09671352803707123,
+    0.09799496829509735,
+    0.0012902049347758293,
+    -0.026660777628421783,
+    0.000530875928234309,
+    0.05065437778830528,
+    0.013354713097214699,
+    -0.006729051936417818,
+    0.016521189361810684,
+    -0.06294014304876328,
+    0.09373394399881363,
+    -0.019492750987410545,
+    0.016376297920942307,
+    0.022506210952997208,
+    0.013138584792613983,
+    0.014636054635047913,
+    0.054616596549749374,
+    -0.07554394751787186,
+    0.036856092512607574,
+    -0.024300072342157364,
+    0.01632004976272583,
+    -0.0008232435793615878,
+    -0.023761646822094917,
+    0.005832276307046413,
+    0.01410526130348444,
+    -0.069711834192276,
+    -0.01788773387670517,
+    0.002264175098389387,
+    0.008022278547286987,
+    0.0952625498175621,
+    0.07545141130685806,
+    -0.022006424143910408,
+    0.05810612812638283,
+    -0.00390677060931921,
+    0.049339741468429565,
+    0.07520557940006256,
+    -0.0034751081839203835,
+    -0.022908944636583328,
+    -0.042101770639419556,
+    0.020182844251394272,
+    -0.0379677340388298,
+    0.03192543983459473,
+    -0.08940748125314713,
+    -0.03697333484888077,
+    0.010154938325285912,
+    -0.014356927946209908,
+    -0.029339024797081947,
+    0.01132875494658947,
+    0.006865027826279402,
+    -0.06109064072370529,
+    0.06878137588500977,
+    0.014562721364200115,
+    0.01188170537352562,
+    -0.012645493261516094,
+    0.054044224321842194,
+    0.0020070842001587152,
+    -0.0689191222190857,
+    -0.08457150310277939,
+    -0.01663471944630146,
+    -1.8111869337644748e-8,
+    -0.05647711455821991,
+    0.09445318579673767,
+    -0.06427138298749924,
+    -0.02985839545726776,
+    0.031238263472914696,
+    -0.08680671453475952,
+    0.050366491079330444,
+    -0.020940739661455154,
+    -0.01554077584296465,
+    -0.05322861671447754,
+    0.012484696693718433,
+    -0.0561431422829628,
+    -0.0008654404664412141,
+    0.035692248493433,
+    0.011352448724210262,
+    -0.04766027629375458,
+    -0.04135409742593765,
+    0.018278351053595543,
+    -0.07898424565792084,
+    0.013171893544495106,
+    0.019761398434638977,
+    0.014383833855390549,
+    0.046054307371377945,
+    0.07833508402109146,
+    -0.0005858244840055704,
+    0.0030833869241178036,
+    -0.050890348851680756,
+    -0.02365725487470627,
+    0.044528163969516754,
+    0.021162917837500572,
+    0.03151506558060646,
+    -0.0005983136361464858,
+    -0.09098916500806808,
+    -0.031359586864709854,
+    -0.0006422062870115042,
+    0.08943980932235718,
+    -0.022460779175162315,
+    0.036174338310956955,
+    -0.04594764485955238,
+    -0.012027197517454624,
+    -0.02877081371843815,
+    -0.12630748748779297,
+    -0.05610090494155884,
+    0.05054397135972977,
+    0.07761527597904205,
+    0.02759173884987831,
+    -0.06699960678815842,
+    -0.015065829269587994,
+    0.009017601609230042,
+    -0.023375967517495155,
+    0.023278294131159782,
+    0.04288559779524803,
+    0.052424147725105286,
+    -0.04831000417470932,
+    -0.021826453506946564,
+    -0.014027714729309082,
+    -0.015314826741814613,
+    -0.033248450607061386,
+    -0.05501006171107292,
+    -0.04653550311923027,
+    -0.060656700283288956,
+    -0.011780655942857265,
+    -0.025937920436263084,
+    0.0005312614375725389
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "start": 0,
+        "content": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "start": 0,
+        "content": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005. The boathouse was painted in 2019.\n\nPelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.\n\nArel records four calibration tones per shift. Liva records seven ambient clips per shift. Arel labels two microphone cases per shift.\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut."
+      }
+    ]
+  }
+}

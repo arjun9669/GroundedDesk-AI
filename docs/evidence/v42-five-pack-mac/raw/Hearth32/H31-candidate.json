@@ -1,0 +1,228 @@
+{
+  "candidate_identity": "coverage-v42-ticket-relations",
+  "id": "H31",
+  "question": "Compare acknowledgement deadlines and their limits for Veylan Seed Conservatory collection requests and Tessarin Repair Cafe repair requests.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] Acknowledge collection requests within two collection days.\n\n[2] Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+    "sources": [
+      {
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "quote": "Acknowledge collection requests within two collection days."
+      },
+      {
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours."
+      }
+    ],
+    "displayed": "Shared vocabulary: acknowledgement, collection, months, requests, retained, unless, unresolved, within. Shared terms do not establish factual agreement.\n\n[1] 01_Veylan_Seed_Conservatory.txt\n\nAcknowledge collection requests within two collection days.\n\nText line 8 (normalized extraction)\n\nLocate in library ↗\n[2] 04_Tessarin_Repair_Cafe.txt\n\nTessarin Repair Cafe acknowledges repair requests within four business hours.\n\nText line 2 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Veylan Seed Conservatory collection requests and Tessarin Repair Cafe repair requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "Acknowledge collection requests within two collection days.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge collection requests within two collection days."
+      },
+      {
+        "citation": 2,
+        "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "Tessarin Repair Cafe acknowledges repair requests within four business hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours."
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "collection",
+      "months",
+      "requests",
+      "retained",
+      "unless",
+      "unresolved",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge collection requests within two collection days.\n\n[2] Tessarin Repair Cafe acknowledges repair requests within four business hours."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Veylan Seed Conservatory collection requests and Tessarin Repair Cafe repair requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.",
+        "start": 793,
+        "end": 912
+      },
+      {
+        "citation": 2,
+        "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+        "start": 27,
+        "end": 187
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "collection",
+      "months",
+      "requests",
+      "retained",
+      "unless",
+      "unresolved",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.\n\n[2] Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Veylan Seed Conservatory collection requests and Tessarin Repair Cafe repair requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+        "filename": "01_Veylan_Seed_Conservatory.txt",
+        "excerpt": "Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.",
+        "start": 793,
+        "end": 912
+      },
+      {
+        "citation": 2,
+        "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+        "filename": "04_Tessarin_Repair_Cafe.txt",
+        "excerpt": "Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+        "start": 27,
+        "end": 187
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "collection",
+      "months",
+      "requests",
+      "retained",
+      "unless",
+      "unresolved",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.\n\n[2] Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare acknowledgement deadlines and their limits for Veylan Seed Conservatory collection requests and Tessarin Repair Cafe repair requests.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.",
+          "warning": false,
+          "supported": true,
+          "quote": "Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.",
+          "start": 793,
+          "end": 912
+        },
+        {
+          "citation": 2,
+          "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+          "filename": "04_Tessarin_Repair_Cafe.txt",
+          "excerpt": "Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+          "warning": false,
+          "supported": true,
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+          "start": 27,
+          "end": 187
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "collection",
+        "months",
+        "requests",
+        "retained",
+        "unless",
+        "unresolved",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.\n\n[2] Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare acknowledgement deadlines and their limits for Veylan Seed Conservatory collection requests and Tessarin Repair Cafe repair requests.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "a2192076-5842-40e2-aeee-d1a00458267b",
+          "filename": "01_Veylan_Seed_Conservatory.txt",
+          "excerpt": "Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.",
+          "warning": false,
+          "supported": true,
+          "quote": "Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.",
+          "start": 793,
+          "end": 912
+        },
+        {
+          "citation": 2,
+          "documentId": "3ecc2cbf-c5a3-4c0d-85ad-e666ff4ab345",
+          "filename": "04_Tessarin_Repair_Cafe.txt",
+          "excerpt": "Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+          "warning": false,
+          "supported": true,
+          "quote": "Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+          "start": 27,
+          "end": 187
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "collection",
+        "months",
+        "requests",
+        "retained",
+        "unless",
+        "unresolved",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] Acknowledge collection requests within two collection days. This acknowledgement does not guarantee stock availability.\n\n[2] Tessarin Repair Cafe acknowledges repair requests within four business hours. An acknowledgement is not a promise that the repair will finish within four hours.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v42 and paired v41 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

@@ -1,0 +1,1243 @@
+{
+  "candidate_identity": "coverage-v42-ticket-relations",
+  "id": "M07",
+  "question": "How long are Selwick Textile Archive access registers retained, and what happens if a loan claim is still open?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How long are Selwick Textile Archive access registers retained, and what happens if a loan claim is still open?",
+    "expected_display": "How long are Selwick Textile Archive access registers retained, and what happens if a loan claim is still open?",
+    "rendered_question": "How long are Selwick Textile Archive access registers retained, and what happens if a loan claim is still open?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+    "sources": [
+      {
+        "filename": "02_Selwick_Textile_Archive.txt",
+        "excerpt": "r average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August.\nS-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\nS-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+        "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow long are Selwick Textile Archive access registers retained, and what happens if a loan claim is still open?\n\nSearched all files: 01_Ashmere_Funicular.txt · 02_Selwick_Textile_Archive.txt · 03_Pelden_Acoustic_Station.txt · 04_Noryn_Print_Cooperative.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\n\nSOURCE EVIDENCE\n[1]\n02_Selwick_Textile_Archive.txt\n\nText line 5 (normalized extraction)\n\nr average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August. S-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled. S-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "4e909339-040d-44d4-9fda-32b1c9b1cbac:0",
+        "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+        "filename": "02_Selwick_Textile_Archive.txt",
+        "excerpt": "r average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August.\nS-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\nS-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+        "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+        "score": 0.0476,
+        "lexicalScore": 15.025809610327238,
+        "semanticScore": 0.6558013861215183,
+        "matchedTerms": [
+          "selwick",
+          "textile",
+          "archive",
+          "access",
+          "registers",
+          "retained",
+          "loan",
+          "claim",
+          "open"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "4e909339-040d-44d4-9fda-32b1c9b1cbac:0",
+        "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+        "filename": "02_Selwick_Textile_Archive.txt",
+        "excerpt": "r average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August.\nS-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\nS-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+        "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+        "score": 0.0476,
+        "lexicalScore": 15.025809610327238,
+        "semanticScore": 0.6558013861215183,
+        "matchedTerms": [
+          "selwick",
+          "textile",
+          "archive",
+          "access",
+          "registers",
+          "retained",
+          "loan",
+          "claim",
+          "open"
+        ],
+        "start": 448,
+        "end": 571
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Selwick_Textile_Archive.txt",
+        "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [],
+    "body_diagnostics": [
+      {
+        "document": "02_Selwick_Textile_Archive.txt",
+        "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "4e909339-040d-44d4-9fda-32b1c9b1cbac:192",
+        "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+        "filename": "02_Selwick_Textile_Archive.txt",
+        "excerpt": "r average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August.\nS-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\nS-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+        "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+        "score": 0.0464,
+        "lexicalScore": 13.644626020920626,
+        "semanticScore": 0.5072113600540947,
+        "matchedTerms": [
+          "selwick",
+          "textile",
+          "archive",
+          "access",
+          "registers",
+          "retained",
+          "loan",
+          "claim",
+          "open"
+        ],
+        "start": 448,
+        "end": 571
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Selwick_Textile_Archive.txt",
+        "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [],
+    "body_diagnostics": [
+      {
+        "document": "02_Selwick_Textile_Archive.txt",
+        "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Selwick_Textile_Archive.txt",
+      "start": 448,
+      "content": "Access registers are retained for 9 years.",
+      "semanticScore": 0.5812478994768749,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Selwick_Textile_Archive.txt",
+      "start": 491,
+      "content": "If a loan claim is open, keep the affected registers until the claim is settled.",
+      "semanticScore": 0.5761496820913452,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Selwick_Textile_Archive.txt",
+      "start": 0,
+      "content": "The Selwick Textile Archive catalogue room relocation took place in 1947.",
+      "semanticScore": 0.5226525662138853,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Noryn_Print_Cooperative.txt",
+      "start": 651,
+      "content": "Completed job records are retained for 5 months, unless an unresolved invoice query requires longer retention.",
+      "semanticScore": 0.49974240837796324,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Selwick_Textile_Archive.txt",
+      "start": 219,
+      "content": "The winter average temperature in the Selwick Textile Archive store is 12 degrees Celsius.",
+      "semanticScore": 0.4438448114535623,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+      "start": 0,
+      "end": 66,
+      "similarity": 0.11467587163185332,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "The first track overhaul took place in 1964; the second track overhaul took place in 1997.",
+      "start": 67,
+      "end": 157,
+      "similarity": 0.09974634803457592,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-01.",
+      "start": 181,
+      "end": 186,
+      "similarity": 0.03559560476953225,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Release ticket orders before 13:35 for departure on the same service day.",
+      "start": 187,
+      "end": 260,
+      "similarity": 0.12457942886313203,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.",
+      "start": 261,
+      "end": 379,
+      "similarity": 0.17023719399034315,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-02.",
+      "start": 380,
+      "end": 385,
+      "similarity": 0.009696574387170613,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Quinn checks six brake assemblies per day.",
+      "start": 386,
+      "end": 428,
+      "similarity": 0.20655585847963867,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Wes checks two haul cables per day.",
+      "start": 429,
+      "end": 464,
+      "similarity": 0.17866012951592686,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Quinn labels three tool drawers per day.",
+      "start": 465,
+      "end": 505,
+      "similarity": 0.16267182834971156,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-03.",
+      "start": 506,
+      "end": 511,
+      "similarity": 0.0008735985344681085,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius.",
+      "start": 512,
+      "end": 597,
+      "similarity": 0.06516684182969716,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Individual winter extremes are not listed.",
+      "start": 598,
+      "end": 640,
+      "similarity": 0.04054748110933731,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-04.",
+      "start": 641,
+      "end": 646,
+      "similarity": 0.0002521347585535296,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Ticket transaction slips are kept for 18 months.",
+      "start": 647,
+      "end": 695,
+      "similarity": 0.3368834667382721,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "If an incident review is open, retain the affected slips until that review closes.",
+      "start": 696,
+      "end": 778,
+      "similarity": 0.2642164041696362,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "F-05.",
+      "start": 779,
+      "end": 784,
+      "similarity": 0.01275381402455972,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "Acknowledge ticket requests within one service day.",
+      "start": 785,
+      "end": 836,
+      "similarity": 0.10965809130987364,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bdee3a17-aee2-4fa8-b2ae-9a928285b718",
+      "value": "This acknowledgement does not guarantee a reserved seat.",
+      "start": 837,
+      "end": 893,
+      "similarity": 0.12420235208751174,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The Selwick Textile Archive catalogue room relocation took place in 1947.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.5226525662138853,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "Its restoration took place in 1988.",
+      "start": 74,
+      "end": 109,
+      "similarity": 0.2648852613048737,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "A proposal to close the reading desk in 2015 was canceled; the desk stayed open.",
+      "start": 110,
+      "end": 190,
+      "similarity": 0.21380302637617252,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "S-01.",
+      "start": 213,
+      "end": 218,
+      "similarity": 0.07967164197528807,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The winter average temperature in the Selwick Textile Archive store is 12 degrees Celsius.",
+      "start": 219,
+      "end": 309,
+      "similarity": 0.4438448114535623,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 310,
+      "end": 370,
+      "similarity": 0.031218111975180488,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The highest monthly mean temperature is 24 degrees Celsius, in August.",
+      "start": 371,
+      "end": 441,
+      "similarity": -0.02719073919136198,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "S-02.",
+      "start": 442,
+      "end": 447,
+      "similarity": 0.05579265255823763,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "Access registers are retained for 9 years.",
+      "start": 448,
+      "end": 490,
+      "similarity": 0.5812478994768749,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "If a loan claim is open, keep the affected registers until the claim is settled.",
+      "start": 491,
+      "end": 571,
+      "similarity": 0.5761496820913452,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "S-03.",
+      "start": 572,
+      "end": 577,
+      "similarity": 0.0656934583810373,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+      "value": "The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+      "start": 578,
+      "end": 681,
+      "similarity": 0.22419439752871131,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+      "start": 0,
+      "end": 70,
+      "similarity": 0.15888432096403227,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "The boathouse was painted in 2019.",
+      "start": 71,
+      "end": 105,
+      "similarity": 0.11917819121603986,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Pelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.",
+      "start": 107,
+      "end": 262,
+      "similarity": 0.01874027271183725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Arel records four calibration tones per shift.",
+      "start": 264,
+      "end": 310,
+      "similarity": 0.10729329299915048,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Liva records seven ambient clips per shift.",
+      "start": 311,
+      "end": 354,
+      "similarity": 0.13552398969189416,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Arel labels two microphone cases per shift.",
+      "start": 355,
+      "end": 398,
+      "similarity": 0.06558270065840309,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner.",
+      "start": 400,
+      "end": 490,
+      "similarity": 0.2126342229953374,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Use a 34-hour lubrication interval in a dusty hut.",
+      "start": 491,
+      "end": 541,
+      "similarity": 0.10819695703869274,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "328499aa-cedb-4f73-9491-23b1894b0f40",
+      "value": "Inspect the scanner every 17 operating hours in either type of hut.",
+      "start": 542,
+      "end": 609,
+      "similarity": 0.25323626773230373,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-01.",
+      "start": 24,
+      "end": 29,
+      "similarity": 0.05347262162603672,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Noryn Print Cooperative acknowledges a print request within three business hours.",
+      "start": 30,
+      "end": 111,
+      "similarity": 0.3308538016437301,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+      "start": 112,
+      "end": 205,
+      "similarity": 0.26302054084113846,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-02.",
+      "start": 206,
+      "end": 211,
+      "similarity": 0.03681441708743548,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "The dispatch packet includes a job ticket, proof sheet, packing list, collection receipt, and release signature.",
+      "start": 212,
+      "end": 324,
+      "similarity": 0.2069506889542051,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-03.",
+      "start": 325,
+      "end": 330,
+      "similarity": 0.04830975216289686,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Purchases above 4700 credits need written approval from the Finance Delegate and Production Lead.",
+      "start": 331,
+      "end": 428,
+      "similarity": 0.254953633367679,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-04.",
+      "start": 429,
+      "end": 434,
+      "similarity": 0.032947687606669974,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions.",
+      "start": 435,
+      "end": 529,
+      "similarity": 0.1982718967902529,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "In a dusty room, lubricate it every 55 operating hours.",
+      "start": 530,
+      "end": 585,
+      "similarity": 0.08095099108807005,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Inspect the press every 22 operating hours in either room.",
+      "start": 586,
+      "end": 644,
+      "similarity": 0.18748393345974923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "P-05.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.02052497113695687,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c01414b8-561b-4a3c-bfdd-38a52925e4d7",
+      "value": "Completed job records are retained for 5 months, unless an unresolved invoice query requires longer retention.",
+      "start": 651,
+      "end": 761,
+      "similarity": 0.49974240837796324,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "4e909339-040d-44d4-9fda-32b1c9b1cbac:0",
+          "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+          "filename": "02_Selwick_Textile_Archive.txt",
+          "excerpt": "r average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August.\nS-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\nS-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+          "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+          "score": 0.0476,
+          "lexicalScore": 15.025809610327238,
+          "semanticScore": 0.6558013861215183,
+          "matchedTerms": [
+            "selwick",
+            "textile",
+            "archive",
+            "access",
+            "registers",
+            "retained",
+            "loan",
+            "claim",
+            "open"
+          ],
+          "start": 448,
+          "end": 571
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Selwick_Textile_Archive.txt",
+          "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [],
+      "body_diagnostics": [
+        {
+          "document": "02_Selwick_Textile_Archive.txt",
+          "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "4e909339-040d-44d4-9fda-32b1c9b1cbac:192",
+          "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+          "filename": "02_Selwick_Textile_Archive.txt",
+          "excerpt": "r average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August.\nS-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\nS-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+          "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+          "score": 0.0464,
+          "lexicalScore": 13.644626020920626,
+          "semanticScore": 0.5072113600540947,
+          "matchedTerms": [
+            "selwick",
+            "textile",
+            "archive",
+            "access",
+            "registers",
+            "retained",
+            "loan",
+            "claim",
+            "open"
+          ],
+          "start": 448,
+          "end": 571
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Selwick_Textile_Archive.txt",
+          "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [],
+      "body_diagnostics": [
+        {
+          "document": "02_Selwick_Textile_Archive.txt",
+          "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "4e909339-040d-44d4-9fda-32b1c9b1cbac:0",
+          "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+          "filename": "02_Selwick_Textile_Archive.txt",
+          "excerpt": "r average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August.\nS-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\nS-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+          "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+          "score": 0.0476,
+          "lexicalScore": 15.025809610327238,
+          "semanticScore": 0.6558013861215183,
+          "matchedTerms": [
+            "selwick",
+            "textile",
+            "archive",
+            "access",
+            "registers",
+            "retained",
+            "loan",
+            "claim",
+            "open"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Selwick_Textile_Archive.txt",
+          "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": []
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "4e909339-040d-44d4-9fda-32b1c9b1cbac:192",
+          "documentId": "4e909339-040d-44d4-9fda-32b1c9b1cbac",
+          "filename": "02_Selwick_Textile_Archive.txt",
+          "excerpt": "r average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August.\nS-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\nS-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+          "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+          "score": 0.0464,
+          "lexicalScore": 13.644626020920626,
+          "semanticScore": 0.5072113600540947,
+          "matchedTerms": [
+            "selwick",
+            "textile",
+            "archive",
+            "access",
+            "registers",
+            "retained",
+            "loan",
+            "claim",
+            "open"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Selwick_Textile_Archive.txt",
+          "quote": "Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": []
+    }
+  },
+  "query_vector": [
+    -0.07013770937919617,
+    0.020755155012011528,
+    -0.043820418417453766,
+    0.07210864126682281,
+    0.016549790278077126,
+    0.01911734603345394,
+    -0.08891668170690536,
+    -0.031168963760137558,
+    -0.0046508898958563805,
+    -0.09073584526777267,
+    0.05325435847043991,
+    0.07168947905302048,
+    -0.049951497465372086,
+    -0.08090861141681671,
+    -0.03473401442170143,
+    0.029979852959513664,
+    -0.08913034200668335,
+    -0.071828193962574,
+    -0.006380754057317972,
+    0.05739419162273407,
+    0.03994593769311905,
+    0.005802697967737913,
+    -0.02365918643772602,
+    0.013763705268502235,
+    0.12103386968374252,
+    0.022462807595729828,
+    -0.03328405320644379,
+    0.0715629830956459,
+    0.06189843267202377,
+    -0.006919776555150747,
+    -0.016273215413093567,
+    0.011895090341567993,
+    0.05670066922903061,
+    -0.006255235057324171,
+    0.1687360405921936,
+    0.07733679562807083,
+    0.023124434053897858,
+    -0.04172765091061592,
+    -0.03572974354028702,
+    -0.021568424999713898,
+    0.010021728463470936,
+    -0.06795456260442734,
+    -0.12586916983127594,
+    -0.03057285025715828,
+    -0.05213818699121475,
+    0.042919568717479706,
+    0.08991388231515884,
+    -0.020248230546712875,
+    -0.07396574318408966,
+    0.12040809541940689,
+    -0.012129280716180801,
+    -0.009472597390413284,
+    0.03680436313152313,
+    0.03924282640218735,
+    -0.046443939208984375,
+    -0.021014438942074776,
+    0.05175943300127983,
+    0.0011256085708737373,
+    -0.10582049190998077,
+    0.03425503522157669,
+    0.032358698546886444,
+    -0.025453267619013786,
+    -0.12145255506038666,
+    0.0020262328907847404,
+    0.02664852887392044,
+    0.03862210363149643,
+    0.024917826056480408,
+    -0.003972704987972975,
+    0.05652175471186638,
+    -0.10158401727676392,
+    -0.06215277314186096,
+    -0.08941294997930527,
+    -0.03759552165865898,
+    0.07732025533914566,
+    -0.013973052613437176,
+    0.06516649574041367,
+    0.04432092607021332,
+    -0.0005056886002421379,
+    0.011527194641530514,
+    -0.09440481662750244,
+    -0.013492811471223831,
+    -0.030522728338837624,
+    0.05164775252342224,
+    -0.03745799511671066,
+    -0.06140408292412758,
+    0.01229783520102501,
+    -0.0035258978605270386,
+    0.054583653807640076,
+    0.00017777716857381165,
+    0.020027583464980125,
+    0.09591008722782135,
+    0.02687244489789009,
+    0.05059221759438515,
+    -0.08573202043771744,
+    0.020569059997797012,
+    -0.035010624676942825,
+    0.0078060259111225605,
+    0.08599022775888443,
+    0.09159106016159058,
+    0.005360645707696676,
+    0.00782144907861948,
+    0.05360320210456848,
+    -0.07342413812875748,
+    0.011952814646065235,
+    -0.02072801999747753,
+    -0.0747426450252533,
+    0.05917154997587204,
+    0.02872058004140854,
+    0.022433320060372353,
+    -0.013886627741158009,
+    0.06136889010667801,
+    -0.04025556519627571,
+    0.036359939724206924,
+    0.09166672080755234,
+    0.050942130386829376,
+    0.07929667085409164,
+    -0.07337494194507599,
+    0.05041282996535301,
+    0.044140443205833435,
+    -0.019155437126755714,
+    0.028826581314206123,
+    0.04548749700188637,
+    0.021747807040810585,
+    -0.050459206104278564,
+    -0.057242490351200104,
+    0.08204680681228638,
+    0.026999812573194504,
+    -1.4582622719774735e-33,
+    -0.03729153051972389,
+    0.062368981540203094,
+    -0.03457469493150711,
+    0.014587067067623138,
+    0.005639405455440283,
+    -0.04388754442334175,
+    0.002673645270988345,
+    0.05457242578268051,
+    -0.03888316452503204,
+    0.06830426305532455,
+    0.018391259014606476,
+    0.01626582257449627,
+    -0.036861300468444824,
+    -0.07777295261621475,
+    -0.014905353076756,
+    0.05743328109383583,
+    0.007761589717119932,
+    0.06149981543421745,
+    0.01615173928439617,
+    0.03986946865916252,
+    0.05490408092737198,
+    -0.021660933271050453,
+    0.08110906183719635,
+    0.054533399641513824,
+    0.036887411028146744,
+    -0.07901034504175186,
+    -0.022064941003918648,
+    -0.015509059652686119,
+    -0.018111221492290497,
+    -0.006937603000551462,
+    0.09954258054494858,
+    0.019550519064068794,
+    0.01722855679690838,
+    0.03839942812919617,
+    0.0014731379924342036,
+    0.08845949172973633,
+    0.0003528297529555857,
+    -0.015564368106424809,
+    -0.01327116321772337,
+    0.003179286839440465,
+    0.06270738691091537,
+    -0.0010181758552789688,
+    0.05521126836538315,
+    0.015540540218353271,
+    -0.0289967879652977,
+    -0.13372616469860077,
+    0.014165309257805347,
+    0.007430946920067072,
+    0.03737175464630127,
+    0.07475433498620987,
+    0.018237438052892685,
+    0.0289644543081522,
+    -0.09717975556850433,
+    -0.03830075263977051,
+    -0.0017350072739645839,
+    -0.012244823388755322,
+    -0.060986343771219254,
+    -0.07145924866199493,
+    0.01035893801599741,
+    0.0060561466962099075,
+    0.07961263507604599,
+    0.045648086816072464,
+    0.040399473160505295,
+    -0.03450025990605354,
+    0.05571930855512619,
+    0.029014796018600464,
+    -0.042350687086582184,
+    -0.030391721054911613,
+    -0.04634547978639603,
+    -0.05550583079457283,
+    0.02474828064441681,
+    -0.08834105730056763,
+    -0.04250207170844078,
+    -0.016155142337083817,
+    -0.037968188524246216,
+    -0.055114515125751495,
+    -0.04571995139122009,
+    0.05187039449810982,
+    0.024764783680438995,
+    0.03268574923276901,
+    0.03528890386223793,
+    -0.042218632996082306,
+    0.02578718401491642,
+    0.03770124912261963,
+    -0.04580032825469971,
+    -0.03367573395371437,
+    0.07225342094898224,
+    -0.06902820616960526,
+    -0.03813787177205086,
+    -0.03125213831663132,
+    -0.043217726051807404,
+    -0.0411217026412487,
+    -0.04990725591778755,
+    -0.0028186291456222534,
+    0.031346917152404785,
+    -3.718363449373148e-34,
+    0.06570004671812057,
+    -0.044910043478012085,
+    -0.1065303236246109,
+    0.029882514849305153,
+    -0.09797533601522446,
+    0.004908008500933647,
+    -0.03662586212158203,
+    0.11643057316541672,
+    -0.06725125014781952,
+    0.022014888003468513,
+    0.04348431155085564,
+    0.02560718171298504,
+    0.06557702273130417,
+    0.04195580258965492,
+    -0.019579719752073288,
+    0.018496133387088776,
+    0.07327940315008163,
+    -0.030455907806754112,
+    -0.025120621547102928,
+    -0.013213896192610264,
+    0.06281619518995285,
+    -0.000802790280431509,
+    0.10189475119113922,
+    0.015738248825073242,
+    -0.04145120829343796,
+    0.03419499844312668,
+    0.002767910249531269,
+    -0.08814768493175507,
+    -0.014648455195128918,
+    -0.040400318801403046,
+    -0.018708087503910065,
+    -0.09820539504289627,
+    -0.06438528001308441,
+    0.04935991019010544,
+    0.04669150337576866,
+    -0.17687611281871796,
+    -0.0289929136633873,
+    0.02234937623143196,
+    -0.00691194785758853,
+    0.030490735545754433,
+    0.03521360084414482,
+    0.008781267330050468,
+    -0.011058720760047436,
+    0.003153928555548191,
+    0.041280291974544525,
+    -0.09079814702272415,
+    -0.0661291554570198,
+    0.02284613437950611,
+    0.016829151660203934,
+    -0.0033436345402151346,
+    0.012837647460401058,
+    0.03295974060893059,
+    0.008781381882727146,
+    -0.006648834329098463,
+    -0.004007361363619566,
+    0.061917804181575775,
+    0.09451470524072647,
+    -0.04416102543473244,
+    -0.021222572773694992,
+    -0.0007820269092917442,
+    0.02403264306485653,
+    0.05863674357533455,
+    -0.03439753130078316,
+    0.020893312990665436,
+    0.05872206389904022,
+    -0.05502024292945862,
+    0.028310062363743782,
+    -0.04024766385555267,
+    -0.012763967737555504,
+    -0.050679270178079605,
+    0.08450398594141006,
+    -0.032985713332891464,
+    0.011249820701777935,
+    -0.04944172129034996,
+    -0.047068364918231964,
+    0.03788559511303902,
+    0.033279236406087875,
+    0.0056846169754862785,
+    -0.06052432581782341,
+    -0.03537892550230026,
+    -0.04934746399521828,
+    -0.008962866850197315,
+    0.00526228453963995,
+    0.03867194429039955,
+    0.021938905119895935,
+    -0.039272014051675797,
+    0.06492666155099869,
+    -0.008505324833095074,
+    0.08254415541887283,
+    0.029862822964787483,
+    0.03276311233639717,
+    -0.0346585251390934,
+    -0.00889694131910801,
+    0.015307442285120487,
+    0.01955273374915123,
+    -2.1146034256958046e-8,
+    -0.037284303456544876,
+    0.035134393721818924,
+    0.056441161781549454,
+    0.016407731920480728,
+    0.11829404532909393,
+    -0.042226389050483704,
+    0.0387466698884964,
+    0.0573832131922245,
+    -0.020788341760635376,
+    0.0279985424131155,
+    0.054971080273389816,
+    0.0009063011384569108,
+    -0.04453830420970917,
+    -0.081558957695961,
+    -0.06414739042520523,
+    -0.06632627546787262,
+    0.0044216252863407135,
+    -0.07568752020597458,
+    -0.02764023467898369,
+    -0.018600910902023315,
+    -0.0703037902712822,
+    -0.07086583971977234,
+    0.02565872110426426,
+    0.05352303385734558,
+    -0.04847101867198944,
+    -0.05128290131688118,
+    0.017537778243422508,
+    0.03548111766576767,
+    0.04047789052128792,
+    -0.04379773885011673,
+    -0.028122752904891968,
+    0.07436861842870712,
+    0.0676155537366867,
+    0.008393381722271442,
+    -0.08239639550447464,
+    -0.012420568615198135,
+    0.029295288026332855,
+    -0.008211074396967888,
+    -0.07207641005516052,
+    0.03035503253340721,
+    -0.08866104483604431,
+    -0.047056812793016434,
+    0.013106795027852058,
+    0.0012558535672724247,
+    0.03438113257288933,
+    -0.0674259215593338,
+    0.005518282297998667,
+    -0.04424677789211273,
+    0.004158919211477041,
+    0.03934521600604057,
+    0.00687390984967351,
+    -0.05873345583677292,
+    0.04604186490178108,
+    0.11665385216474533,
+    0.01974760740995407,
+    -0.07253026962280273,
+    -0.002004734706133604,
+    0.03865300863981247,
+    -0.0023641984444111586,
+    0.010950535535812378,
+    0.02903267741203308,
+    -0.07484957575798035,
+    -0.014536484144628048,
+    -0.07397246360778809
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Selwick_Textile_Archive.txt",
+        "start": 0,
+        "content": "The Selwick Textile Archive catalogue room relocation took place in 1947. Its restoration took place in 1988. A proposal to close the reading desk in 2015 was canceled; the desk stayed open.\n\n## Store and records\nS-01. The winter average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August.\nS-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\nS-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization."
+      },
+      {
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "start": 650,
+        "content": "Completed job records are retained for 5 months, unless an unresolved invoice query requires longer retention."
+      },
+      {
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "start": 0,
+        "content": "## Cooperative policies\nP-01. Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.\nP-02. The dispatch packet includes a job ticket, proof sheet, packing list, collection receipt, and release signature.\nP-03. Purchases above 4700 credits need written approval from the Finance Delegate and Production Lead.\nP-04. Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.\nP-05. Completed job records are retained for 5 months, unless an unresolved invoice query requires longer"
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Selwick_Textile_Archive.txt",
+        "start": 192,
+        "content": "## Store and records\nS-01. The winter average temperature in the Selwick Textile Archive store is 12 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 24 degrees Celsius, in August.\nS-02. Access registers are retained for 9 years. If a loan claim is open, keep the affected registers until the claim is settled.\nS-03. The custody packet contains a custody slip, condition photograph, access log, and return authorization."
+      },
+      {
+        "filename": "02_Selwick_Textile_Archive.txt",
+        "start": 0,
+        "content": "The Selwick Textile Archive catalogue room relocation took place in 1947. Its restoration took place in 1988. A proposal to close the reading desk in 2015 was canceled; the desk stayed open."
+      },
+      {
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "start": 651,
+        "content": "Completed job records are retained for 5 months, unless an unresolved invoice query requires longer retention."
+      },
+      {
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "start": 0,
+        "content": "## Cooperative policies\nP-01. Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.\nP-02. The dispatch packet includes a job ticket, proof sheet, packing list, collection receipt, and release signature.\nP-03. Purchases above 4700 credits need written approval from the Finance Delegate and Production Lead.\nP-04. Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.\nP-05. Completed job records are retained for 5 months, unless an unresolved invoice query requires longer"
+      }
+    ]
+  }
+}
