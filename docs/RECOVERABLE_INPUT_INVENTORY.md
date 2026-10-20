@@ -11,6 +11,12 @@ verified cases awaiting v39 testing. The inventory counts/statuses below and its
 JSON preserve the earlier checkpoint before Prism32 questions; no original
 inventory observation or input hash is rewritten.
 
+A further [Lumen32 v39 first run](V39_LUMEN32_MAC_RESULTS.md) **fails 31/0/1** in
+both variants. Current coverage is 96 tested cases in three separately scored
+packs, with 572 verified cases untested and 103 originals unavailable. Fix review
+is required before continuing; neither publication nor input verification clears
+the failed model gate. The original inventory below remains a dated observation.
+
 GitHub CI for `7d75820` passed before this inventory was published.
 
 ## What is available

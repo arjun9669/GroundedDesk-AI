@@ -19,11 +19,15 @@ configuration remain unavailable. New tests cannot retrospectively establish
 preservation on those missing originals. Do not silently replace the full gate.
 
 Vela32 and the [first Prism32 partial exposed run](V39_PRISM32_MAC_RESULTS.md) each
-pass 32/32 in both v39 variants; 64 distinct cases are tested, with pack scores
-kept separate. There are 604 verified cases awaiting v39 testing and 103 original
-cases unavailable. Next prepare Lumen32, then Hearth32, under new freezes using
-unchanged candidates and live r44 UI. Original source bytes, questions, native
-rubrics and historical failures stay preserved. Any required
+pass 32/32 in both v39 variants. The [first Lumen32 v39 run](V39_LUMEN32_MAC_RESULTS.md)
+fails 31/0/1 in both variants on supported question L04. Work stopped; the user
+authorized publishing the first failure and investigating a separate fix.
+There are 96 distinct v39-tested cases, with pack scores kept separate, 572
+verified cases awaiting v39 testing and 103 original cases unavailable.
+Next is the [proposed v40 fix and revalidation plan](LUMEN32_V39_FAILURE_REVIEW.md)
+before proceeding to Hearth32. V40 is not implemented. Original source bytes,
+questions, native rubrics, frozen candidates and historical failures stay preserved.
+Any required
 test/integrity/execution/scoring failure stops work and requires user input before
 implementation, retries, commits or publication. A passing subset alone cannot
 authorize fresh confirmation or adoption.

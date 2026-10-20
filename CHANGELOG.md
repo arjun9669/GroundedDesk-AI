@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Preserve first v39 Lumen32 FAIL and investigate L04
+
+- Preserve the complete first actual-model Lumen32 run: both v39 variants 31/0/1, with L04 supported false refusal and historical PASS loss; paired v38 32/0/0. Work stopped, then the user explicitly authorized failure publication and investigation. No model-question retries or regrading.
+- Seal all 258 original artifacts (23,490,656 bytes) with SHA256 and keep original scores/inputs/candidates unchanged. Confirm the request parser rejects `should`; static inspection also identifies unsupported `moves to`, `following service day` and `hold is still active` source forms. L04 has no saved planner-facet vectors.
+- Propose an isolated v40 protocol/implementation and new three-pack revalidation; no candidate fix or new model answers in this task. Phase 1 remains held: 96 v39-tested cases across three separately scored packs, 572 verified cases untested and 103 originals unavailable. [First failure](docs/V39_LUMEN32_MAC_RESULTS.md), [investigation](docs/LUMEN32_V39_FAILURE_REVIEW.md).
+
 ## 2026-10-20 — Lumen32 v39 partial-regression preparation
 
 - Prepare a separate original-input Lumen32 runner/configuration/scorer with unchanged native criteria and twenty first/later historical variant preservation checks. Keep first v35 28/2/2 FAIL, qualifications and later passes intact.

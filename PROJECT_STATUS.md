@@ -15,9 +15,9 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v39 Vela32 and Prism32 partial gates each 32/32 PASS in both variants; full 771-case gate NOT RUN; not adopted |
-| Release decision | Integration **HOLD**; broader regression and fresh confirmation incomplete; original first failures preserved |
-| Current change | Phase 1: prepare a separate frozen Lumen32 regression; prior v39 partial results and live r44 unchanged |
+| Latest isolated candidate | v39 Lumen32 gate **FAIL: 31 PASS / 1 FAIL** both variants (L04 false refusal); earlier Vela32/Prism32 passes preserved; not adopted |
+| Release decision | Integration **HOLD** after Lumen32 regression; full regression/fresh confirmation incomplete; all first failures preserved |
+| Current change | Phase 1: publish preserved Lumen32 failure and investigate a separate v40 fix; no candidate or live-code changes |
 
 ## Working roadmap for 6.0
 
@@ -72,7 +72,10 @@ syntax do not establish factual support, completeness or compliance.
   setup merged through PR #111, followed by the user's direct-to-main workflow,
   official-checkout reconciliation and Vela32 refusal design review.
 - **October 20:** isolated v39 dispatch contract implemented and unit-validated
-  under precommitted protocol `c73a8fe`; no actual-model evaluation or live adoption.
+  under precommitted protocol `c73a8fe`; no model run at that initial checkpoint.
+- **Later October 20:** Vela32 and Prism32 partial actual-model gates PASS;
+  Lumen32 first v39 gate FAIL on L04. Work stopped, then the user authorized
+  preservation/publication and investigation. No candidate fix or live adoption.
 
 Initial setup publication used the connected GitHub account because terminal Git
 in the original chat checkout could not authenticate. Terminal publication from
@@ -135,6 +138,46 @@ Runtime code, existing tests, frozen inputs and historical evidence are unchange
 no fix or new actual-model result is claimed.
 
 ## Current retrieval blocker
+
+### October 20 first v39 Lumen32 FAIL and authorized investigation
+
+The [first Lumen32 actual-model result](docs/V39_LUMEN32_MAC_RESULTS.md) is
+**31 PASS / 0 PARTIAL / 1 FAIL** in both v39 variants, with one supported false
+refusal and historical PASS loss, **L04**. Paired v38 passes 32/32. All 32 cases
+completed once before grading (28 actual MiniLM Hybrid / four lexical Comparisons,
+Qwen off), with zero model-question retries or execution errors. Original first
+v35 28/2/2 failure, its qualifications and later v36–v38 results remain intact.
+
+Work stopped after the required scoring failure. The user then authorized
+publishing the preserved failed run and investigating a separate fix. The
+complete first raw capture/score is sealed as 258 artifacts (23,490,656 bytes)
+under `docs/evidence/v39-lumen32-mac/manifest.json`; no first output or score is
+rewritten, and no failing quality gate is relabelled as PASS.
+
+The [read-only failure review](docs/LUMEN32_V39_FAILURE_REVIEW.md) confirms that
+`When should it depart` leaves the v39 request unresolved. Static source inspection
+also finds independent unsupported forms: `departure moves to`, `following service
+day`, and `hold is still active`. Accepting the question word alone is not a
+complete fix. L04 has zero planner-facet vectors; future evaluation must compute
+new actual facet vectors, not relabel its saved whole-question vector.
+
+**V40 is proposed only; not implemented.** Preserve frozen v39 and its failure.
+Next agree/freeze a narrow separate protocol, implement and unit-validate the
+request/source grammar change without an inherited-answer fallback, then newly
+freeze and revalidate Vela32/Prism32/Lumen32 before resuming other packs. No new
+model answers, candidate edits or live integration occur in this publication task.
+
+Current coverage is **96 distinct v39-tested cases** across three separately
+reported packs (Vela32 PASS, Prism32 PASS, Lumen32 FAIL); **572 verified cases**
+remain untested with v39, and **103 original cases** plus combined-config/external-
+adjudication inputs remain unavailable. Phase 1 and release 6.0 remain on HOLD.
+
+Publication/review checks on bundled Node 24.19.0: all **602 unit tests PASS**,
+strict `node eval/run.mjs --strict` **28/28 PASS**, unchanged 436-file freeze and
+historical alignments verify. All 258 original artifact hashes, documentation
+links, `git diff --check`, sensitive-information and intended-path reviews pass.
+These successful preservation/engineering checks do not clear or rerun the
+recorded **Lumen32 model gate FAIL**.
 
 ### October 20 Lumen32 preparation checkpoint
 
@@ -370,9 +413,11 @@ or model rerun occurred in this design task. Preserve the original
    recoverable packs before extending coverage. **Inventory completed:** 19 packs /
    668 input cases verified, including Vela32; 103 cases and the original combined
    configuration remain unavailable. **Prism32 now passes 32/32 in both v39
-   variants**, giving 64 tested cases across two packs; 604 verified cases await
-   v39 testing. Next prepare Lumen32 under a new freeze, then Hearth32, with native
-   criteria. Full regression and live adoption remain blocked.
+   variants**. **Lumen32 subsequently FAILS 31/0/1** in both v39 variants on L04;
+   its first evidence is preserved after a stop and explicit publication approval.
+   There are 96 tested cases across three separately scored packs; 572 verified
+   cases await v39 testing. Next is a separate proposed v40 fix and revalidation
+   decision before Hearth32. Full regression and live adoption remain blocked.
 6. Require exposed-regression preservation and separate prospective confirmation
    before integration review. Then qualify navigation/export, memory, performance
    and target browsers. Passing unit tests alone does not authorize adoption.

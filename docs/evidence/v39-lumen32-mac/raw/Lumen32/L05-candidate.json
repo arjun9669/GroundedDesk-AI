@@ -1,0 +1,1302 @@
+{
+  "candidate_identity": "coverage-v39-final-dispatch-contract",
+  "id": "L05",
+  "question": "How many map drawers does Jori check per morning?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many map drawers does Jori check per morning?",
+    "expected_display": "How many map drawers does Jori check per morning?",
+    "rendered_question": "How many map drawers does Jori check per morning?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Jori checks seven map drawers per morning.",
+    "sources": [
+      {
+        "filename": "01_Oridel_Map_Archive.txt",
+        "excerpt": "## Archive service rules\nA-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.\nA-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week.\nA-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here.\nA-04. Transport slips are retained for 14 months. I",
+        "quote": "Jori checks seven map drawers per morning."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many map drawers does Jori check per morning?\n\nSearched all files: 01_Oridel_Map_Archive.txt · 02_Perrin_Community_Kiln.txt · 03_Ruvane_Canal_Lock.txt · 04_Neris_Kite_Club.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Jori checks seven map drawers per morning.\n\nSOURCE EVIDENCE\n[1]\n01_Oridel_Map_Archive.txt\n\nText line 5 (normalized extraction)\n\n## Archive service rules A-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active. A-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week. A-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here. A-04. Transport slips are retained for 14 months. I\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Jori checks seven map drawers per morning.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ba20401e-6d87-4490-91cf-9a7d4357c084:0",
+        "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+        "filename": "01_Oridel_Map_Archive.txt",
+        "excerpt": "## Archive service rules\nA-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.\nA-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week.\nA-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here.\nA-04. Transport slips are retained for 14 months. I",
+        "quote": "Jori checks seven map drawers per morning.",
+        "score": 0.0476,
+        "lexicalScore": 8.188163824614715,
+        "semanticScore": 0.5249726242985118,
+        "matchedTerms": [
+          "map",
+          "drawers",
+          "jori",
+          "per",
+          "morning"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Jori checks seven map drawers per morning.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ba20401e-6d87-4490-91cf-9a7d4357c084:0",
+        "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+        "filename": "01_Oridel_Map_Archive.txt",
+        "excerpt": "## Archive service rules\nA-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.\nA-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week.\nA-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here.\nA-04. Transport slips are retained for 14 months. I",
+        "quote": "Jori checks seven map drawers per morning.",
+        "score": 0.0476,
+        "lexicalScore": 8.188163824614715,
+        "semanticScore": 0.5249726242985118,
+        "matchedTerms": [
+          "map",
+          "drawers",
+          "jori",
+          "per",
+          "morning"
+        ],
+        "start": 393,
+        "end": 435
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Oridel_Map_Archive.txt",
+        "quote": "Jori checks seven map drawers per morning.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 393,
+          "cosine": 0.8963947444621425,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Oridel_Map_Archive.txt",
+        "quote": "Jori checks seven map drawers per morning.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Oridel_Map_Archive.txt",
+        "quote": "Jori checks seven map drawers per morning.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Jori checks seven map drawers per morning.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ba20401e-6d87-4490-91cf-9a7d4357c084:173",
+        "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+        "filename": "01_Oridel_Map_Archive.txt",
+        "excerpt": "## Archive service rules\nA-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.\nA-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week.\nA-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here.\nA-04. Transport slips are retained for 14 months. I",
+        "quote": "Jori checks seven map drawers per morning.",
+        "score": 0.0476,
+        "lexicalScore": 8.343734949397213,
+        "semanticScore": 0.6347211386507602,
+        "matchedTerms": [
+          "map",
+          "drawers",
+          "jori",
+          "per",
+          "morning"
+        ],
+        "start": 393,
+        "end": 435
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Oridel_Map_Archive.txt",
+        "quote": "Jori checks seven map drawers per morning.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 393,
+          "cosine": 0.8963947444621425,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Oridel_Map_Archive.txt",
+        "quote": "Jori checks seven map drawers per morning.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Oridel_Map_Archive.txt",
+        "quote": "Jori checks seven map drawers per morning.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Oridel_Map_Archive.txt",
+      "start": 393,
+      "content": "Jori checks seven map drawers per morning.",
+      "semanticScore": 0.8963947444621425,
+      "lexicalScore": 13.817170526781464
+    },
+    {
+      "filename": "01_Oridel_Map_Archive.txt",
+      "start": 436,
+      "content": "Veda checks four humidity sensors per morning.",
+      "semanticScore": 0.3832889333030893,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Oridel_Map_Archive.txt",
+      "start": 483,
+      "content": "Jori seals three transport cases per week.",
+      "semanticScore": 0.37030282769903033,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Oridel Map Archive was founded in 1859.",
+      "start": 0,
+      "end": 39,
+      "similarity": 0.2509653935302385,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "It opened its public map room in 1971.",
+      "start": 40,
+      "end": 78,
+      "similarity": 0.33690824647878337,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "The first roof renewal was completed in 1988; the second roof renewal was completed in 2018.",
+      "start": 79,
+      "end": 171,
+      "similarity": 0.04553727584264103,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "A-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.11122805453396097,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Dispatch requests released before 12:40 leave on the current service day.",
+      "start": 204,
+      "end": 277,
+      "similarity": 0.1566008367484816,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.",
+      "start": 278,
+      "end": 386,
+      "similarity": 0.14423355980975006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "A-02.",
+      "start": 387,
+      "end": 392,
+      "similarity": 0.09967052375634951,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Jori checks seven map drawers per morning.",
+      "start": 393,
+      "end": 435,
+      "similarity": 0.8963947444621425,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Veda checks four humidity sensors per morning.",
+      "start": 436,
+      "end": 482,
+      "similarity": 0.3832889333030893,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Jori seals three transport cases per week.",
+      "start": 483,
+      "end": 525,
+      "similarity": 0.37030282769903033,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "A-03.",
+      "start": 526,
+      "end": 531,
+      "similarity": 0.0779639431659972,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius.",
+      "start": 532,
+      "end": 616,
+      "similarity": 0.2993522048054475,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "No individual winter extreme is recorded here.",
+      "start": 617,
+      "end": 663,
+      "similarity": 0.053682183145283294,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "A-04.",
+      "start": 664,
+      "end": 669,
+      "similarity": 0.11063127608297711,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Transport slips are retained for 14 months.",
+      "start": 670,
+      "end": 713,
+      "similarity": 0.15083554338850788,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "If a provenance review is unresolved, keep the affected slips until the review is cleared.",
+      "start": 714,
+      "end": 804,
+      "similarity": 0.08658913680723057,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "A-05.",
+      "start": 805,
+      "end": 810,
+      "similarity": 0.07038738183191516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Acknowledge map-copy requests within three service days.",
+      "start": 811,
+      "end": 867,
+      "similarity": 0.3364607576075824,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Acknowledgement does not guarantee that a reproduction is available.",
+      "start": 868,
+      "end": 936,
+      "similarity": 0.03644885636184159,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+      "start": 0,
+      "end": 61,
+      "similarity": 0.13302801683043713,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "Its restoration was completed in 2007.",
+      "start": 62,
+      "end": 100,
+      "similarity": 0.049629501330895255,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+      "start": 101,
+      "end": 183,
+      "similarity": 0.07245045315408573,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "K-01.",
+      "start": 222,
+      "end": 227,
+      "similarity": 0.1816457889310983,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius.",
+      "start": 228,
+      "end": 325,
+      "similarity": 0.03320399941193192,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "The absolute minimum winter temperature is 2 degrees Celsius.",
+      "start": 326,
+      "end": 387,
+      "similarity": 0.023807751309268817,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "The highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 388,
+      "end": 455,
+      "similarity": 0.05816362338545433,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "K-02.",
+      "start": 456,
+      "end": 461,
+      "similarity": 0.18182316540710994,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "Signed firing records are retained for 6 years.",
+      "start": 462,
+      "end": 509,
+      "similarity": 0.10896109552634484,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "If a compensation claim is open, retain the affected records until that claim is settled.",
+      "start": 510,
+      "end": 599,
+      "similarity": 0.02827613383131722,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "K-03.",
+      "start": 600,
+      "end": 605,
+      "similarity": 0.14874769819877162,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "Each firing handover packet must contain:",
+      "start": 606,
+      "end": 647,
+      "similarity": 0.06569303803773177,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "K-04.",
+      "start": 729,
+      "end": 734,
+      "similarity": 0.17771345061890578,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "Purchases above 6800 credits require written approval from the Accounts Steward and Kiln Manager.",
+      "start": 735,
+      "end": 832,
+      "similarity": 0.17571360561077504,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+      "start": 28,
+      "end": 89,
+      "similarity": 0.03280784011054765,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "The ticket shelter was repainted in 2013.",
+      "start": 90,
+      "end": 131,
+      "similarity": 0.09482617302963708,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+      "start": 133,
+      "end": 221,
+      "similarity": 0.04460536029181006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "The highest recorded daily temperature is 35 degrees Celsius.",
+      "start": 222,
+      "end": 283,
+      "similarity": 0.09213361669189903,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "Lena records eight gate-position readings per shift.",
+      "start": 285,
+      "end": 337,
+      "similarity": 0.3139186402308346,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "Oren records five water-depth readings per shift.",
+      "start": 338,
+      "end": 387,
+      "similarity": 0.3432799124026181,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "Lena labels two service crates per week.",
+      "start": 388,
+      "end": 428,
+      "similarity": 0.3075551801301122,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "The Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions.",
+      "start": 430,
+      "end": 535,
+      "similarity": 0.15664615861386996,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "In a misty chamber, lubricate it every 55 operating hours.",
+      "start": 536,
+      "end": 594,
+      "similarity": 0.2599148038811985,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "Inspect the chain hoist every 22 operating hours regardless of chamber.",
+      "start": 595,
+      "end": 666,
+      "similarity": 0.29832639612346434,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "The ticket shelter noticeboard was replaced in 2022.",
+      "start": 667,
+      "end": 719,
+      "similarity": 0.1000189145180425,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "N-01.",
+      "start": 24,
+      "end": 29,
+      "similarity": 0.12160857070350342,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "Neris Kite Club acknowledges equipment requests within five business hours.",
+      "start": 30,
+      "end": 105,
+      "similarity": 0.1739233367641488,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "An acknowledgement does not promise that equipment will be ready within five hours.",
+      "start": 106,
+      "end": 189,
+      "similarity": 0.12000486867396659,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "N-02.",
+      "start": 190,
+      "end": 195,
+      "similarity": 0.14178278086593032,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "The field issue packet includes a booking form, tether log, weather checklist, flight permit, and return signature.",
+      "start": 196,
+      "end": 311,
+      "similarity": 0.15746268819417963,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "N-03.",
+      "start": 312,
+      "end": 317,
+      "similarity": 0.11840464041394214,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "Completed flight records are retained for 9 months, unless an unresolved damage claim requires longer retention.",
+      "start": 318,
+      "end": 430,
+      "similarity": 0.028266782682946728,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "N-04.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.12547874100798725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "Lubricate the Neris Kite Club winding reel every 66 operating hours under normal conditions.",
+      "start": 437,
+      "end": 529,
+      "similarity": 0.15120214842276436,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "In a sandy enclosure, lubricate it every 33 operating hours.",
+      "start": 530,
+      "end": 590,
+      "similarity": 0.25066730451315067,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "Inspect the winding reel every 11 operating hours in either enclosure.",
+      "start": 591,
+      "end": 661,
+      "similarity": 0.2511370400006429,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Jori checks seven map drawers per morning.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ba20401e-6d87-4490-91cf-9a7d4357c084:0",
+          "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+          "filename": "01_Oridel_Map_Archive.txt",
+          "excerpt": "## Archive service rules\nA-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.\nA-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week.\nA-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here.\nA-04. Transport slips are retained for 14 months. I",
+          "quote": "Jori checks seven map drawers per morning.",
+          "score": 0.0476,
+          "lexicalScore": 8.188163824614715,
+          "semanticScore": 0.5249726242985118,
+          "matchedTerms": [
+            "map",
+            "drawers",
+            "jori",
+            "per",
+            "morning"
+          ],
+          "start": 393,
+          "end": 435
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Oridel_Map_Archive.txt",
+          "quote": "Jori checks seven map drawers per morning.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 393,
+            "cosine": 0.8963947444621425,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Oridel_Map_Archive.txt",
+          "quote": "Jori checks seven map drawers per morning.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Oridel_Map_Archive.txt",
+          "quote": "Jori checks seven map drawers per morning.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Jori checks seven map drawers per morning.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ba20401e-6d87-4490-91cf-9a7d4357c084:173",
+          "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+          "filename": "01_Oridel_Map_Archive.txt",
+          "excerpt": "## Archive service rules\nA-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.\nA-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week.\nA-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here.\nA-04. Transport slips are retained for 14 months. I",
+          "quote": "Jori checks seven map drawers per morning.",
+          "score": 0.0476,
+          "lexicalScore": 8.343734949397213,
+          "semanticScore": 0.6347211386507602,
+          "matchedTerms": [
+            "map",
+            "drawers",
+            "jori",
+            "per",
+            "morning"
+          ],
+          "start": 393,
+          "end": 435
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Oridel_Map_Archive.txt",
+          "quote": "Jori checks seven map drawers per morning.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 393,
+            "cosine": 0.8963947444621425,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Oridel_Map_Archive.txt",
+          "quote": "Jori checks seven map drawers per morning.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Oridel_Map_Archive.txt",
+          "quote": "Jori checks seven map drawers per morning.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Jori checks seven map drawers per morning.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ba20401e-6d87-4490-91cf-9a7d4357c084:0",
+          "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+          "filename": "01_Oridel_Map_Archive.txt",
+          "excerpt": "## Archive service rules\nA-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.\nA-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week.\nA-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here.\nA-04. Transport slips are retained for 14 months. I",
+          "quote": "Jori checks seven map drawers per morning.",
+          "score": 0.0476,
+          "lexicalScore": 8.188163824614715,
+          "semanticScore": 0.5249726242985118,
+          "matchedTerms": [
+            "map",
+            "drawers",
+            "jori",
+            "per",
+            "morning"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Oridel_Map_Archive.txt",
+          "quote": "Jori checks seven map drawers per morning.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 393,
+            "cosine": 0.8963947444621425,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Oridel_Map_Archive.txt",
+          "quote": "Jori checks seven map drawers per morning.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Jori checks seven map drawers per morning.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ba20401e-6d87-4490-91cf-9a7d4357c084:173",
+          "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+          "filename": "01_Oridel_Map_Archive.txt",
+          "excerpt": "## Archive service rules\nA-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.\nA-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week.\nA-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here.\nA-04. Transport slips are retained for 14 months. I",
+          "quote": "Jori checks seven map drawers per morning.",
+          "score": 0.0476,
+          "lexicalScore": 8.343734949397213,
+          "semanticScore": 0.6347211386507602,
+          "matchedTerms": [
+            "map",
+            "drawers",
+            "jori",
+            "per",
+            "morning"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Oridel_Map_Archive.txt",
+          "quote": "Jori checks seven map drawers per morning.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 393,
+            "cosine": 0.8963947444621425,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Oridel_Map_Archive.txt",
+          "quote": "Jori checks seven map drawers per morning.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.08669740706682205,
+    0.05757560580968857,
+    0.014225656166672707,
+    0.021001750603318214,
+    -0.021434469148516655,
+    0.011640598066151142,
+    0.012750723399221897,
+    0.002346133114770055,
+    -0.03349258378148079,
+    -0.005336097441613674,
+    -0.019845133647322655,
+    -0.0623413547873497,
+    -0.023685334250330925,
+    -0.01557114813476801,
+    -0.05732738599181175,
+    0.032178930938243866,
+    -0.006687076762318611,
+    -0.007108229678124189,
+    0.02252880483865738,
+    -0.003441045293584466,
+    0.020093172788619995,
+    -0.047012291848659515,
+    0.08774416893720627,
+    -0.027057869359850883,
+    0.031419578939676285,
+    0.06160680204629898,
+    -0.013501121662557125,
+    -0.02538922429084778,
+    -0.045714329928159714,
+    -0.07448927313089371,
+    -0.026270421221852303,
+    0.08450683206319809,
+    0.031888652592897415,
+    0.012686466798186302,
+    0.040562719106674194,
+    0.020887460559606552,
+    0.020691778510808945,
+    0.0014711875701323152,
+    0.009475321508944035,
+    0.005839294753968716,
+    -0.017680125311017036,
+    -0.041736554354429245,
+    -0.013013288378715515,
+    0.014645415358245373,
+    -0.010962853208184242,
+    0.003706216113641858,
+    0.01630847156047821,
+    -0.012946461327373981,
+    0.035757750272750854,
+    0.07856124639511108,
+    -0.024538451805710793,
+    -0.014581484720110893,
+    -0.09133366495370865,
+    -0.02238605171442032,
+    -0.014469393528997898,
+    0.08261872828006744,
+    -0.028754575178027153,
+    -0.06443256139755249,
+    0.07421949505805969,
+    0.08944201469421387,
+    -0.03917456418275833,
+    0.01829836517572403,
+    -0.017082426697015762,
+    -0.03315857797861099,
+    0.0929899662733078,
+    -0.0416678823530674,
+    -0.06958039104938507,
+    -0.04454796761274338,
+    0.05090374872088432,
+    -0.05276445299386978,
+    0.038861215114593506,
+    0.04344557598233223,
+    0.0651806965470314,
+    -0.07366102933883667,
+    0.02188178338110447,
+    0.020827632397413254,
+    0.00013388304796535522,
+    -0.047935325652360916,
+    0.06838198751211166,
+    -0.14817927777767181,
+    -0.11836683005094528,
+    -0.0048690540716052055,
+    0.04342883825302124,
+    0.065577432513237,
+    -0.038265954703092575,
+    0.003039778210222721,
+    -0.04067717865109444,
+    0.033399224281311035,
+    0.026298994198441505,
+    -0.02325698547065258,
+    0.01400819607079029,
+    -0.06053117290139198,
+    -0.0570545494556427,
+    -0.006737486459314823,
+    0.00959103088825941,
+    -0.006723858881741762,
+    -0.09905441850423813,
+    0.022158391773700714,
+    -0.027576077729463577,
+    0.05278969556093216,
+    0.03440215066075325,
+    0.08344285190105438,
+    0.12282389402389526,
+    0.018584828823804855,
+    -0.061704300343990326,
+    -0.02791910618543625,
+    0.011767055839300156,
+    -0.00425834022462368,
+    -0.12721814215183258,
+    -0.033202458173036575,
+    -0.0017649373039603233,
+    -0.0548972524702549,
+    0.0907980427145958,
+    -0.035221461206674576,
+    -0.028218375518918037,
+    0.031116116791963577,
+    0.027398118749260902,
+    0.07719320803880692,
+    -0.002754416549578309,
+    0.07994792610406876,
+    0.049792010337114334,
+    -0.06175529584288597,
+    0.10124287009239197,
+    -0.07806472480297089,
+    -0.10186822712421417,
+    0.02005060762166977,
+    -0.0016678714891895652,
+    -1.8792415128244824e-33,
+    0.08664374053478241,
+    0.004686851054430008,
+    0.05221645534038544,
+    0.10219061374664307,
+    0.048103269189596176,
+    -0.04339676350355148,
+    0.0010231699561700225,
+    0.0011590797221288085,
+    0.0094565125182271,
+    0.0008706621592864394,
+    -0.023981474339962006,
+    0.018595313653349876,
+    -0.0628361627459526,
+    0.045476704835891724,
+    0.041321154683828354,
+    0.029212424531579018,
+    0.026149848476052284,
+    0.012821686454117298,
+    -0.08860515058040619,
+    0.0060852593742311,
+    0.015356529504060745,
+    -0.00480559142306447,
+    -0.0004139946249779314,
+    -0.0385819636285305,
+    0.07514138519763947,
+    0.039228685200214386,
+    0.018645519390702248,
+    0.059544745832681656,
+    -0.03670224919915199,
+    0.06553442776203156,
+    0.03666088730096817,
+    -0.0020539916586130857,
+    0.01786573976278305,
+    -0.00879606418311596,
+    0.09045202285051346,
+    0.0648253858089447,
+    -0.03063979744911194,
+    -0.014496463350951672,
+    -0.044704265892505646,
+    -0.09274614602327347,
+    -0.011808936484158039,
+    -0.01607954502105713,
+    0.042497020214796066,
+    -0.033922839909791946,
+    -0.03882569074630737,
+    0.006412235554307699,
+    0.07013599574565887,
+    0.03609450161457062,
+    0.06566190719604492,
+    0.0907348170876503,
+    0.021815788000822067,
+    0.03524863347411156,
+    -0.09957052767276764,
+    0.025532525032758713,
+    -0.006414737086743116,
+    -0.027534492313861847,
+    0.027281174436211586,
+    -0.036139119416475296,
+    0.08020386844873428,
+    0.16873428225517273,
+    0.0208363626152277,
+    0.06758558005094528,
+    -0.005572207272052765,
+    0.0788796916604042,
+    0.0018978139851242304,
+    0.038642652332782745,
+    -0.02692333795130253,
+    -0.013398581184446812,
+    0.02042791247367859,
+    -0.007926812395453453,
+    0.020463913679122925,
+    0.007164267357438803,
+    0.07237401604652405,
+    -0.02997860498726368,
+    -0.08770973235368729,
+    -0.0331999771296978,
+    0.03517580032348633,
+    -0.04294930398464203,
+    -0.09546652436256409,
+    -0.03729405254125595,
+    0.005790093448013067,
+    -0.05497421696782112,
+    0.007459684740751982,
+    0.023784860968589783,
+    0.005571747664362192,
+    0.004929619375616312,
+    0.007348401006311178,
+    0.026676425710320473,
+    -0.03128398582339287,
+    0.018258241936564445,
+    -0.010412470437586308,
+    0.019915292039513588,
+    0.0014497939264401793,
+    -0.06285620480775833,
+    -0.07090079039335251,
+    1.0779751558070782e-33,
+    -0.04321599751710892,
+    -0.036026481539011,
+    -0.004987856838852167,
+    0.06878124177455902,
+    -0.05254877358675003,
+    -0.04725818336009979,
+    0.06175066530704498,
+    0.031173456460237503,
+    0.011432747356593609,
+    0.07159323990345001,
+    -0.02464936301112175,
+    -0.032215069979429245,
+    0.08370409905910492,
+    -0.04298419877886772,
+    0.04351234808564186,
+    -0.020350545644760132,
+    0.11661795526742935,
+    -0.0441155768930912,
+    0.025450509041547775,
+    0.03754648193717003,
+    -0.027033096179366112,
+    0.049679845571517944,
+    -0.018338462337851524,
+    0.018917817622423172,
+    0.01340139377862215,
+    0.05239458009600639,
+    0.027712274342775345,
+    -0.06230571120977402,
+    -0.13390305638313293,
+    0.02138267271220684,
+    0.002691067988052964,
+    -0.10135844349861145,
+    -0.036274153739213943,
+    0.0289909690618515,
+    0.020885607227683067,
+    -0.08179401606321335,
+    -0.0019607036374509335,
+    0.05031382665038109,
+    0.00322885625064373,
+    0.07980568706989288,
+    0.009747265838086605,
+    -0.04174542799592018,
+    0.008255435153841972,
+    0.06112130358815193,
+    -0.04182380437850952,
+    0.019135141745209694,
+    -0.013995585963129997,
+    0.06681755185127258,
+    0.020143602043390274,
+    -0.0035372080747038126,
+    -0.0190651286393404,
+    -0.006709355395287275,
+    -0.06211978942155838,
+    -0.06964494287967682,
+    0.04948936030268669,
+    0.03627876564860344,
+    0.025909677147865295,
+    0.01305928360670805,
+    0.02691732533276081,
+    0.03225865960121155,
+    0.00009060401498572901,
+    -0.07625452429056168,
+    -0.02702058106660843,
+    0.025107422843575478,
+    0.016484281048178673,
+    -0.01332345511764288,
+    0.0064571392722427845,
+    -0.034988414496183395,
+    -0.020744269713759422,
+    0.001939117326401174,
+    0.060838449746370316,
+    0.011298730038106441,
+    -0.0307758916169405,
+    -0.005552336107939482,
+    -0.05251641944050789,
+    0.013378121890127659,
+    -0.013307003304362297,
+    -0.009178794920444489,
+    0.011896627955138683,
+    -0.045803897082805634,
+    -0.12170729786157608,
+    -0.10739844292402267,
+    0.022222958505153656,
+    0.017959291115403175,
+    0.006574258208274841,
+    -0.04027916118502617,
+    0.03433729708194733,
+    -0.060594335198402405,
+    0.012174672447144985,
+    0.0017856870545074344,
+    0.0467669777572155,
+    -0.002503292402252555,
+    -0.07794912904500961,
+    -0.061657652258872986,
+    -0.0802130252122879,
+    -1.521643611113177e-8,
+    -0.014481623657047749,
+    -0.020244630053639412,
+    0.05612264573574066,
+    -0.02875780686736107,
+    0.0350361131131649,
+    -0.1024058610200882,
+    0.11172246932983398,
+    0.14044634997844696,
+    -0.023384686559438705,
+    0.07559714466333389,
+    0.14184394478797913,
+    0.05073894187808037,
+    -0.04922644793987274,
+    -0.07177691906690598,
+    0.08392602950334549,
+    -0.08343757688999176,
+    0.06114855408668518,
+    0.08159342408180237,
+    -0.08419491350650787,
+    -0.0028293379582464695,
+    0.050477370619773865,
+    0.0010225907899439335,
+    0.05344745144248009,
+    0.00560518354177475,
+    -0.008521602489054203,
+    0.00270211324095726,
+    0.0238258745521307,
+    0.07797922939062119,
+    0.02239292487502098,
+    -0.028489697724580765,
+    0.11822020262479782,
+    -0.03170051798224449,
+    0.01306429784744978,
+    -0.048558201640844345,
+    -0.09591857343912125,
+    -0.006794711109250784,
+    -0.0028598227072507143,
+    0.014549876563251019,
+    -0.05421608313918114,
+    0.0501406230032444,
+    -0.0252511128783226,
+    -0.09351961314678192,
+    -0.00898653082549572,
+    0.0005463759880512953,
+    -0.029466604813933372,
+    0.04269886016845703,
+    -0.0222401674836874,
+    -0.04276272654533386,
+    -0.043167710304260254,
+    -0.07456504553556442,
+    -0.11633268743753433,
+    0.022068386897444725,
+    0.08586844056844711,
+    0.05560246855020523,
+    0.022265207022428513,
+    -0.04274982586503029,
+    0.06265433877706528,
+    -0.09621354937553406,
+    0.012597433291375637,
+    0.05202716961503029,
+    -0.0157021451741457,
+    -0.0017005334375426173,
+    -0.09945778548717499,
+    -0.06343350559473038
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Oridel_Map_Archive.txt",
+        "start": 0,
+        "content": "Oridel Map Archive was founded in 1859. It opened its public map room in 1971. The first roof renewal was completed in 1988; the second roof renewal was completed in 2018.\n\n## Archive service rules\nA-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.\nA-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week.\nA-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here.\nA-04. Transport slips are retained for 14 months. If a provenance review is unresolved, keep the"
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Oridel_Map_Archive.txt",
+        "start": 173,
+        "content": "## Archive service rules\nA-01. Dispatch requests released before 12:40 leave on the current service day. At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.\nA-02. Jori checks seven map drawers per morning. Veda checks four humidity sensors per morning. Jori seals three transport cases per week.\nA-03. Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius. No individual winter extreme is recorded here.\nA-04. Transport slips are retained for 14 months. If a provenance review is unresolved, keep the affected slips until the review is cleared.\nA-05. Acknowledge map-copy requests within three service days. Acknowledgement does not guarantee that a reproduction is"
+      }
+    ]
+  }
+}

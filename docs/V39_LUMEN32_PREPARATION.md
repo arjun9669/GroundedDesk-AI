@@ -3,6 +3,13 @@
 Date: October 20, 2026. Phase **1 — broader regression** of the
 [6.0 working roadmap](ROADMAP_6_0.md). Live 5.6/r44 is unchanged; no adoption.
 
+**Completed follow-up:** the [first actual-model Lumen32 run](V39_LUMEN32_MAC_RESULTS.md)
+failed **31/0/1 in both v39 variants**, with L04 a supported false refusal and
+paired v38 32/0/0. Work stopped; the user later authorized preserving/publicizing
+the first failure and investigation. The preparation checkpoint below predates
+questions and remains unchanged. Do not overwrite this freeze or retry this first
+v39 capture.
+
 Prepare the complete original now-exposed Lumen32 pack: **20 supported Hybrid,
 eight unsupported Hybrid and four lexical Comparisons**. Candidate v39 and paired
 v38 remain unchanged. Preserve every original input, first v35 **28/2/2 FAIL**,

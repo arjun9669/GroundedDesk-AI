@@ -1,0 +1,1316 @@
+{
+  "candidate_identity": "coverage-v39-final-dispatch-contract",
+  "id": "L13",
+  "question": "How many gate-position readings does Lena record per shift?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many gate-position readings does Lena record per shift?",
+    "expected_display": "How many gate-position readings does Lena record per shift?",
+    "rendered_question": "How many gate-position readings does Lena record per shift?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Lena records eight gate-position readings per shift.",
+    "sources": [
+      {
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "dge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hois",
+        "quote": "Lena records eight gate-position readings per shift."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many gate-position readings does Lena record per shift?\n\nSearched all files: 01_Oridel_Map_Archive.txt · 02_Perrin_Community_Kiln.txt · 03_Ruvane_Canal_Lock.txt · 04_Neris_Kite_Club.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Lena records eight gate-position readings per shift.\n\nSOURCE EVIDENCE\n[1]\n03_Ruvane_Canal_Lock.txt\n\nText line 6 (normalized extraction)\n\ndge was rebuilt in 1998. The ticket shelter was repainted in 2013. The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius. Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week. The Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hois\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Lena records eight gate-position readings per shift.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "837757a4-8ccd-4d78-bd53-aa46eac4c790:0",
+        "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "dge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hois",
+        "quote": "Lena records eight gate-position readings per shift.",
+        "score": 0.0214,
+        "lexicalScore": 11.310643900943504,
+        "semanticScore": null,
+        "matchedTerms": [
+          "gate",
+          "position",
+          "readings",
+          "lena",
+          "record",
+          "per",
+          "shift"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "837757a4-8ccd-4d78-bd53-aa46eac4c790:0",
+        "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "dge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hoist every 22 operating hours regardless of chamber. The ticket shelter noticeboard was replac",
+        "quote": "Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+        "score": 0.0214,
+        "lexicalScore": 11.310643900943504,
+        "semanticScore": null,
+        "matchedTerms": [
+          "gate",
+          "position",
+          "readings",
+          "lena",
+          "record",
+          "per",
+          "shift"
+        ],
+        "start": 285,
+        "end": 428
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "Lena records eight gate-position readings per shift.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 285,
+          "cosine": 0.9288142820206308,
+          "slot_supported": true,
+          "lexical_matches": 7
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "Lena records eight gate-position readings per shift.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "837757a4-8ccd-4d78-bd53-aa46eac4c790:0",
+        "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "excerpt": "dge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hoist every 22 operating hours regardless of chamber. The ticket shelter noticeboard was replac",
+        "quote": "Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+        "score": 0.0214,
+        "lexicalScore": 11.449984840617011,
+        "semanticScore": null,
+        "matchedTerms": [
+          "gate",
+          "position",
+          "readings",
+          "lena",
+          "record",
+          "per",
+          "shift"
+        ],
+        "start": 285,
+        "end": 428
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "Lena records eight gate-position readings per shift.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 285,
+          "cosine": 0.9288142820206308,
+          "slot_supported": true,
+          "lexical_matches": 7
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "Lena records eight gate-position readings per shift.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Ruvane_Canal_Lock.txt",
+        "quote": "Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Ruvane_Canal_Lock.txt",
+      "start": 285,
+      "content": "Lena records eight gate-position readings per shift.",
+      "semanticScore": 0.9288142820206308,
+      "lexicalScore": 17.028182348465542
+    },
+    {
+      "filename": "03_Ruvane_Canal_Lock.txt",
+      "start": 338,
+      "content": "Oren records five water-depth readings per shift.",
+      "semanticScore": 0.5371756652748307,
+      "lexicalScore": 7.614877027441556
+    },
+    {
+      "filename": "03_Ruvane_Canal_Lock.txt",
+      "start": 388,
+      "content": "Lena labels two service crates per week.",
+      "semanticScore": 0.3634187660272925,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Oridel Map Archive was founded in 1859.",
+      "start": 0,
+      "end": 39,
+      "similarity": 0.07457062167313713,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "It opened its public map room in 1971.",
+      "start": 40,
+      "end": 78,
+      "similarity": 0.08156608080426533,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "The first roof renewal was completed in 1988; the second roof renewal was completed in 2018.",
+      "start": 79,
+      "end": 171,
+      "similarity": 0.039346634225159854,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "A-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.12023383326294235,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Dispatch requests released before 12:40 leave on the current service day.",
+      "start": 204,
+      "end": 277,
+      "similarity": 0.19774616512122448,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.",
+      "start": 278,
+      "end": 386,
+      "similarity": 0.19751996938091324,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "A-02.",
+      "start": 387,
+      "end": 392,
+      "similarity": 0.09468786648956172,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Jori checks seven map drawers per morning.",
+      "start": 393,
+      "end": 435,
+      "similarity": 0.2816838896791205,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Veda checks four humidity sensors per morning.",
+      "start": 436,
+      "end": 482,
+      "similarity": 0.252447425829106,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Jori seals three transport cases per week.",
+      "start": 483,
+      "end": 525,
+      "similarity": 0.16052898137105198,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "A-03.",
+      "start": 526,
+      "end": 531,
+      "similarity": 0.07997662779220104,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius.",
+      "start": 532,
+      "end": 616,
+      "similarity": 0.15433003592718925,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "No individual winter extreme is recorded here.",
+      "start": 617,
+      "end": 663,
+      "similarity": 0.11599417681892679,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "A-04.",
+      "start": 664,
+      "end": 669,
+      "similarity": 0.08035008834394976,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Transport slips are retained for 14 months.",
+      "start": 670,
+      "end": 713,
+      "similarity": 0.17036153840811982,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "If a provenance review is unresolved, keep the affected slips until the review is cleared.",
+      "start": 714,
+      "end": 804,
+      "similarity": 0.07788288400743934,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "A-05.",
+      "start": 805,
+      "end": 810,
+      "similarity": 0.08204961416131386,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Acknowledge map-copy requests within three service days.",
+      "start": 811,
+      "end": 867,
+      "similarity": 0.09222774920027185,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ba20401e-6d87-4490-91cf-9a7d4357c084",
+      "value": "Acknowledgement does not guarantee that a reproduction is available.",
+      "start": 868,
+      "end": 936,
+      "similarity": -0.04760220999628539,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+      "start": 0,
+      "end": 61,
+      "similarity": 0.11782987879305645,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "Its restoration was completed in 2007.",
+      "start": 62,
+      "end": 100,
+      "similarity": 0.0028158638171821957,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+      "start": 101,
+      "end": 183,
+      "similarity": -0.14538500913774302,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "K-01.",
+      "start": 222,
+      "end": 227,
+      "similarity": 0.19776832844178902,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius.",
+      "start": 228,
+      "end": 325,
+      "similarity": 0.07516034622061533,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "The absolute minimum winter temperature is 2 degrees Celsius.",
+      "start": 326,
+      "end": 387,
+      "similarity": 0.031961359226846855,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "The highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 388,
+      "end": 455,
+      "similarity": 0.029490661812660024,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "K-02.",
+      "start": 456,
+      "end": 461,
+      "similarity": 0.1822359650437298,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "Signed firing records are retained for 6 years.",
+      "start": 462,
+      "end": 509,
+      "similarity": 0.1006810311006095,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "If a compensation claim is open, retain the affected records until that claim is settled.",
+      "start": 510,
+      "end": 599,
+      "similarity": 0.12783978854476402,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "K-03.",
+      "start": 600,
+      "end": 605,
+      "similarity": 0.1720893586681186,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "Each firing handover packet must contain:",
+      "start": 606,
+      "end": 647,
+      "similarity": 0.0689994456531729,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "K-04.",
+      "start": 729,
+      "end": 734,
+      "similarity": 0.15779037622944705,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c36755ee-350d-4b64-9a27-565d0dab6def",
+      "value": "Purchases above 6800 credits require written approval from the Accounts Steward and Kiln Manager.",
+      "start": 735,
+      "end": 832,
+      "similarity": 0.1204429237189691,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+      "start": 28,
+      "end": 89,
+      "similarity": 0.0761965331387039,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "The ticket shelter was repainted in 2013.",
+      "start": 90,
+      "end": 131,
+      "similarity": 0.05288448104150699,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+      "start": 133,
+      "end": 221,
+      "similarity": 0.07999684972942005,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "The highest recorded daily temperature is 35 degrees Celsius.",
+      "start": 222,
+      "end": 283,
+      "similarity": 0.08451216657010842,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "Lena records eight gate-position readings per shift.",
+      "start": 285,
+      "end": 337,
+      "similarity": 0.9288142820206308,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "Oren records five water-depth readings per shift.",
+      "start": 338,
+      "end": 387,
+      "similarity": 0.5371756652748307,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "Lena labels two service crates per week.",
+      "start": 388,
+      "end": 428,
+      "similarity": 0.3634187660272925,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "The Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions.",
+      "start": 430,
+      "end": 535,
+      "similarity": 0.13623827508455752,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "In a misty chamber, lubricate it every 55 operating hours.",
+      "start": 536,
+      "end": 594,
+      "similarity": 0.1188787089154388,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "Inspect the chain hoist every 22 operating hours regardless of chamber.",
+      "start": 595,
+      "end": 666,
+      "similarity": 0.18000429519086808,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+      "value": "The ticket shelter noticeboard was replaced in 2022.",
+      "start": 667,
+      "end": 719,
+      "similarity": 0.15144224029278072,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "N-01.",
+      "start": 24,
+      "end": 29,
+      "similarity": 0.18184110799328496,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "Neris Kite Club acknowledges equipment requests within five business hours.",
+      "start": 30,
+      "end": 105,
+      "similarity": 0.12621960869336743,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "An acknowledgement does not promise that equipment will be ready within five hours.",
+      "start": 106,
+      "end": 189,
+      "similarity": 0.03451868089133705,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "N-02.",
+      "start": 190,
+      "end": 195,
+      "similarity": 0.17523151452311847,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "The field issue packet includes a booking form, tether log, weather checklist, flight permit, and return signature.",
+      "start": 196,
+      "end": 311,
+      "similarity": 0.08514159804438975,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "N-03.",
+      "start": 312,
+      "end": 317,
+      "similarity": 0.16903313819271187,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "Completed flight records are retained for 9 months, unless an unresolved damage claim requires longer retention.",
+      "start": 318,
+      "end": 430,
+      "similarity": 0.14976693071778166,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "N-04.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.1494102835380768,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "Lubricate the Neris Kite Club winding reel every 66 operating hours under normal conditions.",
+      "start": 437,
+      "end": 529,
+      "similarity": 0.08399761396081162,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "In a sandy enclosure, lubricate it every 33 operating hours.",
+      "start": 530,
+      "end": 590,
+      "similarity": 0.06710161015541093,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "86510c2f-c0e8-4c15-b933-f23e07eae038",
+      "value": "Inspect the winding reel every 11 operating hours in either enclosure.",
+      "start": 591,
+      "end": 661,
+      "similarity": 0.14817787312390188,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "837757a4-8ccd-4d78-bd53-aa46eac4c790:0",
+          "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "dge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hoist every 22 operating hours regardless of chamber. The ticket shelter noticeboard was replac",
+          "quote": "Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+          "score": 0.0214,
+          "lexicalScore": 11.310643900943504,
+          "semanticScore": null,
+          "matchedTerms": [
+            "gate",
+            "position",
+            "readings",
+            "lena",
+            "record",
+            "per",
+            "shift"
+          ],
+          "start": 285,
+          "end": 428
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "Lena records eight gate-position readings per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 285,
+            "cosine": 0.9288142820206308,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "Lena records eight gate-position readings per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "837757a4-8ccd-4d78-bd53-aa46eac4c790:0",
+          "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "dge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hoist every 22 operating hours regardless of chamber. The ticket shelter noticeboard was replac",
+          "quote": "Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+          "score": 0.0214,
+          "lexicalScore": 11.449984840617011,
+          "semanticScore": null,
+          "matchedTerms": [
+            "gate",
+            "position",
+            "readings",
+            "lena",
+            "record",
+            "per",
+            "shift"
+          ],
+          "start": 285,
+          "end": 428
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "Lena records eight gate-position readings per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 285,
+            "cosine": 0.9288142820206308,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "Lena records eight gate-position readings per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "Lena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Lena records eight gate-position readings per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "837757a4-8ccd-4d78-bd53-aa46eac4c790:0",
+          "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "dge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hois",
+          "quote": "Lena records eight gate-position readings per shift.",
+          "score": 0.0214,
+          "lexicalScore": 11.310643900943504,
+          "semanticScore": null,
+          "matchedTerms": [
+            "gate",
+            "position",
+            "readings",
+            "lena",
+            "record",
+            "per",
+            "shift"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "Lena records eight gate-position readings per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 285,
+            "cosine": 0.9288142820206308,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "Lena records eight gate-position readings per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Lena records eight gate-position readings per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "837757a4-8ccd-4d78-bd53-aa46eac4c790:0",
+          "documentId": "837757a4-8ccd-4d78-bd53-aa46eac4c790",
+          "filename": "03_Ruvane_Canal_Lock.txt",
+          "excerpt": "dge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hois",
+          "quote": "Lena records eight gate-position readings per shift.",
+          "score": 0.0214,
+          "lexicalScore": 11.449984840617011,
+          "semanticScore": null,
+          "matchedTerms": [
+            "gate",
+            "position",
+            "readings",
+            "lena",
+            "record",
+            "per",
+            "shift"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "Lena records eight gate-position readings per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 285,
+            "cosine": 0.9288142820206308,
+            "slot_supported": true,
+            "lexical_matches": 7
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Ruvane_Canal_Lock.txt",
+          "quote": "Lena records eight gate-position readings per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.01330338791012764,
+    -0.12449359893798828,
+    -0.012923105619847775,
+    -0.021975066512823105,
+    -0.10694271326065063,
+    0.019608205184340477,
+    -0.030581196770071983,
+    -0.03573351725935936,
+    0.04459039121866226,
+    -0.03373870998620987,
+    0.01778598502278328,
+    0.02417542226612568,
+    -0.048624489456415176,
+    -0.07066855579614639,
+    -0.10489501059055328,
+    0.03013348951935768,
+    0.013685601763427258,
+    0.0192427858710289,
+    -0.009284501895308495,
+    -0.03453483805060387,
+    0.017650989815592766,
+    -0.07255171239376068,
+    0.07791446894407272,
+    0.0478549562394619,
+    -0.0058741034008562565,
+    -0.03241432458162308,
+    -0.059633176773786545,
+    -0.04020053893327713,
+    0.05220181867480278,
+    -0.07480143755674362,
+    -0.1223338395357132,
+    0.09225780516862869,
+    -0.008806897327303886,
+    0.047009263187646866,
+    -0.028859347105026245,
+    0.026517760008573532,
+    0.04538547992706299,
+    0.029857413843274117,
+    0.00047157052904367447,
+    -0.018629610538482666,
+    0.034484993666410446,
+    -0.04865102842450142,
+    0.018221504986286163,
+    0.00014543213183060288,
+    0.06498754024505615,
+    0.06520923972129822,
+    -0.023342382162809372,
+    0.00590980751439929,
+    0.004428043961524963,
+    0.004157152492552996,
+    -0.07200606167316437,
+    0.06477095931768417,
+    0.0517253577709198,
+    0.11100080609321594,
+    -0.03992801904678345,
+    0.02573157101869583,
+    0.01761757954955101,
+    0.047635190188884735,
+    0.04821168631315231,
+    0.10075374692678452,
+    -0.005646334961056709,
+    0.059762295335531235,
+    -0.0959848165512085,
+    -0.01081470213830471,
+    -0.024023927748203278,
+    -0.007993589155375957,
+    -0.03789059817790985,
+    -0.08409775793552399,
+    -0.004012953490018845,
+    -0.04708506539463997,
+    -0.006026119459420443,
+    0.01723279058933258,
+    0.048904355615377426,
+    -0.03563886135816574,
+    0.008221660740673542,
+    -0.08014839142560959,
+    0.04322254657745361,
+    -0.005638335831463337,
+    0.036456555128097534,
+    -0.06182258203625679,
+    -0.015371049754321575,
+    0.011070162989199162,
+    0.07142077386379242,
+    0.03135349974036217,
+    0.05360531806945801,
+    -0.04856215417385101,
+    -0.07983652502298355,
+    0.07578496634960175,
+    -0.025225456804037094,
+    0.00805792398750782,
+    -0.043985381722450256,
+    -0.11006101965904236,
+    -0.05490191653370857,
+    0.050543975085020065,
+    -0.004499044269323349,
+    0.04729071632027626,
+    -0.017175370827317238,
+    -0.0240960493683815,
+    0.05890161544084549,
+    0.02545652724802494,
+    -0.004060947336256504,
+    0.0650334432721138,
+    -0.03023151494562626,
+    0.06587397307157516,
+    -0.042976927012205124,
+    -0.04646391421556473,
+    0.08221433311700821,
+    -0.0016231307527050376,
+    -0.05082491412758827,
+    0.02073194459080696,
+    0.09176569432020187,
+    0.05363713204860687,
+    0.007010884117335081,
+    0.00031863219919614494,
+    0.029025739058852196,
+    -0.0414862185716629,
+    -0.06982457637786865,
+    0.04813695698976517,
+    0.08994778990745544,
+    0.010221516713500023,
+    -0.039304256439208984,
+    -0.006306876428425312,
+    -0.06374535709619522,
+    -0.0017018713988363743,
+    -0.007554474286735058,
+    0.02726331725716591,
+    0.041183777153491974,
+    -2.8448895508738522e-33,
+    0.021836234256625175,
+    0.02553907409310341,
+    0.021067434921860695,
+    -0.0006157971220090985,
+    0.018100686371326447,
+    -0.002020262647420168,
+    -0.10074648261070251,
+    0.016707297414541245,
+    0.07451585680246353,
+    0.047238919883966446,
+    -0.038092661648988724,
+    -0.038718778640031815,
+    0.005608530715107918,
+    -0.07614795863628387,
+    0.021809162572026253,
+    -0.015493308193981647,
+    0.02259926311671734,
+    0.06089320033788681,
+    -0.07883322238922119,
+    0.05384461209177971,
+    0.04838595911860466,
+    0.004356720019131899,
+    -0.04539163410663605,
+    -0.0320306122303009,
+    0.028222372755408287,
+    0.012783228419721127,
+    -0.053944893181324005,
+    0.026497405022382736,
+    -0.06508100777864456,
+    0.0283088069409132,
+    -0.03693438693881035,
+    -0.009005310013890266,
+    -0.06456360220909119,
+    -0.07948780804872513,
+    0.015167050994932652,
+    0.011289775371551514,
+    0.04813094064593315,
+    -0.023064713925123215,
+    0.02196226641535759,
+    -0.031374309211969376,
+    -0.04625827074050903,
+    0.028023863211274147,
+    0.04905465245246887,
+    -0.07884925603866577,
+    -0.09496012330055237,
+    0.007449453230947256,
+    0.02369002439081669,
+    0.0161412563174963,
+    -0.009509491734206676,
+    0.07602366805076599,
+    -0.030994189903140068,
+    0.06424673646688461,
+    -0.10742256790399551,
+    -0.014862440526485443,
+    0.038077205419540405,
+    0.05031843110918999,
+    0.0881616398692131,
+    -0.05479205399751663,
+    0.09110601246356964,
+    0.13744662702083588,
+    -0.043052759021520615,
+    0.0162943284958601,
+    0.06678219139575958,
+    0.020482640713453293,
+    0.09735693037509918,
+    -0.016625748947262764,
+    -0.08012815564870834,
+    -0.06066780537366867,
+    -0.011985501274466515,
+    0.04994232952594757,
+    -0.06253261864185333,
+    -0.012152735143899918,
+    0.01580186001956463,
+    -0.04009051248431206,
+    -0.07781797647476196,
+    0.009213577955961227,
+    -0.004829912446439266,
+    0.014056982472538948,
+    -0.010280485264956951,
+    0.009478138759732246,
+    0.050371769815683365,
+    0.010693833231925964,
+    0.050206542015075684,
+    0.04354478791356087,
+    0.052047014236450195,
+    0.03317203372716904,
+    -0.014617419801652431,
+    -0.030557915568351746,
+    -0.0990438237786293,
+    0.0014574689557775855,
+    0.03391936421394348,
+    0.010233806446194649,
+    0.01106711570173502,
+    -0.042663950473070145,
+    -0.07513833045959473,
+    1.341965656733832e-33,
+    -0.024035071954131126,
+    0.03946080431342125,
+    0.0505451075732708,
+    -0.003992680460214615,
+    -0.048617929220199585,
+    -0.02816694974899292,
+    0.029249371960759163,
+    0.08158241212368011,
+    0.057336416095495224,
+    0.08289799839258194,
+    -0.003441720735281706,
+    -0.010435733944177628,
+    -0.013806244358420372,
+    0.01002281904220581,
+    -0.06541460752487183,
+    0.0020595104433596134,
+    0.05694024637341499,
+    -0.04706597328186035,
+    0.04018206521868706,
+    0.05130944401025772,
+    0.024665234610438347,
+    0.03991236910223961,
+    -0.10763303935527802,
+    0.09482545405626297,
+    0.04831234738230705,
+    0.01698339730501175,
+    0.061311058700084686,
+    0.07897979021072388,
+    -0.08470048755407333,
+    -0.06560483574867249,
+    -0.0496639646589756,
+    -0.1113150417804718,
+    -0.003467240836471319,
+    -0.017590397968888283,
+    0.009482147172093391,
+    -0.03290592506527901,
+    -0.03018862009048462,
+    0.01917184144258499,
+    -0.06379882991313934,
+    0.04559707269072533,
+    0.07420326769351959,
+    0.05629827454686165,
+    0.020923445001244545,
+    -0.023778865113854408,
+    -0.010478098876774311,
+    0.0678141787648201,
+    -0.012357205152511597,
+    0.06747670471668243,
+    -0.010883760638535023,
+    -0.05610805004835129,
+    -0.008900557644665241,
+    0.07357847690582275,
+    -0.014226793311536312,
+    0.0592353381216526,
+    0.04922972992062569,
+    0.03553454577922821,
+    0.002595616737380624,
+    0.007266547065228224,
+    0.07091761380434036,
+    -0.03125009685754776,
+    0.022574035450816154,
+    -0.0047660344280302525,
+    -0.040196336805820465,
+    -0.02628973126411438,
+    0.0648614838719368,
+    0.006826573982834816,
+    0.08235669881105423,
+    -0.11001995205879211,
+    -0.04774640500545502,
+    0.004184869583696127,
+    0.017475752159953117,
+    -0.02065586857497692,
+    0.043084751814603806,
+    -0.016538219526410103,
+    -0.03705741837620735,
+    -0.04970185458660126,
+    -0.017705723643302917,
+    -0.09370929002761841,
+    -0.029901286587119102,
+    -0.0018234290182590485,
+    -0.058433178812265396,
+    -0.11395270377397537,
+    0.027941429987549782,
+    0.030829211696982384,
+    0.026273835450410843,
+    0.07570108771324158,
+    0.04878779873251915,
+    -0.03204083442687988,
+    0.018505075946450233,
+    -0.006034931633621454,
+    0.04205002635717392,
+    0.024221820756793022,
+    -0.05527105927467346,
+    -0.12951870262622833,
+    0.009376686066389084,
+    -1.5471337988515188e-8,
+    -0.05024466663599014,
+    0.015486731193959713,
+    -0.022835558280348778,
+    -0.05228446051478386,
+    -0.023499896749854088,
+    -0.01500676665455103,
+    0.07346083968877792,
+    0.033124931156635284,
+    -0.06559532135725021,
+    -0.05111289024353027,
+    0.10017220675945282,
+    0.010611185804009438,
+    0.003710018005222082,
+    -0.03235318511724472,
+    0.035940349102020264,
+    -0.032495222985744476,
+    0.06453274935483932,
+    0.013765216805040836,
+    -0.03734400123357773,
+    0.03940332680940628,
+    0.09739750623703003,
+    0.026186572387814522,
+    0.08523955196142197,
+    -0.07944979518651962,
+    -0.014765323139727116,
+    0.023068450391292572,
+    0.02827022597193718,
+    0.07478893548250198,
+    0.009529344737529755,
+    -0.11732487380504608,
+    0.01527922973036766,
+    0.029316511005163193,
+    0.064247265458107,
+    0.046269215643405914,
+    0.022844918072223663,
+    0.005273495335131884,
+    -0.05603938177227974,
+    0.07551132142543793,
+    0.016715316101908684,
+    0.06270457059144974,
+    -0.04227228835225105,
+    -0.08155998587608337,
+    -0.00039804953848943114,
+    0.07575635612010956,
+    -0.058146391063928604,
+    0.012470779940485954,
+    -0.0019911283161491156,
+    -0.0472039170563221,
+    0.0355081744492054,
+    -0.05243640020489693,
+    0.08135620504617691,
+    -0.009519838728010654,
+    0.07590477168560028,
+    0.03833131492137909,
+    0.014700177125632763,
+    0.0814199224114418,
+    0.022558245807886124,
+    -0.11582113802433014,
+    -0.061229050159454346,
+    0.032701581716537476,
+    0.038772083818912506,
+    -0.06068691611289978,
+    -0.13923436403274536,
+    -0.03320031613111496
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "start": 0,
+        "content": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hoist every 22 operating hours regardless of chamber. The ticket shelter noticeboard was replaced in 2022."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Ruvane_Canal_Lock.txt",
+        "start": 0,
+        "content": "## Ruvane operations record\nAt Ruvane Canal Lock, the lifting bridge was rebuilt in 1998. The ticket shelter was repainted in 2013.\n\nThe highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June. The highest recorded daily temperature is 35 degrees Celsius.\n\nLena records eight gate-position readings per shift. Oren records five water-depth readings per shift. Lena labels two service crates per week.\n\nThe Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions. In a misty chamber, lubricate it every 55 operating hours. Inspect the chain hoist every 22 operating hours regardless of chamber. The ticket shelter noticeboard was replaced in 2022."
+      }
+    ]
+  }
+}
