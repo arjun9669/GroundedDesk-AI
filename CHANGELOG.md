@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — V42 typed ticket relations and five-pack preparation
+
+- Precommitted protocol/inventory `7ed219e1` before implementation. Reverify668 inputs and record v41 clock forms without answers; four remaining grammar forms stay deferred. Add isolated entity/order-type separation, ambiguity veto, scoped hold idiom and explicit declarative/imperative ticket relations with independent typed facet queries.
+- 710 unit/28 strict Keyword checks PASS; clean Chrome155.0.8059.85 startup and original input/history checks PASS. Freeze529 files before160 exposed cases across five packs; actual capture/scoring NOT RUN at this preparation checkpoint.
+- Preserve all first failures, frozen v41 and live r44. No full-gate/confirmation/adoption claim. [Preparation](docs/COVERAGE_V42_PREPARATION.md).
+
 ## 2026-10-20 — Preserve first v41 Morrow32 FAIL and investigate M04
 
 - Publish unchanged first evidence after explicit approval: both v41 variants and paired v40 31/0/1, M04 supported false refusal/historical PASS loss. Seal 258 original artifacts (23,363,293 bytes); no candidate change, model rerun or regrading.

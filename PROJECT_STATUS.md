@@ -30,6 +30,17 @@ only the unchanged pure planner/literal splitter, no answers/models/scoring.
 Current baseline670 unit/28 Keyword checks passed in the previous review. No v42
 code/model result exists at this protocol checkpoint; all first failures remain.
 
+## V42 engineering/preparation checkpoint
+
+Protocol/inventory `7ed219e1` preceded implementation. Typed ticket entity/order
+roles, scoped hold idiom and declarative/imperative ticket relations are implemented
+in isolated v42. **710 unit tests**, strict **28/28 Keyword**, clean Chrome155.0.8059.85
+startup and original input/history checks PASS. A **529-file freeze** pins160
+exposed cases and exact independently embedded candidate/paired-v41 facet queries.
+[Preparation](docs/COVERAGE_V42_PREPARATION.md). Actual capture/scoring **NOT RUN at
+this checkpoint**; publish freeze before questions. Four deferred clock forms and
+508 untested verified cases remain explicit. No live integration or adoption.
+
 ## Latest Morrow32 result — FAIL / HOLD
 
 Freeze `0ffd3e11` preceded model questions. First Morrow32 actual-model capture
