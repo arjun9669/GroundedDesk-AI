@@ -17,7 +17,18 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v41 Morrow32 **FAIL: 31/0/1** both variants, M04 false refusal; earlier four-pack passes preserved; not adopted |
 | Release decision | Integration **HOLD** after Morrow32 regression; full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: publish preserved Morrow32 failure and investigate M04; proposed separate v42; no candidate edits/model reruns |
+| Current change | Phase 1: v42 implementation and five-pack validation authorized; inventory complete, protocol precedes coding; no live integration |
+
+## Authorized v42 — protocol checkpoint
+
+The user approved the structured v42 fix and five-pack revalidation. A read-only
+inventory verifies668 cases/117 input entries: v41 owns13 clock questions,8 planned
+and5 unresolved. Planning is not support. M04 is in scope; RQ02,C09,B14,F14 remain
+explicit deferred gaps. [Protocol](eval/answer-completeness-v42/PROTOCOL.md) precedes
+implementation; [inventory](docs/evidence/v42-grammar-inventory/forms.json) invokes
+only the unchanged pure planner/literal splitter, no answers/models/scoring.
+Current baseline670 unit/28 Keyword checks passed in the previous review. No v42
+code/model result exists at this protocol checkpoint; all first failures remain.
 
 ## Latest Morrow32 result — FAIL / HOLD
 
