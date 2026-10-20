@@ -19,6 +19,18 @@ original reports; link them here instead of rewriting or rescoring them.
 | Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
 | Current change | Phase 1: v42 five-pack revalidation complete; deferred clock forms/508 remaining verified cases need separate protocols; no live integration |
 
+## Authorized v43 — deferred clock protocol
+
+The user approved reviewing/fixing RQ02,C09,B14,F14 with affected-pack and five-pack
+revalidation. [Protocol](eval/answer-completeness-v43/PROTOCOL.md) precedes code.
+Scope:284 exposed cases/nine packs,252 Hybrid/32 lexical Comparisons. Native
+RetrievalQuality28 exact-evidence grading stays separate from the 32-case group
+rubrics and its original chunking-promotion gate. All nine families have all-PASS
+v38 history to preserve. No v43 implementation/model result at this checkpoint.
+Protocol checkpoint verification:710 unit tests and strict28 Keyword PASS; full
+diff reviewed and `git diff --check` clean. Live5.6/r44, v42 and all first evidence
+remain unchanged; phase1/adoption HOLD.
+
 ## Latest v42 result — five partial gates PASS
 
 Protocol/inventory `7ed219e1` preceded coding; freeze `8970bd5c` reached GitHub before
