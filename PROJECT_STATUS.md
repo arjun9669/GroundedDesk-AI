@@ -29,6 +29,16 @@ At this checkpoint no v41 code or model result exists. Preserve v40 Hearth32 FAI
 all first evidence and live5.6/r44. Current engineering baseline633 unit/28 Keyword
 checks passed in the prior review; this protocol adds no executable code.
 
+## V41 engineering/preparation checkpoint
+
+The isolated v41 implementation and four-pack runner are prepared under protocol
+`72c74ad7`. **667 unit tests** and strict **28/28 Keyword** checks PASS; clean
+read-only Chrome155.0.8059.85 startup and original input/history checks PASS.
+A new **500-file freeze** covers128 exposed cases and independently embedded v41/
+paired-v40 planner queries. Actual model capture/scoring **NOT RUN at this
+preparation checkpoint**. Publish freeze before questions. See
+[engineering and execution scope](docs/COVERAGE_V41_PREPARATION.md).
+
 ## Latest Hearth32 result — FAIL / HOLD
 
 Freeze `ba2ccb1e` preceded questions. First actual-model Hearth32 capture is complete:

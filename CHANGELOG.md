@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Isolated v41 engineering and four-pack preparation
+
+- Protocol `72c74ad7` precedes bounded bare-order/collection-day/active-hold support. Preserve whole-question refusal, exact literal units, independent facet evidence and all frozen v40/first results; live r44 unchanged.
+- 667 unit tests and strict28 Keyword checks PASS; clean Chrome155.0.8059.85 startup and original input/history checks PASS. Freeze500 files before128 exposed cases across four packs with fresh actual candidate/paired-v40 facet embeddings. Actual capture/scoring NOT RUN at this checkpoint.
+- No full-regression/fresh-confirmation/adoption claim; preserve Hearth32 FAIL. [Preparation](docs/COVERAGE_V41_PREPARATION.md).
+
 ## 2026-10-20 — Preserve v40 Hearth32 FAIL and investigate H04
 
 - Publish the complete unchanged first Hearth32 evidence after a stop and explicit approval: both v40 variants and paired v39 31/0/1, H04 supported false refusal and historical PASS loss. Seal 258 original artifacts (23,337,052 bytes); no model rerun, regrading or candidate change.
