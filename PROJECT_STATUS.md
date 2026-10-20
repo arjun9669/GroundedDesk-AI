@@ -17,7 +17,17 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v40 Hearth32 **FAIL: 31/0/1** both variants, H04 false refusal; earlier three-pack passes preserved; not adopted |
 | Release decision | Integration **HOLD** after Hearth32 regression; full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: preserve/publish Hearth32 failure and investigate H04; proposed separate v41; no candidate edits or model reruns |
+| Current change | Phase 1: v41 fix and new four-pack validation authorized; protocol precedes implementation; no live integration |
+
+## Authorized v41 — protocol checkpoint
+
+The user approved the isolated v41 fix and four-pack validation on October20.
+[Protocol](eval/answer-completeness-v41/PROTOCOL.md) precedes implementation:
+bounded order/collection-day/active-hold grammar, engineering controls, then a
+published new freeze and128 exposed cases with fresh candidate/paired-v40 vectors.
+At this checkpoint no v41 code or model result exists. Preserve v40 Hearth32 FAIL,
+all first evidence and live5.6/r44. Current engineering baseline633 unit/28 Keyword
+checks passed in the prior review; this protocol adds no executable code.
 
 ## Latest Hearth32 result — FAIL / HOLD
 
