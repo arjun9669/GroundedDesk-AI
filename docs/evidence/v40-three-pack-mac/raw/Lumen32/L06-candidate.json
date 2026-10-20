@@ -1,0 +1,1327 @@
+{
+  "candidate_identity": "coverage-v40-dispatch-grammar",
+  "id": "L06",
+  "question": "When was the Perrin Community Kiln pottery hall restoration completed?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When was the Perrin Community Kiln pottery hall restoration completed?",
+    "expected_display": "When was the Perrin Community Kiln pottery hall restoration completed?",
+    "rendered_question": "When was the Perrin Community Kiln pottery hall restoration completed?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The Perrin Community Kiln pottery hall was relocated in 1946.",
+    "sources": [
+      {
+        "filename": "02_Perrin_Community_Kiln.txt",
+        "excerpt": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.\n\n## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute mi",
+        "quote": "The Perrin Community Kiln pottery hall was relocated in 1946."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen was the Perrin Community Kiln pottery hall restoration completed?\n\nSearched all files: 01_Oridel_Map_Archive.txt · 02_Perrin_Community_Kiln.txt · 03_Ruvane_Canal_Lock.txt · 04_Neris_Kite_Club.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The Perrin Community Kiln pottery hall was relocated in 1946.\n\nSOURCE EVIDENCE\n[1]\n02_Perrin_Community_Kiln.txt\n\nText line 1 (normalized extraction)\n\nThe Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open. ## Material store and firing records K-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute mi\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The Perrin Community Kiln pottery hall was relocated in 1946.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8:0",
+        "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+        "filename": "02_Perrin_Community_Kiln.txt",
+        "excerpt": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.\n\n## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute mi",
+        "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+        "score": 0.0476,
+        "lexicalScore": 10.098050966027774,
+        "semanticScore": 0.6707824763151378,
+        "matchedTerms": [
+          "perrin",
+          "community",
+          "kiln",
+          "pottery",
+          "hall",
+          "restoration",
+          "completed"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8:0",
+        "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+        "filename": "02_Perrin_Community_Kiln.txt",
+        "excerpt": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.\n\n## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nK-02. S",
+        "quote": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+        "score": 0.0476,
+        "lexicalScore": 10.098050966027774,
+        "semanticScore": 0.6707824763151378,
+        "matchedTerms": [
+          "perrin",
+          "community",
+          "kiln",
+          "pottery",
+          "hall",
+          "restoration",
+          "completed"
+        ],
+        "start": 0,
+        "end": 183
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Perrin_Community_Kiln.txt",
+        "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.8038605163303387,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Perrin_Community_Kiln.txt",
+        "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Perrin_Community_Kiln.txt",
+        "quote": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8:0",
+        "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+        "filename": "02_Perrin_Community_Kiln.txt",
+        "excerpt": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.\n\n## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nK-02. S",
+        "quote": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+        "score": 0.0476,
+        "lexicalScore": 12.752881452610607,
+        "semanticScore": 0.8510847712774572,
+        "matchedTerms": [
+          "perrin",
+          "community",
+          "kiln",
+          "pottery",
+          "hall",
+          "restoration",
+          "completed"
+        ],
+        "start": 0,
+        "end": 183
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Perrin_Community_Kiln.txt",
+        "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.8038605163303387,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Perrin_Community_Kiln.txt",
+        "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Perrin_Community_Kiln.txt",
+        "quote": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Perrin_Community_Kiln.txt",
+      "start": 0,
+      "content": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+      "semanticScore": 0.8038605163303387,
+      "lexicalScore": 15.669146879263693
+    },
+    {
+      "filename": "02_Perrin_Community_Kiln.txt",
+      "start": 228,
+      "content": "The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius.",
+      "semanticScore": 0.4985774617557508,
+      "lexicalScore": 6.969210158656541
+    },
+    {
+      "filename": "02_Perrin_Community_Kiln.txt",
+      "start": 62,
+      "content": "Its restoration was completed in 2007.",
+      "semanticScore": 0.37085236449190484,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "Oridel Map Archive was founded in 1859.",
+      "start": 0,
+      "end": 39,
+      "similarity": 0.18026325946659094,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "It opened its public map room in 1971.",
+      "start": 40,
+      "end": 78,
+      "similarity": 0.19042212667052322,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "The first roof renewal was completed in 1988; the second roof renewal was completed in 2018.",
+      "start": 79,
+      "end": 171,
+      "similarity": 0.14682560108187098,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "A-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": -0.025198094885879083,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "Dispatch requests released before 12:40 leave on the current service day.",
+      "start": 204,
+      "end": 277,
+      "similarity": 0.08478573208979559,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "At or after 12:40, departure moves to the following service day, unless a conservation hold is still active.",
+      "start": 278,
+      "end": 386,
+      "similarity": 0.0857341734953506,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "A-02.",
+      "start": 387,
+      "end": 392,
+      "similarity": -0.07298377815310977,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "Jori checks seven map drawers per morning.",
+      "start": 393,
+      "end": 435,
+      "similarity": 0.11409453496877209,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "Veda checks four humidity sensors per morning.",
+      "start": 436,
+      "end": 482,
+      "similarity": 0.044768282129946456,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "Jori seals three transport cases per week.",
+      "start": 483,
+      "end": 525,
+      "similarity": 0.07858855265313895,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "A-03.",
+      "start": 526,
+      "end": 531,
+      "similarity": -0.03550771459495759,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "Winter monthly mean temperatures in the map store range from 7 to 9 degrees Celsius.",
+      "start": 532,
+      "end": 616,
+      "similarity": -0.014242106837660943,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "No individual winter extreme is recorded here.",
+      "start": 617,
+      "end": 663,
+      "similarity": 0.00822337163599057,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "A-04.",
+      "start": 664,
+      "end": 669,
+      "similarity": -0.030062639956461554,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "Transport slips are retained for 14 months.",
+      "start": 670,
+      "end": 713,
+      "similarity": 0.07388302566093227,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "If a provenance review is unresolved, keep the affected slips until the review is cleared.",
+      "start": 714,
+      "end": 804,
+      "similarity": 0.18107218758779853,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "A-05.",
+      "start": 805,
+      "end": 810,
+      "similarity": -0.046686941158994105,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "Acknowledge map-copy requests within three service days.",
+      "start": 811,
+      "end": 867,
+      "similarity": 0.11640674487580684,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1fc2730a-f713-456c-a430-8a50e36507bc",
+      "value": "Acknowledgement does not guarantee that a reproduction is available.",
+      "start": 868,
+      "end": 936,
+      "similarity": 0.0306099368301948,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+      "start": 0,
+      "end": 61,
+      "similarity": 0.8038605163303387,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "Its restoration was completed in 2007.",
+      "start": 62,
+      "end": 100,
+      "similarity": 0.37085236449190484,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+      "start": 101,
+      "end": 183,
+      "similarity": 0.135539004330409,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "K-01.",
+      "start": 222,
+      "end": 227,
+      "similarity": 0.1370098574908117,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius.",
+      "start": 228,
+      "end": 325,
+      "similarity": 0.4985774617557508,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "The absolute minimum winter temperature is 2 degrees Celsius.",
+      "start": 326,
+      "end": 387,
+      "similarity": -0.06438006713278159,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "The highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 388,
+      "end": 455,
+      "similarity": -0.03920493652339437,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "K-02.",
+      "start": 456,
+      "end": 461,
+      "similarity": 0.08255561414544867,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "Signed firing records are retained for 6 years.",
+      "start": 462,
+      "end": 509,
+      "similarity": 0.07569751823744325,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "If a compensation claim is open, retain the affected records until that claim is settled.",
+      "start": 510,
+      "end": 599,
+      "similarity": 0.053502646669438554,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "K-03.",
+      "start": 600,
+      "end": 605,
+      "similarity": 0.12384716029572372,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "Each firing handover packet must contain:",
+      "start": 606,
+      "end": 647,
+      "similarity": 0.01970217569931081,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "K-04.",
+      "start": 729,
+      "end": 734,
+      "similarity": 0.07588062533675687,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+      "value": "Purchases above 6800 credits require written approval from the Accounts Steward and Kiln Manager.",
+      "start": 735,
+      "end": 832,
+      "similarity": 0.20253599428551333,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "At Ruvane Canal Lock, the lifting bridge was rebuilt in 1998.",
+      "start": 28,
+      "end": 89,
+      "similarity": 0.24707085297792836,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "The ticket shelter was repainted in 2013.",
+      "start": 90,
+      "end": 131,
+      "similarity": 0.2439683488452407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "The highest monthly mean temperature at Ruvane Canal Lock is 22 degrees Celsius in June.",
+      "start": 133,
+      "end": 221,
+      "similarity": 0.07967029954378022,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "The highest recorded daily temperature is 35 degrees Celsius.",
+      "start": 222,
+      "end": 283,
+      "similarity": 0.024667309454406258,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "Lena records eight gate-position readings per shift.",
+      "start": 285,
+      "end": 337,
+      "similarity": 0.051154014136070555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "Oren records five water-depth readings per shift.",
+      "start": 338,
+      "end": 387,
+      "similarity": 0.06777887415295787,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "Lena labels two service crates per week.",
+      "start": 388,
+      "end": 428,
+      "similarity": 0.14319620883441928,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "The Ruvane Canal Lock chain hoist requires lubrication every 110 operating hours under normal conditions.",
+      "start": 430,
+      "end": 535,
+      "similarity": 0.10445140144908595,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "In a misty chamber, lubricate it every 55 operating hours.",
+      "start": 536,
+      "end": 594,
+      "similarity": 0.125862074970347,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "Inspect the chain hoist every 22 operating hours regardless of chamber.",
+      "start": 595,
+      "end": 666,
+      "similarity": 0.16418518322352268,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7cc65a41-45ea-47b0-8577-ba65fd950333",
+      "value": "The ticket shelter noticeboard was replaced in 2022.",
+      "start": 667,
+      "end": 719,
+      "similarity": 0.06692303226681065,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "N-01.",
+      "start": 24,
+      "end": 29,
+      "similarity": 0.07817851512765184,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "Neris Kite Club acknowledges equipment requests within five business hours.",
+      "start": 30,
+      "end": 105,
+      "similarity": 0.07927761598725952,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "An acknowledgement does not promise that equipment will be ready within five hours.",
+      "start": 106,
+      "end": 189,
+      "similarity": 0.039663965456526624,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "N-02.",
+      "start": 190,
+      "end": 195,
+      "similarity": 0.0408353573923237,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "The field issue packet includes a booking form, tether log, weather checklist, flight permit, and return signature.",
+      "start": 196,
+      "end": 311,
+      "similarity": 0.0016742237972508533,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "N-03.",
+      "start": 312,
+      "end": 317,
+      "similarity": 0.06140734015437828,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "Completed flight records are retained for 9 months, unless an unresolved damage claim requires longer retention.",
+      "start": 318,
+      "end": 430,
+      "similarity": -0.003703783674136153,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "N-04.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.03973871888057516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "Lubricate the Neris Kite Club winding reel every 66 operating hours under normal conditions.",
+      "start": 437,
+      "end": 529,
+      "similarity": 0.004296397911123334,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "In a sandy enclosure, lubricate it every 33 operating hours.",
+      "start": 530,
+      "end": 590,
+      "similarity": 0.07398319613400486,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1567b903-c828-4d5a-9670-13ca6f6e1741",
+      "value": "Inspect the winding reel every 11 operating hours in either enclosure.",
+      "start": 591,
+      "end": 661,
+      "similarity": 0.08971430394562457,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8:0",
+          "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+          "filename": "02_Perrin_Community_Kiln.txt",
+          "excerpt": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.\n\n## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nK-02. S",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+          "score": 0.0476,
+          "lexicalScore": 10.098050966027774,
+          "semanticScore": 0.6707824763151378,
+          "matchedTerms": [
+            "perrin",
+            "community",
+            "kiln",
+            "pottery",
+            "hall",
+            "restoration",
+            "completed"
+          ],
+          "start": 0,
+          "end": 183
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Perrin_Community_Kiln.txt",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8038605163303387,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Perrin_Community_Kiln.txt",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Perrin_Community_Kiln.txt",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8:0",
+          "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+          "filename": "02_Perrin_Community_Kiln.txt",
+          "excerpt": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.\n\n## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nK-02. S",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+          "score": 0.0476,
+          "lexicalScore": 12.752881452610607,
+          "semanticScore": 0.8510847712774572,
+          "matchedTerms": [
+            "perrin",
+            "community",
+            "kiln",
+            "pottery",
+            "hall",
+            "restoration",
+            "completed"
+          ],
+          "start": 0,
+          "end": 183
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Perrin_Community_Kiln.txt",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8038605163303387,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Perrin_Community_Kiln.txt",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Perrin_Community_Kiln.txt",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Perrin Community Kiln pottery hall was relocated in 1946.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8:0",
+          "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+          "filename": "02_Perrin_Community_Kiln.txt",
+          "excerpt": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.\n\n## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute mi",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+          "score": 0.0476,
+          "lexicalScore": 10.098050966027774,
+          "semanticScore": 0.6707824763151378,
+          "matchedTerms": [
+            "perrin",
+            "community",
+            "kiln",
+            "pottery",
+            "hall",
+            "restoration",
+            "completed"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Perrin_Community_Kiln.txt",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8038605163303387,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Perrin_Community_Kiln.txt",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Perrin Community Kiln pottery hall was relocated in 1946.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8:0",
+          "documentId": "2c50ce4d-12f3-48ac-8433-e261ad0e4ec8",
+          "filename": "02_Perrin_Community_Kiln.txt",
+          "excerpt": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.\n\n## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute mi",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+          "score": 0.0476,
+          "lexicalScore": 12.752881452610607,
+          "semanticScore": 0.8510847712774572,
+          "matchedTerms": [
+            "perrin",
+            "community",
+            "kiln",
+            "pottery",
+            "hall",
+            "restoration",
+            "completed"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Perrin_Community_Kiln.txt",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8038605163303387,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Perrin_Community_Kiln.txt",
+          "quote": "The Perrin Community Kiln pottery hall was relocated in 1946.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.013456770218908787,
+    0.043398935347795486,
+    -0.06017643213272095,
+    -0.005208862479776144,
+    -0.04522291198372841,
+    -0.02229144796729088,
+    -0.041305769234895706,
+    -0.1525055170059204,
+    -0.14313159883022308,
+    -0.03909002244472504,
+    0.0023499522358179092,
+    0.01928529143333435,
+    -0.02414306253194809,
+    0.011518357321619987,
+    -0.030511271208524704,
+    -0.048906683921813965,
+    -0.023119445890188217,
+    0.0563545860350132,
+    0.03852250427007675,
+    -0.032058194279670715,
+    -0.036559708416461945,
+    -0.032178014516830444,
+    0.05100409314036369,
+    -0.046668004244565964,
+    0.048895057290792465,
+    0.033331338316202164,
+    -0.0979854017496109,
+    0.015386514365673065,
+    0.10499074310064316,
+    -0.011566049419343472,
+    -0.07908965647220612,
+    0.061543215066194534,
+    0.006870129145681858,
+    -0.04622044041752815,
+    0.06728070974349976,
+    0.07169737666845322,
+    0.021858347579836845,
+    0.03132715821266174,
+    -0.03803442046046257,
+    0.04981350526213646,
+    0.008827349171042442,
+    -0.013524573296308517,
+    -0.06315360963344574,
+    -0.00023859825159888715,
+    -0.07469417154788971,
+    -0.001708943978883326,
+    0.020763948559761047,
+    -0.05475648492574692,
+    -0.01567721739411354,
+    -0.017943983897566795,
+    0.051453545689582825,
+    0.09150237590074539,
+    0.021742573007941246,
+    -0.09208138287067413,
+    0.0008075311779975891,
+    -0.007540424820035696,
+    -0.009351401589810848,
+    0.011058172211050987,
+    0.003162129083648324,
+    0.014607992023229599,
+    0.052207548171281815,
+    0.008652054704725742,
+    -0.06780208647251129,
+    0.02934122644364834,
+    -0.01698525808751583,
+    -0.04040912166237831,
+    -0.013412006199359894,
+    -0.011892401613295078,
+    0.0843353420495987,
+    -0.07932288199663162,
+    -0.013389741070568562,
+    -0.029381636530160904,
+    0.016769832000136375,
+    -0.04921599105000496,
+    -0.023165429010987282,
+    0.06084125116467476,
+    0.040393855422735214,
+    -0.06000106781721115,
+    -0.11208789795637131,
+    -0.024611588567495346,
+    0.019544512033462524,
+    0.06903313100337982,
+    0.0017411562148481607,
+    -0.024038759991526604,
+    0.01915113441646099,
+    -0.02304706908762455,
+    -0.056397534906864166,
+    0.012190008535981178,
+    0.07498431950807571,
+    -0.03267091512680054,
+    0.09421855211257935,
+    0.06759105622768402,
+    -0.07727264612913132,
+    -0.025331484153866768,
+    -0.010922151617705822,
+    -0.005618069786578417,
+    0.051834430545568466,
+    0.016224330291152,
+    -0.045866914093494415,
+    0.09691387414932251,
+    -0.04159581661224365,
+    -0.006182284094393253,
+    -0.03588850423693657,
+    -0.07950551807880402,
+    0.01650903932750225,
+    -0.004991612397134304,
+    -0.03132903203368187,
+    0.09737792611122131,
+    -0.061073560267686844,
+    0.07929401099681854,
+    -0.03791969269514084,
+    0.025038061663508415,
+    0.025026656687259674,
+    0.04533572494983673,
+    0.04025673866271973,
+    -0.04576053097844124,
+    0.0007278625853359699,
+    -0.03253045305609703,
+    -0.04280596598982811,
+    -0.003327180864289403,
+    0.05488790571689606,
+    -0.024707885459065437,
+    -0.006299592088907957,
+    -0.06405065953731537,
+    -0.0942516177892685,
+    0.022881170734763145,
+    0.016850752755999565,
+    -1.2031674163860635e-33,
+    -0.042454298585653305,
+    0.07854942977428436,
+    -0.009796084836125374,
+    -0.043273091316223145,
+    0.06525109708309174,
+    -0.050597719848155975,
+    0.0002642058825585991,
+    -0.02889569103717804,
+    0.002406669082120061,
+    -0.04498620703816414,
+    0.13300107419490814,
+    0.015372546389698982,
+    -0.05103762075304985,
+    -0.0998440831899643,
+    -0.05403681471943855,
+    -0.047507356852293015,
+    -0.017168523743748665,
+    0.07962841540575027,
+    -0.003269841196015477,
+    -0.04759322106838226,
+    0.022415710613131523,
+    0.08002109080553055,
+    -0.031125865876674652,
+    0.023119311779737473,
+    -0.07239332050085068,
+    -0.02175532653927803,
+    0.05793197825551033,
+    0.004262642934918404,
+    -0.03949537128210068,
+    0.015201615169644356,
+    0.08640734851360321,
+    -0.028803996741771698,
+    0.027609650045633316,
+    0.04619082435965538,
+    -0.05388842150568962,
+    0.060220230370759964,
+    0.04137256368994713,
+    -0.10402628034353256,
+    0.020921552553772926,
+    -0.08799698203802109,
+    -0.03483891487121582,
+    0.012300316244363785,
+    0.08340561389923096,
+    0.02930687926709652,
+    -0.045673202723264694,
+    -0.009764826856553555,
+    -0.03919750452041626,
+    0.0629696398973465,
+    0.02684975042939186,
+    -0.02275603637099266,
+    0.01931913197040558,
+    0.09594949334859848,
+    -0.08822206407785416,
+    0.07432649284601212,
+    -0.019921261817216873,
+    -0.04971227049827576,
+    0.01728346012532711,
+    -0.03689595311880112,
+    0.027979303151369095,
+    -0.05843355506658554,
+    0.041894059628248215,
+    0.016510115936398506,
+    -0.01789628155529499,
+    0.02252925932407379,
+    -0.008854853920638561,
+    -0.09011264145374298,
+    -0.03930893540382385,
+    -0.022469336166977882,
+    0.05071157589554787,
+    -0.10071567445993423,
+    -0.00932367518544197,
+    0.048134490847587585,
+    -0.058864887803792953,
+    -0.01216213870793581,
+    0.00869705155491829,
+    0.004018920008093119,
+    -0.02290535904467106,
+    0.0552990697324276,
+    -0.04235728085041046,
+    0.13140425086021423,
+    -0.03563623130321503,
+    0.05665161833167076,
+    -0.10020342469215393,
+    0.02762967348098755,
+    0.01743352599442005,
+    -0.010915677063167095,
+    0.08032656461000443,
+    0.05108918622136116,
+    -0.007001780439168215,
+    -0.07878649979829788,
+    0.005622677970677614,
+    -0.06831648200750351,
+    0.024117225781083107,
+    -0.00971241481602192,
+    -0.022323613986372948,
+    8.848230668677448e-34,
+    0.032490894198417664,
+    0.04070846736431122,
+    0.02623494155704975,
+    0.06144532561302185,
+    -0.00004118376818951219,
+    -0.06328799575567245,
+    -0.011875668540596962,
+    0.05094520375132561,
+    -0.025727534666657448,
+    -0.02459636703133583,
+    0.03287915885448456,
+    0.013144850730895996,
+    0.06104050204157829,
+    -0.019266171380877495,
+    -0.01395803689956665,
+    0.005419668275862932,
+    0.155368834733963,
+    0.006578744389116764,
+    -0.03057265654206276,
+    0.002620563143864274,
+    -0.04698896408081055,
+    0.07433434575796127,
+    -0.1083650216460228,
+    -0.01347152329981327,
+    -0.05642733350396156,
+    0.023792169988155365,
+    0.029849277809262276,
+    -0.05484149232506752,
+    -0.09387341886758804,
+    0.0045855785720050335,
+    0.06052297726273537,
+    -0.033172544091939926,
+    -0.09214294701814651,
+    0.11463060975074768,
+    0.10737381130456924,
+    -0.04732704907655716,
+    0.014399310573935509,
+    -0.032514821738004684,
+    -0.12556084990501404,
+    0.014240838587284088,
+    0.11305195838212967,
+    0.04682966694235802,
+    -0.02206537500023842,
+    0.13029249012470245,
+    -0.004453521687537432,
+    0.02534111961722374,
+    -0.008718649856746197,
+    0.04137017950415611,
+    0.08430769294500351,
+    -0.019078966230154037,
+    0.03882210701704025,
+    0.10831152647733688,
+    0.0076154740527272224,
+    -0.06750448048114777,
+    0.06545670330524445,
+    0.03372683376073837,
+    0.07211877405643463,
+    0.03705262392759323,
+    -0.11353950202465057,
+    0.07245001941919327,
+    0.03485072776675224,
+    0.09354542195796967,
+    -0.022667953744530678,
+    0.010434475727379322,
+    0.06934377551078796,
+    0.03538621589541435,
+    0.03581617400050163,
+    0.07006965577602386,
+    -0.030179793015122414,
+    -0.022159675136208534,
+    0.03251824527978897,
+    0.07322317361831665,
+    0.0934164822101593,
+    0.04416573420166969,
+    0.023999830707907677,
+    -0.023644249886274338,
+    0.07577383518218994,
+    0.0607726164162159,
+    0.00729991402477026,
+    -0.02109519951045513,
+    -0.054418373852968216,
+    -0.03661647439002991,
+    -0.006969902198761702,
+    0.018106622621417046,
+    0.017343619838356972,
+    -0.03905203565955162,
+    -0.02078310027718544,
+    -0.019463036209344864,
+    0.06892845034599304,
+    -0.004761052783578634,
+    0.0429251454770565,
+    -0.06888673454523087,
+    -0.019613467156887054,
+    -0.0030305106192827225,
+    0.0750097930431366,
+    -1.6733645580302436e-8,
+    0.01807495206594467,
+    0.0609544962644577,
+    -0.014798978343605995,
+    -0.024268636479973793,
+    0.01361564639955759,
+    -0.057012274861335754,
+    0.046433962881565094,
+    0.02623099461197853,
+    -0.025444887578487396,
+    0.009691668674349785,
+    0.039599910378456116,
+    0.021382037550210953,
+    0.007394986692816019,
+    -0.02528316341340542,
+    0.00684744818136096,
+    -0.03722475469112396,
+    0.03447440639138222,
+    0.0184488445520401,
+    -0.03326819837093353,
+    -0.09463480859994888,
+    0.03784935548901558,
+    -0.08292344212532043,
+    0.011779094114899635,
+    0.04276435449719429,
+    -0.0720001831650734,
+    0.06567104905843735,
+    -0.016897212713956833,
+    -0.029453258961439133,
+    0.014774338342249393,
+    -0.04175444692373276,
+    0.017936596646904945,
+    -0.05650773271918297,
+    -0.0011073510395362973,
+    0.07570458203554153,
+    0.01574327051639557,
+    0.03258492052555084,
+    -0.03217475488781929,
+    0.024843627586960793,
+    -0.016114473342895508,
+    -0.03288601338863373,
+    -0.06508294492959976,
+    -0.06116221100091934,
+    0.038308750838041306,
+    0.013339134864509106,
+    0.01027775276452303,
+    0.0759129598736763,
+    -0.0687425509095192,
+    0.04805246368050575,
+    0.010651622898876667,
+    -0.07048935443162918,
+    -0.0029326449148356915,
+    0.04257205128669739,
+    0.10297007858753204,
+    -0.05604568496346474,
+    -0.024949952960014343,
+    -0.02832036279141903,
+    0.021258991211652756,
+    -0.009518210776150227,
+    0.01601126603782177,
+    0.007112220861017704,
+    0.01753062568604946,
+    0.01603349857032299,
+    -0.011326993815600872,
+    0.012410266324877739
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Perrin_Community_Kiln.txt",
+        "start": 0,
+        "content": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open.\n\n## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nK-02. Signed firing records are retained for 6 years. If a compensation claim is open, retain the affected records until that claim is settled.\nK-03. Each firing handover packet must contain:\n- a batch ticket\n- a glaze inventory\n- a safety checklist\n- a collection receipt\nK-04. Purchases above 6800"
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Perrin_Community_Kiln.txt",
+        "start": 0,
+        "content": "The Perrin Community Kiln pottery hall was relocated in 1946. Its restoration was completed in 2007. A proposal to close the drying annex in 2019 was rejected; the annex remains open."
+      },
+      {
+        "filename": "02_Perrin_Community_Kiln.txt",
+        "start": 185,
+        "content": "## Material store and firing records\nK-01. The winter average temperature in the Perrin Community Kiln material store is 12 degrees Celsius. The absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nK-02. Signed firing records are retained for 6 years. If a compensation claim is open, retain the affected records until that claim is settled.\nK-03. Each firing handover packet must contain:\n- a batch ticket\n- a glaze inventory\n- a safety checklist\n- a collection receipt\nK-04. Purchases above 6800 credits require written approval from the Accounts Steward and Kiln Manager."
+      }
+    ]
+  }
+}

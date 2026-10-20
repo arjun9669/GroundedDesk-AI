@@ -1,0 +1,1302 @@
+{
+  "candidate_identity": "coverage-v40-dispatch-grammar",
+  "id": "V08",
+  "question": "What is the lowest winter temperature in the Avrel Bell Workshop alloy store?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What is the lowest winter temperature in the Avrel Bell Workshop alloy store?",
+    "expected_display": "What is the lowest winter temperature in the Avrel Bell Workshop alloy store?",
+    "rendered_question": "What is the lowest winter temperature in the Avrel Bell Workshop alloy store?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+    "sources": [
+      {
+        "filename": "02_Avrel_Bell_Workshop.txt",
+        "excerpt": "The Avrel Bell Workshop casting hall moved in 1912. Its restoration was completed in 1983. A plan to close the mould annex in 2016 was rejected; the annex remains open.\n\n## Calibration records and transport\nBW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nBW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is se",
+        "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat is the lowest winter temperature in the Avrel Bell Workshop alloy store?\n\nSearched all files: 01_Serevin_Seed_Library.txt · 02_Avrel_Bell_Workshop.txt · 03_Relmont_Canal_Garden.txt · 04_Korven_Instrument_Coop.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.\n\nSOURCE EVIDENCE\n[1]\n02_Avrel_Bell_Workshop.txt\n\nText line 4 (normalized extraction)\n\nThe Avrel Bell Workshop casting hall moved in 1912. Its restoration was completed in 1983. A plan to close the mould annex in 2016 was rejected; the annex remains open. ## Calibration records and transport BW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July. BW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is se\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ef809f24-fcc5-4f2d-b16d-3b34feead59d:0",
+        "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+        "filename": "02_Avrel_Bell_Workshop.txt",
+        "excerpt": "The Avrel Bell Workshop casting hall moved in 1912. Its restoration was completed in 1983. A plan to close the mould annex in 2016 was rejected; the annex remains open.\n\n## Calibration records and transport\nBW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nBW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is se",
+        "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 9.40801646214178,
+        "semanticScore": 0.7348197011806061,
+        "matchedTerms": [
+          "winter",
+          "temperature",
+          "avrel",
+          "bell",
+          "workshop",
+          "alloy",
+          "store"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Its absolute minimum winter temperature is -2 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ef809f24-fcc5-4f2d-b16d-3b34feead59d:body:307",
+        "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+        "filename": "02_Avrel_Bell_Workshop.txt",
+        "quote": "Its absolute minimum winter temperature is -2 degrees Celsius.",
+        "start": 307,
+        "end": 369,
+        "actualCosine": 0.615829964460928,
+        "excerpt": "83. A plan to close the mould annex in 2016 was rejected; the annex remains open.\n\n## Calibration records and transport\nBW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nBW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is settled.\nBW-03. The calibration packet must contain:\n- a clapper"
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Avrel_Bell_Workshop.txt",
+        "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Avrel_Bell_Workshop.txt",
+        "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Avrel_Bell_Workshop.txt",
+        "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "temperature",
+        "statistic": "minimum"
+      },
+      "actual_cosines": [
+        0.615829964460928
+      ]
+    }
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Its absolute minimum winter temperature is -2 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ef809f24-fcc5-4f2d-b16d-3b34feead59d:body:307",
+        "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+        "filename": "02_Avrel_Bell_Workshop.txt",
+        "quote": "Its absolute minimum winter temperature is -2 degrees Celsius.",
+        "start": 307,
+        "end": 369,
+        "actualCosine": 0.615829964460928,
+        "excerpt": "83. A plan to close the mould annex in 2016 was rejected; the annex remains open.\n\n## Calibration records and transport\nBW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nBW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is settled.\nBW-03. The calibration packet must contain:\n- a clapper"
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Avrel_Bell_Workshop.txt",
+        "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Avrel_Bell_Workshop.txt",
+        "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Avrel_Bell_Workshop.txt",
+        "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "temperature",
+        "statistic": "minimum"
+      },
+      "actual_cosines": [
+        0.615829964460928
+      ]
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Avrel_Bell_Workshop.txt",
+      "start": 214,
+      "content": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+      "semanticScore": 0.8041467264315498,
+      "lexicalScore": 14.997869662538927
+    },
+    {
+      "filename": "02_Avrel_Bell_Workshop.txt",
+      "start": 0,
+      "content": "The Avrel Bell Workshop casting hall moved in 1912.",
+      "semanticScore": 0.4098372377572017,
+      "lexicalScore": 7.427572091508659
+    },
+    {
+      "filename": "02_Avrel_Bell_Workshop.txt",
+      "start": 813,
+      "content": "Grease the Avrel Bell Workshop striker every 360 cycles under normal conditions.",
+      "semanticScore": 0.3877436055996827,
+      "lexicalScore": 5.9585236161567785
+    },
+    {
+      "filename": "02_Avrel_Bell_Workshop.txt",
+      "start": 307,
+      "content": "Its absolute minimum winter temperature is -2 degrees Celsius.",
+      "semanticScore": 0.615829964460928,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Serevin_Seed_Library.txt",
+      "start": 508,
+      "content": "Winter monthly mean temperatures in the seed store range from 4 to 6 degrees Celsius.",
+      "semanticScore": 0.48423373892164395,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "Serevin Seed Library began public seed lending in 1958.",
+      "start": 0,
+      "end": 55,
+      "similarity": 0.06549947380697699,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "The first ventilation fan renewal was completed in 1984; the second ventilation fan renewal was completed in 2011.",
+      "start": 56,
+      "end": 170,
+      "similarity": 0.012307603780641533,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "SL-01.",
+      "start": 200,
+      "end": 206,
+      "similarity": 0.26125213398848535,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "Dispatch requests released before 14:35 leave on the current service day.",
+      "start": 207,
+      "end": 280,
+      "similarity": 0.12045466017122267,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "At 14:35 or later, departure is the next service day, unless a phytosanitary hold is open.",
+      "start": 281,
+      "end": 371,
+      "similarity": 0.07543432759501113,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "SL-02.",
+      "start": 372,
+      "end": 378,
+      "similarity": 0.2756560877256435,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "Beren checks four seed lots per week.",
+      "start": 379,
+      "end": 416,
+      "similarity": 0.07994449068460897,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "Olan checks six storage trays per week.",
+      "start": 417,
+      "end": 456,
+      "similarity": 0.20129101093547988,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "Beren labels two transport boxes per month.",
+      "start": 457,
+      "end": 500,
+      "similarity": 0.10951629706002108,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "SL-03.",
+      "start": 501,
+      "end": 507,
+      "similarity": 0.2755781259070052,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "Winter monthly mean temperatures in the seed store range from 4 to 6 degrees Celsius.",
+      "start": 508,
+      "end": 593,
+      "similarity": 0.48423373892164395,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "Individual winter extremes are not recorded.",
+      "start": 594,
+      "end": 638,
+      "similarity": 0.40068557693525364,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "SL-04.",
+      "start": 639,
+      "end": 645,
+      "similarity": 0.20825054207285632,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "Keep movement slips for 17 months.",
+      "start": 646,
+      "end": 680,
+      "similarity": 0.051865319514163816,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "While a seed-quarantine hold is open, retain affected slips until the hold is released.",
+      "start": 681,
+      "end": 768,
+      "similarity": 0.06471421077827146,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "SL-05.",
+      "start": 769,
+      "end": 775,
+      "similarity": 0.22935472842361804,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "Acknowledge seed-reservation requests within three business days.",
+      "start": 776,
+      "end": 841,
+      "similarity": 0.0141671455422407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+      "value": "An acknowledgement is not a guarantee that seeds remain available.",
+      "start": 842,
+      "end": 908,
+      "similarity": 0.05839235974510236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "The Avrel Bell Workshop casting hall moved in 1912.",
+      "start": 0,
+      "end": 51,
+      "similarity": 0.4098372377572017,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "Its restoration was completed in 1983.",
+      "start": 52,
+      "end": 90,
+      "similarity": 0.11909159111372146,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "A plan to close the mould annex in 2016 was rejected; the annex remains open.",
+      "start": 91,
+      "end": 168,
+      "similarity": 0.06330818097307524,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "BW-01.",
+      "start": 207,
+      "end": 213,
+      "similarity": 0.22503525074137512,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+      "start": 214,
+      "end": 306,
+      "similarity": 0.8041467264315498,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "Its absolute minimum winter temperature is -2 degrees Celsius.",
+      "start": 307,
+      "end": 369,
+      "similarity": 0.615829964460928,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "The highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 370,
+      "end": 437,
+      "similarity": 0.3286588718955461,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "BW-02.",
+      "start": 438,
+      "end": 444,
+      "similarity": 0.2137324066741908,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "Signed calibration records are retained for 4 years.",
+      "start": 445,
+      "end": 497,
+      "similarity": 0.12062930443828436,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "An unresolved material claim extends retention of affected records until the claim is settled.",
+      "start": 498,
+      "end": 592,
+      "similarity": -0.06103028495006192,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "BW-03.",
+      "start": 593,
+      "end": 599,
+      "similarity": 0.21570743117287894,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "The calibration packet must contain:",
+      "start": 600,
+      "end": 636,
+      "similarity": 0.21333787258097694,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "BW-04.",
+      "start": 734,
+      "end": 740,
+      "similarity": 0.18302422578069136,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "The tower clock was replaced in 2007.",
+      "start": 741,
+      "end": 778,
+      "similarity": 0.14184042432489913,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "A cabinet was repainted in 1947.",
+      "start": 780,
+      "end": 812,
+      "similarity": 0.09470379073042882,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "Grease the Avrel Bell Workshop striker every 360 cycles under normal conditions.",
+      "start": 813,
+      "end": 893,
+      "similarity": 0.3877436055996827,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "In a humid chamber, grease it every 180 cycles.",
+      "start": 894,
+      "end": 941,
+      "similarity": 0.16764843103934904,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "Inspect the striker every 90 cycles regardless of chamber.",
+      "start": 942,
+      "end": 1000,
+      "similarity": 0.06000604993286415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+      "value": "The storeroom bell was replaced in 1993.",
+      "start": 1001,
+      "end": 1041,
+      "similarity": 0.278229115361458,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "95e78ddf-69f6-4433-b92c-713f8311fcf9",
+      "value": "At Relmont Canal Garden, the watergate was rebuilt in 1979.",
+      "start": 26,
+      "end": 85,
+      "similarity": 0.04386335370721237,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "95e78ddf-69f6-4433-b92c-713f8311fcf9",
+      "value": "The tool shelter was repainted in 2008.",
+      "start": 86,
+      "end": 125,
+      "similarity": 0.1622385780235024,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "95e78ddf-69f6-4433-b92c-713f8311fcf9",
+      "value": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+      "start": 127,
+      "end": 218,
+      "similarity": 0.3609679205269479,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "95e78ddf-69f6-4433-b92c-713f8311fcf9",
+      "value": "Its highest recorded daily temperature is 39 degrees Celsius.",
+      "start": 219,
+      "end": 280,
+      "similarity": 0.4114594990259968,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "95e78ddf-69f6-4433-b92c-713f8311fcf9",
+      "value": "Balen records six flow readings per shift.",
+      "start": 282,
+      "end": 324,
+      "similarity": 0.14711645030195697,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "95e78ddf-69f6-4433-b92c-713f8311fcf9",
+      "value": "Aven records three filter tests per shift.",
+      "start": 325,
+      "end": 367,
+      "similarity": 0.12431694678659264,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "95e78ddf-69f6-4433-b92c-713f8311fcf9",
+      "value": "Balen tags two pump valves per month.",
+      "start": 368,
+      "end": 405,
+      "similarity": 0.14713686320357844,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "IC-01.",
+      "start": 28,
+      "end": 34,
+      "similarity": 0.18090426482703323,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "A rental request at Korven Instrument Coop is acknowledged within seven working hours.",
+      "start": 35,
+      "end": 121,
+      "similarity": 0.21344003388093521,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "This acknowledgement does not guarantee an instrument reservation.",
+      "start": 122,
+      "end": 188,
+      "similarity": 0.12845346065604532,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "IC-02.",
+      "start": 189,
+      "end": 195,
+      "similarity": 0.1883443143414715,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.",
+      "start": 196,
+      "end": 315,
+      "similarity": 0.07542978731652564,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "IC-03.",
+      "start": 316,
+      "end": 322,
+      "similarity": 0.17587312868762747,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer.",
+      "start": 323,
+      "end": 432,
+      "similarity": 0.10623196808830283,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "IC-04.",
+      "start": 433,
+      "end": 439,
+      "similarity": 0.11818277253150844,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+      "start": 440,
+      "end": 547,
+      "similarity": -0.0026066898767697377,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "The workshop sign was installed in 1981.",
+      "start": 549,
+      "end": 589,
+      "similarity": 0.21922111312270548,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "Grease the Korven Instrument Coop reed trimmer every 114 operating hours under normal conditions.",
+      "start": 590,
+      "end": 687,
+      "similarity": 0.27956825878726804,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "In a dusty room, grease it every 57 operating hours.",
+      "start": 688,
+      "end": 740,
+      "similarity": 0.18021081590195934,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+      "value": "Inspect the reed trimmer every 19 operating hours in either room.",
+      "start": 741,
+      "end": 806,
+      "similarity": 0.23810072714691632,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Its absolute minimum winter temperature is -2 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ef809f24-fcc5-4f2d-b16d-3b34feead59d:body:307",
+          "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+          "filename": "02_Avrel_Bell_Workshop.txt",
+          "quote": "Its absolute minimum winter temperature is -2 degrees Celsius.",
+          "start": 307,
+          "end": 369,
+          "actualCosine": 0.615829964460928,
+          "excerpt": "83. A plan to close the mould annex in 2016 was rejected; the annex remains open.\n\n## Calibration records and transport\nBW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nBW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is settled.\nBW-03. The calibration packet must contain:\n- a clapper"
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Avrel_Bell_Workshop.txt",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Avrel_Bell_Workshop.txt",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Avrel_Bell_Workshop.txt",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "temperature",
+          "statistic": "minimum"
+        },
+        "actual_cosines": [
+          0.615829964460928
+        ]
+      }
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Its absolute minimum winter temperature is -2 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ef809f24-fcc5-4f2d-b16d-3b34feead59d:body:307",
+          "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+          "filename": "02_Avrel_Bell_Workshop.txt",
+          "quote": "Its absolute minimum winter temperature is -2 degrees Celsius.",
+          "start": 307,
+          "end": 369,
+          "actualCosine": 0.615829964460928,
+          "excerpt": "83. A plan to close the mould annex in 2016 was rejected; the annex remains open.\n\n## Calibration records and transport\nBW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nBW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is settled.\nBW-03. The calibration packet must contain:\n- a clapper"
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Avrel_Bell_Workshop.txt",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Avrel_Bell_Workshop.txt",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Avrel_Bell_Workshop.txt",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "temperature",
+          "statistic": "minimum"
+        },
+        "actual_cosines": [
+          0.615829964460928
+        ]
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ef809f24-fcc5-4f2d-b16d-3b34feead59d:0",
+          "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+          "filename": "02_Avrel_Bell_Workshop.txt",
+          "excerpt": "The Avrel Bell Workshop casting hall moved in 1912. Its restoration was completed in 1983. A plan to close the mould annex in 2016 was rejected; the annex remains open.\n\n## Calibration records and transport\nBW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nBW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is se",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 9.40801646214178,
+          "semanticScore": 0.7348197011806061,
+          "matchedTerms": [
+            "winter",
+            "temperature",
+            "avrel",
+            "bell",
+            "workshop",
+            "alloy",
+            "store"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Avrel_Bell_Workshop.txt",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Avrel_Bell_Workshop.txt",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ef809f24-fcc5-4f2d-b16d-3b34feead59d:170",
+          "documentId": "ef809f24-fcc5-4f2d-b16d-3b34feead59d",
+          "filename": "02_Avrel_Bell_Workshop.txt",
+          "excerpt": "The Avrel Bell Workshop casting hall moved in 1912. Its restoration was completed in 1983. A plan to close the mould annex in 2016 was rejected; the annex remains open.\n\n## Calibration records and transport\nBW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nBW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is se",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 9.653205548744632,
+          "semanticScore": 0.7480424639208926,
+          "matchedTerms": [
+            "winter",
+            "temperature",
+            "avrel",
+            "bell",
+            "workshop",
+            "alloy",
+            "store"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Avrel_Bell_Workshop.txt",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Avrel_Bell_Workshop.txt",
+          "quote": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.08562230318784714,
+    0.05005096271634102,
+    -0.054738737642765045,
+    0.11075014621019363,
+    -0.08453374356031418,
+    0.031960804015398026,
+    0.033548690378665924,
+    -0.006996768992394209,
+    -0.02665865793824196,
+    -0.006024443078786135,
+    -0.007727689575403929,
+    -0.04651208594441414,
+    0.008329248055815697,
+    -0.019065210595726967,
+    -0.06050299480557442,
+    -0.053729135543107986,
+    0.04317431524395943,
+    -0.0863838866353035,
+    0.024034587666392326,
+    -0.037167713046073914,
+    0.008772790431976318,
+    -0.041652243584394455,
+    0.020919987931847572,
+    0.024789854884147644,
+    0.03641752898693085,
+    -0.004332302138209343,
+    -0.06055474281311035,
+    0.08187805861234665,
+    0.017655890434980392,
+    0.04900664463639259,
+    -0.08367729187011719,
+    0.012822129763662815,
+    0.037234384566545486,
+    0.029099317267537117,
+    0.01908772997558117,
+    -0.016004586592316628,
+    0.02455745078623295,
+    -0.04884747043251991,
+    0.0126055758446455,
+    0.004839574918150902,
+    -0.025404876098036766,
+    0.0004863727663177997,
+    0.0002904671709984541,
+    0.013264556415379047,
+    -0.016417602077126503,
+    0.07542403787374496,
+    -0.02833537757396698,
+    0.014402760192751884,
+    0.012565535493195057,
+    -0.03988189250230789,
+    0.034569818526506424,
+    0.076976478099823,
+    -0.006832319777458906,
+    0.026685239747166634,
+    -0.0451999306678772,
+    0.11224465817213058,
+    -0.03511694073677063,
+    -0.06008888781070709,
+    0.02857179380953312,
+    0.028709815815091133,
+    0.07005427777767181,
+    -0.026261508464813232,
+    -0.10465223342180252,
+    0.008719300851225853,
+    0.08791033923625946,
+    -0.013796305283904076,
+    -0.020474914461374283,
+    -0.018314039334654808,
+    -0.007846381515264511,
+    -0.08486777544021606,
+    0.021982301026582718,
+    0.036381565034389496,
+    -0.02267816849052906,
+    -0.03508010506629944,
+    0.03940474987030029,
+    -0.04916965216398239,
+    0.06275896728038788,
+    -0.10705996304750443,
+    -0.01978200487792492,
+    0.016452310606837273,
+    -0.04110076650977135,
+    -0.02337454818189144,
+    0.045927442610263824,
+    0.02938818372786045,
+    -0.03998328372836113,
+    0.0026455996558070183,
+    0.04933389648795128,
+    0.03190193325281143,
+    0.057899583131074905,
+    0.05431566759943962,
+    0.004340239334851503,
+    0.011737360619008541,
+    -0.13708695769309998,
+    -0.016854023560881615,
+    -0.020733170211315155,
+    0.1087682694196701,
+    0.007311767898499966,
+    0.028013775125145912,
+    -0.07126980274915695,
+    0.03937714919447899,
+    -0.022968530654907227,
+    -0.09558357298374176,
+    0.022598737850785255,
+    0.02880682237446308,
+    -0.03823910281062126,
+    0.018390757963061333,
+    0.018684541806578636,
+    0.005458137486129999,
+    -0.052376214414834976,
+    0.00289197382517159,
+    -0.0425819531083107,
+    0.016551412642002106,
+    0.024528345093131065,
+    -0.03842693939805031,
+    0.01348111592233181,
+    -0.043397288769483566,
+    -0.054592229425907135,
+    0.031675465404987335,
+    -0.03815625607967377,
+    0.061098068952560425,
+    0.056120872497558594,
+    -0.007257823832333088,
+    -0.013746104203164577,
+    0.09623297303915024,
+    -0.06257439404726028,
+    0.08474674075841904,
+    -0.03736553713679314,
+    -1.7631651191006278e-33,
+    0.06369373202323914,
+    -0.04025546461343765,
+    0.055462729185819626,
+    -0.07191823422908783,
+    0.04154068976640701,
+    -0.01744292862713337,
+    -0.0053338645957410336,
+    -0.029510702937841415,
+    -0.0064083971083164215,
+    0.04912815988063812,
+    0.039925653487443924,
+    -0.017557833343744278,
+    -0.061201587319374084,
+    -0.0533079132437706,
+    0.08680533617734909,
+    -0.012411749921739101,
+    -0.018076881766319275,
+    0.0501285195350647,
+    -0.010689581744372845,
+    0.004373162053525448,
+    -0.03649057075381279,
+    0.030571868643164635,
+    0.008818229660391808,
+    0.0495588555932045,
+    0.0021659296471625566,
+    -0.01689249277114868,
+    0.058500006794929504,
+    -0.06767835468053818,
+    -0.014094251208007336,
+    0.027585281059145927,
+    0.032760124653577805,
+    0.011180242523550987,
+    0.025470374152064323,
+    0.01039331965148449,
+    0.05209464579820633,
+    -0.02444598078727722,
+    -0.043008510023355484,
+    0.008750298991799355,
+    0.02291962318122387,
+    0.025967136025428772,
+    0.10500767081975937,
+    0.005410941317677498,
+    0.10070682317018509,
+    0.03390955552458763,
+    0.05550606921315193,
+    -0.006143414415419102,
+    0.05134083330631256,
+    0.023787766695022583,
+    0.07503262907266617,
+    0.03149804100394249,
+    -0.004989337176084518,
+    0.02240072377026081,
+    0.023064298555254936,
+    0.012494586408138275,
+    0.05488426238298416,
+    0.06634518504142761,
+    0.07027436047792435,
+    -0.061652980744838715,
+    0.05742654576897621,
+    -0.014998561702668667,
+    -0.07588086277246475,
+    0.06973886489868164,
+    0.07661347091197968,
+    -0.07901538908481598,
+    -0.012017824687063694,
+    0.003380006877705455,
+    -0.05253994092345238,
+    -0.04148099198937416,
+    -0.0644356831908226,
+    -0.03699382767081261,
+    0.006149197928607464,
+    -0.0038894210010766983,
+    0.05605263635516167,
+    -0.03814675658941269,
+    0.004119840916246176,
+    0.06087968870997429,
+    0.07463551312685013,
+    -0.016446074470877647,
+    0.07871294021606445,
+    -0.06263372302055359,
+    -0.0374242328107357,
+    0.054432373493909836,
+    0.01943781226873398,
+    0.038835056126117706,
+    -0.0766121968626976,
+    -0.0925711914896965,
+    -0.039602670818567276,
+    0.037288691848516464,
+    0.015577586367726326,
+    0.02944510243833065,
+    -0.013653496280312538,
+    -0.08881054073572159,
+    -0.033474359661340714,
+    -0.009082423523068428,
+    -0.033345095813274384,
+    1.1252710791769168e-33,
+    0.057340603321790695,
+    -0.046464841812849045,
+    0.00857276376336813,
+    0.07115283608436584,
+    -0.04432493820786476,
+    0.015319479629397392,
+    0.024196309968829155,
+    0.08519722521305084,
+    0.03569177910685539,
+    0.07732594013214111,
+    0.06738480925559998,
+    -0.0008747393148951232,
+    0.05492103099822998,
+    -0.07581643015146255,
+    0.059335026890039444,
+    0.075487419962883,
+    0.03481106832623482,
+    0.05143608897924423,
+    0.03899393230676651,
+    -0.05610108748078346,
+    -0.039402347058057785,
+    0.034626804292201996,
+    -0.07390769571065903,
+    -0.0068817054852843285,
+    -0.0390852615237236,
+    -0.0158182792365551,
+    -0.012107720598578453,
+    0.023389680311083794,
+    -0.06352337449789047,
+    -0.07521126419305801,
+    -0.02152877114713192,
+    -0.05046321079134941,
+    0.00212676334194839,
+    0.09238019585609436,
+    -0.08042914420366287,
+    0.006597750820219517,
+    0.03703644499182701,
+    -0.08520843088626862,
+    -0.04487794265151024,
+    -0.05190031975507736,
+    0.11245129257440567,
+    0.0004520611837506294,
+    0.04853086546063423,
+    0.09394815564155579,
+    0.0259474515914917,
+    -0.03164209797978401,
+    -0.010176911018788815,
+    -0.05593036115169525,
+    0.08585654199123383,
+    -0.020808760076761246,
+    -0.004636798519641161,
+    -0.05793559178709984,
+    -0.0168900229036808,
+    -0.006951884366571903,
+    -0.021512696519494057,
+    -0.04884191229939461,
+    -0.0037267515435814857,
+    0.02565605379641056,
+    -0.0364525131881237,
+    -0.02275906130671501,
+    0.13285234570503235,
+    -0.02753130905330181,
+    0.06435179710388184,
+    0.04462499916553497,
+    0.01418917067348957,
+    0.0005701747140847147,
+    0.040867239236831665,
+    0.03132046386599541,
+    -0.015906531363725662,
+    -0.042376235127449036,
+    0.11539263278245926,
+    0.04090721160173416,
+    0.11198406666517258,
+    -0.14115872979164124,
+    0.060592371970415115,
+    -0.0209047868847847,
+    0.05331772193312645,
+    -0.011516732163727283,
+    -0.007210028823465109,
+    -0.04818592593073845,
+    -0.10983576625585556,
+    0.005224526394158602,
+    -0.10319186747074127,
+    0.08622760325670242,
+    -0.021862180903553963,
+    -0.05392768234014511,
+    0.045374754816293716,
+    0.0404614582657814,
+    -0.02532391995191574,
+    0.04680164158344269,
+    -0.08132479339838028,
+    -0.0014913984341546893,
+    0.04748727008700371,
+    -0.03817252442240715,
+    -0.06009388715028763,
+    -1.6279692260923184e-8,
+    -0.016475707292556763,
+    0.05707396939396858,
+    0.006209816318005323,
+    -0.04401677846908569,
+    0.06590023636817932,
+    0.04861027002334595,
+    0.06292499601840973,
+    -0.003113496582955122,
+    -0.024747133255004883,
+    0.09383811801671982,
+    0.0897633358836174,
+    -0.0066763716749846935,
+    0.018565092235803604,
+    -0.010750798508524895,
+    -0.027938751503825188,
+    -0.06345222145318985,
+    -0.04542842507362366,
+    0.01930415630340576,
+    -0.05727735161781311,
+    -0.14304400980472565,
+    0.04624583572149277,
+    0.052734021097421646,
+    0.08927527070045471,
+    -0.05217021703720093,
+    -0.024995947256684303,
+    -0.0335518904030323,
+    0.02372247725725174,
+    0.0451473742723465,
+    0.03890853747725487,
+    0.03782147169113159,
+    -0.13759662210941315,
+    -0.018163209781050682,
+    0.041789423674345016,
+    -0.0483282208442688,
+    -0.045903097838163376,
+    -0.051691338419914246,
+    -0.047555793076753616,
+    0.11762022227048874,
+    -0.020238040015101433,
+    -0.04601599648594856,
+    -0.02691291831433773,
+    -0.053360749036073685,
+    -0.06100228801369667,
+    0.009274231269955635,
+    0.0011520414846017957,
+    0.010318676941096783,
+    -0.0772811621427536,
+    0.02897234633564949,
+    0.045097894966602325,
+    0.016730135306715965,
+    0.02953668311238289,
+    0.02354947105050087,
+    -0.01762300170958042,
+    0.05885332077741623,
+    -0.07844053953886032,
+    0.0063584428280591965,
+    -0.03320677578449249,
+    -0.07192408293485641,
+    -0.0396445207297802,
+    -0.040559072047472,
+    -0.04748183861374855,
+    -0.09593412280082703,
+    -0.11627186834812164,
+    0.06037170812487602
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Avrel_Bell_Workshop.txt",
+        "start": 0,
+        "content": "The Avrel Bell Workshop casting hall moved in 1912. Its restoration was completed in 1983. A plan to close the mould annex in 2016 was rejected; the annex remains open.\n\n## Calibration records and transport\nBW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nBW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is settled.\nBW-03. The calibration packet must contain:\n- a clapper inventory\n- an alloy certificate\n- a tuning chart\n- an inspection log\n- a return tag\nBW-04. The tower clock was"
+      },
+      {
+        "filename": "02_Avrel_Bell_Workshop.txt",
+        "start": 660,
+        "content": "an alloy certificate\n- a tuning chart\n- an inspection log\n- a return tag\nBW-04. The tower clock was replaced in 2007.\n\nA cabinet was repainted in 1947. Grease the Avrel Bell Workshop striker every 360 cycles under normal conditions. In a humid chamber, grease it every 180 cycles. Inspect the striker every 90 cycles regardless of chamber. The storeroom bell was replaced in 1993."
+      },
+      {
+        "filename": "03_Relmont_Canal_Garden.txt",
+        "start": 0,
+        "content": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Avrel_Bell_Workshop.txt",
+        "start": 170,
+        "content": "## Calibration records and transport\nBW-01. The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius. Its absolute minimum winter temperature is -2 degrees Celsius. The highest monthly mean temperature is 26 degrees Celsius in July.\nBW-02. Signed calibration records are retained for 4 years. An unresolved material claim extends retention of affected records until the claim is settled.\nBW-03. The calibration packet must contain:\n- a clapper inventory\n- an alloy certificate\n- a tuning chart\n- an inspection log\n- a return tag\nBW-04. The tower clock was replaced in 2007.\n\nA cabinet was repainted in 1947. Grease the Avrel Bell Workshop striker every 360 cycles under normal conditions. In a humid chamber, grease it every"
+      },
+      {
+        "filename": "02_Avrel_Bell_Workshop.txt",
+        "start": 0,
+        "content": "The Avrel Bell Workshop casting hall moved in 1912. Its restoration was completed in 1983. A plan to close the mould annex in 2016 was rejected; the annex remains open."
+      },
+      {
+        "filename": "03_Relmont_Canal_Garden.txt",
+        "start": 0,
+        "content": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month."
+      }
+    ]
+  }
+}

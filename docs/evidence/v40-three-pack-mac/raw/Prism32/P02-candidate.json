@@ -1,0 +1,1264 @@
+{
+  "candidate_identity": "coverage-v40-dispatch-grammar",
+  "id": "P02",
+  "question": "What year was the second projector lens renewal at Liraven Planetarium completed?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What year was the second projector lens renewal at Liraven Planetarium completed?",
+    "expected_display": "What year was the second projector lens renewal at Liraven Planetarium completed?",
+    "rendered_question": "What year was the second projector lens renewal at Liraven Planetarium completed?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+    "sources": [
+      {
+        "filename": "01_Liraven_Planetarium.txt",
+        "excerpt": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\n## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door",
+        "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat year was the second projector lens renewal at Liraven Planetarium completed?\n\nSearched all files: 01_Liraven_Planetarium.txt · 02_Osvik_Puppet_Theatre.txt · 03_Tavren_Ferry_Workshop.txt · 04_Yalara_Grain_Exchange.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\nSOURCE EVIDENCE\n[1]\n01_Liraven_Planetarium.txt\n\nText line 1 (normalized extraction)\n\nLiraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015. ## Dome dispatch and visitors D-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open. D-02. Eris checks five projector filters per morning. Nalo checks three door\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "cb34af83-0df8-4c46-91c4-b76af7166c2b:0",
+        "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+        "filename": "01_Liraven_Planetarium.txt",
+        "excerpt": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\n## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door",
+        "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+        "score": 0.0476,
+        "lexicalScore": 10.765552719463246,
+        "semanticScore": 0.7022177603919677,
+        "matchedTerms": [
+          "second",
+          "projector",
+          "lens",
+          "renewal",
+          "liraven",
+          "planetarium",
+          "completed"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "cb34af83-0df8-4c46-91c4-b76af7166c2b:0",
+        "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+        "filename": "01_Liraven_Planetarium.txt",
+        "excerpt": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\n## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door",
+        "quote": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+        "score": 0.0476,
+        "lexicalScore": 10.765552719463246,
+        "semanticScore": 0.7022177603919677,
+        "matchedTerms": [
+          "second",
+          "projector",
+          "lens",
+          "renewal",
+          "liraven",
+          "planetarium",
+          "completed"
+        ],
+        "start": 0,
+        "end": 165
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "cb34af83-0df8-4c46-91c4-b76af7166c2b:0",
+        "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+        "filename": "01_Liraven_Planetarium.txt",
+        "excerpt": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\n## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door",
+        "quote": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+        "score": 0.0476,
+        "lexicalScore": 15.902727689851234,
+        "semanticScore": 0.9037420707878218,
+        "matchedTerms": [
+          "second",
+          "projector",
+          "lens",
+          "renewal",
+          "liraven",
+          "planetarium",
+          "completed"
+        ],
+        "start": 0,
+        "end": 165
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Liraven_Planetarium.txt",
+      "start": 53,
+      "content": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "semanticScore": 0.766623085375501,
+      "lexicalScore": 17.24849276724662
+    },
+    {
+      "filename": "01_Liraven_Planetarium.txt",
+      "start": 0,
+      "content": "Liraven Planetarium began public dome shows in 1967.",
+      "semanticScore": 0.633737872341114,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Liraven_Planetarium.txt",
+      "start": 375,
+      "content": "Eris checks five projector filters per morning.",
+      "semanticScore": 0.4322322535052783,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Liraven Planetarium began public dome shows in 1967.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.633737872341114,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "start": 53,
+      "end": 165,
+      "similarity": 0.766623085375501,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-01.",
+      "start": 197,
+      "end": 202,
+      "similarity": 0.15796413979322105,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Dispatch requests cleared before 16:20 leave on the current service day.",
+      "start": 203,
+      "end": 275,
+      "similarity": 0.10619468050916829,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.",
+      "start": 276,
+      "end": 368,
+      "similarity": 0.21767870232595812,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-02.",
+      "start": 369,
+      "end": 374,
+      "similarity": 0.19469580075436155,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Eris checks five projector filters per morning.",
+      "start": 375,
+      "end": 422,
+      "similarity": 0.4322322535052783,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Nalo checks three door hinges per morning.",
+      "start": 423,
+      "end": 465,
+      "similarity": 0.06047741263013354,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Eris labels two transport cases per week.",
+      "start": 466,
+      "end": 507,
+      "similarity": 0.11287742964090672,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-03.",
+      "start": 508,
+      "end": 513,
+      "similarity": 0.19296485953599804,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "start": 514,
+      "end": 599,
+      "similarity": 0.14994833772411306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Individual winter extremes are not recorded.",
+      "start": 600,
+      "end": 644,
+      "similarity": 0.03710648863690691,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-04.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.2129164308791838,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Keep movement slips for 19 months.",
+      "start": 651,
+      "end": 685,
+      "similarity": 0.10285850893005566,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "While an export-review hold is open, retain the affected slips until the hold is released.",
+      "start": 686,
+      "end": 776,
+      "similarity": 0.005108430112832624,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-05.",
+      "start": 777,
+      "end": 782,
+      "similarity": 0.15273499862969755,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Acknowledge dome-booking requests within two business days.",
+      "start": 783,
+      "end": 842,
+      "similarity": 0.22921915134592694,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "An acknowledgement is not a guarantee that seats remain available.",
+      "start": 843,
+      "end": 909,
+      "similarity": 0.00834306669340378,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.18733935761221643,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "Its restoration was completed in 1986.",
+      "start": 55,
+      "end": 93,
+      "similarity": 0.3120012819229904,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+      "start": 94,
+      "end": 170,
+      "similarity": 0.1723924580608226,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.10628986055474408,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "start": 204,
+      "end": 296,
+      "similarity": 0.07441804366643107,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 297,
+      "end": 357,
+      "similarity": 0.0756166426895558,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+      "start": 358,
+      "end": 430,
+      "similarity": -0.000902344731281041,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-02.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.1364539362714502,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "Signed touring records are retained for 5 years.",
+      "start": 437,
+      "end": 485,
+      "similarity": 0.15264186720509065,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "An unresolved ownership claim extends retention of the affected records until the claim is settled.",
+      "start": 486,
+      "end": 585,
+      "similarity": 0.03346941676493636,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-03.",
+      "start": 586,
+      "end": 591,
+      "similarity": 0.1364173591273437,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The touring packet must contain:",
+      "start": 592,
+      "end": 624,
+      "similarity": 0.07696155047372936,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-04.",
+      "start": 705,
+      "end": 710,
+      "similarity": 0.1411258849413407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The stage clock was replaced in 2023.",
+      "start": 711,
+      "end": 748,
+      "similarity": 0.29075591439677484,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "start": 28,
+      "end": 90,
+      "similarity": 0.19641964196142375,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The ramp shelter was repainted in 2012.",
+      "start": 91,
+      "end": 130,
+      "similarity": 0.12938780677368147,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "start": 132,
+      "end": 226,
+      "similarity": 0.0824585922275717,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Its highest recorded daily temperature is 38 degrees Celsius.",
+      "start": 227,
+      "end": 288,
+      "similarity": 0.07930633056149738,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Varen records seven cable-tension readings per shift.",
+      "start": 290,
+      "end": 343,
+      "similarity": 0.12742862600294336,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Tesi records five ramp tests per shift.",
+      "start": 344,
+      "end": 383,
+      "similarity": 0.04056362378260748,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Varen tags two lifting hooks per month.",
+      "start": 384,
+      "end": 423,
+      "similarity": 0.12167520435147405,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.",
+      "start": 425,
+      "end": 532,
+      "similarity": 0.018939592510046222,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "In a salt-spray shelter, lubricate it every 45 operating hours.",
+      "start": 533,
+      "end": 596,
+      "similarity": 0.07464097513840286,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Inspect the loading winch every 15 operating hours regardless of shelter.",
+      "start": 597,
+      "end": 670,
+      "similarity": 0.07661120488890506,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The office cabinet was painted in 2021.",
+      "start": 671,
+      "end": 710,
+      "similarity": 0.22423834401869816,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-01.",
+      "start": 26,
+      "end": 32,
+      "similarity": 0.15411475987948275,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "A loading request at Yalara Grain Exchange is acknowledged within six working hours.",
+      "start": 33,
+      "end": 117,
+      "similarity": 0.1501406390184409,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "This acknowledgement does not guarantee a loading slot.",
+      "start": 118,
+      "end": 173,
+      "similarity": -0.019594565839356645,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-02.",
+      "start": 174,
+      "end": 180,
+      "similarity": 0.17596257216753083,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+      "start": 181,
+      "end": 299,
+      "similarity": -0.012059687929221996,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-03.",
+      "start": 300,
+      "end": 306,
+      "similarity": 0.16691220541721463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.",
+      "start": 307,
+      "end": 413,
+      "similarity": 0.04590526347614618,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-04.",
+      "start": 414,
+      "end": 420,
+      "similarity": 0.16677717636700842,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.",
+      "start": 421,
+      "end": 534,
+      "similarity": 0.11643313912799588,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "The office bell was installed in 1980.",
+      "start": 536,
+      "end": 574,
+      "similarity": 0.11852594043972856,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+      "start": 575,
+      "end": 665,
+      "similarity": 0.09029584928687803,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "In a dust-heavy bay, grease it every 66 service hours.",
+      "start": 666,
+      "end": 720,
+      "similarity": 0.07086491891846775,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Inspect the conveyor every 33 service hours in either bay.",
+      "start": 721,
+      "end": 779,
+      "similarity": 0.21036769883207473,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "cb34af83-0df8-4c46-91c4-b76af7166c2b:0",
+          "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+          "filename": "01_Liraven_Planetarium.txt",
+          "excerpt": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\n## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door",
+          "quote": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "score": 0.0476,
+          "lexicalScore": 10.765552719463246,
+          "semanticScore": 0.7022177603919677,
+          "matchedTerms": [
+            "second",
+            "projector",
+            "lens",
+            "renewal",
+            "liraven",
+            "planetarium",
+            "completed"
+          ],
+          "start": 0,
+          "end": 165
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "cb34af83-0df8-4c46-91c4-b76af7166c2b:0",
+          "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+          "filename": "01_Liraven_Planetarium.txt",
+          "excerpt": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\n## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door",
+          "quote": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "score": 0.0476,
+          "lexicalScore": 15.902727689851234,
+          "semanticScore": 0.9037420707878218,
+          "matchedTerms": [
+            "second",
+            "projector",
+            "lens",
+            "renewal",
+            "liraven",
+            "planetarium",
+            "completed"
+          ],
+          "start": 0,
+          "end": 165
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "cb34af83-0df8-4c46-91c4-b76af7166c2b:0",
+          "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+          "filename": "01_Liraven_Planetarium.txt",
+          "excerpt": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\n## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door",
+          "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "score": 0.0476,
+          "lexicalScore": 10.765552719463246,
+          "semanticScore": 0.7022177603919677,
+          "matchedTerms": [
+            "second",
+            "projector",
+            "lens",
+            "renewal",
+            "liraven",
+            "planetarium",
+            "completed"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "cb34af83-0df8-4c46-91c4-b76af7166c2b:0",
+          "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+          "filename": "01_Liraven_Planetarium.txt",
+          "excerpt": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\n## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door",
+          "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "score": 0.0476,
+          "lexicalScore": 15.902727689851234,
+          "semanticScore": 0.9037420707878218,
+          "matchedTerms": [
+            "second",
+            "projector",
+            "lens",
+            "renewal",
+            "liraven",
+            "planetarium",
+            "completed"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.029196882620453835,
+    0.009170504286885262,
+    0.04082410782575607,
+    -0.018286684527993202,
+    -0.007296211086213589,
+    -0.08141200244426727,
+    -0.019078582525253296,
+    0.001132805598899722,
+    -0.06713506579399109,
+    0.003226101864129305,
+    0.04062327370047569,
+    -0.012836543843150139,
+    -0.012208078056573868,
+    -0.0195794515311718,
+    -0.0527440682053566,
+    0.047785840928554535,
+    -0.04748835042119026,
+    -0.033321745693683624,
+    0.06855083256959915,
+    0.004743312019854784,
+    0.04405410960316658,
+    -0.00099947489798069,
+    -0.001573262270539999,
+    0.0457242988049984,
+    0.06315481662750244,
+    0.039930664002895355,
+    -0.05491846427321434,
+    -0.04874379187822342,
+    0.028024688363075256,
+    0.03976929187774658,
+    -0.017398329451680183,
+    0.061883360147476196,
+    -0.03855951875448227,
+    -0.008127447217702866,
+    0.09232552349567413,
+    0.019697044044733047,
+    -0.012374849990010262,
+    0.003919815178960562,
+    -0.07860404998064041,
+    0.02794008143246174,
+    -0.03856479376554489,
+    -0.06260459870100021,
+    -0.050329823046922684,
+    -0.02920163981616497,
+    -0.07157512754201889,
+    -0.017740320414304733,
+    0.05546468868851662,
+    -0.029373327270150185,
+    0.0484095998108387,
+    0.04425399377942085,
+    0.01536205317825079,
+    -0.013919626362621784,
+    -0.00427404185757041,
+    -0.10647566616535187,
+    0.03658453747630119,
+    0.08229298144578934,
+    -0.08388040959835052,
+    -0.014572856947779655,
+    0.06870096921920776,
+    -0.007316270377486944,
+    -0.007671533152461052,
+    0.007561947219073772,
+    -0.09610044956207275,
+    0.0342879593372345,
+    0.00850145984441042,
+    0.0013210762990638614,
+    -0.012550454586744308,
+    -0.10051459074020386,
+    0.021343683823943138,
+    -0.054818302392959595,
+    -0.0015963054029271007,
+    -0.009610234759747982,
+    0.05009493976831436,
+    -0.09794370830059052,
+    -0.00578636210411787,
+    0.07000936567783356,
+    0.05270746350288391,
+    -0.027156783267855644,
+    0.001064944313839078,
+    -0.004752499982714653,
+    0.060102954506874084,
+    -0.035133350640535355,
+    0.02819978818297386,
+    0.06156788021326065,
+    -0.008238838985562325,
+    -0.023224055767059326,
+    -0.09440383315086365,
+    0.056024838238954544,
+    0.021623732522130013,
+    -0.03593236580491066,
+    0.03514464572072029,
+    -0.045721422880887985,
+    -0.11279909312725067,
+    0.012166833505034447,
+    -0.03720373287796974,
+    -0.04678158089518547,
+    -0.06957321614027023,
+    0.010728299617767334,
+    0.06430565565824509,
+    0.06945818662643433,
+    0.023599689826369286,
+    -0.053925372660160065,
+    -0.0189386997371912,
+    -0.028254378587007523,
+    -0.09376873075962067,
+    -0.0035570641048252583,
+    0.010878665372729301,
+    0.06856689602136612,
+    -0.045007579028606415,
+    0.018955755978822708,
+    0.0501958392560482,
+    0.04263726994395256,
+    0.006941001862287521,
+    -0.01726381480693817,
+    0.008890538476407528,
+    0.07765095680952072,
+    0.012726979330182076,
+    0.03928851708769798,
+    0.02744355984032154,
+    -0.03384564444422722,
+    0.04482129216194153,
+    0.027219640091061592,
+    0.04080311954021454,
+    0.02989066019654274,
+    -0.032830577343702316,
+    -0.022222822532057762,
+    0.02643665485084057,
+    -1.022101062412114e-33,
+    0.04924368858337402,
+    0.0214404109865427,
+    0.0395192988216877,
+    0.0369291752576828,
+    -0.016118129715323448,
+    -0.009305678308010101,
+    0.01540046464651823,
+    0.09624215960502625,
+    -0.06427043676376343,
+    -0.10727636516094208,
+    0.028535079210996628,
+    -0.006871917750686407,
+    0.006638397928327322,
+    -0.08002351969480515,
+    0.05199531838297844,
+    -0.04098386690020561,
+    0.06753899157047272,
+    0.09049404412508011,
+    -0.04038358852267265,
+    0.006523184012621641,
+    -0.061222903430461884,
+    -0.035614628344774246,
+    0.010648740455508232,
+    0.03427959978580475,
+    0.0708560198545456,
+    0.1059156209230423,
+    0.05418133735656738,
+    -0.03360600769519806,
+    -0.024198483675718307,
+    0.02058710716664791,
+    0.07214586436748505,
+    0.011757916770875454,
+    0.050252337008714676,
+    0.04800405725836754,
+    -0.031263548880815506,
+    0.06865037232637405,
+    -0.003744356567040086,
+    -0.022138765081763268,
+    -0.02898954600095749,
+    -0.02552909404039383,
+    0.01587451808154583,
+    0.12237394601106644,
+    0.03467286005616188,
+    0.0022629371378570795,
+    0.06011124700307846,
+    0.0056335581466555595,
+    -0.02624526247382164,
+    0.06276711821556091,
+    0.05022590979933739,
+    0.020866388455033302,
+    0.043960973620414734,
+    0.0034560689236968756,
+    -0.16199596226215363,
+    -0.05564619228243828,
+    0.049832701683044434,
+    0.045548342168331146,
+    -0.09009622037410736,
+    -0.04591407999396324,
+    -0.004850143566727638,
+    -0.05503138154745102,
+    0.08337651193141937,
+    0.051127251237630844,
+    -0.056215859949588776,
+    0.04277736321091652,
+    0.05107168108224869,
+    0.057877346873283386,
+    -0.0240317452698946,
+    0.0016714544035494328,
+    -0.06380316615104675,
+    -0.022511102259159088,
+    -0.045554548501968384,
+    -0.040671456605196,
+    0.02039634808897972,
+    -0.03585655242204666,
+    0.124704509973526,
+    0.02363542653620243,
+    -0.07423381507396698,
+    0.01366567611694336,
+    -0.03730469569563866,
+    0.100704126060009,
+    -0.0893324539065361,
+    -0.003413669066503644,
+    0.03923916816711426,
+    -0.013231688179075718,
+    -0.058303602039813995,
+    -0.023317841812968254,
+    -0.00906779058277607,
+    0.08664551377296448,
+    -0.03087608329951763,
+    -0.03293866291642189,
+    0.056562282145023346,
+    -0.05392789840698242,
+    -0.05718269199132919,
+    -0.0006838603876531124,
+    -0.09962531924247742,
+    -6.201657484033878e-34,
+    0.011775296181440353,
+    -0.039548344910144806,
+    -0.008857442066073418,
+    -0.0051773483864963055,
+    0.041915010660886765,
+    -0.0012524458579719067,
+    -0.059205759316682816,
+    0.04595768451690674,
+    -0.020691247656941414,
+    -0.04521428793668747,
+    0.05736826732754707,
+    0.034486062824726105,
+    -0.03876624256372452,
+    -0.03654896467924118,
+    -0.03034055419266224,
+    0.033048614859580994,
+    0.008005005307495594,
+    -0.005077304318547249,
+    -0.07789043337106705,
+    0.002352821407839656,
+    0.09049759060144424,
+    0.07435721158981323,
+    -0.007531756069511175,
+    -0.09936711937189102,
+    -0.04802753031253815,
+    -0.032973214983940125,
+    0.06591948121786118,
+    -0.03868640586733818,
+    0.014520685188472271,
+    -0.045514438301324844,
+    -0.07590834051370621,
+    -0.013843877241015434,
+    -0.036006297916173935,
+    0.06815892457962036,
+    0.06880930066108704,
+    0.06763079017400742,
+    -0.005046559497714043,
+    -0.09971374273300171,
+    -0.05244049057364464,
+    0.018601220101118088,
+    -0.061550214886665344,
+    0.04457739368081093,
+    0.05578053370118141,
+    0.0226388331502676,
+    0.01164188515394926,
+    -0.10216712206602097,
+    0.03654434531927109,
+    0.018664492294192314,
+    0.04667533561587334,
+    -0.04704853147268295,
+    -0.0989660695195198,
+    -0.0008801266667433083,
+    0.017342636361718178,
+    -0.05329614505171776,
+    0.001456968835555017,
+    -0.015438015572726727,
+    -0.036857377737760544,
+    0.049338024109601974,
+    0.016218887642025948,
+    -0.03165312483906746,
+    0.04568500071763992,
+    -0.03542747348546982,
+    -0.04433372989296913,
+    0.00045158350258134305,
+    -0.0008283197530545294,
+    0.02527204528450966,
+    0.010512557812035084,
+    0.09707476198673248,
+    -0.04775706306099892,
+    0.035104844719171524,
+    0.11230979859828949,
+    0.008459820412099361,
+    -0.018062418326735497,
+    0.05138935521245003,
+    -0.02050061896443367,
+    -0.04334084317088127,
+    0.059024516493082047,
+    0.015270237810909748,
+    0.046921439468860626,
+    0.010390187613666058,
+    -0.054189033806324005,
+    -0.010224956087768078,
+    -0.004709158558398485,
+    0.10243543237447739,
+    0.06357033550739288,
+    0.003920149989426136,
+    0.03972581401467323,
+    -0.0757860466837883,
+    -0.02925056591629982,
+    0.0020805320236831903,
+    -0.0005823467508889735,
+    -0.04172644391655922,
+    -0.002542292233556509,
+    -0.018736813217401505,
+    0.010107739828526974,
+    -1.9461724676261838e-8,
+    0.03388545662164688,
+    0.12886331975460052,
+    -0.10152336955070496,
+    -0.051805973052978516,
+    0.04171929508447647,
+    -0.09741201996803284,
+    0.03379329293966293,
+    0.11539099365472794,
+    -0.0761924460530281,
+    -0.039104145020246506,
+    0.03327661752700806,
+    0.04048717021942139,
+    0.07667521387338638,
+    -0.0015124052297323942,
+    0.03055552765727043,
+    -0.03158866986632347,
+    0.06141577661037445,
+    0.017177607864141464,
+    -0.022263608872890472,
+    0.025204962119460106,
+    0.018825428560376167,
+    -0.025851117447018623,
+    0.07989326864480972,
+    -0.04330668970942497,
+    -0.11562298983335495,
+    0.050334930419921875,
+    -0.002625386230647564,
+    0.00024869374465197325,
+    0.017016073688864708,
+    -0.005597698502242565,
+    0.04363298788666725,
+    0.037075210362672806,
+    -0.055010922253131866,
+    -0.06065364181995392,
+    -0.0300998967140913,
+    -0.03341053053736687,
+    -0.12537391483783722,
+    0.002173656364902854,
+    0.062181439250707626,
+    0.04043455421924591,
+    0.0016536283073946834,
+    0.015400797128677368,
+    0.05533728748559952,
+    0.09951404482126236,
+    0.0331810787320137,
+    0.05399929732084274,
+    0.03163202852010727,
+    -0.1121162474155426,
+    -0.05465909093618393,
+    -0.047412704676389694,
+    -0.014071058481931686,
+    0.03605407476425171,
+    -0.039913225919008255,
+    -0.027060871943831444,
+    -0.04883386194705963,
+    -0.0364316888153553,
+    0.15029475092887878,
+    -0.05334560200572014,
+    -0.08225227147340775,
+    -0.0008625767659395933,
+    0.039039988070726395,
+    0.01950950175523758,
+    -0.12360606342554092,
+    0.040292296558618546
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Liraven_Planetarium.txt",
+        "start": 0,
+        "content": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\n## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door hinges per morning. Eris labels two transport cases per week.\nD-03. Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius. Individual winter extremes are not recorded.\nD-04. Keep movement slips for 19 months. While an export-review hold is open, retain the affected slips until the"
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Liraven_Planetarium.txt",
+        "start": 0,
+        "content": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015."
+      }
+    ]
+  }
+}

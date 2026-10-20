@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — First v40 three-pack exposed regression PASS
+
+- Published protocol `894bc74` before coding and freeze `da10734` before model questions. Both v40 variants pass Vela32, Prism32 and Lumen32 32/32 each, repairing L04 with the full literal conservation-hold exception. Paired v39 retains L04 FAIL; all first failures remain unchanged.
+- Capture 96 distinct exposed cases once: 84 actual MiniLM Hybrid / 12 lexical Comparisons, Qwen off. Zero candidate false accepts/refusals, historical PASS losses or question retries. Review changes no native grades; independently verify 5,836 body cosines and 20 facet-anchor entries; seal 763 artifacts.
+- 630 unit tests and strict 28-case Keyword evaluation pass. Phase 1 continues with Hearth32: 572 verified cases remain untested with v40 and 103 originals unavailable. Live r44 unchanged; no full-gate/fresh-confirmation/adoption claim. [Results](docs/V40_THREE_PACK_MAC_RESULTS.md).
+
 ## 2026-10-20 — Isolated v40 grammar and three-pack preparation
 
 - Protocol `894bc74` precedes a new bounded v40 contract supporting positive `should`, `moves to`, `following` day and active-hold wording. Preserve whole-question refusal, literal support and evidence alignment; live r44 and frozen v39 remain unchanged.

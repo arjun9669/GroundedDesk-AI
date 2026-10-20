@@ -1,0 +1,233 @@
+{
+  "candidate_identity": "coverage-v40-dispatch-grammar",
+  "id": "V31",
+  "question": "Compare acknowledgement deadlines and their limits for Serevin Seed Library seed-reservation requests and Korven Instrument Coop rental requests.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] Acknowledge seed-reservation requests within three business days.\n\n[2] A rental request at Korven Instrument Coop is acknowledged within seven working hours.",
+    "sources": [
+      {
+        "filename": "01_Serevin_Seed_Library.txt",
+        "quote": "Acknowledge seed-reservation requests within three business days."
+      },
+      {
+        "filename": "04_Korven_Instrument_Coop.txt",
+        "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours."
+      }
+    ],
+    "displayed": "Shared vocabulary: acknowledgement, completed, guarantee, lending, months, release, reservation, unless, within. Shared terms do not establish factual agreement.\n\n[1] 01_Serevin_Seed_Library.txt\n\nAcknowledge seed-reservation requests within three business days.\n\nText line 8 (normalized extraction)\n\nLocate in library ↗\n[2] 04_Korven_Instrument_Coop.txt\n\nA rental request at Korven Instrument Coop is acknowledged within seven working hours.\n\nText line 2 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Serevin Seed Library seed-reservation requests and Korven Instrument Coop rental requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+        "filename": "01_Serevin_Seed_Library.txt",
+        "excerpt": "Acknowledge seed-reservation requests within three business days.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge seed-reservation requests within three business days."
+      },
+      {
+        "citation": 2,
+        "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+        "filename": "04_Korven_Instrument_Coop.txt",
+        "excerpt": "A rental request at Korven Instrument Coop is acknowledged within seven working hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours."
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "completed",
+      "guarantee",
+      "lending",
+      "months",
+      "release",
+      "reservation",
+      "unless",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge seed-reservation requests within three business days.\n\n[2] A rental request at Korven Instrument Coop is acknowledged within seven working hours."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Serevin Seed Library seed-reservation requests and Korven Instrument Coop rental requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+        "filename": "01_Serevin_Seed_Library.txt",
+        "excerpt": "Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.",
+        "start": 776,
+        "end": 908
+      },
+      {
+        "citation": 2,
+        "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+        "filename": "04_Korven_Instrument_Coop.txt",
+        "excerpt": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+        "warning": false,
+        "supported": true,
+        "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+        "start": 35,
+        "end": 188
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "completed",
+      "guarantee",
+      "lending",
+      "months",
+      "release",
+      "reservation",
+      "unless",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.\n\n[2] A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Serevin Seed Library seed-reservation requests and Korven Instrument Coop rental requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+        "filename": "01_Serevin_Seed_Library.txt",
+        "excerpt": "Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.",
+        "start": 776,
+        "end": 908
+      },
+      {
+        "citation": 2,
+        "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+        "filename": "04_Korven_Instrument_Coop.txt",
+        "excerpt": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+        "warning": false,
+        "supported": true,
+        "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+        "start": 35,
+        "end": 188
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "completed",
+      "guarantee",
+      "lending",
+      "months",
+      "release",
+      "reservation",
+      "unless",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.\n\n[2] A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare acknowledgement deadlines and their limits for Serevin Seed Library seed-reservation requests and Korven Instrument Coop rental requests.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+          "filename": "01_Serevin_Seed_Library.txt",
+          "excerpt": "Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.",
+          "warning": false,
+          "supported": true,
+          "quote": "Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.",
+          "start": 776,
+          "end": 908
+        },
+        {
+          "citation": 2,
+          "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+          "filename": "04_Korven_Instrument_Coop.txt",
+          "excerpt": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "warning": false,
+          "supported": true,
+          "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "start": 35,
+          "end": 188
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "completed",
+        "guarantee",
+        "lending",
+        "months",
+        "release",
+        "reservation",
+        "unless",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.\n\n[2] A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare acknowledgement deadlines and their limits for Serevin Seed Library seed-reservation requests and Korven Instrument Coop rental requests.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "71e2fac4-838e-4f02-9a94-9c7304684c6f",
+          "filename": "01_Serevin_Seed_Library.txt",
+          "excerpt": "Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.",
+          "warning": false,
+          "supported": true,
+          "quote": "Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.",
+          "start": 776,
+          "end": 908
+        },
+        {
+          "citation": 2,
+          "documentId": "19961691-434d-4052-9c7d-908bca6849b7",
+          "filename": "04_Korven_Instrument_Coop.txt",
+          "excerpt": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "warning": false,
+          "supported": true,
+          "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "start": 35,
+          "end": 188
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "completed",
+        "guarantee",
+        "lending",
+        "months",
+        "release",
+        "reservation",
+        "unless",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] Acknowledge seed-reservation requests within three business days. An acknowledgement is not a guarantee that seeds remain available.\n\n[2] A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v40 and paired v39 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

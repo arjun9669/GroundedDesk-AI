@@ -1,0 +1,1225 @@
+{
+  "candidate_identity": "coverage-v40-dispatch-grammar",
+  "id": "P27",
+  "question": "What is the absolute minimum winter temperature in the Liraven Planetarium dome store?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What is the absolute minimum winter temperature in the Liraven Planetarium dome store?",
+    "expected_display": "What is the absolute minimum winter temperature in the Liraven Planetarium dome store?",
+    "rendered_question": "What is the absolute minimum winter temperature in the Liraven Planetarium dome store?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+    "sources": [
+      {
+        "filename": "01_Liraven_Planetarium.txt",
+        "excerpt": "departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door hinges per morning. Eris labels two transport cases per week.\nD-03. Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius. Individual winter extremes are not recorded.\nD-04. Keep movement slips for 19 months. While an export-review hold is open, retain the affected slips until the hold is released.\nD-05. Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarante",
+        "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat is the absolute minimum winter temperature in the Liraven Planetarium dome store?\n\nSearched all files: 01_Liraven_Planetarium.txt · 02_Osvik_Puppet_Theatre.txt · 03_Tavren_Ferry_Workshop.txt · 04_Yalara_Grain_Exchange.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.\n\nSOURCE EVIDENCE\n[1]\n01_Liraven_Planetarium.txt\n\nText line 6 (normalized extraction)\n\ndeparture is the next service day, unless an optical-safety hold is open. D-02. Eris checks five projector filters per morning. Nalo checks three door hinges per morning. Eris labels two transport cases per week. D-03. Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius. Individual winter extremes are not recorded. D-04. Keep movement slips for 19 months. While an export-review hold is open, retain the affected slips until the hold is released. D-05. Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarante\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "cb34af83-0df8-4c46-91c4-b76af7166c2b:0",
+        "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+        "filename": "01_Liraven_Planetarium.txt",
+        "excerpt": "departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door hinges per morning. Eris labels two transport cases per week.\nD-03. Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius. Individual winter extremes are not recorded.\nD-04. Keep movement slips for 19 months. While an export-review hold is open, retain the affected slips until the hold is released.\nD-05. Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarante",
+        "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+        "score": 0.0466,
+        "lexicalScore": 6.233681244347977,
+        "semanticScore": 0.6156465079241006,
+        "matchedTerms": [
+          "winter",
+          "liraven",
+          "planetarium",
+          "dome",
+          "store"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "claim_support_diagnostics": {
+      "refused": true,
+      "reason": "Requested entity/statistic not supported in every displayed citation"
+    },
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "No complete literal evidence for recognized request frame"
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Liraven_Planetarium.txt",
+        "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "claim_support_diagnostics": {
+      "refused": true,
+      "reason": "Requested entity/statistic not supported in every displayed citation"
+    },
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "No complete literal evidence for recognized request frame"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Osvik_Puppet_Theatre.txt",
+      "start": 297,
+      "content": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "semanticScore": 0.6384809940537232,
+      "lexicalScore": 12.479527381811785
+    },
+    {
+      "filename": "01_Liraven_Planetarium.txt",
+      "start": 514,
+      "content": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "semanticScore": 0.6785157936612844,
+      "lexicalScore": 7.256945271630373
+    },
+    {
+      "filename": "01_Liraven_Planetarium.txt",
+      "start": 0,
+      "content": "Liraven Planetarium began public dome shows in 1967.",
+      "semanticScore": 0.4998792015113529,
+      "lexicalScore": 9.700672113144462
+    },
+    {
+      "filename": "02_Osvik_Puppet_Theatre.txt",
+      "start": 204,
+      "content": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "semanticScore": 0.4669988172040409,
+      "lexicalScore": 6.1909596344620175
+    },
+    {
+      "filename": "03_Tavren_Ferry_Workshop.txt",
+      "start": 227,
+      "content": "Its highest recorded daily temperature is 38 degrees Celsius.",
+      "semanticScore": 0.42681111364602853,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Liraven Planetarium began public dome shows in 1967.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.4998792015113529,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "start": 53,
+      "end": 165,
+      "similarity": 0.1347658829094572,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-01.",
+      "start": 197,
+      "end": 202,
+      "similarity": 0.10339490527806615,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Dispatch requests cleared before 16:20 leave on the current service day.",
+      "start": 203,
+      "end": 275,
+      "similarity": 0.09925559226167106,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.",
+      "start": 276,
+      "end": 368,
+      "similarity": 0.15729975715522923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-02.",
+      "start": 369,
+      "end": 374,
+      "similarity": 0.08337805153457353,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Eris checks five projector filters per morning.",
+      "start": 375,
+      "end": 422,
+      "similarity": 0.20635448916317525,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Nalo checks three door hinges per morning.",
+      "start": 423,
+      "end": 465,
+      "similarity": 0.13399422966756258,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Eris labels two transport cases per week.",
+      "start": 466,
+      "end": 507,
+      "similarity": 0.09440825060642773,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-03.",
+      "start": 508,
+      "end": 513,
+      "similarity": 0.09111808331605095,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "start": 514,
+      "end": 599,
+      "similarity": 0.6785157936612844,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Individual winter extremes are not recorded.",
+      "start": 600,
+      "end": 644,
+      "similarity": 0.40157181452805985,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-04.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.08544603663892035,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Keep movement slips for 19 months.",
+      "start": 651,
+      "end": 685,
+      "similarity": 0.0862517288759103,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "While an export-review hold is open, retain the affected slips until the hold is released.",
+      "start": 686,
+      "end": 776,
+      "similarity": -0.00865282594511919,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-05.",
+      "start": 777,
+      "end": 782,
+      "similarity": 0.06263019478096896,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Acknowledge dome-booking requests within two business days.",
+      "start": 783,
+      "end": 842,
+      "similarity": 0.269209977255907,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "An acknowledgement is not a guarantee that seats remain available.",
+      "start": 843,
+      "end": 909,
+      "similarity": 0.08660437291800088,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.19413141339312123,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "Its restoration was completed in 1986.",
+      "start": 55,
+      "end": 93,
+      "similarity": 0.029343509463814667,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+      "start": 94,
+      "end": 170,
+      "similarity": 0.09059660916592982,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.11222476962566792,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "start": 204,
+      "end": 296,
+      "similarity": 0.4669988172040409,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 297,
+      "end": 357,
+      "similarity": 0.6384809940537232,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+      "start": 358,
+      "end": 430,
+      "similarity": 0.2794275136408674,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-02.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.08839374497416541,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "Signed touring records are retained for 5 years.",
+      "start": 437,
+      "end": 485,
+      "similarity": 0.0893789319759082,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "An unresolved ownership claim extends retention of the affected records until the claim is settled.",
+      "start": 486,
+      "end": 585,
+      "similarity": -0.043913195531079655,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-03.",
+      "start": 586,
+      "end": 591,
+      "similarity": 0.10493844366824519,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The touring packet must contain:",
+      "start": 592,
+      "end": 624,
+      "similarity": 0.11396501725812923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-04.",
+      "start": 705,
+      "end": 710,
+      "similarity": 0.08111360713328078,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The stage clock was replaced in 2023.",
+      "start": 711,
+      "end": 748,
+      "similarity": 0.17551849936375444,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "start": 28,
+      "end": 90,
+      "similarity": 0.0454743047065949,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The ramp shelter was repainted in 2012.",
+      "start": 91,
+      "end": 130,
+      "similarity": 0.14884811320028357,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "start": 132,
+      "end": 226,
+      "similarity": 0.36504580320719615,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Its highest recorded daily temperature is 38 degrees Celsius.",
+      "start": 227,
+      "end": 288,
+      "similarity": 0.42681111364602853,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Varen records seven cable-tension readings per shift.",
+      "start": 290,
+      "end": 343,
+      "similarity": 0.12323837776132422,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Tesi records five ramp tests per shift.",
+      "start": 344,
+      "end": 383,
+      "similarity": 0.11710959576518686,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Varen tags two lifting hooks per month.",
+      "start": 384,
+      "end": 423,
+      "similarity": 0.10299087577324624,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.",
+      "start": 425,
+      "end": 532,
+      "similarity": 0.07360235320102385,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "In a salt-spray shelter, lubricate it every 45 operating hours.",
+      "start": 533,
+      "end": 596,
+      "similarity": 0.1464399750348004,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Inspect the loading winch every 15 operating hours regardless of shelter.",
+      "start": 597,
+      "end": 670,
+      "similarity": 0.16548119038443906,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The office cabinet was painted in 2021.",
+      "start": 671,
+      "end": 710,
+      "similarity": 0.12451219063483675,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-01.",
+      "start": 26,
+      "end": 32,
+      "similarity": 0.19622764124541928,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "A loading request at Yalara Grain Exchange is acknowledged within six working hours.",
+      "start": 33,
+      "end": 117,
+      "similarity": 0.15283266979457008,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "This acknowledgement does not guarantee a loading slot.",
+      "start": 118,
+      "end": 173,
+      "similarity": 0.041339681900569074,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-02.",
+      "start": 174,
+      "end": 180,
+      "similarity": 0.188387493493662,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+      "start": 181,
+      "end": 299,
+      "similarity": 0.08143967370769661,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-03.",
+      "start": 300,
+      "end": 306,
+      "similarity": 0.1892650819050658,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.",
+      "start": 307,
+      "end": 413,
+      "similarity": 0.07969170618344364,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-04.",
+      "start": 414,
+      "end": 420,
+      "similarity": 0.16937036705414393,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.",
+      "start": 421,
+      "end": 534,
+      "similarity": 0.07505838305837616,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "The office bell was installed in 1980.",
+      "start": 536,
+      "end": 574,
+      "similarity": 0.13911296100293208,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+      "start": 575,
+      "end": 665,
+      "similarity": 0.15324620835058747,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "In a dust-heavy bay, grease it every 66 service hours.",
+      "start": 666,
+      "end": 720,
+      "similarity": 0.21427844926955913,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Inspect the conveyor every 33 service hours in either bay.",
+      "start": 721,
+      "end": 779,
+      "similarity": 0.2073259187305154,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "claim_support_diagnostics": {
+        "refused": true,
+        "reason": "Requested entity/statistic not supported in every displayed citation"
+      },
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "claim_support_diagnostics": {
+        "refused": true,
+        "reason": "Requested entity/statistic not supported in every displayed citation"
+      },
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "cb34af83-0df8-4c46-91c4-b76af7166c2b:0",
+          "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+          "filename": "01_Liraven_Planetarium.txt",
+          "excerpt": "departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door hinges per morning. Eris labels two transport cases per week.\nD-03. Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius. Individual winter extremes are not recorded.\nD-04. Keep movement slips for 19 months. While an export-review hold is open, retain the affected slips until the hold is released.\nD-05. Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarante",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "score": 0.0466,
+          "lexicalScore": 6.233681244347977,
+          "semanticScore": 0.6156465079241006,
+          "matchedTerms": [
+            "winter",
+            "liraven",
+            "planetarium",
+            "dome",
+            "store"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "cb34af83-0df8-4c46-91c4-b76af7166c2b:167",
+          "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+          "filename": "01_Liraven_Planetarium.txt",
+          "excerpt": "departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door hinges per morning. Eris labels two transport cases per week.\nD-03. Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius. Individual winter extremes are not recorded.\nD-04. Keep movement slips for 19 months. While an export-review hold is open, retain the affected slips until the hold is released.\nD-05. Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarante",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "score": 0.0446,
+          "lexicalScore": 3.836966631022161,
+          "semanticScore": 0.46559172975781715,
+          "matchedTerms": [
+            "winter",
+            "dome",
+            "store"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Liraven_Planetarium.txt",
+          "quote": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.048374615609645844,
+    0.05951673910021782,
+    -0.012784628197550774,
+    0.08239942789077759,
+    -0.04660579562187195,
+    0.0013227040180936456,
+    -0.026935411617159843,
+    0.013143018819391727,
+    -0.005058920010924339,
+    -0.0033104009926319122,
+    -0.028773685917258263,
+    -0.10662105679512024,
+    0.02553677372634411,
+    -0.0405433215200901,
+    -0.018861835822463036,
+    -0.07085413485765457,
+    0.04557293653488159,
+    -0.06525631994009018,
+    0.03267800435423851,
+    -0.007104677613824606,
+    0.08516427129507065,
+    -0.05640525743365288,
+    0.0005846642307005823,
+    0.020762484520673752,
+    0.0029412205331027508,
+    -0.02577262558043003,
+    -0.09965486824512482,
+    0.01638711243867874,
+    0.03280116617679596,
+    0.03684734180569649,
+    -0.07845708727836609,
+    0.026021165773272514,
+    0.03237341344356537,
+    0.0028282501734793186,
+    0.04288239777088165,
+    0.035112302750349045,
+    0.014319544658064842,
+    -0.04778396710753441,
+    -0.056867167353630066,
+    0.0323520228266716,
+    0.012446612119674683,
+    -0.004517283756285906,
+    0.012537495233118534,
+    0.018525827676057816,
+    -0.082062728703022,
+    0.08133495599031448,
+    -0.01999732479453087,
+    0.016440458595752716,
+    -0.003401416353881359,
+    0.048316992819309235,
+    0.06714307516813278,
+    0.06752896308898926,
+    0.013466461561620235,
+    0.04091506451368332,
+    -0.07445324212312698,
+    0.08472160249948502,
+    -0.07131505757570267,
+    -0.04898885637521744,
+    0.06801577657461166,
+    0.03515017032623291,
+    0.03194970637559891,
+    -0.004397741984575987,
+    -0.12149792909622192,
+    0.0174704659730196,
+    0.08208440244197845,
+    -0.02148880623281002,
+    -0.03721039742231369,
+    -0.05154164135456085,
+    -0.0031941609922796488,
+    -0.05881819501519203,
+    0.037146493792533875,
+    0.034654632210731506,
+    0.010048294439911842,
+    -0.10135487467050552,
+    -0.00004973595787305385,
+    0.015137971378862858,
+    0.038249421864748,
+    -0.07511437684297562,
+    -0.059666529297828674,
+    -0.028263190761208534,
+    0.02690778486430645,
+    0.023778345435857773,
+    0.006579906679689884,
+    0.07613447308540344,
+    -0.03774090111255646,
+    -0.015100021846592426,
+    0.03747737035155296,
+    0.10812273621559143,
+    0.07530549168586731,
+    0.05039091035723686,
+    0.012839073315262794,
+    0.057617366313934326,
+    -0.1467413753271103,
+    -0.05000215768814087,
+    -0.05058889091014862,
+    0.10373946279287338,
+    0.0175841823220253,
+    0.020853813737630844,
+    -0.05402970686554909,
+    0.017511582002043724,
+    0.012049900367856026,
+    -0.07845152914524078,
+    0.042640939354896545,
+    0.04469777271151543,
+    -0.04581867903470993,
+    -0.05080307647585869,
+    0.0026173919904977083,
+    0.010110345669090748,
+    -0.043450139462947845,
+    0.03203572332859039,
+    -0.026992181316018105,
+    -0.010259231552481651,
+    0.05042888969182968,
+    -0.0458449088037014,
+    0.010288751684129238,
+    0.009040298871695995,
+    -0.010361650958657265,
+    -0.024019191041588783,
+    0.0017420724034309387,
+    0.019727366045117378,
+    0.027914712205529213,
+    0.049775131046772,
+    0.04776329547166824,
+    0.10190614312887192,
+    -0.052462756633758545,
+    0.05822223052382469,
+    -0.07040350139141083,
+    -9.449122258653685e-34,
+    0.07700341939926147,
+    0.00022401702881325036,
+    0.061200499534606934,
+    -0.026562867686152458,
+    0.024255147203803062,
+    -0.043636877089738846,
+    -0.04064114764332771,
+    0.007698765955865383,
+    -0.04416908696293831,
+    -0.0015751029131934047,
+    0.03751993924379349,
+    -0.017164593562483788,
+    -0.04997452348470688,
+    -0.08518947660923004,
+    0.09999121725559235,
+    0.056662093847990036,
+    0.05057539790868759,
+    0.04952194169163704,
+    -0.04483313858509064,
+    0.013967083767056465,
+    -0.09583175182342529,
+    -0.03408714756369591,
+    0.005726918578147888,
+    0.02057490684092045,
+    0.023483125492930412,
+    0.06913649290800095,
+    0.062196120619773865,
+    -0.04119909554719925,
+    -0.024195779114961624,
+    -0.008549914695322514,
+    0.07309373468160629,
+    -0.06495275348424911,
+    0.04781064763665199,
+    0.04123880714178085,
+    0.06572097539901733,
+    0.04064220190048218,
+    0.003956231288611889,
+    0.03463459759950638,
+    -0.00402488186955452,
+    -0.060713741928339005,
+    -0.000580238236580044,
+    0.02112828753888607,
+    0.13029395043849945,
+    0.011320823803544044,
+    0.053821709007024765,
+    0.0230767410248518,
+    0.04670665040612221,
+    -0.022191472351551056,
+    0.030096551403403282,
+    0.047519803047180176,
+    0.03275975584983826,
+    0.0619935542345047,
+    -0.09017360210418701,
+    -0.04611855000257492,
+    0.022774113342165947,
+    0.0723620280623436,
+    -0.011943221092224121,
+    -0.053293079137802124,
+    0.006361939944326878,
+    -0.02426624670624733,
+    -0.021414924412965775,
+    0.04308205097913742,
+    0.006019913125783205,
+    -0.04794492572546005,
+    0.04973062127828598,
+    0.03282321244478226,
+    -0.11598458886146545,
+    -0.033309776335954666,
+    -0.0510769858956337,
+    -0.06291937828063965,
+    -0.0028255931101739407,
+    -0.03210354596376419,
+    0.11369764804840088,
+    -0.024519329890608788,
+    0.05448487028479576,
+    0.04971141368150711,
+    0.05888567119836807,
+    -0.020578142255544662,
+    0.03061172179877758,
+    0.004743129480630159,
+    -0.07637172192335129,
+    0.007297761272639036,
+    0.043549105525016785,
+    -0.005431929137557745,
+    -0.07967597991228104,
+    -0.1005188375711441,
+    0.004605098627507687,
+    0.1336102932691574,
+    -0.027257496491074562,
+    0.006483116652816534,
+    0.04034851863980293,
+    -0.10116332769393921,
+    -0.029479382559657097,
+    0.012074476107954979,
+    -0.10090658813714981,
+    3.197618992781394e-34,
+    0.017545845359563828,
+    -0.09436271339654922,
+    0.016351472586393356,
+    0.029796969145536423,
+    -0.006914643105119467,
+    0.07040966302156448,
+    -0.024644222110509872,
+    0.09599989652633667,
+    0.013492145575582981,
+    0.021983204409480095,
+    0.011186198331415653,
+    0.016598813235759735,
+    0.03685283288359642,
+    -0.06314532458782196,
+    0.034504394978284836,
+    0.055913448333740234,
+    0.04266582429409027,
+    0.010974667966365814,
+    0.020060790702700615,
+    0.013919147662818432,
+    0.001248286454938352,
+    0.054100360721349716,
+    -0.09329763054847717,
+    0.08986099809408188,
+    -0.12077188491821289,
+    -0.029052481055259705,
+    0.05831706151366234,
+    0.005521435756236315,
+    -0.08534036576747894,
+    -0.07305070012807846,
+    -0.09190243482589722,
+    -0.01252654381096363,
+    -0.05467364192008972,
+    0.08790114521980286,
+    -0.03189947456121445,
+    -0.018406810238957405,
+    -0.006486479192972183,
+    -0.04630730301141739,
+    -0.057852163910865784,
+    0.024438979104161263,
+    0.030540090054273605,
+    0.03198518604040146,
+    0.022330472245812416,
+    0.02422388456761837,
+    0.10665637254714966,
+    -0.06821463257074356,
+    0.019898368045687675,
+    -0.05159696191549301,
+    0.046773672103881836,
+    -0.015450465492904186,
+    -0.05038992688059807,
+    -0.09694515913724899,
+    -0.07570812106132507,
+    -0.04357874393463135,
+    -0.003110945224761963,
+    -0.029509874060750008,
+    -0.0710269883275032,
+    0.09438872337341309,
+    0.04506301134824753,
+    -0.10670843720436096,
+    0.058705348521471024,
+    -0.014347631484270096,
+    -0.01677260547876358,
+    0.07154621183872223,
+    -0.03116249479353428,
+    0.019038667902350426,
+    -0.016265815123915672,
+    0.04127155616879463,
+    -0.027950052171945572,
+    0.044118184596300125,
+    0.09323841333389282,
+    0.025944571942090988,
+    0.06719790399074554,
+    -0.0698566809296608,
+    0.0018323580734431744,
+    -0.03460026532411575,
+    0.1284227818250656,
+    -0.004372979514300823,
+    0.0032205739989876747,
+    -0.019312839955091476,
+    -0.08056710660457611,
+    0.03806472569704056,
+    -0.026777535676956177,
+    0.019138922914862633,
+    0.06580481678247452,
+    -0.05593922361731529,
+    0.0895240530371666,
+    -0.008565678261220455,
+    -0.030189864337444305,
+    0.007278439588844776,
+    -0.07204438000917435,
+    0.0438573956489563,
+    0.013784290291368961,
+    -0.02807464636862278,
+    -0.028791632503271103,
+    -1.7562193477260735e-8,
+    0.007743143942207098,
+    0.08801458030939102,
+    -0.04767407476902008,
+    -0.016825972124934196,
+    0.033262986689805984,
+    -0.05674648657441139,
+    0.11403101682662964,
+    -0.0061241681687533855,
+    -0.06228208169341087,
+    0.058328453451395035,
+    0.07875107228755951,
+    0.00921691581606865,
+    0.031192312017083168,
+    -0.011811777018010616,
+    -0.013803534209728241,
+    -0.021334465593099594,
+    0.022982006892561913,
+    0.029221657663583755,
+    -0.038446057587862015,
+    -0.04033517837524414,
+    0.011946565471589565,
+    0.039987124502658844,
+    0.06657286733388901,
+    -0.022300835698843002,
+    -0.019778328016400337,
+    0.030335405841469765,
+    0.07423583418130875,
+    0.021594632416963577,
+    0.054316163063049316,
+    0.04080132767558098,
+    -0.08290150761604309,
+    -0.009317154064774513,
+    0.0002172233653254807,
+    -0.06450305134057999,
+    -0.05790956690907478,
+    0.01955043524503708,
+    -0.0744876116514206,
+    0.0707668885588646,
+    -0.017362017184495926,
+    -0.002949389861896634,
+    0.012098884209990501,
+    -0.046301160007715225,
+    -0.055221300572156906,
+    0.0005777784972451627,
+    -0.032684557139873505,
+    0.04423188790678978,
+    -0.012901962734758854,
+    -0.005807010922580957,
+    0.057668060064315796,
+    0.024215569719672203,
+    0.023529602214694023,
+    0.019961189478635788,
+    -0.03618444502353668,
+    -0.02640659548342228,
+    -0.05363358184695244,
+    -0.05140326917171478,
+    0.038173504173755646,
+    -0.014163154177367687,
+    -0.07581409811973572,
+    -0.056956931948661804,
+    0.0034038869198411703,
+    -0.038730278611183167,
+    -0.10207382589578629,
+    0.038884393870830536
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Liraven_Planetarium.txt",
+        "start": 0,
+        "content": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.\n\n## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door hinges per morning. Eris labels two transport cases per week.\nD-03. Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius. Individual winter extremes are not recorded.\nD-04. Keep movement slips for 19 months. While an export-review hold is open, retain the affected slips until the"
+      },
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "start": 0,
+        "content": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04. The stage clock was replaced in 2023."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "start": 172,
+        "content": "## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04. The stage clock was replaced in 2023."
+      },
+      {
+        "filename": "01_Liraven_Planetarium.txt",
+        "start": 167,
+        "content": "## Dome dispatch and visitors\nD-01. Dispatch requests cleared before 16:20 leave on the current service day. At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.\nD-02. Eris checks five projector filters per morning. Nalo checks three door hinges per morning. Eris labels two transport cases per week.\nD-03. Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius. Individual winter extremes are not recorded.\nD-04. Keep movement slips for 19 months. While an export-review hold is open, retain the affected slips until the hold is released.\nD-05. Acknowledge dome-booking requests within two business days. An acknowledgement is not a guarantee that seats remain available."
+      },
+      {
+        "filename": "01_Liraven_Planetarium.txt",
+        "start": 0,
+        "content": "Liraven Planetarium began public dome shows in 1967. The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015."
+      }
+    ]
+  }
+}

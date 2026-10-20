@@ -1,0 +1,1328 @@
+{
+  "candidate_identity": "coverage-v40-dispatch-grammar",
+  "id": "P06",
+  "question": "When was the Osvik Puppet Theatre rehearsal room restoration completed?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When was the Osvik Puppet Theatre rehearsal room restoration completed?",
+    "expected_display": "When was the Osvik Puppet Theatre rehearsal room restoration completed?",
+    "rendered_question": "When was the Osvik Puppet Theatre rehearsal room restoration completed?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The Osvik Puppet Theatre rehearsal room moved in 1939.",
+    "sources": [
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperatu",
+        "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen was the Osvik Puppet Theatre rehearsal room restoration completed?\n\nSearched all files: 01_Liraven_Planetarium.txt · 02_Osvik_Puppet_Theatre.txt · 03_Tavren_Ferry_Workshop.txt · 04_Yalara_Grain_Exchange.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The Osvik Puppet Theatre rehearsal room moved in 1939.\n\nSOURCE EVIDENCE\n[1]\n02_Osvik_Puppet_Theatre.txt\n\nText line 1 (normalized extraction)\n\nThe Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open. ## Prop store and touring T-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperatu\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The Osvik Puppet Theatre rehearsal room moved in 1939.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "76dffda1-0767-4858-bbf6-978703cb63af:0",
+        "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperatu",
+        "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+        "score": 0.0476,
+        "lexicalScore": 11.204315015336265,
+        "semanticScore": 0.657459133278131,
+        "matchedTerms": [
+          "osvik",
+          "puppet",
+          "theatre",
+          "rehearsal",
+          "room",
+          "restoration",
+          "completed"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "76dffda1-0767-4858-bbf6-978703cb63af:0",
+        "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed tourin",
+        "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+        "score": 0.0476,
+        "lexicalScore": 11.204315015336265,
+        "semanticScore": 0.657459133278131,
+        "matchedTerms": [
+          "osvik",
+          "puppet",
+          "theatre",
+          "rehearsal",
+          "room",
+          "restoration",
+          "completed"
+        ],
+        "start": 0,
+        "end": 170
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.8429193716983547,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "76dffda1-0767-4858-bbf6-978703cb63af:0",
+        "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed tourin",
+        "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+        "score": 0.0476,
+        "lexicalScore": 12.80318258523227,
+        "semanticScore": 0.8828803126163185,
+        "matchedTerms": [
+          "osvik",
+          "puppet",
+          "theatre",
+          "rehearsal",
+          "room",
+          "restoration",
+          "completed"
+        ],
+        "start": 0,
+        "end": 170
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.8429193716983547,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Osvik_Puppet_Theatre.txt",
+        "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Osvik_Puppet_Theatre.txt",
+      "start": 0,
+      "content": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+      "semanticScore": 0.8429193716983547,
+      "lexicalScore": 16.051833449430582
+    },
+    {
+      "filename": "02_Osvik_Puppet_Theatre.txt",
+      "start": 204,
+      "content": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "semanticScore": 0.590798969053699,
+      "lexicalScore": 7.255456286264382
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Liraven Planetarium began public dome shows in 1967.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.2604966907607692,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "The first projector lens renewal was completed in 1992; the second projector lens renewal was completed in 2015.",
+      "start": 53,
+      "end": 165,
+      "similarity": 0.1981463835320257,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-01.",
+      "start": 197,
+      "end": 202,
+      "similarity": 0.11579935650469603,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Dispatch requests cleared before 16:20 leave on the current service day.",
+      "start": 203,
+      "end": 275,
+      "similarity": 0.11760506569092607,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "At 16:20 or later, departure is the next service day, unless an optical-safety hold is open.",
+      "start": 276,
+      "end": 368,
+      "similarity": 0.09954841432405419,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-02.",
+      "start": 369,
+      "end": 374,
+      "similarity": 0.114885341042339,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Eris checks five projector filters per morning.",
+      "start": 375,
+      "end": 422,
+      "similarity": 0.1052050954097964,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Nalo checks three door hinges per morning.",
+      "start": 423,
+      "end": 465,
+      "similarity": 0.13640735104373963,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Eris labels two transport cases per week.",
+      "start": 466,
+      "end": 507,
+      "similarity": 0.01065897963925991,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-03.",
+      "start": 508,
+      "end": 513,
+      "similarity": 0.10981107646957335,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Winter monthly mean temperatures in the dome store range from 5 to 7 degrees Celsius.",
+      "start": 514,
+      "end": 599,
+      "similarity": 0.11805294364081761,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Individual winter extremes are not recorded.",
+      "start": 600,
+      "end": 644,
+      "similarity": 0.00822783796296897,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-04.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.10253989099036771,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Keep movement slips for 19 months.",
+      "start": 651,
+      "end": 685,
+      "similarity": 0.09025749316583502,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "While an export-review hold is open, retain the affected slips until the hold is released.",
+      "start": 686,
+      "end": 776,
+      "similarity": 0.08849283577960619,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "D-05.",
+      "start": 777,
+      "end": 782,
+      "similarity": 0.06542759902081217,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "Acknowledge dome-booking requests within two business days.",
+      "start": 783,
+      "end": 842,
+      "similarity": 0.247853411130211,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cb34af83-0df8-4c46-91c4-b76af7166c2b",
+      "value": "An acknowledgement is not a guarantee that seats remain available.",
+      "start": 843,
+      "end": 909,
+      "similarity": 0.11558179751898048,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.8429193716983547,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "Its restoration was completed in 1986.",
+      "start": 55,
+      "end": 93,
+      "similarity": 0.29219660155790783,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+      "start": 94,
+      "end": 170,
+      "similarity": 0.21052371831733868,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-01.",
+      "start": 198,
+      "end": 203,
+      "similarity": 0.08064199736199155,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius.",
+      "start": 204,
+      "end": 296,
+      "similarity": 0.590798969053699,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 297,
+      "end": 357,
+      "similarity": 0.019480818343853595,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The highest monthly mean temperature is 27 degrees Celsius in September.",
+      "start": 358,
+      "end": 430,
+      "similarity": -0.0307668372345066,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-02.",
+      "start": 431,
+      "end": 436,
+      "similarity": 0.09699197081770361,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "Signed touring records are retained for 5 years.",
+      "start": 437,
+      "end": 485,
+      "similarity": 0.17701974581686944,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "An unresolved ownership claim extends retention of the affected records until the claim is settled.",
+      "start": 486,
+      "end": 585,
+      "similarity": 0.09474964372888363,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-03.",
+      "start": 586,
+      "end": 591,
+      "similarity": 0.08009483152130181,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The touring packet must contain:",
+      "start": 592,
+      "end": 624,
+      "similarity": 0.048732524909170044,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "T-04.",
+      "start": 705,
+      "end": 710,
+      "similarity": 0.06455678291617649,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+      "value": "The stage clock was replaced in 2023.",
+      "start": 711,
+      "end": 748,
+      "similarity": 0.27703412009447215,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "At Tavren Ferry Workshop, the cable tower was rebuilt in 1994.",
+      "start": 28,
+      "end": 90,
+      "similarity": 0.17261234528702527,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The ramp shelter was repainted in 2012.",
+      "start": 91,
+      "end": 130,
+      "similarity": 0.2562352965555321,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The highest monthly mean temperature at Tavren Ferry Workshop is 24 degrees Celsius in August.",
+      "start": 132,
+      "end": 226,
+      "similarity": 0.08764002858290526,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Its highest recorded daily temperature is 38 degrees Celsius.",
+      "start": 227,
+      "end": 288,
+      "similarity": 0.0008967044217530048,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Varen records seven cable-tension readings per shift.",
+      "start": 290,
+      "end": 343,
+      "similarity": 0.00765210483703182,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Tesi records five ramp tests per shift.",
+      "start": 344,
+      "end": 383,
+      "similarity": 0.03667059575038463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Varen tags two lifting hooks per month.",
+      "start": 384,
+      "end": 423,
+      "similarity": 0.09026173127522062,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The Tavren Ferry Workshop loading winch needs lubrication every 90 operating hours under normal conditions.",
+      "start": 425,
+      "end": 532,
+      "similarity": 0.14609433019309237,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "In a salt-spray shelter, lubricate it every 45 operating hours.",
+      "start": 533,
+      "end": 596,
+      "similarity": 0.14615137276874735,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "Inspect the loading winch every 15 operating hours regardless of shelter.",
+      "start": 597,
+      "end": 670,
+      "similarity": 0.141416701926745,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8d838e1d-075a-4410-bc91-e4281855c618",
+      "value": "The office cabinet was painted in 2021.",
+      "start": 671,
+      "end": 710,
+      "similarity": 0.23208630668275038,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-01.",
+      "start": 26,
+      "end": 32,
+      "similarity": 0.07983091094488756,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "A loading request at Yalara Grain Exchange is acknowledged within six working hours.",
+      "start": 33,
+      "end": 117,
+      "similarity": 0.09748339852180846,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "This acknowledgement does not guarantee a loading slot.",
+      "start": 118,
+      "end": 173,
+      "similarity": -0.02186737414137892,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-02.",
+      "start": 174,
+      "end": 180,
+      "similarity": 0.0776893269321324,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "The dispatch packet includes a weighing slip, batch register, moisture checklist, loading permit, and release receipt.",
+      "start": 181,
+      "end": 299,
+      "similarity": 0.005175613176939101,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-03.",
+      "start": 300,
+      "end": 306,
+      "similarity": 0.05711071770084492,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Purchases exceeding 7400 credits require written approval from the Budget Steward and Exchange Supervisor.",
+      "start": 307,
+      "end": 413,
+      "similarity": 0.017715423018126838,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "GX-04.",
+      "start": 414,
+      "end": 420,
+      "similarity": 0.0662296804932066,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Completed loading records are kept for 8 months, unless an unresolved weighing dispute requires longer retention.",
+      "start": 421,
+      "end": 534,
+      "similarity": 0.07103590091545307,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "The office bell was installed in 1980.",
+      "start": 536,
+      "end": 574,
+      "similarity": 0.1390148171322812,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Grease the Yalara Grain Exchange conveyor every 132 service hours under normal conditions.",
+      "start": 575,
+      "end": 665,
+      "similarity": 0.10594250289559176,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "In a dust-heavy bay, grease it every 66 service hours.",
+      "start": 666,
+      "end": 720,
+      "similarity": 0.1253687218992221,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c17b7e23-4b48-46a9-9182-a9c6d255faa8",
+      "value": "Inspect the conveyor every 33 service hours in either bay.",
+      "start": 721,
+      "end": 779,
+      "similarity": 0.1433076597869957,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "76dffda1-0767-4858-bbf6-978703cb63af:0",
+          "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+          "filename": "02_Osvik_Puppet_Theatre.txt",
+          "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed tourin",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+          "score": 0.0476,
+          "lexicalScore": 11.204315015336265,
+          "semanticScore": 0.657459133278131,
+          "matchedTerms": [
+            "osvik",
+            "puppet",
+            "theatre",
+            "rehearsal",
+            "room",
+            "restoration",
+            "completed"
+          ],
+          "start": 0,
+          "end": 170
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8429193716983547,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "76dffda1-0767-4858-bbf6-978703cb63af:0",
+          "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+          "filename": "02_Osvik_Puppet_Theatre.txt",
+          "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed tourin",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+          "score": 0.0476,
+          "lexicalScore": 12.80318258523227,
+          "semanticScore": 0.8828803126163185,
+          "matchedTerms": [
+            "osvik",
+            "puppet",
+            "theatre",
+            "rehearsal",
+            "room",
+            "restoration",
+            "completed"
+          ],
+          "start": 0,
+          "end": 170
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8429193716983547,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Osvik Puppet Theatre rehearsal room moved in 1939.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "76dffda1-0767-4858-bbf6-978703cb63af:0",
+          "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+          "filename": "02_Osvik_Puppet_Theatre.txt",
+          "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperatu",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+          "score": 0.0476,
+          "lexicalScore": 11.204315015336265,
+          "semanticScore": 0.657459133278131,
+          "matchedTerms": [
+            "osvik",
+            "puppet",
+            "theatre",
+            "rehearsal",
+            "room",
+            "restoration",
+            "completed"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8429193716983547,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Osvik Puppet Theatre rehearsal room moved in 1939.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "76dffda1-0767-4858-bbf6-978703cb63af:0",
+          "documentId": "76dffda1-0767-4858-bbf6-978703cb63af",
+          "filename": "02_Osvik_Puppet_Theatre.txt",
+          "excerpt": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperatu",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+          "score": 0.0476,
+          "lexicalScore": 12.80318258523227,
+          "semanticScore": 0.8828803126163185,
+          "matchedTerms": [
+            "osvik",
+            "puppet",
+            "theatre",
+            "rehearsal",
+            "room",
+            "restoration",
+            "completed"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8429193716983547,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Osvik_Puppet_Theatre.txt",
+          "quote": "The Osvik Puppet Theatre rehearsal room moved in 1939.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.04254467040300369,
+    0.03823881223797798,
+    0.050731904804706573,
+    -0.04730912297964096,
+    -0.07529158890247345,
+    0.04144078865647316,
+    -0.0840650349855423,
+    -0.07847845554351807,
+    -0.07576899230480194,
+    0.04170841723680496,
+    -0.01922631449997425,
+    0.1207900419831276,
+    0.009909754619002342,
+    0.005335821770131588,
+    -0.0006980463513173163,
+    -0.03845810145139694,
+    0.056112080812454224,
+    0.07751159369945526,
+    0.05356139317154884,
+    0.047074008733034134,
+    -0.02081987075507641,
+    -0.015849772840738297,
+    0.06045093014836311,
+    -0.04054528847336769,
+    0.10327447950839996,
+    0.013649152591824532,
+    0.000833033409435302,
+    -0.0023874237667769194,
+    0.06357760727405548,
+    -0.003625648096203804,
+    -0.02201860584318638,
+    0.009822794236242771,
+    0.061315711587667465,
+    -0.0604482963681221,
+    0.08564550429582596,
+    0.09877122193574905,
+    0.01400664635002613,
+    0.0041909245774149895,
+    0.004634868819266558,
+    0.007853365503251553,
+    -0.018867893144488335,
+    0.04042692855000496,
+    -0.0877542793750763,
+    0.03624948486685753,
+    -0.04790147393941879,
+    0.023062217980623245,
+    -0.020240355283021927,
+    -0.09407456964254379,
+    -0.0016546084079891443,
+    0.07708796858787537,
+    -0.013643575832247734,
+    -0.05190708488225937,
+    0.10160034894943237,
+    -0.09045198559761047,
+    -0.030033377930521965,
+    -0.0456719771027565,
+    0.02532237581908703,
+    0.008205082267522812,
+    0.011410625651478767,
+    0.00009021432924782857,
+    0.027266938239336014,
+    -0.06058352068066597,
+    0.004874745383858681,
+    0.009025092236697674,
+    -0.006525522563606501,
+    -0.025004403665661812,
+    -0.02193635329604149,
+    -0.02598205953836441,
+    0.04657291993498802,
+    -0.012572523206472397,
+    0.032094746828079224,
+    -0.038606543093919754,
+    0.1532571017742157,
+    -0.110775426030159,
+    -0.012387322261929512,
+    -0.03766890615224838,
+    0.05353830009698868,
+    -0.09389667958021164,
+    -0.02896794304251671,
+    0.04203743860125542,
+    0.038653235882520676,
+    -0.04641874507069588,
+    -0.02398507483303547,
+    -0.023395417258143425,
+    -0.015174061059951782,
+    -0.021769244223833084,
+    -0.03551415726542473,
+    -0.017242714762687683,
+    -0.06446108222007751,
+    0.08298365771770477,
+    -0.0345911830663681,
+    0.02234717272222042,
+    -0.04832329973578453,
+    -0.041772302240133286,
+    0.059919167309999466,
+    -0.04393395408987999,
+    0.00414815079420805,
+    0.11609598994255066,
+    0.07603532075881958,
+    0.08865536749362946,
+    -0.046146951615810394,
+    0.010470493696630001,
+    0.02526669017970562,
+    -0.06812795251607895,
+    0.002233260776847601,
+    -0.03220077231526375,
+    0.0207083560526371,
+    0.013293231837451458,
+    -0.10296569764614105,
+    0.0014650931116193533,
+    -0.09763644635677338,
+    -0.05788978934288025,
+    0.06330826133489609,
+    -0.0024319554213434458,
+    -0.0047671059146523476,
+    -0.011960979551076889,
+    0.024047238752245903,
+    0.011581971310079098,
+    0.02753010392189026,
+    0.015341595746576786,
+    0.14473699033260345,
+    0.0009122201590798795,
+    0.07139334082603455,
+    0.048467982560396194,
+    -0.03310820087790489,
+    -0.027500662952661514,
+    -0.03804497793316841,
+    -1.6611527806003926e-33,
+    0.013544153422117233,
+    -0.05880230665206909,
+    -0.054383862763643265,
+    -0.0029090496245771646,
+    0.06058388203382492,
+    0.02321144938468933,
+    0.013095727190375328,
+    -0.029741497710347176,
+    -0.018964556977152824,
+    -0.003555931616574526,
+    0.08691192418336868,
+    -0.05442408472299576,
+    -0.06879424303770065,
+    -0.06548716872930527,
+    -0.060258738696575165,
+    0.033716000616550446,
+    -0.024129053577780724,
+    0.08428638428449631,
+    -0.061856601387262344,
+    -0.006777715403586626,
+    -0.010437470860779285,
+    -0.03548629581928253,
+    -0.055723391473293304,
+    0.08689837902784348,
+    0.023195696994662285,
+    0.07407649606466293,
+    0.07805386930704117,
+    -0.009519708342850208,
+    -0.026997985318303108,
+    0.0025808520149439573,
+    0.021061860024929047,
+    -0.032657623291015625,
+    -0.0035211469512432814,
+    0.049211371690034866,
+    0.034739162772893906,
+    0.008467141538858414,
+    -0.017967555671930313,
+    -0.08703909814357758,
+    -0.03136734664440155,
+    -0.04706534743309021,
+    -0.005191657692193985,
+    -0.013811362907290459,
+    -0.014215870760381222,
+    -0.005747602786868811,
+    0.01660637930035591,
+    -0.005897896364331245,
+    -0.04985079541802406,
+    0.02807408757507801,
+    0.09490516036748886,
+    -0.048500582575798035,
+    0.049475621432065964,
+    0.1245727464556694,
+    -0.033651091158390045,
+    0.0032792568672448397,
+    -0.01795351505279541,
+    -0.0495792031288147,
+    -0.017908643931150436,
+    0.02154170162975788,
+    0.021043289452791214,
+    -0.007464463356882334,
+    0.03244205191731453,
+    0.06317639350891113,
+    0.04241323471069336,
+    -0.025408994406461716,
+    0.042553529143333435,
+    -0.0374131053686142,
+    0.017178907990455627,
+    -0.051183294504880905,
+    0.0561382956802845,
+    -0.1226256787776947,
+    0.01347692683339119,
+    -0.009384273551404476,
+    -0.019770188257098198,
+    -0.029540356248617172,
+    -0.017774125561118126,
+    -0.0044731562957167625,
+    0.003018866991624236,
+    -0.020230455324053764,
+    -0.01013798825442791,
+    -0.026430701836943626,
+    -0.013041134923696518,
+    0.03681293874979019,
+    -0.069090336561203,
+    -0.02301153354346752,
+    0.005667553283274174,
+    -0.046876974403858185,
+    0.03746911510825157,
+    -0.04286541789770126,
+    -0.038240235298871994,
+    0.02522268332540989,
+    0.005250956397503614,
+    -0.027882564812898636,
+    -0.07009228318929672,
+    -0.016854485496878624,
+    -0.05322473123669624,
+    7.97296767695975e-34,
+    0.046895094215869904,
+    0.05083024129271507,
+    -0.06231115013360977,
+    0.03642353042960167,
+    -0.07431215047836304,
+    -0.03834070265293121,
+    -0.07540691643953323,
+    0.05459160730242729,
+    -0.004251234699040651,
+    0.056956443935632706,
+    -0.044557616114616394,
+    -0.0308865774422884,
+    0.039458658546209335,
+    -0.06415799260139465,
+    -0.06430314481258392,
+    0.0327129028737545,
+    0.11243313550949097,
+    -0.050284244120121,
+    0.011272494681179523,
+    -0.06614834815263748,
+    0.041365593671798706,
+    0.08671911805868149,
+    0.0877399891614914,
+    -0.02362298034131527,
+    -0.08029594272375107,
+    0.016502507030963898,
+    0.025178490206599236,
+    0.09164124727249146,
+    -0.06253564357757568,
+    0.07146734744310379,
+    -0.010791845619678497,
+    -0.047363173216581345,
+    0.002201771130785346,
+    0.10189832001924515,
+    0.07276830822229385,
+    -0.024688782170414925,
+    -0.035502590239048004,
+    0.018417779356241226,
+    -0.07902011275291443,
+    0.0015317315701395273,
+    0.017949765548110008,
+    -0.040164440870285034,
+    -0.02432820200920105,
+    0.07881857454776764,
+    0.04828152060508728,
+    -0.017339270561933517,
+    -0.01724274456501007,
+    0.09083634614944458,
+    0.04465123265981674,
+    -0.12354463338851929,
+    0.008993491530418396,
+    0.03493407741189003,
+    -0.06290148943662643,
+    -0.13813330233097076,
+    0.08881441503763199,
+    0.04935915023088455,
+    -0.009849561378359795,
+    -0.06580713391304016,
+    -0.0023757838644087315,
+    0.06331850588321686,
+    0.0913529172539711,
+    -0.03380934149026871,
+    0.0034985020756721497,
+    0.01575745828449726,
+    0.04817632958292961,
+    0.09246952831745148,
+    -0.02432120591402054,
+    0.012238351628184319,
+    0.033582087606191635,
+    0.13111567497253418,
+    0.08357788622379303,
+    0.11858253926038742,
+    0.01979135349392891,
+    0.05709537863731384,
+    0.010601463727653027,
+    0.050353389233350754,
+    0.048535529524087906,
+    0.03548324853181839,
+    0.05483221635222435,
+    -0.051732175052165985,
+    -0.12779518961906433,
+    -0.03669159486889839,
+    -0.04507293924689293,
+    0.03856619447469711,
+    0.06035568192601204,
+    0.02980569191277027,
+    0.016258804127573967,
+    0.015014990232884884,
+    -0.03226491063833237,
+    0.03690003976225853,
+    0.010032129473984241,
+    0.041221145540475845,
+    0.012961926870048046,
+    -0.025352973490953445,
+    0.016003185883164406,
+    -1.5309890244452617e-8,
+    -0.00842122919857502,
+    0.07041442394256592,
+    -0.00840557087212801,
+    -0.043288715183734894,
+    0.031304433941841125,
+    -0.12138447910547256,
+    0.017977282404899597,
+    -0.03005649335682392,
+    -0.03914394974708557,
+    0.043091099709272385,
+    0.02427106350660324,
+    -0.04446273669600487,
+    0.01873655803501606,
+    0.008073172532022,
+    0.06523071974515915,
+    -0.06476005166769028,
+    0.0371796190738678,
+    0.09389424324035645,
+    -0.0836629793047905,
+    -0.07582281529903412,
+    -0.04335247725248337,
+    0.016402488574385643,
+    0.04318401217460632,
+    0.02077806368470192,
+    -0.06392122060060501,
+    0.05678350478410721,
+    0.02047416754066944,
+    0.040076106786727905,
+    -0.041960060596466064,
+    0.00018020925926975906,
+    -0.0028848371002823114,
+    0.02696744166314602,
+    -0.04120121896266937,
+    -0.05898616835474968,
+    -0.05236303061246872,
+    -0.03517808020114899,
+    -0.07615074515342712,
+    -0.04697728157043457,
+    -0.023290205746889114,
+    0.008148285560309887,
+    -0.06864561885595322,
+    0.004535061307251453,
+    0.06550867855548859,
+    0.04024871811270714,
+    0.00773550383746624,
+    0.058948636054992676,
+    0.055738478899002075,
+    0.023115428164601326,
+    -0.055008597671985626,
+    -0.0568087138235569,
+    -0.004398985765874386,
+    0.04214756190776825,
+    -0.07178711146116257,
+    0.018400704488158226,
+    -0.024500275030732155,
+    0.013428017497062683,
+    0.0324200801551342,
+    0.048415862023830414,
+    -0.012462843209505081,
+    0.005743518937379122,
+    -0.02670532464981079,
+    0.029169930145144463,
+    -0.06410250812768936,
+    -0.021475719287991524
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "start": 0,
+        "content": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open.\n\n## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04. The stage clock was replaced in 2023."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "start": 0,
+        "content": "The Osvik Puppet Theatre rehearsal room moved in 1939. Its restoration was completed in 1986. A plan to close the prop annex in 2017 was rejected; the annex remains open."
+      },
+      {
+        "filename": "02_Osvik_Puppet_Theatre.txt",
+        "start": 172,
+        "content": "## Prop store and touring\nT-01. The winter average temperature in the Osvik Puppet Theatre prop store is 11 degrees Celsius. Its absolute minimum winter temperature is 1 degree Celsius. The highest monthly mean temperature is 27 degrees Celsius in September.\nT-02. Signed touring records are retained for 5 years. An unresolved ownership claim extends retention of the affected records until the claim is settled.\nT-03. The touring packet must contain:\n- a puppet inventory\n- a condition sheet\n- a transport permit\n- a return record\nT-04. The stage clock was replaced in 2023."
+      }
+    ]
+  }
+}

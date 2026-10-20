@@ -15,9 +15,28 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v39 Lumen32 gate **FAIL: 31 PASS / 1 FAIL** both variants (L04 false refusal); earlier Vela32/Prism32 passes preserved; not adopted |
-| Release decision | Integration **HOLD** after Lumen32 regression; full regression/fresh confirmation incomplete; all first failures preserved |
-| Current change | Phase 1: authorized isolated v40 grammar fix and fresh Vela32/Prism32/Lumen32 regression; protocol precedes implementation; no live adoption |
+| Latest isolated candidate | v40: Vela32, Prism32 and Lumen32 each **32/32 PASS** in both variants; L04 repaired; v39 first failure preserved; not adopted |
+| Release decision | Integration **HOLD**: full regression/fresh confirmation incomplete; all first failures preserved |
+| Current change | Phase 1: v40 fix and 96-case exposed revalidation completed; next Hearth32 and other verified packs; no live adoption |
+
+## Current v40 result — three partial gates PASS
+
+Protocol `894bc74` preceded implementation; freeze `da10734` was published before
+questions. First actual MiniLM capture: **Vela32 32/0/0, Prism32 32/0/0, Lumen32
+32/0/0**, each in both v40 variants. Paired v39 remains 32/0/0, 32/0/0, 31/0/1;
+L04's old failure is preserved. No historical PASS loss, false accepts/refusals,
+execution errors or question retries in v40. These are 96 distinct **exposed**
+cases (84 Hybrid / 12 lexical Comparisons), not fresh confirmation or a full gate.
+
+[Results and evidence](docs/V40_THREE_PACK_MAC_RESULTS.md) include unchanged native
+scorecards, assistant review, independently recomputed facet cosines and a seal of
+763 original artifacts (73,452,103 bytes). All 774 prior v39 artifacts retain their
+hashes. Engineering checks: **630 unit tests PASS**, strict **28/28 Keyword PASS**,
+clean Chrome startup and **470 frozen files verified**. Live 5.6/r44 unchanged.
+
+Next: prepare/freeze Hearth32, then continue the **572 verified cases / 16 packs
+untested with v40**. The 103 unavailable cases, full regression, prospective
+confirmation, integration and product/release gates remain blockers.
 
 ## Authorized v40 work — preparation checkpoint
 
@@ -93,7 +112,11 @@ syntax do not establish factual support, completeness or compliance.
   under precommitted protocol `c73a8fe`; no model run at that initial checkpoint.
 - **Later October 20:** Vela32 and Prism32 partial actual-model gates PASS;
   Lumen32 first v39 gate FAIL on L04. Work stopped, then the user authorized
-  preservation/publication and investigation. No candidate fix or live adoption.
+  preservation/publication and investigation. No candidate fix or live adoption
+  at that investigation checkpoint.
+- **Subsequently October 20:** v40 implemented under precommitted protocol; all
+  three 32-case exposed pack gates pass in both variants with fresh actual model
+  vectors. L04 repaired; all first failures retained; live r44 unchanged.
 
 Initial setup publication used the connected GitHub account because terminal Git
 in the original chat checkout could not authenticate. Terminal publication from
@@ -434,8 +457,12 @@ or model rerun occurred in this design task. Preserve the original
    variants**. **Lumen32 subsequently FAILS 31/0/1** in both v39 variants on L04;
    its first evidence is preserved after a stop and explicit publication approval.
    There are 96 tested cases across three separately scored packs; 572 verified
-   cases await v39 testing. Next is a separate proposed v40 fix and revalidation
-   decision before Hearth32. Full regression and live adoption remain blocked.
+   cases awaited v39 testing at that checkpoint. **Subsequently authorized/
+   completed:** v40 repairs L04 and passes all three
+   32-case packs in both variants. Protocol and freeze were published before
+   coding and questions respectively. No historical PASS losses or retries.
+   Next Hearth32 among 572 remaining verified cases; full regression and adoption
+   remain blocked.
 6. Require exposed-regression preservation and separate prospective confirmation
    before integration review. Then qualify navigation/export, memory, performance
    and target browsers. Passing unit tests alone does not authorize adoption.
