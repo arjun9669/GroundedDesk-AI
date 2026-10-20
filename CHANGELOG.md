@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-20 — Isolated v40 grammar and three-pack preparation
+
+- Protocol `894bc74` precedes a new bounded v40 contract supporting positive `should`, `moves to`, `following` day and active-hold wording. Preserve whole-question refusal, literal support and evidence alignment; live r44 and frozen v39 remain unchanged.
+- 630 unit tests and strict 28-case Keyword evaluation pass; clean Chrome startup and original input/history checks pass. Freeze 470 files before a new 96-case Vela32/Prism32/Lumen32 exposed regression, with separate fresh v40 and paired v39 planner-facet embeddings. Actual model capture/scoring NOT RUN at this preparation checkpoint.
+- Preserve all first evidence, including v39 Lumen32 FAIL. No full-regression, fresh-confirmation or adoption claim. [Preparation](docs/COVERAGE_V40_PREPARATION.md).
+
 ## 2026-10-20 — Preserve first v39 Lumen32 FAIL and investigate L04
 
 - Preserve the complete first actual-model Lumen32 run: both v39 variants 31/0/1, with L04 supported false refusal and historical PASS loss; paired v38 32/0/0. Work stopped, then the user explicitly authorized failure publication and investigation. No model-question retries or regrading.
