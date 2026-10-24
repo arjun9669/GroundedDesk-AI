@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-24 — Implement isolated v44 Stage A contracts
+
+- Add bounded purchase-approval range/unit/written-role checks, explicit ticket-order approver binding and unique publication-descriptor handling, with no prior-answer fallback in owned scope. Preserve v43 delegation, clock ownership, exact Comparison/helper exports and live r44.
+- 798 unit tests (21 new synthetic controls) and 28 strict Keyword checks PASS. Stage B/C and actual-model preservation remain unrun; first Fresh64 failure, all archived evidence and phase 2 hold stay unchanged.
+
 ## 2026-10-24 — Design the Fresh64 repair scope
 
 - Publish a static code/evidence trace and staged isolated-candidate repair design: unsupported approval/reference contracts, supported relation parsing and per-document lexical Comparison completeness. Define positive/negative controls, evidence invariants and future regression/confirmation gates.

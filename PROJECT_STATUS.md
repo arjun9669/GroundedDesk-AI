@@ -15,9 +15,30 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v43: all 19 available native regression gates PASS across 668 cases; known public FAIL rows retained; not adopted |
+| Latest isolated candidate | v44 Stage A engineering only; 798 unit/28 Keyword PASS; no actual-model run, not adopted. Latest model result remains v43 Fresh64 FAIL |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | Current change | Phase 1 COMPLETE under approved 668-case scope; phase 2 first Fresh64 confirmation FAIL: 52 PASS / 4 PARTIAL / 8 FAIL in both variants |
+
+## V44 Stage A implemented — 2026-10-24, engineering only
+
+[Engineering report](docs/V44_STAGE_A_ENGINEERING.md) and
+[bounded protocol](eval/answer-completeness-v44/PROTOCOL.md) record the approved
+isolated Stage A implementation: purchase-range/unit/role applicability, bare
+matching ticket-order approval actors and unique publication descriptors. Owned
+unsupported/ambiguous requests refuse without a prior-answer fallback; supported
+quotes retain exact literal identity and original containing cosine anchors.
+Existing v43 clock ownership and Comparison/helper exports stay unchanged.
+
+**798/798 unit tests PASS**, including 21 new synthetic controls; **28/28 strict
+Keyword PASS**. No real model or saved-vector replay occurred. No candidate,
+planner or scorer ran on Fresh64, and no actual 668-case preservation study ran
+on v44. Stage
+B/C are not implemented. V43 modules, live r44, original sources/keys/rubrics,
+first failures and all prior evidence remain unchanged. The first Fresh64 v43
+52/4/8 failure stays FAIL; there is no v44 quality score or phase 2 acceptance.
+Verification also covers new syntax, links, credential review, `git diff --check`
+and original code/input/environment/raw/result/review hashes. Later model testing
+requires a new pre-published execution freeze and separate scope.
 
 ## Fresh64 repair design — 2026-10-24, no implementation
 

@@ -350,3 +350,14 @@ covers review/documentation/publication only; no candidate/model/scorer rerun or
 source/key/rubric edits were made. Phase 2 is not accepted; Fresh64 is now exposed.
 Use a separate approved repair task before any implementation/regression replay,
 then agree a new prospective pack for confirmation. Live r44 remains unchanged.
+
+## V44 Stage A engineering — 24 October 2026
+
+[Report](V44_STAGE_A_ENGINEERING.md) and [protocol](../eval/answer-completeness-v44/PROTOCOL.md)
+record isolated approval/reference contracts with 21 new synthetic tests. Full
+798 unit/28 strict Keyword checks PASS. Existing v43 clock and lexical Comparison
+exports remain unchanged; r44 imports no v44 code. Stage B/C and actual-model
+668/Fresh64 preservation are NOT RUN. Do not point a historical frozen runner at
+v44 or overwrite its first output: a new execution protocol/module/environment
+freeze must precede any separately authorized model study. No quality or live
+adoption claim follows from these engineering tests.

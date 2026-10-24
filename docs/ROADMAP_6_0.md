@@ -1,7 +1,7 @@
 # GroundedDesk 6.0 working roadmap
 
 Accepted as a working sequence in the October 20, 2026 conversation. Current
-phase: **2 — first Fresh64 confirmation FAIL; repair design published; implementation not started**. Detailed product promises and quantitative
+phase: **2 — first Fresh64 confirmation FAIL; v44 Stage A engineering complete; model revalidation pending**. Detailed product promises and quantitative
 release targets are not yet frozen; this roadmap does not declare 6.0 ready,
 promise production/security certification or authorize live integration.
 
@@ -41,7 +41,9 @@ phase 3 integration remains unauthorized.
 
 The [published repair design](FRESH64_REPAIR_DESIGN.md) prioritizes unsupported
 threshold/actor/referent handling, then supported frame/retention selection and
-per-document Comparison completeness. Implementation has not started.
+per-document Comparison completeness. [V44 Stage A](V44_STAGE_A_ENGINEERING.md)
+now implements only approval/reference contracts; 798 unit/28 Keyword checks pass.
+Stage B/C and all actual-model revalidation remain unrun.
 Preserve the accepted 668-case regression scope after fixes. Fresh64 is now exposed;
 a future replay is regression, not replacement of its failed first confirmation.
 New prospective confirmation needs a new separately agreed/frozen unseen pack.
