@@ -15,9 +15,74 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v46 Stage C engineering only; 848 unit/28 Keyword PASS; no actual-model run/adoption. Latest model result remains v43 Fresh64 FAIL |
+| Latest isolated candidate | v46 unchanged; approved audit amendment ready; 863 unit/28 Keyword PASS; no actual-model study/adoption. Latest model result remains v43 Fresh64 FAIL |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | Current change | Phase 1 COMPLETE under approved 668-case scope; phase 2 first Fresh64 confirmation FAIL: 52 PASS / 4 PARTIAL / 8 FAIL in both variants |
+
+## V46 approved audit correction — engineering PASS, 2026-10-24
+
+The user approved fixing the anchor-consistency audit, adding negative controls,
+rerunning engineering checks and publishing a separate immutable amendment.
+[Readiness report](docs/V46_REGRESSION_EXECUTION_READY.md) and
+[amendment explanation](docs/evidence/v46-regression-732-mac/execution/AMENDMENT.md)
+record the completed correction. An explicit anchor now requires finite cosine
+metadata exactly equal to the finite source cosine before independent arithmetic.
+The original failed probe is rejected; its FAIL record and source snapshots stay
+unchanged. All original test bytes remain an unchanged prefix with four groups added.
+
+**15/15 targeted, 863/863 full units, 28/28 strict Keyword PASS**. Separate
+[approved evidence](docs/evidence/v46-execution-approved-audit/correction-record.json)
+preserves passing logs. Native grading functions and prior3,660-row equivalence
+remain unchanged; no candidate/model/saved-vector replay occurred. Original877
+freeze/config bytes remain intact. [Immutable amendment](docs/evidence/v46-regression-732-mac/execution/amendment.json)
+binds the original hashes, three permitted replacements, archived original sources
+and22 added source/document/evidence files. Runner/scorer verify the amended seal.
+Complete effective/original seals, actual toolchain, syntax, preservation, links,
+sensitive-data review and `git diff --check` PASS.
+
+The732-case study remains NOT RUN and requires separate explicit approval. No
+neutral preflight rerun or study raw/score/audit/review directory exists. Original
+Fresh64 FAIL,103 exclusions, full771 NOT RUN, phase2 HOLD and live5.6/r44 stay intact.
+
+## V46 execution final-review failure — stopped, 2026-10-24
+
+The final synthetic review found that `auditSources` accepts a mismatched
+`cosineAnchor.actualCosine`: top-level cosine and recomputed query/sentence cosine
+are1, but the anchor's recorded cosine is0. Expected engineering rejection;
+actual result was accepted without error. This required review check is **FAIL**.
+The earlier11 targeted /859 unit /28 Keyword checks,3,660 archived grade-equivalence
+rows and neutral preflight passed; they did not cover this invalid-anchor case.
+
+[Probe](docs/evidence/v46-execution-review-failure/probe.json) and
+[failure record](docs/evidence/v46-execution-review-failure/failure-record.json)
+preserve the exact synthetic reproduction, source snapshots, original877-file
+execution freeze/config and hashes. No fix/retry, study case, commit or push
+followed the failure. Execution is NOT READY. Approval is required to correct the
+audit, extend negative controls and create an immutable pre-question amendment,
+preserving the first freeze/failure. No candidate or model-test change is proposed.
+
+## V46 execution draft checkpoint before final review, 2026-10-24
+
+[Execution readiness](docs/V46_REGRESSION_EXECUTION_READY.md) and
+[execution plan](eval/v46-regression-execution/EXECUTION_PLAN.md) record completed
+v46/v43 adapters, native scoring/preservation imports, independent vector/source/
+anchor auditing, write-once evidence sealing and a separate manual review queue.
+The [execution freeze](docs/evidence/v46-regression-732-mac/execution/freeze-manifest.json)
+pins 877 files and the original immutable protocol/source scope. Current neutral
+Chrome155.0.8059.86 / Node24.22.1 darwin/arm64 preflight PASS: MiniLM q8 WASM384D,
+Qwen off, six actual downloaded asset hashes and actual toolchain identities.
+No study source or question was loaded during preflight.
+
+First adapter checks **11/11 PASS**; full unit suite **859/859 PASS**; strict Keyword
+**28/28 PASS**. Native adapters reproduce **3,660 archived grade rows** without any
+candidate/planner/model call. Complete config/seals/toolchain, source/input parity,
+syntax, links and diff/credential review PASS. Historical files are unchanged.
+
+Execution awaits explicit user approval. No study raw/score/audit/review directory
+exists and no v46 quality score is claimed. Capture guard requires approval token,
+clean published main, current matching toolchain/assets and exact served modules.
+Native success requires separate manual binding review. Original Fresh64 FAIL,
+103 exclusions, full771 NOT RUN, phase 2 HOLD and live 5.6/r44 remain unchanged.
 
 ## V46 regression protocol frozen — execution NOT READY, 2026-10-24
 

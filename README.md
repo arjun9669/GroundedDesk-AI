@@ -16,7 +16,7 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Latest isolated candidate | **v46 Stage C engineering only**; no model revalidation. Latest model result: v43 Fresh64 FAIL; neither adopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
 | Current phase | **2 — first Fresh64 confirmation FAIL**; 52 PASS / 4 PARTIAL / 8 FAIL in each variant; integration HOLD |
-| Latest recorded engineering checks | **848 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
+| Latest recorded engineering checks | **863 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
 
@@ -153,8 +153,10 @@ reference contracts first, then supported relation and Comparison repairs.
 implementations. V46 passes 848 unit/28 Keyword checks; the original v45 scope
 failure and approved correction remain archived. There is no actual-model
 revalidation or live adoption. The [732-case regression protocol](./docs/V46_REGRESSION_PREPARATION.md) is now
-frozen for preparation; execution tooling and actual environment freeze remain
-pending, and no model study has run.
+preserved unchanged. [Execution tooling, neutral preflight and the complete
+execution freeze with approved audit amendment](./docs/V46_REGRESSION_EXECUTION_READY.md)
+are ready. The original audit failure and freeze are preserved. Explicit study
+execution approval is next. No model-quality study has run.
 Preserve the 668-case regression scope and use Fresh64 only
 as exposed regression after any fix. New prospective confirmation
 requires a separately frozen unseen pack. Isolated engineering does not authorize

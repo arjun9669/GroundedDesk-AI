@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-24",
+  "status": "FAIL_FINAL_REVIEW",
+  "required_check": "Recorded cosine anchor consistency",
+  "cause": "auditSources independently verifies the top-level cosine against a sentence vector but does not require cosineAnchor.actualCosine to agree. A forged anchor value is accepted.",
+  "engineering_before_review": {
+    "targeted_pass": 11,
+    "unit_pass": 859,
+    "keyword_pass": 28,
+    "archived_grade_equivalence": 3660,
+    "neutral_preflight": "PASS",
+    "frozen_files": 877
+  },
+  "candidate_or_study_runs": 0,
+  "runtime_candidate_changes": false,
+  "commit_or_push": "NOT PERFORMED",
+  "first_attempt_files": [
+    {
+      "path": "eval/v46-regression-execution/score.mjs",
+      "sha256": "a78d1703a6c516744a2c0ccef7637a904e67a1f557ed031c61b6de4f7506bcdf"
+    },
+    {
+      "path": "eval/v46-regression-execution/integrity.mjs",
+      "sha256": "f4ece1f0fca84fe05cfb9e23b91e4442e54b703001ef4b24703c88201bf45061"
+    },
+    {
+      "path": "eval/v46-regression-execution/module-graph.mjs",
+      "sha256": "ea3ac67535c38d1ba46e5eb39d08f6d413f4e95966d83a10455c1e4a183e020a"
+    },
+    {
+      "path": "eval/v46-regression-execution/seal.mjs",
+      "sha256": "1a6635b0af083b56803cd097ed7c2a7765fc598c614c06b02c6d72c324702c5d"
+    },
+    {
+      "path": "eval/v46-regression-execution/EXECUTION_PLAN.md",
+      "sha256": "1ddd5bbca5434a3696bcca02fc5911e8518919fdd87d36f04e57ef42252958cd"
+    },
+    {
+      "path": "eval/v46-regression-execution/audit.mjs",
+      "sha256": "822d4509c9bd38c167fe1904d298fbebd400386d94d470dbd6df539eebff4763"
+    },
+    {
+      "path": "eval/v46-regression-execution/prepare.mjs",
+      "sha256": "9db44a27a619946de5a910e99b0201ad5f0c313fc1c49b4a3c2760fdc3e07e5d"
+    },
+    {
+      "path": "eval/v46-regression-execution/equivalence.mjs",
+      "sha256": "ab7593faead8cd99f9bb32ab752af924332d52acd49e1d9a582c5cf27f227c52"
+    },
+    {
+      "path": "tests/v46-execution.test.mjs",
+      "sha256": "251906d09db725afff885f134b6487fce8d4e7835e0c782c9c9e19bd56881a88"
+    },
+    {
+      "path": "tests/browser-v46-preflight.mjs",
+      "sha256": "60d955bf05e935e8dd8ef4daad969fe72cdabc3f307f82229061ad3c6ffe1735"
+    },
+    {
+      "path": "tests/browser-v46-regression.mjs",
+      "sha256": "0a26deedd28d098e4c262db9027ce4b0e9be415fe4b53abd8ca83a15766db205"
+    },
+    {
+      "path": "docs/evidence/v46-regression-732-mac/execution/freeze-manifest.json",
+      "sha256": "c769438f4ef7f7ccab98cf9cbe63ad3fdeb1106ca35e77e682347ed398c56e28"
+    },
+    {
+      "path": "docs/evidence/v46-regression-732-mac/execution/run-config.json",
+      "sha256": "249ecdb3daa224eb42256cf465ba32b2d6f4778e67956fc12d9a93c4c949ae00"
+    }
+  ],
+  "next_action": "Await approval to fix the anchor consistency audit, extend synthetic controls and publish an immutable pre-question amendment while preserving this first freeze and failure. No model study execution."
+}

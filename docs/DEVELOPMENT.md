@@ -399,3 +399,32 @@ historical v43/v42 runners at it. V46/v43 adapters, synthetic/equivalence checks
 neutral actual-environment/model preflight and a published complete execution
 freeze must precede study approval and any original question submission. No model
 or browser execution occurred in this preparation; original evidence stays intact.
+
+
+## V46 regression execution readiness
+
+The [execution readiness report](V46_REGRESSION_EXECUTION_READY.md) links the new
+isolated runner/scorer/audit/seal modules and the unpublished 877-file execution
+freeze. Full unit suite859/859 and strict Keyword28/28 PASS; native equivalence
+reproduces3,660 archived grades. Neutral installed-Chrome/model preflight passed
+without loading study inputs/questions. Use the exact frozen Node and follow the
+[execution plan](../eval/v46-regression-execution/EXECUTION_PLAN.md) only after
+explicit study approval. Do not rerun preflight into its existing directory or
+use historical defaults. Raw/score/audit/review do not yet exist. Native success
+still requires separate manual binding review; original failure/hold stays intact.
+
+Final review subsequently found an anchor-cosine metadata mismatch accepted by the
+audit. Execution is NOT READY; see the readiness report/failure record. Preserve
+the first freeze and failure; await approval before correction or retry.
+
+
+## Approved v46 audit correction
+
+The [approved amendment](evidence/v46-regression-732-mac/execution/AMENDMENT.md)
+requires finite identical source/anchor cosine metadata before the independent
+recorded-vector arithmetic check. First failure and original877 freeze/config bytes
+remain unchanged. The integrity loader applies exactly three authorized replacements
+and checks archived originals plus added files. Use the original execution plan
+with this mandatory amendment; do not regenerate or overwrite its first freeze.
+Approved checks:15 targeted /863 full unit /28 Keyword PASS. No model preflight,
+study case or saved-vector replay was rerun. Explicit study approval is still needed.

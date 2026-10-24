@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-10-24 — approved v46 anchor-audit correction
+
+- Require finite equal anchor/source cosine metadata before independent arithmetic;
+  preserve the original failing probe/test bytes, source snapshots and877-file freeze.
+- Add four regression groups and a bounded immutable amendment verified by capture
+  and scoring. Pass15 targeted,863 full unit and28 strict Keyword checks.
+- No candidate, native grading, model-preflight or study case rerun; execution still
+  requires separate approval. Publish the preserved first attempt with its correction.
+
+## 2026-10-24 — prepare v46/v43 regression execution freeze
+
+- Add isolated capture, native grading/preservation, provenance/vector audit,
+  immutable raw seal and approval/publication checks; preserve all historical code.
+- Pass11 new controls,859 total units,28 Keyword checks and3,660 archived grading
+  equivalence rows; pass neutral Chrome/model preflight and freeze877 file identities.
+- Final anchor-consistency review FAIL: audit accepts inconsistent recorded anchor
+  cosine. Preserve probe/source/freeze snapshots; stop before fixes, retries or
+  commit/push. No study case, candidate or live app change.
+
 ## 2026-10-24 — freeze v46 exposed-regression protocol
 
 - Pin accepted 668 plus exposed Fresh64 scope, native preservation/repair criteria,
