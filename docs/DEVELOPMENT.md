@@ -361,3 +361,16 @@ exports remain unchanged; r44 imports no v44 code. Stage B/C and actual-model
 v44 or overwrite its first output: a new execution protocol/module/environment
 freeze must precede any separately authorized model study. No quality or live
 adoption claim follows from these engineering tests.
+
+## V45 Stage B engineering — 24 October 2026
+
+[Report](V45_STAGE_B_ENGINEERING.md) and [protocol](../eval/answer-completeness-v45/PROTOCOL.md)
+record minimum, retention and ordinal-event contracts importing unchanged v44.
+First targeted 22/1 failure is preserved; the approved sole-document scope fix
+retains the original assertion and appends three controls. 26 targeted/824 full
+unit and 28 Keyword checks PASS. Unprefixed record fallback is an explicit grammar,
+not general entity recognition. Original Node failure-log whitespace is retained
+with a single exact-path blank-at-eol exception; source/test checks remain intact.
+No model/scorer/frozen-case replay occurred. Stage C and 668/Fresh64 model
+revalidation need separate scope and a new pre-published execution freeze. Live
+r44 remains unchanged; existing frozen v43 model runners must not be repurposed.

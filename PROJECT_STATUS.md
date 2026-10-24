@@ -15,9 +15,54 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v44 Stage A engineering only; 798 unit/28 Keyword PASS; no actual-model run, not adopted. Latest model result remains v43 Fresh64 FAIL |
+| Latest isolated candidate | v45 Stage B engineering only; 824 unit/28 Keyword PASS after approved scope fix; no actual-model run/adoption. Latest model result remains v43 Fresh64 FAIL |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | Current change | Phase 1 COMPLETE under approved 668-case scope; phase 2 first Fresh64 confirmation FAIL: 52 PASS / 4 PARTIAL / 8 FAIL in both variants |
+
+## V45 Stage B approved correction — engineering PASS, 2026-10-24
+
+[Engineering report](docs/V45_STAGE_B_ENGINEERING.md) and
+[protocol](eval/answer-completeness-v45/PROTOCOL.md) record isolated minimum-label,
+retention-subject and coordinated ordinal-event binding. V44 and all historical
+modules, Stage A/clock ownership and exact Comparison/helper exports are unchanged.
+The user explicitly approved fixing the retention-scope guard after the first
+22/1 failure. A sole-file fallback now requires a declared generic record-type
+phrase; unknown entity prefixes cannot use that fallback simply by changing case.
+Matching named scopes and genuinely unprefixed declared types remain supported.
+This is a bounded grammar, not general named-entity understanding.
+
+The original failed assertion/test bytes and draft source/log snapshots remain
+preserved. Only the guard and three appended regression tests differ from the
+failed engineering draft. **26/26 targeted, 824/824 full unit and 28/28 strict
+Keyword checks PASS**. Separate approved logs and implementation/report bytes are
+sealed in [engineering evidence](docs/evidence/v45-stage-b-approved-engineering/manifest.json).
+The exact original Node failure log retains two indentation-only blank lines with
+a single-path `whitespace=-blank-at-eol` attribute; code/test checks are unchanged.
+New syntax, documentation links, original evidence/code/input/environment seals,
+first-attempt hashes, credential review and `git diff --check` verified.
+
+No model, Fresh64 candidate/planner/scorer call or saved-vector replay occurred.
+No 668-case model preservation was run on v45; Stage C is unimplemented. The first
+v43 Fresh64 52/4/8 failure remains FAIL; v45 has no measured quality score. Phase 1
+revised scope, the missing 103 originals, phase 2 hold and live 5.6/r44 are unchanged.
+
+## V45 Stage B draft — first engineering test FAIL, 2026-10-24
+
+The user approved Stage B implementation in a new isolated v45 draft. The first
+23-test targeted synthetic run records **22 PASS / 1 FAIL**. Failure:
+`retention document selection does not cross filenames or guess an unscoped library`,
+`tests/coverage-v45.test.mjs:71:2`; expected `answered=false`, actual `true`.
+The single-document fallback incorrectly accepts a named retention request without
+a matching filename identity. Question/source subjects retain the same unmatched
+entity prefix and compare equal. This is a scope-guard defect, not a model result.
+
+[First failure record](docs/evidence/v45-stage-b-first-engineering-failure/failure-record.json)
+preserves exact original log, draft sources and SHA256s. Work stopped before any
+fix, retry, full-suite/Keyword check, commit or push. No model, Fresh64, saved-vector
+replay or scorer run occurred; live r44, v44 and all frozen evidence remain unchanged.
+Latest published commit remains `d892952c`. Approval is needed to distinguish named
+requests from genuinely unprefixed record types, enforce named filename scope and
+rerun engineering checks without weakening the failed assertion.
 
 ## V44 Stage A implemented — 2026-10-24, engineering only
 

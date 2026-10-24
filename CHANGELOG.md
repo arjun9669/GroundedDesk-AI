@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-24 — Implement v45 Stage B with approved scope correction
+
+- Add isolated minimum-label/value, record-type retention and coordinated ordinal-event/date binding on unchanged v44. Stage A/clock and exact Comparison/helper exports remain intact; live r44 unchanged.
+- Preserve first targeted 22 PASS/1 FAIL and original draft/log bytes. Approved correction restricts single-file retention fallback to declared record types; original assertion stays unchanged, with three added controls.
+- 26 targeted, 824 full unit and 28 strict Keyword checks PASS. No actual-model/frozen-case/scorer rerun; first Fresh64 FAIL, missing-input exclusions and integration hold remain. The exact archived failure log alone has a blank-at-eol whitespace exception to retain original Node output.
+
 ## 2026-10-24 — Implement isolated v44 Stage A contracts
 
 - Add bounded purchase-approval range/unit/written-role checks, explicit ticket-order approver binding and unique publication-descriptor handling, with no prior-answer fallback in owned scope. Preserve v43 delegation, clock ownership, exact Comparison/helper exports and live r44.

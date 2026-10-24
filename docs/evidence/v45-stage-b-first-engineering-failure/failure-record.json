@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-24",
+  "status": "FAIL",
+  "tests": 23,
+  "pass": 22,
+  "fail": 1,
+  "failing_test": "retention document selection does not cross filenames or guess an unscoped library",
+  "test_location": "tests/coverage-v45.test.mjs:71:2",
+  "assertion": "Expected answered=false; actual answered=true (true !== false)",
+  "cause_from_static_inspection": "scopedDocuments falls back to the sole document when a named request has no filename-entity match; relativeSubject then retains the same foreign entity prefix on question and source and allows a match.",
+  "proposed_correction": "Distinguish explicit named retention subjects from unprefixed record types. Require named requests to match filename identity, retaining genuine unprefixed single-document support. Do not weaken the failing assertion.",
+  "first_attempt_files": [
+    {
+      "path": "eval/answer-completeness-v45/coverage.mjs",
+      "sha256": "8aba5e102b5b206211dbac064419d7bd0550791c312495910eb5229532b90a14"
+    },
+    {
+      "path": "eval/answer-completeness-v45/relation-contract.mjs",
+      "sha256": "e3de66f1b1e2256610381d5b58e163aaaf508c3df7699160b1e4bfc8eee5cd33"
+    },
+    {
+      "path": "tests/coverage-v45.test.mjs",
+      "sha256": "00157105fe9fa7987e12f4f56acc12ab797f5130dba18ec3743fbbe0bfc54712"
+    }
+  ],
+  "last_published_commit": "d892952ce646d8b4f62b358229f1874afb69c7c4",
+  "model_or_fresh64_runs": 0,
+  "retries": 0,
+  "full_suite": "NOT RUN after required targeted failure",
+  "commit_or_push": "NOT PERFORMED",
+  "next_action": "Await approval to correct document-scope guard and rerun relevant engineering checks while preserving this first failure."
+}

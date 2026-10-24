@@ -1,0 +1,55 @@
+✔ v45 is isolated; Stage A/clock/Comparison helpers retain their exact prior identities (2.155041ms)
+✔ recorded winter minimum binds its own signed value rather than average or daily high (18.89ms)
+✔ explicit scoped minima preserve textual and numeric negative signs and units (3.704125ms)
+✔ average, monthly mean, daily high and a non-winter minimum cannot fill a winter minimum (0.990917ms)
+✔ absolute and recorded minima remain distinct while generic minima require uniqueness (0.328083ms)
+✔ missing, negated, revised or competing minimum values refuse rather than borrowing a number (0.194875ms)
+✔ foreign subjects and isolated pronouns cannot donate minimum values (0.198791ms)
+✔ named retention subjects normalize equally on question and source sides (1.474917ms)
+✔ one-document unprefixed record requests and kept/retained synonyms remain supported (0.167834ms)
+✔ retention preserves the full exception even when the question asks only duration (0.304542ms)
+✔ acknowledgement timing and other record types do not satisfy retention (0.1945ms)
+✔ conflicting, denied and incompletely parsed matching retention rules refuse (0.218625ms)
+✖ retention document selection does not cross filenames or guess an unscoped library (0.726083ms)
+✔ unknown retention facets do not preserve an unrelated prior answer (0.062833ms)
+✔ coordinated restorations bind second to its own date and retain literal offsets (1.727833ms)
+✔ explicit entity and possessive ordinal relations need no inferred predecessor (0.182083ms)
+✔ semicolons split ordinal clauses without joining or changing original text (0.084375ms)
+✔ negated closure does not poison affirmative restoration; different event cannot replace it (0.135042ms)
+✔ denied, conditional, competing and missing ordinal events cannot supply a date (0.2295ms)
+✔ ordinal pronouns require adjacent local entity scope and do not cross paragraph boundaries (0.202833ms)
+✔ Stage A positive approvals and unchanged clock facet behavior delegate to v44 (14.475916ms)
+✔ monthly metrics, nonordinal events and compound assembly stay outside new ownership (0.062208ms)
+✔ finite metadata, source/document identity, source limits and citation bounds are enforced (0.435292ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 22
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 144.636375
+
+✖ failing tests:
+
+test at tests/coverage-v45.test.mjs:70:1
+✖ retention document selection does not cross filenames or guess an unscoped library (0.726083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at refusal (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v45.test.mjs:15:28)
+      at TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v45.test.mjs:71:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

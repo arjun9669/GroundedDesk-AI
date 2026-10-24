@@ -13,10 +13,10 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest isolated candidate | **v44 Stage A engineering only**; no model revalidation. Latest model result: v43 Fresh64 FAIL; neither adopted |
+| Latest isolated candidate | **v45 Stage B engineering only**; no model revalidation. Latest model result: v43 Fresh64 FAIL; neither adopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
 | Current phase | **2 — first Fresh64 confirmation FAIL**; 52 PASS / 4 PARTIAL / 8 FAIL in each variant; integration HOLD |
-| Latest recorded engineering checks | **798 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
+| Latest recorded engineering checks | **824 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
 
@@ -147,11 +147,13 @@ validation or a representative accuracy benchmark.
 
 The [repair design](./docs/FRESH64_REPAIR_DESIGN.md) proposes unsupported approval/
 reference contracts first, then supported relation and Comparison repairs.
-[Stage A is now implemented in isolated v44](./docs/V44_STAGE_A_ENGINEERING.md):
-798 unit/28 Keyword checks pass, with no actual-model revalidation or live adoption.
-Stage B/C remain unimplemented. Preserve the 668-case regression scope and use Fresh64 only
+[Stage A in v44](./docs/V44_STAGE_A_ENGINEERING.md) and
+[Stage B in v45](./docs/V45_STAGE_B_ENGINEERING.md) are implemented in isolated
+candidates. V45 passes 824 unit/28 Keyword checks after an approved document-scope
+fix; the original failed check remains archived. There is no actual-model
+revalidation or live adoption. Stage C remains unimplemented. Preserve the 668-case regression scope and use Fresh64 only
 as exposed regression after any fix. New prospective confirmation
-requires a separately frozen unseen pack. Stage A engineering does not authorize
+requires a separately frozen unseen pack. Isolated engineering does not authorize
 model reruns or live integration.
 
 **Live GroundedDesk remains 5.6 / r44; v43 is not adopted.** Revised phase 1 acceptance
