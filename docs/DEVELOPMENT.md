@@ -324,3 +324,16 @@ candidate/planner probe or fresh score exists; do not consume the set during uni
 checks. Input validation and771 unit/28 Keyword checks PASS. Prepare a separate
 immutable execution freeze before questions. Existing v43/live5.6/r44 and all
 historical evidence stay unchanged; integration/product/release gates remain open.
+
+## Fresh64 execution preparation — 24 October 2026
+
+The [execution plan](../eval/phase2-fresh64/EXECUTION_PLAN.md), 509-file freeze and
+[pre-question environment amendment](../eval/phase2-fresh64/ENVIRONMENT_AMENDMENT.md)
+record the new capture/scorer/audit without modifying v43/r44 or original inputs.
+Two neutral dependency-hash preflight failures remain preserved; approved fixes
+reserve Chrome response-body buffers and recognize original ONNX request paths
+through redirects while retaining every hash. Successful neutral preflight: six
+assets; Chrome 155.0.8059.86, Node 24.22.1, Playwright 1.62.1. 777 unit/28 Keyword
+checks PASS. These are preparation checks, not Fresh64 quality results. Publish
+and verify the freeze before capture; use new exclusive raw/score paths and keep
+the first results. Never rerun a question or change a rubric to repair a failure.

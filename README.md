@@ -15,8 +15,8 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
 | Latest isolated candidate | **v43**; all 19 available-input native regression gates PASS across 668 cases; known failed answers retained; not adopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
-| Current phase | **2 — fresh confirmation preparation**; 64 new cases and rubric frozen; model study **NOT RUN** |
-| Latest recorded engineering checks | **771 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
+| Current phase | **2 — fresh confirmation preparation**; 64 cases, rubric and execution setup frozen; model study **NOT RUN** |
+| Latest recorded engineering checks | **777 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
 
@@ -127,9 +127,11 @@ Hybrid questions, 16 unsupported Hybrid questions and 8 lexical Comparisons.
 input validation has passed; this is author-created targeted confirmation, not
 blinded external validation or a representative accuracy benchmark.
 
-Next, prepare and publish a separate immutable execution freeze covering the
-runner, scorer, module hashes and actual environment/model identities, then capture
-the 64 cases once. The prospective gate requires **64/64 PASS independently in
+The [execution setup](./eval/phase2-fresh64/EXECUTION_PLAN.md) now freezes the runner,
+scorer, code and downloaded asset hashes. The explicit
+[environment amendment](./eval/phase2-fresh64/ENVIRONMENT_AMENDMENT.md) records Chrome
+155.0.8059.86 before questions. Publish and verify this setup, then capture all 64
+cases once. The prospective gate requires **64/64 PASS independently in
 both variants**, with no grandfathered failures. Preserve the first result and stop
 on required check failures. The input freeze alone is not execution-ready.
 

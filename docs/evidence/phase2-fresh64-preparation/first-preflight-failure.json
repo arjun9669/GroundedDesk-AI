@@ -1,0 +1,35 @@
+{
+  "status": "FAIL",
+  "stage": "Neutral startup/model dependency identity preflight; before fresh input upload or questions",
+  "date": "2026-10-24",
+  "node": "v24.22.1",
+  "browser": "155.0.8059.85",
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal: actual contains two response.body Protocol error (Network.getResponseBody): Request content was evicted from inspector cache; expected []",
+  "stack": [
+    "eval/phase2-fresh64/network.mjs:8:53",
+    "tests/browser-phase2-preflight.mjs:15:15"
+  ],
+  "fresh_inputs_loaded": false,
+  "fresh_questions_submitted": 0,
+  "candidate_changed": false,
+  "retry_count": 0,
+  "files": [
+    {
+      "path": "tests/browser-phase2-preflight.mjs",
+      "sha256": "b178fc94618365de9d61b737b3fabb5eb7bcc63f342524e1af5929047e1688b0"
+    },
+    {
+      "path": "tests/browser-phase2-fresh64.mjs",
+      "sha256": "f5d6f806a08a6e675c46cd25359cc6e84b5fd996870db27d8f1c151e5d5b6fca"
+    },
+    {
+      "path": "eval/phase2-fresh64/network.mjs",
+      "sha256": "f043e6c262a5c5da34773ed8e1a07481d6076784c4f105a03ad1d3f1af9d220d"
+    },
+    {
+      "path": "eval/phase2-fresh64/integrity.mjs",
+      "sha256": "0b7c0af8dcb01ad29684f7566111b025b1be2480099ea31908bf2113917d09e0"
+    }
+  ],
+  "next_action": "Await approval to correct dependency-byte capture without dropping hashes, retain this first failure and retry neutral preflight in a new directory. No execution freeze, commit or publication yet."
+}

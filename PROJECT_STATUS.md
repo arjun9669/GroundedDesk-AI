@@ -1,6 +1,6 @@
 # GroundedDesk AI — project status
 
-Last updated: **2026-10-21 (Asia/Kolkata)**.
+Last updated: **2026-10-24 (Asia/Kolkata)**.
 
 This is the current development handoff. Preserve historical results in their
 original reports; link them here instead of rewriting or rescoring them.
@@ -18,6 +18,62 @@ original reports; link them here instead of rewriting or rescoring them.
 | Latest isolated candidate | v43: all 19 available native regression gates PASS across 668 cases; known public FAIL rows retained; not adopted |
 | Release decision | Integration **HOLD**: fresh confirmation not run; known quality/device/release gates remain open |
 | Current change | Phase 1 COMPLETE under approved668-case scope; phase 2 PREPARATION:64 new cases/input rubric frozen; model run pending |
+
+## Phase 2 execution prepared — 2026-10-24, before fresh questions
+
+The user approved diagnosis/correction of the missing ONNX identity. The neutral
+network diagnostic proved the request redirects to a content-addressed CDN URL
+without an `.onnx` extension. Actual bytes were hashed, but final-URL-only presence
+recognition was wrong. The recorder now keeps original/redirect request paths,
+nonempty byte counts and SHA256; missing/changed bytes, inconsistent duplicates,
+missing ONNX and missing WASM still fail. Query parameters are not published.
+Both failed attempts and their original source hashes remain preserved.
+
+[Successful neutral preflight](docs/evidence/phase2-fresh64-preflight-redirect-fixed/result.json)
+verifies six downloaded assets, including the 22,972,370-byte ONNX and 21,649,119-byte
+WASM. No fresh input/question/candidate probe occurred. **777/777 unit tests and
+28/28 strict Keyword checks PASS**. New negative controls cover evicted responses,
+redirect recognition, tampering/missing bytes, file escapes/duplicates and forged
+cosines/source identity. New runner/scorer and independent audit are frozen with
+509 files in [execution freeze](eval/phase2-fresh64/freeze-manifest.json).
+
+Actual frozen environment is Chrome **155.0.8059.86**, Node **24.22.1**, Playwright
+**1.62.1**, macOS arm64, MiniLM q8 WASM, Qwen off, r44. The reference Chrome .85
+changed before the successful preflight; the explicit
+[pre-question amendment](eval/phase2-fresh64/ENVIRONMENT_AMENDMENT.md) records .86
+without rewriting earlier records. Node/Chrome binaries and Playwright/core trees
+are hashed. Publish/verify this setup before one capture of all 64 fresh cases.
+**Fresh64 model capture/scoring NOT RUN at this checkpoint**; live/candidate code,
+original inputs/rubric and historical evidence unchanged. Native and separate
+manual binding review must both pass before any phase 2 completion claim.
+
+## Phase 2 execution preparation — approved retry failed, 2026-10-24
+
+The user approved correcting dependency-byte capture while retaining the first
+failure and all hash requirements. The recorder now reserves explicit Chrome CDP
+response-body buffers before requests. The next neutral preflight no longer
+reported the two body-eviction errors, but failed the required ONNX asset-presence
+assertion: no ONNX response identity was recorded. The cause remains unconfirmed;
+no asset hash was fabricated or omitted to pass the check. [Retry log and record](docs/evidence/phase2-fresh64-preparation-approved/failure-record.json)
+preserve the exact failed output and attempted source snapshots. Original first
+failure bytes and draft source snapshots are also preserved. Fresh documents and
+questions remain unsubmitted; v43/live r44 and frozen inputs are unchanged. New
+scorer/audit/unit drafts have not run. No execution freeze, commit or push exists.
+Work stopped pending approval for diagnosis/correction and another neutral retry.
+
+## Phase 2 execution preparation — first preflight failed, 2026-10-24
+
+New draft capture/integrity/dependency-identity files are local and unpublished.
+The first neutral startup/model preflight failed because Chrome evicted two
+response bodies from its inspector cache before `response.body()` could hash them.
+The recorder required an empty error list and correctly rejected incomplete asset
+identity evidence. [First failure record](docs/evidence/phase2-fresh64-preparation/first-preflight-failure.json)
+seals the attempted draft file hashes; the full assertion remains in the chat tool
+output. No fresh source documents were uploaded, no fresh questions submitted,
+and no candidate code or frozen inputs were changed. Node is now v24.22.1;
+Chrome remains 155.0.8059.85. No execution freeze or fresh quality result exists.
+Work stopped pending approval to correct dependency-byte capture while retaining
+all hash checks, preserve this failure, and retry neutral preflight in a new path.
 
 ## README phase 1 handoff update — 2026-10-21
 

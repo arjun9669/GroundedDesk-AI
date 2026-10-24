@@ -1,0 +1,34 @@
+{
+  "status": "FAIL",
+  "date": "2026-10-24",
+  "attempt": "First user-approved neutral preflight retry; no subsequent retry",
+  "error": "assert.ok(assets.some(a=>/onnx/.test(a.url))) evaluated false at tests/browser-phase2-preflight.mjs:15:43",
+  "body_eviction_errors_reported": false,
+  "missing_onnx_identity_cause": "UNCONFIRMED; asset observation/cache/worker behavior needs diagnosis",
+  "fresh_inputs_loaded": false,
+  "fresh_questions_submitted": 0,
+  "candidate_changed": false,
+  "node": "v24.22.1",
+  "browser": "155.0.8059.85",
+  "files": [
+    {
+      "path": "eval/phase2-fresh64/network.mjs",
+      "sha256": "04c0034d2ceee0ded7447cac0862ea52ebe48f3f3935c6a64699eefd946b93b9"
+    },
+    {
+      "path": "eval/phase2-fresh64/integrity.mjs",
+      "sha256": "0b7c0af8dcb01ad29684f7566111b025b1be2480099ea31908bf2113917d09e0"
+    },
+    {
+      "path": "tests/browser-phase2-preflight.mjs",
+      "sha256": "da188a01149d173bc8c16f1295871842ce673f4239c5b44a874b467b1786f1f9"
+    },
+    {
+      "path": "tests/browser-phase2-fresh64.mjs",
+      "sha256": "5a17dcab695e4d65f6bc013ec821a2ad5a3dc86020c00ff55d3898eec138734a"
+    }
+  ],
+  "original_attempt_record_sha256": "825582222b079f00f7e6542100746aa834d6740713de3111d661b5377e5b0f09",
+  "publication": "No execution freeze, commit or push; draft scorer/audit/unit checks not run",
+  "next_action": "Await approval for diagnosis and correction of missing ONNX identity without weakening hashes, then another neutral preflight in a new path."
+}

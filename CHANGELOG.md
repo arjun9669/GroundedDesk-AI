@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-24 — Prepare first Fresh64 execution
+
+- Freeze the prospective capture runner, pinned native grader adapter, independent source/vector audit, 509-file execution identities and six actual downloaded dependency hashes before fresh questions.
+- Preserve both failed neutral preflights and approved fixes: explicit Chrome response buffers and original ONNX request identity through redirects. Declare Chrome 155.0.8059.86 / Node 24.22.1 / Playwright 1.62.1 before questions.
+- 777 unit tests and 28 strict Keyword checks PASS. Fresh64 capture/scoring remains unrun at this preparation checkpoint; live r44, v43 and original inputs/rubric unchanged.
+
 ## 2026-10-21 — Refresh README phase 1 status
 
 - Replace stale v39/current-phase claims with the approved 668-case phase 1 decision, complete family results, known failures, missing-input exclusions and evidence links.
