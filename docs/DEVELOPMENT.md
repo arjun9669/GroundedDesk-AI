@@ -337,3 +337,16 @@ assets; Chrome 155.0.8059.86, Node 24.22.1, Playwright 1.62.1. 777 unit/28 Keywo
 checks PASS. These are preparation checks, not Fresh64 quality results. Publish
 and verify the freeze before capture; use new exclusive raw/score paths and keep
 the first results. Never rerun a question or change a rubric to repair a failure.
+
+## Fresh64 first failure and offline publication review — 24 October 2026
+
+[First results](PHASE2_FRESH64_FIRST_RESULTS.md) preserve 52 PASS/4 PARTIAL/8 FAIL
+in each v43 variant from one 64-case capture. All 56 Hybrid submissions and eight
+lexical Comparisons completed without retries. The first audit passed 5,402 body/
+facet cosine checks. Original 512-artifact and 506-raw-artifact seals are unchanged;
+a separate 128-row binding review confirms native grades. Its new seal preserves
+review separately from the first scorer's PENDING checkpoint. User authorization
+covers review/documentation/publication only; no candidate/model/scorer rerun or
+source/key/rubric edits were made. Phase 2 is not accepted; Fresh64 is now exposed.
+Use a separate approved repair task before any implementation/regression replay,
+then agree a new prospective pack for confirmation. Live r44 remains unchanged.

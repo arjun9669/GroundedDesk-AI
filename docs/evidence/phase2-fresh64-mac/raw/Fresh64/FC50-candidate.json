@@ -1,0 +1,1466 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "FC50",
+  "question": "When did Oakenford Survey Store open its public room?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When did Oakenford Survey Store open its public room?",
+    "expected_display": "When did Oakenford Survey Store open its public room?",
+    "rendered_question": "When did Oakenford Survey Store open its public room?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Oakenford Survey Store opened its public room in 1936.",
+    "sources": [
+      {
+        "filename": "08_Oakenford_Survey_Store.txt",
+        "excerpt": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guide",
+        "quote": "Oakenford Survey Store opened its public room in 1936."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen did Oakenford Survey Store open its public room?\n\nSearched all files: 01_Bellhaven_Textile_Museum.txt · 02_Kestwick_Lens_Workshop.txt · 03_Ardmere_River_Station.txt · 04_Larchfen_Seed_Depot.txt · 05_Brindale_Music_Library.txt · 06_Tarrow_Glass_Laboratory.txt · 07_Westrill_Canal_Office.txt · 08_Oakenford_Survey_Store.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Oakenford Survey Store opened its public room in 1936.\n\nSOURCE EVIDENCE\n[1]\n08_Oakenford_Survey_Store.txt\n\nText line 1 (normalized extraction)\n\nOakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015. The Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book. Each Oakenford Survey Store guide\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Oakenford Survey Store opened its public room in 1936.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6:0",
+        "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+        "filename": "08_Oakenford_Survey_Store.txt",
+        "excerpt": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guide",
+        "quote": "Oakenford Survey Store opened its public room in 1936.",
+        "score": 0.0476,
+        "lexicalScore": 12.539201761705057,
+        "semanticScore": 0.6895210751477663,
+        "matchedTerms": [
+          "oakenford",
+          "survey",
+          "store",
+          "public",
+          "room"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6:0",
+        "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+        "filename": "08_Oakenford_Survey_Store.txt",
+        "excerpt": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guided session admits at most 22 visitors.\n\nThe Oakenford Survey Store highest monthly mean",
+        "quote": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+        "score": 0.0476,
+        "lexicalScore": 12.539201761705057,
+        "semanticScore": 0.6895210751477663,
+        "matchedTerms": [
+          "oakenford",
+          "survey",
+          "store",
+          "public",
+          "room"
+        ],
+        "start": 0,
+        "end": 141
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "08_Oakenford_Survey_Store.txt",
+        "quote": "Oakenford Survey Store opened its public room in 1936.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.8570408620743674,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "08_Oakenford_Survey_Store.txt",
+        "quote": "Oakenford Survey Store opened its public room in 1936.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "08_Oakenford_Survey_Store.txt",
+        "quote": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6:0",
+        "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+        "filename": "08_Oakenford_Survey_Store.txt",
+        "excerpt": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guided session admits at most 22 visitors.\n\nThe Oakenford Survey Store highest monthly mean",
+        "quote": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+        "score": 0.0476,
+        "lexicalScore": 12.539201761705057,
+        "semanticScore": 0.6895210751477663,
+        "matchedTerms": [
+          "oakenford",
+          "survey",
+          "store",
+          "public",
+          "room"
+        ],
+        "start": 0,
+        "end": 141
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "08_Oakenford_Survey_Store.txt",
+        "quote": "Oakenford Survey Store opened its public room in 1936.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.8570408620743674,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "08_Oakenford_Survey_Store.txt",
+        "quote": "Oakenford Survey Store opened its public room in 1936.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "08_Oakenford_Survey_Store.txt",
+        "quote": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "08_Oakenford_Survey_Store.txt",
+      "start": 0,
+      "content": "Oakenford Survey Store opened its public room in 1936.",
+      "semanticScore": 0.8570408620743674,
+      "lexicalScore": 16.32030453484703
+    },
+    {
+      "filename": "08_Oakenford_Survey_Store.txt",
+      "start": 143,
+      "content": "The Oakenford Survey Store Control Ledger was published in 2014.",
+      "semanticScore": 0.6243151589437901,
+      "lexicalScore": 8.271402640539215
+    },
+    {
+      "filename": "08_Oakenford_Survey_Store.txt",
+      "start": 301,
+      "content": "Each Oakenford Survey Store guided session admits at most 22 visitors.",
+      "semanticScore": 0.5779200727803824,
+      "lexicalScore": 7.199898558744749
+    },
+    {
+      "filename": "08_Oakenford_Survey_Store.txt",
+      "start": 580,
+      "content": "Oakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention.",
+      "semanticScore": 0.5214302215963689,
+      "lexicalScore": 6.680388175486909
+    },
+    {
+      "filename": "08_Oakenford_Survey_Store.txt",
+      "start": 373,
+      "content": "The Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July.",
+      "semanticScore": 0.45228382328248734,
+      "lexicalScore": 6.901868483574935
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "The Bellhaven Textile Museum relocated its collection in 1909.",
+      "start": 0,
+      "end": 62,
+      "similarity": 0.2785803300604775,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "Its first conservation project finished in 1954; the second finished in 1982.",
+      "start": 63,
+      "end": 140,
+      "similarity": 0.13062266917603169,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "A proposed closure in 2004 was rejected, and the museum remained open.",
+      "start": 141,
+      "end": 211,
+      "similarity": 0.27907809572689857,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "Decorative weaving panels line the upper stair rail.",
+      "start": 213,
+      "end": 265,
+      "similarity": 0.15255415594271407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "The entrance crown carries a bronze compass.",
+      "start": 266,
+      "end": 310,
+      "similarity": 0.06701702938524014,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "The lower wall displays a painted harbour map.",
+      "start": 311,
+      "end": 357,
+      "similarity": 0.11091079162543999,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "The display cases use an argon fill because argon slows oxidation of the dyed fibres.",
+      "start": 359,
+      "end": 444,
+      "similarity": 0.14034234782720417,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "The outer frame is aluminium and the shelf labels are paper.",
+      "start": 445,
+      "end": 505,
+      "similarity": 0.17685424899431937,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "Bellhaven Textile Museum visitor registers are retained for 18 months, unless an unresolved access complaint requires longer retention.",
+      "start": 507,
+      "end": 642,
+      "similarity": 0.33680609533392214,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Kestwick Lens Workshop opened its public test bench in 1998.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.31117135781044003,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Its warehouse moved in 2013, and its roof was renewed in 2021.",
+      "start": 61,
+      "end": 123,
+      "similarity": 0.2828006486091489,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Nera polishes five lenses per day.",
+      "start": 125,
+      "end": 159,
+      "similarity": -0.0015951228862299872,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Olin labels eight crates per day.",
+      "start": 160,
+      "end": 193,
+      "similarity": 0.15692747831286274,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Nera checks two gauges per day.",
+      "start": 194,
+      "end": 225,
+      "similarity": 0.041260586002669505,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+      "start": 227,
+      "end": 303,
+      "similarity": 0.08370847002174328,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.",
+      "start": 304,
+      "end": 419,
+      "similarity": 0.06477196709061742,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Lubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay.",
+      "start": 421,
+      "end": 530,
+      "similarity": 0.1063175849988898,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "The inspection interval remains 24 hours in both bays.",
+      "start": 531,
+      "end": 585,
+      "similarity": 0.1577194609174664,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+      "start": 587,
+      "end": 708,
+      "similarity": 0.1982041262264309,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Kestwick Lens Workshop calibration logs are retained for 12 months, unless an unresolved calibration dispute requires longer retention.",
+      "start": 710,
+      "end": 845,
+      "similarity": 0.18475549635772226,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "Orders released before 12:35 depart on the current operating day.",
+      "start": 0,
+      "end": 65,
+      "similarity": 0.1797322970356767,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "At or after 12:35, departure is the next operating day, unless a river inspection hold is still active.",
+      "start": 66,
+      "end": 169,
+      "similarity": 0.15586259774387365,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "Ardmere River Station cold samples must remain between 2 and 6 degrees Celsius during carriage.",
+      "start": 171,
+      "end": 266,
+      "similarity": 0.16323537699101254,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "Ardmere River Station dispatch records are retained for 16 months, unless an unresolved flood review requires longer retention.",
+      "start": 268,
+      "end": 395,
+      "similarity": 0.17828328736736465,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "Ardmere River Station acknowledges a carriage request within two operating days.",
+      "start": 397,
+      "end": 477,
+      "similarity": 0.1771480004639524,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "Acknowledgement does not guarantee departure.",
+      "start": 478,
+      "end": 523,
+      "similarity": 0.009109280945611082,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Release ticket orders before 09:50 for departure on the current collection day.",
+      "start": 0,
+      "end": 79,
+      "similarity": 0.21393899209130315,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Ticket orders released at or after 09:50 depart on the next collection day, unless a seed screening hold remains active.",
+      "start": 80,
+      "end": 200,
+      "similarity": 0.2743012417683565,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Tavin sorts seven trays per day.",
+      "start": 202,
+      "end": 234,
+      "similarity": 0.09831733132480747,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Ema labels three packets per day.",
+      "start": 235,
+      "end": 268,
+      "similarity": 0.10464600629072683,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Tavin checks two bins per day.",
+      "start": 269,
+      "end": 299,
+      "similarity": 0.0834896240572728,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "The Larchfen Seed Depot dispatch packet includes a route card, seal register, depot label, and receipt.",
+      "start": 301,
+      "end": 404,
+      "similarity": 0.13569354943105572,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Larchfen Seed Depot accession records are retained for 5 years, unless an unresolved quarantine case requires longer retention.",
+      "start": 406,
+      "end": 533,
+      "similarity": 0.13466376215818968,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Brindale Music Library opened its catalogue store in 1958.",
+      "start": 0,
+      "end": 58,
+      "similarity": 0.23869332558391787,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Its warehouse relocation took place in 1976.",
+      "start": 59,
+      "end": 103,
+      "similarity": 0.32570949215864087,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "The main roof was rebuilt in 1999.",
+      "start": 104,
+      "end": 138,
+      "similarity": 0.14168318302546518,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "The Brindale Music Library catalogue Echoes of Reed was published in 1991.",
+      "start": 140,
+      "end": 214,
+      "similarity": 0.1691343487987468,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "A different catalogue, Songs of Flint, was published in 2007.",
+      "start": 215,
+      "end": 276,
+      "similarity": 0.07775972482800386,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Neither is designated the large work.",
+      "start": 277,
+      "end": 314,
+      "similarity": 0.03924243773373544,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Each Brindale Music Library guided session admits at most 28 visitors.",
+      "start": 316,
+      "end": 386,
+      "similarity": 0.09908975298226248,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Brindale Music Library acknowledges a loan request within four business days.",
+      "start": 388,
+      "end": 465,
+      "similarity": 0.14878969374086976,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Acknowledgement does not promise confirmation of a loan.",
+      "start": 466,
+      "end": 522,
+      "similarity": 0.07144656914329034,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Brindale Music Library loan receipts are retained for 9 months, unless an unresolved missing-instrument claim requires longer retention.",
+      "start": 524,
+      "end": 660,
+      "similarity": 0.1020263973581386,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "The highest monthly mean temperature in the Brindale Music Library store is 25 degrees Celsius in August.",
+      "start": 662,
+      "end": 767,
+      "similarity": 0.0877590909675808,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Its highest daily reading is 37 degrees Celsius.",
+      "start": 768,
+      "end": 816,
+      "similarity": 0.12964609982079597,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating.",
+      "start": 0,
+      "end": 130,
+      "similarity": 0.12465402955756752,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "The support frames are steel and the labels are card.",
+      "start": 131,
+      "end": 184,
+      "similarity": 0.10109374331180894,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Inspection emblems decorate the side balcony windows at Tarrow Glass Laboratory.",
+      "start": 186,
+      "end": 266,
+      "similarity": 0.2212301879945207,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "The entrance arch has a blue crest, and the ceiling carries a brass vane.",
+      "start": 267,
+      "end": 340,
+      "similarity": 0.15471931455576576,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "The Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius.",
+      "start": 342,
+      "end": 419,
+      "similarity": 0.13848197036850624,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Its highest monthly mean is 26 degrees Celsius in June, and its highest daily reading is 39 degrees Celsius.",
+      "start": 420,
+      "end": 528,
+      "similarity": 0.08058944109246935,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "No absolute winter minimum is stated.",
+      "start": 529,
+      "end": 566,
+      "similarity": 0.03715254083598163,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "The Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions.",
+      "start": 568,
+      "end": 693,
+      "similarity": 0.06702860707079353,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Its inspection interval remains 18 hours in either condition.",
+      "start": 694,
+      "end": 755,
+      "similarity": 0.17689721530818306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "start": 757,
+      "end": 878,
+      "similarity": 0.30443231677276006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Each Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+      "start": 880,
+      "end": 951,
+      "similarity": 0.21508095001026442,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Westrill Canal Office moved its dispatch counter in 1917.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.19486939383976226,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Its first restoration was completed in 1965, and its second restoration was completed in 2003.",
+      "start": 58,
+      "end": 152,
+      "similarity": 0.2110243894692154,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "A proposed closure in 1978 was rejected and did not occur.",
+      "start": 153,
+      "end": 211,
+      "similarity": 0.14369480510603835,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Pera registers four permits per day.",
+      "start": 213,
+      "end": 249,
+      "similarity": 0.15141561475613277,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Sorin archives six maps per day.",
+      "start": 250,
+      "end": 282,
+      "similarity": 0.184360751583869,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Pera checks two seals per day.",
+      "start": 283,
+      "end": 313,
+      "similarity": -0.05024733061251041,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Westrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.",
+      "start": 315,
+      "end": 437,
+      "similarity": 0.09988489293921993,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "The Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+      "start": 439,
+      "end": 560,
+      "similarity": 0.09475946212786752,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Oakenford Survey Store opened its public room in 1936.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.8570408620743674,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+      "start": 55,
+      "end": 141,
+      "similarity": 0.23962168783005441,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "The Oakenford Survey Store Control Ledger was published in 2014.",
+      "start": 143,
+      "end": 207,
+      "similarity": 0.6243151589437901,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "A different book, Field Atlas, was published in 2020.",
+      "start": 208,
+      "end": 261,
+      "similarity": 0.10833341162855517,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Neither is designated the large book.",
+      "start": 262,
+      "end": 299,
+      "similarity": 0.0863455011270189,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Each Oakenford Survey Store guided session admits at most 22 visitors.",
+      "start": 301,
+      "end": 371,
+      "similarity": 0.5779200727803824,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "The Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 373,
+      "end": 463,
+      "similarity": 0.45228382328248734,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.",
+      "start": 464,
+      "end": 578,
+      "similarity": 0.0708528941585624,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Oakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention.",
+      "start": 580,
+      "end": 717,
+      "similarity": 0.5214302215963689,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6:0",
+          "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+          "filename": "08_Oakenford_Survey_Store.txt",
+          "excerpt": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guided session admits at most 22 visitors.\n\nThe Oakenford Survey Store highest monthly mean",
+          "quote": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+          "score": 0.0476,
+          "lexicalScore": 12.539201761705057,
+          "semanticScore": 0.6895210751477663,
+          "matchedTerms": [
+            "oakenford",
+            "survey",
+            "store",
+            "public",
+            "room"
+          ],
+          "start": 0,
+          "end": 141
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "08_Oakenford_Survey_Store.txt",
+          "quote": "Oakenford Survey Store opened its public room in 1936.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8570408620743674,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "08_Oakenford_Survey_Store.txt",
+          "quote": "Oakenford Survey Store opened its public room in 1936.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "08_Oakenford_Survey_Store.txt",
+          "quote": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6:0",
+          "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+          "filename": "08_Oakenford_Survey_Store.txt",
+          "excerpt": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guided session admits at most 22 visitors.\n\nThe Oakenford Survey Store highest monthly mean",
+          "quote": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+          "score": 0.0476,
+          "lexicalScore": 12.539201761705057,
+          "semanticScore": 0.6895210751477663,
+          "matchedTerms": [
+            "oakenford",
+            "survey",
+            "store",
+            "public",
+            "room"
+          ],
+          "start": 0,
+          "end": 141
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "08_Oakenford_Survey_Store.txt",
+          "quote": "Oakenford Survey Store opened its public room in 1936.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8570408620743674,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "08_Oakenford_Survey_Store.txt",
+          "quote": "Oakenford Survey Store opened its public room in 1936.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "08_Oakenford_Survey_Store.txt",
+          "quote": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Oakenford Survey Store opened its public room in 1936.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6:0",
+          "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+          "filename": "08_Oakenford_Survey_Store.txt",
+          "excerpt": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guide",
+          "quote": "Oakenford Survey Store opened its public room in 1936.",
+          "score": 0.0476,
+          "lexicalScore": 12.539201761705057,
+          "semanticScore": 0.6895210751477663,
+          "matchedTerms": [
+            "oakenford",
+            "survey",
+            "store",
+            "public",
+            "room"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "08_Oakenford_Survey_Store.txt",
+          "quote": "Oakenford Survey Store opened its public room in 1936.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8570408620743674,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "08_Oakenford_Survey_Store.txt",
+          "quote": "Oakenford Survey Store opened its public room in 1936.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Oakenford Survey Store opened its public room in 1936.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6:0",
+          "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+          "filename": "08_Oakenford_Survey_Store.txt",
+          "excerpt": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guide",
+          "quote": "Oakenford Survey Store opened its public room in 1936.",
+          "score": 0.0476,
+          "lexicalScore": 12.539201761705057,
+          "semanticScore": 0.6895210751477663,
+          "matchedTerms": [
+            "oakenford",
+            "survey",
+            "store",
+            "public",
+            "room"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "08_Oakenford_Survey_Store.txt",
+          "quote": "Oakenford Survey Store opened its public room in 1936.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8570408620743674,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "08_Oakenford_Survey_Store.txt",
+          "quote": "Oakenford Survey Store opened its public room in 1936.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.0003654109896160662,
+    -0.0013433429412543774,
+    -0.06306874006986618,
+    0.05763806402683258,
+    0.040964268147945404,
+    -0.011855948716402054,
+    -0.039924297481775284,
+    -0.06731221824884415,
+    -0.07244572788476944,
+    0.0018399057444185019,
+    0.03324316442012787,
+    0.03361190855503082,
+    -0.05270303785800934,
+    -0.06601718813180923,
+    0.02452717162668705,
+    -0.00539185618981719,
+    0.012750371359288692,
+    -0.013268151320517063,
+    0.0523802675306797,
+    0.024449335411190987,
+    -0.06021888181567192,
+    0.037800464779138565,
+    0.024525010958313942,
+    -0.0035029517021030188,
+    0.07519719004631042,
+    -0.030483752489089966,
+    -0.015831423923373222,
+    0.07972673326730728,
+    0.039157476276159286,
+    -0.038774650543928146,
+    0.08092634379863739,
+    0.0340413860976696,
+    0.1112356185913086,
+    0.01410722266882658,
+    0.09934651106595993,
+    -0.0063355183228850365,
+    0.09036533534526825,
+    -0.08711805939674377,
+    0.003965873271226883,
+    0.007571930531412363,
+    -0.020327579230070114,
+    -0.03146738559007645,
+    0.00012602345668710768,
+    0.022924279794096947,
+    -0.11690322309732437,
+    0.052971165627241135,
+    0.023701027035713196,
+    0.00027247905381955206,
+    0.07979775220155716,
+    0.08118192106485367,
+    0.06950341910123825,
+    0.019963325932621956,
+    0.052048370242118835,
+    -0.08147674798965454,
+    -0.018784916028380394,
+    0.04764040932059288,
+    0.009152350947260857,
+    -0.04244188219308853,
+    -0.022267326712608337,
+    0.02481985278427601,
+    0.08862699568271637,
+    -0.045240841805934906,
+    -0.07894548028707504,
+    0.04116686061024666,
+    -0.053001031279563904,
+    0.07155922800302505,
+    -0.09360974282026291,
+    -0.015810469165444374,
+    0.06754746288061142,
+    -0.20678897202014923,
+    0.03214096650481224,
+    0.005311649292707443,
+    -0.018920784816145897,
+    -0.04997769743204117,
+    0.0686776265501976,
+    0.05478404834866524,
+    -0.03405474126338959,
+    -0.059627894312143326,
+    0.040013715624809265,
+    -0.053239606320858,
+    -0.0186922587454319,
+    -0.01507021114230156,
+    0.020610898733139038,
+    0.029598956927657127,
+    -0.04211049899458885,
+    -0.004015379119664431,
+    0.038151971995830536,
+    0.09483537822961807,
+    -0.00995275005698204,
+    -0.03367923945188522,
+    0.03019808419048786,
+    0.09661177545785904,
+    -0.14625705778598785,
+    0.01757684350013733,
+    -0.016818344593048096,
+    -0.059981852769851685,
+    -0.02214493788778782,
+    -0.0017073648050427437,
+    0.048939939588308334,
+    0.05216553434729576,
+    -0.04270791634917259,
+    0.13509990274906158,
+    0.053126417100429535,
+    0.043375637382268906,
+    -0.077262282371521,
+    -0.07738792896270752,
+    -0.020024796947836876,
+    0.0664186105132103,
+    -0.03363017737865448,
+    0.022851059213280678,
+    -0.029300974681973457,
+    -0.06228303536772728,
+    0.0759262815117836,
+    0.06509071588516235,
+    0.051817022264003754,
+    -0.031334973871707916,
+    0.04754304885864258,
+    -0.024921592324972153,
+    0.034101419150829315,
+    -0.07497040927410126,
+    0.09455588459968567,
+    0.07942164689302444,
+    -0.009679310955107212,
+    -0.03885024040937424,
+    0.03262042626738548,
+    0.012311264872550964,
+    0.05547073483467102,
+    -2.5808085001478866e-33,
+    -0.0206557959318161,
+    0.05494267866015434,
+    0.018207622691988945,
+    0.021545542404055595,
+    0.09785965085029602,
+    0.012522360309958458,
+    -0.0648450031876564,
+    0.07565928250551224,
+    0.03720121458172798,
+    0.08312828093767166,
+    0.052288662642240524,
+    -0.04158185049891472,
+    0.04542887955904007,
+    -0.03725726529955864,
+    0.09243445098400116,
+    0.03257795050740242,
+    -0.01914449967443943,
+    0.049776092171669006,
+    -0.016869405284523964,
+    -0.01830185018479824,
+    -0.03447061777114868,
+    0.023489993065595627,
+    -0.04366450011730194,
+    0.10074393451213837,
+    -0.0004595492500811815,
+    0.023615319281816483,
+    0.0013267950853332877,
+    0.04300237447023392,
+    0.07057126611471176,
+    0.016833698377013206,
+    0.05339069664478302,
+    -0.027011564001441002,
+    -0.015737053006887436,
+    -0.010442124679684639,
+    0.022644639015197754,
+    0.10121648013591766,
+    0.009959908202290535,
+    -0.056646350771188736,
+    -0.025010043755173683,
+    -0.023820362985134125,
+    0.017781199887394905,
+    0.03835132718086243,
+    0.10387323796749115,
+    0.06371334940195084,
+    -0.011769606731832027,
+    0.03813808783888817,
+    -0.029971489682793617,
+    -0.021213265135884285,
+    0.017467522993683815,
+    -0.0071875667199492455,
+    -0.059816569089889526,
+    0.044566791504621506,
+    -0.065008744597435,
+    0.05570324882864952,
+    -0.02344679646193981,
+    -0.08015312999486923,
+    0.00014737639867234975,
+    -0.08295704424381256,
+    0.01938154548406601,
+    -0.028641359880566597,
+    0.02125769481062889,
+    0.09805082529783249,
+    -0.021632419899106026,
+    -0.02346942014992237,
+    -0.06138307601213455,
+    -0.02920178882777691,
+    -0.02393485978245735,
+    -0.131134033203125,
+    0.04093895107507706,
+    -0.011793101206421852,
+    0.04898083209991455,
+    0.031331922858953476,
+    -0.070412278175354,
+    -0.03986971825361252,
+    -0.04088081791996956,
+    0.002347839530557394,
+    -0.11950813233852386,
+    0.0820145457983017,
+    0.049148157238960266,
+    -0.0044250949285924435,
+    0.06321902573108673,
+    -0.05194893106818199,
+    -0.030437855049967766,
+    0.007567449938505888,
+    0.043013859540224075,
+    -0.013545358553528786,
+    0.038805533200502396,
+    0.05124334618449211,
+    -0.004475885070860386,
+    0.014031779952347279,
+    -0.020219944417476654,
+    0.03784160688519478,
+    -0.05510469898581505,
+    0.020412392914295197,
+    -0.03625592589378357,
+    1.3974952751827077e-33,
+    -0.01777750626206398,
+    -0.06006261333823204,
+    -0.0928817093372345,
+    0.029775265604257584,
+    -0.06413469463586807,
+    0.0007879724726080894,
+    -0.033962130546569824,
+    0.019002430140972137,
+    0.0725368931889534,
+    0.006804360076785088,
+    0.0038270161021500826,
+    -0.005180782172828913,
+    0.07257741689682007,
+    -0.002873186022043228,
+    0.040502410382032394,
+    0.027838904410600662,
+    0.08329645544290543,
+    -0.02683109976351261,
+    -0.04401707276701927,
+    0.021375814452767372,
+    0.02379993163049221,
+    0.02130686491727829,
+    -0.04563808813691139,
+    -0.010101544670760632,
+    -0.01598174124956131,
+    -0.005307245999574661,
+    0.01427769660949707,
+    -0.05933827906847,
+    -0.030089816078543663,
+    -0.021378619596362114,
+    -0.08200661092996597,
+    -0.08372578024864197,
+    -0.003828667802736163,
+    0.05324017256498337,
+    0.037519510835409164,
+    -0.01616995595395565,
+    0.03885137662291527,
+    -0.012889628298580647,
+    -0.06235101446509361,
+    0.02520895004272461,
+    0.016224680468440056,
+    0.03148871287703514,
+    -0.08890193700790405,
+    0.05423916131258011,
+    0.03245949372649193,
+    -0.025544580072164536,
+    -0.06209735944867134,
+    -0.023911183699965477,
+    -0.028946097940206528,
+    -0.011035355739295483,
+    -0.09597060829401016,
+    0.05591017007827759,
+    0.03462168201804161,
+    -0.08064799755811691,
+    -0.037855274975299835,
+    0.07980382442474365,
+    0.021453596651554108,
+    0.030390696600079536,
+    -0.00016808704822324216,
+    0.058790165930986404,
+    0.04444475471973419,
+    0.05522400885820389,
+    -0.0696767270565033,
+    -0.010622584261000156,
+    0.052466124296188354,
+    -0.04308494180440903,
+    0.02727474272251129,
+    -0.021098194643855095,
+    0.05341663211584091,
+    -0.0494258888065815,
+    0.027646604925394058,
+    -0.015282880514860153,
+    0.11586181819438934,
+    0.03853774070739746,
+    -0.04443855956196785,
+    0.005200514104217291,
+    0.06039468199014664,
+    0.004851839039474726,
+    -0.05901501700282097,
+    -0.05426335334777832,
+    -0.07573848962783813,
+    0.003324380610138178,
+    0.011035247705876827,
+    -0.002962796948850155,
+    -0.003083918010815978,
+    -0.07420344650745392,
+    0.09122065454721451,
+    0.0012266886187717319,
+    -0.0819636806845665,
+    -0.03050278313457966,
+    -0.020442457869648933,
+    0.03451371565461159,
+    -0.03761190176010132,
+    -0.007445902097970247,
+    -0.019822733476758003,
+    -1.8068105234192444e-8,
+    -0.05143580585718155,
+    0.057225774973630905,
+    0.01035370584577322,
+    -0.013285564258694649,
+    0.07448107749223709,
+    -0.04357350990176201,
+    0.11494804173707962,
+    0.08643452823162079,
+    -0.03404127433896065,
+    0.009312005713582039,
+    0.02065352164208889,
+    0.07945217937231064,
+    -0.08501201122999191,
+    0.01275528222322464,
+    -0.0015644925879314542,
+    -0.03689805045723915,
+    -0.04601692408323288,
+    -0.10475773364305496,
+    -0.04996185749769211,
+    0.021760934963822365,
+    0.02110067568719387,
+    -0.014254521578550339,
+    0.03024900145828724,
+    0.008207016624510288,
+    -0.05485174432396889,
+    0.013760333880782127,
+    0.010544069111347198,
+    -0.0068604545667767525,
+    0.02004466950893402,
+    -0.031022001057863235,
+    0.004397118464112282,
+    0.03814171254634857,
+    -0.020504944026470184,
+    0.0138107780367136,
+    0.005488568916916847,
+    0.020724840462207794,
+    -0.045794181525707245,
+    0.047269221395254135,
+    0.07291290163993835,
+    -0.08577315509319305,
+    -0.06642448157072067,
+    -0.08881063759326935,
+    -0.09152981638908386,
+    -0.0035837285686284304,
+    0.04744927957653999,
+    0.04723619297146797,
+    -0.006220120005309582,
+    -0.0010573010658845305,
+    0.021512644365429878,
+    -0.09175344556570053,
+    -0.06805698573589325,
+    -0.005352045875042677,
+    0.03806009888648987,
+    0.003138615284115076,
+    -0.03111138567328453,
+    -0.0593549869954586,
+    -0.0073471409268677235,
+    -0.05193011835217476,
+    -0.005014144815504551,
+    -0.02745196409523487,
+    0.005722966510802507,
+    -0.021155111491680145,
+    -0.10166328400373459,
+    0.043500546365976334
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "08_Oakenford_Survey_Store.txt",
+        "start": 0,
+        "content": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guided session admits at most 22 visitors.\n\nThe Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July. Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.\n\nOakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "08_Oakenford_Survey_Store.txt",
+        "start": 0,
+        "content": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guided session admits at most 22 visitors.\n\nThe Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July. Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.\n\nOakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention."
+      }
+    ]
+  }
+}

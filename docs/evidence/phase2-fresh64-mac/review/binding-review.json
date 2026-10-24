@@ -1,0 +1,1308 @@
+{
+  "classification": "Separate offline author-created evidence review; original native score and first evidence unchanged",
+  "review_date": "2026-10-24",
+  "reviewer": "Codex; no external/blinded adjudication claim",
+  "authorization": "User approved reviewing, documenting and publishing the first failure without candidate changes or model reruns",
+  "native_score_sha256": "6355af245eea919483b515d956dfe353ae85176f012805c18fbd922f6225261b",
+  "original_manifest_sha256": "323830af594081c62e6c9a26a403b83d2c9161704272936ff205a20aaedb7123",
+  "original_native_manual_review_field": "PENDING, preserved as first scoring checkpoint; this separate artifact records completed review",
+  "review_status": "COMPLETE_WITH_NATIVE_FAILURES_CONFIRMED",
+  "reviewed_variant_rows": 128,
+  "unique_question_answer_pairs": 64,
+  "fixed_section_answer_quote_parity": true,
+  "native_grade_changes": 0,
+  "model_reruns": 0,
+  "candidate_invocations_during_review": 0,
+  "observed_source_integrity": "59/59 source-literal quotations and 64/64 citation numbering per variant; 49/59 meet frozen context/group relevance",
+  "manual_native_disagreements": [],
+  "final_confirmation_gate": "FAIL",
+  "screenshot_spot_checks": [
+    "FC14-candidate-lab.png",
+    "FC28-candidate-lab.png",
+    "FC58-candidate-lab.png",
+    "FC44-candidate-lab.png"
+  ],
+  "review_scope": "All original questions, source paragraphs and displayed answer/quote bindings, both variants; four candidate-panel screenshots visually inspected. Does not claim every screenshot inspected or new model execution.",
+  "rows": [
+    {
+      "id": "FC01",
+      "variant": "fixed",
+      "question": "When did Bellhaven Textile Museum relocate its collection?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Collection relocation is explicitly bound to 1909; other dates remain separate events.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC01",
+      "saved_candidate_reference": "raw/Fresh64/FC01-candidate.json"
+    },
+    {
+      "id": "FC02",
+      "variant": "fixed",
+      "question": "When was the first Bellhaven Textile Museum conservation project finished?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "The first conservation project is explicitly bound to 1954; the second project date is not substituted.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC02",
+      "saved_candidate_reference": "raw/Fresh64/FC02-candidate.json"
+    },
+    {
+      "id": "FC03",
+      "variant": "fixed",
+      "question": "Which part of Bellhaven Textile Museum is lined with decorative weaving panels?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Weaving panels are explicitly located on the upper stair rail, distinct from crown and lower-wall objects.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC03",
+      "saved_candidate_reference": "raw/Fresh64/FC03-candidate.json"
+    },
+    {
+      "id": "FC04",
+      "variant": "fixed",
+      "question": "Why do the Bellhaven Textile Museum display cases use argon?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "The quoted causal clause binds argon to slowing oxidation of dyed fibres.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC04",
+      "saved_candidate_reference": "raw/Fresh64/FC04-candidate.json"
+    },
+    {
+      "id": "FC05",
+      "variant": "fixed",
+      "question": "How long are Bellhaven Textile Museum visitor registers retained, and what exception applies?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both 18-month retention and the unresolved-access-complaint exception are displayed.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC05",
+      "saved_candidate_reference": "raw/Fresh64/FC05-candidate.json"
+    },
+    {
+      "id": "FC06",
+      "variant": "fixed",
+      "question": "What is the Bellhaven Textile Museum bank account number?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "No bank account is supplied by the source; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC06",
+      "saved_candidate_reference": "raw/Fresh64/FC06-candidate.json"
+    },
+    {
+      "id": "FC07",
+      "variant": "fixed",
+      "question": "In which year did Bellhaven Textile Museum close in 2004?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "The source rejects the proposed closure; the false-premise question receives an uncited refusal.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC07",
+      "saved_candidate_reference": "raw/Fresh64/FC07-candidate.json"
+    },
+    {
+      "id": "FC08",
+      "variant": "fixed",
+      "question": "When did Kestwick Lens Workshop open its public test bench?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Public test-bench opening is bound to 1998, distinct from warehouse and roof dates.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC08",
+      "saved_candidate_reference": "raw/Fresh64/FC08-candidate.json"
+    },
+    {
+      "id": "FC09",
+      "variant": "fixed",
+      "question": "How many lenses does Nera polish per day at Kestwick Lens Workshop?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Nera, polishing, five lenses and per-day units appear in the same relation.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC09",
+      "saved_candidate_reference": "raw/Fresh64/FC09-candidate.json"
+    },
+    {
+      "id": "FC10",
+      "variant": "fixed",
+      "question": "What is the lowest recorded winter temperature at Kestwick Lens Workshop?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Supported minus-6 winter minimum is present in source but an uncited refusal is returned; false refusal.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC10",
+      "saved_candidate_reference": "raw/Fresh64/FC10-candidate.json"
+    },
+    {
+      "id": "FC11",
+      "variant": "fixed",
+      "question": "Give both lubrication intervals for the Kestwick Lens Workshop rig and say whether its inspection interval changes.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both 96/48-hour lubrication intervals and unchanged 24-hour inspection are quoted.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC11",
+      "saved_candidate_reference": "raw/Fresh64/FC11-candidate.json"
+    },
+    {
+      "id": "FC12",
+      "variant": "fixed",
+      "question": "Who must approve a Kestwick Lens Workshop purchase above 6200, and is written approval required?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Above-6200 purchase condition, written approval and both named approving roles are quoted.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC12",
+      "saved_candidate_reference": "raw/Fresh64/FC12-candidate.json"
+    },
+    {
+      "id": "FC13",
+      "variant": "fixed",
+      "question": "How many crates does Nera label per day at Kestwick Lens Workshop?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Source assigns crate labelling to Olin, not Nera; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC13",
+      "saved_candidate_reference": "raw/Fresh64/FC13-candidate.json"
+    },
+    {
+      "id": "FC14",
+      "variant": "fixed",
+      "question": "Who must approve a Kestwick Lens Workshop purchase of exactly 6200?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Exactly 6200 is outside the stated above-6200 rule; citing that rule does not support an equality policy. Strict unsupported-control failure, not a fabricated quote.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC14",
+      "saved_candidate_reference": "raw/Fresh64/FC14-candidate.json"
+    },
+    {
+      "id": "FC15",
+      "variant": "fixed",
+      "question": "An Ardmere River Station dispatch request is released exactly at 12:35. When does it depart, and what hold can prevent it?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Exact cutoff maps to next operating day and retains the river-inspection hold.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC15",
+      "saved_candidate_reference": "raw/Fresh64/FC15-candidate.json"
+    },
+    {
+      "id": "FC16",
+      "variant": "fixed",
+      "question": "An Ardmere River Station dispatch request is released at 12:34. When does it depart?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "12:34 is before 12:35; the quoted rule supports current operating day.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC16",
+      "saved_candidate_reference": "raw/Fresh64/FC16-candidate.json"
+    },
+    {
+      "id": "FC17",
+      "variant": "fixed",
+      "question": "What temperature range is required for Ardmere River Station cold samples?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "The 2-to-6-degree carriage requirement is displayed with its cold-sample subject.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC17",
+      "saved_candidate_reference": "raw/Fresh64/FC17-candidate.json"
+    },
+    {
+      "id": "FC18",
+      "variant": "fixed",
+      "question": "How long are Ardmere River Station dispatch records retained, including the exception?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "16-month retention includes the unresolved-flood-review exception.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC18",
+      "saved_candidate_reference": "raw/Fresh64/FC18-candidate.json"
+    },
+    {
+      "id": "FC19",
+      "variant": "fixed",
+      "question": "How quickly does Ardmere River Station acknowledge a carriage request, and does that guarantee departure?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Two operating days is acknowledgement timing; the quoted sentence explicitly denies a departure guarantee.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC19",
+      "saved_candidate_reference": "raw/Fresh64/FC19-candidate.json"
+    },
+    {
+      "id": "FC20",
+      "variant": "fixed",
+      "question": "Who approves an Ardmere River Station dispatch at 12:35?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "No dispatch approver is stated; an uncited refusal avoids turning departure timing into an actor.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC20",
+      "saved_candidate_reference": "raw/Fresh64/FC20-candidate.json"
+    },
+    {
+      "id": "FC21",
+      "variant": "fixed",
+      "question": "Which truck leaves the Ardmere River Station dispatch yard at 12:35?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "No specific truck is identified; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC21",
+      "saved_candidate_reference": "raw/Fresh64/FC21-candidate.json"
+    },
+    {
+      "id": "FC22",
+      "variant": "fixed",
+      "question": "A Larchfen Seed Depot ticket order is released exactly at 09:50. When does it depart, and what can hold it back?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Ticket-order cutoff equality maps to next collection day and preserves the seed-screening hold.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC22",
+      "saved_candidate_reference": "raw/Fresh64/FC22-candidate.json"
+    },
+    {
+      "id": "FC23",
+      "variant": "fixed",
+      "question": "A Larchfen Seed Depot ticket order is released at 09:49. When does it depart?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "09:49 is before 09:50; the ticket-order clause supports current collection day.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC23",
+      "saved_candidate_reference": "raw/Fresh64/FC23-candidate.json"
+    },
+    {
+      "id": "FC24",
+      "variant": "fixed",
+      "question": "How many trays does Tavin sort per day at Larchfen Seed Depot?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Tavin, sorting, seven trays and per-day units are explicitly bound.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC24",
+      "saved_candidate_reference": "raw/Fresh64/FC24-candidate.json"
+    },
+    {
+      "id": "FC25",
+      "variant": "fixed",
+      "question": "List every item in the Larchfen Seed Depot dispatch packet.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "All four packet items are quoted: route card, seal register, depot label and receipt.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC25",
+      "saved_candidate_reference": "raw/Fresh64/FC25-candidate.json"
+    },
+    {
+      "id": "FC26",
+      "variant": "fixed",
+      "question": "How long are Larchfen Seed Depot accession records retained, and which exception applies?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Five-year retention includes the unresolved-quarantine-case exception.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC26",
+      "saved_candidate_reference": "raw/Fresh64/FC26-candidate.json"
+    },
+    {
+      "id": "FC27",
+      "variant": "fixed",
+      "question": "How many packets does Tavin label per day at Larchfen Seed Depot?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Packet labelling is assigned to Ema, not Tavin; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC27",
+      "saved_candidate_reference": "raw/Fresh64/FC27-candidate.json"
+    },
+    {
+      "id": "FC28",
+      "variant": "fixed",
+      "question": "Who approves a Larchfen Seed Depot ticket order at 09:50?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Who-approves question receives only a departure/hold rule. No approver is supplied; strict unsupported refusal was required.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC28",
+      "saved_candidate_reference": "raw/Fresh64/FC28-candidate.json"
+    },
+    {
+      "id": "FC29",
+      "variant": "fixed",
+      "question": "When did the Brindale Music Library warehouse relocation take place?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Warehouse relocation is explicitly bound to 1976, not store opening or roof rebuilding.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC29",
+      "saved_candidate_reference": "raw/Fresh64/FC29-candidate.json"
+    },
+    {
+      "id": "FC30",
+      "variant": "fixed",
+      "question": "When was the Brindale Music Library catalogue Echoes of Reed published?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Echoes of Reed is bound to 1991; Songs of Flint and its date remain a different catalogue.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC30",
+      "saved_candidate_reference": "raw/Fresh64/FC30-candidate.json"
+    },
+    {
+      "id": "FC31",
+      "variant": "fixed",
+      "question": "How many visitors can attend a Brindale Music Library guided session?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Guided-session capacity is explicitly at most 28 visitors.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC31",
+      "saved_candidate_reference": "raw/Fresh64/FC31-candidate.json"
+    },
+    {
+      "id": "FC32",
+      "variant": "fixed",
+      "question": "How quickly does Brindale Music Library acknowledge a loan request, and does acknowledgement promise confirmation?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Four business days concerns acknowledgement; the quote explicitly denies confirmation of a loan.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC32",
+      "saved_candidate_reference": "raw/Fresh64/FC32-candidate.json"
+    },
+    {
+      "id": "FC33",
+      "variant": "fixed",
+      "question": "How long are Brindale Music Library loan receipts kept, including the exception?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Loan-receipt retention requires 9 months plus missing-instrument exception; the displayed loan-acknowledgement paragraph supplies neither.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC33",
+      "saved_candidate_reference": "raw/Fresh64/FC33-candidate.json"
+    },
+    {
+      "id": "FC34",
+      "variant": "fixed",
+      "question": "When was the large work at Brindale Music Library published?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Neither catalogue is designated the large work. Quoting both titles/dates does not resolve the ambiguous referent; frozen rule requires uncited refusal/qualifying clarification.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC34",
+      "saved_candidate_reference": "raw/Fresh64/FC34-candidate.json"
+    },
+    {
+      "id": "FC35",
+      "variant": "fixed",
+      "question": "What is the Brindale Music Library loan clerk password?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "No loan-clerk password is supplied; uncited refusal is appropriate. The question itself is fictional test data.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC35",
+      "saved_candidate_reference": "raw/Fresh64/FC35-candidate.json"
+    },
+    {
+      "id": "FC36",
+      "variant": "fixed",
+      "question": "Why does Tarrow Glass Laboratory use dry nitrogen in display vessels?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Dry nitrogen is explicitly linked to preventing moisture from clouding the coating.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC36",
+      "saved_candidate_reference": "raw/Fresh64/FC36-candidate.json"
+    },
+    {
+      "id": "FC37",
+      "variant": "fixed",
+      "question": "Which part of Tarrow Glass Laboratory is decorated with inspection emblems?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Inspection emblems are bound to side balcony windows, distinct from entrance arch and ceiling objects.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC37",
+      "saved_candidate_reference": "raw/Fresh64/FC37-candidate.json"
+    },
+    {
+      "id": "FC38",
+      "variant": "fixed",
+      "question": "Give the highest monthly mean temperature at Tarrow Glass Laboratory and its month.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Highest monthly mean is bound to 26 degrees in June; daily high and winter average remain distinct.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC38",
+      "saved_candidate_reference": "raw/Fresh64/FC38-candidate.json"
+    },
+    {
+      "id": "FC39",
+      "variant": "fixed",
+      "question": "Give the normal and dusty lubrication intervals for the Tarrow Glass Laboratory rig and say whether inspection changes.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "72/36-hour lubrication and unchanged 18-hour inspection are all quoted with their conditions.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC39",
+      "saved_candidate_reference": "raw/Fresh64/FC39-candidate.json"
+    },
+    {
+      "id": "FC40",
+      "variant": "fixed",
+      "question": "What written approvals are required for a Tarrow Glass Laboratory purchase above 7900?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Above-7900 condition, written approval and both Lab Curator/Safety Warden roles are displayed.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC40",
+      "saved_candidate_reference": "raw/Fresh64/FC40-candidate.json"
+    },
+    {
+      "id": "FC41",
+      "variant": "fixed",
+      "question": "What is the absolute minimum winter temperature at Tarrow Glass Laboratory?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Source explicitly says no absolute winter minimum is stated; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC41",
+      "saved_candidate_reference": "raw/Fresh64/FC41-candidate.json"
+    },
+    {
+      "id": "FC42",
+      "variant": "fixed",
+      "question": "Who must approve a Tarrow Glass Laboratory purchase of exactly 7900?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Exactly 7900 is not covered by the above-7900 rule; that cited condition cannot establish equality approval. Strict unsupported-control failure.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC42",
+      "saved_candidate_reference": "raw/Fresh64/FC42-candidate.json"
+    },
+    {
+      "id": "FC43",
+      "variant": "fixed",
+      "question": "When did Westrill Canal Office move its dispatch counter?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Dispatch-counter move is bound to 1917, distinct from restorations and rejected closure.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC43",
+      "saved_candidate_reference": "raw/Fresh64/FC43-candidate.json"
+    },
+    {
+      "id": "FC44",
+      "variant": "fixed",
+      "question": "When was the second Westrill Canal Office restoration completed?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Second restoration is explicitly completed in 2003, but the answer refuses; supported false refusal.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC44",
+      "saved_candidate_reference": "raw/Fresh64/FC44-candidate.json"
+    },
+    {
+      "id": "FC45",
+      "variant": "fixed",
+      "question": "How many permits does Pera register per day at Westrill Canal Office?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Pera, registering, four permits and per-day units are explicitly bound.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC45",
+      "saved_candidate_reference": "raw/Fresh64/FC45-candidate.json"
+    },
+    {
+      "id": "FC46",
+      "variant": "fixed",
+      "question": "How long are Westrill Canal Office toll receipts retained, and what exception applies?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "10-month retention includes the unresolved-toll-claim exception.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC46",
+      "saved_candidate_reference": "raw/Fresh64/FC46-candidate.json"
+    },
+    {
+      "id": "FC47",
+      "variant": "fixed",
+      "question": "List every item in the Westrill Canal Office boarding packet.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "All four boarding-packet items are quoted with their packet subject.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC47",
+      "saved_candidate_reference": "raw/Fresh64/FC47-candidate.json"
+    },
+    {
+      "id": "FC48",
+      "variant": "fixed",
+      "question": "How many maps does Pera archive per day at Westrill Canal Office?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Map archiving belongs to Sorin, not Pera; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC48",
+      "saved_candidate_reference": "raw/Fresh64/FC48-candidate.json"
+    },
+    {
+      "id": "FC49",
+      "variant": "fixed",
+      "question": "In what year did Westrill Canal Office close in 1978?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "The 1978 closure is explicitly rejected; uncited refusal avoids accepting the false premise.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC49",
+      "saved_candidate_reference": "raw/Fresh64/FC49-candidate.json"
+    },
+    {
+      "id": "FC50",
+      "variant": "fixed",
+      "question": "When did Oakenford Survey Store open its public room?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Public-room opening is bound to 1936, distinct from warehouse and ramp events.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC50",
+      "saved_candidate_reference": "raw/Fresh64/FC50-candidate.json"
+    },
+    {
+      "id": "FC51",
+      "variant": "fixed",
+      "question": "When was the Oakenford Survey Store Control Ledger published?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Control Ledger is bound to 2014; Field Atlas and its 2020 date remain a different title.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC51",
+      "saved_candidate_reference": "raw/Fresh64/FC51-candidate.json"
+    },
+    {
+      "id": "FC52",
+      "variant": "fixed",
+      "question": "How many visitors can attend an Oakenford Survey Store guided session?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Guided-session capacity is explicitly at most 22 visitors.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC52",
+      "saved_candidate_reference": "raw/Fresh64/FC52-candidate.json"
+    },
+    {
+      "id": "FC53",
+      "variant": "fixed",
+      "question": "Give the highest monthly mean temperature at Oakenford Survey Store and the month it occurs.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Highest monthly mean is bound to 24 degrees in July, distinct from daily high and winter reading.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC53",
+      "saved_candidate_reference": "raw/Fresh64/FC53-candidate.json"
+    },
+    {
+      "id": "FC54",
+      "variant": "fixed",
+      "question": "How long are Oakenford Survey Store completed survey records retained, and what exception applies?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "20-month completed-survey retention includes the unresolved-audit-dispute exception.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC54",
+      "saved_candidate_reference": "raw/Fresh64/FC54-candidate.json"
+    },
+    {
+      "id": "FC55",
+      "variant": "fixed",
+      "question": "When was the large book at Oakenford Survey Store published?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Neither book is designated the large book. A cited paragraph with two titles/dates is not the required uncited ambiguity refusal/clarification.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC55",
+      "saved_candidate_reference": "raw/Fresh64/FC55-candidate.json"
+    },
+    {
+      "id": "FC56",
+      "variant": "fixed",
+      "question": "Who approves an Oakenford Survey Store dispatch at 10:15?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "No dispatch-approval policy at 10:15 is supplied; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC56",
+      "saved_candidate_reference": "raw/Fresh64/FC56-candidate.json"
+    },
+    {
+      "id": "FC57",
+      "variant": "fixed",
+      "question": "Compare Bellhaven Textile Museum visitor-register retention and Kestwick Lens Workshop calibration-log retention, including both exceptions.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both original files provide their own retention period and exception; filenames preserve attribution.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC57",
+      "saved_candidate_reference": "raw/Fresh64/FC57-candidate.json"
+    },
+    {
+      "id": "FC58",
+      "variant": "fixed",
+      "question": "Compare the Bellhaven Textile Museum collection relocation year with the Kestwick Lens Workshop warehouse move year.",
+      "native_outcome_unchanged": "PARTIAL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Bellhaven relocation 1909 is present, but Kestwick warehouse 2013 is replaced by an unrelated purchase-approval clause; PARTIAL retained.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC58",
+      "saved_candidate_reference": "raw/Fresh64/FC58-candidate.json"
+    },
+    {
+      "id": "FC59",
+      "variant": "fixed",
+      "question": "Compare departure at the stated release cutoff for Ardmere River Station orders and Larchfen Seed Depot ticket orders, including their holds.",
+      "native_outcome_unchanged": "PARTIAL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Larchfen next-collection-day/hold is present; Ardmere departure/hold is replaced by cold-sample temperature; PARTIAL retained.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC59",
+      "saved_candidate_reference": "raw/Fresh64/FC59-candidate.json"
+    },
+    {
+      "id": "FC60",
+      "variant": "fixed",
+      "question": "Compare Ardmere River Station dispatch-record retention with Larchfen Seed Depot accession-record retention, including both exceptions.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both original files provide their own retention period and exception; five years is not rewritten as a different unit.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC60",
+      "saved_candidate_reference": "raw/Fresh64/FC60-candidate.json"
+    },
+    {
+      "id": "FC61",
+      "variant": "fixed",
+      "question": "Compare the highest monthly mean store temperatures at Brindale Music Library and Tarrow Glass Laboratory, including their months.",
+      "native_outcome_unchanged": "PARTIAL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Brindale 25 degrees/August is present; Tarrow highest monthly mean 26 degrees/June is replaced by winter average 12 degrees; PARTIAL retained.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC61",
+      "saved_candidate_reference": "raw/Fresh64/FC61-candidate.json"
+    },
+    {
+      "id": "FC62",
+      "variant": "fixed",
+      "question": "Compare the guided-session visitor capacities at Brindale Music Library and Tarrow Glass Laboratory.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both documents supply their own guided-session capacity, 28 and 18 visitors respectively.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC62",
+      "saved_candidate_reference": "raw/Fresh64/FC62-candidate.json"
+    },
+    {
+      "id": "FC63",
+      "variant": "fixed",
+      "question": "Compare the Westrill Canal Office dispatch-counter move year with the Oakenford Survey Store warehouse relocation year.",
+      "native_outcome_unchanged": "PARTIAL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Westrill move 1917 is present; Oakenford warehouse 1987 is replaced by a retention clause; PARTIAL retained.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC63",
+      "saved_candidate_reference": "raw/Fresh64/FC63-candidate.json"
+    },
+    {
+      "id": "FC64",
+      "variant": "fixed",
+      "question": "Compare Westrill Canal Office toll-receipt retention with Oakenford Survey Store completed-survey-record retention, including their exceptions.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both original files provide their own receipt/survey-record retention duration and exception.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC64",
+      "saved_candidate_reference": "raw/Fresh64/FC64-candidate.json"
+    },
+    {
+      "id": "FC01",
+      "variant": "section",
+      "question": "When did Bellhaven Textile Museum relocate its collection?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Collection relocation is explicitly bound to 1909; other dates remain separate events.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC01",
+      "saved_candidate_reference": "raw/Fresh64/FC01-candidate.json"
+    },
+    {
+      "id": "FC02",
+      "variant": "section",
+      "question": "When was the first Bellhaven Textile Museum conservation project finished?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "The first conservation project is explicitly bound to 1954; the second project date is not substituted.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC02",
+      "saved_candidate_reference": "raw/Fresh64/FC02-candidate.json"
+    },
+    {
+      "id": "FC03",
+      "variant": "section",
+      "question": "Which part of Bellhaven Textile Museum is lined with decorative weaving panels?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Weaving panels are explicitly located on the upper stair rail, distinct from crown and lower-wall objects.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC03",
+      "saved_candidate_reference": "raw/Fresh64/FC03-candidate.json"
+    },
+    {
+      "id": "FC04",
+      "variant": "section",
+      "question": "Why do the Bellhaven Textile Museum display cases use argon?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "The quoted causal clause binds argon to slowing oxidation of dyed fibres.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC04",
+      "saved_candidate_reference": "raw/Fresh64/FC04-candidate.json"
+    },
+    {
+      "id": "FC05",
+      "variant": "section",
+      "question": "How long are Bellhaven Textile Museum visitor registers retained, and what exception applies?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both 18-month retention and the unresolved-access-complaint exception are displayed.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC05",
+      "saved_candidate_reference": "raw/Fresh64/FC05-candidate.json"
+    },
+    {
+      "id": "FC06",
+      "variant": "section",
+      "question": "What is the Bellhaven Textile Museum bank account number?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "No bank account is supplied by the source; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC06",
+      "saved_candidate_reference": "raw/Fresh64/FC06-candidate.json"
+    },
+    {
+      "id": "FC07",
+      "variant": "section",
+      "question": "In which year did Bellhaven Textile Museum close in 2004?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "The source rejects the proposed closure; the false-premise question receives an uncited refusal.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC07",
+      "saved_candidate_reference": "raw/Fresh64/FC07-candidate.json"
+    },
+    {
+      "id": "FC08",
+      "variant": "section",
+      "question": "When did Kestwick Lens Workshop open its public test bench?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Public test-bench opening is bound to 1998, distinct from warehouse and roof dates.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC08",
+      "saved_candidate_reference": "raw/Fresh64/FC08-candidate.json"
+    },
+    {
+      "id": "FC09",
+      "variant": "section",
+      "question": "How many lenses does Nera polish per day at Kestwick Lens Workshop?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Nera, polishing, five lenses and per-day units appear in the same relation.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC09",
+      "saved_candidate_reference": "raw/Fresh64/FC09-candidate.json"
+    },
+    {
+      "id": "FC10",
+      "variant": "section",
+      "question": "What is the lowest recorded winter temperature at Kestwick Lens Workshop?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Supported minus-6 winter minimum is present in source but an uncited refusal is returned; false refusal.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC10",
+      "saved_candidate_reference": "raw/Fresh64/FC10-candidate.json"
+    },
+    {
+      "id": "FC11",
+      "variant": "section",
+      "question": "Give both lubrication intervals for the Kestwick Lens Workshop rig and say whether its inspection interval changes.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both 96/48-hour lubrication intervals and unchanged 24-hour inspection are quoted.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC11",
+      "saved_candidate_reference": "raw/Fresh64/FC11-candidate.json"
+    },
+    {
+      "id": "FC12",
+      "variant": "section",
+      "question": "Who must approve a Kestwick Lens Workshop purchase above 6200, and is written approval required?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Above-6200 purchase condition, written approval and both named approving roles are quoted.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC12",
+      "saved_candidate_reference": "raw/Fresh64/FC12-candidate.json"
+    },
+    {
+      "id": "FC13",
+      "variant": "section",
+      "question": "How many crates does Nera label per day at Kestwick Lens Workshop?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Source assigns crate labelling to Olin, not Nera; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC13",
+      "saved_candidate_reference": "raw/Fresh64/FC13-candidate.json"
+    },
+    {
+      "id": "FC14",
+      "variant": "section",
+      "question": "Who must approve a Kestwick Lens Workshop purchase of exactly 6200?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Exactly 6200 is outside the stated above-6200 rule; citing that rule does not support an equality policy. Strict unsupported-control failure, not a fabricated quote.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC14",
+      "saved_candidate_reference": "raw/Fresh64/FC14-candidate.json"
+    },
+    {
+      "id": "FC15",
+      "variant": "section",
+      "question": "An Ardmere River Station dispatch request is released exactly at 12:35. When does it depart, and what hold can prevent it?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Exact cutoff maps to next operating day and retains the river-inspection hold.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC15",
+      "saved_candidate_reference": "raw/Fresh64/FC15-candidate.json"
+    },
+    {
+      "id": "FC16",
+      "variant": "section",
+      "question": "An Ardmere River Station dispatch request is released at 12:34. When does it depart?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "12:34 is before 12:35; the quoted rule supports current operating day.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC16",
+      "saved_candidate_reference": "raw/Fresh64/FC16-candidate.json"
+    },
+    {
+      "id": "FC17",
+      "variant": "section",
+      "question": "What temperature range is required for Ardmere River Station cold samples?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "The 2-to-6-degree carriage requirement is displayed with its cold-sample subject.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC17",
+      "saved_candidate_reference": "raw/Fresh64/FC17-candidate.json"
+    },
+    {
+      "id": "FC18",
+      "variant": "section",
+      "question": "How long are Ardmere River Station dispatch records retained, including the exception?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "16-month retention includes the unresolved-flood-review exception.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC18",
+      "saved_candidate_reference": "raw/Fresh64/FC18-candidate.json"
+    },
+    {
+      "id": "FC19",
+      "variant": "section",
+      "question": "How quickly does Ardmere River Station acknowledge a carriage request, and does that guarantee departure?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Two operating days is acknowledgement timing; the quoted sentence explicitly denies a departure guarantee.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC19",
+      "saved_candidate_reference": "raw/Fresh64/FC19-candidate.json"
+    },
+    {
+      "id": "FC20",
+      "variant": "section",
+      "question": "Who approves an Ardmere River Station dispatch at 12:35?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "No dispatch approver is stated; an uncited refusal avoids turning departure timing into an actor.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC20",
+      "saved_candidate_reference": "raw/Fresh64/FC20-candidate.json"
+    },
+    {
+      "id": "FC21",
+      "variant": "section",
+      "question": "Which truck leaves the Ardmere River Station dispatch yard at 12:35?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "No specific truck is identified; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC21",
+      "saved_candidate_reference": "raw/Fresh64/FC21-candidate.json"
+    },
+    {
+      "id": "FC22",
+      "variant": "section",
+      "question": "A Larchfen Seed Depot ticket order is released exactly at 09:50. When does it depart, and what can hold it back?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Ticket-order cutoff equality maps to next collection day and preserves the seed-screening hold.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC22",
+      "saved_candidate_reference": "raw/Fresh64/FC22-candidate.json"
+    },
+    {
+      "id": "FC23",
+      "variant": "section",
+      "question": "A Larchfen Seed Depot ticket order is released at 09:49. When does it depart?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "09:49 is before 09:50; the ticket-order clause supports current collection day.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC23",
+      "saved_candidate_reference": "raw/Fresh64/FC23-candidate.json"
+    },
+    {
+      "id": "FC24",
+      "variant": "section",
+      "question": "How many trays does Tavin sort per day at Larchfen Seed Depot?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Tavin, sorting, seven trays and per-day units are explicitly bound.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC24",
+      "saved_candidate_reference": "raw/Fresh64/FC24-candidate.json"
+    },
+    {
+      "id": "FC25",
+      "variant": "section",
+      "question": "List every item in the Larchfen Seed Depot dispatch packet.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "All four packet items are quoted: route card, seal register, depot label and receipt.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC25",
+      "saved_candidate_reference": "raw/Fresh64/FC25-candidate.json"
+    },
+    {
+      "id": "FC26",
+      "variant": "section",
+      "question": "How long are Larchfen Seed Depot accession records retained, and which exception applies?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Five-year retention includes the unresolved-quarantine-case exception.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC26",
+      "saved_candidate_reference": "raw/Fresh64/FC26-candidate.json"
+    },
+    {
+      "id": "FC27",
+      "variant": "section",
+      "question": "How many packets does Tavin label per day at Larchfen Seed Depot?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Packet labelling is assigned to Ema, not Tavin; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC27",
+      "saved_candidate_reference": "raw/Fresh64/FC27-candidate.json"
+    },
+    {
+      "id": "FC28",
+      "variant": "section",
+      "question": "Who approves a Larchfen Seed Depot ticket order at 09:50?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Who-approves question receives only a departure/hold rule. No approver is supplied; strict unsupported refusal was required.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC28",
+      "saved_candidate_reference": "raw/Fresh64/FC28-candidate.json"
+    },
+    {
+      "id": "FC29",
+      "variant": "section",
+      "question": "When did the Brindale Music Library warehouse relocation take place?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Warehouse relocation is explicitly bound to 1976, not store opening or roof rebuilding.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC29",
+      "saved_candidate_reference": "raw/Fresh64/FC29-candidate.json"
+    },
+    {
+      "id": "FC30",
+      "variant": "section",
+      "question": "When was the Brindale Music Library catalogue Echoes of Reed published?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Echoes of Reed is bound to 1991; Songs of Flint and its date remain a different catalogue.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC30",
+      "saved_candidate_reference": "raw/Fresh64/FC30-candidate.json"
+    },
+    {
+      "id": "FC31",
+      "variant": "section",
+      "question": "How many visitors can attend a Brindale Music Library guided session?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Guided-session capacity is explicitly at most 28 visitors.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC31",
+      "saved_candidate_reference": "raw/Fresh64/FC31-candidate.json"
+    },
+    {
+      "id": "FC32",
+      "variant": "section",
+      "question": "How quickly does Brindale Music Library acknowledge a loan request, and does acknowledgement promise confirmation?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Four business days concerns acknowledgement; the quote explicitly denies confirmation of a loan.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC32",
+      "saved_candidate_reference": "raw/Fresh64/FC32-candidate.json"
+    },
+    {
+      "id": "FC33",
+      "variant": "section",
+      "question": "How long are Brindale Music Library loan receipts kept, including the exception?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Loan-receipt retention requires 9 months plus missing-instrument exception; the displayed loan-acknowledgement paragraph supplies neither.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC33",
+      "saved_candidate_reference": "raw/Fresh64/FC33-candidate.json"
+    },
+    {
+      "id": "FC34",
+      "variant": "section",
+      "question": "When was the large work at Brindale Music Library published?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Neither catalogue is designated the large work. Quoting both titles/dates does not resolve the ambiguous referent; frozen rule requires uncited refusal/qualifying clarification.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC34",
+      "saved_candidate_reference": "raw/Fresh64/FC34-candidate.json"
+    },
+    {
+      "id": "FC35",
+      "variant": "section",
+      "question": "What is the Brindale Music Library loan clerk password?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "No loan-clerk password is supplied; uncited refusal is appropriate. The question itself is fictional test data.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC35",
+      "saved_candidate_reference": "raw/Fresh64/FC35-candidate.json"
+    },
+    {
+      "id": "FC36",
+      "variant": "section",
+      "question": "Why does Tarrow Glass Laboratory use dry nitrogen in display vessels?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Dry nitrogen is explicitly linked to preventing moisture from clouding the coating.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC36",
+      "saved_candidate_reference": "raw/Fresh64/FC36-candidate.json"
+    },
+    {
+      "id": "FC37",
+      "variant": "section",
+      "question": "Which part of Tarrow Glass Laboratory is decorated with inspection emblems?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Inspection emblems are bound to side balcony windows, distinct from entrance arch and ceiling objects.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC37",
+      "saved_candidate_reference": "raw/Fresh64/FC37-candidate.json"
+    },
+    {
+      "id": "FC38",
+      "variant": "section",
+      "question": "Give the highest monthly mean temperature at Tarrow Glass Laboratory and its month.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Highest monthly mean is bound to 26 degrees in June; daily high and winter average remain distinct.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC38",
+      "saved_candidate_reference": "raw/Fresh64/FC38-candidate.json"
+    },
+    {
+      "id": "FC39",
+      "variant": "section",
+      "question": "Give the normal and dusty lubrication intervals for the Tarrow Glass Laboratory rig and say whether inspection changes.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "72/36-hour lubrication and unchanged 18-hour inspection are all quoted with their conditions.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC39",
+      "saved_candidate_reference": "raw/Fresh64/FC39-candidate.json"
+    },
+    {
+      "id": "FC40",
+      "variant": "section",
+      "question": "What written approvals are required for a Tarrow Glass Laboratory purchase above 7900?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Above-7900 condition, written approval and both Lab Curator/Safety Warden roles are displayed.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC40",
+      "saved_candidate_reference": "raw/Fresh64/FC40-candidate.json"
+    },
+    {
+      "id": "FC41",
+      "variant": "section",
+      "question": "What is the absolute minimum winter temperature at Tarrow Glass Laboratory?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Source explicitly says no absolute winter minimum is stated; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC41",
+      "saved_candidate_reference": "raw/Fresh64/FC41-candidate.json"
+    },
+    {
+      "id": "FC42",
+      "variant": "section",
+      "question": "Who must approve a Tarrow Glass Laboratory purchase of exactly 7900?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Exactly 7900 is not covered by the above-7900 rule; that cited condition cannot establish equality approval. Strict unsupported-control failure.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC42",
+      "saved_candidate_reference": "raw/Fresh64/FC42-candidate.json"
+    },
+    {
+      "id": "FC43",
+      "variant": "section",
+      "question": "When did Westrill Canal Office move its dispatch counter?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Dispatch-counter move is bound to 1917, distinct from restorations and rejected closure.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC43",
+      "saved_candidate_reference": "raw/Fresh64/FC43-candidate.json"
+    },
+    {
+      "id": "FC44",
+      "variant": "section",
+      "question": "When was the second Westrill Canal Office restoration completed?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Second restoration is explicitly completed in 2003, but the answer refuses; supported false refusal.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC44",
+      "saved_candidate_reference": "raw/Fresh64/FC44-candidate.json"
+    },
+    {
+      "id": "FC45",
+      "variant": "section",
+      "question": "How many permits does Pera register per day at Westrill Canal Office?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Pera, registering, four permits and per-day units are explicitly bound.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC45",
+      "saved_candidate_reference": "raw/Fresh64/FC45-candidate.json"
+    },
+    {
+      "id": "FC46",
+      "variant": "section",
+      "question": "How long are Westrill Canal Office toll receipts retained, and what exception applies?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "10-month retention includes the unresolved-toll-claim exception.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC46",
+      "saved_candidate_reference": "raw/Fresh64/FC46-candidate.json"
+    },
+    {
+      "id": "FC47",
+      "variant": "section",
+      "question": "List every item in the Westrill Canal Office boarding packet.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "All four boarding-packet items are quoted with their packet subject.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC47",
+      "saved_candidate_reference": "raw/Fresh64/FC47-candidate.json"
+    },
+    {
+      "id": "FC48",
+      "variant": "section",
+      "question": "How many maps does Pera archive per day at Westrill Canal Office?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Map archiving belongs to Sorin, not Pera; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC48",
+      "saved_candidate_reference": "raw/Fresh64/FC48-candidate.json"
+    },
+    {
+      "id": "FC49",
+      "variant": "section",
+      "question": "In what year did Westrill Canal Office close in 1978?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "The 1978 closure is explicitly rejected; uncited refusal avoids accepting the false premise.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC49",
+      "saved_candidate_reference": "raw/Fresh64/FC49-candidate.json"
+    },
+    {
+      "id": "FC50",
+      "variant": "section",
+      "question": "When did Oakenford Survey Store open its public room?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Public-room opening is bound to 1936, distinct from warehouse and ramp events.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC50",
+      "saved_candidate_reference": "raw/Fresh64/FC50-candidate.json"
+    },
+    {
+      "id": "FC51",
+      "variant": "section",
+      "question": "When was the Oakenford Survey Store Control Ledger published?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Control Ledger is bound to 2014; Field Atlas and its 2020 date remain a different title.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC51",
+      "saved_candidate_reference": "raw/Fresh64/FC51-candidate.json"
+    },
+    {
+      "id": "FC52",
+      "variant": "section",
+      "question": "How many visitors can attend an Oakenford Survey Store guided session?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Guided-session capacity is explicitly at most 22 visitors.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC52",
+      "saved_candidate_reference": "raw/Fresh64/FC52-candidate.json"
+    },
+    {
+      "id": "FC53",
+      "variant": "section",
+      "question": "Give the highest monthly mean temperature at Oakenford Survey Store and the month it occurs.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Highest monthly mean is bound to 24 degrees in July, distinct from daily high and winter reading.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC53",
+      "saved_candidate_reference": "raw/Fresh64/FC53-candidate.json"
+    },
+    {
+      "id": "FC54",
+      "variant": "section",
+      "question": "How long are Oakenford Survey Store completed survey records retained, and what exception applies?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "20-month completed-survey retention includes the unresolved-audit-dispute exception.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC54",
+      "saved_candidate_reference": "raw/Fresh64/FC54-candidate.json"
+    },
+    {
+      "id": "FC55",
+      "variant": "section",
+      "question": "When was the large book at Oakenford Survey Store published?",
+      "native_outcome_unchanged": "FAIL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Neither book is designated the large book. A cited paragraph with two titles/dates is not the required uncited ambiguity refusal/clarification.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC55",
+      "saved_candidate_reference": "raw/Fresh64/FC55-candidate.json"
+    },
+    {
+      "id": "FC56",
+      "variant": "section",
+      "question": "Who approves an Oakenford Survey Store dispatch at 10:15?",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "No dispatch-approval policy at 10:15 is supplied; uncited refusal is appropriate.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC56",
+      "saved_candidate_reference": "raw/Fresh64/FC56-candidate.json"
+    },
+    {
+      "id": "FC57",
+      "variant": "section",
+      "question": "Compare Bellhaven Textile Museum visitor-register retention and Kestwick Lens Workshop calibration-log retention, including both exceptions.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both original files provide their own retention period and exception; filenames preserve attribution.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC57",
+      "saved_candidate_reference": "raw/Fresh64/FC57-candidate.json"
+    },
+    {
+      "id": "FC58",
+      "variant": "section",
+      "question": "Compare the Bellhaven Textile Museum collection relocation year with the Kestwick Lens Workshop warehouse move year.",
+      "native_outcome_unchanged": "PARTIAL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Bellhaven relocation 1909 is present, but Kestwick warehouse 2013 is replaced by an unrelated purchase-approval clause; PARTIAL retained.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC58",
+      "saved_candidate_reference": "raw/Fresh64/FC58-candidate.json"
+    },
+    {
+      "id": "FC59",
+      "variant": "section",
+      "question": "Compare departure at the stated release cutoff for Ardmere River Station orders and Larchfen Seed Depot ticket orders, including their holds.",
+      "native_outcome_unchanged": "PARTIAL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Larchfen next-collection-day/hold is present; Ardmere departure/hold is replaced by cold-sample temperature; PARTIAL retained.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC59",
+      "saved_candidate_reference": "raw/Fresh64/FC59-candidate.json"
+    },
+    {
+      "id": "FC60",
+      "variant": "section",
+      "question": "Compare Ardmere River Station dispatch-record retention with Larchfen Seed Depot accession-record retention, including both exceptions.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both original files provide their own retention period and exception; five years is not rewritten as a different unit.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC60",
+      "saved_candidate_reference": "raw/Fresh64/FC60-candidate.json"
+    },
+    {
+      "id": "FC61",
+      "variant": "section",
+      "question": "Compare the highest monthly mean store temperatures at Brindale Music Library and Tarrow Glass Laboratory, including their months.",
+      "native_outcome_unchanged": "PARTIAL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Brindale 25 degrees/August is present; Tarrow highest monthly mean 26 degrees/June is replaced by winter average 12 degrees; PARTIAL retained.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC61",
+      "saved_candidate_reference": "raw/Fresh64/FC61-candidate.json"
+    },
+    {
+      "id": "FC62",
+      "variant": "section",
+      "question": "Compare the guided-session visitor capacities at Brindale Music Library and Tarrow Glass Laboratory.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both documents supply their own guided-session capacity, 28 and 18 visitors respectively.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC62",
+      "saved_candidate_reference": "raw/Fresh64/FC62-candidate.json"
+    },
+    {
+      "id": "FC63",
+      "variant": "section",
+      "question": "Compare the Westrill Canal Office dispatch-counter move year with the Oakenford Survey Store warehouse relocation year.",
+      "native_outcome_unchanged": "PARTIAL",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Westrill move 1917 is present; Oakenford warehouse 1987 is replaced by a retention clause; PARTIAL retained.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC63",
+      "saved_candidate_reference": "raw/Fresh64/FC63-candidate.json"
+    },
+    {
+      "id": "FC64",
+      "variant": "section",
+      "question": "Compare Westrill Canal Office toll-receipt retention with Oakenford Survey Store completed-survey-record retention, including their exceptions.",
+      "native_outcome_unchanged": "PASS",
+      "review_conclusion": "CONFIRMS_NATIVE_OUTCOME",
+      "binding_and_completeness_note": "Both original files provide their own receipt/survey-record retention duration and exception.",
+      "source_context_reference": "eval/phase2-fresh64/fixed-answer-key.json#FC64",
+      "saved_candidate_reference": "raw/Fresh64/FC64-candidate.json"
+    }
+  ]
+}

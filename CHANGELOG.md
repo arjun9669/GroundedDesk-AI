@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-24 — Preserve and publish first Fresh64 confirmation failure
+
+- Record the one-shot 64-case first study: both v43 variants 52 PASS/4 PARTIAL/8 FAIL, strict confirmation gate FAIL; 5,402 body/facet cosines and source/order audit PASS.
+- Publish original 512-artifact evidence seal and unchanged native score, plus a separately sealed 128-row binding review confirming all grades. Document eight failures and four partial comparisons, with no candidate/model/scorer rerun.
+- Update current README/roadmap/status to phase 2 failure and integration HOLD. Phase 1 revised 668-case acceptance, missing 103 originals, known earlier failures and live r44 remain unchanged.
+
 ## 2026-10-24 — Prepare first Fresh64 execution
 
 - Freeze the prospective capture runner, pinned native grader adapter, independent source/vector audit, 509-file execution identities and six actual downloaded dependency hashes before fresh questions.

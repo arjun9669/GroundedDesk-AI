@@ -16,8 +16,45 @@ original reports; link them here instead of rewriting or rescoring them.
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v43: all 19 available native regression gates PASS across 668 cases; known public FAIL rows retained; not adopted |
-| Release decision | Integration **HOLD**: fresh confirmation not run; known quality/device/release gates remain open |
-| Current change | Phase 1 COMPLETE under approved668-case scope; phase 2 PREPARATION:64 new cases/input rubric frozen; model run pending |
+| Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
+| Current change | Phase 1 COMPLETE under approved 668-case scope; phase 2 first Fresh64 confirmation FAIL: 52 PASS / 4 PARTIAL / 8 FAIL in both variants |
+
+## Phase 2 first Fresh64 result — FAIL, 2026-10-24
+
+Execution freeze commit `7554249c3bd093fffc494bea50ae104687ce4c7d` was pushed and
+origin/main receipt verified before questions. The Chrome .86 amendment and all
+509 frozen files verified. One uninterrupted first capture completed all 64 cases:
+56 actual MiniLM Hybrid submissions and eight lexical Comparisons; no retries.
+The unchanged native scorer records **52 PASS / 4 PARTIAL / 8 FAIL in BOTH v43
+fixed and section variants**. The strict 64/64-per-variant gate is **FAIL**.
+Baseline: 35/5/24; paired v42: 52/4/8 separately in each variant. No ERROR outcomes.
+
+The offline integrity audit PASS includes 5,402 recomputed body/facet cosines,
+original source identity and complete submission/case order. Raw first capture:
+506 artifacts / 50,094,299 bytes. [First native score](docs/evidence/phase2-fresh64-mac/score/native-scorecard.json)
+and [512-artifact seal](docs/evidence/phase2-fresh64-mac/manifest.json) preserve
+original UI/candidate outputs, source/query/planner vectors, screenshots and logs.
+The user approved offline review, documentation and publication only. The separate
+[binding review](docs/evidence/phase2-fresh64-mac/review/binding-review.json) is complete
+for all 128 variant rows and confirms all native outcomes; the first scorecard
+retains its original PENDING annotation. No native grade or original seal is changed.
+Fresh64 is now exposed for any future regression, not a
+reusable unseen first confirmation. Phase 2 is not accepted; integration stays HOLD.
+
+[Failure report](docs/PHASE2_FRESH64_FIRST_RESULTS.md) documents five unsupported
+non-refusals (FC14/28/34/42/55), two supported false refusals (FC10/44), an unrelated
+retention answer (FC33) and four partial comparisons (FC58/59/61/63). Both variants
+have 59/59 literal citations, 49/59 frozen-group-relevant citations and valid
+numbering in all 64 cases. The separate manual review finds no grade disagreement.
+No candidate/model/scorer was invoked again during review. The publication has
+explicit approval; candidate fixes, regression replays and a new prospective study
+require separate scope. Fresh64 cannot retrospectively become a passing first run.
+Live r44, v43, all frozen sources/questions/rubric and prior evidence are unchanged.
+Publication verification: **777/777 unit tests PASS**, original 512/506 artifact
+seals and 509-file execution freeze unchanged, complete 128-row review alignment,
+document links and `git diff --check` verified. Credential review found no tokens
+or signed URL queries. No model/question/scoring rerun occurred. The earlier
+28 strict Keyword preparation passes remain distinct from this quality failure.
 
 ## Phase 2 execution prepared — 2026-10-24, before fresh questions
 

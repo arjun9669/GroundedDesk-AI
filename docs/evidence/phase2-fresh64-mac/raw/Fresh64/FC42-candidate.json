@@ -1,0 +1,1499 @@
+{
+  "candidate_identity": "coverage-v43-deferred-clock-forms",
+  "id": "FC42",
+  "question": "Who must approve a Tarrow Glass Laboratory purchase of exactly 7900?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who must approve a Tarrow Glass Laboratory purchase of exactly 7900?",
+    "expected_display": "Who must approve a Tarrow Glass Laboratory purchase of exactly 7900?",
+    "rendered_question": "Who must approve a Tarrow Glass Laboratory purchase of exactly 7900?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+    "sources": [
+      {
+        "filename": "06_Tarrow_Glass_Laboratory.txt",
+        "excerpt": "ute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition.\n\nPurchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nEach Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+        "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho must approve a Tarrow Glass Laboratory purchase of exactly 7900?\n\nSearched all files: 01_Bellhaven_Textile_Museum.txt · 02_Kestwick_Lens_Workshop.txt · 03_Ardmere_River_Station.txt · 04_Larchfen_Seed_Depot.txt · 05_Brindale_Music_Library.txt · 06_Tarrow_Glass_Laboratory.txt · 07_Westrill_Canal_Office.txt · 08_Oakenford_Survey_Store.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nSOURCE EVIDENCE\n[1]\n06_Tarrow_Glass_Laboratory.txt\n\nText line 9 (normalized extraction)\n\nute winter minimum is stated. The Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition. Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden. Each Tarrow Glass Laboratory guided session admits at most 18 visitors.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6ac09bf7-c119-474d-9ad4-169deb11552c:644",
+        "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+        "filename": "06_Tarrow_Glass_Laboratory.txt",
+        "excerpt": "ute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition.\n\nPurchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nEach Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+        "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+        "score": 0.0476,
+        "lexicalScore": 9.840019402571606,
+        "semanticScore": 0.561196573772437,
+        "matchedTerms": [
+          "tarrow",
+          "glass",
+          "laboratory",
+          "7900"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6ac09bf7-c119-474d-9ad4-169deb11552c:644",
+        "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+        "filename": "06_Tarrow_Glass_Laboratory.txt",
+        "excerpt": "ute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition.\n\nPurchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nEach Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+        "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+        "score": 0.0476,
+        "lexicalScore": 9.840019402571606,
+        "semanticScore": 0.561196573772437,
+        "matchedTerms": [
+          "tarrow",
+          "glass",
+          "laboratory",
+          "7900"
+        ],
+        "start": 757,
+        "end": 878
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "06_Tarrow_Glass_Laboratory.txt",
+        "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "must",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 757,
+          "cosine": 0.8618875177923916,
+          "slot_supported": false,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "06_Tarrow_Glass_Laboratory.txt",
+        "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "must",
+          "years": []
+        },
+        "reason": "Keep prior: no bounded eligible relation"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "06_Tarrow_Glass_Laboratory.txt",
+        "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "6ac09bf7-c119-474d-9ad4-169deb11552c:644",
+        "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+        "filename": "06_Tarrow_Glass_Laboratory.txt",
+        "excerpt": "ute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition.\n\nPurchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nEach Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+        "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+        "score": 0.0476,
+        "lexicalScore": 9.840019402571606,
+        "semanticScore": 0.561196573772437,
+        "matchedTerms": [
+          "tarrow",
+          "glass",
+          "laboratory",
+          "7900"
+        ],
+        "start": 757,
+        "end": 878
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "06_Tarrow_Glass_Laboratory.txt",
+        "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "must",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 757,
+          "cosine": 0.8618875177923916,
+          "slot_supported": false,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "06_Tarrow_Glass_Laboratory.txt",
+        "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "must",
+          "years": []
+        },
+        "reason": "Keep prior: no bounded eligible relation"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "06_Tarrow_Glass_Laboratory.txt",
+        "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "06_Tarrow_Glass_Laboratory.txt",
+      "start": 757,
+      "content": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "semanticScore": 0.8618875177923916,
+      "lexicalScore": 9.179428189120369
+    },
+    {
+      "filename": "06_Tarrow_Glass_Laboratory.txt",
+      "start": 186,
+      "content": "Inspection emblems decorate the side balcony windows at Tarrow Glass Laboratory.",
+      "semanticScore": 0.4797007022554121,
+      "lexicalScore": 7.332876727333437
+    },
+    {
+      "filename": "06_Tarrow_Glass_Laboratory.txt",
+      "start": 880,
+      "content": "Each Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+      "semanticScore": 0.5581497688636354,
+      "lexicalScore": 7.01623525445417
+    },
+    {
+      "filename": "06_Tarrow_Glass_Laboratory.txt",
+      "start": 342,
+      "content": "The Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius.",
+      "semanticScore": 0.46221944856785363,
+      "lexicalScore": 7.332876727333437
+    },
+    {
+      "filename": "06_Tarrow_Glass_Laboratory.txt",
+      "start": 0,
+      "content": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating.",
+      "semanticScore": 0.40624312893603765,
+      "lexicalScore": 5.770379426838929
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "The Bellhaven Textile Museum relocated its collection in 1909.",
+      "start": 0,
+      "end": 62,
+      "similarity": 0.16253922579455005,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "Its first conservation project finished in 1954; the second finished in 1982.",
+      "start": 63,
+      "end": 140,
+      "similarity": 0.2047295497403389,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "A proposed closure in 2004 was rejected, and the museum remained open.",
+      "start": 141,
+      "end": 211,
+      "similarity": 0.2481427886883105,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "Decorative weaving panels line the upper stair rail.",
+      "start": 213,
+      "end": 265,
+      "similarity": 0.12399075905528201,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "The entrance crown carries a bronze compass.",
+      "start": 266,
+      "end": 310,
+      "similarity": 0.08704926231746056,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "The lower wall displays a painted harbour map.",
+      "start": 311,
+      "end": 357,
+      "similarity": 0.04939889648424452,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "The display cases use an argon fill because argon slows oxidation of the dyed fibres.",
+      "start": 359,
+      "end": 444,
+      "similarity": 0.10206769341879118,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "The outer frame is aluminium and the shelf labels are paper.",
+      "start": 445,
+      "end": 505,
+      "similarity": 0.11852996079230725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f3c9096-a13a-4f1b-a95c-d05ff092bc3d",
+      "value": "Bellhaven Textile Museum visitor registers are retained for 18 months, unless an unresolved access complaint requires longer retention.",
+      "start": 507,
+      "end": 642,
+      "similarity": 0.1408228378721578,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Kestwick Lens Workshop opened its public test bench in 1998.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.256989390189733,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Its warehouse moved in 2013, and its roof was renewed in 2021.",
+      "start": 61,
+      "end": 123,
+      "similarity": 0.18122423601080997,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Nera polishes five lenses per day.",
+      "start": 125,
+      "end": 159,
+      "similarity": 0.09724736514521146,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Olin labels eight crates per day.",
+      "start": 160,
+      "end": 193,
+      "similarity": 0.18255697658946163,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Nera checks two gauges per day.",
+      "start": 194,
+      "end": 225,
+      "similarity": 0.1471832272879302,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+      "start": 227,
+      "end": 303,
+      "similarity": 0.08584031693563575,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.",
+      "start": 304,
+      "end": 419,
+      "similarity": 0.06684247632659841,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Lubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay.",
+      "start": 421,
+      "end": 530,
+      "similarity": 0.10090282909865365,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "The inspection interval remains 24 hours in both bays.",
+      "start": 531,
+      "end": 585,
+      "similarity": 0.14736593185774627,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+      "start": 587,
+      "end": 708,
+      "similarity": 0.43781529288909665,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e953cb92-9682-4782-b3e2-c493ac5c6cf3",
+      "value": "Kestwick Lens Workshop calibration logs are retained for 12 months, unless an unresolved calibration dispute requires longer retention.",
+      "start": 710,
+      "end": 845,
+      "similarity": 0.15593517185344472,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "Orders released before 12:35 depart on the current operating day.",
+      "start": 0,
+      "end": 65,
+      "similarity": 0.07671024403677536,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "At or after 12:35, departure is the next operating day, unless a river inspection hold is still active.",
+      "start": 66,
+      "end": 169,
+      "similarity": 0.10924904684427107,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "Ardmere River Station cold samples must remain between 2 and 6 degrees Celsius during carriage.",
+      "start": 171,
+      "end": 266,
+      "similarity": 0.034771801093357986,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "Ardmere River Station dispatch records are retained for 16 months, unless an unresolved flood review requires longer retention.",
+      "start": 268,
+      "end": 395,
+      "similarity": -0.0012639859112822417,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "Ardmere River Station acknowledges a carriage request within two operating days.",
+      "start": 397,
+      "end": 477,
+      "similarity": 0.0244622201682182,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a864ddf-7272-4d69-8bdc-fafdbed12d47",
+      "value": "Acknowledgement does not guarantee departure.",
+      "start": 478,
+      "end": 523,
+      "similarity": 0.055445769879304004,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Release ticket orders before 09:50 for departure on the current collection day.",
+      "start": 0,
+      "end": 79,
+      "similarity": 0.1490999474513826,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Ticket orders released at or after 09:50 depart on the next collection day, unless a seed screening hold remains active.",
+      "start": 80,
+      "end": 200,
+      "similarity": 0.17181992254687634,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Tavin sorts seven trays per day.",
+      "start": 202,
+      "end": 234,
+      "similarity": 0.10694173642757931,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Ema labels three packets per day.",
+      "start": 235,
+      "end": 268,
+      "similarity": 0.1979315223991876,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Tavin checks two bins per day.",
+      "start": 269,
+      "end": 299,
+      "similarity": 0.20654580039184645,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "The Larchfen Seed Depot dispatch packet includes a route card, seal register, depot label, and receipt.",
+      "start": 301,
+      "end": 404,
+      "similarity": 0.21580355875242874,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e01da972-aa18-4d0e-ba64-bd3dee36f475",
+      "value": "Larchfen Seed Depot accession records are retained for 5 years, unless an unresolved quarantine case requires longer retention.",
+      "start": 406,
+      "end": 533,
+      "similarity": 0.11095100464151983,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Brindale Music Library opened its catalogue store in 1958.",
+      "start": 0,
+      "end": 58,
+      "similarity": 0.051250459386360275,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Its warehouse relocation took place in 1976.",
+      "start": 59,
+      "end": 103,
+      "similarity": 0.20397359498703088,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "The main roof was rebuilt in 1999.",
+      "start": 104,
+      "end": 138,
+      "similarity": 0.12573766511858978,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "The Brindale Music Library catalogue Echoes of Reed was published in 1991.",
+      "start": 140,
+      "end": 214,
+      "similarity": 0.07267004611159857,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "A different catalogue, Songs of Flint, was published in 2007.",
+      "start": 215,
+      "end": 276,
+      "similarity": 0.09690276649050401,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Neither is designated the large work.",
+      "start": 277,
+      "end": 314,
+      "similarity": 0.16944342993857522,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Each Brindale Music Library guided session admits at most 28 visitors.",
+      "start": 316,
+      "end": 386,
+      "similarity": 0.06132190393831279,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Brindale Music Library acknowledges a loan request within four business days.",
+      "start": 388,
+      "end": 465,
+      "similarity": 0.028161524901120498,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Acknowledgement does not promise confirmation of a loan.",
+      "start": 466,
+      "end": 522,
+      "similarity": 0.15200282629454218,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Brindale Music Library loan receipts are retained for 9 months, unless an unresolved missing-instrument claim requires longer retention.",
+      "start": 524,
+      "end": 660,
+      "similarity": 0.04427983878217982,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "The highest monthly mean temperature in the Brindale Music Library store is 25 degrees Celsius in August.",
+      "start": 662,
+      "end": 767,
+      "similarity": 0.009844829610115414,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "5b2c1429-801a-458f-a36a-8f03107c4873",
+      "value": "Its highest daily reading is 37 degrees Celsius.",
+      "start": 768,
+      "end": 816,
+      "similarity": 0.13915915704735754,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating.",
+      "start": 0,
+      "end": 130,
+      "similarity": 0.40624312893603765,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "The support frames are steel and the labels are card.",
+      "start": 131,
+      "end": 184,
+      "similarity": 0.1300309789817454,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Inspection emblems decorate the side balcony windows at Tarrow Glass Laboratory.",
+      "start": 186,
+      "end": 266,
+      "similarity": 0.4797007022554121,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "The entrance arch has a blue crest, and the ceiling carries a brass vane.",
+      "start": 267,
+      "end": 340,
+      "similarity": 0.10281273314503783,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "The Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius.",
+      "start": 342,
+      "end": 419,
+      "similarity": 0.46221944856785363,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Its highest monthly mean is 26 degrees Celsius in June, and its highest daily reading is 39 degrees Celsius.",
+      "start": 420,
+      "end": 528,
+      "similarity": 0.045168908146071815,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "No absolute winter minimum is stated.",
+      "start": 529,
+      "end": 566,
+      "similarity": 0.05408171360770723,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "The Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions.",
+      "start": 568,
+      "end": 693,
+      "similarity": 0.3630114933964358,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Its inspection interval remains 18 hours in either condition.",
+      "start": 694,
+      "end": 755,
+      "similarity": 0.22855363719742425,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "start": 757,
+      "end": 878,
+      "similarity": 0.8618875177923916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+      "value": "Each Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+      "start": 880,
+      "end": 951,
+      "similarity": 0.5581497688636354,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Westrill Canal Office moved its dispatch counter in 1917.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.07756775176542441,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Its first restoration was completed in 1965, and its second restoration was completed in 2003.",
+      "start": 58,
+      "end": 152,
+      "similarity": 0.19088592930294077,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "A proposed closure in 1978 was rejected and did not occur.",
+      "start": 153,
+      "end": 211,
+      "similarity": 0.22873946958964186,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Pera registers four permits per day.",
+      "start": 213,
+      "end": 249,
+      "similarity": 0.24464509344381105,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Sorin archives six maps per day.",
+      "start": 250,
+      "end": 282,
+      "similarity": 0.03726809790409962,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Pera checks two seals per day.",
+      "start": 283,
+      "end": 313,
+      "similarity": 0.17345841967331874,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "Westrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.",
+      "start": 315,
+      "end": 437,
+      "similarity": 0.043372305120107923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "bc2ac08c-59e7-43c8-b389-bd3d058c4718",
+      "value": "The Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+      "start": 439,
+      "end": 560,
+      "similarity": 0.0798883415154524,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Oakenford Survey Store opened its public room in 1936.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.21740885455571646,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+      "start": 55,
+      "end": 141,
+      "similarity": 0.19461019265357204,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "The Oakenford Survey Store Control Ledger was published in 2014.",
+      "start": 143,
+      "end": 207,
+      "similarity": 0.28851229011630136,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "A different book, Field Atlas, was published in 2020.",
+      "start": 208,
+      "end": 261,
+      "similarity": 0.0679970935194452,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Neither is designated the large book.",
+      "start": 262,
+      "end": 299,
+      "similarity": 0.10828459225638778,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Each Oakenford Survey Store guided session admits at most 22 visitors.",
+      "start": 301,
+      "end": 371,
+      "similarity": 0.25638837484847626,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "The Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 373,
+      "end": 463,
+      "similarity": 0.14015509151407113,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.",
+      "start": 464,
+      "end": 578,
+      "similarity": 0.0725675764721403,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2a4d8cb7-82b1-43b9-8902-47c9db8d22b6",
+      "value": "Oakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention.",
+      "start": 580,
+      "end": 717,
+      "similarity": 0.09404841475141329,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6ac09bf7-c119-474d-9ad4-169deb11552c:644",
+          "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+          "filename": "06_Tarrow_Glass_Laboratory.txt",
+          "excerpt": "ute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition.\n\nPurchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nEach Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "score": 0.0476,
+          "lexicalScore": 9.840019402571606,
+          "semanticScore": 0.561196573772437,
+          "matchedTerms": [
+            "tarrow",
+            "glass",
+            "laboratory",
+            "7900"
+          ],
+          "start": 757,
+          "end": 878
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "06_Tarrow_Glass_Laboratory.txt",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "must",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 757,
+            "cosine": 0.8618875177923916,
+            "slot_supported": false,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "06_Tarrow_Glass_Laboratory.txt",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "must",
+            "years": []
+          },
+          "reason": "Keep prior: no bounded eligible relation"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "06_Tarrow_Glass_Laboratory.txt",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6ac09bf7-c119-474d-9ad4-169deb11552c:644",
+          "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+          "filename": "06_Tarrow_Glass_Laboratory.txt",
+          "excerpt": "ute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition.\n\nPurchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nEach Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "score": 0.0476,
+          "lexicalScore": 9.840019402571606,
+          "semanticScore": 0.561196573772437,
+          "matchedTerms": [
+            "tarrow",
+            "glass",
+            "laboratory",
+            "7900"
+          ],
+          "start": 757,
+          "end": 878
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "06_Tarrow_Glass_Laboratory.txt",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "must",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 757,
+            "cosine": 0.8618875177923916,
+            "slot_supported": false,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "06_Tarrow_Glass_Laboratory.txt",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "must",
+            "years": []
+          },
+          "reason": "Keep prior: no bounded eligible relation"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "06_Tarrow_Glass_Laboratory.txt",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6ac09bf7-c119-474d-9ad4-169deb11552c:644",
+          "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+          "filename": "06_Tarrow_Glass_Laboratory.txt",
+          "excerpt": "ute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition.\n\nPurchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nEach Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "score": 0.0476,
+          "lexicalScore": 9.840019402571606,
+          "semanticScore": 0.561196573772437,
+          "matchedTerms": [
+            "tarrow",
+            "glass",
+            "laboratory",
+            "7900"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "06_Tarrow_Glass_Laboratory.txt",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "must",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 757,
+            "cosine": 0.8618875177923916,
+            "slot_supported": false,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "06_Tarrow_Glass_Laboratory.txt",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "must",
+            "years": []
+          },
+          "reason": "Keep prior: no bounded eligible relation"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "6ac09bf7-c119-474d-9ad4-169deb11552c:644",
+          "documentId": "6ac09bf7-c119-474d-9ad4-169deb11552c",
+          "filename": "06_Tarrow_Glass_Laboratory.txt",
+          "excerpt": "ute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition.\n\nPurchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nEach Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "score": 0.0476,
+          "lexicalScore": 9.840019402571606,
+          "semanticScore": 0.561196573772437,
+          "matchedTerms": [
+            "tarrow",
+            "glass",
+            "laboratory",
+            "7900"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "06_Tarrow_Glass_Laboratory.txt",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "must",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 757,
+            "cosine": 0.8618875177923916,
+            "slot_supported": false,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "06_Tarrow_Glass_Laboratory.txt",
+          "quote": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "must",
+            "years": []
+          },
+          "reason": "Keep prior: no bounded eligible relation"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.010930515825748444,
+    0.09961389750242233,
+    -0.006849850062280893,
+    -0.0751085877418518,
+    0.012285432778298855,
+    -0.04921644926071167,
+    -0.0013646293664351106,
+    0.05486057326197624,
+    -0.049823518842458725,
+    -0.05758588761091232,
+    -0.0015771271428093314,
+    -0.04455172270536423,
+    -0.03604323789477348,
+    0.008950525894761086,
+    -0.09529010206460953,
+    -0.05730045214295387,
+    0.024396153166890144,
+    -0.09640076756477356,
+    0.023719239979982376,
+    -0.03982402756810188,
+    -0.012744606472551823,
+    -0.008695174008607864,
+    0.046919647604227066,
+    -0.0337086021900177,
+    -0.023124637082219124,
+    0.04834846407175064,
+    -0.0718265250325203,
+    0.07069313526153564,
+    0.024985766038298607,
+    -0.02106522023677826,
+    -0.004893532022833824,
+    -0.008649682626128197,
+    -0.007735079154372215,
+    -0.037366319447755814,
+    0.10236842185258865,
+    -0.023569386452436447,
+    0.010249520651996136,
+    -0.05321268364787102,
+    -0.012783098965883255,
+    0.01994682475924492,
+    0.05018299072980881,
+    -0.07317085564136505,
+    -0.05544039607048035,
+    0.08691683411598206,
+    -0.03920666500926018,
+    -0.014534726738929749,
+    0.07667984068393707,
+    -0.04127619042992592,
+    0.014874576590955257,
+    0.020093856379389763,
+    -0.02380693331360817,
+    -0.007256140932440758,
+    0.013510841876268387,
+    -0.03672167658805847,
+    0.007393901702016592,
+    -0.030323240906000137,
+    0.03537629917263985,
+    -0.11228574067354202,
+    0.019831344485282898,
+    0.020184701308608055,
+    -0.03869233652949333,
+    -0.040378980338573456,
+    -0.07912170886993408,
+    -0.008560958318412304,
+    0.08001937717199326,
+    -0.000606185698416084,
+    -0.01668514683842659,
+    -0.030752725899219513,
+    0.03434499353170395,
+    -0.0412096343934536,
+    0.08664051443338394,
+    -0.007551130373030901,
+    0.07145218551158905,
+    0.07271403074264526,
+    -0.006321030203253031,
+    0.025177989155054092,
+    0.04034112021327019,
+    0.033733732998371124,
+    0.06275372952222824,
+    -0.059025391936302185,
+    -0.029750512912869453,
+    -0.03688245639204979,
+    -0.023607075214385986,
+    -0.01957377977669239,
+    -0.04357467219233513,
+    0.02912028692662716,
+    0.036992914974689484,
+    0.06817641109228134,
+    0.06206362321972847,
+    -0.0062826694920659065,
+    0.027739545330405235,
+    -0.015988653525710106,
+    0.013333411887288094,
+    -0.04434594884514809,
+    -0.026368804275989532,
+    0.06076622009277344,
+    0.02081625908613205,
+    -0.05750370770692825,
+    -0.04875368997454643,
+    0.03459690138697624,
+    0.008894928731024265,
+    -0.03644486516714096,
+    -0.01857198402285576,
+    -0.006527361460030079,
+    -0.02811462990939617,
+    -0.030970344319939613,
+    -0.05141420289874077,
+    0.07777904719114304,
+    0.06692717224359512,
+    0.012826220132410526,
+    -0.021387210115790367,
+    -0.0004883729852735996,
+    0.029698649421334267,
+    0.08372204005718231,
+    0.023991357535123825,
+    -0.020175715908408165,
+    -0.030386779457330704,
+    -0.0698058232665062,
+    0.0029028134886175394,
+    -0.07526768743991852,
+    0.06518939882516861,
+    0.010873766615986824,
+    0.079294353723526,
+    -0.0664614662528038,
+    0.01255884114652872,
+    -0.00010425509390188381,
+    -0.05888030305504799,
+    -3.6677513921547926e-33,
+    -0.02847261168062687,
+    0.07620231062173843,
+    0.01313762553036213,
+    -0.04219985380768776,
+    0.04444246366620064,
+    0.02453068271279335,
+    -0.008543354459106922,
+    0.050715841352939606,
+    -0.03751133382320404,
+    0.04297083616256714,
+    -0.06698741018772125,
+    -0.02411222830414772,
+    -0.05223459005355835,
+    -0.005951916798949242,
+    -0.056620460003614426,
+    0.001411380828358233,
+    -0.014383289963006973,
+    0.10017456859350204,
+    -0.03778877109289169,
+    0.004822372924536467,
+    -0.054451003670692444,
+    -0.019198324531316757,
+    0.024540383368730545,
+    0.08145184814929962,
+    -0.012030649930238724,
+    0.01869926042854786,
+    -0.035247523337602615,
+    0.03979283943772316,
+    0.06745457649230957,
+    0.06031887233257294,
+    0.12145188450813293,
+    0.03229314088821411,
+    0.038610588759183884,
+    0.013246809132397175,
+    -0.008589108474552631,
+    0.06182379648089409,
+    -0.1186189353466034,
+    -0.04361211135983467,
+    0.047767095267772675,
+    -0.001227539381943643,
+    -0.04406275972723961,
+    0.07644665241241455,
+    0.0908035933971405,
+    0.025975501164793968,
+    0.0695328637957573,
+    -0.004633444361388683,
+    -0.03005954809486866,
+    0.009189785458147526,
+    -0.034396298229694366,
+    0.006358513608574867,
+    -0.07666081190109253,
+    0.05477995425462723,
+    -0.07482878118753433,
+    0.058566752821207047,
+    -0.014599790796637535,
+    -0.08319226652383804,
+    0.07465416938066483,
+    0.009363646619021893,
+    0.056323256343603134,
+    -0.04324126988649368,
+    -0.006677326746284962,
+    0.09175089001655579,
+    -0.05438894033432007,
+    0.11576617509126663,
+    -0.012417872436344624,
+    0.03753151744604111,
+    -0.0570254810154438,
+    -0.031147589907050133,
+    -0.027007274329662323,
+    -0.054812487214803696,
+    -0.014662683010101318,
+    -0.03558581322431564,
+    -0.04147231578826904,
+    -0.027705149725079536,
+    -0.029114199802279472,
+    -0.0170539990067482,
+    -0.03820706903934479,
+    0.08719240874052048,
+    0.09363918751478195,
+    -0.0316057987511158,
+    -0.003929219674319029,
+    -0.03257839381694794,
+    -0.020599210634827614,
+    -0.06500508636236191,
+    -0.01837695576250553,
+    -0.02822027914226055,
+    -0.00683788675814867,
+    0.0747063085436821,
+    -0.03984569013118744,
+    -0.007087721489369869,
+    -0.01348583959043026,
+    -0.015107057057321072,
+    -0.019567759707570076,
+    0.007444473449140787,
+    0.008504086174070835,
+    1.8719448153127454e-33,
+    0.00567146111279726,
+    -0.04342256486415863,
+    0.012147792614996433,
+    -0.007585468702018261,
+    0.04472214728593826,
+    0.026943568140268326,
+    0.012446951121091843,
+    -0.07696693390607834,
+    0.030483506619930267,
+    -0.03160911053419113,
+    0.03483259677886963,
+    0.036381591111421585,
+    0.006646050605922937,
+    0.0114057045429945,
+    -0.02693692222237587,
+    0.009131042286753654,
+    0.03668264299631119,
+    -0.05867096036672592,
+    -0.000287798757199198,
+    -0.02288052625954151,
+    0.02420082688331604,
+    0.11991637945175171,
+    -0.06072837859392166,
+    0.11860408633947372,
+    -0.0530734658241272,
+    -0.030855057761073112,
+    0.0516161285340786,
+    -0.06795836240053177,
+    0.015418888069689274,
+    -0.03632938861846924,
+    -0.024863598868250847,
+    -0.03661074861884117,
+    -0.07551994174718857,
+    0.08194058388471603,
+    -0.0498381108045578,
+    -0.07785648107528687,
+    0.14651119709014893,
+    -0.016507316380739212,
+    -0.010720225051045418,
+    -0.029201412573456764,
+    0.13120435178279877,
+    0.024144835770130157,
+    -0.08245225995779037,
+    -0.0030120867304503918,
+    -0.018744349479675293,
+    0.02465648017823696,
+    0.02382776141166687,
+    -0.08041542023420334,
+    -0.002121452707797289,
+    -0.01778433658182621,
+    -0.029946964234113693,
+    0.01501415204256773,
+    0.06612537056207657,
+    -0.021770721301436424,
+    -0.027204282581806183,
+    0.05337362736463547,
+    0.07000809907913208,
+    0.044289153069257736,
+    0.042584363371133804,
+    -0.012847949750721455,
+    0.09392072260379791,
+    0.09391222894191742,
+    -0.019940510392189026,
+    0.002446485450491309,
+    -0.015251359902322292,
+    0.01165258139371872,
+    0.07447648793458939,
+    0.0333457812666893,
+    0.08472561836242676,
+    -0.04904999956488609,
+    0.08506818115711212,
+    -0.0326748788356781,
+    0.002605922520160675,
+    0.020421138033270836,
+    0.049694012850522995,
+    -0.004548028111457825,
+    -0.03273262456059456,
+    -0.00035023613600060344,
+    -0.010206848382949829,
+    -0.036766424775123596,
+    -0.012607931159436703,
+    -0.007047383114695549,
+    0.09030209481716156,
+    0.08517003059387207,
+    0.09598096460103989,
+    -0.15899772942066193,
+    0.07217608392238617,
+    -0.09213174879550934,
+    -0.029675444588065147,
+    0.03225340694189072,
+    -0.014191633090376854,
+    -0.05750059708952904,
+    -0.04148484393954277,
+    -0.015152542851865292,
+    0.06736953556537628,
+    -1.8347963148812596e-8,
+    0.014878178015351295,
+    0.011665763333439827,
+    0.04205841198563576,
+    -0.0021803961135447025,
+    -0.01076382864266634,
+    -0.04792138561606407,
+    0.010637372732162476,
+    0.0813264548778534,
+    -0.05221457779407501,
+    0.012919895350933075,
+    0.05578817054629326,
+    0.008378973230719566,
+    0.0028962104115635157,
+    -0.0003614846500568092,
+    -0.012411878444254398,
+    -0.02255910262465477,
+    0.0004744628968182951,
+    0.04377885162830353,
+    -0.09620246291160583,
+    -0.002446975326165557,
+    0.006287258118391037,
+    -0.011905892752110958,
+    0.10017845034599304,
+    0.052280325442552567,
+    -0.061921894550323486,
+    0.02788526751101017,
+    -0.035623226314783096,
+    0.050636935979127884,
+    -0.013268128968775272,
+    0.030570484697818756,
+    -0.01182071678340435,
+    -0.0012069292133674026,
+    0.004247404169291258,
+    0.03741583973169327,
+    0.017987703904509544,
+    -0.02063579112291336,
+    -0.13441385328769684,
+    -0.006705902051180601,
+    0.11534979194402695,
+    -0.022702377289533615,
+    -0.06015579774975777,
+    -0.07016798853874207,
+    -0.06697172671556473,
+    0.05511605367064476,
+    0.04738836735486984,
+    0.017992999404668808,
+    -0.18369397521018982,
+    -0.06847559660673141,
+    -0.07058399170637131,
+    0.010299861431121826,
+    0.13181547820568085,
+    -0.023424189537763596,
+    0.10397244244813919,
+    0.006166350096464157,
+    -0.041886694729328156,
+    0.020250027999281883,
+    -0.015671998262405396,
+    -0.013800911605358124,
+    -0.0650063008069992,
+    0.006725579500198364,
+    0.12961448729038239,
+    -0.031778622418642044,
+    0.037331972271203995,
+    -0.0623876228928566
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "06_Tarrow_Glass_Laboratory.txt",
+        "start": 644,
+        "content": "onditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition.\n\nPurchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nEach Tarrow Glass Laboratory guided session admits at most 18 visitors."
+      },
+      {
+        "filename": "06_Tarrow_Glass_Laboratory.txt",
+        "start": 0,
+        "content": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating. The support frames are steel and the labels are card.\n\nInspection emblems decorate the side balcony windows at Tarrow Glass Laboratory. The entrance arch has a blue crest, and the ceiling carries a brass vane.\n\nThe Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius. Its highest monthly mean is 26 degrees Celsius in June, and its highest daily reading is 39 degrees Celsius. No absolute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either"
+      }
+    ],
+    "section": [
+      {
+        "filename": "06_Tarrow_Glass_Laboratory.txt",
+        "start": 644,
+        "content": "onditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either condition.\n\nPurchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.\n\nEach Tarrow Glass Laboratory guided session admits at most 18 visitors."
+      },
+      {
+        "filename": "06_Tarrow_Glass_Laboratory.txt",
+        "start": 0,
+        "content": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating. The support frames are steel and the labels are card.\n\nInspection emblems decorate the side balcony windows at Tarrow Glass Laboratory. The entrance arch has a blue crest, and the ceiling carries a brass vane.\n\nThe Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius. Its highest monthly mean is 26 degrees Celsius in June, and its highest daily reading is 39 degrees Celsius. No absolute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either"
+      }
+    ]
+  }
+}

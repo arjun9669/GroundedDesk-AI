@@ -13,9 +13,9 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest isolated candidate | **v43**; all 19 available-input native regression gates PASS across 668 cases; known failed answers retained; not adopted |
+| Latest isolated candidate | **v43**; phase 1 preservation gates PASS, first Fresh64 confirmation FAIL; not adopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
-| Current phase | **2 — fresh confirmation preparation**; 64 cases, rubric and execution setup frozen; model study **NOT RUN** |
+| Current phase | **2 — first Fresh64 confirmation FAIL**; 52 PASS / 4 PARTIAL / 8 FAIL in each variant; integration HOLD |
 | Latest recorded engineering checks | **777 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
@@ -23,6 +23,23 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. The following
 phase 1 summary reflects the approved decision on **21 October 2026**; earlier
 reports remain dated checkpoints and preserve their original failures and holds.
+
+## Latest result — phase 2 Fresh64 confirmation FAIL
+
+On **24 October 2026**, one capture completed all 64 fresh cases: 56 actual local
+MiniLM Hybrid questions and eight lexical Comparisons, Qwen off. Both unchanged
+v43 variants scored **52 PASS / 4 PARTIAL / 8 FAIL**, below the frozen 64/64 target.
+There were no question retries or execution errors. Source/vector integrity passed;
+the separate binding review confirms the first grades. Five unsupported questions
+received cited answers, two supported questions were refused, one retention
+question received unrelated text, and four comparisons missed one side's facts.
+
+[Full report and remaining work](./docs/PHASE2_FRESH64_FIRST_RESULTS.md) ·
+[Original scorecard](./docs/evidence/phase2-fresh64-mac/score/native-scorecard.json) ·
+[Separate binding review](./docs/evidence/phase2-fresh64-mac/review/binding-review.json).
+Original scores, inputs, rubrics and evidence remain unchanged. Fresh64 is now an
+exposed regression set; a passing replay cannot replace this failed confirmation.
+**Phase 2 remains incomplete and live 5.6/r44 stays unchanged.**
 
 ## Phase 1 — broader regression: completed under revised scope
 
@@ -120,20 +137,18 @@ All earlier first failures, blocked runs, rubrics and original evidence remain p
 
 ### Phase 2 handoff and release boundary
 
-[Fresh64 inputs and protocol](./eval/phase2-fresh64/PROTOCOL.md) are frozen:
-8 newly authored fictional TXT documents and 64 questions, comprising 40 supported
-Hybrid questions, 16 unsupported Hybrid questions and 8 lexical Comparisons.
-**No candidate, planner, embedder, model or scorer has run on this pack.** Static
-input validation has passed; this is author-created targeted confirmation, not
-blinded external validation or a representative accuracy benchmark.
+[Fresh64 inputs and protocol](./eval/phase2-fresh64/PROTOCOL.md) froze eight fictional
+TXT documents and 64 questions: 40 supported Hybrid, 16 unsupported Hybrid and
+eight lexical Comparisons. The execution setup and explicit Chrome .86 environment
+amendment reached GitHub before the first capture. The
+[first result](./docs/PHASE2_FRESH64_FIRST_RESULTS.md) failed the strict 64/64 target
+in both variants. This is author-created targeted confirmation, not blinded external
+validation or a representative accuracy benchmark.
 
-The [execution setup](./eval/phase2-fresh64/EXECUTION_PLAN.md) now freezes the runner,
-scorer, code and downloaded asset hashes. The explicit
-[environment amendment](./eval/phase2-fresh64/ENVIRONMENT_AMENDMENT.md) records Chrome
-155.0.8059.86 before questions. Publish and verify this setup, then capture all 64
-cases once. The prospective gate requires **64/64 PASS independently in
-both variants**, with no grandfathered failures. Preserve the first result and stop
-on required check failures. The input freeze alone is not execution-ready.
+Next agree a scoped repair design, preserve the 668-case regression scope and use
+Fresh64 only as exposed regression after any fix. New prospective confirmation
+requires a separately frozen unseen pack. This publication authorizes no candidate
+change, model rerun or live integration.
 
 **Live GroundedDesk remains 5.6 / r44; v43 is not adopted.** Revised phase 1 acceptance
 does not approve integration or a 6.0 release. Fresh confirmation, integration,
@@ -301,10 +316,10 @@ OCR, reliable table/column reconstruction, character-level partial-run highlight
 
 Phase 1 is complete only under the [approved 668-case scope](./docs/PHASE1_REVISED_ACCEPTANCE.md).
 The five known public-data case limitations remain open, 103 missing original
-cases remain untested, and full 771-case coverage is not claimed. Phase 2 inputs
-are prepared, but fresh model confirmation has not run. Freeze execution before
-the first capture; later integration and product/release qualification remain on
-hold. The [combined v43 report](./docs/V43_ALL_AVAILABLE_MAC_RESULTS.md) and
+cases remain untested, and full 771-case coverage is not claimed. The
+[first Fresh64 confirmation failed](./docs/PHASE2_FRESH64_FIRST_RESULTS.md). Repair
+design and new prospective confirmation remain open; later integration and
+product/release qualification stay on hold. The [combined v43 report](./docs/V43_ALL_AVAILABLE_MAC_RESULTS.md) and
 [current project status](./PROJECT_STATUS.md) distinguish these results from
 historical candidate failures. Live r44 and upload limits remain unchanged.
 
