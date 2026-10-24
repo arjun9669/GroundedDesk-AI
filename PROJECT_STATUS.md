@@ -19,6 +19,23 @@ original reports; link them here instead of rewriting or rescoring them.
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | Current change | Phase 1 COMPLETE under approved 668-case scope; phase 2 first Fresh64 confirmation FAIL: 52 PASS / 4 PARTIAL / 8 FAIL in both variants |
 
+## Fresh64 repair design — 2026-10-24, no implementation
+
+[Design F64-REPAIR-20261024](docs/FRESH64_REPAIR_DESIGN.md) traces the first failures
+to current request ownership/fallback, asymmetric retention-subject normalization,
+unrecognized recorded-minimum labels, coordinated ordinal-event parsing and missing
+Comparison relation checks. Proposed isolated successor: Stage A unsupported
+approval/actor/referent contracts, then Stage B supported statistic/retention/event
+binding and Stage C per-document lexical Comparison completeness. It defines
+positive/negative controls, evidence invariants and later frozen 668+64 exposed
+regression/new prospective confirmation gates. No candidate/runtime/test code,
+input or historical evidence changed. No Fresh64 candidate/planner/model/scorer
+execution occurred; verification uses the existing synthetic unit suite only.
+Implementation and model revalidation are not started;
+phase 2 remains FAIL and integration HOLD. Verification: 777/777 unit tests PASS;
+design/README/roadmap links resolve; original raw/results/review seals and execution/
+input/environment freezes unchanged; credential review and `git diff --check` PASS.
+
 ## Phase 2 first Fresh64 result — FAIL, 2026-10-24
 
 Execution freeze commit `7554249c3bd093fffc494bea50ae104687ce4c7d` was pushed and

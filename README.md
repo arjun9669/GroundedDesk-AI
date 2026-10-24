@@ -145,8 +145,10 @@ amendment reached GitHub before the first capture. The
 in both variants. This is author-created targeted confirmation, not blinded external
 validation or a representative accuracy benchmark.
 
-Next agree a scoped repair design, preserve the 668-case regression scope and use
-Fresh64 only as exposed regression after any fix. New prospective confirmation
+The [repair design](./docs/FRESH64_REPAIR_DESIGN.md) proposes unsupported approval/
+reference contracts first, then supported relation and Comparison repairs. No code
+has been implemented. Preserve the 668-case regression scope and use Fresh64 only
+as exposed regression after any fix. New prospective confirmation
 requires a separately frozen unseen pack. This publication authorizes no candidate
 change, model rerun or live integration.
 
@@ -318,7 +320,7 @@ Phase 1 is complete only under the [approved 668-case scope](./docs/PHASE1_REVIS
 The five known public-data case limitations remain open, 103 missing original
 cases remain untested, and full 771-case coverage is not claimed. The
 [first Fresh64 confirmation failed](./docs/PHASE2_FRESH64_FIRST_RESULTS.md). Repair
-design and new prospective confirmation remain open; later integration and
+implementation and new prospective confirmation remain open; later integration and
 product/release qualification stay on hold. The [combined v43 report](./docs/V43_ALL_AVAILABLE_MAC_RESULTS.md) and
 [current project status](./PROJECT_STATUS.md) distinguish these results from
 historical candidate failures. Live r44 and upload limits remain unchanged.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-24 — Design the Fresh64 repair scope
+
+- Publish a static code/evidence trace and staged isolated-candidate repair design: unsupported approval/reference contracts, supported relation parsing and per-document lexical Comparison completeness. Define positive/negative controls, evidence invariants and future regression/confirmation gates.
+- No implementation, model/planner/scorer invocation or frozen-evidence edit; the first Fresh64 confirmation remains FAIL and live r44 unchanged.
+
 ## 2026-10-24 — Preserve and publish first Fresh64 confirmation failure
 
 - Record the one-shot 64-case first study: both v43 variants 52 PASS/4 PARTIAL/8 FAIL, strict confirmation gate FAIL; 5,402 body/facet cosines and source/order audit PASS.
