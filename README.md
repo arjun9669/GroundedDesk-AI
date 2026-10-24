@@ -40,8 +40,9 @@ refusals. Original native outcomes and both audit failures remain preserved.
 No candidate changes, model reruns or scoring retries occurred during publication.
 See the [failed-study report](./docs/V46_REGRESSION_FAILED_RESULTS.md) and
 [separate review](./docs/evidence/v46-regression-732-mac/review/publication-review.json).
-Next prioritize preservation repairs before another exposed regression or new
-unseen confirmation. **Phase 2 and integration remain HOLD; live 5.6/r44 is unchanged.**
+The [preservation-first repair design](./docs/V47_PRESERVATION_REPAIR_DESIGN.md)
+now defines three work packages: scope/retention, minimum/approval, then Comparison.
+Implementation and another frozen study require separate approval. **Phase 2 and integration remain HOLD; live 5.6/r44 is unchanged.**
 
 ## Original phase 2 Fresh64 confirmation — FAIL
 

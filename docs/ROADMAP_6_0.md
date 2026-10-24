@@ -1,7 +1,7 @@
 # GroundedDesk 6.0 working roadmap
 
 Accepted as a working sequence in the October 20, 2026 conversation. Current
-phase: **2 — first Fresh64 confirmation FAIL; v46 exposed regression FAIL; preservation repairs pending**. Detailed product promises and quantitative
+phase: **2 — first Fresh64 confirmation FAIL; v46 exposed regression FAIL; preservation-first repair design published**. Detailed product promises and quantitative
 release targets are not yet frozen; this roadmap does not declare 6.0 ready,
 promise production/security certification or authorize live integration.
 
@@ -50,8 +50,11 @@ failed: Fresh64 60 PASS/4 PARTIAL in each variant,10/19 historical gates PASS,
 correction remain preserved; no candidate or native outcome changed in publication.
 Separate binding review is complete without native regrading; Cobalt H03 remains
 BLOCKED. Engineering874 unit/28 Keyword PASS does not override this quality failure.
-Next agree preservation repairs before a new frozen regression and later unseen
-confirmation; live integration remains unauthorized.
+The [preservation-first successor design](V47_PRESERVATION_REPAIR_DESIGN.md) now
+specifies three repair work packages. Next approve scope/grammar for the first
+implementation package; no new candidate/model run is authorized by the design.
+A new frozen regression and later unseen confirmation remain subsequent gates;
+live integration remains unauthorized.
 Preserve the accepted 668-case regression scope after fixes. Fresh64 is now exposed;
 a future replay is regression, not replacement of its failed first confirmation.
 New prospective confirmation needs a new separately agreed/frozen unseen pack.

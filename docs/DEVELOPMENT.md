@@ -443,3 +443,16 @@ all128 Fresh64 and40 changed historical rows without editing native outcomes.
 874 units/28 Keyword passing logs predate publication; no new model/scoring run
 was made for documentation. Preserve all raw/result/correction/review manifests.
 Next agree a preservation-first repair design; do not rerun or overwrite this study.
+
+
+## Preservation-first repair design after v46
+
+[Design V47-PRESERVATION-20261024](V47_PRESERVATION_REPAIR_DESIGN.md) is design only.
+Use an isolated successor and unchanged v43 default baseline; implement complete
+owned scope/retention, minimum/approval and per-side Comparison contracts in
+separately approved work packages. Do not edit historical candidates or first
+failures or rerun frozen questions during design. Preserve full-request guards,
+validated display signatures, clock authority, literal anchors and native gates.
+The design/source seal is under `docs/evidence/v47-preservation-design/`.
+Documentation/hash/diff checks apply to this task; existing 874-unit/28-Keyword
+results are retained checkpoints, not rerun model evidence.

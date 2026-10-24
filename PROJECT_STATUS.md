@@ -19,6 +19,34 @@ original reports; link them here instead of rewriting or rescoring them.
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | Current change | Approved publication of v46 failed regression and separate completed review; native outcomes unchanged, no candidate adoption |
 
+## Preservation-first successor design — 2026-10-24, no implementation
+
+The user agreed to prepare a repair design after failed v46 publication
+`232c9c432a91d6a0dda359118f6a5787349c1941`.
+[Design V47-PRESERVATION-20261024](docs/V47_PRESERVATION_REPAIR_DESIGN.md) proposes
+an isolated successor with unchanged v43 as its default baseline and new complete
+owned contracts. Three repair work packages: (1) source/document scope and retention,
+(2) subentity minimum binding and written approvals, (3) per-side lexical Comparison
+completeness. These are work packages inside phase 2, not new 6.0 phases.
+
+The design accounts for 13 retention, five minimum and two approval prior PASS
+losses, plus four partial Comparisons. It retains the foreign-prefix guard,
+whole-request/condition/role accounting, strict threshold equality semantics,
+actual body/facet anchors, v43 clock authority and literal source bounds. No blind
+fallback to old answers is allowed inside owned scope; already complete validated
+v43 evidence should retain its display signature, especially manual families.
+
+[Design/source seal](docs/evidence/v47-preservation-design/manifest.json) pins the
+new design and unchanged relevant sources/result/review references. Verification
+is documentation links, source/reference identities, sensitive-data and Git diff
+review only; no unit/model/scorer/planner run or saved-vector replay occurred.
+The 874-unit/28-Keyword evidence remains the prior engineering checkpoint.
+
+Next obtain separate package-1 implementation scope/grammar approval. Later packages
+and a new frozen 732-case model study are separate tasks, not authorized by this
+design. Original v46 native FAIL, first audit failure, v43 Fresh64 FAIL, Cobalt
+BLOCKED, 103 exclusions, full771 NOT RUN, phase2 HOLD and live5.6/r44 stay unchanged.
+
 ## V46 failed-study publication and review — 2026-10-24
 
 The user approved documenting, reviewing and publishing the failed study without

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-24 — preservation-first successor repair design
+
+- Define a new isolated v43-based successor design for the 20 historical prior
+  PASS losses and four partial Comparisons, preserving all existing failure evidence.
+- Specify scope/retention, minimum/approval and per-side Comparison work packages,
+  synthetic preservation controls and later unchanged native/model gates.
+- Design only: no candidate implementation, test/model/scorer/planner execution
+  or saved-vector replay; package implementation needs separate approval.
+
 ## 2026-10-24 — publish failed v46 regression and preserved audit history
 
 - Preserve once-only732-case capture,5,865 raw artifacts, first anchor-audit block,
