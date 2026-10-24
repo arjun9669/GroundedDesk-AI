@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-24 — isolated v46 Stage C engineering
+
+- Add bounded per-document event/date, monthly metric/month and cutoff/day/hold
+  Comparison contracts; preserve exact v45 Ask/helpers and prior Comparison paths.
+- Record first-run 24 targeted, 848 unit and 28 strict Keyword checks PASS, with
+  separate sealed evidence. No model reruns, first-result edits or live adoption.
+
 ## 2026-10-24 — Implement v45 Stage B with approved scope correction
 
 - Add isolated minimum-label/value, record-type retention and coordinated ordinal-event/date binding on unchanged v44. Stage A/clock and exact Comparison/helper exports remain intact; live r44 unchanged.

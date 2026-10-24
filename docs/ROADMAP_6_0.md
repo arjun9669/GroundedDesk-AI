@@ -1,7 +1,7 @@
 # GroundedDesk 6.0 working roadmap
 
 Accepted as a working sequence in the October 20, 2026 conversation. Current
-phase: **2 — first Fresh64 confirmation FAIL; v45 Stages A/B engineering complete; model revalidation pending**. Detailed product promises and quantitative
+phase: **2 — first Fresh64 confirmation FAIL; v46 Stages A/B/C bounded engineering complete; model revalidation pending**. Detailed product promises and quantitative
 release targets are not yet frozen; this roadmap does not declare 6.0 ready,
 promise production/security certification or authorize live integration.
 
@@ -41,10 +41,11 @@ phase 3 integration remains unauthorized.
 
 The [published repair design](FRESH64_REPAIR_DESIGN.md) prioritizes unsupported
 threshold/actor/referent handling, then supported frame/retention selection and
-per-document Comparison completeness. [V44 Stage A](V44_STAGE_A_ENGINEERING.md)
-and [v45 Stage B](V45_STAGE_B_ENGINEERING.md) now have isolated implementations;
-824 unit/28 Keyword checks pass after the approved retention-scope correction.
-Stage C and all actual-model revalidation remain unrun.
+per-document Comparison completeness. [V44 Stage A](V44_STAGE_A_ENGINEERING.md),
+[v45 Stage B](V45_STAGE_B_ENGINEERING.md), and
+[v46 Stage C](V46_STAGE_C_ENGINEERING.md) now have isolated bounded implementations;
+848 unit/28 Keyword checks pass. All actual-model revalidation remains unrun;
+a new regression execution freeze is the next preparation step.
 Preserve the accepted 668-case regression scope after fixes. Fresh64 is now exposed;
 a future replay is regression, not replacement of its failed first confirmation.
 New prospective confirmation needs a new separately agreed/frozen unseen pack.

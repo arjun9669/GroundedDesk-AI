@@ -15,9 +15,33 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v45 Stage B engineering only; 824 unit/28 Keyword PASS after approved scope fix; no actual-model run/adoption. Latest model result remains v43 Fresh64 FAIL |
+| Latest isolated candidate | v46 Stage C engineering only; 848 unit/28 Keyword PASS; no actual-model run/adoption. Latest model result remains v43 Fresh64 FAIL |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | Current change | Phase 1 COMPLETE under approved 668-case scope; phase 2 first Fresh64 confirmation FAIL: 52 PASS / 4 PARTIAL / 8 FAIL in both variants |
+
+## V46 Stage C — engineering PASS, 2026-10-24
+
+[Engineering report](docs/V46_STAGE_C_ENGINEERING.md) and
+[protocol](eval/answer-completeness-v46/PROTOCOL.md) record the user's approved
+Stage C implementation in isolated v46. Each selected document independently
+needs complete event/object/date, monthly metric/value/month or cutoff/day/hold
+support under the declared grammar. Missing, ambiguous or conflicting evidence
+on either side refuses without lexical filler. Pair identity and citation order
+remain fixed; other Comparison requests and exact v45 Ask/helper exports remain
+unchanged. This is bounded lexical parsing, not general relation understanding.
+
+First targeted run **24/24 PASS**, full unit suite **848/848 PASS**, strict Keyword
+**28/28 PASS**. [Sealed evidence](docs/evidence/v46-stage-c-engineering/manifest.json)
+preserves passing logs and final implementation/test/protocol/report hashes.
+Syntax, documentation links, prior code/input/first-result seals, sensitive-data
+review and `git diff --check` verified. All original failures remain unchanged.
+
+A/B/C now have isolated bounded implementations, with no actual-model preservation
+run, Fresh64 replay, saved-vector replay or scorer invocation. Next prepare and
+publish a separate regression execution freeze for accepted 668 plus exposed
+Fresh64, paired v43 and native/manual audits; approve the study before execution.
+New unseen confirmation remains a later gate. The missing 103 originals, first
+Fresh64 FAIL, phase 2 hold and live 5.6/r44 are unchanged.
 
 ## V45 Stage B approved correction — engineering PASS, 2026-10-24
 

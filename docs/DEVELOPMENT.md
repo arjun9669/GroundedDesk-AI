@@ -374,3 +374,17 @@ with a single exact-path blank-at-eol exception; source/test checks remain intac
 No model/scorer/frozen-case replay occurred. Stage C and 668/Fresh64 model
 revalidation need separate scope and a new pre-published execution freeze. Live
 r44 remains unchanged; existing frozen v43 model runners must not be repurposed.
+
+
+## V46 Stage C engineering checkpoint
+
+The [v46 protocol](../eval/answer-completeness-v46/PROTOCOL.md) and
+[engineering report](V46_STAGE_C_ENGINEERING.md) describe the isolated lexical
+Comparison contracts, exact grammar and limitations. Ask/helpers remain v45;
+other Comparison families delegate unchanged. First-run targeted checks pass
+24/24; full Node suite passes 848/848 and strict Keyword passes 28/28.
+[Evidence](evidence/v46-stage-c-engineering/manifest.json) seals passing logs and
+final source/test/report hashes. No model or Fresh64 replay occurred. Next prepare
+one published regression execution freeze for accepted 668 plus exposed Fresh64,
+paired v43 diagnostics and native/manual audits; study execution needs approval.
+The original confirmation FAIL and live integration HOLD remain unchanged.
