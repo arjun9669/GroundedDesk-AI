@@ -19,6 +19,30 @@ original reports; link them here instead of rewriting or rescoring them.
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | Current change | Phase 1 COMPLETE under approved 668-case scope; phase 2 first Fresh64 confirmation FAIL: 52 PASS / 4 PARTIAL / 8 FAIL in both variants |
 
+## V46 regression protocol frozen — execution NOT READY, 2026-10-24
+
+[Preparation report](docs/V46_REGRESSION_PREPARATION.md) and
+[protocol](eval/v46-regression-study/PROTOCOL.md) freeze 732 original exposed cases:
+accepted 668 plus Fresh64, comprising 684 Hybrid / 48 lexical Comparisons and
+83 source texts. [Scope](eval/v46-regression-study/scope.json) references exact
+original configs/keys without rewording cases or altering rubrics. Paired v43,
+fixed/section preservation, original native gates, separate manual review, actual
+runtime/model checks and exclusive evidence paths are specified before answers.
+
+[Static validation](eval/v46-regression-study/STATIC_VALIDATION.json) verifies
+original input/source/reference identities, exact order/counts and prior seals.
+[Protocol freeze](eval/v46-regression-study/protocol-freeze-manifest.json) pins
+candidate, input/reference and protocol bytes; it is not an execution freeze.
+848 unit / 28 strict Keyword checks PASS. No candidate/planner/model/scorer call
+on frozen questions, saved-vector replay or browser preflight occurred.
+
+Existing runners are v43/v42-specific; v46/v43 adapters and actual environment
+preflight remain unimplemented/unmeasured for this study. Next implement isolated
+tooling, verify synthetic/equivalence checks, perform neutral preflight and publish
+a complete execution freeze before obtaining study execution approval. Reserved
+future evidence root is not created. Original failures, 103 exclusions, full771
+NOT RUN, phase 2 HOLD and live 5.6/r44 remain unchanged.
+
 ## V46 Stage C — engineering PASS, 2026-10-24
 
 [Engineering report](docs/V46_STAGE_C_ENGINEERING.md) and

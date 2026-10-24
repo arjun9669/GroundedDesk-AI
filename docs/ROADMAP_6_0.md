@@ -45,7 +45,9 @@ per-document Comparison completeness. [V44 Stage A](V44_STAGE_A_ENGINEERING.md),
 [v45 Stage B](V45_STAGE_B_ENGINEERING.md), and
 [v46 Stage C](V46_STAGE_C_ENGINEERING.md) now have isolated bounded implementations;
 848 unit/28 Keyword checks pass. All actual-model revalidation remains unrun;
-a new regression execution freeze is the next preparation step.
+the [732-case protocol](V46_REGRESSION_PREPARATION.md) is frozen for preparation.
+V46/v43 execution tooling and a neutral current-environment preflight are still
+needed before a complete execution freeze and study approval.
 Preserve the accepted 668-case regression scope after fixes. Fresh64 is now exposed;
 a future replay is regression, not replacement of its failed first confirmation.
 New prospective confirmation needs a new separately agreed/frozen unseen pack.

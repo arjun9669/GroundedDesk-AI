@@ -1,0 +1,69 @@
+{
+  "protocol_id": "V46-REGRESSION-732-20261024",
+  "classification": "Read-only static input/source/seal validation; no model or scorer run",
+  "status": "PASS",
+  "packs": 20,
+  "cases": 732,
+  "hybrid": 684,
+  "lexical_comparison": 48,
+  "source_documents": 83,
+  "historical_original_input_entries": 117,
+  "checks": [
+    "Exact original key/config parity and per-pack order",
+    "Unique case IDs within each pack",
+    "Original input/source/native-reference SHA256s",
+    "Original Comparison pair metadata retained through exact config/key parity",
+    "Historical versus Fresh64 workflow counts",
+    "Future evidence root absent",
+    "Original failure and later engineering seals unchanged"
+  ],
+  "seals": [
+    {
+      "manifest": {
+        "path": "docs/evidence/phase2-fresh64-mac/manifest.json",
+        "sha256": "323830af594081c62e6c9a26a403b83d2c9161704272936ff205a20aaedb7123"
+      },
+      "verified_entries": 512
+    },
+    {
+      "manifest": {
+        "path": "docs/evidence/phase2-fresh64-mac/raw-manifest.json",
+        "sha256": "96be65c2e0e05cefb7dac0ac7f830375d8336ce421b509eaa428fb8854ba3eb6"
+      },
+      "verified_entries": 506
+    },
+    {
+      "manifest": {
+        "path": "docs/evidence/phase2-fresh64-mac/raw/freeze-manifest.json",
+        "sha256": "235d9ad53d6452e9eec0b058f3956072aa391ef7aed3809278bfbdc03e9628e0"
+      },
+      "verified_entries": 509
+    },
+    {
+      "manifest": {
+        "path": "docs/evidence/phase2-fresh64-mac/review/manifest.json",
+        "sha256": "2a0d48c26d05e1b4bdc426face9fce921f39850db1048370a19431544fdf587d"
+      },
+      "verified_entries": 6
+    },
+    {
+      "manifest": {
+        "path": "docs/evidence/v45-stage-b-approved-engineering/manifest.json",
+        "sha256": "cd1eb98b31e89b613097e7027cef44a5572e4fbf36e90782efccb1bb59a1b3d6"
+      },
+      "verified_entries": 13
+    },
+    {
+      "manifest": {
+        "path": "docs/evidence/v46-stage-c-engineering/manifest.json",
+        "sha256": "b20c34e333ad19178af33ca4e06f1581e463a7bc5e86198f6b644b54734c8fb5"
+      },
+      "verified_entries": 8
+    }
+  ],
+  "execution_adapter": "NOT IMPLEMENTED",
+  "current_environment_preflight": "NOT RUN",
+  "candidate_calls": 0,
+  "model_calls": 0,
+  "scorer_calls": 0
+}

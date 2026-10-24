@@ -152,7 +152,9 @@ reference contracts first, then supported relation and Comparison repairs.
 [Stage C in v46](./docs/V46_STAGE_C_ENGINEERING.md) have isolated bounded
 implementations. V46 passes 848 unit/28 Keyword checks; the original v45 scope
 failure and approved correction remain archived. There is no actual-model
-revalidation or live adoption. A regression execution protocol must be frozen next.
+revalidation or live adoption. The [732-case regression protocol](./docs/V46_REGRESSION_PREPARATION.md) is now
+frozen for preparation; execution tooling and actual environment freeze remain
+pending, and no model study has run.
 Preserve the 668-case regression scope and use Fresh64 only
 as exposed regression after any fix. New prospective confirmation
 requires a separately frozen unseen pack. Isolated engineering does not authorize

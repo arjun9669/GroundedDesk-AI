@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-24 — freeze v46 exposed-regression protocol
+
+- Pin accepted 668 plus exposed Fresh64 scope, native preservation/repair criteria,
+  paired v43, runtime/audit requirements and exclusive future evidence paths.
+- Validate original keys, sources and seals; publish source/protocol identities.
+  Execution adapters and actual runtime freeze remain pending; no model study run.
+
 ## 2026-10-24 — isolated v46 Stage C engineering
 
 - Add bounded per-document event/date, monthly metric/month and cutoff/day/hold

@@ -388,3 +388,14 @@ final source/test/report hashes. No model or Fresh64 replay occurred. Next prepa
 one published regression execution freeze for accepted 668 plus exposed Fresh64,
 paired v43 diagnostics and native/manual audits; study execution needs approval.
 The original confirmation FAIL and live integration HOLD remain unchanged.
+
+
+## V46 regression protocol preparation
+
+The [732-case protocol preparation](V46_REGRESSION_PREPARATION.md) pins the accepted
+668 plus exposed Fresh64 scope. Its [protocol freeze](../eval/v46-regression-study/protocol-freeze-manifest.json)
+is a source/input/reference freeze, not an executable study config. Do not point
+historical v43/v42 runners at it. V46/v43 adapters, synthetic/equivalence checks,
+neutral actual-environment/model preflight and a published complete execution
+freeze must precede study approval and any original question submission. No model
+or browser execution occurred in this preparation; original evidence stays intact.
