@@ -1,0 +1,1413 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "A06",
+  "question": "Who has authority to approve standard vessel rosters at the fictional Serolan Vault?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who has authority to approve standard vessel rosters at the fictional Serolan Vault?",
+    "expected_display": "Who has authority to approve standard vessel rosters at the fictional Serolan Vault?",
+    "rendered_question": "Who has authority to approve standard vessel rosters at the fictional Serolan Vault?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional approval appendix At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+    "sources": [
+      {
+        "filename": "03_Scottish_Parliament.md",
+        "excerpt": "the chamber are normally delivered in English, but members may use Scots, Gaelic, or any other language with the agreement of the Presiding Officer. The Scottish Parliament has conducted debates in the Gaelic language.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "quote": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho has authority to approve standard vessel rosters at the fictional Serolan Vault?\n\nSearched all files: 01_Intergovernmental_Panel_on_Climate_Change.md · 02_Economic_inequality.md · 03_Scottish_Parliament.md · 04_Imperialism.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional approval appendix At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.\n\nSOURCE EVIDENCE\n[1]\n03_Scottish_Parliament.md\n\nText lines 9–10 (normalized extraction)\n\nthe chamber are normally delivered in English, but members may use Scots, Gaelic, or any other language with the agreement of the Presiding Officer. The Scottish Parliament has conducted debates in the Gaelic language. ## Fictional approval appendix At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f:1967",
+        "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+        "filename": "03_Scottish_Parliament.md",
+        "excerpt": "the chamber are normally delivered in English, but members may use Scots, Gaelic, or any other language with the agreement of the Presiding Officer. The Scottish Parliament has conducted debates in the Gaelic language.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "quote": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+        "score": 0.0476,
+        "lexicalScore": 14.120855155025485,
+        "semanticScore": 0.4692485122605031,
+        "matchedTerms": [
+          "authority",
+          "approve",
+          "standard",
+          "vessel",
+          "rosters",
+          "fictional"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Scottish_Parliament.md",
+        "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "authority",
+          "years": []
+        },
+        "reason": "Bounded actual MiniLM sentence/slot gain",
+        "selected": {
+          "start": 2147,
+          "cosine": 0.5404695193652486,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Scottish_Parliament.md",
+        "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "authority",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Scottish_Parliament.md",
+        "reason": "Restore explicit production body anchor over deictic actor quote"
+      },
+      {
+        "document": "03_Scottish_Parliament.md",
+        "quote": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "standard",
+          "vessel",
+          "roster"
+        ],
+        "site": [
+          "serolan",
+          "vault"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Scottish_Parliament.md",
+        "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "authority",
+          "years": []
+        },
+        "reason": "Bounded actual MiniLM sentence/slot gain",
+        "selected": {
+          "start": 2147,
+          "cosine": 0.5404695193652486,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Scottish_Parliament.md",
+        "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "authority",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Scottish_Parliament.md",
+        "reason": "Restore explicit production body anchor over deictic actor quote"
+      },
+      {
+        "document": "03_Scottish_Parliament.md",
+        "quote": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "standard",
+          "vessel",
+          "roster"
+        ],
+        "site": [
+          "serolan",
+          "vault"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Scottish_Parliament.md",
+      "start": 2147,
+      "content": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "semanticScore": 0.5404695193652486,
+      "lexicalScore": 11.812315370533595
+    },
+    {
+      "filename": "03_Scottish_Parliament.md",
+      "start": 2051,
+      "content": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "semanticScore": 0.5260723304655757,
+      "lexicalScore": 15.530016723204863
+    },
+    {
+      "filename": "01_Intergovernmental_Panel_on_Climate_Change.md",
+      "start": 2007,
+      "content": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "semanticScore": 0.3787130910276845,
+      "lexicalScore": 8.206284918084588
+    },
+    {
+      "filename": "01_Intergovernmental_Panel_on_Climate_Change.md",
+      "start": 2108,
+      "content": "This approval authority applies only to standard cargo schedules at Orvella Depot.",
+      "semanticScore": 0.3831217227335912,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Economic_inequality.md",
+      "start": 1728,
+      "content": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "semanticScore": null,
+      "lexicalScore": 8.206284918084588
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "The Intergovernmental Panel on Climate Change (IPCC) is a scientific intergovernmental body under the auspices of the United Nations, set up at the request of member governments.",
+      "start": 58,
+      "end": 236,
+      "similarity": 0.10145159105762239,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "It was first established in 1988 by two United Nations organizations, the World Meteorological Organization (WMO) and the United Nations Environment Programme (UNEP), and later endorsed by the United Nations General Assembly through Resolution 43/53.",
+      "start": 237,
+      "end": 487,
+      "similarity": 0.16279510307096534,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "Membership of the IPCC is open to all members of the WMO and UNEP.",
+      "start": 488,
+      "end": 554,
+      "similarity": 0.17212740844297347,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "The IPCC produces reports that support the United Nations Framework Convention on Climate Change (UNFCCC), which is the main international treaty on climate change.",
+      "start": 555,
+      "end": 719,
+      "similarity": 0.1445395154988905,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "The ultimate objective of the UNFCCC is to \"stabilize greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous anthropogenic [i.e., human-induced] interference with the climate system\".",
+      "start": 720,
+      "end": 936,
+      "similarity": 0.07043249894502385,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "IPCC reports cover \"the scientific, technical and socio-economic information relevant to understanding the scientific basis of risk of human-induced climate change, its potential impacts and options for adaptation and mitigation.\"",
+      "start": 937,
+      "end": 1167,
+      "similarity": 0.05836679071231119,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "The IPCC Fourth Assessment Report (AR4) published in 2007 featured a graph showing 12 proxy based temperature reconstructions, including the three highlighted in the 2001 Third Assessment Report (TAR); Mann, Bradley & Hughes 1999 as before, Jones et al. 1998 and Briffa 2000 had both been calibrated by newer studies.",
+      "start": 1182,
+      "end": 1499,
+      "similarity": -0.031234336380361213,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "In addition, analysis of the Medieval Warm Period cited reconstructions by Crowley & Lowery 2000 (as cited in the TAR) and Osborn & Briffa 2006.",
+      "start": 1500,
+      "end": 1644,
+      "similarity": 0.04334420046399837,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "Ten of these 14 reconstructions covered 1,000 years or longer.",
+      "start": 1645,
+      "end": 1707,
+      "similarity": 0.0616539371049787,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "Most reconstructions shared some data series, particularly tree ring data, but newer reconstructions used additional data and covered a wider area, using a variety of statistical methods.",
+      "start": 1708,
+      "end": 1895,
+      "similarity": 0.022449380887173218,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "The section discussed the divergence problem affecting certain tree ring data.",
+      "start": 1896,
+      "end": 1974,
+      "similarity": 0.05139686269842203,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "start": 2007,
+      "end": 2107,
+      "similarity": 0.3787130910276845,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "This approval authority applies only to standard cargo schedules at Orvella Depot.",
+      "start": 2108,
+      "end": 2190,
+      "similarity": 0.3831217227335912,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7b59704b-e7e3-44fd-82b6-0f9a0b0ce16d",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2191,
+      "end": 2247,
+      "similarity": 0.287485104592249,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "Central Banking economist Raghuram Rajan argues that \"systematic economic inequalities, within the United States and around the world, have created deep financial 'fault lines' that have made [financial] crises more likely to happen than in the past\" – the Financial crisis of 2007–08 being the most recent example.",
+      "start": 36,
+      "end": 351,
+      "similarity": 0.0035581787138696174,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "To compensate for stagnating and declining purchasing power, political pressure has developed to extend easier credit to the lower and middle income earners – particularly to buy homes – and easier credit in general to keep unemployment rates low.",
+      "start": 352,
+      "end": 599,
+      "similarity": -0.05992019066743191,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "This has given the American economy a tendency to go \"from bubble to bubble\" fueled by unsustainable monetary stimulation.",
+      "start": 600,
+      "end": 722,
+      "similarity": -0.07964785805292127,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "Crime rate has also been shown to be correlated with inequality in society.",
+      "start": 737,
+      "end": 812,
+      "similarity": 0.02565705842671925,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "Most studies looking into the relationship have concentrated on homicides – since homicides are almost identically defined across all nations and jurisdictions.",
+      "start": 813,
+      "end": 973,
+      "similarity": 0.060904450492328725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "There have been over fifty studies showing tendencies for violence to be more common in societies where income differences are larger.",
+      "start": 974,
+      "end": 1108,
+      "similarity": -0.0007441931029944611,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "Research has been conducted comparing developed countries with undeveloped countries, as well as studying areas within countries.",
+      "start": 1109,
+      "end": 1238,
+      "similarity": -0.005705160459276882,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "Daly et al. 2001 found that among U.S States and Canadian Provinces there is a tenfold difference in homicide rates related to inequality.",
+      "start": 1239,
+      "end": 1377,
+      "similarity": -0.04497384404147517,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "They estimated that about half of all variation in homicide rates can be accounted for by differences in the amount of inequality in each province or state.",
+      "start": 1378,
+      "end": 1534,
+      "similarity": 0.00397834729861472,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "Fajnzylber et al. (2002) found a similar relationship worldwide.",
+      "start": 1535,
+      "end": 1599,
+      "similarity": 0.03179383303322845,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "Among comments in academic literature on the relationship between homicides and inequality are:",
+      "start": 1600,
+      "end": 1695,
+      "similarity": -0.018285739881498907,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "start": 1728,
+      "end": 1828,
+      "similarity": 0.29384337785650116,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "This approval authority applies only to standard shelf indexes at Tiravel Library.",
+      "start": 1829,
+      "end": 1911,
+      "similarity": 0.32428315234537675,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c6bc0b5-1dee-438f-a10c-7334988862ea",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1912,
+      "end": 1968,
+      "similarity": 0.287485104592249,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "Parliamentary time is also set aside for question periods in the debating chamber.",
+      "start": 36,
+      "end": 118,
+      "similarity": 0.0675197995437354,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "A \"General Question Time\" takes place on a Thursday between 11:40 a.m. and 12 p.m. where members can direct questions to any member of the Scottish Government.",
+      "start": 119,
+      "end": 278,
+      "similarity": 0.17874505313599745,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "At 2.30pm, a 40-minute long themed \"Question Time\" takes place, where members can ask questions of ministers in departments that are selected for questioning that sitting day, such as health and justice or education and transport.",
+      "start": 279,
+      "end": 509,
+      "similarity": 0.10679491082101329,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "Between 12 p.m. and 12:30 p.m. on Thursdays, when Parliament is sitting, First Minister's Question Time takes place.",
+      "start": 510,
+      "end": 626,
+      "similarity": 0.004705942600636091,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "This gives members an opportunity to question the First Minister directly on issues under their jurisdiction.",
+      "start": 627,
+      "end": 736,
+      "similarity": 0.15751600445897956,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "Opposition leaders ask a general question of the First Minister and then supplementary questions.",
+      "start": 737,
+      "end": 834,
+      "similarity": 0.05600175223929809,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "Such a practice enables a \"lead-in\" to the questioner, who then uses their supplementary question to ask the First Minister any issue.",
+      "start": 835,
+      "end": 969,
+      "similarity": 0.08895318640995384,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "The four general questions available to opposition leaders are:",
+      "start": 970,
+      "end": 1033,
+      "similarity": 0.07352634962886664,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "The Presiding Officer (or Deputy Presiding Officer) decides who speaks in chamber debates and the amount of time for which they are allowed to speak.",
+      "start": 1048,
+      "end": 1197,
+      "similarity": 0.12951907926441072,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "Normally, the Presiding Officer tries to achieve a balance between different viewpoints and political parties when selecting members to speak.",
+      "start": 1198,
+      "end": 1340,
+      "similarity": 0.11370366512501481,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "Typically, ministers or party leaders open debates, with opening speakers given between 5 and 20 minutes, and succeeding speakers allocated less time.",
+      "start": 1341,
+      "end": 1491,
+      "similarity": 0.0010068987820393454,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "The Presiding Officer can reduce speaking time if a large number of members wish to participate in the debate.",
+      "start": 1492,
+      "end": 1602,
+      "similarity": 0.11680036704596018,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "Debate is more informal than in some parliamentary systems.",
+      "start": 1603,
+      "end": 1662,
+      "similarity": 0.05573784867208644,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "Members may call each other directly by name, rather than by constituency or cabinet position, and hand clapping is allowed.",
+      "start": 1663,
+      "end": 1787,
+      "similarity": 0.10956952494621984,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "Speeches to the chamber are normally delivered in English, but members may use Scots, Gaelic, or any other language with the agreement of the Presiding Officer.",
+      "start": 1788,
+      "end": 1948,
+      "similarity": 0.14400530805959702,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "The Scottish Parliament has conducted debates in the Gaelic language.",
+      "start": 1949,
+      "end": 2018,
+      "similarity": 0.027264922537743926,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "start": 2051,
+      "end": 2146,
+      "similarity": 0.5260723304655757,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "start": 2147,
+      "end": 2227,
+      "similarity": 0.5404695193652486,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2228,
+      "end": 2284,
+      "similarity": 0.287485104592249,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "With Istanbul as its capital and control of lands around the Mediterranean basin, the Ottoman Empire was at the center of interactions between the Eastern and Western worlds for six centuries.",
+      "start": 28,
+      "end": 220,
+      "similarity": 0.06735737676024364,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "Following a long period of military setbacks against European powers, the Ottoman Empire gradually declined into the late nineteenth century.",
+      "start": 221,
+      "end": 362,
+      "similarity": 0.05058507914421857,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "The empire allied with Germany in the early 20th century, with the imperial ambition of recovering its lost territories, but it dissolved in the aftermath of World War I, leading to the emergence of the new state of Turkey in the Ottoman Anatolian heartland, as well as the creation of modern Balkan and Middle Eastern states, thus ending Turkish colonial ambitions.",
+      "start": 363,
+      "end": 729,
+      "similarity": -0.04976830923537819,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "The concept environmental determinism served as a moral justification for domination of certain territories and peoples.",
+      "start": 744,
+      "end": 864,
+      "similarity": 0.06661792033209211,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "It was believed that a certain person's behaviours were determined by the environment in which they lived and thus validated their domination.",
+      "start": 865,
+      "end": 1007,
+      "similarity": 0.13005255742147867,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "For example, people living in tropical environments were seen as \"less civilized\" therefore justifying colonial control as a civilizing mission.",
+      "start": 1008,
+      "end": 1152,
+      "similarity": 0.13036622901183267,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "Across the three waves of European colonialism (first in the Americas, second in Asia and lastly in Africa), environmental determinism was used to categorically place indigenous people in a racial hierarchy.",
+      "start": 1153,
+      "end": 1360,
+      "similarity": 0.0735136693952609,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "This takes two forms, orientalism and tropicality.",
+      "start": 1361,
+      "end": 1411,
+      "similarity": 0.04722375478787348,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "start": 1444,
+      "end": 1543,
+      "similarity": 0.30674609114289253,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "This approval authority applies only to standard display cards at Fenora Gallery.",
+      "start": 1544,
+      "end": 1625,
+      "similarity": 0.3241081615364659,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c80d50f0-4d0c-4b0a-8ac8-585367e64a3f",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1626,
+      "end": 1682,
+      "similarity": 0.287485104592249,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Scottish_Parliament.md",
+          "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "authority",
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 2147,
+            "cosine": 0.5404695193652486,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Scottish_Parliament.md",
+          "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "authority",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Scottish_Parliament.md",
+          "reason": "Restore explicit production body anchor over deictic actor quote"
+        },
+        {
+          "document": "03_Scottish_Parliament.md",
+          "quote": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "standard",
+            "vessel",
+            "roster"
+          ],
+          "site": [
+            "serolan",
+            "vault"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Scottish_Parliament.md",
+          "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "authority",
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 2147,
+            "cosine": 0.5404695193652486,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Scottish_Parliament.md",
+          "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "authority",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Scottish_Parliament.md",
+          "reason": "Restore explicit production body anchor over deictic actor quote"
+        },
+        {
+          "document": "03_Scottish_Parliament.md",
+          "quote": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "standard",
+            "vessel",
+            "roster"
+          ],
+          "site": [
+            "serolan",
+            "vault"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f:1967",
+          "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+          "filename": "03_Scottish_Parliament.md",
+          "excerpt": "he Presiding Officer. The Scottish Parliament has conducted debates in the Gaelic language.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+          "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+          "score": 0.0476,
+          "lexicalScore": 14.120855155025485,
+          "semanticScore": 0.4692485122605031,
+          "matchedTerms": [
+            "authority",
+            "approve",
+            "standard",
+            "vessel",
+            "rosters",
+            "fictional"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Scottish_Parliament.md",
+          "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "authority",
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 2147,
+            "cosine": 0.5404695193652486,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Scottish_Parliament.md",
+          "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "authority",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f:2020",
+          "documentId": "d4b2f4c0-7d4a-4c52-b19d-460be423bb2f",
+          "filename": "03_Scottish_Parliament.md",
+          "excerpt": "he Presiding Officer. The Scottish Parliament has conducted debates in the Gaelic language.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus.",
+          "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+          "score": 0.0476,
+          "lexicalScore": 17.264954340655233,
+          "semanticScore": 0.5792488566782998,
+          "matchedTerms": [
+            "authority",
+            "approve",
+            "standard",
+            "vessel",
+            "rosters",
+            "fictional"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Scottish_Parliament.md",
+          "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "authority",
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 2147,
+            "cosine": 0.5404695193652486,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Scottish_Parliament.md",
+          "quote": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "authority",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.02368306741118431,
+    0.03491058945655823,
+    -0.09504309296607971,
+    -0.03153152018785477,
+    -0.0028415170963853598,
+    -0.04317447915673256,
+    -0.04932102933526039,
+    -0.02880597673356533,
+    0.019877035170793533,
+    -0.0762566328048706,
+    0.02964661829173565,
+    0.02885770983994007,
+    -0.08103539049625397,
+    0.03960041701793671,
+    -0.01596122793853283,
+    -0.07696498930454254,
+    -0.011568690650165081,
+    0.04742656275629997,
+    0.035256341099739075,
+    0.021290935575962067,
+    -0.0003871093795169145,
+    -0.0423504076898098,
+    0.02932240068912506,
+    0.03038432076573372,
+    -0.07981842011213303,
+    -0.041863419115543365,
+    -0.0606425404548645,
+    0.016667285934090614,
+    -0.05898038670420647,
+    -0.04221723973751068,
+    -0.03654436022043228,
+    0.027702219784259796,
+    0.05918004736304283,
+    0.039396125823259354,
+    0.05068353936076164,
+    -0.025561241433024406,
+    0.06647898256778717,
+    -0.01815490610897541,
+    -0.020790772512555122,
+    -0.06421095877885818,
+    0.05390583723783493,
+    -0.09247225522994995,
+    -0.05833452567458153,
+    0.09859804064035416,
+    -0.02414899319410324,
+    -0.06993251293897629,
+    -0.026151468977332115,
+    -0.03905997797846794,
+    -0.06593137979507446,
+    0.0712069496512413,
+    0.010123059153556824,
+    -0.08924826234579086,
+    0.03115072101354599,
+    0.03031538799405098,
+    -0.027565905824303627,
+    -0.027573099359869957,
+    -0.02942867949604988,
+    -0.07399008423089981,
+    0.06623672693967819,
+    -0.09190764278173447,
+    -0.0032485490664839745,
+    0.06589040905237198,
+    -0.06653591990470886,
+    0.017041370272636414,
+    0.0783868059515953,
+    0.04733264073729515,
+    -0.012212960980832577,
+    -0.018987147137522697,
+    0.02337195910513401,
+    -0.08390931785106659,
+    0.06880948692560196,
+    -0.017050515860319138,
+    0.0367673859000206,
+    0.030635153874754906,
+    -0.0035623174626380205,
+    0.0849337950348854,
+    -0.06917865574359894,
+    0.060888342559337616,
+    0.0871274322271347,
+    -0.06450211256742477,
+    0.0025355832185596228,
+    -0.009116534143686295,
+    0.03586156666278839,
+    0.0164587814360857,
+    0.0025813598185777664,
+    0.02700100652873516,
+    -0.03824828937649727,
+    0.003869401291012764,
+    0.029593873769044876,
+    0.07562015950679779,
+    0.049131933599710464,
+    -0.07321146875619888,
+    0.1070815846323967,
+    -0.08137894421815872,
+    -0.02991601638495922,
+    0.035554978996515274,
+    -0.03171846270561218,
+    0.07166240364313126,
+    -0.07477830350399017,
+    0.05741923302412033,
+    0.0019112244481220841,
+    -0.04348618537187576,
+    0.016901172697544098,
+    -0.012565108016133308,
+    0.02611362747848034,
+    0.03638178110122681,
+    0.03397000953555107,
+    -0.04879404976963997,
+    0.02346840687096119,
+    -0.04697505384683609,
+    -0.06472328305244446,
+    0.008208367973566055,
+    -0.03657963499426842,
+    0.008097851648926735,
+    -0.04063234478235245,
+    0.09880027174949646,
+    -0.11652375012636185,
+    0.06292012333869934,
+    -0.060696691274642944,
+    -0.11230101436376572,
+    0.03776315227150917,
+    0.006516881752759218,
+    0.1405474841594696,
+    -0.001446894253604114,
+    0.026528891175985336,
+    0.07323390990495682,
+    -0.08768952637910843,
+    -3.2406873150033476e-33,
+    -0.025058895349502563,
+    0.005322558339685202,
+    0.02612217515707016,
+    -0.00907574500888586,
+    0.010622082278132439,
+    -0.05568043515086174,
+    -0.008855384774506092,
+    -0.06737261265516281,
+    -0.023813515901565552,
+    0.02880631759762764,
+    -0.07234690338373184,
+    0.04742056876420975,
+    -0.03851444646716118,
+    -0.06686404347419739,
+    0.010816840454936028,
+    -0.04521814361214638,
+    0.0022540476638823748,
+    0.04119248688220978,
+    0.0300994124263525,
+    -0.006057772785425186,
+    0.0431867390871048,
+    0.0594908744096756,
+    0.005802242550998926,
+    -0.05042637139558792,
+    -0.06017269566655159,
+    -0.01037672720849514,
+    -0.13437610864639282,
+    -0.005869203247129917,
+    0.04612867161631584,
+    0.09824035316705704,
+    -0.02341601625084877,
+    -0.008523083291947842,
+    0.11898743361234665,
+    -0.03666197881102562,
+    0.04233761876821518,
+    0.02337583154439926,
+    0.015248988755047321,
+    -0.059830717742443085,
+    -0.03510564938187599,
+    0.016938183456659317,
+    0.020678667351603508,
+    -0.006207189057022333,
+    -0.008017679676413536,
+    0.0852494165301323,
+    -0.055781975388526917,
+    -0.007291032932698727,
+    0.039177730679512024,
+    0.004931359086185694,
+    0.057416610419750214,
+    0.10184983909130096,
+    -0.07971324026584625,
+    -0.032340966165065765,
+    -0.10983485728502274,
+    -0.05354133993387222,
+    0.07400264590978622,
+    -0.0704604759812355,
+    0.02538180910050869,
+    0.06323889642953873,
+    -0.006033736281096935,
+    -0.007443754933774471,
+    0.0022254404611885548,
+    0.04464961588382721,
+    -0.006253546569496393,
+    0.03696668520569801,
+    0.0006449974025599658,
+    0.03656407818198204,
+    -0.022551383823156357,
+    0.002451701555401087,
+    0.005310914013534784,
+    -0.08946823328733444,
+    -0.04232895374298096,
+    0.060474395751953125,
+    -0.03507480397820473,
+    0.04509485885500908,
+    -0.02695094421505928,
+    -0.048527318984270096,
+    0.062282007187604904,
+    0.1025707945227623,
+    -0.04814837500452995,
+    -0.027786601334810257,
+    -0.019207563251256943,
+    0.012805822305381298,
+    -0.052231140434741974,
+    0.11047592759132385,
+    -0.037447795271873474,
+    0.03114100731909275,
+    0.054167408496141434,
+    0.06687192618846893,
+    0.018125751987099648,
+    -0.053322046995162964,
+    -0.02564297243952751,
+    -0.04453998804092407,
+    0.05081901326775551,
+    -0.003948763478547335,
+    0.02905038744211197,
+    1.2300036769088478e-33,
+    0.01943477801978588,
+    -0.04859079048037529,
+    -0.020959993824362755,
+    -0.021495278924703598,
+    0.02831702120602131,
+    -0.005190669093281031,
+    -0.043702758848667145,
+    -0.036975082010030746,
+    0.018708977848291397,
+    0.013527103699743748,
+    -0.10877331346273422,
+    0.03479878976941109,
+    0.06266336888074875,
+    -0.06986995041370392,
+    0.03149484470486641,
+    -0.02742072194814682,
+    -0.02494804374873638,
+    -0.007334714289754629,
+    0.018436038866639137,
+    -0.03331112489104271,
+    0.06820938736200333,
+    -0.04144038259983063,
+    -0.0015849730698391795,
+    0.08827592432498932,
+    0.07477709650993347,
+    0.03525276109576225,
+    0.0737285241484642,
+    0.006670175585895777,
+    -0.05837331339716911,
+    -0.016017712652683258,
+    -0.0011000706581398845,
+    0.028445785865187645,
+    -0.036989543586969376,
+    -0.007254844065755606,
+    -0.06976895779371262,
+    -0.05226074159145355,
+    0.03506260737776756,
+    0.07283159345388412,
+    -0.024753397330641747,
+    -0.020555639639496803,
+    0.001934457803145051,
+    -0.01695818454027176,
+    -0.08132173866033554,
+    0.04062119126319885,
+    -0.09172744303941727,
+    0.025072133168578148,
+    0.08508016169071198,
+    0.009863908402621746,
+    0.023469263687729836,
+    -0.0509604774415493,
+    -0.09056490659713745,
+    0.02554205246269703,
+    0.04058670997619629,
+    -0.015346948057413101,
+    0.02441081590950489,
+    0.07610101997852325,
+    -0.0010449032997712493,
+    -0.014753945171833038,
+    0.0556199736893177,
+    0.025127757340669632,
+    0.04419555515050888,
+    0.041392918676137924,
+    -0.022682851180434227,
+    0.05104536563158035,
+    0.04512796550989151,
+    -0.049813613295555115,
+    0.0017791143618524075,
+    0.047379255294799805,
+    -0.12976892292499542,
+    0.03219619393348694,
+    0.03012605756521225,
+    -0.15691736340522766,
+    -0.02783779799938202,
+    0.0665280818939209,
+    0.04878804832696915,
+    -0.05730234831571579,
+    -0.02122640237212181,
+    -0.04092838987708092,
+    -0.01247759535908699,
+    -0.01722251996397972,
+    -0.02813349850475788,
+    -0.05574282258749008,
+    -0.014053055085241795,
+    0.030507702380418777,
+    0.11054736375808716,
+    -0.007397073786705732,
+    0.06040004640817642,
+    -0.02767067216336727,
+    0.013714413158595562,
+    0.02514754980802536,
+    0.07516977936029434,
+    -0.06228111684322357,
+    -0.0281821396201849,
+    0.002686023013666272,
+    0.015403144992887974,
+    -2.0695329894238057e-8,
+    0.0018557857256382704,
+    -0.0016374066472053528,
+    0.014966846443712711,
+    0.07588427513837814,
+    0.026746956631541252,
+    -0.014811734668910503,
+    -0.0848013162612915,
+    0.014450076036155224,
+    0.0060422406531870365,
+    0.026417449116706848,
+    0.06514372676610947,
+    -0.041260845959186554,
+    -0.0060010869055986404,
+    -0.12171592563390732,
+    0.03738294914364815,
+    0.013690670020878315,
+    -0.009787113405764103,
+    0.03513314947485924,
+    -0.12350057810544968,
+    -0.0005982910515740514,
+    -0.021313190460205078,
+    -0.03766363859176636,
+    0.0647628977894783,
+    -0.08130200952291489,
+    -0.019811367616057396,
+    0.025746677070856094,
+    -0.025056956335902214,
+    0.07158362120389938,
+    -0.015681445598602295,
+    0.08666667342185974,
+    0.037659671157598495,
+    -0.017249779775738716,
+    -0.035411540418863297,
+    0.01994425803422928,
+    0.035894714295864105,
+    0.021249229088425636,
+    -0.05434124171733856,
+    0.013120416551828384,
+    0.04570196941494942,
+    0.018947511911392212,
+    -0.07814422249794006,
+    -0.0119137829169631,
+    0.029179995879530907,
+    0.07099875062704086,
+    0.04682034254074097,
+    0.10222628712654114,
+    -0.01630600355565548,
+    0.03786367550492287,
+    -0.007094213273376226,
+    -0.04557832330465317,
+    0.042747218161821365,
+    -0.07634766399860382,
+    0.07969503849744797,
+    0.09007195383310318,
+    0.03944981098175049,
+    0.05940376967191696,
+    0.043113838881254196,
+    0.08486288040876389,
+    0.03340679034590721,
+    -0.007854604162275791,
+    0.0715443417429924,
+    -0.01836865209043026,
+    0.01887514255940914,
+    -0.019924350082874298
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Scottish_Parliament.md",
+        "start": 1967,
+        "content": "ament has conducted debates in the Gaelic language.\n\n## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "01_Intergovernmental_Panel_on_Climate_Change.md",
+        "start": 1973,
+        "content": ".\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "04_Imperialism.md",
+        "start": 1315,
+        "content": "lace indigenous people in a racial hierarchy. This takes two forms, orientalism and tropicality.\n\n## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "02_Economic_inequality.md",
+        "start": 1315,
+        "content": "a tenfold difference in homicide rates related to inequality. They estimated that about half of all variation in homicide rates can be accounted for by differences in the amount of inequality in each province or state. Fajnzylber et al. (2002) found a similar relationship worldwide. Among comments in academic literature on the relationship between homicides and inequality are:\n\n## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Scottish_Parliament.md",
+        "start": 2020,
+        "content": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "01_Intergovernmental_Panel_on_Climate_Change.md",
+        "start": 1976,
+        "content": "## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "02_Economic_inequality.md",
+        "start": 1697,
+        "content": "## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "04_Imperialism.md",
+        "start": 1413,
+        "content": "## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus."
+      }
+    ]
+  }
+}

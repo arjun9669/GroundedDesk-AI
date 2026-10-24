@@ -15,9 +15,106 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v46 unchanged; approved audit amendment ready; 863 unit/28 Keyword PASS; no actual-model study/adoption. Latest model result remains v43 Fresh64 FAIL |
+| Latest isolated candidate | v46 capture732/732 COMPLETE; approved audit-only rescore native FAIL: Fresh64 60/4/0 both variants; historical10/19 gates PASS; not adopted. Original prospective v43 Fresh64 confirmation remains FAIL |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | Phase 1 COMPLETE under approved 668-case scope; phase 2 first Fresh64 confirmation FAIL: 52 PASS / 4 PARTIAL / 8 FAIL in both variants |
+| Current change | Approved publication of v46 failed regression and separate completed review; native outcomes unchanged, no candidate adoption |
+
+## V46 failed-study publication and review — 2026-10-24
+
+The user approved documenting, reviewing and publishing the failed study without
+candidate changes or further model/scoring runs. [Full report](docs/V46_REGRESSION_FAILED_RESULTS.md)
+records 732 once-only cases, 5,865 raw artifacts / 629,456,716 bytes, original
+anchor-audit block, approved post-capture correction and completed native FAIL.
+Separate [publication review](docs/evidence/v46-regression-732-mac/review/publication-review.json)
+covers all 128 Fresh64 variant rows and all 40 changed historical rows (20 unique
+cases). No native PASS contradiction was found; four incomplete Comparisons and
+20 supported-question refusals per variant are confirmed. Cobalt H03 remains
+natively BLOCKED; assistant review does not replace its native manual adjudication.
+
+Fresh64 stays 60 PASS / 4 PARTIAL / 0 FAIL in each v46 variant; 10/19 historical
+family gates PASS. Historical changes: 13 retention, five scoped minimum and two
+approval questions. The saved paired v43 signatures/native outcomes match the
+accepted 668 study in both variants, and all64 Fresh64 paired signatures match
+the original confirmation. Candidate changes, rather than observed paired drift,
+explain the recorded differences. Native false acceptances are zero.
+
+A separate [review/publication seal](docs/evidence/v46-regression-732-mac/review/manifest.json)
+pins original raw/result/failure/correction references and new review/report bytes.
+Original scores, review queue PENDING checkpoint, first failures, input/source bytes,
+freezes and candidate code remain unchanged. Current 874-unit/28-Keyword passing
+logs are the prior engineering results; no model/scorer/test run was added for
+publication. Hash/identity, documentation, sensitive-data and Git diff review pass.
+
+Next agree a preservation-first repair design for supported retention forms,
+subentity minimum scope and approval grammar, then complete original Comparison
+relations. No implementation or new run is included in this publication. Phase1
+accepted v43 scope,103 exclusions/full771 NOT RUN, first v43 Fresh64 FAIL, phase2
+and integration HOLD, and live5.6/r44 remain unchanged.
+
+## V46 approved audit-only rescore — native gate FAIL, 2026-10-24
+
+The user approved the audit-only legacy-subclause correction and a separate scoring
+attempt, preserving the candidate/raw evidence and running no model tests. A new
+[post-capture adapter](eval/v46-regression-rescore/PROTOCOL.md) validates the retained
+body ID/document/filename, unique original sentence/span, full quote containment,
+saved query/body cosine and independent arithmetic. Original frozen audit/scorer,
+first failure/log, pre-question freeze/amendment and all5,865 raw artifacts remain
+unchanged. Explicit-anchor checks remain intact; native graders receive original
+captured records.11 new synthetic /874 full unit /28 Keyword checks PASS.
+
+The approved separate attempt completed in `rescore-01`. Independent audit PASS:
+50,074 body cosines recomputed, four legacy bindings recorded. **Native gate FAIL**:
+Fresh64 fixed and section each **60 PASS /4 PARTIAL /0 FAIL**, below64/64 required.
+Only **10/19 historical family gates PASS**. Both variants lose20 prior PASS rows:
+19 native FAIL and one Cobalt16 H03 BLOCKED manual-family signature. Other affected
+families: RetrievalQuality28, Binding64, Bracken32, Morrow32, Hearth32, Lumen32,
+Prism32 and Vela32. BLOCKED is not a failed factual judgment or a passing answer.
+Native outcomes/criteria were not edited and manual binding review is PENDING.
+
+[Failure summary](docs/evidence/v46-regression-732-mac/rescore-01/failure-summary.json),
+[native scorecards](docs/evidence/v46-regression-732-mac/rescore-01/native-scorecards.json)
+and [score seal](docs/evidence/v46-regression-732-mac/rescore-01-manifest.json) preserve
+all results. The first audit-blocked attempt remains a separate original record.
+Work stopped on the native gate failure before further fixes, scoring retries,
+manual review, commit or push. No candidate/model/case rerun occurred.
+
+Next requires approval to finish documenting, reviewing and publishing the failed
+study unchanged; candidate repair is a separate task. Original v43 Fresh64 FAIL,
+103 exclusions, full771 NOT RUN, phase2 HOLD and live5.6/r44 remain unchanged.
+
+## V46 study capture complete — scoring audit BLOCKED, 2026-10-24
+
+The user explicitly approved execution after the audit amendment was published.
+Published main, amended freeze, original inputs/current toolchain and exclusive
+paths verified. One capture completed all732 cases across20 packs:684 actual
+MiniLM Hybrid submissions plus48 lexical Comparisons; no question retries.
+[Raw manifest](docs/evidence/v46-regression-732-mac/raw-manifest.json) seals5,865
+artifacts before scoring. Candidate/live code and all original evidence stay intact.
+
+The first scoring attempt exited1 on `AssertionError: Original selected cosine
+anchor`, `eval/v46-regression-execution/audit.mjs:36:11`, called at `score.mjs:43:6`.
+The saved source anchor did not match an original sentence according to the frozen
+audit. The frozen scorer did not emit case context. Separate read-only metadata
+inspection subsequently identifies the first mismatch as Flint32 F08 fixed: the
+selected subclause starts231 but its original body ID belongs to the containing
+sentence starting151, without an explicit cosineAnchor. The original saved body
+lookup uniquely matches that ID/document/filename and the stored source cosine.
+[Diagnosis](docs/evidence/v46-regression-732-mac/anchor-diagnosis.json) and
+[body identity lookup](docs/evidence/v46-regression-732-mac/anchor-body-identity.json)
+are separate from the preserved first failure; no audit/scorer/model was rerun.
+[Failure record](docs/evidence/v46-regression-732-mac/first-score-failure.json) and
+[exact first score log](docs/evidence/v46-regression-732-mac/first-score.log) preserve
+this first failure outside the sealed raw directory. Native scores were NOT
+PRODUCED; manual binding review has not begun, and no preservation/repair PASS
+or numerical quality score may be claimed. This is an audit block, not an answer
+grade. No scoring retry, fix, case rerun, commit or push followed the failure.
+
+Next requires approval for an audit-only correction supporting legacy subclause
+anchors through unique saved body ID/document/filename/span and independent cosine
+checks, with synthetic controls and a separate scoring attempt if approved. Keep
+all first evidence and the candidate unchanged; no model rerun is proposed. Execution
+and first audit failure remain recorded. Original v43 Fresh64 FAIL,103 exclusions,
+full771 NOT RUN, phase2 HOLD and live5.6/r44 remain unchanged.
 
 ## V46 approved audit correction — engineering PASS, 2026-10-24
 

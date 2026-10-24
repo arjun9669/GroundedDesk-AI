@@ -1,0 +1,233 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "M30",
+  "question": "Compare normal and dusty lubrication plus inspection intervals for the Pelden Acoustic Station scanner and Noryn Print Cooperative press.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner.\n\n[2] Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions.",
+    "sources": [
+      {
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "quote": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner."
+      },
+      {
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "quote": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions."
+      }
+    ],
+    "displayed": "Shared vocabulary: dusty, either, every, hours, inspect, lubricate, normal, operating, records. Shared terms do not establish factual agreement.\n\n[1] 03_Pelden_Acoustic_Station.txt\n\nAfter each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner.\n\nText line 7 (normalized extraction)\n\nLocate in library ↗\n[2] 04_Noryn_Print_Cooperative.txt\n\nLubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions.\n\nText line 5 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare normal and dusty lubrication plus inspection intervals for the Pelden Acoustic Station scanner and Noryn Print Cooperative press.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner.",
+        "warning": false,
+        "supported": true,
+        "quote": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner."
+      },
+      {
+        "citation": 2,
+        "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "excerpt": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions.",
+        "warning": false,
+        "supported": true,
+        "quote": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions."
+      }
+    ],
+    "sharedTerms": [
+      "dusty",
+      "either",
+      "every",
+      "hours",
+      "inspect",
+      "lubricate",
+      "normal",
+      "operating",
+      "records"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner.\n\n[2] Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare normal and dusty lubrication plus inspection intervals for the Pelden Acoustic Station scanner and Noryn Print Cooperative press.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+        "warning": false,
+        "supported": true,
+        "quote": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+        "start": 400,
+        "end": 609
+      },
+      {
+        "citation": 2,
+        "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "excerpt": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+        "warning": false,
+        "supported": true,
+        "quote": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+        "start": 435,
+        "end": 644
+      }
+    ],
+    "sharedTerms": [
+      "dusty",
+      "either",
+      "every",
+      "hours",
+      "inspect",
+      "lubricate",
+      "normal",
+      "operating",
+      "records"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.\n\n[2] Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare normal and dusty lubrication plus inspection intervals for the Pelden Acoustic Station scanner and Noryn Print Cooperative press.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+        "filename": "03_Pelden_Acoustic_Station.txt",
+        "excerpt": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+        "warning": false,
+        "supported": true,
+        "quote": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+        "start": 400,
+        "end": 609
+      },
+      {
+        "citation": 2,
+        "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "excerpt": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+        "warning": false,
+        "supported": true,
+        "quote": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+        "start": 435,
+        "end": 644
+      }
+    ],
+    "sharedTerms": [
+      "dusty",
+      "either",
+      "every",
+      "hours",
+      "inspect",
+      "lubricate",
+      "normal",
+      "operating",
+      "records"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.\n\n[2] Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare normal and dusty lubrication plus inspection intervals for the Pelden Acoustic Station scanner and Noryn Print Cooperative press.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+          "filename": "03_Pelden_Acoustic_Station.txt",
+          "excerpt": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+          "warning": false,
+          "supported": true,
+          "quote": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+          "start": 400,
+          "end": 609
+        },
+        {
+          "citation": 2,
+          "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+          "filename": "04_Noryn_Print_Cooperative.txt",
+          "excerpt": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+          "warning": false,
+          "supported": true,
+          "quote": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+          "start": 435,
+          "end": 644
+        }
+      ],
+      "sharedTerms": [
+        "dusty",
+        "either",
+        "every",
+        "hours",
+        "inspect",
+        "lubricate",
+        "normal",
+        "operating",
+        "records"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.\n\n[2] Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare normal and dusty lubrication plus inspection intervals for the Pelden Acoustic Station scanner and Noryn Print Cooperative press.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+          "filename": "03_Pelden_Acoustic_Station.txt",
+          "excerpt": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+          "warning": false,
+          "supported": true,
+          "quote": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.",
+          "start": 400,
+          "end": 609
+        },
+        {
+          "citation": 2,
+          "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+          "filename": "04_Noryn_Print_Cooperative.txt",
+          "excerpt": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+          "warning": false,
+          "supported": true,
+          "quote": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+          "start": 435,
+          "end": 644
+        }
+      ],
+      "sharedTerms": [
+        "dusty",
+        "either",
+        "every",
+        "hours",
+        "inspect",
+        "lubricate",
+        "normal",
+        "operating",
+        "records"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner. Use a 34-hour lubrication interval in a dusty hut. Inspect the scanner every 17 operating hours in either type of hut.\n\n[2] Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions. In a dusty room, lubricate it every 55 operating hours. Inspect the press every 22 operating hours in either room.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v46 and paired v43 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

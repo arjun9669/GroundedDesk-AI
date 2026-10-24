@@ -13,10 +13,10 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest isolated candidate | **v46 Stage C engineering only**; no model revalidation. Latest model result: v43 Fresh64 FAIL; neither adopted |
+| Latest isolated candidate | **v46 regression FAIL**: Fresh64 60 PASS / 4 PARTIAL per variant; 10/19 historical gates PASS; not adopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
 | Current phase | **2 — first Fresh64 confirmation FAIL**; 52 PASS / 4 PARTIAL / 8 FAIL in each variant; integration HOLD |
-| Latest recorded engineering checks | **863 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
+| Latest recorded engineering checks | **874 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
 
@@ -24,7 +24,26 @@ The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. The following
 phase 1 summary reflects the approved decision on **21 October 2026**; earlier
 reports remain dated checkpoints and preserve their original failures and holds.
 
-## Latest result — phase 2 Fresh64 confirmation FAIL
+## Latest result — v46 regression FAIL
+
+One approved capture completed **732 cases**: 668 historical plus 64 exposed
+Fresh64, with 684 actual MiniLM Hybrid submissions and 48 lexical Comparisons.
+After preserving an initial anchor-audit block, an approved audit-only correction
+scored the same unchanged capture. The integrity audit passed, but acceptance failed:
+
+- Fresh64: **60 PASS / 4 PARTIAL / 0 FAIL** in each variant; 64/64 was required.
+- Historical preservation: **10/19 family gates PASS**. The same 20 prior PASS
+  cases were lost in each variant: 19 native FAIL and one manual-family BLOCKED.
+
+Separate review confirms all four incomplete comparisons and the changed historical
+refusals. Original native outcomes and both audit failures remain preserved.
+No candidate changes, model reruns or scoring retries occurred during publication.
+See the [failed-study report](./docs/V46_REGRESSION_FAILED_RESULTS.md) and
+[separate review](./docs/evidence/v46-regression-732-mac/review/publication-review.json).
+Next prioritize preservation repairs before another exposed regression or new
+unseen confirmation. **Phase 2 and integration remain HOLD; live 5.6/r44 is unchanged.**
+
+## Original phase 2 Fresh64 confirmation — FAIL
 
 On **24 October 2026**, one capture completed all 64 fresh cases: 56 actual local
 MiniLM Hybrid questions and eight lexical Comparisons, Qwen off. Both unchanged
@@ -150,13 +169,12 @@ reference contracts first, then supported relation and Comparison repairs.
 [Stage A in v44](./docs/V44_STAGE_A_ENGINEERING.md),
 [Stage B in v45](./docs/V45_STAGE_B_ENGINEERING.md), and
 [Stage C in v46](./docs/V46_STAGE_C_ENGINEERING.md) have isolated bounded
-implementations. V46 passes 848 unit/28 Keyword checks; the original v45 scope
-failure and approved correction remain archived. There is no actual-model
-revalidation or live adoption. The [732-case regression protocol](./docs/V46_REGRESSION_PREPARATION.md) is now
-preserved unchanged. [Execution tooling, neutral preflight and the complete
-execution freeze with approved audit amendment](./docs/V46_REGRESSION_EXECUTION_READY.md)
-are ready. The original audit failure and freeze are preserved. Explicit study
-execution approval is next. No model-quality study has run.
+implementations. Their engineering checks passed, but the subsequent
+[732-case study](./docs/V46_REGRESSION_FAILED_RESULTS.md) failed historical
+preservation and the exposed Fresh64 gate. The original v45 scope failure,
+v46 audit failures, execution freeze and approved corrections remain archived.
+Current engineering evidence records 874 unit/28 Keyword checks PASS; that does
+not override the model-quality failure. No candidate is adopted.
 Preserve the 668-case regression scope and use Fresh64 only
 as exposed regression after any fix. New prospective confirmation
 requires a separately frozen unseen pack. Isolated engineering does not authorize

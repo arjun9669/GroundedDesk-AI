@@ -1,7 +1,7 @@
 # GroundedDesk 6.0 working roadmap
 
 Accepted as a working sequence in the October 20, 2026 conversation. Current
-phase: **2 — first Fresh64 confirmation FAIL; v46 Stages A/B/C bounded engineering complete; model revalidation pending**. Detailed product promises and quantitative
+phase: **2 — first Fresh64 confirmation FAIL; v46 exposed regression FAIL; preservation repairs pending**. Detailed product promises and quantitative
 release targets are not yet frozen; this roadmap does not declare 6.0 ready,
 promise production/security certification or authorize live integration.
 
@@ -44,11 +44,14 @@ threshold/actor/referent handling, then supported frame/retention selection and
 per-document Comparison completeness. [V44 Stage A](V44_STAGE_A_ENGINEERING.md),
 [v45 Stage B](V45_STAGE_B_ENGINEERING.md), and
 [v46 Stage C](V46_STAGE_C_ENGINEERING.md) now have isolated bounded implementations;
-848 unit/28 Keyword checks pass. All actual-model revalidation remains unrun;
-the [732-case protocol](V46_REGRESSION_PREPARATION.md) is frozen for preparation.
-[V46/v43 tooling, neutral preflight and a complete execution freeze](V46_REGRESSION_EXECUTION_READY.md)
-and its approved audit amendment pass863 unit/28 Keyword checks. The original
-review failure/freeze remain preserved. Explicit study execution approval is next.
+the [732-case v46 study](V46_REGRESSION_FAILED_RESULTS.md) has now completed and
+failed: Fresh64 60 PASS/4 PARTIAL in each variant,10/19 historical gates PASS,
+20 prior PASS losses per variant. The first audit block and approved post-capture
+correction remain preserved; no candidate or native outcome changed in publication.
+Separate binding review is complete without native regrading; Cobalt H03 remains
+BLOCKED. Engineering874 unit/28 Keyword PASS does not override this quality failure.
+Next agree preservation repairs before a new frozen regression and later unseen
+confirmation; live integration remains unauthorized.
 Preserve the accepted 668-case regression scope after fixes. Fresh64 is now exposed;
 a future replay is regression, not replacement of its failed first confirmation.
 New prospective confirmation needs a new separately agreed/frozen unseen pack.

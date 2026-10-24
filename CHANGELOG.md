@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-24 — publish failed v46 regression and preserved audit history
+
+- Preserve once-only732-case capture,5,865 raw artifacts, first anchor-audit block,
+  approved post-capture audit correction and unchanged native grading outcomes.
+- Record v46 FAIL: Fresh64 60 PASS/4 PARTIAL per variant;10/19 historical gates PASS,
+  20 prior PASS losses each (19 FAIL plus one manual BLOCKED). Live5.6/r44 unchanged.
+- Complete separate review of128 Fresh64 and40 changed historical rows; no native
+  regrading, candidate changes, model reruns or scoring retries during publication.
+
 ## 2026-10-24 — approved v46 anchor-audit correction
 
 - Require finite equal anchor/source cosine metadata before independent arithmetic;

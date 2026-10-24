@@ -1,0 +1,1487 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "FC45",
+  "question": "How many permits does Pera register per day at Westrill Canal Office?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many permits does Pera register per day at Westrill Canal Office?",
+    "expected_display": "How many permits does Pera register per day at Westrill Canal Office?",
+    "rendered_question": "How many permits does Pera register per day at Westrill Canal Office?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Pera registers four permits per day.",
+    "sources": [
+      {
+        "filename": "07_Westrill_Canal_Office.txt",
+        "excerpt": "Westrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur.\n\nPera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.\n\nWestrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.\n\nThe Westrill Canal Office boarding packet contains a route plan, vessel register, radio au",
+        "quote": "Pera registers four permits per day."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many permits does Pera register per day at Westrill Canal Office?\n\nSearched all files: 01_Bellhaven_Textile_Museum.txt · 02_Kestwick_Lens_Workshop.txt · 03_Ardmere_River_Station.txt · 04_Larchfen_Seed_Depot.txt · 05_Brindale_Music_Library.txt · 06_Tarrow_Glass_Laboratory.txt · 07_Westrill_Canal_Office.txt · 08_Oakenford_Survey_Store.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Pera registers four permits per day.\n\nSOURCE EVIDENCE\n[1]\n07_Westrill_Canal_Office.txt\n\nText line 3 (normalized extraction)\n\nWestrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur. Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day. Westrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention. The Westrill Canal Office boarding packet contains a route plan, vessel register, radio au\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Pera registers four permits per day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ee205080-a4d3-45f5-9193-0cde1352dd64:0",
+        "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+        "filename": "07_Westrill_Canal_Office.txt",
+        "excerpt": "Westrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur.\n\nPera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.\n\nWestrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.\n\nThe Westrill Canal Office boarding packet contains a route plan, vessel register, radio au",
+        "quote": "Pera registers four permits per day.",
+        "score": 0.0476,
+        "lexicalScore": 19.356877910567196,
+        "semanticScore": 0.6830306570023585,
+        "matchedTerms": [
+          "permits",
+          "pera",
+          "register",
+          "per",
+          "day",
+          "westrill",
+          "canal",
+          "office"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ee205080-a4d3-45f5-9193-0cde1352dd64:0",
+        "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+        "filename": "07_Westrill_Canal_Office.txt",
+        "excerpt": "Westrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur.\n\nPera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.\n\nWestrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.\n\nThe Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+        "quote": "Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+        "score": 0.0476,
+        "lexicalScore": 19.356877910567196,
+        "semanticScore": 0.6830306570023585,
+        "matchedTerms": [
+          "permits",
+          "pera",
+          "register",
+          "per",
+          "day",
+          "westrill",
+          "canal",
+          "office"
+        ],
+        "start": 213,
+        "end": 313
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "07_Westrill_Canal_Office.txt",
+        "quote": "Pera registers four permits per day.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 213,
+          "cosine": 0.7447930698976006,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "07_Westrill_Canal_Office.txt",
+        "quote": "Pera registers four permits per day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "07_Westrill_Canal_Office.txt",
+        "quote": "Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ee205080-a4d3-45f5-9193-0cde1352dd64:0",
+        "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+        "filename": "07_Westrill_Canal_Office.txt",
+        "excerpt": "Westrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur.\n\nPera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.\n\nWestrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.\n\nThe Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+        "quote": "Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+        "score": 0.0476,
+        "lexicalScore": 19.356877910567196,
+        "semanticScore": 0.6830306570023585,
+        "matchedTerms": [
+          "permits",
+          "pera",
+          "register",
+          "per",
+          "day",
+          "westrill",
+          "canal",
+          "office"
+        ],
+        "start": 213,
+        "end": 313
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "07_Westrill_Canal_Office.txt",
+        "quote": "Pera registers four permits per day.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 213,
+          "cosine": 0.7447930698976006,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "07_Westrill_Canal_Office.txt",
+        "quote": "Pera registers four permits per day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "07_Westrill_Canal_Office.txt",
+        "quote": "Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "07_Westrill_Canal_Office.txt",
+      "start": 213,
+      "content": "Pera registers four permits per day.",
+      "semanticScore": 0.7447930698976006,
+      "lexicalScore": 12.83251387969352
+    },
+    {
+      "filename": "07_Westrill_Canal_Office.txt",
+      "start": 439,
+      "content": "The Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+      "semanticScore": 0.5030955635958508,
+      "lexicalScore": 10.283292560652772
+    },
+    {
+      "filename": "07_Westrill_Canal_Office.txt",
+      "start": 283,
+      "content": "Pera checks two seals per day.",
+      "semanticScore": 0.5719430482927379,
+      "lexicalScore": null
+    },
+    {
+      "filename": "07_Westrill_Canal_Office.txt",
+      "start": 0,
+      "content": "Westrill Canal Office moved its dispatch counter in 1917.",
+      "semanticScore": 0.4874900480243414,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Larchfen_Seed_Depot.txt",
+      "start": 235,
+      "content": "Ema labels three packets per day.",
+      "semanticScore": 0.3610586626215032,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "The Bellhaven Textile Museum relocated its collection in 1909.",
+      "start": 0,
+      "end": 62,
+      "similarity": 0.041120125721597525,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "Its first conservation project finished in 1954; the second finished in 1982.",
+      "start": 63,
+      "end": 140,
+      "similarity": 0.22331931311031678,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "A proposed closure in 2004 was rejected, and the museum remained open.",
+      "start": 141,
+      "end": 211,
+      "similarity": 0.13219643058644887,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "Decorative weaving panels line the upper stair rail.",
+      "start": 213,
+      "end": 265,
+      "similarity": 0.03133031275583319,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "The entrance crown carries a bronze compass.",
+      "start": 266,
+      "end": 310,
+      "similarity": 0.16110920951148555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "The lower wall displays a painted harbour map.",
+      "start": 311,
+      "end": 357,
+      "similarity": 0.15773832413328562,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "The display cases use an argon fill because argon slows oxidation of the dyed fibres.",
+      "start": 359,
+      "end": 444,
+      "similarity": -0.052999732987640324,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "The outer frame is aluminium and the shelf labels are paper.",
+      "start": 445,
+      "end": 505,
+      "similarity": -0.0014913719687657762,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "Bellhaven Textile Museum visitor registers are retained for 18 months, unless an unresolved access complaint requires longer retention.",
+      "start": 507,
+      "end": 642,
+      "similarity": 0.20103029710281162,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Kestwick Lens Workshop opened its public test bench in 1998.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.06883647860902091,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Its warehouse moved in 2013, and its roof was renewed in 2021.",
+      "start": 61,
+      "end": 123,
+      "similarity": 0.10895448464983823,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Nera polishes five lenses per day.",
+      "start": 125,
+      "end": 159,
+      "similarity": 0.22533305912751053,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Olin labels eight crates per day.",
+      "start": 160,
+      "end": 193,
+      "similarity": 0.3068143634741077,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Nera checks two gauges per day.",
+      "start": 194,
+      "end": 225,
+      "similarity": 0.2899580550038421,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+      "start": 227,
+      "end": 303,
+      "similarity": -0.00010181757711036657,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.",
+      "start": 304,
+      "end": 419,
+      "similarity": 0.08139776313741934,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Lubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay.",
+      "start": 421,
+      "end": 530,
+      "similarity": 0.18971751342320048,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "The inspection interval remains 24 hours in both bays.",
+      "start": 531,
+      "end": 585,
+      "similarity": 0.2003232789191977,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+      "start": 587,
+      "end": 708,
+      "similarity": 0.23370049364889092,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Kestwick Lens Workshop calibration logs are retained for 12 months, unless an unresolved calibration dispute requires longer retention.",
+      "start": 710,
+      "end": 845,
+      "similarity": 0.09603950637594813,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "Orders released before 12:35 depart on the current operating day.",
+      "start": 0,
+      "end": 65,
+      "similarity": 0.15926420304734512,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "At or after 12:35, departure is the next operating day, unless a river inspection hold is still active.",
+      "start": 66,
+      "end": 169,
+      "similarity": 0.27814383028458184,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "Ardmere River Station cold samples must remain between 2 and 6 degrees Celsius during carriage.",
+      "start": 171,
+      "end": 266,
+      "similarity": 0.0719814403073941,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "Ardmere River Station dispatch records are retained for 16 months, unless an unresolved flood review requires longer retention.",
+      "start": 268,
+      "end": 395,
+      "similarity": 0.15244458258676255,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "Ardmere River Station acknowledges a carriage request within two operating days.",
+      "start": 397,
+      "end": 477,
+      "similarity": 0.2587174099124952,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "Acknowledgement does not guarantee departure.",
+      "start": 478,
+      "end": 523,
+      "similarity": 0.05043272299106547,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Release ticket orders before 09:50 for departure on the current collection day.",
+      "start": 0,
+      "end": 79,
+      "similarity": 0.15519311923433884,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Ticket orders released at or after 09:50 depart on the next collection day, unless a seed screening hold remains active.",
+      "start": 80,
+      "end": 200,
+      "similarity": 0.11428846749555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Tavin sorts seven trays per day.",
+      "start": 202,
+      "end": 234,
+      "similarity": 0.2750521274560567,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Ema labels three packets per day.",
+      "start": 235,
+      "end": 268,
+      "similarity": 0.3610586626215032,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Tavin checks two bins per day.",
+      "start": 269,
+      "end": 299,
+      "similarity": 0.3253644098503212,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "The Larchfen Seed Depot dispatch packet includes a route card, seal register, depot label, and receipt.",
+      "start": 301,
+      "end": 404,
+      "similarity": 0.20025553533529136,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Larchfen Seed Depot accession records are retained for 5 years, unless an unresolved quarantine case requires longer retention.",
+      "start": 406,
+      "end": 533,
+      "similarity": 0.040929059515496885,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Brindale Music Library opened its catalogue store in 1958.",
+      "start": 0,
+      "end": 58,
+      "similarity": 0.041222527206139926,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Its warehouse relocation took place in 1976.",
+      "start": 59,
+      "end": 103,
+      "similarity": 0.1425918610796687,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "The main roof was rebuilt in 1999.",
+      "start": 104,
+      "end": 138,
+      "similarity": -0.004128120885287117,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "The Brindale Music Library catalogue Echoes of Reed was published in 1991.",
+      "start": 140,
+      "end": 214,
+      "similarity": 0.04738087813074097,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "A different catalogue, Songs of Flint, was published in 2007.",
+      "start": 215,
+      "end": 276,
+      "similarity": 0.11592735742647525,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Neither is designated the large work.",
+      "start": 277,
+      "end": 314,
+      "similarity": 0.1540454385628559,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Each Brindale Music Library guided session admits at most 28 visitors.",
+      "start": 316,
+      "end": 386,
+      "similarity": 0.20812321155070754,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Brindale Music Library acknowledges a loan request within four business days.",
+      "start": 388,
+      "end": 465,
+      "similarity": 0.16443858030649758,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Acknowledgement does not promise confirmation of a loan.",
+      "start": 466,
+      "end": 522,
+      "similarity": 0.10789498986500057,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Brindale Music Library loan receipts are retained for 9 months, unless an unresolved missing-instrument claim requires longer retention.",
+      "start": 524,
+      "end": 660,
+      "similarity": 0.07862242735990763,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "The highest monthly mean temperature in the Brindale Music Library store is 25 degrees Celsius in August.",
+      "start": 662,
+      "end": 767,
+      "similarity": 0.1336531285793189,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Its highest daily reading is 37 degrees Celsius.",
+      "start": 768,
+      "end": 816,
+      "similarity": 0.16054446285481996,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating.",
+      "start": 0,
+      "end": 130,
+      "similarity": -0.05320008662284196,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "The support frames are steel and the labels are card.",
+      "start": 131,
+      "end": 184,
+      "similarity": 0.0658978204946929,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Inspection emblems decorate the side balcony windows at Tarrow Glass Laboratory.",
+      "start": 186,
+      "end": 266,
+      "similarity": 0.0508604184060913,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "The entrance arch has a blue crest, and the ceiling carries a brass vane.",
+      "start": 267,
+      "end": 340,
+      "similarity": 0.1496340141130861,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "The Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius.",
+      "start": 342,
+      "end": 419,
+      "similarity": -0.04142752060111696,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Its highest monthly mean is 26 degrees Celsius in June, and its highest daily reading is 39 degrees Celsius.",
+      "start": 420,
+      "end": 528,
+      "similarity": 0.18674149316027722,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "No absolute winter minimum is stated.",
+      "start": 529,
+      "end": 566,
+      "similarity": 0.23718809346750874,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "The Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions.",
+      "start": 568,
+      "end": 693,
+      "similarity": 0.09346692484811074,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Its inspection interval remains 18 hours in either condition.",
+      "start": 694,
+      "end": 755,
+      "similarity": 0.24337629536080116,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "start": 757,
+      "end": 878,
+      "similarity": 0.2678190629582651,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Each Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+      "start": 880,
+      "end": 951,
+      "similarity": 0.13939842665652216,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Westrill Canal Office moved its dispatch counter in 1917.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.4874900480243414,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Its first restoration was completed in 1965, and its second restoration was completed in 2003.",
+      "start": 58,
+      "end": 152,
+      "similarity": 0.1704466587335128,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "A proposed closure in 1978 was rejected and did not occur.",
+      "start": 153,
+      "end": 211,
+      "similarity": 0.09265517978687125,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Pera registers four permits per day.",
+      "start": 213,
+      "end": 249,
+      "similarity": 0.7447930698976006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Sorin archives six maps per day.",
+      "start": 250,
+      "end": 282,
+      "similarity": 0.3136056776745374,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Pera checks two seals per day.",
+      "start": 283,
+      "end": 313,
+      "similarity": 0.5719430482927379,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Westrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.",
+      "start": 315,
+      "end": 437,
+      "similarity": 0.3417695006864037,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "The Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+      "start": 439,
+      "end": 560,
+      "similarity": 0.5030955635958508,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Oakenford Survey Store opened its public room in 1936.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.07291255591542699,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+      "start": 55,
+      "end": 141,
+      "similarity": 0.08616102795941057,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "The Oakenford Survey Store Control Ledger was published in 2014.",
+      "start": 143,
+      "end": 207,
+      "similarity": 0.1789710311558528,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "A different book, Field Atlas, was published in 2020.",
+      "start": 208,
+      "end": 261,
+      "similarity": 0.059725617010190656,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Neither is designated the large book.",
+      "start": 262,
+      "end": 299,
+      "similarity": 0.11933637843016756,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Each Oakenford Survey Store guided session admits at most 22 visitors.",
+      "start": 301,
+      "end": 371,
+      "similarity": 0.18995136350707517,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "The Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 373,
+      "end": 463,
+      "similarity": 0.09851722953976655,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.",
+      "start": 464,
+      "end": 578,
+      "similarity": 0.09410941838575665,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Oakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention.",
+      "start": 580,
+      "end": 717,
+      "similarity": 0.04644303417594082,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ee205080-a4d3-45f5-9193-0cde1352dd64:0",
+          "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+          "filename": "07_Westrill_Canal_Office.txt",
+          "excerpt": "Westrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur.\n\nPera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.\n\nWestrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.\n\nThe Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+          "quote": "Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+          "score": 0.0476,
+          "lexicalScore": 19.356877910567196,
+          "semanticScore": 0.6830306570023585,
+          "matchedTerms": [
+            "permits",
+            "pera",
+            "register",
+            "per",
+            "day",
+            "westrill",
+            "canal",
+            "office"
+          ],
+          "start": 213,
+          "end": 313
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "07_Westrill_Canal_Office.txt",
+          "quote": "Pera registers four permits per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 213,
+            "cosine": 0.7447930698976006,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "07_Westrill_Canal_Office.txt",
+          "quote": "Pera registers four permits per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "07_Westrill_Canal_Office.txt",
+          "quote": "Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ee205080-a4d3-45f5-9193-0cde1352dd64:0",
+          "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+          "filename": "07_Westrill_Canal_Office.txt",
+          "excerpt": "Westrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur.\n\nPera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.\n\nWestrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.\n\nThe Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+          "quote": "Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+          "score": 0.0476,
+          "lexicalScore": 19.356877910567196,
+          "semanticScore": 0.6830306570023585,
+          "matchedTerms": [
+            "permits",
+            "pera",
+            "register",
+            "per",
+            "day",
+            "westrill",
+            "canal",
+            "office"
+          ],
+          "start": 213,
+          "end": 313
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "07_Westrill_Canal_Office.txt",
+          "quote": "Pera registers four permits per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 213,
+            "cosine": 0.7447930698976006,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "07_Westrill_Canal_Office.txt",
+          "quote": "Pera registers four permits per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "07_Westrill_Canal_Office.txt",
+          "quote": "Pera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Pera registers four permits per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ee205080-a4d3-45f5-9193-0cde1352dd64:0",
+          "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+          "filename": "07_Westrill_Canal_Office.txt",
+          "excerpt": "Westrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur.\n\nPera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.\n\nWestrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.\n\nThe Westrill Canal Office boarding packet contains a route plan, vessel register, radio au",
+          "quote": "Pera registers four permits per day.",
+          "score": 0.0476,
+          "lexicalScore": 19.356877910567196,
+          "semanticScore": 0.6830306570023585,
+          "matchedTerms": [
+            "permits",
+            "pera",
+            "register",
+            "per",
+            "day",
+            "westrill",
+            "canal",
+            "office"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "07_Westrill_Canal_Office.txt",
+          "quote": "Pera registers four permits per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 213,
+            "cosine": 0.7447930698976006,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "07_Westrill_Canal_Office.txt",
+          "quote": "Pera registers four permits per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Pera registers four permits per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ee205080-a4d3-45f5-9193-0cde1352dd64:0",
+          "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+          "filename": "07_Westrill_Canal_Office.txt",
+          "excerpt": "Westrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur.\n\nPera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.\n\nWestrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.\n\nThe Westrill Canal Office boarding packet contains a route plan, vessel register, radio au",
+          "quote": "Pera registers four permits per day.",
+          "score": 0.0476,
+          "lexicalScore": 19.356877910567196,
+          "semanticScore": 0.6830306570023585,
+          "matchedTerms": [
+            "permits",
+            "pera",
+            "register",
+            "per",
+            "day",
+            "westrill",
+            "canal",
+            "office"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "07_Westrill_Canal_Office.txt",
+          "quote": "Pera registers four permits per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 213,
+            "cosine": 0.7447930698976006,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "07_Westrill_Canal_Office.txt",
+          "quote": "Pera registers four permits per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.023708878085017204,
+    -0.027450935915112495,
+    -0.02117011323571205,
+    -0.011293702758848667,
+    -0.10089000314474106,
+    -0.015779675915837288,
+    -0.04356173053383827,
+    0.0249821525067091,
+    -0.039250925183296204,
+    -0.007757263258099556,
+    0.05328086018562317,
+    -0.05936233699321747,
+    -0.10521385818719864,
+    0.061995990574359894,
+    -0.020677030086517334,
+    0.09375157952308655,
+    -0.012528794817626476,
+    -0.07170236110687256,
+    -0.014325299300253391,
+    -0.02607051096856594,
+    0.07770958542823792,
+    0.04040930047631264,
+    -0.020183060318231583,
+    -0.0334048792719841,
+    -0.06754268705844879,
+    0.0025693147908896208,
+    -0.0015557766892015934,
+    0.01627391204237938,
+    0.10458586364984512,
+    0.005000394769012928,
+    -0.0651051327586174,
+    -0.020261244848370552,
+    0.08693663030862808,
+    0.009663192555308342,
+    0.12949997186660767,
+    0.011667751707136631,
+    0.007170309778302908,
+    -0.09053805470466614,
+    0.03354191407561302,
+    0.05119585245847702,
+    -0.005591765511780977,
+    -0.036718692630529404,
+    -0.021871166303753853,
+    0.02419862523674965,
+    -0.0185954961925745,
+    -0.02253425493836403,
+    0.04959120973944664,
+    0.04524987190961838,
+    0.05754399672150612,
+    0.0322934091091156,
+    0.1238929033279419,
+    -0.015452857129275799,
+    -0.037393197417259216,
+    -0.007335306145250797,
+    -0.07293717563152313,
+    -0.06132806837558746,
+    -0.059204600751399994,
+    -0.062261324375867844,
+    0.04606791213154793,
+    0.07224256545305252,
+    0.03030293434858322,
+    0.018437577411532402,
+    -0.08569037914276123,
+    -0.012312261387705803,
+    0.031592391431331635,
+    0.030206546187400818,
+    -0.0656735971570015,
+    -0.034490011632442474,
+    0.04171371087431908,
+    -0.1372617781162262,
+    -0.023370370268821716,
+    -0.015679193660616875,
+    -0.015058151446282864,
+    0.008848436176776886,
+    0.032537270337343216,
+    -0.06316143274307251,
+    -0.02454446069896221,
+    0.05119388550519943,
+    0.03693936765193939,
+    -0.11906363815069199,
+    -0.012269504368305206,
+    0.012406374327838421,
+    0.04737086594104767,
+    0.012880849651992321,
+    0.05503344535827637,
+    0.006392932031303644,
+    -0.022240161895751953,
+    0.0781993567943573,
+    0.06936280429363251,
+    0.03180153667926788,
+    0.008393163792788982,
+    -0.001383202150464058,
+    -0.0530075877904892,
+    -0.05065038427710533,
+    -0.08077738434076309,
+    0.031205089762806892,
+    -0.07827675342559814,
+    0.0011845382396131754,
+    0.005726891569793224,
+    0.0460188128054142,
+    -0.014444819651544094,
+    -0.023399753496050835,
+    -0.01195527333766222,
+    -0.003165672067552805,
+    -0.016093043610453606,
+    0.017563946545124054,
+    -0.06285759806632996,
+    0.01003361027687788,
+    -0.03450850397348404,
+    0.024592682719230652,
+    -0.04110664874315262,
+    0.08620547503232956,
+    0.05549139901995659,
+    0.02316913940012455,
+    0.004302179906517267,
+    0.03367987275123596,
+    -0.022297827526926994,
+    0.030600057914853096,
+    0.07244831323623657,
+    0.005873825866729021,
+    -0.009591669775545597,
+    -0.06183518469333649,
+    0.02071443572640419,
+    -0.053913768380880356,
+    0.018431875854730606,
+    0.008827973157167435,
+    -0.001446865382604301,
+    -1.0035152110286674e-33,
+    0.0012230032589286566,
+    0.03190980106592178,
+    -0.0057106283493340015,
+    0.017627544701099396,
+    0.040749553591012955,
+    -0.008216679096221924,
+    -0.00690657552331686,
+    -0.03449622541666031,
+    0.024180525913834572,
+    0.04559846594929695,
+    -0.00006330008181976154,
+    -0.017269214615225792,
+    -0.02833620086312294,
+    -0.006614026613533497,
+    0.05998029559850693,
+    -0.035548802465200424,
+    0.07213248312473297,
+    0.05815022066235542,
+    -0.030900100246071815,
+    0.01676059328019619,
+    0.05963243171572685,
+    -0.011793941259384155,
+    0.01902611553668976,
+    -0.04834921285510063,
+    0.024254927411675453,
+    0.038469187915325165,
+    0.03575393930077553,
+    0.011283199302852154,
+    0.10249315202236176,
+    0.04762640595436096,
+    0.07028771936893463,
+    -0.02582649514079094,
+    0.08586284518241882,
+    -0.03874657303094864,
+    0.06472136825323105,
+    0.0652843788266182,
+    -0.002675655297935009,
+    -0.01396829355508089,
+    -0.042361918836832047,
+    -0.009190699085593224,
+    -0.04558476805686951,
+    -0.002065734239295125,
+    -0.030235571786761284,
+    0.02130175195634365,
+    0.0205350611358881,
+    -0.04630027338862419,
+    0.04368411377072334,
+    0.04197992756962776,
+    0.08485113829374313,
+    0.06108151376247406,
+    0.005237605422735214,
+    -0.008124389685690403,
+    -0.13881893455982208,
+    0.009454669430851936,
+    0.01074616052210331,
+    -0.051699958741664886,
+    -0.017811205238103867,
+    0.020362040027976036,
+    -0.005122118163853884,
+    0.010437593795359135,
+    -0.014659428969025612,
+    0.06553413718938828,
+    -0.049191731959581375,
+    0.06879159063100815,
+    0.02838529460132122,
+    -0.004470660351216793,
+    -0.01583101786673069,
+    0.029409334063529968,
+    0.06478540599346161,
+    -0.0274686086922884,
+    -0.005427609663456678,
+    -0.0544123500585556,
+    -0.04997833073139191,
+    -0.008582709357142448,
+    -0.09924323111772537,
+    -0.0467415526509285,
+    0.07657752186059952,
+    0.052246637642383575,
+    0.02564578875899315,
+    0.07074902951717377,
+    -0.10820946097373962,
+    0.07848995178937912,
+    0.04958340525627136,
+    0.04035595431923866,
+    0.06412398815155029,
+    0.021051669493317604,
+    0.06809800118207932,
+    0.042638178914785385,
+    -0.008201736956834793,
+    -0.047313228249549866,
+    0.03072657249867916,
+    0.0449356734752655,
+    0.002282678848132491,
+    -0.006484851241111755,
+    -0.015083467587828636,
+    -1.1796651746746729e-34,
+    -0.02140961028635502,
+    -0.0007977929781191051,
+    -0.002068593865260482,
+    0.05127083510160446,
+    0.009293627925217152,
+    -0.016926394775509834,
+    0.031874801963567734,
+    0.030463477596640587,
+    0.05578991770744324,
+    0.012871780432760715,
+    -0.03382467105984688,
+    0.010961811989545822,
+    0.07968860864639282,
+    0.0077583142556250095,
+    0.03163290023803711,
+    -0.037092290818691254,
+    0.022482698783278465,
+    0.06388740241527557,
+    -0.0527801476418972,
+    -0.0163621436804533,
+    -0.08691733330488205,
+    0.02511030249297619,
+    0.01978885568678379,
+    0.04429440200328827,
+    -0.0621851347386837,
+    0.02332465536892414,
+    -0.07870439440011978,
+    -0.024447154253721237,
+    -0.04092211648821831,
+    -0.0432177409529686,
+    -0.014340651221573353,
+    0.017039692029356956,
+    -0.08752436935901642,
+    0.07525217533111572,
+    -0.13418787717819214,
+    -0.06214459612965584,
+    -0.00477458443492651,
+    0.10775028169155121,
+    0.044327568262815475,
+    0.12721870839595795,
+    0.06149622052907944,
+    -0.02770579233765602,
+    0.03099626488983631,
+    0.1090250015258789,
+    -0.15320473909378052,
+    0.052364103496074677,
+    0.02897842414677143,
+    -0.10245918482542038,
+    -0.0509026013314724,
+    -0.010065652430057526,
+    -0.02595638297498226,
+    -0.0034810788929462433,
+    -0.01788056083023548,
+    -0.06619183719158173,
+    0.027053318917751312,
+    0.04301741346716881,
+    0.06604141741991043,
+    -0.05875677615404129,
+    -0.03723747283220291,
+    0.022605177015066147,
+    0.03679758310317993,
+    0.016536111012101173,
+    -0.016988445073366165,
+    0.08575940132141113,
+    0.026132911443710327,
+    -0.050422683358192444,
+    -0.0012040784349665046,
+    -0.06017591431736946,
+    -0.020946281030774117,
+    0.007805586326867342,
+    0.057208720594644547,
+    -0.046660203486680984,
+    -0.08276860415935516,
+    -0.06288544833660126,
+    -0.07851779460906982,
+    0.015952544286847115,
+    -0.05176059529185295,
+    -0.006014982704073191,
+    -0.02601863071322441,
+    0.004378990735858679,
+    -0.20066623389720917,
+    -0.006278542336076498,
+    -0.04157935082912445,
+    0.027133360505104065,
+    -0.02255278080701828,
+    -0.06997664272785187,
+    0.09803631156682968,
+    -0.08461251854896545,
+    0.047693539410829544,
+    0.10561233013868332,
+    0.008795960806310177,
+    0.041002947837114334,
+    0.006422712001949549,
+    -0.04118296131491661,
+    -0.0029908649157732725,
+    -1.7564028453875835e-8,
+    -0.0244318675249815,
+    0.023802753537893295,
+    -0.059445131570100784,
+    0.021549606695771217,
+    0.006580639630556107,
+    -0.028091054409742355,
+    0.012244610115885735,
+    0.041130900382995605,
+    -0.04152103513479233,
+    0.05168650671839714,
+    0.10592681169509888,
+    -0.0029224625322967768,
+    -0.09977330267429352,
+    -0.043967653065919876,
+    -0.055067721754312515,
+    -0.020142944529652596,
+    0.0812983512878418,
+    0.02672446146607399,
+    -0.08092586696147919,
+    -0.03457359969615936,
+    -0.019977115094661713,
+    0.009440399706363678,
+    0.00504048727452755,
+    -0.024618860334157944,
+    -0.03389393910765648,
+    -0.024997569620609283,
+    0.018097057938575745,
+    0.15082067251205444,
+    -0.002685552928596735,
+    0.024307845160365105,
+    0.08939917385578156,
+    0.009501165710389614,
+    -0.08632446080446243,
+    -0.010287526994943619,
+    -0.049256619065999985,
+    -0.01671578735113144,
+    -0.022296464070677757,
+    -0.011044047772884369,
+    -0.08557667583227158,
+    -0.012570132501423359,
+    0.021220285445451736,
+    0.0406830795109272,
+    0.00032746614306233823,
+    0.053317613899707794,
+    0.05666906759142876,
+    0.07982593774795532,
+    -0.11821047216653824,
+    -0.009074605070054531,
+    0.0098441606387496,
+    -0.05569133535027504,
+    0.04055491462349892,
+    -0.07346179336309433,
+    0.05671607702970505,
+    0.015338122844696045,
+    0.017845185473561287,
+    0.09086951613426208,
+    0.004466593265533447,
+    -0.04290518909692764,
+    -0.023539740592241287,
+    0.015275287441909313,
+    -0.07324747741222382,
+    -0.04821837693452835,
+    -0.006123578641563654,
+    -0.05223851278424263
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "07_Westrill_Canal_Office.txt",
+        "start": 0,
+        "content": "Westrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur.\n\nPera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.\n\nWestrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.\n\nThe Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass."
+      }
+    ],
+    "section": [
+      {
+        "filename": "07_Westrill_Canal_Office.txt",
+        "start": 0,
+        "content": "Westrill Canal Office moved its dispatch counter in 1917. Its first restoration was completed in 1965, and its second restoration was completed in 2003. A proposed closure in 1978 was rejected and did not occur.\n\nPera registers four permits per day. Sorin archives six maps per day. Pera checks two seals per day.\n\nWestrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.\n\nThe Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass."
+      }
+    ]
+  }
+}

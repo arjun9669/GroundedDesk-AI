@@ -1,0 +1,1223 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "M24",
+  "question": "How many haul cables does Quinn check per day?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many haul cables does Quinn check per day?",
+    "expected_display": "How many haul cables does Quinn check per day?",
+    "rendered_question": "How many haul cables does Quinn check per day?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Wes checks two haul cables per day.",
+    "sources": [
+      {
+        "filename": "01_Ashmere_Funicular.txt",
+        "excerpt": "before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.\nF-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day.\nF-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed.\nF-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affect",
+        "quote": "Wes checks two haul cables per day."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many haul cables does Quinn check per day?\n\nSearched all files: 01_Ashmere_Funicular.txt · 02_Selwick_Textile_Archive.txt · 03_Pelden_Acoustic_Station.txt · 04_Noryn_Print_Cooperative.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Wes checks two haul cables per day.\n\nSOURCE EVIDENCE\n[1]\n01_Ashmere_Funicular.txt\n\nText line 5 (normalized extraction)\n\nbefore 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active. F-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day. F-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed. F-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affect\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Wes checks two haul cables per day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "c6000847-17bd-4107-8b16-61b310ae4f55:0",
+        "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+        "filename": "01_Ashmere_Funicular.txt",
+        "excerpt": "before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.\nF-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day.\nF-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed.\nF-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affect",
+        "quote": "Wes checks two haul cables per day.",
+        "score": 0.0214,
+        "lexicalScore": 7.442892019880316,
+        "semanticScore": null,
+        "matchedTerms": [
+          "haul",
+          "cables",
+          "quinn",
+          "per",
+          "day"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Wes checks two haul cables per day.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 429,
+          "cosine": 0.7484476399615516,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Wes checks two haul cables per day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Wes checks two haul cables per day.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "No complete literal evidence for recognized request frame"
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Wes checks two haul cables per day.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 429,
+          "cosine": 0.7484476399615516,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Wes checks two haul cables per day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Wes checks two haul cables per day.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "No complete literal evidence for recognized request frame"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Ashmere_Funicular.txt",
+      "start": 429,
+      "content": "Wes checks two haul cables per day.",
+      "semanticScore": 0.7484476399615516,
+      "lexicalScore": 11.117526011865488
+    },
+    {
+      "filename": "01_Ashmere_Funicular.txt",
+      "start": 386,
+      "content": "Quinn checks six brake assemblies per day.",
+      "semanticScore": 0.654149926343463,
+      "lexicalScore": 7.117116396733261
+    },
+    {
+      "filename": "01_Ashmere_Funicular.txt",
+      "start": 465,
+      "content": "Quinn labels three tool drawers per day.",
+      "semanticScore": 0.5111302797715527,
+      "lexicalScore": 7.117116396733261
+    },
+    {
+      "filename": "03_Pelden_Acoustic_Station.txt",
+      "start": 542,
+      "content": "Inspect the scanner every 17 operating hours in either type of hut.",
+      "semanticScore": 0.3632384522338303,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+      "start": 0,
+      "end": 66,
+      "similarity": 0.0017825787080731881,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "The first track overhaul took place in 1964; the second track overhaul took place in 1997.",
+      "start": 67,
+      "end": 157,
+      "similarity": 0.037788055987101464,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "F-01.",
+      "start": 181,
+      "end": 186,
+      "similarity": 0.18035587535750539,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "Release ticket orders before 13:35 for departure on the same service day.",
+      "start": 187,
+      "end": 260,
+      "similarity": 0.11229762505199983,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.",
+      "start": 261,
+      "end": 379,
+      "similarity": 0.11078397144433107,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "F-02.",
+      "start": 380,
+      "end": 385,
+      "similarity": 0.19953075724950445,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "Quinn checks six brake assemblies per day.",
+      "start": 386,
+      "end": 428,
+      "similarity": 0.654149926343463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "Wes checks two haul cables per day.",
+      "start": 429,
+      "end": 464,
+      "similarity": 0.7484476399615516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "Quinn labels three tool drawers per day.",
+      "start": 465,
+      "end": 505,
+      "similarity": 0.5111302797715527,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "F-03.",
+      "start": 506,
+      "end": 511,
+      "similarity": 0.2053548322638539,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius.",
+      "start": 512,
+      "end": 597,
+      "similarity": 0.039415094836949445,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "Individual winter extremes are not listed.",
+      "start": 598,
+      "end": 640,
+      "similarity": 0.05048369349563297,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "F-04.",
+      "start": 641,
+      "end": 646,
+      "similarity": 0.19743078290458324,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "Ticket transaction slips are kept for 18 months.",
+      "start": 647,
+      "end": 695,
+      "similarity": 0.09375892881093592,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "If an incident review is open, retain the affected slips until that review closes.",
+      "start": 696,
+      "end": 778,
+      "similarity": 0.00811126317956319,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "F-05.",
+      "start": 779,
+      "end": 784,
+      "similarity": 0.20587347548058021,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "Acknowledge ticket requests within one service day.",
+      "start": 785,
+      "end": 836,
+      "similarity": 0.14507451722245826,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+      "value": "This acknowledgement does not guarantee a reserved seat.",
+      "start": 837,
+      "end": 893,
+      "similarity": -0.03187451413524449,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "The Selwick Textile Archive catalogue room relocation took place in 1947.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.09800675068255235,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "Its restoration took place in 1988.",
+      "start": 74,
+      "end": 109,
+      "similarity": 0.05034594849895273,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "A proposal to close the reading desk in 2015 was canceled; the desk stayed open.",
+      "start": 110,
+      "end": 190,
+      "similarity": -0.0340204047543939,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "S-01.",
+      "start": 213,
+      "end": 218,
+      "similarity": 0.17279584568781806,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "The winter average temperature in the Selwick Textile Archive store is 12 degrees Celsius.",
+      "start": 219,
+      "end": 309,
+      "similarity": 0.09472528484886211,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 310,
+      "end": 370,
+      "similarity": 0.00435563550988333,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "The highest monthly mean temperature is 24 degrees Celsius, in August.",
+      "start": 371,
+      "end": 441,
+      "similarity": 0.06725898172393065,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "S-02.",
+      "start": 442,
+      "end": 447,
+      "similarity": 0.19691574499616532,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "Access registers are retained for 9 years.",
+      "start": 448,
+      "end": 490,
+      "similarity": 0.1508270100752463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "If a loan claim is open, keep the affected registers until the claim is settled.",
+      "start": 491,
+      "end": 571,
+      "similarity": 0.014736920324455664,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "S-03.",
+      "start": 572,
+      "end": 577,
+      "similarity": 0.19535056238659715,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cba0ff36-7de1-4a92-8b3f-3c644ca89386",
+      "value": "The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+      "start": 578,
+      "end": 681,
+      "similarity": 0.16964786288137718,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+      "value": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+      "start": 0,
+      "end": 70,
+      "similarity": 0.11262102833174227,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+      "value": "The boathouse was painted in 2019.",
+      "start": 71,
+      "end": 105,
+      "similarity": 0.05069210667853576,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+      "value": "Pelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.",
+      "start": 107,
+      "end": 262,
+      "similarity": 0.08456124532411018,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+      "value": "Arel records four calibration tones per shift.",
+      "start": 264,
+      "end": 310,
+      "similarity": 0.2150001861916291,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+      "value": "Liva records seven ambient clips per shift.",
+      "start": 311,
+      "end": 354,
+      "similarity": 0.2832375135488588,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+      "value": "Arel labels two microphone cases per shift.",
+      "start": 355,
+      "end": 398,
+      "similarity": 0.13476234666605438,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+      "value": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner.",
+      "start": 400,
+      "end": 490,
+      "similarity": 0.2581994241357311,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+      "value": "Use a 34-hour lubrication interval in a dusty hut.",
+      "start": 491,
+      "end": 541,
+      "similarity": 0.15582869554164575,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e270b57f-11df-4e0e-b9b7-dc235dfd63bc",
+      "value": "Inspect the scanner every 17 operating hours in either type of hut.",
+      "start": 542,
+      "end": 609,
+      "similarity": 0.3632384522338303,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "P-01.",
+      "start": 24,
+      "end": 29,
+      "similarity": 0.11757457185864575,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "Noryn Print Cooperative acknowledges a print request within three business hours.",
+      "start": 30,
+      "end": 111,
+      "similarity": 0.17883457733120126,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+      "start": 112,
+      "end": 205,
+      "similarity": 0.1033124494695814,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "P-02.",
+      "start": 206,
+      "end": 211,
+      "similarity": 0.13173598684541038,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "The dispatch packet includes a job ticket, proof sheet, packing list, collection receipt, and release signature.",
+      "start": 212,
+      "end": 324,
+      "similarity": 0.22571162143450088,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "P-03.",
+      "start": 325,
+      "end": 330,
+      "similarity": 0.1387392873762786,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "Purchases above 4700 credits need written approval from the Finance Delegate and Production Lead.",
+      "start": 331,
+      "end": 428,
+      "similarity": 0.1794350796258915,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "P-04.",
+      "start": 429,
+      "end": 434,
+      "similarity": 0.17186915064307953,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions.",
+      "start": 435,
+      "end": 529,
+      "similarity": 0.18249942465740493,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "In a dusty room, lubricate it every 55 operating hours.",
+      "start": 530,
+      "end": 585,
+      "similarity": 0.18737325646075745,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "Inspect the press every 22 operating hours in either room.",
+      "start": 586,
+      "end": 644,
+      "similarity": 0.22360830336191231,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "P-05.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.14383271642228407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "04a06a32-52b0-4603-9828-310c5493b5c2",
+      "value": "Completed job records are retained for 5 months, unless an unresolved invoice query requires longer retention.",
+      "start": 651,
+      "end": 761,
+      "similarity": 0.11375909653329698,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Wes checks two haul cables per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 429,
+            "cosine": 0.7484476399615516,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Wes checks two haul cables per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Wes checks two haul cables per day.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Wes checks two haul cables per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 429,
+            "cosine": 0.7484476399615516,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Wes checks two haul cables per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Wes checks two haul cables per day.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Wes checks two haul cables per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "c6000847-17bd-4107-8b16-61b310ae4f55:0",
+          "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+          "filename": "01_Ashmere_Funicular.txt",
+          "excerpt": "before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.\nF-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day.\nF-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed.\nF-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affect",
+          "quote": "Wes checks two haul cables per day.",
+          "score": 0.0214,
+          "lexicalScore": 7.442892019880316,
+          "semanticScore": null,
+          "matchedTerms": [
+            "haul",
+            "cables",
+            "quinn",
+            "per",
+            "day"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Wes checks two haul cables per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 429,
+            "cosine": 0.7484476399615516,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Wes checks two haul cables per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Wes checks two haul cables per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "c6000847-17bd-4107-8b16-61b310ae4f55:159",
+          "documentId": "c6000847-17bd-4107-8b16-61b310ae4f55",
+          "filename": "01_Ashmere_Funicular.txt",
+          "excerpt": "before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.\nF-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day.\nF-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed.\nF-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affect",
+          "quote": "Wes checks two haul cables per day.",
+          "score": 0.0476,
+          "lexicalScore": 8.712172131459866,
+          "semanticScore": 0.4101341497977766,
+          "matchedTerms": [
+            "haul",
+            "cables",
+            "quinn",
+            "per",
+            "day"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Wes checks two haul cables per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 429,
+            "cosine": 0.7484476399615516,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Wes checks two haul cables per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.038020070642232895,
+    -0.010686099529266357,
+    -0.03667209669947624,
+    0.014106115326285362,
+    -0.034728411585092545,
+    -0.05187337100505829,
+    0.027210066094994545,
+    0.009325043298304081,
+    -0.02465260587632656,
+    0.060563694685697556,
+    0.0752832219004631,
+    0.009200973436236382,
+    -0.019997570663690567,
+    0.026275258511304855,
+    -0.11826086789369583,
+    0.04646053910255432,
+    -0.01408539991825819,
+    -0.06287243217229843,
+    -0.04039352014660835,
+    -0.028568420559167862,
+    -0.01039004698395729,
+    -0.055469416081905365,
+    0.09819381684064865,
+    0.03416512534022331,
+    -0.02955811470746994,
+    -0.01597188040614128,
+    -0.036457162350416183,
+    0.05451955273747444,
+    0.012917905114591122,
+    -0.08336291462182999,
+    -0.08199331164360046,
+    0.01664816588163376,
+    -0.037071552127599716,
+    0.06402061134576797,
+    -0.03251628205180168,
+    -0.05474410951137543,
+    0.11152589321136475,
+    -0.005232788622379303,
+    -0.0010298286797478795,
+    0.0033283194061368704,
+    0.03037823922932148,
+    -0.0976952314376831,
+    0.006075406912714243,
+    -0.025162620469927788,
+    -0.012899610213935375,
+    -0.050753649324178696,
+    0.0030155431013554335,
+    0.00010606527212075889,
+    0.08283449709415436,
+    0.006240904796868563,
+    0.011343937367200851,
+    0.020106501877307892,
+    -0.023804649710655212,
+    0.07064946740865707,
+    0.055325690656900406,
+    0.031072674319148064,
+    -0.03383000195026398,
+    0.015514109283685684,
+    0.0442214235663414,
+    0.07371583580970764,
+    0.04229659587144852,
+    0.014558433555066586,
+    -0.09796832501888275,
+    -0.0061201914213597775,
+    0.07467561960220337,
+    0.04165631905198097,
+    -0.03660717234015465,
+    -0.025251982733607292,
+    -0.03273404389619827,
+    -0.014233238063752651,
+    -0.08319544047117233,
+    -0.011692473664879799,
+    0.05619301646947861,
+    0.010942507535219193,
+    0.034799546003341675,
+    0.03065408393740654,
+    0.06695772707462311,
+    -0.06323903799057007,
+    0.030949829146265984,
+    -0.03513321653008461,
+    -0.08614397794008255,
+    0.025993753224611282,
+    0.012298890389502048,
+    0.057966090738773346,
+    0.022867346182465553,
+    -0.013390518724918365,
+    -0.031371671706438065,
+    0.03755960613489151,
+    -0.04707885533571243,
+    -0.02962329052388668,
+    0.01973572000861168,
+    -0.0192398801445961,
+    0.012911226600408554,
+    0.016465190798044205,
+    -0.09731855243444443,
+    0.02303449623286724,
+    -0.11952513456344604,
+    0.029035599902272224,
+    -0.022069411352276802,
+    0.03334270045161247,
+    0.05686723813414574,
+    0.008370102383196354,
+    0.049920350313186646,
+    -0.000613130338024348,
+    -0.030850181356072426,
+    0.04169557988643646,
+    0.02051462233066559,
+    -0.0003650359285529703,
+    -0.09577833861112595,
+    0.032262012362480164,
+    0.011183921247720718,
+    0.06753864884376526,
+    -0.01854286715388298,
+    -0.02019587717950344,
+    0.0645122081041336,
+    0.03771185874938965,
+    -0.05495816841721535,
+    0.1368131935596466,
+    0.03175019472837448,
+    0.027107080444693565,
+    0.026300514116883278,
+    0.009109638631343842,
+    0.15173447132110596,
+    -0.05826321989297867,
+    -0.012528185732662678,
+    -0.0036450002808123827,
+    0.06785930693149567,
+    -3.1627704066430615e-33,
+    0.014111914671957493,
+    0.09229178726673126,
+    0.029957955703139305,
+    0.0567997470498085,
+    0.024124130606651306,
+    0.02182975597679615,
+    -0.02040553092956543,
+    0.15425407886505127,
+    0.05087635666131973,
+    0.07624703645706177,
+    -0.08022011816501617,
+    0.056167732924222946,
+    -0.03993791341781616,
+    -0.056061819195747375,
+    0.053577423095703125,
+    -0.03788934275507927,
+    0.019985713064670563,
+    -0.049897413700819016,
+    -0.030140582472085953,
+    0.0030413398053497076,
+    -0.0020761024206876755,
+    -0.04608793929219246,
+    0.04909214377403259,
+    -0.022303057834506035,
+    0.08119012415409088,
+    -0.040748585015535355,
+    0.06030414253473282,
+    0.04766480252146721,
+    -0.007099507842212915,
+    0.02142539620399475,
+    0.03365787863731384,
+    0.0711839348077774,
+    0.03915255144238472,
+    0.030079200863838196,
+    0.01952671818435192,
+    -0.009920133277773857,
+    0.00788035523146391,
+    0.02349097467958927,
+    -0.015209398232400417,
+    0.028876248747110367,
+    0.03742485120892525,
+    -0.06610250473022461,
+    -0.003061561146751046,
+    -0.016707073897123337,
+    -0.06334812194108963,
+    0.0071289073675870895,
+    0.10803164541721344,
+    -0.08157334476709366,
+    -0.05340978875756264,
+    0.09372425824403763,
+    -0.030381161719560623,
+    0.015836356207728386,
+    -0.06999827176332474,
+    0.016800949349999428,
+    -0.0012454020325094461,
+    0.026433033868670464,
+    0.04036954045295715,
+    -0.09908408671617508,
+    0.07507280260324478,
+    0.04794365540146828,
+    -0.024758296087384224,
+    -0.036947544664144516,
+    0.012881328351795673,
+    -0.018954087048768997,
+    -0.008580722846090794,
+    0.07171647995710373,
+    -0.014505097642540932,
+    0.0024944592732936144,
+    -0.016402309760451317,
+    0.030182942748069763,
+    -0.011510117910802364,
+    -0.03691709414124489,
+    0.03675628826022148,
+    -0.11013056337833405,
+    0.0014876590576022863,
+    0.008109169080853462,
+    -0.03741494566202164,
+    0.020272361114621162,
+    -0.01549630705267191,
+    -0.06139102205634117,
+    -0.05486948788166046,
+    0.009031032212078571,
+    0.06485208123922348,
+    0.130486860871315,
+    0.05040733143687248,
+    0.07211218774318695,
+    -0.02516179159283638,
+    -0.01976311206817627,
+    -0.05085980147123337,
+    0.021290680393576622,
+    -0.006737147457897663,
+    -0.02097800374031067,
+    0.015164642594754696,
+    -0.14009006321430206,
+    0.03146100789308548,
+    2.222482740857721e-33,
+    0.05875084176659584,
+    0.056063853204250336,
+    -0.0602695569396019,
+    0.013056302443146706,
+    0.014971697703003883,
+    -0.07836970686912537,
+    0.07125489413738251,
+    0.05315075442194939,
+    0.03220058232545853,
+    0.03695546090602875,
+    0.04622660204768181,
+    -0.015642117708921432,
+    0.004227341618388891,
+    0.018024852499365807,
+    0.048013169318437576,
+    -0.009744422510266304,
+    0.00758616765961051,
+    -0.10983038693666458,
+    0.04280814900994301,
+    -0.026897625997662544,
+    -0.0014528294559568167,
+    0.02215072326362133,
+    -0.036043111234903336,
+    0.002447695704177022,
+    0.02684290148317814,
+    0.06461824476718903,
+    0.019859502092003822,
+    -0.00854305550456047,
+    -0.00006913344259373844,
+    0.03910021856427193,
+    0.008157878182828426,
+    -0.05766889825463295,
+    -0.002059241058304906,
+    0.08676851540803909,
+    -0.024787919595837593,
+    0.02086479403078556,
+    0.06781456619501114,
+    0.13531342148780823,
+    0.00027158742886967957,
+    -0.01158912293612957,
+    0.07684627920389175,
+    -0.02628997713327408,
+    0.02805095724761486,
+    -0.015028493478894234,
+    -0.07338381558656693,
+    0.02341816946864128,
+    -0.020787611603736877,
+    0.0035726167261600494,
+    -0.10993801802396774,
+    0.01209848653525114,
+    -0.003425717120990157,
+    0.06012268364429474,
+    -0.07114382833242416,
+    0.05689513683319092,
+    -0.027606256306171417,
+    0.04469701275229454,
+    0.02515958622097969,
+    -0.00256104813888669,
+    -0.047226544469594955,
+    0.050610899925231934,
+    0.06092332303524017,
+    -0.0887281745672226,
+    -0.13464650511741638,
+    -0.02811674401164055,
+    0.007944260723888874,
+    -0.05693138763308525,
+    0.02511126734316349,
+    -0.08966086059808731,
+    0.039780840277671814,
+    0.01579197868704796,
+    0.06094492971897125,
+    -0.024016736075282097,
+    0.0180737916380167,
+    -0.09458526223897934,
+    -0.10724670439958572,
+    0.04567170515656471,
+    -0.03765130788087845,
+    -0.09826049953699112,
+    0.026871422305703163,
+    0.05347267910838127,
+    -0.15674027800559998,
+    -0.10861267149448395,
+    -0.002664419822394848,
+    0.035977207124233246,
+    -0.051437247544527054,
+    -0.06976456195116043,
+    0.11887474358081818,
+    -0.006120859179645777,
+    0.0301914531737566,
+    0.02425749972462654,
+    0.044370826333761215,
+    -0.029139744117856026,
+    -0.0919702872633934,
+    -0.055352695286273956,
+    -0.06557123363018036,
+    -1.4835883632713376e-8,
+    -0.009685924276709557,
+    0.07734239101409912,
+    -0.032760120928287506,
+    -0.06344617903232574,
+    0.0353240929543972,
+    -0.04554685205221176,
+    0.023037241771817207,
+    0.03112969361245632,
+    -0.03250261768698692,
+    0.02495298907160759,
+    0.14483541250228882,
+    -0.0035404651425778866,
+    -0.03034711629152298,
+    0.05391884222626686,
+    -0.007145787589251995,
+    -0.04773230105638504,
+    -0.011652383022010326,
+    0.06508564949035645,
+    -0.05700955539941788,
+    -0.0013796900166198611,
+    0.004270103760063648,
+    0.007756181061267853,
+    -0.07005851715803146,
+    0.05346180871129036,
+    -0.01091098878532648,
+    -0.04084222391247749,
+    0.0048046172596514225,
+    0.09270955622196198,
+    -0.013020025566220284,
+    0.004789207596331835,
+    0.004342635627835989,
+    -0.004873914178460836,
+    -0.024641167372465134,
+    -0.044202931225299835,
+    0.029430899769067764,
+    -0.0027390760369598866,
+    -0.015150168910622597,
+    -0.030158674344420433,
+    -0.0035119778476655483,
+    0.03725939616560936,
+    0.06215015798807144,
+    -0.10238778591156006,
+    -0.029913943260908127,
+    0.04517870768904686,
+    0.032605040818452835,
+    0.0010706246830523014,
+    -0.08452819287776947,
+    -0.04003244638442993,
+    0.00021910849318373948,
+    -0.04522203281521797,
+    0.014763022772967815,
+    0.050867900252342224,
+    0.01770658791065216,
+    0.007121233269572258,
+    0.013679125346243382,
+    -0.005705346819013357,
+    0.04487723484635353,
+    -0.06509887427091599,
+    -0.06533560901880264,
+    0.022565655410289764,
+    -0.03186918422579765,
+    -0.03296050801873207,
+    -0.04171097278594971,
+    -0.07849946618080139
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Ashmere_Funicular.txt",
+        "start": 0,
+        "content": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997.\n\n## Visitor operations\nF-01. Release ticket orders before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.\nF-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day.\nF-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed.\nF-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affected slips until"
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Ashmere_Funicular.txt",
+        "start": 159,
+        "content": "## Visitor operations\nF-01. Release ticket orders before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.\nF-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day.\nF-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed.\nF-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affected slips until that review closes.\nF-05. Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat."
+      }
+    ]
+  }
+}

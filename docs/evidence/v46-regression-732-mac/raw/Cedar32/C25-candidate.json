@@ -1,0 +1,1133 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "C25",
+  "question": "How many lenses does Mira clean per shift?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many lenses does Mira clean per shift?",
+    "expected_display": "How many lenses does Mira clean per shift?",
+    "rendered_question": "How many lenses does Mira clean per shift?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Oren cleans four lenses per shift.",
+    "sources": [
+      {
+        "filename": "01_Cedar_Observatory.txt",
+        "excerpt": "average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.",
+        "quote": "Oren cleans four lenses per shift."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many lenses does Mira clean per shift?\n\nSearched all files: 01_Cedar_Observatory.txt · 02_Harbor_Cartography.txt · 03_Juniper_Workshop.txt · 04_Willow_Conservatory.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Oren cleans four lenses per shift.\n\nSOURCE EVIDENCE\n[1]\n01_Cedar_Observatory.txt\n\nText line 5 (normalized extraction)\n\naverage temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius. Mira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift. Cedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Oren cleans four lenses per shift.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62:0",
+        "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+        "filename": "01_Cedar_Observatory.txt",
+        "excerpt": "average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.",
+        "quote": "Oren cleans four lenses per shift.",
+        "score": 0.0214,
+        "lexicalScore": 6.773206998509384,
+        "semanticScore": null,
+        "matchedTerms": [
+          "lenses",
+          "mira",
+          "per",
+          "shift"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Cedar_Observatory.txt",
+        "quote": "Oren cleans four lenses per shift.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 376,
+          "cosine": 0.7265306389567556,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Cedar_Observatory.txt",
+        "quote": "Oren cleans four lenses per shift.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Cedar_Observatory.txt",
+        "quote": "Mira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "claim_support_diagnostics": {
+      "refused": true,
+      "reason": "No displayed requested actor/action/object/cadence count clause"
+    },
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "No complete literal evidence for recognized request frame"
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Cedar_Observatory.txt",
+        "quote": "Oren cleans four lenses per shift.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 376,
+          "cosine": 0.7265306389567556,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Cedar_Observatory.txt",
+        "quote": "Oren cleans four lenses per shift.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Cedar_Observatory.txt",
+        "quote": "Mira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "claim_support_diagnostics": {
+      "refused": true,
+      "reason": "No displayed requested actor/action/object/cadence count clause"
+    },
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "No complete literal evidence for recognized request frame"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Cedar_Observatory.txt",
+      "start": 376,
+      "content": "Oren cleans four lenses per shift.",
+      "semanticScore": 0.7265306389567556,
+      "lexicalScore": 9.02615017001538
+    },
+    {
+      "filename": "01_Cedar_Observatory.txt",
+      "start": 338,
+      "content": "Mira catalogs seven plates per shift.",
+      "semanticScore": 0.5756672923164433,
+      "lexicalScore": 8.465889808465585
+    },
+    {
+      "filename": "01_Cedar_Observatory.txt",
+      "start": 411,
+      "content": "Mira checks two clocks per shift.",
+      "semanticScore": 0.5355564709066535,
+      "lexicalScore": 8.465889808465585
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+      "value": "The Cedar Observatory relocation took place in 1874.",
+      "start": 0,
+      "end": 52,
+      "similarity": -0.017729010828330883,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+      "value": "Its restoration took place in 1926.",
+      "start": 53,
+      "end": 88,
+      "similarity": 0.056596357924596545,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+      "value": "A proposed closure in 1941 did not occur.",
+      "start": 89,
+      "end": 130,
+      "similarity": -0.04296323446398554,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+      "value": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+      "start": 132,
+      "end": 204,
+      "similarity": -0.029749282102340287,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+      "value": "Its highest monthly mean temperature is 29 degrees Celsius in August.",
+      "start": 205,
+      "end": 274,
+      "similarity": 0.058856561616172025,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+      "value": "Its highest recorded daily temperature is 42 degrees Celsius.",
+      "start": 275,
+      "end": 336,
+      "similarity": 0.038780219483995536,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+      "value": "Mira catalogs seven plates per shift.",
+      "start": 338,
+      "end": 375,
+      "similarity": 0.5756672923164433,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+      "value": "Oren cleans four lenses per shift.",
+      "start": 376,
+      "end": 410,
+      "similarity": 0.7265306389567556,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+      "value": "Mira checks two clocks per shift.",
+      "start": 411,
+      "end": 444,
+      "similarity": 0.5355564709066535,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+      "value": "Cedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.",
+      "start": 446,
+      "end": 567,
+      "similarity": 0.08052533729975508,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76e3e2aa-e3bc-4480-b2e9-b6e5823f53a4",
+      "value": "The Harbor Cartography archive relocation took place in 1889.",
+      "start": 0,
+      "end": 61,
+      "similarity": 0.024793787555798807,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76e3e2aa-e3bc-4480-b2e9-b6e5823f53a4",
+      "value": "Its restoration took place in 1938.",
+      "start": 62,
+      "end": 97,
+      "similarity": 0.026600756351165506,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76e3e2aa-e3bc-4480-b2e9-b6e5823f53a4",
+      "value": "The archive did not close in 1952.",
+      "start": 98,
+      "end": 132,
+      "similarity": -0.016066236331196054,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76e3e2aa-e3bc-4480-b2e9-b6e5823f53a4",
+      "value": "Harbor Cartography archive winter average temperatures exceed 9 degrees Celsius.",
+      "start": 134,
+      "end": 214,
+      "similarity": 0.03170789418248813,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76e3e2aa-e3bc-4480-b2e9-b6e5823f53a4",
+      "value": "Its highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 215,
+      "end": 282,
+      "similarity": 0.039097969769676305,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76e3e2aa-e3bc-4480-b2e9-b6e5823f53a4",
+      "value": "Its highest recorded daily temperature is 39 degrees Celsius.",
+      "start": 283,
+      "end": 344,
+      "similarity": 0.030536044373458283,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76e3e2aa-e3bc-4480-b2e9-b6e5823f53a4",
+      "value": "Orders released before 14:20 depart the same operating day.",
+      "start": 346,
+      "end": 405,
+      "similarity": 0.1402770805562133,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76e3e2aa-e3bc-4480-b2e9-b6e5823f53a4",
+      "value": "Orders released at or after 14:20 depart the next operating day, unless a customs hold prevents departure.",
+      "start": 406,
+      "end": 512,
+      "similarity": 0.09293657315270047,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "76e3e2aa-e3bc-4480-b2e9-b6e5823f53a4",
+      "value": "Harbor Cartography shipping records are retained for 22 months, unless a customs investigation requires longer retention.",
+      "start": 514,
+      "end": 635,
+      "similarity": 0.11281207691994796,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "The Juniper Workshop relocation took place in 1907.",
+      "start": 0,
+      "end": 51,
+      "similarity": 0.04706779676252004,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "Its first restoration took place in 1946.",
+      "start": 52,
+      "end": 93,
+      "similarity": 0.07776833715956705,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "Its second restoration took place in 1979.",
+      "start": 94,
+      "end": 136,
+      "similarity": 0.06298024622300849,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "The proposed demolition in 1988 never occurred.",
+      "start": 137,
+      "end": 184,
+      "similarity": -0.013718616687392418,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius.",
+      "start": 186,
+      "end": 257,
+      "similarity": 0.019203554511880102,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+      "start": 258,
+      "end": 330,
+      "similarity": 0.033993978162204536,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "Its highest recorded daily temperature is 45 degrees Celsius.",
+      "start": 331,
+      "end": 392,
+      "similarity": 0.06547103911155289,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "Lubricate the Juniper press every 72 operating hours.",
+      "start": 394,
+      "end": 447,
+      "similarity": 0.18408816084324833,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "In a dusty bay, lubricate it every 36 operating hours.",
+      "start": 448,
+      "end": 502,
+      "similarity": 0.23719023835355094,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "Inspect the press every 18 operating hours in either environment.",
+      "start": 503,
+      "end": 568,
+      "similarity": 0.19258489464400994,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "67934efb-0afd-4f9c-b084-d20e753ad26c",
+      "value": "Juniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+      "start": 570,
+      "end": 687,
+      "similarity": 0.13905925727117194,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3022d83e-44a5-439b-b6ff-ef84cc39aecd",
+      "value": "The Willow Conservatory relocation took place in 1863.",
+      "start": 0,
+      "end": 54,
+      "similarity": -0.06717953236197617,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3022d83e-44a5-439b-b6ff-ef84cc39aecd",
+      "value": "Its restoration took place in 1917.",
+      "start": 55,
+      "end": 90,
+      "similarity": 0.07075859420525697,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3022d83e-44a5-439b-b6ff-ef84cc39aecd",
+      "value": "Its inventory took place in 1917.",
+      "start": 91,
+      "end": 124,
+      "similarity": 0.0803991557691309,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3022d83e-44a5-439b-b6ff-ef84cc39aecd",
+      "value": "The canceled expansion in 1930 did not occur.",
+      "start": 125,
+      "end": 170,
+      "similarity": -0.055895316954287004,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3022d83e-44a5-439b-b6ff-ef84cc39aecd",
+      "value": "Willow Conservatory winter average temperatures exceed 16 degrees Celsius.",
+      "start": 172,
+      "end": 246,
+      "similarity": -0.046189531345201165,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3022d83e-44a5-439b-b6ff-ef84cc39aecd",
+      "value": "Its highest monthly mean temperature is 33 degrees Celsius in June.",
+      "start": 247,
+      "end": 314,
+      "similarity": 0.03402196350504788,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3022d83e-44a5-439b-b6ff-ef84cc39aecd",
+      "value": "Its highest recorded daily temperature is 47 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.03901816778569451,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3022d83e-44a5-439b-b6ff-ef84cc39aecd",
+      "value": "Purchases above 5300 credits require written approval from the Curator and Finance Manager.",
+      "start": 378,
+      "end": 469,
+      "similarity": 0.08494778286454317,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3022d83e-44a5-439b-b6ff-ef84cc39aecd",
+      "value": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "start": 470,
+      "end": 581,
+      "similarity": 0.04609862016627267,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3022d83e-44a5-439b-b6ff-ef84cc39aecd",
+      "value": "Willow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+      "start": 583,
+      "end": 700,
+      "similarity": -0.008805328845827493,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Oren cleans four lenses per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 376,
+            "cosine": 0.7265306389567556,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Oren cleans four lenses per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Mira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "claim_support_diagnostics": {
+        "refused": true,
+        "reason": "No displayed requested actor/action/object/cadence count clause"
+      },
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Oren cleans four lenses per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 376,
+            "cosine": 0.7265306389567556,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Oren cleans four lenses per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Mira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "claim_support_diagnostics": {
+        "refused": true,
+        "reason": "No displayed requested actor/action/object/cadence count clause"
+      },
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Oren cleans four lenses per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62:0",
+          "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+          "filename": "01_Cedar_Observatory.txt",
+          "excerpt": "average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.",
+          "quote": "Oren cleans four lenses per shift.",
+          "score": 0.0214,
+          "lexicalScore": 6.773206998509384,
+          "semanticScore": null,
+          "matchedTerms": [
+            "lenses",
+            "mira",
+            "per",
+            "shift"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Oren cleans four lenses per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 376,
+            "cosine": 0.7265306389567556,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Oren cleans four lenses per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Oren cleans four lenses per shift.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62:0",
+          "documentId": "3a1b5b7d-a69e-40a5-8a65-3f8da1687f62",
+          "filename": "01_Cedar_Observatory.txt",
+          "excerpt": "average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.",
+          "quote": "Oren cleans four lenses per shift.",
+          "score": 0.0214,
+          "lexicalScore": 6.773206998509384,
+          "semanticScore": null,
+          "matchedTerms": [
+            "lenses",
+            "mira",
+            "per",
+            "shift"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Oren cleans four lenses per shift.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 376,
+            "cosine": 0.7265306389567556,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Oren cleans four lenses per shift.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.0014813654124736786,
+    -0.09057095646858215,
+    0.04640200734138489,
+    -0.01252512913197279,
+    -0.010213245637714863,
+    -0.061759356409311295,
+    0.10206864774227142,
+    -0.022662658244371414,
+    -0.02764032781124115,
+    -0.000004596442067850148,
+    0.07475203275680542,
+    -0.007783492561429739,
+    -0.004134641960263252,
+    -0.0033413791097700596,
+    -0.018034780398011208,
+    0.025505267083644867,
+    -0.0753953754901886,
+    -0.04496314376592636,
+    0.007620353251695633,
+    -0.011166902258992195,
+    0.12975244224071503,
+    -0.04203059524297714,
+    0.0008405323605984449,
+    -0.019327310845255852,
+    0.039812177419662476,
+    0.021465973928570747,
+    0.038337428122758865,
+    -0.08549004048109055,
+    0.012543166056275368,
+    -0.05684171989560127,
+    -0.0774279236793518,
+    0.09072935581207275,
+    0.03484712541103363,
+    -0.02968449890613556,
+    -0.01223298441618681,
+    -0.053038857877254486,
+    -0.04287424311041832,
+    -0.010371006093919277,
+    0.01614644005894661,
+    0.05894378945231438,
+    -0.07534046471118927,
+    -0.0314449816942215,
+    -0.019542962312698364,
+    -0.0327959805727005,
+    0.03478758782148361,
+    -0.03361475095152855,
+    0.02964397333562374,
+    -0.008990779519081116,
+    0.08816596865653992,
+    -0.010312757454812527,
+    -0.09310842305421829,
+    0.05482546240091324,
+    -0.09753750264644623,
+    0.07295964658260345,
+    0.028503617271780968,
+    -0.010675113648176193,
+    -0.042053211480379105,
+    0.03550118952989578,
+    0.010906224139034748,
+    0.007098961155861616,
+    0.032348453998565674,
+    0.006426419597119093,
+    -0.04788992181420326,
+    0.01905229687690735,
+    -0.007406799588352442,
+    0.03105408325791359,
+    0.014044694602489471,
+    -0.12122871726751328,
+    0.010392168536782265,
+    -0.0063454448245465755,
+    -0.12936706840991974,
+    0.05335306003689766,
+    0.05136765539646149,
+    0.003758905455470085,
+    -0.012480538338422775,
+    0.002929545007646084,
+    0.08863628655672073,
+    -0.08073867112398148,
+    -0.029980968683958054,
+    -0.02004454843699932,
+    -0.01967312954366207,
+    0.023164229467511177,
+    0.010812279768288136,
+    0.00842838641256094,
+    0.04376079887151718,
+    0.01814579963684082,
+    -0.08196987211704254,
+    0.04233120381832123,
+    -0.004659086931496859,
+    -0.002132068620994687,
+    -0.02102854661643505,
+    0.013086624443531036,
+    -0.02774851582944393,
+    -0.014934886246919632,
+    0.03201735392212868,
+    0.014863260090351105,
+    -0.07783712446689606,
+    0.052180252969264984,
+    0.033027827739715576,
+    0.082129567861557,
+    -0.01858549565076828,
+    -0.039298027753829956,
+    -0.02109815739095211,
+    0.06458330154418945,
+    -0.06345266103744507,
+    0.008350510150194168,
+    0.09215329587459564,
+    -0.0003770644252654165,
+    -0.0893082544207573,
+    0.03459994122385979,
+    0.03529558703303337,
+    0.05591210350394249,
+    -0.004625650122761726,
+    -0.011717226356267929,
+    -0.020221317186951637,
+    0.03711856156587601,
+    0.013186984695494175,
+    0.05090472102165222,
+    0.049987681210041046,
+    0.10915626585483551,
+    0.03426660969853401,
+    -0.02452889084815979,
+    0.00638806726783514,
+    0.02169773355126381,
+    -0.07062406837940216,
+    0.02489183098077774,
+    0.009715170599520206,
+    -2.8849687654491073e-33,
+    0.04962092638015747,
+    0.048816047608852386,
+    0.01743435300886631,
+    0.02181537076830864,
+    -0.0015536948340013623,
+    0.01982249692082405,
+    -0.006449731532484293,
+    0.01845570094883442,
+    0.05613549426198006,
+    -0.03262755647301674,
+    -0.010363668203353882,
+    -0.017523914575576782,
+    -0.011177520267665386,
+    0.024226311594247818,
+    0.10225706547498703,
+    -0.05460004881024361,
+    0.11490009725093842,
+    0.06949922442436218,
+    -0.0382099449634552,
+    -0.03342802822589874,
+    -0.008265591226518154,
+    0.03246144950389862,
+    -0.08965747058391571,
+    0.030345482751727104,
+    0.003455577651038766,
+    0.1058296486735344,
+    0.0012590551050379872,
+    0.021228425204753876,
+    -0.035145893692970276,
+    0.0676402598619461,
+    -0.0013192626647651196,
+    0.062265995889902115,
+    -0.03468736261129379,
+    0.04634689539670944,
+    0.00044165056897327304,
+    0.0880277156829834,
+    -0.06161544471979141,
+    0.006969645619392395,
+    0.029368970543146133,
+    -0.04344996437430382,
+    -0.06864284723997116,
+    0.10503454506397247,
+    0.04679816588759422,
+    -0.021572429686784744,
+    -0.005581276956945658,
+    -0.031694695353507996,
+    -0.11019869148731232,
+    0.10754334181547165,
+    0.006568819750100374,
+    0.07196542620658875,
+    0.030952271074056625,
+    -0.02317260392010212,
+    -0.11890418827533722,
+    -0.034487202763557434,
+    0.005186503753066063,
+    0.050933871418237686,
+    0.0008968728361651301,
+    -0.06367824971675873,
+    0.01866903528571129,
+    0.05961804836988449,
+    0.017663149163126945,
+    -0.062029775232076645,
+    -0.02403312176465988,
+    0.06551730632781982,
+    0.0535905696451664,
+    0.06863831728696823,
+    0.010153588838875294,
+    -0.02421785518527031,
+    -0.023242607712745667,
+    0.054959461092948914,
+    -0.07817065715789795,
+    0.018436847254633904,
+    -0.0807349905371666,
+    -0.0007662326679565012,
+    -0.04230853170156479,
+    -0.026606855913996696,
+    0.008554005064070225,
+    -0.02258816920220852,
+    -0.028688525781035423,
+    0.049206651747226715,
+    -0.0878802090883255,
+    0.0633210614323616,
+    0.028491301462054253,
+    -0.025295360013842583,
+    0.0005345750250853598,
+    0.03314369171857834,
+    0.006009077653288841,
+    0.06105656176805496,
+    -0.0034496646840125322,
+    -0.03479933366179466,
+    0.06340150535106659,
+    -0.01989082433283329,
+    -0.04502172768115997,
+    -0.09947838634252548,
+    -0.09979809820652008,
+    2.2643646862225575e-33,
+    0.0506100058555603,
+    0.013951310887932777,
+    -0.002249999437481165,
+    0.060828257352113724,
+    -0.06205049902200699,
+    0.02949853427708149,
+    0.11108256876468658,
+    0.09093452990055084,
+    0.02604839764535427,
+    0.0283573716878891,
+    -0.003477287944406271,
+    0.004231059458106756,
+    -0.04017374664545059,
+    -0.07305433601140976,
+    -0.06365322321653366,
+    0.03877416253089905,
+    0.12777872383594513,
+    -0.07603315263986588,
+    -0.017040638253092766,
+    -0.0027593604754656553,
+    0.055823542177677155,
+    0.08394186198711395,
+    0.07099445909261703,
+    0.015439014881849289,
+    -0.05346699804067612,
+    0.010289804078638554,
+    -0.03647910803556442,
+    0.062149204313755035,
+    -0.10652884095907211,
+    0.004720001015812159,
+    -0.0010738136479631066,
+    -0.04637482017278671,
+    -0.018035782501101494,
+    0.028786126524209976,
+    0.03034219890832901,
+    -0.023065032437443733,
+    -0.06860005110502243,
+    -0.0058246785774827,
+    0.00856077205389738,
+    0.053733691573143005,
+    0.054318103939294815,
+    -0.048956576734781265,
+    0.04843582585453987,
+    0.036073461174964905,
+    -0.0755034014582634,
+    -0.014188310131430626,
+    0.00342245539650321,
+    -0.006030960474163294,
+    -0.029082918539643288,
+    -0.09230915457010269,
+    -0.033470045775175095,
+    -0.005732591729611158,
+    -0.015744246542453766,
+    0.011513977311551571,
+    -0.046945925801992416,
+    -0.022235454991459846,
+    0.023305101320147514,
+    0.015004175715148449,
+    0.0165150985121727,
+    0.04303445667028427,
+    0.0815553069114685,
+    0.0771120935678482,
+    -0.06476334482431412,
+    -0.012300195172429085,
+    0.023601293563842773,
+    -0.009954169392585754,
+    0.060012634843587875,
+    -0.004736778791993856,
+    -0.03423909470438957,
+    -0.07417992502450943,
+    0.10358922928571701,
+    -0.05923880636692047,
+    0.02347981557250023,
+    -0.027511782944202423,
+    -0.1193951964378357,
+    -0.10117992758750916,
+    -0.03921842947602272,
+    0.0014424725668504834,
+    0.016635708510875702,
+    0.06952901929616928,
+    -0.056664105504751205,
+    -0.09533103555440903,
+    -0.02830040082335472,
+    0.08936525881290436,
+    -0.047515448182821274,
+    -0.03176731616258621,
+    0.044360626488924026,
+    -0.03259400278329849,
+    0.024149414151906967,
+    0.03757547587156296,
+    -0.04161140322685242,
+    -0.02341492474079132,
+    0.056483104825019836,
+    -0.09924585372209549,
+    0.01767030358314514,
+    -1.4014907456783021e-8,
+    0.06530877947807312,
+    0.04749121144413948,
+    0.011060582473874092,
+    0.01879633218050003,
+    -0.03143758326768875,
+    -0.051760878413915634,
+    -0.0843178778886795,
+    0.14740249514579773,
+    -0.0017368205590173602,
+    -0.05125794932246208,
+    0.09864756464958191,
+    0.01528267003595829,
+    0.004214550368487835,
+    0.03060491755604744,
+    0.04241429269313812,
+    -0.02488170750439167,
+    0.04392017796635628,
+    0.08200178295373917,
+    -0.07761536538600922,
+    -0.054506395012140274,
+    0.04887952283024788,
+    -0.007065360434353352,
+    0.04069153219461441,
+    -0.01622207649052143,
+    -0.012999022379517555,
+    0.03175674006342888,
+    -0.00040270897443406284,
+    0.057456325739622116,
+    0.04832892492413521,
+    -0.03559475764632225,
+    0.002741867210716009,
+    -0.03178476542234421,
+    -0.01533828116953373,
+    0.04648735746741295,
+    -0.05550388991832733,
+    0.04474260285496712,
+    -0.019668912515044212,
+    -0.03224216774106026,
+    0.05453966557979584,
+    0.06343533843755722,
+    -0.02759939432144165,
+    -0.08404973894357681,
+    0.061143916100263596,
+    0.049698203802108765,
+    -0.05208854377269745,
+    -0.026716794818639755,
+    -0.00784770492464304,
+    -0.09168003499507904,
+    -0.06838325411081314,
+    -0.05918455123901367,
+    0.015063992701470852,
+    0.048246029764413834,
+    0.00009143743955064565,
+    0.07064491510391235,
+    -0.09895962476730347,
+    -0.0030361071694642305,
+    0.110622338950634,
+    -0.08266974985599518,
+    -0.025160187855362892,
+    -0.01083491649478674,
+    0.016020121052861214,
+    0.0023728767409920692,
+    -0.0579463467001915,
+    -0.042033951729536057
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Cedar_Observatory.txt",
+        "start": 0,
+        "content": "The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\nCedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Cedar_Observatory.txt",
+        "start": 0,
+        "content": "The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\nCedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention."
+      }
+    ]
+  }
+}

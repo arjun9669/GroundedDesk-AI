@@ -1,0 +1,1380 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "FC10",
+  "question": "What is the lowest recorded winter temperature at Kestwick Lens Workshop?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What is the lowest recorded winter temperature at Kestwick Lens Workshop?",
+    "expected_display": "What is the lowest recorded winter temperature at Kestwick Lens Workshop?",
+    "rendered_question": "What is the lowest recorded winter temperature at Kestwick Lens Workshop?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+    "sources": [
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "excerpt": "k Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay. The inspection interval remains 24 hours in both bay",
+        "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat is the lowest recorded winter temperature at Kestwick Lens Workshop?\n\nSearched all files: 01_Bellhaven_Textile_Museum.txt · 02_Kestwick_Lens_Workshop.txt · 03_Ardmere_River_Station.txt · 04_Larchfen_Seed_Depot.txt · 05_Brindale_Music_Library.txt · 06_Tarrow_Glass_Laboratory.txt · 07_Westrill_Canal_Office.txt · 08_Oakenford_Survey_Store.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.\n\nSOURCE EVIDENCE\n[1]\n02_Kestwick_Lens_Workshop.txt\n\nText line 5 (normalized extraction)\n\nk Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021. Nera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day. The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius. Lubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay. The inspection interval remains 24 hours in both bay\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ed8c5fe5-00c7-4416-bb8f-d43b74795665:0",
+        "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "excerpt": "k Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay. The inspection interval remains 24 hours in both bay",
+        "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 12.827106253534994,
+        "semanticScore": 0.7365052163195543,
+        "matchedTerms": [
+          "lowest",
+          "recorded",
+          "winter",
+          "temperature",
+          "kestwick",
+          "lens",
+          "workshop"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ed8c5fe5-00c7-4416-bb8f-d43b74795665:body:304",
+        "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Its lowest recorded winter temperature is minus 6 degrees Celsius",
+        "excerpt": "Its lowest recorded winter temperature is minus 6 degrees Celsius",
+        "start": 304,
+        "end": 369,
+        "actualCosine": 0.6173376149484064,
+        "cosineAnchor": {
+          "id": "ed8c5fe5-00c7-4416-bb8f-d43b74795665:body:304",
+          "start": 304,
+          "end": 419,
+          "actualCosine": 0.6173376149484064
+        }
+      }
+    ],
+    "answer": "[1] Its lowest recorded winter temperature is minus 6 degrees Celsius",
+    "mode": "Experimental v45 supported relations",
+    "experiment": "V45 isolated supported relation contracts; production unchanged",
+    "relation_contract": {
+      "status": "supported",
+      "kind": "minimum",
+      "actualCosine": 0.6173376149484064,
+      "cosineAnchor": {
+        "id": "ed8c5fe5-00c7-4416-bb8f-d43b74795665:body:304",
+        "start": 304,
+        "end": 419,
+        "actualCosine": 0.6173376149484064
+      }
+    }
+  },
+  "section": {
+    "answered": true,
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ed8c5fe5-00c7-4416-bb8f-d43b74795665:body:304",
+        "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Its lowest recorded winter temperature is minus 6 degrees Celsius",
+        "excerpt": "Its lowest recorded winter temperature is minus 6 degrees Celsius",
+        "start": 304,
+        "end": 369,
+        "actualCosine": 0.6173376149484064,
+        "cosineAnchor": {
+          "id": "ed8c5fe5-00c7-4416-bb8f-d43b74795665:body:304",
+          "start": 304,
+          "end": 419,
+          "actualCosine": 0.6173376149484064
+        }
+      }
+    ],
+    "answer": "[1] Its lowest recorded winter temperature is minus 6 degrees Celsius",
+    "mode": "Experimental v45 supported relations",
+    "experiment": "V45 isolated supported relation contracts; production unchanged",
+    "relation_contract": {
+      "status": "supported",
+      "kind": "minimum",
+      "actualCosine": 0.6173376149484064,
+      "cosineAnchor": {
+        "id": "ed8c5fe5-00c7-4416-bb8f-d43b74795665:body:304",
+        "start": 304,
+        "end": 419,
+        "actualCosine": 0.6173376149484064
+      }
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Kestwick_Lens_Workshop.txt",
+      "start": 227,
+      "content": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+      "semanticScore": 0.8584103504230333,
+      "lexicalScore": 13.060862661124073
+    },
+    {
+      "filename": "02_Kestwick_Lens_Workshop.txt",
+      "start": 304,
+      "content": "Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.",
+      "semanticScore": 0.6173376149484064,
+      "lexicalScore": 10.193313933479223
+    },
+    {
+      "filename": "08_Oakenford_Survey_Store.txt",
+      "start": 464,
+      "content": "Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.",
+      "semanticScore": 0.5913934937847372,
+      "lexicalScore": 7.980582191123302
+    },
+    {
+      "filename": "02_Kestwick_Lens_Workshop.txt",
+      "start": 0,
+      "content": "Kestwick Lens Workshop opened its public test bench in 1998.",
+      "semanticScore": 0.5228567524536247,
+      "lexicalScore": 8.206893257491298
+    },
+    {
+      "filename": "02_Kestwick_Lens_Workshop.txt",
+      "start": 587,
+      "content": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+      "semanticScore": 0.43734150881771905,
+      "lexicalScore": 6.393769162830608
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "The Bellhaven Textile Museum relocated its collection in 1909.",
+      "start": 0,
+      "end": 62,
+      "similarity": 0.12971394095583988,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "Its first conservation project finished in 1954; the second finished in 1982.",
+      "start": 63,
+      "end": 140,
+      "similarity": 0.1976208589211921,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "A proposed closure in 2004 was rejected, and the museum remained open.",
+      "start": 141,
+      "end": 211,
+      "similarity": 0.053997928233169866,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "Decorative weaving panels line the upper stair rail.",
+      "start": 213,
+      "end": 265,
+      "similarity": 0.029738427522458567,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "The entrance crown carries a bronze compass.",
+      "start": 266,
+      "end": 310,
+      "similarity": 0.03449034056367825,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "The lower wall displays a painted harbour map.",
+      "start": 311,
+      "end": 357,
+      "similarity": 0.055116139565646746,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "The display cases use an argon fill because argon slows oxidation of the dyed fibres.",
+      "start": 359,
+      "end": 444,
+      "similarity": 0.01387142439550189,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "The outer frame is aluminium and the shelf labels are paper.",
+      "start": 445,
+      "end": 505,
+      "similarity": 0.055057015080924004,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4b64abd9-6255-4369-901b-6ce15fc9f190",
+      "value": "Bellhaven Textile Museum visitor registers are retained for 18 months, unless an unresolved access complaint requires longer retention.",
+      "start": 507,
+      "end": 642,
+      "similarity": 0.06816588644003509,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Kestwick Lens Workshop opened its public test bench in 1998.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.5228567524536247,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Its warehouse moved in 2013, and its roof was renewed in 2021.",
+      "start": 61,
+      "end": 123,
+      "similarity": 0.0889311464429051,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Nera polishes five lenses per day.",
+      "start": 125,
+      "end": 159,
+      "similarity": 0.3487458035232339,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Olin labels eight crates per day.",
+      "start": 160,
+      "end": 193,
+      "similarity": 0.1689974358801025,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Nera checks two gauges per day.",
+      "start": 194,
+      "end": 225,
+      "similarity": 0.1895581038041337,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+      "start": 227,
+      "end": 303,
+      "similarity": 0.8584103504230333,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.",
+      "start": 304,
+      "end": 419,
+      "similarity": 0.6173376149484064,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Lubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay.",
+      "start": 421,
+      "end": 530,
+      "similarity": 0.3777734206962119,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "The inspection interval remains 24 hours in both bays.",
+      "start": 531,
+      "end": 585,
+      "similarity": 0.07242203585685969,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+      "start": 587,
+      "end": 708,
+      "similarity": 0.43734150881771905,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+      "value": "Kestwick Lens Workshop calibration logs are retained for 12 months, unless an unresolved calibration dispute requires longer retention.",
+      "start": 710,
+      "end": 845,
+      "similarity": 0.41911461134558803,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "Orders released before 12:35 depart on the current operating day.",
+      "start": 0,
+      "end": 65,
+      "similarity": 0.13159160759548647,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "At or after 12:35, departure is the next operating day, unless a river inspection hold is still active.",
+      "start": 66,
+      "end": 169,
+      "similarity": 0.060523165667902695,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "Ardmere River Station cold samples must remain between 2 and 6 degrees Celsius during carriage.",
+      "start": 171,
+      "end": 266,
+      "similarity": 0.4050284888984499,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "Ardmere River Station dispatch records are retained for 16 months, unless an unresolved flood review requires longer retention.",
+      "start": 268,
+      "end": 395,
+      "similarity": 0.015310232929995475,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "Ardmere River Station acknowledges a carriage request within two operating days.",
+      "start": 397,
+      "end": 477,
+      "similarity": 0.09595167216239929,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b0f7ae2c-d91b-4819-b890-92863e53de0b",
+      "value": "Acknowledgement does not guarantee departure.",
+      "start": 478,
+      "end": 523,
+      "similarity": 0.027791888818045576,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Release ticket orders before 09:50 for departure on the current collection day.",
+      "start": 0,
+      "end": 79,
+      "similarity": 0.0995576328437926,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Ticket orders released at or after 09:50 depart on the next collection day, unless a seed screening hold remains active.",
+      "start": 80,
+      "end": 200,
+      "similarity": 0.06693142927785643,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Tavin sorts seven trays per day.",
+      "start": 202,
+      "end": 234,
+      "similarity": 0.11335188156345744,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Ema labels three packets per day.",
+      "start": 235,
+      "end": 268,
+      "similarity": 0.16572511800404655,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Tavin checks two bins per day.",
+      "start": 269,
+      "end": 299,
+      "similarity": 0.0794286727543184,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "The Larchfen Seed Depot dispatch packet includes a route card, seal register, depot label, and receipt.",
+      "start": 301,
+      "end": 404,
+      "similarity": 0.026755627808943385,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "63df774c-e507-4317-b272-19f5d8a7698e",
+      "value": "Larchfen Seed Depot accession records are retained for 5 years, unless an unresolved quarantine case requires longer retention.",
+      "start": 406,
+      "end": 533,
+      "similarity": -0.02234063506571333,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Brindale Music Library opened its catalogue store in 1958.",
+      "start": 0,
+      "end": 58,
+      "similarity": 0.12774455978415059,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Its warehouse relocation took place in 1976.",
+      "start": 59,
+      "end": 103,
+      "similarity": 0.05621300154841023,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "The main roof was rebuilt in 1999.",
+      "start": 104,
+      "end": 138,
+      "similarity": 0.041372162787587326,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "The Brindale Music Library catalogue Echoes of Reed was published in 1991.",
+      "start": 140,
+      "end": 214,
+      "similarity": 0.11927784041477137,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "A different catalogue, Songs of Flint, was published in 2007.",
+      "start": 215,
+      "end": 276,
+      "similarity": 0.07234872854011407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Neither is designated the large work.",
+      "start": 277,
+      "end": 314,
+      "similarity": 0.1088365239972922,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Each Brindale Music Library guided session admits at most 28 visitors.",
+      "start": 316,
+      "end": 386,
+      "similarity": 0.11170362497710162,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Brindale Music Library acknowledges a loan request within four business days.",
+      "start": 388,
+      "end": 465,
+      "similarity": 0.09292983940685899,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Acknowledgement does not promise confirmation of a loan.",
+      "start": 466,
+      "end": 522,
+      "similarity": 0.03632135861947807,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Brindale Music Library loan receipts are retained for 9 months, unless an unresolved missing-instrument claim requires longer retention.",
+      "start": 524,
+      "end": 660,
+      "similarity": -0.026392904742569744,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "The highest monthly mean temperature in the Brindale Music Library store is 25 degrees Celsius in August.",
+      "start": 662,
+      "end": 767,
+      "similarity": 0.4128239129427194,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c71c957f-68ea-439a-9803-60f9eb1273eb",
+      "value": "Its highest daily reading is 37 degrees Celsius.",
+      "start": 768,
+      "end": 816,
+      "similarity": 0.4609520360104437,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating.",
+      "start": 0,
+      "end": 130,
+      "similarity": 0.20356090041123281,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "The support frames are steel and the labels are card.",
+      "start": 131,
+      "end": 184,
+      "similarity": 0.015301570162359189,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Inspection emblems decorate the side balcony windows at Tarrow Glass Laboratory.",
+      "start": 186,
+      "end": 266,
+      "similarity": 0.07518644104218511,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "The entrance arch has a blue crest, and the ceiling carries a brass vane.",
+      "start": 267,
+      "end": 340,
+      "similarity": 0.06696657968111905,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "The Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius.",
+      "start": 342,
+      "end": 419,
+      "similarity": 0.4800716102378435,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Its highest monthly mean is 26 degrees Celsius in June, and its highest daily reading is 39 degrees Celsius.",
+      "start": 420,
+      "end": 528,
+      "similarity": 0.39645055390934775,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "No absolute winter minimum is stated.",
+      "start": 529,
+      "end": 566,
+      "similarity": 0.5725720003803583,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "The Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions.",
+      "start": 568,
+      "end": 693,
+      "similarity": 0.16100867740744873,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Its inspection interval remains 18 hours in either condition.",
+      "start": 694,
+      "end": 755,
+      "similarity": 0.12950744247064835,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "start": 757,
+      "end": 878,
+      "similarity": 0.16462443773362995,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b31da66-d1b8-4ff0-9642-3521008bbf43",
+      "value": "Each Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+      "start": 880,
+      "end": 951,
+      "similarity": 0.18419404627562547,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Westrill Canal Office moved its dispatch counter in 1917.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.10050349817035238,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Its first restoration was completed in 1965, and its second restoration was completed in 2003.",
+      "start": 58,
+      "end": 152,
+      "similarity": 0.1177049030147961,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "A proposed closure in 1978 was rejected and did not occur.",
+      "start": 153,
+      "end": 211,
+      "similarity": 0.0692014664029001,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Pera registers four permits per day.",
+      "start": 213,
+      "end": 249,
+      "similarity": 0.08155840303038125,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Sorin archives six maps per day.",
+      "start": 250,
+      "end": 282,
+      "similarity": 0.18796878055487368,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Pera checks two seals per day.",
+      "start": 283,
+      "end": 313,
+      "similarity": 0.05541515156033055,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "Westrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.",
+      "start": 315,
+      "end": 437,
+      "similarity": -0.06771299436230796,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee205080-a4d3-45f5-9193-0cde1352dd64",
+      "value": "The Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+      "start": 439,
+      "end": 560,
+      "similarity": 0.0034551699476966426,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Oakenford Survey Store opened its public room in 1936.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.0999314707373705,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+      "start": 55,
+      "end": 141,
+      "similarity": 0.03398663108517921,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "The Oakenford Survey Store Control Ledger was published in 2014.",
+      "start": 143,
+      "end": 207,
+      "similarity": 0.13333016366358494,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "A different book, Field Atlas, was published in 2020.",
+      "start": 208,
+      "end": 261,
+      "similarity": 0.1702700864186073,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Neither is designated the large book.",
+      "start": 262,
+      "end": 299,
+      "similarity": 0.053424030363182405,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Each Oakenford Survey Store guided session admits at most 22 visitors.",
+      "start": 301,
+      "end": 371,
+      "similarity": 0.13779448192274651,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "The Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 373,
+      "end": 463,
+      "similarity": 0.395242127503988,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.",
+      "start": 464,
+      "end": 578,
+      "similarity": 0.5913934937847372,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "62b52e3c-822a-43f6-bb35-3de2b82eeb11",
+      "value": "Oakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention.",
+      "start": 580,
+      "end": 717,
+      "similarity": 0.036268040229005906,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ed8c5fe5-00c7-4416-bb8f-d43b74795665:0",
+          "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+          "filename": "02_Kestwick_Lens_Workshop.txt",
+          "excerpt": "k Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay. The inspection interval remains 24 hours in both bay",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 12.827106253534994,
+          "semanticScore": 0.7365052163195543,
+          "matchedTerms": [
+            "lowest",
+            "recorded",
+            "winter",
+            "temperature",
+            "kestwick",
+            "lens",
+            "workshop"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ed8c5fe5-00c7-4416-bb8f-d43b74795665:0",
+          "documentId": "ed8c5fe5-00c7-4416-bb8f-d43b74795665",
+          "filename": "02_Kestwick_Lens_Workshop.txt",
+          "excerpt": "k Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay. The inspection interval remains 24 hours in both bay",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 12.827106253534994,
+          "semanticScore": 0.7365052163195543,
+          "matchedTerms": [
+            "lowest",
+            "recorded",
+            "winter",
+            "temperature",
+            "kestwick",
+            "lens",
+            "workshop"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.009337728843092918,
+    0.035858746618032455,
+    -0.019034748896956444,
+    0.04116329178214073,
+    -0.0656963586807251,
+    -0.017178194597363472,
+    -0.009954940527677536,
+    -0.00008725691441213712,
+    -0.07948027551174164,
+    0.02257380448281765,
+    0.009164300747215748,
+    -0.11969003081321716,
+    -0.020522482693195343,
+    0.0024741915985941887,
+    -0.04340996593236923,
+    -0.056234996765851974,
+    0.003464910900220275,
+    -0.07421056926250458,
+    0.00824698805809021,
+    -0.02070281095802784,
+    0.05141228064894676,
+    -0.010474133305251598,
+    -0.011533483862876892,
+    -0.0011408074060454965,
+    0.08797755092382431,
+    0.0267010647803545,
+    -0.05488431453704834,
+    0.03923641890287399,
+    -0.0138273686170578,
+    0.04807085171341896,
+    -0.09575367718935013,
+    0.006196749862283468,
+    0.040163833647966385,
+    -0.01123738568276167,
+    0.09744381159543991,
+    0.01588674634695053,
+    0.01444241777062416,
+    -0.060427628457546234,
+    -0.02551983669400215,
+    0.04701170697808266,
+    -0.04158308357000351,
+    -0.007354601286351681,
+    -0.02730036899447441,
+    -0.010445200838148594,
+    0.018715769052505493,
+    0.07587625831365585,
+    0.0002800333604682237,
+    0.014930056408047676,
+    -0.012685761786997318,
+    0.002527258824557066,
+    -0.01480589248239994,
+    0.03924022614955902,
+    0.018318330869078636,
+    -0.020792122930288315,
+    0.018023060634732246,
+    0.08726445585489273,
+    -0.0921698734164238,
+    -0.033261291682720184,
+    0.018683064728975296,
+    0.014312836341559887,
+    0.01778147555887699,
+    -0.024456029757857323,
+    -0.1358116865158081,
+    0.030783412978053093,
+    0.12003640085458755,
+    -0.023137759417295456,
+    -0.008992070332169533,
+    -0.06255829334259033,
+    0.0507681779563427,
+    -0.08423908799886703,
+    -0.05783013254404068,
+    0.04045410454273224,
+    0.015796903520822525,
+    -0.04056278616189957,
+    -0.03457680344581604,
+    -0.011971565894782543,
+    0.025366779416799545,
+    -0.05389703810214996,
+    0.05152716860175133,
+    0.019720712676644325,
+    0.07761193811893463,
+    -0.02590365521609783,
+    0.03662722185254097,
+    0.036070313304662704,
+    -0.010704806074500084,
+    -0.02816273830831051,
+    0.019519293680787086,
+    0.06911478191614151,
+    0.019528191536664963,
+    0.03320711851119995,
+    -0.020094795152544975,
+    -0.008802407421171665,
+    -0.11668557673692703,
+    -0.0005319078918546438,
+    -0.08160896599292755,
+    0.08395592123270035,
+    -0.02837352640926838,
+    0.04467633366584778,
+    -0.060271263122558594,
+    0.0211563091725111,
+    -0.004810635931789875,
+    -0.11298040300607681,
+    -0.021928489208221436,
+    0.06099294498562813,
+    -0.04504259303212166,
+    -0.027562711387872696,
+    0.020859191194176674,
+    -0.024028053507208824,
+    -0.04173215851187706,
+    0.02825366146862507,
+    -0.03622690588235855,
+    -0.0022225186694413424,
+    -0.02993735484778881,
+    -0.042067479342222214,
+    0.07693690806627274,
+    -0.00492364726960659,
+    -0.0303212758153677,
+    0.023367570713162422,
+    0.01973438262939453,
+    0.04754575341939926,
+    -0.01156644243746996,
+    0.06661808490753174,
+    0.015064586885273457,
+    0.0872013196349144,
+    -0.03940942883491516,
+    0.09852833300828934,
+    -0.013627695851027966,
+    -5.965540158217028e-34,
+    0.14783090353012085,
+    0.008664912544190884,
+    0.06728857755661011,
+    -0.07462804764509201,
+    0.058049190789461136,
+    -0.07225556671619415,
+    -0.04249732196331024,
+    0.015473722480237484,
+    0.01548632699996233,
+    -0.04390411451458931,
+    0.03825434297323227,
+    0.0038161929696798325,
+    -0.020686529576778412,
+    -0.08452494442462921,
+    0.05998529866337776,
+    0.02109708823263645,
+    0.008799430914223194,
+    0.08378470689058304,
+    -0.1012754812836647,
+    0.07886184006929398,
+    -0.10733351856470108,
+    0.007405772805213928,
+    0.016937704756855965,
+    0.03598197177052498,
+    0.04176848754286766,
+    0.013645772822201252,
+    0.0011623154859989882,
+    -0.040906671434640884,
+    0.012287150137126446,
+    0.03075500763952732,
+    0.004652021452784538,
+    -0.02652018330991268,
+    -0.003517682431265712,
+    0.004802436102181673,
+    -0.02002282813191414,
+    0.030261820182204247,
+    -0.034974172711372375,
+    0.017137793824076653,
+    0.025568215176463127,
+    0.05176647752523422,
+    0.010513026267290115,
+    0.034986939281225204,
+    0.10109308362007141,
+    -0.07763127237558365,
+    0.08120768517255783,
+    0.0333985835313797,
+    -0.04101903364062309,
+    0.06526149064302444,
+    0.012318190187215805,
+    0.054477620869874954,
+    0.02542661316692829,
+    -0.016135768964886665,
+    -0.07049071788787842,
+    -0.05391453206539154,
+    0.09575807303190231,
+    0.10581006854772568,
+    0.02835981547832489,
+    -0.0351664200425148,
+    0.034145206212997437,
+    -0.003731043776497245,
+    -0.06022995337843895,
+    0.041897501796483994,
+    0.040904369205236435,
+    -0.0631377249956131,
+    0.04902176931500435,
+    -0.025267690420150757,
+    -0.05117221921682358,
+    -0.005986296106129885,
+    -0.110712431371212,
+    -0.007374687120318413,
+    -0.03983118757605553,
+    0.01711340807378292,
+    0.04888276010751724,
+    -0.04113919287919998,
+    0.04089760407805443,
+    0.037464410066604614,
+    0.019656062126159668,
+    -0.0012582438066601753,
+    0.0005728616961278021,
+    0.03143547847867012,
+    -0.021625442430377007,
+    0.05718810483813286,
+    0.040478844195604324,
+    -0.046642500907182693,
+    -0.09796486049890518,
+    -0.08971654623746872,
+    -0.030188970267772675,
+    0.10424890369176865,
+    -0.026274800300598145,
+    0.015829535201191902,
+    0.011708357371389866,
+    -0.06057526543736458,
+    -0.10999799519777298,
+    0.008488062769174576,
+    -0.06342831254005432,
+    -3.612647936325838e-34,
+    0.11463665217161179,
+    -0.026681875810027122,
+    0.003668974619358778,
+    0.07668299227952957,
+    -0.054117679595947266,
+    0.09973173588514328,
+    0.10146672278642654,
+    0.040309708565473557,
+    0.06880497932434082,
+    0.08055418729782104,
+    0.044232189655303955,
+    -0.023904094472527504,
+    0.0458337776362896,
+    -0.04100397229194641,
+    0.05195322632789612,
+    0.013979172334074974,
+    -0.0238789152354002,
+    0.0749136283993721,
+    0.036142490804195404,
+    -0.03173365071415901,
+    0.003642437746748328,
+    0.05764508619904518,
+    -0.04321851581335068,
+    0.03943680599331856,
+    -0.05497022718191147,
+    -0.041669104248285294,
+    -0.0057045212015509605,
+    -0.03908134624361992,
+    -0.09177018702030182,
+    -0.11566006392240524,
+    -0.049867894500494,
+    -0.031881626695394516,
+    -0.041309673339128494,
+    0.056024663150310516,
+    -0.024255268275737762,
+    0.06872998178005219,
+    0.01561262272298336,
+    -0.081171415746212,
+    -0.01826794631779194,
+    -0.009618411771953106,
+    0.0567731112241745,
+    0.009464331902563572,
+    0.07201915979385376,
+    0.02518394961953163,
+    0.01107605267316103,
+    -0.07860661298036575,
+    0.01012189406901598,
+    -0.004898413550108671,
+    0.08272301405668259,
+    -0.012856674380600452,
+    -0.039846137166023254,
+    -0.02514408901333809,
+    -0.07363548874855042,
+    0.02727827988564968,
+    -0.04679117351770401,
+    -0.030080357566475868,
+    -0.026316922158002853,
+    0.034532446414232254,
+    -0.010032706893980503,
+    -0.017662879079580307,
+    0.0360160693526268,
+    -0.0875537320971489,
+    -0.012188994325697422,
+    0.0454913005232811,
+    0.01090733241289854,
+    0.0005252787377685308,
+    -0.014130467548966408,
+    0.05584893003106117,
+    0.02847251482307911,
+    0.0036805374547839165,
+    0.10277912765741348,
+    -0.03468276932835579,
+    0.10885334759950638,
+    -0.06696484982967377,
+    0.023373287171125412,
+    -0.06077149882912636,
+    0.046901918947696686,
+    0.05451337620615959,
+    0.020248370245099068,
+    -0.01292121596634388,
+    -0.05072967708110809,
+    0.019335076212882996,
+    -0.05749236047267914,
+    0.13315227627754211,
+    0.050207868218421936,
+    -0.05428571254014969,
+    0.07036136090755463,
+    -0.044829629361629486,
+    -0.021924655884504318,
+    0.018188495188951492,
+    -0.04172637313604355,
+    0.0017952866619452834,
+    0.013042923994362354,
+    -0.02075205370783806,
+    0.00886173453181982,
+    -1.6427664562002064e-8,
+    0.04657529294490814,
+    0.09792067855596542,
+    -0.014914917759597301,
+    0.022283487021923065,
+    0.06941840052604675,
+    0.03595304489135742,
+    0.008526638150215149,
+    0.02284117043018341,
+    -0.0059304204769432545,
+    0.039504166692495346,
+    0.0824904665350914,
+    0.04819582402706146,
+    0.06067296490073204,
+    0.023070158436894417,
+    0.0048331222496926785,
+    -0.05099061131477356,
+    0.01750113070011139,
+    0.00020235602278262377,
+    -0.033689528703689575,
+    -0.0925925001502037,
+    -0.017315344884991646,
+    -0.03132668137550354,
+    0.03912324085831642,
+    -0.021710943430662155,
+    -0.016526980325579643,
+    0.02159554325044155,
+    0.029388532042503357,
+    0.06948570907115936,
+    0.06960789114236832,
+    0.025638632476329803,
+    -0.1009569764137268,
+    -0.013914346694946289,
+    -0.006075106095522642,
+    -0.04228612035512924,
+    -0.07675466686487198,
+    -0.052432067692279816,
+    -0.06698400527238846,
+    0.12140028923749924,
+    -0.012438138015568256,
+    -0.004505092743784189,
+    -0.07538469135761261,
+    -0.07361585646867752,
+    -0.002350438851863146,
+    0.01396195124834776,
+    -0.014071692712605,
+    0.023069778457283974,
+    0.0009523490443825722,
+    -0.009696762077510357,
+    0.005310825537890196,
+    -0.01600165292620659,
+    -0.027439765632152557,
+    -0.001214600633829832,
+    -0.0004851374542340636,
+    0.07748673111200333,
+    -0.09084022045135498,
+    0.017650678753852844,
+    0.03534675016999245,
+    -0.02232266031205654,
+    -0.06883818656206131,
+    -0.031680796295404434,
+    -0.01619134657084942,
+    -0.02975264936685562,
+    -0.18514864146709442,
+    0.07066149264574051
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "start": 0,
+        "content": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay. The inspection interval remains 24 hours in both bays.\n\nPurchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.\n\nKestwick Lens Workshop calibration logs are"
+      },
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "start": 653,
+        "content": "Lead and the Budget Steward at Kestwick Lens Workshop.\n\nKestwick Lens Workshop calibration logs are retained for 12 months, unless an unresolved calibration dispute requires longer retention."
+      },
+      {
+        "filename": "05_Brindale_Music_Library.txt",
+        "start": 659,
+        "content": ".\n\nThe highest monthly mean temperature in the Brindale Music Library store is 25 degrees Celsius in August. Its highest daily reading is 37 degrees Celsius."
+      },
+      {
+        "filename": "06_Tarrow_Glass_Laboratory.txt",
+        "start": 0,
+        "content": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating. The support frames are steel and the labels are card.\n\nInspection emblems decorate the side balcony windows at Tarrow Glass Laboratory. The entrance arch has a blue crest, and the ceiling carries a brass vane.\n\nThe Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius. Its highest monthly mean is 26 degrees Celsius in June, and its highest daily reading is 39 degrees Celsius. No absolute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either"
+      },
+      {
+        "filename": "08_Oakenford_Survey_Store.txt",
+        "start": 0,
+        "content": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guided session admits at most 22 visitors.\n\nThe Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July. Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.\n\nOakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "start": 0,
+        "content": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay. The inspection interval remains 24 hours in both bays.\n\nPurchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.\n\nKestwick Lens Workshop calibration logs are"
+      },
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "start": 653,
+        "content": "Lead and the Budget Steward at Kestwick Lens Workshop.\n\nKestwick Lens Workshop calibration logs are retained for 12 months, unless an unresolved calibration dispute requires longer retention."
+      },
+      {
+        "filename": "05_Brindale_Music_Library.txt",
+        "start": 659,
+        "content": ".\n\nThe highest monthly mean temperature in the Brindale Music Library store is 25 degrees Celsius in August. Its highest daily reading is 37 degrees Celsius."
+      },
+      {
+        "filename": "06_Tarrow_Glass_Laboratory.txt",
+        "start": 0,
+        "content": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating. The support frames are steel and the labels are card.\n\nInspection emblems decorate the side balcony windows at Tarrow Glass Laboratory. The entrance arch has a blue crest, and the ceiling carries a brass vane.\n\nThe Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius. Its highest monthly mean is 26 degrees Celsius in June, and its highest daily reading is 39 degrees Celsius. No absolute winter minimum is stated.\n\nThe Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions. Its inspection interval remains 18 hours in either"
+      },
+      {
+        "filename": "08_Oakenford_Survey_Store.txt",
+        "start": 0,
+        "content": "Oakenford Survey Store opened its public room in 1936. Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.\n\nThe Oakenford Survey Store Control Ledger was published in 2014. A different book, Field Atlas, was published in 2020. Neither is designated the large book.\n\nEach Oakenford Survey Store guided session admits at most 22 visitors.\n\nThe Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July. Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.\n\nOakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention."
+      }
+    ]
+  }
+}

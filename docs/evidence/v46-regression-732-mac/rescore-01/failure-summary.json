@@ -1,0 +1,680 @@
+{
+  "date": "2026-10-24",
+  "classification": "First completed native scoring after approved post-capture audit correction; original first audit failure preserved",
+  "native_gate": "FAIL",
+  "audit": {
+    "passed": true,
+    "recomputed_body_cosines": 50074,
+    "cases": 732,
+    "hybrid_submissions": 684
+  },
+  "historical_family_gates_passed": 10,
+  "historical_family_gates_total": 19,
+  "prior_PASS_losses": {
+    "fixed": 20,
+    "section": 20
+  },
+  "manual_binding_review": "PENDING; stopped after required native gate failure",
+  "legacy_anchor_bindings": 4,
+  "engineering": {
+    "targeted": 11,
+    "unit": 874,
+    "strict_keyword": 28
+  },
+  "model_or_case_reruns": 0,
+  "candidate_changes": false,
+  "original_failure": {
+    "path": "docs/evidence/v46-regression-732-mac/first-score-failure.json",
+    "sha256": "f5c76e9bbe7d86d9beb4d3a9d3c794318a54102d90cfdae6a3cf2f6a920e4c83"
+  },
+  "raw_manifest": {
+    "path": "docs/evidence/v46-regression-732-mac/raw-manifest.json",
+    "sha256": "a1e50499a663c8490ea535bdface38789e587011cbdf377b368b6d9ae2fcf907"
+  },
+  "postcapture_correction": {
+    "path": "eval/v46-regression-rescore/correction-freeze.json",
+    "sha256": "f864fe3323bb7d54f2644f901222ca617d06a0d61fa763c2668a654d0b9d1b84"
+  },
+  "results": [
+    {
+      "name": "Cobalt16",
+      "native_gate": "FAIL",
+      "summary": {
+        "fixed": {
+          "PASS": 15,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 1
+        },
+        "section": {
+          "PASS": 15,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 1
+        }
+      },
+      "failed_checks": [
+        "no_execution_or_unadjudicated_manual_output",
+        "fixed_no_prior_pass_loss",
+        "fixed_native_outcomes",
+        "fixed_known_failures_unchanged",
+        "section_no_prior_pass_loss",
+        "section_native_outcomes",
+        "section_known_failures_unchanged"
+      ],
+      "prior_PASS_losses": {
+        "fixed": [
+          "H03"
+        ],
+        "section": [
+          "H03"
+        ]
+      }
+    },
+    {
+      "name": "RetrievalQuality28",
+      "native_gate": "FAIL",
+      "summary": {
+        "fixed": {
+          "PASS": 27,
+          "PARTIAL": 0,
+          "FAIL": 1,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 27,
+          "PARTIAL": 0,
+          "FAIL": 1,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [
+        "fixed_no_prior_pass_loss",
+        "fixed_native_outcomes",
+        "fixed_no_new_false_refusal",
+        "fixed_known_failures_unchanged",
+        "section_no_prior_pass_loss",
+        "section_native_outcomes",
+        "section_no_new_false_refusal",
+        "section_known_failures_unchanged"
+      ],
+      "prior_PASS_losses": {
+        "fixed": [
+          "RQ08"
+        ],
+        "section": [
+          "RQ08"
+        ]
+      }
+    },
+    {
+      "name": "ExternalSQuAD24",
+      "native_gate": "PASS",
+      "summary": {
+        "fixed": {
+          "PASS": 22,
+          "PARTIAL": 0,
+          "FAIL": 2,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 23,
+          "PARTIAL": 0,
+          "FAIL": 1,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [],
+      "prior_PASS_losses": {
+        "fixed": [],
+        "section": []
+      }
+    },
+    {
+      "name": "FreshMixed32",
+      "native_gate": "PASS",
+      "summary": {
+        "fixed": {
+          "PASS": 32,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 32,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [],
+      "prior_PASS_losses": {
+        "fixed": [],
+        "section": []
+      }
+    },
+    {
+      "name": "FreshConfirmation32",
+      "native_gate": "PASS",
+      "summary": {
+        "fixed": {
+          "PASS": 29,
+          "PARTIAL": 0,
+          "FAIL": 3,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 30,
+          "PARTIAL": 0,
+          "FAIL": 2,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [],
+      "prior_PASS_losses": {
+        "fixed": [],
+        "section": []
+      }
+    },
+    {
+      "name": "V9Exposed32",
+      "native_gate": "PASS",
+      "summary": {
+        "fixed": {
+          "PASS": 32,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 32,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [],
+      "prior_PASS_losses": {
+        "fixed": [],
+        "section": []
+      }
+    },
+    {
+      "name": "Actor40",
+      "native_gate": "PASS",
+      "summary": {
+        "fixed": {
+          "PASS": 40,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 40,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [],
+      "prior_PASS_losses": {
+        "fixed": [],
+        "section": []
+      }
+    },
+    {
+      "name": "Scope48",
+      "native_gate": "PASS",
+      "summary": {
+        "fixed": {
+          "PASS": 48,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 48,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [],
+      "prior_PASS_losses": {
+        "fixed": [],
+        "section": []
+      }
+    },
+    {
+      "name": "Confirmation48",
+      "native_gate": "PASS",
+      "summary": {
+        "fixed": {
+          "PASS": 48,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 48,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [],
+      "prior_PASS_losses": {
+        "fixed": [],
+        "section": []
+      }
+    },
+    {
+      "name": "Precision48",
+      "native_gate": "PASS",
+      "summary": {
+        "fixed": {
+          "PASS": 48,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 48,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [],
+      "prior_PASS_losses": {
+        "fixed": [],
+        "section": []
+      }
+    },
+    {
+      "name": "Binding64",
+      "native_gate": "FAIL",
+      "summary": {
+        "fixed": {
+          "PASS": 60,
+          "PARTIAL": 0,
+          "FAIL": 4,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 60,
+          "PARTIAL": 0,
+          "FAIL": 4,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [
+        "fixed_no_prior_pass_loss",
+        "fixed_native_outcomes",
+        "fixed_no_new_false_refusal",
+        "fixed_known_failures_unchanged",
+        "fixed_conditional_supported",
+        "section_no_prior_pass_loss",
+        "section_native_outcomes",
+        "section_no_new_false_refusal",
+        "section_known_failures_unchanged",
+        "section_conditional_supported"
+      ],
+      "prior_PASS_losses": {
+        "fixed": [
+          "E1A",
+          "E2A",
+          "E3A",
+          "E4A"
+        ],
+        "section": [
+          "E1A",
+          "E2A",
+          "E3A",
+          "E4A"
+        ]
+      }
+    },
+    {
+      "name": "Cedar32",
+      "native_gate": "PASS",
+      "summary": {
+        "fixed": {
+          "PASS": 32,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 32,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [],
+      "prior_PASS_losses": {
+        "fixed": [],
+        "section": []
+      }
+    },
+    {
+      "name": "Bracken32",
+      "native_gate": "FAIL",
+      "summary": {
+        "fixed": {
+          "PASS": 31,
+          "PARTIAL": 0,
+          "FAIL": 1,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 31,
+          "PARTIAL": 0,
+          "FAIL": 1,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [
+        "fixed_no_prior_pass_loss",
+        "fixed_native_outcomes",
+        "fixed_no_new_false_refusal",
+        "fixed_known_failures_unchanged",
+        "section_no_prior_pass_loss",
+        "section_native_outcomes",
+        "section_no_new_false_refusal",
+        "section_known_failures_unchanged"
+      ],
+      "prior_PASS_losses": {
+        "fixed": [
+          "B15"
+        ],
+        "section": [
+          "B15"
+        ]
+      }
+    },
+    {
+      "name": "Flint32",
+      "native_gate": "PASS",
+      "summary": {
+        "fixed": {
+          "PASS": 32,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 32,
+          "PARTIAL": 0,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [],
+      "prior_PASS_losses": {
+        "fixed": [],
+        "section": []
+      }
+    },
+    {
+      "name": "Morrow32",
+      "native_gate": "FAIL",
+      "summary": {
+        "fixed": {
+          "PASS": 30,
+          "PARTIAL": 0,
+          "FAIL": 2,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 30,
+          "PARTIAL": 0,
+          "FAIL": 2,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [
+        "fixed_no_prior_pass_loss",
+        "fixed_native_outcomes",
+        "fixed_no_new_false_refusal",
+        "fixed_known_failures_unchanged",
+        "section_no_prior_pass_loss",
+        "section_native_outcomes",
+        "section_no_new_false_refusal",
+        "section_known_failures_unchanged"
+      ],
+      "prior_PASS_losses": {
+        "fixed": [
+          "M07",
+          "M08"
+        ],
+        "section": [
+          "M07",
+          "M08"
+        ]
+      }
+    },
+    {
+      "name": "Hearth32",
+      "native_gate": "FAIL",
+      "summary": {
+        "fixed": {
+          "PASS": 30,
+          "PARTIAL": 0,
+          "FAIL": 2,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 30,
+          "PARTIAL": 0,
+          "FAIL": 2,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [
+        "fixed_no_prior_pass_loss",
+        "fixed_native_outcomes",
+        "fixed_no_new_false_refusal",
+        "fixed_known_failures_unchanged",
+        "section_no_prior_pass_loss",
+        "section_native_outcomes",
+        "section_no_new_false_refusal",
+        "section_known_failures_unchanged"
+      ],
+      "prior_PASS_losses": {
+        "fixed": [
+          "H07",
+          "H08"
+        ],
+        "section": [
+          "H07",
+          "H08"
+        ]
+      }
+    },
+    {
+      "name": "Lumen32",
+      "native_gate": "FAIL",
+      "summary": {
+        "fixed": {
+          "PASS": 31,
+          "PARTIAL": 0,
+          "FAIL": 1,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 31,
+          "PARTIAL": 0,
+          "FAIL": 1,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [
+        "fixed_no_prior_pass_loss",
+        "fixed_native_outcomes",
+        "fixed_no_new_false_refusal",
+        "fixed_known_failures_unchanged",
+        "section_no_prior_pass_loss",
+        "section_native_outcomes",
+        "section_no_new_false_refusal",
+        "section_known_failures_unchanged"
+      ],
+      "prior_PASS_losses": {
+        "fixed": [
+          "L08"
+        ],
+        "section": [
+          "L08"
+        ]
+      }
+    },
+    {
+      "name": "Prism32",
+      "native_gate": "FAIL",
+      "summary": {
+        "fixed": {
+          "PASS": 28,
+          "PARTIAL": 0,
+          "FAIL": 4,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 28,
+          "PARTIAL": 0,
+          "FAIL": 4,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [
+        "fixed_no_prior_pass_loss",
+        "fixed_native_outcomes",
+        "fixed_no_new_false_refusal",
+        "fixed_known_failures_unchanged",
+        "section_no_prior_pass_loss",
+        "section_native_outcomes",
+        "section_no_new_false_refusal",
+        "section_known_failures_unchanged"
+      ],
+      "prior_PASS_losses": {
+        "fixed": [
+          "P03",
+          "P07",
+          "P08",
+          "P17"
+        ],
+        "section": [
+          "P03",
+          "P07",
+          "P08",
+          "P17"
+        ]
+      }
+    },
+    {
+      "name": "Vela32",
+      "native_gate": "FAIL",
+      "summary": {
+        "fixed": {
+          "PASS": 28,
+          "PARTIAL": 0,
+          "FAIL": 4,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 28,
+          "PARTIAL": 0,
+          "FAIL": 4,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [
+        "fixed_no_prior_pass_loss",
+        "fixed_native_outcomes",
+        "fixed_no_new_false_refusal",
+        "fixed_known_failures_unchanged",
+        "section_no_prior_pass_loss",
+        "section_native_outcomes",
+        "section_no_new_false_refusal",
+        "section_known_failures_unchanged"
+      ],
+      "prior_PASS_losses": {
+        "fixed": [
+          "V03",
+          "V07",
+          "V08",
+          "V17"
+        ],
+        "section": [
+          "V03",
+          "V07",
+          "V08",
+          "V17"
+        ]
+      }
+    },
+    {
+      "name": "Fresh64",
+      "native_gate": "FAIL",
+      "summary": {
+        "fixed": {
+          "PASS": 60,
+          "PARTIAL": 4,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        },
+        "section": {
+          "PASS": 60,
+          "PARTIAL": 4,
+          "FAIL": 0,
+          "ERROR": 0,
+          "BLOCKED": 0
+        }
+      },
+      "failed_checks": [
+        "both_variants_64_PASS"
+      ],
+      "prior_PASS_losses": null
+    }
+  ],
+  "next_action": "Stop. Await approval to document, review and publish the failed study while preserving original evidence. No candidate fixes, model reruns or additional scoring attempts."
+}

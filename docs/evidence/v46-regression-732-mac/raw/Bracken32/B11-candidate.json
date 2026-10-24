@@ -1,0 +1,1177 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "B11",
+  "question": "Which year was the Rossell Seed Library public desk opened?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Which year was the Rossell Seed Library public desk opened?",
+    "expected_display": "Which year was the Rossell Seed Library public desk opened?",
+    "rendered_question": "Which year was the Rossell Seed Library public desk opened?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Rossell Seed Library opened its public desk in 1996.",
+    "sources": [
+      {
+        "filename": "03_Rossell_Seed_Library.txt",
+        "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same workin",
+        "quote": "Rossell Seed Library opened its public desk in 1996."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhich year was the Rossell Seed Library public desk opened?\n\nSearched all files: 01_Rillpoint_Lightstation.txt · 02_Tavren_Ceramics.txt · 03_Rossell_Seed_Library.txt · 04_Lenwick_Canal_Transit.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Rossell Seed Library opened its public desk in 1996.\n\nSOURCE EVIDENCE\n[1]\n03_Rossell_Seed_Library.txt\n\nText line 1 (normalized extraction)\n\nRossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018. Nalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day. Requests released before 11:45 are shipped the same workin\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Rossell Seed Library opened its public desk in 1996.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "91eaaf91-0bce-48eb-a428-2c60c3223861:0",
+        "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+        "filename": "03_Rossell_Seed_Library.txt",
+        "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same workin",
+        "quote": "Rossell Seed Library opened its public desk in 1996.",
+        "score": 0.0476,
+        "lexicalScore": 10.372917210779233,
+        "semanticScore": 0.6711622715995457,
+        "matchedTerms": [
+          "rossell",
+          "seed",
+          "library",
+          "public",
+          "desk",
+          "opened"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "91eaaf91-0bce-48eb-a428-2c60c3223861:0",
+        "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+        "filename": "03_Rossell_Seed_Library.txt",
+        "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still acti",
+        "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+        "score": 0.0476,
+        "lexicalScore": 10.372917210779233,
+        "semanticScore": 0.6711622715995457,
+        "matchedTerms": [
+          "rossell",
+          "seed",
+          "library",
+          "public",
+          "desk",
+          "opened"
+        ],
+        "start": 0,
+        "end": 156
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Rossell_Seed_Library.txt",
+        "quote": "Rossell Seed Library opened its public desk in 1996.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Rossell_Seed_Library.txt",
+        "quote": "Rossell Seed Library opened its public desk in 1996.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Rossell_Seed_Library.txt",
+        "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "91eaaf91-0bce-48eb-a428-2c60c3223861:0",
+        "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+        "filename": "03_Rossell_Seed_Library.txt",
+        "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still acti",
+        "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+        "score": 0.0476,
+        "lexicalScore": 10.372917210779233,
+        "semanticScore": 0.6711622715995457,
+        "matchedTerms": [
+          "rossell",
+          "seed",
+          "library",
+          "public",
+          "desk",
+          "opened"
+        ],
+        "start": 0,
+        "end": 156
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Rossell_Seed_Library.txt",
+        "quote": "Rossell Seed Library opened its public desk in 1996.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Rossell_Seed_Library.txt",
+        "quote": "Rossell Seed Library opened its public desk in 1996.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Rossell_Seed_Library.txt",
+        "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Rossell_Seed_Library.txt",
+      "start": 0,
+      "content": "Rossell Seed Library opened its public desk in 1996.",
+      "semanticScore": 0.9116147533408663,
+      "lexicalScore": 18.374489472309907
+    },
+    {
+      "filename": "03_Rossell_Seed_Library.txt",
+      "start": 609,
+      "content": "Rossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires longer retention.",
+      "semanticScore": 0.5134746883225078,
+      "lexicalScore": 5.679484125710173
+    },
+    {
+      "filename": "03_Rossell_Seed_Library.txt",
+      "start": 441,
+      "content": "Rossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius.",
+      "semanticScore": 0.48789227533502344,
+      "lexicalScore": 6.47456069064841
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Rillpoint Lightstation transferred to North Spit in 1859.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.19283541894239556,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Its first restoration was completed in 1913.",
+      "start": 58,
+      "end": 102,
+      "similarity": 0.19820008255454966,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "A second restoration was completed in 1962.",
+      "start": 103,
+      "end": 146,
+      "similarity": 0.1607250538664112,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "The proposed demolition in 1987 was canceled and never took place.",
+      "start": 147,
+      "end": 213,
+      "similarity": 0.12252896913877166,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Winter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius.",
+      "start": 215,
+      "end": 296,
+      "similarity": 0.08275689675182464,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Its highest monthly mean temperature is 23 degrees Celsius in August.",
+      "start": 297,
+      "end": 366,
+      "similarity": 0.0023699085195731944,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 367,
+      "end": 428,
+      "similarity": 0.03166484005298946,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Edda binds nine charts per week.",
+      "start": 430,
+      "end": 462,
+      "similarity": 0.10198113862861573,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Soren checks three beacons per night.",
+      "start": 463,
+      "end": 500,
+      "similarity": 0.01646884085904595,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Edda washes two lanterns per week.",
+      "start": 501,
+      "end": 535,
+      "similarity": 0.12206200137194032,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Rillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+      "start": 537,
+      "end": 660,
+      "similarity": 0.2682137449618036,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "The Tavren Ceramics kiln was commissioned in 1978.",
+      "start": 0,
+      "end": 50,
+      "similarity": 0.06863923902122504,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Its rebuild took place in 2009.",
+      "start": 51,
+      "end": 82,
+      "similarity": 0.08719569838369748,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "The planned transfer in 2020 did not occur.",
+      "start": 83,
+      "end": 126,
+      "similarity": 0.01111336424139946,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+      "start": 128,
+      "end": 206,
+      "similarity": 0.0397697633453392,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 207,
+      "end": 268,
+      "similarity": 0.008888642607482525,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Its highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 269,
+      "end": 336,
+      "similarity": 0.02482271352240161,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.",
+      "start": 338,
+      "end": 420,
+      "similarity": -0.02624288860467334,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "In a dusty bay, use a 42-hour lubrication interval.",
+      "start": 421,
+      "end": 472,
+      "similarity": -0.0413390373395956,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Inspection remains every 21 operating hours in both bays.",
+      "start": 473,
+      "end": 530,
+      "similarity": 0.0354082647948365,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Purchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead.",
+      "start": 532,
+      "end": 645,
+      "similarity": 0.11546000672697962,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.",
+      "start": 646,
+      "end": 750,
+      "similarity": 0.1694335189056155,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Tavren Ceramics maintenance records are retained for 4 years, unless an unresolved warranty claim requires longer retention.",
+      "start": 752,
+      "end": 876,
+      "similarity": 0.019236885180675435,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Rossell Seed Library opened its public desk in 1996.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.9116147533408663,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Its warehouse relocation took place in 2011.",
+      "start": 53,
+      "end": 97,
+      "similarity": 0.13004530828960845,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "An opening ceremony for a separate annex occurred in 2018.",
+      "start": 98,
+      "end": 156,
+      "similarity": 0.16861268244262426,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Nalin sorts six seed trays per day.",
+      "start": 158,
+      "end": 193,
+      "similarity": 0.35975202598633943,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Vera labels four seed packets per day.",
+      "start": 194,
+      "end": 232,
+      "similarity": 0.272679984098394,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Nalin labels two storage boxes per day.",
+      "start": 233,
+      "end": 272,
+      "similarity": 0.267719749289235,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Requests released before 11:45 are shipped the same working day.",
+      "start": 274,
+      "end": 338,
+      "similarity": 0.13845049196848722,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.",
+      "start": 339,
+      "end": 439,
+      "similarity": 0.30920522586937754,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Rossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius.",
+      "start": 441,
+      "end": 525,
+      "similarity": 0.48789227533502344,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "The winter log contains monthly averages rather than individual extreme readings.",
+      "start": 526,
+      "end": 607,
+      "similarity": -0.006467440523850039,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Rossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires longer retention.",
+      "start": 609,
+      "end": 734,
+      "similarity": 0.5134746883225078,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Lenwick Canal Transit relocated in 1882.",
+      "start": 0,
+      "end": 40,
+      "similarity": 0.14159870356190463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "The depot renovation occurred in 1931.",
+      "start": 41,
+      "end": 79,
+      "similarity": 0.26151566151041306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Another depot renovation occurred in 1974.",
+      "start": 80,
+      "end": 122,
+      "similarity": 0.24778736527468895,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "A proposed tunnel closure in 1999 was rejected; the tunnel did not close.",
+      "start": 123,
+      "end": 196,
+      "similarity": 0.14128762698665645,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+      "start": 198,
+      "end": 273,
+      "similarity": -0.015336945661189219,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Its highest recorded daily temperature is 36 degrees Celsius.",
+      "start": 274,
+      "end": 335,
+      "similarity": 0.03832670268284148,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Its highest monthly mean temperature is 22 degrees Celsius.",
+      "start": 336,
+      "end": 395,
+      "similarity": 0.05628525215252641,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Pavel inspects eight lock gates per shift.",
+      "start": 397,
+      "end": 439,
+      "similarity": 0.055711892597282736,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Rena greases three winches per shift.",
+      "start": 440,
+      "end": 477,
+      "similarity": -0.052471833151572445,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Pavel greases one hinge per shift.",
+      "start": 478,
+      "end": 512,
+      "similarity": -0.042056410721808726,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "start": 514,
+      "end": 641,
+      "similarity": 0.11578197381742068,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+      "start": 643,
+      "end": 757,
+      "similarity": 0.07344354308111369,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "91eaaf91-0bce-48eb-a428-2c60c3223861:0",
+          "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+          "filename": "03_Rossell_Seed_Library.txt",
+          "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still acti",
+          "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+          "score": 0.0476,
+          "lexicalScore": 10.372917210779233,
+          "semanticScore": 0.6711622715995457,
+          "matchedTerms": [
+            "rossell",
+            "seed",
+            "library",
+            "public",
+            "desk",
+            "opened"
+          ],
+          "start": 0,
+          "end": 156
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "91eaaf91-0bce-48eb-a428-2c60c3223861:0",
+          "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+          "filename": "03_Rossell_Seed_Library.txt",
+          "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still acti",
+          "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+          "score": 0.0476,
+          "lexicalScore": 10.372917210779233,
+          "semanticScore": 0.6711622715995457,
+          "matchedTerms": [
+            "rossell",
+            "seed",
+            "library",
+            "public",
+            "desk",
+            "opened"
+          ],
+          "start": 0,
+          "end": 156
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Rossell Seed Library opened its public desk in 1996.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "91eaaf91-0bce-48eb-a428-2c60c3223861:0",
+          "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+          "filename": "03_Rossell_Seed_Library.txt",
+          "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same workin",
+          "quote": "Rossell Seed Library opened its public desk in 1996.",
+          "score": 0.0476,
+          "lexicalScore": 10.372917210779233,
+          "semanticScore": 0.6711622715995457,
+          "matchedTerms": [
+            "rossell",
+            "seed",
+            "library",
+            "public",
+            "desk",
+            "opened"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Rossell Seed Library opened its public desk in 1996.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "91eaaf91-0bce-48eb-a428-2c60c3223861:0",
+          "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+          "filename": "03_Rossell_Seed_Library.txt",
+          "excerpt": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same workin",
+          "quote": "Rossell Seed Library opened its public desk in 1996.",
+          "score": 0.0476,
+          "lexicalScore": 10.372917210779233,
+          "semanticScore": 0.6711622715995457,
+          "matchedTerms": [
+            "rossell",
+            "seed",
+            "library",
+            "public",
+            "desk",
+            "opened"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Rossell_Seed_Library.txt",
+          "quote": "Rossell Seed Library opened its public desk in 1996.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.0424128994345665,
+    0.06268327683210373,
+    -0.07756343483924866,
+    0.02770490013062954,
+    0.06193739175796509,
+    0.054179299622774124,
+    -0.026219915598630905,
+    0.00587847176939249,
+    -0.034868884831666946,
+    0.02806415781378746,
+    -0.006975320167839527,
+    0.14609350264072418,
+    -0.008028366602957249,
+    -0.04546581581234932,
+    0.010375630110502243,
+    -0.01120597030967474,
+    -0.06326842308044434,
+    -0.021701214835047722,
+    0.08637624979019165,
+    -0.006919162347912788,
+    0.011903814040124416,
+    -0.022362684831023216,
+    0.011498546227812767,
+    0.003712871577590704,
+    0.007846948690712452,
+    0.02793629840016365,
+    -0.07721905410289764,
+    -0.006076895631849766,
+    0.014816801995038986,
+    0.004616937600076199,
+    0.028101317584514618,
+    0.04674025624990463,
+    0.09524620324373245,
+    -0.005480012856423855,
+    0.09858156740665436,
+    0.03781018406152725,
+    0.13874374330043793,
+    -0.04057842120528221,
+    0.004832624923437834,
+    0.01837684027850628,
+    -0.003120942274108529,
+    0.031232910230755806,
+    0.038909636437892914,
+    0.1231258437037468,
+    -0.09453896433115005,
+    -0.010650385171175003,
+    0.0037520285695791245,
+    -0.034403178840875626,
+    0.04506672918796539,
+    -0.012312142178416252,
+    0.03373881056904793,
+    -0.03155240789055824,
+    0.022524293512105942,
+    -0.10085421055555344,
+    -0.004431184846907854,
+    0.09208827465772629,
+    -0.02469089813530445,
+    0.005255907773971558,
+    -0.07394710928201675,
+    -0.022282946854829788,
+    0.030016010627150536,
+    0.01553162932395935,
+    -0.12176669389009476,
+    0.06162397563457489,
+    -0.021274730563163757,
+    0.09455613046884537,
+    -0.016081735491752625,
+    0.0077317850664258,
+    0.12654606997966766,
+    -0.1329682469367981,
+    0.013525281101465225,
+    0.01614036038517952,
+    0.025666389614343643,
+    -0.04092913866043091,
+    -0.010186650790274143,
+    0.06309759616851807,
+    -0.0005573403905145824,
+    -0.0008503059507347643,
+    0.02304605208337307,
+    -0.08839830011129379,
+    -0.05453633517026901,
+    -0.04175060614943504,
+    0.060018084943294525,
+    0.011952430941164494,
+    -0.053085748106241226,
+    0.04571038484573364,
+    0.042793501168489456,
+    0.030459338799118996,
+    0.04356180503964424,
+    0.012509851716458797,
+    0.08778425306081772,
+    -0.014612261205911636,
+    -0.029197266325354576,
+    0.07246483862400055,
+    -0.10788393765687943,
+    -0.03735501691699028,
+    0.0018875206587836146,
+    -0.08348765224218369,
+    -0.0006551271071657538,
+    0.05377740040421486,
+    -0.014392826706171036,
+    0.08447479456663132,
+    0.13050086796283722,
+    0.006429087836295366,
+    0.014080327935516834,
+    -0.02063125930726528,
+    -0.06674742698669434,
+    -0.08172646909952164,
+    0.008659487590193748,
+    0.07180235534906387,
+    -0.021647917106747627,
+    -0.07058154046535492,
+    0.03721540421247482,
+    0.042529426515102386,
+    -0.07240608334541321,
+    0.03410464897751808,
+    -0.007272959686815739,
+    -0.0009856725810095668,
+    0.03246846795082092,
+    -0.06442037224769592,
+    0.04837895184755325,
+    0.05256841704249382,
+    -0.03799676522612572,
+    -0.06780694425106049,
+    -0.1294054090976715,
+    -0.06808333098888397,
+    0.004133259411901236,
+    -2.571588032662632e-33,
+    -0.05148600786924362,
+    0.002841978333890438,
+    0.024082260206341743,
+    0.017584385350346565,
+    0.09247120469808578,
+    -0.024491488933563232,
+    0.09464666992425919,
+    -0.011540940031409264,
+    -0.006922099739313126,
+    0.0038382455240935087,
+    0.035321444272994995,
+    -0.0024204631336033344,
+    0.030371038243174553,
+    -0.004475740250200033,
+    -0.05362878739833832,
+    -0.0177442729473114,
+    -0.07297562062740326,
+    0.07805071771144867,
+    -0.016431309282779694,
+    0.012234305962920189,
+    -0.031515076756477356,
+    -0.015402937307953835,
+    -0.0013186943251639605,
+    -0.0211825929582119,
+    0.06782788038253784,
+    0.006744731217622757,
+    0.002827161457389593,
+    0.010719063691794872,
+    0.13722959160804749,
+    0.033651530742645264,
+    0.04360560327768326,
+    -0.062183354049921036,
+    -0.00822805892676115,
+    -0.016995694488286972,
+    0.06773059070110321,
+    0.03304024785757065,
+    -0.0006079472950659692,
+    -0.08131272345781326,
+    0.07153423875570297,
+    -0.041749075055122375,
+    0.07618922740221024,
+    0.006488401908427477,
+    0.10599543899297714,
+    0.0613151490688324,
+    0.0009869212517514825,
+    0.02809266746044159,
+    0.049461428076028824,
+    0.03995122015476227,
+    0.05599827319383621,
+    -0.06450427323579788,
+    -0.04089314863085747,
+    -0.0015060808509588242,
+    -0.0966063067317009,
+    0.022497039288282394,
+    -0.008482237346470356,
+    -0.013595638796687126,
+    -0.0017456678906455636,
+    0.07743004709482193,
+    0.052216786891222,
+    -0.0907122865319252,
+    0.11666283756494522,
+    0.12023071944713593,
+    0.040070295333862305,
+    0.009321648627519608,
+    0.01821454055607319,
+    0.008929070085287094,
+    -0.07765112072229385,
+    -0.09541859477758408,
+    0.05596929043531418,
+    0.05497143417596817,
+    0.01746055856347084,
+    -0.0005118807894177735,
+    -0.05009135976433754,
+    -0.08543264865875244,
+    0.05316831171512604,
+    0.03793672099709511,
+    -0.048997581005096436,
+    0.0309014730155468,
+    -0.022594070062041283,
+    0.006342234089970589,
+    0.023671971634030342,
+    -0.03583288937807083,
+    -0.012076525948941708,
+    0.030101872980594635,
+    -0.0742427334189415,
+    -0.003021632321178913,
+    0.057125601917505264,
+    0.12308820337057114,
+    -0.024269502609968185,
+    0.021873828023672104,
+    -0.0020246896892786026,
+    -0.0007650623447261751,
+    -0.01932315155863762,
+    -0.007788274437189102,
+    -0.09420172870159149,
+    1.588294355039481e-33,
+    -0.019221758469939232,
+    -0.03137174993753433,
+    0.01741000823676586,
+    -0.008418665267527103,
+    -0.011033713817596436,
+    0.006860967259854078,
+    -0.009011292830109596,
+    -0.054086651653051376,
+    0.05797696113586426,
+    0.005251802038401365,
+    0.031138725578784943,
+    0.010647295974195004,
+    0.0928439125418663,
+    0.03085986152291298,
+    0.003926797304302454,
+    0.01851441152393818,
+    0.006433260161429644,
+    0.06356159597635269,
+    -0.1170741394162178,
+    0.00236476375721395,
+    -0.07105951756238937,
+    0.03343576937913895,
+    -0.055725425481796265,
+    0.0312969833612442,
+    0.025942182168364525,
+    -0.045275937765836716,
+    0.04201052337884903,
+    -0.06463352590799332,
+    -0.03715227171778679,
+    -0.01966555416584015,
+    -0.03668161481618881,
+    0.012117667123675346,
+    -0.09573472291231155,
+    0.038558486849069595,
+    -0.07218293100595474,
+    0.02476046048104763,
+    0.03729813173413277,
+    -0.02591245248913765,
+    -0.010663106106221676,
+    -0.014121759682893753,
+    -0.03315059840679169,
+    0.02165951393544674,
+    -0.061371371150016785,
+    0.029634878039360046,
+    0.016127293929457664,
+    -0.025509878993034363,
+    -0.05675825476646423,
+    0.022515399381518364,
+    0.025906549766659737,
+    0.044506609439849854,
+    -0.11883595585823059,
+    0.009849686175584793,
+    0.0034259420353919268,
+    -0.08098316937685013,
+    0.03784679248929024,
+    0.0327746756374836,
+    -0.01170482486486435,
+    -0.0015179009642452002,
+    -0.0031013907864689827,
+    -0.03517431393265724,
+    -0.0674716979265213,
+    0.046256959438323975,
+    -0.09726358950138092,
+    -0.0013919054763391614,
+    0.007648100145161152,
+    -0.06346669048070908,
+    -0.005065011326223612,
+    0.050123754888772964,
+    -0.024387244135141373,
+    -0.03884250298142433,
+    0.0821058452129364,
+    0.12079734355211258,
+    0.09485065191984177,
+    0.0033448790200054646,
+    -0.0756646990776062,
+    0.09731053560972214,
+    0.03559932857751846,
+    0.005348758772015572,
+    -0.04999825358390808,
+    -0.023945415392518044,
+    -0.04661908745765686,
+    0.03414592146873474,
+    -0.03706257417798042,
+    0.037075623869895935,
+    -0.029202034696936607,
+    -0.05524451658129692,
+    0.08605414628982544,
+    -0.05221937969326973,
+    -0.029674896970391273,
+    -0.024224650114774704,
+    0.017058169469237328,
+    -0.05913843959569931,
+    -0.01602993905544281,
+    0.04061916843056679,
+    0.10264450311660767,
+    -1.8396885792526518e-8,
+    0.012360341846942902,
+    0.0822654515504837,
+    -0.04336187243461609,
+    -0.036069605499506,
+    0.053984254598617554,
+    -0.05176011845469475,
+    0.05844491347670555,
+    0.040536146610975266,
+    -0.03417826443910599,
+    0.005042047239840031,
+    -0.02867915667593479,
+    0.009578374214470387,
+    -0.051989294588565826,
+    0.0443156398832798,
+    -0.06799390912055969,
+    -0.02103734388947487,
+    -0.0493474081158638,
+    -0.04370648413896561,
+    -0.02775333635509014,
+    0.016496116295456886,
+    0.08585124462842941,
+    -0.04546079412102699,
+    0.0584871731698513,
+    0.027397071942687035,
+    -0.017330164089798927,
+    0.041545622050762177,
+    0.020622875541448593,
+    -0.051376353949308395,
+    0.015262626111507416,
+    -0.022450750693678856,
+    0.05208460986614227,
+    0.022022973746061325,
+    -0.039390236139297485,
+    -0.010883805342018604,
+    0.01216462254524231,
+    0.028858209028840065,
+    -0.03665678948163986,
+    0.0691085159778595,
+    0.009355129674077034,
+    0.015312566421926022,
+    0.02186724729835987,
+    -0.11490873992443085,
+    -0.022684816271066666,
+    0.01959932968020439,
+    -0.06546162068843842,
+    0.004485538229346275,
+    -0.0696413591504097,
+    0.055776197463274,
+    0.007591982372105122,
+    -0.04922698065638542,
+    0.009167558513581753,
+    -0.0020402835216373205,
+    0.025162242352962494,
+    -0.05950125679373741,
+    0.032855261117219925,
+    -0.042407337576150894,
+    -0.07904694974422455,
+    -0.014329441823065281,
+    -0.019576452672481537,
+    -0.014081471599638462,
+    -0.04101359844207764,
+    -0.021882733330130577,
+    -0.002371780574321747,
+    0.020777219906449318
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Rossell_Seed_Library.txt",
+        "start": 0,
+        "content": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.\n\nRossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius. The winter log contains monthly averages rather than individual extreme readings.\n\nRossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Rossell_Seed_Library.txt",
+        "start": 0,
+        "content": "Rossell Seed Library opened its public desk in 1996. Its warehouse relocation took place in 2011. An opening ceremony for a separate annex occurred in 2018.\n\nNalin sorts six seed trays per day. Vera labels four seed packets per day. Nalin labels two storage boxes per day.\n\nRequests released before 11:45 are shipped the same working day. At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.\n\nRossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius. The winter log contains monthly averages rather than individual extreme readings.\n\nRossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires longer retention."
+      }
+    ]
+  }
+}

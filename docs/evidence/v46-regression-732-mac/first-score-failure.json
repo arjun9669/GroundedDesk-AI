@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-24",
+  "classification": "First approved v46 study capture complete; first scoring/audit attempt blocked; not a native quality score",
+  "status": "BLOCKED_AUDIT",
+  "approval": "okay go ahead after publication of audit correction and proposal to execute frozen732-case study",
+  "capture_status": "COMPLETE",
+  "captured_cases": 732,
+  "hybrid_submissions": 684,
+  "lexical_comparisons": 48,
+  "completed_packs": [
+    {
+      "name": "Cobalt16",
+      "cases": 16
+    },
+    {
+      "name": "RetrievalQuality28",
+      "cases": 28
+    },
+    {
+      "name": "ExternalSQuAD24",
+      "cases": 24
+    },
+    {
+      "name": "FreshMixed32",
+      "cases": 32
+    },
+    {
+      "name": "FreshConfirmation32",
+      "cases": 32
+    },
+    {
+      "name": "V9Exposed32",
+      "cases": 32
+    },
+    {
+      "name": "Actor40",
+      "cases": 40
+    },
+    {
+      "name": "Scope48",
+      "cases": 48
+    },
+    {
+      "name": "Confirmation48",
+      "cases": 48
+    },
+    {
+      "name": "Precision48",
+      "cases": 48
+    },
+    {
+      "name": "Binding64",
+      "cases": 64
+    },
+    {
+      "name": "Cedar32",
+      "cases": 32
+    },
+    {
+      "name": "Bracken32",
+      "cases": 32
+    },
+    {
+      "name": "Flint32",
+      "cases": 32
+    },
+    {
+      "name": "Morrow32",
+      "cases": 32
+    },
+    {
+      "name": "Hearth32",
+      "cases": 32
+    },
+    {
+      "name": "Lumen32",
+      "cases": 32
+    },
+    {
+      "name": "Prism32",
+      "cases": 32
+    },
+    {
+      "name": "Vela32",
+      "cases": 32
+    },
+    {
+      "name": "Fresh64",
+      "cases": 64
+    }
+  ],
+  "raw_artifacts_sealed": 5865,
+  "question_retries": 0,
+  "score_attempts": 1,
+  "score_exit_code": 1,
+  "failure": "AssertionError [ERR_ASSERTION]: Original selected cosine anchor",
+  "location": "eval/v46-regression-execution/audit.mjs:36:11, called from score.mjs:43:6",
+  "expected": "Selected cosine anchor must match an original saved sentence in extraction.sentence_index",
+  "actual": "No matching sentence anchor found (assertion actual=false expected=true)",
+  "case_context": "Not emitted by frozen scorer; not inferred from the generic assertion",
+  "native_scores": "NOT PRODUCED; cannot claim preservation or Fresh64 outcomes",
+  "manual_review": "NOT STARTED after required audit failure",
+  "first_score_log": {
+    "path": "docs/evidence/v46-regression-732-mac/first-score.log",
+    "sha256": "2504feb9d913737d339aca6fb9b341a88a42d51261449f0db888a2d460ce84d4"
+  },
+  "preserved_seals": [
+    {
+      "path": "docs/evidence/v46-regression-732-mac/raw-manifest.json",
+      "sha256": "a1e50499a663c8490ea535bdface38789e587011cbdf377b368b6d9ae2fcf907"
+    },
+    {
+      "path": "docs/evidence/v46-regression-732-mac/execution/freeze-manifest.json",
+      "sha256": "c769438f4ef7f7ccab98cf9cbe63ad3fdeb1106ca35e77e682347ed398c56e28"
+    },
+    {
+      "path": "docs/evidence/v46-regression-732-mac/execution/run-config.json",
+      "sha256": "249ecdb3daa224eb42256cf465ba32b2d6f4778e67956fc12d9a93c4c949ae00"
+    },
+    {
+      "path": "docs/evidence/v46-regression-732-mac/execution/amendment.json",
+      "sha256": "673d6b5bf22bd24ec33155aabfd0b7bec2c221aab238d7ecbe606ed1cc455026"
+    }
+  ],
+  "frozen_audit_source": {
+    "path": "eval/v46-regression-execution/audit.mjs",
+    "sha256": "4393b21f35b67e31b07de445f6cfe88ed54038e1fb8127c8b7da26304c415036"
+  },
+  "candidate_changes": false,
+  "live_changes": false,
+  "commit_or_push_after_failure": "NOT PERFORMED",
+  "next_action": "Await approval for read-only diagnosis of the saved anchor mismatch and proposed correction. Preserve all raw evidence/first failure; no model reruns or scoring retries without approval."
+}

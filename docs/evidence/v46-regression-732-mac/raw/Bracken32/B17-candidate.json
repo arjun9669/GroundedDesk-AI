@@ -1,0 +1,1208 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "B17",
+  "question": "What is the Lenwick Canal Transit highest recorded daily temperature?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What is the Lenwick Canal Transit highest recorded daily temperature?",
+    "expected_display": "What is the Lenwick Canal Transit highest recorded daily temperature?",
+    "rendered_question": "What is the Lenwick Canal Transit highest recorded daily temperature?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+    "sources": [
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure pac",
+        "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat is the Lenwick Canal Transit highest recorded daily temperature?\n\nSearched all files: 01_Rillpoint_Lightstation.txt · 02_Tavren_Ceramics.txt · 03_Rossell_Seed_Library.txt · 04_Lenwick_Canal_Transit.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.\n\nSOURCE EVIDENCE\n[1]\n04_Lenwick_Canal_Transit.txt\n\nText line 3 (normalized extraction)\n\nLenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close. Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius. Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift. The Lenwick Canal Transit departure pac\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "a382feee-8d9b-44d7-863b-38d95f786bdf:0",
+        "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure pac",
+        "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 9.747203289943082,
+        "semanticScore": 0.7060171730326184,
+        "matchedTerms": [
+          "lenwick",
+          "canal",
+          "transit",
+          "highest",
+          "recorded",
+          "daily",
+          "temperature"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "a382feee-8d9b-44d7-863b-38d95f786bdf:0",
+        "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage log",
+        "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 9.747203289943082,
+        "semanticScore": 0.7060171730326184,
+        "matchedTerms": [
+          "lenwick",
+          "canal",
+          "transit",
+          "highest",
+          "recorded",
+          "daily",
+          "temperature"
+        ],
+        "start": 198,
+        "end": 395
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "a382feee-8d9b-44d7-863b-38d95f786bdf:0",
+        "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage log",
+        "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 9.747203289943082,
+        "semanticScore": 0.7060171730326184,
+        "matchedTerms": [
+          "lenwick",
+          "canal",
+          "transit",
+          "highest",
+          "recorded",
+          "daily",
+          "temperature"
+        ],
+        "start": 198,
+        "end": 395
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 198,
+      "content": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+      "semanticScore": 0.7085391625553922,
+      "lexicalScore": 6.663749184597925
+    },
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 0,
+      "content": "Lenwick Canal Transit relocated in 1882.",
+      "semanticScore": 0.5608795638867164,
+      "lexicalScore": 8.286090944329498
+    },
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 274,
+      "content": "Its highest recorded daily temperature is 36 degrees Celsius.",
+      "semanticScore": 0.531880942904181,
+      "lexicalScore": 10.33625812649179
+    },
+    {
+      "filename": "01_Rillpoint_Lightstation.txt",
+      "start": 367,
+      "content": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "semanticScore": 0.5157962555105349,
+      "lexicalScore": 10.33625812649179
+    },
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 514,
+      "content": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "semanticScore": 0.464732242613435,
+      "lexicalScore": 5.150977024614261
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Rillpoint Lightstation transferred to North Spit in 1859.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.20909629948130784,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Its first restoration was completed in 1913.",
+      "start": 58,
+      "end": 102,
+      "similarity": 0.09681534514381454,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "A second restoration was completed in 1962.",
+      "start": 103,
+      "end": 146,
+      "similarity": 0.11247551793663914,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "The proposed demolition in 1987 was canceled and never took place.",
+      "start": 147,
+      "end": 213,
+      "similarity": -0.04968564798957514,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Winter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius.",
+      "start": 215,
+      "end": 296,
+      "similarity": 0.28711586581717446,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Its highest monthly mean temperature is 23 degrees Celsius in August.",
+      "start": 297,
+      "end": 366,
+      "similarity": 0.3561749130155043,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 367,
+      "end": 428,
+      "similarity": 0.5157962555105349,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Edda binds nine charts per week.",
+      "start": 430,
+      "end": 462,
+      "similarity": 0.13686102275253376,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Soren checks three beacons per night.",
+      "start": 463,
+      "end": 500,
+      "similarity": 0.20285134655930667,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Edda washes two lanterns per week.",
+      "start": 501,
+      "end": 535,
+      "similarity": 0.14555641905734493,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f68831a2-ddc2-46aa-b82c-bad0e15e38e6",
+      "value": "Rillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+      "start": 537,
+      "end": 660,
+      "similarity": 0.057802086400409215,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "The Tavren Ceramics kiln was commissioned in 1978.",
+      "start": 0,
+      "end": 50,
+      "similarity": 0.13032592316029218,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Its rebuild took place in 2009.",
+      "start": 51,
+      "end": 82,
+      "similarity": 0.09356340856928383,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "The planned transfer in 2020 did not occur.",
+      "start": 83,
+      "end": 126,
+      "similarity": 0.06862881735114891,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+      "start": 128,
+      "end": 206,
+      "similarity": 0.21894680639096664,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 207,
+      "end": 268,
+      "similarity": 0.33131245996000697,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Its highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 269,
+      "end": 336,
+      "similarity": 0.3802049443063842,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.",
+      "start": 338,
+      "end": 420,
+      "similarity": 0.10815900448175327,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "In a dusty bay, use a 42-hour lubrication interval.",
+      "start": 421,
+      "end": 472,
+      "similarity": 0.1654399601159152,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Inspection remains every 21 operating hours in both bays.",
+      "start": 473,
+      "end": 530,
+      "similarity": 0.08235035265540112,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Purchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead.",
+      "start": 532,
+      "end": 645,
+      "similarity": 0.0568160743924494,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.",
+      "start": 646,
+      "end": 750,
+      "similarity": 0.08942126251254995,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e8759226-6dd1-46de-91ca-961d9fa95870",
+      "value": "Tavren Ceramics maintenance records are retained for 4 years, unless an unresolved warranty claim requires longer retention.",
+      "start": 752,
+      "end": 876,
+      "similarity": 0.028939949548928666,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Rossell Seed Library opened its public desk in 1996.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.06011509884932706,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Its warehouse relocation took place in 2011.",
+      "start": 53,
+      "end": 97,
+      "similarity": 0.12160420049798928,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "An opening ceremony for a separate annex occurred in 2018.",
+      "start": 98,
+      "end": 156,
+      "similarity": 0.08485398378772756,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Nalin sorts six seed trays per day.",
+      "start": 158,
+      "end": 193,
+      "similarity": 0.09810533369175965,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Vera labels four seed packets per day.",
+      "start": 194,
+      "end": 232,
+      "similarity": 0.12288364420290167,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Nalin labels two storage boxes per day.",
+      "start": 233,
+      "end": 272,
+      "similarity": 0.148793578848625,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Requests released before 11:45 are shipped the same working day.",
+      "start": 274,
+      "end": 338,
+      "similarity": 0.10876596477152804,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.",
+      "start": 339,
+      "end": 439,
+      "similarity": 0.07827848265235406,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Rossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius.",
+      "start": 441,
+      "end": 525,
+      "similarity": 0.18281099295874448,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "The winter log contains monthly averages rather than individual extreme readings.",
+      "start": 526,
+      "end": 607,
+      "similarity": 0.18977319596368866,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "91eaaf91-0bce-48eb-a428-2c60c3223861",
+      "value": "Rossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires longer retention.",
+      "start": 609,
+      "end": 734,
+      "similarity": 0.054116823818522244,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Lenwick Canal Transit relocated in 1882.",
+      "start": 0,
+      "end": 40,
+      "similarity": 0.5608795638867164,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "The depot renovation occurred in 1931.",
+      "start": 41,
+      "end": 79,
+      "similarity": -0.002661748930578401,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Another depot renovation occurred in 1974.",
+      "start": 80,
+      "end": 122,
+      "similarity": 0.08054733801823458,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "A proposed tunnel closure in 1999 was rejected; the tunnel did not close.",
+      "start": 123,
+      "end": 196,
+      "similarity": 0.028151728309589077,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+      "start": 198,
+      "end": 273,
+      "similarity": 0.7085391625553922,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Its highest recorded daily temperature is 36 degrees Celsius.",
+      "start": 274,
+      "end": 335,
+      "similarity": 0.531880942904181,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Its highest monthly mean temperature is 22 degrees Celsius.",
+      "start": 336,
+      "end": 395,
+      "similarity": 0.4442312689872602,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Pavel inspects eight lock gates per shift.",
+      "start": 397,
+      "end": 439,
+      "similarity": 0.08844674085368573,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Rena greases three winches per shift.",
+      "start": 440,
+      "end": 477,
+      "similarity": 0.14775069257395268,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Pavel greases one hinge per shift.",
+      "start": 478,
+      "end": 512,
+      "similarity": 0.09943159409385634,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "start": 514,
+      "end": 641,
+      "similarity": 0.464732242613435,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+      "value": "Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+      "start": 643,
+      "end": 757,
+      "similarity": 0.336672097589566,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a382feee-8d9b-44d7-863b-38d95f786bdf:0",
+          "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage log",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 9.747203289943082,
+          "semanticScore": 0.7060171730326184,
+          "matchedTerms": [
+            "lenwick",
+            "canal",
+            "transit",
+            "highest",
+            "recorded",
+            "daily",
+            "temperature"
+          ],
+          "start": 198,
+          "end": 395
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a382feee-8d9b-44d7-863b-38d95f786bdf:0",
+          "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage log",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 9.747203289943082,
+          "semanticScore": 0.7060171730326184,
+          "matchedTerms": [
+            "lenwick",
+            "canal",
+            "transit",
+            "highest",
+            "recorded",
+            "daily",
+            "temperature"
+          ],
+          "start": 198,
+          "end": 395
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a382feee-8d9b-44d7-863b-38d95f786bdf:0",
+          "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure pac",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 9.747203289943082,
+          "semanticScore": 0.7060171730326184,
+          "matchedTerms": [
+            "lenwick",
+            "canal",
+            "transit",
+            "highest",
+            "recorded",
+            "daily",
+            "temperature"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a382feee-8d9b-44d7-863b-38d95f786bdf:0",
+          "documentId": "a382feee-8d9b-44d7-863b-38d95f786bdf",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure pac",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 9.747203289943082,
+          "semanticScore": 0.7060171730326184,
+          "matchedTerms": [
+            "lenwick",
+            "canal",
+            "transit",
+            "highest",
+            "recorded",
+            "daily",
+            "temperature"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.06137079745531082,
+    -0.02098928764462471,
+    -0.03821079060435295,
+    0.12006782740354538,
+    -0.07359994202852249,
+    -0.11733941733837128,
+    -0.0285891592502594,
+    -0.014735409989953041,
+    -0.07946658134460449,
+    -0.027174286544322968,
+    0.014929316937923431,
+    -0.08762545138597488,
+    -0.0495605394244194,
+    0.04806389659643173,
+    -0.010494998656213284,
+    -0.0320708341896534,
+    0.029690831899642944,
+    -0.04567372798919678,
+    -0.04449271038174629,
+    -0.03143982216715813,
+    0.005838918033987284,
+    0.06420847028493881,
+    0.017779141664505005,
+    -0.009537512436509132,
+    0.054375652223825455,
+    0.012580100446939468,
+    0.011998508125543594,
+    0.0643116682767868,
+    -0.0020686418283730745,
+    0.05387907475233078,
+    -0.1397152990102768,
+    -0.050764501094818115,
+    0.024925846606492996,
+    0.025113241747021675,
+    -0.005649365484714508,
+    0.015930792316794395,
+    0.02865736186504364,
+    -0.08191493153572083,
+    0.009337852708995342,
+    0.02562398836016655,
+    -0.03786763176321983,
+    -0.09198595583438873,
+    0.07990074157714844,
+    0.01771724410355091,
+    -0.02788299322128296,
+    0.00746090617030859,
+    -0.008555544540286064,
+    0.0035448793787509203,
+    0.006811241619288921,
+    0.03731540963053703,
+    0.02649540826678276,
+    0.0469333715736866,
+    0.03400574252009392,
+    0.05615895241498947,
+    -0.05742495879530907,
+    0.0424552820622921,
+    -0.052070777863264084,
+    -0.02101047709584236,
+    0.02026020735502243,
+    0.053032226860523224,
+    -0.0060066115111112595,
+    0.06685015559196472,
+    -0.152362659573555,
+    0.022983916103839874,
+    0.04026751592755318,
+    -0.014970310963690281,
+    -0.08698215335607529,
+    -0.00470368517562747,
+    0.017874611541628838,
+    -0.10954322665929794,
+    -0.05875297263264656,
+    0.0009149073157459497,
+    -0.015442169271409512,
+    -0.024935288354754448,
+    0.04326104372739792,
+    -0.05755963176488876,
+    0.0519833005964756,
+    0.015693403780460358,
+    -0.008743373677134514,
+    -0.007970503531396389,
+    0.04694284126162529,
+    -0.08519487082958221,
+    0.010672125965356827,
+    0.08007240295410156,
+    0.04113052785396576,
+    0.012717342004179955,
+    0.053182050585746765,
+    0.0698309913277626,
+    -0.06326192617416382,
+    0.007543768733739853,
+    0.04601156711578369,
+    0.010375333949923515,
+    -0.075881227850914,
+    -0.04211514815688133,
+    -0.10791976004838943,
+    0.10424325615167618,
+    -0.05526626482605934,
+    0.031722791492938995,
+    -0.06121223419904709,
+    0.010857840068638325,
+    -0.0555252730846405,
+    0.011194465681910515,
+    -0.03492489084601402,
+    0.12453648447990417,
+    0.0013509979471564293,
+    0.045389316976070404,
+    0.0022703236900269985,
+    -0.014402411878108978,
+    0.0012976411962881684,
+    -0.017528828233480453,
+    -0.02875402383506298,
+    0.008757071569561958,
+    -0.019712528213858604,
+    -0.00267010903917253,
+    0.05542348697781563,
+    -0.03804774954915047,
+    -0.039283085614442825,
+    0.04820416122674942,
+    0.0016575092449784279,
+    0.008746175095438957,
+    -0.02395210601389408,
+    -0.023338930681347847,
+    -0.0037629040889441967,
+    0.04306293651461601,
+    -0.06776425987482071,
+    0.09013069421052933,
+    0.06515173614025116,
+    -1.2268750252257374e-33,
+    0.030933620408177376,
+    0.010426209308207035,
+    0.026794476434588432,
+    -0.03150482475757599,
+    0.04619934782385826,
+    -0.05981091409921646,
+    -0.1109224483370781,
+    -0.0189647376537323,
+    0.046739399433135986,
+    -0.00286093563772738,
+    -0.01935921236872673,
+    -0.049071162939071655,
+    -0.05754927545785904,
+    -0.055715374648571014,
+    0.054040152579545975,
+    0.015285030007362366,
+    -0.02168741263449192,
+    0.04131133481860161,
+    -0.07315176725387573,
+    0.035032689571380615,
+    -0.03783487156033516,
+    0.01557478029280901,
+    0.041170258074998856,
+    -0.04812393710017204,
+    0.013317099772393703,
+    -0.06286217272281647,
+    -0.01618557795882225,
+    -0.050219934433698654,
+    0.09368325769901276,
+    0.043129753321409225,
+    -0.001414001453667879,
+    -0.03438011184334755,
+    -0.016084717586636543,
+    0.007885618135333061,
+    -0.05306100845336914,
+    0.025005921721458435,
+    -0.07057899236679077,
+    -0.057141516357660294,
+    0.029786117374897003,
+    0.09033647924661636,
+    0.03771321475505829,
+    -0.05848119407892227,
+    0.0406760573387146,
+    0.029131438583135605,
+    0.031896770000457764,
+    0.011874391697347164,
+    -0.021458322182297707,
+    -0.005299786571413279,
+    0.06260137259960175,
+    0.01187985297292471,
+    -0.009126750752329826,
+    0.007195370737463236,
+    -0.06842073053121567,
+    -0.0459262877702713,
+    -0.005663350690156221,
+    0.01083754375576973,
+    0.06489166617393494,
+    0.03622427582740784,
+    0.032751571387052536,
+    0.08775346726179123,
+    -0.07906931638717651,
+    0.05593086779117584,
+    0.09447257220745087,
+    -0.056847669184207916,
+    0.1027013435959816,
+    0.06599495559930801,
+    0.00863221101462841,
+    -0.030403660610318184,
+    -0.04497654736042023,
+    0.0077390847727656364,
+    -0.056797366589307785,
+    0.033388443291187286,
+    0.022968044504523277,
+    -0.016483305022120476,
+    -0.017539186403155327,
+    -0.00526007916778326,
+    0.05033981800079346,
+    0.02588261105120182,
+    0.04690384492278099,
+    0.016981054097414017,
+    -0.08535972982645035,
+    0.05468813702464104,
+    0.10742662101984024,
+    0.04908415302634239,
+    0.050685301423072815,
+    -0.04590246453881264,
+    -0.07591550052165985,
+    -0.012840253300964832,
+    -0.0023328042589128017,
+    0.021640419960021973,
+    -0.05220381170511246,
+    0.010108607821166515,
+    -0.0560903437435627,
+    0.017067501321434975,
+    -0.005139067769050598,
+    1.586325034659869e-33,
+    0.07976672053337097,
+    0.050614725798368454,
+    -0.01895747520029545,
+    0.0668523758649826,
+    -0.10535610467195511,
+    0.00489457231014967,
+    0.04694898799061775,
+    0.06767990440130234,
+    0.013432379812002182,
+    0.1025531068444252,
+    0.04985949024558067,
+    -0.012317326851189137,
+    0.08634109050035477,
+    -0.07536683976650238,
+    0.12990249693393707,
+    -0.0026797810569405556,
+    0.08532554656267166,
+    0.017734065651893616,
+    -0.03399023413658142,
+    -0.021128250285983086,
+    -0.06885367631912231,
+    0.047803498804569244,
+    -0.02460271492600441,
+    -0.006662100087851286,
+    -0.02659607119858265,
+    -0.006402341183274984,
+    -0.02314937487244606,
+    -0.06989223510026932,
+    -0.04800690338015556,
+    -0.04796162247657776,
+    -0.028590578585863113,
+    0.10413212329149246,
+    -0.00099137332290411,
+    0.03929399326443672,
+    -0.04031641408801079,
+    0.07352709025144577,
+    0.11021902412176132,
+    -0.009858500212430954,
+    0.0529082752764225,
+    0.07546889036893845,
+    0.030781686305999756,
+    -0.02132055163383484,
+    0.04705582559108734,
+    0.06891162693500519,
+    -0.012963310815393925,
+    0.00665879575535655,
+    -0.04586580768227577,
+    -0.0015185532392933965,
+    0.020982028916478157,
+    0.046667445451021194,
+    0.05766955018043518,
+    0.040837619453668594,
+    -0.10664509236812592,
+    0.056985870003700256,
+    0.07075633108615875,
+    0.03238014504313469,
+    0.01085645891726017,
+    -0.03238659352064133,
+    -0.09475649893283844,
+    -0.13887761533260345,
+    0.012473691254854202,
+    -0.02291753515601158,
+    -0.052038438618183136,
+    0.07016488909721375,
+    0.061604805290699005,
+    0.03606448695063591,
+    -0.04758402332663536,
+    0.004408267326653004,
+    -0.06024065613746643,
+    0.0017536147497594357,
+    0.06893525272607803,
+    -0.017844289541244507,
+    0.04826895520091057,
+    -0.04897967353463173,
+    -0.04366893321275711,
+    -0.0173211507499218,
+    0.06349384039640427,
+    0.0211903378367424,
+    -0.011754008941352367,
+    0.07802655547857285,
+    -0.13684925436973572,
+    0.030663987621665,
+    0.026158250868320465,
+    -0.013408402912318707,
+    0.001629599486477673,
+    -0.09896034747362137,
+    0.04176456108689308,
+    -0.02970193885266781,
+    0.026466866955161095,
+    0.04663515090942383,
+    -0.015542102046310902,
+    0.007993810810148716,
+    -0.05635209009051323,
+    -0.03368513658642769,
+    -0.020851003006100655,
+    -1.5050625634671633e-8,
+    0.015407603234052658,
+    0.045556750148534775,
+    -0.060194216668605804,
+    0.012545849196612835,
+    0.047988466918468475,
+    -0.010825314559042454,
+    0.049945928156375885,
+    0.08988507091999054,
+    -0.043271973729133606,
+    0.05173724144697189,
+    0.06175445765256882,
+    0.07933621853590012,
+    0.0031661605462431908,
+    -0.005441426299512386,
+    -0.014330687001347542,
+    -0.06272068619728088,
+    -0.0322224423289299,
+    -0.05178961157798767,
+    -0.03756777197122574,
+    -0.07715443521738052,
+    0.027125215157866478,
+    -0.037506211549043655,
+    0.007562063168734312,
+    0.014220313169062138,
+    0.047008056193590164,
+    -0.0053104255348443985,
+    0.01923448219895363,
+    0.07392203062772751,
+    0.03144561126828194,
+    -0.04117310792207718,
+    -0.05044599622488022,
+    -0.059804126620292664,
+    -0.041808921843767166,
+    -0.02865341678261757,
+    -0.04039160907268524,
+    0.002063274383544922,
+    0.03289692476391792,
+    0.08892317861318588,
+    -0.028869766741991043,
+    -0.040194012224674225,
+    0.02143922448158264,
+    -0.05177991837263107,
+    -0.026190459728240967,
+    0.07124709337949753,
+    0.09537477791309357,
+    0.02293950505554676,
+    -0.07300471514463425,
+    0.06567125022411346,
+    0.05702365189790726,
+    -0.023529889062047005,
+    -0.030075838789343834,
+    0.023979250341653824,
+    0.11923683434724808,
+    0.037252988666296005,
+    -0.04433656483888626,
+    -0.005228439811617136,
+    -0.049024052917957306,
+    0.015173407271504402,
+    -0.06251578032970428,
+    0.060843586921691895,
+    -0.02297789789736271,
+    -0.01712866872549057,
+    -0.07773511111736298,
+    -0.013406266458332539
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "start": 0,
+        "content": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention."
+      },
+      {
+        "filename": "01_Rillpoint_Lightstation.txt",
+        "start": 0,
+        "content": "Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "start": 0,
+        "content": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention."
+      },
+      {
+        "filename": "01_Rillpoint_Lightstation.txt",
+        "start": 0,
+        "content": "Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention."
+      }
+    ]
+  }
+}

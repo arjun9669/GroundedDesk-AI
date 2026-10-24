@@ -1,0 +1,225 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "F31",
+  "question": "Compare all packet contents for Velric Instrument Workshop purchasing and Sable Travelling Books dispatch.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\n[2] Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+    "sources": [
+      {
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "quote": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code."
+      },
+      {
+        "filename": "04_Sable_Travelling_Books.txt",
+        "quote": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip."
+      }
+    ],
+    "displayed": "Shared vocabulary: acknowledgement, acknowledges, five, rebuilt, requests, service, sheet, three, within. Shared terms do not establish factual agreement.\n\n[1] 03_Velric_Instrument_Workshop.txt\n\nThe purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\nText line 3 (normalized extraction)\n\nLocate in library ↗\n[2] 04_Sable_Travelling_Books.txt\n\nSable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.\n\nText line 7 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare all packet contents for Velric Instrument Workshop purchasing and Sable Travelling Books dispatch.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "dff654d1-791c-4540-84e7-c9e2307e70d2",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+        "warning": false,
+        "supported": true,
+        "quote": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code."
+      },
+      {
+        "citation": 2,
+        "documentId": "caf8396b-2fcf-4734-b560-d2a16071c354",
+        "filename": "04_Sable_Travelling_Books.txt",
+        "excerpt": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+        "warning": false,
+        "supported": true,
+        "quote": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip."
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "acknowledges",
+      "five",
+      "rebuilt",
+      "requests",
+      "service",
+      "sheet",
+      "three",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\n[2] Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare all packet contents for Velric Instrument Workshop purchasing and Sable Travelling Books dispatch.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "dff654d1-791c-4540-84e7-c9e2307e70d2",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+        "warning": false,
+        "supported": true,
+        "quote": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+        "start": 275,
+        "end": 390
+      },
+      {
+        "citation": 2,
+        "documentId": "caf8396b-2fcf-4734-b560-d2a16071c354",
+        "filename": "04_Sable_Travelling_Books.txt",
+        "excerpt": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+        "warning": false,
+        "supported": true,
+        "quote": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip."
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "acknowledges",
+      "five",
+      "rebuilt",
+      "requests",
+      "service",
+      "sheet",
+      "three",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\n[2] Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+    "experiment": "V33 isolated lexical packet selection; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare all packet contents for Velric Instrument Workshop purchasing and Sable Travelling Books dispatch.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "dff654d1-791c-4540-84e7-c9e2307e70d2",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+        "warning": false,
+        "supported": true,
+        "quote": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+        "start": 275,
+        "end": 390
+      },
+      {
+        "citation": 2,
+        "documentId": "caf8396b-2fcf-4734-b560-d2a16071c354",
+        "filename": "04_Sable_Travelling_Books.txt",
+        "excerpt": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+        "warning": false,
+        "supported": true,
+        "quote": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip."
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "acknowledges",
+      "five",
+      "rebuilt",
+      "requests",
+      "service",
+      "sheet",
+      "three",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\n[2] Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+    "experiment": "V33 isolated lexical packet selection; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare all packet contents for Velric Instrument Workshop purchasing and Sable Travelling Books dispatch.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "dff654d1-791c-4540-84e7-c9e2307e70d2",
+          "filename": "03_Velric_Instrument_Workshop.txt",
+          "excerpt": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+          "warning": false,
+          "supported": true,
+          "quote": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+          "start": 275,
+          "end": 390
+        },
+        {
+          "citation": 2,
+          "documentId": "caf8396b-2fcf-4734-b560-d2a16071c354",
+          "filename": "04_Sable_Travelling_Books.txt",
+          "excerpt": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+          "warning": false,
+          "supported": true,
+          "quote": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip."
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "acknowledges",
+        "five",
+        "rebuilt",
+        "requests",
+        "service",
+        "sheet",
+        "three",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\n[2] Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+      "experiment": "V33 isolated lexical packet selection; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare all packet contents for Velric Instrument Workshop purchasing and Sable Travelling Books dispatch.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "dff654d1-791c-4540-84e7-c9e2307e70d2",
+          "filename": "03_Velric_Instrument_Workshop.txt",
+          "excerpt": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+          "warning": false,
+          "supported": true,
+          "quote": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+          "start": 275,
+          "end": 390
+        },
+        {
+          "citation": 2,
+          "documentId": "caf8396b-2fcf-4734-b560-d2a16071c354",
+          "filename": "04_Sable_Travelling_Books.txt",
+          "excerpt": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+          "warning": false,
+          "supported": true,
+          "quote": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip."
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "acknowledges",
+        "five",
+        "rebuilt",
+        "requests",
+        "service",
+        "sheet",
+        "three",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\n[2] Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+      "experiment": "V33 isolated lexical packet selection; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v46 and paired v43 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

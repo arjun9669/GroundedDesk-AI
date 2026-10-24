@@ -1,0 +1,954 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "H03",
+  "question": "How long are session attendance registers retained, including the exception?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How long are session attendance registers retained, including the exception?",
+    "expected_display": "How long are session attendance registers retained, including the exception?",
+    "rendered_question": "How long are session attendance registers retained, including the exception?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+    "sources": [
+      {
+        "filename": "01_Cobalt_Planetarium.txt",
+        "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+        "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow long are session attendance registers retained, including the exception?\n\nSearched all files: 01_Cobalt_Planetarium.txt · 02_Cobalt_Gallery.txt · 03_Cobalt_Seed_Library.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\n\nSOURCE EVIDENCE\n[1]\n01_Cobalt_Planetarium.txt\n\nText line 4 (normalized extraction)\n\nts at most 48 visitors. The number counts seated visitors, not staff. P-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement. P-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention. P-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Research results",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf:0",
+        "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+        "filename": "01_Cobalt_Planetarium.txt",
+        "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+        "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+        "score": 0.0214,
+        "lexicalScore": 1.782669214972075,
+        "semanticScore": null,
+        "matchedTerms": [
+          "session",
+          "attendance",
+          "registers"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "sources": [],
+    "answer": "I can't find this in the provided documents.",
+    "mode": "Experimental v45 supported relations",
+    "experiment": "V45 isolated supported relation contracts; production unchanged",
+    "relation_contract": {
+      "status": "unsupported",
+      "kind": "retention",
+      "reason": "Unique scoped document required"
+    }
+  },
+  "section": {
+    "answered": false,
+    "sources": [],
+    "answer": "I can't find this in the provided documents.",
+    "mode": "Experimental v45 supported relations",
+    "experiment": "V45 isolated supported relation contracts; production unchanged",
+    "relation_contract": {
+      "status": "unsupported",
+      "kind": "retention",
+      "reason": "Unique scoped document required"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Cobalt_Planetarium.txt",
+      "start": 309,
+      "content": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "semanticScore": 0.7539876141589894,
+      "lexicalScore": 5.135316417267239
+    },
+    {
+      "filename": "02_Cobalt_Gallery.txt",
+      "start": 158,
+      "content": "Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.",
+      "semanticScore": 0.44871456462746073,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Cobalt_Seed_Library.txt",
+      "start": 211,
+      "content": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+      "semanticScore": 0.4426092224873574,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+      "value": "P-01.",
+      "start": 54,
+      "end": 59,
+      "similarity": 0.08465727406425935,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+      "value": "Each planetarium session admits at most 48 visitors.",
+      "start": 60,
+      "end": 112,
+      "similarity": 0.34597573870474,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+      "value": "The number counts seated visitors, not staff.",
+      "start": 113,
+      "end": 158,
+      "similarity": 0.3034708819176128,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+      "value": "P-02.",
+      "start": 159,
+      "end": 164,
+      "similarity": 0.08773949108410733,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+      "value": "The projection technician begins the alignment check 25 minutes before doors open.",
+      "start": 165,
+      "end": 247,
+      "similarity": 0.14419006605109977,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+      "value": "The check is repeated after any projector replacement.",
+      "start": 248,
+      "end": 302,
+      "similarity": 0.16403198117038537,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+      "value": "P-03.",
+      "start": 303,
+      "end": 308,
+      "similarity": 0.10160375374023792,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+      "value": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "start": 309,
+      "end": 425,
+      "similarity": 0.7539876141589894,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+      "value": "P-04.",
+      "start": 426,
+      "end": 431,
+      "similarity": 0.09485527409389065,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+      "value": "A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+      "start": 432,
+      "end": 561,
+      "similarity": 0.21952757426157665,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdfc1735-b33d-47d2-a542-676c4d84a221",
+      "value": "G-01.",
+      "start": 50,
+      "end": 55,
+      "similarity": 0.035607308771655924,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdfc1735-b33d-47d2-a542-676c4d84a221",
+      "value": "Each guided gallery session admits at most 32 visitors.",
+      "start": 56,
+      "end": 111,
+      "similarity": 0.15343188569644253,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdfc1735-b33d-47d2-a542-676c4d84a221",
+      "value": "The number counts visitors, not guides.",
+      "start": 112,
+      "end": 151,
+      "similarity": 0.16589055524446056,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdfc1735-b33d-47d2-a542-676c4d84a221",
+      "value": "G-02.",
+      "start": 152,
+      "end": 157,
+      "similarity": 0.02656291507454938,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdfc1735-b33d-47d2-a542-676c4d84a221",
+      "value": "Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.",
+      "start": 158,
+      "end": 260,
+      "similarity": 0.44871456462746073,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdfc1735-b33d-47d2-a542-676c4d84a221",
+      "value": "G-03.",
+      "start": 261,
+      "end": 266,
+      "similarity": 0.023887435159979188,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdfc1735-b33d-47d2-a542-676c4d84a221",
+      "value": "Newly arrived framed prints must remain in the acclimatisation room for 36 hours.",
+      "start": 267,
+      "end": 348,
+      "similarity": 0.33685636909953703,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdfc1735-b33d-47d2-a542-676c4d84a221",
+      "value": "Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.",
+      "start": 349,
+      "end": 455,
+      "similarity": 0.2156723927502294,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdfc1735-b33d-47d2-a542-676c4d84a221",
+      "value": "G-04.",
+      "start": 456,
+      "end": 461,
+      "similarity": 0.05550427407065303,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdfc1735-b33d-47d2-a542-676c4d84a221",
+      "value": "A gallery loan may be accepted only with written approval from the Collection Curator and Registrar.",
+      "start": 462,
+      "end": 562,
+      "similarity": 0.046823696351761035,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e1136ea6-3cdd-4120-8333-92fdbebe633c",
+      "value": "S-01.",
+      "start": 55,
+      "end": 60,
+      "similarity": 0.10296001236202108,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e1136ea6-3cdd-4120-8333-92fdbebe633c",
+      "value": "Seed envelopes air-dry for 18 hours before shelving.",
+      "start": 61,
+      "end": 113,
+      "similarity": 0.13653171397549363,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e1136ea6-3cdd-4120-8333-92fdbebe633c",
+      "value": "Envelopes that remain damp are isolated until the Seed Librarian records a dry inspection.",
+      "start": 114,
+      "end": 204,
+      "similarity": 0.1513904577930746,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e1136ea6-3cdd-4120-8333-92fdbebe633c",
+      "value": "S-02.",
+      "start": 205,
+      "end": 210,
+      "similarity": 0.10623663619582673,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e1136ea6-3cdd-4120-8333-92fdbebe633c",
+      "value": "Seed accession registers are retained for five years, unless an active conservation hold requires longer retention.",
+      "start": 211,
+      "end": 326,
+      "similarity": 0.4426092224873574,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e1136ea6-3cdd-4120-8333-92fdbebe633c",
+      "value": "S-03.",
+      "start": 327,
+      "end": 332,
+      "similarity": 0.09453967790705775,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e1136ea6-3cdd-4120-8333-92fdbebe633c",
+      "value": "Each visitor may collect up to three seed packets per visit, unless a donor restriction limits that seed variety to one packet.",
+      "start": 333,
+      "end": 460,
+      "similarity": 0.15957914780971882,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e1136ea6-3cdd-4120-8333-92fdbebe633c",
+      "value": "S-04.",
+      "start": 461,
+      "end": 466,
+      "similarity": 0.11450707563418477,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e1136ea6-3cdd-4120-8333-92fdbebe633c",
+      "value": "A donated seed batch must receive written acceptance from the Seed Librarian and Conservation Coordinator before distribution.",
+      "start": 467,
+      "end": 593,
+      "similarity": 0.06199181916270041,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf:0",
+          "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+          "filename": "01_Cobalt_Planetarium.txt",
+          "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "score": 0.0214,
+          "lexicalScore": 1.782669214972075,
+          "semanticScore": null,
+          "matchedTerms": [
+            "session",
+            "attendance",
+            "registers"
+          ],
+          "start": 309,
+          "end": 425
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf:0",
+          "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+          "filename": "01_Cobalt_Planetarium.txt",
+          "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "score": 0.0214,
+          "lexicalScore": 1.782669214972075,
+          "semanticScore": null,
+          "matchedTerms": [
+            "session",
+            "attendance",
+            "registers"
+          ],
+          "start": 309,
+          "end": 425
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf:0",
+          "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+          "filename": "01_Cobalt_Planetarium.txt",
+          "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "score": 0.0214,
+          "lexicalScore": 1.782669214972075,
+          "semanticScore": null,
+          "matchedTerms": [
+            "session",
+            "attendance",
+            "registers"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf:0",
+          "documentId": "791b001f-9e2a-440d-abf4-a8b8a03b6fcf",
+          "filename": "01_Cobalt_Planetarium.txt",
+          "excerpt": "ts at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use.",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "score": 0.0214,
+          "lexicalScore": 1.782669214972075,
+          "semanticScore": null,
+          "matchedTerms": [
+            "session",
+            "attendance",
+            "registers"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cobalt_Planetarium.txt",
+          "quote": "Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.01344025507569313,
+    0.01726815290749073,
+    -0.006247721612453461,
+    -0.0011666592909023166,
+    -0.018544692546129227,
+    0.09234347194433212,
+    0.01957753859460354,
+    0.01464848406612873,
+    0.0014845257392153144,
+    -0.07408516108989716,
+    0.023974819108843803,
+    0.051412008702754974,
+    -0.010191017761826515,
+    -0.04134274274110794,
+    -0.0031324203591793776,
+    -0.07009036839008331,
+    -0.0073720719665288925,
+    -0.06963346898555756,
+    0.02939773164689541,
+    0.015903156250715256,
+    -0.030833879485726357,
+    -0.014080854132771492,
+    -0.05410255864262581,
+    0.10920195281505585,
+    0.0637546181678772,
+    -0.03199165314435959,
+    0.06850402057170868,
+    -0.01430006604641676,
+    0.08176448941230774,
+    0.03230701759457588,
+    -0.04683918133378029,
+    0.050938528031110764,
+    0.03552410006523132,
+    -0.020371755585074425,
+    0.05815904587507248,
+    -0.014813932590186596,
+    0.0448123998939991,
+    0.017667917534708977,
+    -0.005039246287196875,
+    -0.031063366681337357,
+    -0.015124856494367123,
+    -0.047355908900499344,
+    -0.02862672135233879,
+    0.0404575914144516,
+    -0.03856297582387924,
+    -0.009694775566458702,
+    -0.0063120597042143345,
+    -0.03609074652194977,
+    -0.0072433678433299065,
+    0.04049587994813919,
+    0.06633004546165466,
+    0.03796657174825668,
+    0.06390148401260376,
+    0.08348946273326874,
+    -0.08120701462030411,
+    0.03319167718291283,
+    -0.00768651906400919,
+    0.00220249081030488,
+    -0.08293022960424423,
+    0.11544445157051086,
+    -0.060085926204919815,
+    0.0037681078538298607,
+    -0.05996796861290932,
+    -0.018237516283988953,
+    0.03209726884961128,
+    0.0010605213465169072,
+    0.011692699044942856,
+    -0.06629954278469086,
+    0.15912628173828125,
+    0.014435101300477982,
+    -0.12246181815862656,
+    0.0346662737429142,
+    -0.052755821496248245,
+    0.07009387761354446,
+    0.016026891767978668,
+    0.024187128990888596,
+    0.024281878024339676,
+    -0.009056628681719303,
+    0.035034649074077606,
+    -0.09168311208486557,
+    0.0008461080142296851,
+    0.006683007813990116,
+    0.06643711775541306,
+    -0.0021684435196220875,
+    0.03894776105880737,
+    -0.043229736387729645,
+    -0.017027132213115692,
+    0.10301517695188522,
+    -0.06751734018325806,
+    -0.047422077506780624,
+    -0.017253099009394646,
+    0.044777702540159225,
+    -0.017092064023017883,
+    -0.04656340181827545,
+    0.019820865243673325,
+    -0.02851487323641777,
+    -0.024647921323776245,
+    0.10670191049575806,
+    0.09125495702028275,
+    0.029506629332900047,
+    -0.020867029204964638,
+    0.039130449295043945,
+    -0.07781199365854263,
+    0.07319791615009308,
+    -0.048834554851055145,
+    -0.033315058797597885,
+    -0.02328861504793167,
+    -0.019960910081863403,
+    -0.00031523240613751113,
+    0.035864707082509995,
+    0.056279782205820084,
+    -0.0015317020006477833,
+    0.08455024659633636,
+    0.06822267174720764,
+    0.05279512330889702,
+    0.048657093197107315,
+    0.02045055665075779,
+    0.028109168633818626,
+    -0.004457009024918079,
+    0.06897519528865814,
+    0.022652186453342438,
+    0.07181544601917267,
+    0.05501469597220421,
+    -0.04893564060330391,
+    -0.08376850187778473,
+    -0.0025560460053384304,
+    0.04653339460492134,
+    -3.0597768977018743e-33,
+    -0.09639331698417664,
+    -0.026674367487430573,
+    -0.07471678406000137,
+    0.019098958000540733,
+    0.01670917309820652,
+    -0.027970386669039726,
+    -0.04363253340125084,
+    -0.010059654712677002,
+    0.057121530175209045,
+    0.0070998757146298885,
+    -0.02470061555504799,
+    -0.023865384981036186,
+    0.06956256926059723,
+    -0.05106532201170921,
+    -0.004647364839911461,
+    0.03904999420046806,
+    0.05851788446307182,
+    0.12606452405452728,
+    -0.021739667281508446,
+    0.027495454996824265,
+    0.03430825099349022,
+    -0.03255666792392731,
+    0.07812464982271194,
+    0.1046774685382843,
+    0.0070540946908295155,
+    0.03777926787734032,
+    -0.0069195907562971115,
+    -0.002914533019065857,
+    0.07880083471536636,
+    -0.005810419097542763,
+    0.06794776767492294,
+    0.009149965830147266,
+    -0.030348554253578186,
+    0.06665555387735367,
+    0.1337115615606308,
+    0.018474875018000603,
+    0.08303073793649673,
+    0.004875597544014454,
+    0.04918360337615013,
+    -0.05427759885787964,
+    -0.03015023283660412,
+    0.01839582994580269,
+    0.03354981169104576,
+    -0.0078232167288661,
+    -0.06393691152334213,
+    -0.09942272305488586,
+    0.022797750309109688,
+    -0.035123806446790695,
+    0.025574201717972755,
+    0.06781961023807526,
+    -0.027011863887310028,
+    -0.009299472905695438,
+    -0.056270357221364975,
+    -0.0051588942296803,
+    -0.08500809222459793,
+    -0.01114188227802515,
+    -0.00866172555834055,
+    -0.010550090111792088,
+    0.002006840892136097,
+    0.042192235589027405,
+    0.043277282267808914,
+    0.10661876946687698,
+    -0.04619351774454117,
+    -0.03814907744526863,
+    -0.0211014486849308,
+    -0.009065454825758934,
+    -0.05106346681714058,
+    -0.04227006062865257,
+    -0.029695406556129456,
+    -0.10471028089523315,
+    0.09877895563840866,
+    -0.04200183227658272,
+    -0.07058302313089371,
+    -0.014726263470947742,
+    -0.029132217168807983,
+    -0.06918476521968842,
+    0.10116448253393173,
+    -0.01745549403131008,
+    -0.009751479141414165,
+    0.07017013430595398,
+    0.1046486422419548,
+    -0.05496806651353836,
+    -0.011559863574802876,
+    -0.07362519949674606,
+    -0.04126482456922531,
+    -0.011981930583715439,
+    0.10467036813497543,
+    -0.06591212749481201,
+    -0.042691852897405624,
+    0.014942764304578304,
+    -0.0029138324316591024,
+    -0.04194420948624611,
+    -0.009576857089996338,
+    0.058660369366407394,
+    0.012800375930964947,
+    1.9840322424254814e-33,
+    0.0763571560382843,
+    0.009439450688660145,
+    -0.06818287819623947,
+    -0.021332181990146637,
+    0.014001632109284401,
+    -0.024487536400556564,
+    0.01779193803668022,
+    0.1344701647758484,
+    -0.13289706408977509,
+    -0.12315192818641663,
+    0.008717098273336887,
+    0.007734574377536774,
+    0.034276653081178665,
+    0.02471194416284561,
+    -0.0480010062456131,
+    -0.026612117886543274,
+    0.022751349955797195,
+    0.01766926422715187,
+    -0.04542601481080055,
+    0.02033495157957077,
+    0.0940716415643692,
+    -0.0641653910279274,
+    -0.009511217474937439,
+    -0.08633015304803848,
+    -0.05990230664610863,
+    -0.004918323829770088,
+    -0.05128991976380348,
+    -0.05745061859488487,
+    -0.044157762080430984,
+    -0.049320947378873825,
+    0.030164731666445732,
+    -0.03748214244842529,
+    -0.09174002707004547,
+    -0.0012003653682768345,
+    0.01771429553627968,
+    -0.12780074775218964,
+    -0.033134572207927704,
+    0.09367289394140244,
+    -0.11316540092229843,
+    0.05346772447228432,
+    0.012144461274147034,
+    -0.027009056881070137,
+    -0.03677252307534218,
+    0.00626793410629034,
+    0.06352018564939499,
+    0.04982073977589607,
+    -0.058346737176179886,
+    0.04784928262233734,
+    -0.004277788568288088,
+    0.021878737956285477,
+    -0.06424187868833542,
+    -0.09886807203292847,
+    0.0255208071321249,
+    -0.0061309970915317535,
+    -0.0023287120275199413,
+    0.04191622510552406,
+    0.05422695726156235,
+    -0.021625397726893425,
+    0.04109984263777733,
+    -0.04398021101951599,
+    0.0652502030134201,
+    -0.019397182390093803,
+    -0.0603385791182518,
+    0.02053663693368435,
+    0.08766061812639236,
+    0.008731799200177193,
+    0.05269112437963486,
+    0.06394419074058533,
+    0.009356969967484474,
+    0.027877455577254295,
+    0.03582575172185898,
+    0.003943085670471191,
+    -0.045192331075668335,
+    -0.03043108992278576,
+    -0.03314732387661934,
+    0.032154906541109085,
+    -0.0346575528383255,
+    -0.023962555453181267,
+    -0.025520773604512215,
+    -0.036710333079099655,
+    -0.10165245085954666,
+    -0.014820210635662079,
+    -0.033260080963373184,
+    0.005854679271578789,
+    -0.007658367045223713,
+    -0.0330021046102047,
+    0.06779906153678894,
+    0.02773171104490757,
+    0.015069342218339443,
+    0.013396683149039745,
+    0.07528410106897354,
+    0.023323409259319305,
+    -0.01729738898575306,
+    -0.05603964626789093,
+    -0.020886894315481186,
+    -1.6753993747897766e-8,
+    0.0009673968888819218,
+    0.02483993023633957,
+    0.009381414391100407,
+    -0.011775989085435867,
+    0.07887967675924301,
+    -0.09400632977485657,
+    0.008221699856221676,
+    0.020504051819443703,
+    0.020869381725788116,
+    0.04290745407342911,
+    -0.0009388711187057197,
+    -0.039103277027606964,
+    0.021881356835365295,
+    -0.06444637477397919,
+    -0.005163166671991348,
+    0.02219812199473381,
+    0.011689206585288048,
+    -0.0004842623311560601,
+    -0.04056234285235405,
+    -0.02065073512494564,
+    -0.09022028744220734,
+    -0.014348394237458706,
+    0.045809146016836166,
+    0.0023951828479766846,
+    -0.08139380812644958,
+    0.04794786497950554,
+    0.08380066603422165,
+    0.09896332025527954,
+    -0.02882353775203228,
+    -0.033852893859148026,
+    -0.023851292207837105,
+    0.08072169870138168,
+    0.025405405089259148,
+    -0.07400839030742645,
+    -0.00693146325647831,
+    -0.016081400215625763,
+    -0.03667784482240677,
+    -0.040047787129879,
+    0.0130432965233922,
+    0.013467366807162762,
+    -0.033988576382398605,
+    -0.004704326391220093,
+    0.06544392555952072,
+    0.042862050235271454,
+    0.12022041529417038,
+    0.016657914966344833,
+    -0.07684046775102615,
+    0.0483606681227684,
+    0.00008538027759641409,
+    -0.024221090599894524,
+    -0.00933463778346777,
+    0.00274548027664423,
+    -0.028005365282297134,
+    0.03165318816900253,
+    0.04058817774057388,
+    0.02154567651450634,
+    0.03684882074594498,
+    -0.02025996334850788,
+    -0.005383927840739489,
+    -0.06432559341192245,
+    -0.032595932483673096,
+    0.0309161227196455,
+    -0.07663934677839279,
+    -0.10361498594284058
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Cobalt_Planetarium.txt",
+        "start": 0,
+        "content": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+      },
+      {
+        "filename": "02_Cobalt_Gallery.txt",
+        "start": 0,
+        "content": "Cobalt Community Centre — Fictional Gallery Guide\nG-01. Each guided gallery session admits at most 32 visitors. The number counts visitors, not guides.\nG-02. Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.\nG-03. Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\nG-04. A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Cobalt_Planetarium.txt",
+        "start": 0,
+        "content": "Cobalt Community Centre — Fictional Planetarium Guide\nP-01. Each planetarium session admits at most 48 visitors. The number counts seated visitors, not staff.\nP-02. The projection technician begins the alignment check 25 minutes before doors open. The check is repeated after any projector replacement.\nP-03. Session attendance registers are kept for two years, unless an active safeguarding review requires longer retention.\nP-04. A replacement projector must receive written sign-off from the Projection Technician and Programme Coordinator before public use."
+      },
+      {
+        "filename": "02_Cobalt_Gallery.txt",
+        "start": 0,
+        "content": "Cobalt Community Centre — Fictional Gallery Guide\nG-01. Each guided gallery session admits at most 32 visitors. The number counts visitors, not guides.\nG-02. Gallery loan registers are retained for 12 years, unless the loan agreement specifies a longer period.\nG-03. Newly arrived framed prints must remain in the acclimatisation room for 36 hours. Prints arriving with visible condensation remain there until the Collection Curator confirms they are dry.\nG-04. A gallery loan may be accepted only with written approval from the Collection Curator and Registrar."
+      }
+    ]
+  }
+}

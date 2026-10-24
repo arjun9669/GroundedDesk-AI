@@ -428,3 +428,18 @@ and checks archived originals plus added files. Use the original execution plan
 with this mandatory amendment; do not regenerate or overwrite its first freeze.
 Approved checks:15 targeted /863 full unit /28 Keyword PASS. No model preflight,
 study case or saved-vector replay was rerun. Explicit study approval is still needed.
+
+
+## V46 failed 732-case study — published outcome
+
+The [failed-study report](V46_REGRESSION_FAILED_RESULTS.md) records once-only capture,
+original first audit failure, approved post-capture audit adapter, native FAIL and
+separate completed binding review. See `eval/v46-regression-rescore/PROTOCOL.md`
+for that adapter's scope. It grades saved outputs only; no candidate/model replay.
+Fresh64 is60 PASS/4 PARTIAL per variant; only10/19 historical gates preserve, with
+20 prior PASS losses per variant. Cobalt H03 remains natively BLOCKED. The original
+native queue's PENDING labels are dated checkpoints; separate review records cover
+all128 Fresh64 and40 changed historical rows without editing native outcomes.
+874 units/28 Keyword passing logs predate publication; no new model/scoring run
+was made for documentation. Preserve all raw/result/correction/review manifests.
+Next agree a preservation-first repair design; do not rerun or overwrite this study.

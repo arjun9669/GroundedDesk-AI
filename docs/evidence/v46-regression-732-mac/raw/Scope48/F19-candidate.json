@@ -1,0 +1,1269 @@
+{
+  "candidate_identity": "coverage-v46-comparison-relations",
+  "id": "F19",
+  "question": "Who was Guy's Rival?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who was Guy's Rival?",
+    "expected_display": "Who was Guy's Rival?",
+    "rendered_question": "Who was Guy's Rival?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+    "sources": [
+      {
+        "filename": "04_Normans.md",
+        "excerpt": "# Normans\n\n## Context 1\nVarious princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan. Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons. By 1 June, Richard had conquered the whole island. His exploit was well publicized and",
+        "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho was Guy's Rival?\n\nSearched all files: 01_University_of_Chicago.md · 02_Islamism.md · 03_European_Union_law.md · 04_Normans.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.\n\nSOURCE EVIDENCE\n[1]\n04_Normans.md\n\nText line 4 (normalized extraction)\n\n# Normans ## Context 1 Various princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan. Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons. By 1 June, Richard had conquered the whole island. His exploit was well publicized and\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "eef25cbf-f6f3-483c-9ecf-29ac92e75614:0",
+        "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+        "filename": "04_Normans.md",
+        "excerpt": "# Normans\n\n## Context 1\nVarious princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan. Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons. By 1 June, Richard had conquered the whole island. His exploit was well publicized and",
+        "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+        "score": 0.0214,
+        "lexicalScore": 5.249061350242115,
+        "semanticScore": null,
+        "matchedTerms": [
+          "guy",
+          "rival"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "eef25cbf-f6f3-483c-9ecf-29ac92e75614:0",
+        "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+        "filename": "04_Normans.md",
+        "excerpt": "# Normans\n\n## Context 1\nVarious princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his t",
+        "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+        "score": 0.0214,
+        "lexicalScore": 5.249061350242115,
+        "semanticScore": null,
+        "matchedTerms": [
+          "guy",
+          "rival"
+        ],
+        "start": 126,
+        "end": 233
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Normans.md",
+        "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+        "slots": {
+          "kind": "actor",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 456,
+          "cosine": 0.3684802805757506,
+          "slot_supported": false,
+          "lexical_matches": 1
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Normans.md",
+        "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+        "slots": {
+          "kind": "actor",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no bounded eligible relation"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Normans.md",
+        "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "eef25cbf-f6f3-483c-9ecf-29ac92e75614:11",
+        "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+        "filename": "04_Normans.md",
+        "excerpt": "# Normans\n\n## Context 1\nVarious princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his t",
+        "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+        "score": 0.0214,
+        "lexicalScore": 5.074283719716558,
+        "semanticScore": null,
+        "matchedTerms": [
+          "guy",
+          "rival"
+        ],
+        "start": 126,
+        "end": 233
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Normans.md",
+        "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+        "slots": {
+          "kind": "actor",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 456,
+          "cosine": 0.3684802805757506,
+          "slot_supported": false,
+          "lexical_matches": 1
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Normans.md",
+        "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+        "slots": {
+          "kind": "actor",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no bounded eligible relation"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Normans.md",
+        "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Normans.md",
+      "start": 456,
+      "content": "Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan.",
+      "semanticScore": 0.3684802805757506,
+      "lexicalScore": 2.7879253695752415
+    },
+    {
+      "filename": "04_Normans.md",
+      "start": 126,
+      "content": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+      "semanticScore": null,
+      "lexicalScore": 6.464144162039995
+    },
+    {
+      "filename": "04_Normans.md",
+      "start": 24,
+      "content": "Various princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan.",
+      "semanticScore": null,
+      "lexicalScore": 2.8719862945022676
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "The first buildings of the University of Chicago campus, which make up what is now known as the Main Quadrangles, were part of a \"master plan\" conceived by two University of Chicago trustees and plotted by Chicago architect Henry Ives Cobb.",
+      "start": 38,
+      "end": 278,
+      "similarity": 0.03661642812934286,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "The Main Quadrangles consist of six quadrangles, each surrounded by buildings, bordering one larger quadrangle.",
+      "start": 279,
+      "end": 390,
+      "similarity": 0.004607479439898188,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "The buildings of the Main Quadrangles were designed by Cobb, Shepley, Rutan and Coolidge, Holabird & Roche, and other architectural firms in a mixture of the Victorian Gothic and Collegiate Gothic styles, patterned on the colleges of the University of Oxford.",
+      "start": 391,
+      "end": 650,
+      "similarity": 0.08435469679306838,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "(Mitchell Tower, for example, is modeled after Oxford's Magdalen Tower, and the university Commons, Hutchinson Hall, replicates Christ Church Hall.)",
+      "start": 651,
+      "end": 799,
+      "similarity": 0.02369232151072537,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "All Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government.",
+      "start": 814,
+      "end": 1036,
+      "similarity": 0.041937159860048256,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit.",
+      "start": 1037,
+      "end": 1171,
+      "similarity": 0.10108234358023904,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring.",
+      "start": 1172,
+      "end": 1391,
+      "similarity": 0.027398267164710492,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "Its annual budget is greater than $2 million.",
+      "start": 1392,
+      "end": 1437,
+      "similarity": -0.024776079810873767,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "start": 1470,
+      "end": 1570,
+      "similarity": -0.020085466750550566,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "This approval authority applies only to standard cargo schedules at Orvella Depot.",
+      "start": 1571,
+      "end": 1653,
+      "similarity": -0.09465032342522672,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "94b03c4a-bafe-4acb-96bc-f13f9844775f",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1654,
+      "end": 1710,
+      "similarity": -0.06941650146862913,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "03261b5e-a033-43bd-b0b4-9946e29f8af0",
+      "value": "Some elements of the Brotherhood, though perhaps against orders, did engage in violence against the government, and its founder Al-Banna was assassinated in 1949 in retaliation for the assassination of Egypt's premier Mahmud Fami Naqrashi three months earlier.",
+      "start": 25,
+      "end": 285,
+      "similarity": 0.1604817738675532,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "03261b5e-a033-43bd-b0b4-9946e29f8af0",
+      "value": "The Brotherhood has suffered periodic repression in Egypt and has been banned several times, in 1948 and several years later following confrontations with Egyptian president Gamal Abdul Nasser, who jailed thousands of members for several years.",
+      "start": 286,
+      "end": 530,
+      "similarity": 0.09565483272521938,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "03261b5e-a033-43bd-b0b4-9946e29f8af0",
+      "value": "After al-Nimeiry was overthrown in 1985 the party did poorly in national elections, but in 1989 it was able to overthrow the elected post-al-Nimeiry government with the help of the military.",
+      "start": 545,
+      "end": 735,
+      "similarity": 0.12498145780178462,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "03261b5e-a033-43bd-b0b4-9946e29f8af0",
+      "value": "Turabi was noted for proclaiming his support for the democratic process and a liberal government before coming to power, but strict application of sharia law, torture and mass imprisonment of the opposition, and an intensification of the long-running war in southern Sudan, once in power.",
+      "start": 736,
+      "end": 1024,
+      "similarity": 0.07723183304912506,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "03261b5e-a033-43bd-b0b4-9946e29f8af0",
+      "value": "The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.",
+      "start": 1025,
+      "end": 1188,
+      "similarity": 0.1723896566858483,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "03261b5e-a033-43bd-b0b4-9946e29f8af0",
+      "value": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "start": 1221,
+      "end": 1321,
+      "similarity": -0.019970886415795287,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "03261b5e-a033-43bd-b0b4-9946e29f8af0",
+      "value": "This approval authority applies only to standard shelf indexes at Tiravel Library.",
+      "start": 1322,
+      "end": 1404,
+      "similarity": -0.12757714690535435,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "03261b5e-a033-43bd-b0b4-9946e29f8af0",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1405,
+      "end": 1461,
+      "similarity": -0.06941650146862913,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "Following the Nice Treaty, there was an attempt to reform the constitutional law of the European Union and make it more transparent; this would have also produced a single constitutional document.",
+      "start": 35,
+      "end": 231,
+      "similarity": -0.039282808561858555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "However, as a result of the referendum in France and the referendum in the Netherlands, the 2004 Treaty establishing a Constitution for Europe never came into force.",
+      "start": 232,
+      "end": 397,
+      "similarity": -0.010262937853770866,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "Instead, the Lisbon Treaty was enacted.",
+      "start": 398,
+      "end": 437,
+      "similarity": 0.05329566462387208,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "Its substance was very similar to the proposed constitutional treaty, but it was formally an amending treaty, and – though it significantly altered the existing treaties – it did not completely replace them.",
+      "start": 438,
+      "end": 645,
+      "similarity": 0.02865552580510347,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "None of the original treaties establishing the European Union mention protection for fundamental rights.",
+      "start": 660,
+      "end": 764,
+      "similarity": -0.05708039081649786,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "It was not envisaged for European Union measures, that is legislative and administrative actions by European Union institutions, to be subject to human rights.",
+      "start": 765,
+      "end": 924,
+      "similarity": -0.07281763908273207,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "At the time the only concern was that member states should be prevented from violating human rights, hence the establishment of the European Convention on Human Rights in 1950 and the establishment of the European Court of Human Rights.",
+      "start": 925,
+      "end": 1161,
+      "similarity": 0.012120273254821949,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "The European Court of Justice recognised fundamental rights as general principle of European Union law as the need to ensure that European Union measures are compatible with the human rights enshrined in member states' constitution became ever more apparent.",
+      "start": 1162,
+      "end": 1420,
+      "similarity": -0.027764081485196056,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "In 1999 the European Council set up a body tasked with drafting a European Charter of Human Rights, which could form the constitutional basis for the European Union and as such tailored specifically to apply to the European Union and its institutions.",
+      "start": 1421,
+      "end": 1672,
+      "similarity": -0.1401780890570065,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "The Charter of Fundamental Rights of the European Union draws a list of fundamental rights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.",
+      "start": 1673,
+      "end": 1945,
+      "similarity": -0.05968987478871362,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "start": 1978,
+      "end": 2073,
+      "similarity": -0.014467117582310543,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "start": 2074,
+      "end": 2154,
+      "similarity": -0.07809412277611809,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "2f962545-3448-46f7-91cf-43be3ce2d5c2",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2155,
+      "end": 2211,
+      "similarity": -0.06941650146862913,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "Various princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan.",
+      "start": 24,
+      "end": 125,
+      "similarity": 0.12465960722115446,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+      "start": 126,
+      "end": 233,
+      "similarity": 0.33400616353796103,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard.",
+      "start": 234,
+      "end": 407,
+      "similarity": 0.19457539797674123,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "But Isaac changed his mind and tried to escape.",
+      "start": 408,
+      "end": 455,
+      "similarity": 0.13987697492210105,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan.",
+      "start": 456,
+      "end": 548,
+      "similarity": 0.3684802805757506,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons.",
+      "start": 549,
+      "end": 670,
+      "similarity": 0.11017832364063843,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "By 1 June, Richard had conquered the whole island.",
+      "start": 671,
+      "end": 721,
+      "similarity": 0.26274002189491147,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "His exploit was well publicized and contributed to his reputation; he also derived significant financial gains from the conquest of the island.",
+      "start": 722,
+      "end": 865,
+      "similarity": 0.277145610642022,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "Richard left for Acre on 5 June, with his allies.",
+      "start": 866,
+      "end": 915,
+      "similarity": 0.21983847903100925,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "Before his departure, he named two of his Norman generals, Richard de Camville and Robert de Thornham, as governors of Cyprus.",
+      "start": 916,
+      "end": 1042,
+      "similarity": 0.20972593284314034,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France.",
+      "start": 1057,
+      "end": 1223,
+      "similarity": 0.09259099111303426,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "They were descended from Norse (\"Norman\" comes from \"Norseman\") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia.",
+      "start": 1224,
+      "end": 1431,
+      "similarity": 0.2888209720955461,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia.",
+      "start": 1432,
+      "end": 1627,
+      "similarity": 0.08756052139425137,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.",
+      "start": 1628,
+      "end": 1799,
+      "similarity": 0.01646394787840831,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "start": 1832,
+      "end": 1931,
+      "similarity": -0.04247373343320727,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "This approval authority applies only to standard display cards at Fenora Gallery.",
+      "start": 1932,
+      "end": 2013,
+      "similarity": -0.0726809578839824,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2014,
+      "end": 2070,
+      "similarity": -0.06941650146862913,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "eef25cbf-f6f3-483c-9ecf-29ac92e75614:0",
+          "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+          "filename": "04_Normans.md",
+          "excerpt": "# Normans\n\n## Context 1\nVarious princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his t",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "score": 0.0214,
+          "lexicalScore": 5.249061350242115,
+          "semanticScore": null,
+          "matchedTerms": [
+            "guy",
+            "rival"
+          ],
+          "start": 126,
+          "end": 233
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Normans.md",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "slots": {
+            "kind": "actor",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 456,
+            "cosine": 0.3684802805757506,
+            "slot_supported": false,
+            "lexical_matches": 1
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Normans.md",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "slots": {
+            "kind": "actor",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no bounded eligible relation"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Normans.md",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "eef25cbf-f6f3-483c-9ecf-29ac92e75614:11",
+          "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+          "filename": "04_Normans.md",
+          "excerpt": "# Normans\n\n## Context 1\nVarious princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his t",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "score": 0.0214,
+          "lexicalScore": 5.074283719716558,
+          "semanticScore": null,
+          "matchedTerms": [
+            "guy",
+            "rival"
+          ],
+          "start": 126,
+          "end": 233
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Normans.md",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "slots": {
+            "kind": "actor",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 456,
+            "cosine": 0.3684802805757506,
+            "slot_supported": false,
+            "lexical_matches": 1
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Normans.md",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "slots": {
+            "kind": "actor",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no bounded eligible relation"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Normans.md",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "eef25cbf-f6f3-483c-9ecf-29ac92e75614:0",
+          "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+          "filename": "04_Normans.md",
+          "excerpt": "# Normans\n\n## Context 1\nVarious princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his t",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "score": 0.0214,
+          "lexicalScore": 5.249061350242115,
+          "semanticScore": null,
+          "matchedTerms": [
+            "guy",
+            "rival"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Normans.md",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "slots": {
+            "kind": "actor",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 456,
+            "cosine": 0.3684802805757506,
+            "slot_supported": false,
+            "lexical_matches": 1
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Normans.md",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "slots": {
+            "kind": "actor",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no bounded eligible relation"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "eef25cbf-f6f3-483c-9ecf-29ac92e75614:11",
+          "documentId": "eef25cbf-f6f3-483c-9ecf-29ac92e75614",
+          "filename": "04_Normans.md",
+          "excerpt": "# Normans\n\n## Context 1\nVarious princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his t",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "score": 0.0214,
+          "lexicalScore": 5.074283719716558,
+          "semanticScore": null,
+          "matchedTerms": [
+            "guy",
+            "rival"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Normans.md",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "slots": {
+            "kind": "actor",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 456,
+            "cosine": 0.3684802805757506,
+            "slot_supported": false,
+            "lexical_matches": 1
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Normans.md",
+          "quote": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+          "slots": {
+            "kind": "actor",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no bounded eligible relation"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.0010567926801741123,
+    0.039012033492326736,
+    -0.05843107029795647,
+    -0.05513196066021919,
+    -0.03058967925608158,
+    0.046774812042713165,
+    0.05639093741774559,
+    0.03960912674665451,
+    -0.03981170430779457,
+    0.038792338222265244,
+    0.0025810222141444683,
+    -0.010975970886647701,
+    0.04437714442610741,
+    -0.034713778644800186,
+    -0.005262940656393766,
+    0.005639631766825914,
+    -0.03736107796430588,
+    -0.009525425732135773,
+    0.012375765480101109,
+    -0.0209910050034523,
+    -0.0727534219622612,
+    -0.016598619520664215,
+    0.007497566286474466,
+    -0.07069417089223862,
+    0.024367326870560646,
+    -0.0018560412572696805,
+    0.043546125292778015,
+    0.06902164965867996,
+    -0.016154805198311806,
+    -0.022234667092561722,
+    0.024424556642770767,
+    -0.04120076447725296,
+    0.014448665082454681,
+    -0.05089271441102028,
+    -0.09087531268596649,
+    -0.027263181284070015,
+    -0.01725604757666588,
+    0.026514187455177307,
+    0.028699224814772606,
+    -0.0070455181412398815,
+    -0.019383670762181282,
+    -0.00814652256667614,
+    0.0462077371776104,
+    0.05325356870889664,
+    -0.037593647837638855,
+    0.03151274845004082,
+    0.029684431850910187,
+    0.01540876179933548,
+    -0.020048754289746284,
+    0.035035837441682816,
+    0.0477946400642395,
+    -0.01635373756289482,
+    0.020886164158582687,
+    -0.001457757200114429,
+    0.08566553145647049,
+    0.03869770094752312,
+    0.04541599377989769,
+    0.04584222659468651,
+    0.010147320106625557,
+    0.05216340348124504,
+    -0.04336840286850929,
+    0.03176075965166092,
+    -0.028606301173567772,
+    0.007116890046745539,
+    -0.0009056931012310088,
+    -0.0931553766131401,
+    -0.07482834905385971,
+    0.06955653429031372,
+    -0.010249600745737553,
+    0.07321664690971375,
+    0.017860829830169678,
+    -0.00859710294753313,
+    -0.06362567096948624,
+    -0.0382254421710968,
+    -0.03411180153489113,
+    -0.045242421329021454,
+    0.0017094957875087857,
+    0.056652557104825974,
+    0.06277132034301758,
+    -0.028772631660103798,
+    0.00527263293042779,
+    -0.029123561456799507,
+    -0.05461673066020012,
+    0.038332272320985794,
+    -0.0028071030974388123,
+    -0.02268853411078453,
+    0.05337896943092346,
+    -0.07717902958393097,
+    -0.04288407042622566,
+    0.016809755936264992,
+    -0.06344440579414368,
+    0.019683480262756348,
+    0.07068807631731033,
+    0.027866585180163383,
+    -0.030744297429919243,
+    0.01764063350856304,
+    -0.007914678193628788,
+    0.08050886541604996,
+    -0.07439761608839035,
+    0.12584036588668823,
+    0.07335417717695236,
+    -0.004195900168269873,
+    -0.019294843077659607,
+    0.016194213181734085,
+    0.07298125326633453,
+    0.03514445573091507,
+    0.03235511854290962,
+    0.02320052497088909,
+    0.07213102281093597,
+    0.004116083029657602,
+    0.03887275606393814,
+    -0.00462804501876235,
+    -0.09087488800287247,
+    0.028220638632774353,
+    0.032883089035749435,
+    -0.08035441488027573,
+    0.02187000960111618,
+    0.02998463064432144,
+    -0.050656452775001526,
+    -0.08654803782701492,
+    0.039045415818691254,
+    0.025542719289660454,
+    -0.05246206000447273,
+    -0.030242571607232094,
+    0.0012171361595392227,
+    0.03807142376899719,
+    -0.013474686071276665,
+    -7.312548318373903e-33,
+    0.06764217466115952,
+    -0.05053724721074104,
+    -0.035987965762615204,
+    -0.004514727275818586,
+    -0.031233960762619972,
+    0.030295394361019135,
+    0.026542358100414276,
+    -0.01300079096108675,
+    -0.051170796155929565,
+    -0.07627177238464355,
+    -0.04365450516343117,
+    0.08546344935894012,
+    -0.058759305626153946,
+    -0.09145382046699524,
+    0.0677775889635086,
+    0.0907861739397049,
+    -0.05532395839691162,
+    -0.06997513771057129,
+    -0.0019064192892983556,
+    -0.054326534271240234,
+    0.0536484569311142,
+    0.1363282948732376,
+    -0.019675392657518387,
+    0.021324006840586662,
+    0.03448091074824333,
+    -0.022260352969169617,
+    0.02232433296740055,
+    -0.034826334565877914,
+    0.05543091148138046,
+    -0.004404307343065739,
+    0.021353308111429214,
+    0.01747327484190464,
+    -0.023963073268532753,
+    0.07452306896448135,
+    0.07289167493581772,
+    -0.08594375103712082,
+    0.005351276136934757,
+    -0.08842864632606506,
+    -0.03893662989139557,
+    0.08885471522808075,
+    0.04987418279051781,
+    0.003955638501793146,
+    -0.019299959763884544,
+    -0.029947856441140175,
+    -0.04057836905121803,
+    -0.03810025751590729,
+    -0.05468305945396423,
+    0.059544362127780914,
+    0.05000143125653267,
+    -0.0396738275885582,
+    -0.044515788555145264,
+    -0.05416441336274147,
+    0.0636095404624939,
+    -0.0021664872765541077,
+    -0.053242262452840805,
+    -0.06520773470401764,
+    0.025195475667715073,
+    0.030873548239469528,
+    0.03236723318696022,
+    0.04532317817211151,
+    0.006231715437024832,
+    0.06305333226919174,
+    0.17894679307937622,
+    0.016746174544095993,
+    -0.12502261996269226,
+    -0.02118479646742344,
+    0.009755237028002739,
+    0.017041394487023354,
+    -0.06897532194852829,
+    -0.015348934568464756,
+    0.058197274804115295,
+    -0.011785370297729969,
+    -0.06154400855302811,
+    -0.054894961416721344,
+    0.02494964376091957,
+    0.023454371839761734,
+    -0.029059819877147675,
+    0.032094184309244156,
+    -0.019204534590244293,
+    -0.0960388034582138,
+    -0.055759791284799576,
+    -0.016450822353363037,
+    0.042282383888959885,
+    -0.09840111434459686,
+    -0.129410058259964,
+    0.008049657568335533,
+    -0.002742875600233674,
+    -0.06169523671269417,
+    0.07547477632761002,
+    0.05518794059753418,
+    -0.08327479660511017,
+    -0.020115919411182404,
+    -0.018800178542733192,
+    0.00107401458080858,
+    -0.007103700190782547,
+    4.657133763173218e-33,
+    -0.022853903472423553,
+    0.039955414831638336,
+    0.06432386487722397,
+    0.055083975195884705,
+    0.1486443728208542,
+    -0.07497565448284149,
+    0.029305076226592064,
+    0.049829594790935516,
+    -0.009761507622897625,
+    0.0014259092276915908,
+    -0.004659474361687899,
+    0.02769790217280388,
+    0.03786642849445343,
+    0.02006455697119236,
+    0.10842134803533554,
+    -0.02884850464761257,
+    0.017980821430683136,
+    0.02108231745660305,
+    -0.021243678405880928,
+    0.031870875507593155,
+    0.08629229664802551,
+    -0.07063490897417068,
+    -0.03285269811749458,
+    -0.06535879522562027,
+    -0.07507272064685822,
+    0.046690281480550766,
+    0.06172969564795494,
+    -0.04988906532526016,
+    -0.06764942407608032,
+    0.027918681502342224,
+    0.012913218699395657,
+    0.011680778115987778,
+    -0.04215474799275398,
+    -0.008455941453576088,
+    -0.019442284479737282,
+    0.122829869389534,
+    -0.053822681307792664,
+    0.06470479816198349,
+    0.04138999432325363,
+    -0.03784218430519104,
+    -0.01760370470583439,
+    -0.0014686321374028921,
+    0.017261603847146034,
+    0.1422443836927414,
+    0.047023896127939224,
+    -0.025474565103650093,
+    -0.051616281270980835,
+    -0.005842719692736864,
+    -0.028160611167550087,
+    -0.05989822745323181,
+    -0.09547708928585052,
+    0.07849206030368805,
+    -0.027368776500225067,
+    -0.025796296074986458,
+    -0.00386875425465405,
+    0.004508729558438063,
+    0.07439399510622025,
+    0.10444615036249161,
+    -0.04070150852203369,
+    0.06616401672363281,
+    0.014307593926787376,
+    -0.05834757164120674,
+    0.013591879978775978,
+    0.06585994362831116,
+    -0.05675069987773895,
+    0.08022846281528473,
+    -0.02404903993010521,
+    0.00005400961163104512,
+    -0.010633117519319057,
+    -0.03280193731188774,
+    0.01728719472885132,
+    0.03173673897981644,
+    -0.03986089304089546,
+    0.017965013161301613,
+    -0.0016332338564097881,
+    0.10878351330757141,
+    -0.07259313762187958,
+    0.03577103465795517,
+    0.03780069202184677,
+    0.04539184644818306,
+    -0.047582704573869705,
+    0.07212386280298233,
+    -0.010561213828623295,
+    0.06537646055221558,
+    -0.11252624541521072,
+    0.03686344623565674,
+    -0.0033929189667105675,
+    0.020795295014977455,
+    -0.008989034220576286,
+    -0.030493319034576416,
+    0.07724498212337494,
+    -0.06143738701939583,
+    0.011457632295787334,
+    -0.06548962742090225,
+    -0.004616789985448122,
+    -1.6901665844670788e-8,
+    -0.06638146191835403,
+    0.006301936227828264,
+    -0.05184611678123474,
+    -0.002169606275856495,
+    -0.018618574365973473,
+    0.07273358106613159,
+    -0.01804530806839466,
+    -0.07968834042549133,
+    0.04582453891634941,
+    0.1395539939403534,
+    -0.04115445166826248,
+    0.022460060194134712,
+    -0.0037797281984239817,
+    -0.030779503285884857,
+    0.02733997069299221,
+    -0.0011212083045393229,
+    0.00457434868440032,
+    -0.08590324968099594,
+    -0.0609101839363575,
+    0.012919669970870018,
+    -8.869886869433685e-7,
+    -0.03766569122672081,
+    -0.011352847330272198,
+    0.009585480205714703,
+    0.037173785269260406,
+    0.01957555115222931,
+    0.01305724773555994,
+    0.07102183997631073,
+    0.005255675874650478,
+    -0.033269718289375305,
+    0.012480701319873333,
+    0.02862989529967308,
+    -0.13051968812942505,
+    -0.09307211637496948,
+    0.07004585862159729,
+    0.04676879942417145,
+    -0.03290557488799095,
+    -0.0369054339826107,
+    0.05492013692855835,
+    -0.0758303850889206,
+    -0.054259043186903,
+    -0.02242065593600273,
+    0.07425183802843094,
+    0.04578978940844536,
+    0.07947526127099991,
+    0.04491761699318886,
+    0.08015625923871994,
+    -0.05395335331559181,
+    -0.011101140640676022,
+    -0.009076271206140518,
+    0.004108258988708258,
+    -0.000657414726447314,
+    -0.002228385303169489,
+    0.004304045345634222,
+    -0.04801340401172638,
+    -0.11156515777111053,
+    -0.08179787546396255,
+    -0.01136508584022522,
+    -0.018824316561222076,
+    -0.06311751902103424,
+    0.02316782996058464,
+    -0.04526098445057869,
+    0.04908401146531105,
+    -0.051693275570869446
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Normans.md",
+        "start": 0,
+        "content": "# Normans\n\n## Context 1\nVarious princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan. Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons. By 1 June, Richard had conquered the whole island. His exploit was well publicized and"
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Normans.md",
+        "start": 11,
+        "content": "## Context 1\nVarious princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan. All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat. The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard. But Isaac changed his mind and tried to escape. Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan. Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons. By 1 June, Richard had conquered the whole island. His exploit was well publicized and contributed"
+      }
+    ]
+  }
+}
