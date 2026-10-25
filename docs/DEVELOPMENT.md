@@ -540,3 +540,23 @@ main, use explicit STUDY_APPROVAL, RUN_CONFIG, EVIDENCE_DIR and TEST_URL with th
 new browser-v49-regression runner. No question retries within an attempt. Seal raw
 before score.mjs, preserve native outcomes and separately review bindings. A native
 FAIL is not repaired by editing keys, source evidence or archived scores.
+
+
+## V49 full attempt3 result checkpoint
+
+[Failed-study report](V49_REGRESSION_FAILED_RESULTS.md) records full732-case capture
+and integrity PASS under the prospectively published expanded-quote/ranking-body
+contract. Preserve attempt1 startup failure and attempt2 partial515-record block.
+Attempt3 raw5,865 files/629,853,483 bytes are sealed before native scoring. Native
+FAIL: Fresh6463/0/1 each variant; historical17/19 family gates, five new false
+refusals per variant. Original public rows and old Cobalt BLOCKED archive remain.
+All prior-v46 PASS rows and paired-v43 accepted display parity are preserved.
+
+Separate author-aware review covers128 Fresh64 and10 changed historical rows plus
+40 expanded/4 legacy bindings; no native PASS contradiction, no native regrading.
+Do not re-run a frozen question or change archived evidence/criteria to hide a
+failure. New repairs need a new candidate/design and prospective freeze. Next
+address current-document scope, review-extension tails with duration guards and
+monthly store-location evidence/specification. No implicit location inference or
+post-hoc gold-key edit. Phase2/integration stays HOLD;1015 unit/28 Keyword PASS is
+engineering evidence, not quality acceptance or Windows qualification.

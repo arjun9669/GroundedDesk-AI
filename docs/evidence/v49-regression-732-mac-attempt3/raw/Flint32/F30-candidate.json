@@ -1,0 +1,248 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "F30",
+  "question": "Compare normal lubrication, dusty-room lubrication and inspection intervals for the Orren Horology Collection winding rig and Velric Instrument Workshop drill.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions.\n\n[2] For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room.",
+    "sources": [
+      {
+        "filename": "02_Orren_Horology_Collection.txt",
+        "quote": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions."
+      },
+      {
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "quote": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room."
+      }
+    ],
+    "displayed": "Shared vocabulary: celsius, conditions, degrees, dusty, every, highest, hours, inspection, lubrication, mean, monthly, normal. Shared terms do not establish factual agreement.\n\n[1] 02_Orren_Horology_Collection.txt\n\nFor the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions.\n\nText line 5 (normalized extraction)\n\nLocate in library ↗\n[2] 03_Velric_Instrument_Workshop.txt\n\nFor the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room.\n\nText line 9 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare normal lubrication, dusty-room lubrication and inspection intervals for the Orren Horology Collection winding rig and Velric Instrument Workshop drill.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "ebcb2f6f-4b16-41e5-89b0-bccc8dd9d739",
+        "filename": "02_Orren_Horology_Collection.txt",
+        "excerpt": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions.",
+        "warning": false,
+        "supported": true,
+        "quote": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions."
+      },
+      {
+        "citation": 2,
+        "documentId": "776f943d-ac7b-4590-aa5a-af7b6686231f",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room.",
+        "warning": false,
+        "supported": true,
+        "quote": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room."
+      }
+    ],
+    "sharedTerms": [
+      "celsius",
+      "conditions",
+      "degrees",
+      "dusty",
+      "every",
+      "highest",
+      "hours",
+      "inspection",
+      "lubrication",
+      "mean",
+      "monthly",
+      "normal"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions.\n\n[2] For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare normal lubrication, dusty-room lubrication and inspection intervals for the Orren Horology Collection winding rig and Velric Instrument Workshop drill.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "ebcb2f6f-4b16-41e5-89b0-bccc8dd9d739",
+        "filename": "02_Orren_Horology_Collection.txt",
+        "excerpt": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.",
+        "warning": false,
+        "supported": true,
+        "quote": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.",
+        "start": 342,
+        "end": 583
+      },
+      {
+        "citation": 2,
+        "documentId": "776f943d-ac7b-4590-aa5a-af7b6686231f",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+        "warning": false,
+        "supported": true,
+        "quote": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+        "start": 722,
+        "end": 938
+      }
+    ],
+    "sharedTerms": [
+      "celsius",
+      "conditions",
+      "degrees",
+      "dusty",
+      "every",
+      "highest",
+      "hours",
+      "inspection",
+      "lubrication",
+      "mean",
+      "monthly",
+      "normal"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.\n\n[2] For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare normal lubrication, dusty-room lubrication and inspection intervals for the Orren Horology Collection winding rig and Velric Instrument Workshop drill.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "ebcb2f6f-4b16-41e5-89b0-bccc8dd9d739",
+        "filename": "02_Orren_Horology_Collection.txt",
+        "excerpt": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.",
+        "warning": false,
+        "supported": true,
+        "quote": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.",
+        "start": 342,
+        "end": 583
+      },
+      {
+        "citation": 2,
+        "documentId": "776f943d-ac7b-4590-aa5a-af7b6686231f",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+        "warning": false,
+        "supported": true,
+        "quote": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+        "start": 722,
+        "end": 938
+      }
+    ],
+    "sharedTerms": [
+      "celsius",
+      "conditions",
+      "degrees",
+      "dusty",
+      "every",
+      "highest",
+      "hours",
+      "inspection",
+      "lubrication",
+      "mean",
+      "monthly",
+      "normal"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.\n\n[2] For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare normal lubrication, dusty-room lubrication and inspection intervals for the Orren Horology Collection winding rig and Velric Instrument Workshop drill.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "ebcb2f6f-4b16-41e5-89b0-bccc8dd9d739",
+          "filename": "02_Orren_Horology_Collection.txt",
+          "excerpt": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.",
+          "warning": false,
+          "supported": true,
+          "quote": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.",
+          "start": 342,
+          "end": 583
+        },
+        {
+          "citation": 2,
+          "documentId": "776f943d-ac7b-4590-aa5a-af7b6686231f",
+          "filename": "03_Velric_Instrument_Workshop.txt",
+          "excerpt": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+          "warning": false,
+          "supported": true,
+          "quote": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+          "start": 722,
+          "end": 938
+        }
+      ],
+      "sharedTerms": [
+        "celsius",
+        "conditions",
+        "degrees",
+        "dusty",
+        "every",
+        "highest",
+        "hours",
+        "inspection",
+        "lubrication",
+        "mean",
+        "monthly",
+        "normal"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.\n\n[2] For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare normal lubrication, dusty-room lubrication and inspection intervals for the Orren Horology Collection winding rig and Velric Instrument Workshop drill.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "ebcb2f6f-4b16-41e5-89b0-bccc8dd9d739",
+          "filename": "02_Orren_Horology_Collection.txt",
+          "excerpt": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.",
+          "warning": false,
+          "supported": true,
+          "quote": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.",
+          "start": 342,
+          "end": 583
+        },
+        {
+          "citation": 2,
+          "documentId": "776f943d-ac7b-4590-aa5a-af7b6686231f",
+          "filename": "03_Velric_Instrument_Workshop.txt",
+          "excerpt": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+          "warning": false,
+          "supported": true,
+          "quote": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+          "start": 722,
+          "end": 938
+        }
+      ],
+      "sharedTerms": [
+        "celsius",
+        "conditions",
+        "degrees",
+        "dusty",
+        "every",
+        "highest",
+        "hours",
+        "inspection",
+        "lubrication",
+        "mean",
+        "monthly",
+        "normal"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.\n\n[2] For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v49 and paired v43 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

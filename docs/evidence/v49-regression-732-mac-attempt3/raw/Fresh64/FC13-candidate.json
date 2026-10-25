@@ -1,0 +1,1430 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "FC13",
+  "question": "How many crates does Nera label per day at Kestwick Lens Workshop?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many crates does Nera label per day at Kestwick Lens Workshop?",
+    "expected_display": "How many crates does Nera label per day at Kestwick Lens Workshop?",
+    "rendered_question": "How many crates does Nera label per day at Kestwick Lens Workshop?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Olin labels eight crates per day.",
+    "sources": [
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "excerpt": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 ho",
+        "quote": "Olin labels eight crates per day."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many crates does Nera label per day at Kestwick Lens Workshop?\n\nSearched all files: 01_Bellhaven_Textile_Museum.txt · 02_Kestwick_Lens_Workshop.txt · 03_Ardmere_River_Station.txt · 04_Larchfen_Seed_Depot.txt · 05_Brindale_Music_Library.txt · 06_Tarrow_Glass_Laboratory.txt · 07_Westrill_Canal_Office.txt · 08_Oakenford_Survey_Store.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Olin labels eight crates per day.\n\nSOURCE EVIDENCE\n[1]\n02_Kestwick_Lens_Workshop.txt\n\nText line 3 (normalized extraction)\n\nKestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021. Nera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day. The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius. Lubricate the Kestwick Lens Workshop rig every 96 ho\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Olin labels eight crates per day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "48321e30-5f59-4037-a7e3-76fb0f8d6c80:0",
+        "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "excerpt": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 ho",
+        "quote": "Olin labels eight crates per day.",
+        "score": 0.0476,
+        "lexicalScore": 15.172520739035782,
+        "semanticScore": 0.6517604946692305,
+        "matchedTerms": [
+          "crates",
+          "nera",
+          "per",
+          "day",
+          "kestwick",
+          "lens",
+          "workshop"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Olin labels eight crates per day.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 160,
+          "cosine": 0.6595882381516768,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Olin labels eight crates per day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Nera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "claim_support_diagnostics": {
+      "refused": true,
+      "reason": "No displayed requested actor/action/object/cadence count clause"
+    },
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "No complete literal evidence for recognized request frame"
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Olin labels eight crates per day.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 160,
+          "cosine": 0.6595882381516768,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Olin labels eight crates per day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Nera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "claim_support_diagnostics": {
+      "refused": true,
+      "reason": "No displayed requested actor/action/object/cadence count clause"
+    },
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "No complete literal evidence for recognized request frame"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Kestwick_Lens_Workshop.txt",
+      "start": 160,
+      "content": "Olin labels eight crates per day.",
+      "semanticScore": 0.6595882381516768,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Kestwick_Lens_Workshop.txt",
+      "start": 125,
+      "content": "Nera polishes five lenses per day.",
+      "semanticScore": 0.6323672514280559,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Kestwick_Lens_Workshop.txt",
+      "start": 194,
+      "content": "Nera checks two gauges per day.",
+      "semanticScore": 0.50048709820839,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Larchfen_Seed_Depot.txt",
+      "start": 235,
+      "content": "Ema labels three packets per day.",
+      "semanticScore": 0.47518443293443097,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Kestwick_Lens_Workshop.txt",
+      "start": 587,
+      "content": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+      "semanticScore": 0.43714054124872115,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "54685b9d-bce0-41a2-a976-9c357d7da01a",
+      "value": "The Bellhaven Textile Museum relocated its collection in 1909.",
+      "start": 0,
+      "end": 62,
+      "similarity": 0.12478820317553976,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "54685b9d-bce0-41a2-a976-9c357d7da01a",
+      "value": "Its first conservation project finished in 1954; the second finished in 1982.",
+      "start": 63,
+      "end": 140,
+      "similarity": 0.16066580973266295,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "54685b9d-bce0-41a2-a976-9c357d7da01a",
+      "value": "A proposed closure in 2004 was rejected, and the museum remained open.",
+      "start": 141,
+      "end": 211,
+      "similarity": 0.10581314313205022,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "54685b9d-bce0-41a2-a976-9c357d7da01a",
+      "value": "Decorative weaving panels line the upper stair rail.",
+      "start": 213,
+      "end": 265,
+      "similarity": 0.06253539657306174,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "54685b9d-bce0-41a2-a976-9c357d7da01a",
+      "value": "The entrance crown carries a bronze compass.",
+      "start": 266,
+      "end": 310,
+      "similarity": 0.11622030486448177,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "54685b9d-bce0-41a2-a976-9c357d7da01a",
+      "value": "The lower wall displays a painted harbour map.",
+      "start": 311,
+      "end": 357,
+      "similarity": 0.04867786930343657,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "54685b9d-bce0-41a2-a976-9c357d7da01a",
+      "value": "The display cases use an argon fill because argon slows oxidation of the dyed fibres.",
+      "start": 359,
+      "end": 444,
+      "similarity": 0.13032495050200477,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "54685b9d-bce0-41a2-a976-9c357d7da01a",
+      "value": "The outer frame is aluminium and the shelf labels are paper.",
+      "start": 445,
+      "end": 505,
+      "similarity": 0.18640578620634984,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "54685b9d-bce0-41a2-a976-9c357d7da01a",
+      "value": "Bellhaven Textile Museum visitor registers are retained for 18 months, unless an unresolved access complaint requires longer retention.",
+      "start": 507,
+      "end": 642,
+      "similarity": 0.17432580876954995,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "Kestwick Lens Workshop opened its public test bench in 1998.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.3746671347431177,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "Its warehouse moved in 2013, and its roof was renewed in 2021.",
+      "start": 61,
+      "end": 123,
+      "similarity": 0.17376966284862946,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "Nera polishes five lenses per day.",
+      "start": 125,
+      "end": 159,
+      "similarity": 0.6323672514280559,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "Olin labels eight crates per day.",
+      "start": 160,
+      "end": 193,
+      "similarity": 0.6595882381516768,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "Nera checks two gauges per day.",
+      "start": 194,
+      "end": 225,
+      "similarity": 0.50048709820839,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+      "start": 227,
+      "end": 303,
+      "similarity": 0.4165123323504814,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.",
+      "start": 304,
+      "end": 419,
+      "similarity": 0.20396334317353254,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "Lubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay.",
+      "start": 421,
+      "end": 530,
+      "similarity": 0.40660529582927435,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "The inspection interval remains 24 hours in both bays.",
+      "start": 531,
+      "end": 585,
+      "similarity": 0.18339141218591734,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+      "start": 587,
+      "end": 708,
+      "similarity": 0.43714054124872115,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+      "value": "Kestwick Lens Workshop calibration logs are retained for 12 months, unless an unresolved calibration dispute requires longer retention.",
+      "start": 710,
+      "end": 845,
+      "similarity": 0.3551547259212154,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8ba5cfc0-d1d4-461a-a7c0-0061fdc337c3",
+      "value": "Orders released before 12:35 depart on the current operating day.",
+      "start": 0,
+      "end": 65,
+      "similarity": 0.20349109404698054,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8ba5cfc0-d1d4-461a-a7c0-0061fdc337c3",
+      "value": "At or after 12:35, departure is the next operating day, unless a river inspection hold is still active.",
+      "start": 66,
+      "end": 169,
+      "similarity": 0.1181289707471887,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8ba5cfc0-d1d4-461a-a7c0-0061fdc337c3",
+      "value": "Ardmere River Station cold samples must remain between 2 and 6 degrees Celsius during carriage.",
+      "start": 171,
+      "end": 266,
+      "similarity": 0.1042350380750105,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8ba5cfc0-d1d4-461a-a7c0-0061fdc337c3",
+      "value": "Ardmere River Station dispatch records are retained for 16 months, unless an unresolved flood review requires longer retention.",
+      "start": 268,
+      "end": 395,
+      "similarity": 0.057567618944165254,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8ba5cfc0-d1d4-461a-a7c0-0061fdc337c3",
+      "value": "Ardmere River Station acknowledges a carriage request within two operating days.",
+      "start": 397,
+      "end": 477,
+      "similarity": 0.11662659865920189,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8ba5cfc0-d1d4-461a-a7c0-0061fdc337c3",
+      "value": "Acknowledgement does not guarantee departure.",
+      "start": 478,
+      "end": 523,
+      "similarity": 0.003153248025589114,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a44365c-0ce6-4887-9b84-b7809b46ba6a",
+      "value": "Release ticket orders before 09:50 for departure on the current collection day.",
+      "start": 0,
+      "end": 79,
+      "similarity": 0.2137291744840642,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a44365c-0ce6-4887-9b84-b7809b46ba6a",
+      "value": "Ticket orders released at or after 09:50 depart on the next collection day, unless a seed screening hold remains active.",
+      "start": 80,
+      "end": 200,
+      "similarity": 0.18255155737638296,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a44365c-0ce6-4887-9b84-b7809b46ba6a",
+      "value": "Tavin sorts seven trays per day.",
+      "start": 202,
+      "end": 234,
+      "similarity": 0.32687070291515047,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a44365c-0ce6-4887-9b84-b7809b46ba6a",
+      "value": "Ema labels three packets per day.",
+      "start": 235,
+      "end": 268,
+      "similarity": 0.47518443293443097,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a44365c-0ce6-4887-9b84-b7809b46ba6a",
+      "value": "Tavin checks two bins per day.",
+      "start": 269,
+      "end": 299,
+      "similarity": 0.326020215748345,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a44365c-0ce6-4887-9b84-b7809b46ba6a",
+      "value": "The Larchfen Seed Depot dispatch packet includes a route card, seal register, depot label, and receipt.",
+      "start": 301,
+      "end": 404,
+      "similarity": 0.10151466834317933,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8a44365c-0ce6-4887-9b84-b7809b46ba6a",
+      "value": "Larchfen Seed Depot accession records are retained for 5 years, unless an unresolved quarantine case requires longer retention.",
+      "start": 406,
+      "end": 533,
+      "similarity": 0.015139164146563541,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "Brindale Music Library opened its catalogue store in 1958.",
+      "start": 0,
+      "end": 58,
+      "similarity": 0.09826956122659347,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "Its warehouse relocation took place in 1976.",
+      "start": 59,
+      "end": 103,
+      "similarity": 0.09386877158184655,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "The main roof was rebuilt in 1999.",
+      "start": 104,
+      "end": 138,
+      "similarity": 0.025569213552934872,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "The Brindale Music Library catalogue Echoes of Reed was published in 1991.",
+      "start": 140,
+      "end": 214,
+      "similarity": 0.12104775026892951,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "A different catalogue, Songs of Flint, was published in 2007.",
+      "start": 215,
+      "end": 276,
+      "similarity": 0.11385019151765749,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "Neither is designated the large work.",
+      "start": 277,
+      "end": 314,
+      "similarity": 0.13971784703553602,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "Each Brindale Music Library guided session admits at most 28 visitors.",
+      "start": 316,
+      "end": 386,
+      "similarity": 0.23423678289692973,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "Brindale Music Library acknowledges a loan request within four business days.",
+      "start": 388,
+      "end": 465,
+      "similarity": 0.1522014757737138,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "Acknowledgement does not promise confirmation of a loan.",
+      "start": 466,
+      "end": 522,
+      "similarity": -0.006275000763770565,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "Brindale Music Library loan receipts are retained for 9 months, unless an unresolved missing-instrument claim requires longer retention.",
+      "start": 524,
+      "end": 660,
+      "similarity": 0.08689995725706501,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "The highest monthly mean temperature in the Brindale Music Library store is 25 degrees Celsius in August.",
+      "start": 662,
+      "end": 767,
+      "similarity": 0.17436364804817855,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7550166b-55b2-4cd1-9ce4-9d21b78880aa",
+      "value": "Its highest daily reading is 37 degrees Celsius.",
+      "start": 768,
+      "end": 816,
+      "similarity": 0.2096970575892182,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating.",
+      "start": 0,
+      "end": 130,
+      "similarity": 0.1608604872763784,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "The support frames are steel and the labels are card.",
+      "start": 131,
+      "end": 184,
+      "similarity": 0.2556841900312434,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "Inspection emblems decorate the side balcony windows at Tarrow Glass Laboratory.",
+      "start": 186,
+      "end": 266,
+      "similarity": 0.1390000935763122,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "The entrance arch has a blue crest, and the ceiling carries a brass vane.",
+      "start": 267,
+      "end": 340,
+      "similarity": 0.04803545052937168,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "The Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius.",
+      "start": 342,
+      "end": 419,
+      "similarity": 0.16143434567704204,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "Its highest monthly mean is 26 degrees Celsius in June, and its highest daily reading is 39 degrees Celsius.",
+      "start": 420,
+      "end": 528,
+      "similarity": 0.1852529610682415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "No absolute winter minimum is stated.",
+      "start": 529,
+      "end": 566,
+      "similarity": 0.22736160732763142,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "The Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions.",
+      "start": 568,
+      "end": 693,
+      "similarity": 0.18814094879406937,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "Its inspection interval remains 18 hours in either condition.",
+      "start": 694,
+      "end": 755,
+      "similarity": 0.1977206277888087,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "start": 757,
+      "end": 878,
+      "similarity": 0.27434624257602125,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6eda6eac-6fbc-4525-994f-127c4a780cb6",
+      "value": "Each Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+      "start": 880,
+      "end": 951,
+      "similarity": 0.28966143993746646,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "458590e9-2135-4a96-b152-8558aabaf266",
+      "value": "Westrill Canal Office moved its dispatch counter in 1917.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.052593695097515894,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "458590e9-2135-4a96-b152-8558aabaf266",
+      "value": "Its first restoration was completed in 1965, and its second restoration was completed in 2003.",
+      "start": 58,
+      "end": 152,
+      "similarity": 0.10398926251975983,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "458590e9-2135-4a96-b152-8558aabaf266",
+      "value": "A proposed closure in 1978 was rejected and did not occur.",
+      "start": 153,
+      "end": 211,
+      "similarity": 0.008197295088656026,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "458590e9-2135-4a96-b152-8558aabaf266",
+      "value": "Pera registers four permits per day.",
+      "start": 213,
+      "end": 249,
+      "similarity": 0.29987984996768646,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "458590e9-2135-4a96-b152-8558aabaf266",
+      "value": "Sorin archives six maps per day.",
+      "start": 250,
+      "end": 282,
+      "similarity": 0.3205797657627512,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "458590e9-2135-4a96-b152-8558aabaf266",
+      "value": "Pera checks two seals per day.",
+      "start": 283,
+      "end": 313,
+      "similarity": 0.24776665133983614,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "458590e9-2135-4a96-b152-8558aabaf266",
+      "value": "Westrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.",
+      "start": 315,
+      "end": 437,
+      "similarity": 0.03035435811337594,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "458590e9-2135-4a96-b152-8558aabaf266",
+      "value": "The Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+      "start": 439,
+      "end": 560,
+      "similarity": 0.04820770509685371,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0139e2e7-70a3-4b2c-b0d5-48c3807323b4",
+      "value": "Oakenford Survey Store opened its public room in 1936.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.05957471000870845,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0139e2e7-70a3-4b2c-b0d5-48c3807323b4",
+      "value": "Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+      "start": 55,
+      "end": 141,
+      "similarity": 0.058736249874520356,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0139e2e7-70a3-4b2c-b0d5-48c3807323b4",
+      "value": "The Oakenford Survey Store Control Ledger was published in 2014.",
+      "start": 143,
+      "end": 207,
+      "similarity": 0.16505715193458875,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0139e2e7-70a3-4b2c-b0d5-48c3807323b4",
+      "value": "A different book, Field Atlas, was published in 2020.",
+      "start": 208,
+      "end": 261,
+      "similarity": 0.18103408229549023,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0139e2e7-70a3-4b2c-b0d5-48c3807323b4",
+      "value": "Neither is designated the large book.",
+      "start": 262,
+      "end": 299,
+      "similarity": 0.08318681237307188,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0139e2e7-70a3-4b2c-b0d5-48c3807323b4",
+      "value": "Each Oakenford Survey Store guided session admits at most 22 visitors.",
+      "start": 301,
+      "end": 371,
+      "similarity": 0.1921735728125008,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0139e2e7-70a3-4b2c-b0d5-48c3807323b4",
+      "value": "The Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 373,
+      "end": 463,
+      "similarity": 0.0968102875227954,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0139e2e7-70a3-4b2c-b0d5-48c3807323b4",
+      "value": "Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.",
+      "start": 464,
+      "end": 578,
+      "similarity": 0.20329702960210988,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0139e2e7-70a3-4b2c-b0d5-48c3807323b4",
+      "value": "Oakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention.",
+      "start": 580,
+      "end": 717,
+      "similarity": 0.08644825921342589,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "Olin labels eight crates per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 160,
+            "cosine": 0.6595882381516768,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "Olin labels eight crates per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "Nera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "claim_support_diagnostics": {
+        "refused": true,
+        "reason": "No displayed requested actor/action/object/cadence count clause"
+      },
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "Olin labels eight crates per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 160,
+            "cosine": 0.6595882381516768,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "Olin labels eight crates per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "Nera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "claim_support_diagnostics": {
+        "refused": true,
+        "reason": "No displayed requested actor/action/object/cadence count clause"
+      },
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Olin labels eight crates per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "48321e30-5f59-4037-a7e3-76fb0f8d6c80:0",
+          "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+          "filename": "02_Kestwick_Lens_Workshop.txt",
+          "excerpt": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 ho",
+          "quote": "Olin labels eight crates per day.",
+          "score": 0.0476,
+          "lexicalScore": 15.172520739035782,
+          "semanticScore": 0.6517604946692305,
+          "matchedTerms": [
+            "crates",
+            "nera",
+            "per",
+            "day",
+            "kestwick",
+            "lens",
+            "workshop"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "Olin labels eight crates per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 160,
+            "cosine": 0.6595882381516768,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "Olin labels eight crates per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Olin labels eight crates per day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "48321e30-5f59-4037-a7e3-76fb0f8d6c80:0",
+          "documentId": "48321e30-5f59-4037-a7e3-76fb0f8d6c80",
+          "filename": "02_Kestwick_Lens_Workshop.txt",
+          "excerpt": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 ho",
+          "quote": "Olin labels eight crates per day.",
+          "score": 0.0476,
+          "lexicalScore": 15.172520739035782,
+          "semanticScore": 0.6517604946692305,
+          "matchedTerms": [
+            "crates",
+            "nera",
+            "per",
+            "day",
+            "kestwick",
+            "lens",
+            "workshop"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "Olin labels eight crates per day.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 160,
+            "cosine": 0.6595882381516768,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Kestwick_Lens_Workshop.txt",
+          "quote": "Olin labels eight crates per day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.00816063117235899,
+    0.02400277368724346,
+    -0.09152697771787643,
+    0.05235524848103523,
+    -0.06816105544567108,
+    -0.0029552935156971216,
+    0.11635853350162506,
+    0.004247094038873911,
+    -0.01313895545899868,
+    -0.03675556927919388,
+    0.02811560593545437,
+    -0.1244136393070221,
+    -0.08796614408493042,
+    0.0385931134223938,
+    -0.0692714974284172,
+    0.008252052590250969,
+    0.01754191145300865,
+    -0.06611604243516922,
+    -0.03200652450323105,
+    -0.054454006254673004,
+    0.002083530416712165,
+    -0.03790432587265968,
+    0.06043888255953789,
+    -0.008668527007102966,
+    -0.02461504377424717,
+    0.04510065168142319,
+    -0.1014084741473198,
+    -0.05062345415353775,
+    0.049843188375234604,
+    -0.09834571182727814,
+    -0.04102548584342003,
+    0.054159943014383316,
+    0.016468748450279236,
+    0.01772753894329071,
+    0.09157775342464447,
+    -0.047235261648893356,
+    -0.06911318749189377,
+    0.026602361351251602,
+    -0.0336122065782547,
+    0.06609463691711426,
+    0.013602172024548054,
+    -0.02621086873114109,
+    -0.07486913353204727,
+    0.0168814305216074,
+    0.004598807543516159,
+    -0.03890417143702507,
+    -0.0009177981992252171,
+    -0.025167368352413177,
+    0.03512827306985855,
+    0.0254823025316,
+    -0.05297211557626724,
+    -0.01259646750986576,
+    -0.03815481811761856,
+    -0.009042871184647083,
+    0.06902363151311874,
+    0.03549353778362274,
+    -0.07192432135343552,
+    -0.05244774371385574,
+    0.07750643044710159,
+    0.05702638998627663,
+    0.03145493194460869,
+    -0.040242165327072144,
+    -0.07699981331825256,
+    0.0202940683811903,
+    0.10104185342788696,
+    -0.011229762807488441,
+    -0.05291124805808067,
+    -0.014524146914482117,
+    -0.025083767250180244,
+    -0.00409228540956974,
+    0.004896065685898066,
+    0.006051431410014629,
+    0.02398248203098774,
+    -0.0093893026933074,
+    -0.040681079030036926,
+    0.03901655226945877,
+    0.0500418096780777,
+    -0.043446678668260574,
+    0.07453805953264236,
+    0.03782547637820244,
+    -0.006770987994968891,
+    0.05356205999851227,
+    0.03420678526163101,
+    0.0431421622633934,
+    0.04247814789414406,
+    -0.011895814910531044,
+    -0.051407817751169205,
+    0.07619433104991913,
+    -0.06796766817569733,
+    -0.026072386652231216,
+    -0.03767731785774231,
+    0.004000980406999588,
+    -0.026388542726635933,
+    -0.02645859681069851,
+    -0.0799981877207756,
+    0.02140055038034916,
+    -0.08792390674352646,
+    0.07355082035064697,
+    0.02771090529859066,
+    0.05089866742491722,
+    0.021636225283145905,
+    -0.025433793663978577,
+    -0.04092635586857796,
+    0.034915342926979065,
+    -0.13629838824272156,
+    -0.033083777874708176,
+    0.025615695863962173,
+    0.06272117048501968,
+    -0.009691668674349785,
+    0.07257294654846191,
+    -0.054552868008613586,
+    0.015842514112591743,
+    -0.03244977444410324,
+    -0.03235015645623207,
+    0.04724748805165291,
+    0.05198689550161362,
+    0.04332936182618141,
+    0.05797334387898445,
+    0.08304769545793533,
+    0.011068296618759632,
+    0.04755624756217003,
+    -0.014859992079436779,
+    0.07206908613443375,
+    -0.015254618600010872,
+    -0.058967746794223785,
+    0.062349192798137665,
+    -0.015110617503523827,
+    -1.124445202559968e-33,
+    0.03625029698014259,
+    -0.0235187578946352,
+    0.03943556919693947,
+    0.03543402627110481,
+    0.07028046995401382,
+    -0.030704105272889137,
+    -0.02583027258515358,
+    0.006059904582798481,
+    -0.007068583741784096,
+    -0.06336579471826553,
+    -0.011124555952847004,
+    0.015420021489262581,
+    0.007547922432422638,
+    -0.014336755499243736,
+    0.013965452089905739,
+    0.01702546700835228,
+    0.023393815383315086,
+    0.0768313854932785,
+    -0.04196171835064888,
+    -0.028035735711455345,
+    -0.07227436453104019,
+    0.029641596600413322,
+    0.042456675320863724,
+    0.022852778434753418,
+    0.03364647179841995,
+    -0.02528686262667179,
+    -0.05222995579242706,
+    -0.0370786115527153,
+    0.0426841638982296,
+    0.022677626460790634,
+    0.03610336035490036,
+    0.04152505844831467,
+    0.05180385708808899,
+    0.022677795961499214,
+    -0.007194534409791231,
+    0.08434085547924042,
+    -0.002155125141143799,
+    0.004544904455542564,
+    0.00900228787213564,
+    -0.003688274882733822,
+    0.00003561340781743638,
+    0.09678944200277328,
+    0.05570656433701515,
+    -0.09369990974664688,
+    -0.015415310859680176,
+    0.08662588894367218,
+    0.019831618294119835,
+    0.04151282459497452,
+    0.014400875195860863,
+    0.062361106276512146,
+    0.01793520152568817,
+    -0.03557069972157478,
+    -0.12071510404348373,
+    -0.01704191416501999,
+    0.04554854333400726,
+    0.0732361376285553,
+    -0.009879560209810734,
+    -0.030066942796111107,
+    0.09498381614685059,
+    0.04166197404265404,
+    0.04180311784148216,
+    -0.01290352363139391,
+    -0.016170736402273178,
+    -0.0044874465093016624,
+    0.0433514378964901,
+    0.04143108054995537,
+    -0.06959623843431473,
+    0.03054078109562397,
+    -0.012306553311645985,
+    0.015048756264150143,
+    -0.027177169919013977,
+    0.05722794681787491,
+    0.02307993359863758,
+    -0.06274109333753586,
+    0.005146567709743977,
+    -0.021736344322562218,
+    -0.027604440227150917,
+    -0.022678453475236893,
+    -0.05483432114124298,
+    0.1186494529247284,
+    -0.03781600669026375,
+    0.06626381725072861,
+    0.03483092412352562,
+    0.007275193464010954,
+    -0.029036957770586014,
+    -0.019031479954719543,
+    -0.02143349125981331,
+    0.08138764649629593,
+    0.014035547152161598,
+    -0.016626382246613503,
+    0.05831584706902504,
+    -0.07313380390405655,
+    -0.12610654532909393,
+    -0.09329935908317566,
+    -0.08634782582521439,
+    2.7429384666495544e-34,
+    0.030149437487125397,
+    0.012790287844836712,
+    -0.07224898785352707,
+    0.08583541214466095,
+    0.07115296274423599,
+    0.059273093938827515,
+    0.037579771131277084,
+    0.10202325135469437,
+    0.11689073592424393,
+    0.062144260853528976,
+    0.041928403079509735,
+    0.037674520164728165,
+    0.009660471230745316,
+    0.006397746037691832,
+    -0.029305661097168922,
+    -0.06320773810148239,
+    -0.017185606062412262,
+    0.04312877357006073,
+    -0.00019948372209910303,
+    -0.07156819105148315,
+    -0.004143891856074333,
+    0.037293609231710434,
+    -0.03806149214506149,
+    0.01342394296079874,
+    -0.005497180391103029,
+    0.04535570740699768,
+    0.024642396718263626,
+    -0.06439314782619476,
+    -0.038339097052812576,
+    -0.04946204274892807,
+    -0.04530337080359459,
+    -0.08136490732431412,
+    -0.08268425613641739,
+    0.03873737156391144,
+    -0.0046376693062484264,
+    0.016153668984770775,
+    -0.004894946701824665,
+    -0.0201759934425354,
+    0.005449904128909111,
+    0.032463133335113525,
+    0.009021253325045109,
+    0.023946315050125122,
+    -0.02936461567878723,
+    0.042785122990608215,
+    -0.051646944135427475,
+    -0.01723804511129856,
+    0.0394013337790966,
+    -0.024553600698709488,
+    0.05594842508435249,
+    -0.028244605287909508,
+    -0.03935539722442627,
+    -0.04618442431092262,
+    -0.07537779211997986,
+    0.022521326318383217,
+    -0.021485455334186554,
+    0.024831697344779968,
+    -0.00982514675706625,
+    0.025035779923200607,
+    0.02109539322555065,
+    0.07195702940225601,
+    0.033355217427015305,
+    -0.01671094261109829,
+    -0.03472394123673439,
+    -0.020057426765561104,
+    -0.057688429951667786,
+    -0.011610977351665497,
+    -0.0239156112074852,
+    0.05769412964582443,
+    -0.04339475557208061,
+    -0.01818802021443844,
+    0.06537041813135147,
+    0.034099165350198746,
+    -0.004145239945501089,
+    -0.06116804480552673,
+    -0.1482488363981247,
+    -0.07644122838973999,
+    0.005105596035718918,
+    0.017550192773342133,
+    0.05183576047420502,
+    -0.010525443591177464,
+    -0.12498283386230469,
+    -0.05561874061822891,
+    -0.023348327726125717,
+    0.14234235882759094,
+    0.026002023369073868,
+    -0.023498672991991043,
+    0.08411283046007156,
+    0.0026422105729579926,
+    -0.017878303304314613,
+    0.0495000034570694,
+    0.028024816885590553,
+    -0.026750147342681885,
+    0.02144761197268963,
+    0.01540704257786274,
+    -0.009146458469331264,
+    -1.8346515417988485e-8,
+    -0.0018632092978805304,
+    0.06294296681880951,
+    -0.014533312991261482,
+    -0.040431298315525055,
+    0.07420613616704941,
+    0.021431509405374527,
+    0.00998371746391058,
+    0.04904176667332649,
+    -0.012290898710489273,
+    0.09835556149482727,
+    0.18412631750106812,
+    -0.023063328117132187,
+    -0.06803305447101593,
+    -0.05148743465542793,
+    -0.049428850412368774,
+    0.04016462713479996,
+    0.007245711516588926,
+    0.07065320760011673,
+    0.017271874472498894,
+    -0.03582673519849777,
+    0.05148307979106903,
+    -0.021650396287441254,
+    0.06734281033277512,
+    -0.0031922170892357826,
+    -0.09393839538097382,
+    -0.03708827495574951,
+    0.029846619814634323,
+    0.08145593851804733,
+    0.10965584218502045,
+    -0.03785112872719765,
+    0.0038755449932068586,
+    0.023321209475398064,
+    0.018192455172538757,
+    -0.005852174945175648,
+    -0.02301400527358055,
+    -0.09130865335464478,
+    -0.08797337859869003,
+    0.00927367340773344,
+    0.005100658163428307,
+    0.017687642946839333,
+    -0.07825611531734467,
+    -0.08687735348939896,
+    0.01650061272084713,
+    0.011115510016679764,
+    0.030633943155407906,
+    0.08626379072666168,
+    -0.10205597430467606,
+    -0.09352731704711914,
+    -0.07230977714061737,
+    -0.07363397628068924,
+    -0.0282292403280735,
+    -0.008435504510998726,
+    0.02716061845421791,
+    0.10118559747934341,
+    -0.006285557523369789,
+    0.02316673845052719,
+    0.03849571570754051,
+    -0.07593169808387756,
+    -0.0236556064337492,
+    -0.013820245862007141,
+    -0.007307755760848522,
+    -0.03448333591222763,
+    -0.08568111807107925,
+    0.04183206334710121
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "start": 0,
+        "content": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay. The inspection interval remains 24 hours in both bays.\n\nPurchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.\n\nKestwick Lens Workshop calibration logs are"
+      },
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "start": 653,
+        "content": "Lead and the Budget Steward at Kestwick Lens Workshop.\n\nKestwick Lens Workshop calibration logs are retained for 12 months, unless an unresolved calibration dispute requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "start": 0,
+        "content": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013, and its roof was renewed in 2021.\n\nNera polishes five lenses per day. Olin labels eight crates per day. Nera checks two gauges per day.\n\nThe Kestwick Lens Workshop winter average temperature is 11 degrees Celsius. Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.\n\nLubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay. The inspection interval remains 24 hours in both bays.\n\nPurchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.\n\nKestwick Lens Workshop calibration logs are"
+      },
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "start": 653,
+        "content": "Lead and the Budget Steward at Kestwick Lens Workshop.\n\nKestwick Lens Workshop calibration logs are retained for 12 months, unless an unresolved calibration dispute requires longer retention."
+      }
+    ]
+  }
+}

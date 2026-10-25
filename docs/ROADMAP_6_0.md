@@ -1,7 +1,7 @@
 # GroundedDesk 6.0 working roadmap
 
 Accepted as a working sequence in the October 20, 2026 conversation. Current
-phase: **2 — first Fresh64 confirmation FAIL; v46 exposed regression FAIL; v49 packages1–3 engineering complete after approved corrections, model validation pending**. Detailed product promises and quantitative
+phase: **2 — first Fresh64 confirmation FAIL; v46 exposed regression FAIL; v49 full regression FAIL (Fresh64 63/1, historical17/19 gates), repair pending**. Detailed product promises and quantitative
 release targets are not yet frozen; this roadmap does not declare 6.0 ready,
 promise production/security certification or authorize live integration.
 
@@ -65,6 +65,13 @@ original scope and prospective anchor-audit requirements.
 Keyword checks with fresh neutral Chrome/MiniLM preflight and970-file execution
 freeze. The user authorized capture after verified publication; no v49 model
 quality is measured at this preparation checkpoint.
+[The complete v49 attempt3 study](V49_REGRESSION_FAILED_RESULTS.md) now records
+63 PASS/1 FAIL Fresh64 in each variant and17/19 historical family gates. Integrity
+passes under a prospectively disclosed expanded-quotation anchor amendment. Five
+historical retention/scope refusals and one monthly location Comparison remain.
+All prior-v46 PASS rows are preserved; earlier blocked attempts and native results
+are unchanged. Engineering1015 unit/28 Keyword PASS does not override this failure.
+New repairs require a new candidate/design and prospective freeze.
 A new frozen regression and later unseen confirmation remain subsequent gates;
 live integration remains unauthorized.
 Preserve the accepted 668-case regression scope after fixes. Fresh64 is now exposed;

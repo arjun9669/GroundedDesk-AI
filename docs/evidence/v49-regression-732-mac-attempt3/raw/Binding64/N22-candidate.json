@@ -1,0 +1,1439 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "N22",
+  "question": "How many plates did Ivo Darven number at Nerith Sky Workshop?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many plates did Ivo Darven number at Nerith Sky Workshop?",
+    "expected_display": "How many plates did Ivo Darven number at Nerith Sky Workshop?",
+    "rendered_question": "How many plates did Ivo Darven number at Nerith Sky Workshop?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional completed tasks At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.",
+    "sources": [
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "excerpt": "comprises more than 60% of the state's total land surface. Victorian farms range from small horticultural outfits to large-scale livestock and grain productions. A quarter of farmland is used to grow consumable crops.\n\n## Fictional completed tasks\nAt the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days",
+        "quote": "## Fictional completed tasks\nAt the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many plates did Ivo Darven number at Nerith Sky Workshop?\n\nSearched all files: 01_Huguenot.md · 02_Victoria__Australia_.md · 03_Geology.md · 04_Packet_switching.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional completed tasks At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.\n\nSOURCE EVIDENCE\n[1]\n02_Victoria__Australia_.md\n\nText lines 9–10 (normalized extraction)\n\ncomprises more than 60% of the state's total land surface. Victorian farms range from small horticultural outfits to large-scale livestock and grain productions. A quarter of farmland is used to grow consumable crops. ## Fictional completed tasks At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations. ## Fictional retention At Nerith Sky Workshop, observation cards are kept for 70 days\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional completed tasks\nAt the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "503d3180-7548-44bc-b2ed-fa379588265d:659",
+        "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+        "filename": "02_Victoria__Australia_.md",
+        "excerpt": "comprises more than 60% of the state's total land surface. Victorian farms range from small horticultural outfits to large-scale livestock and grain productions. A quarter of farmland is used to grow consumable crops.\n\n## Fictional completed tasks\nAt the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days",
+        "quote": "## Fictional completed tasks\nAt the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.",
+        "score": 0.0476,
+        "lexicalScore": 12.534079982655667,
+        "semanticScore": 0.43173919633149965,
+        "matchedTerms": [
+          "plates",
+          "ivo",
+          "darven",
+          "nerith",
+          "sky",
+          "workshop"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Victoria__Australia_.md",
+        "quote": "Ivo Darven polished 52 plates.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Bounded actual MiniLM sentence/slot gain",
+        "selected": {
+          "start": 1198,
+          "cosine": 0.6699264128277542,
+          "slot_supported": true,
+          "lexical_matches": 3
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Victoria__Australia_.md",
+        "quote": "Ivo Darven polished 52 plates.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Victoria__Australia_.md",
+        "quote": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "relation_guard_diagnostics": {
+      "route": "No literal requested actor/action/count clause"
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Victoria__Australia_.md",
+        "quote": "Ivo Darven polished 52 plates.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Bounded actual MiniLM sentence/slot gain",
+        "selected": {
+          "start": 1198,
+          "cosine": 0.6699264128277542,
+          "slot_supported": true,
+          "lexical_matches": 3
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Victoria__Australia_.md",
+        "quote": "Ivo Darven polished 52 plates.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Victoria__Australia_.md",
+        "quote": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "relation_guard_diagnostics": {
+      "route": "No literal requested actor/action/count clause"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Victoria__Australia_.md",
+      "start": 1198,
+      "content": "Ivo Darven polished 52 plates.",
+      "semanticScore": 0.6699264128277542,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Victoria__Australia_.md",
+      "start": 1112,
+      "content": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.",
+      "semanticScore": 0.549082061838345,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Victoria__Australia_.md",
+      "start": 1623,
+      "content": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+      "semanticScore": 0.4365435424335696,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Packet_switching.md",
+      "start": 1693,
+      "content": "Eran Morven cleaned 41 trays.",
+      "semanticScore": 0.4018848128776554,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Victoria__Australia_.md",
+      "start": 1229,
+      "content": "Lena Corven photographed 16 plates.",
+      "semanticScore": 0.3809331012990301,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society.",
+      "start": 32,
+      "end": 150,
+      "similarity": 0.09679416366450729,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "The kingdom did not fully recover for years.",
+      "start": 151,
+      "end": 195,
+      "similarity": 0.042987559619125114,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters.",
+      "start": 196,
+      "end": 438,
+      "similarity": -0.029316509354945595,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.",
+      "start": 439,
+      "end": 674,
+      "similarity": 0.12468382469994206,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "In Berlin, the Huguenots created two new neighbourhoods: Dorotheenstadt and Friedrichstadt.",
+      "start": 696,
+      "end": 787,
+      "similarity": 0.20427858509091326,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "By 1700, one-fifth of the city's population was French speaking.",
+      "start": 788,
+      "end": 852,
+      "similarity": 0.1450858311955291,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "The Berlin Huguenots preserved the French language in their church services for nearly a century.",
+      "start": 853,
+      "end": 950,
+      "similarity": 0.02278309944887372,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "They ultimately decided to switch to German in protest against the occupation of Prussia by Napoleon in 1806-07.",
+      "start": 951,
+      "end": 1063,
+      "similarity": -0.018508701085669703,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "Many of their descendents rose to positions of prominence.",
+      "start": 1064,
+      "end": 1122,
+      "similarity": 0.1008846312483862,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.",
+      "start": 1123,
+      "end": 1257,
+      "similarity": 0.05101609104026031,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+      "start": 1288,
+      "end": 1375,
+      "similarity": 0.22612832141992079,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "Taro Ilven mounted 34 segments.",
+      "start": 1376,
+      "end": 1407,
+      "similarity": 0.37247289450164234,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "Mira Solven inspected 19 segments.",
+      "start": 1408,
+      "end": 1442,
+      "similarity": 0.24938238234447468,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1443,
+      "end": 1506,
+      "similarity": 0.2138920654960542,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1507,
+      "end": 1568,
+      "similarity": 0.245706063442699,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "At Velora Audio Archive, listening cards are kept for 45 days.",
+      "start": 1593,
+      "end": 1655,
+      "similarity": 0.08743769805256194,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "start": 1656,
+      "end": 1771,
+      "similarity": 0.008047799574701352,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "At Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day.",
+      "start": 1800,
+      "end": 1900,
+      "similarity": 0.18958427395667785,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "At or after 14:00, send it on the next operating day.",
+      "start": 1901,
+      "end": 1954,
+      "similarity": 0.11419735693959247,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "If the rights review is unresolved, do not send the copy until that review closes.",
+      "start": 1955,
+      "end": 2037,
+      "similarity": 0.0037545563487819227,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "The Mallee and upper Wimmera are Victoria's warmest regions with hot winds blowing from nearby semi-deserts.",
+      "start": 44,
+      "end": 152,
+      "similarity": 0.11605372887528732,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Average temperatures exceed 32 °C (90 °F) during summer and 15 °C (59 °F) in winter.",
+      "start": 153,
+      "end": 237,
+      "similarity": 0.011749030833643481,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Except at cool mountain elevations, the inland monthly temperatures are 2–7 °C (4–13 °F) warmer than around Melbourne (see chart).",
+      "start": 238,
+      "end": 368,
+      "similarity": 0.06908363207330945,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Victoria's highest maximum temperature since World War II, of 48.8 °C (119.8 °F) was recorded in Hopetoun on 7 February 2009, during the 2009 southeastern Australia heat wave.",
+      "start": 369,
+      "end": 544,
+      "similarity": 0.12921926888617538,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "During 2003–04, the gross value of Victorian agricultural production increased by 17% to $8.7 billion.",
+      "start": 566,
+      "end": 668,
+      "similarity": 0.04227469429793445,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "This represented 24% of national agricultural production total gross value.",
+      "start": 669,
+      "end": 744,
+      "similarity": 0.11571938038094562,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "As of 2004, an estimated 32,463 farms occupied around 136,000 square kilometres (52,500 sq mi) of Victorian land.",
+      "start": 745,
+      "end": 858,
+      "similarity": 0.06987985690568564,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "This comprises more than 60% of the state's total land surface.",
+      "start": 859,
+      "end": 922,
+      "similarity": 0.0448188992541354,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Victorian farms range from small horticultural outfits to large-scale livestock and grain productions.",
+      "start": 923,
+      "end": 1025,
+      "similarity": 0.05504023755446605,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "A quarter of farmland is used to grow consumable crops.",
+      "start": 1026,
+      "end": 1081,
+      "similarity": 0.06640017271619511,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.",
+      "start": 1112,
+      "end": 1197,
+      "similarity": 0.549082061838345,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Ivo Darven polished 52 plates.",
+      "start": 1198,
+      "end": 1228,
+      "similarity": 0.6699264128277542,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Lena Corven photographed 16 plates.",
+      "start": 1229,
+      "end": 1264,
+      "similarity": 0.3809331012990301,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1265,
+      "end": 1328,
+      "similarity": 0.2138920654960542,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1329,
+      "end": 1390,
+      "similarity": 0.245706063442699,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "At Nerith Sky Workshop, observation cards are kept for 70 days.",
+      "start": 1415,
+      "end": 1478,
+      "similarity": 0.3725158864913496,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+      "start": 1479,
+      "end": 1594,
+      "similarity": 0.03989537015817442,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+      "start": 1623,
+      "end": 1722,
+      "similarity": 0.4365435424335696,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "At or after 15:30, send it on the next operating day.",
+      "start": 1723,
+      "end": 1776,
+      "similarity": 0.10482807139653112,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "If the publication review is unresolved, do not send the copy until that review closes.",
+      "start": 1777,
+      "end": 1864,
+      "similarity": -0.014581597071682923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Some modern scholars, such as Fielding H.",
+      "start": 31,
+      "end": 72,
+      "similarity": 0.1705240093068448,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Garrison, are of the opinion that the origin of the science of geology can be traced to Persia after the Muslim conquests had come to an end.",
+      "start": 73,
+      "end": 214,
+      "similarity": 0.12247321734717617,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Abu al-Rayhan al-Biruni (973–1048 CE) was one of the earliest Persian geologists, whose works included the earliest writings on the geology of India, hypothesizing that the Indian subcontinent was once a sea.",
+      "start": 215,
+      "end": 423,
+      "similarity": 0.16843443855205442,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Drawing from Greek and Indian scientific literature that were not destroyed by the Muslim conquests, the Persian scholar Ibn Sina (Avicenna, 981–1037) proposed detailed explanations for the formation of mountains, the origin of earthquakes, and other topics central to modern geology, which provided an essential foundation for the later development of the science.",
+      "start": 424,
+      "end": 789,
+      "similarity": 0.23245716563579485,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "In China, the polymath Shen Kuo (1031–1095) formulated a hypothesis for the process of land formation: based on his observation of fossil animal shells in a geological stratum in a mountain hundreds of miles from the ocean, he inferred that the land was formed by erosion of the mountains and by deposition of silt.",
+      "start": 790,
+      "end": 1105,
+      "similarity": 0.15050256765357445,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Seismologists can use the arrival times of seismic waves in reverse to image the interior of the Earth.",
+      "start": 1127,
+      "end": 1230,
+      "similarity": 0.12788678217475008,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Early advances in this field showed the existence of a liquid outer core (where shear waves were not able to propagate) and a dense solid inner core.",
+      "start": 1231,
+      "end": 1380,
+      "similarity": 0.052344182239659594,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "These advances led to the development of a layered model of the Earth, with a crust and lithosphere on top, the mantle below (separated within itself by seismic discontinuities at 410 and 660 kilometers), and the outer core and inner core below that.",
+      "start": 1381,
+      "end": 1631,
+      "similarity": 0.12906927022891782,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "More recently, seismologists have been able to create detailed images of wave speeds inside the earth in the same way a doctor images a body in a CT scan.",
+      "start": 1632,
+      "end": 1786,
+      "similarity": 0.1241233951939619,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.",
+      "start": 1787,
+      "end": 1946,
+      "similarity": 0.12269036536886008,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+      "start": 1977,
+      "end": 2066,
+      "similarity": 0.2629325418062063,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Olan Merven printed 26 frames.",
+      "start": 2067,
+      "end": 2097,
+      "similarity": 0.36509218203658766,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Nira Telven checked 31 frames.",
+      "start": 2098,
+      "end": 2128,
+      "similarity": 0.2794453131114795,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 2129,
+      "end": 2192,
+      "similarity": 0.2138920654960542,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 2193,
+      "end": 2254,
+      "similarity": 0.245706063442699,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days.",
+      "start": 2279,
+      "end": 2344,
+      "similarity": 0.12413270374026195,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+      "start": 2345,
+      "end": 2456,
+      "similarity": 0.03517366582856896,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "At Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day.",
+      "start": 2485,
+      "end": 2590,
+      "similarity": 0.1713903114056449,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "At or after 13:00, send it on the next operating day.",
+      "start": 2591,
+      "end": 2644,
+      "similarity": 0.1167562919564726,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "If the ownership review is unresolved, do not send the copy until that review closes.",
+      "start": 2645,
+      "end": 2730,
+      "similarity": -0.0018140943929099943,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Packet mode communication may be implemented with or without intermediate forwarding nodes (packet switches or routers).",
+      "start": 40,
+      "end": 160,
+      "similarity": -0.04623313832278817,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Packets are normally forwarded by intermediate network nodes asynchronously using first-in, first-out buffering, but may be forwarded according to some scheduling discipline for fair queuing, traffic shaping, or for differentiated or guaranteed quality of service, such as weighted fair queuing or leaky bucket.",
+      "start": 161,
+      "end": 472,
+      "similarity": -0.02210754143063906,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "In case of a shared physical medium (such as radio or 10BASE5), the packets may be delivered according to a multiple access scheme.",
+      "start": 473,
+      "end": 604,
+      "similarity": 0.010089966473577329,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Starting in the late 1950s, American computer scientist Paul Baran developed the concept Distributed Adaptive Message Block Switching with the goal to provide a fault-tolerant, efficient routing method for telecommunication messages as part of a research program at the RAND Corporation, funded by the US Department of Defense.",
+      "start": 626,
+      "end": 953,
+      "similarity": 0.06645897932030272,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "This concept contrasted and contradicted the theretofore established principles of pre-allocation of network bandwidth, largely fortified by the development of telecommunications in the Bell System.",
+      "start": 954,
+      "end": 1152,
+      "similarity": 0.023815721516123173,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "The new concept found little resonance among network implementers until the independent work of Donald Davies at the National Physical Laboratory (United Kingdom) (NPL) in the late 1960s.",
+      "start": 1153,
+      "end": 1340,
+      "similarity": 0.14856720252529287,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.",
+      "start": 1341,
+      "end": 1575,
+      "similarity": 0.19994374421814518,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+      "start": 1606,
+      "end": 1692,
+      "similarity": 0.34069059583052247,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Eran Morven cleaned 41 trays.",
+      "start": 1693,
+      "end": 1722,
+      "similarity": 0.4018848128776554,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Vera Linven weighed 18 trays.",
+      "start": 1723,
+      "end": 1752,
+      "similarity": 0.3387849966287457,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1753,
+      "end": 1816,
+      "similarity": 0.2138920654960542,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1817,
+      "end": 1878,
+      "similarity": 0.245706063442699,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "At Soravin Specimen Studio, conservation cards are kept for 80 days.",
+      "start": 1903,
+      "end": 1971,
+      "similarity": 0.16322108521902326,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+      "start": 1972,
+      "end": 2086,
+      "similarity": 0.005261572522672825,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "At Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day.",
+      "start": 2115,
+      "end": 2218,
+      "similarity": 0.22939689126551463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "At or after 16:00, send it on the next operating day.",
+      "start": 2219,
+      "end": 2272,
+      "similarity": 0.10236868479486555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "If the custody review is unresolved, do not send the copy until that review closes.",
+      "start": 2273,
+      "end": 2356,
+      "similarity": -0.06577307059569473,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "Ivo Darven polished 52 plates.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 1198,
+            "cosine": 0.6699264128277542,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Victoria__Australia_.md",
+          "quote": "Ivo Darven polished 52 plates.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "relation_guard_diagnostics": {
+        "route": "No literal requested actor/action/count clause"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "Ivo Darven polished 52 plates.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 1198,
+            "cosine": 0.6699264128277542,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Victoria__Australia_.md",
+          "quote": "Ivo Darven polished 52 plates.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "relation_guard_diagnostics": {
+        "route": "No literal requested actor/action/count clause"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Ivo Darven polished 52 plates.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "503d3180-7548-44bc-b2ed-fa379588265d:659",
+          "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+          "filename": "02_Victoria__Australia_.md",
+          "excerpt": "to large-scale livestock and grain productions. A quarter of farmland is used to grow consumable crops.\n\n## Fictional completed tasks\nAt the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is ope",
+          "quote": "Ivo Darven polished 52 plates.",
+          "score": 0.0476,
+          "lexicalScore": 12.534079982655667,
+          "semanticScore": 0.43173919633149965,
+          "matchedTerms": [
+            "plates",
+            "ivo",
+            "darven",
+            "nerith",
+            "sky",
+            "workshop"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "Ivo Darven polished 52 plates.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 1198,
+            "cosine": 0.6699264128277542,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Victoria__Australia_.md",
+          "quote": "Ivo Darven polished 52 plates.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Ivo Darven polished 52 plates.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "503d3180-7548-44bc-b2ed-fa379588265d:1083",
+          "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+          "filename": "02_Victoria__Australia_.md",
+          "excerpt": "to large-scale livestock and grain productions. A quarter of farmland is used to grow consumable crops.\n\n## Fictional completed tasks\nAt the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is ope",
+          "quote": "Ivo Darven polished 52 plates.",
+          "score": 0.0476,
+          "lexicalScore": 16.194541657703883,
+          "semanticScore": 0.6667473104146415,
+          "matchedTerms": [
+            "plates",
+            "ivo",
+            "darven",
+            "nerith",
+            "sky",
+            "workshop"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "Ivo Darven polished 52 plates.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Bounded actual MiniLM sentence/slot gain",
+          "selected": {
+            "start": 1198,
+            "cosine": 0.6699264128277542,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Victoria__Australia_.md",
+          "quote": "Ivo Darven polished 52 plates.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.048042282462120056,
+    0.11046280711889267,
+    -0.06293481588363647,
+    -0.020191097632050514,
+    -0.09962248057126999,
+    -0.013337057083845139,
+    0.010633312165737152,
+    0.05307678505778313,
+    -0.019963739439845085,
+    -0.017465684562921524,
+    -0.013813105411827564,
+    -0.1308116763830185,
+    -0.010968830436468124,
+    -0.04214496165513992,
+    -0.055286478251218796,
+    -0.023320231586694717,
+    -0.03831864148378372,
+    -0.11383916437625885,
+    -0.011396176181733608,
+    -0.028813885524868965,
+    -0.004964075982570648,
+    0.08163884282112122,
+    0.014920550398528576,
+    0.014778186567127705,
+    0.025634149089455605,
+    -0.005093723069876432,
+    -0.09047356247901917,
+    0.027264190837740898,
+    0.10444662719964981,
+    -0.06022798642516136,
+    -0.027830656617879868,
+    0.10019378364086151,
+    -0.02414301596581936,
+    0.026934964582324028,
+    0.020832927897572517,
+    -0.00228543346747756,
+    -0.004166181664913893,
+    0.07147041708230972,
+    -0.05973581224679947,
+    -0.057087451219558716,
+    0.04593372717499733,
+    -0.06461137533187866,
+    -0.004866782575845718,
+    -0.02087276428937912,
+    0.006196611560881138,
+    0.002072782488539815,
+    -0.05484655871987343,
+    0.02237585186958313,
+    0.07224439084529877,
+    0.0702417716383934,
+    0.013532369397580624,
+    0.05224814638495445,
+    -0.003957762848585844,
+    -0.04096093773841858,
+    0.08871003985404968,
+    0.04132876545190811,
+    -0.06830155104398727,
+    -0.03648468852043152,
+    0.05156765878200531,
+    0.02036353200674057,
+    0.012505300343036652,
+    -0.0061809164471924305,
+    -0.1334894746541977,
+    -0.02709583379328251,
+    0.04443708807229996,
+    -0.02375202253460884,
+    -0.07052678614854813,
+    -0.11177369207143784,
+    -0.020934168249368668,
+    0.013167379423975945,
+    0.08262388408184052,
+    -0.03802375867962837,
+    0.08153264224529266,
+    -0.053905658423900604,
+    0.0921294316649437,
+    -0.02199895679950714,
+    0.0340493842959404,
+    -0.017618753015995026,
+    -0.04993952065706253,
+    -0.06034490093588829,
+    0.005453397054225206,
+    0.04417932406067848,
+    0.03632410988211632,
+    0.025242051109671593,
+    -0.0238074641674757,
+    0.01573718897998333,
+    0.02521350048482418,
+    0.046988844871520996,
+    0.0028773299418389797,
+    -0.03954395651817322,
+    0.012662007473409176,
+    -0.02707172930240631,
+    -0.04409421607851982,
+    0.010569795966148376,
+    -0.03953003138303757,
+    0.05474663898348808,
+    -0.01000539492815733,
+    0.024685585871338844,
+    -0.07435178011655807,
+    0.12139998376369476,
+    0.02085825614631176,
+    -0.026543060317635536,
+    -0.023711973801255226,
+    0.06002276390790939,
+    -0.08830995857715607,
+    0.04464511200785637,
+    0.05822872743010521,
+    0.03840780630707741,
+    -0.05167954042553902,
+    0.02219507470726967,
+    -0.013928652741014957,
+    -0.024958627298474312,
+    -0.02606206201016903,
+    -0.037627559155225754,
+    -0.015473421663045883,
+    -0.03481108695268631,
+    -0.007594453636556864,
+    0.01719473861157894,
+    -0.11017438769340515,
+    -0.012490827590227127,
+    0.060280654579401016,
+    -0.017612243071198463,
+    -0.002132450696080923,
+    0.063934825360775,
+    -0.005758821964263916,
+    0.02332102507352829,
+    0.04757256433367729,
+    -2.8010063263767407e-33,
+    0.0867726132273674,
+    -0.009485352784395218,
+    0.03012259490787983,
+    0.034360550343990326,
+    0.12157140672206879,
+    -0.04316616430878639,
+    -0.015522204339504242,
+    0.12314411997795105,
+    0.03043697401881218,
+    0.03941668942570686,
+    0.03180191293358803,
+    -0.029278701171278954,
+    -0.008368444629013538,
+    -0.05550564453005791,
+    0.02788604609668255,
+    -0.02216971106827259,
+    0.08468397706747055,
+    -0.06559440493583679,
+    -0.04593292996287346,
+    -0.06160931661725044,
+    -0.012267268262803555,
+    -0.014575534500181675,
+    0.02551686018705368,
+    -0.041587572544813156,
+    0.03390156477689743,
+    0.08702844381332397,
+    0.04487473890185356,
+    -0.009864882566034794,
+    0.0893893763422966,
+    0.043914686888456345,
+    -0.046764224767684937,
+    0.027689844369888306,
+    0.01730121672153473,
+    -0.01763998530805111,
+    -0.0015862192958593369,
+    0.10713204741477966,
+    -0.11777249723672867,
+    -0.06997521966695786,
+    0.0015467554330825806,
+    0.0329723060131073,
+    0.06779997795820236,
+    0.029706263914704323,
+    -0.003308134153485298,
+    -0.04893507435917854,
+    -0.03892992436885834,
+    -0.0310283862054348,
+    0.05126512423157692,
+    0.04864060506224632,
+    0.1298666000366211,
+    0.013787180185317993,
+    0.023138253018260002,
+    0.03422006219625473,
+    -0.0342165045440197,
+    -0.025069763883948326,
+    0.054903771728277206,
+    -0.006319916341453791,
+    -0.04787111654877663,
+    -0.004295944701880217,
+    0.058001305907964706,
+    0.022517019882798195,
+    0.05013030767440796,
+    0.005148570518940687,
+    0.013068681582808495,
+    0.047285184264183044,
+    -0.00018113311671186239,
+    -0.01993912272155285,
+    -0.041719455271959305,
+    0.012971374206244946,
+    0.011175794526934624,
+    -0.05023156479001045,
+    -0.031598374247550964,
+    -0.03858643025159836,
+    -0.015941666439175606,
+    0.011356571689248085,
+    -0.05270623415708542,
+    0.04050362855195999,
+    -0.03406694158911705,
+    0.009110940620303154,
+    -0.023362349718809128,
+    0.06481317430734634,
+    -0.05696061626076698,
+    0.04009817913174629,
+    -0.05946390703320503,
+    0.005770272109657526,
+    -0.06355423480272293,
+    -0.021027203649282455,
+    0.07621616125106812,
+    0.01828078180551529,
+    -0.0010280278511345387,
+    -0.058106373995542526,
+    -0.02555609866976738,
+    -0.07225289195775986,
+    -0.012470276094973087,
+    -0.10120322555303574,
+    -0.06572932749986649,
+    1.43567211745505e-33,
+    0.010972579009830952,
+    0.00027857895474880934,
+    -0.04268660023808479,
+    -0.015335132367908955,
+    0.08764668554067612,
+    0.0069036721251904964,
+    0.035249702632427216,
+    0.08139771968126297,
+    -0.04176868125796318,
+    0.06227527931332588,
+    0.05984038859605789,
+    0.14592395722866058,
+    0.020490577444434166,
+    -0.10844899713993073,
+    -0.019125057384371758,
+    0.009513004682958126,
+    0.03146195039153099,
+    0.004048278089612722,
+    0.06102163717150688,
+    -0.04681853577494621,
+    0.0581580251455307,
+    -0.01147004496306181,
+    -0.027148185297846794,
+    -0.017531761899590492,
+    -0.05955677852034569,
+    0.06323829293251038,
+    0.08866772055625916,
+    -0.009640384465456009,
+    -0.07131452113389969,
+    -0.003335690125823021,
+    -0.04285857826471329,
+    -0.024879546836018562,
+    -0.0451049879193306,
+    0.029986243695020676,
+    0.00021522963652387261,
+    0.0020641088485717773,
+    0.05786176770925522,
+    0.0574425533413887,
+    -0.07092184573411942,
+    0.006648688111454248,
+    0.013236879371106625,
+    0.04821158945560455,
+    0.0761794000864029,
+    0.11109142750501633,
+    0.050596218556165695,
+    -0.031359270215034485,
+    -0.009189119562506676,
+    -0.0006448957719840109,
+    -0.007559969089925289,
+    -0.03559533879160881,
+    0.03780826926231384,
+    0.04683772847056389,
+    -0.04369746893644333,
+    0.006768170278519392,
+    0.036888688802719116,
+    0.032218530774116516,
+    0.056203022599220276,
+    -0.05543774366378784,
+    0.06405042111873627,
+    -0.014034636318683624,
+    -0.018339773640036583,
+    0.00005581315417657606,
+    -0.02808476984500885,
+    0.03632713109254837,
+    0.05118786171078682,
+    0.018662327900528908,
+    -0.04999934136867523,
+    -0.022493580356240273,
+    -0.09767217934131622,
+    0.02261292189359665,
+    -0.009069852530956268,
+    -0.00836773682385683,
+    0.0324585996568203,
+    -0.08729635179042816,
+    -0.11364354938268661,
+    -0.0013237422099336982,
+    0.06635584682226181,
+    0.007175004575401545,
+    -0.0223179180175066,
+    -0.09705620259046555,
+    -0.07275065779685974,
+    -0.1427653282880783,
+    -0.01584295555949211,
+    0.10664469003677368,
+    -0.09955146163702011,
+    -0.031172912567853928,
+    0.14250408113002777,
+    -0.04641688987612724,
+    0.008737130090594292,
+    0.08137001097202301,
+    -0.005378855857998133,
+    -0.044961024075746536,
+    0.0472315177321434,
+    -0.0619705431163311,
+    0.03283321112394333,
+    -1.8360470477318813e-8,
+    0.0063734399154782295,
+    0.029313620179891586,
+    -0.08463981002569199,
+    -0.03549904376268387,
+    0.0024704448878765106,
+    0.08435719460248947,
+    -0.01425321213901043,
+    0.036919284611940384,
+    -0.022953270003199577,
+    0.046062421053647995,
+    0.050729844719171524,
+    -0.023702817037701607,
+    -0.020476168021559715,
+    0.006768857594579458,
+    0.04401355981826782,
+    0.010254268534481525,
+    -0.002745291916653514,
+    -0.010746902786195278,
+    -0.0716206431388855,
+    -0.05077748000621796,
+    0.06321969628334045,
+    0.038722023367881775,
+    0.06072261184453964,
+    -0.0535835437476635,
+    0.004230079706758261,
+    0.0211651548743248,
+    -0.032220058143138885,
+    -0.011964675970375538,
+    -0.045477814972400665,
+    -0.021917391568422318,
+    0.006869698408991098,
+    0.03968258947134018,
+    0.06421962380409241,
+    -0.04951467365026474,
+    0.08269324898719788,
+    -0.009138326160609722,
+    -0.03981798514723778,
+    -0.022555483505129814,
+    0.015661120414733887,
+    -0.10087212920188904,
+    0.033509261906147,
+    0.04842640832066536,
+    -0.02752065286040306,
+    0.027131203562021255,
+    0.0795154720544815,
+    -0.0006013732636347413,
+    -0.019435536116361618,
+    -0.022984007373452187,
+    -0.029489699751138687,
+    -0.05513060465455055,
+    -0.0017269739182665944,
+    0.0286262147128582,
+    0.047866400331258774,
+    0.018757730722427368,
+    0.008248792961239815,
+    -0.08031301945447922,
+    -0.0044756787829101086,
+    -0.094602569937706,
+    0.042431287467479706,
+    0.0036182948388159275,
+    0.08637573570013046,
+    -0.03891758993268013,
+    -0.1010630875825882,
+    -0.014427896589040756
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "start": 659,
+        "content": "billion. This represented 24% of national agricultural production total gross value. As of 2004, an estimated 32,463 farms occupied around 136,000 square kilometres (52,500 sq mi) of Victorian land. This comprises more than 60% of the state's total land surface. Victorian farms range from small horticultural outfits to large-scale livestock and grain productions. A quarter of farmland is used to grow consumable crops.\n\n## Fictional completed tasks\nAt the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt"
+      },
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "start": 1317,
+        "content": "ble totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "start": 1083,
+        "content": "## Fictional completed tasks\nAt the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations."
+      },
+      {
+        "filename": "04_Packet_switching.md",
+        "start": 1577,
+        "content": "## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations."
+      }
+    ]
+  }
+}

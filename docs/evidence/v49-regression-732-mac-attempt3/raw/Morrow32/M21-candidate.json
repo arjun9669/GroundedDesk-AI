@@ -1,0 +1,1215 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "M21",
+  "question": "When was the Ashmere Funicular track overhauled?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When was the Ashmere Funicular track overhauled?",
+    "expected_display": "When was the Ashmere Funicular track overhauled?",
+    "rendered_question": "When was the Ashmere Funicular track overhauled?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Ashmere Funicular opened its upper platform to passengers in 1918.",
+    "sources": [
+      {
+        "filename": "01_Ashmere_Funicular.txt",
+        "excerpt": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997.\n\n## Visitor operations\nF-01. Release ticket orders before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.\nF-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day.\nF-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed.\nF-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affected slips until",
+        "quote": "Ashmere Funicular opened its upper platform to passengers in 1918."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen was the Ashmere Funicular track overhauled?\n\nSearched all files: 01_Ashmere_Funicular.txt · 02_Selwick_Textile_Archive.txt · 03_Pelden_Acoustic_Station.txt · 04_Noryn_Print_Cooperative.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Ashmere Funicular opened its upper platform to passengers in 1918.\n\nSOURCE EVIDENCE\n[1]\n01_Ashmere_Funicular.txt\n\nText line 1 (normalized extraction)\n\nAshmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997. ## Visitor operations F-01. Release ticket orders before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active. F-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day. F-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed. F-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affected slips until\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Ashmere Funicular opened its upper platform to passengers in 1918.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "d603e7a1-96b3-467c-b217-cc631e173bad:0",
+        "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+        "filename": "01_Ashmere_Funicular.txt",
+        "excerpt": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997.\n\n## Visitor operations\nF-01. Release ticket orders before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.\nF-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day.\nF-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed.\nF-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affected slips until",
+        "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+        "score": 0.0476,
+        "lexicalScore": 5.468981024305766,
+        "semanticScore": 0.5786296668906129,
+        "matchedTerms": [
+          "ashmere",
+          "funicular",
+          "track"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.5121816457490865,
+          "slot_supported": true,
+          "lexical_matches": 2
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "Ambiguous affirmative event relations"
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.5121816457490865,
+          "slot_supported": true,
+          "lexical_matches": 2
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Ashmere_Funicular.txt",
+        "quote": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "refused": true,
+      "reason": "Ambiguous affirmative event relations"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Ashmere_Funicular.txt",
+      "start": 0,
+      "content": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+      "semanticScore": 0.5121816457490865,
+      "lexicalScore": 5.995239242801671
+    },
+    {
+      "filename": "01_Ashmere_Funicular.txt",
+      "start": 67,
+      "content": "The first track overhaul took place in 1964; the second track overhaul took place in 1997.",
+      "semanticScore": 0.4973862717418067,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Ashmere_Funicular.txt",
+      "start": 512,
+      "content": "Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius.",
+      "semanticScore": null,
+      "lexicalScore": 5.352892181072921
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+      "start": 0,
+      "end": 66,
+      "similarity": 0.5121816457490865,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "The first track overhaul took place in 1964; the second track overhaul took place in 1997.",
+      "start": 67,
+      "end": 157,
+      "similarity": 0.4973862717418067,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "F-01.",
+      "start": 181,
+      "end": 186,
+      "similarity": 0.155275216496769,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "Release ticket orders before 13:35 for departure on the same service day.",
+      "start": 187,
+      "end": 260,
+      "similarity": 0.145543941353527,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.",
+      "start": 261,
+      "end": 379,
+      "similarity": 0.15679414092714733,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "F-02.",
+      "start": 380,
+      "end": 385,
+      "similarity": 0.15151437054326358,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "Quinn checks six brake assemblies per day.",
+      "start": 386,
+      "end": 428,
+      "similarity": 0.12387423664654378,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "Wes checks two haul cables per day.",
+      "start": 429,
+      "end": 464,
+      "similarity": 0.0733460697340378,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "Quinn labels three tool drawers per day.",
+      "start": 465,
+      "end": 505,
+      "similarity": 0.15334223433349065,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "F-03.",
+      "start": 506,
+      "end": 511,
+      "similarity": 0.18656172677195587,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius.",
+      "start": 512,
+      "end": 597,
+      "similarity": 0.32249993227102564,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "Individual winter extremes are not listed.",
+      "start": 598,
+      "end": 640,
+      "similarity": 0.07795858199314701,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "F-04.",
+      "start": 641,
+      "end": 646,
+      "similarity": 0.1594624669912599,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "Ticket transaction slips are kept for 18 months.",
+      "start": 647,
+      "end": 695,
+      "similarity": 0.1184607206410903,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "If an incident review is open, retain the affected slips until that review closes.",
+      "start": 696,
+      "end": 778,
+      "similarity": 0.1155752644351456,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "F-05.",
+      "start": 779,
+      "end": 784,
+      "similarity": 0.1477232242258123,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "Acknowledge ticket requests within one service day.",
+      "start": 785,
+      "end": 836,
+      "similarity": 0.11359888936060987,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+      "value": "This acknowledgement does not guarantee a reserved seat.",
+      "start": 837,
+      "end": 893,
+      "similarity": 0.016564593419779713,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "The Selwick Textile Archive catalogue room relocation took place in 1947.",
+      "start": 0,
+      "end": 73,
+      "similarity": 0.19326257616900777,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "Its restoration took place in 1988.",
+      "start": 74,
+      "end": 109,
+      "similarity": 0.3436950310551211,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "A proposal to close the reading desk in 2015 was canceled; the desk stayed open.",
+      "start": 110,
+      "end": 190,
+      "similarity": -0.007173863731129811,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "S-01.",
+      "start": 213,
+      "end": 218,
+      "similarity": 0.1357697508321416,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "The winter average temperature in the Selwick Textile Archive store is 12 degrees Celsius.",
+      "start": 219,
+      "end": 309,
+      "similarity": 0.0632397804815188,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "Its absolute minimum winter temperature is 1 degree Celsius.",
+      "start": 310,
+      "end": 370,
+      "similarity": -0.04129829801623618,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "The highest monthly mean temperature is 24 degrees Celsius, in August.",
+      "start": 371,
+      "end": 441,
+      "similarity": 0.0010502710190526047,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "S-02.",
+      "start": 442,
+      "end": 447,
+      "similarity": 0.1543034257557802,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "Access registers are retained for 9 years.",
+      "start": 448,
+      "end": 490,
+      "similarity": 0.0940756335111879,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "If a loan claim is open, keep the affected registers until the claim is settled.",
+      "start": 491,
+      "end": 571,
+      "similarity": 0.04655582608663487,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "S-03.",
+      "start": 572,
+      "end": 577,
+      "similarity": 0.1935746871768546,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ef287a25-2d09-43cb-9683-6a7233e65e17",
+      "value": "The custody packet contains a custody slip, condition photograph, access log, and return authorization.",
+      "start": 578,
+      "end": 681,
+      "similarity": 0.016478808597518935,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4cf1665f-7b24-43d9-a3a2-e53545bdc114",
+      "value": "At Pelden Acoustic Station, the calibration tower was rebuilt in 2005.",
+      "start": 0,
+      "end": 70,
+      "similarity": 0.265839151414671,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4cf1665f-7b24-43d9-a3a2-e53545bdc114",
+      "value": "The boathouse was painted in 2019.",
+      "start": 71,
+      "end": 105,
+      "similarity": 0.2191553219515503,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4cf1665f-7b24-43d9-a3a2-e53545bdc114",
+      "value": "Pelden Acoustic Station has a highest monthly mean temperature of 22 degrees Celsius in July; its highest recorded daily temperature is 35 degrees Celsius.",
+      "start": 107,
+      "end": 262,
+      "similarity": 0.1299571337325848,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4cf1665f-7b24-43d9-a3a2-e53545bdc114",
+      "value": "Arel records four calibration tones per shift.",
+      "start": 264,
+      "end": 310,
+      "similarity": 0.15613469981596304,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4cf1665f-7b24-43d9-a3a2-e53545bdc114",
+      "value": "Liva records seven ambient clips per shift.",
+      "start": 311,
+      "end": 354,
+      "similarity": 0.21209782532195273,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4cf1665f-7b24-43d9-a3a2-e53545bdc114",
+      "value": "Arel labels two microphone cases per shift.",
+      "start": 355,
+      "end": 398,
+      "similarity": 0.06575517000847551,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4cf1665f-7b24-43d9-a3a2-e53545bdc114",
+      "value": "After each 68 hours of use in a normal hut, lubricate the Pelden Acoustic Station scanner.",
+      "start": 400,
+      "end": 490,
+      "similarity": 0.095661243457363,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4cf1665f-7b24-43d9-a3a2-e53545bdc114",
+      "value": "Use a 34-hour lubrication interval in a dusty hut.",
+      "start": 491,
+      "end": 541,
+      "similarity": 0.08414505064379221,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4cf1665f-7b24-43d9-a3a2-e53545bdc114",
+      "value": "Inspect the scanner every 17 operating hours in either type of hut.",
+      "start": 542,
+      "end": 609,
+      "similarity": 0.030772643148963354,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "P-01.",
+      "start": 24,
+      "end": 29,
+      "similarity": 0.13497121916037577,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "Noryn Print Cooperative acknowledges a print request within three business hours.",
+      "start": 30,
+      "end": 111,
+      "similarity": 0.08563488677336983,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+      "start": 112,
+      "end": 205,
+      "similarity": 0.04601186376470555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "P-02.",
+      "start": 206,
+      "end": 211,
+      "similarity": 0.13240717428913967,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "The dispatch packet includes a job ticket, proof sheet, packing list, collection receipt, and release signature.",
+      "start": 212,
+      "end": 324,
+      "similarity": 0.047222366071845864,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "P-03.",
+      "start": 325,
+      "end": 330,
+      "similarity": 0.20696293415783773,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "Purchases above 4700 credits need written approval from the Finance Delegate and Production Lead.",
+      "start": 331,
+      "end": 428,
+      "similarity": 0.03813329756525431,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "P-04.",
+      "start": 429,
+      "end": 434,
+      "similarity": 0.2027037684842719,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "Lubricate the Noryn Print Cooperative press every 110 operating hours under normal conditions.",
+      "start": 435,
+      "end": 529,
+      "similarity": 0.126053855483896,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "In a dusty room, lubricate it every 55 operating hours.",
+      "start": 530,
+      "end": 585,
+      "similarity": 0.08699924085819925,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "Inspect the press every 22 operating hours in either room.",
+      "start": 586,
+      "end": 644,
+      "similarity": 0.04616614330767844,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "P-05.",
+      "start": 645,
+      "end": 650,
+      "similarity": 0.14032719437369862,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+      "value": "Completed job records are retained for 5 months, unless an unresolved invoice query requires longer retention.",
+      "start": 651,
+      "end": 761,
+      "similarity": 0.04313870497269613,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.5121816457490865,
+            "slot_supported": true,
+            "lexical_matches": 2
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "Ambiguous affirmative event relations"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.5121816457490865,
+            "slot_supported": true,
+            "lexical_matches": 2
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "Ambiguous affirmative event relations"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Ashmere Funicular opened its upper platform to passengers in 1918.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "d603e7a1-96b3-467c-b217-cc631e173bad:0",
+          "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+          "filename": "01_Ashmere_Funicular.txt",
+          "excerpt": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997.\n\n## Visitor operations\nF-01. Release ticket orders before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a win",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+          "score": 0.0476,
+          "lexicalScore": 5.468981024305766,
+          "semanticScore": 0.5786296668906129,
+          "matchedTerms": [
+            "ashmere",
+            "funicular",
+            "track"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.5121816457490865,
+            "slot_supported": true,
+            "lexical_matches": 2
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Ashmere Funicular opened its upper platform to passengers in 1918.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "d603e7a1-96b3-467c-b217-cc631e173bad:0",
+          "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+          "filename": "01_Ashmere_Funicular.txt",
+          "excerpt": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997.\n\n## Visitor operations\nF-01. Release ticket orders before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a win",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+          "score": 0.0476,
+          "lexicalScore": 5.94651535610112,
+          "semanticScore": 0.789279533208571,
+          "matchedTerms": [
+            "ashmere",
+            "funicular",
+            "track"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.5121816457490865,
+            "slot_supported": true,
+            "lexical_matches": 2
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Ashmere_Funicular.txt",
+          "quote": "Ashmere Funicular opened its upper platform to passengers in 1918.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.0628901869058609,
+    0.049581095576286316,
+    0.019794441759586334,
+    0.03651651740074158,
+    -0.05110744386911392,
+    0.04890679940581322,
+    -0.06577283889055252,
+    -0.040101394057273865,
+    -0.16118185222148895,
+    -0.04206100478768349,
+    -0.009971964173018932,
+    0.04404681548476219,
+    -0.0722041055560112,
+    -0.07423001527786255,
+    -0.018686071038246155,
+    0.021913940086960793,
+    0.019127925857901573,
+    0.016173994168639183,
+    -0.007709259167313576,
+    -0.0030091607477515936,
+    -0.026983896270394325,
+    -0.030106477439403534,
+    0.015634629875421524,
+    0.05452097952365875,
+    -0.041989922523498535,
+    -0.006691216491162777,
+    -0.11844216287136078,
+    0.05808703228831291,
+    -0.03220725432038307,
+    -0.06876607984304428,
+    -0.015744497999548912,
+    0.0381334125995636,
+    0.04183252900838852,
+    -0.036355383694171906,
+    0.009505121037364006,
+    -0.05593043565750122,
+    0.050126973539590836,
+    0.035352177917957306,
+    -0.021269071847200394,
+    0.05174337700009346,
+    -0.017675455659627914,
+    0.014047924429178238,
+    -0.030599450692534447,
+    -0.006245388649404049,
+    -0.004610735923051834,
+    0.10827425867319107,
+    0.03849026560783386,
+    -0.09119933098554611,
+    -0.015440592542290688,
+    0.12821529805660248,
+    0.014046288095414639,
+    -0.03453152999281883,
+    0.05748786777257919,
+    -0.08164927363395691,
+    0.013444035314023495,
+    0.055889252573251724,
+    0.009366669692099094,
+    0.003669098252430558,
+    0.050351280719041824,
+    -0.01213829591870308,
+    -0.00301672937348485,
+    0.017210207879543304,
+    -0.06566880643367767,
+    -0.005204637534916401,
+    0.0030604174826294184,
+    -0.1302490532398224,
+    0.011556013487279415,
+    -0.050150249153375626,
+    0.12277881056070328,
+    0.000716146023478359,
+    0.03217681869864464,
+    0.003258106764405966,
+    -0.031232576817274094,
+    -0.08464750647544861,
+    -0.03642936050891876,
+    0.10180655866861343,
+    -0.012859226204454899,
+    -0.018071012571454048,
+    -0.07293818891048431,
+    -0.035829804837703705,
+    -0.03403881937265396,
+    -0.11038965731859207,
+    0.05003571882843971,
+    -0.024362152442336082,
+    0.0853632465004921,
+    -0.024549167603254318,
+    -0.0029987029265612364,
+    0.02093583531677723,
+    0.0020402490627020597,
+    -0.023930417373776436,
+    0.01202344335615635,
+    0.10759014636278152,
+    -0.012811997905373573,
+    0.011817516759037971,
+    -0.009839516133069992,
+    -0.00044093813630752265,
+    0.03277242183685303,
+    0.10492222011089325,
+    0.05494338646531105,
+    0.08006621897220612,
+    -0.002006682101637125,
+    0.03663244470953941,
+    0.02438901737332344,
+    0.029788261279463768,
+    -0.0568850114941597,
+    -0.02178531512618065,
+    -0.011365553364157677,
+    0.08712345361709595,
+    -0.04702753573656082,
+    -0.05351400375366211,
+    0.05061359331011772,
+    -0.07910928130149841,
+    0.07575257122516632,
+    0.0017507169395685196,
+    0.04382051154971123,
+    -0.03429524973034859,
+    -0.03643808141350746,
+    0.02296801656484604,
+    -0.06427568197250366,
+    0.03219154477119446,
+    0.01456473395228386,
+    0.0025687110610306263,
+    0.06136554479598999,
+    0.03149658814072609,
+    -0.07201152294874191,
+    0.02406594157218933,
+    0.05350203812122345,
+    -3.22177067216274e-33,
+    0.005804410204291344,
+    -0.0001074348547263071,
+    -0.026164621114730835,
+    -0.049524955451488495,
+    0.0381820946931839,
+    -0.033747442066669464,
+    -0.048060521483421326,
+    -0.06723596155643463,
+    -0.047624003142118454,
+    -0.0023020433727651834,
+    0.10702494531869888,
+    -0.024964813143014908,
+    -0.03410433232784271,
+    -0.1353612095117569,
+    0.05145661160349846,
+    -0.13102148473262787,
+    -0.10459355264902115,
+    0.03870491683483124,
+    -0.05045042559504509,
+    -0.000031988794944481924,
+    -0.034470148384571075,
+    0.040113676339387894,
+    0.04828611761331558,
+    -0.10455147176980972,
+    0.00601651705801487,
+    0.04173055291175842,
+    0.04736160859465599,
+    -0.031116606667637825,
+    -0.016822367906570435,
+    0.04241180047392845,
+    0.07618603855371475,
+    -0.030306376516819,
+    0.01469045877456665,
+    0.005000419914722443,
+    -0.010781032964587212,
+    0.06428445130586624,
+    -0.030494557693600655,
+    -0.0756571888923645,
+    -0.0694955512881279,
+    -0.01624881476163864,
+    0.04802093654870987,
+    -0.0635308250784874,
+    0.02404528483748436,
+    0.03038818947970867,
+    -0.06295203417539597,
+    0.051073599606752396,
+    -0.015665894374251366,
+    0.1197342723608017,
+    0.06599515676498413,
+    -0.01066732220351696,
+    0.006462182383984327,
+    0.0271690022200346,
+    0.026868266984820366,
+    -0.07515615969896317,
+    0.012563814409077168,
+    0.02645631693303585,
+    0.03991726413369179,
+    -0.07312275469303131,
+    0.04822033643722534,
+    0.04101157933473587,
+    0.08847266435623169,
+    0.06836385279893875,
+    0.023313887417316437,
+    0.017514308914542198,
+    0.011687779799103737,
+    0.046676527708768845,
+    0.04841199889779091,
+    -0.0530431792140007,
+    0.08310288190841675,
+    0.005810532718896866,
+    0.005960450042039156,
+    -0.047877561300992966,
+    0.01957915909588337,
+    0.0002997717820107937,
+    0.06743984669446945,
+    0.014042653143405914,
+    -0.07671250402927399,
+    -0.02201436087489128,
+    -0.0896127000451088,
+    -0.0169795174151659,
+    -0.10084901005029678,
+    -0.020265299826860428,
+    -0.027066772803664207,
+    0.03026651404798031,
+    0.028717098757624626,
+    -0.08807361125946045,
+    0.08445677161216736,
+    0.04620558023452759,
+    -0.018472053110599518,
+    -0.03698926046490669,
+    -0.025582050904631615,
+    -0.011463258415460587,
+    -0.04357162490487099,
+    -0.005525819957256317,
+    0.06517535448074341,
+    2.6884160080870435e-33,
+    0.08676600456237793,
+    0.05823203921318054,
+    0.01590311899781227,
+    0.039148960262537,
+    -0.010688099078834057,
+    0.013016427867114544,
+    0.016818568110466003,
+    0.0656825453042984,
+    -0.008560086600482464,
+    0.07601649314165115,
+    0.05985980108380318,
+    -0.06512217968702316,
+    -0.01021191943436861,
+    -0.04488234594464302,
+    -0.03616473451256752,
+    0.00036398452357389033,
+    0.04381571337580681,
+    -0.014126820489764214,
+    0.033941302448511124,
+    -0.041700612753629684,
+    -0.03639916330575943,
+    -0.08925852924585342,
+    -0.03309052437543869,
+    0.04665086045861244,
+    -0.0587160587310791,
+    0.05828907713294029,
+    0.0635485127568245,
+    -0.05562029406428337,
+    -0.014619979076087475,
+    -0.003180459141731262,
+    -0.050479061901569366,
+    0.0013088876148685813,
+    -0.026088034734129906,
+    -0.025825008749961853,
+    -0.033883512020111084,
+    0.07588838785886765,
+    0.0012600274058058858,
+    0.07435497641563416,
+    -0.00782861839979887,
+    -0.0467396080493927,
+    -0.026802806183695793,
+    0.03170347958803177,
+    -0.011447221972048283,
+    0.13835638761520386,
+    0.016654321923851967,
+    -0.009999636560678482,
+    -0.021550260484218597,
+    0.13333554565906525,
+    0.01672717183828354,
+    -0.033389441668987274,
+    0.0425894670188427,
+    0.041235145181417465,
+    0.04804905131459236,
+    -0.03804115206003189,
+    0.06904792040586472,
+    0.03501588851213455,
+    0.005510405171662569,
+    -0.07685230672359467,
+    -0.11007647216320038,
+    -0.016803300008177757,
+    0.004955843556672335,
+    0.0601726658642292,
+    -0.05090957134962082,
+    -0.009283844381570816,
+    0.03265613690018654,
+    0.041729073971509933,
+    -0.02395489811897278,
+    -0.10341090708971024,
+    -0.04933943971991539,
+    0.05725005269050598,
+    -0.08646602183580399,
+    0.033791739493608475,
+    0.0410517156124115,
+    0.040626998990774155,
+    -0.057521309703588486,
+    -0.019378434866666794,
+    0.010971286334097385,
+    0.038216814398765564,
+    0.028386428952217102,
+    -0.03392067551612854,
+    -0.06561438739299774,
+    -0.0641518160700798,
+    0.04962649568915367,
+    0.020674923434853554,
+    0.018022945150732994,
+    -0.007493988145142794,
+    -0.048361096531152725,
+    -0.002593348268419504,
+    0.0014500586548820138,
+    0.012755796313285828,
+    0.08755606412887573,
+    0.013943224214017391,
+    0.023480182513594627,
+    0.015519773587584496,
+    -0.04221953824162483,
+    -1.759126000422384e-8,
+    0.0320277214050293,
+    0.13876879215240479,
+    -0.00215722038410604,
+    -0.027016840875148773,
+    0.04724334552884102,
+    0.029910119250416756,
+    0.061261337250471115,
+    0.05594644695520401,
+    -0.008439559489488602,
+    -0.016007954254746437,
+    0.040661413222551346,
+    0.01844637840986252,
+    0.06652455031871796,
+    0.04402921348810196,
+    -0.022337155416607857,
+    -0.02666279301047325,
+    -0.027314567938447,
+    0.08095408976078033,
+    -0.06751225888729095,
+    -0.011790726333856583,
+    -0.05315399169921875,
+    -0.00734008988365531,
+    0.06605344265699387,
+    -0.05027617886662483,
+    -0.06855785101652145,
+    0.018999500200152397,
+    -0.015992866829037666,
+    -0.005524096544831991,
+    0.02516746334731579,
+    -0.03322781249880791,
+    0.08433699607849121,
+    -0.0034995644818991423,
+    0.06075875088572502,
+    -0.03551732748746872,
+    -0.005690195132046938,
+    0.014474972151219845,
+    -0.03339364007115364,
+    0.0017410407308489084,
+    -0.02480839006602764,
+    -0.09726834297180176,
+    -0.07664979994297028,
+    0.07484355568885803,
+    0.01592704840004444,
+    0.0365602932870388,
+    0.11099724471569061,
+    -0.04857511818408966,
+    -0.04045083001255989,
+    -0.05913139879703522,
+    -0.04125859960913658,
+    -0.03328300639986992,
+    -0.008245021104812622,
+    0.0009702125680632889,
+    0.030775606632232666,
+    0.0035717678256332874,
+    0.03376460447907448,
+    0.06981600075960159,
+    -0.050989408046007156,
+    -0.04310332238674164,
+    -0.04788900539278984,
+    0.05984032154083252,
+    0.010401218198239803,
+    -0.07280871272087097,
+    0.06916682422161102,
+    0.02378205768764019
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Ashmere_Funicular.txt",
+        "start": 0,
+        "content": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997.\n\n## Visitor operations\nF-01. Release ticket orders before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.\nF-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day.\nF-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed.\nF-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affected slips until"
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Ashmere_Funicular.txt",
+        "start": 0,
+        "content": "Ashmere Funicular opened its upper platform to passengers in 1918. The first track overhaul took place in 1964; the second track overhaul took place in 1997."
+      },
+      {
+        "filename": "01_Ashmere_Funicular.txt",
+        "start": 159,
+        "content": "## Visitor operations\nF-01. Release ticket orders before 13:35 for departure on the same service day. Ticket orders released at or after 13:35 depart on the next service day, unless a wind-suspension hold remains active.\nF-02. Quinn checks six brake assemblies per day. Wes checks two haul cables per day. Quinn labels three tool drawers per day.\nF-03. Ashmere Funicular winter monthly mean temperatures range from 5 to 7 degrees Celsius. Individual winter extremes are not listed.\nF-04. Ticket transaction slips are kept for 18 months. If an incident review is open, retain the affected slips until that review closes.\nF-05. Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1447 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "N32",
+  "question": "How many frames did Olan Merven mark at Caldrin Rock Imaging Room?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many frames did Olan Merven mark at Caldrin Rock Imaging Room?",
+    "expected_display": "How many frames did Olan Merven mark at Caldrin Rock Imaging Room?",
+    "rendered_question": "How many frames did Olan Merven mark at Caldrin Rock Imaging Room?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional completed tasks At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+    "sources": [
+      {
+        "filename": "03_Geology.md",
+        "excerpt": "earth in the same way a doctor images a body in a CT scan. These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.\n\n## Fictional completed tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Caldrin Rock Imaging Room, imaging cards are kept for 55 days. I",
+        "quote": "## Fictional completed tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many frames did Olan Merven mark at Caldrin Rock Imaging Room?\n\nSearched all files: 01_Huguenot.md · 02_Victoria__Australia_.md · 03_Geology.md · 04_Packet_switching.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional completed tasks At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.\n\nSOURCE EVIDENCE\n[1]\n03_Geology.md\n\nText lines 9–10 (normalized extraction)\n\nearth in the same way a doctor images a body in a CT scan. These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model. ## Fictional completed tasks At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations. ## Fictional retention At Caldrin Rock Imaging Room, imaging cards are kept for 55 days. I\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional completed tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa:1966",
+        "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+        "filename": "03_Geology.md",
+        "excerpt": "earth in the same way a doctor images a body in a CT scan. These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.\n\n## Fictional completed tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Caldrin Rock Imaging Room, imaging cards are kept for 55 days. I",
+        "quote": "## Fictional completed tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+        "score": 0.0476,
+        "lexicalScore": 18.49983770266481,
+        "semanticScore": 0.5781587648532759,
+        "matchedTerms": [
+          "frames",
+          "olan",
+          "merven",
+          "caldrin",
+          "rock",
+          "imaging",
+          "room"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Geology.md",
+        "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 2067,
+          "cosine": 0.6232792926810361,
+          "slot_supported": true,
+          "lexical_matches": 3
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Geology.md",
+        "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Geology.md",
+        "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "relation_guard_diagnostics": {
+      "route": "No literal requested actor/action/count clause"
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Geology.md",
+        "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 2067,
+          "cosine": 0.6232792926810361,
+          "slot_supported": true,
+          "lexical_matches": 3
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Geology.md",
+        "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Geology.md",
+        "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "relation_guard_diagnostics": {
+      "route": "No literal requested actor/action/count clause"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Geology.md",
+      "start": 1977,
+      "content": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+      "semanticScore": 0.6014835120593512,
+      "lexicalScore": 12.432242712625916
+    },
+    {
+      "filename": "03_Geology.md",
+      "start": 2279,
+      "content": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days.",
+      "semanticScore": 0.41127360229064613,
+      "lexicalScore": 14.978248484623633
+    },
+    {
+      "filename": "03_Geology.md",
+      "start": 2485,
+      "content": "At Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day.",
+      "semanticScore": 0.4145732877688076,
+      "lexicalScore": 11.280739879179011
+    },
+    {
+      "filename": "03_Geology.md",
+      "start": 2067,
+      "content": "Olan Merven printed 26 frames.",
+      "semanticScore": 0.6232792926810361,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Geology.md",
+      "start": 2098,
+      "content": "Nira Telven checked 31 frames.",
+      "semanticScore": 0.468133767961234,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society.",
+      "start": 32,
+      "end": 150,
+      "similarity": 0.09388949486031083,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "The kingdom did not fully recover for years.",
+      "start": 151,
+      "end": 195,
+      "similarity": 0.1004656159690562,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters.",
+      "start": 196,
+      "end": 438,
+      "similarity": -0.08331385879887294,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.",
+      "start": 439,
+      "end": 674,
+      "similarity": 0.10150934050589451,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "In Berlin, the Huguenots created two new neighbourhoods: Dorotheenstadt and Friedrichstadt.",
+      "start": 696,
+      "end": 787,
+      "similarity": 0.11410165424297056,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "By 1700, one-fifth of the city's population was French speaking.",
+      "start": 788,
+      "end": 852,
+      "similarity": 0.05560815621116386,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "The Berlin Huguenots preserved the French language in their church services for nearly a century.",
+      "start": 853,
+      "end": 950,
+      "similarity": -0.0016388217299389313,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "They ultimately decided to switch to German in protest against the occupation of Prussia by Napoleon in 1806-07.",
+      "start": 951,
+      "end": 1063,
+      "similarity": -0.02721457696883319,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "Many of their descendents rose to positions of prominence.",
+      "start": 1064,
+      "end": 1122,
+      "similarity": 0.04483310803361647,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.",
+      "start": 1123,
+      "end": 1257,
+      "similarity": -0.017540018873941826,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+      "start": 1288,
+      "end": 1375,
+      "similarity": 0.30029657313871705,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "Taro Ilven mounted 34 segments.",
+      "start": 1376,
+      "end": 1407,
+      "similarity": 0.3164251616813077,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "Mira Solven inspected 19 segments.",
+      "start": 1408,
+      "end": 1442,
+      "similarity": 0.23993549179560203,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1443,
+      "end": 1506,
+      "similarity": 0.11482197776351998,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1507,
+      "end": 1568,
+      "similarity": 0.2913732350435669,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "At Velora Audio Archive, listening cards are kept for 45 days.",
+      "start": 1593,
+      "end": 1655,
+      "similarity": 0.15812840728587438,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "start": 1656,
+      "end": 1771,
+      "similarity": 0.093590519568992,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "At Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day.",
+      "start": 1800,
+      "end": 1900,
+      "similarity": 0.23425313936308573,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "At or after 14:00, send it on the next operating day.",
+      "start": 1901,
+      "end": 1954,
+      "similarity": 0.11671605234161611,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b000e9e6-09a1-46c7-a961-bb8992630b30",
+      "value": "If the rights review is unresolved, do not send the copy until that review closes.",
+      "start": 1955,
+      "end": 2037,
+      "similarity": 0.020393899142537173,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "The Mallee and upper Wimmera are Victoria's warmest regions with hot winds blowing from nearby semi-deserts.",
+      "start": 44,
+      "end": 152,
+      "similarity": -0.002759134221459901,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Average temperatures exceed 32 °C (90 °F) during summer and 15 °C (59 °F) in winter.",
+      "start": 153,
+      "end": 237,
+      "similarity": -0.0720148523908684,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Except at cool mountain elevations, the inland monthly temperatures are 2–7 °C (4–13 °F) warmer than around Melbourne (see chart).",
+      "start": 238,
+      "end": 368,
+      "similarity": 0.009664290699728701,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Victoria's highest maximum temperature since World War II, of 48.8 °C (119.8 °F) was recorded in Hopetoun on 7 February 2009, during the 2009 southeastern Australia heat wave.",
+      "start": 369,
+      "end": 544,
+      "similarity": 0.08615390489965605,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "During 2003–04, the gross value of Victorian agricultural production increased by 17% to $8.7 billion.",
+      "start": 566,
+      "end": 668,
+      "similarity": -0.00017264153542509718,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "This represented 24% of national agricultural production total gross value.",
+      "start": 669,
+      "end": 744,
+      "similarity": 0.03564520876544403,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "As of 2004, an estimated 32,463 farms occupied around 136,000 square kilometres (52,500 sq mi) of Victorian land.",
+      "start": 745,
+      "end": 858,
+      "similarity": -0.00834274496326055,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "This comprises more than 60% of the state's total land surface.",
+      "start": 859,
+      "end": 922,
+      "similarity": 0.05688899073332105,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Victorian farms range from small horticultural outfits to large-scale livestock and grain productions.",
+      "start": 923,
+      "end": 1025,
+      "similarity": -0.04683428058066172,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "A quarter of farmland is used to grow consumable crops.",
+      "start": 1026,
+      "end": 1081,
+      "similarity": -0.0071468651892031484,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.",
+      "start": 1112,
+      "end": 1197,
+      "similarity": 0.2558027164614657,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Ivo Darven polished 52 plates.",
+      "start": 1198,
+      "end": 1228,
+      "similarity": 0.30355328203948506,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "Lena Corven photographed 16 plates.",
+      "start": 1229,
+      "end": 1264,
+      "similarity": 0.3259765123994712,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1265,
+      "end": 1328,
+      "similarity": 0.11482197776351998,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1329,
+      "end": 1390,
+      "similarity": 0.2913732350435669,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "At Nerith Sky Workshop, observation cards are kept for 70 days.",
+      "start": 1415,
+      "end": 1478,
+      "similarity": 0.2654958777755018,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+      "start": 1479,
+      "end": 1594,
+      "similarity": 0.15064552759520106,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+      "start": 1623,
+      "end": 1722,
+      "similarity": 0.21881156595812676,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "At or after 15:30, send it on the next operating day.",
+      "start": 1723,
+      "end": 1776,
+      "similarity": 0.12012848618782768,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "503d3180-7548-44bc-b2ed-fa379588265d",
+      "value": "If the publication review is unresolved, do not send the copy until that review closes.",
+      "start": 1777,
+      "end": 1864,
+      "similarity": 0.052043493602945724,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Some modern scholars, such as Fielding H.",
+      "start": 31,
+      "end": 72,
+      "similarity": 0.1043386441270033,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Garrison, are of the opinion that the origin of the science of geology can be traced to Persia after the Muslim conquests had come to an end.",
+      "start": 73,
+      "end": 214,
+      "similarity": 0.10843837026341514,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Abu al-Rayhan al-Biruni (973–1048 CE) was one of the earliest Persian geologists, whose works included the earliest writings on the geology of India, hypothesizing that the Indian subcontinent was once a sea.",
+      "start": 215,
+      "end": 423,
+      "similarity": 0.14684791375308293,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Drawing from Greek and Indian scientific literature that were not destroyed by the Muslim conquests, the Persian scholar Ibn Sina (Avicenna, 981–1037) proposed detailed explanations for the formation of mountains, the origin of earthquakes, and other topics central to modern geology, which provided an essential foundation for the later development of the science.",
+      "start": 424,
+      "end": 789,
+      "similarity": 0.1469756516962861,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "In China, the polymath Shen Kuo (1031–1095) formulated a hypothesis for the process of land formation: based on his observation of fossil animal shells in a geological stratum in a mountain hundreds of miles from the ocean, he inferred that the land was formed by erosion of the mountains and by deposition of silt.",
+      "start": 790,
+      "end": 1105,
+      "similarity": 0.06647077383893601,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Seismologists can use the arrival times of seismic waves in reverse to image the interior of the Earth.",
+      "start": 1127,
+      "end": 1230,
+      "similarity": 0.2974812898439766,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Early advances in this field showed the existence of a liquid outer core (where shear waves were not able to propagate) and a dense solid inner core.",
+      "start": 1231,
+      "end": 1380,
+      "similarity": 0.03544381666318395,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "These advances led to the development of a layered model of the Earth, with a crust and lithosphere on top, the mantle below (separated within itself by seismic discontinuities at 410 and 660 kilometers), and the outer core and inner core below that.",
+      "start": 1381,
+      "end": 1631,
+      "similarity": 0.1170814844179916,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "More recently, seismologists have been able to create detailed images of wave speeds inside the earth in the same way a doctor images a body in a CT scan.",
+      "start": 1632,
+      "end": 1786,
+      "similarity": 0.31623274837652116,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.",
+      "start": 1787,
+      "end": 1946,
+      "similarity": 0.18382982303102902,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+      "start": 1977,
+      "end": 2066,
+      "similarity": 0.6014835120593512,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Olan Merven printed 26 frames.",
+      "start": 2067,
+      "end": 2097,
+      "similarity": 0.6232792926810361,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "Nira Telven checked 31 frames.",
+      "start": 2098,
+      "end": 2128,
+      "similarity": 0.468133767961234,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 2129,
+      "end": 2192,
+      "similarity": 0.11482197776351998,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 2193,
+      "end": 2254,
+      "similarity": 0.2913732350435669,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days.",
+      "start": 2279,
+      "end": 2344,
+      "similarity": 0.41127360229064613,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+      "start": 2345,
+      "end": 2456,
+      "similarity": 0.09521952396176356,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "At Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day.",
+      "start": 2485,
+      "end": 2590,
+      "similarity": 0.4145732877688076,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "At or after 13:00, send it on the next operating day.",
+      "start": 2591,
+      "end": 2644,
+      "similarity": 0.13242463134820187,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+      "value": "If the ownership review is unresolved, do not send the copy until that review closes.",
+      "start": 2645,
+      "end": 2730,
+      "similarity": 0.03285788313272045,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Packet mode communication may be implemented with or without intermediate forwarding nodes (packet switches or routers).",
+      "start": 40,
+      "end": 160,
+      "similarity": -0.0067068164489828596,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Packets are normally forwarded by intermediate network nodes asynchronously using first-in, first-out buffering, but may be forwarded according to some scheduling discipline for fair queuing, traffic shaping, or for differentiated or guaranteed quality of service, such as weighted fair queuing or leaky bucket.",
+      "start": 161,
+      "end": 472,
+      "similarity": 0.03211507718589265,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "In case of a shared physical medium (such as radio or 10BASE5), the packets may be delivered according to a multiple access scheme.",
+      "start": 473,
+      "end": 604,
+      "similarity": 0.08881237185639895,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Starting in the late 1950s, American computer scientist Paul Baran developed the concept Distributed Adaptive Message Block Switching with the goal to provide a fault-tolerant, efficient routing method for telecommunication messages as part of a research program at the RAND Corporation, funded by the US Department of Defense.",
+      "start": 626,
+      "end": 953,
+      "similarity": 0.10711289578295016,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "This concept contrasted and contradicted the theretofore established principles of pre-allocation of network bandwidth, largely fortified by the development of telecommunications in the Bell System.",
+      "start": 954,
+      "end": 1152,
+      "similarity": -0.009619371304977885,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "The new concept found little resonance among network implementers until the independent work of Donald Davies at the National Physical Laboratory (United Kingdom) (NPL) in the late 1960s.",
+      "start": 1153,
+      "end": 1340,
+      "similarity": 0.20646626695800246,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.",
+      "start": 1341,
+      "end": 1575,
+      "similarity": 0.11876915257336841,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+      "start": 1606,
+      "end": 1692,
+      "similarity": 0.27363392886621857,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Eran Morven cleaned 41 trays.",
+      "start": 1693,
+      "end": 1722,
+      "similarity": 0.2772468612641224,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "Vera Linven weighed 18 trays.",
+      "start": 1723,
+      "end": 1752,
+      "similarity": 0.1845237621971513,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1753,
+      "end": 1816,
+      "similarity": 0.11482197776351998,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1817,
+      "end": 1878,
+      "similarity": 0.2913732350435669,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "At Soravin Specimen Studio, conservation cards are kept for 80 days.",
+      "start": 1903,
+      "end": 1971,
+      "similarity": 0.19007059821230318,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+      "start": 1972,
+      "end": 2086,
+      "similarity": 0.12089101487791595,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "At Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day.",
+      "start": 2115,
+      "end": 2218,
+      "similarity": 0.2479503982005953,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "At or after 16:00, send it on the next operating day.",
+      "start": 2219,
+      "end": 2272,
+      "similarity": 0.12730296355587642,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "292eb02d-eb8a-40ab-a222-1043db645000",
+      "value": "If the custody review is unresolved, do not send the copy until that review closes.",
+      "start": 2273,
+      "end": 2356,
+      "similarity": 0.04365792129692231,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Geology.md",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 2067,
+            "cosine": 0.6232792926810361,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Geology.md",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Geology.md",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "relation_guard_diagnostics": {
+        "route": "No literal requested actor/action/count clause"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Geology.md",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 2067,
+            "cosine": 0.6232792926810361,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Geology.md",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Geology.md",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "relation_guard_diagnostics": {
+        "route": "No literal requested actor/action/count clause"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa:1966",
+          "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+          "filename": "03_Geology.md",
+          "excerpt": "r images a body in a CT scan. These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.\n\n## Fictional completed tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Caldrin Rock Imaging Room, imaging cards are kept for 55 days. I",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+          "score": 0.0476,
+          "lexicalScore": 18.49983770266481,
+          "semanticScore": 0.5781587648532759,
+          "matchedTerms": [
+            "frames",
+            "olan",
+            "merven",
+            "caldrin",
+            "rock",
+            "imaging",
+            "room"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Geology.md",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 2067,
+            "cosine": 0.6232792926810361,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Geology.md",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa:1948",
+          "documentId": "07d75d86-38dd-4bfa-9a04-7e69ddf8fefa",
+          "filename": "03_Geology.md",
+          "excerpt": "r images a body in a CT scan. These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.\n\n## Fictional completed tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Caldrin Rock Imaging Room, imaging cards are kept for 55 days. I",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+          "score": 0.0476,
+          "lexicalScore": 18.10016582028477,
+          "semanticScore": 0.6604064118864647,
+          "matchedTerms": [
+            "frames",
+            "olan",
+            "merven",
+            "caldrin",
+            "rock",
+            "imaging",
+            "room"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Geology.md",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 2067,
+            "cosine": 0.6232792926810361,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Geology.md",
+          "quote": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.03830936551094055,
+    0.10496501624584198,
+    -0.031639326363801956,
+    -0.0463859997689724,
+    0.081676185131073,
+    -0.06392370909452438,
+    0.012830417603254318,
+    0.03168097138404846,
+    0.00010032382851932198,
+    -0.05411047860980034,
+    0.03649026155471802,
+    -0.013752085156738758,
+    0.006144780199974775,
+    -0.029075169935822487,
+    0.000765914679504931,
+    -0.02818816341459751,
+    0.00007623827696079388,
+    -0.008197063580155373,
+    0.037419822067022324,
+    0.006882355082780123,
+    -0.021147511899471283,
+    -0.0007720867288298905,
+    0.11655125021934509,
+    -0.013895196840167046,
+    -0.000010724244930315763,
+    0.014879845082759857,
+    -0.05863872542977333,
+    0.0015841609565541148,
+    0.03233180195093155,
+    -0.03865547478199005,
+    0.09537212550640106,
+    -0.008881411515176296,
+    -0.02388560213148594,
+    -0.04506486654281616,
+    0.03618062660098076,
+    0.03499877080321312,
+    0.01749340444803238,
+    0.007087445352226496,
+    -0.1098564863204956,
+    -0.05771130695939064,
+    -0.028583263978362083,
+    -0.02662227302789688,
+    0.019100667908787727,
+    -0.005082077346742153,
+    -0.01643524505198002,
+    -0.07207773625850677,
+    -0.00491880951449275,
+    -0.08776950091123581,
+    0.06595324724912643,
+    0.036645252257585526,
+    -0.05504254251718521,
+    -0.00448053190484643,
+    -0.02949676476418972,
+    -0.06195423752069473,
+    0.0508422814309597,
+    0.0618322491645813,
+    -0.05284273624420166,
+    -0.03754425421357155,
+    0.039324209094047546,
+    -0.008323008194565773,
+    -0.034769318997859955,
+    0.0037240395322442055,
+    -0.06742921471595764,
+    0.00196064286865294,
+    0.09703844040632248,
+    -0.011815227568149567,
+    -0.04278283566236496,
+    -0.14325159788131714,
+    0.022756490856409073,
+    -0.00405544089153409,
+    -0.0020839679054915905,
+    0.06412657350301743,
+    0.1184704452753067,
+    -0.09234290570020676,
+    0.039785828441381454,
+    0.001105153583921492,
+    0.004652137868106365,
+    0.06818680465221405,
+    0.03770085796713829,
+    -0.07482361793518066,
+    0.016903340816497803,
+    -0.10730618983507156,
+    -0.026115288957953453,
+    -0.0058947536163032055,
+    -0.007725127972662449,
+    0.007651458960026503,
+    0.0022221594117581844,
+    -0.00021757623471785337,
+    -0.018050963059067726,
+    0.06595179438591003,
+    0.01646086759865284,
+    0.03232945501804352,
+    -0.05541423708200455,
+    -0.027597054839134216,
+    0.012851226143538952,
+    -0.06131415069103241,
+    -0.04275992885231972,
+    0.07789691537618637,
+    0.007295948453247547,
+    0.11472831666469574,
+    0.04209422692656517,
+    -0.010077127255499363,
+    0.036704644560813904,
+    0.018909579142928123,
+    -0.04614020884037018,
+    0.028578387573361397,
+    0.029316235333681107,
+    0.14503280818462372,
+    -0.09915240854024887,
+    0.012679320760071278,
+    0.051696691662073135,
+    -0.06098887324333191,
+    0.07748063653707504,
+    -0.021829182282090187,
+    0.09389720857143402,
+    -0.011278348974883556,
+    -0.06356678903102875,
+    0.05829587206244469,
+    0.034900493919849396,
+    -0.08878825604915619,
+    0.04789380729198456,
+    0.016103679314255714,
+    0.030446376651525497,
+    0.0006767631857655942,
+    -0.06594838201999664,
+    0.005264652892947197,
+    0.05746552720665932,
+    5.836132005515918e-34,
+    0.07886923104524612,
+    0.05448928475379944,
+    -0.01685621589422226,
+    -0.030994318425655365,
+    0.05807572603225708,
+    0.06048545986413956,
+    -0.06579700112342834,
+    0.027940159663558006,
+    0.04341141879558563,
+    -0.02292797900736332,
+    0.014530150219798088,
+    -0.07637366652488708,
+    -0.003134664846584201,
+    -0.007789021357893944,
+    0.03885991498827934,
+    -0.00433028070256114,
+    0.020961826667189598,
+    0.029963498935103416,
+    -0.040438536554574966,
+    0.02169794775545597,
+    -0.02072366513311863,
+    0.011310345493257046,
+    -0.03665466606616974,
+    0.005708024371415377,
+    0.0036109420470893383,
+    0.12873493134975433,
+    -0.00904979556798935,
+    0.042692698538303375,
+    0.003010594518855214,
+    0.047090161591768265,
+    -0.019294964149594307,
+    0.02292247861623764,
+    -0.010033502243459225,
+    0.020595325157046318,
+    0.08944150805473328,
+    0.04360068589448929,
+    -0.013963808305561543,
+    -0.04449343681335449,
+    -0.04832055792212486,
+    -0.01259632408618927,
+    0.06129567325115204,
+    0.0335933193564415,
+    0.030234267935156822,
+    -0.048235323280096054,
+    -0.09319900721311569,
+    0.016962651163339615,
+    0.041530001908540726,
+    0.08911405503749847,
+    0.0679943710565567,
+    0.04572295397520065,
+    -0.0019717745017260313,
+    0.02078077755868435,
+    -0.09588403254747391,
+    -0.0753573402762413,
+    0.0634864792227745,
+    0.007598597090691328,
+    0.018013538792729378,
+    -0.065424844622612,
+    0.08165711909532547,
+    0.1029023602604866,
+    0.00210771057754755,
+    0.05342990905046463,
+    0.02634545974433422,
+    0.03528048098087311,
+    -0.08232323080301285,
+    0.01933881640434265,
+    -0.04659051075577736,
+    -0.037229884415864944,
+    -0.049065619707107544,
+    0.0017982075223699212,
+    -0.042165908962488174,
+    0.0026852532755583525,
+    0.011582243256270885,
+    -0.08182233572006226,
+    0.0020653712563216686,
+    0.004097483120858669,
+    -0.07552199065685272,
+    0.016664674505591393,
+    -0.09703025221824646,
+    0.09437103569507599,
+    -0.13507987558841705,
+    0.0039461576379835606,
+    0.013997692614793777,
+    0.008764526806771755,
+    -0.03938211500644684,
+    -0.013893721625208855,
+    -0.012211127206683159,
+    0.029539549723267555,
+    -0.050543561577796936,
+    -0.007245250977575779,
+    0.00558377243578434,
+    -0.06702041625976562,
+    -0.010248981416225433,
+    -0.03308304399251938,
+    -0.12717163562774658,
+    -1.2510807497965722e-33,
+    -0.00967539194971323,
+    0.0253334641456604,
+    0.03544621542096138,
+    0.05898286774754524,
+    0.017052948474884033,
+    -0.01344958133995533,
+    0.011840242892503738,
+    0.13705533742904663,
+    0.018652377650141716,
+    -0.04114781692624092,
+    0.06317073851823807,
+    -0.026123356074094772,
+    0.01778341829776764,
+    -0.021205710247159004,
+    -0.017745215445756912,
+    0.050866737961769104,
+    0.09162584692239761,
+    -0.052402790635824203,
+    -0.04936635494232178,
+    -0.0018397613894194365,
+    0.0660669133067131,
+    0.002498785499483347,
+    0.009772274643182755,
+    0.01968415640294552,
+    0.07490077614784241,
+    0.06816813349723816,
+    0.10513284057378769,
+    -0.08333070576190948,
+    -0.07748740166425705,
+    0.003259803634136915,
+    -0.07102923840284348,
+    -0.014708491042256355,
+    -0.02562655322253704,
+    0.010820712894201279,
+    -0.009659925475716591,
+    0.0847625732421875,
+    0.07145679742097855,
+    0.01768725924193859,
+    -0.0932200700044632,
+    0.028749380260705948,
+    0.012193350121378899,
+    0.026752665638923645,
+    -0.04585539177060127,
+    0.0789395347237587,
+    -0.02398340031504631,
+    0.014817122370004654,
+    0.01323697715997696,
+    0.0931575819849968,
+    -0.04366206005215645,
+    0.061929620802402496,
+    -0.0923430472612381,
+    0.03481971472501755,
+    0.032039426267147064,
+    -0.08897959440946579,
+    -0.020329615101218224,
+    0.00852932222187519,
+    0.009609278291463852,
+    0.03048139251768589,
+    0.02190634422004223,
+    0.004347286652773619,
+    0.044162362813949585,
+    -0.055020153522491455,
+    -0.039688363671302795,
+    -0.019372396171092987,
+    0.02840176224708557,
+    0.05793924629688263,
+    -0.007330631837248802,
+    -0.0267893448472023,
+    -0.08629705756902695,
+    0.03307364881038666,
+    0.015426676720380783,
+    -0.007015275303274393,
+    -0.003832416608929634,
+    0.03278239816427231,
+    0.02637096866965294,
+    0.04821181669831276,
+    0.019261229783296585,
+    -0.005035474430769682,
+    -0.024839701130986214,
+    -0.0004224097356200218,
+    -0.09004729241132736,
+    -0.11723961681127548,
+    0.013643680140376091,
+    0.03375065326690674,
+    -0.004547146614640951,
+    0.030906297266483307,
+    0.004187761340290308,
+    -0.10193219035863876,
+    -0.013177013956010342,
+    0.01610404998064041,
+    0.03576802834868431,
+    0.009319481439888477,
+    -0.03402019664645195,
+    0.028951741755008698,
+    0.04746858403086662,
+    -2.070154536681912e-8,
+    -0.11369022727012634,
+    0.05125259608030319,
+    -0.028299765661358833,
+    -0.12151458114385605,
+    -0.014895210042595863,
+    0.036386601626873016,
+    0.09887183457612991,
+    0.038885679095983505,
+    -0.028018265962600708,
+    0.016667233780026436,
+    0.01993442140519619,
+    0.06685331463813782,
+    -0.005414667539298534,
+    0.00598438736051321,
+    -0.07832041382789612,
+    -0.03919161856174469,
+    -0.029697410762310028,
+    -0.01762835681438446,
+    -0.07865859568119049,
+    -0.03402131423354149,
+    0.05189060792326927,
+    -0.07273592054843903,
+    0.11361485719680786,
+    -0.020438052713871002,
+    -0.02152269333600998,
+    -0.009874299168586731,
+    -0.004543543793261051,
+    0.07395852357149124,
+    0.0060182674787938595,
+    -0.0793609544634819,
+    -0.02625792846083641,
+    0.008376158773899078,
+    -0.05985343083739281,
+    -0.13231892883777618,
+    0.05006449297070503,
+    -0.011219295673072338,
+    -0.010459079407155514,
+    0.025742962956428528,
+    0.02032056637108326,
+    0.04946369677782059,
+    -0.05112048238515854,
+    0.06373166292905807,
+    0.03888874128460884,
+    0.013337655924260616,
+    0.046209704130887985,
+    0.003555918112397194,
+    -0.018196411430835724,
+    -0.0070812092162668705,
+    -0.07865189760923386,
+    -0.10002415627241135,
+    0.014123904518783092,
+    0.05152847245335579,
+    -0.02078317292034626,
+    -0.007443715818226337,
+    0.058824244886636734,
+    -0.06513871997594833,
+    0.08247343450784683,
+    -0.04884063079953194,
+    -0.06173660233616829,
+    0.03707223758101463,
+    0.03947409242391586,
+    -0.03476728871464729,
+    -0.032479818910360336,
+    -0.040195174515247345
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Geology.md",
+        "start": 1966,
+        "content": "eted tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.\n\n## Fictional copy requests\nAt Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day. At or after 13:00, send it on the next operating day. If the ownership review is unresolved, do not send the copy until that review"
+      },
+      {
+        "filename": "03_Geology.md",
+        "start": 1306,
+        "content": "here shear waves were not able to propagate) and a dense solid inner core. These advances led to the development of a layered model of the Earth, with a crust and lithosphere on top, the mantle below (separated within itself by seismic discontinuities at 410 and 660 kilometers), and the outer core and inner core below that. More recently, seismologists have been able to create detailed images of wave speeds inside the earth in the same way a doctor images a body in a CT scan. These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.\n\n## Fictional completed tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Geology.md",
+        "start": 1948,
+        "content": "## Fictional completed tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations."
+      },
+      {
+        "filename": "03_Geology.md",
+        "start": 2256,
+        "content": "## Fictional retention\nAt Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period."
+      },
+      {
+        "filename": "03_Geology.md",
+        "start": 2458,
+        "content": "## Fictional copy requests\nAt Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day. At or after 13:00, send it on the next operating day. If the ownership review is unresolved, do not send the copy until that review closes."
+      }
+    ]
+  }
+}

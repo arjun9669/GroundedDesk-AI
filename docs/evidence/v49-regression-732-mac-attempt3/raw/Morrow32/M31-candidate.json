@@ -1,0 +1,228 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "M31",
+  "question": "Compare acknowledgement deadlines and their limits for Ashmere Funicular ticket requests and Noryn Print Cooperative print requests.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] Acknowledge ticket requests within one service day.\n\n[2] Noryn Print Cooperative acknowledges a print request within three business hours.",
+    "sources": [
+      {
+        "filename": "01_Ashmere_Funicular.txt",
+        "quote": "Acknowledge ticket requests within one service day."
+      },
+      {
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "quote": "Noryn Print Cooperative acknowledges a print request within three business hours."
+      }
+    ],
+    "displayed": "Shared vocabulary: acknowledgement, guarantee, months, release, three, ticket, unless, within. Shared terms do not establish factual agreement.\n\n[1] 01_Ashmere_Funicular.txt\n\nAcknowledge ticket requests within one service day.\n\nText line 8 (normalized extraction)\n\nLocate in library ↗\n[2] 04_Noryn_Print_Cooperative.txt\n\nNoryn Print Cooperative acknowledges a print request within three business hours.\n\nText line 2 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Ashmere Funicular ticket requests and Noryn Print Cooperative print requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+        "filename": "01_Ashmere_Funicular.txt",
+        "excerpt": "Acknowledge ticket requests within one service day.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge ticket requests within one service day."
+      },
+      {
+        "citation": 2,
+        "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "excerpt": "Noryn Print Cooperative acknowledges a print request within three business hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "Noryn Print Cooperative acknowledges a print request within three business hours."
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "guarantee",
+      "months",
+      "release",
+      "three",
+      "ticket",
+      "unless",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge ticket requests within one service day.\n\n[2] Noryn Print Cooperative acknowledges a print request within three business hours."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Ashmere Funicular ticket requests and Noryn Print Cooperative print requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+        "filename": "01_Ashmere_Funicular.txt",
+        "excerpt": "Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.",
+        "start": 785,
+        "end": 893
+      },
+      {
+        "citation": 2,
+        "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "excerpt": "Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+        "start": 30,
+        "end": 205
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "guarantee",
+      "months",
+      "release",
+      "three",
+      "ticket",
+      "unless",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.\n\n[2] Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Ashmere Funicular ticket requests and Noryn Print Cooperative print requests.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+        "filename": "01_Ashmere_Funicular.txt",
+        "excerpt": "Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.",
+        "warning": false,
+        "supported": true,
+        "quote": "Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.",
+        "start": 785,
+        "end": 893
+      },
+      {
+        "citation": 2,
+        "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+        "filename": "04_Noryn_Print_Cooperative.txt",
+        "excerpt": "Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+        "start": 30,
+        "end": 205
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "guarantee",
+      "months",
+      "release",
+      "three",
+      "ticket",
+      "unless",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.\n\n[2] Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare acknowledgement deadlines and their limits for Ashmere Funicular ticket requests and Noryn Print Cooperative print requests.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+          "filename": "01_Ashmere_Funicular.txt",
+          "excerpt": "Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.",
+          "warning": false,
+          "supported": true,
+          "quote": "Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.",
+          "start": 785,
+          "end": 893
+        },
+        {
+          "citation": 2,
+          "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+          "filename": "04_Noryn_Print_Cooperative.txt",
+          "excerpt": "Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+          "warning": false,
+          "supported": true,
+          "quote": "Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+          "start": 30,
+          "end": 205
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "guarantee",
+        "months",
+        "release",
+        "three",
+        "ticket",
+        "unless",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.\n\n[2] Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare acknowledgement deadlines and their limits for Ashmere Funicular ticket requests and Noryn Print Cooperative print requests.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "d603e7a1-96b3-467c-b217-cc631e173bad",
+          "filename": "01_Ashmere_Funicular.txt",
+          "excerpt": "Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.",
+          "warning": false,
+          "supported": true,
+          "quote": "Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.",
+          "start": 785,
+          "end": 893
+        },
+        {
+          "citation": 2,
+          "documentId": "fdb1a1f1-3355-4b02-8fcd-6dc06607fd0b",
+          "filename": "04_Noryn_Print_Cooperative.txt",
+          "excerpt": "Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+          "warning": false,
+          "supported": true,
+          "quote": "Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+          "start": 30,
+          "end": 205
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "guarantee",
+        "months",
+        "release",
+        "three",
+        "ticket",
+        "unless",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] Acknowledge ticket requests within one service day. This acknowledgement does not guarantee a reserved seat.\n\n[2] Noryn Print Cooperative acknowledges a print request within three business hours. This acknowledgement is not a guarantee that the order will be dispatched within three hours.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v49 and paired v43 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

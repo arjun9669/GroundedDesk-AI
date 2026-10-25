@@ -1,0 +1,1129 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "C19",
+  "question": "What must the Willow Conservatory purchase evidence packet contain?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What must the Willow Conservatory purchase evidence packet contain?",
+    "expected_display": "What must the Willow Conservatory purchase evidence packet contain?",
+    "rendered_question": "What must the Willow Conservatory purchase evidence packet contain?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+    "sources": [
+      {
+        "filename": "04_Willow_Conservatory.txt",
+        "excerpt": "highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+        "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat must the Willow Conservatory purchase evidence packet contain?\n\nSearched all files: 01_Cedar_Observatory.txt · 02_Harbor_Cartography.txt · 03_Juniper_Workshop.txt · 04_Willow_Conservatory.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nSOURCE EVIDENCE\n[1]\n04_Willow_Conservatory.txt\n\nText line 5 (normalized extraction)\n\nhighest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius. Purchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval. Willow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "473a327c-4561-4c72-80a3-83ff5bcaa5b4:0",
+        "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+        "filename": "04_Willow_Conservatory.txt",
+        "excerpt": "highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+        "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+        "score": 0.0476,
+        "lexicalScore": 7.774164846035097,
+        "semanticScore": 0.4861739198031705,
+        "matchedTerms": [
+          "willow",
+          "conservatory",
+          "purchase",
+          "evidence",
+          "packet"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "473a327c-4561-4c72-80a3-83ff5bcaa5b4:0",
+        "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+        "filename": "04_Willow_Conservatory.txt",
+        "excerpt": "highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+        "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+        "score": 0.0476,
+        "lexicalScore": 7.774164846035097,
+        "semanticScore": 0.4861739198031705,
+        "matchedTerms": [
+          "willow",
+          "conservatory",
+          "purchase",
+          "evidence",
+          "packet"
+        ],
+        "start": 470,
+        "end": 581
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "473a327c-4561-4c72-80a3-83ff5bcaa5b4:0",
+        "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+        "filename": "04_Willow_Conservatory.txt",
+        "excerpt": "highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+        "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+        "score": 0.0476,
+        "lexicalScore": 7.774164846035097,
+        "semanticScore": 0.4861739198031705,
+        "matchedTerms": [
+          "willow",
+          "conservatory",
+          "purchase",
+          "evidence",
+          "packet"
+        ],
+        "start": 470,
+        "end": 581
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Willow_Conservatory.txt",
+      "start": 470,
+      "content": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "semanticScore": 0.5321120110288771,
+      "lexicalScore": 7.636978794482413
+    },
+    {
+      "filename": "04_Willow_Conservatory.txt",
+      "start": 583,
+      "content": "Willow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+      "semanticScore": 0.47511205962068065,
+      "lexicalScore": 6.00180545672924
+    },
+    {
+      "filename": "04_Willow_Conservatory.txt",
+      "start": 0,
+      "content": "The Willow Conservatory relocation took place in 1863.",
+      "semanticScore": 0.5111462472185695,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Willow_Conservatory.txt",
+      "start": 172,
+      "content": "Willow Conservatory winter average temperatures exceed 16 degrees Celsius.",
+      "semanticScore": 0.41498582662423433,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "ceb4690c-58da-49b6-bb7e-c6c355830a49",
+      "value": "The Cedar Observatory relocation took place in 1874.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.24313919670938375,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ceb4690c-58da-49b6-bb7e-c6c355830a49",
+      "value": "Its restoration took place in 1926.",
+      "start": 53,
+      "end": 88,
+      "similarity": 0.1294559502027379,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ceb4690c-58da-49b6-bb7e-c6c355830a49",
+      "value": "A proposed closure in 1941 did not occur.",
+      "start": 89,
+      "end": 130,
+      "similarity": 0.06106232664459549,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ceb4690c-58da-49b6-bb7e-c6c355830a49",
+      "value": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+      "start": 132,
+      "end": 204,
+      "similarity": 0.18044715870795386,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ceb4690c-58da-49b6-bb7e-c6c355830a49",
+      "value": "Its highest monthly mean temperature is 29 degrees Celsius in August.",
+      "start": 205,
+      "end": 274,
+      "similarity": -0.022528899733549948,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ceb4690c-58da-49b6-bb7e-c6c355830a49",
+      "value": "Its highest recorded daily temperature is 42 degrees Celsius.",
+      "start": 275,
+      "end": 336,
+      "similarity": 0.02111359620290632,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ceb4690c-58da-49b6-bb7e-c6c355830a49",
+      "value": "Mira catalogs seven plates per shift.",
+      "start": 338,
+      "end": 375,
+      "similarity": 0.1764016139358324,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ceb4690c-58da-49b6-bb7e-c6c355830a49",
+      "value": "Oren cleans four lenses per shift.",
+      "start": 376,
+      "end": 410,
+      "similarity": 0.011639799836364716,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ceb4690c-58da-49b6-bb7e-c6c355830a49",
+      "value": "Mira checks two clocks per shift.",
+      "start": 411,
+      "end": 444,
+      "similarity": 0.07082675207824272,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ceb4690c-58da-49b6-bb7e-c6c355830a49",
+      "value": "Cedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.",
+      "start": 446,
+      "end": 567,
+      "similarity": 0.31053250143273786,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e6aee5fd-5e42-4a05-ba71-ec4c0a2e7187",
+      "value": "The Harbor Cartography archive relocation took place in 1889.",
+      "start": 0,
+      "end": 61,
+      "similarity": 0.1491605333134816,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e6aee5fd-5e42-4a05-ba71-ec4c0a2e7187",
+      "value": "Its restoration took place in 1938.",
+      "start": 62,
+      "end": 97,
+      "similarity": 0.15607081386940838,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e6aee5fd-5e42-4a05-ba71-ec4c0a2e7187",
+      "value": "The archive did not close in 1952.",
+      "start": 98,
+      "end": 132,
+      "similarity": 0.1394368992337141,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e6aee5fd-5e42-4a05-ba71-ec4c0a2e7187",
+      "value": "Harbor Cartography archive winter average temperatures exceed 9 degrees Celsius.",
+      "start": 134,
+      "end": 214,
+      "similarity": 0.0821376538506054,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e6aee5fd-5e42-4a05-ba71-ec4c0a2e7187",
+      "value": "Its highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 215,
+      "end": 282,
+      "similarity": 0.01599737547121011,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e6aee5fd-5e42-4a05-ba71-ec4c0a2e7187",
+      "value": "Its highest recorded daily temperature is 39 degrees Celsius.",
+      "start": 283,
+      "end": 344,
+      "similarity": 0.026072459872734727,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e6aee5fd-5e42-4a05-ba71-ec4c0a2e7187",
+      "value": "Orders released before 14:20 depart the same operating day.",
+      "start": 346,
+      "end": 405,
+      "similarity": 0.07520884749801846,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e6aee5fd-5e42-4a05-ba71-ec4c0a2e7187",
+      "value": "Orders released at or after 14:20 depart the next operating day, unless a customs hold prevents departure.",
+      "start": 406,
+      "end": 512,
+      "similarity": 0.1029516866243349,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e6aee5fd-5e42-4a05-ba71-ec4c0a2e7187",
+      "value": "Harbor Cartography shipping records are retained for 22 months, unless a customs investigation requires longer retention.",
+      "start": 514,
+      "end": 635,
+      "similarity": 0.15650163513800872,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "The Juniper Workshop relocation took place in 1907.",
+      "start": 0,
+      "end": 51,
+      "similarity": 0.25093146778221437,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "Its first restoration took place in 1946.",
+      "start": 52,
+      "end": 93,
+      "similarity": 0.14145609024591888,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "Its second restoration took place in 1979.",
+      "start": 94,
+      "end": 136,
+      "similarity": 0.19452806327369027,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "The proposed demolition in 1988 never occurred.",
+      "start": 137,
+      "end": 184,
+      "similarity": 0.051076251307570944,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius.",
+      "start": 186,
+      "end": 257,
+      "similarity": 0.1874431312729573,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+      "start": 258,
+      "end": 330,
+      "similarity": -0.03905448012533982,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "Its highest recorded daily temperature is 45 degrees Celsius.",
+      "start": 331,
+      "end": 392,
+      "similarity": 0.04552208420174187,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "Lubricate the Juniper press every 72 operating hours.",
+      "start": 394,
+      "end": 447,
+      "similarity": 0.14593052723317423,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "In a dusty bay, lubricate it every 36 operating hours.",
+      "start": 448,
+      "end": 502,
+      "similarity": 0.06732692913760854,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "Inspect the press every 18 operating hours in either environment.",
+      "start": 503,
+      "end": 568,
+      "similarity": 0.221182817938609,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "500e78c2-611c-4a20-8c05-c437755caf9d",
+      "value": "Juniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+      "start": 570,
+      "end": 687,
+      "similarity": 0.21888850628011186,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+      "value": "The Willow Conservatory relocation took place in 1863.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.5111462472185695,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+      "value": "Its restoration took place in 1917.",
+      "start": 55,
+      "end": 90,
+      "similarity": 0.15435565868173445,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+      "value": "Its inventory took place in 1917.",
+      "start": 91,
+      "end": 124,
+      "similarity": 0.22182542261959964,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+      "value": "The canceled expansion in 1930 did not occur.",
+      "start": 125,
+      "end": 170,
+      "similarity": -0.008553863826587776,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+      "value": "Willow Conservatory winter average temperatures exceed 16 degrees Celsius.",
+      "start": 172,
+      "end": 246,
+      "similarity": 0.41498582662423433,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+      "value": "Its highest monthly mean temperature is 33 degrees Celsius in June.",
+      "start": 247,
+      "end": 314,
+      "similarity": -0.01558144420668195,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+      "value": "Its highest recorded daily temperature is 47 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.04214033984162082,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+      "value": "Purchases above 5300 credits require written approval from the Curator and Finance Manager.",
+      "start": 378,
+      "end": 469,
+      "similarity": 0.3523487857994126,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+      "value": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "start": 470,
+      "end": 581,
+      "similarity": 0.5321120110288771,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+      "value": "Willow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+      "start": 583,
+      "end": 700,
+      "similarity": 0.47511205962068065,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "473a327c-4561-4c72-80a3-83ff5bcaa5b4:0",
+          "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+          "filename": "04_Willow_Conservatory.txt",
+          "excerpt": "highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "score": 0.0476,
+          "lexicalScore": 7.774164846035097,
+          "semanticScore": 0.4861739198031705,
+          "matchedTerms": [
+            "willow",
+            "conservatory",
+            "purchase",
+            "evidence",
+            "packet"
+          ],
+          "start": 470,
+          "end": 581
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "473a327c-4561-4c72-80a3-83ff5bcaa5b4:0",
+          "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+          "filename": "04_Willow_Conservatory.txt",
+          "excerpt": "highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "score": 0.0476,
+          "lexicalScore": 7.774164846035097,
+          "semanticScore": 0.4861739198031705,
+          "matchedTerms": [
+            "willow",
+            "conservatory",
+            "purchase",
+            "evidence",
+            "packet"
+          ],
+          "start": 470,
+          "end": 581
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "473a327c-4561-4c72-80a3-83ff5bcaa5b4:0",
+          "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+          "filename": "04_Willow_Conservatory.txt",
+          "excerpt": "highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "score": 0.0476,
+          "lexicalScore": 7.774164846035097,
+          "semanticScore": 0.4861739198031705,
+          "matchedTerms": [
+            "willow",
+            "conservatory",
+            "purchase",
+            "evidence",
+            "packet"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "473a327c-4561-4c72-80a3-83ff5bcaa5b4:0",
+          "documentId": "473a327c-4561-4c72-80a3-83ff5bcaa5b4",
+          "filename": "04_Willow_Conservatory.txt",
+          "excerpt": "highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "score": 0.0476,
+          "lexicalScore": 7.774164846035097,
+          "semanticScore": 0.4861739198031705,
+          "matchedTerms": [
+            "willow",
+            "conservatory",
+            "purchase",
+            "evidence",
+            "packet"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.008933637291193008,
+    0.023396873846650124,
+    0.028516177088022232,
+    -0.0032559800893068314,
+    0.07768890261650085,
+    0.006583567708730698,
+    0.03956678509712219,
+    -0.012366391718387604,
+    0.0038149398751556873,
+    0.04407553747296333,
+    0.048061303794384,
+    -0.06455107778310776,
+    -0.07262197136878967,
+    0.00016423361375927925,
+    -0.08136628568172455,
+    -0.06618684530258179,
+    0.0170048289000988,
+    -0.04821384698152542,
+    -0.008666221052408218,
+    -0.03528153523802757,
+    -0.03645731508731842,
+    0.02665119059383869,
+    0.07328972220420837,
+    0.05979440361261368,
+    -0.012323438189923763,
+    -0.014172032475471497,
+    -0.14359909296035767,
+    -0.024319803342223167,
+    0.05431865155696869,
+    -0.08815699070692062,
+    0.029786497354507446,
+    0.0058972579427063465,
+    0.0008711240370757878,
+    -0.024444615468382835,
+    0.04786050319671631,
+    0.029890673235058784,
+    0.08659658581018448,
+    -0.09456147998571396,
+    0.019024895504117012,
+    0.02037775330245495,
+    0.008454990573227406,
+    -0.05391380935907364,
+    -0.06480318307876587,
+    0.03473687544465065,
+    -0.043076638132333755,
+    0.049550410360097885,
+    0.07858341187238693,
+    -0.018492411822080612,
+    -0.0025545002426952124,
+    0.03423266485333443,
+    -0.025778187438845634,
+    -0.018204964697360992,
+    -0.02041397988796234,
+    0.02404281310737133,
+    -0.0078015816397964954,
+    0.04478471353650093,
+    -0.00044745972263626754,
+    -0.029459282755851746,
+    0.044108133763074875,
+    0.061591312289237976,
+    0.003710816614329815,
+    -0.003271198133006692,
+    -0.14765362441539764,
+    0.023252634331583977,
+    0.06167338043451309,
+    0.05401762202382088,
+    -0.049112509936094284,
+    0.031200123950839043,
+    0.13697820901870728,
+    -0.062315523624420166,
+    0.009558557532727718,
+    -0.03626205772161484,
+    -0.01875286176800728,
+    -0.005860868375748396,
+    -0.041976746171712875,
+    -0.022857334464788437,
+    0.01463159266859293,
+    -0.03601089492440224,
+    0.02330557070672512,
+    -0.03506791964173317,
+    -0.07557791471481323,
+    0.054968636482954025,
+    0.0697493851184845,
+    0.06560830026865005,
+    -0.04072437807917595,
+    0.04651990905404091,
+    0.015058680437505245,
+    0.023910000920295715,
+    -0.040848203003406525,
+    0.01656130515038967,
+    0.04194946214556694,
+    -0.08728358149528503,
+    -0.03964616730809212,
+    0.002946568187326193,
+    -0.003717730985954404,
+    0.08316393196582794,
+    -0.01057940162718296,
+    -0.058100856840610504,
+    0.1012345477938652,
+    0.05738865211606026,
+    -0.029666563495993614,
+    0.040422223508358,
+    0.05526808276772499,
+    -0.020477620884776115,
+    -0.09130209684371948,
+    -0.05838172137737274,
+    -0.08723612874746323,
+    0.00711029814556241,
+    0.06316354870796204,
+    0.05497734993696213,
+    0.026788482442498207,
+    -0.05999404937028885,
+    0.014860027469694614,
+    0.07254427671432495,
+    0.04024992883205414,
+    -0.0336742103099823,
+    0.07618814706802368,
+    -0.003857486182823777,
+    -0.06147131323814392,
+    -0.07790176570415497,
+    0.03937054052948952,
+    0.004846469033509493,
+    0.08173920959234238,
+    -0.03721512854099274,
+    -0.07044558227062225,
+    -0.003508709603920579,
+    -0.041130371391773224,
+    -3.6103259217232314e-33,
+    0.02406412921845913,
+    0.006117756478488445,
+    -0.05313707888126373,
+    0.04002825543284416,
+    0.051855191588401794,
+    -0.006591681856662035,
+    0.012643817812204361,
+    0.007494200021028519,
+    0.01401896495372057,
+    0.011709779500961304,
+    -0.018740631639957428,
+    -0.028598565608263016,
+    -0.09825144708156586,
+    -0.015724115073680878,
+    -0.01413836982101202,
+    0.09229891002178192,
+    -0.0822090208530426,
+    0.08307713270187378,
+    0.04997725412249565,
+    -0.016205843538045883,
+    -0.083519846200943,
+    -0.020682381466031075,
+    0.03798284754157066,
+    -0.022023137658834457,
+    0.06631919741630554,
+    -0.037836261093616486,
+    -0.0010046417592093349,
+    0.025699423626065254,
+    -0.026353558525443077,
+    0.007769951596856117,
+    0.11181146651506424,
+    -0.033624615520238876,
+    0.027446575462818146,
+    0.02533647231757641,
+    0.04433712735772133,
+    0.06972728669643402,
+    -0.07682069391012192,
+    -0.07065264880657196,
+    0.032573286443948746,
+    0.023271936923265457,
+    0.08836589753627777,
+    -0.0036391732282936573,
+    0.06449718028306961,
+    0.06857723742723465,
+    0.01052632462233305,
+    -0.004202326759696007,
+    -0.0025993864983320236,
+    0.002516597742214799,
+    0.039994630962610245,
+    0.0650249719619751,
+    0.026464512571692467,
+    0.05230582505464554,
+    -0.006560792680829763,
+    -0.03990180045366287,
+    -0.03876577317714691,
+    0.042459145188331604,
+    0.04504746198654175,
+    0.05212377384305,
+    0.07538560777902603,
+    0.05925646051764488,
+    -0.005565650761127472,
+    0.09009668231010437,
+    0.01152579952031374,
+    0.05093010887503624,
+    0.028118204325437546,
+    0.017961395904421806,
+    -0.10174746066331863,
+    -0.027912812307476997,
+    0.06102750450372696,
+    -0.10775848478078842,
+    -0.10199743509292603,
+    0.026399759575724602,
+    0.04043223708868027,
+    -0.06196529418230057,
+    0.0029194646049290895,
+    -0.047103580087423325,
+    -0.10536009073257446,
+    0.023674974218010902,
+    0.03003912977874279,
+    -0.03657034412026405,
+    -0.025226043537259102,
+    -0.07933530956506729,
+    0.024569636210799217,
+    0.08703172951936722,
+    -0.05345987156033516,
+    0.005113192833960056,
+    0.051642194390296936,
+    0.030417002737522125,
+    -0.0064810714684426785,
+    -0.03500007838010788,
+    -0.0011731671402230859,
+    -0.005254808347672224,
+    -0.03184106573462486,
+    -0.08158019930124283,
+    0.03961356729269028,
+    1.9744249638304093e-33,
+    0.056419119238853455,
+    -0.08414042741060257,
+    -0.011168382130563259,
+    0.04202760010957718,
+    0.006828750483691692,
+    0.0485798642039299,
+    -0.0528741180896759,
+    -0.07743861526250839,
+    0.08767536282539368,
+    0.03282966464757919,
+    0.0005446933209896088,
+    0.05806710198521614,
+    0.034678589552640915,
+    -0.0306224562227726,
+    -0.014728130772709846,
+    0.0003085957432631403,
+    0.033611856400966644,
+    0.0029624225571751595,
+    0.05116788297891617,
+    -0.024303385987877846,
+    0.013748083263635635,
+    0.009902562014758587,
+    -0.015998665243387222,
+    0.051542531698942184,
+    0.012711816467344761,
+    -0.003964825067669153,
+    0.08733326941728592,
+    -0.08402260392904282,
+    0.01579132303595543,
+    -0.07841576635837555,
+    0.020676767453551292,
+    -0.04776383563876152,
+    -0.02704174630343914,
+    -0.062368474900722504,
+    -0.059519603848457336,
+    -0.11077749729156494,
+    0.09158192574977875,
+    -0.040127094835042953,
+    -0.056296322494745255,
+    0.039284322410821915,
+    0.09660487622022629,
+    0.08207835257053375,
+    -0.047930821776390076,
+    -0.012998289428651333,
+    -0.041174713522195816,
+    -0.0007018341566435993,
+    -0.0013628798769786954,
+    0.016796860843896866,
+    0.05374957621097565,
+    -0.004829538054764271,
+    0.10273844748735428,
+    -0.0015373291680589318,
+    -0.027669811621308327,
+    -0.01957576908171177,
+    0.010951346717774868,
+    0.09922900795936584,
+    0.006668071262538433,
+    0.04170620068907738,
+    0.029990030452609062,
+    -0.03011840395629406,
+    0.02816716395318508,
+    0.030665704980492592,
+    -0.08364637196063995,
+    -0.004047236405313015,
+    0.03829751908779144,
+    -0.028558336198329926,
+    0.014580999501049519,
+    -0.022459011524915695,
+    -0.006085185334086418,
+    -0.016123514622449875,
+    0.044775884598493576,
+    -0.029385287314653397,
+    0.07763627916574478,
+    -0.08013959228992462,
+    0.06602821499109268,
+    0.022693654522299767,
+    0.008312638849020004,
+    -0.05983920767903328,
+    0.006171092391014099,
+    -0.020024113357067108,
+    -0.051131103187799454,
+    0.009444301016628742,
+    0.022317733615636826,
+    0.06027917563915253,
+    0.1623692512512207,
+    -0.09017892181873322,
+    -0.011244107969105244,
+    -0.007014301139861345,
+    -0.04723862186074257,
+    0.04838433116674423,
+    -0.0013363700127229095,
+    -0.004550740588456392,
+    -0.005552164278924465,
+    -0.016923390328884125,
+    0.09633069485425949,
+    -1.4806260217881118e-8,
+    -0.0030082694720476866,
+    0.028646983206272125,
+    -0.043030787259340286,
+    -0.06341676414012909,
+    0.03913969174027443,
+    -0.040226273238658905,
+    0.11331672221422195,
+    0.10207939147949219,
+    -0.051583629101514816,
+    -0.007502248045057058,
+    0.02560562454164028,
+    0.04821866750717163,
+    -0.06673630326986313,
+    -0.0020066762808710337,
+    0.006089815404266119,
+    -0.004528562538325787,
+    -0.00879492424428463,
+    -0.029466386884450912,
+    -0.1437784731388092,
+    -0.03236464411020279,
+    -0.024377722293138504,
+    -0.021155700087547302,
+    0.037911176681518555,
+    0.05883404612541199,
+    -0.033359844237565994,
+    -0.042421117424964905,
+    0.08210524171590805,
+    0.032419223338365555,
+    -0.02576485089957714,
+    -0.006318279542028904,
+    0.0053194742649793625,
+    0.015135598368942738,
+    -0.0005337634356692433,
+    -0.10975702106952667,
+    -0.04059075191617012,
+    0.016918586567044258,
+    0.012870761565864086,
+    -0.0522652231156826,
+    0.03290407359600067,
+    -0.0037964130751788616,
+    -0.07561588287353516,
+    -0.13730742037296295,
+    -0.016718005761504173,
+    0.019925162196159363,
+    0.006848926655948162,
+    0.022607946768403053,
+    -0.0793362706899643,
+    0.053713325411081314,
+    -0.06555265188217163,
+    -0.004023469984531403,
+    0.052048616111278534,
+    -0.015128717757761478,
+    0.03298365697264671,
+    -0.002526238327845931,
+    -0.07431391626596451,
+    0.0021799150854349136,
+    0.03522274270653725,
+    -0.05808194726705551,
+    0.03432173654437065,
+    -0.040497634559869766,
+    0.08387330174446106,
+    -0.030407259240746498,
+    0.07951272279024124,
+    -0.07730577141046524
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Willow_Conservatory.txt",
+        "start": 0,
+        "content": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Willow_Conservatory.txt",
+        "start": 0,
+        "content": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention."
+      }
+    ]
+  }
+}

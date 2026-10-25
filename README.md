@@ -13,9 +13,9 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest isolated candidate | **v49 package 3 engineering PASS after approved corrections**; model validation not run. Latest scored v46 regression FAIL; neither adopted |
+| Latest isolated candidate | **v49 complete regression FAIL**:63 PASS/1 FAIL Fresh64 per variant;17/19 historical gates. Candidate remains unadopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
-| Current phase | **2 — first Fresh64 confirmation FAIL**; 52 PASS / 4 PARTIAL / 8 FAIL in each variant; integration HOLD |
+| Current phase | **2 — first Fresh64 confirmation and latest v49 regression FAIL**; integration HOLD |
 | Latest recorded engineering checks | **1015 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
@@ -24,7 +24,25 @@ The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. The following
 phase 1 summary reflects the approved decision on **21 October 2026**; earlier
 reports remain dated checkpoints and preserve their original failures and holds.
 
-## Latest result — v46 regression FAIL
+## Latest result — v49 complete regression FAIL
+
+[Attempt3 completed all732 cases](./docs/V49_REGRESSION_FAILED_RESULTS.md):684
+actual MiniLM Hybrid submissions and48 lexical Comparisons. Integrity passed with
+50,074 recomputed body cosines; native scoring still failed:
+
+- Fresh64: **63 PASS/0 PARTIAL/1 FAIL** in each variant;64/64 was required.
+- Historical preservation: **17/19 family gates PASS**; five original PASS losses
+  remain per variant. All prior v46 PASS rows are preserved.
+
+The earlier startup-only and515-record partial attempts remain blocked/unscored.
+A prospectively published amendment distinguishes expanded displayed quotations
+from their original ranking-body cosines;40 such bindings and4 legacy bindings
+are disclosed. Separate author-aware review found no native PASS contradiction.
+No candidate, frozen key or native score was rewritten. Six unresolved cases
+remain: current-document scope, four retention review tails, and monthly location
+semantics. **Phase2/integration HOLD; live5.6/r44 unchanged.**
+
+## Earlier result — v46 regression FAIL
 
 One approved capture completed **732 cases**: 668 historical plus 64 exposed
 Fresh64, with 684 actual MiniLM Hybrid submissions and 48 lexical Comparisons.
@@ -46,8 +64,8 @@ now defines three work packages: scope/retention, minimum/approval, then Compari
 [package 2 minimum/approval](./docs/V48_PACKAGE2_ENGINEERING.md) and
 [package 3 Comparison/events](./docs/V49_PACKAGE3_ENGINEERING.md) now have isolated
 implementations. Package 3 passes32 targeted,972 full unit and28 Keyword checks
-after approved corrections; its original24/6 failure remains preserved. Actual-model
-validation is pending; there is no v49 quality score. The
+after approved corrections; its original24/6 failure remains preserved. Those
+engineering checks preceded the complete failed regression reported above. The
 [v49 732-case protocol/input/candidate freeze](./docs/V49_REGRESSION_PREPARATION.md)
 now retains original scope and criteria with prospective anchor-audit controls.
 [V49 execution readiness](./docs/V49_EXECUTION_READY.md) now passes22 targeted
@@ -59,7 +77,7 @@ verified loopback server. Attempt2 then stopped on its strict anchor-containment
 rule after515 saved records. A [prospective attempt3 amendment](./eval/v49-expanded-anchor-regression/PROTOCOL.md)
 now distinguishes expanded displayed quotes from their original ranking-body
 cosines;1015 units/28 Keyword checks pass. Both incomplete attempts remain
-blocked and unscored; no full v49 quality score is established.
+blocked/unscored. The complete attempt3 result is reported above.
 **Phase 2 and integration remain HOLD; live 5.6/r44 is unchanged.**
 
 ## Original phase 2 Fresh64 confirmation — FAIL

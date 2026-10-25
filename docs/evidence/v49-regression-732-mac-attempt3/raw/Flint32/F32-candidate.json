@@ -1,0 +1,233 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "F32",
+  "question": "Compare acknowledgement deadlines and their limits for Velric Instrument Workshop service requests and Sable Travelling Books reservations.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] Velric Instrument Workshop acknowledges service requests within four business hours.\n\n[2] Sable Travelling Books acknowledges reservation requests within two service days.",
+    "sources": [
+      {
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "quote": "Velric Instrument Workshop acknowledges service requests within four business hours."
+      },
+      {
+        "filename": "04_Sable_Travelling_Books.txt",
+        "quote": "Sable Travelling Books acknowledges reservation requests within two service days."
+      }
+    ],
+    "displayed": "Shared vocabulary: acknowledgement, acknowledges, five, rebuilt, requests, service, sheet, three, within. Shared terms do not establish factual agreement.\n\n[1] 03_Velric_Instrument_Workshop.txt\n\nVelric Instrument Workshop acknowledges service requests within four business hours.\n\nText line 5 (normalized extraction)\n\nLocate in library ↗\n[2] 04_Sable_Travelling_Books.txt\n\nSable Travelling Books acknowledges reservation requests within two service days.\n\nText line 9 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Velric Instrument Workshop service requests and Sable Travelling Books reservations.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "776f943d-ac7b-4590-aa5a-af7b6686231f",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "Velric Instrument Workshop acknowledges service requests within four business hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "Velric Instrument Workshop acknowledges service requests within four business hours."
+      },
+      {
+        "citation": 2,
+        "documentId": "66203320-e5a0-45fe-a6c1-cc6aaed0a7e0",
+        "filename": "04_Sable_Travelling_Books.txt",
+        "excerpt": "Sable Travelling Books acknowledges reservation requests within two service days.",
+        "warning": false,
+        "supported": true,
+        "quote": "Sable Travelling Books acknowledges reservation requests within two service days."
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "acknowledges",
+      "five",
+      "rebuilt",
+      "requests",
+      "service",
+      "sheet",
+      "three",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Velric Instrument Workshop acknowledges service requests within four business hours.\n\n[2] Sable Travelling Books acknowledges reservation requests within two service days."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Velric Instrument Workshop service requests and Sable Travelling Books reservations.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "776f943d-ac7b-4590-aa5a-af7b6686231f",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.",
+        "start": 392,
+        "end": 567
+      },
+      {
+        "citation": 2,
+        "documentId": "66203320-e5a0-45fe-a6c1-cc6aaed0a7e0",
+        "filename": "04_Sable_Travelling_Books.txt",
+        "excerpt": "Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+        "warning": false,
+        "supported": true,
+        "quote": "Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+        "start": 674,
+        "end": 833
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "acknowledges",
+      "five",
+      "rebuilt",
+      "requests",
+      "service",
+      "sheet",
+      "three",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.\n\n[2] Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare acknowledgement deadlines and their limits for Velric Instrument Workshop service requests and Sable Travelling Books reservations.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "776f943d-ac7b-4590-aa5a-af7b6686231f",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.",
+        "warning": false,
+        "supported": true,
+        "quote": "Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.",
+        "start": 392,
+        "end": 567
+      },
+      {
+        "citation": 2,
+        "documentId": "66203320-e5a0-45fe-a6c1-cc6aaed0a7e0",
+        "filename": "04_Sable_Travelling_Books.txt",
+        "excerpt": "Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+        "warning": false,
+        "supported": true,
+        "quote": "Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+        "start": 674,
+        "end": 833
+      }
+    ],
+    "sharedTerms": [
+      "acknowledgement",
+      "acknowledges",
+      "five",
+      "rebuilt",
+      "requests",
+      "service",
+      "sheet",
+      "three",
+      "within"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.\n\n[2] Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+    "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare acknowledgement deadlines and their limits for Velric Instrument Workshop service requests and Sable Travelling Books reservations.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "776f943d-ac7b-4590-aa5a-af7b6686231f",
+          "filename": "03_Velric_Instrument_Workshop.txt",
+          "excerpt": "Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.",
+          "warning": false,
+          "supported": true,
+          "quote": "Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.",
+          "start": 392,
+          "end": 567
+        },
+        {
+          "citation": 2,
+          "documentId": "66203320-e5a0-45fe-a6c1-cc6aaed0a7e0",
+          "filename": "04_Sable_Travelling_Books.txt",
+          "excerpt": "Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+          "warning": false,
+          "supported": true,
+          "quote": "Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+          "start": 674,
+          "end": 833
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "acknowledges",
+        "five",
+        "rebuilt",
+        "requests",
+        "service",
+        "sheet",
+        "three",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.\n\n[2] Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare acknowledgement deadlines and their limits for Velric Instrument Workshop service requests and Sable Travelling Books reservations.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "776f943d-ac7b-4590-aa5a-af7b6686231f",
+          "filename": "03_Velric_Instrument_Workshop.txt",
+          "excerpt": "Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.",
+          "warning": false,
+          "supported": true,
+          "quote": "Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.",
+          "start": 392,
+          "end": 567
+        },
+        {
+          "citation": 2,
+          "documentId": "66203320-e5a0-45fe-a6c1-cc6aaed0a7e0",
+          "filename": "04_Sable_Travelling_Books.txt",
+          "excerpt": "Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+          "warning": false,
+          "supported": true,
+          "quote": "Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+          "start": 674,
+          "end": 833
+        }
+      ],
+      "sharedTerms": [
+        "acknowledgement",
+        "acknowledges",
+        "five",
+        "rebuilt",
+        "requests",
+        "service",
+        "sheet",
+        "three",
+        "within"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] Velric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.\n\n[2] Sable Travelling Books acknowledges reservation requests within two service days. An acknowledgement does not guarantee that a reserved book will be available.",
+      "experiment": "V30 isolated lexical bounded-block completeness; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v49 and paired v43 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}

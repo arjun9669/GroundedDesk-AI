@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-25 — complete v49 regression native FAIL
+
+- Complete732-case attempt3 (684 MiniLM Hybrid/48 lexical), seal5,865 raw files
+  before scoring; integrity PASS with50,074 recomputed body cosines.
+- Preserve fixed/section Fresh6463 PASS/1 FAIL and17/19 historical family gates;
+  five prior PASS losses remain per variant, all prior-v46 PASS rows preserved.
+- Publish separate128-row Fresh64/10-row changed-historical review and40 expanded/
+  4 legacy anchor diagnostics without native regrading. Earlier attempts stay
+  blocked/unscored. No candidate/key/threshold change; live/integration HOLD.
+
 ## 2026-10-25 — preserve partial v49 capture and freeze prospective anchor amendment
 
 - Preserve attempt2 integrity block at515 saved records; no native score or full

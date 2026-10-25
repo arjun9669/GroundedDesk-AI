@@ -1,0 +1,1055 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "F06",
+  "question": "Roughly how much is the Student Government's budget?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Roughly how much is the Student Government's budget?",
+    "expected_display": "Roughly how much is the Student Government's budget?",
+    "rendered_question": "Roughly how much is the Student Government's budget?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "displayed": "YOUR QUESTION\nRoughly how much is the Student Government's budget?\n\nSearched all files: 01_University_of_Chicago.md · 02_Islamism.md · 03_European_Union_law.md · 04_Normans.md\n\nNo supporting answer\nNO SUPPORTING EVIDENCE\nCopy report\nSave report\nI can't find this in the provided documents.\n\nTry a different question or add a document containing relevant information. No answer was invented.\n\nFind a better starting point\n\nCheck the files being searched, make your question more specific, or add a file with the missing information.\n\nChoose files\nRephrase question\nAdd a file",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Question-specific attribute was absent from the cited evidence."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ce99e634-530a-45ce-857a-64f983bbb94c:body:1392",
+        "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+        "filename": "01_University_of_Chicago.md",
+        "quote": "Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.",
+        "excerpt": "Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government. Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "start": 1037,
+        "end": 1437
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Question-specific attribute was absent from the cited evidence.",
+    "coverage_diagnostics": {
+      "refusal_preserved": true
+    },
+    "relationship_diagnostics": {
+      "refusal_preserved": true
+    },
+    "body_diagnostics": {
+      "refusal_preserved": true
+    },
+    "attribute_diagnostics": {
+      "route": "budget",
+      "entity": "Student Government",
+      "actual_cosine": 0.5360222447588703,
+      "guard_answered": true
+    },
+    "experiment": "V17 isolated budget clause preflight; production unchanged"
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "ce99e634-530a-45ce-857a-64f983bbb94c:body:1392",
+        "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+        "filename": "01_University_of_Chicago.md",
+        "quote": "Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.",
+        "excerpt": "Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government. Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+        "start": 1037,
+        "end": 1437
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Question-specific attribute was absent from the cited evidence.",
+    "coverage_diagnostics": {
+      "refusal_preserved": true
+    },
+    "relationship_diagnostics": {
+      "refusal_preserved": true
+    },
+    "body_diagnostics": {
+      "refusal_preserved": true
+    },
+    "attribute_diagnostics": {
+      "route": "budget",
+      "entity": "Student Government",
+      "actual_cosine": 0.5360222447588703,
+      "guard_answered": true
+    },
+    "experiment": "V17 isolated budget clause preflight; production unchanged"
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_University_of_Chicago.md",
+      "start": 1037,
+      "content": "Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit.",
+      "semanticScore": 0.46506395340843615,
+      "lexicalScore": 5.101996819017389
+    },
+    {
+      "filename": "01_University_of_Chicago.md",
+      "start": 1392,
+      "content": "Its annual budget is greater than $2 million.",
+      "semanticScore": 0.5360222447588703,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_University_of_Chicago.md",
+      "start": 1172,
+      "content": "It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring.",
+      "semanticScore": 0.39474618643112275,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_University_of_Chicago.md",
+      "start": 814,
+      "content": "All Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government.",
+      "semanticScore": null,
+      "lexicalScore": 4.94168510275168
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "The first buildings of the University of Chicago campus, which make up what is now known as the Main Quadrangles, were part of a \"master plan\" conceived by two University of Chicago trustees and plotted by Chicago architect Henry Ives Cobb.",
+      "start": 38,
+      "end": 278,
+      "similarity": 0.19114370857470833,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "The Main Quadrangles consist of six quadrangles, each surrounded by buildings, bordering one larger quadrangle.",
+      "start": 279,
+      "end": 390,
+      "similarity": 0.0895249102366777,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "The buildings of the Main Quadrangles were designed by Cobb, Shepley, Rutan and Coolidge, Holabird & Roche, and other architectural firms in a mixture of the Victorian Gothic and Collegiate Gothic styles, patterned on the colleges of the University of Oxford.",
+      "start": 391,
+      "end": 650,
+      "similarity": 0.19024333263352441,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "(Mitchell Tower, for example, is modeled after Oxford's Magdalen Tower, and the university Commons, Hutchinson Hall, replicates Christ Church Hall.)",
+      "start": 651,
+      "end": 799,
+      "similarity": 0.11244477070372878,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "All Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government.",
+      "start": 814,
+      "end": 1036,
+      "similarity": 0.290781899180361,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit.",
+      "start": 1037,
+      "end": 1171,
+      "similarity": 0.46506395340843615,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring.",
+      "start": 1172,
+      "end": 1391,
+      "similarity": 0.39474618643112275,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "Its annual budget is greater than $2 million.",
+      "start": 1392,
+      "end": 1437,
+      "similarity": 0.5360222447588703,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "start": 1470,
+      "end": 1570,
+      "similarity": 0.07189412391508115,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "This approval authority applies only to standard cargo schedules at Orvella Depot.",
+      "start": 1571,
+      "end": 1653,
+      "similarity": 0.02958325509764928,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1654,
+      "end": 1710,
+      "similarity": 0.06850419456073169,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5536862-020a-4c50-8cd6-50561fc90557",
+      "value": "Some elements of the Brotherhood, though perhaps against orders, did engage in violence against the government, and its founder Al-Banna was assassinated in 1949 in retaliation for the assassination of Egypt's premier Mahmud Fami Naqrashi three months earlier.",
+      "start": 25,
+      "end": 285,
+      "similarity": -0.042955214580408026,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5536862-020a-4c50-8cd6-50561fc90557",
+      "value": "The Brotherhood has suffered periodic repression in Egypt and has been banned several times, in 1948 and several years later following confrontations with Egyptian president Gamal Abdul Nasser, who jailed thousands of members for several years.",
+      "start": 286,
+      "end": 530,
+      "similarity": 0.010696550282861974,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5536862-020a-4c50-8cd6-50561fc90557",
+      "value": "After al-Nimeiry was overthrown in 1985 the party did poorly in national elections, but in 1989 it was able to overthrow the elected post-al-Nimeiry government with the help of the military.",
+      "start": 545,
+      "end": 735,
+      "similarity": 0.03701014585445755,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5536862-020a-4c50-8cd6-50561fc90557",
+      "value": "Turabi was noted for proclaiming his support for the democratic process and a liberal government before coming to power, but strict application of sharia law, torture and mass imprisonment of the opposition, and an intensification of the long-running war in southern Sudan, once in power.",
+      "start": 736,
+      "end": 1024,
+      "similarity": 0.010878385365660876,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5536862-020a-4c50-8cd6-50561fc90557",
+      "value": "The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.",
+      "start": 1025,
+      "end": 1188,
+      "similarity": -0.08171390444233347,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5536862-020a-4c50-8cd6-50561fc90557",
+      "value": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "start": 1221,
+      "end": 1321,
+      "similarity": 0.051519954293601226,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5536862-020a-4c50-8cd6-50561fc90557",
+      "value": "This approval authority applies only to standard shelf indexes at Tiravel Library.",
+      "start": 1322,
+      "end": 1404,
+      "similarity": 0.007665576711814179,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5536862-020a-4c50-8cd6-50561fc90557",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1405,
+      "end": 1461,
+      "similarity": 0.06850419456073169,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "Following the Nice Treaty, there was an attempt to reform the constitutional law of the European Union and make it more transparent; this would have also produced a single constitutional document.",
+      "start": 35,
+      "end": 231,
+      "similarity": 0.0645619913700484,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "However, as a result of the referendum in France and the referendum in the Netherlands, the 2004 Treaty establishing a Constitution for Europe never came into force.",
+      "start": 232,
+      "end": 397,
+      "similarity": 0.040286284828809506,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "Instead, the Lisbon Treaty was enacted.",
+      "start": 398,
+      "end": 437,
+      "similarity": 0.09067960622396802,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "Its substance was very similar to the proposed constitutional treaty, but it was formally an amending treaty, and – though it significantly altered the existing treaties – it did not completely replace them.",
+      "start": 438,
+      "end": 645,
+      "similarity": 0.05347939541942764,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "None of the original treaties establishing the European Union mention protection for fundamental rights.",
+      "start": 660,
+      "end": 764,
+      "similarity": -0.07142621139066996,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "It was not envisaged for European Union measures, that is legislative and administrative actions by European Union institutions, to be subject to human rights.",
+      "start": 765,
+      "end": 924,
+      "similarity": 0.011484818727978682,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "At the time the only concern was that member states should be prevented from violating human rights, hence the establishment of the European Convention on Human Rights in 1950 and the establishment of the European Court of Human Rights.",
+      "start": 925,
+      "end": 1161,
+      "similarity": -0.08913718582343647,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "The European Court of Justice recognised fundamental rights as general principle of European Union law as the need to ensure that European Union measures are compatible with the human rights enshrined in member states' constitution became ever more apparent.",
+      "start": 1162,
+      "end": 1420,
+      "similarity": -0.13874159603881567,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "In 1999 the European Council set up a body tasked with drafting a European Charter of Human Rights, which could form the constitutional basis for the European Union and as such tailored specifically to apply to the European Union and its institutions.",
+      "start": 1421,
+      "end": 1672,
+      "similarity": 0.028204356082806373,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "The Charter of Fundamental Rights of the European Union draws a list of fundamental rights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.",
+      "start": 1673,
+      "end": 1945,
+      "similarity": -0.06629644238256344,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "start": 1978,
+      "end": 2073,
+      "similarity": 0.06121568992513957,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "start": 2074,
+      "end": 2154,
+      "similarity": 0.025334207969222363,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f423c728-74f6-4c1d-b6f7-d0cf17eeb61c",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2155,
+      "end": 2211,
+      "similarity": 0.06850419456073169,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "Various princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan.",
+      "start": 24,
+      "end": 125,
+      "similarity": 0.006593453295498286,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+      "start": 126,
+      "end": 233,
+      "similarity": 0.013438308168551594,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard.",
+      "start": 234,
+      "end": 407,
+      "similarity": -0.0731786698728348,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "But Isaac changed his mind and tried to escape.",
+      "start": 408,
+      "end": 455,
+      "similarity": -0.09259793174620172,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan.",
+      "start": 456,
+      "end": 548,
+      "similarity": -0.00035226469010885854,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons.",
+      "start": 549,
+      "end": 670,
+      "similarity": -0.06695619730767174,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "By 1 June, Richard had conquered the whole island.",
+      "start": 671,
+      "end": 721,
+      "similarity": -0.0012597153899367103,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "His exploit was well publicized and contributed to his reputation; he also derived significant financial gains from the conquest of the island.",
+      "start": 722,
+      "end": 865,
+      "similarity": 0.0007179798119298078,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "Richard left for Acre on 5 June, with his allies.",
+      "start": 866,
+      "end": 915,
+      "similarity": -0.07569158205214714,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "Before his departure, he named two of his Norman generals, Richard de Camville and Robert de Thornham, as governors of Cyprus.",
+      "start": 916,
+      "end": 1042,
+      "similarity": -0.0105721592218123,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France.",
+      "start": 1057,
+      "end": 1223,
+      "similarity": -0.05701535905111807,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "They were descended from Norse (\"Norman\" comes from \"Norseman\") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia.",
+      "start": 1224,
+      "end": 1431,
+      "similarity": -0.0656735981618415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia.",
+      "start": 1432,
+      "end": 1627,
+      "similarity": -0.03175290601148843,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.",
+      "start": 1628,
+      "end": 1799,
+      "similarity": -0.10133126946501168,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "start": 1832,
+      "end": 1931,
+      "similarity": 0.12373367438887041,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "This approval authority applies only to standard display cards at Fenora Gallery.",
+      "start": 1932,
+      "end": 2013,
+      "similarity": 0.07803630594799621,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "c48647fc-2428-4f7f-82c2-5bf9575aa77a",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2014,
+      "end": 2070,
+      "similarity": 0.06850419456073169,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ce99e634-530a-45ce-857a-64f983bbb94c:body:1392",
+          "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+          "filename": "01_University_of_Chicago.md",
+          "quote": "Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.",
+          "excerpt": "Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government. Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+          "start": 1037,
+          "end": 1437
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Question-specific attribute was absent from the cited evidence.",
+      "coverage_diagnostics": {
+        "refusal_preserved": true
+      },
+      "relationship_diagnostics": {
+        "refusal_preserved": true
+      },
+      "body_diagnostics": {
+        "refusal_preserved": true
+      },
+      "attribute_diagnostics": {
+        "route": "budget",
+        "entity": "Student Government",
+        "actual_cosine": 0.5360222447588703,
+        "guard_answered": true
+      },
+      "experiment": "V17 isolated budget clause preflight; production unchanged"
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "ce99e634-530a-45ce-857a-64f983bbb94c:body:1392",
+          "documentId": "ce99e634-530a-45ce-857a-64f983bbb94c",
+          "filename": "01_University_of_Chicago.md",
+          "quote": "Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.",
+          "excerpt": "Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government. Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus.",
+          "start": 1037,
+          "end": 1437
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Question-specific attribute was absent from the cited evidence.",
+      "coverage_diagnostics": {
+        "refusal_preserved": true
+      },
+      "relationship_diagnostics": {
+        "refusal_preserved": true
+      },
+      "body_diagnostics": {
+        "refusal_preserved": true
+      },
+      "attribute_diagnostics": {
+        "route": "budget",
+        "entity": "Student Government",
+        "actual_cosine": 0.5360222447588703,
+        "guard_answered": true
+      },
+      "experiment": "V17 isolated budget clause preflight; production unchanged"
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Question-specific attribute was absent from the cited evidence.",
+      "coverage_diagnostics": {
+        "refusal_preserved": true
+      },
+      "relationship_diagnostics": {
+        "refusal_preserved": true
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Question-specific attribute was absent from the cited evidence.",
+      "coverage_diagnostics": {
+        "refusal_preserved": true
+      },
+      "relationship_diagnostics": {
+        "refusal_preserved": true
+      }
+    }
+  },
+  "query_vector": [
+    0.043671514838933945,
+    0.004801829811185598,
+    0.021209394559264183,
+    0.03901596739888191,
+    0.034408535808324814,
+    -0.061467599123716354,
+    -0.016482539474964142,
+    0.0067243450321257114,
+    0.0025817658752202988,
+    0.11263494938611984,
+    0.05549275875091553,
+    -0.033494848757982254,
+    -0.07052846252918243,
+    -0.08783062547445297,
+    -0.05544493719935417,
+    0.004120209254324436,
+    0.05748436972498894,
+    -0.07333569973707199,
+    0.007998301647603512,
+    0.013770673424005508,
+    0.028145432472229004,
+    0.007183586712926626,
+    0.00838681310415268,
+    0.058804433792829514,
+    0.0975838229060173,
+    0.047894589602947235,
+    -0.0011876458302140236,
+    -0.0688343197107315,
+    -0.03591589257121086,
+    -0.01561282854527235,
+    -0.007905928418040276,
+    0.03804647549986839,
+    0.04397042840719223,
+    -0.042174745351076126,
+    0.043446432799100876,
+    0.019087791442871094,
+    0.1073329746723175,
+    0.02161269262433052,
+    0.020545393228530884,
+    0.0476265512406826,
+    -0.07418613135814667,
+    0.08523739874362946,
+    0.030103765428066254,
+    0.009627707302570343,
+    -0.02460198476910591,
+    -0.01734890416264534,
+    -0.025898421183228493,
+    -0.016438180580735207,
+    -0.032804638147354126,
+    0.08433783054351807,
+    0.015605092979967594,
+    0.01931857131421566,
+    -0.011798765510320663,
+    -0.01447876077145338,
+    0.03402426093816757,
+    -0.025666315108537674,
+    0.0006023069145157933,
+    -0.021119320765137672,
+    -0.012320642359554768,
+    0.0077759562991559505,
+    -0.11198835074901581,
+    -0.030350103974342346,
+    -0.050410591065883636,
+    0.036011986434459686,
+    0.020027771592140198,
+    -0.04996498301625252,
+    -0.037952177226543427,
+    -0.10421530157327652,
+    0.05397750809788704,
+    -0.04895899444818497,
+    -0.037555914372205734,
+    -0.036127958446741104,
+    0.01238072756677866,
+    -0.09147661179304123,
+    0.04423500970005989,
+    0.006327496375888586,
+    0.06040981411933899,
+    0.11798526346683502,
+    0.10091260075569153,
+    -0.057606954127550125,
+    0.047375794500112534,
+    -0.009066838771104813,
+    -0.0012826010352000594,
+    0.0042508188635110855,
+    0.061310697346925735,
+    -0.06160644069314003,
+    0.08474912494421005,
+    0.005019461270421743,
+    0.0024310038425028324,
+    0.012744217179715633,
+    -0.042849812656641006,
+    -0.007775432430207729,
+    -0.003052353160455823,
+    0.016446035355329514,
+    -0.07634320855140686,
+    0.09794207662343979,
+    -0.027070743963122368,
+    -0.030102508142590523,
+    0.04843771830201149,
+    0.06140415742993355,
+    -0.09068716317415237,
+    0.09172707796096802,
+    0.13063503801822662,
+    -0.06300341337919235,
+    -0.061192676424980164,
+    -0.019270315766334534,
+    0.08750643581151962,
+    -0.0049087065272033215,
+    0.04644513502717018,
+    0.000750226026866585,
+    0.03194502741098404,
+    -0.031403593719005585,
+    -0.0005945469019934535,
+    0.014762429520487785,
+    0.06980866938829422,
+    -0.04041368514299393,
+    0.07329246401786804,
+    -0.003413124941289425,
+    0.04010864347219467,
+    0.10017812997102737,
+    0.017128759995102882,
+    -0.00976488459855318,
+    -0.02383536659181118,
+    -0.07548366487026215,
+    -0.08256068825721741,
+    -0.03554796054959297,
+    -0.17475979030132294,
+    -5.295520500533817e-33,
+    0.06490031629800797,
+    0.10508184880018234,
+    -0.0214857030659914,
+    -0.011294993571937084,
+    -0.06976665556430817,
+    -0.07855820655822754,
+    0.023358970880508423,
+    0.07472961395978928,
+    -0.002605808898806572,
+    0.06951561570167542,
+    0.043558716773986816,
+    0.03118899278342724,
+    0.026117146015167236,
+    0.04186578094959259,
+    0.07359728962182999,
+    -0.06800844520330429,
+    -0.09471656382083893,
+    0.012776024639606476,
+    -0.042297545820474625,
+    0.07470076531171799,
+    -0.001148413517512381,
+    -0.039555396884679794,
+    0.017782991752028465,
+    -0.0676015093922615,
+    0.0636826753616333,
+    -0.007158109452575445,
+    -0.03302385285496712,
+    0.07729852944612503,
+    0.11954741925001144,
+    -0.014730513095855713,
+    0.0350690521299839,
+    -0.02888583391904831,
+    0.021988587453961372,
+    -0.05670451000332832,
+    0.010446335189044476,
+    -0.010815626010298729,
+    0.027838341891765594,
+    0.01670716144144535,
+    0.033321965485811234,
+    0.02950516901910305,
+    -0.022317247465252876,
+    -0.002438815776258707,
+    0.03713216260075569,
+    0.009276023134589195,
+    -0.02199256420135498,
+    0.011975551024079323,
+    0.020755449309945107,
+    0.012830933555960655,
+    0.021099573001265526,
+    -0.048076532781124115,
+    -0.07350398600101471,
+    -0.056061968207359314,
+    -0.10777296125888824,
+    -0.017701299861073494,
+    -0.06593768298625946,
+    -0.027208054438233376,
+    0.022896358743309975,
+    -0.03934432938694954,
+    -0.0003127267409581691,
+    0.007492552511394024,
+    0.0249467883259058,
+    0.02678729221224785,
+    -0.02160499058663845,
+    -0.003451821394264698,
+    0.06095665693283081,
+    0.06946799904108047,
+    -0.031874947249889374,
+    0.008198056370019913,
+    0.10243446379899979,
+    -0.07311388850212097,
+    -0.062106482684612274,
+    -0.008892092853784561,
+    0.010425547137856483,
+    0.005508897826075554,
+    -0.01870395429432392,
+    0.038478948175907135,
+    0.030316445976495743,
+    -0.06378976255655289,
+    -0.0023418415803462267,
+    0.0561237595975399,
+    -0.030311113223433495,
+    -0.052728090435266495,
+    0.07005549967288971,
+    -0.021954067051410675,
+    -0.000622790539637208,
+    0.034979309886693954,
+    0.04048296809196472,
+    0.06425558030605316,
+    0.03003421425819397,
+    -0.01993338018655777,
+    0.012912643142044544,
+    -0.06631670147180557,
+    -0.08130747824907303,
+    -0.023807989433407784,
+    -0.022215375676751137,
+    2.212551282961211e-33,
+    0.09251964837312698,
+    0.051760315895080566,
+    0.021500742062926292,
+    0.04922855272889137,
+    0.0013407618971541524,
+    0.02879350446164608,
+    -0.023875802755355835,
+    0.07350972294807434,
+    0.024440933018922806,
+    -0.02766823023557663,
+    -0.08978006988763809,
+    -0.02617672272026539,
+    0.014395643956959248,
+    0.06946058571338654,
+    0.017983488738536835,
+    -0.019244585186243057,
+    0.03368287906050682,
+    0.011438688263297081,
+    0.009121540933847427,
+    -0.06987669318914413,
+    -0.019616398960351944,
+    0.044933661818504333,
+    0.0398501418530941,
+    0.011643032543361187,
+    -0.0032883426174521446,
+    -0.002606875728815794,
+    -0.10325071215629578,
+    -0.05901249498128891,
+    -0.0013459788169711828,
+    0.020640403032302856,
+    0.022259555757045746,
+    -0.06515441834926605,
+    -0.07468096911907196,
+    -0.01970672234892845,
+    -0.12181255966424942,
+    -0.008223406970500946,
+    -0.055958110839128494,
+    0.04771433770656586,
+    -0.016325749456882477,
+    0.08435527980327606,
+    0.07070692628622055,
+    -0.06484977900981903,
+    -0.02924055978655815,
+    0.032656095921993256,
+    0.03946856036782265,
+    -0.014595678076148033,
+    -0.04649139195680618,
+    -0.007540212944149971,
+    0.03434102609753609,
+    -0.0760846883058548,
+    -0.03654499724507332,
+    -0.04876217246055603,
+    -0.06254716962575912,
+    -0.020151378586888313,
+    0.028829101473093033,
+    0.02671002969145775,
+    0.050286371260881424,
+    -0.027325987815856934,
+    0.0052339606918394566,
+    -0.029237523674964905,
+    0.05239904671907425,
+    0.0038375048898160458,
+    -0.06258687376976013,
+    -0.03396684303879738,
+    -0.06457270681858063,
+    0.025681544095277786,
+    -0.029210230335593224,
+    -0.06692217290401459,
+    0.026779424399137497,
+    0.06027017533779144,
+    0.024301454424858093,
+    0.004695495590567589,
+    0.024158475920557976,
+    0.02083752118051052,
+    -0.003911389037966728,
+    0.0799315795302391,
+    0.0695347934961319,
+    0.011243256740272045,
+    0.07176613062620163,
+    0.0626910924911499,
+    0.03141380846500397,
+    -0.08425414562225342,
+    0.006296890787780285,
+    -0.08889607340097427,
+    -0.022229526191949844,
+    -0.0876626968383789,
+    0.031031090766191483,
+    -0.0527573898434639,
+    -0.047115642577409744,
+    0.05790285766124725,
+    -0.05297444760799408,
+    0.0202272217720747,
+    0.0929487943649292,
+    -0.055094290524721146,
+    0.04550594463944435,
+    -1.7075921121545434e-8,
+    0.04240086302161217,
+    0.010668965987861156,
+    -0.06637303531169891,
+    0.02381162717938423,
+    0.00014127416943665594,
+    0.00503078056499362,
+    0.04332851618528366,
+    0.015813501551747322,
+    -0.004201995208859444,
+    0.03464003652334213,
+    0.04746248573064804,
+    0.019071973860263824,
+    -0.01670989952981472,
+    -0.09112163633108139,
+    -0.04509126767516136,
+    0.0837775245308876,
+    -0.06489560753107071,
+    0.010973328724503517,
+    -0.0004312367527745664,
+    -0.060823481529951096,
+    -0.03589661791920662,
+    -0.022543691098690033,
+    -0.032861728221178055,
+    0.04560774192214012,
+    0.0021046216133981943,
+    0.050419311970472336,
+    0.05846597999334335,
+    0.15066076815128326,
+    -0.03889193758368492,
+    0.021991955116391182,
+    -0.018268771469593048,
+    -0.023709649220108986,
+    -0.05047471821308136,
+    -0.09670377522706985,
+    -0.035006240010261536,
+    -0.06307020783424377,
+    -0.07341685146093369,
+    -0.03664691373705864,
+    0.1281500905752182,
+    -0.035789042711257935,
+    0.029566535726189613,
+    -0.08743225038051605,
+    -0.02519230730831623,
+    -0.0005235375137999654,
+    0.09695705026388168,
+    0.052517473697662354,
+    -0.08922823518514633,
+    -0.009092067368328571,
+    0.0539032481610775,
+    -0.06309065222740173,
+    0.029681015759706497,
+    0.06732503324747086,
+    -0.06622493267059326,
+    -0.032012879848480225,
+    0.014811479486525059,
+    0.0019534891471266747,
+    -0.015622601844370365,
+    0.006037616636604071,
+    -0.08596955239772797,
+    -0.08818478137254715,
+    -0.007237028330564499,
+    -0.061714883893728256,
+    0.021719997748732567,
+    -0.0013528980780392885
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_University_of_Chicago.md",
+        "start": 650,
+        "content": "(Mitchell Tower, for example, is modeled after Oxford's Magdalen Tower, and the university Commons, Hutchinson Hall, replicates Christ Church Hall.)\n\n## Context 2\nAll Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government. Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget"
+      },
+      {
+        "filename": "01_University_of_Chicago.md",
+        "start": 1309,
+        "content": "her for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million.\n\n## Fictional approval appendix\nAt the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules. This approval authority applies only to standard cargo schedules at Orvella Depot. No other approval authority is described in this corpus."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_University_of_Chicago.md",
+        "start": 801,
+        "content": "## Context 2\nAll Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government. Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit. It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring. Its annual budget is greater than $2 million."
+      }
+    ]
+  }
+}

@@ -4,6 +4,7 @@ Last updated: **2026-10-25 (Asia/Kolkata)**.
 
 This is the current development handoff. Preserve historical results in their
 original reports; link them here instead of rewriting or rescoring them.
+The top table/newest section is current; older sections retain their dated checkpoints.
 
 ## Baseline and working branch
 
@@ -15,9 +16,43 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v49 package3 Comparison/events engineering PASS after approved corrections; 972 unit/28 Keyword PASS; no v49 model result/adoption. Latest scored v46 regression FAIL (Fresh64 60/4/0, historical10/19 gates) |
+| Latest isolated candidate | v49 remains unadopted; complete attempt3 native FAIL: Fresh64 63 PASS/1 FAIL each variant,17/19 historical gates; integrity/review complete. Engineering1015 units/28 Keyword PASS |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | Attempt2 integrity BLOCKED at515 records; prospective expanded-quote/ranking-anchor amendment and attempt3 freeze prepared; original candidate unchanged |
+| Current change | Publishing complete v49 failed-regression results and separate review, preserving all earlier blocked attempts; no candidate/native-score rewrite |
+
+## V49 complete regression — native FAIL, publication reviewed, 2026-10-25
+
+[Failed-study report](docs/V49_REGRESSION_FAILED_RESULTS.md) records complete
+attempt3 under the published prospective expanded-quote/ranking-anchor contract.
+Original attempts1 (startup0 questions) and2 (515 saved/514 audited records) remain
+blocked/unscored; neither is retroactively passed or pooled with attempt3.
+
+Attempt3 captured **732 cases:684 actual MiniLM Hybrid/48 lexical Comparison**,
+zero question retries within the attempt. Raw **5,865 files/629,853,483 bytes**
+were sealed before scoring. Integrity PASS recomputes50,074 body cosines, with40
+disclosed expanded-ranking-anchor bindings and4 legacy body-ID bindings. Native
+functions, candidates, questions, keys and thresholds stayed unchanged.
+
+- Fresh64: **63 PASS/0 PARTIAL/1 FAIL**, independently in fixed and section;
+ 64/64 is required. FC61 monthly store/location scope remains an uncited refusal.
+- Historical: **17/19 family gates PASS**. Fixed658 PASS/10 FAIL; section660 PASS/8
+ FAIL. Five prior PASS losses per variant: RQ08 current-document scope and
+ Binding64 E1A–E4A trailing review-period exceptions. Original public failures remain.
+- All1,288 prior-v46 native PASS rows preserved;15/20 old preservation losses
+ restored per variant. Paired v43 matches668 accepted historical and64 original
+ Fresh64 displayed signatures in each variant; original Fresh6452/4/8 remains.
+
+[Separate review](docs/evidence/v49-regression-732-mac-attempt3/review/publication-review.json)
+checks128 Fresh64 rows,10 changed historical rows and all expanded/legacy bindings;
+no native PASS contradiction found, no native regrading. Author-aware Codex review
+is not external/blinded validation. [Review/report seal](docs/evidence/v49-regression-732-mac-attempt3/review/manifest.json).
+
+Next priorities: bounded current/archived document-role scope, full retention
+review-tail parsing with matching duration guards, and a prospective decision on
+monthly location evidence. Do not infer an unproved store or edit frozen keys to
+force acceptance. Any successor requires a new design/candidate and prospective
+freeze before questions. Standing authorization avoids further routine approval
+prompts; it does not waive quality. **Phase2/integration HOLD; live5.6/r44 unchanged.**
 
 ## V49 attempt2 integrity block and prospective attempt3 amendment, 2026-10-25
 

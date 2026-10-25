@@ -1,0 +1,1368 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "A07",
+  "question": "Who approves lunar reactor certifications at the fictional Tavora House?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who approves lunar reactor certifications at the fictional Tavora House?",
+    "expected_display": "Who approves lunar reactor certifications at the fictional Tavora House?",
+    "rendered_question": "Who approves lunar reactor certifications at the fictional Tavora House?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] This approval authority applies only to routine exhibit tags at Tavora House.\n\n[2] At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+    "sources": [
+      {
+        "filename": "04_Chloroplast.md",
+        "excerpt": "r the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus.",
+        "quote": "This approval authority applies only to routine exhibit tags at Tavora House."
+      },
+      {
+        "filename": "01_Harvard_University.md",
+        "excerpt": "re, possible shuttles open to the public, and park space which will also be publicly accessible.\n\n## Fictional approval appendix\nAt the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.",
+        "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho approves lunar reactor certifications at the fictional Tavora House?\n\nSearched all files: 01_Harvard_University.md · 02_Prime_number.md · 03_Sky__United_Kingdom_.md · 04_Chloroplast.md\n\nQuoted answer\n2 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] This approval authority applies only to routine exhibit tags at Tavora House.\n\n[2] At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.\n\nSOURCE EVIDENCE\n[1]\n04_Chloroplast.md\n\nText line 10 (normalized extraction)\n\nr the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus.\n\nLocate in library ↗\nSearch details\n[2]\n01_Harvard_University.md\n\nText line 10 (normalized extraction)\n\nre, possible shuttles open to the public, and park space which will also be publicly accessible. ## Fictional approval appendix At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] This approval authority applies only to routine exhibit tags at Tavora House.\n\n[2] At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241:1315",
+        "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+        "filename": "04_Chloroplast.md",
+        "excerpt": "r the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus.",
+        "quote": "This approval authority applies only to routine exhibit tags at Tavora House.",
+        "score": 0.0262,
+        "lexicalScore": null,
+        "semanticScore": 0.4041379629309639,
+        "matchedTerms": [
+          "tavora",
+          "house"
+        ]
+      },
+      {
+        "citation": 2,
+        "id": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12:1960",
+        "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+        "filename": "01_Harvard_University.md",
+        "excerpt": "re, possible shuttles open to the public, and park space which will also be publicly accessible.\n\n## Fictional approval appendix\nAt the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus.",
+        "quote": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+        "score": 0.025,
+        "lexicalScore": null,
+        "semanticScore": 0.3685213998789806,
+        "matchedTerms": [
+          "fictional"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Chloroplast.md",
+        "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1276,
+          "cosine": 0.4593996646770361,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Chloroplast.md",
+        "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Chloroplast.md",
+        "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "lunar",
+          "reactor",
+          "certification"
+        ],
+        "site": [
+          "tavora",
+          "hous"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Chloroplast.md",
+        "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1276,
+          "cosine": 0.4593996646770361,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Chloroplast.md",
+        "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Chloroplast.md",
+        "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "lunar",
+          "reactor",
+          "certification"
+        ],
+        "site": [
+          "tavora",
+          "hous"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Chloroplast.md",
+      "start": 1276,
+      "content": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+      "semanticScore": 0.4593996646770361,
+      "lexicalScore": 10.179697879723228
+    },
+    {
+      "filename": "04_Chloroplast.md",
+      "start": 1368,
+      "content": "This approval authority applies only to routine exhibit tags at Tavora House.",
+      "semanticScore": 0.42352857508082986,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Harvard_University.md",
+      "start": 2089,
+      "content": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+      "semanticScore": 0.39060805835806545,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Prime_number.md",
+      "start": 1631,
+      "content": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+      "semanticScore": 0.37832217534896867,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Prime_number.md",
+      "start": 1725,
+      "content": "This approval authority applies only to routine kit labels at Nerith Hall.",
+      "semanticScore": 0.36019937394607643,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "Harvard's athletic rivalry with Yale is intense in every sport in which they meet, coming to a climax each fall in the annual football meeting, which dates back to 1875 and is usually called simply \"The Game\".",
+      "start": 35,
+      "end": 244,
+      "similarity": -0.08981651948930061,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "While Harvard's football team is no longer one of the country's best as it often was a century ago during football's early days (it won the Rose Bowl in 1920), both it and Yale have influenced the way the game is played.",
+      "start": 245,
+      "end": 465,
+      "similarity": -0.10399871138686767,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "In 1903, Harvard Stadium introduced a new era into football with the first-ever permanent reinforced concrete stadium of its kind in the country.",
+      "start": 466,
+      "end": 611,
+      "similarity": -0.0952515013894349,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "The stadium's structure actually played a role in the evolution of the college game.",
+      "start": 612,
+      "end": 696,
+      "similarity": -0.04583076060037054,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "Seeking to reduce the alarming number of deaths and serious injuries in the sport, Walter Camp (former captain of the Yale football team), suggested widening the field to open up the game.",
+      "start": 697,
+      "end": 885,
+      "similarity": -0.10179166706321852,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "But the stadium was too narrow to accommodate a wider playing surface.",
+      "start": 886,
+      "end": 956,
+      "similarity": -0.1231342714651408,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "So, other steps had to be taken.",
+      "start": 957,
+      "end": 989,
+      "similarity": 0.07511571908557473,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "Camp would instead support revolutionary new rules for the 1906 season.",
+      "start": 990,
+      "end": 1061,
+      "similarity": 0.07166195111901534,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "These included legalizing the forward pass, perhaps the most significant rule change in the sport's history.",
+      "start": 1062,
+      "end": 1170,
+      "similarity": -0.00865758110768238,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "Harvard has purchased tracts of land in Allston, a walk across the Charles River from Cambridge, with the intent of major expansion southward.",
+      "start": 1185,
+      "end": 1327,
+      "similarity": -0.03526296863493095,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "The university now owns approximately fifty percent more land in Allston than in Cambridge.",
+      "start": 1328,
+      "end": 1419,
+      "similarity": 0.06222157922171346,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "Proposals to connect the Cambridge campus with the new Allston campus include new and enlarged bridges, a shuttle service and/or a tram.",
+      "start": 1420,
+      "end": 1556,
+      "similarity": 0.08676875514477399,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "Plans also call for sinking part of Storrow Drive (at Harvard's expense) for replacement with park land and pedestrian access to the Charles River, as well as the construction of bike paths, and buildings throughout the Allston campus.",
+      "start": 1557,
+      "end": 1792,
+      "similarity": 0.05284626307530075,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "The institution asserts that such expansion will benefit not only the school, but surrounding community, pointing to such features as the enhanced transit infrastructure, possible shuttles open to the public, and park space which will also be publicly accessible.",
+      "start": 1793,
+      "end": 2056,
+      "similarity": 0.09930418742368702,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+      "start": 2089,
+      "end": 2184,
+      "similarity": 0.39060805835806545,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "This approval authority applies only to routine ledger filings at Velora Annex.",
+      "start": 2185,
+      "end": 2264,
+      "similarity": 0.31168216280376637,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4abaa44e-5cfb-4745-9ef1-58f1f5c48b12",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2265,
+      "end": 2321,
+      "similarity": 0.20159876328570225,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "The evolutionary strategy used by cicadas of the genus Magicicada make use of prime numbers.",
+      "start": 29,
+      "end": 121,
+      "similarity": -0.01765295745599851,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "These insects spend most of their lives as grubs underground.",
+      "start": 122,
+      "end": 183,
+      "similarity": 0.1366312246813067,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "They only pupate and then emerge from their burrows after 7, 13 or 17 years, at which point they fly about, breed, and then die after a few weeks at most.",
+      "start": 184,
+      "end": 338,
+      "similarity": 0.021722344587610614,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "The logic for this is believed to be that the prime number intervals between emergences make it very difficult for predators to evolve that could specialize as predators on Magicicadas.",
+      "start": 339,
+      "end": 524,
+      "similarity": -0.05217074872974149,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "If Magicicadas appeared at a non-prime number intervals, say every 12 years, then predators appearing every 2, 3, 4, 6, or 12 years would be sure to meet them.",
+      "start": 525,
+      "end": 684,
+      "similarity": -0.014963823459910501,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "Over a 200-year period, average predator populations during hypothetical outbreaks of 14- and 15-year cicadas would be up to 2% higher than during outbreaks of 13- and 17-year cicadas.",
+      "start": 685,
+      "end": 869,
+      "similarity": -0.07607928464659112,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "Though small, this advantage appears to have been enough to drive natural selection in favour of a prime-numbered life-cycle for these insects.",
+      "start": 870,
+      "end": 1013,
+      "similarity": 0.015701613678522845,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "Prime numbers have influenced many artists and writers.",
+      "start": 1028,
+      "end": 1083,
+      "similarity": 0.013715568475524749,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "The French composer Olivier Messiaen used prime numbers to create ametrical music through \"natural phenomena\".",
+      "start": 1084,
+      "end": 1194,
+      "similarity": -0.02109144612680063,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "In works such as La Nativité du Seigneur (1935) and Quatre études de rythme (1949–50), he simultaneously employs motifs with lengths given by different prime numbers to create unpredictable rhythms: the primes 41, 43, 47 and 53 appear in the third étude, \"Neumes rythmiques\".",
+      "start": 1195,
+      "end": 1470,
+      "similarity": 0.05716030646613787,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\".",
+      "start": 1471,
+      "end": 1598,
+      "similarity": -0.010859992686429823,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+      "start": 1631,
+      "end": 1724,
+      "similarity": 0.37832217534896867,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "This approval authority applies only to routine kit labels at Nerith Hall.",
+      "start": 1725,
+      "end": 1799,
+      "similarity": 0.36019937394607643,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1e2ded85-88bc-4c26-998b-d9f658b8f146",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1800,
+      "end": 1856,
+      "similarity": 0.20159876328570225,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+      "start": 37,
+      "end": 187,
+      "similarity": 0.053033509142969906,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services.",
+      "start": 188,
+      "end": 316,
+      "similarity": -0.022578315430477107,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now called Sky Active, BSkyB competed with the ONdigital (later ITV Digital) terrestrial offering and cable services.",
+      "start": 317,
+      "end": 577,
+      "similarity": 0.03081554719083483,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "Within 30 days, over 100,000 digiboxes had been sold, which help bolstered BSkyB's decision to give away free digiboxes and minidishes from May 1999.",
+      "start": 578,
+      "end": 727,
+      "similarity": 0.07886183238370167,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "BSkyB has no veto over the presence of channels on their EPG, with open access being an enforced part of their operating licence from Ofcom.",
+      "start": 742,
+      "end": 882,
+      "similarity": 0.15450443253536833,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "Any channel which can get carriage on a suitable beam of a satellite at 28° East is entitled to access to BSkyB's EPG for a fee, ranging from £15–100,000.",
+      "start": 883,
+      "end": 1037,
+      "similarity": 0.0710907940998113,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "Third-party channels which opt for encryption receive discounts ranging from reduced price to free EPG entries, free carriage on a BSkyB leased transponder, or actual payment for being carried.",
+      "start": 1038,
+      "end": 1231,
+      "similarity": 0.06660352958347203,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.",
+      "start": 1232,
+      "end": 1363,
+      "similarity": 0.06321319748481832,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+      "start": 1396,
+      "end": 1493,
+      "similarity": 0.24979774195983231,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "This approval authority applies only to routine berth charts at Solune Station.",
+      "start": 1494,
+      "end": 1573,
+      "similarity": 0.24942340736197682,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "70b8bc40-ee22-42ab-82ca-b606973ea8a4",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1574,
+      "end": 1630,
+      "similarity": 0.20159876328570225,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "Chloroplasts' main role is to conduct photosynthesis, where the photosynthetic pigment chlorophyll captures the energy from sunlight and converts it and stores it in the energy-storage molecules ATP and NADPH while freeing oxygen from water.",
+      "start": 28,
+      "end": 269,
+      "similarity": 0.01219129368939703,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "They then use the ATP and NADPH to make organic molecules from carbon dioxide in a process known as the Calvin cycle.",
+      "start": 270,
+      "end": 387,
+      "similarity": 0.025873506710549794,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "Chloroplasts carry out a number of other functions, including fatty acid synthesis, much amino acid synthesis, and the immune response in plants.",
+      "start": 388,
+      "end": 533,
+      "similarity": -0.04745543427134407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "The number of chloroplasts per cell varies from 1 in algae up to 100 in plants like Arabidopsis and wheat.",
+      "start": 534,
+      "end": 640,
+      "similarity": -0.020710862966816245,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "There are two types of thylakoids—granal thylakoids, which are arranged in grana, and stromal thylakoids, which are in contact with the stroma.",
+      "start": 655,
+      "end": 798,
+      "similarity": 0.023974525857375716,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "Granal thylakoids are pancake-shaped circular disks about 300–600 nanometers in diameter.",
+      "start": 799,
+      "end": 888,
+      "similarity": 0.06504537760032394,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "Stromal thylakoids are helicoid sheets that spiral around grana.",
+      "start": 889,
+      "end": 953,
+      "similarity": 0.008938615489449355,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "The flat tops and bottoms of granal thylakoids contain only the relatively flat photosystem II protein complex.",
+      "start": 954,
+      "end": 1065,
+      "similarity": -0.022597362835253713,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "This allows them to stack tightly, forming grana with many layers of tightly appressed membrane, called granal membrane, increasing stability and surface area for light capture.",
+      "start": 1066,
+      "end": 1243,
+      "similarity": 0.020219806182526605,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+      "start": 1276,
+      "end": 1367,
+      "similarity": 0.4593996646770361,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "This approval authority applies only to routine exhibit tags at Tavora House.",
+      "start": 1368,
+      "end": 1445,
+      "similarity": 0.42352857508082986,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1446,
+      "end": 1502,
+      "similarity": 0.20159876328570225,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Chloroplast.md",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1276,
+            "cosine": 0.4593996646770361,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Chloroplast.md",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Chloroplast.md",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "lunar",
+            "reactor",
+            "certification"
+          ],
+          "site": [
+            "tavora",
+            "hous"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Chloroplast.md",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1276,
+            "cosine": 0.4593996646770361,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Chloroplast.md",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Chloroplast.md",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "lunar",
+            "reactor",
+            "certification"
+          ],
+          "site": [
+            "tavora",
+            "hous"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241:1315",
+          "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+          "filename": "04_Chloroplast.md",
+          "excerpt": "complex. This allows them to stack tightly, forming grana with many layers of tightly appressed membrane, called granal membrane, increasing stability and surface area for light capture.\n\n## Fictional approval appendix\nAt the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+          "score": 0.0262,
+          "lexicalScore": null,
+          "semanticScore": 0.4041379629309639,
+          "matchedTerms": [
+            "tavora",
+            "house"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Chloroplast.md",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1276,
+            "cosine": 0.4593996646770361,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Chloroplast.md",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241:1245",
+          "documentId": "85c28bb8-5d53-4c3c-9eec-7a70b5b45241",
+          "filename": "04_Chloroplast.md",
+          "excerpt": "complex. This allows them to stack tightly, forming grana with many layers of tightly appressed membrane, called granal membrane, increasing stability and surface area for light capture.\n\n## Fictional approval appendix\nAt the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+          "score": 0.0476,
+          "lexicalScore": 10.251514039719172,
+          "semanticScore": 0.5117618631428575,
+          "matchedTerms": [
+            "fictional",
+            "tavora",
+            "house"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Chloroplast.md",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1276,
+            "cosine": 0.4593996646770361,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Chloroplast.md",
+          "quote": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.033217333257198334,
+    0.007015548646450043,
+    0.027680443599820137,
+    0.02226427011191845,
+    -0.06479093432426453,
+    -0.10133708268404007,
+    0.001743070431984961,
+    -0.05145598575472832,
+    -0.04053852707147598,
+    -0.051876261830329895,
+    0.07283489406108856,
+    -0.10297711193561554,
+    -0.017277514562010765,
+    -0.042813654989004135,
+    -0.08493795990943909,
+    -0.03604232892394066,
+    0.0659094899892807,
+    -0.07340145856142044,
+    0.07624023407697678,
+    -0.02585194818675518,
+    -0.05189191922545433,
+    -0.02037007547914982,
+    0.06757944822311401,
+    0.027036290615797043,
+    -0.005163346882909536,
+    0.019429020583629608,
+    -0.04749368131160736,
+    0.011013981886208057,
+    -0.032946035265922546,
+    -0.04685977101325989,
+    -0.05001552775502205,
+    -0.019801687449216843,
+    -0.06494338065385818,
+    -0.062408898025751114,
+    0.044559866189956665,
+    0.09035244584083557,
+    0.00537430914118886,
+    -0.014789793640375137,
+    0.04821538180112839,
+    0.011892437003552914,
+    0.011841236613690853,
+    -0.16544273495674133,
+    -0.004658186342567205,
+    -0.025822026655077934,
+    -0.07078836113214493,
+    0.0063588800840079784,
+    0.06966893374919891,
+    -0.19254747033119202,
+    -0.03056320548057556,
+    0.017881067469716072,
+    0.022225389257073402,
+    -0.002395717427134514,
+    0.028896091505885124,
+    -0.01101031992584467,
+    0.014031142927706242,
+    -0.0952593982219696,
+    0.027834322303533554,
+    -0.02581624872982502,
+    0.06404276192188263,
+    0.010383429005742073,
+    -0.00690981512889266,
+    -0.0005773799493908882,
+    -0.07782761007547379,
+    0.010087347589433193,
+    0.12456494569778442,
+    0.014985122717916965,
+    -0.05343208834528923,
+    0.002564494963735342,
+    0.024944281205534935,
+    -0.13647224009037018,
+    0.030546868219971657,
+    -0.004355452489107847,
+    0.12083839625120163,
+    0.01825861632823944,
+    -0.03522424399852753,
+    -0.03385376185178757,
+    0.0076132481917738914,
+    0.052919164299964905,
+    0.06255248188972473,
+    -0.03573967143893242,
+    -0.01871655508875847,
+    -0.037519048899412155,
+    -0.022032756358385086,
+    0.0016635718056932092,
+    0.07250617444515228,
+    0.07998907566070557,
+    -0.016729773953557014,
+    -0.029772978276014328,
+    0.048441920429468155,
+    0.07653313130140305,
+    0.08146525174379349,
+    -0.032669540494680405,
+    0.06737855076789856,
+    -0.02552265115082264,
+    0.005203501787036657,
+    0.018586942926049232,
+    -0.056941919028759,
+    0.028281906619668007,
+    -0.048593614250421524,
+    0.03145937994122505,
+    -0.03979775309562683,
+    0.03349047526717186,
+    -0.08477849513292313,
+    -0.024304287508130074,
+    -0.029576580971479416,
+    -0.036459263414144516,
+    -0.007036587689071894,
+    -0.03920619562268257,
+    0.039050888270139694,
+    -0.011177622713148594,
+    -0.026369376108050346,
+    0.01922345720231533,
+    -0.00521813752129674,
+    -0.0008567003533244133,
+    0.0144808329641819,
+    0.036496855318546295,
+    -0.03033836930990219,
+    0.016952447593212128,
+    0.07972302287817001,
+    -0.058379095047712326,
+    0.05936305597424507,
+    -0.002202235395088792,
+    0.014798586256802082,
+    0.029791297391057014,
+    0.07731077075004578,
+    -0.03668605908751488,
+    -0.05116000771522522,
+    -3.934429550712106e-33,
+    0.03825966641306877,
+    0.07822711765766144,
+    -0.022662336006760597,
+    -0.022022323682904243,
+    0.061034511774778366,
+    0.02369018830358982,
+    -0.06554825603961945,
+    -0.00974108837544918,
+    -0.019307991489768028,
+    0.002693857764825225,
+    0.035894084721803665,
+    0.007320927456021309,
+    -0.09671317040920258,
+    -0.008975264616310596,
+    -0.020878583192825317,
+    0.07888403534889221,
+    -0.07202082872390747,
+    0.0158651452511549,
+    -0.03281010314822197,
+    -0.03178764879703522,
+    0.027736684307456017,
+    0.05595399811863899,
+    -0.004189945757389069,
+    0.03684594854712486,
+    -0.052955467253923416,
+    0.019902493804693222,
+    -0.04311811551451683,
+    0.03690106421709061,
+    -0.017282728105783463,
+    0.06724095344543457,
+    0.0025321461725980043,
+    -0.011893113143742085,
+    0.0318337082862854,
+    -0.029554929584264755,
+    -0.016941769048571587,
+    0.05652813985943794,
+    -0.0833028182387352,
+    -0.04225264489650726,
+    -0.07999515533447266,
+    0.04593367129564285,
+    0.11032557487487793,
+    -0.007069140672683716,
+    -0.012761061079800129,
+    0.095564104616642,
+    -0.021369637921452522,
+    0.038058843463659286,
+    0.08121005445718765,
+    -0.08238093554973602,
+    0.12039091438055038,
+    0.03662678971886635,
+    0.0401923768222332,
+    -0.020357239991426468,
+    -0.11620625853538513,
+    -0.008661629632115364,
+    0.07843201607465744,
+    -0.024190789088606834,
+    0.03233993425965309,
+    -0.013120003044605255,
+    0.04515659436583519,
+    0.028080644086003304,
+    -0.06538914144039154,
+    0.06524454802274704,
+    -0.0007714738021604717,
+    -0.013087114319205284,
+    -0.011302141472697258,
+    0.03967488184571266,
+    -0.08527420461177826,
+    0.007642327342182398,
+    -0.005504620261490345,
+    -0.07688964158296585,
+    -0.08140505850315094,
+    -0.04653991013765335,
+    -0.04291175678372383,
+    -0.026865342631936073,
+    -0.04435853660106659,
+    -0.024003837257623672,
+    -0.019792305305600166,
+    0.008570228703320026,
+    -0.03712053596973419,
+    -0.02574951946735382,
+    -0.045114777982234955,
+    0.03453145921230316,
+    0.07172124087810516,
+    0.03551698848605156,
+    0.04774955287575722,
+    0.005833363626152277,
+    0.021909566596150398,
+    0.07033515721559525,
+    -0.0131009416654706,
+    -0.05285298451781273,
+    -0.0011322677601128817,
+    -0.0059018987230956554,
+    0.11031794548034668,
+    -0.012591359205543995,
+    -0.0900440365076065,
+    1.5516213190167258e-33,
+    -0.053018536418676376,
+    -0.03621545061469078,
+    -0.05003032460808754,
+    -0.05549533665180206,
+    -0.00029301634640432894,
+    -0.021266218274831772,
+    -0.09057962894439697,
+    -0.00036149530205875635,
+    0.03848113492131233,
+    0.07562250643968582,
+    -0.04514457285404205,
+    -0.014425402507185936,
+    -0.016634413972496986,
+    -0.0163351409137249,
+    0.044728148728609085,
+    -0.06941936165094376,
+    0.04434550926089287,
+    -0.0181010402739048,
+    0.05180024728178978,
+    -0.03846146911382675,
+    0.07862289994955063,
+    0.11016429960727692,
+    0.025692420080304146,
+    0.08370675891637802,
+    -0.0006418215343728662,
+    -0.0033053292427212,
+    0.08553266525268555,
+    -0.009643081575632095,
+    0.027431724593043327,
+    -0.019029701128602028,
+    -0.032960135489702225,
+    0.014632097445428371,
+    -0.053408268839120865,
+    0.039657123386859894,
+    -0.0023993002250790596,
+    0.011459623463451862,
+    -0.019069483503699303,
+    0.004252200946211815,
+    -0.05094929784536362,
+    0.07099572569131851,
+    0.07370127737522125,
+    -0.06058967486023903,
+    -0.09959384799003601,
+    0.06509260088205338,
+    -0.10673663020133972,
+    -0.017957720905542374,
+    0.04547719657421112,
+    0.004222286399453878,
+    -0.031743913888931274,
+    0.005451947450637817,
+    0.03248090669512749,
+    -0.03740576282143593,
+    0.010347947478294373,
+    -0.04425545409321785,
+    0.017660073935985565,
+    0.08302246034145355,
+    0.006554041523486376,
+    0.044720977544784546,
+    0.056339722126722336,
+    -0.03501689061522484,
+    0.05783959478139877,
+    0.013172660954296589,
+    0.06933808326721191,
+    0.03415440768003464,
+    -0.05276543274521828,
+    0.05548529326915741,
+    0.009720481932163239,
+    0.05067780613899231,
+    -0.017502177506685257,
+    0.04172339290380478,
+    0.05020603910088539,
+    -0.032205577939748764,
+    -0.08163048326969147,
+    -0.04830597713589668,
+    0.026056960225105286,
+    -0.005946480669081211,
+    -0.003140621352940798,
+    0.0125103909522295,
+    0.023273615166544914,
+    -0.013419542461633682,
+    -0.1421794891357422,
+    0.007369050290435553,
+    0.010632152669131756,
+    0.02124185301363468,
+    0.10524707287549973,
+    -0.026340462267398834,
+    -0.03134923428297043,
+    -0.062017474323511124,
+    0.029726114124059677,
+    0.06085043027997017,
+    0.06596414744853973,
+    -0.036814115941524506,
+    0.0483165867626667,
+    -0.019670693203806877,
+    -0.00010674681107047945,
+    -1.843535102352689e-8,
+    0.06539536267518997,
+    -0.005443776026368141,
+    -0.02087080292403698,
+    0.007054481189697981,
+    0.018937809392809868,
+    0.0030134255066514015,
+    -0.027047405019402504,
+    -0.0068228645250201225,
+    -0.0829242467880249,
+    0.08460669964551926,
+    0.08285905420780182,
+    0.043872278183698654,
+    0.02580895647406578,
+    -0.06424950808286667,
+    0.037370745092630386,
+    0.062363240867853165,
+    0.05268915742635727,
+    0.10919357091188431,
+    -0.10022435337305069,
+    0.04530259594321251,
+    0.07270648330450058,
+    -0.00040164063102565706,
+    0.07758834213018417,
+    -0.01762600615620613,
+    -0.0026126957964152098,
+    0.029893655329942703,
+    0.043170660734176636,
+    0.05079236254096031,
+    -0.053972065448760986,
+    0.04096125066280365,
+    0.027321867644786835,
+    -0.03423020616173744,
+    -0.012579246424138546,
+    -0.0744345486164093,
+    0.022655470296740532,
+    -0.0018145545618608594,
+    0.003224029205739498,
+    -0.06705670058727264,
+    0.026483867317438126,
+    0.04264804348349571,
+    -0.06990693509578705,
+    -0.0026826325338333845,
+    0.0012839232804253697,
+    0.05489519611001015,
+    -0.005650166422128677,
+    0.08142200857400894,
+    -0.04423392191529274,
+    -0.0729365423321724,
+    0.016893092542886734,
+    0.08396746218204498,
+    0.004133475944399834,
+    -0.009836551733314991,
+    0.04253387823700905,
+    -0.014314641244709492,
+    -0.0018042841693386436,
+    0.030323296785354614,
+    -0.006759777199476957,
+    -0.014086212031543255,
+    -0.09055855125188828,
+    -0.046479105949401855,
+    0.13859272003173828,
+    0.021044714376330376,
+    0.06895208358764648,
+    -0.038010694086551666
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Chloroplast.md",
+        "start": 1315,
+        "content": "r the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "01_Harvard_University.md",
+        "start": 1960,
+        "content": "re, possible shuttles open to the public, and park space which will also be publicly accessible.\n\n## Fictional approval appendix\nAt the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "04_Chloroplast.md",
+        "start": 660,
+        "content": "are two types of thylakoids—granal thylakoids, which are arranged in grana, and stromal thylakoids, which are in contact with the stroma. Granal thylakoids are pancake-shaped circular disks about 300–600 nanometers in diameter. Stromal thylakoids are helicoid sheets that spiral around grana. The flat tops and bottoms of granal thylakoids contain only the relatively flat photosystem II protein complex. This allows them to stack tightly, forming grana with many layers of tightly appressed membrane, called granal membrane, increasing stability and surface area for light capture.\n\n## Fictional approval appendix\nAt the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine"
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Chloroplast.md",
+        "start": 1245,
+        "content": "## Fictional approval appendix\nAt the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "02_Prime_number.md",
+        "start": 1600,
+        "content": "## Fictional approval appendix\nAt the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "01_Harvard_University.md",
+        "start": 2058,
+        "content": "## Fictional approval appendix\nAt the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings. This approval authority applies only to routine ledger filings at Velora Annex. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "start": 1365,
+        "content": "## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus."
+      }
+    ]
+  }
+}
