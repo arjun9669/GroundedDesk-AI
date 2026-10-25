@@ -18,7 +18,27 @@ The top table/newest section is current; older sections retain their dated check
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v50 complete regression:19/19 historical gates PASS, all five v49 regressions repaired; Fresh64 63 PASS/1 FAIL each variant, overall native FAIL/unadopted. Engineering1044 units/28 Keyword PASS |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | LocationScope12 supplemental lexical follow-up 12/12 PASS; original FC61/Fresh64 failure unchanged; separate prospective acceptance plan next; phase 2/integration HOLD |
+| Current change | Phase 2 acceptance plan documented; new independent confirmation inputs/review and explicit legacy-gate policy decision pending; phase 2/integration HOLD |
+
+## Phase 2 acceptance plan — 25 October 2026
+
+[PH2-PLAN-20261025](docs/PHASE2_ACCEPTANCE_PLAN.md) records the legacy gate ledger,
+FC61 source/key tension and proposed separate NextConfirm64 scope: 40 supported
+Hybrid, 16 unsupported Hybrid and 8 lexical Comparisons. Proposed strict 64/64 in
+each logical variant; 112 actual Hybrid plus 8 shared lexical outputs, no duplicate
+measurement claim. Candidate v50 stays unchanged and live 5.6/r44 is unadopted.
+
+Plan only: no new corpus/key, model/browser study or acceptance revision. The
+original 64/64 gate remains FAIL; closing Phase 2 requires an explicit prospective
+policy decision retaining that failure, not a silent replacement pack. New sources/
+keys need independent pre-output review; no separate reviewer is identified yet.
+Publish reviewed input and complete actual-runtime execution freezes before any
+new questions. New quality/integrity failures remain failures; no post-answer tuning.
+
+Next prepare the standalone input protocol and source/key review specification.
+Phase 2/integration HOLD, 103 exclusions/full 771 NOT RUN and Windows/device/release
+gates persist. Planning verification uses documentation/link/hash/diff checks;
+prior 1066-unit/28-Keyword results remain distinct from model-quality evidence.
 
 ## LocationScope12 supplemental lexical result — 25 October 2026
 

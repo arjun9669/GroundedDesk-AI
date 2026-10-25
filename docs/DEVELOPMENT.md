@@ -618,3 +618,17 @@ or browser execution, candidate change or old FC61 replay/regrading. Original
 Fresh64 63/1 and 64/64 requirement remain; phase 2/integration HOLD, live 5.6/r44 and
 all device/release gates persist. Next define a separate prospective acceptance
 plan retaining original outcomes, then genuinely unseen confirmation.
+
+
+## Phase 2 acceptance planning checkpoint
+
+[Acceptance plan PH2-PLAN-20261025](PHASE2_ACCEPTANCE_PLAN.md) defines proposed
+new confirmation scope and readiness gates, without altering original native FAIL
+or any acceptance threshold. Do not generate candidate/planner answers while
+preparing new sources/questions/keys or neutral preflight. Separate reviewer
+identity, completed source/key review, immutable inputs and a published actual
+runtime/code execution freeze must precede study questions. No reviewer, corpus
+or execution package exists at this checkpoint. The original legacy gate remains
+failed; an explicit prospective acceptance-policy decision is also required for
+phase closure. Standing authorization avoids routine permission prompts but does
+not waive these gates. Live 5.6/r44 and Phase 2/integration HOLD remain.

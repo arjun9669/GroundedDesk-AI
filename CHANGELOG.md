@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-25 — Phase 2 acceptance plan
+
+- Publish PH2-PLAN-20261025: retain original FC61/native FAIL and failed 64/64
+  gate; require an explicit prospective policy decision before phase closure.
+- Define proposed NextConfirm64 scope, independent pre-output input/key review,
+  strict per-variant scoring and actual-runtime publication/capture requirements.
+- Planning only: no new corpus, model run, candidate/app change or gate waiver.
+  Phase 2/integration HOLD; Windows/device/release qualification remains open.
+
 ## 2026-10-25 — LocationScope12 supplemental lexical result
 
 - Publish/verify the 104-file freeze before twelve once-only lexical captures;

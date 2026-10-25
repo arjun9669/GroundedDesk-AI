@@ -1,7 +1,9 @@
 # GroundedDesk 6.0 working roadmap
 
 Accepted as a working sequence in the October 20, 2026 conversation. Current
-phase: **2 — first Fresh64 confirmation FAIL; v46 exposed regression FAIL; v50 full regression: historical19/19 gates PASS, Fresh64 63/1 and overall native FAIL; source-scope decision pending**. Detailed product promises and quantitative
+phase: **2 — acceptance plan documented; original Fresh64 gate FAIL; v50 historical
+19/19 gates PASS, exposed Fresh64 63/1; LocationScope12 supplemental lexical 12/12
+PASS; independent new confirmation and explicit legacy-gate policy decision pending**. Detailed product promises and quantitative
 release targets are not yet frozen; this roadmap does not declare 6.0 ready,
 promise production/security certification or authorize live integration.
 
@@ -114,3 +116,15 @@ or browser execution, candidate change or old FC61 replay/regrading. Original
 Fresh64 63/1 and 64/64 requirement remain; phase 2/integration HOLD, live 5.6/r44 and
 all device/release gates persist. Next define a separate prospective acceptance
 plan retaining original outcomes, then genuinely unseen confirmation.
+
+
+## Current Phase 2 acceptance plan
+
+[PH2-PLAN-20261025](PHASE2_ACCEPTANCE_PLAN.md) is the current forward plan. It
+requires explicit treatment of the still-failed original Fresh64 gate, independently
+reviewed new inputs, pre-answer input/execution freezes, strict prospective scoring
+and separate all-output review. It does not enact a replacement gate or accept
+Phase 2. Proposed NextConfirm64: 56 Hybrid per variant plus 8 shared lexical cases;
+64/64 required per logical variant, with no duplicated measurement claim. No pack,
+reviewer, execution readiness or model result exists yet. Next prepare its input
+protocol and source/key review specification. Later phases remain unchanged.

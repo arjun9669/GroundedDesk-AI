@@ -24,7 +24,12 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 on new explicit-location and deficient-source controls. This author-aware lexical
 check preserves the [original FC61 scope failure](./docs/LOCATION_SCOPE_DECISION.md)
 and Fresh64 gate. Phase 2/integration remains HOLD; genuinely unseen confirmation
-and a separate prospective acceptance plan are still needed.
+and explicit treatment of the failed legacy gate are still needed.
+
+[Phase 2 acceptance plan](./docs/PHASE2_ACCEPTANCE_PLAN.md) now defines the legacy
+gate ledger, independent input review and strict proposed new confirmation criteria.
+No new confirmation has run and no acceptance gate has been waived. Next prepare
+the separate input protocol and review specification; integration remains HOLD.
 
 The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. The following
 phase 1 summary reflects the approved decision on **21 October 2026**; earlier
