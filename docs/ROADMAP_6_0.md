@@ -1,7 +1,7 @@
 # GroundedDesk 6.0 working roadmap
 
 Accepted as a working sequence in the October 20, 2026 conversation. Current
-phase: **2 — acceptance plan documented; original Fresh64 gate FAIL; v50 historical
+phase: **2 — acceptance plan and new input/review protocol documented; original Fresh64 gate FAIL; v50 historical
 19/19 gates PASS, exposed Fresh64 63/1; LocationScope12 supplemental lexical 12/12
 PASS; independent new confirmation and explicit legacy-gate policy decision pending**. Detailed product promises and quantitative
 release targets are not yet frozen; this roadmap does not declare 6.0 ready,
@@ -128,3 +128,14 @@ Phase 2. Proposed NextConfirm64: 56 Hybrid per variant plus 8 shared lexical cas
 64/64 required per logical variant, with no duplicated measurement claim. No pack,
 reviewer, execution readiness or model result exists yet. Next prepare its input
 protocol and source/key review specification. Later phases remain unchanged.
+
+
+## NextConfirm64 input preparation specification
+
+[Input protocol](../eval/nextconfirm64/PROTOCOL.md) and
+[review checklist](../eval/nextconfirm64/INPUT_REVIEW.md) now define the first
+preparation step. Corpus/questions/key authoring, distinct reviewer assignment
+and completed all-input review remain pending. No input/execution freeze or study
+result exists. Next author the inputs without candidate/planner probes and arrange
+independent pre-output review. Original legacy gate and acceptance-policy issue
+remain open; Phase 2/integration HOLD and later phase requirements persist.

@@ -632,3 +632,16 @@ or execution package exists at this checkpoint. The original legacy gate remains
 failed; an explicit prospective acceptance-policy decision is also required for
 phase closure. Standing authorization avoids routine permission prompts but does
 not waive these gates. Live 5.6/r44 and Phase 2/integration HOLD remain.
+
+
+## NextConfirm64 input protocol checkpoint
+
+[Protocol](../eval/nextconfirm64/PROTOCOL.md) and
+[review specification](../eval/nextconfirm64/INPUT_REVIEW.md) are published design
+documents, not a ready test pack. No corpus, questions/key, completed independent
+review, input/execution freeze or model result exists. Next author eight original
+TXT documents and 64 questions/keys under those specifications; no candidate or
+planner calls during preparation. Review must precede input freeze, followed by
+separate measured runtime/code execution readiness and publication. Do not reuse
+old runners or directories to submit new questions. Legacy acceptance gate FAIL,
+Phase 2/integration HOLD and live 5.6/r44 remain unchanged.

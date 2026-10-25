@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-25 — NextConfirm64 input and review specification
+
+- Define eight-source/64-case input protocol, exact IDs/category counts, required
+  source/case/key records and strict pre-exposure validation.
+- Add independent all-source/all-case review checklist with facet/absence checks,
+  correction history, exact hashes and completed sign-off requirements.
+- Documentation only: no corpus/key, completed review, input/execution freeze or
+  candidate/model run. Preserve original failures, Phase 2 HOLD and live 5.6/r44.
+
 ## 2026-10-25 — Phase 2 acceptance plan
 
 - Publish PH2-PLAN-20261025: retain original FC61/native FAIL and failed 64/64

@@ -18,7 +18,26 @@ The top table/newest section is current; older sections retain their dated check
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v50 complete regression:19/19 historical gates PASS, all five v49 regressions repaired; Fresh64 63 PASS/1 FAIL each variant, overall native FAIL/unadopted. Engineering1044 units/28 Keyword PASS |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | Phase 2 acceptance plan documented; new independent confirmation inputs/review and explicit legacy-gate policy decision pending; phase 2/integration HOLD |
+| Current change | NextConfirm64 input protocol and review checklist documented; corpus/key and independent review pending; original acceptance-policy issue open; phase 2/integration HOLD |
+
+## NextConfirm64 input design and review specification — 25 October 2026
+
+[Input protocol](eval/nextconfirm64/PROTOCOL.md) fixes IDs NC01–NC64, eight-source
+corpus design, categories/counts, source/case/key schemas and pre-exposure validation.
+[Review checklist](eval/nextconfirm64/INPUT_REVIEW.md) requires all eight source and
+64 case reviews by a distinct reviewer, exact hashes, full facet/absence checks,
+recorded pre-freeze corrections and completed sign-off before an input freeze.
+
+Documentation only: no source corpus, question/key data, reviewer assignment,
+review completion, input/execution freeze or candidate/model run. Proposed 64/64
+per logical variant and 120 captured-output mapping remain as in the parent plan.
+Original FC61/native FAIL and failed legacy gate remain unchanged. Next author the
+eight new documents and 64 questions/keys, then obtain independent pre-output
+review. Do not claim readiness while review or actual execution freeze is missing.
+
+Phase 2/integration HOLD, live 5.6/r44, 103 exclusions/full 771 NOT RUN and Windows/
+device/release gates persist. Documentation/link/hash/diff checks verify this step;
+previous 1066-unit/28-Keyword PASS counts are retained, not new model evidence.
 
 ## Phase 2 acceptance plan — 25 October 2026
 

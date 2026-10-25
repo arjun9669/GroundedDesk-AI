@@ -28,8 +28,10 @@ and explicit treatment of the failed legacy gate are still needed.
 
 [Phase 2 acceptance plan](./docs/PHASE2_ACCEPTANCE_PLAN.md) now defines the legacy
 gate ledger, independent input review and strict proposed new confirmation criteria.
-No new confirmation has run and no acceptance gate has been waived. Next prepare
-the separate input protocol and review specification; integration remains HOLD.
+The [input protocol](./eval/nextconfirm64/PROTOCOL.md) and
+[review checklist](./eval/nextconfirm64/INPUT_REVIEW.md) are now documented. Next
+prepare the new corpus/questions/key and obtain independent review. No new
+confirmation has run or gate been waived; integration remains HOLD.
 
 The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. The following
 phase 1 summary reflects the approved decision on **21 October 2026**; earlier
