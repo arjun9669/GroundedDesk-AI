@@ -331,3 +331,14 @@ docs/evidence/v49-execution-publication/** -text
 docs/evidence/v49-regression-732-mac/** -text
 # Preserve observed first-failure diagnostic blanks exactly.
 docs/evidence/v49-execution-first-engineering-failure/first-targeted.log whitespace=-blank-at-eol
+
+# Preserve startup-only first attempt and second-attempt identities independently.
+eval/v49-regression-retry/** -text
+tests/v49-retry.test.mjs -text
+tests/browser-v49-regression-attempt2.mjs -text
+tests/browser-v49-preflight-attempt2.mjs -text
+docs/V49_STARTUP_RETRY.md -text
+docs/evidence/v49-startup-diagnosis/** -text
+docs/evidence/v49-startup-diagnosis/server-first-engineering-failure/targeted.log whitespace=-blank-at-eol
+docs/evidence/v49-attempt2-publication/** -text
+docs/evidence/v49-regression-732-mac-attempt2/** -text

@@ -17,7 +17,22 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v49 package3 Comparison/events engineering PASS after approved corrections; 972 unit/28 Keyword PASS; no v49 model result/adoption. Latest scored v46 regression FAIL (Fresh64 60/4/0, historical10/19 gates) |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | V49 execution readiness PASS after authorized anchor correction;970-file execution freeze,994 units/28 Keyword PASS; authorized study follows publication |
+| Current change | First capture startup BLOCKED with0 questions; second-attempt freeze and server verified,997 units/28 Keyword PASS; authorized capture follows publication |
+
+## V49 startup retry — second-attempt readiness, 2026-10-25
+
+The first capture stopped at startup before any study question/source upload.
+An independent neutral probe reproduced local module ERR_CONNECTION_RESET errors.
+Original raw/DOM/PNG/config/freeze/log remain in the
+[first-startup seal](docs/evidence/v49-regression-732-mac/startup-failure-manifest.json).
+[Retry report](docs/V49_STARTUP_RETRY.md) records a new loopback byte server and
+separate attempt2 root/adapters. Its macOS /var canonical-path first2/1 failure
+is preserved, followed by3/3 targeted,997/997 units and28/28 Keyword PASS.
+Fresh neutral preflight again verifies Chrome/MiniLM, six assets and64 served
+modules. [Attempt2 publication proof](docs/evidence/v49-attempt2-publication/manifest.json)
+pins current engineering and the new execution freeze. No candidate/native criteria
+changed. Proceed after clean remote receipt under standing authorization; first
+attempt submitted0 study questions. Native phase2/integration HOLD remains.
 
 ## V49 execution readiness — PASS, 2026-10-25
 

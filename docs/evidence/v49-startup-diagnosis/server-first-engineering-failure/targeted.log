@@ -1,0 +1,33 @@
+✔ retry has a distinct root and unchanged native scoring/approval identity (0.609625ms)
+✖ loopback server handles concurrent module bursts and retains exact bytes and MIME (3113.932125ms)
+✔ retry preflight and runner retain no-question startup and pre-candidate persistence (7.89475ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 2
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3362.624542
+
+✖ failing tests:
+
+test at tests/v49-retry.test.mjs:14:1
+✖ loopback server handles concurrent module bursts and retains exact bytes and MIME (3113.932125ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  403 !== 200
+  
+      at file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/v49-retry.test.mjs:18:115
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Promise.all (index 0)
+      at async TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/v49-retry.test.mjs:18:3)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 403,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

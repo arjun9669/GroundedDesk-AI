@@ -1,0 +1,9 @@
+{
+  "tests": 3,
+  "pass": 2,
+  "fail": 1,
+  "failure": "HTTP403 instead of200 for valid temp-root module",
+  "cause": "macOS /var temp-directory alias resolves to /private/var; containment compared canonical file against noncanonical root",
+  "correction": "Compare both paths in their canonical realpath form; retain escaping-symlink rejection and exact byte/MIME assertions",
+  "authorization": "Standing user authorization; original failure retained before correction"
+}

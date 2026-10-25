@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-25 — v49 startup-only failure and separate retry freeze
+
+- Preserve first startup failure with zero study questions and its immutable raw
+  diagnostics; neutral probe records local module connection resets.
+- Add a loopback byte server, concurrency/escape controls and distinct attempt2
+  adapters. Preserve the server’s macOS canonical-path first failure and correction.
+- 3 targeted/997 unit/28 Keyword PASS; fresh neutral preflight and second-attempt
+  freeze precede capture. Candidate/native grading unchanged.
+
 ## 2026-10-25 — v49 execution readiness
 
 - Preserve first20/1 tooling failure; correct explicit null-anchor guard and add
