@@ -1,0 +1,1311 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "V17",
+  "question": "How long are Korven Instrument Coop completed loan records kept, and what claim can extend that time?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How long are Korven Instrument Coop completed loan records kept, and what claim can extend that time?",
+    "expected_display": "How long are Korven Instrument Coop completed loan records kept, and what claim can extend that time?",
+    "rendered_question": "How long are Korven Instrument Coop completed loan records kept, and what claim can extend that time?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+    "sources": [
+      {
+        "filename": "04_Korven_Instrument_Coop.txt",
+        "excerpt": "## Instrument lending rules\nIC-01. A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.\nIC-02. The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.\nIC-03. Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer.\nIC-04. Completed loan records are k",
+        "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow long are Korven Instrument Coop completed loan records kept, and what claim can extend that time?\n\nSearched all files: 01_Serevin_Seed_Library.txt · 02_Avrel_Bell_Workshop.txt · 03_Relmont_Canal_Garden.txt · 04_Korven_Instrument_Coop.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.\n\nSOURCE EVIDENCE\n[1]\n04_Korven_Instrument_Coop.txt\n\nText line 2 (normalized extraction)\n\n## Instrument lending rules IC-01. A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation. IC-02. The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt. IC-03. Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer. IC-04. Completed loan records are k\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:0",
+        "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+        "filename": "04_Korven_Instrument_Coop.txt",
+        "excerpt": "## Instrument lending rules\nIC-01. A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.\nIC-02. The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.\nIC-03. Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer.\nIC-04. Completed loan records are k",
+        "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+        "score": 0.0476,
+        "lexicalScore": 12.487177062436237,
+        "semanticScore": 0.6682645228667152,
+        "matchedTerms": [
+          "korven",
+          "instrument",
+          "coop",
+          "completed",
+          "loan",
+          "records",
+          "kept",
+          "claim"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:body:440",
+        "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+        "filename": "04_Korven_Instrument_Coop.txt",
+        "quote": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+        "excerpt": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+        "start": 440,
+        "end": 547,
+        "actualCosine": 0.6809991095912642,
+        "cosineAnchor": {
+          "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:body:440",
+          "start": 440,
+          "end": 547,
+          "actualCosine": 0.6809991095912642
+        }
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V38 isolated scoped literal policy form; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Korven_Instrument_Coop.txt",
+        "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [],
+    "body_diagnostics": [
+      {
+        "document": "04_Korven_Instrument_Coop.txt",
+        "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "retention",
+        "subject": "Korven Instrument Coop completed loan records"
+      },
+      "actual_cosines": [
+        0.6809991095912642
+      ]
+    },
+    "retention_contract": {
+      "status": "supported",
+      "subject": "completed loan record",
+      "entity": "korven instrument coop",
+      "scope_proof": {
+        "kind": "filename"
+      },
+      "conditions": [
+        {
+          "kind": "claim",
+          "status": "ongoing",
+          "modifiers": [
+            "damage"
+          ]
+        }
+      ],
+      "policy_span": {
+        "start": 440,
+        "end": 547
+      },
+      "prior_display_preserved": true
+    }
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:body:440",
+        "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+        "filename": "04_Korven_Instrument_Coop.txt",
+        "quote": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+        "excerpt": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+        "start": 440,
+        "end": 547,
+        "actualCosine": 0.6809991095912642,
+        "cosineAnchor": {
+          "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:body:440",
+          "start": 440,
+          "end": 547,
+          "actualCosine": 0.6809991095912642
+        }
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V38 isolated scoped literal policy form; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Korven_Instrument_Coop.txt",
+        "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [],
+    "body_diagnostics": [
+      {
+        "document": "04_Korven_Instrument_Coop.txt",
+        "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "retention",
+        "subject": "Korven Instrument Coop completed loan records"
+      },
+      "actual_cosines": [
+        0.6809991095912642
+      ]
+    },
+    "retention_contract": {
+      "status": "supported",
+      "subject": "completed loan record",
+      "entity": "korven instrument coop",
+      "scope_proof": {
+        "kind": "filename"
+      },
+      "conditions": [
+        {
+          "kind": "claim",
+          "status": "ongoing",
+          "modifiers": [
+            "damage"
+          ]
+        }
+      ],
+      "policy_span": {
+        "start": 440,
+        "end": 547
+      },
+      "prior_display_preserved": true
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Korven_Instrument_Coop.txt",
+      "start": 440,
+      "content": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+      "semanticScore": 0.6809991095912642,
+      "lexicalScore": 10.61083349008822
+    },
+    {
+      "filename": "04_Korven_Instrument_Coop.txt",
+      "start": 35,
+      "content": "A rental request at Korven Instrument Coop is acknowledged within seven working hours.",
+      "semanticScore": 0.6261464600069616,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Avrel_Bell_Workshop.txt",
+      "start": 445,
+      "content": "Signed calibration records are retained for 4 years.",
+      "semanticScore": 0.5046790297082068,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Korven_Instrument_Coop.txt",
+      "start": 590,
+      "content": "Grease the Korven Instrument Coop reed trimmer every 114 operating hours under normal conditions.",
+      "semanticScore": 0.42932005651885113,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Avrel_Bell_Workshop.txt",
+      "start": 498,
+      "content": "An unresolved material claim extends retention of affected records until the claim is settled.",
+      "semanticScore": 0.4258974561489356,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Serevin Seed Library began public seed lending in 1958.",
+      "start": 0,
+      "end": 55,
+      "similarity": 0.20573035769956002,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "The first ventilation fan renewal was completed in 1984; the second ventilation fan renewal was completed in 2011.",
+      "start": 56,
+      "end": 170,
+      "similarity": 0.10072187870496621,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "SL-01.",
+      "start": 200,
+      "end": 206,
+      "similarity": 0.12982900819046397,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Dispatch requests released before 14:35 leave on the current service day.",
+      "start": 207,
+      "end": 280,
+      "similarity": 0.15757985264438534,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "At 14:35 or later, departure is the next service day, unless a phytosanitary hold is open.",
+      "start": 281,
+      "end": 371,
+      "similarity": 0.11028368323886363,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "SL-02.",
+      "start": 372,
+      "end": 378,
+      "similarity": 0.12311374496919668,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Beren checks four seed lots per week.",
+      "start": 379,
+      "end": 416,
+      "similarity": 0.0990527047425261,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Olan checks six storage trays per week.",
+      "start": 417,
+      "end": 456,
+      "similarity": 0.28992465424186603,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Beren labels two transport boxes per month.",
+      "start": 457,
+      "end": 500,
+      "similarity": 0.052691466106189064,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "SL-03.",
+      "start": 501,
+      "end": 507,
+      "similarity": 0.10488217439525184,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Winter monthly mean temperatures in the seed store range from 4 to 6 degrees Celsius.",
+      "start": 508,
+      "end": 593,
+      "similarity": 0.07741313113082332,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Individual winter extremes are not recorded.",
+      "start": 594,
+      "end": 638,
+      "similarity": 0.1406119409907204,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "SL-04.",
+      "start": 639,
+      "end": 645,
+      "similarity": 0.1206714403625428,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Keep movement slips for 17 months.",
+      "start": 646,
+      "end": 680,
+      "similarity": 0.21488289785338274,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "While a seed-quarantine hold is open, retain affected slips until the hold is released.",
+      "start": 681,
+      "end": 768,
+      "similarity": 0.08872837462674676,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "SL-05.",
+      "start": 769,
+      "end": 775,
+      "similarity": 0.09628188079295907,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Acknowledge seed-reservation requests within three business days.",
+      "start": 776,
+      "end": 841,
+      "similarity": 0.16194573258664596,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "An acknowledgement is not a guarantee that seeds remain available.",
+      "start": 842,
+      "end": 908,
+      "similarity": 0.14784979143727145,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The Avrel Bell Workshop casting hall moved in 1912.",
+      "start": 0,
+      "end": 51,
+      "similarity": 0.10303870835606067,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "Its restoration was completed in 1983.",
+      "start": 52,
+      "end": 90,
+      "similarity": 0.2387510873462645,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "A plan to close the mould annex in 2016 was rejected; the annex remains open.",
+      "start": 91,
+      "end": 168,
+      "similarity": 0.17088663837162552,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "BW-01.",
+      "start": 207,
+      "end": 213,
+      "similarity": 0.11021703640685761,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+      "start": 214,
+      "end": 306,
+      "similarity": 0.07285666579195886,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "Its absolute minimum winter temperature is -2 degrees Celsius.",
+      "start": 307,
+      "end": 369,
+      "similarity": 0.0460225748438349,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 370,
+      "end": 437,
+      "similarity": -0.05594432583121882,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "BW-02.",
+      "start": 438,
+      "end": 444,
+      "similarity": 0.1118248554171353,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "Signed calibration records are retained for 4 years.",
+      "start": 445,
+      "end": 497,
+      "similarity": 0.5046790297082068,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "An unresolved material claim extends retention of affected records until the claim is settled.",
+      "start": 498,
+      "end": 592,
+      "similarity": 0.4258974561489356,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "BW-03.",
+      "start": 593,
+      "end": 599,
+      "similarity": 0.11522703438217866,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The calibration packet must contain:",
+      "start": 600,
+      "end": 636,
+      "similarity": 0.02832150421697091,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "BW-04.",
+      "start": 734,
+      "end": 740,
+      "similarity": 0.11980357030554344,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The tower clock was replaced in 2007.",
+      "start": 741,
+      "end": 778,
+      "similarity": 0.0620260182992972,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "A cabinet was repainted in 1947.",
+      "start": 780,
+      "end": 812,
+      "similarity": 0.12048460322528812,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "Grease the Avrel Bell Workshop striker every 360 cycles under normal conditions.",
+      "start": 813,
+      "end": 893,
+      "similarity": 0.058936574326646986,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "In a humid chamber, grease it every 180 cycles.",
+      "start": 894,
+      "end": 941,
+      "similarity": 0.04033548703161528,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "Inspect the striker every 90 cycles regardless of chamber.",
+      "start": 942,
+      "end": 1000,
+      "similarity": 0.14839137926859874,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The storeroom bell was replaced in 1993.",
+      "start": 1001,
+      "end": 1041,
+      "similarity": 0.09679475076412636,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "At Relmont Canal Garden, the watergate was rebuilt in 1979.",
+      "start": 26,
+      "end": 85,
+      "similarity": 0.11513603607449006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "The tool shelter was repainted in 2008.",
+      "start": 86,
+      "end": 125,
+      "similarity": 0.057043964083583816,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+      "start": 127,
+      "end": 218,
+      "similarity": 0.059942269497918546,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "Its highest recorded daily temperature is 39 degrees Celsius.",
+      "start": 219,
+      "end": 280,
+      "similarity": -0.0098723212122073,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "Balen records six flow readings per shift.",
+      "start": 282,
+      "end": 324,
+      "similarity": 0.2215754129475843,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "Aven records three filter tests per shift.",
+      "start": 325,
+      "end": 367,
+      "similarity": 0.2129240773232073,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "Balen tags two pump valves per month.",
+      "start": 368,
+      "end": 405,
+      "similarity": 0.16708114567373092,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "IC-01.",
+      "start": 28,
+      "end": 34,
+      "similarity": 0.131840159422856,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "A rental request at Korven Instrument Coop is acknowledged within seven working hours.",
+      "start": 35,
+      "end": 121,
+      "similarity": 0.6261464600069616,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "This acknowledgement does not guarantee an instrument reservation.",
+      "start": 122,
+      "end": 188,
+      "similarity": 0.19349337261377547,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "IC-02.",
+      "start": 189,
+      "end": 195,
+      "similarity": 0.11968465348427029,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.",
+      "start": 196,
+      "end": 315,
+      "similarity": 0.28994678519917344,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "IC-03.",
+      "start": 316,
+      "end": 322,
+      "similarity": 0.12150809436407317,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer.",
+      "start": 323,
+      "end": 432,
+      "similarity": 0.2563630206113032,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "IC-04.",
+      "start": 433,
+      "end": 439,
+      "similarity": 0.0766804609423123,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+      "start": 440,
+      "end": 547,
+      "similarity": 0.6809991095912642,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "The workshop sign was installed in 1981.",
+      "start": 549,
+      "end": 589,
+      "similarity": 0.13001564113127098,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "Grease the Korven Instrument Coop reed trimmer every 114 operating hours under normal conditions.",
+      "start": 590,
+      "end": 687,
+      "similarity": 0.42932005651885113,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "In a dusty room, grease it every 57 operating hours.",
+      "start": 688,
+      "end": 740,
+      "similarity": 0.041029534494880164,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "Inspect the reed trimmer every 19 operating hours in either room.",
+      "start": 741,
+      "end": 806,
+      "similarity": 0.26620897274879557,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:body:440",
+          "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+          "filename": "04_Korven_Instrument_Coop.txt",
+          "quote": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+          "excerpt": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+          "start": 440,
+          "end": 547,
+          "actualCosine": 0.6809991095912642,
+          "cosineAnchor": {
+            "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:body:440",
+            "start": 440,
+            "end": 547,
+            "actualCosine": 0.6809991095912642
+          }
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V38 isolated scoped literal policy form; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Korven_Instrument_Coop.txt",
+          "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [],
+      "body_diagnostics": [
+        {
+          "document": "04_Korven_Instrument_Coop.txt",
+          "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "retention",
+          "subject": "Korven Instrument Coop completed loan records"
+        },
+        "actual_cosines": [
+          0.6809991095912642
+        ]
+      }
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:body:440",
+          "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+          "filename": "04_Korven_Instrument_Coop.txt",
+          "quote": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+          "excerpt": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+          "start": 440,
+          "end": 547,
+          "actualCosine": 0.6809991095912642,
+          "cosineAnchor": {
+            "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:body:440",
+            "start": 440,
+            "end": 547,
+            "actualCosine": 0.6809991095912642
+          }
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V38 isolated scoped literal policy form; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Korven_Instrument_Coop.txt",
+          "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [],
+      "body_diagnostics": [
+        {
+          "document": "04_Korven_Instrument_Coop.txt",
+          "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "retention",
+          "subject": "Korven Instrument Coop completed loan records"
+        },
+        "actual_cosines": [
+          0.6809991095912642
+        ]
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:0",
+          "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+          "filename": "04_Korven_Instrument_Coop.txt",
+          "excerpt": "## Instrument lending rules\nIC-01. A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.\nIC-02. The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.\nIC-03. Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer.\nIC-04. Completed loan records are k",
+          "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "score": 0.0476,
+          "lexicalScore": 12.487177062436237,
+          "semanticScore": 0.6682645228667152,
+          "matchedTerms": [
+            "korven",
+            "instrument",
+            "coop",
+            "completed",
+            "loan",
+            "records",
+            "kept",
+            "claim"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Korven_Instrument_Coop.txt",
+          "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": []
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "f926e745-1a1e-4049-acfb-8c65eb983c38:0",
+          "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+          "filename": "04_Korven_Instrument_Coop.txt",
+          "excerpt": "## Instrument lending rules\nIC-01. A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.\nIC-02. The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.\nIC-03. Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer.\nIC-04. Completed loan records are k",
+          "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "score": 0.0476,
+          "lexicalScore": 12.650362289549935,
+          "semanticScore": 0.6682645228667152,
+          "matchedTerms": [
+            "korven",
+            "instrument",
+            "coop",
+            "completed",
+            "loan",
+            "records",
+            "kept",
+            "claim"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Korven_Instrument_Coop.txt",
+          "quote": "A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": []
+    }
+  },
+  "query_vector": [
+    -0.09702906012535095,
+    0.04069308191537857,
+    -0.009517977014183998,
+    -0.059627484530210495,
+    -0.02054860070347786,
+    -0.0267814751714468,
+    -0.1512930691242218,
+    -0.036336950957775116,
+    -0.006159692537039518,
+    -0.041025951504707336,
+    0.07178012281656265,
+    0.020677320659160614,
+    0.02140890061855316,
+    -0.05254286900162697,
+    -0.07004246860742569,
+    -0.04631388187408447,
+    -0.10033025592565536,
+    -0.0883648470044136,
+    0.03696855530142784,
+    -0.032839350402355194,
+    -0.02074364572763443,
+    -0.024432426318526268,
+    0.014537428505718708,
+    -0.011953121982514858,
+    0.112984299659729,
+    0.012949371710419655,
+    -0.02426084317266941,
+    0.009232468903064728,
+    0.016734858974814415,
+    -0.0038863359950482845,
+    0.012057031504809856,
+    0.04658428579568863,
+    -0.006067321635782719,
+    -0.013114637695252895,
+    0.03401721268892288,
+    0.040944818407297134,
+    -0.007537108846008778,
+    -0.04027003422379494,
+    0.008916030637919903,
+    -0.03485918417572975,
+    0.023676829412579536,
+    -0.04899899289011955,
+    0.013889518566429615,
+    -0.055131327360868454,
+    -0.05277859792113304,
+    0.04596627876162529,
+    -0.028195053339004517,
+    -0.0470547117292881,
+    -0.07213779538869858,
+    0.13213975727558136,
+    -0.05859394744038582,
+    -0.04950029030442238,
+    0.08725707978010178,
+    0.04877060279250145,
+    -0.002959652105346322,
+    0.052109286189079285,
+    -0.04350784793496132,
+    0.031004060059785843,
+    -0.0339650921523571,
+    0.0233641117811203,
+    0.06875193119049072,
+    0.00759916752576828,
+    -0.0763583853840828,
+    0.06359889358282089,
+    -0.05692773312330246,
+    0.06332089751958847,
+    0.10363788157701492,
+    -0.00847527477890253,
+    0.014098294079303741,
+    -0.06486815214157104,
+    0.018907610327005386,
+    -0.0646073967218399,
+    -0.020169232040643692,
+    -0.016171902418136597,
+    0.03380407392978668,
+    0.040822483599185944,
+    0.0019252430647611618,
+    0.04243733733892441,
+    0.04291526600718498,
+    -0.11861193180084229,
+    0.03206706419587135,
+    0.049619052559137344,
+    -0.04896731674671173,
+    -0.054822880774736404,
+    -0.06313265860080719,
+    -0.043688539415597916,
+    0.028236782178282738,
+    0.018835486844182014,
+    0.04644560441374779,
+    0.04181092232465744,
+    0.009986808523535728,
+    -0.05859079957008362,
+    -0.01686193235218525,
+    -0.05701802670955658,
+    -0.09650319814682007,
+    -0.014990724623203278,
+    0.02434908039867878,
+    0.11558756232261658,
+    0.05248350277543068,
+    0.022664932534098625,
+    0.026041345670819283,
+    0.04702448472380638,
+    -0.018306449055671692,
+    -0.02344355545938015,
+    0.01343926414847374,
+    0.001329696853645146,
+    0.053479019552469254,
+    0.04592354968190193,
+    0.022380273789167404,
+    0.0777275487780571,
+    0.012968870811164379,
+    0.04444020241498947,
+    0.0049102045595645905,
+    -0.08507689833641052,
+    0.0960160344839096,
+    0.06832358986139297,
+    -0.052988652139902115,
+    0.0644691213965416,
+    0.08115708827972412,
+    -0.027369843795895576,
+    0.06342554837465286,
+    0.045812997967004776,
+    -0.027058424428105354,
+    -0.023790882900357246,
+    0.008725236169993877,
+    0.09951929748058319,
+    0.011985759250819683,
+    1.2877362681984354e-34,
+    0.027724074199795723,
+    0.00900457426905632,
+    0.009981706738471985,
+    -0.04135459288954735,
+    -0.01361407246440649,
+    -0.0219333004206419,
+    0.0011568989139050245,
+    0.10877955704927444,
+    -0.04508155211806297,
+    -0.007885857485234737,
+    -0.04480968043208122,
+    0.007705846801400185,
+    -0.06683672964572906,
+    -0.1334233433008194,
+    0.02741076797246933,
+    0.03396744281053543,
+    -0.016641905531287193,
+    0.030973786488175392,
+    0.016787251457571983,
+    0.027213305234909058,
+    0.06764180958271027,
+    -0.08948225528001785,
+    0.046481791883707047,
+    0.12495353072881699,
+    0.10618135333061218,
+    -0.09820974618196487,
+    0.022778885439038277,
+    -0.0319761224091053,
+    -0.036733340471982956,
+    -0.002811910817399621,
+    0.10340048372745514,
+    -0.015551328659057617,
+    0.03267158567905426,
+    0.08031512796878815,
+    -0.019458964467048645,
+    0.10920357704162598,
+    0.01350693590939045,
+    -0.03866761550307274,
+    -0.009769587777554989,
+    0.03471891209483147,
+    0.043368447571992874,
+    -0.0016953550511971116,
+    0.013006008230149746,
+    0.0024831630289554596,
+    0.013149509206414223,
+    -0.11295571178197861,
+    -0.033254656940698624,
+    0.014032481238245964,
+    0.07533365488052368,
+    0.10556823760271072,
+    -0.0032701401505619287,
+    0.04380440339446068,
+    -0.11527548730373383,
+    0.02611657604575157,
+    0.0335787869989872,
+    0.10419989377260208,
+    -0.02921013906598091,
+    -0.03525184839963913,
+    -0.01448078453540802,
+    -0.029491087421774864,
+    -0.01727638579905033,
+    -0.010629059746861458,
+    0.0025354865938425064,
+    -0.0022956302855163813,
+    -0.029657039791345596,
+    0.08655562251806259,
+    -0.06616873294115067,
+    -0.07200749218463898,
+    0.0055889892391860485,
+    -0.09798366576433182,
+    -0.00431715277954936,
+    -0.07717709243297577,
+    -0.0752619132399559,
+    -0.007573479320853949,
+    0.019632946699857712,
+    -0.05681072920560837,
+    -0.00814751535654068,
+    -0.02233256585896015,
+    0.030005227774381638,
+    0.059904009103775024,
+    0.02262270078063011,
+    -0.019726693630218506,
+    -0.009810379706323147,
+    0.08905761688947678,
+    -0.012343276292085648,
+    0.02545790933072567,
+    0.04905179142951965,
+    -0.05825698748230934,
+    -0.006572346668690443,
+    -0.04078036919236183,
+    -0.01754092238843441,
+    -0.01653592847287655,
+    -0.0194702185690403,
+    -0.03052516281604767,
+    0.05481784790754318,
+    -2.760593840785928e-34,
+    0.04806274548172951,
+    0.005264864768832922,
+    -0.016281554475426674,
+    0.03259316459298134,
+    0.00890878401696682,
+    -0.013660125434398651,
+    -0.05516168475151062,
+    0.14069069921970367,
+    -0.034221500158309937,
+    -0.01900557056069374,
+    -0.018518095836043358,
+    -0.01253933273255825,
+    0.06435690075159073,
+    -0.01845085620880127,
+    -0.061198342591524124,
+    0.018959857523441315,
+    0.0791420117020607,
+    0.017014510929584503,
+    0.04446156695485115,
+    0.04335248842835426,
+    0.10018935054540634,
+    -0.0022088338155299425,
+    0.08481398969888687,
+    0.022977836430072784,
+    -0.017570681869983673,
+    0.07589902728796005,
+    0.015428535640239716,
+    -0.05579172074794769,
+    -0.015269906260073185,
+    -0.003613719716668129,
+    0.02080703340470791,
+    -0.07031279057264328,
+    -0.0728195533156395,
+    0.0012542266631498933,
+    0.028947053477168083,
+    -0.12547819316387177,
+    0.009367436170578003,
+    0.008700047619640827,
+    -0.06828707456588745,
+    0.0015714571345597506,
+    0.012501317076385021,
+    0.008352517150342464,
+    -0.05756719037890434,
+    -0.018744388595223427,
+    0.02441873587667942,
+    -0.038596197962760925,
+    0.023276904597878456,
+    0.0071312678046524525,
+    0.04313112050294876,
+    -0.012869410216808319,
+    -0.023142248392105103,
+    0.03600306436419487,
+    0.029512688517570496,
+    -0.00886288471519947,
+    0.007654265500605106,
+    0.0022554625757038593,
+    0.05387546867132187,
+    -0.018771907314658165,
+    0.004924355540424585,
+    0.011484181508421898,
+    0.033609017729759216,
+    0.0989624634385109,
+    -0.0312507227063179,
+    0.1065945103764534,
+    0.06829281151294708,
+    -0.008095613680779934,
+    0.07579273730516434,
+    -0.026810865849256516,
+    -0.03276766091585159,
+    -0.02787955477833748,
+    -0.007597555872052908,
+    -0.021094433963298798,
+    -0.048355646431446075,
+    -0.05369146540760994,
+    0.029723122715950012,
+    0.04052998125553131,
+    -0.0881100445985794,
+    -0.04232262074947357,
+    -0.06576599180698395,
+    -0.015044569037854671,
+    -0.052569303661584854,
+    -0.03316081687808037,
+    0.02790915220975876,
+    0.012331163510680199,
+    0.01116222981363535,
+    -0.05827315151691437,
+    0.06395824253559113,
+    -0.07034654170274734,
+    0.07577770948410034,
+    0.07085133343935013,
+    0.014966030605137348,
+    0.011169844307005405,
+    -0.009910639375448227,
+    -0.03486422821879387,
+    0.043837204575538635,
+    -1.9862701705619656e-8,
+    0.023331917822360992,
+    0.08966898173093796,
+    -0.0691540539264679,
+    0.0029595184605568647,
+    0.10790258646011353,
+    -0.015447001904249191,
+    0.06975328177213669,
+    -0.008356080390512943,
+    0.00038563768612220883,
+    -0.014341932721436024,
+    0.10894742608070374,
+    0.06703773885965347,
+    -0.05104655772447586,
+    -0.05167543888092041,
+    -0.020664317533373833,
+    -0.07486671954393387,
+    -0.023373804986476898,
+    -0.05136297643184662,
+    -0.05597972497344017,
+    0.042320311069488525,
+    -0.003674304811283946,
+    -0.07209892570972443,
+    -0.0026519508101046085,
+    -0.04004636034369469,
+    -0.03402074798941612,
+    -0.02409244142472744,
+    0.056151870638132095,
+    0.12379489839076996,
+    0.018065262585878372,
+    -0.020197100937366486,
+    -0.09830114245414734,
+    0.06368305534124374,
+    0.06944632530212402,
+    0.01641080528497696,
+    -0.028102245181798935,
+    -0.024992043152451515,
+    0.0001709000498522073,
+    0.03383161872625351,
+    -0.09228165447711945,
+    0.044274866580963135,
+    -0.116486556828022,
+    -0.01190956961363554,
+    -0.0031103177461773157,
+    0.030785508453845978,
+    0.026317840442061424,
+    0.021937144920229912,
+    -0.05985408276319504,
+    0.0172202680259943,
+    0.020532434806227684,
+    -0.029163597151637077,
+    -0.022013545036315918,
+    -0.02673949860036373,
+    0.011781441979110241,
+    0.04004069045186043,
+    0.0038433729205280542,
+    -0.0053014373406767845,
+    0.0703839659690857,
+    0.020549412816762924,
+    0.0010833534179255366,
+    -0.09759001433849335,
+    -0.018018187955021858,
+    -0.05730888992547989,
+    -0.04497780650854111,
+    0.014553501270711422
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Korven_Instrument_Coop.txt",
+        "start": 0,
+        "content": "## Instrument lending rules\nIC-01. A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.\nIC-02. The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.\nIC-03. Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer.\nIC-04. Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.\n\nThe workshop sign was installed in 1981. Grease the Korven Instrument Coop reed trimmer every 114 operating hours under normal conditions. In a dusty room, grease it every 57 operating hours. Inspect the reed"
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Korven_Instrument_Coop.txt",
+        "start": 0,
+        "content": "## Instrument lending rules\nIC-01. A rental request at Korven Instrument Coop is acknowledged within seven working hours. This acknowledgement does not guarantee an instrument reservation.\nIC-02. The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.\nIC-03. Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer.\nIC-04. Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.\n\nThe workshop sign was installed in 1981. Grease the Korven Instrument Coop reed trimmer every 114 operating hours under normal conditions. In a dusty room, grease it every 57 operating hours. Inspect the reed"
+      }
+    ]
+  }
+}

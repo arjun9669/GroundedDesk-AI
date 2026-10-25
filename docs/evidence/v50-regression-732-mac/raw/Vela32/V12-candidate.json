@@ -1,0 +1,1286 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "V12",
+  "question": "What is the highest recorded daily temperature at Relmont Canal Garden?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What is the highest recorded daily temperature at Relmont Canal Garden?",
+    "expected_display": "What is the highest recorded daily temperature at Relmont Canal Garden?",
+    "rendered_question": "What is the highest recorded daily temperature at Relmont Canal Garden?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+    "sources": [
+      {
+        "filename": "03_Relmont_Canal_Garden.txt",
+        "excerpt": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month.",
+        "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat is the highest recorded daily temperature at Relmont Canal Garden?\n\nSearched all files: 01_Serevin_Seed_Library.txt · 02_Avrel_Bell_Workshop.txt · 03_Relmont_Canal_Garden.txt · 04_Korven_Instrument_Coop.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.\n\nSOURCE EVIDENCE\n[1]\n03_Relmont_Canal_Garden.txt\n\nText line 4 (normalized extraction)\n\n## Garden operating notes At Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008. The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius. Balen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "3176434c-fe53-40df-9334-a487513bf504:0",
+        "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+        "filename": "03_Relmont_Canal_Garden.txt",
+        "excerpt": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month.",
+        "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+        "score": 0.0476,
+        "lexicalScore": 13.849747750573771,
+        "semanticScore": 0.7747799225197309,
+        "matchedTerms": [
+          "highest",
+          "recorded",
+          "daily",
+          "temperature",
+          "relmont",
+          "canal",
+          "garden"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "3176434c-fe53-40df-9334-a487513bf504:0",
+        "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+        "filename": "03_Relmont_Canal_Garden.txt",
+        "excerpt": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month.",
+        "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 13.849747750573771,
+        "semanticScore": 0.7747799225197309,
+        "matchedTerms": [
+          "highest",
+          "recorded",
+          "daily",
+          "temperature",
+          "relmont",
+          "canal",
+          "garden"
+        ],
+        "start": 127,
+        "end": 280
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Relmont_Canal_Garden.txt",
+        "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Relmont_Canal_Garden.txt",
+        "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Relmont_Canal_Garden.txt",
+        "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "3176434c-fe53-40df-9334-a487513bf504:0",
+        "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+        "filename": "03_Relmont_Canal_Garden.txt",
+        "excerpt": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month.",
+        "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 14.297210325574273,
+        "semanticScore": 0.7747799225197309,
+        "matchedTerms": [
+          "highest",
+          "recorded",
+          "daily",
+          "temperature",
+          "relmont",
+          "canal",
+          "garden"
+        ],
+        "start": 127,
+        "end": 280
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Relmont_Canal_Garden.txt",
+        "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Relmont_Canal_Garden.txt",
+        "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Relmont_Canal_Garden.txt",
+        "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Relmont_Canal_Garden.txt",
+      "start": 127,
+      "content": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+      "semanticScore": 0.7656333042046713,
+      "lexicalScore": 11.265871906060505
+    },
+    {
+      "filename": "03_Relmont_Canal_Garden.txt",
+      "start": 219,
+      "content": "Its highest recorded daily temperature is 39 degrees Celsius.",
+      "semanticScore": 0.588337000025544,
+      "lexicalScore": 11.509761044441703
+    },
+    {
+      "filename": "03_Relmont_Canal_Garden.txt",
+      "start": 26,
+      "content": "At Relmont Canal Garden, the watergate was rebuilt in 1979.",
+      "semanticScore": 0.39448042636196473,
+      "lexicalScore": 9.67158954453553
+    },
+    {
+      "filename": "02_Avrel_Bell_Workshop.txt",
+      "start": 370,
+      "content": "The highest monthly mean temperature is 26 degrees Celsius in July.",
+      "semanticScore": 0.4402785284344185,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Avrel_Bell_Workshop.txt",
+      "start": 307,
+      "content": "Its absolute minimum winter temperature is -2 degrees Celsius.",
+      "semanticScore": 0.3856262821445528,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Serevin Seed Library began public seed lending in 1958.",
+      "start": 0,
+      "end": 55,
+      "similarity": 0.10649756519475856,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "The first ventilation fan renewal was completed in 1984; the second ventilation fan renewal was completed in 2011.",
+      "start": 56,
+      "end": 170,
+      "similarity": 0.12122578320122976,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "SL-01.",
+      "start": 200,
+      "end": 206,
+      "similarity": 0.11416156464813855,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Dispatch requests released before 14:35 leave on the current service day.",
+      "start": 207,
+      "end": 280,
+      "similarity": 0.08197924305455313,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "At 14:35 or later, departure is the next service day, unless a phytosanitary hold is open.",
+      "start": 281,
+      "end": 371,
+      "similarity": 0.17943248827771557,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "SL-02.",
+      "start": 372,
+      "end": 378,
+      "similarity": 0.11894725939311784,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Beren checks four seed lots per week.",
+      "start": 379,
+      "end": 416,
+      "similarity": 0.18143972277251688,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Olan checks six storage trays per week.",
+      "start": 417,
+      "end": 456,
+      "similarity": 0.15170396571579772,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Beren labels two transport boxes per month.",
+      "start": 457,
+      "end": 500,
+      "similarity": 0.12531911154399666,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "SL-03.",
+      "start": 501,
+      "end": 507,
+      "similarity": 0.105032084478849,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Winter monthly mean temperatures in the seed store range from 4 to 6 degrees Celsius.",
+      "start": 508,
+      "end": 593,
+      "similarity": 0.307486337813994,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Individual winter extremes are not recorded.",
+      "start": 594,
+      "end": 638,
+      "similarity": 0.33848349295559516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "SL-04.",
+      "start": 639,
+      "end": 645,
+      "similarity": 0.08030921619924683,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Keep movement slips for 17 months.",
+      "start": 646,
+      "end": 680,
+      "similarity": 0.023528717816346748,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "While a seed-quarantine hold is open, retain affected slips until the hold is released.",
+      "start": 681,
+      "end": 768,
+      "similarity": 0.026471580912137794,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "SL-05.",
+      "start": 769,
+      "end": 775,
+      "similarity": 0.08103019600861751,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "Acknowledge seed-reservation requests within three business days.",
+      "start": 776,
+      "end": 841,
+      "similarity": 0.09667294749690347,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d31026d6-ca44-407f-87e2-5f52e36fa460",
+      "value": "An acknowledgement is not a guarantee that seeds remain available.",
+      "start": 842,
+      "end": 908,
+      "similarity": 0.038112895803858245,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The Avrel Bell Workshop casting hall moved in 1912.",
+      "start": 0,
+      "end": 51,
+      "similarity": 0.11933540979918957,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "Its restoration was completed in 1983.",
+      "start": 52,
+      "end": 90,
+      "similarity": 0.1768377662471085,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "A plan to close the mould annex in 2016 was rejected; the annex remains open.",
+      "start": 91,
+      "end": 168,
+      "similarity": 0.0789046710009452,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "BW-01.",
+      "start": 207,
+      "end": 213,
+      "similarity": 0.11733063529017071,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The winter average temperature in the Avrel Bell Workshop alloy store is 10 degrees Celsius.",
+      "start": 214,
+      "end": 306,
+      "similarity": 0.3547400982938633,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "Its absolute minimum winter temperature is -2 degrees Celsius.",
+      "start": 307,
+      "end": 369,
+      "similarity": 0.3856262821445528,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 370,
+      "end": 437,
+      "similarity": 0.4402785284344185,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "BW-02.",
+      "start": 438,
+      "end": 444,
+      "similarity": 0.1336621494446272,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "Signed calibration records are retained for 4 years.",
+      "start": 445,
+      "end": 497,
+      "similarity": 0.12481871193712434,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "An unresolved material claim extends retention of affected records until the claim is settled.",
+      "start": 498,
+      "end": 592,
+      "similarity": -0.049149832898532066,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "BW-03.",
+      "start": 593,
+      "end": 599,
+      "similarity": 0.10950816768097682,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The calibration packet must contain:",
+      "start": 600,
+      "end": 636,
+      "similarity": 0.19730136144718785,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "BW-04.",
+      "start": 734,
+      "end": 740,
+      "similarity": 0.10343393126337713,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The tower clock was replaced in 2007.",
+      "start": 741,
+      "end": 778,
+      "similarity": 0.07027444409993035,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "A cabinet was repainted in 1947.",
+      "start": 780,
+      "end": 812,
+      "similarity": 0.08893194874284938,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "Grease the Avrel Bell Workshop striker every 360 cycles under normal conditions.",
+      "start": 813,
+      "end": 893,
+      "similarity": 0.16617140054989993,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "In a humid chamber, grease it every 180 cycles.",
+      "start": 894,
+      "end": 941,
+      "similarity": 0.17453804810842874,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "Inspect the striker every 90 cycles regardless of chamber.",
+      "start": 942,
+      "end": 1000,
+      "similarity": 0.04478828851007153,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "58d0f067-c56a-4584-99e1-1416b3e1a135",
+      "value": "The storeroom bell was replaced in 1993.",
+      "start": 1001,
+      "end": 1041,
+      "similarity": 0.14223348051726023,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "At Relmont Canal Garden, the watergate was rebuilt in 1979.",
+      "start": 26,
+      "end": 85,
+      "similarity": 0.39448042636196473,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "The tool shelter was repainted in 2008.",
+      "start": 86,
+      "end": 125,
+      "similarity": 0.1705782117073302,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+      "start": 127,
+      "end": 218,
+      "similarity": 0.7656333042046713,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "Its highest recorded daily temperature is 39 degrees Celsius.",
+      "start": 219,
+      "end": 280,
+      "similarity": 0.588337000025544,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "Balen records six flow readings per shift.",
+      "start": 282,
+      "end": 324,
+      "similarity": 0.2585907645286162,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "Aven records three filter tests per shift.",
+      "start": 325,
+      "end": 367,
+      "similarity": 0.11833022075337224,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+      "value": "Balen tags two pump valves per month.",
+      "start": 368,
+      "end": 405,
+      "similarity": 0.2229759438392668,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "IC-01.",
+      "start": 28,
+      "end": 34,
+      "similarity": 0.09907090441675706,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "A rental request at Korven Instrument Coop is acknowledged within seven working hours.",
+      "start": 35,
+      "end": 121,
+      "similarity": 0.12750801267329145,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "This acknowledgement does not guarantee an instrument reservation.",
+      "start": 122,
+      "end": 188,
+      "similarity": 0.03825378657475361,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "IC-02.",
+      "start": 189,
+      "end": 195,
+      "similarity": 0.13677981630959002,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "The shipping packet includes a loan form, serial register, condition checklist, collection permit, and release receipt.",
+      "start": 196,
+      "end": 315,
+      "similarity": 0.043155793629840525,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "IC-03.",
+      "start": 316,
+      "end": 322,
+      "similarity": 0.10022498518095074,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "Purchases exceeding 6200 credits require written approval from the Collection Steward and Workshop Treasurer.",
+      "start": 323,
+      "end": 432,
+      "similarity": 0.02493751959825687,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "IC-04.",
+      "start": 433,
+      "end": 439,
+      "similarity": 0.062446114424216846,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "Completed loan records are kept for 11 months, unless an unresolved damage claim requires longer retention.",
+      "start": 440,
+      "end": 547,
+      "similarity": -0.0005859791863091958,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "The workshop sign was installed in 1981.",
+      "start": 549,
+      "end": 589,
+      "similarity": 0.15719864725697213,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "Grease the Korven Instrument Coop reed trimmer every 114 operating hours under normal conditions.",
+      "start": 590,
+      "end": 687,
+      "similarity": 0.26804297214667633,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "In a dusty room, grease it every 57 operating hours.",
+      "start": 688,
+      "end": 740,
+      "similarity": 0.1734506071156973,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "f926e745-1a1e-4049-acfb-8c65eb983c38",
+      "value": "Inspect the reed trimmer every 19 operating hours in either room.",
+      "start": 741,
+      "end": 806,
+      "similarity": 0.26363068998088407,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "3176434c-fe53-40df-9334-a487513bf504:0",
+          "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+          "filename": "03_Relmont_Canal_Garden.txt",
+          "excerpt": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month.",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 13.849747750573771,
+          "semanticScore": 0.7747799225197309,
+          "matchedTerms": [
+            "highest",
+            "recorded",
+            "daily",
+            "temperature",
+            "relmont",
+            "canal",
+            "garden"
+          ],
+          "start": 127,
+          "end": 280
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Relmont_Canal_Garden.txt",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Relmont_Canal_Garden.txt",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Relmont_Canal_Garden.txt",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "3176434c-fe53-40df-9334-a487513bf504:0",
+          "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+          "filename": "03_Relmont_Canal_Garden.txt",
+          "excerpt": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month.",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 14.297210325574273,
+          "semanticScore": 0.7747799225197309,
+          "matchedTerms": [
+            "highest",
+            "recorded",
+            "daily",
+            "temperature",
+            "relmont",
+            "canal",
+            "garden"
+          ],
+          "start": 127,
+          "end": 280
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Relmont_Canal_Garden.txt",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Relmont_Canal_Garden.txt",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Relmont_Canal_Garden.txt",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "3176434c-fe53-40df-9334-a487513bf504:0",
+          "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+          "filename": "03_Relmont_Canal_Garden.txt",
+          "excerpt": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month.",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+          "score": 0.0476,
+          "lexicalScore": 13.849747750573771,
+          "semanticScore": 0.7747799225197309,
+          "matchedTerms": [
+            "highest",
+            "recorded",
+            "daily",
+            "temperature",
+            "relmont",
+            "canal",
+            "garden"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Relmont_Canal_Garden.txt",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Relmont_Canal_Garden.txt",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "3176434c-fe53-40df-9334-a487513bf504:0",
+          "documentId": "3176434c-fe53-40df-9334-a487513bf504",
+          "filename": "03_Relmont_Canal_Garden.txt",
+          "excerpt": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month.",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+          "score": 0.0476,
+          "lexicalScore": 14.297210325574273,
+          "semanticScore": 0.7747799225197309,
+          "matchedTerms": [
+            "highest",
+            "recorded",
+            "daily",
+            "temperature",
+            "relmont",
+            "canal",
+            "garden"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Relmont_Canal_Garden.txt",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Relmont_Canal_Garden.txt",
+          "quote": "The highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.027769984677433968,
+    -0.01792101189494133,
+    -0.03183068707585335,
+    0.07523941993713379,
+    -0.05714201182126999,
+    -0.06975428014993668,
+    0.0013880039332434535,
+    -0.06227575242519379,
+    -0.05309225991368294,
+    0.014457163400948048,
+    0.028713475912809372,
+    -0.07843726128339767,
+    -0.014100317843258381,
+    0.05745825916528702,
+    -0.005235349293798208,
+    -0.003154791658744216,
+    0.03309835493564606,
+    -0.002977547934278846,
+    -0.03593272715806961,
+    -0.0215134359896183,
+    0.04042774811387062,
+    0.09363719075918198,
+    0.014046248979866505,
+    -0.01622038148343563,
+    0.02788897044956684,
+    0.013015317730605602,
+    -0.07218426465988159,
+    0.10662316530942917,
+    -0.028357822448015213,
+    0.05162272974848747,
+    -0.07355900853872299,
+    0.026696955785155296,
+    0.018210427835583687,
+    0.0022680494002997875,
+    0.03217000886797905,
+    0.028394656255841255,
+    0.010092256590723991,
+    -0.12262478470802307,
+    0.009645001031458378,
+    0.06130581349134445,
+    -0.0790717750787735,
+    -0.04030824452638626,
+    0.09968515485525131,
+    -0.006115347612649202,
+    -0.0422392264008522,
+    0.019428296014666557,
+    -0.03440652787685394,
+    0.028667308390140533,
+    0.0741121917963028,
+    0.008293118327856064,
+    0.08985091000795364,
+    0.06015364080667496,
+    -0.005816970486193895,
+    0.027649059891700745,
+    -0.04630451276898384,
+    0.04178338870406151,
+    -0.11616978794336319,
+    -0.03330936282873154,
+    0.049060337245464325,
+    0.06736539304256439,
+    0.029465166851878166,
+    0.08161714673042297,
+    -0.13495846092700958,
+    0.034354403614997864,
+    0.04660353064537048,
+    -0.023193957284092903,
+    -0.08637095987796783,
+    0.010271992534399033,
+    0.039956413209438324,
+    -0.12688100337982178,
+    -0.010852599516510963,
+    0.012013880535960197,
+    0.008719823323190212,
+    -0.10710874199867249,
+    -0.005010695196688175,
+    -0.04679333046078682,
+    0.034008871763944626,
+    0.02857905440032482,
+    -0.04443871229887009,
+    -0.03765644133090973,
+    0.04070942848920822,
+    -0.10649092495441437,
+    0.05065704882144928,
+    0.08472363650798798,
+    0.035770233720541,
+    0.02238260954618454,
+    0.04639359191060066,
+    0.09857901185750961,
+    0.021447286009788513,
+    0.024159349501132965,
+    -0.001874300418421626,
+    0.010638052597641945,
+    -0.08384215086698532,
+    -0.007576919626444578,
+    -0.09806263446807861,
+    0.10141464322805405,
+    -0.04578724130988121,
+    -0.027690967544913292,
+    -0.07880601286888123,
+    0.013587545603513718,
+    -0.05161423608660698,
+    -0.011504970490932465,
+    -0.023830488324165344,
+    0.052424680441617966,
+    0.05355043709278107,
+    0.029482988640666008,
+    -0.02523459494113922,
+    0.03427273780107498,
+    -0.001217147335410118,
+    -0.0004314034595154226,
+    -0.06061901897192001,
+    0.04330622777342796,
+    0.05253583565354347,
+    0.0021129194647073746,
+    0.07189472764730453,
+    -0.053755324333906174,
+    0.010041789151728153,
+    0.002566375769674778,
+    -0.023083310574293137,
+    0.011720546521246433,
+    -0.01693914458155632,
+    0.006551797967404127,
+    -0.008663606829941273,
+    0.030507421121001244,
+    -0.05848190188407898,
+    0.09749829769134521,
+    0.01799209788441658,
+    -6.286891385550552e-34,
+    0.03459428250789642,
+    -0.004127292428165674,
+    0.07244738191366196,
+    -0.037174612283706665,
+    0.040663231164216995,
+    -0.06968093663454056,
+    -0.08532392233610153,
+    -0.028961554169654846,
+    0.017957014963030815,
+    -0.022019827738404274,
+    -0.0007785769994370639,
+    -0.06638143211603165,
+    -0.04403384402394295,
+    -0.008303140290081501,
+    0.025769641622900963,
+    0.0332794152200222,
+    -0.040340106934309006,
+    0.04165871813893318,
+    -0.0960075706243515,
+    0.0370049923658371,
+    -0.11025501787662506,
+    0.020052509382367134,
+    0.028809502720832825,
+    0.01023794524371624,
+    0.008385881781578064,
+    -0.05605638772249222,
+    0.08566776663064957,
+    0.02398882620036602,
+    0.047764427959918976,
+    0.011607708409428596,
+    0.08590558171272278,
+    -0.09161392599344254,
+    -0.03191892057657242,
+    0.008921005763113499,
+    0.014364086091518402,
+    0.041267748922109604,
+    0.01348697580397129,
+    -0.024062832817435265,
+    0.009223535656929016,
+    0.098935067653656,
+    0.05491102486848831,
+    0.005806298926472664,
+    0.057451196014881134,
+    0.01792018674314022,
+    0.05853075161576271,
+    0.005080743692815304,
+    0.0028687743470072746,
+    0.07088910043239594,
+    0.04484112188220024,
+    -0.0068184384144842625,
+    -0.02503804676234722,
+    0.05677966773509979,
+    -0.07294734567403793,
+    0.0024145932402461767,
+    -0.03602830320596695,
+    -0.00702821696177125,
+    0.021911391988396645,
+    0.012683668173849583,
+    0.01085180975496769,
+    0.08234409242868423,
+    -0.0713983029127121,
+    0.08132097125053406,
+    -0.01709066703915596,
+    -0.043290261179208755,
+    0.013269923627376556,
+    0.0291037168353796,
+    0.009062214754521847,
+    0.009194359183311462,
+    -0.058446843177080154,
+    0.010843852534890175,
+    -0.00594235397875309,
+    -0.019151736050844193,
+    0.06304892152547836,
+    -0.029891669750213623,
+    0.010125688277184963,
+    0.013331670314073563,
+    0.07645449042320251,
+    0.0747302994132042,
+    0.03870900720357895,
+    0.03686632588505745,
+    -0.02261696569621563,
+    0.012232299894094467,
+    0.06024688854813576,
+    0.029918354004621506,
+    -0.013487540185451508,
+    -0.0816105529665947,
+    -0.06735172867774963,
+    0.02331005595624447,
+    0.02342069521546364,
+    0.04652455821633339,
+    -0.02594412863254547,
+    -0.019682597368955612,
+    -0.014508957043290138,
+    0.01555982232093811,
+    -0.03754960745573044,
+    7.690147868749235e-34,
+    0.011320403777062893,
+    0.04083654657006264,
+    0.01511916983872652,
+    0.09460540115833282,
+    -0.04489933326840401,
+    -0.043340783566236496,
+    -0.0008611446246504784,
+    0.050389599055051804,
+    0.003929246682673693,
+    -0.014257489703595638,
+    0.042593907564878464,
+    0.05081662908196449,
+    0.08789427578449249,
+    -0.03875364735722542,
+    0.07466239482164383,
+    0.015057651326060295,
+    -0.0016336010303348303,
+    0.028113719075918198,
+    -0.026209300383925438,
+    -0.006025661714375019,
+    -0.129869282245636,
+    0.06836237758398056,
+    -0.04172343760728836,
+    -0.017543569207191467,
+    -0.03410401567816734,
+    0.025672942399978638,
+    -0.06591103225946426,
+    -0.01830737665295601,
+    -0.02378362976014614,
+    -0.08099303394556046,
+    0.002577009378001094,
+    0.03993891552090645,
+    -0.04693187028169632,
+    0.053064148873090744,
+    -0.062426138669252396,
+    0.07406309992074966,
+    0.07604977488517761,
+    -0.07218297570943832,
+    0.016283469274640083,
+    0.07312826812267303,
+    0.06420793384313583,
+    -0.019876331090927124,
+    0.01665857434272766,
+    0.07075735926628113,
+    0.002496920060366392,
+    0.030229395255446434,
+    -0.031226815655827522,
+    -0.016937322914600372,
+    0.0532882884144783,
+    0.045445751398801804,
+    0.025993598625063896,
+    0.018985502421855927,
+    -0.08937327563762665,
+    0.0042864056304097176,
+    0.05436456948518753,
+    -0.019224699586629868,
+    -0.004687923938035965,
+    -0.014316168613731861,
+    -0.11147084087133408,
+    -0.08301741629838943,
+    0.06980467587709427,
+    -0.00288527924567461,
+    -0.04117332398891449,
+    0.09375825524330139,
+    0.0500013493001461,
+    0.048754069954156876,
+    -0.025917531922459602,
+    0.03846975043416023,
+    -0.06981629133224487,
+    0.02500206045806408,
+    0.03222640976309776,
+    -0.03015264682471752,
+    0.08215762674808502,
+    -0.08584778010845184,
+    -0.048574965447187424,
+    -0.022252283990383148,
+    0.010161669924855232,
+    0.0003976530279032886,
+    -0.03132379800081253,
+    0.04013269767165184,
+    -0.13578976690769196,
+    0.022562934085726738,
+    -0.024576490744948387,
+    -0.0016773530514910817,
+    0.04341311380267143,
+    -0.112392857670784,
+    0.007071238476783037,
+    -0.0782412514090538,
+    0.03138808533549309,
+    0.05771678686141968,
+    -0.06279251724481583,
+    -0.015445474535226822,
+    -0.077743761241436,
+    0.01097070425748825,
+    0.024643171578645706,
+    -1.6658177059980517e-8,
+    0.012309174053370953,
+    0.06971313059329987,
+    -0.04975937679409981,
+    0.0021591633558273315,
+    0.06469043344259262,
+    -0.0397866815328598,
+    0.08287642896175385,
+    0.08174192160367966,
+    -0.027948934584856033,
+    0.07955729961395264,
+    0.06276921182870865,
+    0.08047784119844437,
+    0.005421177018433809,
+    0.006451185792684555,
+    -0.039070069789886475,
+    -0.0993952676653862,
+    0.007316397037357092,
+    -0.04822526127099991,
+    -0.032235223799943924,
+    -0.08267462998628616,
+    0.012546810321509838,
+    0.011632693000137806,
+    0.010838257148861885,
+    -0.021981945261359215,
+    0.0362473763525486,
+    -0.030367130413651466,
+    0.04031061381101608,
+    0.09225675463676453,
+    0.02088814601302147,
+    0.019254475831985474,
+    -0.059775710105895996,
+    -0.050080038607120514,
+    -0.0451715923845768,
+    -0.07199469208717346,
+    -0.0669337809085846,
+    -0.039121922105550766,
+    -0.005497305188328028,
+    0.11757905036211014,
+    -0.044357992708683014,
+    -0.06834674626588821,
+    -0.003308238461613655,
+    -0.02510542795062065,
+    -0.05515611916780472,
+    0.06848136335611343,
+    0.04880990460515022,
+    -0.00470028817653656,
+    -0.03380201756954193,
+    0.07964569330215454,
+    0.04472563788294792,
+    -0.04451068490743637,
+    -0.004110679961740971,
+    0.006698045413941145,
+    0.10278492420911789,
+    -0.023386038839817047,
+    -0.061873700469732285,
+    0.03739118203520775,
+    -0.03610377758741379,
+    0.016090456396341324,
+    -0.04863835871219635,
+    0.015791641548275948,
+    -0.07101956009864807,
+    -0.07186570018529892,
+    -0.11672493815422058,
+    -0.022940387949347496
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Relmont_Canal_Garden.txt",
+        "start": 0,
+        "content": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Relmont_Canal_Garden.txt",
+        "start": 0,
+        "content": "## Garden operating notes\nAt Relmont Canal Garden, the watergate was rebuilt in 1979. The tool shelter was repainted in 2008.\n\nThe highest monthly mean temperature at Relmont Canal Garden is 23 degrees Celsius in June. Its highest recorded daily temperature is 39 degrees Celsius.\n\nBalen records six flow readings per shift. Aven records three filter tests per shift. Balen tags two pump valves per month."
+      }
+    ]
+  }
+}

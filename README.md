@@ -13,9 +13,9 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest isolated candidate | **v49 complete regression FAIL**:63 PASS/1 FAIL Fresh64 per variant;17/19 historical gates. Candidate remains unadopted |
+| Latest isolated candidate | **v50:19/19 historical gates PASS;63 PASS/1 FAIL Fresh64 per variant**. Overall native FAIL; unadopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
-| Current phase | **2 — first Fresh64 confirmation and latest v49 regression FAIL**; integration HOLD |
+| Current phase | **2 — first Fresh64 confirmation and latest v50 regression FAIL**; integration HOLD |
 | Latest recorded engineering checks | **1044 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
@@ -24,12 +24,23 @@ The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. The following
 phase 1 summary reflects the approved decision on **21 October 2026**; earlier
 reports remain dated checkpoints and preserve their original failures and holds.
 
-[V50 isolated retention repair](./docs/V50_ENGINEERING.md) now passes26 candidate
-controls,3 adapter controls,1044 units and28 Keyword checks. A new prospective
-freeze precedes its authorized regression; no v50 quality score is established
-at this preparation checkpoint. The monthly location guard remains unchanged.
+[V50 retention repair](./docs/V50_ENGINEERING.md) passes26 candidate controls,
+3 adapter controls,1044 units and28 Keyword checks. Its
+[complete732-case regression](./docs/V50_REGRESSION_RESULTS.md) restores all five
+historical regressions. The monthly location guard remains unchanged.
 
-## Latest result — v49 complete regression FAIL
+## Latest result — v50 historical preservation restored; overall native FAIL
+
+- **19/19 historical family gates PASS**; every prior v46/v49 PASS is preserved.
+- Fresh64: **63 PASS/0 PARTIAL/1 FAIL** in each variant;64/64 is still required.
+- Full732-case capture and integrity pass; source, native scores and separate
+  author-aware review are sealed. No question retries or post-capture key changes.
+
+The remaining Comparison asks for store temperatures, but one source gives only
+unqualified laboratory temperatures. V50 retains an uncited refusal rather than
+invent that location. **Phase2/integration HOLD; live5.6/r44 unchanged.**
+
+## Earlier result — v49 complete regression FAIL
 
 [Attempt3 completed all732 cases](./docs/V49_REGRESSION_FAILED_RESULTS.md):684
 actual MiniLM Hybrid submissions and48 lexical Comparisons. Integrity passed with

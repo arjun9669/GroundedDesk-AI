@@ -16,9 +16,40 @@ The top table/newest section is current; older sections retain their dated check
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v50 isolated retention repairs:26 candidate/3 adapter/1044 unit/28 Keyword PASS; current execution freeze ready, no v50 study result at this checkpoint. Latest scored v49 remains FAIL |
+| Latest isolated candidate | v50 complete regression:19/19 historical gates PASS, all five v49 regressions repaired; Fresh64 63 PASS/1 FAIL each variant, overall native FAIL/unadopted. Engineering1044 units/28 Keyword PASS |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | V50 version-qualified retention and matching hyphenated periods; monthly source gap documented, guard retained; publish freeze before authorized regression |
+| Current change | V50 retention repairs measured and original results preserved; monthly store-scope gap documented without inference/key edits; phase2/integration HOLD |
+
+## V50 complete regression — historical restored, overall FAIL, 2026-10-25
+
+[Results report](docs/V50_REGRESSION_RESULTS.md) records one complete732-case
+v50 capture (684 actual MiniLM Hybrid/48 lexical Comparison), zero question retries.
+All5,865 raw artifacts/630,154,238 bytes were sealed before native scoring.
+Integrity PASS:50,074 recomputed body cosines,50 disclosed expanded-ranking-body
+bindings and4 legacy bindings. Original sources/keys/native functions/thresholds
+and all old failed/blocked attempts remain unchanged.
+
+- **19/19 historical family gates PASS**; RQ08 and Binding64 E1A–E4A are repaired
+  in each variant. All prior-v46 PASS and1,318 prior-v49 PASS rows preserved.
+- Historical native counts: fixed663 PASS/5 FAIL; section665 PASS/3 FAIL. These
+  are the unchanged original public failures/qualifications, not new regressions.
+- Fresh64: **63 PASS/0 PARTIAL/1 FAIL** in each variant. All128 displayed outputs
+  match reviewed v49 outputs. FC61 still refuses an unproved store location;
+  its native failure is not edited, excluded or waived. Overall gate **FAIL**.
+
+[Separate review](docs/evidence/v50-regression-732-mac/review/publication-review.json)
+checks128 Fresh64 rows via exact question/key/display parity and current provenance,
+reads all10 changed historical rows and reviews expanded/legacy bindings. No native
+PASS contradiction or native regrading. Author-aware Codex review is not external/
+blinded validation. Independent paired-v43 display parity is732/732 each variant
+against the prior complete study. [Review/report seal](docs/evidence/v50-regression-732-mac/review/manifest.json).
+
+The focused retention work is complete and measured. The remaining blocker needs
+a prospective source/question-scope decision with explicit evidence requirements;
+do not infer a store or change a frozen key to force64/64. No further rerun of an
+unchanged ambiguous input resolves that gap. Any successor needs a new prospective
+freeze. Phase2/integration HOLD, unseen/Windows/device/release gates,103 exclusions/
+full771 NOT RUN and live5.6/r44 remain unchanged.
 
 ## V50 repair engineering and execution readiness, 2026-10-25
 

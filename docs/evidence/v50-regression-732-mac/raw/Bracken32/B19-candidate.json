@@ -1,0 +1,1177 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "B19",
+  "question": "What four items must accompany a Lenwick Canal Transit departure?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What four items must accompany a Lenwick Canal Transit departure?",
+    "expected_display": "What four items must accompany a Lenwick Canal Transit departure?",
+    "rendered_question": "What four items must accompany a Lenwick Canal Transit departure?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+    "sources": [
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+        "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat four items must accompany a Lenwick Canal Transit departure?\n\nSearched all files: 01_Rillpoint_Lightstation.txt · 02_Tavren_Ceramics.txt · 03_Rossell_Seed_Library.txt · 04_Lenwick_Canal_Transit.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nSOURCE EVIDENCE\n[1]\n04_Lenwick_Canal_Transit.txt\n\nText line 7 (normalized extraction)\n\ndaily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius. Pavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift. The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization. Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c:0",
+        "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+        "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+        "score": 0.0476,
+        "lexicalScore": 8.823208150961072,
+        "semanticScore": 0.5407586993022319,
+        "matchedTerms": [
+          "must",
+          "lenwick",
+          "canal",
+          "transit",
+          "departure"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c:0",
+        "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+        "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+        "score": 0.0476,
+        "lexicalScore": 8.823208150961072,
+        "semanticScore": 0.5407586993022319,
+        "matchedTerms": [
+          "must",
+          "lenwick",
+          "canal",
+          "transit",
+          "departure"
+        ],
+        "start": 514,
+        "end": 641
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c:0",
+        "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "excerpt": "daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+        "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+        "score": 0.0476,
+        "lexicalScore": 8.823208150961072,
+        "semanticScore": 0.5407586993022319,
+        "matchedTerms": [
+          "must",
+          "lenwick",
+          "canal",
+          "transit",
+          "departure"
+        ],
+        "start": 514,
+        "end": 641
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Lenwick_Canal_Transit.txt",
+        "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 514,
+      "content": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "semanticScore": 0.7249554040887223,
+      "lexicalScore": 9.819167777896102
+    },
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 0,
+      "content": "Lenwick Canal Transit relocated in 1882.",
+      "semanticScore": 0.6209614737248733,
+      "lexicalScore": 8.286090944329498
+    },
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 198,
+      "content": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+      "semanticScore": 0.5137656689365663,
+      "lexicalScore": 6.663749184597925
+    },
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 643,
+      "content": "Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+      "semanticScore": 0.48320260575409785,
+      "lexicalScore": 5.572670615318296
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Rillpoint Lightstation transferred to North Spit in 1859.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.22243606452881162,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Its first restoration was completed in 1913.",
+      "start": 58,
+      "end": 102,
+      "similarity": 0.11432576649967834,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "A second restoration was completed in 1962.",
+      "start": 103,
+      "end": 146,
+      "similarity": 0.12467580778010341,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "The proposed demolition in 1987 was canceled and never took place.",
+      "start": 147,
+      "end": 213,
+      "similarity": -0.07236605391567603,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Winter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius.",
+      "start": 215,
+      "end": 296,
+      "similarity": 0.015157541480937802,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Its highest monthly mean temperature is 23 degrees Celsius in August.",
+      "start": 297,
+      "end": 366,
+      "similarity": -0.014658278585307456,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 367,
+      "end": 428,
+      "similarity": -0.05609034083358903,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Edda binds nine charts per week.",
+      "start": 430,
+      "end": 462,
+      "similarity": 0.051795059184220345,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Soren checks three beacons per night.",
+      "start": 463,
+      "end": 500,
+      "similarity": 0.129513424572567,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Edda washes two lanterns per week.",
+      "start": 501,
+      "end": 535,
+      "similarity": 0.10995957747864565,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Rillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+      "start": 537,
+      "end": 660,
+      "similarity": 0.05067920431947177,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "The Tavren Ceramics kiln was commissioned in 1978.",
+      "start": 0,
+      "end": 50,
+      "similarity": 0.04070822189782728,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Its rebuild took place in 2009.",
+      "start": 51,
+      "end": 82,
+      "similarity": 0.05803129261994971,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "The planned transfer in 2020 did not occur.",
+      "start": 83,
+      "end": 126,
+      "similarity": 0.13051524550668442,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+      "start": 128,
+      "end": 206,
+      "similarity": -0.04931051203286031,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 207,
+      "end": 268,
+      "similarity": 0.017201050144039227,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Its highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 269,
+      "end": 336,
+      "similarity": -0.03441294213480866,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.",
+      "start": 338,
+      "end": 420,
+      "similarity": 0.04986597995187764,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "In a dusty bay, use a 42-hour lubrication interval.",
+      "start": 421,
+      "end": 472,
+      "similarity": 0.08500721367031651,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Inspection remains every 21 operating hours in both bays.",
+      "start": 473,
+      "end": 530,
+      "similarity": 0.05709528651993157,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Purchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead.",
+      "start": 532,
+      "end": 645,
+      "similarity": 0.16987883258593908,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.",
+      "start": 646,
+      "end": 750,
+      "similarity": 0.19540848091303825,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Tavren Ceramics maintenance records are retained for 4 years, unless an unresolved warranty claim requires longer retention.",
+      "start": 752,
+      "end": 876,
+      "similarity": -0.006784350104999218,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Rossell Seed Library opened its public desk in 1996.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.026893703954845204,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Its warehouse relocation took place in 2011.",
+      "start": 53,
+      "end": 97,
+      "similarity": 0.15975220807013282,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "An opening ceremony for a separate annex occurred in 2018.",
+      "start": 98,
+      "end": 156,
+      "similarity": 0.14602433370626247,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Nalin sorts six seed trays per day.",
+      "start": 158,
+      "end": 193,
+      "similarity": 0.035854059572894136,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Vera labels four seed packets per day.",
+      "start": 194,
+      "end": 232,
+      "similarity": 0.07426547544909734,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Nalin labels two storage boxes per day.",
+      "start": 233,
+      "end": 272,
+      "similarity": 0.0976232074218248,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Requests released before 11:45 are shipped the same working day.",
+      "start": 274,
+      "end": 338,
+      "similarity": 0.07641624656311698,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.",
+      "start": 339,
+      "end": 439,
+      "similarity": 0.12488247893259466,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Rossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius.",
+      "start": 441,
+      "end": 525,
+      "similarity": -0.054110152321103853,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "The winter log contains monthly averages rather than individual extreme readings.",
+      "start": 526,
+      "end": 607,
+      "similarity": -0.03139756862041818,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Rossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires longer retention.",
+      "start": 609,
+      "end": 734,
+      "similarity": 0.008032182050074253,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Lenwick Canal Transit relocated in 1882.",
+      "start": 0,
+      "end": 40,
+      "similarity": 0.6209614737248733,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "The depot renovation occurred in 1931.",
+      "start": 41,
+      "end": 79,
+      "similarity": -0.0034645513450373075,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Another depot renovation occurred in 1974.",
+      "start": 80,
+      "end": 122,
+      "similarity": 0.07020747892840123,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "A proposed tunnel closure in 1999 was rejected; the tunnel did not close.",
+      "start": 123,
+      "end": 196,
+      "similarity": 0.05078141218408984,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+      "start": 198,
+      "end": 273,
+      "similarity": 0.5137656689365663,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Its highest recorded daily temperature is 36 degrees Celsius.",
+      "start": 274,
+      "end": 335,
+      "similarity": -0.04461745575660167,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Its highest monthly mean temperature is 22 degrees Celsius.",
+      "start": 336,
+      "end": 395,
+      "similarity": -0.02622196609827117,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Pavel inspects eight lock gates per shift.",
+      "start": 397,
+      "end": 439,
+      "similarity": 0.14807662049105766,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Rena greases three winches per shift.",
+      "start": 440,
+      "end": 477,
+      "similarity": 0.17352192778402836,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Pavel greases one hinge per shift.",
+      "start": 478,
+      "end": 512,
+      "similarity": 0.11664341665190706,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "start": 514,
+      "end": 641,
+      "similarity": 0.7249554040887223,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+      "start": 643,
+      "end": 757,
+      "similarity": 0.48320260575409785,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c:0",
+          "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "score": 0.0476,
+          "lexicalScore": 8.823208150961072,
+          "semanticScore": 0.5407586993022319,
+          "matchedTerms": [
+            "must",
+            "lenwick",
+            "canal",
+            "transit",
+            "departure"
+          ],
+          "start": 514,
+          "end": 641
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c:0",
+          "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "score": 0.0476,
+          "lexicalScore": 8.823208150961072,
+          "semanticScore": 0.5407586993022319,
+          "matchedTerms": [
+            "must",
+            "lenwick",
+            "canal",
+            "transit",
+            "departure"
+          ],
+          "start": 514,
+          "end": 641
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c:0",
+          "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "score": 0.0476,
+          "lexicalScore": 8.823208150961072,
+          "semanticScore": 0.5407586993022319,
+          "matchedTerms": [
+            "must",
+            "lenwick",
+            "canal",
+            "transit",
+            "departure"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c:0",
+          "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+          "filename": "04_Lenwick_Canal_Transit.txt",
+          "excerpt": "daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "score": 0.0476,
+          "lexicalScore": 8.823208150961072,
+          "semanticScore": 0.5407586993022319,
+          "matchedTerms": [
+            "must",
+            "lenwick",
+            "canal",
+            "transit",
+            "departure"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Lenwick_Canal_Transit.txt",
+          "quote": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.09829477220773697,
+    -0.005388166289776564,
+    0.019801782444119453,
+    0.014465558342635632,
+    -0.014972046948969364,
+    -0.01186409778892994,
+    -0.014546859078109264,
+    -0.05814250558614731,
+    -0.1189713254570961,
+    -0.03655773401260376,
+    0.03704296052455902,
+    -0.07941137254238129,
+    -0.10920330137014389,
+    0.03170087933540344,
+    -0.02777496725320816,
+    0.02809135802090168,
+    0.01725381799042225,
+    -0.0046842023730278015,
+    -0.09306831657886505,
+    -0.04011015221476555,
+    0.007456604391336441,
+    0.01775818131864071,
+    0.022883953526616096,
+    -0.015127403661608696,
+    -0.011616571806371212,
+    0.06884591281414032,
+    0.024564802646636963,
+    -0.012290152721107006,
+    0.012073864229023457,
+    -0.00930632185190916,
+    -0.03461669757962227,
+    -0.06273768097162247,
+    -0.011722206138074398,
+    0.009856423363089561,
+    0.02626819722354412,
+    0.06858258694410324,
+    0.10734017938375473,
+    -0.055741362273693085,
+    0.04446731507778168,
+    0.021927639842033386,
+    -0.001561302924528718,
+    -0.08936336636543274,
+    -0.008191798813641071,
+    0.03443295881152153,
+    0.027439657598733902,
+    -0.05421968922019005,
+    0.02557029202580452,
+    -0.020879672840237617,
+    0.0058364770375192165,
+    0.03262289986014366,
+    0.04773395508527756,
+    -0.020920587703585625,
+    -0.06338144093751907,
+    0.03387961536645889,
+    -0.0537739098072052,
+    -0.008273294195532799,
+    -0.04350912198424339,
+    -0.02015906199812889,
+    -0.009255519136786461,
+    0.010318893007934093,
+    0.0008716987795196474,
+    -0.013523980975151062,
+    -0.12035410851240158,
+    0.03968222439289093,
+    -0.026235215365886688,
+    -0.009080582298338413,
+    -0.06234041973948479,
+    -0.029527729377150536,
+    -0.008609797805547714,
+    -0.026936473324894905,
+    -0.056573472917079926,
+    -0.03364729508757591,
+    -0.06121395155787468,
+    0.013427060097455978,
+    0.047470200806856155,
+    -0.049672681838274,
+    0.08354967087507248,
+    -0.006542555522173643,
+    -0.02898918278515339,
+    -0.030871624127030373,
+    -0.017893033102154732,
+    0.0572870634496212,
+    -0.040325261652469635,
+    0.0756613239645958,
+    0.0026809857226908207,
+    -0.00023031177988741547,
+    -0.027917178347706795,
+    -0.04545111954212189,
+    -0.11093844473361969,
+    0.017950154840946198,
+    0.09510987997055054,
+    -0.07076527178287506,
+    -0.002361222403123975,
+    -0.044424138963222504,
+    -0.021868858486413956,
+    0.05234799534082413,
+    -0.05026010423898697,
+    -0.06871654838323593,
+    0.01233632117509842,
+    0.03607677295804024,
+    -0.039424967020750046,
+    -0.009015540592372417,
+    0.03454717621207237,
+    0.07666424661874771,
+    -0.041179679334163666,
+    -0.011476969346404076,
+    -0.028400760143995285,
+    -0.05606942996382713,
+    0.033497154712677,
+    -0.009255217388272285,
+    0.008203980512917042,
+    -0.017104176804423332,
+    -0.0604979507625103,
+    0.03287806361913681,
+    0.03002239018678665,
+    0.02130933664739132,
+    -0.05149761214852333,
+    0.019134562462568283,
+    0.020207256078720093,
+    -0.008918159641325474,
+    -0.01737922988831997,
+    -0.01870214007794857,
+    0.06195317208766937,
+    -0.009869609959423542,
+    -0.08496017754077911,
+    0.03874530270695686,
+    0.02164359949529171,
+    -1.289186327723896e-33,
+    -0.01016464363783598,
+    0.0015863594599068165,
+    -0.03258094936609268,
+    0.030158067122101784,
+    0.07239627093076706,
+    -0.020409472286701202,
+    -0.07114128768444061,
+    -0.047328460961580276,
+    0.067310631275177,
+    0.02731095813214779,
+    -0.028219282627105713,
+    -0.01518128253519535,
+    -0.03922975808382034,
+    -0.0546003133058548,
+    0.05521753430366516,
+    -0.011000716127455235,
+    0.012998884543776512,
+    -0.008654562756419182,
+    0.003137072315439582,
+    -0.022086018696427345,
+    0.038922373205423355,
+    -0.019050320610404015,
+    0.012335358187556267,
+    -0.026036297902464867,
+    0.0172562412917614,
+    -0.07228259742259979,
+    -0.03862637281417847,
+    -0.07215515524148941,
+    0.060521405190229416,
+    0.05044179409742355,
+    -0.06346166878938675,
+    0.06439883261919022,
+    0.014913883060216904,
+    0.011551791802048683,
+    -0.09203612804412842,
+    0.027913887053728104,
+    -0.11975494772195816,
+    -0.11351045966148376,
+    0.03696557506918907,
+    -0.029501713812351227,
+    -0.07491136342287064,
+    -0.04788258299231529,
+    -0.05375693738460541,
+    0.05536575987935066,
+    0.0653357282280922,
+    -0.07145888358354568,
+    0.05308516323566437,
+    0.0013965044636279345,
+    0.1111297681927681,
+    0.07500024139881134,
+    -0.006990945897996426,
+    -0.020333027467131615,
+    -0.0070749372243881226,
+    -0.08305133134126663,
+    -0.05452587828040123,
+    -0.06870575994253159,
+    0.04323587194085121,
+    0.0727744847536087,
+    0.031302228569984436,
+    0.015705948695540428,
+    -0.028855348005890846,
+    0.045870207250118256,
+    0.07742083817720413,
+    -0.0012314228806644678,
+    0.1350875198841095,
+    0.06196130812168121,
+    0.008475215174257755,
+    -0.06582474708557129,
+    -0.006859523709863424,
+    -0.03575064241886139,
+    -0.13206082582473755,
+    0.0534491203725338,
+    -0.008814974687993526,
+    0.04586765170097351,
+    -0.02129283919930458,
+    0.034293241798877716,
+    -0.029934722930192947,
+    -0.0008200700394809246,
+    0.07550056278705597,
+    -0.006505644414573908,
+    -0.0523565337061882,
+    0.0752028301358223,
+    0.0340922512114048,
+    0.1043790727853775,
+    0.1055789664387703,
+    -0.015806229785084724,
+    0.046605661511421204,
+    -0.08589161187410355,
+    0.025343922898173332,
+    -0.025800639763474464,
+    -0.02622675523161888,
+    0.04507738724350929,
+    -0.05782238394021988,
+    -0.01985161565244198,
+    0.03677981346845627,
+    9.55414889068544e-35,
+    0.0663837268948555,
+    0.018371721729636192,
+    -0.029501385986804962,
+    0.010038718581199646,
+    -0.05467132478952408,
+    0.03690716251730919,
+    0.052371278405189514,
+    -0.05107720196247101,
+    0.0683261826634407,
+    0.0871800035238266,
+    -0.05362559109926224,
+    -0.02661345712840557,
+    0.10309913754463196,
+    -0.03691184148192406,
+    0.0364970788359642,
+    -0.015702182427048683,
+    0.08241265267133713,
+    -0.008815119042992592,
+    0.032507698982954025,
+    0.032098520547151566,
+    0.0380973257124424,
+    0.09004262834787369,
+    -0.041268136352300644,
+    -0.0241867545992136,
+    -0.04569084942340851,
+    0.015622066333889961,
+    -0.020067894831299782,
+    -0.11648212373256683,
+    -0.08487863838672638,
+    -0.014896485954523087,
+    0.0225985087454319,
+    0.045594457536935806,
+    0.06956251710653305,
+    -0.031480610370635986,
+    -0.043085310608148575,
+    0.02380537986755371,
+    0.07702018320560455,
+    0.040963947772979736,
+    0.01756342686712742,
+    0.11138647794723511,
+    0.04434084892272949,
+    -0.05291806161403656,
+    0.10043199360370636,
+    0.12164633721113205,
+    -0.010720239952206612,
+    0.006564388982951641,
+    -0.04993792623281479,
+    -0.0020947051234543324,
+    -0.05871592462062836,
+    0.0789191871881485,
+    0.061685655266046524,
+    0.0892050713300705,
+    -0.12716388702392578,
+    0.05655987560749054,
+    0.05090566724538803,
+    0.06263700127601624,
+    0.049451760947704315,
+    -0.0883234515786171,
+    -0.0023302296176552773,
+    -0.08080266416072845,
+    -0.052525922656059265,
+    -0.020103903487324715,
+    -0.024905728176236153,
+    0.038081951439380646,
+    0.08309306204319,
+    -0.05333547666668892,
+    0.010403011925518513,
+    -0.0258070919662714,
+    -0.06121823564171791,
+    -0.025697609409689903,
+    -0.02616633102297783,
+    -0.018929412588477135,
+    0.06155195087194443,
+    -0.05731051787734032,
+    0.004335026256740093,
+    -0.02496805228292942,
+    0.025982476770877838,
+    -0.002486378187313676,
+    -0.013474710285663605,
+    0.07219655811786652,
+    -0.10969606786966324,
+    0.03599836304783821,
+    0.03522292897105217,
+    0.017487782984972,
+    0.008442533202469349,
+    -0.1062115728855133,
+    0.0630354955792427,
+    -0.009965191595256329,
+    0.034072473645210266,
+    0.030298573896288872,
+    0.05268528312444687,
+    0.010969867929816246,
+    0.05337359383702278,
+    0.03424440696835518,
+    -0.0010590794263407588,
+    -1.6980603589900056e-8,
+    0.013226164504885674,
+    0.03761453554034233,
+    -0.03238803893327713,
+    0.020307892933487892,
+    0.0401875264942646,
+    -0.02614547498524189,
+    0.01720489002764225,
+    0.12764641642570496,
+    -0.043605659157037735,
+    0.03151727467775345,
+    0.037539996206760406,
+    0.0902584120631218,
+    -0.07532524317502975,
+    0.011757980100810528,
+    0.016354301944375038,
+    0.01960248313844204,
+    -0.027000896632671356,
+    -0.0800439864397049,
+    -0.0732748880982399,
+    -0.05045374110341072,
+    -0.008309233002364635,
+    -0.0678190067410469,
+    0.010282743722200394,
+    0.037956129759550095,
+    0.022045718505978584,
+    -0.006209579762071371,
+    0.06127163767814636,
+    0.04946750029921532,
+    0.0728040561079979,
+    0.02353738062083721,
+    0.03374583646655083,
+    -0.03122190199792385,
+    -0.03837092965841293,
+    0.026611557230353355,
+    -0.09268838167190552,
+    0.029648829251527786,
+    0.001486529828980565,
+    0.013703974895179272,
+    -0.009105739183723927,
+    0.01526702381670475,
+    0.0012216480681672692,
+    -0.029057135805487633,
+    -0.05079018697142601,
+    0.09230435639619827,
+    0.08379538357257843,
+    0.04233692213892937,
+    -0.12313538044691086,
+    0.03205897659063339,
+    -0.00620040949434042,
+    -0.05959516018629074,
+    -0.06042671576142311,
+    -0.04946053773164749,
+    0.07615862786769867,
+    0.060924232006073,
+    0.07904589921236038,
+    0.03751104325056076,
+    -0.0239972323179245,
+    0.010569204576313496,
+    0.0219955425709486,
+    0.03590787202119827,
+    -0.003085639327764511,
+    0.051656778901815414,
+    0.006434675771743059,
+    -0.05593699961900711
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "start": 0,
+        "content": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "start": 0,
+        "content": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention."
+      }
+    ]
+  }
+}

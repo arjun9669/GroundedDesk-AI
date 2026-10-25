@@ -1,0 +1,1438 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "FC01",
+  "question": "When did Bellhaven Textile Museum relocate its collection?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When did Bellhaven Textile Museum relocate its collection?",
+    "expected_display": "When did Bellhaven Textile Museum relocate its collection?",
+    "rendered_question": "When did Bellhaven Textile Museum relocate its collection?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909.",
+    "sources": [
+      {
+        "filename": "01_Bellhaven_Textile_Museum.txt",
+        "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.\n\nDecorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a paint",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen did Bellhaven Textile Museum relocate its collection?\n\nSearched all files: 01_Bellhaven_Textile_Museum.txt · 02_Kestwick_Lens_Workshop.txt · 03_Ardmere_River_Station.txt · 04_Larchfen_Seed_Depot.txt · 05_Brindale_Music_Library.txt · 06_Tarrow_Glass_Laboratory.txt · 07_Westrill_Canal_Office.txt · 08_Oakenford_Survey_Store.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The Bellhaven Textile Museum relocated its collection in 1909.\n\nSOURCE EVIDENCE\n[1]\n01_Bellhaven_Textile_Museum.txt\n\nText line 1 (normalized extraction)\n\nThe Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open. Decorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a paint\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "904ac101-b63e-4513-960b-b9a5001f8200:0",
+        "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+        "filename": "01_Bellhaven_Textile_Museum.txt",
+        "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.\n\nDecorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a paint",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+        "score": 0.0476,
+        "lexicalScore": 10.220167170468686,
+        "semanticScore": 0.8530827763642358,
+        "matchedTerms": [
+          "bellhaven",
+          "textile",
+          "museum",
+          "collection"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "904ac101-b63e-4513-960b-b9a5001f8200:0",
+        "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+        "filename": "01_Bellhaven_Textile_Museum.txt",
+        "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.\n\nDecorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a painted harbour map.\n\nThe display cases use an argon fill because argon slows oxidation of the dyed fibres. The outer frame is aluminium and the shelf lab",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+        "score": 0.0476,
+        "lexicalScore": 10.220167170468686,
+        "semanticScore": 0.8530827763642358,
+        "matchedTerms": [
+          "bellhaven",
+          "textile",
+          "museum",
+          "collection"
+        ],
+        "start": 0,
+        "end": 211
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Bellhaven_Textile_Museum.txt",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.8847194520677032,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Bellhaven_Textile_Museum.txt",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Bellhaven_Textile_Museum.txt",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "904ac101-b63e-4513-960b-b9a5001f8200:0",
+        "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+        "filename": "01_Bellhaven_Textile_Museum.txt",
+        "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.\n\nDecorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a painted harbour map.\n\nThe display cases use an argon fill because argon slows oxidation of the dyed fibres. The outer frame is aluminium and the shelf lab",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+        "score": 0.0476,
+        "lexicalScore": 10.220167170468686,
+        "semanticScore": 0.8530827763642358,
+        "matchedTerms": [
+          "bellhaven",
+          "textile",
+          "museum",
+          "collection"
+        ],
+        "start": 0,
+        "end": 211
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Bellhaven_Textile_Museum.txt",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.8847194520677032,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Bellhaven_Textile_Museum.txt",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Bellhaven_Textile_Museum.txt",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Bellhaven_Textile_Museum.txt",
+      "start": 0,
+      "content": "The Bellhaven Textile Museum relocated its collection in 1909.",
+      "semanticScore": 0.8847194520677032,
+      "lexicalScore": 14.968410104194469
+    },
+    {
+      "filename": "01_Bellhaven_Textile_Museum.txt",
+      "start": 507,
+      "content": "Bellhaven Textile Museum visitor registers are retained for 18 months, unless an unresolved access complaint requires longer retention.",
+      "semanticScore": 0.6089131968686756,
+      "lexicalScore": 7.77117988632465
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+      "value": "The Bellhaven Textile Museum relocated its collection in 1909.",
+      "start": 0,
+      "end": 62,
+      "similarity": 0.8847194520677032,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+      "value": "Its first conservation project finished in 1954; the second finished in 1982.",
+      "start": 63,
+      "end": 140,
+      "similarity": 0.2461200739113031,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+      "value": "A proposed closure in 2004 was rejected, and the museum remained open.",
+      "start": 141,
+      "end": 211,
+      "similarity": 0.30380277928622484,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+      "value": "Decorative weaving panels line the upper stair rail.",
+      "start": 213,
+      "end": 265,
+      "similarity": 0.2325801288341265,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+      "value": "The entrance crown carries a bronze compass.",
+      "start": 266,
+      "end": 310,
+      "similarity": 0.18758409580025157,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+      "value": "The lower wall displays a painted harbour map.",
+      "start": 311,
+      "end": 357,
+      "similarity": 0.09668618143979925,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+      "value": "The display cases use an argon fill because argon slows oxidation of the dyed fibres.",
+      "start": 359,
+      "end": 444,
+      "similarity": 0.10407805401230462,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+      "value": "The outer frame is aluminium and the shelf labels are paper.",
+      "start": 445,
+      "end": 505,
+      "similarity": 0.11451976813588254,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+      "value": "Bellhaven Textile Museum visitor registers are retained for 18 months, unless an unresolved access complaint requires longer retention.",
+      "start": 507,
+      "end": 642,
+      "similarity": 0.6089131968686756,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "Kestwick Lens Workshop opened its public test bench in 1998.",
+      "start": 0,
+      "end": 60,
+      "similarity": 0.18868018319871685,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "Its warehouse moved in 2013, and its roof was renewed in 2021.",
+      "start": 61,
+      "end": 123,
+      "similarity": 0.2525500887242499,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "Nera polishes five lenses per day.",
+      "start": 125,
+      "end": 159,
+      "similarity": 0.06466502964464926,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "Olin labels eight crates per day.",
+      "start": 160,
+      "end": 193,
+      "similarity": 0.05655470889014959,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "Nera checks two gauges per day.",
+      "start": 194,
+      "end": 225,
+      "similarity": 0.14851988998412025,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "The Kestwick Lens Workshop winter average temperature is 11 degrees Celsius.",
+      "start": 227,
+      "end": 303,
+      "similarity": 0.10467309413652236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "Its lowest recorded winter temperature is minus 6 degrees Celsius; the highest daily reading is 38 degrees Celsius.",
+      "start": 304,
+      "end": 419,
+      "similarity": 0.10276986473658466,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "Lubricate the Kestwick Lens Workshop rig every 96 hours in the clean bay and every 48 hours in the dusty bay.",
+      "start": 421,
+      "end": 530,
+      "similarity": 0.15467970497853456,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "The inspection interval remains 24 hours in both bays.",
+      "start": 531,
+      "end": 585,
+      "similarity": 0.1613055083994678,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+      "start": 587,
+      "end": 708,
+      "similarity": 0.1682757903967315,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+      "value": "Kestwick Lens Workshop calibration logs are retained for 12 months, unless an unresolved calibration dispute requires longer retention.",
+      "start": 710,
+      "end": 845,
+      "similarity": 0.1442978167392267,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "45489500-c2d7-4ffb-a3b0-76d91d6ff152",
+      "value": "Orders released before 12:35 depart on the current operating day.",
+      "start": 0,
+      "end": 65,
+      "similarity": 0.1113068688015134,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "45489500-c2d7-4ffb-a3b0-76d91d6ff152",
+      "value": "At or after 12:35, departure is the next operating day, unless a river inspection hold is still active.",
+      "start": 66,
+      "end": 169,
+      "similarity": 0.09544184715673965,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "45489500-c2d7-4ffb-a3b0-76d91d6ff152",
+      "value": "Ardmere River Station cold samples must remain between 2 and 6 degrees Celsius during carriage.",
+      "start": 171,
+      "end": 266,
+      "similarity": 0.08380164471707892,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "45489500-c2d7-4ffb-a3b0-76d91d6ff152",
+      "value": "Ardmere River Station dispatch records are retained for 16 months, unless an unresolved flood review requires longer retention.",
+      "start": 268,
+      "end": 395,
+      "similarity": 0.11083039646783767,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "45489500-c2d7-4ffb-a3b0-76d91d6ff152",
+      "value": "Ardmere River Station acknowledges a carriage request within two operating days.",
+      "start": 397,
+      "end": 477,
+      "similarity": 0.10261452276891427,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "45489500-c2d7-4ffb-a3b0-76d91d6ff152",
+      "value": "Acknowledgement does not guarantee departure.",
+      "start": 478,
+      "end": 523,
+      "similarity": 0.011233571590578062,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "afb852d2-9126-42d4-9b0a-b81f00c5c70c",
+      "value": "Release ticket orders before 09:50 for departure on the current collection day.",
+      "start": 0,
+      "end": 79,
+      "similarity": 0.1595928875341884,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "afb852d2-9126-42d4-9b0a-b81f00c5c70c",
+      "value": "Ticket orders released at or after 09:50 depart on the next collection day, unless a seed screening hold remains active.",
+      "start": 80,
+      "end": 200,
+      "similarity": 0.16622585721518776,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "afb852d2-9126-42d4-9b0a-b81f00c5c70c",
+      "value": "Tavin sorts seven trays per day.",
+      "start": 202,
+      "end": 234,
+      "similarity": 0.15654821424171553,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "afb852d2-9126-42d4-9b0a-b81f00c5c70c",
+      "value": "Ema labels three packets per day.",
+      "start": 235,
+      "end": 268,
+      "similarity": 0.0852685040505824,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "afb852d2-9126-42d4-9b0a-b81f00c5c70c",
+      "value": "Tavin checks two bins per day.",
+      "start": 269,
+      "end": 299,
+      "similarity": 0.09505446951605051,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "afb852d2-9126-42d4-9b0a-b81f00c5c70c",
+      "value": "The Larchfen Seed Depot dispatch packet includes a route card, seal register, depot label, and receipt.",
+      "start": 301,
+      "end": 404,
+      "similarity": 0.13795162137182193,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "afb852d2-9126-42d4-9b0a-b81f00c5c70c",
+      "value": "Larchfen Seed Depot accession records are retained for 5 years, unless an unresolved quarantine case requires longer retention.",
+      "start": 406,
+      "end": 533,
+      "similarity": 0.1342462775127728,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "Brindale Music Library opened its catalogue store in 1958.",
+      "start": 0,
+      "end": 58,
+      "similarity": 0.2981965241316035,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "Its warehouse relocation took place in 1976.",
+      "start": 59,
+      "end": 103,
+      "similarity": 0.3193049299789769,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "The main roof was rebuilt in 1999.",
+      "start": 104,
+      "end": 138,
+      "similarity": 0.14380609915673526,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "The Brindale Music Library catalogue Echoes of Reed was published in 1991.",
+      "start": 140,
+      "end": 214,
+      "similarity": 0.22982735193234433,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "A different catalogue, Songs of Flint, was published in 2007.",
+      "start": 215,
+      "end": 276,
+      "similarity": 0.16284124960591037,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "Neither is designated the large work.",
+      "start": 277,
+      "end": 314,
+      "similarity": 0.07792393339643766,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "Each Brindale Music Library guided session admits at most 28 visitors.",
+      "start": 316,
+      "end": 386,
+      "similarity": 0.09666496665531997,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "Brindale Music Library acknowledges a loan request within four business days.",
+      "start": 388,
+      "end": 465,
+      "similarity": 0.11380570357497524,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "Acknowledgement does not promise confirmation of a loan.",
+      "start": 466,
+      "end": 522,
+      "similarity": 0.007112600283525696,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "Brindale Music Library loan receipts are retained for 9 months, unless an unresolved missing-instrument claim requires longer retention.",
+      "start": 524,
+      "end": 660,
+      "similarity": 0.10222090803487795,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "The highest monthly mean temperature in the Brindale Music Library store is 25 degrees Celsius in August.",
+      "start": 662,
+      "end": 767,
+      "similarity": 0.10504675327603648,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ecfc8642-9ce0-4e54-81a4-57106ecd23d3",
+      "value": "Its highest daily reading is 37 degrees Celsius.",
+      "start": 768,
+      "end": 816,
+      "similarity": 0.07225675039032589,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "Tarrow Glass Laboratory uses dry nitrogen in its display vessels because dry nitrogen prevents moisture from clouding the coating.",
+      "start": 0,
+      "end": 130,
+      "similarity": 0.0881099675199923,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "The support frames are steel and the labels are card.",
+      "start": 131,
+      "end": 184,
+      "similarity": 0.04678493146500228,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "Inspection emblems decorate the side balcony windows at Tarrow Glass Laboratory.",
+      "start": 186,
+      "end": 266,
+      "similarity": 0.2639133263549285,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "The entrance arch has a blue crest, and the ceiling carries a brass vane.",
+      "start": 267,
+      "end": 340,
+      "similarity": 0.15823772152068952,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "The Tarrow Glass Laboratory winter average temperature is 12 degrees Celsius.",
+      "start": 342,
+      "end": 419,
+      "similarity": 0.1054792972347323,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "Its highest monthly mean is 26 degrees Celsius in June, and its highest daily reading is 39 degrees Celsius.",
+      "start": 420,
+      "end": 528,
+      "similarity": 0.010021808216525858,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "No absolute winter minimum is stated.",
+      "start": 529,
+      "end": 566,
+      "similarity": 0.07218707933398048,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "The Tarrow Glass Laboratory rig needs lubrication every 72 hours in normal conditions and every 36 hours in dusty conditions.",
+      "start": 568,
+      "end": 693,
+      "similarity": 0.11357104328238471,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "Its inspection interval remains 18 hours in either condition.",
+      "start": 694,
+      "end": 755,
+      "similarity": 0.16352448798544744,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "Purchases above 7900 at Tarrow Glass Laboratory require written approval from both the Lab Curator and the Safety Warden.",
+      "start": 757,
+      "end": 878,
+      "similarity": 0.24641702062878676,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4bd2a7d4-37c9-4c23-b61a-f0449c1c1994",
+      "value": "Each Tarrow Glass Laboratory guided session admits at most 18 visitors.",
+      "start": 880,
+      "end": 951,
+      "similarity": 0.13486263415869695,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7ecbddb6-71ca-41a5-bcd7-252c1a68c27e",
+      "value": "Westrill Canal Office moved its dispatch counter in 1917.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.19470658576063893,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7ecbddb6-71ca-41a5-bcd7-252c1a68c27e",
+      "value": "Its first restoration was completed in 1965, and its second restoration was completed in 2003.",
+      "start": 58,
+      "end": 152,
+      "similarity": 0.2775934315246739,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7ecbddb6-71ca-41a5-bcd7-252c1a68c27e",
+      "value": "A proposed closure in 1978 was rejected and did not occur.",
+      "start": 153,
+      "end": 211,
+      "similarity": 0.05546233134629497,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7ecbddb6-71ca-41a5-bcd7-252c1a68c27e",
+      "value": "Pera registers four permits per day.",
+      "start": 213,
+      "end": 249,
+      "similarity": 0.09463787251951516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7ecbddb6-71ca-41a5-bcd7-252c1a68c27e",
+      "value": "Sorin archives six maps per day.",
+      "start": 250,
+      "end": 282,
+      "similarity": 0.2001079062888651,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7ecbddb6-71ca-41a5-bcd7-252c1a68c27e",
+      "value": "Pera checks two seals per day.",
+      "start": 283,
+      "end": 313,
+      "similarity": 0.041588723875374094,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7ecbddb6-71ca-41a5-bcd7-252c1a68c27e",
+      "value": "Westrill Canal Office toll receipts are retained for 10 months, unless an unresolved toll claim requires longer retention.",
+      "start": 315,
+      "end": 437,
+      "similarity": 0.08973154486406168,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7ecbddb6-71ca-41a5-bcd7-252c1a68c27e",
+      "value": "The Westrill Canal Office boarding packet contains a route plan, vessel register, radio authorization, and boarding pass.",
+      "start": 439,
+      "end": 560,
+      "similarity": -0.020248412798581316,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b8c7c02-1e09-4624-8510-d66fde115f61",
+      "value": "Oakenford Survey Store opened its public room in 1936.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.30034441769915193,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b8c7c02-1e09-4624-8510-d66fde115f61",
+      "value": "Its warehouse relocation took place in 1987, and its loading ramp was rebuilt in 2015.",
+      "start": 55,
+      "end": 141,
+      "similarity": 0.2598680669055072,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b8c7c02-1e09-4624-8510-d66fde115f61",
+      "value": "The Oakenford Survey Store Control Ledger was published in 2014.",
+      "start": 143,
+      "end": 207,
+      "similarity": 0.2727271038501806,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b8c7c02-1e09-4624-8510-d66fde115f61",
+      "value": "A different book, Field Atlas, was published in 2020.",
+      "start": 208,
+      "end": 261,
+      "similarity": 0.15576984915669495,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b8c7c02-1e09-4624-8510-d66fde115f61",
+      "value": "Neither is designated the large book.",
+      "start": 262,
+      "end": 299,
+      "similarity": 0.12053567672269314,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b8c7c02-1e09-4624-8510-d66fde115f61",
+      "value": "Each Oakenford Survey Store guided session admits at most 22 visitors.",
+      "start": 301,
+      "end": 371,
+      "similarity": 0.13385278028229836,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b8c7c02-1e09-4624-8510-d66fde115f61",
+      "value": "The Oakenford Survey Store highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 373,
+      "end": 463,
+      "similarity": 0.1173776323593167,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b8c7c02-1e09-4624-8510-d66fde115f61",
+      "value": "Its highest daily reading is 35 degrees Celsius and its lowest recorded winter reading is minus 4 degrees Celsius.",
+      "start": 464,
+      "end": 578,
+      "similarity": 0.061378898870568396,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8b8c7c02-1e09-4624-8510-d66fde115f61",
+      "value": "Oakenford Survey Store completed survey records are retained for 20 months, unless an unresolved audit dispute requires longer retention.",
+      "start": 580,
+      "end": 717,
+      "similarity": 0.1522461585947036,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "904ac101-b63e-4513-960b-b9a5001f8200:0",
+          "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+          "filename": "01_Bellhaven_Textile_Museum.txt",
+          "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.\n\nDecorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a painted harbour map.\n\nThe display cases use an argon fill because argon slows oxidation of the dyed fibres. The outer frame is aluminium and the shelf lab",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+          "score": 0.0476,
+          "lexicalScore": 10.220167170468686,
+          "semanticScore": 0.8530827763642358,
+          "matchedTerms": [
+            "bellhaven",
+            "textile",
+            "museum",
+            "collection"
+          ],
+          "start": 0,
+          "end": 211
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Bellhaven_Textile_Museum.txt",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8847194520677032,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Bellhaven_Textile_Museum.txt",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Bellhaven_Textile_Museum.txt",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "904ac101-b63e-4513-960b-b9a5001f8200:0",
+          "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+          "filename": "01_Bellhaven_Textile_Museum.txt",
+          "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.\n\nDecorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a painted harbour map.\n\nThe display cases use an argon fill because argon slows oxidation of the dyed fibres. The outer frame is aluminium and the shelf lab",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+          "score": 0.0476,
+          "lexicalScore": 10.220167170468686,
+          "semanticScore": 0.8530827763642358,
+          "matchedTerms": [
+            "bellhaven",
+            "textile",
+            "museum",
+            "collection"
+          ],
+          "start": 0,
+          "end": 211
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Bellhaven_Textile_Museum.txt",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8847194520677032,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Bellhaven_Textile_Museum.txt",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Bellhaven_Textile_Museum.txt",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "904ac101-b63e-4513-960b-b9a5001f8200:0",
+          "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+          "filename": "01_Bellhaven_Textile_Museum.txt",
+          "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.\n\nDecorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a paint",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "score": 0.0476,
+          "lexicalScore": 10.220167170468686,
+          "semanticScore": 0.8530827763642358,
+          "matchedTerms": [
+            "bellhaven",
+            "textile",
+            "museum",
+            "collection"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Bellhaven_Textile_Museum.txt",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8847194520677032,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Bellhaven_Textile_Museum.txt",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "904ac101-b63e-4513-960b-b9a5001f8200:0",
+          "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+          "filename": "01_Bellhaven_Textile_Museum.txt",
+          "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.\n\nDecorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a paint",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "score": 0.0476,
+          "lexicalScore": 10.220167170468686,
+          "semanticScore": 0.8530827763642358,
+          "matchedTerms": [
+            "bellhaven",
+            "textile",
+            "museum",
+            "collection"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Bellhaven_Textile_Museum.txt",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8847194520677032,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Bellhaven_Textile_Museum.txt",
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.07650824636220932,
+    0.0575343482196331,
+    -0.05703313276171684,
+    0.06576547026634216,
+    0.02406449057161808,
+    0.0021286513656377792,
+    -0.031425777822732925,
+    -0.06234005466103554,
+    -0.05594683066010475,
+    -0.04742651805281639,
+    0.049370620399713516,
+    0.02653665654361248,
+    0.057727355509996414,
+    0.029510844498872757,
+    -0.09163041412830353,
+    0.03255229815840721,
+    0.01625119335949421,
+    -0.019803637638688087,
+    0.07980019599199295,
+    0.04010782018303871,
+    -0.03618134558200836,
+    0.014219449833035469,
+    0.13692307472229004,
+    0.03363813832402229,
+    0.0053270310163497925,
+    0.04791219159960747,
+    -0.07792345434427261,
+    -0.041880059987306595,
+    0.010726560838520527,
+    -0.021317023783922195,
+    -0.020055584609508514,
+    0.054692286998033524,
+    -0.04470758140087128,
+    0.045272041112184525,
+    0.07553710788488388,
+    0.15101639926433563,
+    0.06990842521190643,
+    -0.007080038543790579,
+    0.02322235144674778,
+    -0.006232611369341612,
+    -0.0501549206674099,
+    0.026295501738786697,
+    -0.08838100731372833,
+    -0.056387048214673996,
+    -0.0024963810574263334,
+    0.06594671308994293,
+    0.10880947858095169,
+    -0.019920360296964645,
+    -0.018396945670247078,
+    0.003220754209905863,
+    0.028306232765316963,
+    0.08175546675920486,
+    0.008186474442481995,
+    -0.08227647840976715,
+    -0.047385383397340775,
+    0.12676337361335754,
+    0.014748773537576199,
+    -0.022859664633870125,
+    -0.05781421810388565,
+    0.05019351840019226,
+    0.06821656227111816,
+    -0.028480196371674538,
+    -0.11036258190870285,
+    -0.014893975108861923,
+    0.032577622681856155,
+    -0.03200861066579819,
+    -0.004337900783866644,
+    0.09984799474477768,
+    0.04851304367184639,
+    -0.1953747719526291,
+    0.08598929643630981,
+    -0.01569494977593422,
+    -0.033977966755628586,
+    0.0706387311220169,
+    0.006012738682329655,
+    -0.004587484057992697,
+    0.016935544088482857,
+    -0.01791348122060299,
+    -0.05371459200978279,
+    0.009810871444642544,
+    -0.039197180420160294,
+    -0.0784202441573143,
+    0.02943107672035694,
+    0.07531949132680893,
+    -0.06511404365301132,
+    0.03792519122362137,
+    -0.06771166622638702,
+    -0.00931196752935648,
+    -0.007917078211903572,
+    0.015604441054165363,
+    0.088240846991539,
+    -0.0031581625808030367,
+    -0.09323760867118835,
+    -0.04632437229156494,
+    -0.03762464597821236,
+    -0.06143677607178688,
+    -0.03515153005719185,
+    0.10611511021852493,
+    0.08145812153816223,
+    0.03058098442852497,
+    -0.038995131850242615,
+    -0.007155828643590212,
+    0.014041478745639324,
+    0.02735266275703907,
+    -0.04737149178981781,
+    -0.06963446736335754,
+    0.040181029587984085,
+    0.014128847979009151,
+    0.031145978718996048,
+    0.0027557238936424255,
+    0.030612507835030556,
+    0.017903737723827362,
+    0.02330450713634491,
+    -0.011175484396517277,
+    -0.053903914988040924,
+    0.02203182876110077,
+    -0.026765432208776474,
+    0.0029458459466695786,
+    0.0001238951663253829,
+    0.03189292177557945,
+    0.06751102954149246,
+    -0.0463334359228611,
+    -0.018427273258566856,
+    -0.010151157155632973,
+    -0.06817463040351868,
+    0.05315958335995674,
+    -0.03963374346494675,
+    -4.283171541294216e-33,
+    0.027979623526334763,
+    0.034467995166778564,
+    0.030791044235229492,
+    -0.021493297070264816,
+    0.02454461343586445,
+    -0.03653544932603836,
+    0.015972280874848366,
+    -0.062446583062410355,
+    -0.042145293205976486,
+    -0.0022941064089536667,
+    0.05338278040289879,
+    0.012484989129006863,
+    -0.09218839555978775,
+    -0.04090354964137077,
+    0.023134207352995872,
+    0.006447926629334688,
+    -0.056674063205718994,
+    -0.012282495386898518,
+    0.03989781066775322,
+    -0.0843319296836853,
+    -0.08016640692949295,
+    -0.06774763762950897,
+    0.029542554169893265,
+    0.045302145183086395,
+    0.024772418662905693,
+    0.025064367800951004,
+    0.008205397054553032,
+    0.04159524664282799,
+    0.07162324339151382,
+    0.020600879564881325,
+    0.11623350530862808,
+    -0.0325126014649868,
+    0.051687758415937424,
+    -0.01450309157371521,
+    -0.0012877872213721275,
+    0.07488296180963516,
+    -0.0446544848382473,
+    -0.03511904552578926,
+    0.016580477356910706,
+    0.014145076274871826,
+    0.09062022715806961,
+    0.025235502049326897,
+    0.00833836104720831,
+    0.07721998542547226,
+    0.0051912893541157246,
+    0.05081843212246895,
+    0.07260631024837494,
+    0.0012788211461156607,
+    0.01561056636273861,
+    -0.009285803884267807,
+    0.018123671412467957,
+    0.0018596575828269124,
+    -0.0013650936307385564,
+    0.0018907294142991304,
+    -0.02109834924340248,
+    -0.04844546318054199,
+    0.018973680213093758,
+    -0.05004630982875824,
+    0.06997615098953247,
+    0.019954927265644073,
+    -0.001088206423446536,
+    0.0551844984292984,
+    0.047664791345596313,
+    0.02197474054992199,
+    0.14831392467021942,
+    -0.037567198276519775,
+    -0.02930053323507309,
+    -0.01785453036427498,
+    -0.000844949739985168,
+    -0.01913762465119362,
+    -0.0023232095409184694,
+    0.03925945237278938,
+    0.00855910312384367,
+    -0.008922687731683254,
+    0.03994026407599449,
+    0.03379566967487335,
+    -0.08793874084949493,
+    0.048621177673339844,
+    -0.02500835806131363,
+    -0.07735584676265717,
+    0.02886263094842434,
+    0.037747789174318314,
+    -0.016475936397910118,
+    0.039072755724191666,
+    -0.018297303467988968,
+    -0.04281362518668175,
+    0.01525531243532896,
+    -0.04963202401995659,
+    0.012787851504981518,
+    -0.00362866697832942,
+    0.012019872665405273,
+    -0.008700953796505928,
+    -0.023956527933478355,
+    -0.013244086876511574,
+    -0.07684383541345596,
+    3.049708604916089e-33,
+    0.045255038887262344,
+    -0.03180982917547226,
+    0.02211816981434822,
+    -0.0002915611257776618,
+    0.016877494752407074,
+    0.008045246824622154,
+    -0.02735699526965618,
+    0.056962646543979645,
+    -0.04288267344236374,
+    0.02229388803243637,
+    -0.01217565219849348,
+    0.039222944527864456,
+    -0.039661627262830734,
+    0.009658174589276314,
+    -0.001277828123420477,
+    0.09298252314329147,
+    0.10118403285741806,
+    -0.02366689406335354,
+    -0.052797071635723114,
+    -0.0772230252623558,
+    0.0009828563779592514,
+    0.016064584255218506,
+    -0.03967781737446785,
+    -0.05631260201334953,
+    -0.09009753167629242,
+    0.031277600675821304,
+    -0.016985245048999786,
+    -0.024777067825198174,
+    -0.004157023038715124,
+    -0.0804649367928505,
+    0.03830728679895401,
+    -0.08179307729005814,
+    0.10197968780994415,
+    0.14333118498325348,
+    0.009445019997656345,
+    -0.05898382514715195,
+    0.06635452061891556,
+    0.03431733697652817,
+    0.025036221370100975,
+    0.027020979672670364,
+    0.006733829155564308,
+    -0.026690306141972542,
+    0.0007441759807989001,
+    0.06729432195425034,
+    0.0512985959649086,
+    -0.10975727438926697,
+    -0.0837579295039177,
+    -0.03288961574435234,
+    -0.03861996531486511,
+    -0.017283329740166664,
+    -0.014089263044297695,
+    0.03008761629462242,
+    0.02214781381189823,
+    -0.06992176920175552,
+    0.045727066695690155,
+    0.08340739458799362,
+    -0.038964807987213135,
+    0.02428155019879341,
+    0.022206606343388557,
+    0.016087189316749573,
+    0.06136529892683029,
+    0.013631110079586506,
+    -0.01801237091422081,
+    0.06531903147697449,
+    0.044190943241119385,
+    -0.01968221366405487,
+    0.018241874873638153,
+    -0.01696527563035488,
+    -0.06078571826219559,
+    -0.033588942140340805,
+    0.007436628453433514,
+    0.05525153502821922,
+    0.008268657140433788,
+    -0.10412925481796265,
+    -0.014493852853775024,
+    0.02798561193048954,
+    0.055040888488292694,
+    0.05054248124361038,
+    -0.026088528335094452,
+    -0.019356392323970795,
+    -0.08429881930351257,
+    -0.02975780889391899,
+    0.0012984377099201083,
+    0.008510924875736237,
+    0.01567312330007553,
+    -0.004265113268047571,
+    0.012045172974467278,
+    0.014027777127921581,
+    -0.038196027278900146,
+    -0.0202729981392622,
+    -0.042040519416332245,
+    -0.0034405726473778486,
+    0.05977358669042587,
+    -0.02611716464161873,
+    0.0144624263048172,
+    -1.6204523944907123e-8,
+    -0.07076896727085114,
+    -0.005308893509209156,
+    -0.02311761863529682,
+    -0.02112915739417076,
+    0.06510772556066513,
+    0.01801644079387188,
+    0.054585520178079605,
+    0.12249888479709625,
+    -0.05167746543884277,
+    0.05370905622839928,
+    -0.016861479729413986,
+    -0.04677361994981766,
+    -0.033983681350946426,
+    0.0018552409019321203,
+    0.010419505648314953,
+    -0.08546455204486847,
+    0.023712970316410065,
+    0.0363878570497036,
+    -0.09077026695013046,
+    0.004732574336230755,
+    0.09489624202251434,
+    0.02967911586165428,
+    0.05717261880636215,
+    0.06309261173009872,
+    -0.10372314602136612,
+    -0.014288309030234814,
+    -0.07250325381755829,
+    -0.031236685812473297,
+    0.03724472597241402,
+    0.03536086156964302,
+    -0.03799894452095032,
+    0.09831970930099487,
+    0.016849128529429436,
+    -0.01858052797615528,
+    -0.08298791944980621,
+    -0.14409944415092468,
+    -0.04424130916595459,
+    0.019308434799313545,
+    -0.01665666699409485,
+    -0.059777095913887024,
+    0.02389266900718212,
+    -0.09016642719507217,
+    -0.07810704410076141,
+    0.05953223258256912,
+    0.10529963672161102,
+    -0.009820030070841312,
+    0.06493013352155685,
+    -0.0795987918972969,
+    0.013706597499549389,
+    0.06020103767514229,
+    0.012664742767810822,
+    -0.009319816716015339,
+    0.032486528158187866,
+    0.012859133072197437,
+    -0.060466062277555466,
+    -0.0272997934371233,
+    0.023162059485912323,
+    -0.020554939284920692,
+    -0.012173921801149845,
+    -0.03524107113480568,
+    0.02803460694849491,
+    -0.1097472682595253,
+    -0.05691572278738022,
+    0.012886537238955498
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Bellhaven_Textile_Museum.txt",
+        "start": 0,
+        "content": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.\n\nDecorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a painted harbour map.\n\nThe display cases use an argon fill because argon slows oxidation of the dyed fibres. The outer frame is aluminium and the shelf labels are paper.\n\nBellhaven Textile Museum visitor registers are retained for 18 months, unless an unresolved access complaint requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Bellhaven_Textile_Museum.txt",
+        "start": 0,
+        "content": "The Bellhaven Textile Museum relocated its collection in 1909. Its first conservation project finished in 1954; the second finished in 1982. A proposed closure in 2004 was rejected, and the museum remained open.\n\nDecorative weaving panels line the upper stair rail. The entrance crown carries a bronze compass. The lower wall displays a painted harbour map.\n\nThe display cases use an argon fill because argon slows oxidation of the dyed fibres. The outer frame is aluminium and the shelf labels are paper.\n\nBellhaven Textile Museum visitor registers are retained for 18 months, unless an unresolved access complaint requires longer retention."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1237 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "F16",
+  "question": "When was Velric Instrument Workshop founded?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When was Velric Instrument Workshop founded?",
+    "expected_display": "When was Velric Instrument Workshop founded?",
+    "rendered_question": "When was Velric Instrument Workshop founded?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Velric Instrument Workshop was founded in 1981.",
+    "sources": [
+      {
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote,",
+        "quote": "Velric Instrument Workshop was founded in 1981."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen was Velric Instrument Workshop founded?\n\nSearched all files: 01_Flintmere_Reservoir.txt · 02_Orren_Horology_Collection.txt · 03_Velric_Instrument_Workshop.txt · 04_Sable_Travelling_Books.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Velric Instrument Workshop was founded in 1981.\n\nSOURCE EVIDENCE\n[1]\n03_Velric_Instrument_Workshop.txt\n\nText line 1 (normalized extraction)\n\nVelric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022. Velric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote,\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Velric Instrument Workshop was founded in 1981.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "1c6e4931-dc75-45d8-a006-fccb3e01f03e:0",
+        "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote,",
+        "quote": "Velric Instrument Workshop was founded in 1981.",
+        "score": 0.0476,
+        "lexicalScore": 6.860495549617918,
+        "semanticScore": 0.6643197143506397,
+        "matchedTerms": [
+          "velric",
+          "instrument",
+          "workshop",
+          "founded"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "1c6e4931-dc75-45d8-a006-fccb3e01f03e:0",
+        "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\nVelric Instrument Wor",
+        "quote": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+        "score": 0.0476,
+        "lexicalScore": 6.860495549617918,
+        "semanticScore": 0.6643197143506397,
+        "matchedTerms": [
+          "velric",
+          "instrument",
+          "workshop",
+          "founded"
+        ],
+        "start": 0,
+        "end": 133
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Velric_Instrument_Workshop.txt",
+        "quote": "Velric Instrument Workshop was founded in 1981.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.8986933283009689,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Velric_Instrument_Workshop.txt",
+        "quote": "Velric Instrument Workshop was founded in 1981.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Velric_Instrument_Workshop.txt",
+        "quote": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "1c6e4931-dc75-45d8-a006-fccb3e01f03e:0",
+        "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "excerpt": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\nVelric Instrument Wor",
+        "quote": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+        "score": 0.0476,
+        "lexicalScore": 6.860495549617918,
+        "semanticScore": 0.6643197143506397,
+        "matchedTerms": [
+          "velric",
+          "instrument",
+          "workshop",
+          "founded"
+        ],
+        "start": 0,
+        "end": 133
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Velric_Instrument_Workshop.txt",
+        "quote": "Velric Instrument Workshop was founded in 1981.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 0,
+          "cosine": 0.8986933283009689,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Velric_Instrument_Workshop.txt",
+        "quote": "Velric Instrument Workshop was founded in 1981.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Velric_Instrument_Workshop.txt",
+        "quote": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Velric_Instrument_Workshop.txt",
+      "start": 0,
+      "content": "Velric Instrument Workshop was founded in 1981.",
+      "semanticScore": 0.8986933283009689,
+      "lexicalScore": 11.813553209522306
+    },
+    {
+      "filename": "03_Velric_Instrument_Workshop.txt",
+      "start": 392,
+      "content": "Velric Instrument Workshop acknowledges service requests within four business hours.",
+      "semanticScore": 0.644422268971881,
+      "lexicalScore": 5.99150349861251
+    },
+    {
+      "filename": "03_Velric_Instrument_Workshop.txt",
+      "start": 135,
+      "content": "Velric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director.",
+      "semanticScore": 0.5782354184427684,
+      "lexicalScore": 5.695112969782961
+    },
+    {
+      "filename": "03_Velric_Instrument_Workshop.txt",
+      "start": 569,
+      "content": "Velric Instrument Workshop has a highest monthly mean temperature of 27 degrees Celsius and a highest recorded daily temperature of 39 degrees Celsius.",
+      "semanticScore": 0.5164682904260581,
+      "lexicalScore": 4.584246449116334
+    },
+    {
+      "filename": "03_Velric_Instrument_Workshop.txt",
+      "start": 722,
+      "content": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room.",
+      "semanticScore": null,
+      "lexicalScore": 4.43542192100926
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "Flintmere Reservoir opened to visitors in 1906.",
+      "start": 0,
+      "end": 47,
+      "similarity": 0.0829595441303998,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994.",
+      "start": 48,
+      "end": 150,
+      "similarity": 0.06331866913924146,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "A proposal to close the visitor path in 2019 was rejected, and the path remained open.",
+      "start": 151,
+      "end": 237,
+      "similarity": 0.03321437601310087,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+      "start": 239,
+      "end": 335,
+      "similarity": -0.0320399050180351,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "The highest monthly mean is 19 degrees Celsius, in September.",
+      "start": 336,
+      "end": 397,
+      "similarity": -0.03762550633172311,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "The highest recorded daily temperature is 32 degrees Celsius.",
+      "start": 398,
+      "end": 459,
+      "similarity": -0.003875813867800122,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "Iona collects seven water samples per fortnight.",
+      "start": 461,
+      "end": 509,
+      "similarity": 0.18826468766547955,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "Tevan checks four level gauges per morning.",
+      "start": 510,
+      "end": 553,
+      "similarity": 0.15950961507194628,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "Iona checks two signboards per morning.",
+      "start": 554,
+      "end": 593,
+      "similarity": 0.16158243706696265,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "Keep Flintmere Reservoir visitor permits for 8 years.",
+      "start": 595,
+      "end": 648,
+      "similarity": 0.045037535791775975,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "An active access dispute suspends disposal until the dispute is resolved.",
+      "start": 649,
+      "end": 722,
+      "similarity": 0.03297635507137624,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "The Orren Horology Collection gallery relocation took place in 1934.",
+      "start": 0,
+      "end": 68,
+      "similarity": 0.22914348341606178,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "Its restoration took place in 1986.",
+      "start": 69,
+      "end": 104,
+      "similarity": 0.21068240816012157,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "A separate storehouse was inspected in 2001.",
+      "start": 105,
+      "end": 149,
+      "similarity": 0.11909917383839293,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "The Orren Horology Collection winter average temperature is 14 degrees Celsius; the absolute minimum winter temperature is 2 degrees Celsius.",
+      "start": 151,
+      "end": 292,
+      "similarity": 0.055843656724661246,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "The highest monthly mean is 21 degrees Celsius.",
+      "start": 293,
+      "end": 340,
+      "similarity": 0.02355773598951355,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions.",
+      "start": 342,
+      "end": 451,
+      "similarity": 0.1361430303549748,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "In a dusty room the lubrication interval is 48 operating hours.",
+      "start": 452,
+      "end": 515,
+      "similarity": 0.12455537848504879,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "The inspection interval stays at 24 operating hours in either room.",
+      "start": 516,
+      "end": 583,
+      "similarity": 0.1239509999173721,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "Orren Horology Collection loan receipts are retained for 6 years, except that an open ownership claim requires retention until the claim is settled.",
+      "start": 585,
+      "end": 733,
+      "similarity": 0.12577195086028345,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Velric Instrument Workshop was founded in 1981.",
+      "start": 0,
+      "end": 47,
+      "similarity": 0.8986933283009689,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+      "start": 48,
+      "end": 133,
+      "similarity": 0.25310387848738736,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Velric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director.",
+      "start": 135,
+      "end": 274,
+      "similarity": 0.5782354184427684,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+      "start": 275,
+      "end": 390,
+      "similarity": 0.05475178534312153,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Velric Instrument Workshop acknowledges service requests within four business hours.",
+      "start": 392,
+      "end": 476,
+      "similarity": 0.644422268971881,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "This acknowledgement is not a promise that the repair will be completed within four hours.",
+      "start": 477,
+      "end": 567,
+      "similarity": 0.0490282809251168,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Velric Instrument Workshop has a highest monthly mean temperature of 27 degrees Celsius and a highest recorded daily temperature of 39 degrees Celsius.",
+      "start": 569,
+      "end": 720,
+      "similarity": 0.5164682904260581,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room.",
+      "start": 722,
+      "end": 874,
+      "similarity": 0.3512407661050112,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Inspection remains every 14 operating hours in both conditions.",
+      "start": 875,
+      "end": 938,
+      "similarity": 0.09128322206932908,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Daro tunes three violins per week.",
+      "start": 940,
+      "end": 974,
+      "similarity": 0.2773418707615959,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Sela polishes five flutes per week.",
+      "start": 975,
+      "end": 1010,
+      "similarity": 0.32800993827496083,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Daro polishes one display stand per week.",
+      "start": 1011,
+      "end": 1052,
+      "similarity": 0.18172180352695957,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Sable Travelling Books moved its packing office in 2012.",
+      "start": 0,
+      "end": 56,
+      "similarity": 0.14369766497978329,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Its loading ramp was rebuilt in 2021.",
+      "start": 57,
+      "end": 94,
+      "similarity": 0.11554617580690407,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "The public reading desk opened in 2007.",
+      "start": 95,
+      "end": 134,
+      "similarity": 0.17018421081305468,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Mina sorts five return bins per day.",
+      "start": 136,
+      "end": 172,
+      "similarity": 0.04664525936775143,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Jules labels eight book bundles per day.",
+      "start": 173,
+      "end": 213,
+      "similarity": 0.10816969630478383,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Mina labels three route envelopes per day.",
+      "start": 214,
+      "end": 256,
+      "similarity": 0.13107284729577587,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "At Sable Travelling Books, orders released before 14:20 depart on the same service day.",
+      "start": 258,
+      "end": 345,
+      "similarity": 0.16292091355183955,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Orders released at or after 14:20 depart on the following service day, unless a road-closure hold is in effect.",
+      "start": 346,
+      "end": 457,
+      "similarity": 0.07160069863220063,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+      "start": 459,
+      "end": 575,
+      "similarity": 0.03618986508921115,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Keep dispatch receipts for 10 months, unless an unresolved loss claim requires longer retention.",
+      "start": 576,
+      "end": 672,
+      "similarity": -0.0651979381186185,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Sable Travelling Books acknowledges reservation requests within two service days.",
+      "start": 674,
+      "end": 755,
+      "similarity": 0.13201769348885267,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "An acknowledgement does not guarantee that a reserved book will be available.",
+      "start": 756,
+      "end": 833,
+      "similarity": 0.0601536229904315,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1c6e4931-dc75-45d8-a006-fccb3e01f03e:0",
+          "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+          "filename": "03_Velric_Instrument_Workshop.txt",
+          "excerpt": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\nVelric Instrument Wor",
+          "quote": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+          "score": 0.0476,
+          "lexicalScore": 6.860495549617918,
+          "semanticScore": 0.6643197143506397,
+          "matchedTerms": [
+            "velric",
+            "instrument",
+            "workshop",
+            "founded"
+          ],
+          "start": 0,
+          "end": 133
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Velric_Instrument_Workshop.txt",
+          "quote": "Velric Instrument Workshop was founded in 1981.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8986933283009689,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Velric_Instrument_Workshop.txt",
+          "quote": "Velric Instrument Workshop was founded in 1981.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Velric_Instrument_Workshop.txt",
+          "quote": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1c6e4931-dc75-45d8-a006-fccb3e01f03e:0",
+          "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+          "filename": "03_Velric_Instrument_Workshop.txt",
+          "excerpt": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\nVelric Instrument Wor",
+          "quote": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+          "score": 0.0476,
+          "lexicalScore": 6.860495549617918,
+          "semanticScore": 0.6643197143506397,
+          "matchedTerms": [
+            "velric",
+            "instrument",
+            "workshop",
+            "founded"
+          ],
+          "start": 0,
+          "end": 133
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Velric_Instrument_Workshop.txt",
+          "quote": "Velric Instrument Workshop was founded in 1981.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8986933283009689,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Velric_Instrument_Workshop.txt",
+          "quote": "Velric Instrument Workshop was founded in 1981.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Velric_Instrument_Workshop.txt",
+          "quote": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Velric Instrument Workshop was founded in 1981.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1c6e4931-dc75-45d8-a006-fccb3e01f03e:0",
+          "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+          "filename": "03_Velric_Instrument_Workshop.txt",
+          "excerpt": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote,",
+          "quote": "Velric Instrument Workshop was founded in 1981.",
+          "score": 0.0476,
+          "lexicalScore": 6.860495549617918,
+          "semanticScore": 0.6643197143506397,
+          "matchedTerms": [
+            "velric",
+            "instrument",
+            "workshop",
+            "founded"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Velric_Instrument_Workshop.txt",
+          "quote": "Velric Instrument Workshop was founded in 1981.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8986933283009689,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Velric_Instrument_Workshop.txt",
+          "quote": "Velric Instrument Workshop was founded in 1981.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Velric Instrument Workshop was founded in 1981.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1c6e4931-dc75-45d8-a006-fccb3e01f03e:0",
+          "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+          "filename": "03_Velric_Instrument_Workshop.txt",
+          "excerpt": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote,",
+          "quote": "Velric Instrument Workshop was founded in 1981.",
+          "score": 0.0476,
+          "lexicalScore": 6.860495549617918,
+          "semanticScore": 0.6643197143506397,
+          "matchedTerms": [
+            "velric",
+            "instrument",
+            "workshop",
+            "founded"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Velric_Instrument_Workshop.txt",
+          "quote": "Velric Instrument Workshop was founded in 1981.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 0,
+            "cosine": 0.8986933283009689,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Velric_Instrument_Workshop.txt",
+          "quote": "Velric Instrument Workshop was founded in 1981.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.019981155171990395,
+    -0.00837661698460579,
+    -0.08901417255401611,
+    -0.06319471448659897,
+    -0.15005263686180115,
+    0.023298000916838646,
+    -0.061638738960027695,
+    0.0028992011211812496,
+    -0.02230961248278618,
+    0.01513711828738451,
+    0.032010164111852646,
+    -0.02615485154092312,
+    0.006172218360006809,
+    -0.019090399146080017,
+    -0.047260582447052,
+    0.03457705304026604,
+    0.008529081009328365,
+    -0.0015638797776773572,
+    0.07525134831666946,
+    -0.016618525609374046,
+    -0.0442776195704937,
+    0.06077156960964203,
+    0.04739714413881302,
+    0.03745751082897186,
+    0.08765969425439835,
+    0.061934225261211395,
+    -0.0643647238612175,
+    0.038437820971012115,
+    0.08410339802503586,
+    0.028886165469884872,
+    -0.06510843336582184,
+    0.006171123590320349,
+    0.05589073523879051,
+    0.002455201232805848,
+    0.04832688719034195,
+    0.07153298705816269,
+    -0.0044290656223893166,
+    0.049863051623106,
+    -0.05971908941864967,
+    -0.00485658785328269,
+    -0.03998352959752083,
+    -0.02569357305765152,
+    0.019208377227187157,
+    -0.04876120761036873,
+    -0.04485946521162987,
+    0.040859758853912354,
+    0.034771278500556946,
+    -0.010860474780201912,
+    -0.038714513182640076,
+    0.04755321517586708,
+    -0.01838633604347706,
+    -0.07043089717626572,
+    0.0556003674864769,
+    -0.10045105963945389,
+    -0.03754096478223801,
+    0.025983644649386406,
+    0.0007491527940146625,
+    0.03897138312458992,
+    0.03984687477350235,
+    0.0018242329824715853,
+    0.030146846547722816,
+    -0.014289810322225094,
+    -0.11402501910924911,
+    0.02196390926837921,
+    0.01490812934935093,
+    0.003764508990570903,
+    0.002101264661177993,
+    -0.005168978124856949,
+    0.04258433356881142,
+    -0.06619761884212494,
+    0.0188427921384573,
+    -0.10094336420297623,
+    0.03564872965216637,
+    0.0030964857432991266,
+    0.009148181416094303,
+    0.023002438247203827,
+    0.04968411102890968,
+    -0.019770940765738487,
+    0.002946259453892708,
+    -0.07527841627597809,
+    0.08800164610147476,
+    0.03423761576414108,
+    -0.03899044916033745,
+    0.03934687748551369,
+    -0.01721394993364811,
+    0.011248838156461716,
+    -0.03589995205402374,
+    0.020268982276320457,
+    0.013611357659101486,
+    -0.08190225064754486,
+    0.041840262711048126,
+    0.022661058232188225,
+    -0.12986315786838531,
+    -0.02072603441774845,
+    0.0420229509472847,
+    -0.0003983744536526501,
+    -0.06803080439567566,
+    0.050299305468797684,
+    0.05432794615626335,
+    0.0769222229719162,
+    -0.04021529480814934,
+    -0.01059191394597292,
+    0.06741761416196823,
+    0.035371389240026474,
+    -0.09893704205751419,
+    -0.00985740590840578,
+    -0.028542881831526756,
+    0.03451313450932503,
+    -0.04368223622441292,
+    -0.07194479554891586,
+    -0.05279964953660965,
+    0.023981718346476555,
+    0.05057518929243088,
+    0.007080481853336096,
+    0.015250650234520435,
+    0.05494770035147667,
+    -0.009531368501484394,
+    0.04338638484477997,
+    0.022784650325775146,
+    -0.0666104406118393,
+    0.04678858816623688,
+    -0.04940773546695709,
+    -0.023419339209794998,
+    0.05610030144453049,
+    0.024042166769504547,
+    0.020774072036147118,
+    -0.01829417608678341,
+    -2.494458338175412e-33,
+    0.049152061343193054,
+    0.0038681281730532646,
+    0.014791300520300865,
+    0.04094062000513077,
+    0.054285477846860886,
+    -0.03251105174422264,
+    0.012893003411591053,
+    0.04482370987534523,
+    0.0192660354077816,
+    -0.0031511615961790085,
+    0.0652824118733406,
+    -0.015602695755660534,
+    0.007194015197455883,
+    -0.03288835287094116,
+    0.03823450207710266,
+    -0.030666697770357132,
+    -0.010139435529708862,
+    0.002275490667670965,
+    -0.007828621193766594,
+    -0.05558808520436287,
+    -0.013605433516204357,
+    -0.02064637467265129,
+    0.03763347491621971,
+    0.007782490458339453,
+    0.03535798564553261,
+    0.07758709788322449,
+    0.08576837182044983,
+    -0.007107671815901995,
+    0.019483787938952446,
+    0.0425250306725502,
+    0.07842712849378586,
+    -0.010771163739264011,
+    -0.019093766808509827,
+    -0.05174406245350838,
+    0.035331349819898605,
+    0.10817515850067139,
+    -0.08122371137142181,
+    -0.026696521788835526,
+    0.028167182579636574,
+    0.015045825392007828,
+    0.05065783113241196,
+    0.04792254418134689,
+    -0.01825021393597126,
+    -0.048243485391139984,
+    0.08707550913095474,
+    0.027523726224899292,
+    -0.04883936047554016,
+    0.08793081343173981,
+    0.1096544861793518,
+    0.004032482393085957,
+    0.017673930153250694,
+    0.0536687970161438,
+    -0.045013219118118286,
+    -0.026158584281802177,
+    0.08453278243541718,
+    -0.03560170531272888,
+    -0.02397550828754902,
+    0.06185445934534073,
+    -0.01904076337814331,
+    -0.01218394748866558,
+    -0.016467900946736336,
+    0.17875351011753082,
+    -0.005291631445288658,
+    0.06294237077236176,
+    0.02493714913725853,
+    -0.007451508194208145,
+    0.0012695507612079382,
+    -0.06364940106868744,
+    0.10834062844514847,
+    -0.12199342995882034,
+    -0.03985918313264847,
+    0.06241312623023987,
+    -0.029378768056631088,
+    -0.07871577888727188,
+    -0.034610357135534286,
+    0.026096444576978683,
+    -0.05488971620798111,
+    -0.012044437229633331,
+    -0.007181919179856777,
+    -0.023642612621188164,
+    -0.11944219470024109,
+    0.04422096535563469,
+    -0.012756574898958206,
+    0.02434331737458706,
+    -0.0186049435287714,
+    -0.02344304695725441,
+    0.014054172672331333,
+    -0.006906184367835522,
+    -0.029091138392686844,
+    0.006059877574443817,
+    -0.12479540705680847,
+    -0.02332034334540367,
+    -0.047403063625097275,
+    0.08870512247085571,
+    -0.03141815960407257,
+    1.2526241371450034e-33,
+    -0.003804650856181979,
+    0.01373959332704544,
+    -0.0182209350168705,
+    0.1079096794128418,
+    0.06789763271808624,
+    -0.03361048921942711,
+    -0.032521311193704605,
+    0.032202836126089096,
+    -0.010016590356826782,
+    0.045542310923337936,
+    0.08939936757087708,
+    -0.02565901353955269,
+    0.030940748751163483,
+    -0.012086705304682255,
+    0.05601973086595535,
+    0.018938452005386353,
+    -0.0721241757273674,
+    0.02639472857117653,
+    0.0080176442861557,
+    -0.03915240988135338,
+    0.0032170950435101986,
+    0.04396626353263855,
+    0.05461667478084564,
+    -0.046931616961956024,
+    -0.008102851919829845,
+    -0.0060873012989759445,
+    0.050405584275722504,
+    -0.014357016421854496,
+    -0.13353180885314941,
+    -0.006742718629539013,
+    -0.00015973638801369816,
+    -0.01529426034539938,
+    -0.04135841131210327,
+    -0.01693745329976082,
+    -0.010432758368551731,
+    0.042181260883808136,
+    0.024839457124471664,
+    0.0007826210930943489,
+    -0.0040415432304143906,
+    -0.0308071281760931,
+    0.012476705946028233,
+    0.06998170167207718,
+    -0.06210944056510925,
+    0.045067887753248215,
+    -0.08077968657016754,
+    -0.014669234864413738,
+    0.025724664330482483,
+    -0.0025156571064144373,
+    0.07137463241815567,
+    -0.11589410901069641,
+    0.04610060900449753,
+    -0.015043378807604313,
+    0.10215918719768524,
+    -0.1907104253768921,
+    0.0701005682349205,
+    0.06347482651472092,
+    0.009366313926875591,
+    -0.032697003334760666,
+    -0.08205220103263855,
+    0.0409257709980011,
+    0.037638816982507706,
+    -0.014551583677530289,
+    -0.06967032700777054,
+    -0.004062524065375328,
+    0.07115379720926285,
+    0.07165258377790451,
+    0.00997249037027359,
+    0.07821329683065414,
+    -0.010241420939564705,
+    -0.0018933062674477696,
+    0.09929993748664856,
+    0.02069622278213501,
+    0.01092532929033041,
+    0.022022496908903122,
+    -0.1102871298789978,
+    -0.004477911628782749,
+    0.004320044536143541,
+    -0.052487920969724655,
+    -0.027224231511354446,
+    -0.03145584091544151,
+    -0.02105690725147724,
+    -0.03814205154776573,
+    -0.025733184069395065,
+    0.03142073005437851,
+    0.003370520658791065,
+    0.058608878403902054,
+    0.027515288442373276,
+    -0.004744107834994793,
+    -0.0023190348874777555,
+    0.12132276594638824,
+    0.026844274252653122,
+    -0.0077376822009682655,
+    0.061470746994018555,
+    -0.04319684952497482,
+    0.06141659617424011,
+    -1.546739269997488e-8,
+    0.05532018467783928,
+    0.05932685360312462,
+    -0.06844381988048553,
+    0.007656510453671217,
+    -0.015417995862662792,
+    -0.051005128771066666,
+    0.10162316262722015,
+    0.024929532781243324,
+    -0.07223302870988846,
+    0.07988297939300537,
+    0.024303903803229332,
+    0.01745782606303692,
+    -0.028069626539945602,
+    -0.008791063912212849,
+    0.029788492247462273,
+    -0.045083727687597275,
+    -0.004292823374271393,
+    0.05824645236134529,
+    -0.1292904168367386,
+    -0.04210984334349632,
+    0.12142639607191086,
+    -0.020441852509975433,
+    0.0776914730668068,
+    -0.06973964720964432,
+    -0.07703112810850143,
+    -0.07888638973236084,
+    -0.017516182735562325,
+    -0.05362867936491966,
+    0.01705511100590229,
+    -0.019540710374712944,
+    -0.021413689479231834,
+    0.03547865152359009,
+    0.004003374837338924,
+    -0.013882740400731564,
+    -0.04188653454184532,
+    -0.026159975677728653,
+    -0.14062371850013733,
+    -0.0697949081659317,
+    -0.007147931959480047,
+    -0.06444349884986877,
+    -0.03864755854010582,
+    0.08134101331233978,
+    0.008677010424435139,
+    0.01733727753162384,
+    -0.009799965657293797,
+    0.04727810248732567,
+    -0.03137669712305069,
+    0.029302289709448814,
+    -0.007902736775577068,
+    0.02409764938056469,
+    -0.10778845846652985,
+    0.025422802194952965,
+    0.05590640753507614,
+    -0.03797958418726921,
+    0.008622557856142521,
+    0.02244725078344345,
+    0.003486031200736761,
+    0.022670269012451172,
+    -0.010133614763617516,
+    -0.02535407990217209,
+    -0.06863071769475937,
+    0.004387082532048225,
+    -0.04205293580889702,
+    -0.02553066611289978
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "start": 0,
+        "content": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\nVelric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.\n\nVelric Instrument Workshop has a highest monthly mean temperature of 27 degrees Celsius and a highest recorded daily temperature of 39 degrees Celsius.\n\nFor the Velric Instrument Workshop"
+      },
+      {
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "start": 656,
+        "content": "and a highest recorded daily temperature of 39 degrees Celsius.\n\nFor the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.\n\nDaro tunes three violins per week. Sela polishes five flutes per week. Daro polishes one display stand per week."
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "start": 0,
+        "content": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\nVelric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.\n\nVelric Instrument Workshop has a highest monthly mean temperature of 27 degrees Celsius and a highest recorded daily temperature of 39 degrees Celsius.\n\nFor the Velric Instrument Workshop"
+      },
+      {
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "start": 656,
+        "content": "and a highest recorded daily temperature of 39 degrees Celsius.\n\nFor the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room. Inspection remains every 14 operating hours in both conditions.\n\nDaro tunes three violins per week. Sela polishes five flutes per week. Daro polishes one display stand per week."
+      }
+    ]
+  }
+}

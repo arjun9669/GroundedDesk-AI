@@ -1,0 +1,1465 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "E2B",
+  "question": "A public copy request reaches Nerith Sky Workshop at 15:30. When is it sent, and what happens if the publication review is unresolved?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "A public copy request reaches Nerith Sky Workshop at 15:30. When is it sent, and what happens if the publication review is unresolved?",
+    "expected_display": "A public copy request reaches Nerith Sky Workshop at 15:30. When is it sent, and what happens if the publication review is unresolved?",
+    "rendered_question": "A public copy request reaches Nerith Sky Workshop at 15:30. When is it sent, and what happens if the publication review is unresolved?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional copy requests At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+    "sources": [
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "excerpt": "combinations.\n\n## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+        "quote": "## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nA public copy request reaches Nerith Sky Workshop at 15:30. When is it sent, and what happens if the publication review is unresolved?\n\nSearched all files: 01_Huguenot.md · 02_Victoria__Australia_.md · 03_Geology.md · 04_Packet_switching.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional copy requests At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.\n\nSOURCE EVIDENCE\n[1]\n02_Victoria__Australia_.md\n\nText lines 15–16 (normalized extraction)\n\ncombinations. ## Fictional retention At Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period. ## Fictional copy requests At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:1317",
+        "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+        "filename": "02_Victoria__Australia_.md",
+        "excerpt": "combinations.\n\n## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+        "quote": "## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+        "score": 0.0476,
+        "lexicalScore": 23.84699891435767,
+        "semanticScore": 0.7100905773165133,
+        "matchedTerms": [
+          "public",
+          "copy",
+          "request",
+          "nerith",
+          "sky",
+          "workshop",
+          "15",
+          "30",
+          "sent",
+          "publication",
+          "review",
+          "unresolved"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:body:1623",
+        "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+        "filename": "02_Victoria__Australia_.md",
+        "quote": "At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+        "start": 1723,
+        "end": 1864,
+        "excerpt": "s open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes."
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V22 isolated clause guards; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Victoria__Australia_.md",
+        "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Victoria__Australia_.md",
+        "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Victoria__Australia_.md",
+        "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "relation_guard_diagnostics": {
+      "route": "Explicit inclusive clock branch and trailing conditions"
+    }
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:body:1623",
+        "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+        "filename": "02_Victoria__Australia_.md",
+        "quote": "At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+        "start": 1723,
+        "end": 1864,
+        "excerpt": "s open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes."
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V22 isolated clause guards; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Victoria__Australia_.md",
+        "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Victoria__Australia_.md",
+        "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Victoria__Australia_.md",
+        "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ],
+    "relation_guard_diagnostics": {
+      "route": "Explicit inclusive clock branch and trailing conditions"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Victoria__Australia_.md",
+      "start": 1623,
+      "content": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+      "semanticScore": 0.8081017766916664,
+      "lexicalScore": 24.967005956504355
+    },
+    {
+      "filename": "02_Victoria__Australia_.md",
+      "start": 1777,
+      "content": "If the publication review is unresolved, do not send the copy until that review closes.",
+      "semanticScore": 0.5907971902867268,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Huguenot.md",
+      "start": 1955,
+      "content": "If the rights review is unresolved, do not send the copy until that review closes.",
+      "semanticScore": 0.5208513581816039,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Victoria__Australia_.md",
+      "start": 1415,
+      "content": "At Nerith Sky Workshop, observation cards are kept for 70 days.",
+      "semanticScore": 0.5170444275129793,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Packet_switching.md",
+      "start": 2115,
+      "content": "At Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day.",
+      "semanticScore": 0.5155347505148146,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society.",
+      "start": 32,
+      "end": 150,
+      "similarity": -0.05937393255322252,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The kingdom did not fully recover for years.",
+      "start": 151,
+      "end": 195,
+      "similarity": 0.06344102768151526,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters.",
+      "start": 196,
+      "end": 438,
+      "similarity": -0.03436223673382442,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.",
+      "start": 439,
+      "end": 674,
+      "similarity": -0.004373630326660784,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "In Berlin, the Huguenots created two new neighbourhoods: Dorotheenstadt and Friedrichstadt.",
+      "start": 696,
+      "end": 787,
+      "similarity": 0.027306226376396108,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "By 1700, one-fifth of the city's population was French speaking.",
+      "start": 788,
+      "end": 852,
+      "similarity": 0.03401016680814797,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The Berlin Huguenots preserved the French language in their church services for nearly a century.",
+      "start": 853,
+      "end": 950,
+      "similarity": -0.026028933665651965,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "They ultimately decided to switch to German in protest against the occupation of Prussia by Napoleon in 1806-07.",
+      "start": 951,
+      "end": 1063,
+      "similarity": -0.10609412299336798,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Many of their descendents rose to positions of prominence.",
+      "start": 1064,
+      "end": 1122,
+      "similarity": -0.08824979457760423,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.",
+      "start": 1123,
+      "end": 1257,
+      "similarity": 0.008516912172476463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+      "start": 1288,
+      "end": 1375,
+      "similarity": 0.18970167119873105,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Taro Ilven mounted 34 segments.",
+      "start": 1376,
+      "end": 1407,
+      "similarity": 0.12232145232525443,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Mira Solven inspected 19 segments.",
+      "start": 1408,
+      "end": 1442,
+      "similarity": 0.15399211832590773,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1443,
+      "end": 1506,
+      "similarity": 0.1476768867361006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1507,
+      "end": 1568,
+      "similarity": 0.0660760578056061,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At Velora Audio Archive, listening cards are kept for 45 days.",
+      "start": 1593,
+      "end": 1655,
+      "similarity": 0.2717019823651283,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "start": 1656,
+      "end": 1771,
+      "similarity": 0.2883151198638044,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day.",
+      "start": 1800,
+      "end": 1900,
+      "similarity": 0.47675709656688775,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At or after 14:00, send it on the next operating day.",
+      "start": 1901,
+      "end": 1954,
+      "similarity": 0.37345899551384554,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "If the rights review is unresolved, do not send the copy until that review closes.",
+      "start": 1955,
+      "end": 2037,
+      "similarity": 0.5208513581816039,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "The Mallee and upper Wimmera are Victoria's warmest regions with hot winds blowing from nearby semi-deserts.",
+      "start": 44,
+      "end": 152,
+      "similarity": 0.09972091123939697,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Average temperatures exceed 32 °C (90 °F) during summer and 15 °C (59 °F) in winter.",
+      "start": 153,
+      "end": 237,
+      "similarity": 0.026255240674006797,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Except at cool mountain elevations, the inland monthly temperatures are 2–7 °C (4–13 °F) warmer than around Melbourne (see chart).",
+      "start": 238,
+      "end": 368,
+      "similarity": 0.10291953614343685,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Victoria's highest maximum temperature since World War II, of 48.8 °C (119.8 °F) was recorded in Hopetoun on 7 February 2009, during the 2009 southeastern Australia heat wave.",
+      "start": 369,
+      "end": 544,
+      "similarity": 0.09284753936143329,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "During 2003–04, the gross value of Victorian agricultural production increased by 17% to $8.7 billion.",
+      "start": 566,
+      "end": 668,
+      "similarity": -0.016465346958971158,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "This represented 24% of national agricultural production total gross value.",
+      "start": 669,
+      "end": 744,
+      "similarity": -0.017758258928525224,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "As of 2004, an estimated 32,463 farms occupied around 136,000 square kilometres (52,500 sq mi) of Victorian land.",
+      "start": 745,
+      "end": 858,
+      "similarity": -0.027299051869391983,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "This comprises more than 60% of the state's total land surface.",
+      "start": 859,
+      "end": 922,
+      "similarity": -0.039348160777841285,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Victorian farms range from small horticultural outfits to large-scale livestock and grain productions.",
+      "start": 923,
+      "end": 1025,
+      "similarity": -0.019339536326476194,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "A quarter of farmland is used to grow consumable crops.",
+      "start": 1026,
+      "end": 1081,
+      "similarity": -0.02668201972200528,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.",
+      "start": 1112,
+      "end": 1197,
+      "similarity": 0.42239229410073587,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Ivo Darven polished 52 plates.",
+      "start": 1198,
+      "end": 1228,
+      "similarity": 0.0823233546471894,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Lena Corven photographed 16 plates.",
+      "start": 1229,
+      "end": 1264,
+      "similarity": 0.16178219689382117,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1265,
+      "end": 1328,
+      "similarity": 0.1476768867361006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1329,
+      "end": 1390,
+      "similarity": 0.0660760578056061,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At Nerith Sky Workshop, observation cards are kept for 70 days.",
+      "start": 1415,
+      "end": 1478,
+      "similarity": 0.5170444275129793,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+      "start": 1479,
+      "end": 1594,
+      "similarity": 0.2780633930219062,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+      "start": 1623,
+      "end": 1722,
+      "similarity": 0.8081017766916664,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At or after 15:30, send it on the next operating day.",
+      "start": 1723,
+      "end": 1776,
+      "similarity": 0.38922889455948523,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "If the publication review is unresolved, do not send the copy until that review closes.",
+      "start": 1777,
+      "end": 1864,
+      "similarity": 0.5907971902867268,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Some modern scholars, such as Fielding H.",
+      "start": 31,
+      "end": 72,
+      "similarity": 0.07241301560884135,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Garrison, are of the opinion that the origin of the science of geology can be traced to Persia after the Muslim conquests had come to an end.",
+      "start": 73,
+      "end": 214,
+      "similarity": 0.054979548607968956,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Abu al-Rayhan al-Biruni (973–1048 CE) was one of the earliest Persian geologists, whose works included the earliest writings on the geology of India, hypothesizing that the Indian subcontinent was once a sea.",
+      "start": 215,
+      "end": 423,
+      "similarity": 0.11219820244545324,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Drawing from Greek and Indian scientific literature that were not destroyed by the Muslim conquests, the Persian scholar Ibn Sina (Avicenna, 981–1037) proposed detailed explanations for the formation of mountains, the origin of earthquakes, and other topics central to modern geology, which provided an essential foundation for the later development of the science.",
+      "start": 424,
+      "end": 789,
+      "similarity": 0.14225767495605604,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "In China, the polymath Shen Kuo (1031–1095) formulated a hypothesis for the process of land formation: based on his observation of fossil animal shells in a geological stratum in a mountain hundreds of miles from the ocean, he inferred that the land was formed by erosion of the mountains and by deposition of silt.",
+      "start": 790,
+      "end": 1105,
+      "similarity": 0.05652567231071418,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Seismologists can use the arrival times of seismic waves in reverse to image the interior of the Earth.",
+      "start": 1127,
+      "end": 1230,
+      "similarity": 0.17175630445702775,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Early advances in this field showed the existence of a liquid outer core (where shear waves were not able to propagate) and a dense solid inner core.",
+      "start": 1231,
+      "end": 1380,
+      "similarity": 0.10925945515807248,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "These advances led to the development of a layered model of the Earth, with a crust and lithosphere on top, the mantle below (separated within itself by seismic discontinuities at 410 and 660 kilometers), and the outer core and inner core below that.",
+      "start": 1381,
+      "end": 1631,
+      "similarity": 0.12999878410611285,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "More recently, seismologists have been able to create detailed images of wave speeds inside the earth in the same way a doctor images a body in a CT scan.",
+      "start": 1632,
+      "end": 1786,
+      "similarity": 0.1792333643909597,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.",
+      "start": 1787,
+      "end": 1946,
+      "similarity": 0.07837492292333571,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+      "start": 1977,
+      "end": 2066,
+      "similarity": 0.23644288123867915,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Olan Merven printed 26 frames.",
+      "start": 2067,
+      "end": 2097,
+      "similarity": 0.23139649898092973,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Nira Telven checked 31 frames.",
+      "start": 2098,
+      "end": 2128,
+      "similarity": 0.23494385125829273,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 2129,
+      "end": 2192,
+      "similarity": 0.1476768867361006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 2193,
+      "end": 2254,
+      "similarity": 0.0660760578056061,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days.",
+      "start": 2279,
+      "end": 2344,
+      "similarity": 0.22194840860948473,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+      "start": 2345,
+      "end": 2456,
+      "similarity": 0.316809798161051,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day.",
+      "start": 2485,
+      "end": 2590,
+      "similarity": 0.5128522903065498,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At or after 13:00, send it on the next operating day.",
+      "start": 2591,
+      "end": 2644,
+      "similarity": 0.3809732905080769,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "If the ownership review is unresolved, do not send the copy until that review closes.",
+      "start": 2645,
+      "end": 2730,
+      "similarity": 0.47319366299279275,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Packet mode communication may be implemented with or without intermediate forwarding nodes (packet switches or routers).",
+      "start": 40,
+      "end": 160,
+      "similarity": 0.02339457608567038,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Packets are normally forwarded by intermediate network nodes asynchronously using first-in, first-out buffering, but may be forwarded according to some scheduling discipline for fair queuing, traffic shaping, or for differentiated or guaranteed quality of service, such as weighted fair queuing or leaky bucket.",
+      "start": 161,
+      "end": 472,
+      "similarity": 0.06903443731177754,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "In case of a shared physical medium (such as radio or 10BASE5), the packets may be delivered according to a multiple access scheme.",
+      "start": 473,
+      "end": 604,
+      "similarity": 0.09938061478815405,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Starting in the late 1950s, American computer scientist Paul Baran developed the concept Distributed Adaptive Message Block Switching with the goal to provide a fault-tolerant, efficient routing method for telecommunication messages as part of a research program at the RAND Corporation, funded by the US Department of Defense.",
+      "start": 626,
+      "end": 953,
+      "similarity": 0.05622064890721229,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "This concept contrasted and contradicted the theretofore established principles of pre-allocation of network bandwidth, largely fortified by the development of telecommunications in the Bell System.",
+      "start": 954,
+      "end": 1152,
+      "similarity": -0.029152542030921477,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "The new concept found little resonance among network implementers until the independent work of Donald Davies at the National Physical Laboratory (United Kingdom) (NPL) in the late 1960s.",
+      "start": 1153,
+      "end": 1340,
+      "similarity": 0.17850136512385745,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.",
+      "start": 1341,
+      "end": 1575,
+      "similarity": -0.02856828926077451,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+      "start": 1606,
+      "end": 1692,
+      "similarity": 0.1758452747043839,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Eran Morven cleaned 41 trays.",
+      "start": 1693,
+      "end": 1722,
+      "similarity": 0.08695362943032349,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Vera Linven weighed 18 trays.",
+      "start": 1723,
+      "end": 1752,
+      "similarity": 0.07773627385354392,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1753,
+      "end": 1816,
+      "similarity": 0.1476768867361006,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1817,
+      "end": 1878,
+      "similarity": 0.0660760578056061,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At Soravin Specimen Studio, conservation cards are kept for 80 days.",
+      "start": 1903,
+      "end": 1971,
+      "similarity": 0.24784635501254185,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+      "start": 1972,
+      "end": 2086,
+      "similarity": 0.24801979648847244,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day.",
+      "start": 2115,
+      "end": 2218,
+      "similarity": 0.5155347505148146,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At or after 16:00, send it on the next operating day.",
+      "start": 2219,
+      "end": 2272,
+      "similarity": 0.3544495545775914,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "If the custody review is unresolved, do not send the copy until that review closes.",
+      "start": 2273,
+      "end": 2356,
+      "similarity": 0.44109612611704047,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:body:1623",
+          "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+          "filename": "02_Victoria__Australia_.md",
+          "quote": "At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+          "start": 1723,
+          "end": 1864,
+          "excerpt": "s open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes."
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V22 isolated clause guards; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "relation_guard_diagnostics": {
+        "route": "Explicit inclusive clock branch and trailing conditions"
+      }
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:body:1623",
+          "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+          "filename": "02_Victoria__Australia_.md",
+          "quote": "At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+          "start": 1723,
+          "end": 1864,
+          "excerpt": "s open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes."
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V22 isolated clause guards; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ],
+      "relation_guard_diagnostics": {
+        "route": "Explicit inclusive clock branch and trailing conditions"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:1317",
+          "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+          "filename": "02_Victoria__Australia_.md",
+          "excerpt": "l retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "score": 0.0476,
+          "lexicalScore": 23.84699891435767,
+          "semanticScore": 0.7100905773165133,
+          "matchedTerms": [
+            "public",
+            "copy",
+            "request",
+            "nerith",
+            "sky",
+            "workshop",
+            "15",
+            "30",
+            "sent",
+            "publication",
+            "review",
+            "unresolved"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:1596",
+          "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+          "filename": "02_Victoria__Australia_.md",
+          "excerpt": "l retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes.",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "score": 0.0476,
+          "lexicalScore": 28.497116538107043,
+          "semanticScore": 0.8886494284704604,
+          "matchedTerms": [
+            "public",
+            "copy",
+            "request",
+            "nerith",
+            "sky",
+            "workshop",
+            "15",
+            "30",
+            "sent",
+            "publication",
+            "review",
+            "unresolved"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.08945338428020477,
+    0.04824528843164444,
+    -0.04493536055088043,
+    0.03848184272646904,
+    0.019117869436740875,
+    0.006796357221901417,
+    -0.09980282932519913,
+    -0.07076848298311234,
+    -0.016843289136886597,
+    0.045089077204465866,
+    0.0066341799683868885,
+    -0.026481691747903824,
+    -0.05919710174202919,
+    -0.0393659844994545,
+    -0.07097438722848892,
+    0.03249092400074005,
+    0.04321125149726868,
+    -0.14359255135059357,
+    0.0031264033168554306,
+    0.020579088479280472,
+    0.03136336803436279,
+    0.11837856471538544,
+    -0.00921905692666769,
+    0.04787570983171463,
+    0.008039021864533424,
+    -0.04910898953676224,
+    -0.10054273158311844,
+    -0.023344986140727997,
+    0.027347560971975327,
+    -0.01721932180225849,
+    -0.034942083060741425,
+    0.05812840908765793,
+    -0.045024704188108444,
+    0.036016326397657394,
+    0.08153612911701202,
+    0.040129609405994415,
+    0.0658213421702385,
+    -0.04118703305721283,
+    -0.02092638798058033,
+    -0.04569748044013977,
+    0.0499560609459877,
+    -0.04975913092494011,
+    -0.07251927256584167,
+    0.007766057271510363,
+    0.023504236713051796,
+    0.01630510203540325,
+    -0.02600749209523201,
+    -0.04043610766530037,
+    -0.03405092656612396,
+    0.07027103006839752,
+    -0.050977449864149094,
+    -0.04442400112748146,
+    0.08689947426319122,
+    -0.027984879910945892,
+    0.05669070780277252,
+    0.03389247506856918,
+    -0.028632258996367455,
+    -0.016522616147994995,
+    0.012821723707020283,
+    0.012845697812736034,
+    0.018445253372192383,
+    0.0031825811602175236,
+    -0.20684991776943207,
+    0.006842187140136957,
+    0.11536574363708496,
+    0.05024212598800659,
+    -0.013765683397650719,
+    -0.011963803321123123,
+    0.03940926492214203,
+    -0.08295642584562302,
+    -0.022751573473215103,
+    0.0029737597797065973,
+    0.032409388571977615,
+    -0.06289761513471603,
+    0.008180664852261543,
+    0.030870553106069565,
+    0.009375167079269886,
+    -0.04241330921649933,
+    0.01509909424930811,
+    -0.05643288418650627,
+    0.04562721028923988,
+    -0.034793008118867874,
+    0.04228820279240608,
+    0.023395013064146042,
+    0.012362482026219368,
+    0.018016234040260315,
+    0.07060323655605316,
+    0.1034206673502922,
+    0.0213225856423378,
+    0.00795435719192028,
+    -0.03987604007124901,
+    -0.0321807786822319,
+    -0.013589829206466675,
+    0.02436905726790428,
+    -0.035076968371868134,
+    0.031618066132068634,
+    -0.01724378392100334,
+    -0.05242246761918068,
+    0.048145852982997894,
+    0.07884220778942108,
+    0.029046984389424324,
+    0.037080179899930954,
+    -0.007760594133287668,
+    -0.05288660153746605,
+    -0.09855351597070694,
+    -0.017870599403977394,
+    -0.01256396435201168,
+    0.007324643433094025,
+    0.00017359171761199832,
+    0.06114186346530914,
+    -0.0023469803854823112,
+    -0.03426592797040939,
+    0.059010397642850876,
+    -0.0568821057677269,
+    0.06423314660787582,
+    0.11319780349731445,
+    0.028074543923139572,
+    0.038194507360458374,
+    -0.04444678872823715,
+    -0.056553516536951065,
+    0.024451876059174538,
+    -0.020849263295531273,
+    0.032857589423656464,
+    -0.026552116498351097,
+    0.053283821791410446,
+    -0.01840750128030777,
+    0.019632933661341667,
+    -1.450749026365796e-33,
+    0.03137572482228279,
+    0.03613602742552757,
+    -0.0004374563286546618,
+    0.0980403795838356,
+    0.10281997919082642,
+    -0.08973630517721176,
+    0.07498834282159805,
+    -0.00682923523709178,
+    -0.0490865595638752,
+    -0.08463440090417862,
+    0.031836289912462234,
+    0.024648059159517288,
+    0.019487131386995316,
+    -0.02376950904726982,
+    -0.11459720879793167,
+    -0.004630908370018005,
+    0.05840834975242615,
+    0.01940145343542099,
+    -0.056606028228998184,
+    0.011020954698324203,
+    -0.007370966952294111,
+    -0.037883367389440536,
+    -0.02622472308576107,
+    0.005839877296239138,
+    -0.0345730297267437,
+    -0.04453326389193535,
+    0.02890619821846485,
+    0.008413494564592838,
+    0.05088512971997261,
+    0.025265030562877655,
+    -0.0031404688488692045,
+    0.026919489726424217,
+    0.01858629658818245,
+    -0.008557692170143127,
+    0.05148140713572502,
+    0.08581503480672836,
+    -0.00360482488758862,
+    -0.013800391927361488,
+    -0.0018342725234106183,
+    -0.01771543361246586,
+    0.08247671276330948,
+    0.023742323741316795,
+    -0.027215303853154182,
+    -0.0029146394226700068,
+    0.030590815469622612,
+    -0.02271171845495701,
+    0.06696292012929916,
+    -0.020491711795330048,
+    0.11705553531646729,
+    -0.0007564731640741229,
+    0.020857159048318863,
+    0.07158200442790985,
+    -0.08398014307022095,
+    -0.0322796031832695,
+    0.029088454321026802,
+    -0.013545730151236057,
+    -0.006087492220103741,
+    -0.04368264600634575,
+    0.033140573650598526,
+    0.0319235697388649,
+    0.12593214213848114,
+    0.022972330451011658,
+    -0.0025835055857896805,
+    0.004887634422630072,
+    0.004289539996534586,
+    -0.00172853481490165,
+    -0.05377596616744995,
+    -0.04377685859799385,
+    0.03679925203323364,
+    -0.1028028205037117,
+    -0.02035057544708252,
+    0.052706003189086914,
+    0.02740783803164959,
+    -0.040801189839839935,
+    0.0279557965695858,
+    -0.052885815501213074,
+    -0.061045948415994644,
+    0.014342857524752617,
+    0.06636422872543335,
+    0.04195757582783699,
+    -0.015084062702953815,
+    -0.03141331672668457,
+    -0.047903161495923996,
+    -0.0392301082611084,
+    -0.024970579892396927,
+    -0.08943624049425125,
+    0.03541776165366173,
+    0.047797705978155136,
+    -0.010241685435175896,
+    -0.06950387358665466,
+    -0.03685612976551056,
+    -0.013042591512203217,
+    -0.0008433664334006608,
+    0.03425412252545357,
+    0.08766625821590424,
+    3.038599861876582e-34,
+    -0.006836017593741417,
+    -0.09012548625469208,
+    -0.10954519361257553,
+    0.039923880249261856,
+    -0.040335867553949356,
+    0.022555893287062645,
+    -0.08276013284921646,
+    0.06506454944610596,
+    0.06334090232849121,
+    0.06951852142810822,
+    -0.019540755078196526,
+    0.00834417063742876,
+    0.02374373935163021,
+    -0.024487286806106567,
+    -0.012182853184640408,
+    -0.08020203560590744,
+    0.032584477216005325,
+    -0.03032555803656578,
+    -0.017262065783143044,
+    0.015464141964912415,
+    0.09765582531690598,
+    -0.04128231108188629,
+    -0.027678241953253746,
+    -0.02438228204846382,
+    0.043511442840099335,
+    0.059015631675720215,
+    0.15178558230400085,
+    -0.026427993550896645,
+    -0.016123421490192413,
+    -0.02332097664475441,
+    0.03588630259037018,
+    -0.04871797189116478,
+    -0.10992031544446945,
+    0.04900103807449341,
+    0.0035232955124229193,
+    -0.0265725739300251,
+    0.09521996229887009,
+    0.0016802737955003977,
+    -0.0582856684923172,
+    -0.051740895956754684,
+    -0.007077849470078945,
+    0.03507847338914871,
+    -0.024547819048166275,
+    -0.050036508589982986,
+    0.02479383908212185,
+    -0.024322910234332085,
+    0.024315129965543747,
+    0.025497829541563988,
+    0.012667972594499588,
+    -0.016805948689579964,
+    0.06637094169855118,
+    0.002561040222644806,
+    0.01746043749153614,
+    -0.022704483941197395,
+    0.005149448290467262,
+    0.09334619343280792,
+    -0.002930605784058571,
+    -0.03426464647054672,
+    0.06019457057118416,
+    0.028296465054154396,
+    0.02091882936656475,
+    0.0321001335978508,
+    -0.08405107259750366,
+    -0.053651224821805954,
+    0.048631101846694946,
+    -0.021101629361510277,
+    0.13049885630607605,
+    0.04205302894115448,
+    0.050235565751791,
+    0.055636778473854065,
+    -0.04477427154779434,
+    0.027894403785467148,
+    -0.0010554891778156161,
+    -0.07344505190849304,
+    0.06662464886903763,
+    0.05595859885215759,
+    0.07148787379264832,
+    0.05745985731482506,
+    -0.007302276790142059,
+    -0.01308478880673647,
+    -0.0030004428699612617,
+    -0.030709540471434593,
+    -0.03792876750230789,
+    0.0437081977725029,
+    0.062437936663627625,
+    -0.05495595186948776,
+    0.13726626336574554,
+    -0.014614530839025974,
+    0.002313262317329645,
+    -0.03709029033780098,
+    -0.008987451903522015,
+    -0.05963405966758728,
+    -0.011502335779368877,
+    -0.04662511870265007,
+    0.03390916436910629,
+    -2.6389880503074892e-8,
+    0.003178527345880866,
+    0.031590692698955536,
+    -0.06858103722333908,
+    -0.002936398144811392,
+    0.03687259182333946,
+    0.08566679060459137,
+    0.0457364059984684,
+    -0.036751843988895416,
+    -0.014399955049157143,
+    0.0580688901245594,
+    0.028890538960695267,
+    -0.029259543865919113,
+    -0.004593729507178068,
+    -0.05677423253655434,
+    -0.03782547265291214,
+    -0.09735013544559479,
+    0.0024760286323726177,
+    -0.050923287868499756,
+    -0.08518046885728836,
+    -0.10831136256456375,
+    0.015000700950622559,
+    -0.012792659923434258,
+    0.10081403702497482,
+    -0.0717468187212944,
+    -0.05709758773446083,
+    0.006592071149498224,
+    -0.03272300958633423,
+    0.013530959375202656,
+    -0.09256386011838913,
+    -0.00822883378714323,
+    -0.0557887889444828,
+    0.07761235535144806,
+    0.0028787055052816868,
+    -0.03202951326966286,
+    -0.031740687787532806,
+    -0.03825162723660469,
+    0.009884851984679699,
+    0.07469740509986877,
+    0.04033800587058067,
+    0.03741520270705223,
+    0.02651580609381199,
+    0.013319156132638454,
+    -0.02203407883644104,
+    0.016258075833320618,
+    0.0014324920484796166,
+    -0.00048124181921593845,
+    -0.009421108290553093,
+    -0.0908951386809349,
+    -0.0285212229937315,
+    -0.009108392521739006,
+    0.0287750493735075,
+    -0.05177318677306175,
+    0.06353253126144409,
+    0.07406342774629593,
+    -0.012300459668040276,
+    0.020053837448358536,
+    -0.010386906564235687,
+    -0.06208917871117592,
+    0.009588771499693394,
+    0.02017122507095337,
+    0.10801148414611816,
+    -0.079896941781044,
+    -0.12581847608089447,
+    0.09478092193603516
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "start": 1317,
+        "content": "ble totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "04_Packet_switching.md",
+        "start": 1978,
+        "content": "reatment review is open, retain the affected cards until the review is closed, even after the 80-day period.\n\n## Fictional copy requests\nAt Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day. At or after 16:00, send it on the next operating day. If the custody review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "03_Geology.md",
+        "start": 1966,
+        "content": "eted tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.\n\n## Fictional copy requests\nAt Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day. At or after 13:00, send it on the next operating day. If the ownership review is unresolved, do not send the copy until that review"
+      },
+      {
+        "filename": "01_Huguenot.md",
+        "start": 1312,
+        "content": "Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.\n\n## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the next operating day. If the rights review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "03_Geology.md",
+        "start": 2622,
+        "content": "he next operating day. If the ownership review is unresolved, do not send the copy until that review closes."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "start": 1596,
+        "content": "## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "04_Packet_switching.md",
+        "start": 2088,
+        "content": "## Fictional copy requests\nAt Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day. At or after 16:00, send it on the next operating day. If the custody review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "01_Huguenot.md",
+        "start": 1773,
+        "content": "## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the next operating day. If the rights review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "03_Geology.md",
+        "start": 2458,
+        "content": "## Fictional copy requests\nAt Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day. At or after 13:00, send it on the next operating day. If the ownership review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "start": 1392,
+        "content": "## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period."
+      }
+    ]
+  }
+}

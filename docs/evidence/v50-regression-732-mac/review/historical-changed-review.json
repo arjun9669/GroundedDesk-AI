@@ -1,0 +1,918 @@
+[
+  {
+    "pack": "RetrievalQuality28",
+    "id": "RQ08",
+    "variant": "fixed",
+    "native": "PASS",
+    "result": {
+      "answered": true,
+      "sources": [
+        {
+          "citation": 1,
+          "id": "22abe0d5-d762-4854-9ea6-285a957df445:body:2330",
+          "documentId": "22abe0d5-d762-4854-9ea6-285a957df445",
+          "filename": "01_Orchard_Depot_Current.md",
+          "quote": "Orchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.",
+          "excerpt": "Orchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.",
+          "start": 2330,
+          "end": 2458,
+          "actualCosine": 0.8152041657793421,
+          "cosineAnchor": {
+            "id": "22abe0d5-d762-4854-9ea6-285a957df445:body:2330",
+            "start": 2330,
+            "end": 2381,
+            "actualCosine": 0.8152041657793421
+          }
+        }
+      ],
+      "answer": "[1] Orchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.",
+      "mode": "Experimental v50 version-scope/retention",
+      "experiment": "V50 isolated version-scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "supported",
+        "subject": "dispatch record",
+        "entity": "orchard depot current",
+        "scope_proof": {
+          "kind": "filename_version_role",
+          "role": "current",
+          "alias": "orchard",
+          "root": "orchard depot",
+          "original": {
+            "kind": "filename"
+          }
+        },
+        "conditions": [
+          {
+            "kind": "claim",
+            "status": "ongoing",
+            "modifiers": [
+              "transport"
+            ]
+          }
+        ],
+        "policy_span": {
+          "start": 2330,
+          "end": 2458
+        },
+        "prior_display_preserved": false
+      }
+    },
+    "old_result": {
+      "answered": false,
+      "sources": [],
+      "answer": "I can't find this in the provided documents.",
+      "mode": "Experimental v47 scope/retention",
+      "experiment": "V47 isolated scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "unsupported",
+        "reason": "Unique declared subject and entity scope required"
+      }
+    },
+    "question": "How long are current Orchard dispatch records retained, including the unresolved-claim exception?",
+    "key": {
+      "id": "RQ08",
+      "question": "How long are current Orchard dispatch records retained, including the unresolved-claim exception?",
+      "category": "conditional",
+      "evidence": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "text": "Orchard dispatch records are retained for 120 days."
+        },
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "text": "Records under an unresolved transport claim are kept until the claim closes."
+        }
+      ]
+    },
+    "review_status": "COMPLETE",
+    "reviewer": "Codex author-aware, not external/blinded",
+    "binding_note": "The current filename/title role resolves Orchard without archive borrowing; the literal120-day policy and transport-claim closure extension are complete.",
+    "native_PASS_contradiction": false
+  },
+  {
+    "pack": "RetrievalQuality28",
+    "id": "RQ08",
+    "variant": "section",
+    "native": "PASS",
+    "result": {
+      "answered": true,
+      "sources": [
+        {
+          "citation": 1,
+          "id": "22abe0d5-d762-4854-9ea6-285a957df445:body:2330",
+          "documentId": "22abe0d5-d762-4854-9ea6-285a957df445",
+          "filename": "01_Orchard_Depot_Current.md",
+          "quote": "Orchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.",
+          "excerpt": "Orchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.",
+          "start": 2330,
+          "end": 2458,
+          "actualCosine": 0.8152041657793421,
+          "cosineAnchor": {
+            "id": "22abe0d5-d762-4854-9ea6-285a957df445:body:2330",
+            "start": 2330,
+            "end": 2381,
+            "actualCosine": 0.8152041657793421
+          }
+        }
+      ],
+      "answer": "[1] Orchard dispatch records are retained for 120 days. Records under an unresolved transport claim are kept until the claim closes.",
+      "mode": "Experimental v50 version-scope/retention",
+      "experiment": "V50 isolated version-scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "supported",
+        "subject": "dispatch record",
+        "entity": "orchard depot current",
+        "scope_proof": {
+          "kind": "filename_version_role",
+          "role": "current",
+          "alias": "orchard",
+          "root": "orchard depot",
+          "original": {
+            "kind": "filename"
+          }
+        },
+        "conditions": [
+          {
+            "kind": "claim",
+            "status": "ongoing",
+            "modifiers": [
+              "transport"
+            ]
+          }
+        ],
+        "policy_span": {
+          "start": 2330,
+          "end": 2458
+        },
+        "prior_display_preserved": false
+      }
+    },
+    "old_result": {
+      "answered": false,
+      "sources": [],
+      "answer": "I can't find this in the provided documents.",
+      "mode": "Experimental v47 scope/retention",
+      "experiment": "V47 isolated scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "unsupported",
+        "reason": "Unique declared subject and entity scope required"
+      }
+    },
+    "question": "How long are current Orchard dispatch records retained, including the unresolved-claim exception?",
+    "key": {
+      "id": "RQ08",
+      "question": "How long are current Orchard dispatch records retained, including the unresolved-claim exception?",
+      "category": "conditional",
+      "evidence": [
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "text": "Orchard dispatch records are retained for 120 days."
+        },
+        {
+          "filename": "01_Orchard_Depot_Current.md",
+          "text": "Records under an unresolved transport claim are kept until the claim closes."
+        }
+      ]
+    },
+    "review_status": "COMPLETE",
+    "reviewer": "Codex author-aware, not external/blinded",
+    "binding_note": "The current filename/title role resolves Orchard without archive borrowing; the literal120-day policy and transport-claim closure extension are complete.",
+    "native_PASS_contradiction": false
+  },
+  {
+    "pack": "Binding64",
+    "id": "E1A",
+    "variant": "fixed",
+    "native": "PASS",
+    "result": {
+      "answered": true,
+      "sources": [
+        {
+          "citation": 1,
+          "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:body:1593",
+          "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+          "filename": "01_Huguenot.md",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "excerpt": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "start": 1593,
+          "end": 1771,
+          "actualCosine": 0.8410346915737669,
+          "cosineAnchor": {
+            "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:body:1593",
+            "start": 1593,
+            "end": 1655,
+            "actualCosine": 0.8410346915737669
+          }
+        }
+      ],
+      "answer": "[1] At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "mode": "Experimental v50 version-scope/retention",
+      "experiment": "V50 isolated version-scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "supported",
+        "subject": "listening card",
+        "entity": "velora audio archive",
+        "scope_proof": {
+          "kind": "source_introduction",
+          "start": 1593,
+          "end": 1655,
+          "declared": "velora audio archive"
+        },
+        "conditions": [
+          {
+            "kind": "review",
+            "status": "ongoing",
+            "modifiers": [
+              "correction"
+            ]
+          }
+        ],
+        "policy_span": {
+          "start": 1593,
+          "end": 1771
+        },
+        "prior_display_preserved": false
+      }
+    },
+    "old_result": {
+      "answered": false,
+      "sources": [],
+      "answer": "I can't find this in the provided documents.",
+      "mode": "Experimental v47 scope/retention",
+      "experiment": "V47 isolated scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "unsupported",
+        "reason": "Unparsed adjacent retention extension"
+      }
+    },
+    "question": "How long are listening cards retained at Velora Audio Archive, including the open-review exception?",
+    "key": {
+      "id": "E1A",
+      "question": "How long are listening cards retained at Velora Audio Archive, including the open-review exception?",
+      "workflow": "hybrid",
+      "category": "conditional_supported",
+      "expected_sources": [
+        {
+          "filename": "01_Huguenot.md",
+          "context": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "groups": [
+            [
+              "listening cards are kept for 45 days"
+            ],
+            [
+              "If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period"
+            ]
+          ]
+        }
+      ]
+    },
+    "review_status": "COMPLETE",
+    "reviewer": "Codex author-aware, not external/blinded",
+    "binding_note": "The exact named body declaration, card subtype, base duration and full open-review closure/even-after clause are retained; the hyphenated amount/unit equals its own base policy.",
+    "native_PASS_contradiction": false
+  },
+  {
+    "pack": "Binding64",
+    "id": "E1A",
+    "variant": "section",
+    "native": "PASS",
+    "result": {
+      "answered": true,
+      "sources": [
+        {
+          "citation": 1,
+          "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:body:1593",
+          "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+          "filename": "01_Huguenot.md",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "excerpt": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "start": 1593,
+          "end": 1771,
+          "actualCosine": 0.8410346915737669,
+          "cosineAnchor": {
+            "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:body:1593",
+            "start": 1593,
+            "end": 1655,
+            "actualCosine": 0.8410346915737669
+          }
+        }
+      ],
+      "answer": "[1] At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "mode": "Experimental v50 version-scope/retention",
+      "experiment": "V50 isolated version-scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "supported",
+        "subject": "listening card",
+        "entity": "velora audio archive",
+        "scope_proof": {
+          "kind": "source_introduction",
+          "start": 1593,
+          "end": 1655,
+          "declared": "velora audio archive"
+        },
+        "conditions": [
+          {
+            "kind": "review",
+            "status": "ongoing",
+            "modifiers": [
+              "correction"
+            ]
+          }
+        ],
+        "policy_span": {
+          "start": 1593,
+          "end": 1771
+        },
+        "prior_display_preserved": false
+      }
+    },
+    "old_result": {
+      "answered": false,
+      "sources": [],
+      "answer": "I can't find this in the provided documents.",
+      "mode": "Experimental v47 scope/retention",
+      "experiment": "V47 isolated scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "unsupported",
+        "reason": "Unparsed adjacent retention extension"
+      }
+    },
+    "question": "How long are listening cards retained at Velora Audio Archive, including the open-review exception?",
+    "key": {
+      "id": "E1A",
+      "question": "How long are listening cards retained at Velora Audio Archive, including the open-review exception?",
+      "workflow": "hybrid",
+      "category": "conditional_supported",
+      "expected_sources": [
+        {
+          "filename": "01_Huguenot.md",
+          "context": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "groups": [
+            [
+              "listening cards are kept for 45 days"
+            ],
+            [
+              "If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period"
+            ]
+          ]
+        }
+      ]
+    },
+    "review_status": "COMPLETE",
+    "reviewer": "Codex author-aware, not external/blinded",
+    "binding_note": "The exact named body declaration, card subtype, base duration and full open-review closure/even-after clause are retained; the hyphenated amount/unit equals its own base policy.",
+    "native_PASS_contradiction": false
+  },
+  {
+    "pack": "Binding64",
+    "id": "E2A",
+    "variant": "fixed",
+    "native": "PASS",
+    "result": {
+      "answered": true,
+      "sources": [
+        {
+          "citation": 1,
+          "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:body:1415",
+          "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+          "filename": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+          "excerpt": "At Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+          "start": 1415,
+          "end": 1594,
+          "actualCosine": 0.8065823339858894,
+          "cosineAnchor": {
+            "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:body:1415",
+            "start": 1415,
+            "end": 1478,
+            "actualCosine": 0.8065823339858894
+          }
+        }
+      ],
+      "answer": "[1] At Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+      "mode": "Experimental v50 version-scope/retention",
+      "experiment": "V50 isolated version-scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "supported",
+        "subject": "observation card",
+        "entity": "nerith sky workshop",
+        "scope_proof": {
+          "kind": "source_introduction",
+          "start": 1415,
+          "end": 1478,
+          "declared": "nerith sky workshop"
+        },
+        "conditions": [
+          {
+            "kind": "review",
+            "status": "ongoing",
+            "modifiers": [
+              "coordinate"
+            ]
+          }
+        ],
+        "policy_span": {
+          "start": 1415,
+          "end": 1594
+        },
+        "prior_display_preserved": false
+      }
+    },
+    "old_result": {
+      "answered": false,
+      "sources": [],
+      "answer": "I can't find this in the provided documents.",
+      "mode": "Experimental v47 scope/retention",
+      "experiment": "V47 isolated scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "unsupported",
+        "reason": "Unparsed adjacent retention extension"
+      }
+    },
+    "question": "How long are observation cards retained at Nerith Sky Workshop, including the open-review exception?",
+    "key": {
+      "id": "E2A",
+      "question": "How long are observation cards retained at Nerith Sky Workshop, including the open-review exception?",
+      "workflow": "hybrid",
+      "category": "conditional_supported",
+      "expected_sources": [
+        {
+          "filename": "02_Victoria__Australia_.md",
+          "context": "At Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+          "groups": [
+            [
+              "observation cards are kept for 70 days"
+            ],
+            [
+              "If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period"
+            ]
+          ]
+        }
+      ]
+    },
+    "review_status": "COMPLETE",
+    "reviewer": "Codex author-aware, not external/blinded",
+    "binding_note": "The exact named body declaration, card subtype, base duration and full open-review closure/even-after clause are retained; the hyphenated amount/unit equals its own base policy.",
+    "native_PASS_contradiction": false
+  },
+  {
+    "pack": "Binding64",
+    "id": "E2A",
+    "variant": "section",
+    "native": "PASS",
+    "result": {
+      "answered": true,
+      "sources": [
+        {
+          "citation": 1,
+          "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:body:1415",
+          "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+          "filename": "02_Victoria__Australia_.md",
+          "quote": "At Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+          "excerpt": "At Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+          "start": 1415,
+          "end": 1594,
+          "actualCosine": 0.8065823339858894,
+          "cosineAnchor": {
+            "id": "48919a6d-3ac4-4b55-8924-b74ef9b616ea:body:1415",
+            "start": 1415,
+            "end": 1478,
+            "actualCosine": 0.8065823339858894
+          }
+        }
+      ],
+      "answer": "[1] At Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+      "mode": "Experimental v50 version-scope/retention",
+      "experiment": "V50 isolated version-scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "supported",
+        "subject": "observation card",
+        "entity": "nerith sky workshop",
+        "scope_proof": {
+          "kind": "source_introduction",
+          "start": 1415,
+          "end": 1478,
+          "declared": "nerith sky workshop"
+        },
+        "conditions": [
+          {
+            "kind": "review",
+            "status": "ongoing",
+            "modifiers": [
+              "coordinate"
+            ]
+          }
+        ],
+        "policy_span": {
+          "start": 1415,
+          "end": 1594
+        },
+        "prior_display_preserved": false
+      }
+    },
+    "old_result": {
+      "answered": false,
+      "sources": [],
+      "answer": "I can't find this in the provided documents.",
+      "mode": "Experimental v47 scope/retention",
+      "experiment": "V47 isolated scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "unsupported",
+        "reason": "Unparsed adjacent retention extension"
+      }
+    },
+    "question": "How long are observation cards retained at Nerith Sky Workshop, including the open-review exception?",
+    "key": {
+      "id": "E2A",
+      "question": "How long are observation cards retained at Nerith Sky Workshop, including the open-review exception?",
+      "workflow": "hybrid",
+      "category": "conditional_supported",
+      "expected_sources": [
+        {
+          "filename": "02_Victoria__Australia_.md",
+          "context": "At Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+          "groups": [
+            [
+              "observation cards are kept for 70 days"
+            ],
+            [
+              "If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period"
+            ]
+          ]
+        }
+      ]
+    },
+    "review_status": "COMPLETE",
+    "reviewer": "Codex author-aware, not external/blinded",
+    "binding_note": "The exact named body declaration, card subtype, base duration and full open-review closure/even-after clause are retained; the hyphenated amount/unit equals its own base policy.",
+    "native_PASS_contradiction": false
+  },
+  {
+    "pack": "Binding64",
+    "id": "E3A",
+    "variant": "fixed",
+    "native": "PASS",
+    "result": {
+      "answered": true,
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b50962f0-f8ed-4098-8df9-39987029f0ec:body:2279",
+          "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+          "filename": "03_Geology.md",
+          "quote": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+          "excerpt": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+          "start": 2279,
+          "end": 2456,
+          "actualCosine": 0.8286690564647398,
+          "cosineAnchor": {
+            "id": "b50962f0-f8ed-4098-8df9-39987029f0ec:body:2279",
+            "start": 2279,
+            "end": 2344,
+            "actualCosine": 0.8286690564647398
+          }
+        }
+      ],
+      "answer": "[1] At Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+      "mode": "Experimental v50 version-scope/retention",
+      "experiment": "V50 isolated version-scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "supported",
+        "subject": "imaging card",
+        "entity": "caldrin rock imaging room",
+        "scope_proof": {
+          "kind": "source_introduction",
+          "start": 2279,
+          "end": 2344,
+          "declared": "caldrin rock imaging room"
+        },
+        "conditions": [
+          {
+            "kind": "review",
+            "status": "ongoing",
+            "modifiers": [
+              "sample"
+            ]
+          }
+        ],
+        "policy_span": {
+          "start": 2279,
+          "end": 2456
+        },
+        "prior_display_preserved": false
+      }
+    },
+    "old_result": {
+      "answered": false,
+      "sources": [],
+      "answer": "I can't find this in the provided documents.",
+      "mode": "Experimental v47 scope/retention",
+      "experiment": "V47 isolated scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "unsupported",
+        "reason": "Unparsed adjacent retention extension"
+      }
+    },
+    "question": "How long are imaging cards retained at Caldrin Rock Imaging Room, including the open-review exception?",
+    "key": {
+      "id": "E3A",
+      "question": "How long are imaging cards retained at Caldrin Rock Imaging Room, including the open-review exception?",
+      "workflow": "hybrid",
+      "category": "conditional_supported",
+      "expected_sources": [
+        {
+          "filename": "03_Geology.md",
+          "context": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+          "groups": [
+            [
+              "imaging cards are kept for 55 days"
+            ],
+            [
+              "If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period"
+            ]
+          ]
+        }
+      ]
+    },
+    "review_status": "COMPLETE",
+    "reviewer": "Codex author-aware, not external/blinded",
+    "binding_note": "The exact named body declaration, card subtype, base duration and full open-review closure/even-after clause are retained; the hyphenated amount/unit equals its own base policy.",
+    "native_PASS_contradiction": false
+  },
+  {
+    "pack": "Binding64",
+    "id": "E3A",
+    "variant": "section",
+    "native": "PASS",
+    "result": {
+      "answered": true,
+      "sources": [
+        {
+          "citation": 1,
+          "id": "b50962f0-f8ed-4098-8df9-39987029f0ec:body:2279",
+          "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+          "filename": "03_Geology.md",
+          "quote": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+          "excerpt": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+          "start": 2279,
+          "end": 2456,
+          "actualCosine": 0.8286690564647398,
+          "cosineAnchor": {
+            "id": "b50962f0-f8ed-4098-8df9-39987029f0ec:body:2279",
+            "start": 2279,
+            "end": 2344,
+            "actualCosine": 0.8286690564647398
+          }
+        }
+      ],
+      "answer": "[1] At Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+      "mode": "Experimental v50 version-scope/retention",
+      "experiment": "V50 isolated version-scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "supported",
+        "subject": "imaging card",
+        "entity": "caldrin rock imaging room",
+        "scope_proof": {
+          "kind": "source_introduction",
+          "start": 2279,
+          "end": 2344,
+          "declared": "caldrin rock imaging room"
+        },
+        "conditions": [
+          {
+            "kind": "review",
+            "status": "ongoing",
+            "modifiers": [
+              "sample"
+            ]
+          }
+        ],
+        "policy_span": {
+          "start": 2279,
+          "end": 2456
+        },
+        "prior_display_preserved": false
+      }
+    },
+    "old_result": {
+      "answered": false,
+      "sources": [],
+      "answer": "I can't find this in the provided documents.",
+      "mode": "Experimental v47 scope/retention",
+      "experiment": "V47 isolated scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "unsupported",
+        "reason": "Unparsed adjacent retention extension"
+      }
+    },
+    "question": "How long are imaging cards retained at Caldrin Rock Imaging Room, including the open-review exception?",
+    "key": {
+      "id": "E3A",
+      "question": "How long are imaging cards retained at Caldrin Rock Imaging Room, including the open-review exception?",
+      "workflow": "hybrid",
+      "category": "conditional_supported",
+      "expected_sources": [
+        {
+          "filename": "03_Geology.md",
+          "context": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+          "groups": [
+            [
+              "imaging cards are kept for 55 days"
+            ],
+            [
+              "If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period"
+            ]
+          ]
+        }
+      ]
+    },
+    "review_status": "COMPLETE",
+    "reviewer": "Codex author-aware, not external/blinded",
+    "binding_note": "The exact named body declaration, card subtype, base duration and full open-review closure/even-after clause are retained; the hyphenated amount/unit equals its own base policy.",
+    "native_PASS_contradiction": false
+  },
+  {
+    "pack": "Binding64",
+    "id": "E4A",
+    "variant": "fixed",
+    "native": "PASS",
+    "result": {
+      "answered": true,
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f:body:1903",
+          "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+          "filename": "04_Packet_switching.md",
+          "quote": "At Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+          "excerpt": "At Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+          "start": 1903,
+          "end": 2086,
+          "actualCosine": 0.8344787762318162,
+          "cosineAnchor": {
+            "id": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f:body:1903",
+            "start": 1903,
+            "end": 1971,
+            "actualCosine": 0.8344787762318162
+          }
+        }
+      ],
+      "answer": "[1] At Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+      "mode": "Experimental v50 version-scope/retention",
+      "experiment": "V50 isolated version-scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "supported",
+        "subject": "conservation card",
+        "entity": "soravin specimen studio",
+        "scope_proof": {
+          "kind": "source_introduction",
+          "start": 1903,
+          "end": 1971,
+          "declared": "soravin specimen studio"
+        },
+        "conditions": [
+          {
+            "kind": "review",
+            "status": "ongoing",
+            "modifiers": [
+              "treatment"
+            ]
+          }
+        ],
+        "policy_span": {
+          "start": 1903,
+          "end": 2086
+        },
+        "prior_display_preserved": false
+      }
+    },
+    "old_result": {
+      "answered": false,
+      "sources": [],
+      "answer": "I can't find this in the provided documents.",
+      "mode": "Experimental v47 scope/retention",
+      "experiment": "V47 isolated scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "unsupported",
+        "reason": "Unparsed adjacent retention extension"
+      }
+    },
+    "question": "How long are conservation cards retained at Soravin Specimen Studio, including the open-review exception?",
+    "key": {
+      "id": "E4A",
+      "question": "How long are conservation cards retained at Soravin Specimen Studio, including the open-review exception?",
+      "workflow": "hybrid",
+      "category": "conditional_supported",
+      "expected_sources": [
+        {
+          "filename": "04_Packet_switching.md",
+          "context": "At Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+          "groups": [
+            [
+              "conservation cards are kept for 80 days"
+            ],
+            [
+              "If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period"
+            ]
+          ]
+        }
+      ]
+    },
+    "review_status": "COMPLETE",
+    "reviewer": "Codex author-aware, not external/blinded",
+    "binding_note": "The exact named body declaration, card subtype, base duration and full open-review closure/even-after clause are retained; the hyphenated amount/unit equals its own base policy.",
+    "native_PASS_contradiction": false
+  },
+  {
+    "pack": "Binding64",
+    "id": "E4A",
+    "variant": "section",
+    "native": "PASS",
+    "result": {
+      "answered": true,
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f:body:1903",
+          "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+          "filename": "04_Packet_switching.md",
+          "quote": "At Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+          "excerpt": "At Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+          "start": 1903,
+          "end": 2086,
+          "actualCosine": 0.8344787762318162,
+          "cosineAnchor": {
+            "id": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f:body:1903",
+            "start": 1903,
+            "end": 1971,
+            "actualCosine": 0.8344787762318162
+          }
+        }
+      ],
+      "answer": "[1] At Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+      "mode": "Experimental v50 version-scope/retention",
+      "experiment": "V50 isolated version-scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "supported",
+        "subject": "conservation card",
+        "entity": "soravin specimen studio",
+        "scope_proof": {
+          "kind": "source_introduction",
+          "start": 1903,
+          "end": 1971,
+          "declared": "soravin specimen studio"
+        },
+        "conditions": [
+          {
+            "kind": "review",
+            "status": "ongoing",
+            "modifiers": [
+              "treatment"
+            ]
+          }
+        ],
+        "policy_span": {
+          "start": 1903,
+          "end": 2086
+        },
+        "prior_display_preserved": false
+      }
+    },
+    "old_result": {
+      "answered": false,
+      "sources": [],
+      "answer": "I can't find this in the provided documents.",
+      "mode": "Experimental v47 scope/retention",
+      "experiment": "V47 isolated scope/retention; production unchanged",
+      "retention_contract": {
+        "status": "unsupported",
+        "reason": "Unparsed adjacent retention extension"
+      }
+    },
+    "question": "How long are conservation cards retained at Soravin Specimen Studio, including the open-review exception?",
+    "key": {
+      "id": "E4A",
+      "question": "How long are conservation cards retained at Soravin Specimen Studio, including the open-review exception?",
+      "workflow": "hybrid",
+      "category": "conditional_supported",
+      "expected_sources": [
+        {
+          "filename": "04_Packet_switching.md",
+          "context": "At Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+          "groups": [
+            [
+              "conservation cards are kept for 80 days"
+            ],
+            [
+              "If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period"
+            ]
+          ]
+        }
+      ]
+    },
+    "review_status": "COMPLETE",
+    "reviewer": "Codex author-aware, not external/blinded",
+    "binding_note": "The exact named body declaration, card subtype, base duration and full open-review closure/even-after clause are retained; the hyphenated amount/unit equals its own base policy.",
+    "native_PASS_contradiction": false
+  }
+]

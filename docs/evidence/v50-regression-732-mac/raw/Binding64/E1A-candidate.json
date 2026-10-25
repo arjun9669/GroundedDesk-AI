@@ -1,0 +1,1450 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "E1A",
+  "question": "How long are listening cards retained at Velora Audio Archive, including the open-review exception?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How long are listening cards retained at Velora Audio Archive, including the open-review exception?",
+    "expected_display": "How long are listening cards retained at Velora Audio Archive, including the open-review exception?",
+    "rendered_question": "How long are listening cards retained at Velora Audio Archive, including the open-review exception?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional retention At Velora Audio Archive, listening cards are kept for 45 days.",
+    "sources": [
+      {
+        "filename": "01_Huguenot.md",
+        "excerpt": "27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.\n\n## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the",
+        "quote": "## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow long are listening cards retained at Velora Audio Archive, including the open-review exception?\n\nSearched all files: 01_Huguenot.md · 02_Victoria__Australia_.md · 03_Geology.md · 04_Packet_switching.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional retention At Velora Audio Archive, listening cards are kept for 45 days.\n\nSOURCE EVIDENCE\n[1]\n01_Huguenot.md\n\nText lines 12–13 (normalized extraction)\n\n27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations. ## Fictional retention At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period. ## Fictional copy requests At Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:1312",
+        "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+        "filename": "01_Huguenot.md",
+        "excerpt": "27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.\n\n## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the",
+        "quote": "## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days.",
+        "score": 0.0476,
+        "lexicalScore": 14.039726024967036,
+        "semanticScore": 0.7188344624294928,
+        "matchedTerms": [
+          "listening",
+          "cards",
+          "velora",
+          "audio",
+          "archive",
+          "open",
+          "review"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "sources": [
+      {
+        "citation": 1,
+        "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:body:1593",
+        "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+        "filename": "01_Huguenot.md",
+        "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+        "excerpt": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+        "start": 1593,
+        "end": 1771,
+        "actualCosine": 0.8410346915737669,
+        "cosineAnchor": {
+          "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:body:1593",
+          "start": 1593,
+          "end": 1655,
+          "actualCosine": 0.8410346915737669
+        }
+      }
+    ],
+    "answer": "[1] At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+    "mode": "Experimental v50 version-scope/retention",
+    "experiment": "V50 isolated version-scope/retention; production unchanged",
+    "retention_contract": {
+      "status": "supported",
+      "subject": "listening card",
+      "entity": "velora audio archive",
+      "scope_proof": {
+        "kind": "source_introduction",
+        "start": 1593,
+        "end": 1655,
+        "declared": "velora audio archive"
+      },
+      "conditions": [
+        {
+          "kind": "review",
+          "status": "ongoing",
+          "modifiers": [
+            "correction"
+          ]
+        }
+      ],
+      "policy_span": {
+        "start": 1593,
+        "end": 1771
+      },
+      "prior_display_preserved": false
+    }
+  },
+  "section": {
+    "answered": true,
+    "sources": [
+      {
+        "citation": 1,
+        "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:body:1593",
+        "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+        "filename": "01_Huguenot.md",
+        "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+        "excerpt": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+        "start": 1593,
+        "end": 1771,
+        "actualCosine": 0.8410346915737669,
+        "cosineAnchor": {
+          "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:body:1593",
+          "start": 1593,
+          "end": 1655,
+          "actualCosine": 0.8410346915737669
+        }
+      }
+    ],
+    "answer": "[1] At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+    "mode": "Experimental v50 version-scope/retention",
+    "experiment": "V50 isolated version-scope/retention; production unchanged",
+    "retention_contract": {
+      "status": "supported",
+      "subject": "listening card",
+      "entity": "velora audio archive",
+      "scope_proof": {
+        "kind": "source_introduction",
+        "start": 1593,
+        "end": 1655,
+        "declared": "velora audio archive"
+      },
+      "conditions": [
+        {
+          "kind": "review",
+          "status": "ongoing",
+          "modifiers": [
+            "correction"
+          ]
+        }
+      ],
+      "policy_span": {
+        "start": 1593,
+        "end": 1771
+      },
+      "prior_display_preserved": false
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Huguenot.md",
+      "start": 1593,
+      "content": "At Velora Audio Archive, listening cards are kept for 45 days.",
+      "semanticScore": 0.8410346915737669,
+      "lexicalScore": 17.942227358110443
+    },
+    {
+      "filename": "01_Huguenot.md",
+      "start": 1800,
+      "content": "At Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day.",
+      "semanticScore": 0.6189403488281959,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Geology.md",
+      "start": 2345,
+      "content": "If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+      "semanticScore": 0.5772148542997797,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Packet_switching.md",
+      "start": 1972,
+      "content": "If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+      "semanticScore": 0.5172369113336048,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Huguenot.md",
+      "start": 1656,
+      "content": "If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "semanticScore": 0.4965616089162872,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society.",
+      "start": 32,
+      "end": 150,
+      "similarity": -0.01914148203970224,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The kingdom did not fully recover for years.",
+      "start": 151,
+      "end": 195,
+      "similarity": 0.11006232561135312,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters.",
+      "start": 196,
+      "end": 438,
+      "similarity": -0.08773236209895484,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.",
+      "start": 439,
+      "end": 674,
+      "similarity": -0.029805860211334575,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "In Berlin, the Huguenots created two new neighbourhoods: Dorotheenstadt and Friedrichstadt.",
+      "start": 696,
+      "end": 787,
+      "similarity": 0.08921351837179733,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "By 1700, one-fifth of the city's population was French speaking.",
+      "start": 788,
+      "end": 852,
+      "similarity": 0.04894358082146612,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The Berlin Huguenots preserved the French language in their church services for nearly a century.",
+      "start": 853,
+      "end": 950,
+      "similarity": 0.13553544271595092,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "They ultimately decided to switch to German in protest against the occupation of Prussia by Napoleon in 1806-07.",
+      "start": 951,
+      "end": 1063,
+      "similarity": -0.089499241247122,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Many of their descendents rose to positions of prominence.",
+      "start": 1064,
+      "end": 1122,
+      "similarity": -0.06404021831772559,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.",
+      "start": 1123,
+      "end": 1257,
+      "similarity": 0.008096274993861906,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+      "start": 1288,
+      "end": 1375,
+      "similarity": 0.38929346983654667,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Taro Ilven mounted 34 segments.",
+      "start": 1376,
+      "end": 1407,
+      "similarity": 0.11888358444218956,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Mira Solven inspected 19 segments.",
+      "start": 1408,
+      "end": 1442,
+      "similarity": 0.08781959278116536,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1443,
+      "end": 1506,
+      "similarity": 0.03855583765749559,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1507,
+      "end": 1568,
+      "similarity": 0.13032032232834959,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At Velora Audio Archive, listening cards are kept for 45 days.",
+      "start": 1593,
+      "end": 1655,
+      "similarity": 0.8410346915737669,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "start": 1656,
+      "end": 1771,
+      "similarity": 0.4965616089162872,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day.",
+      "start": 1800,
+      "end": 1900,
+      "similarity": 0.6189403488281959,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At or after 14:00, send it on the next operating day.",
+      "start": 1901,
+      "end": 1954,
+      "similarity": 0.26132809465150186,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "If the rights review is unresolved, do not send the copy until that review closes.",
+      "start": 1955,
+      "end": 2037,
+      "similarity": 0.42602924061457265,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "The Mallee and upper Wimmera are Victoria's warmest regions with hot winds blowing from nearby semi-deserts.",
+      "start": 44,
+      "end": 152,
+      "similarity": 0.020552791296625742,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Average temperatures exceed 32 °C (90 °F) during summer and 15 °C (59 °F) in winter.",
+      "start": 153,
+      "end": 237,
+      "similarity": -0.06686459269503621,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Except at cool mountain elevations, the inland monthly temperatures are 2–7 °C (4–13 °F) warmer than around Melbourne (see chart).",
+      "start": 238,
+      "end": 368,
+      "similarity": -0.023285797599679876,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Victoria's highest maximum temperature since World War II, of 48.8 °C (119.8 °F) was recorded in Hopetoun on 7 February 2009, during the 2009 southeastern Australia heat wave.",
+      "start": 369,
+      "end": 544,
+      "similarity": -0.056860838747618735,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "During 2003–04, the gross value of Victorian agricultural production increased by 17% to $8.7 billion.",
+      "start": 566,
+      "end": 668,
+      "similarity": -0.06121253044066415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "This represented 24% of national agricultural production total gross value.",
+      "start": 669,
+      "end": 744,
+      "similarity": -0.05000056195804756,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "As of 2004, an estimated 32,463 farms occupied around 136,000 square kilometres (52,500 sq mi) of Victorian land.",
+      "start": 745,
+      "end": 858,
+      "similarity": -0.039301412534883416,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "This comprises more than 60% of the state's total land surface.",
+      "start": 859,
+      "end": 922,
+      "similarity": -0.08538863469152565,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Victorian farms range from small horticultural outfits to large-scale livestock and grain productions.",
+      "start": 923,
+      "end": 1025,
+      "similarity": -0.12019537091831008,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "A quarter of farmland is used to grow consumable crops.",
+      "start": 1026,
+      "end": 1081,
+      "similarity": -0.020480041475362573,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.",
+      "start": 1112,
+      "end": 1197,
+      "similarity": 0.04070172236027458,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Ivo Darven polished 52 plates.",
+      "start": 1198,
+      "end": 1228,
+      "similarity": 0.023973039521409358,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Lena Corven photographed 16 plates.",
+      "start": 1229,
+      "end": 1264,
+      "similarity": 0.03639706557308446,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1265,
+      "end": 1328,
+      "similarity": 0.03855583765749559,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1329,
+      "end": 1390,
+      "similarity": 0.13032032232834959,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At Nerith Sky Workshop, observation cards are kept for 70 days.",
+      "start": 1415,
+      "end": 1478,
+      "similarity": 0.3887409394645333,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+      "start": 1479,
+      "end": 1594,
+      "similarity": 0.49016891899965215,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+      "start": 1623,
+      "end": 1722,
+      "similarity": 0.26534916085190474,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At or after 15:30, send it on the next operating day.",
+      "start": 1723,
+      "end": 1776,
+      "similarity": 0.25881143283071795,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "If the publication review is unresolved, do not send the copy until that review closes.",
+      "start": 1777,
+      "end": 1864,
+      "similarity": 0.4155073963561351,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Some modern scholars, such as Fielding H.",
+      "start": 31,
+      "end": 72,
+      "similarity": 0.043580962610020396,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Garrison, are of the opinion that the origin of the science of geology can be traced to Persia after the Muslim conquests had come to an end.",
+      "start": 73,
+      "end": 214,
+      "similarity": 0.017930734989465173,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Abu al-Rayhan al-Biruni (973–1048 CE) was one of the earliest Persian geologists, whose works included the earliest writings on the geology of India, hypothesizing that the Indian subcontinent was once a sea.",
+      "start": 215,
+      "end": 423,
+      "similarity": 0.08242448319688227,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Drawing from Greek and Indian scientific literature that were not destroyed by the Muslim conquests, the Persian scholar Ibn Sina (Avicenna, 981–1037) proposed detailed explanations for the formation of mountains, the origin of earthquakes, and other topics central to modern geology, which provided an essential foundation for the later development of the science.",
+      "start": 424,
+      "end": 789,
+      "similarity": 0.06715031214884562,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "In China, the polymath Shen Kuo (1031–1095) formulated a hypothesis for the process of land formation: based on his observation of fossil animal shells in a geological stratum in a mountain hundreds of miles from the ocean, he inferred that the land was formed by erosion of the mountains and by deposition of silt.",
+      "start": 790,
+      "end": 1105,
+      "similarity": -0.11262020778608933,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Seismologists can use the arrival times of seismic waves in reverse to image the interior of the Earth.",
+      "start": 1127,
+      "end": 1230,
+      "similarity": 0.08873473554081471,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Early advances in this field showed the existence of a liquid outer core (where shear waves were not able to propagate) and a dense solid inner core.",
+      "start": 1231,
+      "end": 1380,
+      "similarity": 0.014856909106737533,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "These advances led to the development of a layered model of the Earth, with a crust and lithosphere on top, the mantle below (separated within itself by seismic discontinuities at 410 and 660 kilometers), and the outer core and inner core below that.",
+      "start": 1381,
+      "end": 1631,
+      "similarity": -0.02382152821921883,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "More recently, seismologists have been able to create detailed images of wave speeds inside the earth in the same way a doctor images a body in a CT scan.",
+      "start": 1632,
+      "end": 1786,
+      "similarity": 0.03022229852486533,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.",
+      "start": 1787,
+      "end": 1946,
+      "similarity": -0.040968068609959406,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+      "start": 1977,
+      "end": 2066,
+      "similarity": 0.10250026272434969,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Olan Merven printed 26 frames.",
+      "start": 2067,
+      "end": 2097,
+      "similarity": 0.21280950428157935,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Nira Telven checked 31 frames.",
+      "start": 2098,
+      "end": 2128,
+      "similarity": 0.2562375770066444,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 2129,
+      "end": 2192,
+      "similarity": 0.03855583765749559,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 2193,
+      "end": 2254,
+      "similarity": 0.13032032232834959,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days.",
+      "start": 2279,
+      "end": 2344,
+      "similarity": 0.4277097135066122,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+      "start": 2345,
+      "end": 2456,
+      "similarity": 0.5772148542997797,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day.",
+      "start": 2485,
+      "end": 2590,
+      "similarity": 0.2665442857515412,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At or after 13:00, send it on the next operating day.",
+      "start": 2591,
+      "end": 2644,
+      "similarity": 0.2613757825825276,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "If the ownership review is unresolved, do not send the copy until that review closes.",
+      "start": 2645,
+      "end": 2730,
+      "similarity": 0.38679964440355064,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Packet mode communication may be implemented with or without intermediate forwarding nodes (packet switches or routers).",
+      "start": 40,
+      "end": 160,
+      "similarity": -0.04543016686945234,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Packets are normally forwarded by intermediate network nodes asynchronously using first-in, first-out buffering, but may be forwarded according to some scheduling discipline for fair queuing, traffic shaping, or for differentiated or guaranteed quality of service, such as weighted fair queuing or leaky bucket.",
+      "start": 161,
+      "end": 472,
+      "similarity": 0.07540188266279133,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "In case of a shared physical medium (such as radio or 10BASE5), the packets may be delivered according to a multiple access scheme.",
+      "start": 473,
+      "end": 604,
+      "similarity": 0.14487112722644577,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Starting in the late 1950s, American computer scientist Paul Baran developed the concept Distributed Adaptive Message Block Switching with the goal to provide a fault-tolerant, efficient routing method for telecommunication messages as part of a research program at the RAND Corporation, funded by the US Department of Defense.",
+      "start": 626,
+      "end": 953,
+      "similarity": 0.09459205129473451,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "This concept contrasted and contradicted the theretofore established principles of pre-allocation of network bandwidth, largely fortified by the development of telecommunications in the Bell System.",
+      "start": 954,
+      "end": 1152,
+      "similarity": 0.06078838127819934,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "The new concept found little resonance among network implementers until the independent work of Donald Davies at the National Physical Laboratory (United Kingdom) (NPL) in the late 1960s.",
+      "start": 1153,
+      "end": 1340,
+      "similarity": 0.0619393793418196,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.",
+      "start": 1341,
+      "end": 1575,
+      "similarity": -0.054615205370268864,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+      "start": 1606,
+      "end": 1692,
+      "similarity": 0.1449166008966851,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Eran Morven cleaned 41 trays.",
+      "start": 1693,
+      "end": 1722,
+      "similarity": 0.13702237518004384,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Vera Linven weighed 18 trays.",
+      "start": 1723,
+      "end": 1752,
+      "similarity": 0.05321107760269252,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1753,
+      "end": 1816,
+      "similarity": 0.03855583765749559,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1817,
+      "end": 1878,
+      "similarity": 0.13032032232834959,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At Soravin Specimen Studio, conservation cards are kept for 80 days.",
+      "start": 1903,
+      "end": 1971,
+      "similarity": 0.4817847758625498,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+      "start": 1972,
+      "end": 2086,
+      "similarity": 0.5172369113336048,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day.",
+      "start": 2115,
+      "end": 2218,
+      "similarity": 0.27745608901624336,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At or after 16:00, send it on the next operating day.",
+      "start": 2219,
+      "end": 2272,
+      "similarity": 0.2812335561134052,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "If the custody review is unresolved, do not send the copy until that review closes.",
+      "start": 2273,
+      "end": 2356,
+      "similarity": 0.35044246235664933,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:1312",
+          "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+          "filename": "01_Huguenot.md",
+          "excerpt": "n. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.\n\n## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the next operating day. If the rights review is unresolved, do not send the copy until that review closes.",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "score": 0.0476,
+          "lexicalScore": 14.039726024967036,
+          "semanticScore": 0.7188344624294928,
+          "matchedTerms": [
+            "listening",
+            "cards",
+            "velora",
+            "audio",
+            "archive",
+            "open",
+            "review"
+          ],
+          "start": 1593,
+          "end": 1771
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [],
+      "body_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:1570",
+          "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+          "filename": "01_Huguenot.md",
+          "excerpt": "n. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.\n\n## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the next operating day. If the rights review is unresolved, do not send the copy until that review closes.",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "score": 0.0476,
+          "lexicalScore": 17.51010154309931,
+          "semanticScore": 0.8596075474373682,
+          "matchedTerms": [
+            "listening",
+            "cards",
+            "velora",
+            "audio",
+            "archive",
+            "open",
+            "review"
+          ],
+          "start": 1593,
+          "end": 1771
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [],
+      "body_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:1312",
+          "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+          "filename": "01_Huguenot.md",
+          "excerpt": "n. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.\n\n## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the next operating day. If the rights review is unresolved, do not send the copy until that review closes.",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "score": 0.0476,
+          "lexicalScore": 14.039726024967036,
+          "semanticScore": 0.7188344624294928,
+          "matchedTerms": [
+            "listening",
+            "cards",
+            "velora",
+            "audio",
+            "archive",
+            "open",
+            "review"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": []
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "12063355-7d44-457d-b4a1-79feaba7a1f9:1570",
+          "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+          "filename": "01_Huguenot.md",
+          "excerpt": "n. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.\n\n## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the next operating day. If the rights review is unresolved, do not send the copy until that review closes.",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "score": 0.0476,
+          "lexicalScore": 17.51010154309931,
+          "semanticScore": 0.8596075474373682,
+          "matchedTerms": [
+            "listening",
+            "cards",
+            "velora",
+            "audio",
+            "archive",
+            "open",
+            "review"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": []
+    }
+  },
+  "query_vector": [
+    -0.013548105955123901,
+    0.01669933646917343,
+    -0.09084563702344894,
+    -0.018099119886755943,
+    0.029446642845869064,
+    0.015774041414260864,
+    -0.07294197380542755,
+    -0.018648628145456314,
+    0.009047206491231918,
+    -0.07981124520301819,
+    0.007719442714005709,
+    0.08294308185577393,
+    -0.04863873869180679,
+    -0.07498886436223984,
+    -0.0571269728243351,
+    0.03968813270330429,
+    0.01126535888761282,
+    -0.05534181371331215,
+    -0.011869865469634533,
+    0.04411883279681206,
+    0.02930200845003128,
+    0.024022681638598442,
+    0.05365528538823128,
+    0.05682205408811569,
+    0.02070808783173561,
+    -0.0020872224122285843,
+    -0.06157040596008301,
+    -0.012734293937683105,
+    0.026150226593017578,
+    -0.006068519316613674,
+    0.03351146727800369,
+    0.060854602605104446,
+    0.1317635327577591,
+    -0.008006618358194828,
+    0.019659291952848434,
+    -0.012192461639642715,
+    -0.03438570722937584,
+    -0.011208033189177513,
+    -0.036271631717681885,
+    -0.0243445485830307,
+    0.020569220185279846,
+    0.046601809561252594,
+    -0.048733364790678024,
+    -0.008870160207152367,
+    -0.06876460462808609,
+    -0.056017469614744186,
+    -0.004197213798761368,
+    -0.04837995395064354,
+    -0.01922200620174408,
+    0.08107081055641174,
+    0.0047168792225420475,
+    -0.014851660467684269,
+    0.011867891997098923,
+    0.0099065275862813,
+    -0.06020461395382881,
+    0.017950400710105896,
+    0.016781890764832497,
+    0.007398461923003197,
+    -0.05681881681084633,
+    0.11001806706190109,
+    0.057409316301345825,
+    -0.07380719482898712,
+    -0.0996522530913353,
+    0.002915568882599473,
+    -0.005080438684672117,
+    -0.0007519602659158409,
+    -0.015568477101624012,
+    0.015839051455259323,
+    0.058435261249542236,
+    -0.009437749162316322,
+    -0.037106625735759735,
+    0.056787945330142975,
+    -0.006043769419193268,
+    0.033622611314058304,
+    0.017942199483513832,
+    0.10050007700920105,
+    0.1011178120970726,
+    -0.013093657791614532,
+    0.0029152357019484043,
+    -0.08241300284862518,
+    -0.00823172740638256,
+    -0.09430990368127823,
+    0.06127959117293358,
+    -0.02454153262078762,
+    0.03481508791446686,
+    -0.02684485912322998,
+    0.000017497228327556513,
+    0.016378911212086678,
+    -0.020273037254810333,
+    -0.04870408773422241,
+    0.006932485848665237,
+    0.05554627627134323,
+    0.009640497155487537,
+    0.007007162552326918,
+    0.06978265941143036,
+    -0.04138883575797081,
+    -0.034127555787563324,
+    -0.02971533313393593,
+    0.02630595676600933,
+    0.026590334251523018,
+    0.041081465780735016,
+    -0.0005147128249518573,
+    -0.019690506160259247,
+    -0.010713872499763966,
+    -0.007646513171494007,
+    -0.06485521048307419,
+    0.01169318612664938,
+    0.03974040970206261,
+    -0.07145216315984726,
+    0.009314820170402527,
+    0.025913383811712265,
+    0.006121203303337097,
+    0.1400829553604126,
+    0.02120283991098404,
+    0.050846900790929794,
+    0.10780194401741028,
+    -0.02556145191192627,
+    0.06558956205844879,
+    0.04462682083249092,
+    0.04253707081079483,
+    0.0026852900628000498,
+    -0.001509771216660738,
+    0.05224435403943062,
+    -0.0786677747964859,
+    -0.03423379361629486,
+    0.008104960434138775,
+    0.06709393113851547,
+    -1.4688656901993713e-33,
+    -0.017842892557382584,
+    -0.003183006541803479,
+    -0.06499727070331573,
+    0.04083854705095291,
+    0.040862612426280975,
+    -0.027685724198818207,
+    0.015843426808714867,
+    -0.0011893545743077993,
+    -0.016738073900341988,
+    0.04108935222029686,
+    -0.014084978960454464,
+    0.039906296879053116,
+    -0.009909597225487232,
+    -0.07057783752679825,
+    -0.013943706639111042,
+    0.06401772052049637,
+    -0.007860046811401844,
+    0.09678062796592712,
+    -0.014477528631687164,
+    -0.02787979319691658,
+    0.05299645662307739,
+    -0.07009056955575943,
+    0.05756816267967224,
+    0.015067917294800282,
+    0.03711026534438133,
+    -0.013836287893354893,
+    0.02831796556711197,
+    -0.09707994759082794,
+    0.08356550335884094,
+    0.019625049084424973,
+    -0.026374416425824165,
+    0.001322838943451643,
+    -0.006039275322109461,
+    -0.015469918958842754,
+    0.03924555703997612,
+    0.09765899181365967,
+    -0.020233742892742157,
+    0.0974651575088501,
+    0.02932782657444477,
+    -0.0502907894551754,
+    0.06567653268575668,
+    0.050381507724523544,
+    0.008826497942209244,
+    -0.04941752925515175,
+    0.012759440578520298,
+    -0.10175248980522156,
+    0.036666322499513626,
+    0.06296318024396896,
+    0.04710949584841728,
+    0.08590241521596909,
+    0.013505963608622551,
+    -0.01600615866482258,
+    -0.11273059248924255,
+    0.020454993471503258,
+    -0.04851263016462326,
+    -0.04465905949473381,
+    0.042087309062480927,
+    0.042480550706386566,
+    0.0416179895401001,
+    0.01932167261838913,
+    0.07296591252088547,
+    0.15126925706863403,
+    0.021739235147833824,
+    -0.112160325050354,
+    0.0524914488196373,
+    0.06179572269320488,
+    -0.10130803287029266,
+    -0.024404648691415787,
+    -0.034542348235845566,
+    -0.10695747286081314,
+    0.04804888367652893,
+    -0.004475807771086693,
+    -0.046631764620542526,
+    -0.05836593359708786,
+    -0.029778797179460526,
+    -0.060085032135248184,
+    0.02734234742820263,
+    -0.01236499473452568,
+    0.0017189424252137542,
+    0.042484089732170105,
+    0.028484860435128212,
+    -0.021790526807308197,
+    -0.018014222383499146,
+    -0.0009251573937945068,
+    -0.04894345626235008,
+    -0.02907618321478367,
+    0.05283196270465851,
+    -0.08689224720001221,
+    -0.040956996381282806,
+    0.01444707065820694,
+    -0.03841406852006912,
+    0.025941524654626846,
+    0.016681239008903503,
+    -0.016276108101010323,
+    0.06406106054782867,
+    1.4604119572715398e-33,
+    -0.028804194182157516,
+    -0.03940880298614502,
+    -0.031158922240138054,
+    0.033223144710063934,
+    -0.0059247869066894054,
+    -0.06945487856864929,
+    -0.07919643074274063,
+    0.2341092824935913,
+    -0.00477741239592433,
+    -0.05835367366671562,
+    -0.005475827492773533,
+    -0.04802919551730156,
+    0.020246224477887154,
+    0.019277255982160568,
+    -0.009335299953818321,
+    -0.10250537097454071,
+    0.01650836318731308,
+    -0.02690901793539524,
+    -0.007879653945565224,
+    0.0007512577576562762,
+    0.052666377276182175,
+    -0.040445905178785324,
+    0.07929989695549011,
+    0.038031209260225296,
+    -0.04248505458235741,
+    0.020253513008356094,
+    0.07277750223875046,
+    -0.08550779521465302,
+    -0.03356398642063141,
+    -0.0950009822845459,
+    0.05659541115164757,
+    -0.0773591622710228,
+    -0.12938804924488068,
+    0.03942207247018814,
+    0.05818178132176399,
+    -0.08143313229084015,
+    -0.01836112141609192,
+    0.06679373979568481,
+    0.0197334922850132,
+    0.0143583370372653,
+    -0.0024619819596409798,
+    0.06678947061300278,
+    -0.012884149327874184,
+    -0.0865689069032669,
+    -0.018869677558541298,
+    -0.04528084769845009,
+    -0.043276868760585785,
+    -0.014872081577777863,
+    -0.014191756956279278,
+    -0.06425988674163818,
+    -0.0016934772720560431,
+    -0.0949675515294075,
+    0.05327162146568298,
+    -0.04377501830458641,
+    0.013034790754318237,
+    0.07522197812795639,
+    0.06778454780578613,
+    -0.0127327349036932,
+    0.04526105150580406,
+    -0.00441964203491807,
+    0.0394933708012104,
+    0.005358098540455103,
+    -0.09734532982110977,
+    -0.1211099848151207,
+    -0.0039162589237093925,
+    0.09398795664310455,
+    0.07127548009157181,
+    0.055823177099227905,
+    0.01850571297109127,
+    0.016298990696668625,
+    0.012979920022189617,
+    0.05880372226238251,
+    -0.08457532525062561,
+    0.03509018197655678,
+    -0.07227368652820587,
+    0.0763765424489975,
+    -0.02291366085410118,
+    -0.02707965299487114,
+    0.0027836814988404512,
+    -0.07207199186086655,
+    -0.05737733095884323,
+    -0.034830912947654724,
+    -0.03850420564413071,
+    -0.02788025699555874,
+    0.07264675945043564,
+    -0.05360341817140579,
+    0.08840020000934601,
+    -0.10978066176176071,
+    0.045777712017297745,
+    0.010574967600405216,
+    0.06389886885881424,
+    0.02702767215669155,
+    0.018551107496023178,
+    0.01685144007205963,
+    0.03997824713587761,
+    -1.6730181684465606e-8,
+    -0.029032856225967407,
+    -0.003897184506058693,
+    -0.01638695038855076,
+    0.042030952870845795,
+    0.07497638463973999,
+    -0.051935531198978424,
+    0.06181073933839798,
+    0.02603268250823021,
+    -0.015406051650643349,
+    -0.017413832247257233,
+    0.10591167956590652,
+    0.04801366478204727,
+    -0.06222677230834961,
+    -0.0705781877040863,
+    -0.020562203601002693,
+    -0.014594914391636848,
+    0.017542321234941483,
+    -0.03454785421490669,
+    -0.02776552364230156,
+    -0.06664086878299713,
+    0.06715818494558334,
+    0.009934749454259872,
+    0.08833306282758713,
+    -0.012257171794772148,
+    -0.038206931203603745,
+    -0.03478125482797623,
+    0.11307255923748016,
+    -0.03641629219055176,
+    0.052906349301338196,
+    -0.03936286270618439,
+    0.024586444720625877,
+    0.060763951390981674,
+    -0.014095240272581577,
+    -0.018936598673462868,
+    -0.05265095457434654,
+    -0.016325602307915688,
+    -0.0025687734596431255,
+    -0.006772264372557402,
+    0.0012518430594354868,
+    0.10435539484024048,
+    0.04207408055663109,
+    -0.021994346752762794,
+    -0.010296939872205257,
+    -0.023543383926153183,
+    -0.01933872140944004,
+    -0.05981297418475151,
+    0.003924104385077953,
+    0.01647336408495903,
+    -0.008624019101262093,
+    0.03591976314783096,
+    -0.036981355398893356,
+    0.014014478772878647,
+    0.014610843732953072,
+    0.052207764238119125,
+    0.042954374104738235,
+    -0.038303714245557785,
+    0.03648185357451439,
+    0.0025779318530112505,
+    -0.030477894470095634,
+    -0.009919977746903896,
+    -0.04630310833454132,
+    0.0032057417556643486,
+    -0.001455949037335813,
+    0.05477061867713928
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Huguenot.md",
+        "start": 1312,
+        "content": "Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.\n\n## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the next operating day. If the rights review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "04_Packet_switching.md",
+        "start": 1978,
+        "content": "reatment review is open, retain the affected cards until the review is closed, even after the 80-day period.\n\n## Fictional copy requests\nAt Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day. At or after 16:00, send it on the next operating day. If the custody review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "start": 1317,
+        "content": "ble totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.\n\n## Fictional copy requests\nAt Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day. At or after 15:30, send it on the next operating day. If the publication review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "03_Geology.md",
+        "start": 1966,
+        "content": "eted tasks\nAt the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run. Olan Merven printed 26 frames. Nira Telven checked 31 frames. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.\n\n## Fictional copy requests\nAt Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day. At or after 13:00, send it on the next operating day. If the ownership review is unresolved, do not send the copy until that review"
+      },
+      {
+        "filename": "03_Geology.md",
+        "start": 2622,
+        "content": "he next operating day. If the ownership review is unresolved, do not send the copy until that review closes."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Huguenot.md",
+        "start": 1570,
+        "content": "## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period."
+      },
+      {
+        "filename": "01_Huguenot.md",
+        "start": 1773,
+        "content": "## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the next operating day. If the rights review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "04_Packet_switching.md",
+        "start": 1880,
+        "content": "## Fictional retention\nAt Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period."
+      },
+      {
+        "filename": "03_Geology.md",
+        "start": 2256,
+        "content": "## Fictional retention\nAt Caldrin Rock Imaging Room, imaging cards are kept for 55 days. If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period."
+      },
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "start": 1392,
+        "content": "## Fictional retention\nAt Nerith Sky Workshop, observation cards are kept for 70 days. If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period."
+      }
+    ]
+  }
+}

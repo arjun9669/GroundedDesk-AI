@@ -1,0 +1,1211 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "F03",
+  "question": "What is the highest monthly mean temperature at Flintmere Reservoir, and in which month?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What is the highest monthly mean temperature at Flintmere Reservoir, and in which month?",
+    "expected_display": "What is the highest monthly mean temperature at Flintmere Reservoir, and in which month?",
+    "rendered_question": "What is the highest monthly mean temperature at Flintmere Reservoir, and in which month?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+    "sources": [
+      {
+        "filename": "01_Flintmere_Reservoir.txt",
+        "excerpt": "opened to visitors in 1906. The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.\n\nThe winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.\n\nIona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.\n\nKeep Flintmere Reser",
+        "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat is the highest monthly mean temperature at Flintmere Reservoir, and in which month?\n\nSearched all files: 01_Flintmere_Reservoir.txt · 02_Orren_Horology_Collection.txt · 03_Velric_Instrument_Workshop.txt · 04_Sable_Travelling_Books.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.\n\nSOURCE EVIDENCE\n[1]\n01_Flintmere_Reservoir.txt\n\nText line 3 (normalized extraction)\n\nopened to visitors in 1906. The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open. The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius. Iona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning. Keep Flintmere Reser\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "e168e9a3-c1e9-42bf-9274-582c539d1a47:0",
+        "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+        "filename": "01_Flintmere_Reservoir.txt",
+        "excerpt": "opened to visitors in 1906. The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.\n\nThe winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.\n\nIona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.\n\nKeep Flintmere Reser",
+        "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 7.440826604468814,
+        "semanticScore": 0.7842798745704169,
+        "matchedTerms": [
+          "highest",
+          "monthly",
+          "mean",
+          "temperature",
+          "flintmere",
+          "reservoir"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean is 19 degrees Celsius, in September.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "e168e9a3-c1e9-42bf-9274-582c539d1a47:body:336",
+        "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+        "filename": "01_Flintmere_Reservoir.txt",
+        "quote": "The highest monthly mean is 19 degrees Celsius, in September.",
+        "start": 336,
+        "end": 397,
+        "actualCosine": 0.5314844692841179,
+        "excerpt": "ay overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.\n\nThe winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.\n\nIona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.\n\nKeep Flintmere Reservoir visitor permits for 8 years. An active access dispute sus"
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Flintmere_Reservoir.txt",
+        "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Flintmere_Reservoir.txt",
+        "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Flintmere_Reservoir.txt",
+        "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "claim_support_diagnostics": {
+      "refused": true,
+      "reason": "Requested entity/statistic not supported in every displayed citation"
+    },
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "temperature",
+        "statistic": "monthly"
+      },
+      "actual_cosines": [
+        0.5314844692841179
+      ]
+    }
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The highest monthly mean is 19 degrees Celsius, in September.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "e168e9a3-c1e9-42bf-9274-582c539d1a47:body:336",
+        "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+        "filename": "01_Flintmere_Reservoir.txt",
+        "quote": "The highest monthly mean is 19 degrees Celsius, in September.",
+        "start": 336,
+        "end": 397,
+        "actualCosine": 0.5314844692841179,
+        "excerpt": "ay overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.\n\nThe winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.\n\nIona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.\n\nKeep Flintmere Reservoir visitor permits for 8 years. An active access dispute sus"
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V33 isolated structural evidence frames; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Flintmere_Reservoir.txt",
+        "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Flintmere_Reservoir.txt",
+        "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Flintmere_Reservoir.txt",
+        "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "claim_support_diagnostics": {
+      "refused": true,
+      "reason": "Requested entity/statistic not supported in every displayed citation"
+    },
+    "evidence_frame_diagnostics": {
+      "repaired": true,
+      "frame": {
+        "kind": "temperature",
+        "statistic": "monthly"
+      },
+      "actual_cosines": [
+        0.5314844692841179
+      ]
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Flintmere_Reservoir.txt",
+      "start": 239,
+      "content": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+      "semanticScore": 0.8107659810145148,
+      "lexicalScore": 9.22893421714906
+    },
+    {
+      "filename": "02_Orren_Horology_Collection.txt",
+      "start": 293,
+      "content": "The highest monthly mean is 21 degrees Celsius.",
+      "semanticScore": 0.6280876801893415,
+      "lexicalScore": 7.959782472960885
+    },
+    {
+      "filename": "03_Velric_Instrument_Workshop.txt",
+      "start": 569,
+      "content": "Velric Instrument Workshop has a highest monthly mean temperature of 27 degrees Celsius and a highest recorded daily temperature of 39 degrees Celsius.",
+      "semanticScore": 0.4903590851883435,
+      "lexicalScore": 8.655368298835459
+    },
+    {
+      "filename": "01_Flintmere_Reservoir.txt",
+      "start": 336,
+      "content": "The highest monthly mean is 19 degrees Celsius, in September.",
+      "semanticScore": 0.5314844692841179,
+      "lexicalScore": 7.557834773484666
+    },
+    {
+      "filename": "01_Flintmere_Reservoir.txt",
+      "start": 398,
+      "content": "The highest recorded daily temperature is 32 degrees Celsius.",
+      "semanticScore": 0.489912307540197,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "Flintmere Reservoir opened to visitors in 1906.",
+      "start": 0,
+      "end": 47,
+      "similarity": 0.47450007855105897,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994.",
+      "start": 48,
+      "end": 150,
+      "similarity": 0.07678597922863457,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "A proposal to close the visitor path in 2019 was rejected, and the path remained open.",
+      "start": 151,
+      "end": 237,
+      "similarity": 0.07009431819994066,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+      "start": 239,
+      "end": 335,
+      "similarity": 0.8107659810145148,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "The highest monthly mean is 19 degrees Celsius, in September.",
+      "start": 336,
+      "end": 397,
+      "similarity": 0.5314844692841179,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "The highest recorded daily temperature is 32 degrees Celsius.",
+      "start": 398,
+      "end": 459,
+      "similarity": 0.489912307540197,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "Iona collects seven water samples per fortnight.",
+      "start": 461,
+      "end": 509,
+      "similarity": 0.25959967098439996,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "Tevan checks four level gauges per morning.",
+      "start": 510,
+      "end": 553,
+      "similarity": 0.19613788170324517,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "Iona checks two signboards per morning.",
+      "start": 554,
+      "end": 593,
+      "similarity": 0.07080440050700919,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "Keep Flintmere Reservoir visitor permits for 8 years.",
+      "start": 595,
+      "end": 648,
+      "similarity": 0.4752279933078086,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+      "value": "An active access dispute suspends disposal until the dispute is resolved.",
+      "start": 649,
+      "end": 722,
+      "similarity": -0.10583561402527075,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "The Orren Horology Collection gallery relocation took place in 1934.",
+      "start": 0,
+      "end": 68,
+      "similarity": 0.02664459977655624,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "Its restoration took place in 1986.",
+      "start": 69,
+      "end": 104,
+      "similarity": 0.04276281891895173,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "A separate storehouse was inspected in 2001.",
+      "start": 105,
+      "end": 149,
+      "similarity": 0.06571110619070779,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "The Orren Horology Collection winter average temperature is 14 degrees Celsius; the absolute minimum winter temperature is 2 degrees Celsius.",
+      "start": 151,
+      "end": 292,
+      "similarity": 0.3284642177820251,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "The highest monthly mean is 21 degrees Celsius.",
+      "start": 293,
+      "end": 340,
+      "similarity": 0.6280876801893415,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "For the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions.",
+      "start": 342,
+      "end": 451,
+      "similarity": 0.14241839298942674,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "In a dusty room the lubrication interval is 48 operating hours.",
+      "start": 452,
+      "end": 515,
+      "similarity": 0.11072769709656308,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "The inspection interval stays at 24 operating hours in either room.",
+      "start": 516,
+      "end": 583,
+      "similarity": 0.06664933897794034,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ee1a001b-76d7-4036-a816-44a17c8b21a6",
+      "value": "Orren Horology Collection loan receipts are retained for 6 years, except that an open ownership claim requires retention until the claim is settled.",
+      "start": 585,
+      "end": 733,
+      "similarity": 0.01788502589051286,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Velric Instrument Workshop was founded in 1981.",
+      "start": 0,
+      "end": 47,
+      "similarity": 0.027672023998934668,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.",
+      "start": 48,
+      "end": 133,
+      "similarity": 0.06296054634738299,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Velric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director.",
+      "start": 135,
+      "end": 274,
+      "similarity": 0.028769256464920304,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.",
+      "start": 275,
+      "end": 390,
+      "similarity": 0.0645867743632652,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Velric Instrument Workshop acknowledges service requests within four business hours.",
+      "start": 392,
+      "end": 476,
+      "similarity": 0.06398112098016474,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "This acknowledgement is not a promise that the repair will be completed within four hours.",
+      "start": 477,
+      "end": 567,
+      "similarity": 0.005035521598231102,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Velric Instrument Workshop has a highest monthly mean temperature of 27 degrees Celsius and a highest recorded daily temperature of 39 degrees Celsius.",
+      "start": 569,
+      "end": 720,
+      "similarity": 0.4903590851883435,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "For the Velric Instrument Workshop drill, lubrication is due every 70 operating hours in normal conditions and every 35 operating hours in a dusty room.",
+      "start": 722,
+      "end": 874,
+      "similarity": 0.12181359652040742,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Inspection remains every 14 operating hours in both conditions.",
+      "start": 875,
+      "end": 938,
+      "similarity": 0.11987018919235737,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Daro tunes three violins per week.",
+      "start": 940,
+      "end": 974,
+      "similarity": 0.10307082992054245,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Sela polishes five flutes per week.",
+      "start": 975,
+      "end": 1010,
+      "similarity": 0.16794721894154493,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1c6e4931-dc75-45d8-a006-fccb3e01f03e",
+      "value": "Daro polishes one display stand per week.",
+      "start": 1011,
+      "end": 1052,
+      "similarity": 0.09507607672817177,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Sable Travelling Books moved its packing office in 2012.",
+      "start": 0,
+      "end": 56,
+      "similarity": -0.016317095028039137,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Its loading ramp was rebuilt in 2021.",
+      "start": 57,
+      "end": 94,
+      "similarity": 0.07902427782018713,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "The public reading desk opened in 2007.",
+      "start": 95,
+      "end": 134,
+      "similarity": 0.06336711988510309,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Mina sorts five return bins per day.",
+      "start": 136,
+      "end": 172,
+      "similarity": 0.13367944222010292,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Jules labels eight book bundles per day.",
+      "start": 173,
+      "end": 213,
+      "similarity": 0.02793110707144534,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Mina labels three route envelopes per day.",
+      "start": 214,
+      "end": 256,
+      "similarity": 0.1550149457576014,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "At Sable Travelling Books, orders released before 14:20 depart on the same service day.",
+      "start": 258,
+      "end": 345,
+      "similarity": 0.08492860861957738,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Orders released at or after 14:20 depart on the following service day, unless a road-closure hold is in effect.",
+      "start": 346,
+      "end": 457,
+      "similarity": 0.05190850609925083,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Sable Travelling Books dispatch packets contain a route sheet, parcel list, driver authorization, and delivery slip.",
+      "start": 459,
+      "end": 575,
+      "similarity": 0.0001522800130647208,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Keep dispatch receipts for 10 months, unless an unresolved loss claim requires longer retention.",
+      "start": 576,
+      "end": 672,
+      "similarity": -0.03204485564353525,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "Sable Travelling Books acknowledges reservation requests within two service days.",
+      "start": 674,
+      "end": 755,
+      "similarity": 0.11275895619309316,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "380f3e5a-53e0-4515-82b6-e1cad3c12ce6",
+      "value": "An acknowledgement does not guarantee that a reserved book will be available.",
+      "start": 756,
+      "end": 833,
+      "similarity": 0.008793690304392606,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean is 19 degrees Celsius, in September.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e168e9a3-c1e9-42bf-9274-582c539d1a47:body:336",
+          "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+          "filename": "01_Flintmere_Reservoir.txt",
+          "quote": "The highest monthly mean is 19 degrees Celsius, in September.",
+          "start": 336,
+          "end": 397,
+          "actualCosine": 0.5314844692841179,
+          "excerpt": "ay overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.\n\nThe winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.\n\nIona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.\n\nKeep Flintmere Reservoir visitor permits for 8 years. An active access dispute sus"
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Flintmere_Reservoir.txt",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Flintmere_Reservoir.txt",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Flintmere_Reservoir.txt",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "claim_support_diagnostics": {
+        "refused": true,
+        "reason": "Requested entity/statistic not supported in every displayed citation"
+      },
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "temperature",
+          "statistic": "monthly"
+        },
+        "actual_cosines": [
+          0.5314844692841179
+        ]
+      }
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The highest monthly mean is 19 degrees Celsius, in September.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e168e9a3-c1e9-42bf-9274-582c539d1a47:body:336",
+          "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+          "filename": "01_Flintmere_Reservoir.txt",
+          "quote": "The highest monthly mean is 19 degrees Celsius, in September.",
+          "start": 336,
+          "end": 397,
+          "actualCosine": 0.5314844692841179,
+          "excerpt": "ay overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.\n\nThe winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.\n\nIona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.\n\nKeep Flintmere Reservoir visitor permits for 8 years. An active access dispute sus"
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V33 isolated structural evidence frames; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Flintmere_Reservoir.txt",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Flintmere_Reservoir.txt",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Flintmere_Reservoir.txt",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "claim_support_diagnostics": {
+        "refused": true,
+        "reason": "Requested entity/statistic not supported in every displayed citation"
+      },
+      "evidence_frame_diagnostics": {
+        "repaired": true,
+        "frame": {
+          "kind": "temperature",
+          "statistic": "monthly"
+        },
+        "actual_cosines": [
+          0.5314844692841179
+        ]
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e168e9a3-c1e9-42bf-9274-582c539d1a47:0",
+          "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+          "filename": "01_Flintmere_Reservoir.txt",
+          "excerpt": "opened to visitors in 1906. The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.\n\nThe winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.\n\nIona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.\n\nKeep Flintmere Reser",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 7.440826604468814,
+          "semanticScore": 0.7842798745704169,
+          "matchedTerms": [
+            "highest",
+            "monthly",
+            "mean",
+            "temperature",
+            "flintmere",
+            "reservoir"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Flintmere_Reservoir.txt",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Flintmere_Reservoir.txt",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e168e9a3-c1e9-42bf-9274-582c539d1a47:0",
+          "documentId": "e168e9a3-c1e9-42bf-9274-582c539d1a47",
+          "filename": "01_Flintmere_Reservoir.txt",
+          "excerpt": "opened to visitors in 1906. The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.\n\nThe winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.\n\nIona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.\n\nKeep Flintmere Reser",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 7.440826604468814,
+          "semanticScore": 0.7842798745704169,
+          "matchedTerms": [
+            "highest",
+            "monthly",
+            "mean",
+            "temperature",
+            "flintmere",
+            "reservoir"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Flintmere_Reservoir.txt",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Flintmere_Reservoir.txt",
+          "quote": "The winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.06375958770513535,
+    -0.042073678225278854,
+    -0.018789470195770264,
+    0.02511207014322281,
+    -0.09781042486429214,
+    -0.02332305535674095,
+    0.00529541727155447,
+    -0.024431291967630386,
+    -0.07739300280809402,
+    -0.006325051188468933,
+    -0.04303787648677826,
+    -0.08298566192388535,
+    -0.02364175207912922,
+    -0.0014652723912149668,
+    -0.03741053119301796,
+    -0.021412711590528488,
+    0.03762597590684891,
+    -0.06287824362516403,
+    0.04230621084570885,
+    0.020009994506835938,
+    0.015126559883356094,
+    -0.06970161199569702,
+    -0.011546293273568153,
+    -0.044872429221868515,
+    0.023750020191073418,
+    0.04564986750483513,
+    -0.11305967718362808,
+    0.06763570010662079,
+    -0.010921203531324863,
+    0.1192736104130745,
+    -0.07216968387365341,
+    0.060757096856832504,
+    0.05867702141404152,
+    -0.040704503655433655,
+    0.07671327888965607,
+    -0.0018517948919907212,
+    -0.012727456167340279,
+    -0.08298918604850769,
+    -0.04657497629523277,
+    0.02903744950890541,
+    -0.04112725704908371,
+    -0.00824167300015688,
+    0.046001702547073364,
+    0.009304557926952839,
+    -0.05935061722993851,
+    0.0817842110991478,
+    -0.011903839185833931,
+    0.013235977850854397,
+    -0.06435056030750275,
+    0.0470074787735939,
+    -0.032412946224212646,
+    0.03627083823084831,
+    -0.02973365969955921,
+    0.022575782611966133,
+    -0.013192317448556423,
+    0.012791652232408524,
+    -0.050292376428842545,
+    -0.02071836031973362,
+    -0.029962126165628433,
+    0.06275850534439087,
+    -0.08852636814117432,
+    0.05275481566786766,
+    -0.1365567296743393,
+    0.05129636079072952,
+    0.1171569898724556,
+    -0.06705700606107712,
+    -0.021686002612113953,
+    0.06277088075876236,
+    0.11417985707521439,
+    -0.02507842145860195,
+    0.015410068444907665,
+    0.018239358440041542,
+    0.006461743731051683,
+    -0.11943066120147705,
+    0.009007166139781475,
+    -0.051754388958215714,
+    0.04055338725447655,
+    -0.010705696418881416,
+    0.05591629445552826,
+    -0.03889743611216545,
+    -0.03394847735762596,
+    -0.06486935913562775,
+    0.10320457816123962,
+    0.009600779041647911,
+    0.04945780709385872,
+    -0.009266586042940617,
+    0.06800585985183716,
+    0.0439181812107563,
+    0.0506589338183403,
+    0.029188891872763634,
+    0.05054410547018051,
+    0.10246096551418304,
+    -0.06796256452798843,
+    0.007940251380205154,
+    -0.04182716831564903,
+    0.08916397392749786,
+    0.05802221596240997,
+    0.02925938554108143,
+    -0.009175319224596024,
+    -0.006468414328992367,
+    -0.021309878677129745,
+    -0.012152537703514099,
+    -0.046386804431676865,
+    0.018935561180114746,
+    0.04564322158694267,
+    -0.039282575249671936,
+    0.021277518942952156,
+    0.026974083855748177,
+    -0.013709173537790775,
+    -0.010945591144263744,
+    -0.057148534804582596,
+    -0.020627787336707115,
+    0.0782579779624939,
+    -0.01225224882364273,
+    0.022615918889641762,
+    -0.06243444234132767,
+    0.01840585470199585,
+    0.025364190340042114,
+    0.05103781446814537,
+    0.05036276578903198,
+    -0.08654963225126266,
+    0.05014803260564804,
+    -0.026645183563232422,
+    0.04845430329442024,
+    -0.07364018261432648,
+    0.08213083446025848,
+    -0.020871268585324287,
+    -2.981036224941051e-33,
+    0.06713792681694031,
+    -0.04601724073290825,
+    0.011741016060113907,
+    -0.08273540437221527,
+    0.0008529518963769078,
+    0.027707712724804878,
+    -0.026176201179623604,
+    -0.03121197409927845,
+    0.016737336292862892,
+    0.034830447286367416,
+    0.09299895167350769,
+    -0.0676625669002533,
+    -0.029424093663692474,
+    0.021396003663539886,
+    -0.02461564727127552,
+    -0.03291412070393562,
+    0.01637410931289196,
+    0.0752643570303917,
+    -0.03996145725250244,
+    0.03499714657664299,
+    0.008652906864881516,
+    0.022133756428956985,
+    0.045701976865530014,
+    -0.029879672452807426,
+    0.015931135043501854,
+    -0.06279513984918594,
+    0.0352272167801857,
+    0.02390294335782528,
+    -0.026495616883039474,
+    0.05919138342142105,
+    0.11318443715572357,
+    -0.058645110577344894,
+    -0.04022092744708061,
+    -0.06168821081519127,
+    0.012238654308021069,
+    0.02833700366318226,
+    -0.010672458447515965,
+    0.009343921206891537,
+    -0.021516066044569016,
+    0.07639492303133011,
+    0.030158085748553276,
+    -0.026289859786629677,
+    0.05201070383191109,
+    -0.014881308190524578,
+    0.003586363513022661,
+    0.013070428743958473,
+    -0.01666998118162155,
+    0.020347291603684425,
+    0.006282839924097061,
+    -0.04374340921640396,
+    -0.07434200495481491,
+    -0.0267072394490242,
+    0.00921233743429184,
+    0.044743653386831284,
+    -0.0218401737511158,
+    0.07168589532375336,
+    -0.01358901895582676,
+    -0.05759960040450096,
+    0.0159332025796175,
+    -0.02848728373646736,
+    -0.0985262468457222,
+    0.02651958540081978,
+    0.014927002601325512,
+    -0.057958200573921204,
+    0.09869561344385147,
+    -0.07158686965703964,
+    0.013874317519366741,
+    0.032283153384923935,
+    0.0014116751262918115,
+    0.04175415635108948,
+    0.036453213542699814,
+    -0.018223781138658524,
+    0.06909778714179993,
+    -0.033666837960481644,
+    -0.03027181886136532,
+    0.003807538654655218,
+    0.08156062662601471,
+    -0.015793653205037117,
+    -0.07788129895925522,
+    0.073898084461689,
+    -0.023949019610881805,
+    0.04720964655280113,
+    0.06618063151836395,
+    0.005153846926987171,
+    -0.06829569488763809,
+    -0.034886982291936874,
+    0.021472163498401642,
+    0.0401456244289875,
+    -0.024970700964331627,
+    0.006721372716128826,
+    0.004568854812532663,
+    -0.10561780631542206,
+    0.03366147726774216,
+    0.014128116890788078,
+    -0.03569177910685539,
+    1.817421530230769e-33,
+    0.07249784469604492,
+    0.059587083756923676,
+    0.03586151450872421,
+    0.02928571216762066,
+    -0.027127912268042564,
+    -0.04085694998502731,
+    0.08896782994270325,
+    0.04379941150546074,
+    0.05343730002641678,
+    0.08468951284885406,
+    0.026126401498913765,
+    0.018269717693328857,
+    0.06447334587574005,
+    -0.02666407637298107,
+    -0.040249116718769073,
+    0.0700831264257431,
+    0.0360417403280735,
+    -0.008170331828296185,
+    0.02663504332304001,
+    0.0036153458058834076,
+    -0.15050403773784637,
+    -0.0120730334892869,
+    -0.059990059584379196,
+    0.08477655798196793,
+    -0.005328161176294088,
+    0.015365521423518658,
+    -0.03632868826389313,
+    -0.08546031266450882,
+    -0.07243266701698303,
+    -0.07907551527023315,
+    -0.06770491600036621,
+    0.025334235280752182,
+    -0.044459518045186996,
+    0.010178718715906143,
+    -0.04319056123495102,
+    0.0932283028960228,
+    0.02547062560915947,
+    -0.0395204983651638,
+    -0.002029355149716139,
+    0.09499161690473557,
+    0.10235478729009628,
+    -0.030369756743311882,
+    0.08351770043373108,
+    0.06196536496281624,
+    0.0464298240840435,
+    0.04188926890492439,
+    0.03917940333485603,
+    0.004968822002410889,
+    0.02108360081911087,
+    0.04952634498476982,
+    -0.02277337573468685,
+    -0.09518203884363174,
+    -0.059706542640924454,
+    0.05828545615077019,
+    0.04656693711876869,
+    -0.09054794162511826,
+    0.038175590336322784,
+    0.022741544991731644,
+    -0.14071445167064667,
+    -0.07492378354072571,
+    0.09008696675300598,
+    0.010522463358938694,
+    -0.0365118533372879,
+    0.04121186584234238,
+    -0.021227501332759857,
+    0.06693778932094574,
+    -0.02177276648581028,
+    -0.034490521997213364,
+    0.009607379324734211,
+    -0.0035021277144551277,
+    0.02053642086684704,
+    -0.001397646963596344,
+    0.08048692345619202,
+    -0.03922583535313606,
+    -0.022732919082045555,
+    -0.03881958872079849,
+    0.02288982830941677,
+    0.005865023005753756,
+    -0.04649587348103523,
+    -0.05470019578933716,
+    -0.07076667994260788,
+    0.06067745387554169,
+    -0.048941630870103836,
+    0.06282247602939606,
+    0.03185855969786644,
+    -0.1319311410188675,
+    -0.0009439624263904989,
+    -0.06363515555858612,
+    0.023553254082798958,
+    -0.013460972346365452,
+    -0.05016196519136429,
+    -0.05647270381450653,
+    -0.13195453584194183,
+    0.0008414147887378931,
+    0.06755035370588303,
+    -1.851002728869844e-8,
+    0.07503963261842728,
+    -0.0013871797127649188,
+    -0.02353053353726864,
+    0.01677347905933857,
+    0.05524319410324097,
+    -0.03529275953769684,
+    0.02770184725522995,
+    0.028080228716135025,
+    -0.007917908020317554,
+    0.04185650870203972,
+    0.08894404023885727,
+    0.015177339315414429,
+    0.03889183700084686,
+    -0.03470927104353905,
+    -0.02235509268939495,
+    -0.010610862635076046,
+    0.007566896267235279,
+    -0.06630456447601318,
+    -0.050011008977890015,
+    -0.15918266773223877,
+    -0.02750278078019619,
+    0.02504952996969223,
+    0.0522431880235672,
+    0.010694882832467556,
+    -0.004487332887947559,
+    0.04002980887889862,
+    -0.030035000294446945,
+    0.05934182181954384,
+    -0.03582092002034187,
+    -0.034069132059812546,
+    -0.012629167176783085,
+    -0.03572132810950279,
+    0.014448137022554874,
+    -0.058654677122831345,
+    0.011491699144244194,
+    0.03205125406384468,
+    0.016141271218657494,
+    0.048745643347501755,
+    -0.04794209450483322,
+    -0.06127528101205826,
+    -0.04429106041789055,
+    -0.008725452236831188,
+    -0.02986525185406208,
+    0.01857052743434906,
+    -0.016844047233462334,
+    -0.008404972031712532,
+    -0.016945498064160347,
+    0.07785715907812119,
+    0.014877351000905037,
+    0.050292689353227615,
+    0.01822827383875847,
+    0.027611613273620605,
+    0.08524587005376816,
+    0.07422934472560883,
+    0.007462355308234692,
+    0.05395908281207085,
+    -0.033945709466934204,
+    0.0016142167150974274,
+    -0.04689560830593109,
+    0.05242818966507912,
+    0.021829182282090187,
+    -0.019479401409626007,
+    -0.05212296172976494,
+    -0.07898244261741638
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Flintmere_Reservoir.txt",
+        "start": 0,
+        "content": "Flintmere Reservoir opened to visitors in 1906. The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.\n\nThe winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.\n\nIona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.\n\nKeep Flintmere Reservoir visitor permits for 8 years. An active access dispute suspends disposal until the dispute is resolved."
+      },
+      {
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "start": 0,
+        "content": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\nVelric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.\n\nVelric Instrument Workshop has a highest monthly mean temperature of 27 degrees Celsius and a highest recorded daily temperature of 39 degrees Celsius.\n\nFor the Velric Instrument Workshop"
+      },
+      {
+        "filename": "02_Orren_Horology_Collection.txt",
+        "start": 0,
+        "content": "The Orren Horology Collection gallery relocation took place in 1934. Its restoration took place in 1986. A separate storehouse was inspected in 2001.\n\nThe Orren Horology Collection winter average temperature is 14 degrees Celsius; the absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean is 21 degrees Celsius.\n\nFor the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.\n\nOrren Horology Collection loan receipts are retained for 6 years, except that an open ownership claim requires retention until the claim is settled."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Flintmere_Reservoir.txt",
+        "start": 0,
+        "content": "Flintmere Reservoir opened to visitors in 1906. The first spillway overhaul was completed in 1961; the second spillway overhaul was completed in 1994. A proposal to close the visitor path in 2019 was rejected, and the path remained open.\n\nThe winter monthly mean temperatures at Flintmere Reservoir lie between 5 and 8 degrees Celsius. The highest monthly mean is 19 degrees Celsius, in September. The highest recorded daily temperature is 32 degrees Celsius.\n\nIona collects seven water samples per fortnight. Tevan checks four level gauges per morning. Iona checks two signboards per morning.\n\nKeep Flintmere Reservoir visitor permits for 8 years. An active access dispute suspends disposal until the dispute is resolved."
+      },
+      {
+        "filename": "03_Velric_Instrument_Workshop.txt",
+        "start": 0,
+        "content": "Velric Instrument Workshop was founded in 1981. The tuning bench was rebuilt in 2017, while the display cabinet was restored in 2022.\n\nVelric Instrument Workshop purchases above 3800 credits require written approval from both the Finance Custodian and the Workshop Director. The purchasing packet consists of a supplier quote, cost sheet, purchase order, safety checklist, and funding code.\n\nVelric Instrument Workshop acknowledges service requests within four business hours. This acknowledgement is not a promise that the repair will be completed within four hours.\n\nVelric Instrument Workshop has a highest monthly mean temperature of 27 degrees Celsius and a highest recorded daily temperature of 39 degrees Celsius.\n\nFor the Velric Instrument Workshop"
+      },
+      {
+        "filename": "02_Orren_Horology_Collection.txt",
+        "start": 0,
+        "content": "The Orren Horology Collection gallery relocation took place in 1934. Its restoration took place in 1986. A separate storehouse was inspected in 2001.\n\nThe Orren Horology Collection winter average temperature is 14 degrees Celsius; the absolute minimum winter temperature is 2 degrees Celsius. The highest monthly mean is 21 degrees Celsius.\n\nFor the Orren Horology Collection winding rig, lubricate after every 96 operating hours in normal conditions. In a dusty room the lubrication interval is 48 operating hours. The inspection interval stays at 24 operating hours in either room.\n\nOrren Horology Collection loan receipts are retained for 6 years, except that an open ownership claim requires retention until the claim is settled."
+      }
+    ]
+  }
+}

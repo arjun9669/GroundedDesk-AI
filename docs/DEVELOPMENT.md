@@ -579,3 +579,20 @@ actual toolchain/assets and67 served sources. Publish/verify clean remote main
 before questions; standing authorization permits the once-only capture. Preserve
 every result and score only a complete sealed capture. Quality failure remains
 FAIL; no key/threshold change, no automatic question retries or live adoption.
+
+
+## V50 complete regression checkpoint
+
+[Results](V50_REGRESSION_RESULTS.md):732 cases captured once,5,865 raw artifacts
+sealed,50,074 body cosines independently audited.19/19 historical family gates
+PASS; all five v49 retention/scope regressions repaired and every prior-v46/v49
+PASS preserved. Historical663/5 fixed and665/3 section native counts retain only
+original public failures under their unchanged qualifications. Fresh6463/0/1
+each variant keeps the monthly store-scope refusal and overall native FAIL.
+
+Separate author-aware review validates all128 Fresh64 displayed signatures against
+prior reviewed outputs/current provenance, all10 changed policy rows and50 expanded/
+4 legacy bindings; no native PASS contradiction or regrading. The remaining
+source/question-scope tension needs a prospective evidence/specification decision,
+not another threshold tweak or frozen-key edit. Historical repair success does not
+authorize live adoption or waive original64/64. Phase2/integration stays HOLD.

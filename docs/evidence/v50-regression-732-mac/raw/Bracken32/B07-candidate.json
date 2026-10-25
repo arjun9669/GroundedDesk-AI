@@ -1,0 +1,1207 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "B07",
+  "question": "In the Tavren Ceramics store, what is the lowest recorded winter temperature?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "In the Tavren Ceramics store, what is the lowest recorded winter temperature?",
+    "expected_display": "In the Tavren Ceramics store, what is the lowest recorded winter temperature?",
+    "rendered_question": "In the Tavren Ceramics store, what is the lowest recorded winter temperature?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+    "sources": [
+      {
+        "filename": "02_Tavren_Ceramics.txt",
+        "excerpt": "The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection re",
+        "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nIn the Tavren Ceramics store, what is the lowest recorded winter temperature?\n\nSearched all files: 01_Rillpoint_Lightstation.txt · 02_Tavren_Ceramics.txt · 03_Rossell_Seed_Library.txt · 04_Lenwick_Canal_Transit.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.\n\nSOURCE EVIDENCE\n[1]\n02_Tavren_Ceramics.txt\n\nText line 3 (normalized extraction)\n\nThe Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur. Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July. Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection re\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "cc3e5bb2-a068-4910-a583-92eabbba66c6:0",
+        "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+        "filename": "02_Tavren_Ceramics.txt",
+        "excerpt": "The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection re",
+        "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 4.130402506466563,
+        "semanticScore": 0.7373940996055067,
+        "matchedTerms": [
+          "tavren",
+          "ceramics",
+          "winter",
+          "temperature"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "cc3e5bb2-a068-4910-a583-92eabbba66c6:0",
+        "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+        "filename": "02_Tavren_Ceramics.txt",
+        "excerpt": "The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finan",
+        "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+        "score": 0.0476,
+        "lexicalScore": 4.130402506466563,
+        "semanticScore": 0.7373940996055067,
+        "matchedTerms": [
+          "tavren",
+          "ceramics",
+          "winter",
+          "temperature"
+        ],
+        "start": 128,
+        "end": 336
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Tavren_Ceramics.txt",
+        "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Tavren_Ceramics.txt",
+        "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Tavren_Ceramics.txt",
+        "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "cc3e5bb2-a068-4910-a583-92eabbba66c6:0",
+        "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+        "filename": "02_Tavren_Ceramics.txt",
+        "excerpt": "The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finan",
+        "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+        "score": 0.0476,
+        "lexicalScore": 4.130402506466563,
+        "semanticScore": 0.7373940996055067,
+        "matchedTerms": [
+          "tavren",
+          "ceramics",
+          "winter",
+          "temperature"
+        ],
+        "start": 128,
+        "end": 336
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Tavren_Ceramics.txt",
+        "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Tavren_Ceramics.txt",
+        "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Tavren_Ceramics.txt",
+        "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Tavren_Ceramics.txt",
+      "start": 128,
+      "content": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+      "semanticScore": 0.777638747450646,
+      "lexicalScore": 7.315142843953515
+    },
+    {
+      "filename": "02_Tavren_Ceramics.txt",
+      "start": 207,
+      "content": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "semanticScore": 0.5602246510086029,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Tavren_Ceramics.txt",
+      "start": 0,
+      "content": "The Tavren Ceramics kiln was commissioned in 1978.",
+      "semanticScore": 0.5075396920482652,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 274,
+      "content": "Its highest recorded daily temperature is 36 degrees Celsius.",
+      "semanticScore": 0.4217116266697182,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Lenwick_Canal_Transit.txt",
+      "start": 336,
+      "content": "Its highest monthly mean temperature is 22 degrees Celsius.",
+      "semanticScore": 0.41016628026847773,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Rillpoint Lightstation transferred to North Spit in 1859.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.11723147891569938,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Its first restoration was completed in 1913.",
+      "start": 58,
+      "end": 102,
+      "similarity": 0.13425056454886505,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "A second restoration was completed in 1962.",
+      "start": 103,
+      "end": 146,
+      "similarity": 0.13424708510628366,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "The proposed demolition in 1987 was canceled and never took place.",
+      "start": 147,
+      "end": 213,
+      "similarity": 0.021320391418515754,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Winter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius.",
+      "start": 215,
+      "end": 296,
+      "similarity": 0.4023876552494592,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Its highest monthly mean temperature is 23 degrees Celsius in August.",
+      "start": 297,
+      "end": 366,
+      "similarity": 0.3133946578128078,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 367,
+      "end": 428,
+      "similarity": 0.3808789837680898,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Edda binds nine charts per week.",
+      "start": 430,
+      "end": 462,
+      "similarity": 0.039505258077625775,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Soren checks three beacons per night.",
+      "start": 463,
+      "end": 500,
+      "similarity": 0.18877542519900015,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Edda washes two lanterns per week.",
+      "start": 501,
+      "end": 535,
+      "similarity": 0.11817170775974083,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Rillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+      "start": 537,
+      "end": 660,
+      "similarity": 0.10305018192425443,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "The Tavren Ceramics kiln was commissioned in 1978.",
+      "start": 0,
+      "end": 50,
+      "similarity": 0.5075396920482652,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Its rebuild took place in 2009.",
+      "start": 51,
+      "end": 82,
+      "similarity": 0.11067611592252953,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "The planned transfer in 2020 did not occur.",
+      "start": 83,
+      "end": 126,
+      "similarity": 0.07323416510253236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+      "start": 128,
+      "end": 206,
+      "similarity": 0.777638747450646,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 207,
+      "end": 268,
+      "similarity": 0.5602246510086029,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Its highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 269,
+      "end": 336,
+      "similarity": 0.32850397391253866,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.",
+      "start": 338,
+      "end": 420,
+      "similarity": 0.35243493959669475,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "In a dusty bay, use a 42-hour lubrication interval.",
+      "start": 421,
+      "end": 472,
+      "similarity": 0.1189850794430138,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Inspection remains every 21 operating hours in both bays.",
+      "start": 473,
+      "end": 530,
+      "similarity": 0.09465544085136383,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Purchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead.",
+      "start": 532,
+      "end": 645,
+      "similarity": 0.3573999742729978,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.",
+      "start": 646,
+      "end": 750,
+      "similarity": 0.10610720908144695,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Tavren Ceramics maintenance records are retained for 4 years, unless an unresolved warranty claim requires longer retention.",
+      "start": 752,
+      "end": 876,
+      "similarity": 0.37524742412796785,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Rossell Seed Library opened its public desk in 1996.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.06271690047406482,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Its warehouse relocation took place in 2011.",
+      "start": 53,
+      "end": 97,
+      "similarity": 0.09534248853775215,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "An opening ceremony for a separate annex occurred in 2018.",
+      "start": 98,
+      "end": 156,
+      "similarity": 0.04628285759072668,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Nalin sorts six seed trays per day.",
+      "start": 158,
+      "end": 193,
+      "similarity": 0.1300883784371108,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Vera labels four seed packets per day.",
+      "start": 194,
+      "end": 232,
+      "similarity": 0.18341080477749527,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Nalin labels two storage boxes per day.",
+      "start": 233,
+      "end": 272,
+      "similarity": 0.18792035439136656,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Requests released before 11:45 are shipped the same working day.",
+      "start": 274,
+      "end": 338,
+      "similarity": 0.1146689332295305,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.",
+      "start": 339,
+      "end": 439,
+      "similarity": 0.06932145712668782,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Rossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius.",
+      "start": 441,
+      "end": 525,
+      "similarity": 0.31754841109048915,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "The winter log contains monthly averages rather than individual extreme readings.",
+      "start": 526,
+      "end": 607,
+      "similarity": 0.2475913886702725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Rossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires longer retention.",
+      "start": 609,
+      "end": 734,
+      "similarity": 0.057837926069789124,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Lenwick Canal Transit relocated in 1882.",
+      "start": 0,
+      "end": 40,
+      "similarity": -0.0014034921556883204,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "The depot renovation occurred in 1931.",
+      "start": 41,
+      "end": 79,
+      "similarity": 0.03388095291298351,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Another depot renovation occurred in 1974.",
+      "start": 80,
+      "end": 122,
+      "similarity": 0.08628251710045046,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "A proposed tunnel closure in 1999 was rejected; the tunnel did not close.",
+      "start": 123,
+      "end": 196,
+      "similarity": 0.0227591082187041,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+      "start": 198,
+      "end": 273,
+      "similarity": 0.3153751786393017,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Its highest recorded daily temperature is 36 degrees Celsius.",
+      "start": 274,
+      "end": 335,
+      "similarity": 0.4217116266697182,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Its highest monthly mean temperature is 22 degrees Celsius.",
+      "start": 336,
+      "end": 395,
+      "similarity": 0.41016628026847773,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Pavel inspects eight lock gates per shift.",
+      "start": 397,
+      "end": 439,
+      "similarity": 0.07878855432020059,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Rena greases three winches per shift.",
+      "start": 440,
+      "end": 477,
+      "similarity": 0.19352141026480846,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Pavel greases one hinge per shift.",
+      "start": 478,
+      "end": 512,
+      "similarity": 0.16466816536546405,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "start": 514,
+      "end": 641,
+      "similarity": 0.02051249673553063,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+      "start": 643,
+      "end": 757,
+      "similarity": -0.035733676913343955,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "cc3e5bb2-a068-4910-a583-92eabbba66c6:0",
+          "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+          "filename": "02_Tavren_Ceramics.txt",
+          "excerpt": "The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finan",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+          "score": 0.0476,
+          "lexicalScore": 4.130402506466563,
+          "semanticScore": 0.7373940996055067,
+          "matchedTerms": [
+            "tavren",
+            "ceramics",
+            "winter",
+            "temperature"
+          ],
+          "start": 128,
+          "end": 336
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Tavren_Ceramics.txt",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Tavren_Ceramics.txt",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Tavren_Ceramics.txt",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "cc3e5bb2-a068-4910-a583-92eabbba66c6:0",
+          "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+          "filename": "02_Tavren_Ceramics.txt",
+          "excerpt": "The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finan",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+          "score": 0.0476,
+          "lexicalScore": 4.130402506466563,
+          "semanticScore": 0.7373940996055067,
+          "matchedTerms": [
+            "tavren",
+            "ceramics",
+            "winter",
+            "temperature"
+          ],
+          "start": 128,
+          "end": 336
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Tavren_Ceramics.txt",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Tavren_Ceramics.txt",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Tavren_Ceramics.txt",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "cc3e5bb2-a068-4910-a583-92eabbba66c6:0",
+          "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+          "filename": "02_Tavren_Ceramics.txt",
+          "excerpt": "The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection re",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 4.130402506466563,
+          "semanticScore": 0.7373940996055067,
+          "matchedTerms": [
+            "tavren",
+            "ceramics",
+            "winter",
+            "temperature"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Tavren_Ceramics.txt",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Tavren_Ceramics.txt",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "cc3e5bb2-a068-4910-a583-92eabbba66c6:0",
+          "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+          "filename": "02_Tavren_Ceramics.txt",
+          "excerpt": "The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection re",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 4.130402506466563,
+          "semanticScore": 0.7373940996055067,
+          "matchedTerms": [
+            "tavren",
+            "ceramics",
+            "winter",
+            "temperature"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Tavren_Ceramics.txt",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Tavren_Ceramics.txt",
+          "quote": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.01217576488852501,
+    0.03733450546860695,
+    -0.0800723284482956,
+    0.10211542248725891,
+    -0.07273700833320618,
+    -0.020574158057570457,
+    -0.017419150099158287,
+    0.041900139302015305,
+    -0.016291582956910133,
+    -0.030722446739673615,
+    0.041460517793893814,
+    -0.09606838971376419,
+    0.04817061871290207,
+    0.001792256603948772,
+    -0.06346923857927322,
+    -0.10999437421560287,
+    0.04535390064120293,
+    -0.04919704422354698,
+    0.07727549225091934,
+    0.0446268692612648,
+    0.024672843515872955,
+    -0.07128754258155823,
+    0.02047749049961567,
+    -0.037913043051958084,
+    0.04031582176685333,
+    -0.022023992612957954,
+    -0.057454463094472885,
+    0.06464266031980515,
+    0.012508036568760872,
+    0.02535885013639927,
+    -0.060633350163698196,
+    -0.00559174595400691,
+    0.02499099262058735,
+    -0.030554339289665222,
+    0.052678462117910385,
+    0.019420238211750984,
+    0.022616591304540634,
+    -0.013313313014805317,
+    0.0351068452000618,
+    0.028391456231474876,
+    -0.005837210454046726,
+    -0.018887905403971672,
+    -0.007837261073291302,
+    0.020541256293654442,
+    -0.0004672642389778048,
+    0.07971210777759552,
+    0.04522731155157089,
+    0.007503516972064972,
+    -0.03314370661973953,
+    0.035945918411016464,
+    0.004813038744032383,
+    0.07359118014574051,
+    -0.02692687138915062,
+    0.07141056656837463,
+    -0.04264834150671959,
+    0.000778453890234232,
+    -0.02950085513293743,
+    -0.0008204676560126245,
+    0.0605347715318203,
+    0.02239258959889412,
+    0.032003890722990036,
+    -0.03695835918188095,
+    -0.10110559314489365,
+    -0.00005031926048104651,
+    0.09651102125644684,
+    -0.00966564379632473,
+    -0.020439643412828445,
+    -0.010948153212666512,
+    -0.05848751217126846,
+    -0.06833198666572571,
+    -0.008747084997594357,
+    0.08092457056045532,
+    0.05299036577343941,
+    -0.03609795495867729,
+    -0.03012734279036522,
+    0.03138267993927002,
+    0.04637461155653,
+    -0.009357926435768604,
+    -0.07143586128950119,
+    -0.04003750905394554,
+    0.034483227878808975,
+    -0.04112209007143974,
+    -0.012442993000149727,
+    0.04510704427957535,
+    -0.013092685490846634,
+    0.07412215322256088,
+    0.06001608818769455,
+    0.031039662659168243,
+    0.09363768249750137,
+    0.07352009415626526,
+    0.05406837537884712,
+    0.1306789666414261,
+    -0.0723428949713707,
+    -0.05496680364012718,
+    -0.10696209967136383,
+    0.05512654408812523,
+    0.06786241382360458,
+    0.15204934775829315,
+    -0.06643875688314438,
+    0.002458679024130106,
+    -0.00756056746467948,
+    -0.07491058856248856,
+    0.00997683685272932,
+    0.05302588641643524,
+    -0.038169410079717636,
+    -0.0004185192519798875,
+    0.010329334996640682,
+    -0.019119510427117348,
+    -0.01609065569937229,
+    -0.01918494515120983,
+    -0.08398666977882385,
+    0.054553013294935226,
+    -0.06619169563055038,
+    -0.06070404499769211,
+    0.008039265871047974,
+    -0.024581804871559143,
+    -0.05023721233010292,
+    0.017080536112189293,
+    0.008356167934834957,
+    0.026394763961434364,
+    -0.002435232512652874,
+    0.013497895561158657,
+    0.016659338027238846,
+    0.06257809698581696,
+    -0.050009097903966904,
+    0.07045769691467285,
+    -0.0006181219359859824,
+    -1.7874783830374637e-33,
+    0.04873913526535034,
+    0.03461966663599014,
+    0.002891378477215767,
+    -0.054739948362112045,
+    0.06288378685712814,
+    -0.05261950567364693,
+    -0.0792427584528923,
+    -0.03211952745914459,
+    -0.006736301816999912,
+    0.04626837000250816,
+    0.040357641875743866,
+    -0.063566654920578,
+    -0.09025221318006516,
+    -0.032210856676101685,
+    0.0178937129676342,
+    0.04532574489712715,
+    -0.05275488272309303,
+    0.000006421454600058496,
+    -0.045522257685661316,
+    -0.031136848032474518,
+    -0.05805674195289612,
+    0.03222173452377319,
+    0.04937668517231941,
+    0.06229263171553612,
+    -0.03370147570967674,
+    0.002722393488511443,
+    0.019071564078330994,
+    -0.025406647473573685,
+    -0.062428925186395645,
+    -0.018877431750297546,
+    0.050205398350954056,
+    -0.04395218566060066,
+    0.04749282822012901,
+    0.01522243395447731,
+    0.08957188576459885,
+    0.015928911045193672,
+    0.03658166900277138,
+    0.039206549525260925,
+    0.024198202416300774,
+    0.02169659547507763,
+    0.06467422842979431,
+    0.020526401698589325,
+    0.1566140204668045,
+    0.027835724875330925,
+    0.0461396761238575,
+    -0.056480035185813904,
+    0.005967685021460056,
+    0.017831208184361458,
+    0.056982431560754776,
+    -0.021145375445485115,
+    0.0017994806403294206,
+    0.012668170034885406,
+    -0.05570749193429947,
+    -0.017122671008110046,
+    0.04040329158306122,
+    0.025702539831399918,
+    0.03269430249929428,
+    -0.07021775841712952,
+    0.009248761460185051,
+    -0.04444912448525429,
+    -0.03167570382356644,
+    0.012273004278540611,
+    0.037530384957790375,
+    -0.07867088913917542,
+    -0.04611412435770035,
+    -0.008976954035460949,
+    -0.07429222017526627,
+    -0.02955671399831772,
+    0.053845059126615524,
+    -0.07668091356754303,
+    0.031683530658483505,
+    -0.00196265266276896,
+    0.11124669760465622,
+    -0.035684164613485336,
+    0.06357081979513168,
+    0.07505325227975845,
+    0.044436682015657425,
+    -0.034432150423526764,
+    0.06644986569881439,
+    -0.039633918553590775,
+    -0.03975793346762657,
+    -0.006551635451614857,
+    -0.025408420711755753,
+    0.04451542720198631,
+    -0.05186978355050087,
+    0.004556011408567429,
+    0.01977148838341236,
+    0.0452888198196888,
+    -0.009112614206969738,
+    0.04967033490538597,
+    -0.034592654556035995,
+    -0.058531709015369415,
+    -0.057161763310432434,
+    -0.04226088151335716,
+    -0.045568469911813736,
+    2.023153245433824e-33,
+    0.06491836160421371,
+    -0.007174094207584858,
+    0.02996678464114666,
+    0.07622922956943512,
+    -0.10192510485649109,
+    0.002577620791271329,
+    0.028866996988654137,
+    0.05957452952861786,
+    0.031552206724882126,
+    0.00034318366670049727,
+    0.09468501806259155,
+    -0.04069044068455696,
+    0.05705390125513077,
+    -0.04529688134789467,
+    0.014853610657155514,
+    0.1014682799577713,
+    0.08275923877954483,
+    -0.01050457265228033,
+    0.04904960095882416,
+    -0.09794657677412033,
+    -0.06844712048768997,
+    0.03668207675218582,
+    -0.07489455491304398,
+    0.06000501289963722,
+    -0.033331405371427536,
+    0.02793045900762081,
+    0.04039254039525986,
+    0.020382313057780266,
+    -0.06094704568386078,
+    -0.07661708444356918,
+    -0.05895083397626877,
+    -0.05943360552191734,
+    0.0459958091378212,
+    0.08093369752168655,
+    -0.054335109889507294,
+    0.027770167216658592,
+    -0.0006019631982780993,
+    -0.04834067076444626,
+    -0.027845563367009163,
+    0.008625200018286705,
+    0.08141381293535233,
+    -0.00890589039772749,
+    0.020572781562805176,
+    0.10153859853744507,
+    -0.02006615698337555,
+    -0.009200626984238625,
+    -0.04096023365855217,
+    0.005841431207954884,
+    0.08787845075130463,
+    0.04734776169061661,
+    0.0401647686958313,
+    -0.04391641914844513,
+    -0.08132519572973251,
+    -0.037526752799749374,
+    -0.015263698995113373,
+    0.01893889158964157,
+    -0.019668737426400185,
+    0.04542064294219017,
+    -0.03264347463846207,
+    -0.0427754670381546,
+    0.11621975898742676,
+    0.024730391800403595,
+    -0.0006507495418190956,
+    0.02316591516137123,
+    0.047237321734428406,
+    0.0975610688328743,
+    0.00362178822979331,
+    0.029387744143605232,
+    0.02189219556748867,
+    -0.022312846034765244,
+    0.14454865455627441,
+    0.030902931466698647,
+    0.06161241978406906,
+    -0.11681066453456879,
+    -0.011243080720305443,
+    -0.08449623733758926,
+    0.05857634171843529,
+    0.02440187893807888,
+    -0.0006256842752918601,
+    -0.08003120124340057,
+    -0.11723257601261139,
+    0.03523806482553482,
+    -0.0767381489276886,
+    0.03636953979730606,
+    -0.010435754433274269,
+    -0.0008066374575719237,
+    0.03610282391309738,
+    -0.024645503610372543,
+    0.03606211394071579,
+    0.029040781781077385,
+    -0.03945267200469971,
+    0.05470706522464752,
+    0.025989720597863197,
+    -0.057120323181152344,
+    0.017413794994354248,
+    -1.821194750561972e-8,
+    -0.005382388364523649,
+    0.017417235299944878,
+    -0.020908664911985397,
+    0.0011961349518969655,
+    0.06836625933647156,
+    0.02912483923137188,
+    0.07059892266988754,
+    -0.04395978897809982,
+    -0.02459496259689331,
+    0.05101319029927254,
+    0.07326846569776535,
+    0.03937201946973801,
+    0.03148867189884186,
+    -0.021348964422941208,
+    -0.002115516224876046,
+    -0.04666471481323242,
+    0.021391533315181732,
+    0.017922673374414444,
+    -0.04739510640501976,
+    -0.13857899606227875,
+    0.004898440092802048,
+    0.03698877617716789,
+    0.03970567137002945,
+    -0.04500539228320122,
+    -0.010651960037648678,
+    -0.025895684957504272,
+    -0.024751530960202217,
+    0.05599258467555046,
+    0.04718989506363869,
+    -0.00029936328064650297,
+    -0.07431793212890625,
+    -0.04889028146862984,
+    0.09247281402349472,
+    -0.09408826380968094,
+    -0.010725285857915878,
+    0.02503850683569908,
+    -0.06533423066139221,
+    0.03492164984345436,
+    -0.03009955585002899,
+    -0.09896713495254517,
+    -0.05492815375328064,
+    -0.07012813538312912,
+    -0.04698227345943451,
+    0.01809937134385109,
+    -0.0808366984128952,
+    -0.018293723464012146,
+    -0.04838256910443306,
+    0.04193445295095444,
+    0.06417175382375717,
+    0.026479721069335938,
+    0.02390960417687893,
+    0.01402829959988594,
+    0.02650460973381996,
+    0.0019476866582408547,
+    -0.08041650801897049,
+    -0.04253831505775452,
+    0.0007562507526017725,
+    0.034129634499549866,
+    -0.07073584198951721,
+    -0.032177578657865524,
+    -0.0029293689876794815,
+    -0.04159413278102875,
+    -0.10643311589956284,
+    -0.029255546629428864
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Tavren_Ceramics.txt",
+        "start": 0,
+        "content": "The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead. The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.\n\nTavren"
+      },
+      {
+        "filename": "02_Tavren_Ceramics.txt",
+        "start": 658,
+        "content": "ng packet contains a supplier quotation, inspection report, purchase order, and budget code.\n\nTavren Ceramics maintenance records are retained for 4 years, unless an unresolved warranty claim requires longer retention."
+      },
+      {
+        "filename": "01_Rillpoint_Lightstation.txt",
+        "start": 0,
+        "content": "Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention."
+      },
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "start": 0,
+        "content": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Tavren_Ceramics.txt",
+        "start": 0,
+        "content": "The Tavren Ceramics kiln was commissioned in 1978. Its rebuild took place in 2009. The planned transfer in 2020 did not occur.\n\nTavren Ceramics storage room winter average temperature is 12 degrees Celsius. Its absolute minimum winter temperature is 3 degrees Celsius. Its highest monthly mean temperature is 24 degrees Celsius in July.\n\nLubricate the Tavren Ceramics press after every 84 operating hours in a clean bay. In a dusty bay, use a 42-hour lubrication interval. Inspection remains every 21 operating hours in both bays.\n\nPurchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead. The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.\n\nTavren"
+      },
+      {
+        "filename": "02_Tavren_Ceramics.txt",
+        "start": 658,
+        "content": "ng packet contains a supplier quotation, inspection report, purchase order, and budget code.\n\nTavren Ceramics maintenance records are retained for 4 years, unless an unresolved warranty claim requires longer retention."
+      },
+      {
+        "filename": "01_Rillpoint_Lightstation.txt",
+        "start": 0,
+        "content": "Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention."
+      },
+      {
+        "filename": "04_Lenwick_Canal_Transit.txt",
+        "start": 0,
+        "content": "Lenwick Canal Transit relocated in 1882. The depot renovation occurred in 1931. Another depot renovation occurred in 1974. A proposed tunnel closure in 1999 was rejected; the tunnel did not close.\n\nLenwick Canal Transit winter average temperatures exceed 4 degrees Celsius. Its highest recorded daily temperature is 36 degrees Celsius. Its highest monthly mean temperature is 22 degrees Celsius.\n\nPavel inspects eight lock gates per shift. Rena greases three winches per shift. Pavel greases one hinge per shift.\n\nThe Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.\n\nLenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention."
+      }
+    ]
+  }
+}

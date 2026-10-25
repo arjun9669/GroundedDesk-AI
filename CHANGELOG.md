@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-25 — v50 full regression restores historical preservation
+
+- Complete732 cases once (684 actual MiniLM Hybrid/48 lexical); seal5,865 raw
+  artifacts before scoring. Integrity50,074 recomputed cosines PASS.
+- Restore all five v49 historical regressions:19/19 family gates PASS; every
+  prior-v46/v49 PASS preserved. Fresh64 remains63 PASS/1 FAIL per variant.
+- Publish original native FAIL and separate128-row Fresh64/10-row changed-policy
+  review, with50 expanded/4 legacy anchor disclosures. No scope inference, key
+  edit or native regrading. Phase2/integration HOLD; live app unchanged.
+
 ## 2026-10-25 — v50 retention engineering and prospective freeze
 
 - Add isolated current/archived namespace resolution and matching hyphenated

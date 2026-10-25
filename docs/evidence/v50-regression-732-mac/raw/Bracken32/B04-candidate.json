@@ -1,0 +1,1229 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "B04",
+  "question": "How many charts does Edda bind per week?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many charts does Edda bind per week?",
+    "expected_display": "How many charts does Edda bind per week?",
+    "rendered_question": "How many charts does Edda bind per week?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Edda binds nine charts per week.",
+    "sources": [
+      {
+        "filename": "01_Rillpoint_Lightstation.txt",
+        "excerpt": "ce.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+        "quote": "Edda binds nine charts per week."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many charts does Edda bind per week?\n\nSearched all files: 01_Rillpoint_Lightstation.txt · 02_Tavren_Ceramics.txt · 03_Rossell_Seed_Library.txt · 04_Lenwick_Canal_Transit.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Edda binds nine charts per week.\n\nSOURCE EVIDENCE\n[1]\n01_Rillpoint_Lightstation.txt\n\nText line 5 (normalized extraction)\n\nce. Winter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius. Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week. Rillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Edda binds nine charts per week.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "e3ea1cfe-7253-4976-ad93-0ac067a260bd:0",
+        "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+        "filename": "01_Rillpoint_Lightstation.txt",
+        "excerpt": "ce.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+        "quote": "Edda binds nine charts per week.",
+        "score": 0.0214,
+        "lexicalScore": 6.050445044467905,
+        "semanticScore": null,
+        "matchedTerms": [
+          "charts",
+          "edda",
+          "per",
+          "week"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "e3ea1cfe-7253-4976-ad93-0ac067a260bd:0",
+        "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+        "filename": "01_Rillpoint_Lightstation.txt",
+        "excerpt": "ce.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+        "quote": "Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+        "score": 0.0214,
+        "lexicalScore": 6.050445044467905,
+        "semanticScore": null,
+        "matchedTerms": [
+          "charts",
+          "edda",
+          "per",
+          "week"
+        ],
+        "start": 430,
+        "end": 535
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Rillpoint_Lightstation.txt",
+        "quote": "Edda binds nine charts per week.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 430,
+          "cosine": 0.9188610901380553,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Rillpoint_Lightstation.txt",
+        "quote": "Edda binds nine charts per week.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Rillpoint_Lightstation.txt",
+        "quote": "Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "e3ea1cfe-7253-4976-ad93-0ac067a260bd:0",
+        "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+        "filename": "01_Rillpoint_Lightstation.txt",
+        "excerpt": "ce.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+        "quote": "Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+        "score": 0.0214,
+        "lexicalScore": 6.050445044467905,
+        "semanticScore": null,
+        "matchedTerms": [
+          "charts",
+          "edda",
+          "per",
+          "week"
+        ],
+        "start": 430,
+        "end": 535
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Rillpoint_Lightstation.txt",
+        "quote": "Edda binds nine charts per week.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 430,
+          "cosine": 0.9188610901380553,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Rillpoint_Lightstation.txt",
+        "quote": "Edda binds nine charts per week.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Rillpoint_Lightstation.txt",
+        "quote": "Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Rillpoint_Lightstation.txt",
+      "start": 430,
+      "content": "Edda binds nine charts per week.",
+      "semanticScore": 0.9188610901380553,
+      "lexicalScore": 12.108828479394283
+    },
+    {
+      "filename": "01_Rillpoint_Lightstation.txt",
+      "start": 501,
+      "content": "Edda washes two lanterns per week.",
+      "semanticScore": 0.4554323460251936,
+      "lexicalScore": 8.286071077958034
+    },
+    {
+      "filename": "03_Rossell_Seed_Library.txt",
+      "start": 233,
+      "content": "Nalin labels two storage boxes per day.",
+      "semanticScore": 0.3602130303186984,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Rillpoint Lightstation transferred to North Spit in 1859.",
+      "start": 0,
+      "end": 57,
+      "similarity": 0.013681988250512844,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Its first restoration was completed in 1913.",
+      "start": 58,
+      "end": 102,
+      "similarity": -0.041262577031559076,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "A second restoration was completed in 1962.",
+      "start": 103,
+      "end": 146,
+      "similarity": -0.007522579122695202,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "The proposed demolition in 1987 was canceled and never took place.",
+      "start": 147,
+      "end": 213,
+      "similarity": -0.04228852517207239,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Winter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius.",
+      "start": 215,
+      "end": 296,
+      "similarity": 0.14100684805427754,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Its highest monthly mean temperature is 23 degrees Celsius in August.",
+      "start": 297,
+      "end": 366,
+      "similarity": 0.19712974186303286,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Its highest recorded daily temperature is 34 degrees Celsius.",
+      "start": 367,
+      "end": 428,
+      "similarity": 0.17021748833997036,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Edda binds nine charts per week.",
+      "start": 430,
+      "end": 462,
+      "similarity": 0.9188610901380553,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Soren checks three beacons per night.",
+      "start": 463,
+      "end": 500,
+      "similarity": 0.21346395711522034,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Edda washes two lanterns per week.",
+      "start": 501,
+      "end": 535,
+      "similarity": 0.4554323460251936,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+      "value": "Rillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+      "start": 537,
+      "end": 660,
+      "similarity": 0.1268048562460783,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "The Tavren Ceramics kiln was commissioned in 1978.",
+      "start": 0,
+      "end": 50,
+      "similarity": -0.037689602366105704,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Its rebuild took place in 2009.",
+      "start": 51,
+      "end": 82,
+      "similarity": 0.044869471781528544,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "The planned transfer in 2020 did not occur.",
+      "start": 83,
+      "end": 126,
+      "similarity": -0.05377214501290585,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Tavren Ceramics storage room winter average temperature is 12 degrees Celsius.",
+      "start": 128,
+      "end": 206,
+      "similarity": -0.02616097841399173,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Its absolute minimum winter temperature is 3 degrees Celsius.",
+      "start": 207,
+      "end": 268,
+      "similarity": 0.06628471308339036,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Its highest monthly mean temperature is 24 degrees Celsius in July.",
+      "start": 269,
+      "end": 336,
+      "similarity": 0.10320302826958765,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Lubricate the Tavren Ceramics press after every 84 operating hours in a clean bay.",
+      "start": 338,
+      "end": 420,
+      "similarity": 0.11139045172441234,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "In a dusty bay, use a 42-hour lubrication interval.",
+      "start": 421,
+      "end": 472,
+      "similarity": 0.15687194710629934,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Inspection remains every 21 operating hours in both bays.",
+      "start": 473,
+      "end": 530,
+      "similarity": 0.18217131849797413,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Purchases above 6500 credits at Tavren Ceramics need written approval from the Finance Steward and Workshop Lead.",
+      "start": 532,
+      "end": 645,
+      "similarity": 0.08775833672493231,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "The purchasing packet contains a supplier quotation, inspection report, purchase order, and budget code.",
+      "start": 646,
+      "end": 750,
+      "similarity": 0.11231491177752174,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "cc3e5bb2-a068-4910-a583-92eabbba66c6",
+      "value": "Tavren Ceramics maintenance records are retained for 4 years, unless an unresolved warranty claim requires longer retention.",
+      "start": 752,
+      "end": 876,
+      "similarity": 0.04148326492219273,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Rossell Seed Library opened its public desk in 1996.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.10722270860227551,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Its warehouse relocation took place in 2011.",
+      "start": 53,
+      "end": 97,
+      "similarity": 0.07109746003944022,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "An opening ceremony for a separate annex occurred in 2018.",
+      "start": 98,
+      "end": 156,
+      "similarity": 0.06370794283438816,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Nalin sorts six seed trays per day.",
+      "start": 158,
+      "end": 193,
+      "similarity": 0.3111017837319305,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Vera labels four seed packets per day.",
+      "start": 194,
+      "end": 232,
+      "similarity": 0.2963645085920387,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Nalin labels two storage boxes per day.",
+      "start": 233,
+      "end": 272,
+      "similarity": 0.3602130303186984,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Requests released before 11:45 are shipped the same working day.",
+      "start": 274,
+      "end": 338,
+      "similarity": 0.21522900272635942,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "At or after 11:45, departure is the next working day, unless a seed inspection hold is still active.",
+      "start": 339,
+      "end": 439,
+      "similarity": 0.16585893195984527,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Rossell Seed Library winter average temperatures range from 8 to 10 degrees Celsius.",
+      "start": 441,
+      "end": 525,
+      "similarity": 0.10475739702332934,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "The winter log contains monthly averages rather than individual extreme readings.",
+      "start": 526,
+      "end": 607,
+      "similarity": 0.2468642452288448,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "602bcb4b-108c-418b-ac01-98fff04fdb91",
+      "value": "Rossell Seed Library accession records are retained for 7 years, unless a quarantine investigation requires longer retention.",
+      "start": 609,
+      "end": 734,
+      "similarity": 0.14697195450966158,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Lenwick Canal Transit relocated in 1882.",
+      "start": 0,
+      "end": 40,
+      "similarity": -0.06599883004121604,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "The depot renovation occurred in 1931.",
+      "start": 41,
+      "end": 79,
+      "similarity": -0.011857920747047198,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Another depot renovation occurred in 1974.",
+      "start": 80,
+      "end": 122,
+      "similarity": 0.03889213097643452,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "A proposed tunnel closure in 1999 was rejected; the tunnel did not close.",
+      "start": 123,
+      "end": 196,
+      "similarity": -0.012417370743261023,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Lenwick Canal Transit winter average temperatures exceed 4 degrees Celsius.",
+      "start": 198,
+      "end": 273,
+      "similarity": 0.003595904982796457,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Its highest recorded daily temperature is 36 degrees Celsius.",
+      "start": 274,
+      "end": 335,
+      "similarity": 0.1622238086300325,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Its highest monthly mean temperature is 22 degrees Celsius.",
+      "start": 336,
+      "end": 395,
+      "similarity": 0.14587271711849717,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Pavel inspects eight lock gates per shift.",
+      "start": 397,
+      "end": 439,
+      "similarity": 0.18383852458842279,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Rena greases three winches per shift.",
+      "start": 440,
+      "end": 477,
+      "similarity": 0.1880281166803707,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Pavel greases one hinge per shift.",
+      "start": 478,
+      "end": 512,
+      "similarity": 0.14366287182325005,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "The Lenwick Canal Transit departure packet must contain a route card, tide forecast, cargo manifest, and release authorization.",
+      "start": 514,
+      "end": 641,
+      "similarity": 0.050651357739858335,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1a857b5b-63fa-4c9b-8d0d-c4935c88573c",
+      "value": "Lenwick Canal Transit voyage logs are retained for 3 years, unless a navigation inquiry requires longer retention.",
+      "start": 643,
+      "end": 757,
+      "similarity": 0.08299641316376387,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e3ea1cfe-7253-4976-ad93-0ac067a260bd:0",
+          "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+          "filename": "01_Rillpoint_Lightstation.txt",
+          "excerpt": "ce.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+          "quote": "Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+          "score": 0.0214,
+          "lexicalScore": 6.050445044467905,
+          "semanticScore": null,
+          "matchedTerms": [
+            "charts",
+            "edda",
+            "per",
+            "week"
+          ],
+          "start": 430,
+          "end": 535
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Rillpoint_Lightstation.txt",
+          "quote": "Edda binds nine charts per week.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 430,
+            "cosine": 0.9188610901380553,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Rillpoint_Lightstation.txt",
+          "quote": "Edda binds nine charts per week.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Rillpoint_Lightstation.txt",
+          "quote": "Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e3ea1cfe-7253-4976-ad93-0ac067a260bd:0",
+          "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+          "filename": "01_Rillpoint_Lightstation.txt",
+          "excerpt": "ce.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+          "quote": "Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+          "score": 0.0214,
+          "lexicalScore": 6.050445044467905,
+          "semanticScore": null,
+          "matchedTerms": [
+            "charts",
+            "edda",
+            "per",
+            "week"
+          ],
+          "start": 430,
+          "end": 535
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Rillpoint_Lightstation.txt",
+          "quote": "Edda binds nine charts per week.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 430,
+            "cosine": 0.9188610901380553,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Rillpoint_Lightstation.txt",
+          "quote": "Edda binds nine charts per week.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Rillpoint_Lightstation.txt",
+          "quote": "Edda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Edda binds nine charts per week.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e3ea1cfe-7253-4976-ad93-0ac067a260bd:0",
+          "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+          "filename": "01_Rillpoint_Lightstation.txt",
+          "excerpt": "ce.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+          "quote": "Edda binds nine charts per week.",
+          "score": 0.0214,
+          "lexicalScore": 6.050445044467905,
+          "semanticScore": null,
+          "matchedTerms": [
+            "charts",
+            "edda",
+            "per",
+            "week"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Rillpoint_Lightstation.txt",
+          "quote": "Edda binds nine charts per week.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 430,
+            "cosine": 0.9188610901380553,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Rillpoint_Lightstation.txt",
+          "quote": "Edda binds nine charts per week.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Edda binds nine charts per week.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "e3ea1cfe-7253-4976-ad93-0ac067a260bd:0",
+          "documentId": "e3ea1cfe-7253-4976-ad93-0ac067a260bd",
+          "filename": "01_Rillpoint_Lightstation.txt",
+          "excerpt": "ce.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention.",
+          "quote": "Edda binds nine charts per week.",
+          "score": 0.0214,
+          "lexicalScore": 6.050445044467905,
+          "semanticScore": null,
+          "matchedTerms": [
+            "charts",
+            "edda",
+            "per",
+            "week"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Rillpoint_Lightstation.txt",
+          "quote": "Edda binds nine charts per week.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 430,
+            "cosine": 0.9188610901380553,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Rillpoint_Lightstation.txt",
+          "quote": "Edda binds nine charts per week.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.009783661924302578,
+    -0.10393442213535309,
+    -0.0166232381016016,
+    -0.009216655045747757,
+    -0.07660076022148132,
+    0.05175015330314636,
+    -0.05213427543640137,
+    -0.005717293359339237,
+    0.005277383141219616,
+    0.025790149345993996,
+    0.034704677760601044,
+    0.0032164931762963533,
+    -0.05658312141895294,
+    -0.03748388960957527,
+    -0.002771104918792844,
+    -0.0003488837101031095,
+    -0.016218513250350952,
+    -0.0918118953704834,
+    -0.001504552667029202,
+    -0.04724227264523506,
+    -0.0036575691774487495,
+    0.043960995972156525,
+    0.011906251311302185,
+    -0.03746431693434715,
+    0.01484142616391182,
+    -0.012338606640696526,
+    -0.06075636297464371,
+    -0.005726432893425226,
+    0.048194244503974915,
+    -0.0801130160689354,
+    -0.030832717195153236,
+    0.016855105757713318,
+    0.03343843296170235,
+    0.008923867717385292,
+    -0.05389435216784477,
+    -0.052521608769893646,
+    0.058268483728170395,
+    0.03069898672401905,
+    -0.00484131183475256,
+    0.08540547639131546,
+    0.05439595505595207,
+    0.03462957590818405,
+    0.008740568533539772,
+    -0.006913019809871912,
+    -0.022553905844688416,
+    -0.06629584729671478,
+    -0.12441928684711456,
+    0.031549084931612015,
+    0.055782251060009,
+    0.06993041932582855,
+    0.01588805951178074,
+    -0.0468769334256649,
+    -0.016801826655864716,
+    0.05810566246509552,
+    0.052491381764411926,
+    0.006390341557562351,
+    -0.029263436794281006,
+    -0.043778613209724426,
+    0.05662839114665985,
+    0.055331360548734665,
+    -0.009883981198072433,
+    0.048495154827833176,
+    -0.07225055992603302,
+    0.046220812946558,
+    0.07294413447380066,
+    -0.03316478431224823,
+    -0.0013796922285109758,
+    -0.011596232652664185,
+    -0.013145901262760162,
+    0.056984588503837585,
+    -0.03335414454340935,
+    -0.017159629613161087,
+    0.010975946672260761,
+    0.009348723106086254,
+    0.030229788273572922,
+    0.0164139773696661,
+    -0.045405443757772446,
+    -0.12444954365491867,
+    -0.026717165485024452,
+    -0.11494063585996628,
+    -0.08187831193208694,
+    0.0775473490357399,
+    -0.014578556641936302,
+    -0.0025940430350601673,
+    0.024796826764941216,
+    -0.02078699879348278,
+    -0.030159901827573776,
+    0.022532155737280846,
+    0.0074488022364676,
+    -0.06591054052114487,
+    0.0056864796206355095,
+    0.019619304686784744,
+    -0.013203946873545647,
+    0.02519271895289421,
+    -0.06519840657711029,
+    0.06386828422546387,
+    -0.03187795728445053,
+    -0.006879469845443964,
+    -0.0222826786339283,
+    0.03631119802594185,
+    -0.019647516310214996,
+    0.03331141918897629,
+    -0.06165046617388725,
+    -0.00306860264390707,
+    -0.045611292123794556,
+    -0.0714125856757164,
+    0.010155719704926014,
+    0.001072127721272409,
+    -0.11862561851739883,
+    0.07237692922353745,
+    -0.02672184631228447,
+    0.021635297685861588,
+    0.03041062317788601,
+    0.01582002080976963,
+    0.002411935944110155,
+    -0.014663195237517357,
+    -0.019671950489282608,
+    0.03060937486588955,
+    -0.003137193387374282,
+    0.07142671942710876,
+    0.011981564573943615,
+    0.024398794397711754,
+    0.0369945727288723,
+    -0.0037823845632374287,
+    -0.10719840228557587,
+    -0.0035458325874060392,
+    -0.00297128246165812,
+    -2.2608876106670236e-33,
+    0.10812131315469742,
+    -0.057495251297950745,
+    0.027144642546772957,
+    0.026596704497933388,
+    0.04518461972475052,
+    0.009766386821866035,
+    -0.0806252509355545,
+    -0.0034337658435106277,
+    0.03683177009224892,
+    0.04219099506735802,
+    -0.030542943626642227,
+    0.11331986635923386,
+    0.04149782285094261,
+    0.09933649003505707,
+    -0.014638947322964668,
+    0.007270569447427988,
+    0.07986597716808319,
+    0.10728703439235687,
+    -0.05426941439509392,
+    0.014046711847186089,
+    -0.04567835107445717,
+    -0.0012780246324837208,
+    0.005377046763896942,
+    -0.07886030524969101,
+    0.06339067965745926,
+    0.026225563138723373,
+    0.011574922129511833,
+    0.10177331417798996,
+    0.09245829284191132,
+    0.015888679772615433,
+    0.015707924962043762,
+    -0.05985618755221367,
+    -0.05570109188556671,
+    0.004877894185483456,
+    0.037719957530498505,
+    0.008905251510441303,
+    0.08365803211927414,
+    0.014063716866075993,
+    0.04099837318062782,
+    0.01413374487310648,
+    0.04481317102909088,
+    -0.022424623370170593,
+    -0.023298263549804688,
+    -0.06789570301771164,
+    -0.09665080159902573,
+    0.08720732480287552,
+    0.06026719883084297,
+    -0.01033235527575016,
+    -0.02774283103644848,
+    -0.043366219848394394,
+    -0.0028812577947974205,
+    0.004444976337254047,
+    -0.0227371659129858,
+    0.006006487645208836,
+    -0.035372842103242874,
+    0.029580045491456985,
+    0.012079109437763691,
+    -0.030018404126167297,
+    0.07484258711338043,
+    0.06719847768545151,
+    -0.006965781096369028,
+    0.01162023190408945,
+    0.06757013499736786,
+    -0.018830252811312675,
+    -0.026981648057699203,
+    0.04117962345480919,
+    -0.029816260561347008,
+    -0.05528685078024864,
+    0.03437894210219383,
+    0.037318285554647446,
+    -0.02473001554608345,
+    0.011951089836657047,
+    0.010218923911452293,
+    -0.09070243686437607,
+    0.0622725747525692,
+    -0.05055677145719528,
+    -0.04076952487230301,
+    -0.005687367171049118,
+    -0.012548752129077911,
+    0.07036864012479782,
+    0.0027817320078611374,
+    -0.019799552857875824,
+    0.0007879770128056407,
+    0.03182156756520271,
+    0.035151805728673935,
+    -0.07564222067594528,
+    -0.022796588018536568,
+    0.10216286778450012,
+    -0.024038847535848618,
+    -0.03591349348425865,
+    -0.006926526315510273,
+    0.004801368340849876,
+    0.005475716665387154,
+    -0.06139425188302994,
+    0.03689562529325485,
+    9.398617327541598e-34,
+    -0.04425695538520813,
+    0.06548074632883072,
+    0.007184884045273066,
+    0.07506969571113586,
+    0.09028492867946625,
+    -0.006840918678790331,
+    -0.022039463743567467,
+    0.14457423985004425,
+    0.09931903332471848,
+    0.04704601690173149,
+    0.09964240342378616,
+    -0.11256835609674454,
+    -0.00024332375323865563,
+    -0.05667373165488243,
+    0.03356437385082245,
+    0.04650763422250748,
+    -0.03859344869852066,
+    -0.0004721935838460922,
+    -0.04058791324496269,
+    -0.058719124644994736,
+    -0.03787357360124588,
+    -0.04980909824371338,
+    -0.02378425933420658,
+    0.025092579424381256,
+    0.024261046200990677,
+    -0.007215573452413082,
+    -0.011071947403252125,
+    -0.01959543116390705,
+    -0.07185427844524384,
+    0.024772390723228455,
+    -0.00101161515340209,
+    -0.11956418305635452,
+    -0.1387750506401062,
+    0.005923830438405275,
+    -0.0699663832783699,
+    0.047480691224336624,
+    0.023224959149956703,
+    0.010220798663794994,
+    -0.04705950245261192,
+    0.06220599636435509,
+    0.031459394842386246,
+    -0.017274193465709686,
+    0.05209409445524216,
+    0.043452728539705276,
+    0.0005866336869075894,
+    0.03606051206588745,
+    -0.011544540524482727,
+    0.0694655179977417,
+    -0.000025980412829085253,
+    0.014792663976550102,
+    -0.02417484112083912,
+    0.025748582556843758,
+    0.01650700904428959,
+    -0.02923901192843914,
+    0.07346782088279724,
+    0.02453843504190445,
+    0.06755667179822922,
+    0.010632483288645744,
+    -0.05222971737384796,
+    0.049484480172395706,
+    0.007437875960022211,
+    -0.0022511749994009733,
+    -0.08159254491329193,
+    0.027069807052612305,
+    -0.048868678510189056,
+    -0.007445562165230513,
+    0.06241963058710098,
+    -0.06844824552536011,
+    -0.05185689032077789,
+    0.03411591798067093,
+    0.03246539086103439,
+    -0.05604157969355583,
+    0.03212675824761391,
+    -0.09786105901002884,
+    -0.0850263237953186,
+    0.026878032833337784,
+    -0.03097197785973549,
+    -0.035146281123161316,
+    0.014254541136324406,
+    0.04806942492723465,
+    -0.07644711434841156,
+    -0.09406788647174835,
+    0.00878419540822506,
+    0.10011357069015503,
+    -0.010493441484868526,
+    0.044790320098400116,
+    0.049281686544418335,
+    -0.044476937502622604,
+    0.014319044537842274,
+    0.08989129960536957,
+    0.05980987474322319,
+    -0.032597947865724564,
+    -0.03514767065644264,
+    0.02734079584479332,
+    0.03541944921016693,
+    -1.3924403852172418e-8,
+    0.02245134487748146,
+    -0.00747705390676856,
+    0.042423736304044724,
+    -0.06693616509437561,
+    0.03127415478229523,
+    -0.02230949141085148,
+    0.10761735588312149,
+    0.09441249072551727,
+    0.06695394963026047,
+    0.10705011337995529,
+    0.17650580406188965,
+    -0.02647145837545395,
+    -0.060271792113780975,
+    0.020246442407369614,
+    -0.010055771097540855,
+    -0.02225806936621666,
+    0.07678879797458649,
+    0.06520976126194,
+    -0.010497761890292168,
+    -0.03806232288479805,
+    0.028874129056930542,
+    0.013871336355805397,
+    0.10944429039955139,
+    -0.09092974662780762,
+    0.020925248041749,
+    -0.03879224881529808,
+    0.0679568350315094,
+    0.09883001446723938,
+    -0.052755359560251236,
+    0.03400689363479614,
+    -0.009863612242043018,
+    -0.03717462718486786,
+    -0.08671343326568604,
+    -0.04642859846353531,
+    0.01898866891860962,
+    -0.023841483518481255,
+    -0.034241896122694016,
+    -0.015251693315804005,
+    -0.024335764348506927,
+    0.06496027857065201,
+    -0.008904697373509407,
+    -0.0010813557310029864,
+    0.01973339542746544,
+    0.01470919605344534,
+    0.06999543309211731,
+    0.0706428661942482,
+    -0.03125187009572983,
+    0.03244546055793762,
+    0.04466209188103676,
+    -0.12830626964569092,
+    -0.06813058257102966,
+    -0.039239551872015,
+    0.06700707226991653,
+    -0.038151439279317856,
+    -0.012313931249082088,
+    0.04529726132750511,
+    -0.07093492150306702,
+    -0.018271835520863533,
+    0.0023786367382854223,
+    -0.01452624425292015,
+    -0.052522122859954834,
+    -0.08261718600988388,
+    -0.08733441680669785,
+    -0.03745056316256523
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Rillpoint_Lightstation.txt",
+        "start": 0,
+        "content": "Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Rillpoint_Lightstation.txt",
+        "start": 0,
+        "content": "Rillpoint Lightstation transferred to North Spit in 1859. Its first restoration was completed in 1913. A second restoration was completed in 1962. The proposed demolition in 1987 was canceled and never took place.\n\nWinter monthly means at Rillpoint Lightstation range from 6 to 9 degrees Celsius. Its highest monthly mean temperature is 23 degrees Celsius in August. Its highest recorded daily temperature is 34 degrees Celsius.\n\nEdda binds nine charts per week. Soren checks three beacons per night. Edda washes two lanterns per week.\n\nRillpoint Lightstation observation journals are retained for 11 years, unless a heritage inquiry requires longer retention."
+      }
+    ]
+  }
+}

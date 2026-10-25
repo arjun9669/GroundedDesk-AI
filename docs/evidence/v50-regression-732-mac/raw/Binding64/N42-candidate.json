@@ -1,0 +1,1439 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "N42",
+  "question": "How many trays did Eran Morven tag at Soravin Specimen Studio?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many trays did Eran Morven tag at Soravin Specimen Studio?",
+    "expected_display": "How many trays did Eran Morven tag at Soravin Specimen Studio?",
+    "rendered_question": "How many trays did Eran Morven tag at Soravin Specimen Studio?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional completed tasks At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+    "sources": [
+      {
+        "filename": "04_Packet_switching.md",
+        "excerpt": "ed with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.\n\n## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Soravin Specimen Studio, conservation cards are kept for 80 days.",
+        "quote": "## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many trays did Eran Morven tag at Soravin Specimen Studio?\n\nSearched all files: 01_Huguenot.md · 02_Victoria__Australia_.md · 03_Geology.md · 04_Packet_switching.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional completed tasks At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.\n\nSOURCE EVIDENCE\n[1]\n04_Packet_switching.md\n\nText lines 9–10 (normalized extraction)\n\ned with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States. ## Fictional completed tasks At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations. ## Fictional retention At Soravin Specimen Studio, conservation cards are kept for 80 days.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f:1319",
+        "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+        "filename": "04_Packet_switching.md",
+        "excerpt": "ed with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.\n\n## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Soravin Specimen Studio, conservation cards are kept for 80 days.",
+        "quote": "## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+        "score": 0.0476,
+        "lexicalScore": 14.998715554480224,
+        "semanticScore": 0.5687264945986931,
+        "matchedTerms": [
+          "trays",
+          "eran",
+          "morven",
+          "soravin",
+          "specimen",
+          "studio"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Packet_switching.md",
+        "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1693,
+          "cosine": 0.7009080123044059,
+          "slot_supported": true,
+          "lexical_matches": 3
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Packet_switching.md",
+        "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Packet_switching.md",
+        "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "relation_guard_diagnostics": {
+      "route": "No literal requested actor/action/count clause"
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Packet_switching.md",
+        "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1693,
+          "cosine": 0.7009080123044059,
+          "slot_supported": true,
+          "lexical_matches": 3
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Packet_switching.md",
+        "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Packet_switching.md",
+        "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "relation_guard_diagnostics": {
+      "route": "No literal requested actor/action/count clause"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Packet_switching.md",
+      "start": 1693,
+      "content": "Eran Morven cleaned 41 trays.",
+      "semanticScore": 0.7009080123044059,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Packet_switching.md",
+      "start": 1606,
+      "content": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+      "semanticScore": 0.6312799078038438,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Victoria__Australia_.md",
+      "start": 1198,
+      "content": "Ivo Darven polished 52 plates.",
+      "semanticScore": 0.4733407136436708,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Packet_switching.md",
+      "start": 2115,
+      "content": "At Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day.",
+      "semanticScore": 0.4490255865182683,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Packet_switching.md",
+      "start": 1723,
+      "content": "Vera Linven weighed 18 trays.",
+      "semanticScore": 0.44801155236683016,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society.",
+      "start": 32,
+      "end": 150,
+      "similarity": 0.09205002298800996,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The kingdom did not fully recover for years.",
+      "start": 151,
+      "end": 195,
+      "similarity": 0.028444465019201188,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters.",
+      "start": 196,
+      "end": 438,
+      "similarity": -0.06731640975198896,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.",
+      "start": 439,
+      "end": 674,
+      "similarity": 0.10922244975841235,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "In Berlin, the Huguenots created two new neighbourhoods: Dorotheenstadt and Friedrichstadt.",
+      "start": 696,
+      "end": 787,
+      "similarity": 0.1572930666867303,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "By 1700, one-fifth of the city's population was French speaking.",
+      "start": 788,
+      "end": 852,
+      "similarity": 0.10468873515584601,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "The Berlin Huguenots preserved the French language in their church services for nearly a century.",
+      "start": 853,
+      "end": 950,
+      "similarity": 0.03809337979828232,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "They ultimately decided to switch to German in protest against the occupation of Prussia by Napoleon in 1806-07.",
+      "start": 951,
+      "end": 1063,
+      "similarity": -0.0272099407857588,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Many of their descendents rose to positions of prominence.",
+      "start": 1064,
+      "end": 1122,
+      "similarity": 0.09762166040144056,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.",
+      "start": 1123,
+      "end": 1257,
+      "similarity": 0.0618774962053702,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+      "start": 1288,
+      "end": 1375,
+      "similarity": 0.35876640177520097,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Taro Ilven mounted 34 segments.",
+      "start": 1376,
+      "end": 1407,
+      "similarity": 0.32401044917690697,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "Mira Solven inspected 19 segments.",
+      "start": 1408,
+      "end": 1442,
+      "similarity": 0.2939087272326948,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1443,
+      "end": 1506,
+      "similarity": 0.1785315676499298,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1507,
+      "end": 1568,
+      "similarity": 0.2770383126523701,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At Velora Audio Archive, listening cards are kept for 45 days.",
+      "start": 1593,
+      "end": 1655,
+      "similarity": 0.1661815431992982,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "start": 1656,
+      "end": 1771,
+      "similarity": 0.04560785792887364,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day.",
+      "start": 1800,
+      "end": 1900,
+      "similarity": 0.22619322801181901,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "At or after 14:00, send it on the next operating day.",
+      "start": 1901,
+      "end": 1954,
+      "similarity": 0.08007803271541233,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "12063355-7d44-457d-b4a1-79feaba7a1f9",
+      "value": "If the rights review is unresolved, do not send the copy until that review closes.",
+      "start": 1955,
+      "end": 2037,
+      "similarity": -0.020924115570105973,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "The Mallee and upper Wimmera are Victoria's warmest regions with hot winds blowing from nearby semi-deserts.",
+      "start": 44,
+      "end": 152,
+      "similarity": -0.07369583857839705,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Average temperatures exceed 32 °C (90 °F) during summer and 15 °C (59 °F) in winter.",
+      "start": 153,
+      "end": 237,
+      "similarity": -0.11055724010355447,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Except at cool mountain elevations, the inland monthly temperatures are 2–7 °C (4–13 °F) warmer than around Melbourne (see chart).",
+      "start": 238,
+      "end": 368,
+      "similarity": -0.08592399424775624,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Victoria's highest maximum temperature since World War II, of 48.8 °C (119.8 °F) was recorded in Hopetoun on 7 February 2009, during the 2009 southeastern Australia heat wave.",
+      "start": 369,
+      "end": 544,
+      "similarity": -0.003661511788914536,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "During 2003–04, the gross value of Victorian agricultural production increased by 17% to $8.7 billion.",
+      "start": 566,
+      "end": 668,
+      "similarity": 0.03129676354571206,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "This represented 24% of national agricultural production total gross value.",
+      "start": 669,
+      "end": 744,
+      "similarity": 0.06673738513069799,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "As of 2004, an estimated 32,463 farms occupied around 136,000 square kilometres (52,500 sq mi) of Victorian land.",
+      "start": 745,
+      "end": 858,
+      "similarity": 0.03992666504820338,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "This comprises more than 60% of the state's total land surface.",
+      "start": 859,
+      "end": 922,
+      "similarity": -0.0035967028621916998,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Victorian farms range from small horticultural outfits to large-scale livestock and grain productions.",
+      "start": 923,
+      "end": 1025,
+      "similarity": 0.04513158798211048,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "A quarter of farmland is used to grow consumable crops.",
+      "start": 1026,
+      "end": 1081,
+      "similarity": 0.08987521747493828,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.",
+      "start": 1112,
+      "end": 1197,
+      "similarity": 0.3096572472466003,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Ivo Darven polished 52 plates.",
+      "start": 1198,
+      "end": 1228,
+      "similarity": 0.4733407136436708,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "Lena Corven photographed 16 plates.",
+      "start": 1229,
+      "end": 1264,
+      "similarity": 0.34709182910973824,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1265,
+      "end": 1328,
+      "similarity": 0.1785315676499298,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1329,
+      "end": 1390,
+      "similarity": 0.2770383126523701,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At Nerith Sky Workshop, observation cards are kept for 70 days.",
+      "start": 1415,
+      "end": 1478,
+      "similarity": 0.22649984998580672,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+      "start": 1479,
+      "end": 1594,
+      "similarity": 0.05338013596888761,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+      "start": 1623,
+      "end": 1722,
+      "similarity": 0.19899668904616927,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "At or after 15:30, send it on the next operating day.",
+      "start": 1723,
+      "end": 1776,
+      "similarity": 0.07091727436383066,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "48919a6d-3ac4-4b55-8924-b74ef9b616ea",
+      "value": "If the publication review is unresolved, do not send the copy until that review closes.",
+      "start": 1777,
+      "end": 1864,
+      "similarity": 0.03257468236497279,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Some modern scholars, such as Fielding H.",
+      "start": 31,
+      "end": 72,
+      "similarity": 0.15386162373206386,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Garrison, are of the opinion that the origin of the science of geology can be traced to Persia after the Muslim conquests had come to an end.",
+      "start": 73,
+      "end": 214,
+      "similarity": 0.041969716981570086,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Abu al-Rayhan al-Biruni (973–1048 CE) was one of the earliest Persian geologists, whose works included the earliest writings on the geology of India, hypothesizing that the Indian subcontinent was once a sea.",
+      "start": 215,
+      "end": 423,
+      "similarity": 0.06238441858487478,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Drawing from Greek and Indian scientific literature that were not destroyed by the Muslim conquests, the Persian scholar Ibn Sina (Avicenna, 981–1037) proposed detailed explanations for the formation of mountains, the origin of earthquakes, and other topics central to modern geology, which provided an essential foundation for the later development of the science.",
+      "start": 424,
+      "end": 789,
+      "similarity": 0.09472721420849682,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "In China, the polymath Shen Kuo (1031–1095) formulated a hypothesis for the process of land formation: based on his observation of fossil animal shells in a geological stratum in a mountain hundreds of miles from the ocean, he inferred that the land was formed by erosion of the mountains and by deposition of silt.",
+      "start": 790,
+      "end": 1105,
+      "similarity": 0.04079457374460559,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Seismologists can use the arrival times of seismic waves in reverse to image the interior of the Earth.",
+      "start": 1127,
+      "end": 1230,
+      "similarity": 0.09566896680283965,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Early advances in this field showed the existence of a liquid outer core (where shear waves were not able to propagate) and a dense solid inner core.",
+      "start": 1231,
+      "end": 1380,
+      "similarity": -0.02793908153348233,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "These advances led to the development of a layered model of the Earth, with a crust and lithosphere on top, the mantle below (separated within itself by seismic discontinuities at 410 and 660 kilometers), and the outer core and inner core below that.",
+      "start": 1381,
+      "end": 1631,
+      "similarity": 0.03134439677460851,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "More recently, seismologists have been able to create detailed images of wave speeds inside the earth in the same way a doctor images a body in a CT scan.",
+      "start": 1632,
+      "end": 1786,
+      "similarity": 0.08335195080120211,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.",
+      "start": 1787,
+      "end": 1946,
+      "similarity": 0.1218314362422248,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+      "start": 1977,
+      "end": 2066,
+      "similarity": 0.2320255847241306,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Olan Merven printed 26 frames.",
+      "start": 2067,
+      "end": 2097,
+      "similarity": 0.43525648110570353,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "Nira Telven checked 31 frames.",
+      "start": 2098,
+      "end": 2128,
+      "similarity": 0.18676552241452873,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 2129,
+      "end": 2192,
+      "similarity": 0.1785315676499298,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 2193,
+      "end": 2254,
+      "similarity": 0.2770383126523701,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days.",
+      "start": 2279,
+      "end": 2344,
+      "similarity": 0.18654179020705705,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+      "start": 2345,
+      "end": 2456,
+      "similarity": 0.11614412735596771,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day.",
+      "start": 2485,
+      "end": 2590,
+      "similarity": 0.21289221046064244,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "At or after 13:00, send it on the next operating day.",
+      "start": 2591,
+      "end": 2644,
+      "similarity": 0.0806762370875782,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "b50962f0-f8ed-4098-8df9-39987029f0ec",
+      "value": "If the ownership review is unresolved, do not send the copy until that review closes.",
+      "start": 2645,
+      "end": 2730,
+      "similarity": -0.007445544214651817,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Packet mode communication may be implemented with or without intermediate forwarding nodes (packet switches or routers).",
+      "start": 40,
+      "end": 160,
+      "similarity": -0.07989185167321314,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Packets are normally forwarded by intermediate network nodes asynchronously using first-in, first-out buffering, but may be forwarded according to some scheduling discipline for fair queuing, traffic shaping, or for differentiated or guaranteed quality of service, such as weighted fair queuing or leaky bucket.",
+      "start": 161,
+      "end": 472,
+      "similarity": -0.0025423034407972382,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "In case of a shared physical medium (such as radio or 10BASE5), the packets may be delivered according to a multiple access scheme.",
+      "start": 473,
+      "end": 604,
+      "similarity": -0.03446506322511639,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Starting in the late 1950s, American computer scientist Paul Baran developed the concept Distributed Adaptive Message Block Switching with the goal to provide a fault-tolerant, efficient routing method for telecommunication messages as part of a research program at the RAND Corporation, funded by the US Department of Defense.",
+      "start": 626,
+      "end": 953,
+      "similarity": 0.017335452914114643,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "This concept contrasted and contradicted the theretofore established principles of pre-allocation of network bandwidth, largely fortified by the development of telecommunications in the Bell System.",
+      "start": 954,
+      "end": 1152,
+      "similarity": -0.04083844252130361,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "The new concept found little resonance among network implementers until the independent work of Donald Davies at the National Physical Laboratory (United Kingdom) (NPL) in the late 1960s.",
+      "start": 1153,
+      "end": 1340,
+      "similarity": 0.13922408009135417,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.",
+      "start": 1341,
+      "end": 1575,
+      "similarity": 0.12933718540481587,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+      "start": 1606,
+      "end": 1692,
+      "similarity": 0.6312799078038438,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Eran Morven cleaned 41 trays.",
+      "start": 1693,
+      "end": 1722,
+      "similarity": 0.7009080123044059,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "Vera Linven weighed 18 trays.",
+      "start": 1723,
+      "end": 1752,
+      "similarity": 0.44801155236683016,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1753,
+      "end": 1816,
+      "similarity": 0.1785315676499298,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1817,
+      "end": 1878,
+      "similarity": 0.2770383126523701,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At Soravin Specimen Studio, conservation cards are kept for 80 days.",
+      "start": 1903,
+      "end": 1971,
+      "similarity": 0.3943868326081201,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+      "start": 1972,
+      "end": 2086,
+      "similarity": 0.09507600003579987,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day.",
+      "start": 2115,
+      "end": 2218,
+      "similarity": 0.4490255865182683,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "At or after 16:00, send it on the next operating day.",
+      "start": 2219,
+      "end": 2272,
+      "similarity": 0.06965265128050642,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+      "value": "If the custody review is unresolved, do not send the copy until that review closes.",
+      "start": 2273,
+      "end": 2356,
+      "similarity": -0.0068287188645374235,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Packet_switching.md",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1693,
+            "cosine": 0.7009080123044059,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Packet_switching.md",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Packet_switching.md",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "relation_guard_diagnostics": {
+        "route": "No literal requested actor/action/count clause"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Packet_switching.md",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1693,
+            "cosine": 0.7009080123044059,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Packet_switching.md",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Packet_switching.md",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "relation_guard_diagnostics": {
+        "route": "No literal requested actor/action/count clause"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f:1319",
+          "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+          "filename": "04_Packet_switching.md",
+          "excerpt": "me packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.\n\n## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Soravin Specimen Studio, conservation cards are kept for 80 days.",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+          "score": 0.0476,
+          "lexicalScore": 14.998715554480224,
+          "semanticScore": 0.5687264945986931,
+          "matchedTerms": [
+            "trays",
+            "eran",
+            "morven",
+            "soravin",
+            "specimen",
+            "studio"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Packet_switching.md",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1693,
+            "cosine": 0.7009080123044059,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Packet_switching.md",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f:1577",
+          "documentId": "a5a7c8f3-e5fb-4c8d-98b8-c0c4edbabc6f",
+          "filename": "04_Packet_switching.md",
+          "excerpt": "me packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.\n\n## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Soravin Specimen Studio, conservation cards are kept for 80 days.",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+          "score": 0.0476,
+          "lexicalScore": 16.194541657703883,
+          "semanticScore": 0.6618569090021602,
+          "matchedTerms": [
+            "trays",
+            "eran",
+            "morven",
+            "soravin",
+            "specimen",
+            "studio"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Packet_switching.md",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1693,
+            "cosine": 0.7009080123044059,
+            "slot_supported": true,
+            "lexical_matches": 3
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Packet_switching.md",
+          "quote": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.047530680894851685,
+    0.07802003622055054,
+    -0.054177816957235336,
+    -0.012067687697708607,
+    -0.039324913173913956,
+    -0.03639080375432968,
+    0.018230225890874863,
+    0.0994209423661232,
+    -0.0014279513852670789,
+    -0.010542517527937889,
+    0.028530852869153023,
+    -0.053326528519392014,
+    -0.04757213220000267,
+    0.0018002798315137625,
+    -0.05146469548344612,
+    -0.03827124461531639,
+    -0.019232789054512978,
+    -0.030594846233725548,
+    0.04001934453845024,
+    0.009511798620223999,
+    0.05456836521625519,
+    0.042183153331279755,
+    0.14810048043727875,
+    0.023666691035032272,
+    0.03456920012831688,
+    0.028936782851815224,
+    -0.03728093206882477,
+    0.03129318729043007,
+    0.07333511114120483,
+    -0.08834593743085861,
+    0.07143382728099823,
+    0.05815570801496506,
+    0.011865007691085339,
+    0.0025631918106228113,
+    0.023228535428643227,
+    -0.030340565368533134,
+    0.03130435571074486,
+    0.058927055448293686,
+    0.0023533878847956657,
+    0.004558189306408167,
+    0.058488789945840836,
+    0.0015376615338027477,
+    -0.059902373701334,
+    -0.05179627612233162,
+    0.027414677664637566,
+    -0.07749433070421219,
+    -0.09534671902656555,
+    -0.043036457151174545,
+    0.04751989245414734,
+    0.026719480752944946,
+    0.007690201047807932,
+    -0.0929935947060585,
+    0.007082902826368809,
+    -0.04410688951611519,
+    0.03922044485807419,
+    0.019526856020092964,
+    0.001534300041384995,
+    -0.10100438445806503,
+    0.031209273263812065,
+    0.044630903750658035,
+    0.003715216415002942,
+    -0.032711826264858246,
+    -0.06599274277687073,
+    0.025517761707305908,
+    -0.061915814876556396,
+    0.009046738035976887,
+    -0.05760540813207626,
+    -0.052956607192754745,
+    -0.020566100254654884,
+    0.026807691901922226,
+    0.07590832561254501,
+    -0.002906657988205552,
+    0.06656189262866974,
+    -0.03130201995372772,
+    0.06881619244813919,
+    -0.03639425337314606,
+    0.015256534330546856,
+    0.01262410543859005,
+    0.02671923115849495,
+    -0.060766082257032394,
+    -0.01020063366740942,
+    -0.0628327950835228,
+    -0.0053380317986011505,
+    0.017603378742933273,
+    -0.051670052111148834,
+    0.01815592497587204,
+    0.010569781996309757,
+    0.05158733204007149,
+    -0.002871212549507618,
+    0.015495569445192814,
+    0.04395231604576111,
+    0.024234803393483162,
+    -0.037814654409885406,
+    0.02848638966679573,
+    -0.046581633388996124,
+    -0.0032427371479570866,
+    -0.01885111629962921,
+    0.059889670461416245,
+    0.010489454492926598,
+    0.11895649880170822,
+    -0.014933680184185505,
+    -0.014968679286539555,
+    0.06441424787044525,
+    0.02289360761642456,
+    -0.06762200593948364,
+    -0.04145418852567673,
+    0.060670122504234314,
+    -0.007408935111016035,
+    0.04692467302083969,
+    -0.003043303731828928,
+    -0.004346507601439953,
+    -0.08531332015991211,
+    0.01092143077403307,
+    0.004870180506259203,
+    0.015946634113788605,
+    -0.03340930864214897,
+    0.042574524879455566,
+    0.04350241273641586,
+    -0.058422040194272995,
+    -0.05906239524483681,
+    0.02724413573741913,
+    0.04507071524858475,
+    0.03713902831077576,
+    -0.00008651363896206021,
+    -0.06593798100948334,
+    -0.005610242951661348,
+    -0.06741741299629211,
+    -8.790525834666574e-34,
+    0.08610519021749496,
+    -0.03107372298836708,
+    -0.009591114707291126,
+    0.04709039628505707,
+    0.08519697934389114,
+    0.03413035720586777,
+    0.03559490665793419,
+    0.055754564702510834,
+    0.044584084302186966,
+    -0.07042407244443893,
+    -0.030592836439609528,
+    -0.08951862901449203,
+    -0.07814427465200424,
+    0.04828106239438057,
+    0.01619429886341095,
+    0.02058691345155239,
+    0.023055775091052055,
+    0.04853128641843796,
+    -0.06571903079748154,
+    -0.0862993448972702,
+    -0.03379406780004501,
+    -0.08246144652366638,
+    0.006606752518564463,
+    -0.012684587389230728,
+    0.07001825422048569,
+    0.06786482781171799,
+    -0.027227189391851425,
+    -0.031962424516677856,
+    0.09249912202358246,
+    0.050934724509716034,
+    0.03896394744515419,
+    0.026623833924531937,
+    0.004129102453589439,
+    0.017555728554725647,
+    0.010282219387590885,
+    0.06297700107097626,
+    -0.04925738275051117,
+    -0.08110861480236053,
+    -0.044751085340976715,
+    0.00848594680428505,
+    0.000018253973394166678,
+    0.05878209322690964,
+    0.06661983579397202,
+    0.0034126066602766514,
+    -0.04922497272491455,
+    -0.0028485131915658712,
+    0.041459329426288605,
+    0.13665784895420074,
+    0.16655372083187103,
+    0.08264029771089554,
+    -0.003940751310437918,
+    0.017586907371878624,
+    -0.03573344275355339,
+    -0.006505362689495087,
+    -0.0072058201767504215,
+    0.04449894651770592,
+    0.0008237257716245949,
+    -0.012979636900126934,
+    0.08505456894636154,
+    0.03413575142621994,
+    0.02027682214975357,
+    0.10123829543590546,
+    0.0287149827927351,
+    0.007940220646560192,
+    0.024309048429131508,
+    0.06953789293766022,
+    -0.016637811437249184,
+    0.014436247758567333,
+    0.023753849789500237,
+    -0.03573518246412277,
+    -0.037066489458084106,
+    -0.05936121568083763,
+    -0.12020952999591827,
+    -0.04261383041739464,
+    -0.011587169952690601,
+    0.019517118111252785,
+    -0.026990577578544617,
+    0.04236703738570213,
+    -0.04940885305404663,
+    0.010714780539274216,
+    -0.055554963648319244,
+    -0.001951197162270546,
+    -0.09462004899978638,
+    0.012215977534651756,
+    -0.08353593945503235,
+    0.008101503364741802,
+    0.08786772191524506,
+    0.01996244676411152,
+    0.040146663784980774,
+    0.058648351579904556,
+    0.022357167676091194,
+    -0.03637325018644333,
+    -0.09504384547472,
+    -0.08697964251041412,
+    -0.07806647568941116,
+    7.233832900374523e-34,
+    0.005663907155394554,
+    -0.007986152544617653,
+    -0.06358949840068817,
+    0.08235951513051987,
+    0.051097869873046875,
+    -0.02894369326531887,
+    0.016199780628085136,
+    0.14403484761714935,
+    0.0286374744027853,
+    -0.0020150302443653345,
+    0.01510954275727272,
+    0.017978766933083534,
+    0.030344834551215172,
+    -0.05394819751381874,
+    0.025889553129673004,
+    0.054771460592746735,
+    -0.007662029471248388,
+    0.0011569071793928742,
+    0.0368327796459198,
+    -0.05113813281059265,
+    0.04426409304141998,
+    0.011213043704628944,
+    0.002482041949406266,
+    -0.004684637766331434,
+    -0.03206145018339157,
+    0.06277133524417877,
+    0.08483418822288513,
+    -0.029412534087896347,
+    -0.08202600479125977,
+    -0.021035077050328255,
+    -0.05434383824467659,
+    -0.07947668433189392,
+    -0.05419325828552246,
+    0.04359608516097069,
+    0.03149722144007683,
+    0.024859564378857613,
+    0.08412046730518341,
+    -0.005232441239058971,
+    -0.06019087880849838,
+    -0.030161365866661072,
+    0.003960117232054472,
+    -0.004859778564423323,
+    -0.023857930675148964,
+    0.1405743658542633,
+    0.0026500686071813107,
+    -0.04972406476736069,
+    0.04380795732140541,
+    0.00872159656137228,
+    0.017836440354585648,
+    0.001521977363154292,
+    -0.07853621989488602,
+    0.02464987523853779,
+    -0.023904496803879738,
+    -0.04274176061153412,
+    -0.03731503710150719,
+    -0.06436008960008621,
+    0.021469153463840485,
+    -0.03618093952536583,
+    -0.054813824594020844,
+    -0.031115204095840454,
+    0.009799076244235039,
+    -0.01644667610526085,
+    -0.01080680824816227,
+    0.057974815368652344,
+    0.04011708125472069,
+    -0.01935056783258915,
+    -0.024874897673726082,
+    -0.054930429905653,
+    -0.13307036459445953,
+    -0.04156822711229324,
+    0.027086973190307617,
+    0.0035303577315062284,
+    0.019921887665987015,
+    -0.08102394640445709,
+    -0.08353080600500107,
+    0.034039583057165146,
+    -0.025352483615279198,
+    -0.05918022617697716,
+    -0.023313283920288086,
+    -0.1124698594212532,
+    -0.09008605778217316,
+    -0.09993574023246765,
+    -0.001398952677845955,
+    0.05327409505844116,
+    -0.028882769867777824,
+    0.0033677599858492613,
+    0.09600268304347992,
+    -0.011248135007917881,
+    -0.05745987966656685,
+    0.07090551406145096,
+    0.09687336534261703,
+    0.01764242723584175,
+    0.04116734862327576,
+    -0.004582683090120554,
+    0.04258148744702339,
+    -2.1688556728349795e-8,
+    -0.05554457753896713,
+    0.06795351207256317,
+    -0.010061890818178654,
+    -0.09752213954925537,
+    0.08950135856866837,
+    -0.008678236044943333,
+    0.015706956386566162,
+    0.03130468353629112,
+    -0.06259537488222122,
+    0.0563323013484478,
+    0.05561031773686409,
+    0.04961591586470604,
+    -0.06063201278448105,
+    0.020691493526101112,
+    0.022496270015835762,
+    -0.09281056374311447,
+    -0.052716683596372604,
+    0.08218642324209213,
+    -0.1134791448712349,
+    -0.06196943297982216,
+    0.005732879042625427,
+    0.013115190900862217,
+    0.07529518008232117,
+    -0.09332304447889328,
+    0.058209117501974106,
+    -0.0012141751358285546,
+    -0.027537928894162178,
+    0.019687501713633537,
+    0.027307996526360512,
+    -0.029644057154655457,
+    0.08698151260614395,
+    0.04159436747431755,
+    -0.02147867903113365,
+    -0.04127884656190872,
+    0.0887419730424881,
+    -0.009578336961567402,
+    -0.06752914935350418,
+    -0.0447966568171978,
+    -0.00706802261993289,
+    -0.01935836300253868,
+    -0.03330976516008377,
+    -0.07113000750541687,
+    0.030191201716661453,
+    0.025249969214200974,
+    0.046202246099710464,
+    0.05336833745241165,
+    -0.011051871813833714,
+    -0.00005570381836150773,
+    -0.026543328538537025,
+    -0.03302186354994774,
+    -0.015510357916355133,
+    -0.05615827068686485,
+    0.027422750368714333,
+    0.02243448980152607,
+    -0.025723887607455254,
+    -0.06769580394029617,
+    0.007844975218176842,
+    -0.06500665843486786,
+    0.018155144527554512,
+    0.05615156516432762,
+    0.10063199698925018,
+    -0.042280226945877075,
+    0.029967954382300377,
+    0.027334241196513176
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Packet_switching.md",
+        "start": 1319,
+        "content": "L) in the late 1960s. Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.\n\n## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Soravin Specimen Studio, conservation cards are kept for 80 days. If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day"
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Packet_switching.md",
+        "start": 1577,
+        "content": "## Fictional completed tasks\nAt the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run. Eran Morven cleaned 41 trays. Vera Linven weighed 18 trays. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations."
+      },
+      {
+        "filename": "02_Victoria__Australia_.md",
+        "start": 1083,
+        "content": "## Fictional completed tasks\nAt the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run. Ivo Darven polished 52 plates. Lena Corven photographed 16 plates. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations."
+      },
+      {
+        "filename": "01_Huguenot.md",
+        "start": 1259,
+        "content": "## Fictional completed tasks\nAt the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations."
+      }
+    ]
+  }
+}

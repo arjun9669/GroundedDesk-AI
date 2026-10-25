@@ -1,0 +1,228 @@
+{
+  "candidate_identity": "coverage-v50-versioned-retention",
+  "id": "FC58",
+  "question": "Compare the Bellhaven Textile Museum collection relocation year with the Kestwick Lens Workshop warehouse move year.",
+  "workflow": "comparison",
+  "ui": {
+    "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909.\n\n[2] Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+    "sources": [
+      {
+        "filename": "01_Bellhaven_Textile_Museum.txt",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909."
+      },
+      {
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop."
+      }
+    ],
+    "displayed": "Shared vocabulary: labels, longer, months, requires, retained, retention, unless, unresolved. Shared terms do not establish factual agreement.\n\n[1] 01_Bellhaven_Textile_Museum.txt\n\nThe Bellhaven Textile Museum relocated its collection in 1909.\n\nText line 1 (normalized extraction)\n\nLocate in library ↗\n[2] 02_Kestwick_Lens_Workshop.txt\n\nPurchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.\n\nText line 9 (normalized extraction)\n\nLocate in library ↗"
+  },
+  "baseline": {
+    "kind": "comparison",
+    "question": "Compare the Bellhaven Textile Museum collection relocation year with the Kestwick Lens Workshop warehouse move year.",
+    "sources": [
+      {
+        "citation": 1,
+        "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+        "filename": "01_Bellhaven_Textile_Museum.txt",
+        "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909.",
+        "warning": false,
+        "supported": true,
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909."
+      },
+      {
+        "citation": 2,
+        "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "excerpt": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+        "warning": false,
+        "supported": true,
+        "quote": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop."
+      }
+    ],
+    "sharedTerms": [
+      "labels",
+      "longer",
+      "months",
+      "requires",
+      "retained",
+      "retention",
+      "unless",
+      "unresolved"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909.\n\n[2] Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop."
+  },
+  "fixed": {
+    "kind": "comparison",
+    "question": "Compare the Bellhaven Textile Museum collection relocation year with the Kestwick Lens Workshop warehouse move year.",
+    "sources": [
+      {
+        "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+        "filename": "01_Bellhaven_Textile_Museum.txt",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+        "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909.",
+        "start": 0,
+        "end": 62,
+        "warning": false,
+        "supported": true,
+        "citation": 1
+      },
+      {
+        "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013",
+        "excerpt": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013",
+        "start": 0,
+        "end": 88,
+        "warning": false,
+        "supported": true,
+        "citation": 2
+      }
+    ],
+    "sharedTerms": [
+      "labels",
+      "longer",
+      "months",
+      "requires",
+      "retained",
+      "retention",
+      "unless",
+      "unresolved"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909.\n\n[2] Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013",
+    "experiment": "V49 isolated lexical Comparison; production unchanged",
+    "comparison_contract": {
+      "status": "supported",
+      "kind": "event"
+    }
+  },
+  "section": {
+    "kind": "comparison",
+    "question": "Compare the Bellhaven Textile Museum collection relocation year with the Kestwick Lens Workshop warehouse move year.",
+    "sources": [
+      {
+        "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+        "filename": "01_Bellhaven_Textile_Museum.txt",
+        "quote": "The Bellhaven Textile Museum relocated its collection in 1909.",
+        "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909.",
+        "start": 0,
+        "end": 62,
+        "warning": false,
+        "supported": true,
+        "citation": 1
+      },
+      {
+        "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+        "filename": "02_Kestwick_Lens_Workshop.txt",
+        "quote": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013",
+        "excerpt": "Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013",
+        "start": 0,
+        "end": 88,
+        "warning": false,
+        "supported": true,
+        "citation": 2
+      }
+    ],
+    "sharedTerms": [
+      "labels",
+      "longer",
+      "months",
+      "requires",
+      "retained",
+      "retention",
+      "unless",
+      "unresolved"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909.\n\n[2] Kestwick Lens Workshop opened its public test bench in 1998. Its warehouse moved in 2013",
+    "experiment": "V49 isolated lexical Comparison; production unchanged",
+    "comparison_contract": {
+      "status": "supported",
+      "kind": "event"
+    }
+  },
+  "pairedPrevious": {
+    "fixed": {
+      "kind": "comparison",
+      "question": "Compare the Bellhaven Textile Museum collection relocation year with the Kestwick Lens Workshop warehouse move year.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+          "filename": "01_Bellhaven_Textile_Museum.txt",
+          "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "warning": false,
+          "supported": true,
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909."
+        },
+        {
+          "citation": 2,
+          "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+          "filename": "02_Kestwick_Lens_Workshop.txt",
+          "excerpt": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+          "warning": false,
+          "supported": true,
+          "quote": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop."
+        }
+      ],
+      "sharedTerms": [
+        "labels",
+        "longer",
+        "months",
+        "requires",
+        "retained",
+        "retention",
+        "unless",
+        "unresolved"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909.\n\n[2] Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+      "experiment": "V22 isolated lexical Comparison heading boundary; not Hybrid"
+    },
+    "section": {
+      "kind": "comparison",
+      "question": "Compare the Bellhaven Textile Museum collection relocation year with the Kestwick Lens Workshop warehouse move year.",
+      "sources": [
+        {
+          "citation": 1,
+          "documentId": "904ac101-b63e-4513-960b-b9a5001f8200",
+          "filename": "01_Bellhaven_Textile_Museum.txt",
+          "excerpt": "The Bellhaven Textile Museum relocated its collection in 1909.",
+          "warning": false,
+          "supported": true,
+          "quote": "The Bellhaven Textile Museum relocated its collection in 1909."
+        },
+        {
+          "citation": 2,
+          "documentId": "07e50aba-f43b-46b4-b72f-15d592ceecce",
+          "filename": "02_Kestwick_Lens_Workshop.txt",
+          "excerpt": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+          "warning": false,
+          "supported": true,
+          "quote": "Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop."
+        }
+      ],
+      "sharedTerms": [
+        "labels",
+        "longer",
+        "months",
+        "requires",
+        "retained",
+        "retention",
+        "unless",
+        "unresolved"
+      ],
+      "answered": true,
+      "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+      "answer": "[1] The Bellhaven Textile Museum relocated its collection in 1909.\n\n[2] Purchases above 6200 require written approval from both the Optics Lead and the Budget Steward at Kestwick Lens Workshop.",
+      "experiment": "V22 isolated lexical Comparison heading boundary; not Hybrid"
+    }
+  },
+  "method": "Separate isolated v50 and paired v43 lexical Comparison wrappers; actual production UI unchanged; not MiniLM"
+}
