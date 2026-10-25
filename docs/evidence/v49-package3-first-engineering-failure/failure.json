@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-25",
+  "status": "FIRST TARGETED ENGINEERING FAILURE \u2014 STOPPED",
+  "baseline_commit": "c4e187ac11cc87d38acbb17eb18517f0f9a86788",
+  "candidate_id": "coverage-v49-comparison-events",
+  "attempts": 1,
+  "tests": 30,
+  "pass": 24,
+  "fail": 6,
+  "failures": [
+    {
+      "test": "different objects and move/relocation aliases bind independent original sides",
+      "location": "tests/coverage-v49.test.mjs:33",
+      "observed": "false !== true"
+    },
+    {
+      "test": "question-side order does not reorder selected documents or citations",
+      "location": "tests/coverage-v49.test.mjs:34",
+      "observed": "false !== true"
+    },
+    {
+      "test": "unique complete-token filename aliases resolve while competing aliases refuse",
+      "location": "tests/coverage-v49.test.mjs:66",
+      "observed": "false !== true"
+    },
+    {
+      "test": "exclusive cutoff, missing hold, wrong order type, ambiguity and qualifications refuse",
+      "location": "tests/coverage-v49.test.mjs:107",
+      "observed": "true !== false"
+    },
+    {
+      "test": "normalized-body offsets retain exact literal bytes and original selected identities",
+      "location": "tests/coverage-v49.test.mjs:119",
+      "observed": "false !== true"
+    },
+    {
+      "test": "new quote and request bounds cannot silently clip evidence",
+      "location": "tests/coverage-v49.test.mjs:127",
+      "observed": "Comparison topic exceeds 600 characters."
+    }
+  ],
+  "diagnosis_method": "Static source inspection only; no candidate rerun or fix after failure",
+  "diagnosis": [
+    "Four positive event groups use passive was moved/relocated. The greedy bounded object pattern can consume was, leaving moved/relocated as the verb and a wrong object such as warehouse was. Proposed repair: prefer the complete passive verb production before considering a bare active verb, and add explicit auxiliary/object boundary controls.",
+    "The missing-hold negative fixture removes the old remains active spelling, while its source now says is still active. Replacement leaves the positive document unchanged. Proposed fixture repair: remove the actual literal hold and assert that the mutation changed the source before checking refusal; retain all negative assertions.",
+    "The oversized-question test expects an incomplete result, but inherited compareDocuments rejects topics over600 before the incomplete result is built. Proposed explicit protocol/test correction: retain the existing public throw and exact length limit, assert that error, and separate it from quote-length refusal. Do not truncate question/source."
+  ],
+  "not_run": [
+    "Full unit suite",
+    "Strict Keyword",
+    "Model/browser/frozen-question/scorer/saved-vector candidate replay"
+  ],
+  "publication": "No commit or push; user approval required before correction or retries"
+}

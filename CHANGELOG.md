@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-25 — v49 package3 Comparison/events engineering
+
+- Add isolated independent-side event, cutoff/hold and monthly metric/month bindings;
+  carry forward unchanged ordinal-event support while retaining v48 fallback.
+- Preserve first24/6 failure and snapshots; apply approved passive-object correction,
+  missing-hold mutation guards and explicit existing query-limit expectation.
+- Approved32 targeted /972 full unit /28 Keyword PASS. No model or frozen-case
+  replay; live5.6/r44 and phase2/integration HOLD remain unchanged.
+
 ## 2026-10-25 — v48 package2 minimum/approval engineering
 
 - Add isolated document/subentity minimum binding and complete writing/unit/range/

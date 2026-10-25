@@ -483,3 +483,20 @@ protections are reused. First-run31 targeted /940 unit /28 Keyword checks PASS.
 and passing logs. No model, browser, frozen-question/scorer run or saved-vector
 candidate replay occurred. Package3/ordinal carry-forward and actual preservation
 remain unmeasured; do not change native gates or overwrite first failed evidence.
+
+
+## V49 package3 approved engineering checkpoint
+
+[Report](V49_PACKAGE3_ENGINEERING.md) and
+[protocol](../eval/answer-completeness-v49/PROTOCOL.md) describe independent
+Comparison side bindings and unchanged v45 ordinal-event carry-forward on v48
+fallback. Preserve package1/2 and clock/compound protections. First24/6 failure
+and attempted bytes remain in the [first-failure seal](evidence/v49-package3-first-engineering-failure/manifest.json).
+After explicit approval, fix passive object boundaries, correct the missing-hold
+mutation with guards, and explicitly retain the public600-character query error.
+Approved32 targeted /972 unit /28 strict Keyword PASS;
+[separate passing evidence](evidence/v49-package3-approved-engineering/manifest.json)
+seals final bytes. No model/browser/frozen-question/scorer/saved-vector candidate
+run. Older sections above are historical checkpoints. Next prepare a separate
+published732-case execution freeze with pre-question anchor-audit controls; obtain
+explicit model-run approval. Do not adopt v49 or reinterpret v46 native failures.

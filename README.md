@@ -13,10 +13,10 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Area | Status |
 |---|---|
 | Live application | **GroundedDesk 5.6**, retrieval build **`2026-10-13-r44`** |
-| Latest isolated candidate | **v48 package 2 engineering PASS**; model validation not run. Latest scored v46 regression FAIL; neither adopted |
+| Latest isolated candidate | **v49 package 3 engineering PASS after approved corrections**; model validation not run. Latest scored v46 regression FAIL; neither adopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
 | Current phase | **2 — first Fresh64 confirmation FAIL**; 52 PASS / 4 PARTIAL / 8 FAIL in each variant; integration HOLD |
-| Latest recorded engineering checks | **940 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
+| Latest recorded engineering checks | **972 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
 
@@ -42,11 +42,14 @@ See the [failed-study report](./docs/V46_REGRESSION_FAILED_RESULTS.md) and
 [separate review](./docs/evidence/v46-regression-732-mac/review/publication-review.json).
 The [preservation-first repair design](./docs/V47_PRESERVATION_REPAIR_DESIGN.md)
 now defines three work packages: scope/retention, minimum/approval, then Comparison.
-[Package 1 scope/retention](./docs/V47_PACKAGE1_ENGINEERING.md) and
-[package 2 minimum/approval](./docs/V48_PACKAGE2_ENGINEERING.md) now have isolated
-implementations. Package 2 passes 31 targeted,940 full unit and28 Keyword checks;
-package 3 and actual-model validation remain pending. There is no v48 quality score.
-Further implementation and another frozen study require separate approval. **Phase 2 and integration remain HOLD; live 5.6/r44 is unchanged.**
+[Package 1 scope/retention](./docs/V47_PACKAGE1_ENGINEERING.md),
+[package 2 minimum/approval](./docs/V48_PACKAGE2_ENGINEERING.md) and
+[package 3 Comparison/events](./docs/V49_PACKAGE3_ENGINEERING.md) now have isolated
+implementations. Package 3 passes32 targeted,972 full unit and28 Keyword checks
+after approved corrections; its original24/6 failure remains preserved. Actual-model
+validation is pending; there is no v49 quality score. Next prepare a new732-case
+execution freeze, with explicit approval required before model runs. **Phase 2 and
+integration remain HOLD; live 5.6/r44 is unchanged.**
 
 ## Original phase 2 Fresh64 confirmation — FAIL
 

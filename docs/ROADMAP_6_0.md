@@ -1,7 +1,7 @@
 # GroundedDesk 6.0 working roadmap
 
 Accepted as a working sequence in the October 20, 2026 conversation. Current
-phase: **2 — first Fresh64 confirmation FAIL; v46 exposed regression FAIL; v48 packages1/2 engineering complete, model validation pending**. Detailed product promises and quantitative
+phase: **2 — first Fresh64 confirmation FAIL; v46 exposed regression FAIL; v49 packages1–3 engineering complete after approved corrections, model validation pending**. Detailed product promises and quantitative
 release targets are not yet frozen; this roadmap does not declare 6.0 ready,
 promise production/security certification or authorize live integration.
 
@@ -55,8 +55,12 @@ specifies three repair work packages. [V47 package1](V47_PACKAGE1_ENGINEERING.md
 now implements scope/retention with35 targeted/909 unit/28 Keyword checks PASS
 after the approved fixture correction. No v47 model preservation is measured.
 [Package2 in v48](V48_PACKAGE2_ENGINEERING.md) now passes31 targeted/940 unit/28
-Keyword checks. Package3 Comparison and remaining event preservation are pending;
-next agree their bounded scope and grammar. No v48 model quality is measured.
+Keyword checks. [Package3 in v49](V49_PACKAGE3_ENGINEERING.md) now passes32
+targeted/972 unit/28 Keyword checks after approved corrections, retaining its
+first24/6 failure. All three isolated engineering packages are implemented;
+actual-model preservation remains unmeasured. Next prepare a separate732-case
+execution freeze with pre-question anchor-audit controls, then obtain model-run
+approval. No v49 model quality is measured.
 A new frozen regression and later unseen confirmation remain subsequent gates;
 live integration remains unauthorized.
 Preserve the accepted 668-case regression scope after fixes. Fresh64 is now exposed;

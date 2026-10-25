@@ -1,0 +1,164 @@
+✔ v49 is isolated and retains exact clock, scope, minimum, approval and body helpers (2.8595ms)
+✖ different objects and move/relocation aliases bind independent original sides (25.92225ms)
+✖ question-side order does not reorder selected documents or citations (0.922042ms)
+✔ shared for/and events and bounded ordinal completion nouns remain supported (0.964041ms)
+✔ active entity-object moves and openings have literal date bindings (2.115917ms)
+✔ bounded local Its keeps its affirmative antecedent and exact coordination span (1.4895ms)
+✔ Its cannot acquire a foreign, unrelated or distant antecedent (2.4465ms)
+✔ event wrong object, wrong family, missing side and negation refuse (1.028334ms)
+✔ conflicting event dates and repeated literal source spans refuse (0.349583ms)
+✔ pair, third entity and unconsumed event facets cannot be discarded (0.389209ms)
+✖ unique complete-token filename aliases resolve while competing aliases refuse (0.285667ms)
+✔ monthly value and month bind separately from average and daily distractors (4.721708ms)
+✔ monthly location and bounded local Its retain a complete literal antecedent (0.984333ms)
+✔ monthly signed units and reverse month/value order remain literal (3.583625ms)
+✔ monthly missing month, daily/winter substitution, foreign scope and ambiguity refuse (0.731583ms)
+✔ monthly mean and average are separate labels; unknown facets are refused (0.379667ms)
+✔ monthly subentity must be explicit and cannot cross paragraph or unrelated context (1.0855ms)
+✔ stated cutoff equality binds independent day units and requested order types (4.687583ms)
+✔ a cutoff request does not require an unrequested before branch or before hold (4.50775ms)
+✖ exclusive cutoff, missing hold, wrong order type, ambiguity and qualifications refuse (0.702917ms)
+✔ additional departure facets and foreign order identities are not discarded (0.593667ms)
+✔ legacy complete before/after cutoff comparisons preserve all branches and holds (5.338625ms)
+✖ normalized-body offsets retain exact literal bytes and original selected identities (0.245167ms)
+✔ invalid selected identities, duplicate entities and oversized sources throw (0.247417ms)
+✖ new quote and request bounds cannot silently clip evidence (0.223666ms)
+✔ nonowned Comparison paths retain exact previous output (2.139625ms)
+✔ package1 retention and package2 minima and writing ownership remain exact (30.75875ms)
+✔ ordinal-event carry-forward reuses unchanged v45 source binding and actual anchors (3.329625ms)
+✔ ordinal events still refuse wrong ordinal, missing actor scope, negation and conflict (0.320541ms)
+✔ compound requests preserve prior evidence guards and are not partially intercepted (0.103833ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 24
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 220.293959
+
+✖ failing tests:
+
+test at tests/coverage-v49.test.mjs:33:1
+✖ different objects and move/relocation aliases bind independent original sides (25.92225ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at supported (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:22:9)
+      at TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:33:91)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/coverage-v49.test.mjs:34:1
+✖ question-side order does not reorder selected documents or citations (0.922042ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at supported (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:22:9)
+      at TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:35:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/coverage-v49.test.mjs:66:1
+✖ unique complete-token filename aliases resolve while competing aliases refuse (0.285667ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at supported (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:22:9)
+      at TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:67:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/coverage-v49.test.mjs:107:1
+✖ exclusive cutoff, missing hold, wrong order type, ambiguity and qualifications refuse (0.702917ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at refused (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:26:28)
+      at TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:108:319)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/coverage-v49.test.mjs:119:1
+✖ normalized-body offsets retain exact literal bytes and original selected identities (0.245167ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at supported (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:22:9)
+      at TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:120:70)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/coverage-v49.test.mjs:127:1
+✖ new quote and request bounds cannot silently clip evidence (0.223666ms)
+  Error: Comparison topic exceeds 600 characters.
+      at compareDocuments (file:///Users/arjunkumar/Projects/GroundedDesk-AI/research.mjs:203:39)
+      at compareRelationPlan (file:///Users/arjunkumar/Projects/GroundedDesk-AI/eval/answer-completeness-v49/comparison.mjs:148:34)
+      at Module.compareWithCoverage (file:///Users/arjunkumar/Projects/GroundedDesk-AI/eval/answer-completeness-v49/coverage.mjs:14:69)
+      at compare (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:20:48)
+      at TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v49.test.mjs:129:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)

@@ -15,9 +15,35 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v48 package2 minimum/approval engineering PASS; 940 unit/28 Keyword PASS; no v48 model result/adoption. Latest scored v46 regression FAIL (Fresh64 60/4/0, historical10/19 gates) |
+| Latest isolated candidate | v49 package3 Comparison/events engineering PASS after approved corrections; 972 unit/28 Keyword PASS; no v49 model result/adoption. Latest scored v46 regression FAIL (Fresh64 60/4/0, historical10/19 gates) |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | V48 package2 isolated engineering publication; no model study, candidate adoption or change to historical native failures |
+| Current change | V49 package3 approved correction and engineering publication; first failure preserved, model study/adoption pending |
+
+## V49 package3 — engineering PASS after approved corrections, 2026-10-25
+
+Package3 was authorized after published v48 `c4e187ac`. New isolated v49 Comparison
+binds both selected sides independently to event/object/date, cutoff/day/hold or
+monthly temperature/month. Only ordinal-event plans reuse unchanged v45 bindings;
+v48 fallback preserves packages1/2, clock/compound and actor/reference protections.
+Production imports and historical candidates are unchanged.
+
+First run: **30 tests,24 PASS,6 FAIL**; work stopped. The user approved correcting
+passive verb/object boundaries, a stale missing-hold fixture and its mutation
+guards, and explicit alignment with the existing600-character public query error.
+[First-failure report](docs/V49_PACKAGE3_FIRST_ENGINEERING_FAILURE.md) and
+[original evidence](docs/evidence/v49-package3-first-engineering-failure/manifest.json)
+remain unchanged. Approved rerun: **32/32 targeted,972/972 full units,28/28 strict
+Keyword PASS**. [Current report](docs/V49_PACKAGE3_ENGINEERING.md),
+[amended protocol](eval/answer-completeness-v49/PROTOCOL.md) and
+[separate passing evidence](docs/evidence/v49-package3-approved-engineering/manifest.json)
+record scope, limits and reviewed identities. No model/browser/frozen-question/
+scorer or saved-vector candidate replay occurred.
+
+All three repair packages now have isolated engineering implementations. Next
+prepare a new published732-case execution freeze for combined v49, including
+pre-question anchor-audit controls; actual model execution needs explicit approval.
+Historical repair is unmeasured. V46 native FAIL, Cobalt BLOCKED,103 exclusions/
+full771 NOT RUN, phase2/integration HOLD and live5.6/r44 remain unchanged.
 
 ## V48 package2 — engineering PASS, 2026-10-25
 
