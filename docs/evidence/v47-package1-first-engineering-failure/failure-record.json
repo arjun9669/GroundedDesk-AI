@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-25",
+  "status": "FAIL_FIRST_TARGETED_ENGINEERING",
+  "checks": {
+    "tests": 34,
+    "pass": 33,
+    "fail": 1
+  },
+  "failing_test": "non-retention and existing compound routes delegate exactly to v43",
+  "test_location": "tests/coverage-v47.test.mjs:166:1",
+  "error": "Actual facet evidence required",
+  "error_location": "eval/answer-completeness-v15/coverage.mjs:96:118 inherited through unchanged v43",
+  "static_cause": "The Also compound fixture passes only bodyEvidenceCandidates. Inherited v15 requires facetCandidates and facetBodyEvidenceCandidates to match the two question parts, and uses the other aligned facet metadata arrays. The error occurs on the current-call side before deepEqual evaluates the previous-call side.",
+  "interpretation": "Test-fixture/evidence-contract failure; not an actual-model result and not proof the retention implementation regressed. Do not disable the inherited guard.",
+  "proposed_correction": "Preserve this first log/snapshot; correct only the compound test fixture with aligned synthetic facet inputs so original result equality can run. Add controls asserting both versions reject missing facet evidence. Keep the expected equality and original guard.",
+  "first_attempt_files": [
+    {
+      "path": "eval/answer-completeness-v47/coverage.mjs",
+      "sha256": "9ceac6635728598bb3ae683184a552734ed2c9a5afb535128f25556b5a465f5e"
+    },
+    {
+      "path": "eval/answer-completeness-v47/retention-contract.mjs",
+      "sha256": "27c6c121177faee90211ad1ef06bd6afdee33b2cdef4e675d1471b64312b6a9d"
+    },
+    {
+      "path": "eval/answer-completeness-v47/scope.mjs",
+      "sha256": "2aad34f8db05792e725a26d221fa626a3ec4ed1edf7966ecbec528d09a60e7be"
+    },
+    {
+      "path": "eval/answer-completeness-v47/PROTOCOL.md",
+      "sha256": "db079fa18ad91255bc8707d82f4f47392256473d47d3e02d0feb53b9684e6455"
+    },
+    {
+      "path": "tests/coverage-v47.test.mjs",
+      "sha256": "3e3e6b7760214755203ccae0b6a415f3744cb2d809dfd0fc65633b55957e84b4"
+    }
+  ],
+  "baseline_commit": "afd1fb8ea5af933a72945cfa868a403b686c74ce",
+  "full_unit_suite": "NOT RUN after required targeted failure",
+  "strict_keyword": "NOT RUN after required targeted failure",
+  "model_runs": 0,
+  "frozen_question_runs": 0,
+  "saved_vector_replays": 0,
+  "scorer_runs": 0,
+  "retries": 0,
+  "fixes_after_failure": 0,
+  "commit_or_push": "NOT PERFORMED",
+  "next_action": "Await approval for fixture correction and relevant engineering checks; preserve candidate/frozen evidence and no model execution."
+}

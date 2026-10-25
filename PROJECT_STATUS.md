@@ -1,6 +1,6 @@
 # GroundedDesk AI — project status
 
-Last updated: **2026-10-24 (Asia/Kolkata)**.
+Last updated: **2026-10-25 (Asia/Kolkata)**.
 
 This is the current development handoff. Preserve historical results in their
 original reports; link them here instead of rewriting or rescoring them.
@@ -15,9 +15,58 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v46 capture732/732 COMPLETE; approved audit-only rescore native FAIL: Fresh64 60/4/0 both variants; historical10/19 gates PASS; not adopted. Original prospective v43 Fresh64 confirmation remains FAIL |
+| Latest isolated candidate | v47 package1 scope/retention engineering PASS; 909 unit/28 Keyword PASS; no v47 model result/adoption. Latest scored v46 regression FAIL (Fresh64 60/4/0, historical10/19 gates) |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | Approved publication of v46 failed regression and separate completed review; native outcomes unchanged, no candidate adoption |
+| Current change | Approved v47 package1 fixture correction and engineering publication; historical native failures/results and live application unchanged |
+
+## V47 package1 approved correction — engineering PASS, 2026-10-25
+
+[Package1 report](docs/V47_PACKAGE1_ENGINEERING.md) and
+[protocol](eval/answer-completeness-v47/PROTOCOL.md) describe isolated v47 scope and
+retention contracts on unchanged v43 fallback. New code binds unique typed policy
+identity, duration and all parsed local exceptions, preserves foreign-prefix and
+ambiguity guards, and retains a prior display signature only after complete source
+validation. Clock/Comparison/helper exports remain v43; live imports are unchanged.
+
+The user approved correcting the first compound fixture. Aligned synthetic facet
+arrays now let its original result-equality assertion run; one added test group
+checks that both versions still reject missing/misaligned evidence. Candidate and
+protocol bytes are identical to the preserved failed draft. **35/35 targeted,
+909/909 full units and28/28 strict Keyword checks PASS**. The original33/1 failure
+remains unchanged, with separate [approved evidence](docs/evidence/v47-package1-approved-engineering/manifest.json).
+Source/input/evidence hashes, syntax, documentation links, sensitive-data and Git
+diff review pass. This is engineering evidence only, not a measured model repair.
+
+No model, browser, frozen-question planner, scorer or saved-vector candidate replay
+occurred. No claim is made that the13 historical retention losses are repaired on
+models. Packages2/3 (minimum/approval and Comparison) remain unimplemented in v47;
+their default path stays v43. Next approve package2 scope/grammar and engineering.
+The v46 native FAIL, first audit failure, original v43 confirmation FAIL, Cobalt
+BLOCKED,103 exclusions/full771 NOT RUN, phase2 HOLD and live5.6/r44 stay unchanged.
+
+## V47 package1 draft — first engineering check FAIL, 2026-10-25
+
+The user approved scope/retention implementation after design `afd1fb8e`. A new
+isolated v47 draft uses unchanged v43 fallback/clock/Comparison helpers, with a
+bounded scope/retention protocol and synthetic controls. No historical module,
+frozen question, source, key, rubric, result or live import changed.
+
+First targeted run: **33 PASS /1 FAIL out of34**. Failing group:
+`non-retention and existing compound routes delegate exactly to v43`,
+`tests/coverage-v47.test.mjs:166:1`. The invented Also-compound fixture supplies
+body evidence without per-facet arrays. The inherited unchanged v15 guard at
+line96 throws **Actual facet evidence required**, before result equality can run.
+Static inspection identifies a fixture/evidence-contract problem; no guard was
+changed or disabled, and no candidate regression/quality conclusion follows.
+
+[First failure record](docs/evidence/v47-package1-first-engineering-failure/failure-record.json)
+preserves exact original log and all new draft/protocol/test snapshots with hashes.
+Work stopped before correction/retry, full unit/Keyword suite, commit or push.
+No model, frozen-question planner, scorer or saved-vector candidate replay occurred.
+Next needs approval to supply aligned synthetic compound facet metadata, retain
+original result-equality expectations and add missing-evidence guard controls for
+both versions, then rerun engineering checks. Existing v46 native FAIL and all
+phase2/integration/live holds remain unchanged.
 
 ## Preservation-first successor design — 2026-10-24, no implementation
 

@@ -456,3 +456,17 @@ validated display signatures, clock authority, literal anchors and native gates.
 The design/source seal is under `docs/evidence/v47-preservation-design/`.
 Documentation/hash/diff checks apply to this task; existing 874-unit/28-Keyword
 results are retained checkpoints, not rerun model evidence.
+
+
+## V47 package1 engineering checkpoint
+
+[Package1 report](V47_PACKAGE1_ENGINEERING.md) and
+[protocol](../eval/answer-completeness-v47/PROTOCOL.md) specify bounded retention
+scope/condition grammar, v43 fallback and unchanged clock/Comparison helpers.
+First33/1 failure is preserved; approved compound fixture correction retains result
+equality and adds missing/misaligned evidence guards. Candidate/protocol bytes did
+not change after that failure.35 targeted/909 full units/28 Keyword checks PASS.
+[Separate evidence](evidence/v47-package1-approved-engineering/manifest.json) seals
+passing logs and original failure references. No model/frozen-question/scorer replay
+occurred; minimum/approval/Comparison successor work and model preservation are
+pending. Preserve original failures and obtain separate scope/run approvals.

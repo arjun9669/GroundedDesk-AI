@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-25 — v47 package1 engineering with approved fixture correction
+
+- Add isolated v43-based scope/retention contracts, complete literal local conditions,
+  unique policy identity and validated prior display preservation; live app unchanged.
+- Preserve first33/1 engineering failure and source snapshots. Correct only compound
+  fixture metadata after approval; retain equality and missing-evidence guards.
+- Record35 targeted/909 full unit/28 Keyword checks PASS. No model, frozen-question
+  or scorer run; packages2/3 and actual-model preservation remain pending.
+
 ## 2026-10-24 — preservation-first successor repair design
 
 - Define a new isolated v43-based successor design for the 20 historical prior

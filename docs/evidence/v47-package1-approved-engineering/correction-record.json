@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-25",
+  "status": "PASS_AFTER_APPROVED_FIXTURE_CORRECTION",
+  "approval": "User approved correcting the compound fixture, adding missing-evidence controls and rerunning engineering checks",
+  "first_attempt": {
+    "tests": 34,
+    "pass": 33,
+    "fail": 1,
+    "record": "docs/evidence/v47-package1-first-engineering-failure/failure-record.json"
+  },
+  "correction": "Supply aligned synthetic per-facet arrays in the original equality fixture; retain result equality and append missing/misaligned facet guard controls for both versions",
+  "candidate_or_protocol_changes_after_failure": false,
+  "original_failure_evidence": "UNCHANGED",
+  "targeted": {
+    "pass": 35,
+    "fail": 0
+  },
+  "unit": {
+    "pass": 909,
+    "fail": 0
+  },
+  "strict_keyword": {
+    "pass": 28,
+    "fail": 0
+  },
+  "model_runs": 0,
+  "frozen_question_runs": 0,
+  "scorer_runs": 0,
+  "saved_vector_candidate_replays": 0,
+  "scope": "Package1 engineering only; packages2/3 and actual-model preservation unrun"
+}
