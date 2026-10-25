@@ -1,0 +1,90 @@
+{
+  "protocol_id": "V49-REGRESSION-732-20261025",
+  "classification": "Prospective requirements; V49 execution integration and synthetic proof still pending",
+  "implemented_for_v49": false,
+  "historical_reference_only": {
+    "path": "eval/v46-regression-rescore/audit.mjs",
+    "sha256": "897e0b503475c1750abfdab259fb375e224592cfd3c6806cee5b7106f5d4e05d"
+  },
+  "max_quote_characters": 620,
+  "max_citations": 3,
+  "vector_dimensions": 384,
+  "cosine_tolerance": 1e-10,
+  "required_controls": [
+    {
+      "id": "direct_sentence_valid",
+      "expect": "PASS",
+      "proof": "Exact original sentence identity, selected offsets and recorded own-query/body cosine agree with recomputed384D vectors"
+    },
+    {
+      "id": "explicit_anchor_valid",
+      "expect": "PASS",
+      "proof": "Full original anchor contains the literal selected span and matches saved body, filename, document and actual own-query cosine"
+    },
+    {
+      "id": "explicit_anchor_cosine_disagreement",
+      "expect": "REJECT",
+      "proof": "Finite selected cosine and finite anchor cosine differ, including selected1/anchor0"
+    },
+    {
+      "id": "explicit_anchor_nonfinite_or_missing",
+      "expect": "REJECT",
+      "proof": "Missing/NaN/infinite selected or anchor cosine cannot use legacy fallback"
+    },
+    {
+      "id": "forged_equal_cosines",
+      "expect": "REJECT",
+      "proof": "Matching fabricated source/anchor metadata fails independent vector arithmetic"
+    },
+    {
+      "id": "legacy_body_id_valid",
+      "expect": "PASS",
+      "proof": "Unique retained body ID and content/span/document/filename identify a containing saved sentence; own-query recorded and recomputed cosines agree; ephemeral audit view only"
+    },
+    {
+      "id": "legacy_body_id_missing_wrong_or_ambiguous",
+      "expect": "REJECT",
+      "proof": "No guessed containing/nearest sentence, foreign ID, conflicting content or ambiguous original identity"
+    },
+    {
+      "id": "legacy_body_vector_or_span_mismatch",
+      "expect": "REJECT",
+      "proof": "Wrong parent vector, document, filename, quote offset or body containment fails"
+    },
+    {
+      "id": "repeated_identical_body_contexts",
+      "expect": "PASS",
+      "proof": "Repeated identical original body identity across genuine saved query contexts is not ambiguity"
+    },
+    {
+      "id": "candidate_and_pair_context_isolation",
+      "expect": "REJECT_CROSS_BINDING",
+      "proof": "v49 clock/body evidence cannot be supplied by paired v43 context or vice versa; all original facet query labels/count/order align"
+    },
+    {
+      "id": "vectors_real_finite_nonzero384",
+      "expect": "REJECT_INVALID",
+      "proof": "Invalid dimension, nonfinite or zero norm and synthetic cosine substitution fail before scoring"
+    },
+    {
+      "id": "comparison_pair_and_literal_bounds",
+      "expect": "REJECT_INVALID",
+      "proof": "Wrong original selected pair/order, fabricated or noncontiguous quotation, duplicate/oversized span or nonsequential citation fails"
+    },
+    {
+      "id": "capture_receipt_and_order",
+      "expect": "REJECT_INVALID",
+      "proof": "Duplicate, missing, retried or reordered pack-qualified submissions or pre-candidate metadata persistence fail"
+    },
+    {
+      "id": "raw_and_native_immutability",
+      "expect": "PASS_UNCHANGED_BYTES",
+      "proof": "Anchor audit cannot rewrite saved candidate results or native scores; native graders receive originals"
+    },
+    {
+      "id": "native_grader_equivalence",
+      "expect": "PASS_EXACT",
+      "proof": "Original grade/preservation/family/Fresh64 functions and native subsets including C04 direct spans remain unchanged; archived equivalence never invokes candidates"
+    }
+  ]
+}

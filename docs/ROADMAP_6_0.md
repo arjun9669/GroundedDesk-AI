@@ -58,9 +58,12 @@ after the approved fixture correction. No v47 model preservation is measured.
 Keyword checks. [Package3 in v49](V49_PACKAGE3_ENGINEERING.md) now passes32
 targeted/972 unit/28 Keyword checks after approved corrections, retaining its
 first24/6 failure. All three isolated engineering packages are implemented;
-actual-model preservation remains unmeasured. Next prepare a separate732-case
-execution freeze with pre-question anchor-audit controls, then obtain model-run
-approval. No v49 model quality is measured.
+actual-model preservation remains unmeasured. The
+[v49 732-case protocol preparation](V49_REGRESSION_PREPARATION.md) now freezes
+original scope and prospective anchor-audit requirements. Next implement isolated
+v49 tooling and synthetic proofs, measure current neutral preflight and publish
+the complete execution freeze before model-run approval. No v49 model quality
+is measured.
 A new frozen regression and later unseen confirmation remain subsequent gates;
 live integration remains unauthorized.
 Preserve the accepted 668-case regression scope after fixes. Fresh64 is now exposed;

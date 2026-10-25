@@ -47,9 +47,12 @@ now defines three work packages: scope/retention, minimum/approval, then Compari
 [package 3 Comparison/events](./docs/V49_PACKAGE3_ENGINEERING.md) now have isolated
 implementations. Package 3 passes32 targeted,972 full unit and28 Keyword checks
 after approved corrections; its original24/6 failure remains preserved. Actual-model
-validation is pending; there is no v49 quality score. Next prepare a new732-case
-execution freeze, with explicit approval required before model runs. **Phase 2 and
-integration remain HOLD; live 5.6/r44 is unchanged.**
+validation is pending; there is no v49 quality score. The
+[v49 732-case protocol/input/candidate freeze](./docs/V49_REGRESSION_PREPARATION.md)
+now retains original scope and criteria with prospective anchor-audit controls.
+Execution is **not ready**: isolated v49 tooling, synthetic audit proof and a fresh
+neutral preflight must precede the execution freeze and model-run approval.
+**Phase 2 and integration remain HOLD; live 5.6/r44 is unchanged.**
 
 ## Original phase 2 Fresh64 confirmation — FAIL
 

@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-25 — v49 732-case protocol preparation
+
+- Freeze original 668 historical plus 64 exposed Fresh64 scope, keys, sources and
+  candidate identities; retain native gates and declare prior v46 PASS preservation.
+- Specify 15 prospective anchor/body-ID audit controls. Verify 64 static local
+  modules, 117 original input entries and all 5,865 prior v46 raw artifact hashes.
+- Record 972 unit / 28 strict Keyword PASS. Protocol preparation only: v49 execution
+  tooling, current neutral preflight and complete execution freeze remain pending.
+  No model/study questions or candidate changes; integration stays HOLD.
+
 ## 2026-10-25 — v49 package3 Comparison/events engineering
 
 - Add isolated independent-side event, cutoff/hold and monthly metric/month bindings;

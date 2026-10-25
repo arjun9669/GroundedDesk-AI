@@ -1,0 +1,453 @@
+{
+  "protocol_id": "V49-REGRESSION-732-20261025",
+  "status": "PROTOCOL_FROZEN_EXECUTION_NOT_READY",
+  "baseline_commit": "3debd6086d01ed1afde190fb110b9bde0958dda9",
+  "candidate": {
+    "id": "coverage-v49-comparison-events",
+    "path": "eval/answer-completeness-v49/coverage.mjs",
+    "sha256": "eb877fa539002555890816a9cccf918ac50a047ffa8d1face53b310318d3c1e1"
+  },
+  "paired": {
+    "id": "coverage-v43-deferred-clock-forms",
+    "path": "eval/answer-completeness-v43/coverage.mjs",
+    "sha256": "31351a32b759027a048a2b3eeb0a71b4f4e0a1022f4e3c4c8f43d7177b82a7b7"
+  },
+  "variants": [
+    "fixed",
+    "section"
+  ],
+  "counts": {
+    "historical_cases": 668,
+    "exposed_fresh64": 64,
+    "total": 732,
+    "hybrid": 684,
+    "lexical_comparison": 48,
+    "source_documents": 83,
+    "candidate_result_rows": 1464
+  },
+  "excluded_originals": [
+    {
+      "name": "Lantern32",
+      "questions": 32,
+      "status": "Original complete source/key/manifest pack not located; archived outputs are not substitutes"
+    },
+    {
+      "name": "Aster32",
+      "questions": 32,
+      "status": "Original complete source/key/manifest pack not located; archived outputs are not substitutes"
+    },
+    {
+      "name": "Meridian24",
+      "questions": 24,
+      "status": "Original complete source/key/manifest pack not located; archived outputs are not substitutes"
+    },
+    {
+      "name": "Atlas15",
+      "questions": 15,
+      "status": "Original complete source/key/manifest pack not located; archived outputs are not substitutes"
+    }
+  ],
+  "original_inventory": {
+    "path": "docs/evidence/recoverable-input-inventory-20261020/inventory.json",
+    "sha256": "dd5a73b62396ea4d629c545ce8cf086b1f46a64f2b11dd9728dee4725c60b5b2"
+  },
+  "future_evidence_root": "docs/evidence/v49-regression-732-mac",
+  "environment_status": "NOT_MEASURED_FOR_V49",
+  "adapter_status": "V49_ADAPTERS_NOT_IMPLEMENTED; existing V46 tooling is reference only",
+  "model_runs": 0,
+  "packs": [
+    {
+      "name": "Cobalt16",
+      "cases": 16,
+      "hybrid": 12,
+      "lexical_comparison": 4,
+      "source_documents": 3,
+      "scoring_family": "historical_manual",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 0,
+      "original_key": {
+        "path": "docs/evidence/r29/cobalt16/fixed-answer-key.json",
+        "sha256": "632caa3614a0b2166feef802e3f4930e925e23c018e5b2c9b306fcc5199b7af7"
+      },
+      "case_order_sha256": "5ea914808225f56a81a486abfb889e86d34e3286761b7446cee508cc112d93f0"
+    },
+    {
+      "name": "RetrievalQuality28",
+      "cases": 28,
+      "hybrid": 28,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "scoring_family": "exact_sentence",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 1,
+      "original_key": {
+        "path": "eval/retrieval-quality/fixed-cases.json",
+        "sha256": "4a098c471edb16c38119fb2b622330a1ed2993dbd55b1f0dd8d690f07315351f"
+      },
+      "case_order_sha256": "776e3db68b3b452667d4cb0cc94f7802a1b5b84a9ff2cd9d38a015d449ad633e"
+    },
+    {
+      "name": "ExternalSQuAD24",
+      "cases": 24,
+      "hybrid": 24,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "scoring_family": "gold_span",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 2,
+      "original_key": {
+        "path": "eval/answer-completeness-v2/external24/fixed-answer-key.json",
+        "sha256": "0d786929dce2240b82cf48e779a85df11367850b5e850c9b48d496311c9430c4"
+      },
+      "case_order_sha256": "1d72c8b2eef6723c414f11aeccb6e01077db3678ad1879e0ad75f8102f54a8e7"
+    },
+    {
+      "name": "FreshMixed32",
+      "cases": 32,
+      "hybrid": 32,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "scoring_family": "gold_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 3,
+      "original_key": {
+        "path": "eval/answer-completeness-v3/fresh32/fixed-answer-key.json",
+        "sha256": "4e3e73a7b7f531b780fea05c22ebe94946b02a8d8e8c60ce83d147b27f600f72"
+      },
+      "case_order_sha256": "889b67af8baec1a6a395758b21ea433dbcbbb9409f04ad0612484a156021d52c"
+    },
+    {
+      "name": "FreshConfirmation32",
+      "cases": 32,
+      "hybrid": 32,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "scoring_family": "gold_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 4,
+      "original_key": {
+        "path": "eval/answer-completeness-v7/fresh32/fixed-answer-key.json",
+        "sha256": "4c6ce2ff90f06df22132b02015a9352255ce636b7be998b4aab73f5386593348"
+      },
+      "case_order_sha256": "8ac50242c529e3f84a0cd9caa3921dfe5e8e676cf66a2694fc844e0ad8b7ed45"
+    },
+    {
+      "name": "V9Exposed32",
+      "cases": 32,
+      "hybrid": 32,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "scoring_family": "gold_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 5,
+      "original_key": {
+        "path": "eval/answer-completeness-v9/fresh32/fixed-answer-key.json",
+        "sha256": "55e04bf6bd882cae23d2fcb6316317f29bb4981469574cb7e1747c40b4e24650"
+      },
+      "case_order_sha256": "6ae38226fefb940eaaee04a958bedc3cf1d1212721d59c29505cfe9f963a2c91"
+    },
+    {
+      "name": "Actor40",
+      "cases": 40,
+      "hybrid": 40,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "scoring_family": "gold_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 6,
+      "original_key": {
+        "path": "eval/answer-completeness-v13/actor40/fixed-answer-key.json",
+        "sha256": "274cb425143890058c50e7d4c9928f82bbd72d88301f5eb870838f9e662a5fd9"
+      },
+      "case_order_sha256": "53c411c196c0130694f7e10d6179c50a92f41ff9d59becf0df80c675f93b4237"
+    },
+    {
+      "name": "Scope48",
+      "cases": 48,
+      "hybrid": 48,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "scoring_family": "gold_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 7,
+      "original_key": {
+        "path": "eval/answer-completeness-v15/scope48/fixed-answer-key.json",
+        "sha256": "3927e82cbfb7f91d2dbbeacd0842ebc03be917ecb3e1b31d29eae3351169c37d"
+      },
+      "case_order_sha256": "fedd177a57d37a34f465f35b04d5f9107b998b7c4957c4ecd196c175336b881a"
+    },
+    {
+      "name": "Confirmation48",
+      "cases": 48,
+      "hybrid": 48,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "scoring_family": "gold_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 8,
+      "original_key": {
+        "path": "eval/answer-completeness-v17/confirmation48/fixed-answer-key.json",
+        "sha256": "4c0c4fccb1b4d7f5f503491fdffcd47731718885f6507592f5dbc4f3f2bbdd0c"
+      },
+      "case_order_sha256": "659920410b6cb78e07c6db5bf56315b8ae846ce8b0d26359a5b4bd49bbd44e1e"
+    },
+    {
+      "name": "Precision48",
+      "cases": 48,
+      "hybrid": 48,
+      "lexical_comparison": 0,
+      "source_documents": 4,
+      "scoring_family": "gold_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 9,
+      "original_key": {
+        "path": "eval/answer-completeness-v18/precision48/fixed-answer-key.json",
+        "sha256": "40fae78a0396f0dd64a4b363bd27dd1a0cc5372ef3306711e0797f711e498057"
+      },
+      "case_order_sha256": "aa6014932ef41ea6d5f716bb976e363c97eaac43c7a57ee87e78f769a966ad2d"
+    },
+    {
+      "name": "Binding64",
+      "cases": 64,
+      "hybrid": 60,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "scoring_family": "binding_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 10,
+      "original_key": {
+        "path": "eval/v20-confirmation/binding64/fixed-answer-key.json",
+        "sha256": "9f899d969b43d89ad6bcbcbcd9440f3ee940d97a136db02c018d1029e969ff15"
+      },
+      "case_order_sha256": "af7e47b0f7859fa610ef7bed1358589284ed944d9646757004b198fc49d4c1a3"
+    },
+    {
+      "name": "Cedar32",
+      "cases": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "scoring_family": "literal_context_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 11,
+      "original_key": {
+        "path": "eval/v24-fresh-confirmation/fixed-answer-key.json",
+        "sha256": "c32bc469cda04f835783d7ec8efac7d261c38ebd093bca893805726429c25892"
+      },
+      "case_order_sha256": "976f41add34fe592bb8a4ee01a77f0c20fa6d6cc301ece1355d5bf23d5d94b05"
+    },
+    {
+      "name": "Bracken32",
+      "cases": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "scoring_family": "literal_context_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 12,
+      "original_key": {
+        "path": "eval/v25-fresh-confirmation/fixed-answer-key.json",
+        "sha256": "29b851a6c8e8675848a833d524379335333844c91b439845741ad01304b44db1"
+      },
+      "case_order_sha256": "43ff70f3fe188267b225667f17591a19fc2a7d11b9b13b6a8807d8336a4fc135"
+    },
+    {
+      "name": "Flint32",
+      "cases": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "scoring_family": "literal_context_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 13,
+      "original_key": {
+        "path": "eval/v28-fresh-confirmation/fixed-answer-key.json",
+        "sha256": "2a67e846012affc884b0ba88a4ee7b5204301b50062a510512acbef5abc98de0"
+      },
+      "case_order_sha256": "5589329c1da3a0a23b53368006784aa432eeffc6d05445ee76f278b09a4f1001"
+    },
+    {
+      "name": "Morrow32",
+      "cases": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "scoring_family": "literal_context_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 14,
+      "original_key": {
+        "path": "eval/v30-fresh-confirmation/fixed-answer-key.json",
+        "sha256": "1d726da309646fad5986c9d3b1249f2fe8de0c4d596c431771a566bfbeec0035"
+      },
+      "case_order_sha256": "b4b7497dff028cef1b8dcb413e5c041b946fad66bedf30e7cd4880dc05527ef4"
+    },
+    {
+      "name": "Hearth32",
+      "cases": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "scoring_family": "literal_context_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 15,
+      "original_key": {
+        "path": "eval/v32-fresh-confirmation/fixed-answer-key.json",
+        "sha256": "8f9a711d4237a9b4db949824d82d66d87fb790504cac5dd1cadb11be35102f08"
+      },
+      "case_order_sha256": "c76a41ba6491335ff657f0d215b27bcb13d5f7cc7ce486ac363bf225ae30e05f"
+    },
+    {
+      "name": "Lumen32",
+      "cases": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "scoring_family": "literal_context_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 16,
+      "original_key": {
+        "path": "eval/v35-fresh-confirmation/fixed-answer-key.json",
+        "sha256": "066cc32b7d30c28232ad9d407684856b9fae466b39d972e56bcee85704afecda"
+      },
+      "case_order_sha256": "af4f9d24c413d0b51d44a921c96129400c4cf043404405d222ef38df2d8588a5"
+    },
+    {
+      "name": "Prism32",
+      "cases": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "scoring_family": "literal_context_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 17,
+      "original_key": {
+        "path": "eval/v36-fresh-confirmation/fixed-answer-key.json",
+        "sha256": "49605a12e36d7c9195748a7aeb3ef946af6273972c41f3da7fa69fc0e0429def"
+      },
+      "case_order_sha256": "75e5614dea659f4639104ba3d0a6ec786684419e031fcb16dca2ec027e7c6cf5"
+    },
+    {
+      "name": "Vela32",
+      "cases": 32,
+      "hybrid": 28,
+      "lexical_comparison": 4,
+      "source_documents": 4,
+      "scoring_family": "literal_context_groups",
+      "original_config": {
+        "path": "eval/v43-all-available-regression/run-config.json",
+        "sha256": "6b084b18f88e5a572eecd321a477dd31a0d00624ea2595df2060e0e242fdb465"
+      },
+      "pack_index": 18,
+      "original_key": {
+        "path": "eval/v38-fresh-confirmation/fixed-answer-key.json",
+        "sha256": "134abf11e7cffc3586a2f02688cb9d820c2e5e5fe58f89a9e3faf7ea0d968a33"
+      },
+      "case_order_sha256": "c320015829da1375eebed840faf1f146fe14407d3e3385a515a58383bf285bd1"
+    },
+    {
+      "name": "Fresh64",
+      "cases": 64,
+      "hybrid": 56,
+      "lexical_comparison": 8,
+      "source_documents": 8,
+      "scoring_family": "unchanged_literal_context_groups_gradeAnswer",
+      "original_config": {
+        "path": "eval/phase2-fresh64/run-config.json",
+        "sha256": "d2ee39221f9efbf2330254621504115820bcf884fc2c24161209838c4a74e4ff"
+      },
+      "pack_index": 0,
+      "original_key": {
+        "path": "eval/phase2-fresh64/fixed-answer-key.json",
+        "sha256": "2495ea8ae49aaf475aa41da788d8899ee0ea744fcc6a0a1ac1a1a659e12e476c"
+      },
+      "case_order_sha256": "cc1250abd25f538b560efea8fed04cef5596cb5965b12eea590ed0d5950099a3"
+    }
+  ],
+  "predecessor_scope": {
+    "path": "eval/v46-regression-study/scope.json",
+    "sha256": "5f3f664deca3e45cb7e41d728f09195cc23a7a61f7c10dc2a1ce22f0c362e0e1"
+  },
+  "audit_requirements": "eval/v49-regression-study/audit-requirements.json",
+  "candidate_calls": 0,
+  "planner_calls": 0,
+  "scorer_calls": 0,
+  "saved_vector_candidate_replays": 0,
+  "prior_study": {
+    "classification": "Failed exposed v46 regression, immutable reference only",
+    "native_gate": "FAIL",
+    "report": {
+      "path": "docs/V46_REGRESSION_FAILED_RESULTS.md",
+      "sha256": "d1445146ecf1002798ae920ca5e0141265a2de77e7935aec34eb381a9ca37c5a"
+    },
+    "native_scores": {
+      "path": "docs/evidence/v46-regression-732-mac/rescore-01/native-scorecards.json",
+      "sha256": "065a2b912a5344b90646195ce7d00b2db10269bf3cdf636152d33e73e504948e"
+    },
+    "first_score_failure": {
+      "path": "docs/evidence/v46-regression-732-mac/first-score-failure.json",
+      "sha256": "f5c76e9bbe7d86d9beb4d3a9d3c794318a54102d90cfdae6a3cf2f6a920e4c83"
+    },
+    "raw_manifest": {
+      "path": "docs/evidence/v46-regression-732-mac/raw-manifest.json",
+      "sha256": "a1e50499a663c8490ea535bdface38789e587011cbdf377b368b6d9ae2fcf907"
+    },
+    "review": {
+      "path": "docs/evidence/v46-regression-732-mac/review/publication-review.json",
+      "sha256": "aa930c2dc5f90be5ff89005485a8d4fb663328937088a70741cc47b6c2b32cd7"
+    }
+  }
+}

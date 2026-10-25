@@ -500,3 +500,24 @@ seals final bytes. No model/browser/frozen-question/scorer/saved-vector candidat
 run. Older sections above are historical checkpoints. Next prepare a separate
 published732-case execution freeze with pre-question anchor-audit controls; obtain
 explicit model-run approval. Do not adopt v49 or reinterpret v46 native failures.
+
+
+## V49 regression protocol preparation checkpoint
+
+[Preparation report](V49_REGRESSION_PREPARATION.md) and
+[protocol freeze](../eval/v49-regression-study/protocol-freeze-manifest.json) pin
+original 732-case scope, unchanged v49/v43 source identities and reference history.
+[Static validator](../eval/v49-regression-study/validate.mjs) reads keys/configs and
+hashes only; it never imports candidates or runs models/scorers. Default invocation
+prints current verification and checks the published freeze. --write-result is only
+for the first exclusive creation of static result/source files; never overwrite them.
+Preparation 972 unit / 28 Keyword PASS. No v49 study question, model/browser or
+saved-vector candidate replay occurred. The study evidence root remains absent.
+
+Next implement separate v49 execution adapters; v46 scripts retain their hard-coded
+old identity and are references only. Prove all15
+[prospective audit requirements](../eval/v49-regression-study/audit-requirements.json),
+native equivalence and same-variant prior PASS preservation with synthetic controls.
+Measure current neutral preflight/toolchain/assets, publish a complete execution
+freeze, then obtain explicit model-run approval. Do not change native rubrics or
+reuse old preflight observations as current measurements.

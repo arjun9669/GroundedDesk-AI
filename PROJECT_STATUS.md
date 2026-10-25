@@ -17,7 +17,37 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v49 package3 Comparison/events engineering PASS after approved corrections; 972 unit/28 Keyword PASS; no v49 model result/adoption. Latest scored v46 regression FAIL (Fresh64 60/4/0, historical10/19 gates) |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | V49 package3 approved correction and engineering publication; first failure preserved, model study/adoption pending |
+| Current change | V49 732-case protocol/input/candidate freeze prepared; execution tooling and current preflight pending; no model study/adoption |
+
+## V49 regression protocol freeze — preparation PASS, 2026-10-25
+
+The user authorized preparing the next study after v49 publication `3debd608`.
+[Report](docs/V49_REGRESSION_PREPARATION.md),
+[protocol](eval/v49-regression-study/PROTOCOL.md) and
+[scope](eval/v49-regression-study/scope.json) freeze the original 668 historical
+plus 64 exposed Fresh64 cases: 684 Hybrid / 48 lexical Comparison, with fixed and
+section results and independently planned paired v43 diagnostics. Original native
+criteria remain unchanged; prospective same-variant v46 PASS preservation is
+required separately. No earlier native FAIL/BLOCKED creates an exemption.
+
+[15 prospective audit controls](eval/v49-regression-study/audit-requirements.json)
+require explicit-anchor consistency and proved legacy body-ID binding before
+capture. They are not yet integrated into v49 execution tooling.
+[Static validation](eval/v49-regression-study/STATIC_VALIDATION.json) verifies exact
+key/config/order/pair parity, 117 original inventory entries, 83 sources, 64 static
+local modules, prior seals and all 5,865 v46 raw artifacts. The
+[protocol freeze](eval/v49-regression-study/protocol-freeze-manifest.json) pins
+689 files. Preparation **972/972 units,28/28 strict Keyword PASS**;
+[separate logs](docs/evidence/v49-regression-protocol-preparation/manifest.json).
+No candidate/planner/model/scorer call on study cases or saved-vector candidate
+replay occurred. The reserved future study root remains absent.
+
+Status: **protocol/input/candidate frozen; execution NOT READY / NOT RUN**.
+Next implement isolated v49 capture/scoring/audit adapters, prove native equivalence
+and audit controls with synthetic fixtures, run a fresh neutral Chrome/model
+preflight, then publish the complete execution freeze. Explicit model-run approval
+is required after readiness. Prior v46 FAIL, Cobalt BLOCKED,103 exclusions/full771
+NOT RUN, phase2/integration HOLD and live5.6/r44 remain unchanged.
 
 ## V49 package3 — engineering PASS after approved corrections, 2026-10-25
 
