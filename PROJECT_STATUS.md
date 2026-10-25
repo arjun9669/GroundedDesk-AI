@@ -18,7 +18,22 @@ The top table/newest section is current; older sections retain their dated check
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v50 complete regression:19/19 historical gates PASS, all five v49 regressions repaired; Fresh64 63 PASS/1 FAIL each variant, overall native FAIL/unadopted. Engineering1044 units/28 Keyword PASS |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | Explicit location-scope decision documented; separate LocationScope12 lexical follow-up prepared/frozen, NOT RUN; phase 2/integration HOLD |
+| Current change | LocationScope12 supplemental lexical follow-up 12/12 PASS; original FC61/Fresh64 failure unchanged; separate prospective acceptance plan next; phase 2/integration HOLD |
+
+## LocationScope12 supplemental lexical result — 25 October 2026
+
+[Results](docs/LOCATION_SCOPE12_RESULTS.md): **12/12 native PASS**, six complete
+explicit-location pairs answered and six deficient pairs refused. Freeze published
+and remotely verified at 6530447c before first import/question; all 12 captured once,
+26 raw files sealed before unchanged native grading, separate all 12 binding review.
+No retries, candidate/input/key changes, model/Hybrid/browser execution or duplicate
+variants. Author-aware targeted contract follow-up, not independent/unseen evidence.
+
+Original FC61 remains native FAIL, Fresh64 63/1 each variant and v50 overall FAIL;
+19/19 historical gates preserved. Original 64/64 and phase 2/integration HOLD remain.
+1066 unit/28 Keyword PASS. Next a separate prospective acceptance plan must retain
+original failures and define genuinely unseen confirmation before new answers.
+Live 5.6/r44, 103 exclusions/full 771 NOT RUN, Windows/device/release gates unchanged.
 
 ## Location-scope decision and separate follow-up preparation — 25 October 2026
 

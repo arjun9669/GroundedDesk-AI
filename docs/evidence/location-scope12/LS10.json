@@ -1,0 +1,39 @@
+{
+  "id": "LS10",
+  "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+  "input_documents": [
+    {
+      "id": "LS10-left",
+      "name": "01_Brasshaven_Lens_Studio.txt",
+      "text": "The highest monthly mean temperature in the Brasshaven Lens Studio store is 17 degrees Celsius in March.\n"
+    },
+    {
+      "id": "LS10-right",
+      "name": "02_Yarrowmere_Drawing_Hall.txt",
+      "text": "The Yarrowmere Drawing Hall store winter average temperature is 9 degrees Celsius. Its highest daily reading is 41 degrees Celsius in July.\n"
+    }
+  ],
+  "started": "2026-10-25T12:58:35.158Z",
+  "finished": "2026-10-25T12:58:35.158Z",
+  "result": {
+    "kind": "comparison",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "sources": [],
+    "sharedTerms": [
+      "celsius",
+      "degrees",
+      "highest",
+      "store",
+      "temperature"
+    ],
+    "answered": false,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "I can't find complete comparison evidence in both provided documents.",
+    "experiment": "V49 isolated lexical Comparison; production unchanged",
+    "comparison_contract": {
+      "status": "incomplete",
+      "kind": "monthly",
+      "reason": "Every selected side must supply its complete unique literal relation"
+    }
+  }
+}

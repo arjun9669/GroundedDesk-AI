@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-25 — LocationScope12 supplemental lexical result
+
+- Publish/verify the 104-file freeze before twelve once-only lexical captures;
+  seal 26 raw files before unchanged native scoring. 12 PASS/0 PARTIAL/0 FAIL.
+- Separately review every output/source pair, signs/units/months/locations and
+  citation order. Six positive answers and six appropriate uncited refusals.
+- Author-aware targeted follow-up only; original FC61/native FAIL and 64/64 gate
+  unchanged. Phase 2/integration HOLD and live 5.6/r44 remain. Next define a
+  separate prospective acceptance plan and genuinely unseen confirmation.
+
 ## 2026-10-25 — explicit location scope and prospective lexical follow-up
 
 - Document explicit per-document location evidence; preserve original FC61

@@ -1,0 +1,67 @@
+{
+  "id": "LS02",
+  "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+  "input_documents": [
+    {
+      "id": "LS02-left",
+      "name": "01_Brasshaven_Lens_Studio.txt",
+      "text": "The Brasshaven Lens Studio store winter average temperature is 8 degrees Celsius. Its highest monthly mean is 18 degrees Celsius in April, and its highest daily reading is 35 degrees Celsius.\n"
+    },
+    {
+      "id": "LS02-right",
+      "name": "02_Yarrowmere_Drawing_Hall.txt",
+      "text": "The Yarrowmere Drawing Hall store winter average temperature is 9 degrees Celsius. Its highest monthly mean is 21 degrees Celsius in November, and its highest daily reading is 33 degrees Celsius.\n"
+    }
+  ],
+  "started": "2026-10-25T12:58:35.150Z",
+  "finished": "2026-10-25T12:58:35.151Z",
+  "result": {
+    "kind": "comparison",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "sources": [
+      {
+        "documentId": "LS02-left",
+        "filename": "01_Brasshaven_Lens_Studio.txt",
+        "quote": "The Brasshaven Lens Studio store winter average temperature is 8 degrees Celsius. Its highest monthly mean is 18 degrees Celsius in April",
+        "excerpt": "The Brasshaven Lens Studio store winter average temperature is 8 degrees Celsius. Its highest monthly mean is 18 degrees Celsius in April",
+        "start": 0,
+        "end": 137,
+        "warning": false,
+        "supported": true,
+        "citation": 1
+      },
+      {
+        "documentId": "LS02-right",
+        "filename": "02_Yarrowmere_Drawing_Hall.txt",
+        "quote": "The Yarrowmere Drawing Hall store winter average temperature is 9 degrees Celsius. Its highest monthly mean is 21 degrees Celsius in November",
+        "excerpt": "The Yarrowmere Drawing Hall store winter average temperature is 9 degrees Celsius. Its highest monthly mean is 21 degrees Celsius in November",
+        "start": 0,
+        "end": 141,
+        "warning": false,
+        "supported": true,
+        "citation": 2
+      }
+    ],
+    "sharedTerms": [
+      "average",
+      "celsius",
+      "daily",
+      "degrees",
+      "highest",
+      "mean",
+      "monthly",
+      "reading",
+      "store",
+      "temperature",
+      "winter"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The Brasshaven Lens Studio store winter average temperature is 8 degrees Celsius. Its highest monthly mean is 18 degrees Celsius in April\n\n[2] The Yarrowmere Drawing Hall store winter average temperature is 9 degrees Celsius. Its highest monthly mean is 21 degrees Celsius in November",
+    "experiment": "V49 isolated lexical Comparison; production unchanged",
+    "comparison_contract": {
+      "status": "supported",
+      "kind": "monthly"
+    }
+  }
+}

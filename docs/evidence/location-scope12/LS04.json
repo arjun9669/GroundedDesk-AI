@@ -1,0 +1,61 @@
+{
+  "id": "LS04",
+  "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+  "input_documents": [
+    {
+      "id": "LS04-left",
+      "name": "01_Brasshaven_Lens_Studio.txt",
+      "text": "The highest monthly mean temperature in the Brasshaven Lens Studio store is minus 4 degrees Celsius in January.\n"
+    },
+    {
+      "id": "LS04-right",
+      "name": "02_Yarrowmere_Drawing_Hall.txt",
+      "text": "The highest monthly mean temperature in the Yarrowmere Drawing Hall store is -2 °F in December.\n"
+    }
+  ],
+  "started": "2026-10-25T12:58:35.153Z",
+  "finished": "2026-10-25T12:58:35.153Z",
+  "result": {
+    "kind": "comparison",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "sources": [
+      {
+        "documentId": "LS04-left",
+        "filename": "01_Brasshaven_Lens_Studio.txt",
+        "quote": "The highest monthly mean temperature in the Brasshaven Lens Studio store is minus 4 degrees Celsius in January.",
+        "excerpt": "The highest monthly mean temperature in the Brasshaven Lens Studio store is minus 4 degrees Celsius in January.",
+        "start": 0,
+        "end": 111,
+        "warning": false,
+        "supported": true,
+        "citation": 1
+      },
+      {
+        "documentId": "LS04-right",
+        "filename": "02_Yarrowmere_Drawing_Hall.txt",
+        "quote": "The highest monthly mean temperature in the Yarrowmere Drawing Hall store is -2 °F in December.",
+        "excerpt": "The highest monthly mean temperature in the Yarrowmere Drawing Hall store is -2 °F in December.",
+        "start": 0,
+        "end": 95,
+        "warning": false,
+        "supported": true,
+        "citation": 2
+      }
+    ],
+    "sharedTerms": [
+      "highest",
+      "mean",
+      "monthly",
+      "store",
+      "temperature"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The highest monthly mean temperature in the Brasshaven Lens Studio store is minus 4 degrees Celsius in January.\n\n[2] The highest monthly mean temperature in the Yarrowmere Drawing Hall store is -2 °F in December.",
+    "experiment": "V49 isolated lexical Comparison; production unchanged",
+    "comparison_contract": {
+      "status": "supported",
+      "kind": "monthly"
+    }
+  }
+}

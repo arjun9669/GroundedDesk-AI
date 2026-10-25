@@ -607,3 +607,14 @@ author-aware lexical controls, not unseen/model confirmation or replacement data
 22 targeted/1066 unit/28 Keyword checks PASS. Publish/verify frozen code, inputs,
 native grader and actual Node identity before capture; seal complete raw before
 scoring and separate review. Phase 2/integration HOLD and live 5.6/r44 persist.
+
+
+## LocationScope12 measured result
+
+[Results](LOCATION_SCOPE12_RESULTS.md): 12/12 native PASS from twelve once-only
+lexical cases after remotely verified freeze 6530447c. 26 raw artifacts sealed before
+native grading; separate author-aware binding review agrees on all twelve. No model
+or browser execution, candidate change or old FC61 replay/regrading. Original
+Fresh64 63/1 and 64/64 requirement remain; phase 2/integration HOLD, live 5.6/r44 and
+all device/release gates persist. Next define a separate prospective acceptance
+plan retaining original outcomes, then genuinely unseen confirmation.

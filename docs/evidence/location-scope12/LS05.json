@@ -1,0 +1,63 @@
+{
+  "id": "LS05",
+  "question": "Compare the highest monthly average store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+  "input_documents": [
+    {
+      "id": "LS05-left",
+      "name": "01_Brasshaven_Lens_Studio.txt",
+      "text": "The highest monthly average temperature in the Brasshaven Lens Studio store is 21 degrees Celsius in May.\n"
+    },
+    {
+      "id": "LS05-right",
+      "name": "02_Yarrowmere_Drawing_Hall.txt",
+      "text": "The highest monthly average temperature in the Yarrowmere Drawing Hall store is 24 degrees Celsius in August.\n"
+    }
+  ],
+  "started": "2026-10-25T12:58:35.154Z",
+  "finished": "2026-10-25T12:58:35.155Z",
+  "result": {
+    "kind": "comparison",
+    "question": "Compare the highest monthly average store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "sources": [
+      {
+        "documentId": "LS05-left",
+        "filename": "01_Brasshaven_Lens_Studio.txt",
+        "quote": "The highest monthly average temperature in the Brasshaven Lens Studio store is 21 degrees Celsius in May.",
+        "excerpt": "The highest monthly average temperature in the Brasshaven Lens Studio store is 21 degrees Celsius in May.",
+        "start": 0,
+        "end": 105,
+        "warning": false,
+        "supported": true,
+        "citation": 1
+      },
+      {
+        "documentId": "LS05-right",
+        "filename": "02_Yarrowmere_Drawing_Hall.txt",
+        "quote": "The highest monthly average temperature in the Yarrowmere Drawing Hall store is 24 degrees Celsius in August.",
+        "excerpt": "The highest monthly average temperature in the Yarrowmere Drawing Hall store is 24 degrees Celsius in August.",
+        "start": 0,
+        "end": 109,
+        "warning": false,
+        "supported": true,
+        "citation": 2
+      }
+    ],
+    "sharedTerms": [
+      "average",
+      "celsius",
+      "degrees",
+      "highest",
+      "monthly",
+      "store",
+      "temperature"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The highest monthly average temperature in the Brasshaven Lens Studio store is 21 degrees Celsius in May.\n\n[2] The highest monthly average temperature in the Yarrowmere Drawing Hall store is 24 degrees Celsius in August.",
+    "experiment": "V49 isolated lexical Comparison; production unchanged",
+    "comparison_contract": {
+      "status": "supported",
+      "kind": "monthly"
+    }
+  }
+}

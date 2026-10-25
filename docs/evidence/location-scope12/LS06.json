@@ -1,0 +1,64 @@
+{
+  "id": "LS06",
+  "question": "Compare the highest monthly mean material store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+  "input_documents": [
+    {
+      "id": "LS06-left",
+      "name": "01_Brasshaven_Lens_Studio.txt",
+      "text": "The highest monthly mean temperature in the Brasshaven Lens Studio material store is 19 degrees Celsius in February.\n"
+    },
+    {
+      "id": "LS06-right",
+      "name": "02_Yarrowmere_Drawing_Hall.txt",
+      "text": "The highest monthly mean temperature in the Yarrowmere Drawing Hall material store is 27 degrees Celsius in October.\n"
+    }
+  ],
+  "started": "2026-10-25T12:58:35.156Z",
+  "finished": "2026-10-25T12:58:35.156Z",
+  "result": {
+    "kind": "comparison",
+    "question": "Compare the highest monthly mean material store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "sources": [
+      {
+        "documentId": "LS06-left",
+        "filename": "01_Brasshaven_Lens_Studio.txt",
+        "quote": "The highest monthly mean temperature in the Brasshaven Lens Studio material store is 19 degrees Celsius in February.",
+        "excerpt": "The highest monthly mean temperature in the Brasshaven Lens Studio material store is 19 degrees Celsius in February.",
+        "start": 0,
+        "end": 116,
+        "warning": false,
+        "supported": true,
+        "citation": 1
+      },
+      {
+        "documentId": "LS06-right",
+        "filename": "02_Yarrowmere_Drawing_Hall.txt",
+        "quote": "The highest monthly mean temperature in the Yarrowmere Drawing Hall material store is 27 degrees Celsius in October.",
+        "excerpt": "The highest monthly mean temperature in the Yarrowmere Drawing Hall material store is 27 degrees Celsius in October.",
+        "start": 0,
+        "end": 116,
+        "warning": false,
+        "supported": true,
+        "citation": 2
+      }
+    ],
+    "sharedTerms": [
+      "celsius",
+      "degrees",
+      "highest",
+      "material",
+      "mean",
+      "monthly",
+      "store",
+      "temperature"
+    ],
+    "answered": true,
+    "note": "Shared terms indicate word overlap only. These excerpts do not establish agreement, contradiction, or missing facts.",
+    "answer": "[1] The highest monthly mean temperature in the Brasshaven Lens Studio material store is 19 degrees Celsius in February.\n\n[2] The highest monthly mean temperature in the Yarrowmere Drawing Hall material store is 27 degrees Celsius in October.",
+    "experiment": "V49 isolated lexical Comparison; production unchanged",
+    "comparison_contract": {
+      "status": "supported",
+      "kind": "monthly"
+    }
+  }
+}

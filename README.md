@@ -20,10 +20,11 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
 
-[Location-scope decision](./docs/LOCATION_SCOPE_DECISION.md) preserves the original
-monthly store-scope failure. A separate [12-case lexical follow-up](./docs/LOCATION_SCOPE12_PREPARATION.md)
-is prepared and frozen, NOT RUN at this checkpoint. It is author-aware contract
-validation, not unseen/model confirmation or a replacement for Fresh64 acceptance.
+[LocationScope12 follow-up](./docs/LOCATION_SCOPE12_RESULTS.md): **12/12 native PASS**
+on new explicit-location and deficient-source controls. This author-aware lexical
+check preserves the [original FC61 scope failure](./docs/LOCATION_SCOPE_DECISION.md)
+and Fresh64 gate. Phase 2/integration remains HOLD; genuinely unseen confirmation
+and a separate prospective acceptance plan are still needed.
 
 The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. The following
 phase 1 summary reflects the approved decision on **21 October 2026**; earlier
