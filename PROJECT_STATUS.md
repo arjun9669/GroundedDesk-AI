@@ -15,9 +15,35 @@ original reports; link them here instead of rewriting or rescoring them.
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v47 package1 scope/retention engineering PASS; 909 unit/28 Keyword PASS; no v47 model result/adoption. Latest scored v46 regression FAIL (Fresh64 60/4/0, historical10/19 gates) |
+| Latest isolated candidate | v48 package2 minimum/approval engineering PASS; 940 unit/28 Keyword PASS; no v48 model result/adoption. Latest scored v46 regression FAIL (Fresh64 60/4/0, historical10/19 gates) |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | Approved v47 package1 fixture correction and engineering publication; historical native failures/results and live application unchanged |
+| Current change | V48 package2 isolated engineering publication; no model study, candidate adoption or change to historical native failures |
+
+## V48 package2 — engineering PASS, 2026-10-25
+
+The user authorized package2 after v47 publication `82443d99`.
+[Report](docs/V48_PACKAGE2_ENGINEERING.md) and
+[protocol](eval/answer-completeness-v48/PROTOCOL.md) record new isolated v48 minimum
+subentity and purchase-approval contracts. Named/location source forms and bounded
+local metric antecedents preserve signed minima; average/daily/foreign/location
+substitutions refuse. Writing facets, credits/declared units and strict exceeding
+rules bind full roles and ranges; unsupported equality, unit/writing mismatch or
+overlapping rules refuse. V44 ticket/publication protections are reused unchanged.
+
+Package1 retention, v43 clock ownership and whole compound/Comparison/helper paths
+remain unchanged via v47. A valid prior display may be retained only after complete
+source binding. No historical source or live import changed. **31/31 targeted on
+first run,940/940 full units,28/28 strict Keyword PASS**. Separate
+[engineering evidence](docs/evidence/v48-package2-engineering/manifest.json) seals
+passing logs and final source/test/protocol/report identities. Syntax, prior
+package/design/result seals, links, sensitive-data and Git diff review PASS.
+
+No model, browser, frozen-question planner/scorer or saved-vector candidate replay
+occurred; historical repair remains unmeasured. Package3 Comparison and remaining
+ordinal-event carry-forward are pending. Next agree package3 scope/grammar; a new
+model study needs a separate published execution freeze and explicit approval.
+The v46 native FAIL, original first failures, Cobalt BLOCKED,103 exclusions/full771
+NOT RUN, phase2/integration HOLD and live5.6/r44 stay unchanged.
 
 ## V47 package1 approved correction — engineering PASS, 2026-10-25
 

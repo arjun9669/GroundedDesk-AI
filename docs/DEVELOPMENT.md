@@ -470,3 +470,16 @@ not change after that failure.35 targeted/909 full units/28 Keyword checks PASS.
 passing logs and original failure references. No model/frozen-question/scorer replay
 occurred; minimum/approval/Comparison successor work and model preservation are
 pending. Preserve original failures and obtain separate scope/run approvals.
+
+
+## V48 package2 engineering checkpoint
+
+[Package2 report](V48_PACKAGE2_ENGINEERING.md) and
+[pre-test protocol](../eval/answer-completeness-v48/PROTOCOL.md) define minimum
+subentity/metric/antecedent binding and written purchase range/unit/role contracts.
+V47 retention and v43 clock/Comparison helpers stay unchanged; old v44 actor/reference
+protections are reused. First-run31 targeted /940 unit /28 Keyword checks PASS.
+[Evidence](evidence/v48-package2-engineering/manifest.json) seals source/test/report
+and passing logs. No model, browser, frozen-question/scorer run or saved-vector
+candidate replay occurred. Package3/ordinal carry-forward and actual preservation
+remain unmeasured; do not change native gates or overwrite first failed evidence.

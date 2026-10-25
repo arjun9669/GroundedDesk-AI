@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-25 — v48 package2 minimum/approval engineering
+
+- Add isolated document/subentity minimum binding and complete writing/unit/range/
+  actor approval contracts; retain strict equality and overlapping-rule guards.
+- Preserve v47 retention and v43 clock/Comparison helpers; reuse original actor/
+  publication contracts. No historical code, frozen result or live import changed.
+- Record first-run31 targeted /940 full unit /28 Keyword PASS. No model or scorer
+  run; package3 and complete actual-model preservation remain pending.
+
 ## 2026-10-25 — v47 package1 engineering with approved fixture correction
 
 - Add isolated v43-based scope/retention contracts, complete literal local conditions,
