@@ -18,7 +18,23 @@ The top table/newest section is current; older sections retain their dated check
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v50 complete regression:19/19 historical gates PASS, all five v49 regressions repaired; Fresh64 63 PASS/1 FAIL each variant, overall native FAIL/unadopted. Engineering1044 units/28 Keyword PASS |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | V50 retention repairs measured and original results preserved; monthly store-scope gap documented without inference/key edits; phase2/integration HOLD |
+| Current change | Explicit location-scope decision documented; separate LocationScope12 lexical follow-up prepared/frozen, NOT RUN; phase 2/integration HOLD |
+
+## Location-scope decision and separate follow-up preparation — 25 October 2026
+
+[Decision](docs/LOCATION_SCOPE_DECISION.md) requires source evidence for the
+requested location on both sides. Tarrow's laboratory temperature does not prove
+its store temperature. Preserve original FC61 inputs/key/native FAIL, original
+64/64 gate and v50 overall FAIL. No candidate or application change.
+
+[LocationScope12 preparation](docs/LOCATION_SCOPE12_PREPARATION.md) freezes six
+explicit-location positive pairs and six deficient controls, all new fictional
+sources. Author-aware targeted lexical follow-up, not independent/unseen/model
+confirmation or replacement regression. 22 targeted/1066 full unit/28 Keyword
+checks PASS; no study question/planner/candidate invocation during preparation.
+Publish and verify the execution freeze before capture, then seal raw before
+unchanged native scoring and separate binding review under standing authorization.
+Phase 2/integration HOLD, 103 exclusions/full 771 NOT RUN and live 5.6/r44 persist.
 
 ## V50 complete regression — historical restored, overall FAIL, 2026-10-25
 

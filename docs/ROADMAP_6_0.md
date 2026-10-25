@@ -92,3 +92,14 @@ and first evidence.
 See [project status](../PROJECT_STATUS.md), [verified inputs](RECOVERABLE_INPUT_INVENTORY.md)
 and [v39 Vela32 results](V39_VELA32_MAC_RESULTS.md). Use the recorded `main`
 commit/push/verify workflow across Mac and Windows; browser workspaces remain local.
+
+
+## Location-scope decision and supplemental lexical follow-up
+
+[Decision](LOCATION_SCOPE_DECISION.md) requires explicit requested-location evidence
+on both selected sides and preserves original FC61/native FAIL and the 64/64 gate.
+[LocationScope12 preparation](LOCATION_SCOPE12_PREPARATION.md) defines twelve new
+author-aware lexical controls, not unseen/model confirmation or replacement data.
+22 targeted/1066 unit/28 Keyword checks PASS. Publish/verify frozen code, inputs,
+native grader and actual Node identity before capture; seal complete raw before
+scoring and separate review. Phase 2/integration HOLD and live 5.6/r44 persist.

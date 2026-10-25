@@ -1,0 +1,368 @@
+[
+  {
+    "id": "LS01",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "both_explicit_stores",
+    "unsupported": false,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": [
+      {
+        "filename": "01_Brasshaven_Lens_Studio.txt",
+        "context": "The highest monthly mean temperature in the Brasshaven Lens Studio store is 17 degrees Celsius in March.",
+        "groups": [
+          [
+            "store"
+          ],
+          [
+            "highest monthly mean"
+          ],
+          [
+            "17 degrees Celsius"
+          ],
+          [
+            "March"
+          ]
+        ]
+      },
+      {
+        "filename": "02_Yarrowmere_Drawing_Hall.txt",
+        "context": "The highest monthly mean temperature in the Yarrowmere Drawing Hall store is 23 degrees Celsius in September.",
+        "groups": [
+          [
+            "store"
+          ],
+          [
+            "highest monthly mean"
+          ],
+          [
+            "23 degrees Celsius"
+          ],
+          [
+            "September"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LS02",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "local_its_explicit_store",
+    "unsupported": false,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": [
+      {
+        "filename": "01_Brasshaven_Lens_Studio.txt",
+        "context": "The Brasshaven Lens Studio store winter average temperature is 8 degrees Celsius. Its highest monthly mean is 18 degrees Celsius in April, and its highest daily reading is 35 degrees Celsius.",
+        "groups": [
+          [
+            "store"
+          ],
+          [
+            "highest monthly mean"
+          ],
+          [
+            "18 degrees Celsius"
+          ],
+          [
+            "April"
+          ]
+        ]
+      },
+      {
+        "filename": "02_Yarrowmere_Drawing_Hall.txt",
+        "context": "The Yarrowmere Drawing Hall store winter average temperature is 9 degrees Celsius. Its highest monthly mean is 21 degrees Celsius in November, and its highest daily reading is 33 degrees Celsius.",
+        "groups": [
+          [
+            "store"
+          ],
+          [
+            "highest monthly mean"
+          ],
+          [
+            "21 degrees Celsius"
+          ],
+          [
+            "November"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LS03",
+    "question": "Compare the highest monthly mean store temperatures at Yarrowmere Drawing Hall and Brasshaven Lens Studio, including their months.",
+    "workflow": "comparison",
+    "category": "reversed_question_order",
+    "unsupported": false,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": [
+      {
+        "filename": "01_Brasshaven_Lens_Studio.txt",
+        "context": "The highest monthly mean temperature in the Brasshaven Lens Studio store is 17 degrees Celsius in March.",
+        "groups": [
+          [
+            "store"
+          ],
+          [
+            "highest monthly mean"
+          ],
+          [
+            "17 degrees Celsius"
+          ],
+          [
+            "March"
+          ]
+        ]
+      },
+      {
+        "filename": "02_Yarrowmere_Drawing_Hall.txt",
+        "context": "The highest monthly mean temperature in the Yarrowmere Drawing Hall store is 23 degrees Celsius in September.",
+        "groups": [
+          [
+            "store"
+          ],
+          [
+            "highest monthly mean"
+          ],
+          [
+            "23 degrees Celsius"
+          ],
+          [
+            "September"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LS04",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "signed_units",
+    "unsupported": false,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": [
+      {
+        "filename": "01_Brasshaven_Lens_Studio.txt",
+        "context": "The highest monthly mean temperature in the Brasshaven Lens Studio store is minus 4 degrees Celsius in January.",
+        "groups": [
+          [
+            "store"
+          ],
+          [
+            "highest monthly mean"
+          ],
+          [
+            "minus 4 degrees Celsius"
+          ],
+          [
+            "January"
+          ]
+        ]
+      },
+      {
+        "filename": "02_Yarrowmere_Drawing_Hall.txt",
+        "context": "The highest monthly mean temperature in the Yarrowmere Drawing Hall store is -2 °F in December.",
+        "groups": [
+          [
+            "store"
+          ],
+          [
+            "highest monthly mean"
+          ],
+          [
+            "-2 °F"
+          ],
+          [
+            "December"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LS05",
+    "question": "Compare the highest monthly average store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "literal_average_label",
+    "unsupported": false,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": [
+      {
+        "filename": "01_Brasshaven_Lens_Studio.txt",
+        "context": "The highest monthly average temperature in the Brasshaven Lens Studio store is 21 degrees Celsius in May.",
+        "groups": [
+          [
+            "store"
+          ],
+          [
+            "highest monthly average"
+          ],
+          [
+            "21 degrees Celsius"
+          ],
+          [
+            "May"
+          ]
+        ]
+      },
+      {
+        "filename": "02_Yarrowmere_Drawing_Hall.txt",
+        "context": "The highest monthly average temperature in the Yarrowmere Drawing Hall store is 24 degrees Celsius in August.",
+        "groups": [
+          [
+            "store"
+          ],
+          [
+            "highest monthly average"
+          ],
+          [
+            "24 degrees Celsius"
+          ],
+          [
+            "August"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LS06",
+    "question": "Compare the highest monthly mean material store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "specific_material_store",
+    "unsupported": false,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": [
+      {
+        "filename": "01_Brasshaven_Lens_Studio.txt",
+        "context": "The highest monthly mean temperature in the Brasshaven Lens Studio material store is 19 degrees Celsius in February.",
+        "groups": [
+          [
+            "material store"
+          ],
+          [
+            "highest monthly mean"
+          ],
+          [
+            "19 degrees Celsius"
+          ],
+          [
+            "February"
+          ]
+        ]
+      },
+      {
+        "filename": "02_Yarrowmere_Drawing_Hall.txt",
+        "context": "The highest monthly mean temperature in the Yarrowmere Drawing Hall material store is 27 degrees Celsius in October.",
+        "groups": [
+          [
+            "material store"
+          ],
+          [
+            "highest monthly mean"
+          ],
+          [
+            "27 degrees Celsius"
+          ],
+          [
+            "October"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LS07",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "one_unqualified_facility",
+    "unsupported": true,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": []
+  },
+  {
+    "id": "LS08",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "different_room",
+    "unsupported": true,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": []
+  },
+  {
+    "id": "LS09",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "month_missing",
+    "unsupported": true,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": []
+  },
+  {
+    "id": "LS10",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "daily_not_monthly",
+    "unsupported": true,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": []
+  },
+  {
+    "id": "LS11",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "distant_antecedent",
+    "unsupported": true,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": []
+  },
+  {
+    "id": "LS12",
+    "question": "Compare the highest monthly mean store temperatures at Brasshaven Lens Studio and Yarrowmere Drawing Hall, including their months.",
+    "workflow": "comparison",
+    "category": "conflicting_monthly_records",
+    "unsupported": true,
+    "expected_documents": [
+      "01_Brasshaven_Lens_Studio.txt",
+      "02_Yarrowmere_Drawing_Hall.txt"
+    ],
+    "expected_sources": []
+  }
+]

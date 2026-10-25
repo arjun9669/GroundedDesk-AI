@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-25 — explicit location scope and prospective lexical follow-up
+
+- Document explicit per-document location evidence; preserve original FC61
+  source/question/key/native FAIL and the original 64/64 gate.
+- Prepare separate LocationScope12: six supported and six deficient new pairs,
+  unchanged v50, published source/runtime freeze before answers, exclusive raw
+  capture and unchanged native grading. Not unseen confirmation or live adoption.
+- 22 targeted/1066 unit/28 Keyword checks PASS; no study question run during
+  preparation. Phase 2/integration HOLD; live 5.6/r44 unchanged.
+
 ## 2026-10-25 — v50 full regression restores historical preservation
 
 - Complete732 cases once (684 actual MiniLM Hybrid/48 lexical); seal5,865 raw

@@ -596,3 +596,14 @@ prior reviewed outputs/current provenance, all10 changed policy rows and50 expan
 source/question-scope tension needs a prospective evidence/specification decision,
 not another threshold tweak or frozen-key edit. Historical repair success does not
 authorize live adoption or waive original64/64. Phase2/integration stays HOLD.
+
+
+## Location-scope decision and supplemental lexical follow-up
+
+[Decision](LOCATION_SCOPE_DECISION.md) requires explicit requested-location evidence
+on both selected sides and preserves original FC61/native FAIL and the 64/64 gate.
+[LocationScope12 preparation](LOCATION_SCOPE12_PREPARATION.md) defines twelve new
+author-aware lexical controls, not unseen/model confirmation or replacement data.
+22 targeted/1066 unit/28 Keyword checks PASS. Publish/verify frozen code, inputs,
+native grader and actual Node identity before capture; seal complete raw before
+scoring and separate review. Phase 2/integration HOLD and live 5.6/r44 persist.
