@@ -18,7 +18,30 @@ The top table/newest section is current; older sections retain their dated check
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v50 complete regression:19/19 historical gates PASS, all five v49 regressions repaired; Fresh64 63 PASS/1 FAIL each variant, overall native FAIL/unadopted. Engineering1044 units/28 Keyword PASS |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | NextConfirm64 input protocol and review checklist documented; corpus/key and independent review pending; original acceptance-policy issue open; phase 2/integration HOLD |
+| Current change | NextConfirm64 8-source/64-case draft authored and statically validated; independent review pending (all OPEN), no input freeze or run; phase 2/integration HOLD |
+
+## NextConfirm64 first draft — 25 October 2026
+
+[Draft report](eval/nextconfirm64/AUTHORING.md): eight original fictional TXT
+sources/65 paragraphs/14,261 bytes; 64 exact questions and author answer keys,
+40/16 Hybrid and 4/4 Comparison split. Original selected corpus/pairs, literal
+contexts/groups and author absence rationales are recorded. No candidate/planner/
+model/browser or saved-vector replay on these inputs. Independent review remains
+PENDING: eight source and 64 case rows OPEN, no reviewer/sign-off.
+
+17 targeted/1083 full unit/28 strict Keyword checks PASS. Static source/key/hash/
+order/category/paragraph/group validation PASS; it does not prove semantic binding
+or independent review. NC54 extension wording clarified during author review;
+original draft and first static result preserved in a separate correction archive.
+No source/answerability/category/candidate or threshold change. Current static
+validation passes; independent recheck of the correction is pending.
+
+A draft publication seal is not the reviewed input or actual execution freeze.
+Next obtain independent all-input review, resolve findings with preserved history,
+then publish reviewed inputs and separately qualify execution. Original FC61/old
+64/64 gate FAIL and unresolved acceptance-policy decision persist. Phase 2/
+integration HOLD, live 5.6/r44, 103 exclusions/full 771 NOT RUN and Windows/device/
+release gates remain unchanged.
 
 ## NextConfirm64 input design and review specification — 25 October 2026
 

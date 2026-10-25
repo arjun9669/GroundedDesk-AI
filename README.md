@@ -16,7 +16,7 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Latest isolated candidate | **v50:19/19 historical gates PASS;63 PASS/1 FAIL Fresh64 per variant**. Overall native FAIL; unadopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
 | Current phase | **2 — first Fresh64 confirmation and latest v50 regression FAIL**; integration HOLD |
-| Latest recorded engineering checks | **1066 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
+| Latest recorded engineering checks | **1083 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
 
@@ -29,9 +29,10 @@ and explicit treatment of the failed legacy gate are still needed.
 [Phase 2 acceptance plan](./docs/PHASE2_ACCEPTANCE_PLAN.md) now defines the legacy
 gate ledger, independent input review and strict proposed new confirmation criteria.
 The [input protocol](./eval/nextconfirm64/PROTOCOL.md) and
-[review checklist](./eval/nextconfirm64/INPUT_REVIEW.md) are now documented. Next
-prepare the new corpus/questions/key and obtain independent review. No new
-confirmation has run or gate been waived; integration remains HOLD.
+[review checklist](./eval/nextconfirm64/INPUT_REVIEW.md) now have an
+[8-document/64-question draft](./eval/nextconfirm64/AUTHORING.md) with static checks
+passing. Independent source/key review is pending; no confirmation has run or gate
+been waived. Integration remains HOLD.
 
 The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. The following
 phase 1 summary reflects the approved decision on **21 October 2026**; earlier

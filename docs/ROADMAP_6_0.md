@@ -1,7 +1,7 @@
 # GroundedDesk 6.0 working roadmap
 
 Accepted as a working sequence in the October 20, 2026 conversation. Current
-phase: **2 — acceptance plan and new input/review protocol documented; original Fresh64 gate FAIL; v50 historical
+phase: **2 — NextConfirm64 draft prepared, independent review pending; original Fresh64 gate FAIL; v50 historical
 19/19 gates PASS, exposed Fresh64 63/1; LocationScope12 supplemental lexical 12/12
 PASS; independent new confirmation and explicit legacy-gate policy decision pending**. Detailed product promises and quantitative
 release targets are not yet frozen; this roadmap does not declare 6.0 ready,
@@ -139,3 +139,16 @@ and completed all-input review remain pending. No input/execution freeze or stud
 result exists. Next author the inputs without candidate/planner probes and arrange
 independent pre-output review. Original legacy gate and acceptance-policy issue
 remain open; Phase 2/integration HOLD and later phase requirements persist.
+
+
+## NextConfirm64 first draft checkpoint
+
+[Authoring report](../eval/nextconfirm64/AUTHORING.md) records eight new fictional
+TXT sources and 64 question/key records, static validation and 17 targeted/1083
+full unit/28 Keyword PASS. Original draft bytes and first static result are archived
+before clarifying NC54; independent recheck is still pending. No candidate/planner/
+model call, independent sign-off, reviewed input freeze or executable study config
+exists. Next complete independent review of all eight sources and 64 cases, then
+prepare final input freeze and separate execution readiness. Static PASS is not
+model acceptance. Original native failures/legacy gate and policy issue persist;
+Phase 2/integration HOLD, live 5.6/r44 and later device/release gates remain.

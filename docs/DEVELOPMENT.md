@@ -645,3 +645,16 @@ planner calls during preparation. Review must precede input freeze, followed by
 separate measured runtime/code execution readiness and publication. Do not reuse
 old runners or directories to submit new questions. Legacy acceptance gate FAIL,
 Phase 2/integration HOLD and live 5.6/r44 remain unchanged.
+
+
+## NextConfirm64 first draft checkpoint
+
+[Authoring report](../eval/nextconfirm64/AUTHORING.md) records eight new fictional
+TXT sources and 64 question/key records, static validation and 17 targeted/1083
+full unit/28 Keyword PASS. Original draft bytes and first static result are archived
+before clarifying NC54; independent recheck is still pending. No candidate/planner/
+model call, independent sign-off, reviewed input freeze or executable study config
+exists. Next complete independent review of all eight sources and 64 cases, then
+prepare final input freeze and separate execution readiness. Static PASS is not
+model acceptance. Original native failures/legacy gate and policy issue persist;
+Phase 2/integration HOLD, live 5.6/r44 and later device/release gates remain.

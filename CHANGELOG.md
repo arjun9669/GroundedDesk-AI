@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-25 — NextConfirm64 first input draft
+
+- Author eight original fictional TXT documents, 64 exact questions and native
+  answer-key contexts/groups; preserve selected corpus/pairs and author rationales.
+- Add static-only validation and 17 unrelated synthetic guard tests. 1083 full
+  unit/28 Keyword checks PASS; no candidate/planner/model study on the pack.
+- Preserve initial NC54 wording and complete first draft before clarifying the
+  requested retention extension. Current static validation PASS; independent
+  review/recheck pending, all 8 source/64 case rows OPEN.
+- Seal draft publication only, not reviewed input/execution readiness. Original
+  failures, Phase 2/integration HOLD and live 5.6/r44 remain unchanged.
+
 ## 2026-10-25 — NextConfirm64 input and review specification
 
 - Define eight-source/64-case input protocol, exact IDs/category counts, required
