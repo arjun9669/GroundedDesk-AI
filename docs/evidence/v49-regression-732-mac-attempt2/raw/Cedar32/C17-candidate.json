@@ -1,0 +1,1136 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "C17",
+  "question": "What year did the Willow Conservatory inventory take place?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What year did the Willow Conservatory inventory take place?",
+    "expected_display": "What year did the Willow Conservatory inventory take place?",
+    "rendered_question": "What year did the Willow Conservatory inventory take place?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] The Willow Conservatory relocation took place in 1863.",
+    "sources": [
+      {
+        "filename": "04_Willow_Conservatory.txt",
+        "excerpt": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+        "quote": "The Willow Conservatory relocation took place in 1863."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat year did the Willow Conservatory inventory take place?\n\nSearched all files: 01_Cedar_Observatory.txt · 02_Harbor_Cartography.txt · 03_Juniper_Workshop.txt · 04_Willow_Conservatory.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] The Willow Conservatory relocation took place in 1863.\n\nSOURCE EVIDENCE\n[1]\n04_Willow_Conservatory.txt\n\nText line 1 (normalized extraction)\n\nThe Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur. Willow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius. Purchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval. Willow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] The Willow Conservatory relocation took place in 1863.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "278871a6-9a01-4664-9b13-8bfe1972df23:0",
+        "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+        "filename": "04_Willow_Conservatory.txt",
+        "excerpt": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+        "quote": "The Willow Conservatory relocation took place in 1863.",
+        "score": 0.0476,
+        "lexicalScore": 5.462074682603244,
+        "semanticScore": 0.6846085000195077,
+        "matchedTerms": [
+          "did",
+          "willow",
+          "conservatory",
+          "inventory",
+          "place"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "278871a6-9a01-4664-9b13-8bfe1972df23:0",
+        "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+        "filename": "04_Willow_Conservatory.txt",
+        "excerpt": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator a",
+        "quote": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+        "score": 0.0476,
+        "lexicalScore": 5.462074682603244,
+        "semanticScore": 0.6846085000195077,
+        "matchedTerms": [
+          "did",
+          "willow",
+          "conservatory",
+          "inventory",
+          "place"
+        ],
+        "start": 0,
+        "end": 170
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The Willow Conservatory relocation took place in 1863.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The Willow Conservatory relocation took place in 1863.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "278871a6-9a01-4664-9b13-8bfe1972df23:0",
+        "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+        "filename": "04_Willow_Conservatory.txt",
+        "excerpt": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator a",
+        "quote": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+        "score": 0.0476,
+        "lexicalScore": 5.462074682603244,
+        "semanticScore": 0.6846085000195077,
+        "matchedTerms": [
+          "did",
+          "willow",
+          "conservatory",
+          "inventory",
+          "place"
+        ],
+        "start": 0,
+        "end": 170
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The Willow Conservatory relocation took place in 1863.",
+        "reason": "Keep prior: unhandled or protected scope"
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The Willow Conservatory relocation took place in 1863.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "04_Willow_Conservatory.txt",
+        "quote": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "04_Willow_Conservatory.txt",
+      "start": 0,
+      "content": "The Willow Conservatory relocation took place in 1863.",
+      "semanticScore": 0.7987222031941466,
+      "lexicalScore": 6.891926135567618
+    },
+    {
+      "filename": "04_Willow_Conservatory.txt",
+      "start": 583,
+      "content": "Willow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+      "semanticScore": 0.5909389028247126,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Willow_Conservatory.txt",
+      "start": 172,
+      "content": "Willow Conservatory winter average temperatures exceed 16 degrees Celsius.",
+      "semanticScore": 0.5350127214354082,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Juniper_Workshop.txt",
+      "start": 0,
+      "content": "The Juniper Workshop relocation took place in 1907.",
+      "semanticScore": 0.4204154771638627,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Cedar_Observatory.txt",
+      "start": 0,
+      "content": "The Cedar Observatory relocation took place in 1874.",
+      "semanticScore": 0.40735531818074056,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "The Cedar Observatory relocation took place in 1874.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.40735531818074056,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Its restoration took place in 1926.",
+      "start": 53,
+      "end": 88,
+      "similarity": 0.29447545861304764,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "A proposed closure in 1941 did not occur.",
+      "start": 89,
+      "end": 130,
+      "similarity": 0.10702535858805633,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+      "start": 132,
+      "end": 204,
+      "similarity": 0.18767655629245936,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Its highest monthly mean temperature is 29 degrees Celsius in August.",
+      "start": 205,
+      "end": 274,
+      "similarity": 0.03552157033239879,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Its highest recorded daily temperature is 42 degrees Celsius.",
+      "start": 275,
+      "end": 336,
+      "similarity": 0.031210968442219097,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Mira catalogs seven plates per shift.",
+      "start": 338,
+      "end": 375,
+      "similarity": 0.16955102886432116,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Oren cleans four lenses per shift.",
+      "start": 376,
+      "end": 410,
+      "similarity": -0.025811769271840552,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Mira checks two clocks per shift.",
+      "start": 411,
+      "end": 444,
+      "similarity": 0.021807763997128256,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Cedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.",
+      "start": 446,
+      "end": 567,
+      "similarity": 0.27665051109428024,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "The Harbor Cartography archive relocation took place in 1889.",
+      "start": 0,
+      "end": 61,
+      "similarity": 0.25034491203388254,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Its restoration took place in 1938.",
+      "start": 62,
+      "end": 97,
+      "similarity": 0.290137788668059,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "The archive did not close in 1952.",
+      "start": 98,
+      "end": 132,
+      "similarity": 0.1832733663199933,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Harbor Cartography archive winter average temperatures exceed 9 degrees Celsius.",
+      "start": 134,
+      "end": 214,
+      "similarity": 0.010061227974730485,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Its highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 215,
+      "end": 282,
+      "similarity": 0.04684992894129715,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Its highest recorded daily temperature is 39 degrees Celsius.",
+      "start": 283,
+      "end": 344,
+      "similarity": 0.02521747935959274,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Orders released before 14:20 depart the same operating day.",
+      "start": 346,
+      "end": 405,
+      "similarity": 0.15621307599120995,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Orders released at or after 14:20 depart the next operating day, unless a customs hold prevents departure.",
+      "start": 406,
+      "end": 512,
+      "similarity": 0.10214659868495406,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Harbor Cartography shipping records are retained for 22 months, unless a customs investigation requires longer retention.",
+      "start": 514,
+      "end": 635,
+      "similarity": 0.07845567848966527,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "The Juniper Workshop relocation took place in 1907.",
+      "start": 0,
+      "end": 51,
+      "similarity": 0.4204154771638627,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Its first restoration took place in 1946.",
+      "start": 52,
+      "end": 93,
+      "similarity": 0.2972832155667058,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Its second restoration took place in 1979.",
+      "start": 94,
+      "end": 136,
+      "similarity": 0.31648388268887834,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "The proposed demolition in 1988 never occurred.",
+      "start": 137,
+      "end": 184,
+      "similarity": 0.09482976788153205,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius.",
+      "start": 186,
+      "end": 257,
+      "similarity": 0.19569164514047627,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+      "start": 258,
+      "end": 330,
+      "similarity": -0.02285952840131048,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Its highest recorded daily temperature is 45 degrees Celsius.",
+      "start": 331,
+      "end": 392,
+      "similarity": 0.035821149270481155,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Lubricate the Juniper press every 72 operating hours.",
+      "start": 394,
+      "end": 447,
+      "similarity": 0.13392011257469663,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "In a dusty bay, lubricate it every 36 operating hours.",
+      "start": 448,
+      "end": 502,
+      "similarity": 0.04293350193956311,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Inspect the press every 18 operating hours in either environment.",
+      "start": 503,
+      "end": 568,
+      "similarity": 0.1205069513004176,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Juniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+      "start": 570,
+      "end": 687,
+      "similarity": 0.2508153727080988,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "The Willow Conservatory relocation took place in 1863.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.7987222031941466,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Its restoration took place in 1917.",
+      "start": 55,
+      "end": 90,
+      "similarity": 0.29937808650296027,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Its inventory took place in 1917.",
+      "start": 91,
+      "end": 124,
+      "similarity": 0.35778971058535747,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "The canceled expansion in 1930 did not occur.",
+      "start": 125,
+      "end": 170,
+      "similarity": 0.10712196122193889,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Willow Conservatory winter average temperatures exceed 16 degrees Celsius.",
+      "start": 172,
+      "end": 246,
+      "similarity": 0.5350127214354082,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Its highest monthly mean temperature is 33 degrees Celsius in June.",
+      "start": 247,
+      "end": 314,
+      "similarity": 0.03868671894305801,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Its highest recorded daily temperature is 47 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.046901604232918045,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Purchases above 5300 credits require written approval from the Curator and Finance Manager.",
+      "start": 378,
+      "end": 469,
+      "similarity": 0.28515010295809873,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "start": 470,
+      "end": 581,
+      "similarity": 0.131239949495658,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Willow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+      "start": 583,
+      "end": 700,
+      "similarity": 0.5909389028247126,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "278871a6-9a01-4664-9b13-8bfe1972df23:0",
+          "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+          "filename": "04_Willow_Conservatory.txt",
+          "excerpt": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator a",
+          "quote": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+          "score": 0.0476,
+          "lexicalScore": 5.462074682603244,
+          "semanticScore": 0.6846085000195077,
+          "matchedTerms": [
+            "did",
+            "willow",
+            "conservatory",
+            "inventory",
+            "place"
+          ],
+          "start": 0,
+          "end": 170
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The Willow Conservatory relocation took place in 1863.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The Willow Conservatory relocation took place in 1863.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "278871a6-9a01-4664-9b13-8bfe1972df23:0",
+          "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+          "filename": "04_Willow_Conservatory.txt",
+          "excerpt": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator a",
+          "quote": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+          "score": 0.0476,
+          "lexicalScore": 5.462074682603244,
+          "semanticScore": 0.6846085000195077,
+          "matchedTerms": [
+            "did",
+            "willow",
+            "conservatory",
+            "inventory",
+            "place"
+          ],
+          "start": 0,
+          "end": 170
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The Willow Conservatory relocation took place in 1863.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The Willow Conservatory relocation took place in 1863.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] The Willow Conservatory relocation took place in 1863.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "278871a6-9a01-4664-9b13-8bfe1972df23:0",
+          "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+          "filename": "04_Willow_Conservatory.txt",
+          "excerpt": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorde",
+          "quote": "The Willow Conservatory relocation took place in 1863.",
+          "score": 0.0476,
+          "lexicalScore": 5.462074682603244,
+          "semanticScore": 0.6846085000195077,
+          "matchedTerms": [
+            "did",
+            "willow",
+            "conservatory",
+            "inventory",
+            "place"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The Willow Conservatory relocation took place in 1863.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The Willow Conservatory relocation took place in 1863.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] The Willow Conservatory relocation took place in 1863.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "278871a6-9a01-4664-9b13-8bfe1972df23:0",
+          "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+          "filename": "04_Willow_Conservatory.txt",
+          "excerpt": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorde",
+          "quote": "The Willow Conservatory relocation took place in 1863.",
+          "score": 0.0476,
+          "lexicalScore": 5.462074682603244,
+          "semanticScore": 0.6846085000195077,
+          "matchedTerms": [
+            "did",
+            "willow",
+            "conservatory",
+            "inventory",
+            "place"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The Willow Conservatory relocation took place in 1863.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "04_Willow_Conservatory.txt",
+          "quote": "The Willow Conservatory relocation took place in 1863.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.06727307289838791,
+    -0.023661918938159943,
+    0.018276961520314217,
+    0.036676764488220215,
+    -0.05142005905508995,
+    0.029146410524845123,
+    -0.028809616342186928,
+    -0.043624717742204666,
+    -0.04179462417960167,
+    0.035084135830402374,
+    0.03244873881340027,
+    0.014510948210954666,
+    -0.005224131979048252,
+    -0.005198375787585974,
+    -0.05151666700839996,
+    -0.038588762283325195,
+    -0.012778904289007187,
+    -0.05534999072551727,
+    0.0092755863443017,
+    -0.010981621220707893,
+    -0.04787813499569893,
+    -0.003475291421636939,
+    0.03033817559480667,
+    0.0687486007809639,
+    0.06297098845243454,
+    -0.05766221880912781,
+    -0.15488003194332123,
+    -0.009868410415947437,
+    0.026867907494306564,
+    -0.05009172484278679,
+    0.010553454048931599,
+    -0.01046580821275711,
+    0.013414640910923481,
+    0.013519026339054108,
+    0.013226278126239777,
+    0.0025810347869992256,
+    0.07546195387840271,
+    -0.08844933658838272,
+    -0.00979993212968111,
+    0.006496155634522438,
+    -0.011368711479008198,
+    -0.024614067748188972,
+    -0.08278098702430725,
+    0.011254013516008854,
+    -0.04169371724128723,
+    0.034048475325107574,
+    0.08642994612455368,
+    -0.03840389475226402,
+    0.025766832754015923,
+    0.033016107976436615,
+    0.021928895264863968,
+    -0.01796688884496689,
+    0.010618548840284348,
+    -0.020342059433460236,
+    -0.03147132322192192,
+    0.13855844736099243,
+    0.0008200971060432494,
+    0.021602753549814224,
+    0.07482586055994034,
+    0.044676244258880615,
+    -0.0019386854255571961,
+    0.011498666368424892,
+    -0.08321928232908249,
+    0.020055176690220833,
+    0.025798041373491287,
+    0.0020695009734481573,
+    -0.03244926780462265,
+    0.038194652646780014,
+    0.10132098197937012,
+    -0.08078018575906754,
+    0.03125564381480217,
+    -0.06545800715684891,
+    -0.024240290746092796,
+    -0.04716202989220619,
+    -0.018180077895522118,
+    -0.008518759161233902,
+    0.004689402878284454,
+    0.015316598117351532,
+    -0.0037377963308244944,
+    -0.02869844250380993,
+    0.0033787726424634457,
+    0.020046116784214973,
+    0.02632015012204647,
+    0.06532129645347595,
+    -0.05216866731643677,
+    -0.012868313118815422,
+    0.019942928105592728,
+    0.029142536222934723,
+    0.054763879626989365,
+    0.01256269309669733,
+    -0.0116885332390666,
+    -0.04055171459913254,
+    -0.006440240889787674,
+    -0.0044845351949334145,
+    -0.03385244309902191,
+    0.04359889775514603,
+    0.00036663818173110485,
+    -0.029685575515031815,
+    0.15726932883262634,
+    0.061106033623218536,
+    -0.05264885351061821,
+    0.03285158798098564,
+    0.07235324382781982,
+    0.0044142198748886585,
+    -0.08728406578302383,
+    -0.04627642035484314,
+    -0.08792226016521454,
+    0.025472307577729225,
+    -0.006150057539343834,
+    -0.025393830612301826,
+    0.058028608560562134,
+    -0.025821972638368607,
+    0.05610121041536331,
+    0.10237324982881546,
+    0.02319302409887314,
+    -0.02313091978430748,
+    0.09339868277311325,
+    -0.030394421890378,
+    0.026684897020459175,
+    -0.048368681222200394,
+    0.04144379124045372,
+    0.03602765128016472,
+    0.04722775146365166,
+    -0.003202416468411684,
+    -0.12897922098636627,
+    0.05586782842874527,
+    -0.03265015035867691,
+    -5.076449128500837e-33,
+    0.017554854974150658,
+    -0.05445816367864609,
+    -0.059884995222091675,
+    0.02387845329940319,
+    0.10437382012605667,
+    -0.031323760747909546,
+    -0.00442885234951973,
+    0.06066536903381348,
+    -0.012004857882857323,
+    -0.05089900642633438,
+    0.058159440755844116,
+    -0.07346171140670776,
+    -0.07502558082342148,
+    -0.07401261478662491,
+    0.03605002537369728,
+    0.0661516860127449,
+    -0.019598500803112984,
+    0.06635268777608871,
+    0.050440069288015366,
+    -0.04055624082684517,
+    -0.08316429704427719,
+    -0.026096167042851448,
+    0.013969777151942253,
+    -0.023891745135188103,
+    0.07862627506256104,
+    -0.05100421607494354,
+    -0.017494892701506615,
+    0.02212854102253914,
+    -0.035168081521987915,
+    0.0030449512414634228,
+    0.15727262198925018,
+    -0.01678147166967392,
+    0.01699366606771946,
+    -0.01867467723786831,
+    0.050631456077098846,
+    0.016691330820322037,
+    -0.0776958018541336,
+    -0.04136839136481285,
+    0.0895356833934784,
+    0.0016622144030407071,
+    0.07120952010154724,
+    0.04902196303009987,
+    0.04291953518986702,
+    0.10476863384246826,
+    0.009840196929872036,
+    0.12077442556619644,
+    0.03699855878949165,
+    0.05901184305548668,
+    0.06540576368570328,
+    0.043773699551820755,
+    -0.03787808120250702,
+    0.051510266959667206,
+    -0.030214227735996246,
+    -0.007100451271981001,
+    -0.010028338991105556,
+    0.03776749223470688,
+    0.0077546872198581696,
+    0.010707437992095947,
+    0.07660380005836487,
+    -0.027059663087129593,
+    -0.03255956247448921,
+    0.13442471623420715,
+    0.024223212152719498,
+    0.032466646283864975,
+    0.04002038389444351,
+    -0.02088330313563347,
+    0.011355790309607983,
+    -0.0015234359307214618,
+    0.03204124793410301,
+    -0.11641451716423035,
+    -0.11368662863969803,
+    -0.002368731191381812,
+    -0.00755245890468359,
+    -0.13444268703460693,
+    0.03282139077782631,
+    -0.019910532981157303,
+    -0.095325767993927,
+    -0.02426886558532715,
+    -0.016447702422738075,
+    -0.026454051956534386,
+    -0.008546692319214344,
+    -0.0008984111482277513,
+    -0.006829369347542524,
+    0.09262175858020782,
+    -0.020500823855400085,
+    -0.0011872947216033936,
+    0.07010576874017715,
+    0.06886496394872665,
+    -0.038837775588035583,
+    -0.04006222262978554,
+    -0.008137798868119717,
+    0.023833157494664192,
+    -0.014471594244241714,
+    -0.04667137563228607,
+    0.05446746200323105,
+    2.6015901382444707e-33,
+    0.09412996470928192,
+    -0.06380154937505722,
+    0.03490258380770683,
+    -0.00459281774237752,
+    0.0666131004691124,
+    -0.019818322733044624,
+    -0.12434867769479752,
+    -0.08253784477710724,
+    0.02463400550186634,
+    0.058671753853559494,
+    0.02292017638683319,
+    0.07532177865505219,
+    -0.002847830532118678,
+    0.011209215968847275,
+    -0.03902489319443703,
+    0.032459523528814316,
+    0.010251187719404697,
+    0.016070570796728134,
+    -0.005427173804491758,
+    -0.03853261098265648,
+    0.03519788011908531,
+    0.018160831183195114,
+    -0.0344143770635128,
+    0.016848508268594742,
+    0.038260236382484436,
+    -0.016972247511148453,
+    0.10278549045324326,
+    -0.058820806443691254,
+    0.030322421342134476,
+    -0.06453835964202881,
+    -0.000985604478046298,
+    -0.013271457515656948,
+    0.014327195473015308,
+    -0.07443352788686752,
+    -0.030152620747685432,
+    -0.09629697352647781,
+    0.02174358069896698,
+    -0.0474877767264843,
+    -0.04423876479268074,
+    0.01690918765962124,
+    0.0807478055357933,
+    0.04357041046023369,
+    -0.06260693818330765,
+    0.010124128311872482,
+    -0.011071956716477871,
+    0.018453791737556458,
+    0.006173186004161835,
+    -0.01156573835760355,
+    0.07970843464136124,
+    -0.006550108548253775,
+    0.04085375741124153,
+    -0.020574597641825676,
+    0.005224888678640127,
+    -0.0539558045566082,
+    0.06428032368421555,
+    0.02375728264451027,
+    0.022966492921113968,
+    0.0439673475921154,
+    0.008029907941818237,
+    -0.05633724480867386,
+    -0.03193209692835808,
+    0.014733878895640373,
+    -0.01776767149567604,
+    -0.02820916473865509,
+    -0.027351172640919685,
+    -0.022308992221951485,
+    0.035146281123161316,
+    -0.04339808225631714,
+    -0.042858827859163284,
+    -0.07723890990018845,
+    0.06078005209565163,
+    -0.018405621871352196,
+    0.09048634767532349,
+    -0.008674787357449532,
+    -0.04086882993578911,
+    0.02701965719461441,
+    0.05150354281067848,
+    -0.05740641430020332,
+    -0.023030007258057594,
+    -0.024294760078191757,
+    -0.06930390000343323,
+    0.07011111080646515,
+    0.015819281339645386,
+    0.018396584317088127,
+    0.07078298181295395,
+    -0.061268001794815063,
+    -0.016161633655428886,
+    0.04951795935630798,
+    -0.032765381038188934,
+    0.01605013757944107,
+    0.039690714329481125,
+    -0.0383119061589241,
+    0.0022891764529049397,
+    -0.038727305829524994,
+    0.09910757839679718,
+    -1.775964442174427e-8,
+    0.0043853167444467545,
+    0.04991121217608452,
+    -0.07965854555368423,
+    -0.011081269010901451,
+    0.05455077067017555,
+    -0.07961972802877426,
+    0.12389124929904938,
+    0.10729750990867615,
+    -0.04335032030940056,
+    0.04791295900940895,
+    -0.010473908856511116,
+    0.043410103768110275,
+    0.0011010074522346258,
+    0.05912059172987938,
+    -0.012904871255159378,
+    -0.016103774309158325,
+    0.023702159523963928,
+    -0.0041803824715316296,
+    -0.10029048472642899,
+    -0.00003824508166871965,
+    0.02861906960606575,
+    -0.026499606668949127,
+    0.06535490602254868,
+    0.0375247485935688,
+    -0.048470284789800644,
+    -0.06979262828826904,
+    0.027781827375292778,
+    -0.03919116407632828,
+    -0.04249091073870659,
+    -0.06796062737703323,
+    0.02688734419643879,
+    0.06673263013362885,
+    -0.029720474034547806,
+    -0.1116362065076828,
+    -0.06262704730033875,
+    -0.04138435423374176,
+    -0.01630195789039135,
+    -0.048388298600912094,
+    -0.019194670021533966,
+    -0.08417230099439621,
+    -0.048492833971977234,
+    -0.08874348551034927,
+    0.019051169976592064,
+    0.035363875329494476,
+    0.02176690474152565,
+    0.050904493778944016,
+    -0.007289168890565634,
+    0.09316763281822205,
+    0.0037878742441534996,
+    0.019158918410539627,
+    0.003782183164730668,
+    0.032090555876493454,
+    0.05248786136507988,
+    -0.06041698157787323,
+    -0.0786634013056755,
+    -0.06283590942621231,
+    0.010774433612823486,
+    -0.07884009182453156,
+    -0.00515656266361475,
+    -0.061730436980724335,
+    0.05726809427142143,
+    -0.09900321066379547,
+    0.01811949349939823,
+    -0.08966918289661407
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "04_Willow_Conservatory.txt",
+        "start": 0,
+        "content": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "04_Willow_Conservatory.txt",
+        "start": 0,
+        "content": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention."
+      }
+    ]
+  }
+}

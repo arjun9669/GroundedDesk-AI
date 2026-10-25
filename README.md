@@ -16,7 +16,7 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Latest isolated candidate | **v49 package 3 engineering PASS after approved corrections**; model validation not run. Latest scored v46 regression FAIL; neither adopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
 | Current phase | **2 — first Fresh64 confirmation FAIL**; 52 PASS / 4 PARTIAL / 8 FAIL in each variant; integration HOLD |
-| Latest recorded engineering checks | **997 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
+| Latest recorded engineering checks | **1015 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
 
@@ -55,7 +55,11 @@ tooling controls,994 units and28 Keyword checks, with fresh neutral Chrome/MiniL
 preflight and a970-file execution freeze. The user authorized capture after verified
 GitHub publication. The first capture stopped during startup with zero study
 questions; a [separate attempt2 freeze](./docs/V49_STARTUP_RETRY.md) now uses a
-verified loopback server and passes997 units/28 Keyword checks.
+verified loopback server. Attempt2 then stopped on its strict anchor-containment
+rule after515 saved records. A [prospective attempt3 amendment](./eval/v49-expanded-anchor-regression/PROTOCOL.md)
+now distinguishes expanded displayed quotes from their original ranking-body
+cosines;1015 units/28 Keyword checks pass. Both incomplete attempts remain
+blocked and unscored; no full v49 quality score is established.
 **Phase 2 and integration remain HOLD; live 5.6/r44 is unchanged.**
 
 ## Original phase 2 Fresh64 confirmation — FAIL

@@ -1,0 +1,1337 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "A04",
+  "question": "Who approves routine kit labels at the fictional Kavora Citadel?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who approves routine kit labels at the fictional Kavora Citadel?",
+    "expected_display": "Who approves routine kit labels at the fictional Kavora Citadel?",
+    "rendered_question": "Who approves routine kit labels at the fictional Kavora Citadel?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional approval appendix At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+    "sources": [
+      {
+        "filename": "02_Prime_number.md",
+        "excerpt": "able rhythms: the primes 41, 43, 47 and 53 appear in the third étude, \"Neumes rythmiques\". According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\".\n\n## Fictional approval appendix\nAt the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus.",
+        "quote": "## Fictional approval appendix\nAt the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho approves routine kit labels at the fictional Kavora Citadel?\n\nSearched all files: 01_Harvard_University.md · 02_Prime_number.md · 03_Sky__United_Kingdom_.md · 04_Chloroplast.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional approval appendix At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.\n\nSOURCE EVIDENCE\n[1]\n02_Prime_number.md\n\nText lines 9–10 (normalized extraction)\n\nable rhythms: the primes 41, 43, 47 and 53 appear in the third étude, \"Neumes rythmiques\". According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\". ## Fictional approval appendix At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional approval appendix\nAt the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "db269afa-3c63-44a8-b77b-8c7db071eaef:1315",
+        "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+        "filename": "02_Prime_number.md",
+        "excerpt": "able rhythms: the primes 41, 43, 47 and 53 appear in the third étude, \"Neumes rythmiques\". According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\".\n\n## Fictional approval appendix\nAt the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus.",
+        "quote": "## Fictional approval appendix\nAt the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+        "score": 0.0476,
+        "lexicalScore": 9.166693583153494,
+        "semanticScore": 0.42701063154713176,
+        "matchedTerms": [
+          "routine",
+          "kit",
+          "labels",
+          "fictional"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Prime_number.md",
+        "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1631,
+          "cosine": 0.5875488792022311,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Prime_number.md",
+        "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Prime_number.md",
+        "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "routin",
+          "kit",
+          "label"
+        ],
+        "site": [
+          "kavora",
+          "citadel"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Prime_number.md",
+        "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1631,
+          "cosine": 0.5875488792022311,
+          "slot_supported": true,
+          "lexical_matches": 5
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Prime_number.md",
+        "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Prime_number.md",
+        "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "routin",
+          "kit",
+          "label"
+        ],
+        "site": [
+          "kavora",
+          "citadel"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Prime_number.md",
+      "start": 1631,
+      "content": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+      "semanticScore": 0.5875488792022311,
+      "lexicalScore": 12.36823772049304
+    },
+    {
+      "filename": "02_Prime_number.md",
+      "start": 1725,
+      "content": "This approval authority applies only to routine kit labels at Nerith Hall.",
+      "semanticScore": 0.465522729518178,
+      "lexicalScore": 9.434284000483514
+    },
+    {
+      "filename": "04_Chloroplast.md",
+      "start": 1276,
+      "content": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+      "semanticScore": 0.47981619335343945,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Harvard_University.md",
+      "start": 2089,
+      "content": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+      "semanticScore": 0.3692592519031236,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Harvard's athletic rivalry with Yale is intense in every sport in which they meet, coming to a climax each fall in the annual football meeting, which dates back to 1875 and is usually called simply \"The Game\".",
+      "start": 35,
+      "end": 244,
+      "similarity": 0.03171711630211426,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "While Harvard's football team is no longer one of the country's best as it often was a century ago during football's early days (it won the Rose Bowl in 1920), both it and Yale have influenced the way the game is played.",
+      "start": 245,
+      "end": 465,
+      "similarity": -0.057374561507499484,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "In 1903, Harvard Stadium introduced a new era into football with the first-ever permanent reinforced concrete stadium of its kind in the country.",
+      "start": 466,
+      "end": 611,
+      "similarity": -0.041536880445481116,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "The stadium's structure actually played a role in the evolution of the college game.",
+      "start": 612,
+      "end": 696,
+      "similarity": 0.055748527014716644,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Seeking to reduce the alarming number of deaths and serious injuries in the sport, Walter Camp (former captain of the Yale football team), suggested widening the field to open up the game.",
+      "start": 697,
+      "end": 885,
+      "similarity": 0.0420434307907815,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "But the stadium was too narrow to accommodate a wider playing surface.",
+      "start": 886,
+      "end": 956,
+      "similarity": -0.10962569037966445,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "So, other steps had to be taken.",
+      "start": 957,
+      "end": 989,
+      "similarity": 0.03219179134269197,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Camp would instead support revolutionary new rules for the 1906 season.",
+      "start": 990,
+      "end": 1061,
+      "similarity": 0.16548486228434015,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "These included legalizing the forward pass, perhaps the most significant rule change in the sport's history.",
+      "start": 1062,
+      "end": 1170,
+      "similarity": -0.0049901434239882445,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Harvard has purchased tracts of land in Allston, a walk across the Charles River from Cambridge, with the intent of major expansion southward.",
+      "start": 1185,
+      "end": 1327,
+      "similarity": 0.01719795429481502,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "The university now owns approximately fifty percent more land in Allston than in Cambridge.",
+      "start": 1328,
+      "end": 1419,
+      "similarity": 0.029206961216670473,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Proposals to connect the Cambridge campus with the new Allston campus include new and enlarged bridges, a shuttle service and/or a tram.",
+      "start": 1420,
+      "end": 1556,
+      "similarity": 0.08264649167656211,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Plans also call for sinking part of Storrow Drive (at Harvard's expense) for replacement with park land and pedestrian access to the Charles River, as well as the construction of bike paths, and buildings throughout the Allston campus.",
+      "start": 1557,
+      "end": 1792,
+      "similarity": 0.0271141686553164,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "The institution asserts that such expansion will benefit not only the school, but surrounding community, pointing to such features as the enhanced transit infrastructure, possible shuttles open to the public, and park space which will also be publicly accessible.",
+      "start": 1793,
+      "end": 2056,
+      "similarity": 0.10354104974158507,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+      "start": 2089,
+      "end": 2184,
+      "similarity": 0.3692592519031236,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "This approval authority applies only to routine ledger filings at Velora Annex.",
+      "start": 2185,
+      "end": 2264,
+      "similarity": 0.23118393981540525,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2265,
+      "end": 2321,
+      "similarity": 0.20806707712424474,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "The evolutionary strategy used by cicadas of the genus Magicicada make use of prime numbers.",
+      "start": 29,
+      "end": 121,
+      "similarity": 0.16350517156254316,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "These insects spend most of their lives as grubs underground.",
+      "start": 122,
+      "end": 183,
+      "similarity": 0.04555533497988725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "They only pupate and then emerge from their burrows after 7, 13 or 17 years, at which point they fly about, breed, and then die after a few weeks at most.",
+      "start": 184,
+      "end": 338,
+      "similarity": 0.06685744188361252,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "The logic for this is believed to be that the prime number intervals between emergences make it very difficult for predators to evolve that could specialize as predators on Magicicadas.",
+      "start": 339,
+      "end": 524,
+      "similarity": 0.04708027806095651,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "If Magicicadas appeared at a non-prime number intervals, say every 12 years, then predators appearing every 2, 3, 4, 6, or 12 years would be sure to meet them.",
+      "start": 525,
+      "end": 684,
+      "similarity": 0.11811216139389961,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "Over a 200-year period, average predator populations during hypothetical outbreaks of 14- and 15-year cicadas would be up to 2% higher than during outbreaks of 13- and 17-year cicadas.",
+      "start": 685,
+      "end": 869,
+      "similarity": 0.06743166586122744,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "Though small, this advantage appears to have been enough to drive natural selection in favour of a prime-numbered life-cycle for these insects.",
+      "start": 870,
+      "end": 1013,
+      "similarity": 0.005414924875609069,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "Prime numbers have influenced many artists and writers.",
+      "start": 1028,
+      "end": 1083,
+      "similarity": 0.12877199333862652,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "The French composer Olivier Messiaen used prime numbers to create ametrical music through \"natural phenomena\".",
+      "start": 1084,
+      "end": 1194,
+      "similarity": 0.13704322332669958,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "In works such as La Nativité du Seigneur (1935) and Quatre études de rythme (1949–50), he simultaneously employs motifs with lengths given by different prime numbers to create unpredictable rhythms: the primes 41, 43, 47 and 53 appear in the third étude, \"Neumes rythmiques\".",
+      "start": 1195,
+      "end": 1470,
+      "similarity": 0.11252342444145616,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\".",
+      "start": 1471,
+      "end": 1598,
+      "similarity": 0.09161261633033968,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+      "start": 1631,
+      "end": 1724,
+      "similarity": 0.5875488792022311,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "This approval authority applies only to routine kit labels at Nerith Hall.",
+      "start": 1725,
+      "end": 1799,
+      "similarity": 0.465522729518178,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1800,
+      "end": 1856,
+      "similarity": 0.20806707712424474,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+      "start": 37,
+      "end": 187,
+      "similarity": 0.05206850640142024,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services.",
+      "start": 188,
+      "end": 316,
+      "similarity": 0.0880957747349361,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now called Sky Active, BSkyB competed with the ONdigital (later ITV Digital) terrestrial offering and cable services.",
+      "start": 317,
+      "end": 577,
+      "similarity": 0.05798921246212926,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "Within 30 days, over 100,000 digiboxes had been sold, which help bolstered BSkyB's decision to give away free digiboxes and minidishes from May 1999.",
+      "start": 578,
+      "end": 727,
+      "similarity": 0.06265804171500336,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "BSkyB has no veto over the presence of channels on their EPG, with open access being an enforced part of their operating licence from Ofcom.",
+      "start": 742,
+      "end": 882,
+      "similarity": 0.12399002425007602,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "Any channel which can get carriage on a suitable beam of a satellite at 28° East is entitled to access to BSkyB's EPG for a fee, ranging from £15–100,000.",
+      "start": 883,
+      "end": 1037,
+      "similarity": 0.062157590842868475,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "Third-party channels which opt for encryption receive discounts ranging from reduced price to free EPG entries, free carriage on a BSkyB leased transponder, or actual payment for being carried.",
+      "start": 1038,
+      "end": 1231,
+      "similarity": 0.04585979343266483,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.",
+      "start": 1232,
+      "end": 1363,
+      "similarity": 0.07240438343675994,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+      "start": 1396,
+      "end": 1493,
+      "similarity": 0.32539788482693394,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "This approval authority applies only to routine berth charts at Solune Station.",
+      "start": 1494,
+      "end": 1573,
+      "similarity": 0.24651651110699713,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1574,
+      "end": 1630,
+      "similarity": 0.20806707712424474,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "Chloroplasts' main role is to conduct photosynthesis, where the photosynthetic pigment chlorophyll captures the energy from sunlight and converts it and stores it in the energy-storage molecules ATP and NADPH while freeing oxygen from water.",
+      "start": 28,
+      "end": 269,
+      "similarity": -0.0241342357827863,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "They then use the ATP and NADPH to make organic molecules from carbon dioxide in a process known as the Calvin cycle.",
+      "start": 270,
+      "end": 387,
+      "similarity": 0.01742884352135618,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "Chloroplasts carry out a number of other functions, including fatty acid synthesis, much amino acid synthesis, and the immune response in plants.",
+      "start": 388,
+      "end": 533,
+      "similarity": 0.0006922840589940995,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "The number of chloroplasts per cell varies from 1 in algae up to 100 in plants like Arabidopsis and wheat.",
+      "start": 534,
+      "end": 640,
+      "similarity": 0.05937138083872431,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "There are two types of thylakoids—granal thylakoids, which are arranged in grana, and stromal thylakoids, which are in contact with the stroma.",
+      "start": 655,
+      "end": 798,
+      "similarity": 0.10640870294118603,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "Granal thylakoids are pancake-shaped circular disks about 300–600 nanometers in diameter.",
+      "start": 799,
+      "end": 888,
+      "similarity": 0.059827364865432886,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "Stromal thylakoids are helicoid sheets that spiral around grana.",
+      "start": 889,
+      "end": 953,
+      "similarity": 0.135694179560056,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "The flat tops and bottoms of granal thylakoids contain only the relatively flat photosystem II protein complex.",
+      "start": 954,
+      "end": 1065,
+      "similarity": 0.02461657866993321,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "This allows them to stack tightly, forming grana with many layers of tightly appressed membrane, called granal membrane, increasing stability and surface area for light capture.",
+      "start": 1066,
+      "end": 1243,
+      "similarity": 0.0342582978172887,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+      "start": 1276,
+      "end": 1367,
+      "similarity": 0.47981619335343945,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "This approval authority applies only to routine exhibit tags at Tavora House.",
+      "start": 1368,
+      "end": 1445,
+      "similarity": 0.3425255939814963,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1446,
+      "end": 1502,
+      "similarity": 0.20806707712424474,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Prime_number.md",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1631,
+            "cosine": 0.5875488792022311,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Prime_number.md",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Prime_number.md",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "routin",
+            "kit",
+            "label"
+          ],
+          "site": [
+            "kavora",
+            "citadel"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Prime_number.md",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1631,
+            "cosine": 0.5875488792022311,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Prime_number.md",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Prime_number.md",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "routin",
+            "kit",
+            "label"
+          ],
+          "site": [
+            "kavora",
+            "citadel"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "db269afa-3c63-44a8-b77b-8c7db071eaef:1315",
+          "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+          "filename": "02_Prime_number.md",
+          "excerpt": ", 47 and 53 appear in the third étude, \"Neumes rythmiques\". According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\".\n\n## Fictional approval appendix\nAt the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+          "score": 0.0476,
+          "lexicalScore": 9.166693583153494,
+          "semanticScore": 0.42701063154713176,
+          "matchedTerms": [
+            "routine",
+            "kit",
+            "labels",
+            "fictional"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Prime_number.md",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1631,
+            "cosine": 0.5875488792022311,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Prime_number.md",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "db269afa-3c63-44a8-b77b-8c7db071eaef:1600",
+          "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+          "filename": "02_Prime_number.md",
+          "excerpt": ", 47 and 53 appear in the third étude, \"Neumes rythmiques\". According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\".\n\n## Fictional approval appendix\nAt the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+          "score": 0.0476,
+          "lexicalScore": 12.54337364317964,
+          "semanticScore": 0.5335639213362374,
+          "matchedTerms": [
+            "routine",
+            "kit",
+            "labels",
+            "fictional"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Prime_number.md",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1631,
+            "cosine": 0.5875488792022311,
+            "slot_supported": true,
+            "lexical_matches": 5
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Prime_number.md",
+          "quote": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.10329288244247437,
+    0.08254501223564148,
+    -0.04523230716586113,
+    -0.024919848889112473,
+    -0.08180559426546097,
+    0.03475083410739899,
+    -0.013243317604064941,
+    -0.03589801490306854,
+    -0.0006345841102302074,
+    -0.011215164326131344,
+    0.03086506575345993,
+    -0.07942178100347519,
+    -0.03141965717077255,
+    -0.06808947771787643,
+    -0.021091945469379425,
+    -0.014075681567192078,
+    0.07033145427703857,
+    -0.02591731958091259,
+    0.08644602447748184,
+    -0.043052297085523605,
+    -0.07264137268066406,
+    0.056207675486803055,
+    0.08305875211954117,
+    0.08241619169712067,
+    -0.07162239402532578,
+    0.020807461813092232,
+    -0.03310754522681236,
+    0.001869768719188869,
+    -0.003993267193436623,
+    -0.05020662397146225,
+    -0.07186240702867508,
+    0.057131268084049225,
+    0.07236383855342865,
+    -0.0253085158765316,
+    0.03979966789484024,
+    0.0848175585269928,
+    0.03395368903875351,
+    -0.0014055150095373392,
+    0.032284270972013474,
+    0.003708856413140893,
+    0.02412659488618374,
+    -0.0466766282916069,
+    -0.029355879873037338,
+    0.040484122931957245,
+    -0.04775536060333252,
+    -0.03376385569572449,
+    -0.0022422894835472107,
+    -0.054670073091983795,
+    -0.06129378452897072,
+    0.07397688925266266,
+    0.0070741367526352406,
+    -0.07878538221120834,
+    0.0041707404889166355,
+    -0.05696337670087814,
+    0.007328724954277277,
+    0.02821967750787735,
+    0.0009234286262653768,
+    -0.02730450965464115,
+    0.1367952525615692,
+    0.10720338672399521,
+    -0.02552039921283722,
+    0.03409808501601219,
+    -0.10301822423934937,
+    0.035313040018081665,
+    0.08267372101545334,
+    -0.024318234995007515,
+    0.026534875854849815,
+    0.07734912633895874,
+    0.007506858091801405,
+    -0.05447983741760254,
+    0.09183628112077713,
+    -0.024608064442873,
+    0.180877685546875,
+    0.05691499635577202,
+    0.005433663725852966,
+    -0.024705681949853897,
+    -0.018351128324866295,
+    -0.0032451266888529062,
+    0.006269876845180988,
+    -0.047140441834926605,
+    -0.036351606249809265,
+    0.008148904889822006,
+    0.007216817699372768,
+    -0.08181051909923553,
+    -0.029598740860819817,
+    0.014322742819786072,
+    -0.0026962419506162405,
+    -0.027926042675971985,
+    0.03786537051200867,
+    0.07460597902536392,
+    0.06731042265892029,
+    -0.08247735351324081,
+    0.04138248786330223,
+    -0.03896777331829071,
+    -0.051077235490083694,
+    0.019237928092479706,
+    -0.027777349576354027,
+    0.005310566630214453,
+    -0.025158215314149857,
+    0.041262879967689514,
+    0.011982616037130356,
+    -0.02153111808001995,
+    -0.00651593878865242,
+    0.014006595127284527,
+    -0.026339897885918617,
+    -0.09578144550323486,
+    -0.020870104432106018,
+    -0.08464369922876358,
+    0.00671162037178874,
+    0.011425807140767574,
+    -0.03348106890916824,
+    0.013059070333838463,
+    -0.044359803199768066,
+    -0.04229076951742172,
+    -0.018127750605344772,
+    0.0312353428453207,
+    0.0735037624835968,
+    -0.06322763860225677,
+    0.00790319498628378,
+    0.024543285369873047,
+    0.008266748860478401,
+    -0.004894693847745657,
+    0.032190315425395966,
+    0.028120020404458046,
+    -0.003011721186339855,
+    0.0197935551404953,
+    -0.06685016304254532,
+    -3.20991764834462e-33,
+    -0.023676278069615364,
+    0.014354707673192024,
+    0.012852492742240429,
+    0.07777430862188339,
+    0.054096825420856476,
+    -0.024057593196630478,
+    -0.0818580761551857,
+    -0.08252334594726562,
+    -0.02065361477434635,
+    -0.006083203479647636,
+    0.040328510105609894,
+    0.049841590225696564,
+    -0.09611097723245621,
+    0.013358944095671177,
+    -0.016923105344176292,
+    0.0002675337018445134,
+    -0.07511486858129501,
+    0.012633878737688065,
+    -0.023599807173013687,
+    -0.02419477514922619,
+    -0.037836432456970215,
+    0.05360337719321251,
+    0.005294058937579393,
+    -0.003510540584102273,
+    0.03918856009840965,
+    0.07153017818927765,
+    0.012537852860987186,
+    0.06436862051486969,
+    -0.007220500148832798,
+    0.06881649047136307,
+    -0.019876405596733093,
+    -0.015114601701498032,
+    0.07062485069036484,
+    -0.02396881952881813,
+    -0.030544711276888847,
+    0.051990408450365067,
+    -0.08938468247652054,
+    -0.07756324112415314,
+    -0.042889758944511414,
+    0.03994894400238991,
+    0.012760629877448082,
+    0.0027445738669484854,
+    -0.05643021687865257,
+    0.07771145552396774,
+    -0.004632527939975262,
+    0.0422246940433979,
+    0.06421718746423721,
+    -0.09221483021974564,
+    0.09331416338682175,
+    0.017501555383205414,
+    0.01510063000023365,
+    -0.0018897228874266148,
+    -0.07718208432197571,
+    0.02754998207092285,
+    -0.00014281230687629431,
+    0.024275988340377808,
+    -0.01990741491317749,
+    -0.04539981856942177,
+    0.04116646572947502,
+    -0.05121614784002304,
+    0.04928901046514511,
+    0.06950399279594421,
+    0.0639081820845604,
+    0.06288261711597443,
+    0.043287381529808044,
+    0.004129800479859114,
+    -0.07382681220769882,
+    0.035669200122356415,
+    0.0744505375623703,
+    -0.05877085030078888,
+    -0.029285959899425507,
+    0.023121239617466927,
+    -0.027204381301999092,
+    -0.0241372212767601,
+    -0.014695876277983189,
+    -0.04999145492911339,
+    -0.030440885573625565,
+    0.06994282454252243,
+    -0.13349780440330505,
+    0.07376174628734589,
+    0.0648031085729599,
+    0.04301976412534714,
+    0.008073214441537857,
+    0.09085994958877563,
+    0.019676070660352707,
+    -0.03871440514922142,
+    0.08013866096735,
+    -0.0029974307399243116,
+    -0.006874742452055216,
+    -0.017300166189670563,
+    -0.021182846277952194,
+    -0.028507767245173454,
+    0.012005760334432125,
+    -0.012538941577076912,
+    -0.07180546224117279,
+    8.709729883501735e-34,
+    0.04573969915509224,
+    -0.04922032728791237,
+    0.04565679654479027,
+    0.0011427919380366802,
+    -0.03263144567608833,
+    0.0038468583952635527,
+    -0.044917356222867966,
+    0.05642430856823921,
+    0.028767721727490425,
+    0.06430712342262268,
+    -0.03842911496758461,
+    0.04639338701963425,
+    -0.0815129429101944,
+    -0.05321500450372696,
+    0.036295484751462936,
+    -0.04084325209259987,
+    0.011285299435257912,
+    0.0011773634469136596,
+    0.0625934898853302,
+    -0.07806222885847092,
+    0.04465571045875549,
+    -0.01934308558702469,
+    -0.083038330078125,
+    0.058865245431661606,
+    -0.025804756209254265,
+    -0.005232279188930988,
+    -0.00008599139982834458,
+    0.007303263526409864,
+    -0.06151670217514038,
+    -0.04075531288981438,
+    -0.005074099637567997,
+    -0.08435714244842529,
+    -0.0155659643933177,
+    0.040048565715551376,
+    -0.03508465737104416,
+    -0.009916138835251331,
+    0.009504388086497784,
+    0.05580814555287361,
+    -0.0507490299642086,
+    0.015621825121343136,
+    0.030465062707662582,
+    0.04928356409072876,
+    -0.11648115515708923,
+    0.08297944068908691,
+    -0.13368180394172668,
+    -0.03664106875658035,
+    0.12228477746248245,
+    -0.030316852033138275,
+    -0.005532052367925644,
+    -0.050365135073661804,
+    -0.00496082054451108,
+    -0.003794681513682008,
+    -0.057301800698041916,
+    -0.0766376256942749,
+    -0.03731083869934082,
+    0.003007437800988555,
+    -0.04249725490808487,
+    0.029609134420752525,
+    0.04664427042007446,
+    0.0998004674911499,
+    0.053726233541965485,
+    0.00369116454385221,
+    -0.00834149681031704,
+    -0.06662675738334656,
+    0.009501748718321323,
+    -0.04510631412267685,
+    0.029940158128738403,
+    0.04506813362240791,
+    -0.030163465067744255,
+    0.021341385319828987,
+    0.10468201339244843,
+    -0.004011909477412701,
+    -0.10327358543872833,
+    0.027092652395367622,
+    -0.02959860861301422,
+    -0.0170412827283144,
+    0.019966062158346176,
+    -0.03814346343278885,
+    -0.05537828430533409,
+    -0.020208753645420074,
+    0.005092896055430174,
+    -0.15442651510238647,
+    -0.042292796075344086,
+    0.14283670485019684,
+    0.07275952398777008,
+    0.011693150736391544,
+    0.03711377829313278,
+    -0.01881096512079239,
+    0.005024630576372147,
+    0.07911153137683868,
+    0.07680030167102814,
+    -0.006190889980643988,
+    0.024383341893553734,
+    0.029824664816260338,
+    0.009951208718121052,
+    -1.980436792337059e-8,
+    0.02691056951880455,
+    -0.0092614209279418,
+    -0.05886625498533249,
+    -0.017066052183508873,
+    -0.049350555986166,
+    -0.0050510200671851635,
+    -0.06846307963132858,
+    0.007533637341111898,
+    -0.0529356487095356,
+    0.06501056998968124,
+    0.07227852195501328,
+    -0.017938975244760513,
+    -0.0727459117770195,
+    -0.0048800623044371605,
+    0.0397036038339138,
+    0.036794375628232956,
+    0.002376638352870941,
+    0.07612351328134537,
+    -0.08633815497159958,
+    0.053588591516017914,
+    -0.010436182841658592,
+    0.09284352511167526,
+    0.06291263550519943,
+    -0.07422289252281189,
+    -0.069955974817276,
+    0.07858919352293015,
+    -0.01899649202823639,
+    0.019112324342131615,
+    0.05300360545516014,
+    0.08449134975671768,
+    0.03240003436803818,
+    0.020582733675837517,
+    -0.08043871819972992,
+    0.045245349407196045,
+    -0.030243245884776115,
+    -0.035824161022901535,
+    -0.07575861364603043,
+    -0.03900846838951111,
+    0.05542229488492012,
+    0.051652926951646805,
+    -0.002384711755439639,
+    -0.04422912001609802,
+    -0.02379024028778076,
+    0.05042692646384239,
+    -0.0402328297495842,
+    0.1189040094614029,
+    -0.012329564429819584,
+    0.0006151693523861468,
+    -0.011454835534095764,
+    -0.0058458782732486725,
+    -0.01478997990489006,
+    0.016903100535273552,
+    0.038028694689273834,
+    0.0642077848315239,
+    0.029295658692717552,
+    -0.012896345928311348,
+    0.025170380249619484,
+    -0.0009117370937019587,
+    -0.005912688095122576,
+    -0.00341316987760365,
+    0.06330105662345886,
+    -0.06715071946382523,
+    0.012156003154814243,
+    -0.01840956322848797
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Prime_number.md",
+        "start": 1315,
+        "content": "with lengths given by different prime numbers to create unpredictable rhythms: the primes 41, 43, 47 and 53 appear in the third étude, \"Neumes rythmiques\". According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\".\n\n## Fictional approval appendix\nAt the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "04_Chloroplast.md",
+        "start": 1315,
+        "content": "r the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Prime_number.md",
+        "start": 1600,
+        "content": "## Fictional approval appendix\nAt the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels. This approval authority applies only to routine kit labels at Nerith Hall. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "04_Chloroplast.md",
+        "start": 1245,
+        "content": "## Fictional approval appendix\nAt the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags. This approval authority applies only to routine exhibit tags at Tavora House. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "start": 1365,
+        "content": "## Fictional approval appendix\nAt the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts. This approval authority applies only to routine berth charts at Solune Station. No other approval authority is described in this corpus."
+      }
+    ]
+  }
+}

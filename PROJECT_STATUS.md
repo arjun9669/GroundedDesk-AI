@@ -17,7 +17,33 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v49 package3 Comparison/events engineering PASS after approved corrections; 972 unit/28 Keyword PASS; no v49 model result/adoption. Latest scored v46 regression FAIL (Fresh64 60/4/0, historical10/19 gates) |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | First capture startup BLOCKED with0 questions; second-attempt freeze and server verified,997 units/28 Keyword PASS; authorized capture follows publication |
+| Current change | Attempt2 integrity BLOCKED at515 records; prospective expanded-quote/ranking-anchor amendment and attempt3 freeze prepared; original candidate unchanged |
+
+## V49 attempt2 integrity block and prospective attempt3 amendment, 2026-10-25
+
+Attempt2 stopped at Morrow32 M07:515 records saved (495 Hybrid/20 Comparison),
+514 per-case audit completions,14 full packs. No native scoring or732-case result.
+[Immutable partial seal](docs/evidence/v49-regression-732-mac-attempt2/partial-manifest.json)
+pins4,162 files/467,445,446 bytes. Its quotation spans448–571, while recorded
+ranking anchor spans448–490. The frozen containment requirement failed.
+
+Static source inspection shows unchanged v33 bindFacetSource explicitly allows
+a body wholly inside an expanded displayed quotation. The
+[prospective attempt3 contract](eval/v49-expanded-anchor-regression/PROTOCOL.md)
+therefore distinguishes displayed text from original ranking-body cosine. This
+changes the explicit containment contract prospectively; it does not pass or
+rescore attempt2. Require full containment in either direction, exact literal
+quote, one policy block and original body-ID/own-query/vector proof. Disclose each
+expanded quote binding; never claim a cosine for the unembedded expanded span.
+No candidate, answer, threshold, key or native scoring criterion changes.
+
+[Engineering evidence](docs/evidence/v49-expanded-anchor-preparation/manifest.json):
+18 targeted/1015 full unit/28 Keyword PASS; all previous audit negatives remain.
+Fresh neutral attempt3 preflight again measures six runtime/model assets and64
+served modules. New separate root and
+[execution freeze](docs/evidence/v49-regression-732-mac-attempt3/execution/freeze-manifest.json)
+precede questions under standing authorization. Prior failures stay immutable;
+phase2/integration HOLD remains.
 
 ## V49 startup retry — second-attempt readiness, 2026-10-25
 

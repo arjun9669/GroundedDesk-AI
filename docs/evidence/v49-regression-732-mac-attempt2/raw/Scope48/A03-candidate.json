@@ -1,0 +1,1287 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "A03",
+  "question": "Who approves plasma telescope permissions at the fictional Tiravel Library?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "Who approves plasma telescope permissions at the fictional Tiravel Library?",
+    "expected_display": "Who approves plasma telescope permissions at the fictional Tiravel Library?",
+    "rendered_question": "Who approves plasma telescope permissions at the fictional Tiravel Library?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+    "sources": [
+      {
+        "filename": "02_Islamism.md",
+        "excerpt": "overthrow the elected post-al-Nimeiry government with the help of the military. Turabi was noted for proclaiming his support for the democratic process and a liberal government before coming to power, but strict application of sharia law, torture and mass imprisonment of the opposition, and an intensification of the long-running war in southern Sudan, once in power. The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other",
+        "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWho approves plasma telescope permissions at the fictional Tiravel Library?\n\nSearched all files: 01_University_of_Chicago.md · 02_Islamism.md · 03_European_Union_law.md · 04_Normans.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.\n\nSOURCE EVIDENCE\n[1]\n02_Islamism.md\n\nText line 10 (normalized extraction)\n\noverthrow the elected post-al-Nimeiry government with the help of the military. Turabi was noted for proclaiming his support for the democratic process and a liberal government before coming to power, but strict application of sharia law, torture and mass imprisonment of the opposition, and an intensification of the long-running war in southern Sudan, once in power. The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War. ## Fictional approval appendix At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "d91a9280-9cdd-4255-a28f-c6d42d755bea:656",
+        "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+        "filename": "02_Islamism.md",
+        "excerpt": "overthrow the elected post-al-Nimeiry government with the help of the military. Turabi was noted for proclaiming his support for the democratic process and a liberal government before coming to power, but strict application of sharia law, torture and mass imprisonment of the opposition, and an intensification of the long-running war in southern Sudan, once in power. The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other",
+        "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+        "score": 0.0476,
+        "lexicalScore": 5.671795674527657,
+        "semanticScore": 0.3962497652276129,
+        "matchedTerms": [
+          "fictional",
+          "tiravel",
+          "library"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Islamism.md",
+        "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1221,
+          "cosine": 0.4347318712158446,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Islamism.md",
+        "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Islamism.md",
+        "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "plasma",
+          "telescop",
+          "permission"
+        ],
+        "site": [
+          "tiravel",
+          "library"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "02_Islamism.md",
+        "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1221,
+          "cosine": 0.4347318712158446,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "02_Islamism.md",
+        "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+        "slots": {
+          "kind": "actor",
+          "predicate": "approv",
+          "years": []
+        },
+        "reason": "Keep prior: requested relation already literal"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "02_Islamism.md",
+        "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "scope_diagnostics": {
+      "route": "Same-frame action/object/site",
+      "request": {
+        "predicate": "approv",
+        "object": [
+          "plasma",
+          "telescop",
+          "permission"
+        ],
+        "site": [
+          "tiravel",
+          "library"
+        ]
+      },
+      "matching_predicate_frames": 4,
+      "binding_frames": 0,
+      "denied": true
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "02_Islamism.md",
+      "start": 1221,
+      "content": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "semanticScore": 0.4347318712158446,
+      "lexicalScore": 9.973470857730035
+    },
+    {
+      "filename": "02_Islamism.md",
+      "start": 1322,
+      "content": "This approval authority applies only to standard shelf indexes at Tiravel Library.",
+      "semanticScore": 0.4157754067591331,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Normans.md",
+      "start": 1832,
+      "content": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "semanticScore": 0.39128586833431994,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "The first buildings of the University of Chicago campus, which make up what is now known as the Main Quadrangles, were part of a \"master plan\" conceived by two University of Chicago trustees and plotted by Chicago architect Henry Ives Cobb.",
+      "start": 38,
+      "end": 278,
+      "similarity": -0.05300648491509823,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "The Main Quadrangles consist of six quadrangles, each surrounded by buildings, bordering one larger quadrangle.",
+      "start": 279,
+      "end": 390,
+      "similarity": -0.05227845604254038,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "The buildings of the Main Quadrangles were designed by Cobb, Shepley, Rutan and Coolidge, Holabird & Roche, and other architectural firms in a mixture of the Victorian Gothic and Collegiate Gothic styles, patterned on the colleges of the University of Oxford.",
+      "start": 391,
+      "end": 650,
+      "similarity": 0.030376219001101712,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "(Mitchell Tower, for example, is modeled after Oxford's Magdalen Tower, and the university Commons, Hutchinson Hall, replicates Christ Church Hall.)",
+      "start": 651,
+      "end": 799,
+      "similarity": 0.1131741230225606,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "All Recognized Student Organizations, from the University of Chicago Scavenger Hunt to Model UN, in addition to academic teams, sports club, arts groups, and more are funded by The University of Chicago Student Government.",
+      "start": 814,
+      "end": 1036,
+      "similarity": 0.21235689424055315,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "Student Government is made up of graduate and undergraduate students elected to represent members from their respective academic unit.",
+      "start": 1037,
+      "end": 1171,
+      "similarity": 0.059112740967893804,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "It is led by an Executive Committee, chaired by a President with the assistance of two Vice Presidents, one for Administration and the other for Student Life, elected together as a slate by the student body each spring.",
+      "start": 1172,
+      "end": 1391,
+      "similarity": 0.12583643978577108,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "Its annual budget is greater than $2 million.",
+      "start": 1392,
+      "end": 1437,
+      "similarity": 0.12313426732393208,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "At the fictional Orvella Depot, it is for the Freight Registrar to approve standard cargo schedules.",
+      "start": 1470,
+      "end": 1570,
+      "similarity": 0.267878989076153,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "This approval authority applies only to standard cargo schedules at Orvella Depot.",
+      "start": 1571,
+      "end": 1653,
+      "similarity": 0.22733848552555,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "499eb08e-a5af-43ff-8f5c-a2455771d819",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1654,
+      "end": 1710,
+      "similarity": 0.19829204408221376,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+      "value": "Some elements of the Brotherhood, though perhaps against orders, did engage in violence against the government, and its founder Al-Banna was assassinated in 1949 in retaliation for the assassination of Egypt's premier Mahmud Fami Naqrashi three months earlier.",
+      "start": 25,
+      "end": 285,
+      "similarity": 0.016156899912517404,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+      "value": "The Brotherhood has suffered periodic repression in Egypt and has been banned several times, in 1948 and several years later following confrontations with Egyptian president Gamal Abdul Nasser, who jailed thousands of members for several years.",
+      "start": 286,
+      "end": 530,
+      "similarity": 0.09102722795222438,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+      "value": "After al-Nimeiry was overthrown in 1985 the party did poorly in national elections, but in 1989 it was able to overthrow the elected post-al-Nimeiry government with the help of the military.",
+      "start": 545,
+      "end": 735,
+      "similarity": 0.0014119801736380553,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+      "value": "Turabi was noted for proclaiming his support for the democratic process and a liberal government before coming to power, but strict application of sharia law, torture and mass imprisonment of the opposition, and an intensification of the long-running war in southern Sudan, once in power.",
+      "start": 736,
+      "end": 1024,
+      "similarity": 0.05335231254857219,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+      "value": "The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.",
+      "start": 1025,
+      "end": 1188,
+      "similarity": 0.08931597616745589,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+      "value": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "start": 1221,
+      "end": 1321,
+      "similarity": 0.4347318712158446,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+      "value": "This approval authority applies only to standard shelf indexes at Tiravel Library.",
+      "start": 1322,
+      "end": 1404,
+      "similarity": 0.4157754067591331,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1405,
+      "end": 1461,
+      "similarity": 0.19829204408221376,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "Following the Nice Treaty, there was an attempt to reform the constitutional law of the European Union and make it more transparent; this would have also produced a single constitutional document.",
+      "start": 35,
+      "end": 231,
+      "similarity": 0.09764459164401802,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "However, as a result of the referendum in France and the referendum in the Netherlands, the 2004 Treaty establishing a Constitution for Europe never came into force.",
+      "start": 232,
+      "end": 397,
+      "similarity": 0.09746227221051633,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "Instead, the Lisbon Treaty was enacted.",
+      "start": 398,
+      "end": 437,
+      "similarity": 0.1096098476342203,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "Its substance was very similar to the proposed constitutional treaty, but it was formally an amending treaty, and – though it significantly altered the existing treaties – it did not completely replace them.",
+      "start": 438,
+      "end": 645,
+      "similarity": 0.024109593380179557,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "None of the original treaties establishing the European Union mention protection for fundamental rights.",
+      "start": 660,
+      "end": 764,
+      "similarity": 0.11685079915746584,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "It was not envisaged for European Union measures, that is legislative and administrative actions by European Union institutions, to be subject to human rights.",
+      "start": 765,
+      "end": 924,
+      "similarity": 0.1321158950581445,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "At the time the only concern was that member states should be prevented from violating human rights, hence the establishment of the European Convention on Human Rights in 1950 and the establishment of the European Court of Human Rights.",
+      "start": 925,
+      "end": 1161,
+      "similarity": 0.13759322576061803,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "The European Court of Justice recognised fundamental rights as general principle of European Union law as the need to ensure that European Union measures are compatible with the human rights enshrined in member states' constitution became ever more apparent.",
+      "start": 1162,
+      "end": 1420,
+      "similarity": 0.06177395344252223,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "In 1999 the European Council set up a body tasked with drafting a European Charter of Human Rights, which could form the constitutional basis for the European Union and as such tailored specifically to apply to the European Union and its institutions.",
+      "start": 1421,
+      "end": 1672,
+      "similarity": 0.13244178988081018,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "The Charter of Fundamental Rights of the European Union draws a list of fundamental rights from the European Convention on Human Rights and Fundamental Freedoms, the Declaration on Fundamental Rights produced by the European Parliament in 1989 and European Union Treaties.",
+      "start": 1673,
+      "end": 1945,
+      "similarity": 0.15430513685586913,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "At the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters.",
+      "start": 1978,
+      "end": 2073,
+      "similarity": 0.33435309893805676,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "This approval authority applies only to standard vessel rosters at Calorin Pier.",
+      "start": 2074,
+      "end": 2154,
+      "similarity": 0.31042927042131163,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "0bb9672c-f07c-4ec9-8ebd-24be9bf06fb8",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2155,
+      "end": 2211,
+      "similarity": 0.19829204408221376,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "Various princes of the Holy Land arrived in Limassol at the same time, in particular Guy de Lusignan.",
+      "start": 24,
+      "end": 125,
+      "similarity": -0.009339063834426835,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "All declared their support for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+      "start": 126,
+      "end": 233,
+      "similarity": 0.09371551533294714,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "The local barons abandoned Isaac, who considered making peace with Richard, joining him on the crusade, and offering his daughter in marriage to the person named by Richard.",
+      "start": 234,
+      "end": 407,
+      "similarity": -0.012642439607795694,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "But Isaac changed his mind and tried to escape.",
+      "start": 408,
+      "end": 455,
+      "similarity": 0.046562995210178024,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "Richard then proceeded to conquer the whole island, his troops being led by Guy de Lusignan.",
+      "start": 456,
+      "end": 548,
+      "similarity": -0.04830827283100847,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in irons.",
+      "start": 549,
+      "end": 670,
+      "similarity": 0.07030446413025876,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "By 1 June, Richard had conquered the whole island.",
+      "start": 671,
+      "end": 721,
+      "similarity": -0.04832543015592186,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "His exploit was well publicized and contributed to his reputation; he also derived significant financial gains from the conquest of the island.",
+      "start": 722,
+      "end": 865,
+      "similarity": 0.06962679748271815,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "Richard left for Acre on 5 June, with his allies.",
+      "start": 866,
+      "end": 915,
+      "similarity": -0.03866169151932604,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "Before his departure, he named two of his Norman generals, Richard de Camville and Robert de Thornham, as governors of Cyprus.",
+      "start": 916,
+      "end": 1042,
+      "similarity": -0.0035035478178086126,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France.",
+      "start": 1057,
+      "end": 1223,
+      "similarity": 0.04449841154221086,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "They were descended from Norse (\"Norman\" comes from \"Norseman\") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia.",
+      "start": 1224,
+      "end": 1431,
+      "similarity": 0.048047882837103456,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia.",
+      "start": 1432,
+      "end": 1627,
+      "similarity": -0.09745970017613596,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.",
+      "start": 1628,
+      "end": 1799,
+      "similarity": -0.05130559198359735,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "At the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards.",
+      "start": 1832,
+      "end": 1931,
+      "similarity": 0.39128586833431994,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "This approval authority applies only to standard display cards at Fenora Gallery.",
+      "start": 1932,
+      "end": 2013,
+      "similarity": 0.34596642545344003,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "06452f39-e7bd-4a13-91c6-8c3b18c23ecd",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2014,
+      "end": 2070,
+      "similarity": 0.19829204408221376,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Islamism.md",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1221,
+            "cosine": 0.4347318712158446,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Islamism.md",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Islamism.md",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "plasma",
+            "telescop",
+            "permission"
+          ],
+          "site": [
+            "tiravel",
+            "library"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V11 isolated body fallback and final quotation deduplication; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Islamism.md",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1221,
+            "cosine": 0.4347318712158446,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Islamism.md",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "02_Islamism.md",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "scope_diagnostics": {
+        "route": "Same-frame action/object/site",
+        "request": {
+          "predicate": "approv",
+          "object": [
+            "plasma",
+            "telescop",
+            "permission"
+          ],
+          "site": [
+            "tiravel",
+            "library"
+          ]
+        },
+        "matching_predicate_frames": 4,
+        "binding_frames": 0,
+        "denied": true
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "d91a9280-9cdd-4255-a28f-c6d42d755bea:656",
+          "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+          "filename": "02_Islamism.md",
+          "excerpt": "n Sudan, once in power. The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+          "score": 0.0476,
+          "lexicalScore": 5.671795674527657,
+          "semanticScore": 0.3962497652276129,
+          "matchedTerms": [
+            "fictional",
+            "tiravel",
+            "library"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Islamism.md",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1221,
+            "cosine": 0.4347318712158446,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Islamism.md",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "d91a9280-9cdd-4255-a28f-c6d42d755bea:1190",
+          "documentId": "d91a9280-9cdd-4255-a28f-c6d42d755bea",
+          "filename": "02_Islamism.md",
+          "excerpt": "n Sudan, once in power. The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus.",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+          "score": 0.0476,
+          "lexicalScore": 10.14089598516194,
+          "semanticScore": 0.48591749331301176,
+          "matchedTerms": [
+            "fictional",
+            "tiravel",
+            "library"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "02_Islamism.md",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1221,
+            "cosine": 0.4347318712158446,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "02_Islamism.md",
+          "quote": "At the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes.",
+          "slots": {
+            "kind": "actor",
+            "predicate": "approv",
+            "years": []
+          },
+          "reason": "Keep prior: requested relation already literal"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.049471717327833176,
+    -0.03192974254488945,
+    0.002368861110880971,
+    -0.03546283766627312,
+    -0.05415794998407364,
+    -0.044423989951610565,
+    -0.02335452102124691,
+    0.0017370287096127868,
+    0.03903541713953018,
+    -0.0033172578550875187,
+    -0.03590816259384155,
+    0.012103294022381306,
+    -0.02166791632771492,
+    0.04245685040950775,
+    -0.037436824291944504,
+    -0.06309837847948074,
+    0.04031605273485184,
+    -0.10716134309768677,
+    -0.0028365780599415302,
+    -0.0354989692568779,
+    -0.007924694567918777,
+    -0.05558426305651665,
+    0.017254237085580826,
+    -0.05232115089893341,
+    0.07522255927324295,
+    -0.02335849218070507,
+    -0.061758145689964294,
+    -0.07677176594734192,
+    -0.02256513386964798,
+    0.014417055994272232,
+    -0.02570383995771408,
+    0.006344240624457598,
+    -0.07233163714408875,
+    -0.027268489822745323,
+    0.05261056497693062,
+    0.026752032339572906,
+    0.027739429846405983,
+    -0.06453429162502289,
+    -0.02493230253458023,
+    0.0276388730853796,
+    -0.03308544680476189,
+    -0.08023039996623993,
+    -0.0300665944814682,
+    -0.001723210560157895,
+    -0.04583149403333664,
+    -0.021238941699266434,
+    0.055585574358701706,
+    -0.10809538513422012,
+    -0.00326652848161757,
+    0.08779836446046829,
+    -0.046631358563899994,
+    -0.01875043846666813,
+    0.04299294576048851,
+    -0.0649699792265892,
+    0.05863760784268379,
+    -0.02590116299688816,
+    0.01898364908993244,
+    -0.03500208631157875,
+    0.05115725100040436,
+    -0.005224884953349829,
+    -0.015139046125113964,
+    -0.04028809443116188,
+    -0.08878955245018005,
+    0.05062773823738098,
+    0.04451676830649376,
+    0.06496629118919373,
+    -0.012087417766451836,
+    -0.001511530950665474,
+    0.01806824281811714,
+    -0.09565138071775436,
+    0.025651153177022934,
+    0.024791261181235313,
+    0.09029307216405869,
+    0.043200988322496414,
+    0.05899184197187424,
+    -0.0536150224506855,
+    -0.010706804692745209,
+    -0.010544351302087307,
+    0.04730638116598129,
+    -0.10456933826208115,
+    -0.0288089606910944,
+    0.0007350041414611042,
+    -0.002533228602260351,
+    0.07251971960067749,
+    -0.01808135025203228,
+    0.1142524778842926,
+    -0.010381017811596394,
+    0.006422026548534632,
+    0.02176693081855774,
+    0.07304303348064423,
+    0.03693865239620209,
+    -0.08203807473182678,
+    0.060118548572063446,
+    -0.005753644742071629,
+    -0.055196262896060944,
+    0.016121113672852516,
+    0.03070162609219551,
+    0.012286963872611523,
+    -0.02177027240395546,
+    0.03806085139513016,
+    0.020897364243865013,
+    -0.023076500743627548,
+    -0.04370152950286865,
+    0.0797751322388649,
+    -0.04870537668466568,
+    -0.03268919512629509,
+    -0.004132636357098818,
+    0.012898272834718227,
+    -0.04416550323367119,
+    0.05165206640958786,
+    0.040522459894418716,
+    0.026876039803028107,
+    -0.012927340343594551,
+    -0.01614830084145069,
+    -0.019388578832149506,
+    0.03729589655995369,
+    -0.022076036781072617,
+    0.02225065603852272,
+    0.0370076447725296,
+    -0.025264156982302666,
+    0.030541541054844856,
+    0.04980867728590965,
+    0.04944745451211929,
+    0.11571718752384186,
+    0.046823084354400635,
+    -0.026905043050646782,
+    -0.10261689126491547,
+    -4.2928829613419314e-33,
+    0.017910249531269073,
+    0.08785083144903183,
+    0.0320328027009964,
+    0.022131942212581635,
+    0.034889694303274155,
+    0.021492434665560722,
+    -0.06038644537329674,
+    0.08273231983184814,
+    -0.05651243403553963,
+    -0.03026954084634781,
+    0.018330393359065056,
+    0.08679824322462082,
+    -0.025140300393104553,
+    -0.011877205222845078,
+    0.02939615212380886,
+    0.0291143711656332,
+    -0.03174928203225136,
+    0.03033919632434845,
+    -0.05410581827163696,
+    0.050224654376506805,
+    -0.0026444762479513884,
+    -0.027693795040249825,
+    -0.017485015094280243,
+    0.09423329681158066,
+    -0.07109580188989639,
+    0.057712193578481674,
+    -0.07542528212070465,
+    0.030345473438501358,
+    0.0367400161921978,
+    0.09355329722166061,
+    0.006196404807269573,
+    -0.03624241426587105,
+    0.03709359094500542,
+    -0.047018714249134064,
+    0.02894352562725544,
+    0.022074220702052116,
+    -0.08782996982336044,
+    -0.024316225200891495,
+    -0.02972579561173916,
+    0.04201148822903633,
+    0.08180670440196991,
+    0.027006464079022408,
+    -0.15196891129016876,
+    0.057568926364183426,
+    -0.01129681896418333,
+    0.002989909378811717,
+    0.05625969544053078,
+    -0.04932304471731186,
+    -0.008548648096621037,
+    0.02205907180905342,
+    0.006430894136428833,
+    0.04338642582297325,
+    -0.11011180281639099,
+    -0.06340064853429794,
+    0.1324605941772461,
+    -0.03752867132425308,
+    -0.04168215021491051,
+    0.015978829935193062,
+    0.023381903767585754,
+    -0.013171754777431488,
+    0.0537247471511364,
+    0.10382421314716339,
+    0.03118382953107357,
+    0.09906397014856339,
+    -0.020166335627436638,
+    0.03736988455057144,
+    -0.03112049028277397,
+    -0.008530884049832821,
+    -0.0038631861098110676,
+    -0.07750502228736877,
+    -0.09690872579813004,
+    0.07456769049167633,
+    0.022138459607958794,
+    0.00040634904871694744,
+    -0.0013816842110827565,
+    -0.03979313373565674,
+    -0.016360780224204063,
+    0.08195201307535172,
+    0.010796554386615753,
+    -0.038902647793293,
+    -0.06278723478317261,
+    -0.09633127599954605,
+    0.1089160293340683,
+    0.00859003234654665,
+    -0.04782574623823166,
+    -0.0444905124604702,
+    0.015663715079426765,
+    0.02733633853495121,
+    -0.04461082071065903,
+    -0.07008201628923416,
+    0.020053520798683167,
+    0.0013675048248842359,
+    -0.028408946469426155,
+    -0.011811800301074982,
+    -0.15093353390693665,
+    1.849320406150255e-33,
+    0.0012618987821042538,
+    -0.03697635233402252,
+    -0.0376901775598526,
+    -0.06997118145227432,
+    -0.041453272104263306,
+    0.022964486852288246,
+    -0.07449080795049667,
+    -0.03017370030283928,
+    0.05519451946020126,
+    0.04710831493139267,
+    -0.010899781249463558,
+    0.011066589504480362,
+    -0.014756590127944946,
+    -0.06600260734558105,
+    -0.011939444579184055,
+    -0.08841182291507721,
+    0.045426610857248306,
+    -0.056991200894117355,
+    -0.07431912422180176,
+    -0.06051982566714287,
+    -0.001410596421919763,
+    0.0008354179444722831,
+    0.046570222824811935,
+    -0.013950207270681858,
+    0.013976932503283024,
+    0.040554214268922806,
+    0.02470143511891365,
+    -0.09090934693813324,
+    -0.05111713707447052,
+    0.022691505029797554,
+    -0.026362305507063866,
+    -0.026443416252732277,
+    -0.09539201110601425,
+    -0.01908811926841736,
+    0.03337705135345459,
+    0.016976596787571907,
+    0.060496654361486435,
+    0.008709457702934742,
+    -0.046386998146772385,
+    -0.05253473296761513,
+    -0.005433733109384775,
+    0.0535346083343029,
+    -0.028758877888321877,
+    -0.0019331143703311682,
+    -0.05728201940655708,
+    0.024508733302354813,
+    0.010299885645508766,
+    0.06390707939863205,
+    0.04411366209387779,
+    -0.101682648062706,
+    -0.01727113500237465,
+    -0.016616567969322205,
+    0.11281967908143997,
+    -0.041977137327194214,
+    -0.007871415466070175,
+    0.08213513344526291,
+    0.04680708050727844,
+    0.03986836224794388,
+    0.14064252376556396,
+    -0.007279966492205858,
+    0.023560689762234688,
+    -0.017913833260536194,
+    0.025650642812252045,
+    0.07704415172338486,
+    -0.03722330555319786,
+    -0.0159711092710495,
+    0.007999747060239315,
+    0.09922577440738678,
+    0.017615556716918945,
+    0.017765624448657036,
+    0.12059522420167923,
+    -0.08004424721002579,
+    -0.0360538549721241,
+    0.005051451735198498,
+    0.011373951099812984,
+    0.04940127208828926,
+    0.056374840438365936,
+    -0.019084010273218155,
+    -0.05493174493312836,
+    0.02470436692237854,
+    -0.03241511061787605,
+    0.0073296502232551575,
+    -0.0026515533681958914,
+    0.007733350619673729,
+    0.09644753485918045,
+    -0.05218292772769928,
+    0.024441983550786972,
+    -0.13233456015586853,
+    -0.022975677624344826,
+    0.040582865476608276,
+    0.032969728112220764,
+    0.0002543673326727003,
+    0.0008810236467979848,
+    -0.005325546953827143,
+    0.10818332433700562,
+    -1.8038537774600627e-8,
+    0.07089848816394806,
+    0.044284556061029434,
+    -0.05423048883676529,
+    -0.01277085579931736,
+    0.025580083951354027,
+    -0.02632128819823265,
+    -0.03965600207448006,
+    0.03349916264414787,
+    -0.03380249813199043,
+    0.04877227544784546,
+    0.09818147122859955,
+    -0.0023017774801701307,
+    -0.03638925403356552,
+    -0.022047491744160652,
+    0.06493483483791351,
+    0.05441894754767418,
+    0.06443865597248077,
+    -0.033103007823228836,
+    -0.07409496605396271,
+    0.09123457968235016,
+    0.011270188726484776,
+    -0.0021633103024214506,
+    0.05947108194231987,
+    -0.10535801202058792,
+    -0.05987607687711716,
+    0.0372454933822155,
+    0.005062146577984095,
+    -0.04391052946448326,
+    -0.005822719074785709,
+    0.04762553051114082,
+    -0.07941070944070816,
+    -0.0015899871941655874,
+    -0.020243270322680473,
+    0.031163450330495834,
+    -0.019816499203443527,
+    -0.041457176208496094,
+    -0.09419530630111694,
+    0.0026927171275019646,
+    0.015104739926755428,
+    0.07593302428722382,
+    -0.004454566165804863,
+    0.004529720172286034,
+    0.04623981565237045,
+    0.08975290507078171,
+    0.015394302085042,
+    0.03435632959008217,
+    0.039671797305345535,
+    -0.0835733488202095,
+    0.027560682967305183,
+    0.0667910948395729,
+    0.01886685937643051,
+    0.022830745205283165,
+    0.046026382595300674,
+    -0.03160638362169266,
+    -0.06653469800949097,
+    0.07418881356716156,
+    0.03583665192127228,
+    -0.04109018296003342,
+    -0.09584349393844604,
+    -0.029784029349684715,
+    0.08018459379673004,
+    0.0463300384581089,
+    0.0006711761234328151,
+    -0.002392515540122986
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "02_Islamism.md",
+        "start": 656,
+        "content": "overthrow the elected post-al-Nimeiry government with the help of the military. Turabi was noted for proclaiming his support for the democratic process and a liberal government before coming to power, but strict application of sharia law, torture and mass imprisonment of the opposition, and an intensification of the long-running war in southern Sudan, once in power. The NIF regime also harbored Osama bin Laden for a time (before 9/11), and worked to unify Islamist opposition to the American attack on Iraq in the 1991 Gulf War.\n\n## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other"
+      },
+      {
+        "filename": "02_Islamism.md",
+        "start": 1313,
+        "content": "indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus."
+      }
+    ],
+    "section": [
+      {
+        "filename": "02_Islamism.md",
+        "start": 1190,
+        "content": "## Fictional approval appendix\nAt the fictional Tiravel Library, it is for the Reference Steward to approve standard shelf indexes. This approval authority applies only to standard shelf indexes at Tiravel Library. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "04_Normans.md",
+        "start": 1801,
+        "content": "## Fictional approval appendix\nAt the fictional Fenora Gallery, it is for the Display Custodian to approve standard display cards. This approval authority applies only to standard display cards at Fenora Gallery. No other approval authority is described in this corpus."
+      },
+      {
+        "filename": "03_European_Union_law.md",
+        "start": 1947,
+        "content": "## Fictional approval appendix\nAt the fictional Calorin Pier, it is for the Berth Recorder to approve standard vessel rosters. This approval authority applies only to standard vessel rosters at Calorin Pier. No other approval authority is described in this corpus."
+      }
+    ]
+  }
+}

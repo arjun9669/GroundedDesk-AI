@@ -1,0 +1,26 @@
+✔ direct_sentence_valid proves exact original own-query body and vector (1.58925ms)
+✔ explicit_anchor_valid proves identity, containment and own-query arithmetic (0.222667ms)
+✔ explicit_anchor_cosine_disagreement rejects source1/anchor0 (1.00525ms)
+✔ explicit_anchor_nonfinite_or_missing never falls back to legacy lookup (1.005042ms)
+✔ explicit anchor shape is rejected before direct or clipped source routing (0.399125ms)
+✔ forged_equal_cosines fail independent saved vector arithmetic (0.830792ms)
+✔ legacy_body_id_valid proves unique containing original body without mutation (0.224042ms)
+✔ legacy_body_id_missing_wrong_or_ambiguous refuses guessed parents (0.468292ms)
+✔ legacy_body_vector_or_span_mismatch rejects wrong spans, source and vector (0.389959ms)
+✔ repeated_identical_body_contexts remain unambiguous (1.388459ms)
+✔ candidate_and_pair_context_isolation cannot borrow another clock query (1.139ms)
+✔ vectors_real_finite_nonzero384 rejects dimension, NaN and zero norms (6.061292ms)
+✔ comparison_pair_and_literal_bounds enforces original two-sided order and citations (0.812333ms)
+✔ capture_receipt_and_order rejects duplicated, missing and reordered submissions (0.437209ms)
+✔ raw_and_native_immutability keeps all captured source/anchor records untouched (0.589583ms)
+✔ native_grader_equivalence retains exact native family and Fresh64 exports (0.054083ms)
+✔ expanded literal quotation discloses actual ranking-body cosine without claiming whole-quote embedding (0.473958ms)
+✔ expanded quotes cannot cross paragraphs or policy blocks or use partial overlapping anchors (0.2565ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 181.115292

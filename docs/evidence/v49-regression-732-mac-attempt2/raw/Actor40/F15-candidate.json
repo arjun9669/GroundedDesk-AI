@@ -1,0 +1,1317 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "F15",
+  "question": "When was BSkyB's digital service launched?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "When was BSkyB's digital service launched?",
+    "expected_display": "When was BSkyB's digital service launched?",
+    "rendered_question": "When was BSkyB's digital service launched?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] # Sky (United Kingdom) ## Context 1 BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+    "sources": [
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "excerpt": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now cal",
+        "quote": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhen was BSkyB's digital service launched?\n\nSearched all files: 01_Harvard_University.md · 02_Prime_number.md · 03_Sky__United_Kingdom_.md · 04_Chloroplast.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] # Sky (United Kingdom) ## Context 1 BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.\n\nSOURCE EVIDENCE\n[1]\n03_Sky__United_Kingdom_.md\n\nText lines 1–4 (normalized extraction)\n\n# Sky (United Kingdom) ## Context 1 BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now cal\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] # Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "7d593f16-0456-4966-8109-845148679066:0",
+        "documentId": "7d593f16-0456-4966-8109-845148679066",
+        "filename": "03_Sky__United_Kingdom_.md",
+        "excerpt": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now cal",
+        "quote": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+        "score": 0.0476,
+        "lexicalScore": 10.911463969052187,
+        "semanticScore": 0.7242947968020116,
+        "matchedTerms": [
+          "bskyb",
+          "digital",
+          "service",
+          "launched"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": true,
+    "answer": "[1] BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "7d593f16-0456-4966-8109-845148679066:0",
+        "documentId": "7d593f16-0456-4966-8109-845148679066",
+        "filename": "03_Sky__United_Kingdom_.md",
+        "excerpt": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now cal",
+        "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+        "score": 0.0476,
+        "lexicalScore": 10.911463969052187,
+        "semanticScore": 0.7242947968020116,
+        "matchedTerms": [
+          "bskyb",
+          "digital",
+          "service",
+          "launched"
+        ],
+        "start": 37,
+        "end": 187
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 37,
+          "cosine": 0.8446910703485112,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "section": {
+    "answered": true,
+    "answer": "[1] BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "7d593f16-0456-4966-8109-845148679066:24",
+        "documentId": "7d593f16-0456-4966-8109-845148679066",
+        "filename": "03_Sky__United_Kingdom_.md",
+        "excerpt": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now cal",
+        "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+        "score": 0.0476,
+        "lexicalScore": 11.209139999564574,
+        "semanticScore": 0.7957942665201021,
+        "matchedTerms": [
+          "bskyb",
+          "digital",
+          "service",
+          "launched"
+        ],
+        "start": 37,
+        "end": 187
+      }
+    ],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+        "slots": {
+          "kind": "date",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 37,
+          "cosine": 0.8446910703485112,
+          "slot_supported": true,
+          "lexical_matches": 4
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "03_Sky__United_Kingdom_.md",
+        "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+        "reason": "Preserve operative or non-narrative evidence"
+      }
+    ]
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "03_Sky__United_Kingdom_.md",
+      "start": 37,
+      "content": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+      "semanticScore": 0.8446910703485112,
+      "lexicalScore": 10.519298720002181
+    },
+    {
+      "filename": "03_Sky__United_Kingdom_.md",
+      "start": 317,
+      "content": "Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now called Sky Active, BSkyB competed with the ONdigital (later ITV Digital) terrestrial offering and cable services.",
+      "semanticScore": 0.658362082072131,
+      "lexicalScore": 5.153238082387578
+    },
+    {
+      "filename": "03_Sky__United_Kingdom_.md",
+      "start": 1232,
+      "content": "However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.",
+      "semanticScore": 0.59777174461753,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Sky__United_Kingdom_.md",
+      "start": 742,
+      "content": "BSkyB has no veto over the presence of channels on their EPG, with open access being an enforced part of their operating licence from Ofcom.",
+      "semanticScore": 0.5065495194908433,
+      "lexicalScore": null
+    },
+    {
+      "filename": "03_Sky__United_Kingdom_.md",
+      "start": 883,
+      "content": "Any channel which can get carriage on a suitable beam of a satellite at 28° East is entitled to access to BSkyB's EPG for a fee, ranging from £15–100,000.",
+      "semanticScore": 0.47204962031235626,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Harvard's athletic rivalry with Yale is intense in every sport in which they meet, coming to a climax each fall in the annual football meeting, which dates back to 1875 and is usually called simply \"The Game\".",
+      "start": 35,
+      "end": 244,
+      "similarity": -0.0161042021439732,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "While Harvard's football team is no longer one of the country's best as it often was a century ago during football's early days (it won the Rose Bowl in 1920), both it and Yale have influenced the way the game is played.",
+      "start": 245,
+      "end": 465,
+      "similarity": -0.059735546383645886,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "In 1903, Harvard Stadium introduced a new era into football with the first-ever permanent reinforced concrete stadium of its kind in the country.",
+      "start": 466,
+      "end": 611,
+      "similarity": 0.03703745532789757,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "The stadium's structure actually played a role in the evolution of the college game.",
+      "start": 612,
+      "end": 696,
+      "similarity": -0.07696939744197855,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Seeking to reduce the alarming number of deaths and serious injuries in the sport, Walter Camp (former captain of the Yale football team), suggested widening the field to open up the game.",
+      "start": 697,
+      "end": 885,
+      "similarity": -0.05688465892035157,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "But the stadium was too narrow to accommodate a wider playing surface.",
+      "start": 886,
+      "end": 956,
+      "similarity": -0.07518863735692088,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "So, other steps had to be taken.",
+      "start": 957,
+      "end": 989,
+      "similarity": 0.10726520053752717,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Camp would instead support revolutionary new rules for the 1906 season.",
+      "start": 990,
+      "end": 1061,
+      "similarity": 0.009311927328401288,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "These included legalizing the forward pass, perhaps the most significant rule change in the sport's history.",
+      "start": 1062,
+      "end": 1170,
+      "similarity": 0.02317961249903581,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Harvard has purchased tracts of land in Allston, a walk across the Charles River from Cambridge, with the intent of major expansion southward.",
+      "start": 1185,
+      "end": 1327,
+      "similarity": -0.008148381415016932,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "The university now owns approximately fifty percent more land in Allston than in Cambridge.",
+      "start": 1328,
+      "end": 1419,
+      "similarity": -0.0876295011800806,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Proposals to connect the Cambridge campus with the new Allston campus include new and enlarged bridges, a shuttle service and/or a tram.",
+      "start": 1420,
+      "end": 1556,
+      "similarity": -0.03018172493982331,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "Plans also call for sinking part of Storrow Drive (at Harvard's expense) for replacement with park land and pedestrian access to the Charles River, as well as the construction of bike paths, and buildings throughout the Allston campus.",
+      "start": 1557,
+      "end": 1792,
+      "similarity": -0.03518929658513209,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "The institution asserts that such expansion will benefit not only the school, but surrounding community, pointing to such features as the enhanced transit infrastructure, possible shuttles open to the public, and park space which will also be publicly accessible.",
+      "start": 1793,
+      "end": 2056,
+      "similarity": -0.0009940284467717187,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "At the fictional Velora Annex, it is for the Archive Steward to approve routine ledger filings.",
+      "start": 2089,
+      "end": 2184,
+      "similarity": 0.12523449989680516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "This approval authority applies only to routine ledger filings at Velora Annex.",
+      "start": 2185,
+      "end": 2264,
+      "similarity": 0.04922271157554334,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "806aba7d-d064-4195-8f48-5722479d385e",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 2265,
+      "end": 2321,
+      "similarity": 0.026013163459813603,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "The evolutionary strategy used by cicadas of the genus Magicicada make use of prime numbers.",
+      "start": 29,
+      "end": 121,
+      "similarity": 0.037469326436793106,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "These insects spend most of their lives as grubs underground.",
+      "start": 122,
+      "end": 183,
+      "similarity": -0.001858635620585241,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "They only pupate and then emerge from their burrows after 7, 13 or 17 years, at which point they fly about, breed, and then die after a few weeks at most.",
+      "start": 184,
+      "end": 338,
+      "similarity": 0.015526152123020845,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "The logic for this is believed to be that the prime number intervals between emergences make it very difficult for predators to evolve that could specialize as predators on Magicicadas.",
+      "start": 339,
+      "end": 524,
+      "similarity": -0.04027516945782505,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "If Magicicadas appeared at a non-prime number intervals, say every 12 years, then predators appearing every 2, 3, 4, 6, or 12 years would be sure to meet them.",
+      "start": 525,
+      "end": 684,
+      "similarity": 0.04412689513978732,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "Over a 200-year period, average predator populations during hypothetical outbreaks of 14- and 15-year cicadas would be up to 2% higher than during outbreaks of 13- and 17-year cicadas.",
+      "start": 685,
+      "end": 869,
+      "similarity": -0.028592141235701408,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "Though small, this advantage appears to have been enough to drive natural selection in favour of a prime-numbered life-cycle for these insects.",
+      "start": 870,
+      "end": 1013,
+      "similarity": 0.03299563553175098,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "Prime numbers have influenced many artists and writers.",
+      "start": 1028,
+      "end": 1083,
+      "similarity": 0.06263715473881233,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "The French composer Olivier Messiaen used prime numbers to create ametrical music through \"natural phenomena\".",
+      "start": 1084,
+      "end": 1194,
+      "similarity": 0.0678588233498865,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "In works such as La Nativité du Seigneur (1935) and Quatre études de rythme (1949–50), he simultaneously employs motifs with lengths given by different prime numbers to create unpredictable rhythms: the primes 41, 43, 47 and 53 appear in the third étude, \"Neumes rythmiques\".",
+      "start": 1195,
+      "end": 1470,
+      "similarity": -0.03265191244422828,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "According to Messiaen this way of composing was \"inspired by the movements of nature, movements of free and unequal durations\".",
+      "start": 1471,
+      "end": 1598,
+      "similarity": -0.030816685402544005,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "At the fictional Nerith Hall, it is for the Workshop Registrar to approve routine kit labels.",
+      "start": 1631,
+      "end": 1724,
+      "similarity": 0.10478307879114668,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "This approval authority applies only to routine kit labels at Nerith Hall.",
+      "start": 1725,
+      "end": 1799,
+      "similarity": 0.05741469350576123,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "db269afa-3c63-44a8-b77b-8c7db071eaef",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1800,
+      "end": 1856,
+      "similarity": 0.026013163459813603,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+      "start": 37,
+      "end": 187,
+      "similarity": 0.8446910703485112,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services.",
+      "start": 188,
+      "end": 316,
+      "similarity": 0.30636587437193086,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now called Sky Active, BSkyB competed with the ONdigital (later ITV Digital) terrestrial offering and cable services.",
+      "start": 317,
+      "end": 577,
+      "similarity": 0.658362082072131,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "Within 30 days, over 100,000 digiboxes had been sold, which help bolstered BSkyB's decision to give away free digiboxes and minidishes from May 1999.",
+      "start": 578,
+      "end": 727,
+      "similarity": 0.468918027492402,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "BSkyB has no veto over the presence of channels on their EPG, with open access being an enforced part of their operating licence from Ofcom.",
+      "start": 742,
+      "end": 882,
+      "similarity": 0.5065495194908433,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "Any channel which can get carriage on a suitable beam of a satellite at 28° East is entitled to access to BSkyB's EPG for a fee, ranging from £15–100,000.",
+      "start": 883,
+      "end": 1037,
+      "similarity": 0.47204962031235626,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "Third-party channels which opt for encryption receive discounts ranging from reduced price to free EPG entries, free carriage on a BSkyB leased transponder, or actual payment for being carried.",
+      "start": 1038,
+      "end": 1231,
+      "similarity": 0.428583490809457,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.",
+      "start": 1232,
+      "end": 1363,
+      "similarity": 0.59777174461753,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "At the fictional Solune Station, it is for the Harbor Cataloguer to approve routine berth charts.",
+      "start": 1396,
+      "end": 1493,
+      "similarity": 0.10664834157725189,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "This approval authority applies only to routine berth charts at Solune Station.",
+      "start": 1494,
+      "end": 1573,
+      "similarity": 0.07463278157614398,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "7d593f16-0456-4966-8109-845148679066",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1574,
+      "end": 1630,
+      "similarity": 0.026013163459813603,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "Chloroplasts' main role is to conduct photosynthesis, where the photosynthetic pigment chlorophyll captures the energy from sunlight and converts it and stores it in the energy-storage molecules ATP and NADPH while freeing oxygen from water.",
+      "start": 28,
+      "end": 269,
+      "similarity": -0.1375400562325332,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "They then use the ATP and NADPH to make organic molecules from carbon dioxide in a process known as the Calvin cycle.",
+      "start": 270,
+      "end": 387,
+      "similarity": -0.040711656583487035,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "Chloroplasts carry out a number of other functions, including fatty acid synthesis, much amino acid synthesis, and the immune response in plants.",
+      "start": 388,
+      "end": 533,
+      "similarity": -0.1385395985944911,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "The number of chloroplasts per cell varies from 1 in algae up to 100 in plants like Arabidopsis and wheat.",
+      "start": 534,
+      "end": 640,
+      "similarity": -0.1394506703661463,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "There are two types of thylakoids—granal thylakoids, which are arranged in grana, and stromal thylakoids, which are in contact with the stroma.",
+      "start": 655,
+      "end": 798,
+      "similarity": -0.046672487987011874,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "Granal thylakoids are pancake-shaped circular disks about 300–600 nanometers in diameter.",
+      "start": 799,
+      "end": 888,
+      "similarity": 0.02086899920997552,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "Stromal thylakoids are helicoid sheets that spiral around grana.",
+      "start": 889,
+      "end": 953,
+      "similarity": -0.004594819807254925,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "The flat tops and bottoms of granal thylakoids contain only the relatively flat photosystem II protein complex.",
+      "start": 954,
+      "end": 1065,
+      "similarity": -0.009197616076491336,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "This allows them to stack tightly, forming grana with many layers of tightly appressed membrane, called granal membrane, increasing stability and surface area for light capture.",
+      "start": 1066,
+      "end": 1243,
+      "similarity": -0.03555830603404717,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "At the fictional Tavora House, it is for the Gallery Clerk to approve routine exhibit tags.",
+      "start": 1276,
+      "end": 1367,
+      "similarity": 0.008311474777456467,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "This approval authority applies only to routine exhibit tags at Tavora House.",
+      "start": 1368,
+      "end": 1445,
+      "similarity": -0.026810152784472473,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "881c71c5-d434-45f4-af53-f60cc29ffd02",
+      "value": "No other approval authority is described in this corpus.",
+      "start": 1446,
+      "end": 1502,
+      "similarity": 0.026013163459813603,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "7d593f16-0456-4966-8109-845148679066:0",
+          "documentId": "7d593f16-0456-4966-8109-845148679066",
+          "filename": "03_Sky__United_Kingdom_.md",
+          "excerpt": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now cal",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "score": 0.0476,
+          "lexicalScore": 10.911463969052187,
+          "semanticScore": 0.7242947968020116,
+          "matchedTerms": [
+            "bskyb",
+            "digital",
+            "service",
+            "launched"
+          ],
+          "start": 37,
+          "end": 187
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 37,
+            "cosine": 0.8446910703485112,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "7d593f16-0456-4966-8109-845148679066:24",
+          "documentId": "7d593f16-0456-4966-8109-845148679066",
+          "filename": "03_Sky__United_Kingdom_.md",
+          "excerpt": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now cal",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "score": 0.0476,
+          "lexicalScore": 11.209139999564574,
+          "semanticScore": 0.7957942665201021,
+          "matchedTerms": [
+            "bskyb",
+            "digital",
+            "service",
+            "launched"
+          ],
+          "start": 37,
+          "end": 187
+        }
+      ],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 37,
+            "cosine": 0.8446910703485112,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "reason": "Preserve operative or non-narrative evidence"
+        }
+      ]
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "7d593f16-0456-4966-8109-845148679066:0",
+          "documentId": "7d593f16-0456-4966-8109-845148679066",
+          "filename": "03_Sky__United_Kingdom_.md",
+          "excerpt": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now cal",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "score": 0.0476,
+          "lexicalScore": 10.911463969052187,
+          "semanticScore": 0.7242947968020116,
+          "matchedTerms": [
+            "bskyb",
+            "digital",
+            "service",
+            "launched"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 37,
+            "cosine": 0.8446910703485112,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "7d593f16-0456-4966-8109-845148679066:24",
+          "documentId": "7d593f16-0456-4966-8109-845148679066",
+          "filename": "03_Sky__United_Kingdom_.md",
+          "excerpt": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now cal",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "score": 0.0476,
+          "lexicalScore": 11.209139999564574,
+          "semanticScore": 0.7957942665201021,
+          "matchedTerms": [
+            "bskyb",
+            "digital",
+            "service",
+            "launched"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "slots": {
+            "kind": "date",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 37,
+            "cosine": 0.8446910703485112,
+            "slot_supported": true,
+            "lexical_matches": 4
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "03_Sky__United_Kingdom_.md",
+          "quote": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.07841471582651138,
+    -0.021026214584708214,
+    -0.10295558720827103,
+    -0.036964304745197296,
+    -0.019501857459545135,
+    0.01698613166809082,
+    -0.02238081954419613,
+    0.04691312089562416,
+    -0.06864552944898605,
+    0.03090655617415905,
+    -0.029150202870368958,
+    0.08878501504659653,
+    0.022907229140400887,
+    -0.027756990864872932,
+    0.00885973870754242,
+    0.03580209240317345,
+    0.01948714815080166,
+    -0.11474639177322388,
+    0.05330844968557358,
+    -0.01239377073943615,
+    -0.05717780068516731,
+    0.025803767144680023,
+    -0.014307276345789433,
+    0.01739063300192356,
+    0.04665231704711914,
+    -0.09227626770734787,
+    0.026244333013892174,
+    -0.013236038386821747,
+    0.03684508427977562,
+    -0.004416703712195158,
+    0.026429910212755203,
+    0.007153731305152178,
+    0.0674738883972168,
+    0.017880823463201523,
+    0.01151388417929411,
+    -0.036513976752758026,
+    0.10910190641880035,
+    -0.0012682692613452673,
+    -0.07588380575180054,
+    0.004488378297537565,
+    0.04665315896272659,
+    -0.03694754093885422,
+    -0.09291370958089828,
+    0.05286017060279846,
+    0.03135839104652405,
+    0.04550416022539139,
+    -0.025032389909029007,
+    0.017014559358358383,
+    -0.0033136934507638216,
+    -0.03430444002151489,
+    -0.003244624240323901,
+    -0.08237525075674057,
+    0.004599560517817736,
+    0.08899641036987305,
+    0.0013024547370150685,
+    -0.06410832703113556,
+    0.010563918389379978,
+    0.06510470062494278,
+    0.008239352144300938,
+    0.008834552951157093,
+    0.01606486365199089,
+    -0.002779274480417371,
+    -0.028632087633013725,
+    0.029081866145133972,
+    0.0802437961101532,
+    0.12487183511257172,
+    -0.05268649756908417,
+    -0.023563018068671227,
+    0.0205120537430048,
+    -0.07830342650413513,
+    -0.03136627748608589,
+    -0.0354008674621582,
+    0.005193868651986122,
+    0.08124595880508423,
+    -0.07043620944023132,
+    -0.08235002309083939,
+    0.07333550602197647,
+    0.018182527273893356,
+    0.040482133626937866,
+    -0.03662176802754402,
+    -0.0001422511413693428,
+    -0.09399523586034775,
+    -0.020286161452531815,
+    0.05984155461192131,
+    -0.0586400032043457,
+    -0.009212871082127094,
+    -0.13134171068668365,
+    0.014169922098517418,
+    -0.007310678716748953,
+    -0.045147303491830826,
+    0.043522145599126816,
+    0.1009715348482132,
+    -0.0013708578189834952,
+    0.004880026914179325,
+    -0.08331246674060822,
+    -0.10124482959508896,
+    0.003274935996159911,
+    0.013071740046143532,
+    0.07543106377124786,
+    0.025423603132367134,
+    -0.010949562303721905,
+    0.021543266251683235,
+    -0.006059533450752497,
+    -0.0803539901971817,
+    -0.06525126844644547,
+    -0.018373433500528336,
+    0.019715096801519394,
+    0.028571415692567825,
+    0.0194831695407629,
+    0.0076886615715920925,
+    -0.04292423650622368,
+    0.0026740406174212694,
+    0.0070518613792955875,
+    -0.028012854978442192,
+    -0.057564496994018555,
+    -0.026874251663684845,
+    -0.06530945003032684,
+    0.026103977113962173,
+    0.08304737508296967,
+    -0.11974738538265228,
+    0.03022165223956108,
+    0.057904306799173355,
+    -0.018326489254832268,
+    -0.025123130530118942,
+    -0.08370160311460495,
+    0.024754134938120842,
+    0.022391926497220993,
+    -3.805090641975099e-33,
+    0.0332772396504879,
+    0.05966170132160187,
+    0.018526924774050713,
+    -0.010142308659851551,
+    -0.02503017894923687,
+    0.003876049304381013,
+    -0.01593976840376854,
+    -0.053856365382671356,
+    -0.0655202865600586,
+    0.07115732133388519,
+    -0.003718655090779066,
+    0.0537518709897995,
+    -0.01567431166768074,
+    -0.0855925977230072,
+    0.05363043025135994,
+    -0.08640119433403015,
+    -0.07274974882602692,
+    0.042001668363809586,
+    0.0708889588713646,
+    0.05178657919168472,
+    0.057382550090551376,
+    0.011462586000561714,
+    -0.03684895113110542,
+    0.022252511233091354,
+    0.1565101593732834,
+    -0.014249822124838829,
+    0.007860667072236538,
+    0.033029813319444656,
+    0.11548170447349548,
+    0.03138090297579765,
+    -0.03447016328573227,
+    0.05067876726388931,
+    -0.07898291945457458,
+    -0.02843211032450199,
+    -0.00040108966641128063,
+    -0.01715082675218582,
+    -0.05811116099357605,
+    -0.06878962367773056,
+    -0.06471112370491028,
+    -0.0752706453204155,
+    0.09752342849969864,
+    -0.030815398320555687,
+    -0.07720368355512619,
+    -0.005508761387318373,
+    0.006088573485612869,
+    0.05869311839342117,
+    -0.030669638887047768,
+    0.03627466410398483,
+    0.07681592553853989,
+    0.0005619502626359463,
+    -0.04547689110040665,
+    -0.009139038622379303,
+    -0.059385836124420166,
+    0.07705030590295792,
+    0.06703643500804901,
+    -0.0036410430911928415,
+    0.0517142117023468,
+    -0.03766058385372162,
+    0.046919576823711395,
+    0.05710649862885475,
+    0.1296718716621399,
+    -0.004185959231108427,
+    0.034327879548072815,
+    -0.02028810791671276,
+    0.00004833728598896414,
+    -0.0667177364230156,
+    0.10772639513015747,
+    0.016241926699876785,
+    -0.08461231738328934,
+    -0.08054154366254807,
+    -0.0037826618645340204,
+    -0.009298991411924362,
+    -0.004242013208568096,
+    -0.06386034935712814,
+    -0.0364995077252388,
+    -0.038745906203985214,
+    -0.00929378904402256,
+    0.009422135539352894,
+    -0.07201538980007172,
+    0.017260469496250153,
+    -0.0004550920566543937,
+    -0.07670670002698898,
+    0.03932655230164528,
+    0.014395704492926598,
+    0.06056986376643181,
+    0.09309784322977066,
+    0.0023406720720231533,
+    0.00408438453450799,
+    -0.07389785349369049,
+    -0.017802594229578972,
+    -0.050656113773584366,
+    -0.0199683029204607,
+    -0.04686685651540756,
+    0.09939593076705933,
+    -0.0015576760051771998,
+    2.61581913001919e-33,
+    -0.055032044649124146,
+    -0.02434501051902771,
+    -0.023500755429267883,
+    0.06827905774116516,
+    0.025457387790083885,
+    -0.07552537322044373,
+    0.022557370364665985,
+    0.04486183077096939,
+    0.047220587730407715,
+    0.06327900290489197,
+    0.07868586480617523,
+    -0.025299454107880592,
+    -0.027028024196624756,
+    -0.01162441074848175,
+    0.04639329016208649,
+    0.03118135593831539,
+    0.013120857998728752,
+    -0.008564187213778496,
+    -0.04206365346908569,
+    -0.05016675591468811,
+    0.01697351410984993,
+    0.06296617537736893,
+    -0.0248293224722147,
+    0.03880447894334793,
+    0.007873062044382095,
+    0.03908703848719597,
+    0.0579957477748394,
+    0.10434364527463913,
+    0.012482831254601479,
+    0.08705627918243408,
+    0.025852449238300323,
+    0.015083596110343933,
+    -0.04886045679450035,
+    0.044848937541246414,
+    -0.02590853162109852,
+    0.016981586813926697,
+    0.04068377614021301,
+    0.010218998417258263,
+    0.025659434497356415,
+    -0.009891021996736526,
+    -0.022544408217072487,
+    0.04632530361413956,
+    -0.13512028753757477,
+    0.03603314608335495,
+    -0.03558575361967087,
+    0.022868724539875984,
+    -0.09070491045713425,
+    0.050062235444784164,
+    0.04572286829352379,
+    -0.05173030495643616,
+    0.0021457714028656483,
+    -0.0018871166976168752,
+    0.08534450083971024,
+    0.01304661575704813,
+    -0.08181959390640259,
+    0.049720387905836105,
+    -0.024115659296512604,
+    0.09656397998332977,
+    0.004792356863617897,
+    0.011386883445084095,
+    0.07977470010519028,
+    -0.0018354029161855578,
+    -0.020355887711048126,
+    -0.021648939698934555,
+    -0.04017740115523338,
+    -0.0197541955858469,
+    0.08622769266366959,
+    0.05600850284099579,
+    0.017845330759882927,
+    -0.03991273045539856,
+    0.057461708784103394,
+    0.05619645118713379,
+    -0.027900703251361847,
+    0.0716138556599617,
+    -0.08776732534170151,
+    0.05017649009823799,
+    -0.026457933709025383,
+    -0.008500596508383751,
+    -0.07618822157382965,
+    0.012570547871291637,
+    -0.06453517824411392,
+    0.11321007460355759,
+    0.04732409119606018,
+    0.07535450905561447,
+    -0.010123636573553085,
+    -0.0075836749747395515,
+    -0.009068159386515617,
+    -0.017429547384381294,
+    -0.06149335205554962,
+    -0.025716381147503853,
+    -0.08018248528242111,
+    -0.04048480838537216,
+    -0.05689789354801178,
+    0.12686488032341003,
+    -0.033930011093616486,
+    -1.5761095539801317e-8,
+    -0.024838130921125412,
+    0.026875058189034462,
+    -0.010747391730546951,
+    -0.02261497639119625,
+    0.03958659619092941,
+    0.008774724788963795,
+    0.0388675220310688,
+    -0.003985656425356865,
+    -0.016567854210734367,
+    0.0038329462986439466,
+    -0.054566770792007446,
+    -0.002142350422218442,
+    -0.03957334905862808,
+    0.055854953825473785,
+    0.036705419421195984,
+    -0.00584997795522213,
+    0.0027123820036649704,
+    -0.027279451489448547,
+    -0.001268774620257318,
+    0.010677256621420383,
+    0.13833898305892944,
+    -0.021737197414040565,
+    0.09309441596269608,
+    -0.04577462375164032,
+    -0.010770385153591633,
+    0.01835092529654503,
+    -0.061108529567718506,
+    0.05590098723769188,
+    0.08630689233541489,
+    -0.010265014134347439,
+    0.006571730133146048,
+    0.045750658959150314,
+    0.0027296319603919983,
+    -0.028370458632707596,
+    -0.00400636438280344,
+    0.05505264922976494,
+    -0.10710494965314865,
+    0.046561434864997864,
+    0.002661297097802162,
+    -0.03931558132171631,
+    0.00690168933942914,
+    -0.011004437692463398,
+    -0.022155147045850754,
+    0.055569130927324295,
+    -0.0396483950316906,
+    0.0020602517761290073,
+    -0.09019407629966736,
+    0.029306145384907722,
+    0.0565120130777359,
+    -0.03064408153295517,
+    0.004082434810698032,
+    0.018590211868286133,
+    -0.029369931668043137,
+    0.029190650209784508,
+    0.0040496219880878925,
+    -0.07598612457513809,
+    -0.09321364760398865,
+    -0.007291346788406372,
+    -0.0006009869975969195,
+    0.05830332636833191,
+    -0.0031841215677559376,
+    -0.07875192910432816,
+    0.005116439890116453,
+    0.015288952738046646
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "start": 0,
+        "content": "# Sky (United Kingdom)\n\n## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now called Sky Active, BSkyB competed with the ONdigital (later ITV Digital) terrestrial offering and cable services. Within 30 days, over 100,000 digiboxes had been sold, which help bolstered BSkyB's decision to give away free digiboxes and minidishes from May 1999.\n\n## Context 2\nBSkyB has no veto"
+      },
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "start": 659,
+        "content": "s decision to give away free digiboxes and minidishes from May 1999.\n\n## Context 2\nBSkyB has no veto over the presence of channels on their EPG, with open access being an enforced part of their operating licence from Ofcom. Any channel which can get carriage on a suitable beam of a satellite at 28° East is entitled to access to BSkyB's EPG for a fee, ranging from £15–100,000. Third-party channels which opt for encryption receive discounts ranging from reduced price to free EPG entries, free carriage on a BSkyB leased transponder, or actual payment for being carried. However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality.\n\n## Fictional approval appendix\nAt the fictional Solune"
+      }
+    ],
+    "section": [
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "start": 24,
+        "content": "## Context 1\nBSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now called Sky Active, BSkyB competed with the ONdigital (later ITV Digital) terrestrial offering and cable services. Within 30 days, over 100,000 digiboxes had been sold, which help bolstered BSkyB's decision to give away free digiboxes and minidishes from May 1999."
+      },
+      {
+        "filename": "03_Sky__United_Kingdom_.md",
+        "start": 729,
+        "content": "## Context 2\nBSkyB has no veto over the presence of channels on their EPG, with open access being an enforced part of their operating licence from Ofcom. Any channel which can get carriage on a suitable beam of a satellite at 28° East is entitled to access to BSkyB's EPG for a fee, ranging from £15–100,000. Third-party channels which opt for encryption receive discounts ranging from reduced price to free EPG entries, free carriage on a BSkyB leased transponder, or actual payment for being carried. However, even in this case, BSkyB does not carry any control over the channel's content or carriage issues such as picture quality."
+      }
+    ]
+  }
+}

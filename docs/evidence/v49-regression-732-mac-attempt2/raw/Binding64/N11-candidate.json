@@ -1,0 +1,1444 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "N11",
+  "question": "How many segments did Mira Solven mount at Velora Audio Archive?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "How many segments did Mira Solven mount at Velora Audio Archive?",
+    "expected_display": "How many segments did Mira Solven mount at Velora Audio Archive?",
+    "rendered_question": "How many segments did Mira Solven mount at Velora Audio Archive?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] ## Fictional completed tasks At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+    "sources": [
+      {
+        "filename": "01_Huguenot.md",
+        "excerpt": "by Napoleon in 1806-07. Many of their descendents rose to positions of prominence. Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.\n\n## Fictional completed tasks\nAt the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days.",
+        "quote": "## Fictional completed tasks\nAt the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nHow many segments did Mira Solven mount at Velora Audio Archive?\n\nSearched all files: 01_Huguenot.md · 02_Victoria__Australia_.md · 03_Geology.md · 04_Packet_switching.md\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] ## Fictional completed tasks At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.\n\nSOURCE EVIDENCE\n[1]\n01_Huguenot.md\n\nText lines 9–10 (normalized extraction)\n\nby Napoleon in 1806-07. Many of their descendents rose to positions of prominence. Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden. ## Fictional completed tasks At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations. ## Fictional retention At Velora Audio Archive, listening cards are kept for 45 days.\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] ## Fictional completed tasks\nAt the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "4ab9186d-ae18-401d-a9bf-0434151432b5:1312",
+        "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+        "filename": "01_Huguenot.md",
+        "excerpt": "by Napoleon in 1806-07. Many of their descendents rose to positions of prominence. Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.\n\n## Fictional completed tasks\nAt the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days.",
+        "quote": "## Fictional completed tasks\nAt the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+        "score": 0.0476,
+        "lexicalScore": 15.25019686423148,
+        "semanticScore": 0.6457193726109727,
+        "matchedTerms": [
+          "segments",
+          "mira",
+          "solven",
+          "velora",
+          "audio",
+          "archive"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Huguenot.md",
+        "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1288,
+          "cosine": 0.7381245708948334,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Huguenot.md",
+        "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Huguenot.md",
+        "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "relation_guard_diagnostics": {
+      "route": "No literal requested actor/action/count clause"
+    }
+  },
+  "section": {
+    "answered": false,
+    "answer": "I can't find this in the provided documents.",
+    "sources": [],
+    "mode": "Experimental v38 scoped policies",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+    "experiment": "V17 isolated budget clause preflight; production unchanged",
+    "coverage_diagnostics": [
+      {
+        "document": "01_Huguenot.md",
+        "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+        "slots": {
+          "kind": "count",
+          "predicate": null,
+          "years": []
+        },
+        "reason": "Keep prior: no sufficient bounded gain",
+        "selected": {
+          "start": 1288,
+          "cosine": 0.7381245708948334,
+          "slot_supported": true,
+          "lexical_matches": 6
+        }
+      }
+    ],
+    "relationship_diagnostics": [
+      {
+        "part": 0,
+        "document": "01_Huguenot.md",
+        "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+        "reason": "Keep prior: unhandled or protected"
+      }
+    ],
+    "body_diagnostics": [
+      {
+        "document": "01_Huguenot.md",
+        "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+        "reason": "Complete bounded narrative paragraph"
+      }
+    ],
+    "relation_guard_diagnostics": {
+      "route": "No literal requested actor/action/count clause"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Huguenot.md",
+      "start": 1288,
+      "content": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+      "semanticScore": 0.7381245708948334,
+      "lexicalScore": 16.785269327405256
+    },
+    {
+      "filename": "01_Huguenot.md",
+      "start": 1408,
+      "content": "Mira Solven inspected 19 segments.",
+      "semanticScore": 0.6395565645483888,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Huguenot.md",
+      "start": 1376,
+      "content": "Taro Ilven mounted 34 segments.",
+      "semanticScore": 0.4906932614866718,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Huguenot.md",
+      "start": 1800,
+      "content": "At Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day.",
+      "semanticScore": 0.4709066310881968,
+      "lexicalScore": null
+    },
+    {
+      "filename": "01_Huguenot.md",
+      "start": 1593,
+      "content": "At Velora Audio Archive, listening cards are kept for 45 days.",
+      "semanticScore": 0.39889012651763095,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "The exodus of Huguenots from France created a brain drain, as many Huguenots had occupied important places in society.",
+      "start": 32,
+      "end": 150,
+      "similarity": -0.027123842840186114,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "The kingdom did not fully recover for years.",
+      "start": 151,
+      "end": 195,
+      "similarity": 0.11855924096414865,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "The French crown's refusal to allow non-Catholics to settle in New France may help to explain that colony's slow rate of population growth compared to that of the neighbouring British colonies, which opened settlement to religious dissenters.",
+      "start": 196,
+      "end": 438,
+      "similarity": -0.1521157664610323,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "By the time of the French and Indian War (the North American front of the Seven Years' War), a sizeable population of Huguenot descent lived in the British colonies, and many participated in the British defeat of New France in 1759-60.",
+      "start": 439,
+      "end": 674,
+      "similarity": 0.019480442911747057,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "In Berlin, the Huguenots created two new neighbourhoods: Dorotheenstadt and Friedrichstadt.",
+      "start": 696,
+      "end": 787,
+      "similarity": 0.07558553154294816,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "By 1700, one-fifth of the city's population was French speaking.",
+      "start": 788,
+      "end": 852,
+      "similarity": 0.09597298541881882,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "The Berlin Huguenots preserved the French language in their church services for nearly a century.",
+      "start": 853,
+      "end": 950,
+      "similarity": -0.002162209889042724,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "They ultimately decided to switch to German in protest against the occupation of Prussia by Napoleon in 1806-07.",
+      "start": 951,
+      "end": 1063,
+      "similarity": -0.028681486304175458,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "Many of their descendents rose to positions of prominence.",
+      "start": 1064,
+      "end": 1122,
+      "similarity": 0.04458407096677495,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.",
+      "start": 1123,
+      "end": 1257,
+      "similarity": 0.02192859695411735,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+      "start": 1288,
+      "end": 1375,
+      "similarity": 0.7381245708948334,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "Taro Ilven mounted 34 segments.",
+      "start": 1376,
+      "end": 1407,
+      "similarity": 0.4906932614866718,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "Mira Solven inspected 19 segments.",
+      "start": 1408,
+      "end": 1442,
+      "similarity": 0.6395565645483888,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1443,
+      "end": 1506,
+      "similarity": 0.11903534283203131,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1507,
+      "end": 1568,
+      "similarity": 0.17769212071319943,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "At Velora Audio Archive, listening cards are kept for 45 days.",
+      "start": 1593,
+      "end": 1655,
+      "similarity": 0.39889012651763095,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.",
+      "start": 1656,
+      "end": 1771,
+      "similarity": 0.011900387972132635,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "At Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day.",
+      "start": 1800,
+      "end": 1900,
+      "similarity": 0.4709066310881968,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "At or after 14:00, send it on the next operating day.",
+      "start": 1901,
+      "end": 1954,
+      "similarity": 0.11512015911482902,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+      "value": "If the rights review is unresolved, do not send the copy until that review closes.",
+      "start": 1955,
+      "end": 2037,
+      "similarity": 0.09213085083315055,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "The Mallee and upper Wimmera are Victoria's warmest regions with hot winds blowing from nearby semi-deserts.",
+      "start": 44,
+      "end": 152,
+      "similarity": 0.07756429137536816,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "Average temperatures exceed 32 °C (90 °F) during summer and 15 °C (59 °F) in winter.",
+      "start": 153,
+      "end": 237,
+      "similarity": -0.14125079193069467,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "Except at cool mountain elevations, the inland monthly temperatures are 2–7 °C (4–13 °F) warmer than around Melbourne (see chart).",
+      "start": 238,
+      "end": 368,
+      "similarity": -0.06415305846030886,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "Victoria's highest maximum temperature since World War II, of 48.8 °C (119.8 °F) was recorded in Hopetoun on 7 February 2009, during the 2009 southeastern Australia heat wave.",
+      "start": 369,
+      "end": 544,
+      "similarity": 0.0014193093732693444,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "During 2003–04, the gross value of Victorian agricultural production increased by 17% to $8.7 billion.",
+      "start": 566,
+      "end": 668,
+      "similarity": 0.004644171958239598,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "This represented 24% of national agricultural production total gross value.",
+      "start": 669,
+      "end": 744,
+      "similarity": 0.059884321556245394,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "As of 2004, an estimated 32,463 farms occupied around 136,000 square kilometres (52,500 sq mi) of Victorian land.",
+      "start": 745,
+      "end": 858,
+      "similarity": 0.052663273197368556,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "This comprises more than 60% of the state's total land surface.",
+      "start": 859,
+      "end": 922,
+      "similarity": 0.025505775715919315,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "Victorian farms range from small horticultural outfits to large-scale livestock and grain productions.",
+      "start": 923,
+      "end": 1025,
+      "similarity": -0.01645054952967812,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "A quarter of farmland is used to grow consumable crops.",
+      "start": 1026,
+      "end": 1081,
+      "similarity": 0.01248478842848149,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "At the fictional Nerith Sky Workshop, Lena Corven completed a 38-plate numbering run.",
+      "start": 1112,
+      "end": 1197,
+      "similarity": 0.28843660358656725,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "Ivo Darven polished 52 plates.",
+      "start": 1198,
+      "end": 1228,
+      "similarity": 0.1863654266124795,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "Lena Corven photographed 16 plates.",
+      "start": 1229,
+      "end": 1264,
+      "similarity": 0.26173976148206,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1265,
+      "end": 1328,
+      "similarity": 0.11903534283203131,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1329,
+      "end": 1390,
+      "similarity": 0.17769212071319943,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "At Nerith Sky Workshop, observation cards are kept for 70 days.",
+      "start": 1415,
+      "end": 1478,
+      "similarity": 0.16912084795590338,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "If a coordinate review is open, retain the affected cards until the review is closed, even after the 70-day period.",
+      "start": 1479,
+      "end": 1594,
+      "similarity": 0.06079025788375083,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "At Nerith Sky Workshop, a public copy request received before 15:30 is sent the same operating day.",
+      "start": 1623,
+      "end": 1722,
+      "similarity": 0.2045181951844202,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "At or after 15:30, send it on the next operating day.",
+      "start": 1723,
+      "end": 1776,
+      "similarity": 0.12255143110587287,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "3c69b15c-3781-46d5-96ac-e49144831a92",
+      "value": "If the publication review is unresolved, do not send the copy until that review closes.",
+      "start": 1777,
+      "end": 1864,
+      "similarity": 0.08295825540306259,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "Some modern scholars, such as Fielding H.",
+      "start": 31,
+      "end": 72,
+      "similarity": 0.07426956361463448,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "Garrison, are of the opinion that the origin of the science of geology can be traced to Persia after the Muslim conquests had come to an end.",
+      "start": 73,
+      "end": 214,
+      "similarity": 0.13680339333301253,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "Abu al-Rayhan al-Biruni (973–1048 CE) was one of the earliest Persian geologists, whose works included the earliest writings on the geology of India, hypothesizing that the Indian subcontinent was once a sea.",
+      "start": 215,
+      "end": 423,
+      "similarity": 0.2207772839652294,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "Drawing from Greek and Indian scientific literature that were not destroyed by the Muslim conquests, the Persian scholar Ibn Sina (Avicenna, 981–1037) proposed detailed explanations for the formation of mountains, the origin of earthquakes, and other topics central to modern geology, which provided an essential foundation for the later development of the science.",
+      "start": 424,
+      "end": 789,
+      "similarity": 0.2911576648123137,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "In China, the polymath Shen Kuo (1031–1095) formulated a hypothesis for the process of land formation: based on his observation of fossil animal shells in a geological stratum in a mountain hundreds of miles from the ocean, he inferred that the land was formed by erosion of the mountains and by deposition of silt.",
+      "start": 790,
+      "end": 1105,
+      "similarity": 0.034264869680011696,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "Seismologists can use the arrival times of seismic waves in reverse to image the interior of the Earth.",
+      "start": 1127,
+      "end": 1230,
+      "similarity": 0.15751650132885378,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "Early advances in this field showed the existence of a liquid outer core (where shear waves were not able to propagate) and a dense solid inner core.",
+      "start": 1231,
+      "end": 1380,
+      "similarity": 0.11802690054574089,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "These advances led to the development of a layered model of the Earth, with a crust and lithosphere on top, the mantle below (separated within itself by seismic discontinuities at 410 and 660 kilometers), and the outer core and inner core below that.",
+      "start": 1381,
+      "end": 1631,
+      "similarity": 0.08895296889751628,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "More recently, seismologists have been able to create detailed images of wave speeds inside the earth in the same way a doctor images a body in a CT scan.",
+      "start": 1632,
+      "end": 1786,
+      "similarity": 0.13541315642738921,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "These images have led to a much more detailed view of the interior of the Earth, and have replaced the simplified layered model with a much more dynamic model.",
+      "start": 1787,
+      "end": 1946,
+      "similarity": 0.07587648936437408,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "At the fictional Caldrin Rock Imaging Room, Nira Telven completed a 43-frame marking run.",
+      "start": 1977,
+      "end": 2066,
+      "similarity": 0.30712130162153234,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "Olan Merven printed 26 frames.",
+      "start": 2067,
+      "end": 2097,
+      "similarity": 0.328151829821694,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "Nira Telven checked 31 frames.",
+      "start": 2098,
+      "end": 2128,
+      "similarity": 0.3365845081945516,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 2129,
+      "end": 2192,
+      "similarity": 0.11903534283203131,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 2193,
+      "end": 2254,
+      "similarity": 0.17769212071319943,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "At Caldrin Rock Imaging Room, imaging cards are kept for 55 days.",
+      "start": 2279,
+      "end": 2344,
+      "similarity": 0.12924875393139448,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "If a sample review is open, retain the affected cards until the review is closed, even after the 55-day period.",
+      "start": 2345,
+      "end": 2456,
+      "similarity": 0.03521958309228891,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "At Caldrin Rock Imaging Room, a public copy request received before 13:00 is sent the same operating day.",
+      "start": 2485,
+      "end": 2590,
+      "similarity": 0.18256794664187143,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "At or after 13:00, send it on the next operating day.",
+      "start": 2591,
+      "end": 2644,
+      "similarity": 0.1322434314804172,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "8f2662cf-1719-4538-9ff0-710dd9990a55",
+      "value": "If the ownership review is unresolved, do not send the copy until that review closes.",
+      "start": 2645,
+      "end": 2730,
+      "similarity": 0.08552031242355652,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "Packet mode communication may be implemented with or without intermediate forwarding nodes (packet switches or routers).",
+      "start": 40,
+      "end": 160,
+      "similarity": 0.016020239378810454,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "Packets are normally forwarded by intermediate network nodes asynchronously using first-in, first-out buffering, but may be forwarded according to some scheduling discipline for fair queuing, traffic shaping, or for differentiated or guaranteed quality of service, such as weighted fair queuing or leaky bucket.",
+      "start": 161,
+      "end": 472,
+      "similarity": -0.019089080591886323,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "In case of a shared physical medium (such as radio or 10BASE5), the packets may be delivered according to a multiple access scheme.",
+      "start": 473,
+      "end": 604,
+      "similarity": 0.06066967883600345,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "Starting in the late 1950s, American computer scientist Paul Baran developed the concept Distributed Adaptive Message Block Switching with the goal to provide a fault-tolerant, efficient routing method for telecommunication messages as part of a research program at the RAND Corporation, funded by the US Department of Defense.",
+      "start": 626,
+      "end": 953,
+      "similarity": 0.13987117978636304,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "This concept contrasted and contradicted the theretofore established principles of pre-allocation of network bandwidth, largely fortified by the development of telecommunications in the Bell System.",
+      "start": 954,
+      "end": 1152,
+      "similarity": 0.09674935524587976,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "The new concept found little resonance among network implementers until the independent work of Donald Davies at the National Physical Laboratory (United Kingdom) (NPL) in the late 1960s.",
+      "start": 1153,
+      "end": 1340,
+      "similarity": 0.10673581076658789,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe in the decade following, including the incorporation of the concept in the early ARPANET in the United States.",
+      "start": 1341,
+      "end": 1575,
+      "similarity": 0.017181559242363934,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "At the fictional Soravin Specimen Studio, Vera Linven completed a 24-tray tagging run.",
+      "start": 1606,
+      "end": 1692,
+      "similarity": 0.25443403477825205,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "Eran Morven cleaned 41 trays.",
+      "start": 1693,
+      "end": 1722,
+      "similarity": 0.22090806589108314,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "Vera Linven weighed 18 trays.",
+      "start": 1723,
+      "end": 1752,
+      "similarity": 0.23324832510791477,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "These are separate completed tasks, not interchangeable totals.",
+      "start": 1753,
+      "end": 1816,
+      "similarity": 0.11903534283203131,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "No count is recorded for other actor and action combinations.",
+      "start": 1817,
+      "end": 1878,
+      "similarity": 0.17769212071319943,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "At Soravin Specimen Studio, conservation cards are kept for 80 days.",
+      "start": 1903,
+      "end": 1971,
+      "similarity": 0.1341955263672497,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "If a treatment review is open, retain the affected cards until the review is closed, even after the 80-day period.",
+      "start": 1972,
+      "end": 2086,
+      "similarity": 0.03866749410357234,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "At Soravin Specimen Studio, a public copy request received before 16:00 is sent the same operating day.",
+      "start": 2115,
+      "end": 2218,
+      "similarity": 0.2150351982462332,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "At or after 16:00, send it on the next operating day.",
+      "start": 2219,
+      "end": 2272,
+      "similarity": 0.11818988742992735,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "6b602233-9104-4b66-9417-1bc854e0959f",
+      "value": "If the custody review is unresolved, do not send the copy until that review closes.",
+      "start": 2273,
+      "end": 2356,
+      "similarity": 0.06375670080572986,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1288,
+            "cosine": 0.7381245708948334,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Huguenot.md",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "relation_guard_diagnostics": {
+        "route": "No literal requested actor/action/count clause"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1288,
+            "cosine": 0.7381245708948334,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Huguenot.md",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "relation_guard_diagnostics": {
+        "route": "No literal requested actor/action/count clause"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "4ab9186d-ae18-401d-a9bf-0434151432b5:1312",
+          "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+          "filename": "01_Huguenot.md",
+          "excerpt": "of their descendents rose to positions of prominence. Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.\n\n## Fictional completed tasks\nAt the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days.",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+          "score": 0.0476,
+          "lexicalScore": 15.25019686423148,
+          "semanticScore": 0.6457193726109727,
+          "matchedTerms": [
+            "segments",
+            "mira",
+            "solven",
+            "velora",
+            "audio",
+            "archive"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1288,
+            "cosine": 0.7381245708948334,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Huguenot.md",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "4ab9186d-ae18-401d-a9bf-0434151432b5:1259",
+          "documentId": "4ab9186d-ae18-401d-a9bf-0434151432b5",
+          "filename": "01_Huguenot.md",
+          "excerpt": "of their descendents rose to positions of prominence. Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.\n\n## Fictional completed tasks\nAt the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days.",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+          "score": 0.0476,
+          "lexicalScore": 18.38785691470724,
+          "semanticScore": 0.6979034143785834,
+          "matchedTerms": [
+            "segments",
+            "mira",
+            "solven",
+            "velora",
+            "audio",
+            "archive"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Huguenot.md",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+          "slots": {
+            "kind": "count",
+            "predicate": null,
+            "years": []
+          },
+          "reason": "Keep prior: no sufficient bounded gain",
+          "selected": {
+            "start": 1288,
+            "cosine": 0.7381245708948334,
+            "slot_supported": true,
+            "lexical_matches": 6
+          }
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Huguenot.md",
+          "quote": "At the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    -0.047050852328538895,
+    -0.005598383955657482,
+    -0.02398035302758217,
+    -0.05495382100343704,
+    -0.02836582064628601,
+    -0.011797829531133175,
+    -0.039840005338191986,
+    0.05240728333592415,
+    -0.019206052646040916,
+    -0.05048735812306404,
+    0.07825944572687149,
+    -0.03701235353946686,
+    -0.009217903017997742,
+    0.00831405259668827,
+    -0.01574930176138878,
+    0.03309336677193642,
+    -0.05786978080868721,
+    0.011852866038680077,
+    0.04087532311677933,
+    0.004474666900932789,
+    0.0984274297952652,
+    0.05382702872157097,
+    0.07522459328174591,
+    0.058852147310972214,
+    0.06053248420357704,
+    0.024885624647140503,
+    -0.004279143176972866,
+    -0.0202928613871336,
+    0.011385839432477951,
+    -0.06175757944583893,
+    0.01353533286601305,
+    0.08697620779275894,
+    0.05965937674045563,
+    -0.03213780000805855,
+    -0.03459463268518448,
+    0.0021586616057902575,
+    0.021266689524054527,
+    -0.03364216908812523,
+    -0.014002129435539246,
+    -0.050997763872146606,
+    -0.09939419478178024,
+    0.01668769307434559,
+    0.01461806520819664,
+    -0.058670107275247574,
+    -0.024907687678933144,
+    -0.05306137725710869,
+    0.027156125754117966,
+    0.007664910051971674,
+    0.06073927506804466,
+    0.040574781596660614,
+    -0.04256465658545494,
+    -0.014031029306352139,
+    -0.061393242329359055,
+    0.013658835552632809,
+    0.007401271257549524,
+    0.005353427957743406,
+    0.0689021646976471,
+    0.07715519517660141,
+    0.11287882924079895,
+    0.038275327533483505,
+    0.15205906331539154,
+    -0.005552961491048336,
+    -0.053574759513139725,
+    0.005433613434433937,
+    0.022826384752988815,
+    -0.014502055011689663,
+    -0.020251251757144928,
+    -0.06677927076816559,
+    0.027020903304219246,
+    -0.027371490374207497,
+    0.008313263766467571,
+    0.013626995496451855,
+    0.030647659674286842,
+    -0.044909555464982986,
+    0.03490142151713371,
+    0.028548484668135643,
+    0.13330282270908356,
+    0.016346629709005356,
+    -0.07687782496213913,
+    -0.021357344463467598,
+    -0.008472328074276447,
+    -0.03265918418765068,
+    -0.014703287743031979,
+    0.04774972051382065,
+    0.01625489629805088,
+    0.007237848825752735,
+    -0.04904618114233017,
+    -0.051248107105493546,
+    -0.015833869576454163,
+    -0.013988780789077282,
+    0.015097170136868954,
+    -0.022222528234124184,
+    -0.06153641641139984,
+    -0.005599634721875191,
+    0.07435091584920883,
+    0.003042056458070874,
+    -0.07451160252094269,
+    0.020793061703443527,
+    0.04653548076748848,
+    0.08690325915813446,
+    0.0300973579287529,
+    -0.041327040642499924,
+    0.032249242067337036,
+    0.015181470662355423,
+    -0.09632443636655807,
+    -0.028819436207413673,
+    0.0628347396850586,
+    0.061860617250204086,
+    -0.05498553439974785,
+    -0.03891842067241669,
+    -0.011086810380220413,
+    -0.0361083447933197,
+    0.08086274564266205,
+    0.011619116179645061,
+    0.02745196595788002,
+    -0.010304451920092106,
+    -0.04112917184829712,
+    0.05564533919095993,
+    -0.01534069050103426,
+    0.017880531027913094,
+    0.07035564631223679,
+    -0.013160116039216518,
+    0.04791600629687309,
+    0.06057951971888542,
+    0.04127496853470802,
+    0.0021920595318078995,
+    -0.01307294238358736,
+    -7.952967742606463e-34,
+    0.05781249329447746,
+    -0.015375345014035702,
+    -0.03719070553779602,
+    0.024053337052464485,
+    0.0926257073879242,
+    -0.024175697937607765,
+    0.019169310107827187,
+    0.031104855239391327,
+    9.265362450605608e-7,
+    0.02212662063539028,
+    -0.028173521161079407,
+    -0.029694845899939537,
+    -0.019470609724521637,
+    -0.08887515217065811,
+    0.026130614802241325,
+    -0.06659170240163803,
+    0.037856146693229675,
+    0.004288206808269024,
+    -0.07654628902673721,
+    -0.038780417293310165,
+    0.009798947721719742,
+    0.019111091271042824,
+    -0.015049937181174755,
+    -0.07909905910491943,
+    0.05175425484776497,
+    0.11164848506450653,
+    0.07723701000213623,
+    -0.020318761467933655,
+    -0.011196169070899487,
+    0.06963249295949936,
+    -0.058035027235746384,
+    -0.05422483757138252,
+    0.07397443056106567,
+    -0.01277327910065651,
+    0.029906459152698517,
+    0.04724027216434479,
+    -0.037927236407995224,
+    0.0005018748342990875,
+    -0.05721404030919075,
+    -0.017281504347920418,
+    0.09813284128904343,
+    0.0791485533118248,
+    0.0006729653687216341,
+    0.023319827392697334,
+    -0.007516630459576845,
+    -0.026854973286390305,
+    -0.06470442563295364,
+    0.11286111921072006,
+    0.03511429950594902,
+    0.06691619753837585,
+    0.025945663452148438,
+    0.025866400450468063,
+    -0.15212656557559967,
+    -0.025891082361340523,
+    0.05858009308576584,
+    -0.013970294035971165,
+    -0.04406767338514328,
+    0.02162463217973709,
+    0.022853190079331398,
+    0.04468155652284622,
+    0.08221250027418137,
+    0.08157984912395477,
+    0.02963308058679104,
+    -0.04782572016119957,
+    0.0352872759103775,
+    0.026911908760666847,
+    -0.05230453982949257,
+    -0.07047802209854126,
+    0.08457387983798981,
+    -0.0619053989648819,
+    -0.07998242974281311,
+    0.0028128137346357107,
+    -0.05429947003722191,
+    0.0005006804130971432,
+    -0.0809674933552742,
+    -0.036612823605537415,
+    -0.013310053385794163,
+    0.023670174181461334,
+    -0.022826462984085083,
+    0.0561121366918087,
+    -0.11473336815834045,
+    0.05713667348027229,
+    0.05923081189393997,
+    0.01218037772923708,
+    -0.019908757880330086,
+    -0.0014463051920756698,
+    0.03895724564790726,
+    -0.12630130350589752,
+    -0.03913983330130577,
+    -0.061651427298784256,
+    -0.03762378543615341,
+    0.004430839326232672,
+    -0.04770908132195473,
+    -0.031152814626693726,
+    -0.0033990852534770966,
+    6.437983276427006e-34,
+    -0.022891992703080177,
+    0.05271158367395401,
+    -0.0027249380946159363,
+    -0.02422463148832321,
+    -0.011711562052369118,
+    0.011046151630580425,
+    -0.019260352477431297,
+    0.06285592168569565,
+    -0.05611860752105713,
+    -0.0077796922996640205,
+    -0.042415801435709,
+    -0.04601070284843445,
+    -0.002355399541556835,
+    -0.04559309035539627,
+    0.06605248898267746,
+    0.059580519795417786,
+    0.09802079200744629,
+    -0.11332482844591141,
+    0.0011468208394944668,
+    0.07775525748729706,
+    -0.022798823192715645,
+    0.044505368918180466,
+    0.06423936039209366,
+    -0.034363310784101486,
+    0.010506201535463333,
+    0.031201323494315147,
+    0.06813919544219971,
+    -0.008172344416379929,
+    -0.07940131425857544,
+    -0.0029797956813126802,
+    0.04699983075261116,
+    -0.1322667896747589,
+    -0.10861420631408691,
+    -0.007664207834750414,
+    -0.007431564386934042,
+    0.023513194173574448,
+    0.03582966327667236,
+    -0.03412246331572533,
+    0.009243589825928211,
+    -0.06373024731874466,
+    0.06887735426425934,
+    0.05826975032687187,
+    0.0068090856075286865,
+    -0.0037856262642890215,
+    -0.08260778337717056,
+    -0.035389408469200134,
+    0.03264663740992546,
+    0.05420849844813347,
+    -0.05280354246497154,
+    -0.07995748519897461,
+    0.040161941200494766,
+    -0.03648475557565689,
+    0.09110482782125473,
+    -0.0387876071035862,
+    0.0502592995762825,
+    -0.0012765084393322468,
+    0.03827852010726929,
+    0.01866459660232067,
+    0.06075394153594971,
+    -0.004160898271948099,
+    0.05414504185318947,
+    -0.0027484584134072065,
+    -0.0718788430094719,
+    -0.05721123144030571,
+    0.03746119141578674,
+    0.06790711730718613,
+    0.027255196124315262,
+    0.02259405329823494,
+    -0.1248181015253067,
+    -0.039138033986091614,
+    0.07651326060295105,
+    -0.005983839742839336,
+    -0.01162107102572918,
+    0.034990616142749786,
+    -0.07014571130275726,
+    0.02218056097626686,
+    -0.15172094106674194,
+    -0.011112462729215622,
+    -0.022035151720046997,
+    -0.019180908799171448,
+    -0.07174567878246307,
+    -0.05474044382572174,
+    -0.013589591719210148,
+    -0.04647858068346977,
+    0.0755099356174469,
+    -0.011363176628947258,
+    0.1066977009177208,
+    -0.03039930947124958,
+    0.03395279869437218,
+    0.03593488782644272,
+    -0.0014101392589509487,
+    -0.005198768340051174,
+    0.0293632373213768,
+    0.0019043628126382828,
+    0.11840885877609253,
+    -1.8290066350346024e-8,
+    -0.01028005126863718,
+    0.011878333985805511,
+    -0.08527281135320663,
+    -0.03537781164050102,
+    0.014427048154175282,
+    -0.02208162099123001,
+    -0.02657867781817913,
+    0.10063985735177994,
+    -0.05200668051838875,
+    0.02294427528977394,
+    0.08685985207557678,
+    -0.017457865178585052,
+    -0.03445824980735779,
+    0.05278686061501503,
+    -0.04221909120678902,
+    -0.036382440477609634,
+    0.020655756816267967,
+    0.013845846056938171,
+    -0.0960879847407341,
+    -0.06570905447006226,
+    0.06332606822252274,
+    0.037219226360321045,
+    0.02459745667874813,
+    -0.09857352823019028,
+    0.019868241623044014,
+    0.02513406053185463,
+    -0.013045025058090687,
+    0.008780314587056637,
+    0.038091085851192474,
+    -0.11480444669723511,
+    -0.010296901687979698,
+    -0.010844884440302849,
+    -0.06306551396846771,
+    -0.05087024345993996,
+    -0.00914203654974699,
+    0.0196593776345253,
+    -0.07270374149084091,
+    -0.00393254728987813,
+    -0.028722532093524933,
+    0.01991402357816696,
+    0.026134761050343513,
+    -0.0008673419943079352,
+    0.10761594772338867,
+    0.048767127096652985,
+    0.012273470871150494,
+    0.02599327825009823,
+    -0.015275021083652973,
+    -0.056022487580776215,
+    -0.030557140707969666,
+    -0.05670129880309105,
+    -0.025047382339835167,
+    0.05024094507098198,
+    0.04844319075345993,
+    0.07388827949762344,
+    0.023366376757621765,
+    -0.05151836574077606,
+    0.11675964295864105,
+    0.017442910000681877,
+    -0.05557077005505562,
+    0.03929327800869942,
+    0.010446852073073387,
+    0.04706880822777748,
+    -0.06715084612369537,
+    -0.03472663462162018
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Huguenot.md",
+        "start": 1312,
+        "content": "Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations.\n\n## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period.\n\n## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the next operating day. If the rights review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "01_Huguenot.md",
+        "start": 652,
+        "content": "New France in 1759-60.\n\n## Public context 2\nIn Berlin, the Huguenots created two new neighbourhoods: Dorotheenstadt and Friedrichstadt. By 1700, one-fifth of the city's population was French speaking. The Berlin Huguenots preserved the French language in their church services for nearly a century. They ultimately decided to switch to German in protest against the occupation of Prussia by Napoleon in 1806-07. Many of their descendents rose to positions of prominence. Several congregations were founded, such as those of Fredericia (Denmark), Berlin, Stockholm, Hamburg, Frankfurt, Helsinki, and Emden.\n\n## Fictional completed tasks\nAt the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira"
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Huguenot.md",
+        "start": 1259,
+        "content": "## Fictional completed tasks\nAt the fictional Velora Audio Archive, Mira Solven completed a 27-segment labeling run. Taro Ilven mounted 34 segments. Mira Solven inspected 19 segments. These are separate completed tasks, not interchangeable totals. No count is recorded for other actor and action combinations."
+      },
+      {
+        "filename": "01_Huguenot.md",
+        "start": 1773,
+        "content": "## Fictional copy requests\nAt Velora Audio Archive, a public copy request received before 14:00 is sent the same operating day. At or after 14:00, send it on the next operating day. If the rights review is unresolved, do not send the copy until that review closes."
+      },
+      {
+        "filename": "01_Huguenot.md",
+        "start": 1570,
+        "content": "## Fictional retention\nAt Velora Audio Archive, listening cards are kept for 45 days. If a correction review is open, retain the affected cards until the review is closed, even after the 45-day period."
+      }
+    ]
+  }
+}

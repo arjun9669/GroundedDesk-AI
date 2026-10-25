@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-25 — preserve partial v49 capture and freeze prospective anchor amendment
+
+- Preserve attempt2 integrity block at515 saved records; no native score or full
+  732-case result. Seal4,162 original artifacts and exact first failure.
+- Declare prospective ranking-body versus expanded displayed-quote distinction
+  for attempt3, with containment, literal/policy-block, body-ID and vector proof;
+  disclose expanded bindings. Candidate, answers, thresholds/native criteria unchanged.
+- 18 targeted/1015 unit/28 Keyword PASS; fresh neutral preflight/new freeze precede
+  any attempt3 question. Original blocked attempts remain unchanged.
+
 ## 2026-10-25 — v49 startup-only failure and separate retry freeze
 
 - Preserve first startup failure with zero study questions and its immutable raw

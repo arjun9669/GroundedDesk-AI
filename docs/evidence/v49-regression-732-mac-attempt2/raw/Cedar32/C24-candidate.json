@@ -1,0 +1,1047 @@
+{
+  "candidate_identity": "coverage-v49-comparison-events",
+  "id": "C24",
+  "question": "What is the absolute minimum winter temperature at Cedar Observatory?",
+  "workflow": "hybrid",
+  "ui": {
+    "original_question": "What is the absolute minimum winter temperature at Cedar Observatory?",
+    "expected_display": "What is the absolute minimum winter temperature at Cedar Observatory?",
+    "rendered_question": "What is the absolute minimum winter temperature at Cedar Observatory?",
+    "matches_expected": true,
+    "fresh_result": true,
+    "result_visible": true,
+    "button_disabled": false,
+    "retrieval_mode": "hybrid",
+    "answer_mode": "extractive",
+    "build": "Loaded retrieval build: 2026-10-13-r44",
+    "semantic_status": "Hybrid mode ready: semantic model remains in this browser session.",
+    "answer": "[1] Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+    "sources": [
+      {
+        "filename": "01_Cedar_Observatory.txt",
+        "excerpt": "The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\nCedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records",
+        "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius."
+      }
+    ],
+    "displayed": "YOUR QUESTION\nWhat is the absolute minimum winter temperature at Cedar Observatory?\n\nSearched all files: 01_Cedar_Observatory.txt · 02_Harbor_Cartography.txt · 03_Juniper_Workshop.txt · 04_Willow_Conservatory.txt\n\nQuoted answer\n1 CITED SOURCE(S)\nCopy report\nSave report\n\n[1] Cedar Observatory winter average temperatures exceed 11 degrees Celsius.\n\nSOURCE EVIDENCE\n[1]\n01_Cedar_Observatory.txt\n\nText line 3 (normalized extraction)\n\nThe Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur. Cedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius. Mira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift. Cedar Observatory observation records\n\nLocate in library ↗\nSearch details\n\nScores are uncalibrated relevance ranks, not confidence percentages. All quoted passages originate in your loaded text. Keyword retrieval may miss paraphrases.",
+    "comparison": {
+      "title": "Side-by-side excerpts",
+      "displayed": "",
+      "sources": []
+    }
+  },
+  "baseline": {
+    "answered": true,
+    "answer": "[1] Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+    "sources": [
+      {
+        "citation": 1,
+        "id": "1da40a4e-d453-4507-b2d1-ec20f6236639:0",
+        "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+        "filename": "01_Cedar_Observatory.txt",
+        "excerpt": "The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\nCedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records",
+        "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+        "score": 0.0476,
+        "lexicalScore": 4.099536088922306,
+        "semanticScore": 0.7626078867747963,
+        "matchedTerms": [
+          "winter",
+          "temperature",
+          "cedar",
+          "observatory"
+        ]
+      }
+    ],
+    "mode": "Deterministic extractive retrieval (BM25-style, no LLM)",
+    "retrievalBuild": "2026-10-13-r44",
+    "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy."
+  },
+  "fixed": {
+    "answered": false,
+    "sources": [],
+    "answer": "I can't find this in the provided documents.",
+    "mode": "Experimental v48 minimum",
+    "experiment": "V48 isolated minimum/approval; production unchanged",
+    "package2_contract": {
+      "status": "unsupported",
+      "kind": "minimum",
+      "reason": "Unique affirmative scoped minimum/value required"
+    }
+  },
+  "section": {
+    "answered": false,
+    "sources": [],
+    "answer": "I can't find this in the provided documents.",
+    "mode": "Experimental v48 minimum",
+    "experiment": "V48 isolated minimum/approval; production unchanged",
+    "package2_contract": {
+      "status": "unsupported",
+      "kind": "minimum",
+      "reason": "Unique affirmative scoped minimum/value required"
+    }
+  },
+  "facet_top5": {
+    "fixed": [],
+    "section": []
+  },
+  "body_top5": [
+    {
+      "filename": "01_Cedar_Observatory.txt",
+      "start": 132,
+      "content": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+      "semanticScore": 0.7999199619786652,
+      "lexicalScore": 6.650963122227861
+    },
+    {
+      "filename": "03_Juniper_Workshop.txt",
+      "start": 186,
+      "content": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius.",
+      "semanticScore": 0.5973147703215054,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Willow_Conservatory.txt",
+      "start": 172,
+      "content": "Willow Conservatory winter average temperatures exceed 16 degrees Celsius.",
+      "semanticScore": 0.5631067422009164,
+      "lexicalScore": null
+    },
+    {
+      "filename": "02_Harbor_Cartography.txt",
+      "start": 215,
+      "content": "Its highest monthly mean temperature is 26 degrees Celsius in July.",
+      "semanticScore": 0.45573121529110805,
+      "lexicalScore": null
+    },
+    {
+      "filename": "04_Willow_Conservatory.txt",
+      "start": 315,
+      "content": "Its highest recorded daily temperature is 47 degrees Celsius.",
+      "semanticScore": 0.45239194227409385,
+      "lexicalScore": null
+    }
+  ],
+  "sentence_evidence": [
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "The Cedar Observatory relocation took place in 1874.",
+      "start": 0,
+      "end": 52,
+      "similarity": 0.4471089191828033,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Its restoration took place in 1926.",
+      "start": 53,
+      "end": 88,
+      "similarity": 0.015793408867640746,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "A proposed closure in 1941 did not occur.",
+      "start": 89,
+      "end": 130,
+      "similarity": 0.04644222298212311,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+      "start": 132,
+      "end": 204,
+      "similarity": 0.7999199619786652,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Its highest monthly mean temperature is 29 degrees Celsius in August.",
+      "start": 205,
+      "end": 274,
+      "similarity": 0.4511440362828013,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Its highest recorded daily temperature is 42 degrees Celsius.",
+      "start": 275,
+      "end": 336,
+      "similarity": 0.4275124821302647,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Mira catalogs seven plates per shift.",
+      "start": 338,
+      "end": 375,
+      "similarity": 0.08607872644414764,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Oren cleans four lenses per shift.",
+      "start": 376,
+      "end": 410,
+      "similarity": 0.11418315669970842,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Mira checks two clocks per shift.",
+      "start": 411,
+      "end": 444,
+      "similarity": 0.08436790146513545,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+      "value": "Cedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention.",
+      "start": 446,
+      "end": 567,
+      "similarity": 0.35011703268414046,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "The Harbor Cartography archive relocation took place in 1889.",
+      "start": 0,
+      "end": 61,
+      "similarity": -0.03321116068561208,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Its restoration took place in 1938.",
+      "start": 62,
+      "end": 97,
+      "similarity": 0.023853064297704257,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "The archive did not close in 1952.",
+      "start": 98,
+      "end": 132,
+      "similarity": 0.12016068465056,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Harbor Cartography archive winter average temperatures exceed 9 degrees Celsius.",
+      "start": 134,
+      "end": 214,
+      "similarity": 0.3933241775068411,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Its highest monthly mean temperature is 26 degrees Celsius in July.",
+      "start": 215,
+      "end": 282,
+      "similarity": 0.45573121529110805,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Its highest recorded daily temperature is 39 degrees Celsius.",
+      "start": 283,
+      "end": 344,
+      "similarity": 0.4126081364726762,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Orders released before 14:20 depart the same operating day.",
+      "start": 346,
+      "end": 405,
+      "similarity": 0.06514988892888834,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Orders released at or after 14:20 depart the next operating day, unless a customs hold prevents departure.",
+      "start": 406,
+      "end": 512,
+      "similarity": 0.05488769668993216,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "a9786954-ae5d-433f-bf89-ae3f664628ab",
+      "value": "Harbor Cartography shipping records are retained for 22 months, unless a customs investigation requires longer retention.",
+      "start": 514,
+      "end": 635,
+      "similarity": -0.06556198449091237,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "The Juniper Workshop relocation took place in 1907.",
+      "start": 0,
+      "end": 51,
+      "similarity": 0.29261843153450895,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Its first restoration took place in 1946.",
+      "start": 52,
+      "end": 93,
+      "similarity": 0.06674035811902879,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Its second restoration took place in 1979.",
+      "start": 94,
+      "end": 136,
+      "similarity": 0.0876285318503382,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "The proposed demolition in 1988 never occurred.",
+      "start": 137,
+      "end": 184,
+      "similarity": 0.09505896889147021,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Juniper Workshop winter average temperatures exceed 13 degrees Celsius.",
+      "start": 186,
+      "end": 257,
+      "similarity": 0.5973147703215054,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Its highest monthly mean temperature is 31 degrees Celsius in September.",
+      "start": 258,
+      "end": 330,
+      "similarity": 0.3473396887319263,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Its highest recorded daily temperature is 45 degrees Celsius.",
+      "start": 331,
+      "end": 392,
+      "similarity": 0.43970318804574327,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Lubricate the Juniper press every 72 operating hours.",
+      "start": 394,
+      "end": 447,
+      "similarity": 0.20940736765378573,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "In a dusty bay, lubricate it every 36 operating hours.",
+      "start": 448,
+      "end": 502,
+      "similarity": 0.145923299192126,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Inspect the press every 18 operating hours in either environment.",
+      "start": 503,
+      "end": 568,
+      "similarity": 0.13858922485130543,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "ffd52212-1a10-4abb-bd7c-5fe6107d3fe0",
+      "value": "Juniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention.",
+      "start": 570,
+      "end": 687,
+      "similarity": 0.17585358561517014,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "The Willow Conservatory relocation took place in 1863.",
+      "start": 0,
+      "end": 54,
+      "similarity": 0.1985360234359411,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Its restoration took place in 1917.",
+      "start": 55,
+      "end": 90,
+      "similarity": 0.0026171487507467457,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Its inventory took place in 1917.",
+      "start": 91,
+      "end": 124,
+      "similarity": -0.03277714609990696,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "The canceled expansion in 1930 did not occur.",
+      "start": 125,
+      "end": 170,
+      "similarity": 0.011116880418085636,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Willow Conservatory winter average temperatures exceed 16 degrees Celsius.",
+      "start": 172,
+      "end": 246,
+      "similarity": 0.5631067422009164,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Its highest monthly mean temperature is 33 degrees Celsius in June.",
+      "start": 247,
+      "end": 314,
+      "similarity": 0.43361551930615616,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Its highest recorded daily temperature is 47 degrees Celsius.",
+      "start": 315,
+      "end": 376,
+      "similarity": 0.45239194227409385,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Purchases above 5300 credits require written approval from the Curator and Finance Manager.",
+      "start": 378,
+      "end": 469,
+      "similarity": 0.03242770347540794,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.",
+      "start": 470,
+      "end": 581,
+      "similarity": -0.047730306094698416,
+      "facetSimilarities": []
+    },
+    {
+      "documentId": "278871a6-9a01-4664-9b13-8bfe1972df23",
+      "value": "Willow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention.",
+      "start": 583,
+      "end": 700,
+      "similarity": 0.13174152273119366,
+      "facetSimilarities": []
+    }
+  ],
+  "facet_query_vectors": [],
+  "clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "clock_facet_queries": [],
+  "clock_facet_vectors": [],
+  "paired_clock_plan": {
+    "status": "outside_scope",
+    "facets": []
+  },
+  "paired_clock_facet_queries": [],
+  "paired_clock_facet_vectors": [],
+  "pairedPrevious": {
+    "fixed": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "claim_support_diagnostics": {
+        "refused": true,
+        "reason": "Requested entity/statistic not supported in every displayed citation"
+      },
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    },
+    "section": {
+      "answered": false,
+      "answer": "I can't find this in the provided documents.",
+      "sources": [],
+      "mode": "Experimental v38 scoped policies",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V17 isolated budget clause preflight; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ],
+      "body_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.",
+          "reason": "Complete bounded narrative paragraph"
+        }
+      ],
+      "claim_support_diagnostics": {
+        "refused": true,
+        "reason": "Requested entity/statistic not supported in every displayed citation"
+      },
+      "evidence_frame_diagnostics": {
+        "refused": true,
+        "reason": "No complete literal evidence for recognized request frame"
+      }
+    }
+  },
+  "pairedV9": {
+    "fixed": {
+      "answered": true,
+      "answer": "[1] Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1da40a4e-d453-4507-b2d1-ec20f6236639:0",
+          "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+          "filename": "01_Cedar_Observatory.txt",
+          "excerpt": "The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\nCedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 4.099536088922306,
+          "semanticScore": 0.7626078867747963,
+          "matchedTerms": [
+            "winter",
+            "temperature",
+            "cedar",
+            "observatory"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    },
+    "section": {
+      "answered": true,
+      "answer": "[1] Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+      "sources": [
+        {
+          "citation": 1,
+          "id": "1da40a4e-d453-4507-b2d1-ec20f6236639:0",
+          "documentId": "1da40a4e-d453-4507-b2d1-ec20f6236639",
+          "filename": "01_Cedar_Observatory.txt",
+          "excerpt": "The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\nCedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+          "score": 0.0476,
+          "lexicalScore": 4.099536088922306,
+          "semanticScore": 0.7626078867747963,
+          "matchedTerms": [
+            "winter",
+            "temperature",
+            "cedar",
+            "observatory"
+          ]
+        }
+      ],
+      "mode": "Experimental v9 relationship eligibility",
+      "retrievalBuild": "2026-10-13-r44",
+      "note": "Scores are uncalibrated retrieval ranks, not probabilities or verified answer accuracy.",
+      "experiment": "V9 isolated bounded relationship eligibility; production unchanged",
+      "coverage_diagnostics": [
+        {
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected scope"
+        }
+      ],
+      "relationship_diagnostics": [
+        {
+          "part": 0,
+          "document": "01_Cedar_Observatory.txt",
+          "quote": "Cedar Observatory winter average temperatures exceed 11 degrees Celsius.",
+          "reason": "Keep prior: unhandled or protected"
+        }
+      ]
+    }
+  },
+  "query_vector": [
+    0.016016490757465363,
+    0.033569857478141785,
+    -0.05422476679086685,
+    0.06902877241373062,
+    -0.02485596016049385,
+    -0.018515238538384438,
+    -0.04710886627435684,
+    -0.0154778603464365,
+    0.007911987602710724,
+    0.02314855344593525,
+    -0.024161629378795624,
+    -0.10860581696033478,
+    0.026656661182641983,
+    -0.028502849861979485,
+    -0.012326909229159355,
+    -0.014282850548624992,
+    0.08658060431480408,
+    -0.09315294027328491,
+    0.03750738501548767,
+    -0.015778565779328346,
+    0.04505239054560661,
+    0.018614498898386955,
+    -0.029186422005295753,
+    -0.05027984082698822,
+    0.0034426937345415354,
+    -0.09318407624959946,
+    -0.09306018054485321,
+    0.011024580337107182,
+    0.017630478367209435,
+    0.08743520081043243,
+    -0.0393093004822731,
+    -0.010565755888819695,
+    -0.017265522852540016,
+    0.022283455356955528,
+    -0.015791622921824455,
+    0.011656482703983784,
+    0.018430214375257492,
+    -0.09226693212985992,
+    -0.05531559884548187,
+    0.07435145229101181,
+    -0.01354372687637806,
+    0.06551199406385422,
+    0.02308085933327675,
+    0.008863888680934906,
+    -0.07046012580394745,
+    0.06972431391477585,
+    0.03584728017449379,
+    0.012835487723350525,
+    0.016743449494242668,
+    -0.025189584121108055,
+    0.06560379266738892,
+    -0.013508235104382038,
+    -0.050373293459415436,
+    0.038563184440135956,
+    -0.07510460168123245,
+    0.06788753718137741,
+    -0.12040732055902481,
+    -0.07107586413621902,
+    0.0341353602707386,
+    0.04939686879515648,
+    0.06852728128433228,
+    -0.006549830548465252,
+    -0.12063559889793396,
+    0.02600817009806633,
+    0.1540742814540863,
+    -0.022943569347262383,
+    -0.04210264980792999,
+    -0.061971087008714676,
+    0.06357062608003616,
+    -0.07655740529298782,
+    0.010766354389488697,
+    0.011468460783362389,
+    -0.03983292356133461,
+    -0.06108415126800537,
+    -0.0030136622954159975,
+    -0.02497844584286213,
+    0.042411595582962036,
+    0.00894769188016653,
+    0.02944854274392128,
+    -0.08992156386375427,
+    -0.02830778993666172,
+    -0.040689460933208466,
+    0.044608719646930695,
+    0.05622208118438721,
+    -0.021399471908807755,
+    0.04564762860536575,
+    0.00953433196991682,
+    0.14071232080459595,
+    0.08697845041751862,
+    0.050168726593256,
+    0.037455812096595764,
+    0.031726572662591934,
+    -0.12451771646738052,
+    0.02225787751376629,
+    -0.04935692623257637,
+    0.11915712803602219,
+    0.049809351563453674,
+    0.013237175531685352,
+    -0.07949264347553253,
+    0.02894826978445053,
+    0.0032608360052108765,
+    -0.023803554475307465,
+    0.01288848090916872,
+    0.025776494294404984,
+    -0.034011032432317734,
+    -0.03578769788146019,
+    0.04127509146928787,
+    0.010565529577434063,
+    -0.09196474403142929,
+    0.050733283162117004,
+    0.00171022885479033,
+    0.017983388155698776,
+    0.0460103303194046,
+    -0.02722085826098919,
+    0.08703205734491348,
+    -0.053516920655965805,
+    0.03245651349425316,
+    0.00974524486809969,
+    -0.014141390100121498,
+    0.0021045615430921316,
+    -0.03792078420519829,
+    0.1098632887005806,
+    0.0351591557264328,
+    0.10766284912824631,
+    -0.017200205475091934,
+    0.09511705487966537,
+    -0.014564674347639084,
+    -2.2056779470867625e-33,
+    0.09153342992067337,
+    0.017679406329989433,
+    0.021674703806638718,
+    -0.021811893209815025,
+    0.03904761001467705,
+    -0.0043012835085392,
+    -0.0630456730723381,
+    0.0010245247976854444,
+    0.00445861741900444,
+    0.04647457227110863,
+    0.025907445698976517,
+    -0.021479960530996323,
+    0.004838517401367426,
+    -0.09884057193994522,
+    0.08616122603416443,
+    0.030041152611374855,
+    -0.0027120995800942183,
+    -0.010912902653217316,
+    -0.03631800785660744,
+    0.04125480353832245,
+    -0.06784722208976746,
+    -0.010595482774078846,
+    0.018028194084763527,
+    0.004139145836234093,
+    0.04171865060925484,
+    -0.00835297629237175,
+    0.05574861541390419,
+    -0.0010658100945875049,
+    -0.07373470067977905,
+    -0.004670346155762672,
+    0.0313282310962677,
+    -0.0872655063867569,
+    -0.03224077448248863,
+    -0.016101213172078133,
+    0.0529508963227272,
+    -0.0049118646420538425,
+    0.015011847950518131,
+    0.04135001450777054,
+    0.0006132818525657058,
+    -0.005342014133930206,
+    0.037899501621723175,
+    0.023486675694584846,
+    0.03109954483807087,
+    0.024995114654302597,
+    0.1054118275642395,
+    0.07159857451915741,
+    0.053120993077754974,
+    0.06583419442176819,
+    -0.020291125401854515,
+    -0.02341371774673462,
+    -0.026664121076464653,
+    0.06624259054660797,
+    0.0029508783482015133,
+    -0.03038684092462063,
+    0.025525787845253944,
+    0.11029493808746338,
+    0.054475653916597366,
+    -0.04815759137272835,
+    0.008473222143948078,
+    0.0073207952082157135,
+    -0.060225483030080795,
+    -0.0037077905144542456,
+    0.0058511546812951565,
+    -0.03644198179244995,
+    0.03260805830359459,
+    -0.036563072353601456,
+    -0.05323191359639168,
+    0.016971824690699577,
+    -0.05731476470828056,
+    -0.05454621464014053,
+    0.010456227697432041,
+    -0.04803547263145447,
+    0.10559901595115662,
+    -0.08929725736379623,
+    0.01219247281551361,
+    0.017769483849406242,
+    0.07133407890796661,
+    -0.020765872672200203,
+    0.017665144056081772,
+    0.03711819276213646,
+    -0.09761286526918411,
+    -0.0013374682748690248,
+    0.04757591336965561,
+    0.014552238397300243,
+    -0.03340345248579979,
+    -0.08443758636713028,
+    0.00805420521646738,
+    0.08899331092834473,
+    -0.06129787862300873,
+    0.00013091659639030695,
+    0.048967935144901276,
+    0.013247143477201462,
+    0.0025476664304733276,
+    0.018311334773898125,
+    -0.0301272664219141,
+    1.6850109078182695e-33,
+    -0.010593420825898647,
+    -0.05169747769832611,
+    0.028713693842291832,
+    0.011509076692163944,
+    -0.011596721597015858,
+    0.044827718287706375,
+    0.045676544308662415,
+    0.05458323284983635,
+    0.007350347936153412,
+    -0.008220911026000977,
+    0.03884623944759369,
+    0.006405981257557869,
+    0.037389207631349564,
+    -0.056961096823215485,
+    0.018514487892389297,
+    0.04630300775170326,
+    -0.05511994659900665,
+    0.024609634652733803,
+    0.03031717799603939,
+    -0.017586875706911087,
+    -0.027140885591506958,
+    0.05624964460730553,
+    -0.046770211309194565,
+    0.054926782846450806,
+    -0.009000116027891636,
+    -0.005227093584835529,
+    0.015216452069580555,
+    0.035958848893642426,
+    -0.07823491841554642,
+    -0.06617662310600281,
+    -0.02890012040734291,
+    0.019194548949599266,
+    -0.01651792973279953,
+    0.021291391924023628,
+    -0.06840798258781433,
+    0.023787299171090126,
+    0.023138955235481262,
+    -0.03834301233291626,
+    -0.03837877884507179,
+    0.026540402323007584,
+    0.0943477526307106,
+    0.028335534036159515,
+    0.005235827527940273,
+    0.037239495664834976,
+    0.0338364839553833,
+    0.013865462504327297,
+    -0.03237750753760338,
+    -0.02781163528561592,
+    -0.0498805046081543,
+    -0.014643307775259018,
+    -0.030766606330871582,
+    -0.11709311604499817,
+    -0.09630534052848816,
+    0.042609043419361115,
+    0.03990111127495766,
+    -0.015373744070529938,
+    0.012490245513617992,
+    0.07281031459569931,
+    0.018688999116420746,
+    -0.058166198432445526,
+    0.045347101986408234,
+    -0.02518685720860958,
+    -0.00886879488825798,
+    0.06797425448894501,
+    0.021825267001986504,
+    0.028372352942824364,
+    0.019307546317577362,
+    0.06781155616044998,
+    -0.015159490518271923,
+    0.026849081739783287,
+    0.106925368309021,
+    0.0033032060600817204,
+    0.056684255599975586,
+    -0.08869238197803497,
+    0.0283928532153368,
+    -0.004639229737222195,
+    0.123955637216568,
+    0.009832384064793587,
+    -0.04801443591713905,
+    0.003053533611819148,
+    -0.14187869429588318,
+    0.04280029609799385,
+    -0.039891455322504044,
+    0.039540939033031464,
+    0.07641605287790298,
+    -0.0928826779127121,
+    0.03712920844554901,
+    -0.029855499044060707,
+    -0.007134558632969856,
+    0.05459124967455864,
+    -0.03123781457543373,
+    0.005880947224795818,
+    0.015461424365639687,
+    -0.053495489060878754,
+    -0.04638627916574478,
+    -1.38543185812523e-8,
+    -0.06029956042766571,
+    0.0742567852139473,
+    -0.024778088554739952,
+    -0.03524502366781235,
+    0.023455608636140823,
+    0.01869589276611805,
+    0.0460706390440464,
+    -0.04140082001686096,
+    -0.07607357203960419,
+    0.07893947511911392,
+    0.06912003457546234,
+    -0.00414331303909421,
+    0.057817116379737854,
+    0.07772655785083771,
+    -0.004143217578530312,
+    -0.052488453686237335,
+    0.02221018821001053,
+    -0.04313482716679573,
+    -0.05361861363053322,
+    -0.12551705539226532,
+    -0.031170861795544624,
+    0.03978339582681656,
+    0.020627135410904884,
+    -0.01805194839835167,
+    0.06208202242851257,
+    -0.019757289439439774,
+    0.0353582538664341,
+    0.05430959537625313,
+    0.07169964164495468,
+    0.029014281928539276,
+    -0.1401650458574295,
+    -0.01553915161639452,
+    0.026156224310398102,
+    -0.08765573054552078,
+    -0.10451222211122513,
+    0.05532153695821762,
+    -0.0008792146691121161,
+    0.05917844548821449,
+    -0.009642181918025017,
+    -0.0406964011490345,
+    -0.06891915202140808,
+    -0.06909151375293732,
+    -0.0422411672770977,
+    0.004983915016055107,
+    0.01542578637599945,
+    -0.003419780172407627,
+    0.016173893585801125,
+    0.06338699907064438,
+    0.06329366564750671,
+    -0.011926128529012203,
+    0.034034352749586105,
+    -0.008801368996500969,
+    0.035355448722839355,
+    -0.017611490562558174,
+    -0.08551692962646484,
+    -0.021389702335000038,
+    -0.04527784138917923,
+    -0.020493164658546448,
+    -0.04281517118215561,
+    -0.04445367306470871,
+    0.02428865246474743,
+    -0.046354565769433975,
+    -0.14348217844963074,
+    -0.045018017292022705
+  ],
+  "top5": {
+    "fixed": [
+      {
+        "filename": "01_Cedar_Observatory.txt",
+        "start": 0,
+        "content": "The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\nCedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention."
+      },
+      {
+        "filename": "03_Juniper_Workshop.txt",
+        "start": 0,
+        "content": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention."
+      },
+      {
+        "filename": "04_Willow_Conservatory.txt",
+        "start": 0,
+        "content": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention."
+      }
+    ],
+    "section": [
+      {
+        "filename": "01_Cedar_Observatory.txt",
+        "start": 0,
+        "content": "The Cedar Observatory relocation took place in 1874. Its restoration took place in 1926. A proposed closure in 1941 did not occur.\n\nCedar Observatory winter average temperatures exceed 11 degrees Celsius. Its highest monthly mean temperature is 29 degrees Celsius in August. Its highest recorded daily temperature is 42 degrees Celsius.\n\nMira catalogs seven plates per shift. Oren cleans four lenses per shift. Mira checks two clocks per shift.\n\nCedar Observatory observation records are retained for 14 months, unless an investigation hold requires longer retention."
+      },
+      {
+        "filename": "03_Juniper_Workshop.txt",
+        "start": 0,
+        "content": "The Juniper Workshop relocation took place in 1907. Its first restoration took place in 1946. Its second restoration took place in 1979. The proposed demolition in 1988 never occurred.\n\nJuniper Workshop winter average temperatures exceed 13 degrees Celsius. Its highest monthly mean temperature is 31 degrees Celsius in September. Its highest recorded daily temperature is 45 degrees Celsius.\n\nLubricate the Juniper press every 72 operating hours. In a dusty bay, lubricate it every 36 operating hours. Inspect the press every 18 operating hours in either environment.\n\nJuniper Workshop maintenance records are retained for 17 months, unless a warranty dispute requires longer retention."
+      },
+      {
+        "filename": "04_Willow_Conservatory.txt",
+        "start": 0,
+        "content": "The Willow Conservatory relocation took place in 1863. Its restoration took place in 1917. Its inventory took place in 1917. The canceled expansion in 1930 did not occur.\n\nWillow Conservatory winter average temperatures exceed 16 degrees Celsius. Its highest monthly mean temperature is 33 degrees Celsius in June. Its highest recorded daily temperature is 47 degrees Celsius.\n\nPurchases above 5300 credits require written approval from the Curator and Finance Manager. The purchase evidence packet contains a supplier quote, budget code, inspection checklist, and signed approval.\n\nWillow Conservatory purchase records are retained for 26 months, unless a contract dispute requires longer retention."
+      }
+    ]
+  }
+}
