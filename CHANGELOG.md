@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-25 — v49 execution readiness
+
+- Preserve first20/1 tooling failure; correct explicit null-anchor guard and add
+  shape tests under the user’s standing authorization for fixes and study execution.
+- Add isolated v49/v43 capture, per-case audit, original native scoring and separate
+  prior-v46 PASS preservation.22 targeted/994 unit/28 Keyword PASS;3,660 archived
+  native rows reproduced without candidate calls.
+- Measure fresh neutral Chrome/MiniLM preflight, six downloaded assets and64 served
+  modules; freeze970 files before authorized study questions. Live app unchanged.
+
 ## 2026-10-25 — v49 732-case protocol preparation
 
 - Freeze original 668 historical plus 64 exposed Fresh64 scope, keys, sources and

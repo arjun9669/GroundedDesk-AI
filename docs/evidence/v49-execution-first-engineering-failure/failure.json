@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-25",
+  "status": "FIRST_ENGINEERING_FAILURE_STOPPED",
+  "baseline_commit": "dc68303ba151a91117731dbf7ddea1b50a96a996",
+  "protocol_id": "V49-REGRESSION-732-20261025",
+  "candidate_changed": false,
+  "attempts": 1,
+  "tests": 21,
+  "pass": 20,
+  "fail": 1,
+  "failed_test": "explicit_anchor_nonfinite_or_missing never falls back to legacy lookup",
+  "location": "tests/v49-execution.test.mjs:36",
+  "failure": "Expected error to match /anchor/i; observed Explicit/direct original body correspondence",
+  "diagnosis_method": "Static inspection only; no correction or retry after failure",
+  "diagnosis": "auditSources uses s.cosineAnchor ?? s before validating explicit anchor shape. An explicitly present null is therefore replaced by s, bypassing the intended early explicit-anchor shape check. The subclause fixture is rejected later at original-body correspondence. This is a guard-order defect, not a successful explicit-anchor rejection control.",
+  "proposed_correction": "Determine explicit presence with !== undefined; validate the actual explicit anchor is a non-null object before choosing an explicit/direct anchor; keep the existing negative assertion and add full-sentence/null/primitive anchor-shape controls. Do not weaken finite/equal cosine, original body-ID, own-context or independent arithmetic requirements.",
+  "not_run": [
+    "Full unit suite",
+    "Strict Keyword",
+    "Archived native-grade equivalence",
+    "Neutral Chrome/MiniLM preflight",
+    "Execution freeze generation",
+    "732-case study/model-quality questions"
+  ],
+  "candidate_planner_calls_on_study_inputs": 0,
+  "model_runs": 0,
+  "saved_vector_candidate_replays": 0,
+  "publication": "No commit or push; approval required before corrections/retries"
+}

@@ -521,3 +521,22 @@ native equivalence and same-variant prior PASS preservation with synthetic contr
 Measure current neutral preflight/toolchain/assets, publish a complete execution
 freeze, then obtain explicit model-run approval. Do not change native rubrics or
 reuse old preflight observations as current measurements.
+
+
+## V49 execution readiness and standing authorization
+
+[User authorization](DEVELOPMENT_AUTHORIZATION.md) supersedes older procedural
+reapproval prompts. Preserve failures and scoring gates, but correct/rerun engineering
+without asking again; publish honest failed study outcomes. Never force-push or
+overwrite conflicts. [Readiness report](V49_EXECUTION_READY.md) records the approved
+null-anchor correction,22 targeted/994 unit/28 Keyword PASS and3,660 archived native
+equivalent rows. New capture audits each saved candidate result before proceeding;
+original graders/candidates remain unchanged.
+
+Fresh neutral Chrome/MiniLM preflight and source/runtime/toolchain proofs are in
+the [execution freeze](evidence/v49-regression-732-mac/execution/freeze-manifest.json).
+It pins970 files and measured assets/resources. After publication receipt and clean
+main, use explicit STUDY_APPROVAL, RUN_CONFIG, EVIDENCE_DIR and TEST_URL with the
+new browser-v49-regression runner. No question retries within an attempt. Seal raw
+before score.mjs, preserve native outcomes and separately review bindings. A native
+FAIL is not repaired by editing keys, source evidence or archived scores.

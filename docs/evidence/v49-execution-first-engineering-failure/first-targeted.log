@@ -1,0 +1,62 @@
+✔ direct_sentence_valid proves exact original own-query body and vector (1.50375ms)
+✔ explicit_anchor_valid proves identity, containment and own-query arithmetic (0.223333ms)
+✔ explicit_anchor_cosine_disagreement rejects source1/anchor0 (0.837083ms)
+✖ explicit_anchor_nonfinite_or_missing never falls back to legacy lookup (1.306ms)
+✔ forged_equal_cosines fail independent saved vector arithmetic (0.56725ms)
+✔ legacy_body_id_valid proves unique containing original body without mutation (0.2345ms)
+✔ legacy_body_id_missing_wrong_or_ambiguous refuses guessed parents (0.422375ms)
+✔ legacy_body_vector_or_span_mismatch rejects wrong spans, source and vector (0.802208ms)
+✔ repeated_identical_body_contexts remain unambiguous (1.312458ms)
+✔ candidate_and_pair_context_isolation cannot borrow another clock query (2.927916ms)
+✔ vectors_real_finite_nonzero384 rejects dimension, NaN and zero norms (5.979209ms)
+✔ comparison_pair_and_literal_bounds enforces original two-sided order and citations (0.88875ms)
+✔ capture_receipt_and_order rejects duplicated, missing and reordered submissions (0.458667ms)
+✔ raw_and_native_immutability keeps all captured source/anchor records untouched (0.673458ms)
+✔ native_grader_equivalence retains exact native family and Fresh64 exports (0.077ms)
+✔ v49 identity and approval guard reject historical candidates and missing authorization (0.261166ms)
+✔ static original scope load and transitive graph never invoke candidates (575.258292ms)
+✔ prior v46 PASS preservation is variant-specific and never grants failed-row exemptions (0.34475ms)
+✔ write-once seal and canonical hash checks preserve failed attempts (4.563333ms)
+✔ capture persists UI/pre-candidate data before answers and audits each saved result (1.7265ms)
+✔ neutral preflight fetches served proofs without importing experimental modules or study inputs (0.596ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 20
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 757.396625
+
+✖ failing tests:
+
+test at tests/v49-execution.test.mjs:31:1
+✖ explicit_anchor_nonfinite_or_missing never falls back to legacy lookup (1.306ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /anchor/i. Input:
+  
+  'AssertionError [ERR_ASSERTION]: Explicit/direct original body correspondence'
+  
+      at TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/v49-execution.test.mjs:36:75)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: AssertionError [ERR_ASSERTION]: Explicit/direct original body correspondence
+        at auditSources (file:///Users/arjunkumar/Projects/GroundedDesk-AI/eval/v49-regression-execution/audit.mjs:23:10)
+        at run (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/v49-execution.test.mjs:23:14)
+        at file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/v49-execution.test.mjs:36:86
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/v49-execution.test.mjs:36:75)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1402:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+        at Test.postRun (node:internal/test_runner/test:1542:19),
+    expected: /anchor/i,
+    operator: 'throws',
+    diff: 'simple'
+  }

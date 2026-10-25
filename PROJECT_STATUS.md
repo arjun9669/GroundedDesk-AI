@@ -17,7 +17,52 @@ original reports; link them here instead of rewriting or rescoring them.
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v49 package3 Comparison/events engineering PASS after approved corrections; 972 unit/28 Keyword PASS; no v49 model result/adoption. Latest scored v46 regression FAIL (Fresh64 60/4/0, historical10/19 gates) |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | V49 732-case protocol/input/candidate freeze prepared; execution tooling and current preflight pending; no model study/adoption |
+| Current change | V49 execution readiness PASS after authorized anchor correction;970-file execution freeze,994 units/28 Keyword PASS; authorized study follows publication |
+
+## V49 execution readiness — PASS, 2026-10-25
+
+The user granted [standing authorization](docs/DEVELOPMENT_AUTHORIZATION.md) for
+corrections/retries, publishing and the study after verified readiness, without
+more approval prompts. This supersedes older procedural reapproval instructions;
+scoring/integrity/evidence rules remain mandatory. AGENTS.md records that decision.
+
+[Readiness report](docs/V49_EXECUTION_READY.md) and
+[execution plan](eval/v49-regression-execution/EXECUTION_PLAN.md) describe isolated
+v49/v43 capture, prospective legacy/explicit-anchor audit and unchanged native
+graders. Preserve the20/1 first failure and16 sealed source/log/report identities.
+Correct only the null explicit-anchor guard before routing and add shape controls.
+**22/22 targeted,994/994 units,28/28 strict Keyword PASS**; all15 planned audit
+controls verified. Native equivalence reproduces3,660 archived outcomes without
+candidate/model calls. [Engineering seal](docs/evidence/v49-execution-engineering/manifest.json).
+
+Fresh neutral installed-Chrome preflight: Node24.22.1,Chrome155.0.8059.86,
+macOS arm64, Transformers.js3.0.0/MiniLM q8 WASM384D, Qwen off/live r44. Six
+downloaded assets and64 served local modules verified.
+[Execution config](docs/evidence/v49-regression-732-mac/execution/run-config.json)
+and [970-file freeze](docs/evidence/v49-regression-732-mac/execution/freeze-manifest.json)
+pin actual toolchain/assets/resources, source/input/history identities and new
+adapters/tests. The root contains only preflight/execution at this checkpoint.
+
+Next verify publication and clean/remote/toolchain/source identity, then perform
+the once-only732-case capture under current authorization. Seal raw before native
+scoring and separate binding review. No study question has run at this checkpoint;
+phase2/integration HOLD and original failed results/exclusions remain unchanged.
+
+## V49 execution tooling — first engineering failure, 2026-10-25
+
+The user authorized execution-readiness tooling and neutral preflight after
+published protocol `dc68303b`. New isolated adapters and a pre-test plan were
+prepared locally. First targeted run: **21 tests,20 PASS,1 FAIL**. Work stopped
+before fixes, retries, broader checks, archived equivalence, browser/model
+preflight, execution-freeze generation or commit/push. The study root is absent.
+
+[Failure report](docs/V49_EXECUTION_FIRST_ENGINEERING_FAILURE.md) and
+[exact first-attempt evidence](docs/evidence/v49-execution-first-engineering-failure/manifest.json)
+record the null explicit-anchor guard-order defect. Proposed correction validates
+the actual explicit non-null anchor before selecting its evidence path, retaining
+the failing assertion and adding shape controls. Approval is required before
+correction and rerun. Candidate/protocol/history bytes remain unchanged; no study
+questions or saved-vector candidate replay occurred. Phase2/integration remains HOLD.
 
 ## V49 regression protocol freeze — preparation PASS, 2026-10-25
 

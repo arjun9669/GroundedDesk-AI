@@ -60,10 +60,11 @@ targeted/972 unit/28 Keyword checks after approved corrections, retaining its
 first24/6 failure. All three isolated engineering packages are implemented;
 actual-model preservation remains unmeasured. The
 [v49 732-case protocol preparation](V49_REGRESSION_PREPARATION.md) now freezes
-original scope and prospective anchor-audit requirements. Next implement isolated
-v49 tooling and synthetic proofs, measure current neutral preflight and publish
-the complete execution freeze before model-run approval. No v49 model quality
-is measured.
+original scope and prospective anchor-audit requirements.
+[V49 execution readiness](V49_EXECUTION_READY.md) now passes22 targeted/994 unit/28
+Keyword checks with fresh neutral Chrome/MiniLM preflight and970-file execution
+freeze. The user authorized capture after verified publication; no v49 model
+quality is measured at this preparation checkpoint.
 A new frozen regression and later unseen confirmation remain subsequent gates;
 live integration remains unauthorized.
 Preserve the accepted 668-case regression scope after fixes. Fresh64 is now exposed;

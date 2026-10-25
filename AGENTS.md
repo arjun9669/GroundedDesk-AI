@@ -10,15 +10,18 @@ through GitHub. These are standing instructions for every development task.
 - Inspect `git status`, fetch `origin/main`, and synchronize with a fast-forward
   before editing. Preserve all existing local work and remote commits.
 - Never force-push, reset away work, or overwrite conflicting changes. If a
-  fast-forward fails, inspect the divergence and ask before conflict resolution.
+  fast-forward fails, preserve both sides and report the conflict; never overwrite
+  or force-push to resolve it.
 - Do not remove historical branches as part of synchronization.
 
 ## Implement, verify, review, publish
 
 1. Implement only the requested change and preserve existing functionality.
-2. Run the relevant tests. If a required check fails, stop and ask the user before
-   further implementation, retries, committing or publishing; report the exact
-   failure. Do not silently weaken checks or relabel a failure as a pass.
+2. Run the relevant tests. Preserve the exact first failure and attempted sources,
+   diagnose and correct failures within the task, then rerun checks under the user's
+   standing authorization below. Never weaken checks or relabel a failure as a pass.
+   Model/native quality failure ends that study attempt: preserve and publish honest
+   results; any candidate repair needs a new immutable freeze before new questions.
 3. Review the full intended diff for errors, regressions, sensitive information,
    credentials and unintended files. Run `git diff --check`.
 4. Update `PROJECT_STATUS.md` with progress, decisions, verification and blockers.
@@ -31,8 +34,14 @@ through GitHub. These are standing instructions for every development task.
 7. Confirm that GitHub received the commit by checking the remote `main` SHA
    against local HEAD. Report the commit, tests and any remaining limitation.
 
-The user has authorized this normal commit-and-push workflow. Ask before proceeding
-with merge conflicts or failing tests, and respect any narrower task instruction.
+The user has authorized this normal commit-and-push workflow. On25 October2026
+the user explicitly authorized all remaining work, fixes/retries and qualified
+study execution without further approval prompts. See
+[the recorded decision](docs/DEVELOPMENT_AUTHORIZATION.md). This supersedes older
+procedural reapproval instructions, including dated protocol text. Preserve evidence,
+keep all scoring/integrity gates and publish/verify execution freezes before study
+questions. Never force-push, overwrite conflicts or expose credentials. Report
+blocks that cannot be resolved safely. Honor any later narrower user instruction.
 
 ## Project-specific constraints
 
