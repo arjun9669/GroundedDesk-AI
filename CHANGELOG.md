@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-25 — v50 retention engineering and prospective freeze
+
+- Add isolated current/archived namespace resolution and matching hyphenated
+  retention periods; retain source/role/ambiguity guards and exact prior display.
+- Preserve24/1 fixture failure; correct its source declaration and exact display
+  controls.26 candidate/3 adapter/1044 unit/28 Keyword checks PASS.
+- Document unsupported monthly store scope without inventing evidence or changing
+  the frozen key. Freeze original732 cases and current neutral environment before
+  questions; retain native64/64 and19/19 requirements and prior-v49 PASS protection.
+
 ## 2026-10-25 — complete v49 regression native FAIL
 
 - Complete732-case attempt3 (684 MiniLM Hybrid/48 lexical), seal5,865 raw files

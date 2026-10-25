@@ -16,9 +16,40 @@ The top table/newest section is current; older sections retain their dated check
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
 | Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
-| Latest isolated candidate | v49 remains unadopted; complete attempt3 native FAIL: Fresh64 63 PASS/1 FAIL each variant,17/19 historical gates; integrity/review complete. Engineering1015 units/28 Keyword PASS |
+| Latest isolated candidate | v50 isolated retention repairs:26 candidate/3 adapter/1044 unit/28 Keyword PASS; current execution freeze ready, no v50 study result at this checkpoint. Latest scored v49 remains FAIL |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | Publishing complete v49 failed-regression results and separate review, preserving all earlier blocked attempts; no candidate/native-score rewrite |
+| Current change | V50 version-qualified retention and matching hyphenated periods; monthly source gap documented, guard retained; publish freeze before authorized regression |
+
+## V50 repair engineering and execution readiness, 2026-10-25
+
+[Engineering report](docs/V50_ENGINEERING.md) and
+[candidate protocol](eval/answer-completeness-v50/PROTOCOL.md) introduce isolated
+current/archived filename-role scope and matching hyphenated retention-period
+descriptors. Preserve foreign/duplicate/title-conflict guards, exact source bytes
+and prior validated displayed answers. No old candidate or frozen key/result changed.
+Comparison stays exact v49; monthly store-location inference remains unsupported
+because the source does not establish that store. The frozen native failure is
+neither edited, excluded nor waived.
+
+Preserve first24/1 synthetic fixture failure and unchanged candidate snapshot.
+Correct the undeclared-name fixture to establish an actual source scope and assert
+exact valid-prior answer/citations; add its negative counterpart.26/26 candidate,
+3/3 adapter,1044/1044 full units,28/28 strict Keyword PASS.
+[Engineering evidence](docs/evidence/v50-engineering/manifest.json). Static input/
+source/seal validation uses no frozen-question planner/candidate calls.
+
+[New732-case protocol](eval/v50-regression-study/PROTOCOL.md) retains original
+questions/keys/order/pairs/native criteria and independently planned paired v43.
+Add same-variant v49 PASS preservation to existing history/v46 requirements. Reuse
+the exact published prospective expanded-quote/ranking-body audit. Current neutral
+Chrome/MiniLM preflight verifies six assets and67 served local modules.
+[Execution freeze](docs/evidence/v50-regression-732-mac/execution/freeze-manifest.json)
+and [publication seal](docs/evidence/v50-readiness-publication/manifest.json) pin
+source/native references, new tooling/tests and actual toolchain/resources.
+After clean remote receipt, run original732 cases once under standing authorization;
+seal raw before scoring and separate review. Known monthly refusal may keep the
+overall native gate FAIL; historical repair is not claimed until measured.
+Live5.6/r44 and phase2/integration HOLD remain unchanged.
 
 ## V49 complete regression — native FAIL, publication reviewed, 2026-10-25
 

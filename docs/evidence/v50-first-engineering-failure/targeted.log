@@ -1,0 +1,68 @@
+✔ v50 isolated routing retains exact Comparison, clock, minimum, approval and provenance helpers (2.918166ms)
+✔ current prefix resolves its own filename version without borrowing archived policy (36.8035ms)
+✔ archived prefix selects the archived owner while an unqualified alias stays ambiguous (2.87875ms)
+✔ full entity and explicit at/in version positions retain exact record subtype (2.360125ms)
+✔ full canonical filename entity remains usable in question and source (14.617166ms)
+✔ version labels need declared filename roles rather than generic recency guesses (0.389333ms)
+✔ duplicate current owners and competing current namespaces refuse (0.381292ms)
+✔ a foreign exact entity cannot be replaced by a versioned prefix alias (0.417084ms)
+✔ explicit archived source in a current file cannot confer current policy authority (0.3705ms)
+✔ contradictory current filename and archived title refuse (0.744125ms)
+✔ matching title corroborates version role without becoming an arbitrary entity alias (0.661375ms)
+✔ body-declared root within a versioned filename remains bound to its own role (1.064125ms)
+✔ unrelated source introduction cannot donate a versioned filename scope (0.525875ms)
+✔ hyphenated review period retains full original condition and source bytes (0.507459ms)
+✔ Unicode hyphens and original space-separated descriptors have the same bounded meaning (4.706625ms)
+✔ month year week and number-word periods compare to their own base quantity/unit (0.723708ms)
+✔ mismatched amount unit or business-day qualifier refuses without conversions (0.294334ms)
+✔ unparsed extra review tails and wrong reference nouns remain unsupported (0.363625ms)
+✔ review condition cannot cross a paragraph or unrelated intervening statement (0.4995ms)
+✔ conflicting and duplicate base periods cannot be resolved using matching suffix text (0.189792ms)
+✖ prior valid nonversioned retention output preserves its display and evidence (1.836791ms)
+✔ compound and clock-owned requests preserve previous routing and guards (5.376625ms)
+✔ monthly explicit store context supports each side; no store is invented from unqualified data (10.628833ms)
+✔ unqualified monthly request can use facility data while a foreign explicit room cannot substitute (0.628416ms)
+✔ invalid evidence and zero citation limits preserve their established behavior (0.145708ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 24
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 225.583709
+
+✖ failing tests:
+
+test at tests/coverage-v50.test.mjs:79:1
+✖ prior valid nonversioned retention output preserves its display and evidence (1.836791ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      answer: "I can't find this in the provided documents.",
+      answered: false,
+  +   experiment: 'V50 isolated version-scope/retention; production unchanged',
+  +   mode: 'Experimental v50 version-scope/retention',
+  -   experiment: 'V47 isolated scope/retention; production unchanged',
+  -   mode: 'Experimental v47 scope/retention',
+      retention_contract: {
+        reason: 'Unique declared subject and entity scope required',
+        status: 'unsupported'
+      },
+      sources: []
+  
+      at TestContext.<anonymous> (file:///Users/arjunkumar/Projects/GroundedDesk-AI/tests/coverage-v50.test.mjs:82:48)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { answered: false, sources: [], answer: "I can't find this in the provided documents.", mode: 'Experimental v50 version-scope/retention', experiment: 'V50 isolated version-scope/retention; production unchanged', retention_contract: { status: 'unsupported', reason: 'Unique declared subject and entity scope required' } },
+    expected: { answered: false, sources: [], answer: "I can't find this in the provided documents.", mode: 'Experimental v47 scope/retention', experiment: 'V47 isolated scope/retention; production unchanged', retention_contract: { status: 'unsupported', reason: 'Unique declared subject and entity scope required' } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

@@ -560,3 +560,22 @@ address current-document scope, review-extension tails with duration guards and
 monthly store-location evidence/specification. No implicit location inference or
 post-hoc gold-key edit. Phase2/integration stays HOLD;1015 unit/28 Keyword PASS is
 engineering evidence, not quality acceptance or Windows qualification.
+
+
+## V50 retention repair and prospective execution checkpoint
+
+[Report](V50_ENGINEERING.md) describes version-qualified retention scope and
+hyphenated even-after descriptors with matching amount/unit guards. Preserve
+[original first failure](evidence/v50-first-engineering-failure/manifest.json);
+only the invalid source-declaration fixture was corrected after24/1.26 candidate/
+3 adapter/1044 unit/28 Keyword PASS. Comparison remains v49; the monthly store
+evidence gap remains a native failure, not an implicit location inference.
+
+[New study protocol](../eval/v50-regression-study/PROTOCOL.md) and
+[execution freeze](evidence/v50-regression-732-mac/execution/freeze-manifest.json)
+retain original732 cases/keys/pairs/native functions, same-variant v46/v49 PASS
+preservation and independent paired v43 evidence. Current neutral preflight pins
+actual toolchain/assets and67 served sources. Publish/verify clean remote main
+before questions; standing authorization permits the once-only capture. Preserve
+every result and score only a complete sealed capture. Quality failure remains
+FAIL; no key/threshold change, no automatic question retries or live adoption.

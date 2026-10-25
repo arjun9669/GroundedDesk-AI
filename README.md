@@ -16,13 +16,18 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 | Latest isolated candidate | **v49 complete regression FAIL**:63 PASS/1 FAIL Fresh64 per variant;17/19 historical gates. Candidate remains unadopted |
 | Phase 1 | **COMPLETE under the explicitly approved 668-case scope**, decision `PH1-668-20261021` |
 | Current phase | **2 — first Fresh64 confirmation and latest v49 regression FAIL**; integration HOLD |
-| Latest recorded engineering checks | **1015 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
+| Latest recorded engineering checks | **1044 unit tests / 28 strict bundled Keyword checks PASS**; separate from actual-model quality results |
 | Hosting and inference | Free GitHub Pages hosting; optional models run on device after public downloads |
 | Release maturity | Educational prototype; integration **HOLD** and **6.0 readiness not established** |
 
 The [6.0 working roadmap](./docs/ROADMAP_6_0.md) has five phases. The following
 phase 1 summary reflects the approved decision on **21 October 2026**; earlier
 reports remain dated checkpoints and preserve their original failures and holds.
+
+[V50 isolated retention repair](./docs/V50_ENGINEERING.md) now passes26 candidate
+controls,3 adapter controls,1044 units and28 Keyword checks. A new prospective
+freeze precedes its authorized regression; no v50 quality score is established
+at this preparation checkpoint. The monthly location guard remains unchanged.
 
 ## Latest result — v49 complete regression FAIL
 
