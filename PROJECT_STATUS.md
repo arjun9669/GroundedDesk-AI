@@ -1,6 +1,6 @@
 # GroundedDesk AI — project status
 
-Last updated: **2026-10-25 (Asia/Kolkata)**.
+Last updated: **2026-11-12 (Asia/Dubai)**.
 
 This is the current development handoff. Preserve historical results in their
 original reports; link them here instead of rewriting or rescoring them.
@@ -15,10 +15,16 @@ The top table/newest section is current; older sections retain their dated check
 | Shared development branch | `main` required on both machines; Mac tracks `origin/main` |
 | Reviewed upstream baseline | `2c6457c636d636ec56b3c4d1f49a35e66d5aab44` |
 | Design review baseline | `b0d4224`; review published as `bb6a8ce`; v39 protocol precommitted as `c73a8fe` |
-| Live application | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
+| Live portfolio release | GroundedDesk 5.6, retrieval build `2026-10-13-r44` |
 | Latest isolated candidate | v50 complete regression:19/19 historical gates PASS, all five v49 regressions repaired; Fresh64 63 PASS/1 FAIL each variant, overall native FAIL/unadopted. Engineering1044 units/28 Keyword PASS |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
-| Current change | NextConfirm64 8-source/64-case draft authored and statically validated; independent review pending (all OPEN), no input freeze or run; phase 2/integration HOLD |
+| NextConfirm64 status | NextConfirm64 8-source/64-case draft authored and statically validated; independent review pending (all OPEN), no input freeze or run; phase 2/integration HOLD |
+
+## Portfolio release documentation — 12 November 2026
+
+The README presents the existing 5.6/r44 deployment as the portfolio release and puts the quick demo ahead of the research history. The [v50 score manifest](docs/evidence/v50-regression-732-mac/score-manifest.json) remains available for auditing the recorded results. This documents the existing deployment; it does not change the runtime or accept 6.0.
+
+NextConfirm64 remains an unreviewed draft and has not run. Fresh64's original failure and the Phase 2 integration hold remain unchanged. No application, candidate, benchmark input, or score changed.
 
 ## NextConfirm64 first draft — 25 October 2026
 
