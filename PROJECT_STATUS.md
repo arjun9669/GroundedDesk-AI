@@ -20,6 +20,10 @@ The top table/newest section is current; older sections retain their dated check
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | NextConfirm64 status | NextConfirm64 8-source/64-case draft authored and statically validated; independent review pending (all OPEN), no input freeze or run; phase 2/integration HOLD |
 
+## NextConfirm64 solo-maintainer result
+
+The [author-aware Windows Chrome result](docs/evidence/nextconfirm64-solo/REPORT.md) captured 64 unique questions and 120 outputs with actual local MiniLM for Hybrid and eight separate lexical Comparisons. Both index variants scored 41 PASS / 3 PARTIAL / 20 FAIL, with 14 false acceptances and four false refusals per variant. Raw evidence was sealed before scoring. The 64/64 engineering target failed. The independent review, original Fresh64 failure and integration HOLD remain.
+
 ## NextConfirm64 solo-maintainer execution freeze
 
 The [solo-maintainer protocol and execution freeze](docs/evidence/nextconfirm64-solo/PROTOCOL.md) pin the unchanged v50 browser module, exact original inputs, scorer and Windows Chrome/MiniLM asset identities before questions. This separate author-aware run does not fulfill independent release acceptance. At this freeze no benchmark question has run. The original Fresh64 failure and integration HOLD remain.
