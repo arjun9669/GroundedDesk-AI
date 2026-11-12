@@ -20,6 +20,10 @@ The top table/newest section is current; older sections retain their dated check
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | NextConfirm64 status | NextConfirm64 8-source/64-case draft authored and statically validated; independent review pending (all OPEN), no input freeze or run; phase 2/integration HOLD |
 
+## NextConfirm64 solo-maintainer execution freeze
+
+The [solo-maintainer protocol and execution freeze](docs/evidence/nextconfirm64-solo/PROTOCOL.md) pin the unchanged v50 browser module, exact original inputs, scorer and Windows Chrome/MiniLM asset identities before questions. This separate author-aware run does not fulfill independent release acceptance. At this freeze no benchmark question has run. The original Fresh64 failure and integration HOLD remain.
+
 ## Browser smoke runner compatibility
 
 The Ubuntu 26.04 runner was rejected by Playwright 1.56.1 before browser tests ran. The browser smoke job now uses Ubuntu 24.04 with the same tools and test commands. Application bytes are unchanged.
