@@ -1,6 +1,6 @@
 # GroundedDesk AI — project status
 
-Last updated: **2026-11-12 (Asia/Dubai)**.
+Last updated: **2026-11-13 (Asia/Dubai)**.
 
 This is the current development handoff. Preserve historical results in their
 original reports; link them here instead of rewriting or rescoring them.
@@ -19,6 +19,10 @@ The top table/newest section is current; older sections retain their dated check
 | Latest isolated candidate | v50 complete regression:19/19 historical gates PASS, all five v49 regressions repaired; Fresh64 63 PASS/1 FAIL each variant, overall native FAIL/unadopted. Engineering1044 units/28 Keyword PASS |
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | NextConfirm64 status | NextConfirm64 8-source/64-case draft authored and statically validated; independent review pending (all OPEN), no input freeze or run; phase 2/integration HOLD |
+
+## Portfolio walkthrough — 13 November 2026
+
+The README links a captioned [60-second walkthrough](docs/portfolio/groundeddesk-60s-walkthrough.webm) of the live 5.6/r44 app, with a preview and [transcript](docs/portfolio/walkthrough.md). The recording uses bundled samples and shows a quoted answer, its evidence card, and an unsupported question refused with zero citations. No runtime, evaluation or release gate changed.
 
 ## Portfolio release documentation — 12 November 2026
 

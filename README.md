@@ -12,6 +12,10 @@ GroundedDesk is a free document intelligence portfolio project built with HTML, 
 
 **[Try GroundedDesk 5.6](https://arjun9669.github.io/GroundedDesk-AI/?build=20261013-r44)** · Retrieval build `2026-10-13-r44`
 
+**[Watch the 60-second walkthrough](https://arjun9669.github.io/GroundedDesk-AI/docs/portfolio/groundeddesk-60s-walkthrough.webm)** · [Transcript](./docs/portfolio/walkthrough.md)
+
+[![GroundedDesk shows a quoted answer and the Cloud Architecture Guide evidence card](./docs/portfolio/walkthrough-preview.png)](https://arjun9669.github.io/GroundedDesk-AI/docs/portfolio/groundeddesk-60s-walkthrough.webm)
+
 This is the live portfolio release. Try the bundled examples first. You can ask questions, compare documents, inspect source quotations and PDF pages, and export an evidence report. Keyword search is available immediately. MiniLM Hybrid is optional and runs locally after its initial download.
 
 **6.0 is future work.** The v50 retrieval candidate is not part of the live app. Fresh64's original failure remains on record, and the separate NextConfirm64 draft still needs independent review. See the [6.0 roadmap](./docs/ROADMAP_6_0.md) and [project handoff](./PROJECT_STATUS.md) for the research track.
