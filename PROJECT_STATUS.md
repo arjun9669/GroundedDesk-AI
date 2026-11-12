@@ -20,6 +20,10 @@ The top table/newest section is current; older sections retain their dated check
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | NextConfirm64 status | NextConfirm64 8-source/64-case draft authored and statically validated; independent review pending (all OPEN), no input freeze or run; phase 2/integration HOLD |
 
+## Browser smoke runner compatibility
+
+The Ubuntu 26.04 runner was rejected by Playwright 1.56.1 before browser tests ran. The browser smoke job now uses Ubuntu 24.04 with the same tools and test commands. Application bytes are unchanged.
+
 ## Portfolio walkthrough — 13 November 2026
 
 The README links a captioned [60-second walkthrough](docs/portfolio/groundeddesk-60s-walkthrough.webm) of the live 5.6/r44 app, with a preview and [transcript](docs/portfolio/walkthrough.md). The recording uses bundled samples and shows a quoted answer, its evidence card, and an unsupported question refused with zero citations. No runtime, evaluation or release gate changed.
