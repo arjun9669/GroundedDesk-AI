@@ -20,6 +20,10 @@ The top table/newest section is current; older sections retain their dated check
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | NextConfirm64 status | NextConfirm64 8-source/64-case draft authored and statically validated; independent review pending (all OPEN), no input freeze or run; phase 2/integration HOLD |
 
+## v52 evidence-check exposed regressions
+
+The [v52 Chrome report](docs/evidence/v52-switchyard/REPORT.md) records 64/64 on NextConfirm64 and 63/64 on Switchyard64 per index, with all earlier passes preserved. SW62 accepted a temperature without evidence of the requested room. The conditional fresh run did not start. Frozen historical results and the 6.0 integration hold remain in effect.
+
 ## v51 Switchyard64 author-aware first look
 
 The [Switchyard64 report](docs/evidence/switchyard64/REPORT.md) records 39 PASS / 4 PARTIAL / 21 FAIL per index in real Windows Chrome with local MiniLM and Qwen off. Each index recorded 16 false acceptances, one false refusal and 42/67 relevant quotations with 67/67 literal provenance. The engineering target was missed. Inputs were frozen before the unchanged v51 candidate ran and raw outputs were sealed before grading. The NextConfirm64 in-sample 64/64 and original Fresh64 failure remain on record. Integration HOLD; live 5.6/r44 unchanged.
