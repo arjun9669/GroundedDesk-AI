@@ -20,6 +20,10 @@ The top table/newest section is current; older sections retain their dated check
 | Release decision | Integration **HOLD**: first Fresh64 confirmation FAIL; quality/device/release gates remain open |
 | NextConfirm64 status | NextConfirm64 8-source/64-case draft authored and statically validated; independent review pending (all OPEN), no input freeze or run; phase 2/integration HOLD |
 
+## v51 NextConfirm64 exposed regression
+
+The [v51 scoped-evidence candidate](docs/evidence/v51-nextconfirm64/REPORT.md) passed 64/64 in each index with actual MiniLM in Windows Chrome. All 41 previous PASS cases were preserved and all 23 previous non-passes repaired. Per index, 48/48 quotes were relevant and literal, with zero false acceptances, false refusals or binding audit failures. This run used development-exposed inputs. Fresh evaluation, original Fresh64 failure and independent release gates remain open. Integration HOLD; live 5.6/r44 unchanged.
+
 ## NextConfirm64 solo-maintainer result
 
 The [author-aware Windows Chrome result](docs/evidence/nextconfirm64-solo/REPORT.md) captured 64 unique questions and 120 outputs with actual local MiniLM for Hybrid and eight separate lexical Comparisons. Both index variants scored 41 PASS / 3 PARTIAL / 20 FAIL, with 14 false acceptances and four false refusals per variant. Raw evidence was sealed before scoring. The 64/64 engineering target failed. The independent review, original Fresh64 failure and integration HOLD remain.
